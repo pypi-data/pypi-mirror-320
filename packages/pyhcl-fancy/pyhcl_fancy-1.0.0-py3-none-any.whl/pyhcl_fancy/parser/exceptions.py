@@ -1,0 +1,2 @@
+class UnexpectedTerraformBlockError(Exception):
+    pass
