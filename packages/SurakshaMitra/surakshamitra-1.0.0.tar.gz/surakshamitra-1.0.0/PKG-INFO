@@ -1,0 +1,38 @@
+Metadata-Version: 2.2
+Name: SurakshaMitra
+Version: 1.0.0
+Summary: A Python package for password strength checking, strong password generation, and email validation.
+Home-page: https://github.com/kashyapprajapat/SurakshaMitra
+Author: kashyap
+Author-email: prajapatikashyap14@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# SurakshaMitra
+
+SurakshaMitra is your security companion for managing passwords and validating email addresses.
+
+## Features
+
+- Check password strength
+- Generate strong passwords
+- Validate email addresses
+
+## Installation
+
+Install SurakshaMitra using pip:
+
+```bash
+pip install SurakshaMitra
