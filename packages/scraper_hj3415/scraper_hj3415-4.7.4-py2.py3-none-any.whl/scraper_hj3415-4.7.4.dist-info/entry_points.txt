@@ -1,0 +1,5 @@
+[console_scripts]
+krx=scraper_hj3415.cli:krx_manager
+mis=scraper_hj3415.cli:mis_manager
+nfs=scraper_hj3415.cli:nfs_manager
+
