@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: utf-cleaner
+Version: 3.4.1
+Summary: A powerful package that removes non-UTF characters from strings.
+Home-page: https://github.com/john-doe/utf_cleaner
+Author: John Doe
+Author-email: john@doe.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
