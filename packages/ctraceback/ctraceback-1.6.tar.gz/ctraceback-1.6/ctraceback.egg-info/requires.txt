@@ -1,0 +1,10 @@
+argparse
+configset
+rich
+pydebugger
+psutil
+
+[:platform_system == "Windows"]
+pygetwindow
+ctype
+pywin32
