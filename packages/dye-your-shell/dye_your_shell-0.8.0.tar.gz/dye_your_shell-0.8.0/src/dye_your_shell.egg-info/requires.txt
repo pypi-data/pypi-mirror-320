@@ -1,0 +1,16 @@
+rich
+rich_argparse
+tomlkit
+
+[dev]
+build
+pytest
+pytest-mock
+pytest-cov
+codecov
+pylint
+ruff
+wheel
+twine
+rope
+invoke
