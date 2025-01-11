@@ -1,0 +1,28 @@
+Metadata-Version: 2.2
+Name: safeai-face
+Version: 0.0.0.10
+Summary: SafeAI face detection and face retrieval library using milvus vector DB
+Home-page: https://github.com/safeai-kr/safeai-face.git
+Author: paradise999
+Author-email: choirock6416@gamil.com
+Keywords: SafeAI,safeai,face,face detection,face retrieval
+Requires-Python: >=3.10.8
+Requires-Dist: pymilvus>=2.4.2
+Requires-Dist: timm
+Requires-Dist: torch==2.5.1
+Requires-Dist: torchvision==0.20.1
+Requires-Dist: scikit-learn
+Requires-Dist: pillow
+Requires-Dist: numpy==2.0.2
+Requires-Dist: opencv-python==4.10.0.84
+Requires-Dist: ultralytics==8.3.4
+Requires-Dist: onnxruntime==1.19.2
+Requires-Dist: onnxruntime-gpu==1.19.2
+Requires-Dist: opencv-contrib-python
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
