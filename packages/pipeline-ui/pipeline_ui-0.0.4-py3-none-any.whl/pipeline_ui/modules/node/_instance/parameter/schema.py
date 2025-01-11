@@ -1,0 +1,4 @@
+from pipeline_ui.modules.node._instance.common_schema import BaseParameterInstanceType
+from pipeline_ui.modules.node._instance.media_schema import MediaParameterInstanceType
+
+ParameterInstanceType = BaseParameterInstanceType | MediaParameterInstanceType
