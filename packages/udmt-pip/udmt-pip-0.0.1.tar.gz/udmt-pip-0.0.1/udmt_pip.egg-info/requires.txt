@@ -1,0 +1,13 @@
+matplotlib
+pandas
+tqdm
+pyyaml
+tifffile
+opencv-python
+visdom
+tb-nightly
+similaritymeasures
+torchsummary
+jpeg4py
+gdown
+pycocotools
