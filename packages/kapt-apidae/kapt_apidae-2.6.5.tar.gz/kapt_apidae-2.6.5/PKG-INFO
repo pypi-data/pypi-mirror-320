@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: kapt-apidae
+Version: 2.6.5
+Summary: 
+Author: KAPT dev team
+Author-email: dev@kapt.mobi
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Django (>=1.11)
+Requires-Dist: beautifulsoup4 (>=4.0)
+Requires-Dist: django-model-utils
+Requires-Dist: django-modeltranslation
+Requires-Dist: django-parler
+Requires-Dist: django_polymorphic
+Requires-Dist: kapt-associative-life
+Requires-Dist: kapt-catalog (>=5.0.0)
+Requires-Dist: kapt-contact
+Requires-Dist: kapt-gallery
+Requires-Dist: kapt-geo (>=4.0)
+Requires-Dist: kapt-validity
+Requires-Dist: python-dateutil

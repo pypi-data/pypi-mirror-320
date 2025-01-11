@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "kapt-apidae"
+version = "2.6.5"
+description = ""
+authors = ["KAPT dev team <dev@kapt.mobi>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Django = ">=1.11"
+django-modeltranslation = "*"
+django-parler = "*"
+python-dateutil = "*"
+django_polymorphic = "*"
+django-model-utils = "*"
+kapt-catalog = ">=5.0.0"
+kapt-gallery = "*"
+kapt-associative-life = "*"
+kapt-geo = ">=4.0"
+kapt-contact = "*"
+kapt-validity = "*"
+beautifulsoup4 = ">=4.0"
+
+[tool.poetry.dev-dependencies]
+black = "23.*"
+colored-traceback = "~0.3"
+django-debug-toolbar = "~3.2"
+flake8 = "6.*"
+isort = "5.*"
+pre-commit = "*"
+djhtml = "3.*"
+
+[[tool.poetry.source]]
+name = "kapt"
+url = "https://pypi.kapt.mobi"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

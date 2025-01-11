@@ -1,0 +1,1818 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-31 16:57+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: kapt_apidae/models.py:51
+msgid "Picture"
+msgstr "Image"
+
+#: kapt_apidae/models.py:52
+msgid "Document"
+msgstr "Document"
+
+#: kapt_apidae/models.py:53
+msgid "Sound"
+msgstr "Son"
+
+#: kapt_apidae/models.py:54
+msgid "Video"
+msgstr "Vidéo"
+
+#: kapt_apidae/models.py:55
+msgid "Plan"
+msgstr "Plan"
+
+#: kapt_apidae/models.py:56
+msgid "Logo"
+msgstr "Logo"
+
+#: kapt_apidae/models.py:57
+msgid "Webcam"
+msgstr "Webcam"
+
+#: kapt_apidae/models.py:58
+msgid "Virtual tour"
+msgstr "Visite virtuelle"
+
+#: kapt_apidae/models.py:59
+msgid "Virtual booklet"
+msgstr "Livret virtuel"
+
+#: kapt_apidae/models.py:60 kapt_apidae/models.py:905
+msgid "Good deal"
+msgstr "Bonne affaire"
+
+#: kapt_apidae/models.py:61
+msgid "Youtube channel"
+msgstr "Chaine Youtube"
+
+#: kapt_apidae/models.py:62
+msgid "Dailymotion channel"
+msgstr "Chaine Dailymotion"
+
+#: kapt_apidae/models.py:63
+msgid "Flickr gallery"
+msgstr "Galerie Flick"
+
+#: kapt_apidae/models.py:64
+msgid "360 webcam"
+msgstr "Webcam 360°"
+
+#: kapt_apidae/models.py:65
+msgid "iPhone application"
+msgstr "Application iPhone"
+
+#: kapt_apidae/models.py:66
+msgid "iPad application"
+msgstr "Application iPad"
+
+#: kapt_apidae/models.py:67
+msgid "Android application"
+msgstr "Application Android"
+
+#: kapt_apidae/models.py:68
+msgid "Android tablet application"
+msgstr "Application tablette Android"
+
+#: kapt_apidae/models.py:72
+msgid "Months"
+msgstr "Mois"
+
+#: kapt_apidae/models.py:72
+msgid "Years"
+msgstr "Années"
+
+#: kapt_apidae/models.py:79
+msgid ""
+"Opened everyday on this period except on the days specified on DailyOpening"
+msgstr ""
+"Ouvert tous les jours pendant cette période, sauf les jours spécifiés dans "
+"OuvertureJournalière"
+
+#: kapt_apidae/models.py:82
+msgid "Opened everyday on this period"
+msgstr "Ouvert tous les jours pour cette période"
+
+#: kapt_apidae/models.py:83
+msgid "Opened everyday specified on DailyOpening"
+msgstr "Ouvert tous les jours spécifiés dans OuvertureJournalière"
+
+#: kapt_apidae/models.py:84
+msgid "Opened everyday specified on MonthlyOpening"
+msgstr "Ouvert tous les jours spécifiés dans OuvertureJournalière"
+
+#: kapt_apidae/models.py:88
+msgid "Monday"
+msgstr "Lundi"
+
+#: kapt_apidae/models.py:89
+msgid "Tuesday"
+msgstr "Mardi"
+
+#: kapt_apidae/models.py:90
+msgid "Wednesday"
+msgstr "Mercredi"
+
+#: kapt_apidae/models.py:91
+msgid "Thursday"
+msgstr "Jeudi"
+
+#: kapt_apidae/models.py:92
+msgid "Friday"
+msgstr "Vendredi"
+
+#: kapt_apidae/models.py:93
+msgid "Saturday"
+msgstr "Samedi"
+
+#: kapt_apidae/models.py:94
+msgid "Sunday"
+msgstr "Dimanche"
+
+#: kapt_apidae/models.py:95
+msgid "Everyday"
+msgstr "Tous les jours"
+
+#: kapt_apidae/models.py:99
+msgid "First"
+msgstr "Premier"
+
+#: kapt_apidae/models.py:100
+msgid "Second"
+msgstr "Second"
+
+#: kapt_apidae/models.py:101
+msgid "Third"
+msgstr "Troisième"
+
+#: kapt_apidae/models.py:102
+msgid "Fourth"
+msgstr "Quatrième"
+
+#: kapt_apidae/models.py:103
+msgid "Last"
+msgstr "Dernier"
+
+#: kapt_apidae/models.py:121
+msgid "First of January"
+msgstr "Premier janvier"
+
+#: kapt_apidae/models.py:122
+msgid "First of May"
+msgstr "Premier mai"
+
+#: kapt_apidae/models.py:123
+msgid "Height of May"
+msgstr "Huit mai"
+
+#: kapt_apidae/models.py:124
+msgid "Fourteen of July"
+msgstr "Quatorze juillet"
+
+#: kapt_apidae/models.py:125
+msgid "Fifteen of August"
+msgstr "Quinze aout"
+
+#: kapt_apidae/models.py:126
+msgid "First of November"
+msgstr "Premier novembre"
+
+#: kapt_apidae/models.py:127
+msgid "Eleven of November"
+msgstr "Onze novembre"
+
+#: kapt_apidae/models.py:128
+msgid "Twenty-five of December"
+msgstr "Vingt-cinq décembre"
+
+#: kapt_apidae/models.py:129
+msgid "Berchtoldstag"
+msgstr "Berchtoldstag (Jour de la Saint-Berthold)"
+
+#: kapt_apidae/models.py:130
+msgid "Saint joseph"
+msgstr "Saint Joseph"
+
+#: kapt_apidae/models.py:131
+msgid "Vendredi saint"
+msgstr "Vendredi saint"
+
+#: kapt_apidae/models.py:132
+msgid "Lundi paques"
+msgstr "Lundi de pâques"
+
+#: kapt_apidae/models.py:133
+msgid "Ascension"
+msgstr "Ascension"
+
+#: kapt_apidae/models.py:134
+msgid "Lundi pentecote"
+msgstr "Lundi de pentecôte"
+
+#: kapt_apidae/models.py:135
+msgid "Fete die"
+msgstr "Fête-Dieu"
+
+#: kapt_apidae/models.py:136
+msgid "Lundi du jeune federal"
+msgstr "Jeûne fédéral"
+
+#: kapt_apidae/models.py:137
+msgid "Immaculee conception"
+msgstr "Immaculée Conception"
+
+#: kapt_apidae/models.py:161
+msgid "Published"
+msgstr "Publié"
+
+#: kapt_apidae/models.py:161
+msgid "Hidden"
+msgstr "Caché"
+
+#: kapt_apidae/models.py:161
+msgid "Deleted"
+msgstr "Supprimé"
+
+#: kapt_apidae/models.py:165 kapt_apidae/models.py:1113
+msgid "Open all year"
+msgstr "Ouvert toute l'année"
+
+#: kapt_apidae/models.py:167 kapt_apidae/models.py:1120
+msgid "Temporarily closed"
+msgstr "Fermé temporairement"
+
+#: kapt_apidae/models.py:170
+msgid "One way"
+msgstr "Aller simple (itinérance)"
+
+#: kapt_apidae/models.py:171
+msgid "Round-trip"
+msgstr "Aller-retour"
+
+#: kapt_apidae/models.py:172
+msgid "Loop"
+msgstr "Boucle"
+
+#: kapt_apidae/models.py:178
+msgid "Created on"
+msgstr ""
+
+#: kapt_apidae/models.py:180
+msgid "Number of touristic objects modified"
+msgstr ""
+
+#: kapt_apidae/models.py:183
+msgid "Number of touristic objects added"
+msgstr ""
+
+#: kapt_apidae/models.py:186
+msgid "Number of errors"
+msgstr ""
+
+#: kapt_apidae/models.py:188
+msgid "Ends on"
+msgstr ""
+
+#: kapt_apidae/models.py:190
+msgid "Duration (seconds)"
+msgstr ""
+
+#: kapt_apidae/models.py:193
+msgid "Command launch options"
+msgstr ""
+
+#: kapt_apidae/models.py:196
+msgid "Coherence test passed"
+msgstr ""
+
+#: kapt_apidae/models.py:203
+msgid "Import apidae to kaptravel log"
+msgstr ""
+
+#: kapt_apidae/models.py:204
+msgid "Import apidae to kaptravel logs"
+msgstr ""
+
+#: kapt_apidae/models.py:217
+msgid "Export Apidae generated"
+msgstr ""
+
+#: kapt_apidae/models.py:218
+msgid "Export Apidae failed"
+msgstr ""
+
+#: kapt_apidae/models.py:219
+msgid "Downloading Error"
+msgstr ""
+
+#: kapt_apidae/models.py:220
+msgid "Extraction Error"
+msgstr ""
+
+#: kapt_apidae/models.py:221
+msgid "Import Error"
+msgstr ""
+
+#: kapt_apidae/models.py:222
+msgid "Apidae notification Error"
+msgstr ""
+
+#: kapt_apidae/models.py:223
+msgid "Export integrated"
+msgstr ""
+
+#: kapt_apidae/models.py:226
+msgid "APIDAE website identifier"
+msgstr ""
+
+#: kapt_apidae/models.py:228
+msgid "Export statut"
+msgstr ""
+
+#: kapt_apidae/models.py:230
+msgid "Ponctuel"
+msgstr ""
+
+#: kapt_apidae/models.py:232
+msgid "Reinitialisation"
+msgstr ""
+
+#: kapt_apidae/models.py:235
+msgid "URL de récupération de l'export"
+msgstr ""
+
+#: kapt_apidae/models.py:241
+msgid "URL de confirmation de prise en compte"
+msgstr ""
+
+#: kapt_apidae/models.py:247
+msgid "File has been downloaded"
+msgstr ""
+
+#: kapt_apidae/models.py:250
+msgid "File has been extracted"
+msgstr ""
+
+#: kapt_apidae/models.py:253
+msgid "Import has been launched"
+msgstr ""
+
+#: kapt_apidae/models.py:256
+msgid "Import has been completed"
+msgstr ""
+
+#: kapt_apidae/models.py:269 kapt_apidae/models.py:285
+#: kapt_apidae/models.py:338 kapt_apidae/models.py:354
+#: kapt_apidae/models.py:400 kapt_apidae/models.py:498
+#: kapt_apidae/models.py:815
+msgid "Label"
+msgstr ""
+
+#: kapt_apidae/models.py:276
+msgid "Base element type"
+msgstr ""
+
+#: kapt_apidae/models.py:277
+msgid "Base element types"
+msgstr ""
+
+#: kapt_apidae/models.py:283 kapt_apidae/models.py:608
+#: kapt_apidae/models.py:684 kapt_apidae/models.py:1374
+#: kapt_apidae/models.py:1497 kapt_apidae/models.py:1555
+#: kapt_apidae/models.py:1638 kapt_apidae/models.py:1665
+#: kapt_apidae/models.py:1756 kapt_apidae/models.py:1820
+#: kapt_apidae/models.py:1910 kapt_apidae/models.py:2086
+#: kapt_apidae/models.py:2306 kapt_apidae/models.py:2332
+msgid "Type"
+msgstr ""
+
+#: kapt_apidae/models.py:286 kapt_apidae/models.py:339
+#: kapt_apidae/models.py:402 kapt_apidae/models.py:610
+#: kapt_apidae/models.py:735 kapt_apidae/models.py:904
+#: kapt_apidae/models.py:1364
+msgid "Description"
+msgstr ""
+
+#: kapt_apidae/models.py:287
+msgid "Ordering number"
+msgstr ""
+
+#: kapt_apidae/models.py:288
+msgid "Active"
+msgstr ""
+
+#: kapt_apidae/models.py:292 kapt_apidae/models.py:300
+msgid "Element family"
+msgstr ""
+
+#: kapt_apidae/models.py:311
+msgid "Base element"
+msgstr ""
+
+#: kapt_apidae/models.py:312
+msgid "Base elements"
+msgstr ""
+
+#: kapt_apidae/models.py:318 kapt_apidae/models.py:374
+#: kapt_apidae/models.py:605 kapt_apidae/models.py:688
+#: kapt_apidae/models.py:732
+msgid "Name"
+msgstr ""
+
+#: kapt_apidae/models.py:319
+msgid "code"
+msgstr ""
+
+#: kapt_apidae/models.py:320 kapt_apidae/models.py:924
+msgid "Zip code"
+msgstr ""
+
+#: kapt_apidae/models.py:322
+msgid "Country"
+msgstr ""
+
+#: kapt_apidae/models.py:329 kapt_apidae/models.py:933
+msgid "Locality"
+msgstr ""
+
+#: kapt_apidae/models.py:330
+msgid "Localities"
+msgstr ""
+
+#: kapt_apidae/models.py:345
+msgid "Variable attribute"
+msgstr ""
+
+#: kapt_apidae/models.py:346 kapt_apidae/models.py:1177
+msgid "Variable attributes"
+msgstr ""
+
+#: kapt_apidae/models.py:356
+msgid "Touristic objects"
+msgstr ""
+
+#: kapt_apidae/models.py:363
+msgid "Selection"
+msgstr ""
+
+#: kapt_apidae/models.py:364
+msgid "Selections"
+msgstr ""
+
+#: kapt_apidae/models.py:371
+msgid "Owner type"
+msgstr ""
+
+#: kapt_apidae/models.py:377
+msgid "Department"
+msgstr ""
+
+#: kapt_apidae/models.py:380 kapt_apidae/models.py:830
+msgid "Creation date"
+msgstr ""
+
+#: kapt_apidae/models.py:383 kapt_apidae/models.py:833
+msgid "Last update"
+msgstr ""
+
+#: kapt_apidae/models.py:390 kapt_apidae/models.py:837
+msgid "Object owner"
+msgstr ""
+
+#: kapt_apidae/models.py:391
+msgid "Object owners"
+msgstr ""
+
+#: kapt_apidae/models.py:397
+msgid "Communication type"
+msgstr ""
+
+#: kapt_apidae/models.py:408
+msgid "Communication info"
+msgstr ""
+
+#: kapt_apidae/models.py:409
+msgid "Communication infos"
+msgstr ""
+
+#: kapt_apidae/models.py:416
+msgid "Title"
+msgstr ""
+
+#: kapt_apidae/models.py:423
+msgid "First name"
+msgstr ""
+
+#: kapt_apidae/models.py:426
+msgid "Last name"
+msgstr ""
+
+#: kapt_apidae/models.py:429
+msgid "Position"
+msgstr ""
+
+#: kapt_apidae/models.py:433
+msgid "Function"
+msgstr ""
+
+#: kapt_apidae/models.py:440
+msgid "This contact is the referent"
+msgstr ""
+
+#: kapt_apidae/models.py:444 kapt_apidae/models.py:615
+#: kapt_apidae/models.py:846
+msgid "Internal communication"
+msgstr ""
+
+#: kapt_apidae/models.py:457
+msgid "Contact"
+msgstr ""
+
+#: kapt_apidae/models.py:458
+msgid "Contacts"
+msgstr ""
+
+#: kapt_apidae/models.py:464 kapt_apidae/models.py:476
+msgid "Opening days"
+msgstr ""
+
+#: kapt_apidae/models.py:487
+msgid "Exceptional opening date"
+msgstr ""
+
+#: kapt_apidae/models.py:495 kapt_apidae/models.py:578
+msgid "Beginning date"
+msgstr ""
+
+#: kapt_apidae/models.py:496 kapt_apidae/models.py:579
+msgid "Ending date"
+msgstr ""
+
+#: kapt_apidae/models.py:501
+msgid "Further hourly informations"
+msgstr ""
+
+#: kapt_apidae/models.py:504
+msgid "Opening time"
+msgstr ""
+
+#: kapt_apidae/models.py:507
+msgid "Closing time"
+msgstr ""
+
+#: kapt_apidae/models.py:510
+msgid "Period type"
+msgstr ""
+
+#: kapt_apidae/models.py:515
+msgid "Period is repeated every years"
+msgstr ""
+
+#: kapt_apidae/models.py:518
+msgid "Daily opening days"
+msgstr ""
+
+#: kapt_apidae/models.py:521
+msgid "Monthly opening days"
+msgstr ""
+
+#: kapt_apidae/models.py:524 kapt_apidae/models.py:540
+msgid "Exceptional opening days"
+msgstr ""
+
+#: kapt_apidae/models.py:543
+msgid "Special closure date"
+msgstr ""
+
+#: kapt_apidae/models.py:557
+msgid "Price type"
+msgstr ""
+
+#: kapt_apidae/models.py:560 kapt_apidae/models.py:753
+msgid "Minimum price"
+msgstr ""
+
+#: kapt_apidae/models.py:563 kapt_apidae/models.py:756
+msgid "Maximum price"
+msgstr ""
+
+#: kapt_apidae/models.py:566
+msgid "Additional description"
+msgstr ""
+
+#: kapt_apidae/models.py:576
+msgid "Pricing type"
+msgstr ""
+
+#: kapt_apidae/models.py:582
+msgid "Prices description"
+msgstr ""
+
+#: kapt_apidae/models.py:599
+msgid "Referent structure"
+msgstr ""
+
+#: kapt_apidae/models.py:621 kapt_apidae/models.py:852
+msgid "External communication"
+msgstr ""
+
+#: kapt_apidae/models.py:630
+msgid "Booking organisation"
+msgstr ""
+
+#: kapt_apidae/models.py:631 kapt_apidae/models.py:1170
+msgid "Booking organisations"
+msgstr ""
+
+#: kapt_apidae/models.py:642
+msgid "Language"
+msgstr ""
+
+#: kapt_apidae/models.py:646
+msgid "Url"
+msgstr ""
+
+#: kapt_apidae/models.py:648
+msgid "Url for list display"
+msgstr ""
+
+#: kapt_apidae/models.py:651
+msgid "Url for details display"
+msgstr ""
+
+#: kapt_apidae/models.py:657
+msgid "Url for slide show display"
+msgstr ""
+
+#: kapt_apidae/models.py:663
+msgid "Extension"
+msgstr ""
+
+#: kapt_apidae/models.py:666
+msgid "File name"
+msgstr ""
+
+#: kapt_apidae/models.py:668
+msgid "File size"
+msgstr ""
+
+#: kapt_apidae/models.py:669
+msgid "Hauteur"
+msgstr ""
+
+#: kapt_apidae/models.py:670
+msgid "Largeur"
+msgstr ""
+
+#: kapt_apidae/models.py:671
+msgid "Last modified on"
+msgstr ""
+
+#: kapt_apidae/models.py:677
+msgid "Multimedia file"
+msgstr ""
+
+#: kapt_apidae/models.py:678 kapt_apidae/models.py:686
+msgid "Multimedia files"
+msgstr ""
+
+#: kapt_apidae/models.py:691
+msgid "Legend"
+msgstr ""
+
+#: kapt_apidae/models.py:694
+msgid "Copyright"
+msgstr ""
+
+#: kapt_apidae/models.py:697
+msgid "Remark"
+msgstr ""
+
+#: kapt_apidae/models.py:708
+msgid "Multimedia"
+msgstr ""
+
+#: kapt_apidae/models.py:709
+msgid "Multimedias"
+msgstr ""
+
+#: kapt_apidae/models.py:715 kapt_apidae/models.py:1969
+msgid "Capacity"
+msgstr ""
+
+#: kapt_apidae/models.py:719
+msgid "Room layout"
+msgstr ""
+
+#: kapt_apidae/models.py:738 kapt_apidae/models.py:1797
+#: kapt_apidae/models.py:1878
+msgid "Max capacity"
+msgstr ""
+
+#: kapt_apidae/models.py:741 kapt_apidae/models.py:1700
+#: kapt_apidae/models.py:1887
+msgid "Surface area"
+msgstr ""
+
+#: kapt_apidae/models.py:744
+msgid "Height"
+msgstr ""
+
+#: kapt_apidae/models.py:747
+msgid "Natural lighting"
+msgstr ""
+
+#: kapt_apidae/models.py:750
+msgid "Meeting rooms layouts"
+msgstr ""
+
+#: kapt_apidae/models.py:759
+msgid "Day minimum price"
+msgstr ""
+
+#: kapt_apidae/models.py:762
+msgid "Day maximum price"
+msgstr ""
+
+#: kapt_apidae/models.py:765
+msgid "Resident minimum price"
+msgstr ""
+
+#: kapt_apidae/models.py:768
+msgid "Resident maximum price"
+msgstr ""
+
+#: kapt_apidae/models.py:803
+msgid "HIVER"
+msgstr ""
+
+#: kapt_apidae/models.py:804
+msgid "ETE"
+msgstr ""
+
+#: kapt_apidae/models.py:805
+msgid "HANDICAP"
+msgstr ""
+
+#: kapt_apidae/models.py:806
+msgid "TOURISME_AFFAIRES"
+msgstr ""
+
+#: kapt_apidae/models.py:807
+msgid "GROUPES"
+msgstr ""
+
+#: kapt_apidae/models.py:808
+msgid "PRESTATAIRE_ACTIVITES"
+msgstr ""
+
+#: kapt_apidae/models.py:812
+msgid "Aspect"
+msgstr ""
+
+#: kapt_apidae/models.py:814
+msgid "Apidae Identifier"
+msgstr ""
+
+#: kapt_apidae/models.py:817
+msgid "Publication state"
+msgstr ""
+
+#: kapt_apidae/models.py:825
+msgid "Is a linked object"
+msgstr ""
+
+#: kapt_apidae/models.py:859
+msgid "SIRET"
+msgstr ""
+
+#: kapt_apidae/models.py:862
+msgid "APE or NAF code"
+msgstr ""
+
+#: kapt_apidae/models.py:865
+msgid "RCS code"
+msgstr ""
+
+#: kapt_apidae/models.py:868
+msgid "License authorization number"
+msgstr ""
+
+#: kapt_apidae/models.py:877
+msgid "Management type"
+msgstr ""
+
+#: kapt_apidae/models.py:885
+msgid "Management organisation"
+msgstr ""
+
+#: kapt_apidae/models.py:893
+msgid "Information organisation"
+msgstr ""
+
+#: kapt_apidae/models.py:902
+msgid "Short description"
+msgstr ""
+
+#: kapt_apidae/models.py:908
+msgid "Offers labels"
+msgstr ""
+
+#: kapt_apidae/models.py:915
+msgid "Address"
+msgstr ""
+
+#: kapt_apidae/models.py:918
+msgid "Address (second line)"
+msgstr ""
+
+#: kapt_apidae/models.py:921
+msgid "Address (third line)"
+msgstr ""
+
+#: kapt_apidae/models.py:927
+msgid "Distribution office"
+msgstr ""
+
+#: kapt_apidae/models.py:929
+msgid "Cedex"
+msgstr ""
+
+#: kapt_apidae/models.py:930
+msgid "State"
+msgstr ""
+
+#: kapt_apidae/models.py:940
+msgid "Landmark"
+msgstr ""
+
+#: kapt_apidae/models.py:943
+msgid "Place"
+msgstr ""
+
+#: kapt_apidae/models.py:946
+msgid "Place name"
+msgstr ""
+
+#: kapt_apidae/models.py:949
+msgid "Altitude"
+msgstr ""
+
+#: kapt_apidae/models.py:952
+msgid "Maximum altitude"
+msgstr ""
+
+#: kapt_apidae/models.py:955
+msgid "Minimum altitude"
+msgstr ""
+
+#: kapt_apidae/models.py:958
+msgid "Maximum altitude for the accommodation"
+msgstr ""
+
+#: kapt_apidae/models.py:964
+msgid "Minimum altitude for the accommodation"
+msgstr ""
+
+#: kapt_apidae/models.py:970
+msgid "Access means"
+msgstr ""
+
+#: kapt_apidae/models.py:973
+msgid "Latitude"
+msgstr ""
+
+#: kapt_apidae/models.py:981
+msgid "Longitude"
+msgstr ""
+
+#: kapt_apidae/models.py:992
+msgid "Localities in the geographical area of the object"
+msgstr ""
+
+#: kapt_apidae/models.py:998
+msgid "Environment of the object"
+msgstr ""
+
+#: kapt_apidae/models.py:1005
+msgid "Linked related objects"
+msgstr ""
+
+#: kapt_apidae/models.py:1012
+msgid "Links description"
+msgstr ""
+
+#: kapt_apidae/models.py:1018
+msgid "Equipments"
+msgstr ""
+
+#: kapt_apidae/models.py:1024
+msgid "Services"
+msgstr ""
+
+#: kapt_apidae/models.py:1030 kapt_apidae/models.py:2094
+msgid "Activities"
+msgstr ""
+
+#: kapt_apidae/models.py:1038
+msgid "Comfort services"
+msgstr ""
+
+#: kapt_apidae/models.py:1045
+msgid "Spoken languages"
+msgstr ""
+
+#: kapt_apidae/models.py:1051
+msgid "Documentation languages"
+msgstr ""
+
+#: kapt_apidae/models.py:1057
+msgid "Further welcoming informations"
+msgstr ""
+
+#: kapt_apidae/models.py:1063
+msgid "Accessibility informations"
+msgstr ""
+
+#: kapt_apidae/models.py:1069
+msgid "Accessibility labels"
+msgstr ""
+
+#: kapt_apidae/models.py:1077
+msgid "Customer type"
+msgstr ""
+
+#: kapt_apidae/models.py:1082
+msgid "Group minimum size"
+msgstr ""
+
+#: kapt_apidae/models.py:1085
+msgid "Group maximum size"
+msgstr ""
+
+#: kapt_apidae/models.py:1088
+msgid "Minimum age"
+msgstr ""
+
+#: kapt_apidae/models.py:1091
+msgid "Maximum age"
+msgstr ""
+
+#: kapt_apidae/models.py:1094
+msgid "Minimum age unit"
+msgstr ""
+
+#: kapt_apidae/models.py:1101
+msgid "Maximum age unit"
+msgstr ""
+
+#: kapt_apidae/models.py:1110
+msgid "Opening textual description"
+msgstr ""
+
+#: kapt_apidae/models.py:1128
+msgid "Opening periods description"
+msgstr ""
+
+#: kapt_apidae/models.py:1134
+msgid "Additional opening periods description"
+msgstr ""
+
+#: kapt_apidae/models.py:1139
+msgid "Opening periods"
+msgstr ""
+
+#: kapt_apidae/models.py:1142
+msgid "Closure periods"
+msgstr ""
+
+#: kapt_apidae/models.py:1147
+msgid "Is free"
+msgstr ""
+
+#: kapt_apidae/models.py:1150
+msgid "Pricing textual description"
+msgstr ""
+
+#: kapt_apidae/models.py:1153
+msgid "Additional pricing description"
+msgstr ""
+
+#: kapt_apidae/models.py:1157
+msgid "Pricing periods"
+msgstr ""
+
+#: kapt_apidae/models.py:1163
+msgid "Payment methods"
+msgstr ""
+
+#: kapt_apidae/models.py:1173
+msgid "Additional booking informations"
+msgstr ""
+
+#: kapt_apidae/models.py:1183
+msgid "Internal contacts"
+msgstr ""
+
+#: kapt_apidae/models.py:1189
+msgid "External contacts"
+msgstr ""
+
+#: kapt_apidae/models.py:1198
+msgid "Pictures"
+msgstr ""
+
+#: kapt_apidae/models.py:1206
+msgid "HTTP links"
+msgstr ""
+
+#: kapt_apidae/models.py:1213
+msgid "Business tourism provided"
+msgstr ""
+
+#: kapt_apidae/models.py:1217
+msgid "Business tourism rooms equipped for"
+msgstr ""
+
+#: kapt_apidae/models.py:1223
+msgid "Business tourism rooms equipments"
+msgstr ""
+
+#: kapt_apidae/models.py:1229
+msgid "Catering rooms"
+msgstr ""
+
+#: kapt_apidae/models.py:1235
+msgid "Accommodation rooms"
+msgstr ""
+
+#: kapt_apidae/models.py:1241
+msgid "Meeting rooms"
+msgstr ""
+
+#: kapt_apidae/models.py:1246
+msgid "Equipped meeting rooms quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1249
+msgid "Business tourism max capacity"
+msgstr ""
+
+#: kapt_apidae/models.py:1252
+msgid "Adjustable rooms quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1257
+msgid "Is visitable ?"
+msgstr ""
+
+#: kapt_apidae/models.py:1261
+msgid "Visit languages"
+msgstr ""
+
+#: kapt_apidae/models.py:1267 kapt_apidae/models.py:1273
+msgid "Audio-guide languages"
+msgstr ""
+
+#: kapt_apidae/models.py:1278
+msgid "Group visit average time"
+msgstr ""
+
+#: kapt_apidae/models.py:1281
+msgid "Individual visit average time"
+msgstr ""
+
+#: kapt_apidae/models.py:1285
+msgid "Individual visit services"
+msgstr ""
+
+#: kapt_apidae/models.py:1291
+msgid "Group visit services"
+msgstr ""
+
+#: kapt_apidae/models.py:1296
+msgid "Additional visit informations"
+msgstr ""
+
+#: kapt_apidae/models.py:1300
+msgid "Areas"
+msgstr ""
+
+#: kapt_apidae/models.py:1304
+msgid "Last import in kapt_apidae"
+msgstr ""
+
+#: kapt_apidae/models.py:1309
+msgid "Sports activities"
+msgstr ""
+
+#: kapt_apidae/models.py:1315 kapt_apidae/models.py:2353
+msgid "Cultural activities"
+msgstr ""
+
+#: kapt_apidae/models.py:1321
+msgid "Meta data"
+msgstr ""
+
+#: kapt_apidae/models.py:1330
+msgid "Link type"
+msgstr ""
+
+#: kapt_apidae/models.py:1349
+msgid "Touristic object"
+msgstr ""
+
+#: kapt_apidae/models.py:1355
+msgid "Theme"
+msgstr ""
+
+#: kapt_apidae/models.py:1362
+msgid "Technical name"
+msgstr ""
+
+#: kapt_apidae/models.py:1381
+msgid "Is destination"
+msgstr ""
+
+#: kapt_apidae/models.py:1384
+msgid "Number of shops"
+msgstr ""
+
+#: kapt_apidae/models.py:1387
+msgid "Number of restaurants"
+msgstr ""
+
+#: kapt_apidae/models.py:1390
+msgid "Short description winter"
+msgstr ""
+
+#: kapt_apidae/models.py:1393
+msgid "Description winter"
+msgstr ""
+
+#: kapt_apidae/models.py:1396 kapt_apidae/models.py:1693
+#: kapt_apidae/models.py:1784 kapt_apidae/models.py:1859
+#: kapt_apidae/models.py:1940
+msgid "Labels"
+msgstr ""
+
+#: kapt_apidae/models.py:1399 kapt_apidae/models.py:1620
+msgid "Rankings"
+msgstr ""
+
+#: kapt_apidae/models.py:1405
+msgid "Ski resorts types"
+msgstr ""
+
+#: kapt_apidae/models.py:1410
+msgid "Snowshoes trail quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1413
+msgid "Snowshoes trail kilometers"
+msgstr ""
+
+#: kapt_apidae/models.py:1416
+msgid "Pedestrian routes quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1419
+msgid "Pedestrian routes kilometers"
+msgstr ""
+
+#: kapt_apidae/models.py:1422
+msgid "Minimum age for ski teaching"
+msgstr ""
+
+#: kapt_apidae/models.py:1428
+msgid "Kindergarten age groups"
+msgstr ""
+
+#: kapt_apidae/models.py:1433
+msgid "Linked ski resorts"
+msgstr ""
+
+#: kapt_apidae/models.py:1440
+msgid "Camper van car park"
+msgstr ""
+
+#: kapt_apidae/models.py:1443
+msgid "Campsite quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1446
+msgid "Tourism residences quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1449
+msgid "Holiday resorts quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1452
+msgid "Snow caravans quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1455
+msgid "Ranked resting places quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1458
+msgid "Non-classified hotels quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1461
+msgid "No stars hotels quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1464
+msgid "One star hotels quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1467
+msgid "Two star hotels quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1470
+msgid "Three star hotels quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1473
+msgid "Four star hotels quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1476
+msgid "Five star hotels quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1479
+msgid "Four star luxury hotels quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1483
+msgid "Resting places description"
+msgstr ""
+
+#: kapt_apidae/models.py:1486
+msgid "Accommodations description"
+msgstr ""
+
+#: kapt_apidae/models.py:1511
+msgid "Days quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1514
+msgid "Nights quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1517
+msgid "Location description"
+msgstr ""
+
+#: kapt_apidae/models.py:1520
+msgid "Accommodation description"
+msgstr ""
+
+#: kapt_apidae/models.py:1524 kapt_apidae/models.py:1946
+msgid "Accommodations types"
+msgstr ""
+
+#: kapt_apidae/models.py:1530
+msgid "Transports types"
+msgstr ""
+
+#: kapt_apidae/models.py:1536
+msgid "Activities category"
+msgstr ""
+
+#: kapt_apidae/models.py:1548
+msgid "Chef name"
+msgstr ""
+
+#: kapt_apidae/models.py:1551
+msgid "Brand name"
+msgstr ""
+
+#: kapt_apidae/models.py:1563 kapt_apidae/models.py:1679
+#: kapt_apidae/models.py:1770
+msgid "Ranking"
+msgstr ""
+
+#: kapt_apidae/models.py:1571
+msgid "Specialities"
+msgstr ""
+
+#: kapt_apidae/models.py:1577 kapt_apidae/models.py:1687
+#: kapt_apidae/models.py:1778
+msgid "Chains"
+msgstr ""
+
+#: kapt_apidae/models.py:1583
+msgid "Guides ranking"
+msgstr ""
+
+#: kapt_apidae/models.py:1589 kapt_apidae/models.py:2343
+msgid "Categories"
+msgstr ""
+
+#: kapt_apidae/models.py:1594
+msgid "Rooms description"
+msgstr ""
+
+#: kapt_apidae/models.py:1597 kapt_apidae/models.py:1890
+msgid "Rooms quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1600
+msgid "Air-conditioned rooms quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1603
+msgid "Maximum capacity"
+msgstr ""
+
+#: kapt_apidae/models.py:1606
+msgid "Patio capacity"
+msgstr ""
+
+#: kapt_apidae/models.py:1616
+msgid "Marked trail"
+msgstr ""
+
+#: kapt_apidae/models.py:1625
+msgid "Natural heriatage categories"
+msgstr ""
+
+#: kapt_apidae/models.py:1646
+msgid "Cultural heritage subjects"
+msgstr ""
+
+#: kapt_apidae/models.py:1652
+msgid "Cultural heriatage categories"
+msgstr ""
+
+#: kapt_apidae/models.py:1672 kapt_apidae/models.py:1763
+#: kapt_apidae/models.py:1833 kapt_apidae/models.py:1920
+msgid "Ranking identifier"
+msgstr ""
+
+#: kapt_apidae/models.py:1675 kapt_apidae/models.py:1766
+#: kapt_apidae/models.py:1830 kapt_apidae/models.py:1917
+msgid "Ranking date"
+msgstr ""
+
+#: kapt_apidae/models.py:1703 kapt_apidae/models.py:1872
+#: kapt_apidae/models.py:1966
+msgid "Naturism"
+msgstr ""
+
+#: kapt_apidae/models.py:1706
+msgid "Caravaneige/snow caravans"
+msgstr ""
+
+#: kapt_apidae/models.py:1709
+msgid "Ranked campingplot quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1712
+msgid "Passing campingplot quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1715
+msgid "Rental passing campingplot quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1718
+msgid "Naked passing campingplot quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1721
+msgid "Residential campingplot quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1724
+msgid "Snow caravans campingplot quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1727
+msgid "Tents campingplot quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1730
+msgid "Caravans campingplot quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1733
+msgid "Campervan quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1736
+msgid "Mobilehome quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1739
+msgid "Tents rental quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1742
+msgid "Bungalow rental quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1745
+msgid "Caravans rental quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1791
+msgid "Ranked rooms quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1794
+msgid "Hotel declared rooms quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1800
+msgid "Single rooms quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1803
+msgid "Double rooms quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1806
+msgid "Suite rooms quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1809
+msgid "Reduced mobility rooms quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1827
+msgid "Last visit date"
+msgstr ""
+
+#: kapt_apidae/models.py:1836
+msgid "Label authorization identifier"
+msgstr ""
+
+#: kapt_apidae/models.py:1843 kapt_apidae/models.py:1924
+msgid "Prefectural classification"
+msgstr ""
+
+#: kapt_apidae/models.py:1851
+msgid "Label type"
+msgstr ""
+
+#: kapt_apidae/models.py:1865
+msgid "Habitation types"
+msgstr ""
+
+#: kapt_apidae/models.py:1875
+msgid "Accommodation capacity"
+msgstr ""
+
+#: kapt_apidae/models.py:1881
+msgid "Double beds quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1884
+msgid "Single beds quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1893
+msgid "Bedrooms quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1896
+msgid "Floors quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1899
+msgid "Floor number"
+msgstr ""
+
+#: kapt_apidae/models.py:1932
+msgid "Chain and label"
+msgstr ""
+
+#: kapt_apidae/models.py:1952
+msgid "Housing types"
+msgstr ""
+
+#: kapt_apidae/models.py:1958
+msgid "Agrements"
+msgstr ""
+
+#: kapt_apidae/models.py:1972
+msgid "Youth and sports capacity"
+msgstr ""
+
+#: kapt_apidae/models.py:1975
+msgid "National education capacity"
+msgstr ""
+
+#: kapt_apidae/models.py:1978
+msgid "Safety committee capacity"
+msgstr ""
+
+#: kapt_apidae/models.py:1981
+msgid "Middle size dormitory capacity"
+msgstr ""
+
+#: kapt_apidae/models.py:1984
+msgid "King size dormitory capacity"
+msgstr ""
+
+#: kapt_apidae/models.py:1987
+msgid "Reduced mobility accommodations quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1992
+msgid "One person accommodations quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1995
+msgid "Two persons accommodations quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:1998
+msgid "Three persons accommodations quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:2001
+msgid "Four persons accommodations quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:2004
+msgid "Five persons accommodations quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:2007
+msgid "Six persons accommodations quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:2010
+msgid "More than six persons accommodations quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:2023
+msgid "Group accommodation"
+msgstr ""
+
+#: kapt_apidae/models.py:2029
+msgid "Agrement"
+msgstr ""
+
+#: kapt_apidae/models.py:2034
+msgid "Agrement identifier"
+msgstr ""
+
+#: kapt_apidae/models.py:2045
+msgid "Manifestation types"
+msgstr ""
+
+#: kapt_apidae/models.py:2051
+msgid "Celebrations and Manifestations categories"
+msgstr ""
+
+#: kapt_apidae/models.py:2057
+msgid "Celebrations and Manifestations subjects"
+msgstr ""
+
+#: kapt_apidae/models.py:2063
+msgid "Celebrations and Manifestations generic type"
+msgstr ""
+
+#: kapt_apidae/models.py:2071
+msgid "Manifestation reach/impact"
+msgstr ""
+
+#: kapt_apidae/models.py:2100
+msgid "Level difference"
+msgstr ""
+
+#: kapt_apidae/models.py:2103
+msgid "Distance"
+msgstr ""
+
+#: kapt_apidae/models.py:2106
+msgid "Daily duration"
+msgstr ""
+
+#: kapt_apidae/models.py:2109
+msgid "Mobility duration"
+msgstr ""
+
+#: kapt_apidae/models.py:2112
+msgid "Itinerary type"
+msgstr ""
+
+#: kapt_apidae/models.py:2127
+msgid "Classification"
+msgstr ""
+
+#: kapt_apidae/models.py:2134
+msgid "Types"
+msgstr ""
+
+#: kapt_apidae/models.py:2137
+msgid "Linked domain description"
+msgstr ""
+
+#: kapt_apidae/models.py:2140
+msgid "Free ski pass conditions"
+msgstr ""
+
+#: kapt_apidae/models.py:2143
+msgid "Ski pass identifier"
+msgstr ""
+
+#: kapt_apidae/models.py:2146
+msgid "Children validity conditions"
+msgstr ""
+
+#: kapt_apidae/models.py:2149
+msgid "Senior validity conditions"
+msgstr ""
+
+#: kapt_apidae/models.py:2153
+msgid "EGPS"
+msgstr ""
+
+#: kapt_apidae/models.py:2159
+msgid "Subarea ski resorts"
+msgstr ""
+
+#: kapt_apidae/models.py:2165
+msgid "Parents ski resorts"
+msgstr ""
+
+#: kapt_apidae/models.py:2170
+msgid "Artificial snow"
+msgstr ""
+
+#: kapt_apidae/models.py:2173
+msgid "Free ski lift"
+msgstr ""
+
+#: kapt_apidae/models.py:2176
+msgid "Snow description"
+msgstr ""
+
+#: kapt_apidae/models.py:2179
+msgid "Ski trail quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:2182
+msgid "Ski trail kilometers"
+msgstr ""
+
+#: kapt_apidae/models.py:2185
+msgid "Green ski trail quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:2188
+msgid "Green ski trail kilometers"
+msgstr ""
+
+#: kapt_apidae/models.py:2191
+msgid "Blue ski trail quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:2194
+msgid "Blue ski trail kilometers"
+msgstr ""
+
+#: kapt_apidae/models.py:2197
+msgid "Red ski trail quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:2200
+msgid "Red ski trail kilometers"
+msgstr ""
+
+#: kapt_apidae/models.py:2203
+msgid "Black ski trail quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:2206
+msgid "Black ski trail kilometers"
+msgstr ""
+
+#: kapt_apidae/models.py:2209
+msgid "Skating kilometers"
+msgstr ""
+
+#: kapt_apidae/models.py:2212
+msgid "Aerial lift quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:2215
+msgid "Platter lift quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:2218
+msgid "Chairlift quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:2221
+msgid "Cable car quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:2224
+msgid "Aerial tramway quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:2227
+msgid "Other lift quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:2230
+msgid "Pedestrian accessible lift quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:2233
+msgid "Handiski quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:2236
+msgid "Cross-country skiing quantity"
+msgstr ""
+
+#: kapt_apidae/models.py:2246
+msgid "Appellation d'origine controlée"
+msgstr ""
+
+#: kapt_apidae/models.py:2249
+msgid "Quality charter description"
+msgstr ""
+
+#: kapt_apidae/models.py:2252
+msgid "'AOC' description"
+msgstr ""
+
+#: kapt_apidae/models.py:2256
+msgid "Production region"
+msgstr ""
+
+#: kapt_apidae/models.py:2263
+msgid "Local area"
+msgstr ""
+
+#: kapt_apidae/models.py:2267
+msgid "Production area"
+msgstr ""
+
+#: kapt_apidae/models.py:2275
+msgid "Goods types"
+msgstr ""
+
+#: kapt_apidae/models.py:2281
+msgid "Operators status"
+msgstr ""
+
+#: kapt_apidae/models.py:2287
+msgid "Quality charter"
+msgstr ""
+
+#: kapt_apidae/models.py:2293
+msgid "Aop aoc igps"
+msgstr ""
+
+#: kapt_apidae/models.py:2314
+msgid "Detailed types"
+msgstr ""
+
+#: kapt_apidae/models.py:2325
+msgid "Session duration"
+msgstr ""
+
+#: kapt_apidae/models.py:2328
+msgid "Frequency"
+msgstr ""
+
+#: kapt_apidae/models.py:2339
+msgid "Durations"
+msgstr ""
+
+#: kapt_apidae/models.py:2348
+msgid "Sport activities"
+msgstr ""
+
+#: kapt_apidae/models.py:2357
+msgid "Recipient"
+msgstr ""

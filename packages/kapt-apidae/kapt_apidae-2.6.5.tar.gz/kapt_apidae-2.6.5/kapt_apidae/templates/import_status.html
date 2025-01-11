@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIDAE Interface</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #d3dce5;
+        color: #ecf0f1;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .container {
+        width: 90%;
+        max-width: 800px;
+        background-color: #34495e;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        margin: 2em auto;
+      }
+      .header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      h1 {
+        color: #c68e88;
+        font-size: 28px;
+        margin: 0;
+        padding: 10px 0;
+      }
+      h2 {
+        font-size: 20px;
+        margin-top: 2em;
+        margin-bottom: 1em;
+        padding: 10px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      th, td {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #34495e;
+      }
+      th {
+        background-color: #2c3e50;
+        color: #ecf0f1;
+      }
+      .success {
+        color: #27ae60;
+      }
+      .error {
+        color: #e74c3c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Dernières opérations réalisées durant les dernières 24h :</h1>
+      </div>
+      {% if last_apidae_kapttravel_log %}
+        <div class="header">
+          <h2>Dernier import KAPT effectué</h2>
+        </div>
+        <table>
+          <tr>
+            <th>Date de lancement</th>
+            <td>{{ last_apidae_kapttravel_log.launch_date }}</td>
+          </tr>
+          <tr>
+            <th>Objets touristiques modifiés</th>
+            <td>{{ last_apidae_kapttravel_log.objects_modified }}</td>
+          </tr>
+          <tr>
+            <th>Objets touristiques ajoutés</th>
+            <td>{{ last_apidae_kapttravel_log.objects_added }}</td>
+          </tr>
+          <tr>
+            <th>Erreurs</th>
+            <td>{{ last_apidae_kapttravel_log.errors }}</td>
+          </tr>
+          <tr>
+            <th>Date de fin</th>
+            <td>{{ last_apidae_kapttravel_log.end_date }}</td>
+          </tr>
+          <tr>
+            <th>Durée (en secondes)</th>
+            <td>{{ last_apidae_kapttravel_log.duration }}</td>
+          </tr>
+          <tr>
+            <th>Options de lancement</th>
+            <td>{{ last_apidae_kapttravel_log.launch_options }}</td>
+          </tr>
+          <tr>
+            <th>Test de cohérence réussi</th>
+            <td class="{{ last_apidae_kapttravel_log.coherence_test_passed|yesno:'success,error' }}">
+              {{ last_apidae_kapttravel_log.coherence_test_passed |yesno:'Oui,Non' }}
+            </td>
+          </tr>
+        </table>
+      {% else %}
+        <div class="header">
+          <h2>Aucun import Kapt réalisé.</h2>
+        </div>
+      {% endif %}
+
+      <hr>
+
+      {% if last_apidae_settings_import %}
+        <div class="header">
+          <h2>Dernier export Apidae</h2>
+        </div>
+        <table>
+          <tr>
+            <th>Date de création</th>
+            <td>{{ last_apidae_settings_import.created_on }}</td>
+          </tr>
+          <tr>
+            <th>Status de l'import</th>
+            <td class="{{ last_apidae_settings_import.get_statut_display|yesno:'success,error' }}">
+              {{ last_apidae_settings_import.get_statut_display }}
+            </td>
+          </tr>
+          <tr>
+            <th>Ponctuel</th>
+            <td>{{ last_apidae_settings_import.ponctuel|yesno:'Oui,Non' }}</td>
+          </tr>
+          <tr>
+            <th>Réinitialisation</th>
+            <td>{{ last_apidae_settings_import.reinitialisation|yesno:'Oui,Non' }}</td>
+          </tr>
+          <tr>
+            <th>Url de récupération</th>
+            <td>{{ last_apidae_settings_import.urlRecuperation }}</td>
+          </tr>
+          <tr>
+            <th>Url de confirmation</th>
+            <td>{{ last_apidae_settings_import.urlConfirmation }}</td>
+          </tr>
+          <tr>
+            <th>Fichier téléchargé</th>
+            <td>{{ last_apidae_settings_import.file_downloaded|yesno:'Oui,Non' }}</td>
+          </tr>
+          <tr>
+            <th>Fichier extrait</th>
+            <td>{{ last_apidae_settings_import.file_extracted|yesno:'Oui,Non' }}</td>
+          </tr>
+          <tr>
+            <th>Import lancé</th>
+            <td>{{ last_apidae_settings_import.import_launched|yesno:'Oui,Non' }}</td>
+          </tr>
+          <tr>
+            <th>Import complet</th>
+            <td>{{ last_apidae_settings_import.import_complete|yesno:'Oui,Non' }}</td>
+          </tr>
+        </table>
+      {% else %}
+        <div class="header">
+          <h2>Aucun export ponctuel trouvé dans les dernières 24h, veuillez vérifier le statut d'APIDAE.</h2>
+        </div>
+      {% endif %}
+    </div>
+  </body>
+</html>
