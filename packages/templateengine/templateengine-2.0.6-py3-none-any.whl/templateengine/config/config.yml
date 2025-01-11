@@ -1,0 +1,45 @@
+---
+# Container descriptor
+- descriptor: "pip-services:context-info:default:default:1.0"
+  name: "templateengine-v2"
+  description: "Template Engine V2"
+
+# Console logger
+- descriptor: "pip-services:logger:console:default:1.0"
+  level: "trace"
+
+# Controller
+- descriptor: "templateengine-v2:controller:default:default:1.0"
+
+# Strategies
+- descriptor: "templateengine-v2:strategy:default:create-skeleton:1.0"
+- descriptor: "templateengine-v2:strategy:default:parse-description:1.0"
+
+# Planners
+- descriptor: "templateengine-v2:planner:default:create-skeleton:1.0"
+- descriptor: "templateengine-v2:planner:default:parse-description:1.0"
+- descriptor: "templateengine-v2:planner:default:strategy-manager:1.0"
+
+# Executor
+- descriptor: "templateengine-v2:executor:default:default:1.0"
+
+# Tools
+- descriptor: "templateengine-v2:tool:default:copy-all:1.0"
+- descriptor: "templateengine-v2:tool:default:copy-dir:1.0"
+- descriptor: "templateengine-v2:tool:default:create-dir:1.0"
+- descriptor: "templateengine-v2:tool:default:rename-dir:1.0"
+- descriptor: "templateengine-v2:tool:default:delete-dir:1.0"
+- descriptor: "templateengine-v2:tool:default:copy-file:1.0"
+- descriptor: "templateengine-v2:tool:default:create-file:1.0"
+- descriptor: "templateengine-v2:tool:default:rename-file:1.0"
+- descriptor: "templateengine-v2:tool:default:delete-file:1.0"
+- descriptor: "templateengine-v2:tool:default:edit-content:1.0"
+
+# AI Models
+- descriptor: "templateengine-v2:ai-model:default:openai:1.0"
+
+# UI Spinner
+- descriptor: "templateengine-v2:spinner:default:default:1.0"
+
+# Error Handling
+- descriptor: "templateengine-v2:error-handling:default:default:1.0"
