@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry.build]
+source = "src"
+
+[project]
+name = "tgSecuLib"
+version = "0.2.1"
+description = "This is a security module"
+authors = [{ name="jffwxs", email="kvostrecova0207@mail.ru" }]
+license = { text = "MIT" }
+readme = "README.md"
