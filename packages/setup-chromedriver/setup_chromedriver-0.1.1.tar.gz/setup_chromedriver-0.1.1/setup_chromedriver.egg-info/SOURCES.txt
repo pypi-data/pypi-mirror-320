@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+setup_chromedriver/__init__.py
+setup_chromedriver/main.py
+setup_chromedriver.egg-info/PKG-INFO
+setup_chromedriver.egg-info/SOURCES.txt
+setup_chromedriver.egg-info/dependency_links.txt
+setup_chromedriver.egg-info/requires.txt
+setup_chromedriver.egg-info/top_level.txt
+tests/test_setup_chromedriver.py
