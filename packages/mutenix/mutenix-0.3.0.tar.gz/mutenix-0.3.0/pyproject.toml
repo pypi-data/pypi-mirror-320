@@ -1,0 +1,46 @@
+[project]
+name = "mutenix"
+version = "0.3.0"
+description = "Mutenix host software for the Mutenix macropad"
+readme = "README.md"
+requires-python = ">=3.12"
+include = [
+    "templates/**",
+    "static/**",
+    "assets/**",
+    "README.md",
+    "LICENSE"
+]
+dependencies = [
+     "hidapi>=0.14.0.post4",
+     "websockets>=14.1",
+     "pydantic>=2.10.4",
+     "requests>=2.32.3",
+     "aiohttp>=3.11.11",
+     "pywin32; platform_system=='Windows'",
+     "pywinauto; platform_system=='Windows'",
+     "tqdm>=4.67.1",
+     "semver>=3.0.2",
+     "types-requests>=2.32.0.20241016",
+     "pytest-asyncio>=0.25.0",
+     "aiohttp-jinja2>=1.6",
+     "pystray>=0.19.5",
+     "pyyaml>=6.0.2",
+     "markdown>=3.7",
+]
+
+
+[project.scripts]
+mutenix = "mutenix:runmain"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest-cov>=6.0.0",
+    "pytest-timeout>=2.3.1",
+    "pytest>=8.3.4",
+    "pyinstaller>=6.11.1",
+]

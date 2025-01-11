@@ -1,0 +1,11 @@
+*token.txt
+mutenix.log
+.venv
+.pytest_cache
+.mypy_cache
+.ruff_cache
+build/
+.coverage
+.coverage.*
+__pycache__
+mutenix.yaml
