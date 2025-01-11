@@ -1,0 +1,14 @@
+README.md
+setup.py
+fitdataset/__init__.py
+fitdataset/constantes_parser_dataset.py
+fitdataset/dataset.py
+fitdataset/dataset_nutritional.py
+fitdataset/interfaces.py
+fitdataset/parser.py
+fitdataset/utils.py
+fitdataset.egg-info/PKG-INFO
+fitdataset.egg-info/SOURCES.txt
+fitdataset.egg-info/dependency_links.txt
+fitdataset.egg-info/requires.txt
+fitdataset.egg-info/top_level.txt

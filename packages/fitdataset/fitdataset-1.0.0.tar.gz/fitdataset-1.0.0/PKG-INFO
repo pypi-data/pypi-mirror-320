@@ -1,0 +1,44 @@
+Metadata-Version: 2.2
+Name: fitdataset
+Version: 1.0.0
+Summary: Un package Python pour gérer des datasets nutritionnels dans le cadre du projet FitObjective.
+Home-page: https://gitlab.com/misternobody01/fitobjective-dataset.git
+Author: Monsieur Nobody
+Author-email: monsieurnobody01@gmail.com
+License: MIT
+Keywords: nutrition dataset pandas fitobjective
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: certifi>=2024.12.14
+Requires-Dist: charset-normalizer>=3.4.1
+Requires-Dist: idna>=3.10
+Requires-Dist: numpy>=2.2.1
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: python-dateutil>=2.9.0.post0
+Requires-Dist: pytz>=2024.2
+Requires-Dist: requests>=2.32.3
+Requires-Dist: six>=1.17.0
+Requires-Dist: tzdata>=2024.2
+Requires-Dist: xlrd>=2.0.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# FitObjectiveDataset
+
+FitObjectiveDataset est un package Python qui permet de récupérer des produits alimentaires avec leurs données nutritionnelles, présentées sous forme de DataFrames Pandas.
+
+Ce package minimaliste offre une gestion simplifiée mais efficace des fichiers. Il inclut des fonctionnalités essentielles ainsi qu'un premier tri des données. Il est également possible de récupérer l'intégralité de la DataFrame brute si nécessaire.
