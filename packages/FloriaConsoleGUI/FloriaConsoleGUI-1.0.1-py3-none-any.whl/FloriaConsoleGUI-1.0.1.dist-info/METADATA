@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: FloriaConsoleGUI
+Version: 1.0.1
+Summary: Framework for console GUI apps
+Home-page: https://pypi.org/project/FloriaConsoleGUI/
+Author: FloriaProduction
+Author-email: FloriaProduction@yandex.ru
+License: Apache-2.0
+Project-URL: Documentation, https://FloriaConsoleGUI.github.io
+Keywords: python console gui ui ux
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: readchar
+
+Framework for console GUI apps
