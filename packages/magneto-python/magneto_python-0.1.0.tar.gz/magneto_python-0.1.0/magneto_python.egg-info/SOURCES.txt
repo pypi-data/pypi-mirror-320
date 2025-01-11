@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+magneto/__init__.py
+magneto/basic_matcher.py
+magneto/bp_reranker.py
+magneto/column_encoder.py
+magneto/embedding_matcher.py
+magneto/llm_reranker.py
+magneto/magneto.py
+magneto/retriever.py
+magneto_python.egg-info/PKG-INFO
+magneto_python.egg-info/SOURCES.txt
+magneto_python.egg-info/dependency_links.txt
+magneto_python.egg-info/requires.txt
+magneto_python.egg-info/top_level.txt
