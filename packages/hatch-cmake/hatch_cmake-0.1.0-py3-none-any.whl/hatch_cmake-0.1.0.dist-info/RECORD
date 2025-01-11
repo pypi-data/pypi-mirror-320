@@ -1,0 +1,6 @@
+hatch_cmake/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+hatch_cmake/tests/test_all.py,sha256=oxfnOHnL_Q5qYT5HumRlZ2ZU4HuPbIK7W_dvpXGvACU,68
+hatch_cmake-0.1.0.dist-info/METADATA,sha256=8YM4WI5HczOJFEnAD_hQKSBqB_U4mxrYM-KO3beD6fs,2493
+hatch_cmake-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+hatch_cmake-0.1.0.dist-info/licenses/LICENSE,sha256=4KgkKugPo8mV7Ql3yVj3-tXT4mD7wE09eYyXccFDcQI,11353
+hatch_cmake-0.1.0.dist-info/RECORD,,
