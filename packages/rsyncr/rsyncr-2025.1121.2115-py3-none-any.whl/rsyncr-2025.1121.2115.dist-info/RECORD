@@ -1,0 +1,12 @@
+rsyncr/.corrupdetect,sha256=cUM9hifbaCDtaFFP7xWsOoeAE-9Wvr8nD2ZEKgR0Pdw,99
+rsyncr/.flake8,sha256=HWzJFq_UrbBk2lTxeFZL8rhbcvhs-uayHj-DNiQPxQY,2202
+rsyncr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rsyncr/__main__.py,sha256=4P02G253NSRuZdFUL31Rzkh3RuEvDSae3lDan_b-wKM,40
+rsyncr/distance.py,sha256=3JzXw9FWrWgO91Su-RBZHfOef5M71kmLe5OBB5wncwQ,7051
+rsyncr/help.py,sha256=WlXEuxs6dDLEd2zkXag0-jrGKoijFr-_IjqsQmjSLkg,2163
+rsyncr/rsyncr.py,sha256=cdPULDIA5wuqwn3LdH40BY0cHUsy_HRcz0V8zfznaSY,20968
+rsyncr-2025.1121.2115.dist-info/METADATA,sha256=AaQxM8XwBQCnvn5xP3pScrll9zP2u1H8FpOMXWJbyno,5355
+rsyncr-2025.1121.2115.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+rsyncr-2025.1121.2115.dist-info/entry_points.txt,sha256=1K3QJP9E70FpsSGTQ1MFSvegyTMFyaBjqm0XC4iLDwU,46
+rsyncr-2025.1121.2115.dist-info/licenses/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+rsyncr-2025.1121.2115.dist-info/RECORD,,
