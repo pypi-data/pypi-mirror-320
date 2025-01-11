@@ -1,0 +1,9 @@
+mcp_scholarly/__init__.py,sha256=yD6a4kVwFEdB2jpG4VRT7fEovEhV_vduuK_mUxXYeU0,220
+mcp_scholarly/arxiv_search.py,sha256=vAe7pYJqC6_atnQ4gK9yTykaINuBoBH2d2SmoEyaNEY,1200
+mcp_scholarly/google_scholar.py,sha256=uHeZOrvwjTepLXxR_75mD5tdW_G4WEemEoHcBMCWDCI,1055
+mcp_scholarly/server.py,sha256=pPr1zq1ZyicTTmNE5MNVXyuOcHQgtevX5p_-ZObIGig,3059
+mcp_scholarly-0.1.0.dist-info/METADATA,sha256=g3qnH_4ZilasyvTM7ETSzRhZOdHdmRjbW8kHwKokYZk,3144
+mcp_scholarly-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcp_scholarly-0.1.0.dist-info/entry_points.txt,sha256=agfT7uCrWsRKJdjE_nd4BmoeDTXfxPip2GOX9u_ISvk,53
+mcp_scholarly-0.1.0.dist-info/licenses/LICENSE,sha256=XrfSE-gtmYj5ODB6DDTCHWmJVneFcNJDuBzSPwXJc2s,1091
+mcp_scholarly-0.1.0.dist-info/RECORD,,
