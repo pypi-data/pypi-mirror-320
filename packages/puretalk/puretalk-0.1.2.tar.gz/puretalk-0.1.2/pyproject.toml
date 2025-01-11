@@ -1,0 +1,28 @@
+[project]
+name = "puretalk"
+version = "0.1.2"
+description = "Text-to-Speech (TTS) with natural human voice involves converting written text into spoken words using advanced machine learning models. These models are trained to produce speech that closely mimics the nuances, intonations, and rhythms of human speech, making the output sound more natural and lifelike."
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "transformers (>=4.47.1,<5.0.0)",
+    "torch (>=2.5.1,<3.0.0)",
+    "librosa (>=0.10.2.post1,<0.11.0)",
+    "click (>=8.1.8,<9.0.0)",
+    "torchaudio (>=2.5.1,<3.0.0)",
+    "sounddevice (>=0.5.1,<0.6.0)",
+    "tokenizers (>=0.21.0,<0.22.0)"
+]
+
+[project.scripts]
+puretalk-generate = "puretalk:main.generate"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+[tool.poetry.group.dev.dependencies]
+twine = "^6.0.1"
+
