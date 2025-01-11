@@ -1,0 +1,16 @@
+CHANGELOG.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+src/libreflow/__init__.py
+src/libreflow.extensions.anpo.dependency_manager.egg-info/PKG-INFO
+src/libreflow.extensions.anpo.dependency_manager.egg-info/SOURCES.txt
+src/libreflow.extensions.anpo.dependency_manager.egg-info/dependency_links.txt
+src/libreflow.extensions.anpo.dependency_manager.egg-info/requires.txt
+src/libreflow.extensions.anpo.dependency_manager.egg-info/top_level.txt
+src/libreflow/extensions/__init__.py
+src/libreflow/extensions/anpo/__init__.py
+src/libreflow/extensions/anpo/dependency_manager/__init__.py
+src/libreflow/extensions/anpo/dependency_manager/_version.py
