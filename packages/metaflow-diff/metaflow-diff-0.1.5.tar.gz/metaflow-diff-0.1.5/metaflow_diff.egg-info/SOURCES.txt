@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+metaflow_diff/__init__.py
+metaflow_diff/metaflow_diff.py
+metaflow_diff.egg-info/PKG-INFO
+metaflow_diff.egg-info/SOURCES.txt
+metaflow_diff.egg-info/dependency_links.txt
+metaflow_diff.egg-info/entry_points.txt
+metaflow_diff.egg-info/requires.txt
+metaflow_diff.egg-info/top_level.txt
