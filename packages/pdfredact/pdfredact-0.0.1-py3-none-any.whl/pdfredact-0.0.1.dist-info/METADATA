@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: pdfredact
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/JSv4/PdfRedact#readme
+Project-URL: Issues, https://github.com/JSv4/PdfRedact/issues
+Project-URL: Source, https://github.com/JSv4/PdfRedact
+Author-email: JSv4 <scrudato@umich.edu>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: pdf2image==1.17.0
+Requires-Dist: pillow==11.1.0
+Requires-Dist: plasmapdf==0.1.1
+Requires-Dist: rapidfuzz==3.11.0
+Requires-Dist: reportlab==4.2.5
+Description-Content-Type: text/markdown
+
+# PdfRedact
+
+[![PyPI - Version](https://img.shields.io/pypi/v/pdfredact.svg)](https://pypi.org/project/pdfredact)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pdfredact.svg)](https://pypi.org/project/pdfredact)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install pdfredact
+```
+
+## License
+
+`pdfredact` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
