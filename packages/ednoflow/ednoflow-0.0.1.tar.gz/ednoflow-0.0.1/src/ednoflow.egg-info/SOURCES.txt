@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/ednoflow/__init__.py
+src/ednoflow.egg-info/PKG-INFO
+src/ednoflow.egg-info/SOURCES.txt
+src/ednoflow.egg-info/dependency_links.txt
+src/ednoflow.egg-info/requires.txt
+src/ednoflow.egg-info/top_level.txt

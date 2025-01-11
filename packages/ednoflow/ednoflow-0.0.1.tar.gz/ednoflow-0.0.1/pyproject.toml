@@ -1,0 +1,14 @@
+[tool.poetry]  # This section is for Poetry (optional, if using Poetry)
+name = "ednoflow"
+version = "0.0.1"
+description = "granular flow dynamics for edge-node networks"
+authors = ["Sparisoma Viridi <dudung@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://dudung.github.io/ednoflow"
+repository = "https://github.com/dudung/ednoflow"
+keywords = ["agent-based", "flow", "networks", "graphs", "dynamic-flows"]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"

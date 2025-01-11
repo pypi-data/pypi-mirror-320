@@ -1,0 +1,37 @@
+Metadata-Version: 2.2
+Name: ednoflow
+Version: 0.0.1
+Summary: granular flow dynamics for edge-node networks
+Home-page: https://github.com/dudung/ednoflow
+Author: Sparisoma Viridi
+Author-email: dudung@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: matplotlib>=3.8.4
+Requires-Dist: pandas>=2.2.2
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# ednoflow
+EdnoFlow is a framework for simulating dynamic agent-based flows on graphs, where agents move along edges connecting nodes (edge-node flow).
+
+## entities
+Current entities are
++ `Node` represents node in graph.
++ `Edge` represents an edge in the graph.
++ `Edge` represents a graph-based network consisting of nodes and edges.
++ `Agent` represents an agent that moves through the graph.
