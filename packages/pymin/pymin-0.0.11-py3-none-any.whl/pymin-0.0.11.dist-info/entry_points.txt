@@ -1,0 +1,3 @@
+[console_scripts]
+pm = pymin.cli:cli
+pymin = pymin.cli:cli
