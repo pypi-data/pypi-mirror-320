@@ -1,0 +1,11 @@
+power_grid_model_io_native/__init__.py,sha256=RIm9DagafZ-b6sJWQkC4C6FwC8cm8jT8K3x_VLOs39A,276
+power_grid_model_io_native/_core/__init__.py,sha256=qwbj1j-Aa_yRB-E3j35pEVtF3mgH8CVIXAnog5mOry0,138
+power_grid_model_io_native/_core/error_handling.py,sha256=CM4tl_qlSqPuFLQXplWB-kfhXJm8JF5SF8cn4Qv5gdU,3292
+power_grid_model_io_native/_core/_power_grid_model_io_core.so,sha256=KXqrpMwDvfSgSYb6jiHA0MKAn-CQg3JDLB36A86Qu3g,1175984
+power_grid_model_io_native/_core/power_grid_model_io_core.py,sha256=4fCixmqN5NuSpwu-kJcbb1YSTmryy036y-cF6LpaW4I,4798
+power_grid_model_io_native/_core/pgm_vnf_converter.py,sha256=qPP3j2D2kzu9VTj_O95MlpdVqeX2GYgT0ne9_97SzNM,1437
+power_grid_model_io_native-0.1.12.dist-info/METADATA,sha256=bJvv9m_NL40eJgNdjvWT0JxptyCSXnhf_If_KEL7HS8,4786
+power_grid_model_io_native-0.1.12.dist-info/RECORD,,
+power_grid_model_io_native-0.1.12.dist-info/top_level.txt,sha256=IE0nRmi-0TjMpO1OF3iLlXVfjjtqZ9AITkutdTDta6I,27
+power_grid_model_io_native-0.1.12.dist-info/WHEEL,sha256=ASZnmnVSPUUK7q93oxaLq_7gdUzlYRyVE0LI1bSMRZ4,110
+power_grid_model_io_native-0.1.12.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
