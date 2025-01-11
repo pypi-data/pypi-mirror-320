@@ -1,0 +1,75 @@
+[tool.poetry]
+name = "sqlfactory"
+version = "v1.5.2"
+description = "Convenient classes for building SQL queries in Python. Main purpose of this library is to ease construction of SQL queries in Python code. It is not an ORM (and don't intend to be), just a plain SQL query builder with syntax as similar to actual SQL as possible."
+authors = ["Michal Kuchta <niximor@gmail.com>"]
+readme = "README.md"
+packages = [{include = "sqlfactory"}]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Topic :: Database",
+    "Topic :: Software Development :: Libraries",
+    "Programming Language :: SQL",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.urls]
+Homepage = "https://gitlab.com/gcm-cz/sqlfactory"
+Repository = "https://gitlab.com/gcm-cz/sqlfactory"
+Issues = "https://gitlab.com/gcm-cz/sqlfactory/-/issues"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+pytest-asyncio = "^0.23.6"
+pylint = "^3.1.0"
+mypy = "^1.9.0"
+pytest-cov = "^5.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pylint.'MESSAGES CONTROL']
+max-line-length = 130
+max-args = 8
+max-positional-arguments = 8
+disable = [
+    "missing-module-docstring",
+    "too-few-public-methods",
+    "duplicate-code",
+]
+enable = [
+    "useless-suppression"
+]
+load-plugins = [
+    "pylint.extensions.no_self_use",
+]
+
+[tool.mypy]
+# more informative output
+pretty = true
+show_error_codes = true
+show_error_context = true
+
+# stricter rules
+warn_redundant_casts = true
+warn_unreachable = true
+warn_unused_ignores = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+disallow_any_generics = true
+check_untyped_defs = true
+
+# relaxing rules
+strict_optional = false
+follow_imports = "silent"
+disable_error_code = [
+    "import-untyped",
+]
