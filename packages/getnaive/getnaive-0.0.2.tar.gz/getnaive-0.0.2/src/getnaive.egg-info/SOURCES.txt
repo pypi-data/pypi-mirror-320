@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/getnaive/__init__.py
+src/getnaive/__main__.py
+src/getnaive/app.py
+src/getnaive/utils.py
+src/getnaive.egg-info/PKG-INFO
+src/getnaive.egg-info/SOURCES.txt
+src/getnaive.egg-info/dependency_links.txt
+src/getnaive.egg-info/requires.txt
+src/getnaive.egg-info/top_level.txt
