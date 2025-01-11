@@ -1,0 +1,15 @@
+kapito/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kapito/cli.py,sha256=60FKvc8WWoxXEOwxyZi-Po42rTXYZwXOlQstq9t5QcU,273
+kapito/logger.py,sha256=6nCGz9bOMtOuqc9-yQF98oBGbPtqsey19aQOchIpo3g,819
+kapito/main.py,sha256=EPM7u0POip7rYXFS2-Y0Ug9nzGuomdCaaxL75If3mc8,17203
+kapito/rules/__init__.py,sha256=8OpI0CaIrAkYXAYEJhOPBoxor_vVMESWT-tB-q7iB6A,95
+kapito/rules/captcha.py,sha256=ldELPeWFnIukMPX1Io4GHeMei0pBgTVz2nxh3XaVg-w,2028
+kapito/rules/cdn.py,sha256=WvN4a0wNOU3kR_noNBxgeWqB3XqDzjn4p63DDGKsR-w,1152
+kapito/rules/cms.py,sha256=uUtgyBT1dWaa3JDdMcQROXGUPps7zUtwRuIsLNXGTNw,1754
+kapito/rules/media.py,sha256=ZEoq07IyD9YGnf5f_1JzmcTXQ8BvR2njAkkvaYUWSNc,2214
+kapito/rules/waf.py,sha256=LE4lYD4D2sK6_3Tm7WVGzgFnAgPOacMZy78GYo8QEP8,961
+kapito/utils.py,sha256=InNxpq3FqbLtrv0Y3H0nrMqgQ4u1eHQ412sgMWVogZc,2399
+kapito-0.3.0.dist-info/METADATA,sha256=yzFfdfNx5r8idkmZMYr5nt4hd4QRRIodLBlmfSlfq5M,2310
+kapito-0.3.0.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+kapito-0.3.0.dist-info/entry_points.txt,sha256=MOPisv9L3MqkQpJUaHSNfiIszSOcTFoTrSXz6pP3lXs,42
+kapito-0.3.0.dist-info/RECORD,,
