@@ -1,0 +1,9 @@
+keyrings/onepassword/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+keyrings/onepassword/keyring.py,sha256=RbNfronCP8AQjffjoLq4zgevqWizkVkMCsMAzhL959g,2153
+keyrings/onepassword/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+keyrings/onepassword/version.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+keyrings_onepassword-0.1.0.dist-info/LICENSE,sha256=wQ-OvvYFSyWvWQ7N2uGzcZ0hkW0qwlHr_eHTM7u0-qo,1001
+keyrings_onepassword-0.1.0.dist-info/METADATA,sha256=MK_tAhJGZMNMn7vTsp00uNDVG_gs7F6rKUOQHETzAxI,1411
+keyrings_onepassword-0.1.0.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+keyrings_onepassword-0.1.0.dist-info/entry_points.txt,sha256=YsXnpzB71qLXoZMGAEJKTfG6XyssHUxmlwz0kKv3XqI,80
+keyrings_onepassword-0.1.0.dist-info/RECORD,,
