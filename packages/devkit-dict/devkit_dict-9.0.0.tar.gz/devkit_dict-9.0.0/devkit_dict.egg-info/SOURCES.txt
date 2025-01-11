@@ -1,0 +1,10 @@
+README.txt
+pyproject.toml
+devkit_dict.egg-info/PKG-INFO
+devkit_dict.egg-info/SOURCES.txt
+devkit_dict.egg-info/dependency_links.txt
+devkit_dict.egg-info/requires.txt
+devkit_dict.egg-info/top_level.txt
+dict/__init__.py
+dict/read.py
+dict/write.py
