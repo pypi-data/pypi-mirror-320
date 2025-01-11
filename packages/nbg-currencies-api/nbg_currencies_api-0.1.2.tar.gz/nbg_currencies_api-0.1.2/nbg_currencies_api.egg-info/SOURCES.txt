@@ -1,0 +1,16 @@
+LICENSE
+README.md
+README.rst
+pyproject.toml
+setup.py
+nbg_currencies_api.egg-info/PKG-INFO
+nbg_currencies_api.egg-info/SOURCES.txt
+nbg_currencies_api.egg-info/dependency_links.txt
+nbg_currencies_api.egg-info/requires.txt
+nbg_currencies_api.egg-info/top_level.txt
+src/__init__.py
+src/api.py
+src/constants.py
+src/exceptions.py
+src/services.py
+src/types.py
