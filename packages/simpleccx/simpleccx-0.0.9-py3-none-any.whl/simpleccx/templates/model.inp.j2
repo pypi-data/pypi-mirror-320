@@ -1,0 +1,40 @@
+*HEADING
+Web-core sandwich
+
+*INCLUDE, INPUT=all.msh
+*INCLUDE, INPUT=sup1.nam
+*INCLUDE, INPUT=sup2.nam
+*INCLUDE, INPUT=sweeps.nam
+*INCLUDE, INPUT=laminates.nam
+*INCLUDE, INPUT=deck.sur
+
+{%- if foams|length > 0 %}
+    *INCLUDE, INPUT=foams.nam
+    *INCLUDE, INPUT=ties.sur
+    *INCLUDE, INPUT=neigh.con
+{%- endif %}
+
+*BOUNDARY
+Nsup1,1,3
+
+*BOUNDARY
+Nsup2,3,3
+
+{%- for material in materials %}
+{{ material.ccx }}
+{%- endfor %}
+
+{%- for sweep in laminates + foams %}
+{{ sweep.ccx }}
+{%- endfor %}
+
+*STEP
+*STATIC,SOLVER={{ solver }}
+.1,1.
+*DLOAD
+Sdeck,P5,{{ q }}
+*NODE FILE
+U,RF
+*EL FILE
+ZZS,ME
+*END STEP

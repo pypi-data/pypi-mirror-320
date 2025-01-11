@@ -1,0 +1,62 @@
+{% for setname, sweepset in ("laminates", laminates), ("foams", foams) %}
+    {% if sweepset|length > 0 %}
+        seto {{ setname }}
+            {% for sweep in sweepset %}
+            # Points/Lines for sweep {{ sweep.name }}
+            {%- for point in sweep.surface.points %}
+                {{ point.cgx }}
+            {%- endfor %}
+            {%- for line in sweep.surface.lines %}
+                {{ line.cgx }}
+            {%- endfor %}
+            seto {{ sweep.surface.name }}
+                {{ sweep.surface.cgx }}
+            setc
+            seto {{ sweep.name }}
+                {{ sweep.cgx }}
+            setc
+            {% endfor %}
+        setc
+    {% endif %}
+{% endfor %}
+
+# Set element type (C3D20R in ccx), mesh and merge neighbouring nodes
+elty all he20r
+mesh all
+merg n laminates 0.1
+
+{%- if foams|length > 0 %}
+    # Create contact foam-laminates
+    neigh all 0.1 abq tie
+{%- endif %}
+
+# Create set of all nodes at x=0, z=-H and x=L, z=-H and add to sets fix1 and fix2
+seta nodes n all
+
+# supports
+enq nodes sup1 rec 0 _ {{ -H }} 0.1 a
+enq nodes sup2 rec {{ L }} _ {{ -H }} 0.1 a
+send sup1 abq nam
+send sup2 abq nam
+
+# Create set with decknodes at z=0
+enq nodes deck rec _ _ 0 0.1 a
+seta deck f deck
+send deck abq sur
+{#rep deck#}
+comp deck do
+send deck abq sur
+
+# Save mesh
+send all abq
+
+# Save support node sets
+send sup1 abq nam
+send sup2 abq nam
+
+# Save extrude sets
+send laminates abq nam
+send foams abq nam
+{%- for sweep in laminates + foams %}
+    send {{ sweep.name }} abq nam
+{%- endfor %}
