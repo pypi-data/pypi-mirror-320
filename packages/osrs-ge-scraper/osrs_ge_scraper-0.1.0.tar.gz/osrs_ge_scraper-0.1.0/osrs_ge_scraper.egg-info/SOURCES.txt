@@ -1,0 +1,12 @@
+setup.py
+osrs_ge_scraper/__init__.py
+osrs_ge_scraper/api.py
+osrs_ge_scraper/item.py
+osrs_ge_scraper/utils.py
+osrs_ge_scraper.egg-info/PKG-INFO
+osrs_ge_scraper.egg-info/SOURCES.txt
+osrs_ge_scraper.egg-info/dependency_links.txt
+osrs_ge_scraper.egg-info/requires.txt
+osrs_ge_scraper.egg-info/top_level.txt
+tests/test_api.py
+tests/test_item.py

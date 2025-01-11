@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: osrs_ge_scraper
+Version: 0.1.0
+Summary: A Python package to scrape the Old School RuneScape Grand Exchange API
+Home-page: https://github.com/syntaxskater/osrs_ge_scraper
+Author: Christian Hatton
+Author-email: c63513389@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
