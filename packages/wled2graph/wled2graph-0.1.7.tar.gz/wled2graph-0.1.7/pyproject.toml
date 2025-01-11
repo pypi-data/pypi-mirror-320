@@ -1,0 +1,29 @@
+[tool.pdm.build]
+includes = []
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+authors = [
+    { name = "bigredfrog", email = "big.red.frog@gmail.com" },
+]
+requires-python = ">=3.12,<4.0"
+dependencies = [
+    "requests~=2.0",
+    "icmplib~=3.0",
+    "bokeh~=3.0",
+]
+name = "wled2graph"
+version = "0.1.7"
+description = "wled2graph supports a table and graphs of FPS and other data from multiple WLED endpoints in real-time via a browser interface"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+wled2graph = "wled2graph.main:main"
