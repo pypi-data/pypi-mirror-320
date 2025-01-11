@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: fern-nav-builder
+Version: 0.1.0
+Summary: A navigation builder for Fern documentation
+Project-URL: Homepage, https://github.com/yourusername/fern-nav-builder
+Project-URL: Bug Tracker, https://github.com/yourusername/fern-nav-builder/issues
+Author-email: Your Name <your.email@example.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: pyyaml>=6.0
+Description-Content-Type: text/markdown
+
+# Fern Nav Builder
+
+A tool to automatically generate navigation structure for Fern documentation from markdown files.
+
+## Installation
+
+```bash
+pip install fern-nav-builder
+```
+
+## Usage
+
+```bash
+fern-nav /path/to/pages/folder
+```
