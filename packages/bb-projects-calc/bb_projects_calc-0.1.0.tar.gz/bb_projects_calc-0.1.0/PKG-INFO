@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: bb-projects-calc
+Version: 0.1.0
+Summary: 
+Author: bartosz B
+Author-email: jazz.konta@gmail.com
+Requires-Python: >=3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: flask (>=3.1.0,<4.0.0)
+Requires-Dist: pytz (>=2024.2,<2025.0)
+Description-Content-Type: text/markdown
+
+# To jest nasz pierwszy projekt poetry. Jak ci się podoba

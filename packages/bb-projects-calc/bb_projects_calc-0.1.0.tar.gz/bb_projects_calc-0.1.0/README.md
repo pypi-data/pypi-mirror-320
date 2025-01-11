@@ -1,0 +1,1 @@
+# To jest nasz pierwszy projekt poetry. Jak ci się podoba
