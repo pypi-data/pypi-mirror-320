@@ -1,0 +1,74 @@
+[project]
+name = "dict_zip"
+dynamic = ["version"]
+requires-python = ">=3.9"
+dependencies = []
+description = "zip and zip_longest for dict"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = { file = "LICENSE" }
+authors = [
+    {name = "Yui KITSU", email = "kitsuyui+github@kitsuyui.com"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+]
+[project.urls]
+Homepage = "https://github.com/kitsuyui/dict_zip"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+    "pytest-cov",
+    "poethepoet",
+    "setuptools-scm",
+    "ruff",
+    "mypy",
+]
+
+[tool.ruff]
+line-length = 79
+
+[build-system]
+requires = ["setuptools", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-data = { "dict_zip" = ["py.typed"], "*" = ["README.md, LICENSE"] }
+package-dir = { "dict_zip" = "dict_zip" }
+
+[tool.setuptools_scm]
+write_to = "dict_zip/_version.py"
+version_scheme = "only-version"
+local_scheme = "no-local-version"
+
+[tool.poe.tasks]
+test = "pytest"
+coverage-xml = "pytest --cov=dict_zip --doctest-modules --cov-report=xml"
+generate-type-stubs = { shell = "python generate_type_stub.py > dict_zip/__init__.pyi" }
+format = "ruff format dict_zip tests"
+check = [
+    { cmd = "ruff check dict_zip tests" },
+    { cmd = "mypy dict_zip tests" },
+]
+
+[tool.mypy]
+# https://mypy.readthedocs.io/en/latest/config_file.html
+ignore_missing_imports = true
+disallow_any_decorated = true
+disallow_subclassing_any = true
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_unused_ignores = true
+warn_return_any = true
