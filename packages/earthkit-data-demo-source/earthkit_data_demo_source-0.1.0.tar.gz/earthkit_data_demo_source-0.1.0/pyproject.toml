@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm>=8"]
+
+[project]
+name = "earthkit-data-demo-source"
+description = "Example earthkit-data external source plugin"
+readme = "README.md"
+license = { text = "Apache License Version 2.0" }
+authors = [
+  { name = "European Centre for Medium-Range Weather Forecasts (ECMWF)", email = "software.support@ecmwf.int" },
+]
+requires-python = ">=3.9"
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dynamic = [ "version" ]
+
+dependencies = [
+  "pandas",
+  "SQLAlchemy",
+]
+
+optional-dependencies.test = [
+  "pytest",
+]
+entry-points."earthkit.data.sources".demo-source = "earthkit_data_demo_source:DemoSource"
+
+[tool.setuptools_scm]
+version_file = "src/earthkit_data_demo_source/_version.py"
+
+[tool.isort]
+profile = "black"
+
+[tool.coverage.run]
+branch = "true"
+
+[tool.pydocstyle]
+add_ignore = [ "D1", "D200", "D205", "D400", "D401" ]
+convention = "numpy"

@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+pytest.ini
+src/earthkit_data_demo_source/__init__.py
+src/earthkit_data_demo_source/_version.py
+src/earthkit_data_demo_source/demo.py
+src/earthkit_data_demo_source/version.py
+src/earthkit_data_demo_source.egg-info/PKG-INFO
+src/earthkit_data_demo_source.egg-info/SOURCES.txt
+src/earthkit_data_demo_source.egg-info/dependency_links.txt
+src/earthkit_data_demo_source.egg-info/entry_points.txt
+src/earthkit_data_demo_source.egg-info/requires.txt
+src/earthkit_data_demo_source.egg-info/top_level.txt
+tests/test_source.py

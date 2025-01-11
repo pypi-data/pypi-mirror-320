@@ -1,0 +1,12 @@
+# setuptools-scm
+version.py
+_version.py
+
+
+*.egg-info
+*.pyc
+*.db
+
+tox.ini
+
+.vscode
