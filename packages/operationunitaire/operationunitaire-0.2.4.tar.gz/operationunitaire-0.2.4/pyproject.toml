@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "operationunitaire"  
+version = "0.2.4"
+authors = [
+  { name = "Tassaoui Anas", email = "anass.tassaoui@gmail.com" }
+]
+description = "A Python package for rigorous distillation simulations."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Chemistry",
+]
+
+dependencies = [
+    "pandas>=1.0",
+    "numpy>=1.18",
+    "scipy>=1.5",
+    "tabulate>=0.8",
+]
+
+[project.urls]
+Homepage = "https://github.com/anastassaoui/operationunitaire"
+Issues = "https://github.com/anastassaoui/operationunitaire/issues"
