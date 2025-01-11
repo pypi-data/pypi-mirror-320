@@ -1,0 +1,2 @@
+[console_scripts]
+fedibooster = fedibooster:app.typer_shim
