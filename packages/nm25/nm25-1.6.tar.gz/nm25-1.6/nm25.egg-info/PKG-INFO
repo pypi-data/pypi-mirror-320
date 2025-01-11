@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: nm25
+Version: 1.6
+Home-page: 
+Author: 
+Author-email: 
+License: MIT
+Platform: any
+Requires-Dist: pyperclip
