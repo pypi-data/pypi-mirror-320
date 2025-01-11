@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+maximspiryanovLab3/__init__.py
+maximspiryanovLab3/getweatherdata.py
+maximspiryanovLab3/getweatherdata_test.py
+maximspiryanovLab3/main.py
+maximspiryanovLab3/owm_key.py
+maximspiryanovLab3.egg-info/PKG-INFO
+maximspiryanovLab3.egg-info/SOURCES.txt
+maximspiryanovLab3.egg-info/dependency_links.txt
+maximspiryanovLab3.egg-info/not-zip-safe
+maximspiryanovLab3.egg-info/top_level.txt

@@ -1,0 +1,1 @@
+from .main import fetch_weather_data_for_cities
