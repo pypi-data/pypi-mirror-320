@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: soliday.sdds
+Version: 5.7.0
+Summary: Official Python interface for the SDDS (Self Describing Data Sets) format.
+Home-page: https://www.aps.anl.gov/Accelerator-Operations-Physics/Software
+Author: Robert Soliday
+Author-email: Robert Soliday <soliday@anl.gov>
+License: SDDS Toolkit License
+Project-URL: Homepage, https://www.aps.anl.gov/Accelerator-Operations-Physics/Software
+Platform: linux_x86_64
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SDDS Python Module
+
+The `sdds` Python module provides a high-level interface for creating, manipulating, and reading **Self Describing Data Sets (SDDS)** files, a file protocol designed for storing and transferring scientific data.
+
+## Features
+
+- **Read and Write** SDDS files in ASCII and binary formats.
+- Support for all SDDS data types: parameters, arrays, and columns.
+- Define and manipulate data with ease.
+- Multi-page data handling for advanced use cases.
+
+## Requirements
+
+- Python 3.9 or higher
+- An SDDS-compatible environment with the necessary C library dependencies (already integrated into this module).
+
+## Installation
+
+You can install the `sdds` module directly using `pip`:
+
+```bash
+python -m pip install soliday.sdds
+```
+
+## Usage
+
+### Creating an SDDS File
+
+Below is an example of how to create an SDDS file with parameters, columns, and arrays.
+
+
+```python
+from sdds import SDDS
+
+# Initialize an SDDS object
+sdds_obj = SDDS(0)
+
+# Set a description
+sdds_obj.setDescription("Example SDDS file", "This file contains parameters, columns, and arrays.")
+
+# Define parameters, columns, and arrays
+sdds_obj.defineSimpleParameter("example_parameter", SDDS.SDDS_DOUBLE)
+sdds_obj.defineSimpleColumn("example_column", SDDS.SDDS_LONG)
+sdds_obj.defineSimpleArray("example_array", SDDS.SDDS_FLOAT, 1)
+
+# Populate data
+sdds_obj.setParameterValue("example_parameter", 3.14, page=1)
+sdds_obj.setColumnValueList("example_column", [1, 2, 3, 4], page=1)
+sdds_obj.setArrayValueList("example_array", [0.1, 0.2, 0.3], [3], page=1)
+
+# Save to a file
+sdds_obj.save("output_example.sdds")
+```
+
+### Reading an SDDS File
+
+Here’s how to read and inspect an SDDS file:
+
+```python
+from sdds import SDDS
+
+# Initialize the SDDS object
+sdds_obj = SDDS(0)
+
+# Load the file
+sdds_obj.load("output_example.sdds")
+
+# Inspect contents
+print("Description:", sdds_obj.description)
+print("Parameters:", sdds_obj.parameterName)
+print("Columns:", sdds_obj.columnName)
+print("Arrays:", sdds_obj.arrayName)
+```
+
+## Documentation
+
+For detailed documentation, examples, and API references, visit the [SDDS Python Module Documentation](https://ops.aps.anl.gov/manuals/SDDSlib/html/files.html).
+
+## License
+
+This project is licensed under the **SDDS Toolkit License**. See the [LICENSE](https://ops.aps.anl.gov/manuals/SDDSlib/html/LICENSE_source.html) file for details.
+
+## Contact
+
+For questions or support, email [soliday@anl.gov](mailto:soliday@anl.gov)
