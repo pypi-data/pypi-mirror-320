@@ -1,0 +1,29 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Cihaz zaten yap\u0131land\u0131r\u0131lm\u0131\u015f",
+            "cannot_connect": "{base_url} url'si ile denetleyiciye ba\u011flan\u0131lamad\u0131"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "vera_controller_url": "Denetleyici URL'si"
+                },
+                "data_description": {
+                    "vera_controller_url": "\u015eu \u015fekilde g\u00f6r\u00fcnmelidir: http://192.168.1.161:3480"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "exclude": "Home Asistan\u0131'ndan hari\u00e7 tutulacak Vera cihaz kimlikleri.",
+                    "lights": "Vera, Home Assistant'ta \u0131\u015f\u0131k gibi davranmak i\u00e7in cihaz kimliklerini de\u011fi\u015ftirir."
+                },
+                "title": "Vera denetleyici se\u00e7enekleri"
+            }
+        }
+    }
+}

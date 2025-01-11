@@ -1,0 +1,148 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Dispositivo j\u00e1 configurado",
+            "already_in_progress": "O processo de configura\u00e7\u00e3o j\u00e1 est\u00e1 a decorrer",
+            "cannot_connect": "A liga\u00e7\u00e3o falhou",
+            "no_devices_found": "Nenhum dispositivo encontrado na rede"
+        },
+        "error": {
+            "cannot_connect": "A liga\u00e7\u00e3o falhou"
+        },
+        "flow_title": "{label} ({group})",
+        "step": {
+            "pick_device": {
+                "data": {
+                    "device": "Dispositivo"
+                }
+            },
+            "user": {
+                "data": {
+                    "host": "Anfitri\u00e3o"
+                },
+                "data_description": {
+                    "host": "O nome do anfitri\u00e3o ou o endere\u00e7o IP do seu dispositivo LIFX."
+                }
+            }
+        }
+    },
+    "entity": {
+        "select": {
+            "theme": {
+                "name": "Tema"
+            }
+        },
+        "sensor": {
+            "rssi": {
+                "name": "RSSI"
+            }
+        }
+    },
+    "services": {
+        "effect_colorloop": {
+            "fields": {
+                "brightness_pct": {
+                    "name": "Brilho"
+                },
+                "period": {
+                    "name": "Per\u00edodo"
+                },
+                "spread": {
+                    "name": "Dispers\u00e3o"
+                }
+            }
+        },
+        "effect_morph": {
+            "fields": {
+                "speed": {
+                    "name": "Velocidade"
+                },
+                "theme": {
+                    "name": "Tema"
+                }
+            }
+        },
+        "effect_move": {
+            "fields": {
+                "direction": {
+                    "name": "Dire\u00e7\u00e3o"
+                },
+                "power_on": {
+                    "description": "As luzes desligadas ser\u00e3o ligadas antes de iniciar o efeito."
+                },
+                "speed": {
+                    "name": "Velocidade"
+                },
+                "theme": {
+                    "name": "Tema"
+                }
+            }
+        },
+        "effect_pulse": {
+            "fields": {
+                "brightness_pct": {
+                    "name": "Brilho"
+                },
+                "cycles": {
+                    "name": "Ciclos"
+                },
+                "period": {
+                    "name": "Per\u00edodo"
+                }
+            }
+        },
+        "effect_sky": {
+            "description": "Inicia o efeito C\u00e9u baseado em firmware no LIFX Teto.",
+            "fields": {
+                "cloud_saturation_max": {
+                    "description": "Satura\u00e7\u00e3o m\u00e1xima das nuvens.",
+                    "name": "Satura\u00e7\u00e3o m\u00e1xima das nuvens"
+                },
+                "cloud_saturation_min": {
+                    "description": "Satura\u00e7\u00e3o m\u00ednima das nuvens.",
+                    "name": "Satura\u00e7\u00e3o das nuvens M\u00ednimo"
+                },
+                "palette": {
+                    "description": "Lista de 1 a 6 cores como matiz (0-360), satura\u00e7\u00e3o (0-100), brilho (0-100) e kelvin (1500-9000) a utilizar para este efeito.",
+                    "name": "Paleta"
+                },
+                "power_on": {
+                    "description": "As luzes desligadas ser\u00e3o ligadas antes de iniciar o efeito.",
+                    "name": "Ligar"
+                },
+                "sky_type": {
+                    "description": "O estilo de c\u00e9u que ser\u00e1 animado pelo efeito.",
+                    "name": "Tipo de c\u00e9u"
+                },
+                "speed": {
+                    "description": "Quanto tempo os tipos de c\u00e9u Nascer do Sol e P\u00f4r do Sol levar\u00e3o para serem conclu\u00eddos. Para o tipo de c\u00e9u Nuvem, \u00e9 a velocidade das nuvens atrav\u00e9s do dispositivo.",
+                    "name": "Velocidade"
+                }
+            },
+            "name": "Efeito c\u00e9u"
+        },
+        "set_hev_cycle_state": {
+            "fields": {
+                "duration": {
+                    "name": "Dura\u00e7\u00e3o"
+                },
+                "power": {
+                    "name": "Ligar"
+                }
+            }
+        },
+        "set_state": {
+            "fields": {
+                "infrared": {
+                    "name": "Infravermelho"
+                },
+                "transition": {
+                    "name": "Transi\u00e7\u00e3o"
+                },
+                "zones": {
+                    "name": "Zonas"
+                }
+            }
+        }
+    }
+}

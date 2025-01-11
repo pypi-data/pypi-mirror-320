@@ -1,0 +1,58 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Dispositivo j\u00e1 configurado",
+            "reauth_successful": "Reautentica\u00e7\u00e3o bem sucedida"
+        },
+        "error": {
+            "cannot_connect": "A liga\u00e7\u00e3o falhou",
+            "invalid_auth": "Autentica\u00e7\u00e3o inv\u00e1lida",
+            "timeout_connect": "Excedido o tempo limite para estabelecer liga\u00e7\u00e3o"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Palavra-passe"
+                },
+                "data_description": {
+                    "password": "A palavra-passe para reautenticar com o seu dispositivo Rain Bird."
+                },
+                "description": "A integra\u00e7\u00e3o Rain Bird tem de ser reautenticada com o dispositivo.",
+                "title": "A autentica\u00e7\u00e3o expirou para {name}"
+            },
+            "user": {
+                "data": {
+                    "host": "Anfitri\u00e3o",
+                    "password": "Palavra-passe"
+                },
+                "data_description": {
+                    "password": "A palavra-passe usada para autenticar junto do dispositivo Rain Bird."
+                },
+                "description": "Insira as informa\u00e7\u00f5es do m\u00f3dulo WiFi LNK para o seu dispositivo Rain Bird.",
+                "title": "Configurar Rain Bird"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "duration": "Tempo de rega por defeito em minutos"
+                },
+                "data_description": {
+                    "duration": "A tempo, por defeito, que o aspersor funcionar\u00e1 quando ligado."
+                },
+                "title": "Configurar Rain Bird"
+            }
+        }
+    },
+    "services": {
+        "start_irrigation": {
+            "fields": {
+                "duration": {
+                    "name": "Dura\u00e7\u00e3o"
+                }
+            }
+        }
+    }
+}

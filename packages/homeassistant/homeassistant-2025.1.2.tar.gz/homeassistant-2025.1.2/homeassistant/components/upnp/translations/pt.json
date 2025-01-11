@@ -1,0 +1,35 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Dispositivo j\u00e1 est\u00e1 configurado",
+            "no_devices_found": "Nenhum dispositivo encontrado na rede"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "ssdp_confirm": {
+                "description": "Deseja configurar este dispositivo UPnP/IGD?"
+            },
+            "user": {
+                "data": {
+                    "unique_id": "Dispositivo"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "port_mapping_number_of_entries_ipv4": {
+                "name": "N\u00famero de entradas de mapeamento de portas (IPv4)"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "force_poll": "For\u00e7ar a sondagem de todos os dados"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Servi\u00e7o j\u00e1 configurado"
+        },
+        "error": {
+            "unexpected_response": "Resposta inesperada do servidor de whois",
+            "unknown_date_format": "Formato de data desconhecido na resposta do servidor de whois"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "domain": "Nome de dom\u00ednio"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "creation_date": {
+                "name": "Criado"
+            },
+            "expiration_date": {
+                "name": "Expira"
+            }
+        }
+    }
+}

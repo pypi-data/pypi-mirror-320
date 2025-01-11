@@ -1,0 +1,70 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Dispositivo j\u00e1 configurado"
+        },
+        "error": {
+            "cannot_connect": "A liga\u00e7\u00e3o falhou",
+            "invalid_auth": "Autentica\u00e7\u00e3o inv\u00e1lida"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "password": "Palavra-passe",
+                    "url": "URL",
+                    "username": "Nome de Utilizador",
+                    "verify_ssl": "Verificar o certificado SSL"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "active_torrents": {
+                "name": "Torrents ativas",
+                "unit_of_measurement": "torrents"
+            },
+            "all_torrents": {
+                "name": "Todas as torrents",
+                "unit_of_measurement": "torrents"
+            },
+            "current_status": {
+                "name": "Estado",
+                "state": {
+                    "downloading": "A descarregar",
+                    "idle": "Inativo",
+                    "seeding": "A semear",
+                    "up_down": "Subir/Descer"
+                }
+            },
+            "download_speed": {
+                "name": "Velocidade de transfer\u00eancia"
+            },
+            "inactive_torrents": {
+                "name": "Torrents inativas",
+                "unit_of_measurement": "torrents"
+            },
+            "paused_torrents": {
+                "name": "Torrents em pausa",
+                "unit_of_measurement": "torrents"
+            },
+            "upload_speed": {
+                "name": "Velocidade de carregamento"
+            }
+        },
+        "switch": {
+            "alternative_speed": {
+                "name": "Velocidade alternativa"
+            }
+        }
+    },
+    "services": {
+        "get_torrents": {
+            "fields": {
+                "device_id": {
+                    "name": "Dispositivo"
+                }
+            }
+        }
+    }
+}

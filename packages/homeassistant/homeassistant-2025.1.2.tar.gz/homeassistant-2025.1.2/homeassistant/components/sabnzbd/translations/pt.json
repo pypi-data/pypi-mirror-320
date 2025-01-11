@@ -1,0 +1,71 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Servi\u00e7o j\u00e1 configurado",
+            "reconfigure_successful": "A reconfigura\u00e7\u00e3o foi bem sucedida"
+        },
+        "error": {
+            "cannot_connect": "A liga\u00e7\u00e3o falhou",
+            "invalid_api_key": "Chave de API inv\u00e1lida"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "api_key": "Chave da API",
+                    "url": "URL"
+                },
+                "data_description": {
+                    "api_key": "A chave da API do servidor SABnzbd. Pode ser encontrada na interface web do SABnzbd em Configura\u00e7\u00e3o (\u00edcone de engrenagem no canto superior direito) > Geral > Seguran\u00e7a.",
+                    "url": "O URL completo, incluindo a porta, do servidor SABnzbd. Exemplo: `http://localhost:8080` ou `http://a02368d7-sabnzbd:8080`, se estiver a usar o add-on."
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "warnings": {
+                "name": "Avisos"
+            }
+        },
+        "button": {
+            "pause": {
+                "name": "Pausar"
+            },
+            "resume": {
+                "name": "Retomar"
+            }
+        },
+        "number": {
+            "speedlimit": {
+                "name": "Limite de velocidade"
+            }
+        }
+    },
+    "exceptions": {
+        "service_call_exception": {
+            "message": "N\u00e3o foi poss\u00edvel enviar o comando para SABnzbd devido a um erro de liga\u00e7\u00e3o, tente mais tarde"
+        }
+    },
+    "issues": {
+        "pause_action_deprecated": {
+            "description": "A a\u00e7\u00e3o 'Pausa' est\u00e1 obsoleta e ser\u00e1 removida numa vers\u00e3o futura. Por favor, utilize o bot\u00e3o 'Pausa' em substitui\u00e7\u00e3o. Para resolver este problema, ajuste as automatiza\u00e7\u00f5es em conformidade e reinicie o Home Assistant.",
+            "title": "A\u00e7\u00e3o de pausa do SABnzbd obsoleta"
+        },
+        "resume_action_deprecated": {
+            "description": "A a\u00e7\u00e3o 'Retomar' est\u00e1 obsoleta e ser\u00e1 removida numa vers\u00e3o futura. Por favor, utilize o bot\u00e3o 'Retomar' em substitui\u00e7\u00e3o. Para resolver este problema, ajuste as automatiza\u00e7\u00f5es em conformidade e reinicie o Home Assistant.",
+            "title": "A\u00e7\u00e3o de retomar do SABnzbd obsoleta"
+        },
+        "set_speed_action_deprecated": {
+            "description": "A a\u00e7\u00e3o 'Definir velocidade' est\u00e1 obsoleta e ser\u00e1 removida numa vers\u00e3o futura. Por favor, utilize a entidade num\u00e9rica 'Limite de velocidade' em substitui\u00e7\u00e3o. Para resolver este problema, ajuste as automatiza\u00e7\u00f5es em conformidade e reinicie o Home Assistant.",
+            "title": "A a\u00e7\u00e3o `set_speed` no SABnzbd foi descontinuada"
+        }
+    },
+    "services": {
+        "pause": {
+            "name": "Pausar"
+        },
+        "resume": {
+            "name": "Retomar"
+        }
+    }
+}

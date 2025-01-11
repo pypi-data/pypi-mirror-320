@@ -1,0 +1,43 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Dispositivo j\u00e1 configurado"
+        },
+        "error": {
+            "cannot_connect": "A liga\u00e7\u00e3o falhou",
+            "invalid_auth": "Autentica\u00e7\u00e3o inv\u00e1lida",
+            "unknown": "Erro inesperado"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "brand": "Marca",
+                    "password": "Palavra-passe",
+                    "username": "Nome de Utilizador"
+                }
+            }
+        }
+    },
+    "issues": {
+        "migrate_aux_heat": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "A a\u00e7\u00e3o Nexia `set_aux_heat` foi migrada. Est\u00e1 dispon\u00edvel uma nova entidade de interruptor `aux_heat_only` para cada term\u00f3stato.\n\nAtualize todas as automatiza\u00e7\u00f5es para utilizar a nova entidade de comuta\u00e7\u00e3o Calor de emerg\u00eancia. Quando isto estiver conclu\u00eddo, selecione **Enviar** para corrigir este problema.",
+                        "title": "Migra\u00e7\u00e3o da a\u00e7\u00e3o set_aux_heat do Nexia"
+                    }
+                }
+            },
+            "title": "Migra\u00e7\u00e3o da a\u00e7\u00e3o set_aux_heat do Nexia"
+        }
+    },
+    "services": {
+        "set_humidify_setpoint": {
+            "fields": {
+                "humidity": {
+                    "name": "Humidade"
+                }
+            }
+        }
+    }
+}

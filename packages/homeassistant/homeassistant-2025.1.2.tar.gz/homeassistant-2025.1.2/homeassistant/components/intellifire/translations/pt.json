@@ -1,0 +1,37 @@
+{
+    "config": {
+        "abort": {
+            "no_available_devices": "Todos os dispositivos dispon\u00edveis j\u00e1 foram configurados.",
+            "reauth_successful": "Reautentica\u00e7\u00e3o bem sucedida"
+        },
+        "flow_title": "{serial}",
+        "step": {
+            "cloud_api": {
+                "data": {
+                    "password": "Palavra-passe",
+                    "username": "E-mail"
+                },
+                "data_description": {
+                    "password": "A sua palavra-passe da aplica\u00e7\u00e3o IntelliFire",
+                    "username": "O seu nome de utilizador da aplica\u00e7\u00e3o IntelliFire"
+                },
+                "description": "Autenticar contra o IntelliFire Cloud"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "cloud_connectivity": {
+                "name": "Conetividade em nuvem"
+            },
+            "local_connectivity": {
+                "name": "Conetividade local"
+            }
+        },
+        "light": {
+            "lights": {
+                "name": "Luzes"
+            }
+        }
+    }
+}
