@@ -1,0 +1,148 @@
+#!/usr/bin/env bash
+
+#--------------------------------
+display_help()
+{
+    echo "Usage: Used to update tarball with virtual environment and optionally upload it to the grid"
+    echo ""
+    echo "-h: Help"
+    echo "-v: Version of tarball, optional, if not passed, wont upload it"
+    echo "-i: This will force the script to install this version, e.g. 0.2.4" 
+    echo "-u: This will force updating tarball if found int the grid"
+}
+#--------------------------------
+get_args()
+{
+    while getopts :hf:v:i:u: option; do 
+        case "${option}" in
+            h)  
+                display_help
+                exit 0
+                ;;  
+            \?)  echo "Invalid option: -${OPTARG}"
+                display_help
+                exit 1
+                ;;  
+            :)  echo "$0: Arguments needed"
+                display_help
+                exit 1
+                ;;  
+            v)  VENV_VERS=${OPTARG};;
+            i)  POSA_VERS=${OPTARG};;
+            u)  UPDATE=${OPTARG};;
+        esac
+    done
+}
+#--------------------------------
+check()
+{
+    if [[ $? -ne 0 ]];then
+        echo "Failed: $1"
+        exit 1
+    fi
+}
+#--------------------------------
+check_existing()
+{
+    LFN=$1
+    echo "Checking for existing TARBALL"
+
+    dirac-dms-lfn-replicas $LFN > /dev/null
+    if   [[ $? -eq 0 ]] && [[ $UPDATE -eq 1 ]];then
+        echo "LFN found, removing: \"$LFN\""
+        dirac-dms-remove-files $LFN
+    elif [[ $? -eq 0 ]] && [[ $UPDATE -eq 0 ]];then
+        echo "LFN found: \"$LFN\""
+        exit 1
+    elif [[ $? -ne 0 ]];then
+        echo "No replica found for \"$LFN\""
+    else
+        echo "Replica finding process exited with status $? and the updating flag was $UPDATE"
+        exit 1
+    fi
+}
+#---------------------------------
+upload()
+{
+    echo "Uploading"
+
+    if [[ -z $VENV_VERS ]];then
+        echo "Version of tarball not passed, won't upload it"
+        exit 0
+    fi
+
+    SOURCE=$VENVS/dcheck.tar 
+    TARGET=LFN:/lhcb/user/${CLXNAME:0:1}/$CLXNAME/run3/venv/$VENV_VERS/dcheck.tar
+
+    check_existing $TARGET
+
+    echo "Uploading tarball for $TARGET"
+    dirac-dms-add-file $TARGET $SOURCE CERN-USER
+}
+#--------------------------------
+initialize()
+{
+    echo "Initialling"
+
+    which lb-conda-dev        > /dev/null 2>&1
+    check "No lb-conda-dev found"
+
+    dirac-proxy-info          > /dev/null 2>&1
+    check "Invalid grid proxy, or cannot access dirac-proxy-info"
+
+    if [[ -z $VENVS ]];then
+        echo "VENVS environment variable not set"
+        exit 1
+    fi
+}
+#--------------------------------
+make_tarball()
+{
+    echo "Making tarball"
+
+    mkdir -p $VENVS
+    cd $VENVS
+
+    rm -rf dchecks.tar
+
+    if [[ ! -f $VENVS/dcheck/run ]];then
+        echo "Environment not found, creating it"
+        lb-conda-dev virtual-env default dcheck
+    else
+        echo "Environment found, updating tarball"
+    fi
+
+    source dcheck/bin/activate
+    install_pkg data_manipulation_utilities
+    install_pkg post_ap                      $POSA_VERS
+
+    tar -czf dcheck.tar dcheck
+    echo "Running: tar -czf dcheck.tar dcheck"
+    check "Tar post_ap"
+
+    cd - > /dev/null 2>&1
+}
+#--------------------------------
+install_pkg()
+{
+    NAME=$1
+    VERS=$2
+
+    if [[ -z $VERS ]];then
+        echo "Installing latest version of $NAME"
+        pip install --no-dependencies --force-reinstall $NAME        > /dev/null 2>&1
+    else
+        echo "Installing $VERS version of $NAME"
+        pip install --no-dependencies --force-reinstall $NAME==$VERS > /dev/null 2>&1
+    fi
+
+    check "Could not install $NAME"
+
+    VERSION=$(pip show $NAME | grep Version)
+    echo "Installed $NAME: $VERSION"
+}
+#--------------------------------
+get_args "$@"
+initialize
+make_tarball
+upload
