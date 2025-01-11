@@ -1,0 +1,17 @@
+wwinpy/__init__.py,sha256=3Aea3Q_y2EHzfA6J5IEk7lqs9uVpLm3z1QJbQ8h2n0A,349
+wwinpy/_config.py,sha256=hQAJRyQidELBhq8PilyymXYOZSrnng9PGm7B07buAjk,83
+wwinpy/_exceptions.py,sha256=VUG9L-UXtWmHWiXv93txSx2Ypd5QAPH4p6np4-6cUfk,464
+wwinpy/_ratios.py,sha256=oVnhWj1pvvumqddyFIGAS-B6U-fyvxMWK3ur3dsXmzU,1321
+wwinpy/_utils.py,sha256=qDWY8hSuseoNtNAt-UfFp9wQizz7Z-C3poLtyuyP4_E,9086
+wwinpy/geometry.py,sha256=cUmu_bqiIVszby__fZx652pBxQ7mJgutLeYqU837SC0,8608
+wwinpy/header.py,sha256=kguXRWfmlMeOeiI1IvncDcBBoGR7QntZ5PsUhJK15fI,6335
+wwinpy/mesh.py,sha256=bCWwqBVEGX8t3x8_HOKf9jLAhi3qdNOZlwxFJRKuqeM,2666
+wwinpy/parser.py,sha256=MlcuZ3Zqevb8Mhpg9WxiwXPGCpLezJI5gSnzU4_VkXA,12827
+wwinpy/plotter.py,sha256=skXPwA99NrvLsbpOdhO9c80X-GqoBXGs2VR2Lq3f2_s,7142
+wwinpy/query.py,sha256=JcBOEUYdZNk2cNzaZuy88R_xpscyhUasG38YBMeYVW0,3973
+wwinpy/weight_windows.py,sha256=bh1i29AA-YHCBlfGAJOP79Aodn4BlAeMjzRWBwItQIA,17446
+wwinpy/ww_data.py,sha256=La-EGvCBFIsB-m3Rj-u8P45rA17KeANR5KKAZqr0a-o,10643
+wwinpy-0.1.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+wwinpy-0.1.5.dist-info/METADATA,sha256=XWGv8k94LNMZQaj1EYb51qnGPClDgze2TsgAedqlMVs,2410
+wwinpy-0.1.5.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+wwinpy-0.1.5.dist-info/RECORD,,
