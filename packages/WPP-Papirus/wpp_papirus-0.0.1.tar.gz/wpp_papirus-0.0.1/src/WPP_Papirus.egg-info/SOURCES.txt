@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/WPP.py
+src/__init__.py
+src/WPP_Papirus.egg-info/PKG-INFO
+src/WPP_Papirus.egg-info/SOURCES.txt
+src/WPP_Papirus.egg-info/dependency_links.txt
+src/WPP_Papirus.egg-info/top_level.txt
