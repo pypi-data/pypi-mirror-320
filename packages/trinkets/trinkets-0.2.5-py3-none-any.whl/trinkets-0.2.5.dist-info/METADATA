@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: trinkets
+Version: 0.2.5
+Summary: A group of commonly used functions.
+Author: Mohamed Abdel-Hafiz
+Author-email: mohamed.abdel-hafiz@cuanschutz.edu
+License: MIT
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: requests>=2.32.0
+Requires-Dist: keyring>=24
+Requires-Dist: scikit-learn>=1.5.0
+Requires-Dist: scipy>=1
+Requires-Dist: pyyaml>=6
+Requires-Dist: matplotlib>=3.9
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+Trinkets is a collection of useful tools and helper scripts.
+
+[wip]

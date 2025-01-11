@@ -1,0 +1,10 @@
+trinkets/__init__.py,sha256=Hf6maEaL-ZDZgzNC43yN15B5IL1IlqEEtojkEtUbGDs,129
+trinkets/archive.py,sha256=Y81vkZkdb0Zk5NyH37koZK2-3cZJk0vWuKoRa0nwq9U,5024
+trinkets/calculate.py,sha256=1L3exWhzYXMMJdHtRBkvotmEPJALJtsmFclQ9evjPH8,846
+trinkets/notify.py,sha256=6EDgiRD-zIJQzjCASfQA9k7Im6UpfzMLelU8OEmJgjk,1070
+trinkets/visualize.py,sha256=XaQlesWgIuCm007XaaHDkBlDHYNpTK8SjZexwelmeTQ,2286
+trinkets-0.2.5.dist-info/LICENSE,sha256=il0g51OVCi8nDJtbyqhtiwLtnHQ0j-LYESy8UADABqg,1076
+trinkets-0.2.5.dist-info/METADATA,sha256=pFY2xQkH_wVoxwo9sb09oKiROsE-apWLM3MOjvBkMgU,616
+trinkets-0.2.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+trinkets-0.2.5.dist-info/top_level.txt,sha256=gc9ZSpLh3KLHQedZIO4GywyPMxTZ8_W8MeQL_0e_WWQ,9
+trinkets-0.2.5.dist-info/RECORD,,
