@@ -1,0 +1,5 @@
+requests>=2.26.0
+coloredlogs>=15.0
+tqdm>=4.64.0
+colorama>=0.4.5
+loguru>=0.6.0
