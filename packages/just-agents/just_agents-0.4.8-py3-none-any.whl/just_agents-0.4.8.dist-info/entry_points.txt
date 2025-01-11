@@ -1,0 +1,3 @@
+[console_scripts]
+run-agent=just_agents.web.run:app
+
