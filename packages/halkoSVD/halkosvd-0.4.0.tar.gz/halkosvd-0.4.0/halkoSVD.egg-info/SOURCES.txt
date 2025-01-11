@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+halko/__init__.py
+halko/functions.py
+halko/main.py
+halko/shared.c
+halko/shared.pyx
+halkoSVD.egg-info/PKG-INFO
+halkoSVD.egg-info/SOURCES.txt
+halkoSVD.egg-info/dependency_links.txt
+halkoSVD.egg-info/entry_points.txt
+halkoSVD.egg-info/requires.txt
+halkoSVD.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+halkoSVD = halko.main:main
