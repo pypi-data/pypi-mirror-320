@@ -1,0 +1,6 @@
+goat_plugins/coingecko/__init__.py,sha256=nvGhXWo3v5G87uyUXFiptWK1mwlW_fEXbTmh__WmtoI,521
+goat_plugins/coingecko/parameters.py,sha256=BIgKuK2WQOpN7OBz4Tmd9qUMabGPuSjLGxgfkcn9A1g,1395
+goat_plugins/coingecko/service.py,sha256=BMdXXkw1umD_H7sli2CHleIWbpWskPARFu_TG3O3uMY,3262
+goat_sdk_plugin_coingecko-0.1.1.dist-info/METADATA,sha256=353ymeOq27arVEV1ZEy7_xEa1IwnnMkyzhaE00I8CTs,737
+goat_sdk_plugin_coingecko-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+goat_sdk_plugin_coingecko-0.1.1.dist-info/RECORD,,
