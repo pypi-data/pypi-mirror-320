@@ -1,0 +1,40 @@
+[options.neovim]
+tags = [ "editor",]
+synced = true
+[[options.neovim.links]]
+source = "dotfiles/a"
+target = "config/a"
+
+[options.neovim-2]
+tags = [ "editor",]
+synced = false
+[[options.neovim-2.links]]
+source = "dotfiles/a"
+target = "config/a"
+
+[options.neovide]
+description = "Gui for neovim."
+synced = true
+[[options.neovide.links]]
+source = "dotfiles/b"
+target = "config/b"
+
+[options.c]
+description = ""
+synced = true
+[[options.c.links]]
+source = "dotfiles/c"
+target = "config/c"
+
+[[options.c.links]]
+source = "dotfiles/d"
+target = "config/d"
+
+[options.neovim.depends]
+system = [ "neovim",]
+
+[options.neovim-2.depends]
+system = [ "neovim",]
+
+[options.neovide.depends]
+system = [ "neovide",]
