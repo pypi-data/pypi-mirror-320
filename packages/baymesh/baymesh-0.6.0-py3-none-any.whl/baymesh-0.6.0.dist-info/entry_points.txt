@@ -1,0 +1,2 @@
+[console_scripts]
+baymesh = baymesh.cli:cli
