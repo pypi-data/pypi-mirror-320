@@ -1,0 +1,16 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Renovate config",
+  "extends": [
+    "github>cerebrotech/renovate-config"
+  ],
+  "python": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "groupName": "glom all dependencies",
+      "matchFileNames": ["**"]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+name: publish-production
+# publish to pypi.org on merge to default branch
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish-production-main:
+    environment: cucu-publish-production  # match name in www.PyPI.org OIDC
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write  # Required for connection to pypi OIDC
+      contents: read  # For non-public repo
+    steps:
+      - name: checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v2
+        with:
+          enable-cache: true
+      - name: Install cucu with Python 3.12
+        run: |
+          uv sync -p 3.12
+      - name: build package
+        run: |
+          uv build
+      - name: publish to pypi.org
+        uses: pypa/gh-action-pypi-publish@release/v1
