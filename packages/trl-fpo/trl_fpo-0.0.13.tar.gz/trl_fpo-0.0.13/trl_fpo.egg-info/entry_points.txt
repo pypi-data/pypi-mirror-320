@@ -1,0 +1,2 @@
+[console_scripts]
+trl_fpo = trl.commands.cli:main
