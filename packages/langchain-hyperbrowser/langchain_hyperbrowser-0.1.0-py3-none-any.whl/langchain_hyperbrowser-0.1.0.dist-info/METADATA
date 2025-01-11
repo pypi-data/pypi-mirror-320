@@ -1,0 +1,79 @@
+Metadata-Version: 2.3
+Name: langchain-hyperbrowser
+Version: 0.1.0
+Summary: An integration package connecting Hyperbrowser and LangChain
+Home-page: https://github.com/langchain-ai/langchain
+License: MIT
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: hyperbrowser (>=0.16.0,<0.17.0)
+Requires-Dist: langchain-core (>=0.3.15,<0.4.0)
+Project-URL: Repository, https://github.com/langchain-ai/langchain
+Project-URL: Release Notes, https://github.com/langchain-ai/langchain/releases?q=tag%3A%22hyperbrowser%3D%3D0%22&expanded=true
+Project-URL: Source Code, https://github.com/langchain-ai/langchain/tree/master/libs/partners/hyperbrowser
+Description-Content-Type: text/markdown
+
+# langchain-hyperbrowser
+
+This package contains the LangChain integration with Hyperbrowser
+
+## Installation
+
+```bash
+pip install -U langchain-hyperbrowser
+```
+
+And you should configure credentials by setting the following environment variables:
+
+`HYPERBROWSER_API_KEY=<your-api-key>`
+
+Make sure to get your API Key from https://app.hyperbrowser.ai/
+
+## Document Loaders
+
+`HyperbrowserLoader` class exposes document loaders from Hyperbrowser.
+
+```python
+from langchain_hyperbrowser import HyperbrowserLoader
+
+loader = HyperbrowserLoader(urls="https://www.google.com")
+docs = loader.load()
+```
+
+## Usage
+
+```python
+from langchain_hyperbrowser import HyperbrowserLoader
+
+loader = HyperbrowserLoader(urls="https://example.com")
+docs = loader.load()
+
+print(docs[0])
+```
+
+## Advanced Usage
+
+You can specify the operation to be performed by the loader. The default operation is `scrape`. For `scrape`, you can provide a single URL or a list of URLs to be scraped. For `crawl`, you can only provide a single URL. The `crawl` operation will crawl the provided page and subpages and return a document for each page.
+
+```python
+loader = HyperbrowserLoader(
+  urls="https://hyperbrowser.ai", api_key="YOUR_API_KEY", operation="crawl"
+)
+```
+
+Optional params for the loader can also be provided in the `params` argument. For more information on the supported params, visit https://docs.hyperbrowser.ai/reference/sdks/python/scrape#start-scrape-job-and-wait or https://docs.hyperbrowser.ai/reference/sdks/python/crawl#start-crawl-job-and-wait.
+
+```python
+loader = HyperbrowserLoader(
+  urls="https://example.com",
+  api_key="YOUR_API_KEY",
+  operation="scrape",
+  params={"scrape_options": {"include_tags": ["h1", "h2", "p"]}}
+)
+```
