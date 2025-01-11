@@ -1,0 +1,11 @@
+stable_codec/__init__.py,sha256=TtZJbnITtKQ1vYjZNcsSlJGj8bd-FpvVacpvFXkj-RQ,42
+stable_codec/ctc_loss.py,sha256=wvapCZrIYpaIUzOZctnENo_UexUyPXLVbzKWtuU9sz0,8672
+stable_codec/model.py,sha256=3C15i5t8tBnGSpWq7jKw-GGyH5O8J57lQsU9vTgng0c,6243
+stable_codec/residual_fsq.py,sha256=m0Rd27ZQuXZJSrDJcEIe2abHrDPtPcknKxvrBeIVLmo,1847
+stable_codec/training_demo.py,sha256=zoBaSn4mX70tsK2E1iUDgWftkXbtdLsV0aTaauieXa8,6140
+stable_codec/training_module.py,sha256=K4lNW3EBu4nyiSGCN-soQFGHhsbm_Q97ghExZCKwf0I,25856
+stable_codec-0.1.0.dist-info/LICENSE,sha256=ofrDO3vNeRt0-zOutDn4JecnfiOfwRn7fSq28ISgwQE,1069
+stable_codec-0.1.0.dist-info/METADATA,sha256=SLQuYo54g3lm7QmsSbE5_kZ3G06lchICM6MlV8siNLY,7035
+stable_codec-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+stable_codec-0.1.0.dist-info/top_level.txt,sha256=ZYvulxpnBApGpwSJYGg0AAxcxijF3JMPFGgwYvu90bI,13
+stable_codec-0.1.0.dist-info/RECORD,,
