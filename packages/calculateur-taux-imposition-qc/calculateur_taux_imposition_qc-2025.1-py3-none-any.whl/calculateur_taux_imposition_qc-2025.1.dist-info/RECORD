@@ -1,0 +1,10 @@
+calculateur_taux_imposition_qc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+calculateur_taux_imposition_qc/calculateur.py,sha256=9pdG_Oa6T6yQmCDAsWt1rNVNNwl_CYWzeA-SowfLb8A,4503
+calculateur_taux_imposition_qc/tax_brackets.csv,sha256=SLnnOCEgLMSEzZHGfmaFikGFeMZy3fliOHaYno8GowM,885
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_taux_imposition_qc.py,sha256=WZNaqA4sKSUN68vM7eqZLEoMlknuQ8OmkQgGVU1Desg,3189
+calculateur_taux_imposition_qc-2025.1.dist-info/LICENSE,sha256=ScgG1vr5uBs40LN_wBzOBi3V__7nr6utkfYrDuHHmAA,1078
+calculateur_taux_imposition_qc-2025.1.dist-info/METADATA,sha256=psW_xytvVgkqKMBI9SegFozbzr8W4yV0ESEDKb18l6g,3444
+calculateur_taux_imposition_qc-2025.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+calculateur_taux_imposition_qc-2025.1.dist-info/top_level.txt,sha256=QV17GVGFVqXBLXwJnUP8hEYdeWh5mg3LMunPX2lpvCQ,37
+calculateur_taux_imposition_qc-2025.1.dist-info/RECORD,,
