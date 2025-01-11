@@ -1,0 +1,2 @@
+[console_scripts]
+gbp = gbp.scripts.supercommand:supercommand
