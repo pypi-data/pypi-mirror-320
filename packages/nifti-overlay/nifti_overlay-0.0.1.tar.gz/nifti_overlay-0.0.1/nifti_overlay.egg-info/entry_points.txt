@@ -1,0 +1,2 @@
+[console_scripts]
+nifti_overlay = nifti_overlay.__main__:main
