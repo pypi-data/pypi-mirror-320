@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+PaymentAI/__init__.py
+PaymentAI/core.py
+paymentAI.egg-info/PKG-INFO
+paymentAI.egg-info/SOURCES.txt
+paymentAI.egg-info/dependency_links.txt
+paymentAI.egg-info/requires.txt
+paymentAI.egg-info/top_level.txt
