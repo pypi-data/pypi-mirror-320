@@ -1,0 +1,8 @@
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+sigpy.egg-info/PKG-INFO
+sigpy.egg-info/SOURCES.txt
+sigpy.egg-info/dependency_links.txt
+sigpy.egg-info/top_level.txt
