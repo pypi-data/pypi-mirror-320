@@ -1,0 +1,86 @@
+Metadata-Version: 2.2
+Name: designer2
+Version: 2.0.11
+Summary: designerV2
+Home-page: https://github.com/NYU-DiffusionMRI/DESIGNER-v2
+Author: Benjamin Ades-Aron
+Author-email: benjamin.ades-aron@nyulangone.org
+License: NYU
+Keywords: python diffusion mri mppca gibbs preprocessing dki smi DESIGNER TMI
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: antspyx==0.4.2
+Requires-Dist: certifi==2024.6.2
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: chart-studio==1.1.0
+Requires-Dist: clarabel==0.9.0
+Requires-Dist: contourpy==1.2.1
+Requires-Dist: cvxpy==1.5.2
+Requires-Dist: cycler==0.12.1
+Requires-Dist: deepdiff==7.0.1
+Requires-Dist: dipy==1.9.0
+Requires-Dist: ecos==2.0.14
+Requires-Dist: fonttools==4.53.0
+Requires-Dist: h5py==3.11.0
+Requires-Dist: idna==3.7
+Requires-Dist: imageio==2.34.1
+Requires-Dist: joblib==1.4.2
+Requires-Dist: kiwisolver==1.4.5
+Requires-Dist: lazy_loader==0.4
+Requires-Dist: matplotlib==3.9.0
+Requires-Dist: networkx==3.3
+Requires-Dist: nibabel==5.2.1
+Requires-Dist: numba==0.60.0
+Requires-Dist: numpy==1.26.4
+Requires-Dist: numpy-groupies==0.11.1
+Requires-Dist: ordered-set==4.1.0
+Requires-Dist: osqp==0.6.7
+Requires-Dist: packaging==24.1
+Requires-Dist: pandas==2.2.2
+Requires-Dist: patsy==0.5.6
+Requires-Dist: pillow==10.3.0
+Requires-Dist: plotly==5.22.0
+Requires-Dist: pybind11==2.12.0
+Requires-Dist: pyparsing==3.1.2
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: pytz==2024.1
+Requires-Dist: PyYAML==6.0.1
+Requires-Dist: qdldl==0.1.7.post3
+Requires-Dist: requests==2.32.3
+Requires-Dist: retrying==1.3.4
+Requires-Dist: scikit-image==0.24.0
+Requires-Dist: scikit-learn==1.5.0
+Requires-Dist: scipy==1.13.1
+Requires-Dist: scs==3.2.4.post2
+Requires-Dist: setuptools==70.1.0
+Requires-Dist: setuptools-scm==8.1.0
+Requires-Dist: six==1.16.0
+Requires-Dist: statsmodels==0.14.2
+Requires-Dist: tenacity==8.4.1
+Requires-Dist: threadpoolctl==3.5.0
+Requires-Dist: tifffile==2024.6.18
+Requires-Dist: tqdm==4.66.4
+Requires-Dist: trx-python==0.2.9
+Requires-Dist: tzdata==2024.1
+Requires-Dist: urllib3==2.2.2
+Requires-Dist: webcolors==24.6.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+designer and TMI package for use with brain 
+    diffusion MRI processing. Designer is used for image preprocessing 
+    including denoising, partial-fourier gibbs correction, epi eddy 
+    current and motion, and normalization. TMI is used for dti/dki/wmti/smi
+    along with outlier correction.
