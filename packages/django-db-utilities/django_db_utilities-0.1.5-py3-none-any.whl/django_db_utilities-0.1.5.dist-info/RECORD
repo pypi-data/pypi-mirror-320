@@ -1,0 +1,13 @@
+django_db_utilities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_db_utilities/apps.py,sha256=vvw_2unPFGKyBf5NxxKNgcMLelT2cQ4Rojjmb73Zu8c,158
+django_db_utilities/docs/commands.md,sha256=slQ1EVK4Or1eFJECsCdumRXWJPklfSBEPjNt8iReyqc,484
+django_db_utilities/docs/configuration.md,sha256=7tiP_k4uSyRWzEbAPrgup3vzRfiyCrlkFHv3aviY0g0,198
+django_db_utilities/docs/index.md,sha256=6GBCQgNkjO5Ng02GYwyDJz2CFjnACSKKl_z0nWBbm0g,310
+django_db_utilities/docs/installation.md,sha256=nG8t4keF3gkBFOZDhbnFga2xAyY5hUfUHuIc-xj2CXQ,115
+django_db_utilities/management/commands/delete_model_data.py,sha256=lJCKFyFHAM1LsZRwJ9dFfLkRTNSbbujpduREdE9iWhU,1414
+django_db_utilities/management/commands/reset_database.py,sha256=NofsZUQU6wk1-N4_kOj4D-4MK8JYpAwdjw2Rm2o6Ml0,1249
+django_db_utilities/management/commands/reset_primary_keys.py,sha256=5z79ndRoEtv6Vk15zD_u5p8-bpGiHCFumfUtZFwYrPM,4185
+django_db_utilities-0.1.5.dist-info/LICENSE,sha256=Zcv2fU84rWlz008gFho34d9MHYUkmvQzMJLxoO3lglM,1072
+django_db_utilities-0.1.5.dist-info/METADATA,sha256=cXVHYqONLMWo0-WcBDEWn85YMbZmTiZF84ghHy3ruXs,889
+django_db_utilities-0.1.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+django_db_utilities-0.1.5.dist-info/RECORD,,

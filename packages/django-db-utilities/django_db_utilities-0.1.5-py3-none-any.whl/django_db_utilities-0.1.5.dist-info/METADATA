@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: django-db-utilities
+Version: 0.1.5
+Summary: A utility library for Django to reset databases, models, and primary keys.
+Home-page: https://github.com/notroddy/django-db-utilities
+License: MIT
+Author: Roddy Brown
+Author-email: roddy@notroddy.io
+Requires-Python: >=3.8,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: django (>=3.2,<6.0)
+Requires-Dist: pytest (>=8.3.4,<9.0.0)
+Requires-Dist: pytest-django (>=4.9.0,<5.0.0)
+Requires-Dist: questionary (>=2.1.0,<3.0.0)
+Project-URL: Repository, https://github.com/notroddy/django-db-utilities
