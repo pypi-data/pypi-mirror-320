@@ -1,0 +1,13 @@
+lupa-2.4.dist-info/top_level.txt,sha256=zBjq_OEwVlKBUT25L2ENcMO-9XdwVQSN7X6VHyH7Pcg,5
+lupa-2.4.dist-info/RECORD,,
+lupa-2.4.dist-info/LICENSE.txt,sha256=lXr-SRPfxGn9YFQdhHpYHFvd1roMy3I5DteMdYN3aKE,2231
+lupa-2.4.dist-info/METADATA,sha256=Omgz31FFbB2EQxKmmcWWKqNDgMXMTz--wxEKhJdXUdc,58085
+lupa-2.4.dist-info/WHEEL,sha256=aY0Wh7Yr1AtPNUbBLmb6eNBX5mR_Lo1wDY5UuFMnjSo,151
+lupa/lua52.cpython-313-x86_64-linux-gnu.so,sha256=OPwDKX9WdVp7iPa5NcgfEKNqLI6TeW727cJJV7NBABI,611104
+lupa/lua51.cpython-313-x86_64-linux-gnu.so,sha256=onoykDRqJZZDunbKehzJmIOVQVWXOiyDGiJ_KXuZBSg,582304
+lupa/__init__.py,sha256=c99ILOqbgXcktoS1YsqNLg9juNuAJZ_Yxm4VGEANkqo,3001
+lupa/luajit20.cpython-313-x86_64-linux-gnu.so,sha256=zwdqY85aHLKTMLWws5BAYb2Qjd5_tb4UKFFXCZGSLF4,1012368
+lupa/version.py,sha256=4aubADCFTeP14Ob-WxGATctabBoP4svSqiDpOP0Ddbg,20
+lupa/luajit21.cpython-313-x86_64-linux-gnu.so,sha256=MbXnWfa_ZAbhvvSwf35gCKMe1ZiUGLwz-XAWuYLwPqU,1119120
+lupa/lua53.cpython-313-x86_64-linux-gnu.so,sha256=XM6HPrJ-BpE7UY0cZlQ-uYmya9GNByUWP999cGA8rwI,639744
+lupa/lua54.cpython-313-x86_64-linux-gnu.so,sha256=Q8AAiUR4TPNI5h_DaYGa6nIf4XU2LVSYDzhLlmMpL7c,693024
