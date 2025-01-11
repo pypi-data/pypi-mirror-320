@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quool"
+version = "7.0.3"
+description = "Quantitative Toolkit - a helper in quant developing"
+readme = { file = "README.md", content-type = "text/markdown" }
+authors = [
+    { name = "ppoak", email = "ppoak@foxmail.com" }
+]
+keywords = ["quant", "framework", "finance"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "joblib",
+    "pandas",
+    "pyarrow",
+    "matplotlib",
+]
+
+[project.urls]
+Homepage = "https://github.com/ppoak/quool"
+
+[tool.setuptools.packages]
+find = {}
