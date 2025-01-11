@@ -1,0 +1,2 @@
+[pygments.styles]
+jupyter_python = nb_pdf_template:Jupyter_PythonStyle
