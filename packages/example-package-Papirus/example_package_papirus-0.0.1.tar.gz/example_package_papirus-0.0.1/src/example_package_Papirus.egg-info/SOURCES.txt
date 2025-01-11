@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/example_package_Papirus.egg-info/PKG-INFO
+src/example_package_Papirus.egg-info/SOURCES.txt
+src/example_package_Papirus.egg-info/dependency_links.txt
+src/example_package_Papirus.egg-info/top_level.txt
+src/example_packgage_Papirus/__init__.py
+src/example_packgage_Papirus/example.py
