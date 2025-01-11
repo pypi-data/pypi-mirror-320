@@ -1,0 +1,9 @@
+aiohttp_asgi_connector-1.1.1.dist-info/METADATA,sha256=ptabqyIqtWmpbrXuB79fPLNnJngytVFg2o5oZTl2mFM,3447
+aiohttp_asgi_connector-1.1.1.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+aiohttp_asgi_connector-1.1.1.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+aiohttp_asgi_connector-1.1.1.dist-info/licenses/LICENSE,sha256=aBRoXdMYX_BUHLmVB0U72x8_Cozam5lK0ysZqw12sYw,1500
+aiohttp_asgi_connector/__init__.py,sha256=WzQMTbC7W2Jg-A_AHJySGxf3hBrpx5Ma8u4aSAqtYek,88
+aiohttp_asgi_connector/connector.py,sha256=5XS1S24XMzT1Ci4S5Rkp3xPYEVOcoc8W8P5PUe48hwI,2163
+aiohttp_asgi_connector/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiohttp_asgi_connector/transport.py,sha256=dIRnzKC71PHvTqiS8LqQtipWyIFewxiVe6snbkIKDCw,6485
+aiohttp_asgi_connector-1.1.1.dist-info/RECORD,,
