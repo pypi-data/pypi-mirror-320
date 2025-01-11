@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="sdt.inertial">
+
+	<digest>
+		[solids, object] Point-mass inertial object.
+	</digest>
+
+	<description>
+		<o>sdt.inertial</o> Simulates a simple point-mass whose displacement and velocity can be set.
+		Mostly used as exciter for modal resonators.
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="tag">Sound Design Toolkit</metadata>
+	</metadatalist>
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="strike" >
+			<arglist>
+				<arg name="displacement (m)" optional="0" type="float" />
+				<arg name="strike velocity (m/s)" optional="0" type="float" />
+			</arglist>
+			<digest>
+				A <m>strike</m> message followed by a list of two float arguments resets displacement and
+				velocity of the point-mass to the given values.
+			</digest>
+			<description>
+				The <m>strike</m> message followed by a list of two float arguments forcedly sets the displacement and
+				velocity of the point-mass.<br />
+				Displacement = 0. typically results in immediate contact with a second object.<br />
+				Velocity towards a second object must be negative.
+			</description>
+		</method>
+	</methodlist>
+
+	<!--OUTLETS
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>Impact velocity (m/s).</digest>
+		</outlet>
+	</outletlist> -->
+
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="Unique_ID" optional="0" type="symbol, required">
+			<digest>Mandatory: Unique name for the point-mass.</digest>
+		</objarg>
+	</objarglist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="mass" get="1" set="1" type="float" size="1" >
+		    <digest>Mass (kg).</digest>
+	  </attribute>
+
+		<attribute name="fragmentSize" get="1" set="1" type="float" size="1">
+		    <digest>Fraction of the whole object [0., 1.]. Used by control algorithms (e.g. <o>sdt.breaking~</o>) to simulate fragmentation.</digest>
+	  </attribute>
+	</attributelist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="sdt.modal"/>
+		<seealso name="sdt.impact~"/>
+		<seealso name="sdt.friction~"/>
+		<seealso name="sdt.bouncing~"/>
+		<seealso name="sdt.breaking~"/>
+		<seealso name="sdt.crumpling~"/>
+		<seealso name="sdt.rolling~"/>
+		<seealso name="sdt.scraping~"/>
+	</seealsolist>
+
+</c74object>

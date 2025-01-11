@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="sdt.friction~">
+
+	<digest>
+		[solids, interactor] Friction interaction between two solid objects.
+	</digest>
+
+	<description>
+		<o>sdt.friction~</o> simulates the nonlinear friction force arising when a solid object
+		rubs against another (e.g. a singing glass, squeaky hinges).
+		<br />
+		N.B. It must be used in conjuction with two solid object models (either <o>sdt.inertial~</o> or <o>sdt.modal~</o>) forming a structure
+		"object0 &#8596; <o>sdt.impact~</o> &#8596; object1".
+		This is achieved by specifying the two objects' IDs as creation arguments.
+		<br />
+		Outlets: Their number depends on the creation argument <ar>Max-outlets</ar>.
+		They output signals respectively representing the displacement (m) at each pickup point of the interacting objects, starting
+		from those of object0 and then of object1.
+		Such displacement represent the sound (actually, vibration) produced at various locations on the objects.
+		<br />
+		<br />
+		Friction force is computed from the relative velocity between the contact points of two solid objects as the sum of four components:
+		an elastic term, an internal dissipation term, a viscosity term, and the gain of a pseudo-random function representing noise related to the surface roughness.
+		More subtle phenomena, such as pre-sliding behavior (gradual increase of the friction force for very small displacements),
+		are parametrized by several other quantities: dynamic and static friction coefficients, break-away coefficient and Stribeck velocity.
+		These phenomena are mostly related to the transients and they are particularly important for a realistic simulation of friction sounds.
+		In more detail:
+		<br />
+		* Bristle stiffness: affects the evolution of mode lock-in.
+		<br />
+		* Bristle viscosity (dissipation): affects the sound bandwidth.
+		<br />
+		* Linear viscosity: affects the speed of timbre evolution and pitch.
+		<br />
+		* kDynamic friction coefficient: high values reduce the sound bandwidth.
+		<br />
+		* kStatic friction coefficient: affects the smoothness of sound attack.
+		<br />
+		* Break-away coefficient: affects the transients of the elasto-plastic state.
+		<br />
+		* Stribeck velocity: affects the smoothness of the sound attack.
+		<br />
+		* Noisiness: affects the perceived surface roughness.
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="tag">Sound Design Toolkit</metadata>
+	</metadatalist>
+
+	<!--INLETS
+	<inletlist>
+		<inlet id="0" type="message">
+			<digest></digest>
+			<description></description>
+		</inlet>
+
+		<inlet id="0" type="signal">
+			<digest>External force on object0 (N).</digest>
+			<description></description>
+		</inlet>
+
+		<inlet id="1" type="signal">
+			<digest>Strike velocity of object0 (m/s).</digest>
+			<description></description>
+		</inlet>
+
+		<inlet id="2" type="signal">
+			<digest>Fragment size of object0 [0., 1.].</digest>
+			<description></description>
+		</inlet>
+
+		<inlet id="3" type="signal">
+			<digest>External force on object1 (N).</digest>
+			<description></description>
+		</inlet>
+
+		<inlet id="4" type="signal">
+			<digest>Strike velocity of object1 (m/s).</digest>
+			<description></description>
+		</inlet>
+
+		<inlet id="5" type="signal">
+			<digest>Fragment size of object1 [0., 1.].</digest>
+			<description></description>
+		</inlet>
+	</inletlist>
+	-->
+
+	<!--OUTLETS The number of outlets dynamically changes according to the creation argument <ar>Max-outlets</ar>
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>Output sound / displacement at the respective pickup point (m).</digest>
+		</outlet>
+	</outletlist>
+	-->
+
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="Unique_ID-object0" optional="0" type="symbol, required">
+			<digest>Mandatory: Name of object0 to be referenced.</digest>
+		</objarg>
+
+		<objarg name="Unique_ID-object1" optional="0" type="symbol, required">
+			<digest>Mandatory: Name of object1 to be referenced.</digest>
+		</objarg>
+
+		<objarg name="Max-outlets" optional="0" type="int, required">
+			<digest>Mandatory: Maximum number of outlets. They should correspond to the total number of pickups of object0 + object1.
+							If greater than the number of pickup points, the unused outlets are disabled;
+							if lower than the number of pickup points, only the first ones are output,
+							always starting from pickup0.
+			</digest>
+		</objarg>
+	</objarglist>
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="messages">
+			<digest>
+				Inlet 0: Messages and attributes to the object.
+			</digest>
+		</method>
+
+		<method name="signal">
+			<digest>
+				All inlets accept signals (see description below).
+			</digest>
+			<description>
+				Inlet 0: External force on object0 (N). <br />
+			  Inlet 1: Sets the velocity of object0 (m/s) and puts the two objects in contact. <br />
+				Inlet 2: Fragment size of object0 [0., 1.].<br />
+			  Inlet 3: External force on object1 (N). <br />
+			  Inlet 4: Sets the velocity of object1 (m/s) and puts the two objects in contact. <br />
+				Inlet 5: Fragment size of the object1 [0., 1.].
+			</description>
+		</method>
+	</methodlist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="stiffness" get="1" set="1" type="float" size="1" >
+		    <digest>Bristle stiffness.</digest>
+		    <description></description>
+	  </attribute>
+
+		<attribute name="dissipation" get="1" set="1" type="float" size="1">
+		    <digest>Bristle dissipation.</digest>
+		    <description></description>
+	  </attribute>
+
+		<attribute name="viscosity" get="1" set="1" type="float" size="1" >
+				<digest>Bristle viscosity.</digest>
+				<description></description>
+		</attribute>
+
+		<attribute name="noisiness" get="1" set="1" type="float" size="1" >
+				<digest>Amount of sliding noise.</digest>
+				<description></description>
+		</attribute>
+
+		<attribute name="kStatic" get="1" set="1" type="float" size="1" >
+				<digest>Static friction coefficient [0., 1.].</digest>
+				<description></description>
+		</attribute>
+
+		<attribute name="kDynamic" get="1" set="1" type="float" size="1" >
+				<digest>Dynamic friction coefficient [0., 1.].</digest>
+				<description></description>
+		</attribute>
+
+		<attribute name="breakAway" get="1" set="1" type="float" size="1" >
+				<digest>Break-away coefficient [0., 1.].</digest>
+				<description></description>
+		</attribute>
+
+		<attribute name="stribeck" get="1" set="1" type="float" size="1" >
+				<digest>Stribeck velocity (m/s).</digest>
+				<description></description>
+		</attribute>
+
+		<attribute name="force" get="1" set="1" type="float" size="1" >
+				<digest>Normal force on object0 (N).</digest>
+				<description></description>
+		</attribute>
+
+		<attribute name="contact0" get="1" set="1" type="int" size="1" >
+				<digest>Pickup index of the contact point for object0.</digest>
+				<description></description>
+		</attribute>
+
+		<attribute name="contact1" get="1" set="1" type="int" size="1" >
+				<digest>Pickup index of the contact point for object1.</digest>
+				<description></description>
+		</attribute>
+	</attributelist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="sdt.inertial"/>
+		<seealso name="sdt.modal"/>
+		<seealso name="sdt.impact~"/>
+		<seealso name="sdt.bouncing~"/>
+		<seealso name="sdt.breaking~"/>
+		<seealso name="sdt.crumpling~"/>
+		<seealso name="sdt.rolling~"/>
+		<seealso name="sdt.scraping~"/>
+	</seealsolist>
+
+</c74object>

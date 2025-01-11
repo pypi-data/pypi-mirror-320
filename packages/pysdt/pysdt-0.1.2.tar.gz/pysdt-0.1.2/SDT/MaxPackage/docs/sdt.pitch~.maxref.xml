@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="sdt.pitch~">
+
+	<digest>
+		Fundamental frequency (f0) estimator.
+	</digest>
+
+	<description>
+		<o>sdt.pitch~</o> estimates the fundamental frequency (f0) and pitch clarity of the incoming signal.
+		Based on the Normalized Square Difference Function (NSDF).
+		It outputs the estimated pitch (Hz) (leftmost outlet) and a pitch clarity value [0., 1.] (rightmost outlet).
+		<br/>
+		<br/>
+		For voice-driven applications, <o>sdt.pitch~</o> can be coupled with the <i>skewness</i> descriptor
+		available in <o>sdt.spectralfeats~</o>, so as to have a higher level representation of the phonation vocal activity.
+		For better results, a vocal sound should be pre-processed with <o>sdt.demix~</o> in order to feed
+		<o>sdt.pitch~</o> and <o>sdt.spectralfeats~</o> with the harmonic component only.
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="tag">Sound Design Toolkit</metadata>
+	</metadatalist>
+
+	<!--INLETS
+	<inletlist>
+		<inlet id="0" type="signal">
+			<digest>Audio signal.</digest>
+			<description></description>
+		</inlet>
+	</inletlist>
+	-->
+
+	<!--OUTLETS
+	<outletlist>
+		<outlet id="0" type="float">
+			<digest>Detected pitch, in Hz.</digest>
+		</outlet>
+
+		<outlet id="1" type="float">
+			<digest>Pitch clarity [0.0, 1.0].</digest>
+		</outlet>
+	</outletlist>
+	-->
+
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="window-size" optional="1" type="int">
+			<digest>Window size, in samples. Default is 4096.</digest>
+		</objarg>
+	</objarglist>
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="signal">
+			<digest>
+				Input signal.
+			</digest>
+			<description>
+			</description>
+		</method>
+	</methodlist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="overlap" get="1" set="1" type="float" size="1" >
+		    <digest>Window overlap ratio [0., 1.].</digest>
+		    <description></description>
+	  </attribute>
+
+		<attribute name="tolerance" get="1" set="1" type="float" size="1">
+		    <digest>Peak tolerance [0., 1.].</digest>
+		    <description></description>
+	  </attribute>
+	</attributelist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="sdt.demix~"/>
+		<seealso name="sdt.envelope~"/>
+		<seealso name="sdt.myo~"/>
+		<seealso name="sdt.spectralfeats~"/>
+		<seealso name="sdt.zerox~"/>
+	</seealsolist>
+
+	<!--MISC
+	<misc name="Output">
+		<entry name="float">
+			<description>
+				Outlet 0: Detected pitch, in Hz. <br/><br/>
+				Outlet 1: Pitch clarity [0.0, 1.0].
+			</description>
+		</entry>
+	</misc>
+	-->
+
+</c74object>

@@ -1,0 +1,33 @@
+# System files and directories
+.DS_Store
+*.o
+*.pd_linux
+*.so
+doc
+*.dll
+*.def
+*.mxe
+*.mxe64
+*.mxo
+*.framework
+.idea
+.vscode
+.vs
+CMakeLists.txt
+
+# Outputs
+*.o
+*.pd_linux
+*.so
+*.dll
+!pd.dll
+*.def
+!Info.def
+*.mxe
+*.mxe64
+doc
+oscdoc
+.build*
+
+# Other files
+*.json

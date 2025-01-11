@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="sdt.fluidflow~">
+
+	<digest>
+		[liquids] Sound of water dripping, waterfalls, burbling streams, etc.
+	</digest>
+
+	<description>
+		<o>sdt.fluidflow~</o> simulates a distribution of bubbles that keep popping and regenerating.
+		It takes nine control parameters: the <i>average rate</i> of bubbles generated per second;
+		their <i>minimum radius</i> and <i>maximum radius</i>;
+		the <i>exponential radius</i>, the distribution of bubble radii across the range;
+		the <i>minimum depth</i> and <i>maximum depth</i>, the elevation of bubbles, from deep to shallow;
+		the <i>exponential depth</i> affecting the distribution of bubbles elevation across the range;
+		the <i>rise factor</i> simulating the rise in pitch occurring when bubbles shrink before collapsing;
+		and <i>rise cut off</i>, the elevation threshold below which bubbles do not change pitch.
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="tag">Sound Design Toolkit</metadata>
+	</metadatalist>
+
+	<!--INLETS
+	<inletlist>
+		<inlet id="0" type="messages to the fluidflow object">
+			<digest>messages to the fluidflow object.</digest>
+			<description></description>
+		</inlet>
+	</inletlist>
+	-->
+
+	<!--OUTLETS
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>Liquid sound.</digest>
+		</outlet>
+	</outletlist>
+	-->
+
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="polyphony" optional="1" type="int">
+			<digest>Object polyphony. Default number of voices is 128.</digest>
+		</objarg>
+	</objarglist>
+
+	<!--MESSAGES
+	<methodlist>
+		<method name="">
+			<arglist>
+				<arg name="" optional="0" type="bang" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+			</description>
+		</method>
+	</methodlist>-->
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="avgRate" get="1" set="1" type="float" size="1" >
+		    <digest>Average number of bubbles generated per second [0., 100000.].</digest>
+		    <description></description>
+	  </attribute>
+
+		<attribute name="minRadius" get="1" set="1" type="float" size="1">
+		    <digest>Minimum bubble radius (mm) [0.15, 150.].</digest>
+		    <description></description>
+	  </attribute>
+
+		<attribute name="maxRadius" get="1" set="1" type="float" size="1" >
+				<digest>Maximum bubble radius (mm) [0.15, 150.].</digest>
+				<description></description>
+		</attribute>
+
+		<attribute name="expRadius" get="1" set="1" type="float" size="1" >
+				<digest>Bubble radius gamma factor, determines the distribution of radii across the range [0., 10.].</digest>
+				<description></description>
+		</attribute>
+
+		<attribute name="minDepth" get="1" set="1" type="float" size="1" >
+				<digest>Minimum bubble elevation (deep) [0., 1.].</digest>
+				<description></description>
+		</attribute>
+
+		<attribute name="maxDepth" get="1" set="1" type="float" size="1" >
+				<digest>Maximum bubble elevation (shallow) [0., 1.].</digest>
+				<description></description>
+		</attribute>
+
+		<attribute name="expDepth" get="1" set="1" type="float" size="1" >
+				<digest>Bubble depth gamma factor, determines the distribution of elevations across the range [0., 10.].</digest>
+				<description></description>
+		</attribute>
+
+		<attribute name="riseFactor" get="1" set="1" type="float" size="1" >
+				<digest>Pitch rise factor [0., 3.]. When collapsing, bubbles reduce their size resulting in progressively higher pitch.</digest>
+				<description></description>
+		</attribute>
+
+		<attribute name="riseCutoff" get="1" set="1" type="float" size="1" >
+				<digest>Rise elevation threshold [0., 1.]. The pitch of bubbles below this value stay constant.</digest>
+				<description></description>
+		</attribute>
+	</attributelist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="sdt.bubble~"/>
+	</seealsolist>
+
+</c74object>

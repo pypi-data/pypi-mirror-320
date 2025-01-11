@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="sdt.bouncing~">
+
+	<digest>
+		[solids, control] Control algorithm to render bouncing sounds.
+	</digest>
+
+	<description>
+		<o>sdt.bouncing~</o> generates a sequence of velocity events
+		meant to drive a point-mass hitting a resonator.
+		<br />
+		N.B. It must be used as a control layer for the structure formed by
+		<o>sdt.inertial</o> &#8596; <o>sdt.impact~</o> &#8596; <o>sdt.modal</o>.
+		<br />
+		<br />
+		It takes three control parameters:
+		initial <i>height</i> of the falling object (m), shape <i>irregularity</i> and
+		<i>restitution coefficient</i>.
+		Output: signal representing the impact velocity (m/s).
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="tag">Sound Design Toolkit</metadata>
+	</metadatalist>
+
+	<!--INLETS
+	<inletlist>
+		<inlet id="0" type="messages to the bouncing object">
+			<digest>Messages to the bouncing object.</digest>
+			<description>Messages to the bouncing object. Bang triggers a bouncing event.</description>
+		</inlet>
+	</inletlist>
+	-->
+
+	<!--OUTLETS
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>Impact velocity (m/s).</digest>
+		</outlet>
+	</outletlist>
+	-->
+
+	<!--ARGUMENTS
+	<objarglist>
+		<objarg name="" optional="" type="">
+			<digest></digest>
+		</objarg>
+	</objarglist>-->
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="bang">
+			<digest>
+				Inlet 0: Bang triggers a bouncing event.
+			</digest>
+			<description></description>
+		</method>
+	</methodlist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="restitution" get="1" set="1" type="float" size="1" >
+		    <digest>Restitution coefficient of the bounce [0., 1.].</digest>
+		    <description>Restitution coefficient of the bounce, between 0. and 1.</description>
+	  </attribute>
+
+		<attribute name="height" get="1" set="1" type="float" size="1">
+		    <digest>Initial height (m) of the object being dropped.</digest>
+		    <description></description>
+	  </attribute>
+
+		<attribute name="irregularity" get="1" set="1" type="float" size="1" >
+				<digest>Object shape irregularity [0., 1.].</digest>
+				<description>Deviation from a spherical shape</description>
+		</attribute>
+
+	</attributelist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="sdt.inertial"/>
+		<seealso name="sdt.modal"/>
+		<seealso name="sdt.impact~"/>
+		<seealso name="sdt.friction~"/>
+		<seealso name="sdt.breaking~"/>
+		<seealso name="sdt.crumpling~"/>
+		<seealso name="sdt.rolling~"/>
+		<seealso name="sdt.scraping~"/>
+	</seealsolist>
+
+</c74object>

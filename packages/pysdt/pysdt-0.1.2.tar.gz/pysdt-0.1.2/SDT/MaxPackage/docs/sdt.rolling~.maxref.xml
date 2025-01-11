@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="sdt.rolling~">
+
+	<digest>
+		[solids, control] Control algorithm to render rolling sounds.
+	</digest>
+
+	<description>
+		<o>sdt.rolling~</o> simulates a round object (e.g. wheel, marble) rolling over a surface.
+		It produces a force signal to be applied to a point-mass hitting a resonator: rolling sound
+		is generated as a dense series of micro-impacts modulated by the speed and
+		geometry of the rotating object and the roughness of the surface.
+		<br />
+		N.B. It must be used as a control layer for the structure formed by
+		<o>sdt.inertial</o> &#8596; <o>sdt.impact~</o> &#8596; <o>sdt.modal</o>.
+		<br />
+		<br />
+		It is fed by a signal representing the profile of the rolling surface, and it takes
+		four control parameters: the <i> depth </i> and <i> granularity</i> of the surface,
+		the <i>mass</i> and <i>velocity</i> of the rolling object.
+		<br />
+		It outputs a signal representing a force (N) to be applied to <o>sdt.inertial</o>
+		(through <o>sdt.impact~</o>), resulting in modulated bounces on the surface.
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="tag">Sound Design Toolkit</metadata>
+	</metadatalist>
+
+	<!--INLETS
+	<inletlist>
+		<inlet id="0" type="messages to the rolling object">
+			<digest>messages to the rolling object.</digest>
+			<description></description>
+		</inlet>
+
+		<inlet id="0" type="signal">
+			<digest>Surface profile (in m), as audio signal.</digest>
+			<description></description>
+		</inlet>
+	</inletlist>
+	-->
+
+	<!--OUTLETS
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>Force applied to object 1 (sdt.inertial).</digest>
+		</outlet>
+	</outletlist>
+	-->
+
+	<!--ARGUMENTS
+	<objarglist>
+		<objarg name="" optional="" type="">
+			<digest></digest>
+		</objarg>
+	</objarglist>-->
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="signal">
+			<digest>
+				Input representing the profile of the rolling surface.
+			</digest>
+			<description>
+			</description>
+		</method>
+	</methodlist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="depth" get="1" set="1" type="float" size="1" >
+		    <digest>Depth of surface irregularities, affects the amplitude of the micro-impacts.</digest>
+		    <description></description>
+	  </attribute>
+
+		<attribute name="grain" get="1" set="1" type="float" size="1">
+		    <digest>Surface granularity, affects the density of the micro-impacts.</digest>
+		    <description></description>
+	  </attribute>
+
+		<attribute name="mass" get="1" set="1" type="float" size="1" >
+				<digest>Mass of the rolling object (to be used also as the mass of <o>sdt.inertial</o>).</digest>
+				<description></description>
+		</attribute>
+
+		<attribute name="velocity" get="1" set="1" type="float" size="1" >
+				<digest>Rolling velocity (m/s)</digest>
+				<description></description>
+		</attribute>
+	</attributelist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="sdt.inertial"/>
+		<seealso name="sdt.modal"/>
+		<seealso name="sdt.impact~"/>
+		<seealso name="sdt.friction~"/>
+		<seealso name="sdt.bouncing~"/>
+		<seealso name="sdt.breaking~"/>
+		<seealso name="sdt.crumpling~"/>
+		<seealso name="sdt.scraping~"/>
+	</seealsolist>
+
+	<!--MISC
+	<misc name="Input">
+		<entry name="signal">
+			<description>
+				Inlet 0: Surface profile. The profile of the surface is obtained as a signal input,
+				and it can be either recorded as an audio file or generated in real time.
+				Usually, bandpass filtered noise or fractal noise are two good surface profile generators.
+			</description>
+		</entry>
+	</misc>
+
+	<misc name="Output">
+		<entry name="signal">
+			<description>
+				Outlet 0: Normal force acting on the rolling object, meant to be applied to an inertial mass impacting with another resonator.
+				In addition to the gravity force, when an impact occurs the ball experiences an upward lift,
+				which is assumed to be proportional to the depth of the irregularity and to the kinetic energy of the rolling object.
+			</description>
+		</entry>
+	</misc>
+	-->
+
+</c74object>

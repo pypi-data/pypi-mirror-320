@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="sdt.crumpling~">
+
+	<digest>
+		[solids, control] Control algorithm to render a granular, crumpling/crushing sound.
+	</digest>
+
+	<description>
+		<o>sdt.crumpling~</o> generates a stochastic series of velocity and fragmentation events
+		meant to drive a point-mass hitting a resonator.
+		This results in a granular, crumpling/crushing sound.
+		<br />
+		N.B. It must be used as a control layer for the structure formed by
+		<o>sdt.inertial</o> &#8596; <o>sdt.impact~</o> &#8596; <o>sdt.modal</o>.
+		<br />
+		<br />
+		It takes three control parameters:
+		<i>crushing energy</i>, <i>granularity</i>, and <i>fragmentation</i>
+		.<br />
+		It outputs two signals:
+		Outlet 0: impact velocity (m/s) [0., 1.];
+		Outlet 1: fragment size, as fraction of the whole object [0., 1.].
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="tag">Sound Design Toolkit</metadata>
+	</metadatalist>
+
+	<!--INLETS
+	<inletlist>
+		<inlet id="0" type="messages to the crumpling object">
+			<digest>Messages to the crumpling object.</digest>
+			<description>Messages to the crumpling object.</description>
+		</inlet>
+	</inletlist>
+	-->
+
+	<!--OUTLETS
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>Audio signal: Impact velocity in m/s</digest>
+		</outlet>
+		<outlet id="1" type="signal">
+			<digest>Audio signal: Fragment size.</digest>
+		</outlet>
+	</outletlist>
+	-->
+
+	<!--ARGUMENTS
+	<objarglist>
+		<objarg name="" optional="" type="">
+			<digest></digest>
+		</objarg>
+	</objarglist>-->
+
+	<!--MESSAGES
+	<methodlist>
+		<method name="bang">
+			<arglist>
+				<arg name="bouncing event trigger" optional="0" type="bang" />
+			</arglist>
+			<digest>
+				Bang triggers the bouncing event.
+			</digest>
+			<description>
+				Bangs received by the left-most outlet triggers the bouncing event.
+			</description>
+		</method>
+	</methodlist> -->
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="crushingEnergy" get="1" set="1" type="float" size="1" >
+		    <digest>Energy of micro-impacts [0., 1.].</digest>
+		    <description></description>
+	  </attribute>
+
+		<attribute name="granularity" get="1" set="1" type="float" size="1">
+		    <digest>Granularity [0., 1.].</digest>
+		    <description></description>
+	  </attribute>
+
+		<attribute name="fragmentation" get="1" set="1" type="float" size="1" >
+				<digest>Fragmentation: tendency to break into smaller pieces [0., 1.].</digest>
+				<description></description>
+		</attribute>
+	</attributelist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="sdt.inertial"/>
+		<seealso name="sdt.modal"/>
+		<seealso name="sdt.impact~"/>
+		<seealso name="sdt.friction~"/>
+		<seealso name="sdt.bouncing~"/>
+		<seealso name="sdt.breaking~"/>
+		<seealso name="sdt.rolling~"/>
+		<seealso name="sdt.scraping~"/>
+	</seealsolist>
+
+</c74object>
