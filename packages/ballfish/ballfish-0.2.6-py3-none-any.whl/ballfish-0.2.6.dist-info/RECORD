@@ -1,0 +1,12 @@
+ballfish/__init__.py,sha256=10YAUPnbIFLqkLh_OQW6Qc2dFuhnqThmRAC-1ZEPP14,1089
+ballfish/distribution.py,sha256=1edRioCOqfJAn6OgBWRv3JtFmWLJBu8vMREO7oWEuL4,5109
+ballfish/projective.py,sha256=OCIZJeS5PQJXVabXpgb5SWAStf5pM9k9kxd_-CqydXI,3840
+ballfish/projective_transform.py,sha256=nAVuIuJ83J7Yvj7Cam-ytl4TTzCycAzwtmVbXKd161s,1559
+ballfish/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ballfish/transformation.py,sha256=iK8Tx3USRJ1SOl4V-Vg3TbMIYXyW5BS2Y3A8zK3ct4U,27268
+ballfish/truncnorm.py,sha256=wlsYrLxtoyLKc-jE-3O3ByoskPAfan0k0mdiAfCpdLA,712
+ballfish-0.2.6.dist-info/LICENSE,sha256=LP0BBe7yoLZsor4DvxqXAUTKTfUV-gIPAlJ6n-lpRsQ,1138
+ballfish-0.2.6.dist-info/METADATA,sha256=oDo7D9FEWIwTF-yQwrqBeGU7J1ZHYOxBml58nGfvnhQ,1941
+ballfish-0.2.6.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+ballfish-0.2.6.dist-info/top_level.txt,sha256=_eBFEbMvjcUIFZUNr0xMFB1MrnsFdOsyQK2p45duK6w,9
+ballfish-0.2.6.dist-info/RECORD,,
