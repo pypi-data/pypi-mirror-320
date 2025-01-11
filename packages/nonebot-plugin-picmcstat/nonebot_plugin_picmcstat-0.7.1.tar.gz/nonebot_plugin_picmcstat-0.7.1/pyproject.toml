@@ -1,0 +1,38 @@
+[project]
+name = "nonebot-plugin-picmcstat"
+dynamic = []
+description = "A NoneBot2 plugin generates a pic from a Minecraft server's MOTD"
+authors = [
+    { name = "student_2333", email = "lgc2333@126.com" },
+]
+dependencies = [
+    "nonebot2>=2.3.3",
+    "nonebot-plugin-alconna>=0.52.3",
+    "mcstatus>=11.1.1",
+    "pil-utils>=0.2.1",
+    "punycode>=0.2.1",
+    "dnspython>=2.6.1",
+    "cookit[pydantic]>=0.8.1",
+]
+requires-python = ">=3.9,<4.0"
+readme = "README.md"
+version = "0.7.1"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://github.com/lgc-NB2Dev/nonebot-plugin-picmcstat"
+
+[tool.pdm.build]
+includes = []
+
+[tool.pdm.version]
+source = "file"
+path = "nonebot_plugin_picmcstat/__init__.py"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
