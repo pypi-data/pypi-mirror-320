@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fluxions"
+version = "0.1.0"
+authors = [
+    { name = "Harry", email = "harry@fluxions.ai" },
+]
+description = "Fluxions Python SDK"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/fluxions-xyz/fluxions"
+"Bug Tracker" = "https://github.com/yourusername/fluxions/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fluxions"]
+
+
