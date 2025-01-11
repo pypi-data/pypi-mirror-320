@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=40.6.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shiny_ketcher"
+version = "0.1"
+authors = [{ name = "Alexander Craig", email = "amcraigpnw@gmail.com" }]
+description = "Ketcher React output binding and message handlers for Shiny for Python."
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["shiny >= 0.6.0"]
+
+[project.urls]
+Homepage = "https://github.com/amcraig/shiny_ketcher"
+Issues = "https://github.com/amcraig/shiny_ketcher/issues"
+
+[tool.setuptools]
+packages = ["shiny_ketcher"]
+include-package-data = true
+zip-safe = false

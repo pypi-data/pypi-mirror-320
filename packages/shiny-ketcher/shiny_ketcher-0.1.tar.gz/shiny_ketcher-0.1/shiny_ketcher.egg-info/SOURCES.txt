@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+shiny_ketcher/__init__.py
+shiny_ketcher/shiny_ketcher.py
+shiny_ketcher.egg-info/PKG-INFO
+shiny_ketcher.egg-info/SOURCES.txt
+shiny_ketcher.egg-info/dependency_links.txt
+shiny_ketcher.egg-info/not-zip-safe
+shiny_ketcher.egg-info/requires.txt
+shiny_ketcher.egg-info/top_level.txt
