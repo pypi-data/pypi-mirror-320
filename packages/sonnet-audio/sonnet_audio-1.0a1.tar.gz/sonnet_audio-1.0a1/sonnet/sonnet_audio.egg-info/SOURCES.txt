@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+sonnet/sonnet_audio.egg-info/PKG-INFO
+sonnet/sonnet_audio.egg-info/SOURCES.txt
+sonnet/sonnet_audio.egg-info/dependency_links.txt
+sonnet/sonnet_audio.egg-info/requires.txt
+sonnet/sonnet_audio.egg-info/top_level.txt

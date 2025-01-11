@@ -1,0 +1,114 @@
+Metadata-Version: 2.2
+Name: sonnet-audio
+Version: 1.0a1
+Summary: SONNET: Sound Network Negotiated Encoding Transmitter - Audio data transmission over sound
+Home-page: https://github.com/alfaoz/sonnet
+Author: Alfa Ozaltin
+Author-email: alfa.ozaltin@gmail.com
+Project-URL: Bug Tracker, https://github.com/alfaoz/sonnet/issues
+Project-URL: Documentation, https://github.com/alfaoz/sonnet#readme
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Communications
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.19.0
+Requires-Dist: scipy>=1.7.0
+Requires-Dist: pyaudio>=0.2.11
+Requires-Dist: colorama>=0.4.4
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0; extra == "dev"
+Requires-Dist: black>=21.0; extra == "dev"
+Requires-Dist: flake8>=3.9; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: project-url
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# SONNET - Sound Network Negotiated Encoding Transmitter
+
+SONNET is a Python library for encoding and decoding data through audio signals. It uses frequency-shift keying (FSK) to transmit digital data through sound waves, making it suitable for air-gapped data transfer or creative audio applications.
+
+## Features
+
+- Encode text data into audio signals
+- Real-time audio signal decoding
+- Multiple encoding modes (1, 2, or 3 bits per beep)
+- Signal quality monitoring
+- CRC32 checksum verification
+- Automatic mode detection
+- Transmission rate monitoring
+
+## Installation
+
+```bash
+pip install sonnet-audio
+```
+# Quick Start
+### Encoding Text to Audio
+```python
+from sonnet import text_to_sound
+
+# Encode text file to audio
+text_to_sound("input.txt", "output.wav", mode="3bpb")
+```
+### Decoding Realtime Audio
+```python
+from sonnet import SonnetDecoder
+import pyaudio
+import numpy as np
+
+# Initialize decoder
+decoder = SonnetDecoder()
+
+# Set up PyAudio for input
+p = pyaudio.PyAudio()
+stream = p.open(format=pyaudio.paFloat32,
+                channels=1,
+                rate=44100,
+                input=True,
+                frames_per_buffer=512)
+
+try:
+    while True:
+        # Read audio chunk
+        data = stream.read(512)
+        audio_data = np.frombuffer(data, dtype=np.float32)
+        
+        # Process the chunk
+        result = decoder.process_chunk(audio_data)
+        
+        if result:
+            if result['type'] == 'bits':
+                print(f"Bits: {result['value']} ({result['quality']:.2f})")
+            elif result['type'] == 'marker':
+                print(f"Marker: {result['value']}")
+finally:
+    stream.stop_stream()
+    stream.close()
+    p.terminate()
+```   
+## Advanced Usage
+See the examples directory for more detailed usage examples.
+
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request. 
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
