@@ -1,0 +1,11 @@
+qbreader/__init__.py,sha256=D4kHpGLxtfhUm6DUr84sHeEBbTiyzBivLsuFUBqW5LQ,771
+qbreader/_api_utils.py,sha256=j_33hh7doVRgmayjDUJgcb_FxO5NY0swk5asbChM3U8,3810
+qbreader/_consts.py,sha256=vBjb_LQDIN7mwXSiWrr1j5_ggLGTo7HYDaWXzTqlt0g,85
+qbreader/asynchronous.py,sha256=5EhYvR-oFn8cA6o7AyelzGzb0ZCTMTPOO9vBLGCj01Y,23483
+qbreader/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qbreader/synchronous.py,sha256=4tD56bzEwn1golIdv7zuB4wJLyCALCXGW17OOcIg67Q,21877
+qbreader/types.py,sha256=2HH5zLuqOO_LiLRj-zzGkAs41rQxD2TT7KNGqT008nE,17520
+qbreader-1.0.0rc2.dist-info/LICENSE,sha256=HNqe06SzwGyCikVvGrU4hahaIA6o3EKV5RSjAFkdhyk,1065
+qbreader-1.0.0rc2.dist-info/METADATA,sha256=nz5mtWl_-J7MoXtmDOwSVlzrPk33m25e2g-tMZGFsw4,3226
+qbreader-1.0.0rc2.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+qbreader-1.0.0rc2.dist-info/RECORD,,
