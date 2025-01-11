@@ -1,0 +1,2 @@
+[console_scripts]
+metacycle-hello = metacycle_core.hello:main
