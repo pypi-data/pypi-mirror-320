@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: safisha
+Version: 0.1.7
+Summary: Programu ya kusafisha Mac yako.
+Home-page: UNKNOWN
+Author: Mark Francis
+Author-email: safisha@ngao.pro
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS

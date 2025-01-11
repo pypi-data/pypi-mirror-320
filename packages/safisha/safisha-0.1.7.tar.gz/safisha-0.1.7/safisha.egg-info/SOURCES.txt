@@ -1,0 +1,11 @@
+README.md
+setup.py
+safisha/__init__.py
+safisha/cleaner.py
+safisha/cli.py
+safisha/utils.py
+safisha.egg-info/PKG-INFO
+safisha.egg-info/SOURCES.txt
+safisha.egg-info/dependency_links.txt
+safisha.egg-info/entry_points.txt
+safisha.egg-info/top_level.txt
