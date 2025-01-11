@@ -1,0 +1,2 @@
+[console_scripts]
+clidb = clidbs.cli:main
