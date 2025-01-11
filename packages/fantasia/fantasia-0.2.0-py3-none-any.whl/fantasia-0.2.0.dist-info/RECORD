@@ -1,0 +1,12 @@
+fantasia/README.md,sha256=UC764D3yKDSKNL-25z4bsogyd-V48s9qOiqY5PtE7Os,2870
+fantasia/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fantasia/config.yaml,sha256=_v-2rR1C3_3nVwKmpTRJcP5ykoQZLgqogAruVTntxlI,866
+fantasia/constants.yaml,sha256=S1yLt5wT4v4Q24aEQceKOU31LX8fh-Fy7oZtw8aQ0G8,2924
+fantasia/main.py,sha256=NvmpeiTPjSVLHOnGbOLHFBFxbZDuNqhmJm1EQKRV-Lw,3403
+fantasia/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fantasia/src/embedder.py,sha256=gUcoJY2MGFl4pjpDEEyUUl7IsJFpsuKJsi-1tqtVfLo,9200
+fantasia/src/helpers.py,sha256=xpTvyJXdYzYF2VPQ364tNX6zSWr2HuxeGmtxdLXmMUo,2592
+fantasia/src/lookup.py,sha256=dTz6lBqsWVFwYpU5CtbWTCi4Qql5I1JCebqgPL7o_98,10764
+fantasia-0.2.0.dist-info/METADATA,sha256=gXf2v25Eh_DWwR-Wpv0OlXvL2RSJmvjregyLjWaWt8U,3377
+fantasia-0.2.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+fantasia-0.2.0.dist-info/RECORD,,
