@@ -1,0 +1,12 @@
+setup.py
+operationunitaire/__init__.py
+operationunitaire/__main__.py
+operationunitaire.egg-info/PKG-INFO
+operationunitaire.egg-info/SOURCES.txt
+operationunitaire.egg-info/dependency_links.txt
+operationunitaire.egg-info/requires.txt
+operationunitaire.egg-info/top_level.txt
+operationunitaire/core/__init__.py
+operationunitaire/core/data_loader.py
+operationunitaire/core/interpolation.py
+operationunitaire/core/variables.py

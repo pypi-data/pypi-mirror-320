@@ -1,0 +1,10 @@
+Metadata-Version: 2.2
+Name: operationunitaire
+Version: 0.1.0
+Summary: A package for rigorous distillation simulation.
+Author: Anas Tassaoui
+Requires-Dist: numpy
+Requires-Dist: pandas
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary
