@@ -1,0 +1,97 @@
+Metadata-Version: 2.2
+Name: erdetect
+Version: 2.6.0
+Summary: A package for the automatic detection of evoked responses in SPES/CCEP data
+Author-email: Max van den Boom <m.a.vandenboom84@gmail.com>
+License: GPLv3
+Project-URL: homepage, https://github.com/MultimodalNeuroimagingLab/ERDetect
+Project-URL: documentation, https://github.com/MultimodalNeuroimagingLab/ERDetect
+Project-URL: repository, https://github.com/MultimodalNeuroimagingLab/ERDetect
+Keywords: evoked response,detection,ieeg,n1,SPES,CCEP
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ieegprep>=1.6.1
+Requires-Dist: numpy>=2.2.1
+Requires-Dist: scipy>=1.15.0
+Requires-Dist: matplotlib>=3.10.0
+Requires-Dist: bids_validator>=1.14.6
+
+# Evoked Response Detection
+A python package and docker application for the automatic detection of evoked responses in SPES/CCEP data
+
+## Python Usage
+
+1. First install ERdetect, in the command-line run:
+```
+pip install erdetect
+```
+
+2. To run:
+- a) With a graphical user interface:
+```
+python -m erdetect ~/bids_data ~/output/ --gui
+```
+
+- b) From the commandline:
+```
+python -m erdetect ~/bids_data ~/output/ [--participant_label PARTICIPANT_LABEL [PARTICIPANT_LABEL ...]]
+```
+
+- c) To process a subset directly in a python script:
+```
+import erdetect
+erdetect.process_subset('/bids_data_root/subj-01/ieeg/sub-01_run-06.edf', '/output_path/')
+```
+
+## Docker Usage
+
+To launch an instance of the container and analyse data in BIDS format, in the command-line interface/terminal:
+
+```
+docker run multimodalneuro/erdetect <bids_dir>:/data <output_dir>:/output [--participant_label PARTICIPANT_LABEL [PARTICIPANT_LABEL ...]]
+```
+For example, to run an analysis, type:
+
+```
+docker run -ti --rm \
+-v /local_bids_data_root/:/data \
+-v /local_output_path/:/output \
+multimodalneuro/erdetect /data /output --participant_label 01
+```
+
+
+
+## Configuration & Documentation
+
+General documentation can be found [here](https://github.com/MultimodalNeuroimagingLab/erdetect/wiki/).
+
+The tool can be configured by three means:
+- Graphical User Interface (GUI)
+- Command-line, arguments and options can be found [here](https://github.com/MultimodalNeuroimagingLab/erdetect/wiki/Configuration#command-line-arguments)
+- JSON input configuration file, usage documentation can be found [here](https://github.com/MultimodalNeuroimagingLab/erdetect/wiki/Configuration#json-input-configuration-file)
+
+
+## Acknowledgements
+
+- Written by Max van den Boom (Multimodal Neuroimaging Lab, Mayo Clinic, Rochester MN)
+- Local extremum detection method by Dorien van Blooijs & Dora Hermes (2018), with optimized parameters by Jaap van der Aar
+- Dependencies:
+  - IeegPrep (https://github.com/MultimodalNeuroimagingLab/ieegprep)
+  - BIDS-validator (https://github.com/bids-standard/bids-validator)
+  - NumPy
+  - SciPy
+  - Matplotlib
+
+- This project was funded by the National Institute Of Mental Health of the National Institutes of Health Award Number R01MH122258 to Dora Hermes
