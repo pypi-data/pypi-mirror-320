@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: crystalflow
+Version: 0.0.9
+Summary: XRD Enhanced Crystal Graph Dataloader
+Home-page: https://github.com/Bin-Cao/CrystalFlow
+Author: Cao Bin
+Author-email: binjacobcao@gmail.com
+Maintainer: Cao Bin
+Maintainer-email: binjacobcao@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy >=1.21.0
+Requires-Dist: matplotlib >=3.4.0
+
+__description__ = 'crystalflow, XRD Enhanced Crystal Graph Dataloader'
+__author__ = 'Bin Cao, Advanced Materials Thrust, Hong Kong University of Science and Technology (Guangzhou)'
+__author_email__ = 'binjacobcao@gmail.com'
+__url__ = 'https://github.com/Bin-Cao/CrystalFlow'
