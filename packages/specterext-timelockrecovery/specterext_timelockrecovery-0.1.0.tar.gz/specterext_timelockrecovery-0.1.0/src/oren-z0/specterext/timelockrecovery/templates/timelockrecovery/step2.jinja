@@ -1,0 +1,595 @@
+{% extends "timelockrecovery/components/timelockrecovery_tab.jinja" %}
+{% block title %}Step 2{% endblock %}
+{% set tab = 'index' %}
+
+{% block content %}
+	{% include "includes/qr-scanner.html" %}
+	{% include "includes/recipient-box.html" %}
+	{% include "timelockrecovery/includes/timelockrecovery-fee-selection.html" %}
+
+	<div class="card">
+		<h2>Step 2: Prepare Alert and Recovery transactions for wallet {{ wallet.name }}</h2>
+
+		<div class="flex flex-col">
+			<p>
+				{{ _("Available funds before Alert transaction:") }} {{wallet.amount_available | btcunitamount}}
+				{% if specter.unit == 'sat' %}sats{% else %}{% if specter.is_testnet %}t{%endif%}BTC{% endif %}
+
+				{% if specter.price_check %}
+					<span>{{ wallet.amount_available | altunit }}</span>
+				{% endif %}
+			</p>
+
+			{% if wallet.amount_locked_unsigned  > 0 or wallet.amount_frozen > 0 %}
+				<div class="warning">
+					<h4 slot="title">{{ _("Why is this less than my total balance?") }}</h4>
+					<span slot="paragraph">
+					{{ _(' Frozen outputs and outputs locked in unsigned transactions are not available here.') }}
+					{{ _('To make more funds available, go to the wallet\'s pending transactions') }}
+					(<a class="text-link" href="{{ url_for('wallets_endpoint.send_pending',wallet_alias=wallet.alias) }}">{{ _('here') }}</a>),
+					{{ _('and remove the unwanted pending transactions, or unfreeze the UTXOs in the wallet Transactions tab.') }}
+					</span>
+				</div>
+			{% endif %}
+
+			<div class="funds-left-wrapper">
+				<p id="alert-psbt-creation-fail" class="warning hidden">
+					Cannot create Alert transaction.
+					<span id="alert-psbt-creation-fail-reason"></span>
+				</p>
+
+				<p id="alert-psbt-api-fail" class="warning hidden">
+					Cannot create Alert transaction due to a communication error or session expiration.
+				</p>
+
+				<p id="alert-psbt-success" class="hidden">
+					{{ _("Available funds after Alert transaction:") }}
+					<span id="available-funds-after-alert"></span>
+				</p>
+			</div>
+		</div>
+
+		<div class="flex flex-col">
+			<div id="recipients" class="mt-3 rounded-t-xl overflow-hidden recipient_wrapper">
+				<div class="recipient_wrapper_item">
+					<div class="px-4 py-3 flex bg-dark-700">
+						<div class="icon-info">
+							<img class="svg-selftransfer" src="{{ url_for('static', filename='img') }}/transfer.svg" style="height: 1.75rem;" />
+							<p class="icon-info-text">Self Transfer</p>
+						</div>
+						<span class="text-lg pl-1">Alert Address (in wallet {{ wallet.name }})</span>
+					</div>
+					<div class="recipient_wrapper_inner_box px-3 py-3 space-y-3 border-l-2 border-r-2 border-dark-700">
+						<div class="flex space-x-3">
+							<div class="floating-wrapper grow-[3]">
+								<input class="floating-input peer" type="text" name="alert_address" value="{{ reserved_address.address }}" placeholder=" " disabled />
+								<label class="floating-label" id="addressInputLabel">Alert Address</label>
+							</div>
+							<div class="floating-wrapper grow-[1]">
+								<input class="floating-input peer" type="text" class="address-label" name="alert_label" value="{{ reserved_address.label }}" placeholder=" " disabled />
+								<label class="floating-label">Address Label</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div
+				class="px-4 py-3 cursor-pointer hover:bg-dark-700 rounded-b-xl bg-dark-600 text-white mb-2"
+				id="add-recipient"
+				title="Add a recipient"
+				class="recipient_button recipient_add"
+			>
+				+ Add Recipient
+			</div>
+
+			<div id="not-enough-funds-for-recovery" class="warning hidden">
+				Not enough funds left for last recipient.
+			</div>
+		</div>
+
+        <div>
+            <h3 class="mt-5"><span class="hidden" id="alert-transaction-fee-label">Alert Transaction - </span>{{ _("Fee Selection") }}</h3>
+            <timelockrecovery-fee-selection id="main-transaction-fee-selection-component"></timelockrecovery-fee-selection>
+        </div>
+
+		<label class="checkbox-wrapper-inline">
+            <input type="checkbox" class="checkbox-input" id="multiple-fees">
+            <span class="checkbox-label">Select different fee-rate for each transaction</span>
+        </label>
+
+        <div class="hidden" id="multiple-fees-selection-wrapper">
+			<div>
+				<h3 class="mt-5">Recovery Transaction - {{ _("Fee Selection") }}</h3>
+				<timelockrecovery-fee-selection id="recovery-transaction-fee-selection-component" rbf-enabled="false"></timelockrecovery-fee-selection>
+			</div>
+			<div>
+				<h3 class="mt-5">Optional: Cancellation Transaction - {{ _("Fee Selection") }}</h3>
+				<timelockrecovery-fee-selection id="cancellation-transaction-fee-selection-component" rbf-enabled="false"></timelockrecovery-fee-selection>
+			</div>
+        </div>
+
+		<label class="checkbox-wrapper-inline">
+            <input type="checkbox" class="checkbox-input" id="different-anchor-addresses-checkbox">
+            <span class="checkbox-label">Select different anchor addresses from recipients (each would receive 600 sats)</span>
+        </label>
+
+		<div class="hidden mt-3" id="different-anchor-addresses-input-wrapper">
+			<textarea id="different-anchor-addresses-input" placeholder="List of addresses separated by spaces or newlines"></textarea>
+		</div>
+
+		<div id="not-enough-funds-for-cancellation" class="warning hidden">
+			Not enough funds left for cancellation transaction.
+			The recovered funds will be less than 600 sats.
+		</div>
+
+		<div>
+            <h3 class="mt-5">Timelock</h3>
+			<div id="timelockrecovery_fee_manual" class="floating-wrapper">
+				<input type="number" class="floating-input peer" placeholder=" " id="timelock-days" min="1" max="388" step="1" value="90" autocomplete="off" />
+				<label class="floating-label">Timelock Days</label>
+				<tool-tip width="200px" class="floating-info">
+					<span slot="paragraph">
+						Number of days from the broadcasting of the Alert transaction after which Recovery transaction can be broadcasted.
+						During this time, the process can be cancelled by sending the funds to a different address.
+					</span>
+				</tool-tip>
+			</div>
+        </div>
+
+	</div>
+	<div class="progress-buttons-bar">
+		<div>
+			<a class="btn" href="{{ url_for(service.id+'_endpoint.step1_get')}}">
+				👈 Back
+			</a>
+		</div>
+		<div>
+			<a class="btn" href="#" id="next-button">
+				Next 👉
+			</a>
+		</div>
+	</div>
+	<form id="next-form" action="{{ url_for(service.get_blueprint_name() + '.step3_post') }}?wallet={{wallet.alias}}" method="POST" role="form">
+		<input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+		<input type="hidden" name="action" value="prepare" />
+		<input id="next-form-data" type="hidden" name="request_data" value="" />
+	</form>
+{% endblock %}
+
+{% block scripts %}
+	<script>
+        const MIN_FEE_RATE = 1;
+        const NETWORK = "Bitcoin";
+		const amountAvailable = "{{ wallet.amount_available | btcamount }}";
+		const specterUnit = "{% if specter.unit == 'sat' %}sats{% else %}{% if specter.is_testnet %}t{%endif%}BTC{% endif %}";
+		const anchorOutputAmountSats = 600;
+		// 0xFFFF * 512 seconds = 388.36 days.
+		const maxLocktimeDatys = 388;
+
+		function getAnchorAddresses() {
+			if (document.getElementById('different-anchor-addresses-checkbox').checked) {
+				return document.getElementById('different-anchor-addresses-input').value.split(
+					/\s+/,
+				).filter(Boolean).map((address) => ({
+					address,
+					label: "",
+				}));
+			}
+			return [...document.querySelectorAll('#recipients > recipient-box')];
+		}
+
+		let alertPsbtRequestJson = undefined;
+		let recoveryTransactionVSize = undefined;
+		let cancellationTransactionVSize = undefined;
+		let cancellationLeftoverSats = 0;
+		let alertPsbt = undefined;
+		let isSimulatingAlertTransaction = false;
+
+		let simulateAlertTransactionAsyncTracker = 0;
+		async function simulateAlertTransaction() {
+			simulateAlertTransactionAsyncTracker += 1;
+			const asyncTracker = simulateAlertTransactionAsyncTracker;
+			isSimulatingAlertTransaction = true;
+			try {
+				document.getElementById('alert-psbt-success').classList.add('hidden');
+				document.getElementById('alert-psbt-creation-fail').classList.add('hidden');
+				document.getElementById('alert-psbt-api-fail').classList.add('hidden');
+				alertPsbtRequestJson = undefined;
+				recoveryTransactionVSize = undefined;
+				cancellationTransactionVSize = undefined;
+				cancellationLeftoverSats = 0;
+				alertPsbt = undefined;
+				simulateSecondaryTransactions();
+				await new Promise((resolve) => setTimeout(resolve, 400));
+				if (asyncTracker !== simulateAlertTransactionAsyncTracker) {
+					return;
+				}
+				const anchorAddresses = getAnchorAddresses();
+				if (anchorAddresses.some(({ address }) => !validateAddress(address))) {
+					return;
+				}
+				const feeSelectionComponent = document.getElementById('main-transaction-fee-selection-component');
+				const selectedFee = feeSelectionComponent.selectedFee();
+				if (selectedFee === "") {
+					return;
+				}
+				alertPsbtRequestJson = {
+					recipients: [
+						{
+							address: "{{ reserved_address.address }}",
+							amount: (Math.floor(Number(amountAvailable) * 1e8) - anchorOutputAmountSats * anchorAddresses.length),
+							unit: "sat",
+							label: "{{ reserved_address.label }}"
+						},
+						...anchorAddresses.map(({ address, label }) => ({
+							address,
+							amount: anchorOutputAmountSats,
+							unit: "sat",
+							label,
+						})),
+					],
+					rbf_tx_id: "",
+					subtract: true,
+					subtract_from: 0,
+					fee_rate: selectedFee,
+					rbf: feeSelectionComponent.rbfOption.checked,
+				};
+				const fetchResult = await fetch(
+					`{{ url_for(service.id + "_endpoint.create_alert_psbt_recovery_vsize", wallet_alias=wallet.alias) }}`,
+					{
+						signal: AbortSignal.timeout(5000),
+						method: 'POST',
+						headers: {
+							'accept': 'application/json',
+							'content-type': 'application/json',
+							'x-csrftoken': "{{ csrf_token() }}",
+						},
+						body: JSON.stringify({
+							alert_psbt_request_json: alertPsbtRequestJson,
+							recovery_recipients: anchorAddresses.map(({ address }) => address),
+						}),
+					},
+				);
+				if (!fetchResult.ok) {
+					throw new Error("Fetch result not ok");
+				}
+				const { psbt, recovery_transaction_vsize, cancellation_transaction_vsize, error } = await fetchResult.json();
+				if (error) {
+					console.error("Fetch call responded with an error", error);
+					if (asyncTracker === simulateAlertTransactionAsyncTracker) {
+						document.getElementById('alert-psbt-creation-fail').classList.remove('hidden');
+						document.getElementById('alert-psbt-creation-fail-reason').textContent = psbtFailReason(error);
+					}
+				} else {
+					if (asyncTracker === simulateAlertTransactionAsyncTracker) {
+						document.getElementById('available-funds-after-alert').textContent = specterUnit === 'sats' ? `${psbt.outputs[0].sat_amount} sats` : `${psbt.outputs[0].float_amount} ${specterUnit}`;
+						document.getElementById(`alert-psbt-success`).classList.remove('hidden');
+						recoveryTransactionVSize = recovery_transaction_vsize;
+						cancellationTransactionVSize = cancellation_transaction_vsize;
+						alertPsbt = psbt;
+						simulateSecondaryTransactions();
+					}
+				}
+			} catch (err) {
+				console.error("Failed to calculate recovery-transaction available funds", err);
+				if (asyncTracker === simulateAlertTransactionAsyncTracker) {
+					document.getElementById('alert-psbt-api-fail').classList.remove('hidden');
+				}
+			} finally {
+				if (asyncTracker === simulateAlertTransactionAsyncTracker) {
+					isSimulatingAlertTransaction = false;
+				}
+			}
+		};
+
+		function getRecoveryTransactionFeeSelectionComponent() {
+			return document.getElementById(
+				document.getElementById('multiple-fees').checked
+					? 'recovery-transaction-fee-selection-component'
+					: 'main-transaction-fee-selection-component',
+			);
+		}
+
+		function getCancellationTransactionFeeSelectionComponent() {
+			return document.getElementById(
+				document.getElementById('multiple-fees').checked
+					? 'cancellation-transaction-fee-selection-component'
+					: 'main-transaction-fee-selection-component',
+			)
+		}
+
+		function simulateSecondaryTransactions() {
+			document.getElementById('not-enough-funds-for-recovery').classList.add('hidden');
+			document.getElementById('not-enough-funds-for-cancellation').classList.add('hidden');
+			const recipientList = [...document.querySelectorAll('#recipients > recipient-box')];
+			if (recipientList.length === 0) {
+				return;
+			}
+			const [lastRecipient] = recipientList.slice(-1);
+			lastRecipient.amount = "";
+			const recoveryFee = getRecoveryTransactionFeeSelectionComponent().selectedFee();
+			const cancellationFee = getCancellationTransactionFeeSelectionComponent().selectedFee();
+			const firstRecipientSats = recipientList.slice(0, -1).map((r) => r.amount * (r.unit === 'btc' ? 1e8 : 1))
+			if (
+				recoveryFee === "" ||
+				cancellationFee === "" ||
+				recoveryTransactionVSize === undefined ||
+				cancellationTransactionVSize === undefined ||
+				alertPsbt == undefined ||
+				recipientList.some((r) => !validateAddress(r.address)) ||
+				firstRecipientSats.some((recipientSats) => Number.isNaN(recipientSats) || recipientSats < 0)
+			) {
+				return;
+			}
+			const recoveryLeftoverSats = Math.round(alertPsbt.outputs[0].sat_amount - firstRecipientSats.reduce((soFar, s) => soFar + s, 0) - recoveryFee * recoveryTransactionVSize);
+			cancellationLeftoverSats = Math.round(alertPsbt.outputs[0].sat_amount - cancellationFee * cancellationTransactionVSize);
+			if (0 < recoveryLeftoverSats) {
+				lastRecipient.amount = (lastRecipient.unit === 'btc') ? recoveryLeftoverSats / 1e8 : recoveryLeftoverSats;
+			} else {
+				document.getElementById('not-enough-funds-for-recovery').classList.remove('hidden');
+			}
+			if (cancellationLeftoverSats < anchorOutputAmountSats) {
+				document.getElementById('not-enough-funds-for-cancellation').classList.remove('hidden');
+			}
+		}
+
+		function psbtFailReason(error) {
+			if (/Invalid\sBitcoin\saddress(:\s\w+)?$/i.test(error)) {
+				return "Invalid recipient or anchor address.";
+			}
+			if (/Invalid\sparameter,\sduplicated\saddress(:\s\w+)?$/i.test(error)) {
+				return "Duplicated address.";
+			}
+			if (/:\sInsufficient\sfunds$/i.test(error)) {
+				return "Not enough funds for fee."
+			}
+			if (/:\sInvalid\samount$/i.test(error)) {
+				return "Invalid fee or amounts.";
+			}
+			if (/:\sInvalid\samount$/i.test(error)) {
+				return "Invalid fee or amounts.";
+			}
+			if (/:\sFee\sexceeds\smaximum\sconfigured\sby\suser\s\(e.g.\s-maxtxfee,\smaxfeerate\)$/i.test(error)) {
+				return "Fee exceeds maximum configured by user.";
+			}
+			return "Reason could be recipient addresses, not enough funds or something else.";
+		}
+
+		function validateAddress(address, doShowError=false) {
+			if (!address) {
+				if (doShowError) {
+					showError(`{{ _("You provided no address.") }}`, 5000);
+				}
+				return false;
+			}
+			// Segwit addresses are always between 14 and 74 characters long.
+			if (address.length < 14) {
+				if (doShowError) {
+					showError(`{{ _("Please provide a valid address!") }}`, 5000);
+				}
+				return false;
+			}
+			if (/\s/.test(address)) {
+				if (doShowError) {
+					showError(`{{ _("Looks like there are whitespaces in the address field.") }}`, 5000);
+				}
+				return false;
+			}
+			return true;
+		}
+
+		function updateRecipientElementsByPosition(){
+			const recipientList = [...document.querySelectorAll('#recipients > recipient-box')];
+			const hidden = (recipientList.length <= 1);
+			let recipientIndex = 0;
+			for (const recipient of recipientList) {
+				recipient.hiddenRemoveButton = hidden;
+				recipient.title = `Recipient ${recipientIndex + 1}`;
+				recipient.amountElement.disabled = false;
+				recipient.shadowRoot.querySelector('.recipient_wrapper_inner_box > div:nth-child(2) > label').textContent = "Amount";
+				recipientIndex += 1;
+			}
+			const [lastRecipient] = recipientList.slice(-1);
+			lastRecipient.amountElement.disabled = true;
+			lastRecipient.shadowRoot.querySelector('.recipient_wrapper_inner_box > div:nth-child(2) > label').textContent = "Leftover amount after fee deduction (calculated automatically)";
+		}
+
+		function addRecipient(address, amount, amount_unit, label) {
+			const recipientList = [...document.querySelectorAll('#recipients > recipient-box')];
+			for (const someRecipient of recipientList) {
+				someRecipient.amountElement.disabled = false;
+			}
+
+			const [lastRecipient] = recipientList.slice(-1);
+			if (lastRecipient) {
+				lastRecipient.amount = "";
+			}
+
+			const recipientId = Math.max(-1, ...recipientList.map((r) => r.recipientId)) + 1;
+
+			// This adds the recipient
+			const newRecipient = new RecipientBox();
+			newRecipient.id = `recipient_${recipientId}`;
+			newRecipient.recipientId = recipientId;
+			newRecipient.address = address;
+			newRecipient.amount = amount;
+			newRecipient.unit = amount_unit;
+			newRecipient.label = label;
+			newRecipient.classList = "group";
+			newRecipient.shadowRoot.getElementById('send_max').remove();
+			newRecipient.amountElement.disabled = true;
+			newRecipient.addEventListener('remove', (event) => {
+				removeRecipient(newRecipient.recipientId);
+			});
+			newRecipient.addressElement.addEventListener('input', (event) => {
+				simulateAlertTransaction();
+			});
+			newRecipient.labelElement.addEventListener('input', () => {
+				simulateAlertTransaction();
+			});
+			newRecipient.amountElement.addEventListener('input', () => {
+				simulateSecondaryTransactions();
+			});
+			newRecipient.addEventListener('unit-change', (event) => {
+				simulateSecondaryTransactions();
+			});
+
+			document.getElementById('recipients').appendChild(newRecipient);
+
+			// Make the remove button visible again for all recipient components
+			updateRecipientElementsByPosition();
+			simulateAlertTransaction();
+		}
+
+		function removeRecipient(recipientId) {
+			for (const someRecipient of document.querySelectorAll('#recipients > recipient-box')) {
+				if (someRecipient.recipientId === recipientId) {
+					someRecipient.remove();
+				}
+			}
+			updateRecipientElementsByPosition();
+			simulateAlertTransaction();
+		}
+
+		function toggleMultipleFees(event) {
+			if (event.target.checked) {
+				document.getElementById('multiple-fees-selection-wrapper').classList.remove('hidden');
+				document.getElementById('alert-transaction-fee-label').classList.remove('hidden');
+			} else {
+				document.getElementById('multiple-fees-selection-wrapper').classList.add('hidden');
+				document.getElementById('alert-transaction-fee-label').classList.add('hidden');
+			}
+			simulateAlertTransaction();
+		}
+
+		function toggleDifferentAnchorAddresses(event) {
+			if (event.target.checked) {
+				document.getElementById('different-anchor-addresses-input').value = [
+					...document.querySelectorAll('#recipients > recipient-box')
+				].map((r) => r.address).filter((address) => validateAddress(address)).join('\n');
+				document.getElementById('different-anchor-addresses-input-wrapper').classList.remove('hidden');
+			} else {
+				document.getElementById('different-anchor-addresses-input-wrapper').classList.add('hidden');
+				document.getElementById('different-anchor-addresses-input').value = '';
+			}
+			simulateAlertTransaction();
+		}
+
+		function submitForm() {
+			if (isSimulatingAlertTransaction) {
+				return;
+			}
+			if (document.getElementById('main-transaction-fee-selection-component').selectedFee() === "") {
+				showError("Select fee for Alert transaction", 5000);
+				return;
+			}
+			if (getRecoveryTransactionFeeSelectionComponent().selectedFee() === "") {
+				showError("Select fee for Recovery transaction", 5000);
+				return;
+			}
+			if (getCancellationTransactionFeeSelectionComponent().selectedFee() === "") {
+				showError("Select fee for Cancellation transaction", 5000);
+				return;
+			}
+			const recipientList = [...document.querySelectorAll('#recipients > recipient-box')];
+			let recipientIndex = 0;
+			for (const recipient of recipientList) {
+				if (!validateAddress(recipient.address)) {
+					showError(`Select a valid address for Recipient ${recipientIndex + 1}`, 5000);
+					return;
+				}
+				recipientIndex += 1;
+			}
+			const anchorAddresses = getAnchorAddresses().map((r) => r.address);
+			if (anchorAddresses.some((address) => !validateAddress(address))) {
+				showError("One or more anchor addresses is invalid.", 5000);
+				return;
+			}
+			if (new Set(anchorAddresses).size !== anchorAddresses.length) {
+				showError("One of the anchor addresses repeats twice.", 5000);
+				return;
+			}
+			recipientIndex = 0;
+			for (const recipient of recipientList) {
+				if (Number.isNaN(recipient.amount) || recipient.amount < 0) {
+					if (recipientList.length <= 1) {
+						showError("Failed to calculate the leftover amount for the recipient. Is the fee-rate too high?", 5000);
+						return;
+					} else if (recipientIndex === recipientList.length - 1) {
+						showError("Failed to calculate the leftover amount for the last recipient. Did you give too much to the previous recipients?", 5000);
+						return;
+					}
+				}
+				const amountSats = recipient.amount * (recipient.unit === 'btc' ? 1e8 : 1);
+				if (Number.isNaN(amountSats) || (amountSats < anchorOutputAmountSats)) {
+					showError(
+						`Recipient ${recipientIndex}'s amount is less than ${
+							anchorOutputAmountSats
+						} sats (${anchorOutputAmountSats / 1e8} BTC). A transaction with such small output might be rejected by the network in the future.`,
+						10_000,
+					);
+					return;
+				}
+				recipientIndex += 1;
+			}
+			if (!alertPsbtRequestJson || !alertPsbt) {
+				showError("Failed to create PSBT for Alert transaction", 5000);
+				return;
+			}
+			for (const output of alertPsbt.outputs) {
+				if (output.sat_amount < anchorOutputAmountSats) {
+					showError(
+						`One of the outputs of the Alert transaction is less than ${
+							anchorOutputAmountSats
+						} sats (${anchorOutputAmountSats / 1e8} BTC). A transaction with such small output might be rejected by the network in the future.`,
+						10_000,
+					);
+					return;
+				}
+			}
+			const timelockDays = Number(document.getElementById('timelock-days').value);
+			if (Number.isNaN(timelockDays) || !Number.isSafeInteger(timelockDays) || timelockDays < 2 || timelockDays > maxLocktimeDatys) {
+				showError(`Timelock days must be an integer between 2 and ${maxLocktimeDatys}`, 5000);
+				return;
+			}
+			if (cancellationLeftoverSats < anchorOutputAmountSats) {
+				showError("Not enough funds for Cancellation transaction", 5000);
+				return;
+			}
+			const recoveryTransactionFeeSelectionComponent = getRecoveryTransactionFeeSelectionComponent();
+			document.getElementById('next-form-data').value = JSON.stringify({
+				alert_psbt_request_json: alertPsbtRequestJson,
+				recovery_recipients: recipientList.map((r) => ({[r.address]: r.amount / (r.unit === 'btc' ? 1 : 1e8)})),
+				timelock_days: timelockDays,
+				cancellation_sats: cancellationLeftoverSats,
+			});
+			document.getElementById('next-form').submit();
+		}
+
+		document.addEventListener('DOMContentLoaded', () => {
+			const recipientBoxStyle = document.createElement('style');
+			recipientBoxStyle.textContent = `
+				div#converted_unit_container {
+					display: block;
+					margin: 0;
+					font-size: 0.9rem;
+				}
+				div#converted_unit_container.hidden {
+					visibility: hidden;
+				}
+			`;
+			document.getElementById('recipient-box').content.prepend(recipientBoxStyle);
+			addRecipient('', '', 'btc', '');
+			updateRecipientElementsByPosition();
+			document.getElementById('main-transaction-fee-selection-component').addEventListener('change', simulateAlertTransaction);
+			document.getElementById('recovery-transaction-fee-selection-component').addEventListener('change', simulateSecondaryTransactions);
+			document.getElementById('cancellation-transaction-fee-selection-component').addEventListener('change', simulateSecondaryTransactions);
+			document.getElementById('add-recipient').onclick = () => addRecipient('', '', 'btc', '');
+			document.getElementById('multiple-fees').addEventListener('input', toggleMultipleFees);
+			document.getElementById('different-anchor-addresses-checkbox').addEventListener('input', toggleDifferentAnchorAddresses);
+			document.getElementById('different-anchor-addresses-input').addEventListener('input', simulateAlertTransaction);
+			document.getElementById('next-button').onclick = submitForm;
+		});
+	</script>
+{% endblock %}
