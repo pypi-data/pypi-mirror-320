@@ -1,0 +1,10 @@
+sphinx_nekochan/__init__.py,sha256=5ZGjaFjVCNYiGBIdEtHQuhXNPdPL4XAaHvYbZiZXWIw,6113
+sphinx_nekochan/make_nekochan_json.py,sha256=nS0wUN0Xw6r2WLaxJjGtyU0ZmQ6MTtBL3uqS1In99oU,3231
+sphinx_nekochan/_static/sphinx_nekochan.css,sha256=0KairKKbyRuYFpkwUwmHAHq0PSUaQyn08tCMKzpAmOk,85
+sphinx_nekochan/data/aliases.json,sha256=dgmubio540wSRGzEzG2WSKNM-3-b9nN5cVh3GIo2WHU,12858
+sphinx_nekochan/data/neco202408.zip,sha256=WPG86rHbq6Vt-XC_mTvTycLcZg0AhjycI-7hTM39BD8,4750334
+sphinx_nekochan/data/nekochan_emoji.json,sha256=MgrxJDie5cDd68vkrvv7CTUNdKDMUcFlDMLg8V_51-Q,6065978
+sphinx_nekochan-0.1.2.dist-info/LICENSE,sha256=elwlbqi7Zl_4JwZ3XXtUlxgy3oM1K7rSsKGIsgMFwco,1072
+sphinx_nekochan-0.1.2.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+sphinx_nekochan-0.1.2.dist-info/METADATA,sha256=MXJfc00qOV7LHI4ruqNcLoPXw09ALIFuAQ2tJSrh-Rg,3534
+sphinx_nekochan-0.1.2.dist-info/RECORD,,
