@@ -1,0 +1,6 @@
+[tool.pytest.ini_options]
+addopts = "--pdbcls=IPython.terminal.debugger:Pdb"
+
+[tool.pkgmt]
+github = "ploomber/jupyblog"
+package_name = "jupyblog"
