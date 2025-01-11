@@ -1,0 +1,174 @@
+Metadata-Version: 2.2
+Name: sealman-edge-api
+Version: 0.8.0
+Summary: SEALMAN Edge lib for easy communication within the SEALMAN Open Source Ecosystem
+Home-page: https://github.com/Wolf-Pack-Foundation/sealman-lib-edge-api
+Author: Thomas Baur
+Author-email: thomas.baur@gea.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: paho-mqtt==1.6.1
+Requires-Dist: jsonschema>=4.21.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Installation and Building
+
+## Building
+```shell
+pip install build
+python -m build
+```
+
+## Publish to PyPI
+```shell
+pip install twine
+twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+twine upload dist/*
+```
+
+## Install from PyPI
+```shell
+pip install sealman-edge-api
+```
+# Usage
+
+### Initialize API
+
+```python
+from sealman_edge_api import SealmanEdgeAPI
+
+api = SealmanEdgeAPI("myEquipmentName", "myModuleName")  # define equipment and module name
+api.connect("localhost")  # connect mqtt broker running on localhost:1883
+```
+
+---
+**NOTE**: API will start and background thread which handles MQTT interactions.
+On default, the API is started as a non-deamon thread to keep main thread alive and also remain responsive 
+to MQTT events.
+---
+
+### Register methods
+```python
+# define req and res schemas for methods
+req_schema = {}     # any JSON schema
+res_schema = {}     # any JSON schema
+
+
+# using decorators
+@SealmanEdgeAPI.method(req_schema, res_schema)
+def my_first_func(payload):
+    print("process payload", payload)       # any processing of method payload
+    return {"message": "my_func_response"}  # any JSON/dict object or Array/list
+
+# using register-method
+def my_second_func(payload):
+  print("process payload", payload)       # any processing of method payload
+  return {"message": "my_func_response"}  # any JSON/dict object or Array/list
+
+api.register_method("my_second_func", req_schema, res_schema, my_second_func)
+```
+
+### Return specific HTTP status-codes from methods
+
+```python
+from sealman_edge_api import ResponseStatus, MethodResponse
+
+
+# using integer HTTP status codes
+@SealmanEdgeAPI.method(req_schema, res_schema)
+def my_fist_func(payload):
+  print("process payload", payload)
+  return {"error": "error-text"}, 404
+
+
+# using response-status enum
+@SealmanEdgeAPI.method(req_schema, res_schema)
+def my_second_func(payload):
+  print("process payload", payload)
+  return {"error": "error-text"}, ResponseStatus.NOT_FOUND
+
+
+# using method-response class
+@SealmanEdgeAPI.method(req_schema, res_schema)
+def my_second_func(payload):
+  print("process payload", payload)
+  return MethodResponse({"error": "error-text"}, ResponseStatus.NOT_FOUND)
+```
+
+### Call methods
+```python
+# address by: equipment -> module/node -> methodName -> methodPayload
+resp = api.call_method("hmi", "hmiModuleName", "myHmiMethod", {"hello": "hmi"})
+print(json.dumps(resp, indent=2))   # print response mf method
+```
+
+### Discover nodes/modules
+```python
+# show all nodes
+print(api.show_nodes())
+# show only online nodes
+print(api.show_nodes(node_filter="online"))
+# show only offline nodes
+print(api.show_nodes(node_filter="offline"))
+```
+
+
+### Use event emitters
+```python
+def event_connection_status(edge_api, equipment_id, node_id, status):
+    print("connection-status-event-triggered:", equipment_id, node_id, status)
+
+def event_update_endpoints(edge_api, equipment_id, node_id, endpoints):
+    print("updsate-endpoints-event-triggered:", equipment_id, node_id, endpoints)
+
+api.on_update_connection_status = event_connection_status
+api.on_update_endpoints = event_update_endpoints
+```
+
+### Close connection
+
+```python
+api.disconnect()
+```
+
+---
+**NOTE**: 
+Disconnect will also terminate all non-deamon background threads to shut down API properly
+---
+
+## Special Usage
+
+### Share MQTT Clients
+In case the program already make use of an additional paho MQTT client, the mqtt-client object can be overhanded to 
+the lib to avoid threading side effects which can occur due to parallel access of specific components inside the 
+paho-mqtt lib since the lib is not designed for multithreading.
+
+```python
+from sealman_edge_api import SealmanEdgeAPI
+from paho.mqtt.client import Client as MQTTClient  # here the paho mqtt client gets imported
+
+mqtt_client = MQTTClient("localhost")  # do not connect the client - use always GEAEdgeAPI.connect() for that
+
+api = SealmanEdgeAPI("myModuleName", mqtt_client=mqtt_client)  # overhand mqtt client
+api.connect("localhost")  # make sure that you connect MQTT using this method
+```
+
+## Known limitations
+- only anonymous login and no SSL supported at the moment
+- ~ 10 API req/res per second for each API-client (measured on dev pc on localhost)
+- currently no check for duplicated node-id names on the same equipment-id is implemented
+  - maybe read endpoints before registering the own for this check -> careful: since old last will modules could be there but are not used anymore
+  - maybe attach and UUID to each node-id name
+

@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "nodeId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "responseTopic": {
+      "type": "string",
+      "minLength": 1
+    },
+    "transactionUuid": {
+      "type": "string",
+      "minLength": 1
+    },
+    "timeout": {
+      "type": ["integer", "number"]
+    },
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^1.0$",
+      "minLength": 1
+    },
+    "payload": {
+      "type": ["object", "null"]
+    }
+  },
+  "required": [
+    "nodeId",
+    "responseTopic",
+    "transactionUuid",
+    "timeout",
+    "schemaVersion",
+    "payload"
+  ]
+}
