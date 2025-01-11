@@ -1,0 +1,8 @@
+README.md
+setup.py
+luau_tokenizer/__init__.py
+luau_tokenizer/lexer.py
+luau_tokenizer.egg-info/PKG-INFO
+luau_tokenizer.egg-info/SOURCES.txt
+luau_tokenizer.egg-info/dependency_links.txt
+luau_tokenizer.egg-info/top_level.txt
