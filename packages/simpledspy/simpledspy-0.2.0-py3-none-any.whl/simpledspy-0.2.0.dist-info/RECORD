@@ -1,0 +1,11 @@
+simpledspy/__init__.py,sha256=ECXAZv0JQJMLgKRpWr1Bvvs0UdxJbN7t-vBp2YOawlU,214
+simpledspy/cli.py,sha256=Dqjk5UZLe2O6ljqp-TTRhiJOKleNK875qwON_rckiUQ,1799
+simpledspy/module_factory.py,sha256=-XTofmytIBfKYqoCnkZOcRYlYakPaoZ0MGJDEo00wU8,1281
+simpledspy/optimization_manager.py,sha256=8naq6TJ1K-IL3wOK0tOINGn5nz8ehQdljf3BI09PPcU,1548
+simpledspy/pipe.py,sha256=4U3octjef-yrPN2Sa59usKGVVy4lL2vY6dih_xMp5bA,6382
+simpledspy/pipeline_manager.py,sha256=Cy6_BVVaVDtVGrlw_JQBya2AktyM4L7g4c-jLGKD2cE,954
+simpledspy-0.2.0.dist-info/LICENSE,sha256=u6_aqEx4xWIfRO5T9-sEETIRWx_Gz28K1zuB_7JBQ_Q,1066
+simpledspy-0.2.0.dist-info/METADATA,sha256=LSQi3CW6yAVU7OB1WQhMGXY5zWzH9w0KIjirurmk2vk,3153
+simpledspy-0.2.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+simpledspy-0.2.0.dist-info/entry_points.txt,sha256=m-mObltaSRxLg5qma8Np5wC8mTe7U15omhc2Bd3cYBM,50
+simpledspy-0.2.0.dist-info/RECORD,,
