@@ -1,0 +1,8 @@
+RFExplorer>=1.33.2106.3
+Click
+
+[dev]
+black
+
+[validate]
+mypy
