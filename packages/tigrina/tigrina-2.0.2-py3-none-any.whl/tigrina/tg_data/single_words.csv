@@ -1,0 +1,1155 @@
+id,english,tigrina,registeredby
+1,in,ኣብ,NULL
+2,to,ን,NULL
+3,to,ናብ,NULL
+4,by,ብ,NULL
+6,there,ናብኡ,NULL
+7,here,ኣብዚ,NULL
+8,and,"ከምኡ ውን",NULL
+9,as,ከም,NULL
+10,before,ቅድሚ,NULL
+11,if,እንተ,NULL
+12,inasmuch,ክሳብ,NULL
+13,now,ሕጂ,NULL
+14,once,"ሓደ ግዜ",NULL
+15,since,ስለ,NULL
+16,since,ካብ,NULL
+17,however,"እንተኾነ ግን",NULL
+18,however,እንተኾነ,NULL
+19,however,እንተኮነ,NULL
+20,also,ድማ,NULL
+21,also,ከኣ,NULL
+22,supposing,ምስ,NULL
+23,that,እቲ,NULL
+24,though,እንከሎ,NULL
+25,until,ክሳብ,NULL
+26,whenever,ኣብ,NULL
+27,whereas,ግን,NULL
+28,wherever,ኣብ,NULL
+29,here,ኣብዚ,NULL
+31,although,ዋላኳ,NULL
+32,asif,ከም,NULL
+33,because,መኽንያቱ,NULL
+34,lest,ተዘይኮይኑ,NULL
+35,provided,እንተ,NULL
+36,consequently,ከምሳዕቤኑ,NULL
+37,finally,"ኣብ መጨረሽታ",NULL
+38,furthermore,ብተወሳኺ,NULL
+39,hence,ስለዚ,NULL
+40,however,"ይኹን እምበር",NULL
+41,incidentally,በጋጣም,NULL
+42,indeed,"ናይ ብሓቂ",NULL
+43,instead,ኣብክንድኡ,NULL
+44,likewise,"ከምኡ ውን",NULL
+45,meanwhile,"ክሳብ ሽዑ",NULL
+46,abroad,"ኣብ ደገ",NULL
+47,above,ልዕሊ,NULL
+48,across,ብ,NULL
+49,after,ድሕሪ,NULL
+50,against,በንጻር,NULL
+51,along,"ጎኒ ጎኒ",NULL
+52,amid,"ኣብ ማእከል",NULL
+53,among,"ኣብ መንጎ",NULL
+54,anti,ኣንጻር,NULL
+55,around,ከባቢ,NULL
+56,as,ከም,NULL
+57,at,ኣብ,NULL
+58,before,ቅድሚ,NULL
+59,behind,ድሕሪ,NULL
+60,below,ትሕቲ,NULL
+61,beneath,ትሕቲ,NULL
+62,beside,"ብ ጎኒ",NULL
+63,besides,"ኣብ ጥቓ",NULL
+64,between,"ኣብ መንጎ",NULL
+65,beyond,ኪንዮ,NULL
+66,concerning,"ኣብ ግምት ዘእተወ",NULL
+67,considering,"ኣብ ግምት ዘእተወ",NULL
+68,despite,መሕልፎ,NULL
+69,down,ንታሕቲ,NULL
+70,during,"ኣብ እዋን",NULL
+71,except,ብዘይካ,NULL
+72,excepting,"ብዘይካ እታ",NULL
+73,excluding,ብዘይካ,NULL
+74,following,ደድሕሪ,NULL
+75,for,ን,NULL
+76,from,ካብ,NULL
+77,inside,"ኣብ ውሽጢ",NULL
+78,into,ናብ,NULL
+79,like,ከም,NULL
+80,minus,ጎደሎ,NULL
+81,near,ጥቓ,NULL
+82,of,ናይ,NULL
+83,off,ርሑቕ,NULL
+84,on,ኣብ,NULL
+85,onto,ናብ,NULL
+86,opposite,በንጻር,NULL
+87,outside,"ብ ደገ",NULL
+88,over,"ኣብ ልዕሊ",NULL
+89,past,ዝሓለፈ,NULL
+90,per,ብ,NULL
+91,plus,ብተወሳኺ,NULL
+92,regarding,ብዛዕባ,NULL
+93,round,ከባቢ,NULL
+94,save,ዕቋር,NULL
+95,since,ካብ,NULL
+97,through,ብ,NULL
+98,toward,ናብ,NULL
+99,towards,ናብ,NULL
+100,under,ኣብትሕቲ,NULL
+101,underneath,ኣብትሕቲ,NULL
+102,unlike,"ዘይ ከም",NULL
+103,until,ክሳብ,NULL
+104,up,ንላዕሊ,NULL
+105,upon,"ኣብ ልዕሊ",NULL
+106,versus,ብምንጽጻር,NULL
+107,via,ብ,NULL
+108,with,ምስ,NULL
+109,within,ምስ,NULL
+110,without,ብዘይ,NULL
+111,this,እዚ,NULL
+112,then,ሽዑ,NULL
+113,today,ሎሚ,NULL
+114,but,ግን,NULL
+115,or,ወይስ,NULL
+116,some,ገለ,NULL
+117,mine,ናተይ,NULL
+119,hers,ናታ,NULL
+120,theirs,ናታቶም,NULL
+121,ours,ናታትና,NULL
+122,something,"ገለ ነገር",NULL
+123,let,እምበኣር,NULL
+124,okay,ሕራይ,NULL
+125,ok,ሕራይ,NULL
+126,so,ስለዚ,NULL
+127,please,ብኽብረት,NULL
+128,those,እቲom,NULL
+129,this,እዚ,NULL
+130,these,እዚኦም,NULL
+131,no,ኣይፋሉ,NULL
+132,yes,እወ,NULL
+133,any,ዝኾነ,NULL
+134,hi,ሰላም,NULL
+135,hello,ሰላም,NULL
+136,hllo,ሰላም,NULL
+137,hay,ሰላም,NULL
+138,hey,ሰላም,NULL
+139,hii,ሰላም,NULL
+140,hiii,ሰላም,NULL
+141,hiiii,ሰላም,NULL
+142,miss.,ወይዘሮ,NULL
+143,ms.,ወይዘሪት,NULL
+144,mrs.,ወይዘሪት,NULL
+145,mr.,ኣቶ,NULL
+146,mister,ኣቶ,NULL
+147,mr.,ኣቶ,NULL
+148,time,ግዜ,NULL
+149,must,ግድን,NULL
+150,must,ይግባእ,NULL
+152,calendar,"ዓውደ ወርሒ",NULL
+153,calendars,"ዓውደ ኣዋርሕ",NULL
+154,time,ግዜ,NULL
+155,times,ግዜታት,NULL
+156,festival,በዓል,NULL
+157,festivals,በዓላት,NULL
+158,decade,ዑቑድ,NULL
+159,decades,ዑቑዳት,NULL
+160,year,ዓመት,NULL
+161,years,ዓመታት,NULL
+162,yearly,ዓመታዊ,NULL
+163,month,ወርሒ,NULL
+164,months,ኣዋርሕ,NULL
+165,monthly,ወርሓዊ,NULL
+166,week,ሰሙን,NULL
+167,weeks,ሰሙናት,NULL
+168,weekend,"ቀዳመ ሰንበት",NULL
+169,weekends,"ቀዳመ ሰንበታት",NULL
+170,weekly,ሰሙናዊ,NULL
+171,monday,ሰኑይ,NULL
+172,tuesday,ሰሉስ,NULL
+173,wednesday,ረቡዕ,NULL
+174,thursday,ሓሙስ,NULL
+175,friday,ዓርቢ,NULL
+176,saturday,ቀዳም,NULL
+177,sunday,ሰንበት,NULL
+178,day,መዓልቲ,NULL
+179,days,መዓልታት,NULL
+180,daily,መዓልታዊ,NULL
+181,hour,ሰዓት,NULL
+182,hours,ሰዓታት,NULL
+183,hourly,"ኣብ ሰዓት ሰዓት",NULL
+184,minute,ደቒቕ,NULL
+185,minutes,ደቓይቕ,NULL
+186,second,ካልኢት,NULL
+187,seconds,ካልኢታት,NULL
+188,january,ጥሪ,NULL
+189,february,ለካቲት,NULL
+190,february,የካቲት,NULL
+191,march,መጋቢት,NULL
+192,april,ሚያዝያ,NULL
+193,may,ጉንበት,NULL
+194,jun,ሰነ,NULL
+195,july,ሓምለ,NULL
+196,august,ነሓሰ,NULL
+197,september,መስከረም,NULL
+198,october,ጥቅምቲ,NULL
+199,november,ሕዳር,NULL
+200,december,ታሕሳስ,NULL
+201,Spring,ጽድያ,NULL
+202,Autumn,ቀውዒ,NULL
+203,Winter,ከረምቲ,NULL
+204,Summer,ሓጋይ,NULL
+205,Springs,ጽድያታት,NULL
+206,Autumns,ቀውዕታት,NULL
+207,Winters,ከረምትታት,NULL
+208,tomorrow,ጽባሕ,NULL
+209,yesterday,ትማሊ,NULL
+210,afternoon,ድሕሪ ቀትሪ,NULL
+211,evening,ምሸት,NULL
+212,morning,ንግሆ,NULL
+213,night,ለይቲ,NULL
+214,midnight,ፍርቂ ለይቲ,NULL
+215,midday,ፍርቂ መዓሊ,NULL
+216,than,ካብ,NULL
+217,real,ሓቂ,NULL
+218,Unfortunately,"ሕማቕ ኣጋጣሚ",NULL
+219,whether,"ኾይኑ",56
+220,usage,"ኣጠቓቕማ",56
+221,&,"ከምኡ ውን",NULL
+222,%,perscentage,NULL
+223,@,ኣብ,NULL
+224,=,ይኸውን,NULL
+225,+,ተደመሮ,NULL
+226,-,ዝኮደሉ,NULL
+227,/,ዝተመቕሎ,NULL
+228,"test","ፈተና","gide"
+229,Hello,ሰላማት,"gide"
+230,afghanistan,ኣፍጋኒስታን,gide
+231,land islands,ኣይዝላንድ,gide
+232,albania,ኣልባንያ,gide
+233,algeria,ኣልጀሪኣ,gide
+234,american samoa,ሳሞኣ ኣመሪካ,gide
+235,andorra,ኣንዶራ,gide
+236,angola,ኣንጎላ,gide
+237,anguilla,ኣንጒላ,gide
+238,antarctica,ኣንታርክቲካ,gide
+239,antigua and barbuda,ኣንቲጓ,gide
+240,argentina,ኣርገንቲና,gide
+241,armenia,ኣርመኒያ,gide
+242,aruba,ኣሩባ,gide
+243,australia,ኣወስትራልያ,gide
+244,austria,ኣውስትሪያ,gide
+245,azerbaijan,ኣዘርበይጃን,gide
+246,bahamas,ባሃማስ,gide
+247,bahrain,ባሕርያን,gide
+248,bangladesh,ባንግላዲሽ,gide
+249,barbados,ባርባዶስ,gide
+250,belarus,በላሩስ,gide
+251,belgium,በልጅም,gide
+252,belize,በሊዘ,gide
+253,benin,በኒን,gide
+254,bermuda,በርሙዳ,gide
+255,bhutan,ብሁታን,gide
+256,bolivia,ቦሊቭያ,gide
+257,bosnia and herzegovina,ቦስንያ ሀርዘጎቪና,gide
+258,botswana,ቦትስዋና,gide
+259,bouvet island,ቦውቨት ኣይዝላንድ,gide
+260,brazil,ብራዚል,gide
+261,british indian ocean territory,ግዚኣት ኢንግሊዝ ህንዳዊ ውቅያኖስ,gide
+262,brunei darussalam,ብሩነይ ዳሩሳላም,gide
+263,bulgaria,ቡልጋሪያ,gide
+264,burkina faso,ቡርኪ ነፋሶ,gide
+265,burundi,ቡሩንዲ,gide
+266,cambodia,ኮምቦዲያ,gide
+267,cameroon,ካመሮን,gide
+268,canada,ካናዳ,gide
+269,cape verde,ኬፕ ቨርደ,gide
+270,cayman islands,ካይማን ኣይዝላንድ,gide
+271,central african republic,ሪፓብሊክ ማእከላይ ኣፍሪቃ,gide
+272,chad,ጫድ,gide
+273,chile,ቺለ,gide
+274,china,ቻይና,gide
+275,christmas island,ክሪስትማ ኣይዝላንድ,gide
+276,cocos (keeling) islands,ኮኮስ ኣይዝላንድ,gide
+277,colombia,ኮሎምቢያ,gide
+278,comoros,ኮሞሮስ,gide
+279,congo,ኮንጎ,gide
+280,"congo, the democratic republic of the",ኮንጎ,gide
+281,cook islands,ኮክ ኣይዝላንድ,gide
+282,costa rica,ኮስታል ሪካ,gide
+283,cote d'ivoire,ኣይቮሪኮስት,gide
+284,croatia,ክሮሽያ,gide
+285,cuba,ኩባ,gide
+286,cyprus,ሲፕሩስ,gide
+287,czech republic,ስዘች ረፓብሊክ,gide
+288,denmark,ደንማርክ,gide
+289,djibouti,ጅቡቲ,gide
+290,dominica,ዶሚኒካ,gide
+291,dominican republic,ረፓብሊክ ዶሚኒካ,gide
+292,ecuador,ኢካዶር,gide
+293,egypt,ግብጺ,gide
+294,el salvador,አል ሳልቫዶር,gide
+295,equatorial guinea,ኢኳተሪያል ጊኒ,gide
+296,eritrea,ኤርትራ,gide
+297,estonia,ኢስቶኒያ,gide
+298,ethiopia,ኢትዮጵያ,gide
+299,falkland islands (malvinas),ፋልክላንድ ኣይዝላንድ,gide
+300,faroe islands,ፎሮኢ ኣይዝላንድ,gide
+301,fiji,ፊጂ,gide
+302,finland,ፊንላንድ,gide
+303,france,ፈረንሳ,gide
+304,french guiana,ፍራንስ ጒና,gide
+305,french polynesia,ፍረንች ፖልይነሽያ,gide
+306,french southern territories,ፍረንች ደቡባዊ ግዝኣት,gide
+307,gabon,ጋቦን,gide
+308,gambia,ጋምብያ,gide
+309,georgia,ጆርጅያ,gide
+310,germany,ጀርመን,gide
+311,ghana,ጋና,gide
+312,gibraltar,ጊብራልታር,gide
+313,greece,ግሪኽ,gide
+314,greenland,ግሪንላንድ,gide
+315,grenada,ግረናደ,gide
+316,guadeloupe,ጓደሎኡፕ,gide
+317,guam,ጓም,gide
+318,guatemala,ጓቲማላ,gide
+319,guernsey,ጐርንሰይ,gide
+320,guinea,ጊኒ,gide
+321,guinea-bissau,ጊኒ ቢሳው,gide
+322,guyana,ጉያና,gide
+323,haiti,ሃይቲ,gide
+324,heard island and mcdonald islands,ሀርድ ኣይዝላንድ,gide
+325,holy see (vatican city state),ቫቲካን,gide
+326,honduras,ሆንዱራስ,gide
+327,hong kong,ሆንኮንግ,gide
+328,hungary,ሃንጋሪ,gide
+329,iceland,ኣይስላንድ,gide
+330,india,ህንዲ,gide
+331,indonesia,ኢንዶነጅያ,gide
+332,"iran, islamic republic of",ኢራን,gide
+333,iraq,ዒራቕ,gide
+334,ireland,ኣየርላንድ,gide
+335,isle of man,ኣይዝለ ማን,gide
+336,israel,እስራኤል,gide
+337,italy,ጣልያን,gide
+338,jamaica,ጀማይካ,gide
+339,japan,ጃፓን,gide
+340,jersey,ጀርሰይ,gide
+341,jordan,ጆርዳን,gide
+342,kazakhstan,ካዛክሽታን,gide
+343,kenya,ኬንያ,gide
+344,kiribati,ኪሪባቲ,gide
+345,"korea, democratic people's republic of",ኮርያ,gide
+346,"korea, republic of",ኮርያ,gide
+347,kuwait,ኩወይት,gide
+348,kyrgyzstan,ክይርጊስታን,gide
+349,lao people,ላዮ ፒፕል,gide
+350,latvia,ላቲቭያ,gide
+351,lebanon,ሊባኖን,gide
+352,lesotho,ለሶቶ,gide
+353,liberia,ላይበሪያ,gide
+354,libyan arab jamahiriya,ሊብያ,gide
+355,liechtenstein,ሊችተንሰታይን,gide
+356,lithuania,ሊቷንያ,gide
+357,luxembourg,ላክሰምበርግ,gide
+358,macao,ማኮኦ,gide
+359,"macedonia, the former yugoslav republic of",ማሰዶንያ,gide
+360,madagascar,ማዳጋስጋር,gide
+361,malawi,ማላዊ,gide
+362,malaysia,ማለጅያ,gide
+363,maldives,ማልዲቨስ,gide
+364,mali,ማሊ,gide
+365,malta,ማልታ,gide
+366,marshall islands,ማርሻል ኣይዝላንድ,gide
+367,martinique,ማርቲንኪዩ,gide
+368,mauritania,ማውሪታንያ,gide
+369,mauritius,ማውሪቱስ,gide
+370,mayotte,ማዮተ,gide
+371,mexico,መክሲኮ,gide
+372,"micronesia, federated states of",ሚክሮነጅያ,gide
+373,"moldova, republic of",ሞልዶቫ,gide
+374,monaco,ሞናኮ,gide
+375,mongolia,ሞንጎልያ,gide
+376,montenegro,ሞንተንግሮ,gide
+377,montserrat,ሞንትሰራት,gide
+378,morocco,ሞሮኮ,gide
+379,mozambique,ሞዛምቢክ,gide
+380,myanmar,ምያንማር,gide
+381,namibia,ናሚብያ,gide
+382,nauru,ናኡራ,gide
+383,nepal,ነፓል,gide
+384,netherlands,ነዘርላንድስ,gide
+385,netherlands antilles,ነዘርላንድስ ኣንቲልያን,gide
+386,new caledonia,ነው ካለዶንያ,gide
+387,new zealand,ኒው ዚላንድ,gide
+388,nicaragua,ኒካራጓ,gide
+389,niger,ኒጀር,gide
+390,nigeria,ናጀርያ,gide
+391,niue,ኒኡ,gide
+392,norfolk island,ኖርፎልክ ኣይዝላንድ,gide
+393,northern mariana islands,ሰመናዊ ማሪያን ኣይዝላንድ,gide
+394,norway,ኖርወይ,gide
+395,oman,ኦማን,gide
+396,pakistan,ፓኪስታን,gide
+397,palau,ፓሉው,gide
+398,"palestinian territory, occupied",ፍልስጠም,gide
+399,panama,ፓናማ,gide
+400,papua new guinea,ፓፗ ኒው ጒንያ,gide
+401,paraguay,ፓራጓይ,gide
+402,peru,ፐሩ,gide
+403,philippines,ፊሊፒነስ,gide
+404,pitcairn,ፒትካይርን,gide
+405,poland,ፖላንድ,gide
+406,portugal,ፖርቱጋል,gide
+407,puerto rico,ፖርቶሪኮ,gide
+408,qatar,ቀጠር,gide
+409,reunion,ሪዩኒዮን,gide
+410,romania,ሮማኒያ,gide
+411,russian federation,ሩስያ,gide
+412,rwanda,ርዋንዳ,gide
+413,saint helena,ሳይንት ሀለና,gide
+414,saint kitts and nevis,ሳይንት ኪትስ ነቪስ,gide
+415,saint lucia,ሳይንት ሉሽያ,gide
+416,saint pierre and miquelon,ሳይን ፒረ ሚከሎን,gide
+417,saint vincent and the grenadines,ሳይንት ቪንሰንት ግረናዲነስ,gide
+418,samoa,ሳሞኣ,gide
+419,san marino,ሳን ማሪኖ,gide
+420,sao tome and principe,ሳኦ ቶም ፕሪንሰፕ,gide
+421,saudi arabia,ሱዕዲ ዓረብ,gide
+422,senegal,ሰነጋል,gide
+423,serbia,ሰርቢያ,gide
+424,seychelles,ሰይቸለስ,gide
+425,sierra leone,ሰራልዮን,gide
+426,singapore,ሲንጋፖር,gide
+427,slovakia,ስሎቫክያ,gide
+428,slovenia,ስሎቨንያ,gide
+429,solomon islands,ሶሎሞን ኣይዝላንድ,gide
+430,somalia,ሶማልያ,gide
+431,south africa,ደቡብ ኣፍሪቃ,gide
+432,south georgia and the south sandwich islands,ደቡብ ጆርጅያ,gide
+433,spain,ስፐይን,gide
+434,sri lanka,ስሪላንካ,gide
+435,sudan,ሱዳን,gide
+436,suriname,ሱሪናም,gide
+437,svalbard and jan mayen,ስቫልባርድ ያን ማየን,gide
+438,swaziland,ስዋዚላንድ,gide
+439,sweden,ሽወደን,gide
+440,switzerland,ስዊዘርላንድ,gide
+441,syrian arab republic,ሶርያ,gide
+442,"taiwan, province of china",ታይዋን,gide
+443,tajikistan,ታጂክስታን,gide
+444,"tanzania, united republic of",ታንዛንያ,gide
+445,thailand,ታይላንድ,gide
+446,timor-leste,ቲሞርለሰት,gide
+447,togo,ቶጎ,gide
+448,tokelau,ቶከሉው,gide
+449,tonga,ቶንጋ,gide
+450,trinidad and tobago,ትሪኒዳድ,gide
+451,tunisia,ቱኒዝያ,gide
+452,turkey,ቱርኪ,gide
+453,turkmenistan,ቱርክመኒስታን,gide
+454,turks and caicos islands,ቱርክስ,gide
+455,tuvalu,ቱቫሉ,gide
+456,uganda,ኡጋንዳ,gide
+457,ukraine,ዩክሬን,gide
+458,united arab emirates,ዩናይትድ ኢማራት ዓረብ,gide
+459,united kingdom,ኢንግሊዝ,gide
+460,united states,ኣመሪካ,gide
+461,united states minor outlying islands,ዩናይትድ ስተይት ሚኖር ኣይዝላንድ,gide
+462,uruguay,ኡራጓይ,gide
+463,uzbekistan,ኡዝበኪስታን,gide
+464,vanuatu,ቫኑኡታ,gide
+465,venezuela,ቨነዝወላ,gide
+466,viet nam,ቬትናም,gide
+467,"virgin islands, british",ቪርጂን ኣይዝላንድ ብሪጣንያ,gide
+468,"virgin islands, u.s.",ቪርጅን ኣይዝላንድ ኣመሪካ,gide
+469,wallis and futuna,ዋሊስ ፉቱና,gide
+470,western sahara,ምዕራብ ሳህራ,gide
+471,yemen,የመን,gide
+472,zambia,ዛምብያ,gide
+473,zimbabwe,ዚምባብወ,gide
+474,hundreds,ኣማኢት,gide
+475,thousands,ኣሽሓት,gide
+476,millions,ሚልዮናት,gide
+477,billions,ቢልዮናት,gide
+478,trillions,ትሪልዮናት,gide
+id,english,tigrina,registeredby
+479,afghan,ኣፍጋኒስታዊ,gide
+480,albanian,ኣልባኒያዊ,gide
+481,algerian,ኣልጀሪያዊ,gide
+482,american,ኣመሪካዊ,gide
+483,andorran,ኣንዶራዊ,gide
+484,angolan,ኣንጎላዊ,gide
+485,anguillan,ኣንጉሊያናዊ,gide
+486,argentine,ኣርጀንቲናዊ,gide
+487,armenian,ኣርመኒያዊ,gide
+488,australian,ኣወስትራሊያዊ,gide
+489,austrian,ኣውስትርያዊ,gide
+490,azerbaijani,ኣዘርባጃዊ,gide
+491,bahamian,ባሃማዊ,gide
+492,bahraini,ባሕርያዊ,gide
+493,bangladeshi,ባንግልድሻዊ,gide
+494,barbadian,ባርባድያዊ,gide
+495,belarusian,በላሩስያዊ,gide
+496,belgian,በልጅማዊ,gide
+497,belizean,በሊዚያዊ,gide
+498,beninese,በኒነስያዊ,gide
+499,bermudian,በርሙዲያዊ,gide
+500,bhutanese,ብሁታንሰያዊ,gide
+501,bolivian,ቦሊቪያዊ,gide
+502,botswanan,ቦትስዋንያዊ,gide
+503,brazilian,ብራዚሊያዊ,gide
+504,british,ብርጣንያዊ,gide
+505,british virgin islander,ብርጣንያዊ,gide
+506,bruneian,ብሩኒያዊ,gide
+507,bulgarian,ቡልጋርያዊ,gide
+508,burkinan,ቡርኪናን,gide
+509,burmese,ቡርመስያዊ,gide
+510,burundian,ቡሩንድያዊ,gide
+511,cambodian,ኮምቦድያዊ,gide
+512,cameroonian,ካመራዊ,gide
+513,canadian,ካናዳዊ,gide
+514,cape verdean,ኬፕቨርዳዊ,gide
+515,cayman islander,ሳይማንያዊ,gide
+516,central african,ማእከላይ ኣፍሪቃዊ,gide
+517,chadian,ጫዳዊ,gide
+518,chilean,ቺለዊ,gide
+519,chinese,ቻይናዊ,gide
+520,citizen of antigua and barbuda,ባርቡዳዊ,gide
+521,citizen of bosnia and herzegovina,ሀርዞጎቪናዊ,gide
+522,citizen of guinea-bissau,ጊኒቢሳዊ,gide
+523,citizen of kiribati,ኪሪባቲያዊ,gide
+524,citizen of seychelles,ሲሸሊሳዊ,gide
+525,citizen of the dominican republic,ዶሚኒካዊ,gide
+526,citizen of vanuatu,ቫኑታዊ,gide
+527,colombian,ኮሎምቢያዊ,gide
+528,comoran,ኮሞራንያዊ,gide
+529,congolese (congo),ኮንጋዊ,gide
+530,congolese (drc),ኮንጎለሳዊ,gide
+531,cook islander,ኮክኣይላንዳዊ,gide
+532,costa rican,ኮስታሪካዊ,gide
+533,croatian,ክሮሽያዊ,gide
+534,cuban,ኩባዊ,gide
+535,cymraes,ሲምራስያዊ,gide
+536,cymro,ስይምራዊ,gide
+537,cypriot,ሳይፕሮይታዊ,gide
+538,czech,ስዘቻዊ,gide
+539,danish,ዳኒሻዊ,gide
+540,djiboutian,ጅቡታዊ,gide
+541,dominican,ዶሚኒካዊ,gide
+542,dutch,ነዘርላንዳዊ,gide
+543,east timorese,ቲሞረሳዊ,gide
+544,ecuadorean,ኢኳዶርያዊ,gide
+545,egyptian,ግብጻዊ,gide
+546,emirati,ኢሚራታዊ,gide
+547,english,እንግሊዛዊ,gide
+548,equatorial guinean,ኢኳቶሪኣል ጊኒ,gide
+549,eritrean,ኤርትራዊ,gide
+550,estonian,ኢስቶንያዊ,gide
+551,ethiopian,ኢትዮጵያዊ,gide
+552,faroese,ፋሮስያዊ,gide
+553,fijian,ፊጂያናዊ,gide
+554,filipino,ፍሊፒናዊ,gide
+555,finnish,ፊኒሻዊ,gide
+556,french,ፈረንሳዊ,gide
+557,gabonese,ጋቦናዊ,gide
+558,gambian,ጋምብያዊ,gide
+559,georgian,ጆርጅያዊ,gide
+560,german,ጀርመናዊ,gide
+561,ghanaian,ጋናዊ,gide
+562,gibraltarian,ጀበልጣርያዊ,gide
+563,greek,ግሪኻዊ,gide
+564,greenlandic,ግሪንላንዳዊ,gide
+565,grenadian,ግረናዲያናዊ,gide
+566,guamanian,ጉማኒያናዊ,gide
+567,guatemalan,ጓቲማላዊ,gide
+568,guinean,ጒናዊ,gide
+569,guyanese,ጉያነሳዊ,gide
+570,haitian,ሃይትያናዊ,gide
+571,honduran,ሆንዱራናዊ,gide
+572,hong konger,ሆንጎንጋዊ,gide
+573,hungarian,ሃንጋሪያዊ,gide
+574,icelandic,ኣይስላንዳዊ,gide
+575,indian,ህንዳዊ,gide
+576,indonesian,ኢንዶነጅያዊ,gide
+577,iranian,ኢራናዊ,gide
+578,iraqi,ዒራቓዊ,gide
+579,irish,ኣይሪሻዊ,gide
+580,israeli,እስራኤላዊ,gide
+581,italian,ኢታሊያዊ,gide
+582,ivorian,ኣይቮሪያዊ,gide
+583,jamaican,ጀማይካዊ,gide
+584,japanese,ጃፓናዊ,gide
+585,jordanian,ጆርዳናዊ,gide
+586,kazakh,ካዛክሃዊ,gide
+587,kenyan,ከንያዊ,gide
+588,kittitian,ኪቲሻናዊ,gide
+589,kosovan,ኮሶቫዊ,gide
+590,kuwaiti,ኩወታዊ,gide
+591,kyrgyz,ኪርጊዛዊ,gide
+592,lao,ላዮዊ,gide
+593,latvian,ላቲቪያዊ,gide
+594,lebanese,ሊባኖሳዊ,gide
+595,liberian,ላይበርያዊ,gide
+596,libyan,ሊብያዊ,gide
+597,liechtenstein citizen,ሊኽተንስታዊ,gide
+598,lithuanian,ሊትወንያዊ,gide
+599,luxembourger,ሉክሰንበርገራዊ,gide
+600,macanese,መካንያዊ,gide
+601,macedonian,መሰዶንያዊ,gide
+602,malagasy,ማላጋሲያዊ,gide
+603,malawian,ማላዊ,gide
+604,malaysian,ማለጅያዊ,gide
+605,maldivian,ማልዲቭያዊ,gide
+606,malian,ማላዊ,gide
+607,maltese,ማልታዊ,gide
+608,marshallese,ማርሸላሳዊ,gide
+609,martiniquais,ማርቲኒካዊ,gide
+610,mauritanian,ማውሪታንያዊ,gide
+611,mauritian,ማውሪታንያዊ,gide
+612,mexican,ሞክሲካዊ,gide
+613,micronesian,ሚክሮኒጅያዊ,gide
+614,moldovan,ሞልዶቫናዊ,gide
+615,monegasque,ሞነጋስካዊ,gide
+616,mongolian,ሞንጎልያዊ,gide
+617,montenegrin,ሞንተነግሪያዊ,gide
+618,montserratian,ሞንትሰራያዊ,gide
+619,moroccan,ሞሮካዊ,gide
+620,mosotho,ሞሶታዊ,gide
+621,mozambican,ሞዞምቢካዊ,gide
+622,namibian,ናሚብያዊ,gide
+623,nauruan,ናውራዊ,gide
+624,nepalese,ነፓላዊ,gide
+625,new zealander,ኒውዚላንዳዊ,gide
+626,nicaraguan,ኒኮራጉያዊ,gide
+627,nigerian,ኒጀራዊ,gide
+628,nigerien,ናይጀርያዊ,gide
+629,niuean,ኒኡያዊ,gide
+630,north korean,ሰሜን ኮርያዊ,gide
+631,northern irish,ሰሜን ኣይሪሻዊ,gide
+632,norwegian,ኖርወያዊ,gide
+633,omani,ኦማኒያዊ,gide
+634,pakistani,ፓኪስታናዊ,gide
+635,palauan,ፓላዊ,gide
+636,palestinian,ፍልስጠማዊ,gide
+637,panamanian,ፓናማዊ,gide
+638,papua new guinean,ፓፑ ኒውጊናዊ,gide
+639,paraguayan,ፓራጓዊ,gide
+640,peruvian,ፐሩቪያዊ,gide
+641,pitcairn islander,ፒትካርን ኣይላንደራዊ,gide
+642,polish,ፖላንዳዊ,gide
+643,portuguese,ፖርቱጓላዊ,gide
+644,prydeinig,ፕራደኒጋዊ,gide
+645,puerto rican,ፖርቶሪካዊ,gide
+646,qatari,ቀጠራዊ,gide
+647,romanian,ሮማዊ,gide
+648,russian,ሩስያዊ,gide
+649,rwandan,ሩዋንዳዊ,gide
+650,salvadorean,ሳልቫዶርያዊ,gide
+651,sammarinese,ሳማራዊ,gide
+652,samoan,ሳሞናዊ,gide
+653,sao tomean,ሳኦቶማንያዊ,gide
+654,saudi arabian,ሱዕዲዓረባዊ,gide
+655,scottish,ስኮታዊ,gide
+656,senegalese,ሰነጋላዊ,gide
+657,serbian,ሰርብያዊ,gide
+658,sierra leonean,ሰራልዮናዊ,gide
+659,singaporean,ሲንጋፖራዊ,gide
+660,slovak,ስሎቫካዊ,gide
+661,slovenian,ስሎቫንያዊ,gide
+662,solomon islander,ሰሎሞን ኣይላንደር,gide
+663,somali,ሶማላዊ,gide
+664,south african,ደቡብ ኣፍሪቃዊ,gide
+665,south korean,ደቡብ ኮርያዊ,gide
+666,south sudanese,ደቡብ ሱዳናዊ,gide
+667,spanish,ስጳኛዊ,gide
+668,sri lankan,ስሪላንካዊ,gide
+669,st helenian,ሀለንያዊ,gide
+670,st lucian,ሉሽያዊ,gide
+671,stateless,ስታትለስ,gide
+672,sudanese,ሱዳናዊ,gide
+673,surinamese,ሱራኒማዊ,gide
+674,swazi,ስዋዛዊ,gide
+675,swedish,ስዊድናዊ,gide
+676,swiss,ስዊዛዊ,gide
+677,syrian,ሶርያዊ,gide
+678,taiwanese,ታይዋናዊ,gide
+679,tajik,ታጅካዊ,gide
+680,tanzanian,ታንዛንያዊ,gide
+681,thai,ታያዊ,gide
+682,togolese,ቶጎለሳዊ,gide
+683,tongan,ቶንጋናዊ,gide
+684,trinidadian,ትሪንዳድያዊ,gide
+685,tristanian,ትሪስታንያዊ,gide
+686,tunisian,ቱኒዛዊ,gide
+687,turkish,ቱርካዊ,gide
+688,turkmen,ቱርክማናዊ,gide
+689,turks and caicos islander,ቱርክስ ኣይላንደራዊ,gide
+690,tuvaluan,ቱቫላዊ,gide
+691,ugandan,ኡጋንዳዊ,gide
+692,ukrainian ,ዩክረናዊ,gide
+693,uruguayan,ኡራጓዊ,gide
+694,uzbek,ኡዝበካዊ,gide
+695,vatican citizen,ቫቲካናዊ,gide
+696,venezuelan,ቨነዝወላዊ,gide
+697,vietnamese,ቨትናማዊ,gide
+698,vincentian,ቪንሰንታዊ,gide
+699,wallisian,ዋሊሳዊ,gide
+700,welsh,ወልሻዊ,gide
+701,yemeni,የመናዊ,gide
+702,zambian,ዛምብያዊ,gide
+703,zimbabwean,ዚምባብወዊ,gide
+704,afghan,ኣፍጋኒስታዊት,gide
+705,albanian,ኣልባኒያዊት,gide
+706,algerian,ኣልጀሪያዊት,gide
+707,american,ኣመሪካዊት,gide
+708,andorran,ኣንዶራዊት,gide
+709,angolan,ኣንጎላዊት,gide
+710,anguillan,ኣንጉሊያናዊት,gide
+711,argentine,ኣርጀንቲናዊት,gide
+712,armenian,ኣርመኒያዊት,gide
+713,australian,ኣወስትራሊያዊት,gide
+714,austrian,ኣውስትርያዊት,gide
+715,azerbaijani,ኣዘርባጃዊት,gide
+716,bahamian,ባሃማዊት,gide
+717,bahraini,ባሕርያዊት,gide
+718,bangladeshi,ባንግልድሻዊት,gide
+719,barbadian,ባርባድያዊት,gide
+720,belarusian,በላሩስያዊት,gide
+721,belgian,በልጅማዊት,gide
+722,belizean,በሊዚያዊት,gide
+723,beninese,በኒነስያዊት,gide
+724,bermudian,በርሙዲያዊት,gide
+725,bhutanese,ብሁታንሰያዊት,gide
+726,bolivian,ቦሊቪያዊት,gide
+727,botswanan,ቦትስዋንያዊት,gide
+728,brazilian,ብራዚሊያዊት,gide
+729,british,ብርጣንያዊት,gide
+730,british virgin islander,ብርጣንያዊት,gide
+731,bruneian,ብሩኒያዊት,gide
+732,bulgarian,ቡልጋርያዊት,gide
+733,burkinan,ቡርኪናንት,gide
+734,burmese,ቡርመስያዊት,gide
+735,burundian,ቡሩንድያዊት,gide
+736,cambodian,ኮምቦድያዊት,gide
+737,cameroonian,ካመራዊት,gide
+738,canadian,ካናዳዊት,gide
+739,cape verdean,ኬፕቨርዳዊት,gide
+740,cayman islander,ሳይማንያዊት,gide
+741,central african,ማእከላይ ኣፍሪቃዊት,gide
+742,chadian,ጫዳዊት,gide
+743,chilean,ቺለዊት,gide
+744,chinese,ቻይናዊት,gide
+745,citizen of antigua and barbuda,ባርቡዳዊት,gide
+746,citizen of bosnia and herzegovina,ሀርዞጎቪናዊት,gide
+747,citizen of guinea-bissau,ጊኒቢሳዊት,gide
+748,citizen of kiribati,ኪሪባቲያዊት,gide
+749,citizen of seychelles,ሲሸሊሳዊት,gide
+750,citizen of the dominican republic,ዶሚኒካዊት,gide
+751,citizen of vanuatu,ቫኑታዊት,gide
+752,colombian,ኮሎምቢያዊት,gide
+753,comoran,ኮሞራንያዊት,gide
+754,congolese (congo),ኮንጋዊት,gide
+755,congolese (drc),ኮንጎለሳዊት,gide
+756,cook islander,ኮክኣይላንዳዊት,gide
+757,costa rican,ኮስታሪካዊት,gide
+758,croatian,ክሮሽያዊት,gide
+759,cuban,ኩባዊት,gide
+760,cymraes,ሲምራስያዊት,gide
+761,cymro,ስይምራዊት,gide
+762,cypriot,ሳይፕሮይታዊት,gide
+763,czech,ስዘቻዊት,gide
+764,danish,ዳኒሻዊት,gide
+765,djiboutian,ጅቡታዊት,gide
+766,dominican,ዶሚኒካዊት,gide
+767,dutch,ነዘርላንዳዊት,gide
+768,east timorese,ቲሞረሳዊት,gide
+769,ecuadorean,ኢኳዶርያዊት,gide
+770,egyptian,ግብጻዊት,gide
+771,emirati,ኢሚራታዊት,gide
+772,english,እንግሊዛዊት,gide
+773,equatorial guinean,ኢኳቶሪኣል ጊኒት,gide
+774,eritrean,ኤርትራዊት,gide
+775,estonian,ኢስቶንያዊት,gide
+776,ethiopian,ኢትዮጵያዊት,gide
+777,faroese,ፋሮስያዊት,gide
+778,fijian,ፊጂያናዊት,gide
+779,filipino,ፍሊፒናዊት,gide
+780,finnish,ፊኒሻዊት,gide
+781,french,ፈረንሳዊት,gide
+782,gabonese,ጋቦናዊት,gide
+783,gambian,ጋምብያዊት,gide
+784,georgian,ጆርጅያዊት,gide
+785,german,ጀርመናዊት,gide
+786,ghanaian,ጋናዊት,gide
+787,gibraltarian,ጀበልጣርያዊት,gide
+788,greek,ግሪኻዊት,gide
+789,greenlandic,ግሪንላንዳዊት,gide
+790,grenadian,ግረናዲያናዊት,gide
+791,guamanian,ጉማኒያናዊት,gide
+792,guatemalan,ጓቲማላዊት,gide
+793,guinean,ጒናዊት,gide
+794,guyanese,ጉያነሳዊት,gide
+795,haitian,ሃይትያናዊት,gide
+796,honduran,ሆንዱራናዊት,gide
+797,hong konger,ሆንጎንጋዊት,gide
+798,hungarian,ሃንጋሪያዊት,gide
+799,icelandic,ኣይስላንዳዊት,gide
+800,indian,ህንዳዊት,gide
+801,indonesian,ኢንዶነጅያዊት,gide
+802,iranian,ኢራናዊት,gide
+803,iraqi,ዒራቓዊት,gide
+804,irish,ኣይሪሻዊት,gide
+805,israeli,እስራኤላዊት,gide
+806,italian,ኢታሊያዊት,gide
+807,ivorian,ኣይቮሪያዊት,gide
+808,jamaican,ጀማይካዊት,gide
+809,japanese,ጃፓናዊት,gide
+810,jordanian,ጆርዳናዊት,gide
+811,kazakh,ካዛክሃዊት,gide
+812,kenyan,ከንያዊት,gide
+813,kittitian,ኪቲሻናዊት,gide
+814,kosovan,ኮሶቫዊት,gide
+815,kuwaiti,ኩወታዊት,gide
+816,kyrgyz,ኪርጊዛዊት,gide
+817,lao,ላዮዊት,gide
+818,latvian,ላቲቪያዊት,gide
+819,lebanese,ሊባኖሳዊት,gide
+820,liberian,ላይበርያዊት,gide
+821,libyan,ሊብያዊት,gide
+822,liechtenstein citizen,ሊኽተንስታዊት,gide
+823,lithuanian,ሊትወንያዊት,gide
+824,luxembourger,ሉክሰንበርገራዊት,gide
+825,macanese,መካንያዊት,gide
+826,macedonian,መሰዶንያዊት,gide
+827,malagasy,ማላጋሲያዊት,gide
+828,malawian,ማላዊት,gide
+829,malaysian,ማለጅያዊት,gide
+830,maldivian,ማልዲቭያዊት,gide
+831,malian,ማላዊት,gide
+832,maltese,ማልታዊት,gide
+833,marshallese,ማርሸላሳዊት,gide
+834,martiniquais,ማርቲኒካዊት,gide
+835,mauritanian,ማውሪታንያዊት,gide
+836,mauritian,ማውሪታንያዊት,gide
+837,mexican,ሞክሲካዊት,gide
+838,micronesian,ሚክሮኒጅያዊት,gide
+839,moldovan,ሞልዶቫናዊት,gide
+840,monegasque,ሞነጋስካዊት,gide
+841,mongolian,ሞንጎልያዊት,gide
+842,montenegrin,ሞንተነግሪያዊት,gide
+843,montserratian,ሞንትሰራያዊት,gide
+844,moroccan,ሞሮካዊት,gide
+845,mosotho,ሞሶታዊት,gide
+846,mozambican,ሞዞምቢካዊት,gide
+847,namibian,ናሚብያዊት,gide
+848,nauruan,ናውራዊት,gide
+849,nepalese,ነፓላዊት,gide
+850,new zealander,ኒውዚላንዳዊት,gide
+851,nicaraguan,ኒኮራጉያዊት,gide
+852,nigerian,ኒጀራዊት,gide
+853,nigerien,ናይጀርያዊት,gide
+854,niuean,ኒኡያዊት,gide
+855,north korean,ሰሜን ኮርያዊት,gide
+856,northern irish,ሰሜን ኣይሪሻዊት,gide
+857,norwegian,ኖርወያዊት,gide
+858,omani,ኦማኒያዊት,gide
+859,pakistani,ፓኪስታናዊት,gide
+860,palauan,ፓላዊት,gide
+861,palestinian,ፍልስጠማዊት,gide
+862,panamanian,ፓናማዊት,gide
+863,papua new guinean,ፓፑ ኒውጊናዊት,gide
+864,paraguayan,ፓራጓዊት,gide
+865,peruvian,ፐሩቪያዊት,gide
+866,pitcairn islander,ፒትካርን ኣይላንደራዊት,gide
+867,polish,ፖላንዳዊት,gide
+868,portuguese,ፖርቱጓላዊት,gide
+869,prydeinig,ፕራደኒጋዊት,gide
+870,puerto rican,ፖርቶሪካዊት,gide
+871,qatari,ቀጠራዊት,gide
+872,romanian,ሮማዊት,gide
+873,russian,ሩስያዊት,gide
+874,rwandan,ሩዋንዳዊት,gide
+875,salvadorean,ሳልቫዶርያዊት,gide
+876,sammarinese,ሳማራዊት,gide
+877,samoan,ሳሞናዊት,gide
+878,sao tomean,ሳኦቶማንያዊት,gide
+879,saudi arabian,ሱዕዲዓረባዊት,gide
+880,scottish,ስኮታዊት,gide
+881,senegalese,ሰነጋላዊት,gide
+882,serbian,ሰርብያዊት,gide
+883,sierra leonean,ሰራልዮናዊት,gide
+884,singaporean,ሲንጋፖራዊት,gide
+885,slovak,ስሎቫካዊት,gide
+886,slovenian,ስሎቫንያዊት,gide
+887,solomon islander,ሰሎሞን ኣይላንደርት,gide
+888,somali,ሶማላዊት,gide
+889,south african,ደቡብ ኣፍሪቃዊት,gide
+890,south korean,ደቡብ ኮርያዊት,gide
+891,south sudanese,ደቡብ ሱዳናዊት,gide
+892,spanish,ስጳኛዊት,gide
+893,sri lankan,ስሪላንካዊት,gide
+894,st helenian,ሀለንያዊት,gide
+895,st lucian,ሉሽያዊት,gide
+896,stateless,ስታትለስት,gide
+897,sudanese,ሱዳናዊት,gide
+898,surinamese,ሱራኒማዊት,gide
+899,swazi,ስዋዛዊት,gide
+900,swedish,ስዊድናዊት,gide
+901,swiss,ስዊዛዊት,gide
+902,syrian,ሶርያዊት,gide
+903,taiwanese,ታይዋናዊት,gide
+904,tajik,ታጅካዊት,gide
+905,tanzanian,ታንዛንያዊት,gide
+906,thai,ታያዊት,gide
+907,togolese,ቶጎለሳዊት,gide
+908,tongan,ቶንጋናዊት,gide
+909,trinidadian,ትሪንዳድያዊት,gide
+910,tristanian,ትሪስታንያዊት,gide
+911,tunisian,ቱኒዛዊት,gide
+912,turkish,ቱርካዊት,gide
+913,turkmen,ቱርክማናዊት,gide
+914,turks and caicos islander,ቱርክስ ኣይላንደራዊት,gide
+915,tuvaluan,ቱቫላዊት,gide
+916,ugandan,ኡጋንዳዊት,gide
+917,ukrainian ,ዩክረናዊት,gide
+918,uruguayan,ኡራጓዊት,gide
+919,uzbek,ኡዝበካዊት,gide
+920,vatican citizen,ቫቲካናዊት,gide
+921,venezuelan,ቨነዝወላዊት,gide
+922,vietnamese,ቨትናማዊት,gide
+923,vincentian,ቪንሰንታዊት,gide
+924,wallisian,ዋሊሳዊት,gide
+925,welsh,ወልሻዊት,gide
+926,yemeni,የመናዊት,gide
+927,zambian,ዛምብያዊት,gide
+928,zimbabwean,ዚምባብወዊት,gide
+929,afghans,ኣፍጋኒስታዊያን,gide
+930,albanians,ኣልባኒያዊያን,gide
+931,algerians,ኣልጀሪያዊያን,gide
+932,americans,ኣመሪካዊያን,gide
+933,andorrans,ኣንዶራዊያን,gide
+934,angolans,ኣንጎላዊያን,gide
+935,anguillans,ኣንጉሊያናዊያን,gide
+936,argentines,ኣርጀንቲናዊያን,gide
+937,armenians,ኣርመኒያዊያን,gide
+938,australians,ኣወስትራሊያዊያን,gide
+939,austrians,ኣውስትርያዊያን,gide
+940,azerbaijanis,ኣዘርባጃዊያን,gide
+941,bahamians,ባሃማዊያን,gide
+942,bahrainis,ባሕርያዊያን,gide
+943,bangladeshis,ባንግልድሻዊያን,gide
+944,barbadians,ባርባድያዊያን,gide
+945,belarusians,በላሩስያዊያን,gide
+946,belgians,በልጅማዊያን,gide
+947,belizeans,በሊዚያዊያን,gide
+948,benineses,በኒነስያዊያን,gide
+949,bermudians,በርሙዲያዊያን,gide
+950,bhutaneses,ብሁታንሰያዊያን,gide
+951,bolivians,ቦሊቪያዊያን,gide
+952,botswanans,ቦትስዋንያዊያን,gide
+953,brazilians,ብራዚሊያዊያን,gide
+954,britishs,ብርጣንያዊያን,gide
+955,british virgin islanders,ብርጣንያዊያን,gide
+956,bruneians,ብሩኒያዊያን,gide
+957,bulgarians,ቡልጋርያዊያን,gide
+958,burkinans,ቡርኪናንያን,gide
+959,burmeses,ቡርመስያዊያን,gide
+960,burundians,ቡሩንድያዊያን,gide
+961,cambodians,ኮምቦድያዊያን,gide
+962,cameroonians,ካመራዊያን,gide
+963,canadians,ካናዳዊያን,gide
+964,cape verdeans,ኬፕቨርዳዊያን,gide
+965,cayman islanders,ሳይማንያዊያን,gide
+966,central africans,ማእከላይ ኣፍሪቃዊያን,gide
+967,chadians,ጫዳዊያን,gide
+968,chileans,ቺለዊያን,gide
+969,chineses,ቻይናዊያን,gide
+970,citizen of antigua and barbudas,ባርቡዳዊያን,gide
+971,citizen of bosnia and herzegovinas,ሀርዞጎቪናዊያን,gide
+972,citizen of guinea-bissaus,ጊኒቢሳዊያን,gide
+973,citizen of kiribatis,ኪሪባቲያዊያን,gide
+974,citizen of seychelless,ሲሸሊሳዊያን,gide
+975,citizen of the dominican republics,ዶሚኒካዊያን,gide
+976,citizen of vanuatus,ቫኑታዊያን,gide
+977,colombians,ኮሎምቢያዊያን,gide
+978,comorans,ኮሞራንያዊያን,gide
+979,congolese (congo)s,ኮንጋዊያን,gide
+980,congolese (drc)s,ኮንጎለሳዊያን,gide
+981,cook islanders,ኮክኣይላንዳዊያን,gide
+982,costa ricans,ኮስታሪካዊያን,gide
+983,croatians,ክሮሽያዊያን,gide
+984,cubans,ኩባዊያን,gide
+985,cymraess,ሲምራስያዊያን,gide
+986,cymros,ስይምራዊያን,gide
+987,cypriots,ሳይፕሮይታዊያን,gide
+988,czechs,ስዘቻዊያን,gide
+989,danishs,ዳኒሻዊያን,gide
+990,djiboutians,ጅቡታዊያን,gide
+991,dominicans,ዶሚኒካዊያን,gide
+992,dutchs,ነዘርላንዳዊያን,gide
+993,east timoreses,ቲሞረሳዊያን,gide
+994,ecuadoreans,ኢኳዶርያዊያን,gide
+995,egyptians,ግብጻዊያን,gide
+996,emiratis,ኢሚራታዊያን,gide
+997,englishs,እንግሊዛዊያን,gide
+998,equatorial guineans,ኢኳቶሪኣል ጊኒያን,gide
+999,eritreans,ኤርትራዊያን,gide
+1000,estonians,ኢስቶንያዊያን,gide
+1001,ethiopians,ኢትዮጵያዊያን,gide
+1002,faroeses,ፋሮስያዊያን,gide
+1003,fijians,ፊጂያናዊያን,gide
+1004,filipinos,ፍሊፒናዊያን,gide
+1005,finnishs,ፊኒሻዊያን,gide
+1006,frenchs,ፈረንሳዊያን,gide
+1007,gaboneses,ጋቦናዊያን,gide
+1008,gambians,ጋምብያዊያን,gide
+1009,georgians,ጆርጅያዊያን,gide
+1010,germans,ጀርመናዊያን,gide
+1011,ghanaians,ጋናዊያን,gide
+1012,gibraltarians,ጀበልጣርያዊያን,gide
+1013,greeks,ግሪኻዊያን,gide
+1014,greenlandics,ግሪንላንዳዊያን,gide
+1015,grenadians,ግረናዲያናዊያን,gide
+1016,guamanians,ጉማኒያናዊያን,gide
+1017,guatemalans,ጓቲማላዊያን,gide
+1018,guineans,ጒናዊያን,gide
+1019,guyaneses,ጉያነሳዊያን,gide
+1020,haitians,ሃይትያናዊያን,gide
+1021,hondurans,ሆንዱራናዊያን,gide
+1022,hong kongers,ሆንጎንጋዊያን,gide
+1023,hungarians,ሃንጋሪያዊያን,gide
+1024,icelandics,ኣይስላንዳዊያን,gide
+1025,indians,ህንዳዊያን,gide
+1026,indonesians,ኢንዶነጅያዊያን,gide
+1027,iranians,ኢራናዊያን,gide
+1028,iraqis,ዒራቓዊያን,gide
+1029,irishs,ኣይሪሻዊያን,gide
+1030,israelis,እስራኤላዊያን,gide
+1031,italians,ኢታሊያዊያን,gide
+1032,ivorians,ኣይቮሪያዊያን,gide
+1033,jamaicans,ጀማይካዊያን,gide
+1034,japaneses,ጃፓናዊያን,gide
+1035,jordanians,ጆርዳናዊያን,gide
+1036,kazakhs,ካዛክሃዊያን,gide
+1037,kenyans,ከንያዊያን,gide
+1038,kittitians,ኪቲሻናዊያን,gide
+1039,kosovans,ኮሶቫዊያን,gide
+1040,kuwaitis,ኩወታዊያን,gide
+1041,kyrgyzs,ኪርጊዛዊያን,gide
+1042,laos,ላዮዊያን,gide
+1043,latvians,ላቲቪያዊያን,gide
+1044,lebaneses,ሊባኖሳዊያን,gide
+1045,liberians,ላይበርያዊያን,gide
+1046,libyans,ሊብያዊያን,gide
+1047,liechtenstein citizens,ሊኽተንስታዊያን,gide
+1048,lithuanians,ሊትወንያዊያን,gide
+1049,luxembourgers,ሉክሰንበርገራዊያን,gide
+1050,macaneses,መካንያዊያን,gide
+1051,macedonians,መሰዶንያዊያን,gide
+1052,malagasys,ማላጋሲያዊያን,gide
+1053,malawians,ማላዊያን,gide
+1054,malaysians,ማለጅያዊያን,gide
+1055,maldivians,ማልዲቭያዊያን,gide
+1056,malians,ማላዊያን,gide
+1057,malteses,ማልታዊያን,gide
+1058,marshalleses,ማርሸላሳዊያን,gide
+1059,martiniquaiss,ማርቲኒካዊያን,gide
+1060,mauritanians,ማውሪታንያዊያን,gide
+1061,mauritians,ማውሪታንያዊያን,gide
+1062,mexicans,ሞክሲካዊያን,gide
+1063,micronesians,ሚክሮኒጅያዊያን,gide
+1064,moldovans,ሞልዶቫናዊያን,gide
+1065,monegasques,ሞነጋስካዊያን,gide
+1066,mongolians,ሞንጎልያዊያን,gide
+1067,montenegrins,ሞንተነግሪያዊያን,gide
+1068,montserratians,ሞንትሰራያዊያን,gide
+1069,moroccans,ሞሮካዊያን,gide
+1070,mosothos,ሞሶታዊያን,gide
+1071,mozambicans,ሞዞምቢካዊያን,gide
+1072,namibians,ናሚብያዊያን,gide
+1073,nauruans,ናውራዊያን,gide
+1074,nepaleses,ነፓላዊያን,gide
+1075,new zealanders,ኒውዚላንዳዊያን,gide
+1076,nicaraguans,ኒኮራጉያዊያን,gide
+1077,nigerians,ኒጀራዊያን,gide
+1078,nigeriens,ናይጀርያዊያን,gide
+1079,niueans,ኒኡያዊያን,gide
+1080,north koreans,ሰሜን ኮርያዊያን,gide
+1081,northern irishs,ሰሜን ኣይሪሻዊያን,gide
+1082,norwegians,ኖርወያዊያን,gide
+1083,omanis,ኦማኒያዊያን,gide
+1084,pakistanis,ፓኪስታናዊያን,gide
+1085,palauans,ፓላዊያን,gide
+1086,palestinians,ፍልስጠማዊያን,gide
+1087,panamanians,ፓናማዊያን,gide
+1088,papua new guineans,ፓፑ ኒውጊናዊያን,gide
+1089,paraguayans,ፓራጓዊያን,gide
+1090,peruvians,ፐሩቪያዊያን,gide
+1091,pitcairn islanders,ፒትካርን ኣይላንደራዊያን,gide
+1092,polishs,ፖላንዳዊያን,gide
+1093,portugueses,ፖርቱጓላዊያን,gide
+1094,prydeinigs,ፕራደኒጋዊያን,gide
+1095,puerto ricans,ፖርቶሪካዊያን,gide
+1096,qataris,ቀጠራዊያን,gide
+1097,romanians,ሮማዊያን,gide
+1098,russians,ሩስያዊያን,gide
+1099,rwandans,ሩዋንዳዊያን,gide
+1100,salvadoreans,ሳልቫዶርያዊያን,gide
+1101,sammarineses,ሳማራዊያን,gide
+1102,samoans,ሳሞናዊያን,gide
+1103,sao tomeans,ሳኦቶማንያዊያን,gide
+1104,saudi arabians,ሱዕዲዓረባዊያን,gide
+1105,scottishs,ስኮታዊያን,gide
+1106,senegaleses,ሰነጋላዊያን,gide
+1107,serbians,ሰርብያዊያን,gide
+1108,sierra leoneans,ሰራልዮናዊያን,gide
+1109,singaporeans,ሲንጋፖራዊያን,gide
+1110,slovaks,ስሎቫካዊያን,gide
+1111,slovenians,ስሎቫንያዊያን,gide
+1112,solomon islanders,ሰሎሞን ኣይላንደርያን,gide
+1113,somalis,ሶማላዊያን,gide
+1114,south africans,ደቡብ ኣፍሪቃዊያን,gide
+1115,south koreans,ደቡብ ኮርያዊያን,gide
+1116,south sudaneses,ደቡብ ሱዳናዊያን,gide
+1117,spanishs,ስጳኛዊያን,gide
+1118,sri lankans,ስሪላንካዊያን,gide
+1119,st helenians,ሀለንያዊያን,gide
+1120,st lucians,ሉሽያዊያን,gide
+1121,statelesss,ስታትለስያን,gide
+1122,sudaneses,ሱዳናዊያን,gide
+1123,surinameses,ሱራኒማዊያን,gide
+1124,swazis,ስዋዛዊያን,gide
+1125,swedishs,ስዊድናዊያን,gide
+1126,swisss,ስዊዛዊያን,gide
+1127,syrians,ሶርያዊያን,gide
+1128,taiwaneses,ታይዋናዊያን,gide
+1129,tajiks,ታጅካዊያን,gide
+1130,tanzanians,ታንዛንያዊያን,gide
+1131,thais,ታያዊያን,gide
+1132,togoleses,ቶጎለሳዊያን,gide
+1133,tongans,ቶንጋናዊያን,gide
+1134,trinidadians,ትሪንዳድያዊያን,gide
+1135,tristanians,ትሪስታንያዊያን,gide
+1136,tunisians,ቱኒዛዊያን,gide
+1137,turkishs,ቱርካዊያን,gide
+1138,turkmens,ቱርክማናዊያን,gide
+1139,turks and caicos islanders,ቱርክስ ኣይላንደራዊያን,gide
+1140,tuvaluans,ቱቫላዊያን,gide
+1141,ugandans,ኡጋንዳዊያን,gide
+1142,ukrainian s,ዩክረናዊያን,gide
+1143,uruguayans,ኡራጓዊያን,gide
+1144,uzbeks,ኡዝበካዊያን,gide
+1145,vatican citizens,ቫቲካናዊያን,gide
+1146,venezuelans,ቨነዝወላዊያን,gide
+1147,vietnameses,ቨትናማዊያን,gide
+1148,vincentians,ቪንሰንታዊያን,gide
+1149,wallisians,ዋሊሳዊያን,gide
+1150,welshs,ወልሻዊያን,gide
+1151,yemenis,የመናዊያን,gide
+1152,zambians,ዛምብያዊያን,gide
+1153,zimbabweans,ዚምባብወዊያን,gide
+1154,otherwise,ወይ ከኣ,gide
+1155,soon,ብቕልጡፍ,gide
+1156,all,ኩሉ,gide,
+1157,information,ሓበሬታ,gide
+1158,informations,ሓበሬታታት,gide
