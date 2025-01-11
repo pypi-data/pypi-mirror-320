@@ -1,0 +1,390 @@
+Metadata-Version: 2.2
+Name: graphtomation
+Version: 0.0.2
+Summary: A FastAPI utility for exposing CrewAI functionalities
+Home-page: https://github.com/dev-adimis/graphtomation
+Author: Aditya Mishra
+Author-email: aditya.mishra@adimis.in
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: aiohappyeyeballs==2.4.4
+Requires-Dist: aiohttp==3.11.11
+Requires-Dist: aiosignal==1.3.2
+Requires-Dist: alembic==1.14.0
+Requires-Dist: annotated-types==0.7.0
+Requires-Dist: anyio==4.8.0
+Requires-Dist: appdirs==1.4.4
+Requires-Dist: asgiref==3.8.1
+Requires-Dist: asttokens==3.0.0
+Requires-Dist: attrs==24.3.0
+Requires-Dist: auth0-python==4.7.2
+Requires-Dist: Authlib==1.3.1
+Requires-Dist: backoff==2.2.1
+Requires-Dist: bcrypt==4.2.1
+Requires-Dist: beautifulsoup4==4.12.3
+Requires-Dist: blinker==1.9.0
+Requires-Dist: build==1.2.2.post1
+Requires-Dist: cachetools==5.5.0
+Requires-Dist: certifi==2024.12.14
+Requires-Dist: cffi==1.17.1
+Requires-Dist: charset-normalizer==3.4.1
+Requires-Dist: chroma-hnswlib==0.7.6
+Requires-Dist: chromadb==0.5.23
+Requires-Dist: click==8.1.8
+Requires-Dist: cohere==5.13.6
+Requires-Dist: coloredlogs==15.0.1
+Requires-Dist: crewai==0.95.0
+Requires-Dist: crewai-tools==0.25.8
+Requires-Dist: cryptography==43.0.3
+Requires-Dist: dataclasses-json==0.6.7
+Requires-Dist: decorator==5.1.1
+Requires-Dist: Deprecated==1.2.15
+Requires-Dist: deprecation==2.1.0
+Requires-Dist: distro==1.9.0
+Requires-Dist: dnspython==2.7.0
+Requires-Dist: docker==7.1.0
+Requires-Dist: docstring_parser==0.16
+Requires-Dist: docutils==0.21.2
+Requires-Dist: docx2txt==0.8
+Requires-Dist: durationpy==0.9
+Requires-Dist: email_validator==2.2.0
+Requires-Dist: embedchain==0.1.126
+Requires-Dist: et_xmlfile==2.0.0
+Requires-Dist: executing==2.1.0
+Requires-Dist: fastapi==0.115.6
+Requires-Dist: fastapi-cli==0.0.7
+Requires-Dist: fastavro==1.10.0
+Requires-Dist: filelock==3.16.1
+Requires-Dist: flatbuffers==24.12.23
+Requires-Dist: frozenlist==1.5.0
+Requires-Dist: fsspec==2024.12.0
+Requires-Dist: google-api-core==2.24.0
+Requires-Dist: google-auth==2.37.0
+Requires-Dist: google-cloud-aiplatform==1.76.0
+Requires-Dist: google-cloud-bigquery==3.27.0
+Requires-Dist: google-cloud-core==2.4.1
+Requires-Dist: google-cloud-resource-manager==1.14.0
+Requires-Dist: google-cloud-storage==2.19.0
+Requires-Dist: google-crc32c==1.6.0
+Requires-Dist: google-resumable-media==2.7.2
+Requires-Dist: googleapis-common-protos==1.66.0
+Requires-Dist: gptcache==0.1.44
+Requires-Dist: greenlet==3.1.1
+Requires-Dist: grpc-google-iam-v1==0.14.0
+Requires-Dist: grpcio==1.69.0
+Requires-Dist: grpcio-health-checking==1.69.0
+Requires-Dist: grpcio-status==1.69.0
+Requires-Dist: grpcio-tools==1.69.0
+Requires-Dist: h11==0.14.0
+Requires-Dist: h2==4.1.0
+Requires-Dist: hpack==4.0.0
+Requires-Dist: httpcore==1.0.7
+Requires-Dist: httptools==0.6.4
+Requires-Dist: httpx==0.27.2
+Requires-Dist: httpx-sse==0.4.0
+Requires-Dist: huggingface-hub==0.27.1
+Requires-Dist: humanfriendly==10.0
+Requires-Dist: hyperframe==6.0.1
+Requires-Dist: idna==3.10
+Requires-Dist: ijson==3.3.0
+Requires-Dist: importlib_metadata==8.5.0
+Requires-Dist: importlib_resources==6.5.2
+Requires-Dist: iniconfig==2.0.0
+Requires-Dist: instructor==1.7.2
+Requires-Dist: ipython==8.31.0
+Requires-Dist: jaraco.classes==3.4.0
+Requires-Dist: jaraco.context==6.0.1
+Requires-Dist: jaraco.functools==4.1.0
+Requires-Dist: jedi==0.19.2
+Requires-Dist: jeepney==0.8.0
+Requires-Dist: Jinja2==3.1.5
+Requires-Dist: jiter==0.8.2
+Requires-Dist: json_repair==0.35.0
+Requires-Dist: jsonpatch==1.33
+Requires-Dist: jsonpickle==4.0.1
+Requires-Dist: jsonpointer==3.0.0
+Requires-Dist: jsonref==1.1.0
+Requires-Dist: jsonschema==4.23.0
+Requires-Dist: jsonschema-specifications==2024.10.1
+Requires-Dist: keyring==25.6.0
+Requires-Dist: kubernetes==31.0.0
+Requires-Dist: lancedb==0.17.0
+Requires-Dist: langchain==0.3.14
+Requires-Dist: langchain-cohere==0.3.4
+Requires-Dist: langchain-community==0.3.14
+Requires-Dist: langchain-core==0.3.29
+Requires-Dist: langchain-experimental==0.3.4
+Requires-Dist: langchain-openai==0.2.14
+Requires-Dist: langchain-text-splitters==0.3.5
+Requires-Dist: langsmith==0.1.147
+Requires-Dist: linkup-sdk==0.2.2
+Requires-Dist: litellm==1.57.5
+Requires-Dist: Mako==1.3.8
+Requires-Dist: markdown-it-py==3.0.0
+Requires-Dist: MarkupSafe==3.0.2
+Requires-Dist: marshmallow==3.25.0
+Requires-Dist: matplotlib-inline==0.1.7
+Requires-Dist: mdurl==0.1.2
+Requires-Dist: mem0ai==0.1.41
+Requires-Dist: mmh3==5.0.1
+Requires-Dist: monotonic==1.6
+Requires-Dist: more-itertools==10.5.0
+Requires-Dist: mpmath==1.3.0
+Requires-Dist: multidict==6.1.0
+Requires-Dist: mypy-extensions==1.0.0
+Requires-Dist: networkx==3.4.2
+Requires-Dist: nh3==0.2.20
+Requires-Dist: nodeenv==1.9.1
+Requires-Dist: numpy==2.2.1
+Requires-Dist: oauthlib==3.2.2
+Requires-Dist: onnxruntime==1.20.1
+Requires-Dist: openai==1.59.6
+Requires-Dist: openpyxl==3.1.5
+Requires-Dist: opentelemetry-api==1.29.0
+Requires-Dist: opentelemetry-exporter-otlp-proto-common==1.29.0
+Requires-Dist: opentelemetry-exporter-otlp-proto-grpc==1.29.0
+Requires-Dist: opentelemetry-exporter-otlp-proto-http==1.29.0
+Requires-Dist: opentelemetry-instrumentation==0.50b0
+Requires-Dist: opentelemetry-instrumentation-asgi==0.50b0
+Requires-Dist: opentelemetry-instrumentation-fastapi==0.50b0
+Requires-Dist: opentelemetry-proto==1.29.0
+Requires-Dist: opentelemetry-sdk==1.29.0
+Requires-Dist: opentelemetry-semantic-conventions==0.50b0
+Requires-Dist: opentelemetry-util-http==0.50b0
+Requires-Dist: orjson==3.10.14
+Requires-Dist: outcome==1.3.0.post0
+Requires-Dist: overrides==7.7.0
+Requires-Dist: packaging==24.2
+Requires-Dist: pandas==2.2.3
+Requires-Dist: parameterized==0.9.0
+Requires-Dist: parso==0.8.4
+Requires-Dist: pdfminer.six==20231228
+Requires-Dist: pdfplumber==0.11.5
+Requires-Dist: pexpect==4.9.0
+Requires-Dist: pillow==11.1.0
+Requires-Dist: pkginfo==1.12.0
+Requires-Dist: pluggy==1.5.0
+Requires-Dist: portalocker==2.10.1
+Requires-Dist: posthog==3.7.5
+Requires-Dist: prompt_toolkit==3.0.48
+Requires-Dist: propcache==0.2.1
+Requires-Dist: proto-plus==1.25.0
+Requires-Dist: protobuf==5.29.3
+Requires-Dist: ptyprocess==0.7.0
+Requires-Dist: pure_eval==0.2.3
+Requires-Dist: pyarrow==18.1.0
+Requires-Dist: pyasn1==0.6.1
+Requires-Dist: pyasn1_modules==0.4.1
+Requires-Dist: pycparser==2.22
+Requires-Dist: pydantic==2.10.5
+Requires-Dist: pydantic-settings==2.7.1
+Requires-Dist: pydantic_core==2.27.2
+Requires-Dist: Pygments==2.19.1
+Requires-Dist: PyJWT==2.10.1
+Requires-Dist: pylance==0.20.0
+Requires-Dist: pypdf==5.1.0
+Requires-Dist: pypdfium2==4.30.1
+Requires-Dist: PyPika==0.48.9
+Requires-Dist: pyproject_hooks==1.2.0
+Requires-Dist: pyright==1.1.391
+Requires-Dist: pysbd==0.3.4
+Requires-Dist: PySocks==1.7.1
+Requires-Dist: pytest==8.3.4
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: python-multipart==0.0.20
+Requires-Dist: pytube==15.0.0
+Requires-Dist: pytz==2024.2
+Requires-Dist: pyvis==0.3.2
+Requires-Dist: PyYAML==6.0.2
+Requires-Dist: qdrant-client==1.12.2
+Requires-Dist: readme_renderer==44.0
+Requires-Dist: referencing==0.35.1
+Requires-Dist: regex==2024.11.6
+Requires-Dist: requests==2.32.3
+Requires-Dist: requests-oauthlib==2.0.0
+Requires-Dist: requests-toolbelt==1.0.0
+Requires-Dist: rfc3986==2.0.0
+Requires-Dist: rich==13.9.4
+Requires-Dist: rich-toolkit==0.12.0
+Requires-Dist: rpds-py==0.22.3
+Requires-Dist: rsa==4.9
+Requires-Dist: schema==0.7.7
+Requires-Dist: scrapegraph_py==1.9.0
+Requires-Dist: SecretStorage==3.3.3
+Requires-Dist: selenium==4.27.1
+Requires-Dist: serpapi==0.1.5
+Requires-Dist: setuptools==75.8.0
+Requires-Dist: shapely==2.0.6
+Requires-Dist: shellingham==1.5.4
+Requires-Dist: six==1.17.0
+Requires-Dist: sniffio==1.3.1
+Requires-Dist: sortedcontainers==2.4.0
+Requires-Dist: soupsieve==2.6
+Requires-Dist: spider-client==0.1.25
+Requires-Dist: SQLAlchemy==2.0.37
+Requires-Dist: stack-data==0.6.3
+Requires-Dist: starlette==0.41.3
+Requires-Dist: sympy==1.13.3
+Requires-Dist: tabulate==0.9.0
+Requires-Dist: tenacity==9.0.0
+Requires-Dist: tiktoken==0.7.0
+Requires-Dist: tokenizers==0.20.3
+Requires-Dist: tomli==2.2.1
+Requires-Dist: tomli_w==1.1.0
+Requires-Dist: tqdm==4.67.1
+Requires-Dist: traitlets==5.14.3
+Requires-Dist: trio==0.28.0
+Requires-Dist: trio-websocket==0.11.1
+Requires-Dist: twine==6.0.1
+Requires-Dist: typer==0.15.1
+Requires-Dist: types-requests==2.32.0.20241016
+Requires-Dist: typing-inspect==0.9.0
+Requires-Dist: typing_extensions==4.12.2
+Requires-Dist: tzdata==2024.2
+Requires-Dist: urllib3==2.3.0
+Requires-Dist: uv==0.5.16
+Requires-Dist: uvicorn==0.34.0
+Requires-Dist: uvloop==0.21.0
+Requires-Dist: validators==0.34.0
+Requires-Dist: watchfiles==1.0.4
+Requires-Dist: wcwidth==0.2.13
+Requires-Dist: weaviate-client==4.10.2
+Requires-Dist: websocket-client==1.8.0
+Requires-Dist: websockets==14.1
+Requires-Dist: wheel==0.45.1
+Requires-Dist: wrapt==1.17.0
+Requires-Dist: wsproto==1.2.0
+Requires-Dist: yarl==1.18.3
+Requires-Dist: zipp==3.21.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Graphtomation Documentation
+
+## Installation
+
+Install the required dependencies for Graphtomation using the following command:
+
+```bash
+pip install graphtomation
+```
+
+---
+
+## Implementation
+
+```py
+import requests
+from typing import Type
+from fastapi import FastAPI
+from crewai.tools import BaseTool
+from crewai import Agent, Task, Crew
+from graphtomation import CrewAIRouter
+from pydantic import BaseModel, Field
+
+# Define the input schema for the tool
+class DuckDuckGoSearchInput(BaseModel):
+    """Input schema for DuckDuckGoSearchTool."""
+
+    query: str = Field(..., description="Search query to look up on DuckDuckGo.")
+
+
+# Create the custom tool by subclassing BaseTool
+class DuckDuckGoSearchTool(BaseTool):
+    name: str = "DuckDuckGoSearch"
+    description: str = (
+        "This tool performs web searches using DuckDuckGo and retrieves the top results. "
+        "Provide a query string to get relevant information."
+    )
+    args_schema: Type[BaseModel] = DuckDuckGoSearchInput
+
+    def _run(self, query: str) -> str:
+        """
+        Perform a search using the DuckDuckGo API and return the top results.
+        """
+        url = "https://api.duckduckgo.com/"
+        params = {
+            "q": query,
+            "format": "json",
+            "no_redirect": "1",
+            "no_html": "1",
+        }
+        try:
+            response = requests.get(url, params=params)
+            response.raise_for_status()
+            data = response.json()
+
+            # Extract the top result or fallback to AbstractText
+            if "RelatedTopics" in data and data["RelatedTopics"]:
+                results = [
+                    topic.get("Text", "No description available")
+                    for topic in data["RelatedTopics"]
+                    if "Text" in topic
+                ]
+                return "\n".join(results[:3])  # Return the top 3 results
+            else:
+                return "No results found for the given query."
+
+        except requests.RequestException as e:
+            return f"An error occurred while performing the search: {e}"
+
+ddg_search_tool = DuckDuckGoSearchTool()
+
+researcher = Agent(
+    role="Web Researcher",
+    goal="Perform searches to gather relevant information for tasks.",
+    backstory="An experienced researcher with expertise in online information gathering.",
+    tools=[ddg_search_tool],
+    verbose=True,
+)
+
+research_task = Task(
+    description="Search for the latest advancements in AI technology.",
+    expected_output="A summary of the top 3 advancements in AI technology from recent searches.",
+    agent=researcher,
+)
+
+example_crew = Crew(
+    agents=[researcher],
+    tasks=[research_task],
+    verbose=True,
+    planning=True,
+)
+
+app = FastAPI()
+
+
+crew_router = CrewAIRouter(
+    crews=[
+        {
+            "name": "example-crew",
+            "crew": example_crew,
+            "metadata": {
+                "description": "An example crew ai implementation",
+                "version": "1.0.0",
+            },
+        }
+    ]
+)
+
+app.include_router(crew_router.router, prefix="/crew")
+```
+
+---
+
+## Running the Application
+
+```bash
+fastapi dev main.py
+```
