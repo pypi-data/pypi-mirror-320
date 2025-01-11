@@ -1,0 +1,16 @@
+sodas_sdk/__init__.py,sha256=QD5VC-YYlVaXU9pjQ8m7Jvv9o9sTPGuM58BTU-LYvVk,453
+sodas_sdk/core.py,sha256=tv_tSqJMI-_Dv_nSbSbysuTUNicBEE03RA_tOHcYjf8,4580
+sodas_sdk/data_service_dto.py,sha256=OBydtpk88xLmlOwD62ANXfkh_OGowHGHmULpl41i0BA,6650
+sodas_sdk/dataset_dto.py,sha256=fPJmAAUmiOnXUoar592eh2WnngDr546UI8iuda0wD-0,17106
+sodas_sdk/dataset_series_dto.py,sha256=hC7XwCFv7ILd33onVZYqJPUKdvLnuV_QN89sxzGwVY8,11624
+sodas_sdk/descriptor_template_artifact.py,sha256=EzIiM_U8VC_M4wnGk6LyE-2Lx2XUNKbs10L5rDe2HDk,6858
+sodas_sdk/distribution.py,sha256=F0b_0KTcq_B8oByfZP-ywzL6Sgvw53oTi0YoB7PXmuA,12097
+sodas_sdk/init_api.py,sha256=jMO2zKu_ItXSKYPptsc4X3AaE1MTMmgeEPlIY9QQTH0,2290
+sodas_sdk/profile.py,sha256=VrzzT7dWMK0ibVEuybgCgJWy0W6cubQaICBRST0TYtk,19808
+sodas_sdk/resource_descriptor.py,sha256=PcZOWsIGmMv1dJbB_y6EIBm18p74ovtz849L2hcLU5Q,8479
+sodas_sdk/template.py,sha256=z6WhIFkH1H2uCCVGNdXGfwawD8VNBbXT6ypZpPawXsA,7834
+sodas_sdk/version_info_dto.py,sha256=PQPTs1elgA6q5agqxz_zKsRT8tJAEWzYMrsKv3LtbeU,2972
+py_sodas_sdk-0.1.1.dist-info/METADATA,sha256=Pc7ijfv2mfGfIJJW_5ax8EqQJiRYnN17wQkVeEX8eK8,2784
+py_sodas_sdk-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+py_sodas_sdk-0.1.1.dist-info/top_level.txt,sha256=z97p46UOyPzt1gUYRE18uiDKj3TLTi4AAYxPKoTWZkg,10
+py_sodas_sdk-0.1.1.dist-info/RECORD,,
