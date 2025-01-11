@@ -1,0 +1,3 @@
+[console_scripts]
+hunterx=hunterx.commands.hunterx:main
+
