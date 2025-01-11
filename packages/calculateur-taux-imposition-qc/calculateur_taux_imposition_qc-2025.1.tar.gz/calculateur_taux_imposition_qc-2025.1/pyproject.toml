@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools >= 70.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+authors = [
+  {name = "Samuel Paquette-Paré", email = "paquetteparesamuel@gmail.com"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+description = "Calculateur de taux d'imposition pour particuliers pour le Québec"
+version = "2025.01"
+license = {file = "LICENSE"}
+maintainers = [
+  {name = "Samuel Paquette-Paré", email = "paquetteparesamuel@gmail.com"}
+]
+name = "calculateur_taux_imposition_qc"
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[project.urls]
+Repository = "https://github.com/samuelpaquette-pare/calculateur_taux_imposition_qc.git"
+Issues = "https://github.com/samuelpaquette-pare/calculateur_taux_imposition_qc/issues"

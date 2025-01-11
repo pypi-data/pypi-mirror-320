@@ -1,0 +1,88 @@
+Metadata-Version: 2.2
+Name: calculateur_taux_imposition_qc
+Version: 2025.1
+Summary: Calculateur de taux d'imposition pour particuliers pour le Québec
+Author: Samuel Paquette-Paré
+Author-email: Samuel Paquette-Paré <paquetteparesamuel@gmail.com>
+Maintainer-email: Samuel Paquette-Paré <paquetteparesamuel@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2025 Samuel Paquette-Paré
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Repository, https://github.com/samuelpaquette-pare/calculateur_taux_imposition_qc.git
+Project-URL: Issues, https://github.com/samuelpaquette-pare/calculateur_taux_imposition_qc/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+
+# Calculateur de Taux d'Imposition QC
+
+Ce projet est un calculateur de taux d'imposition aux particuliers pour la province de Québec, Canada. Il permet de calculer les impôts à payer en fonction des revenus obtenu lors d'une année. Le calculateur est présentement limité aux années 2023 à 2025.
+
+
+## Utilisation
+
+Pour utiliser le calculateur en ligne de commande, exécutez le script `calculateur.py` avec les arguments suivants :
+
+```bash
+python main.py <salaire_annuel> [annee]
+```
+Vous pouvez aussi installer comme une librairie pour l'utiliser plus facilement dans votre code:
+```bash
+python -m pip install .
+```
+
+### Arguments
+
+- `salaire_annuel` : Le montant du salaire annuel brute pour lequel vous souhaitez calculer l'impôt.
+- `annee` : L'année pour laquelle vous souhaitez effectuer le calcul (2023, 2024, ou 2025). L'argument est optionnel et sera l'année actuelle par défaut.
+
+### Exemple
+
+```bash
+python calculateur.py 50000 2023
+```
+```bash
+python calculateur.py 40000
+```
+Exemple de retour:
+```JSON
+{
+    "taux_effectif_quebecois": 0.1587,
+    "taux_effectif_canadien": 0.1679,
+    "taux_effectif_total": 0.3265,
+    "taux_marginal_quebecois": 0.19,
+    "taux_marginal_canadien": 0.205,
+    "taux_marginal_total": 0.395
+}
+```
+
+## Licence
+
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+## Auteurs
+
+- Samuel Paquette-Paré [paquetteparesamuel@gmail.com]
