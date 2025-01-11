@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+dobletau_quant/__init__.py
+dobletau_quant/client.py
+dobletau_quant.egg-info/PKG-INFO
+dobletau_quant.egg-info/SOURCES.txt
+dobletau_quant.egg-info/dependency_links.txt
+dobletau_quant.egg-info/requires.txt
+dobletau_quant.egg-info/top_level.txt
