@@ -1,0 +1,2 @@
+include pygray3/extensions/key.c
+include pygray3/extensions/key.pyi
