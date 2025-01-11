@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: metaflow-diff
+Version: 0.1.3
+Summary: See and apply diffs between the current working directory and a Metaflow run
+Author: Ville Tuulos
+Author-email: ville@outerbounds.co
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: metaflow
+Requires-Dist: click
