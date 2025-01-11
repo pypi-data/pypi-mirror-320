@@ -1,0 +1,2 @@
+include *.obj *.png *.jpg *.ttf
+recursive-include bsk_assets *.obj *.png *.jpg *.ttf
