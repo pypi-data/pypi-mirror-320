@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cryptid"
+version = "1.0.0"
+description = "Python tools for encrypt and decrypt"
+readme = "README.md"
+authors = [
+    { name = "Alfi Syahri", email = "alfisyahri.official@gmail.com" }
+]
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "cryptography",
+    "pillow",
+]
+
+[project.urls]
+Homepage = "https://github.com/syxhri/cryptid"
+Issues = "https://github.com/syxhri/cryptid/issues"
+Repository = "https://github.com/syxhri/cryptid.git"
