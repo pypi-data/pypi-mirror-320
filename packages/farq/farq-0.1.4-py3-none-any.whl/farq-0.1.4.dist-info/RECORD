@@ -1,0 +1,10 @@
+farq/__init__.py,sha256=cAhfyE97Y6jIMFwAwYQ5siviBvpDNPu-wKHmaL0YpuE,2080
+farq/analysis.py,sha256=loXm02I-cJEu6jJiBcsh6JTSSM3arGH9SMYHLeM9aEc,13540
+farq/core.py,sha256=Ykd_BS6PAyomIaB4rUP2b3mg4zy69_YOWfhVfSMZwd8,4417
+farq/indices.py,sha256=CFBNDcaNEbtv2uh2F2nQ1vcQw3FTuCzGKdl7p_LFW1M,11143
+farq/utils.py,sha256=jiHnmyp32dh-SaAmQUJ6x1pjRJ3LT7p7QIsCbOYfRis,9384
+farq/visualization.py,sha256=hqfLfc9D5LbNJzAbWLtAUTf8DOEljNK36eYD7FkWaWE,17298
+farq-0.1.4.dist-info/METADATA,sha256=Z0RLJYJ0bl2_TCdkkF4-Cib2KhPDzRuvsdJNLr0U6UU,1474
+farq-0.1.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+farq-0.1.4.dist-info/top_level.txt,sha256=JlyNZ1IBNLG6dujEUI7AFFYN_tGsMz0GSzdHYzUBsX0,5
+farq-0.1.4.dist-info/RECORD,,
