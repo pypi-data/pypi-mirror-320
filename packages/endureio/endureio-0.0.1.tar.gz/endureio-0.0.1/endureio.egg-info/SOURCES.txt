@@ -1,0 +1,5 @@
+setup.py
+endureio.egg-info/PKG-INFO
+endureio.egg-info/SOURCES.txt
+endureio.egg-info/dependency_links.txt
+endureio.egg-info/top_level.txt
