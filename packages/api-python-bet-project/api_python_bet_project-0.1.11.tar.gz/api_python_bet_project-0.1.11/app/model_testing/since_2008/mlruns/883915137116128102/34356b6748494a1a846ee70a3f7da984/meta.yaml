@@ -1,0 +1,15 @@
+artifact_uri: file:c:/Users/julio/Desktop/Julio/Estudios/Codigo/Projects/api-python-bet-project/app/model_testing/since_2008/mlruns/883915137116128102/34356b6748494a1a846ee70a3f7da984/artifacts
+end_time: 1735926109447
+entry_point_name: ''
+experiment_id: '883915137116128102'
+lifecycle_stage: active
+run_id: 34356b6748494a1a846ee70a3f7da984
+run_name: Pipeline_Run
+run_uuid: 34356b6748494a1a846ee70a3f7da984
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735925538971
+status: 3
+tags: []
+user_id: PC
