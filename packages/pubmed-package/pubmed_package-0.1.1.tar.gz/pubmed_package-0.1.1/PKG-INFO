@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: pubmed_package
+Version: 0.1.1
+Description-Content-Type: text/markdown
+
+
+# PubMed Research Papers CLI Tool
+
+This repository contains a Python CLI tool to fetch research papers from PubMed, identify non-academic authors based on affiliations, and save the results in a CSV file.
+
+## Features
+
+- **Fetch Papers**: Retrieve papers using the PubMed API.
+- **Filter Non-Academic Authors**: Identify authors affiliated with non-academic institutions.
+- **Command-Line Options**: Flexibility to specify queries, debug mode, and output file.
+- **CSV Output**: Save the results in a structured CSV format.
+
+## Requirements
+
+- Python 3.8+
+
+Install package with:
+
+```bash
+pip install pubmed_package
+```
+
+## Usage
+
+Run the tool from the command line:
+
+```bash
+pubmed_api "<query>" [-d] [-f <output_file>]
+```
+
+### Arguments
+
+- `<query>`: The search query to use with PubMed.
+- `-d, --debug`: Enable debug mode for detailed logs.
+- `-f, --file <output_file>`: Specify the filename to save results as CSV. If not provided, results will be printed to the console.
+
+### Example
+
+Fetch papers related to "machine learning" and save them to `results.csv`:
+
+```bash
+pubmed_api "breast cancer" -f results.csv
+```
+
+Enable debug mode to see detailed execution logs:
+
+```bash
+pubmed_api "breast cancer" -d
+```
+
+## File Structure
+
+- **pubmed.py**: Main script containing the CLI tool.
+- **PubMed_CLI_Tool.ipynb**: Jupyter Notebook version of the script for interactive use.
+
