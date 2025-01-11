@@ -1,0 +1,282 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "scipy-stubs"
+version = "1.15.1.0"
+description = "Type annotations for SciPy"
+readme = "README.md"
+authors = [
+    {name = "Joren Hammudoglu", email = "jhammudoglu@gmail.com"},
+]
+license = "BSD-3-Clause"
+keywords = ["scipy", "typing", "pep484"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Typing :: Stubs Only",
+    "Typing :: Typed",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "optype>=0.8.0",
+]
+
+[dependency-groups]
+extras = ["scipy-stubs[scipy]"]
+ci = ["packaging>=24.2"]
+codegen = ["libcst>=1.6.0,<2"]
+mdformat = [
+    "mdformat>=0.7.21",
+    "mdformat-gfm>=0.4.1",
+    "mdformat-gfm-alerts>=1.0.1",
+]
+lint = [
+    {include-group = "extras"},
+    {include-group = "mdformat"},
+    "ruff>=0.9.1",
+    "sp-repo-review[cli]>=2024.8.19",
+]
+typecheck = [
+    {include-group = "extras"},
+    {include-group = "ci"},
+    {include-group = "codegen"},
+    "basedmypy[faster-cache]>=2.9.1",
+    "basedpyright>=1.23.2",
+]
+dev = [
+    {include-group = "lint"},
+    {include-group = "typecheck"},
+    "poethepoet>=0.32.1,<1",
+    "pre-commit>=4.0.1,<5",
+    "pre-commit-uv>=4.1.4,<5",
+]
+
+[project.optional-dependencies]
+scipy = ["scipy>=1.15.1,<1.16"]
+
+[project.urls]
+Repository = "https://github.com/jorenham/scipy-stubs/"
+Issues = "https://github.com/jorenham/scipy-stubs/issues"
+Changelog = "https://github.com/jorenham/scipy-stubs/releases"
+Funding = "https://github.com/sponsors/jorenham"
+
+[tool.hatch.build]
+packages = ["scipy-stubs"]
+
+[tool.hatch.build.targets.sdist]
+exclude = ["CODE_OF_CONDUCT.md", "README.md", "SECURITY.md", "uv.lock"]
+force-include = {".mypyignore" = ".mypyignore"}  # for scipy-stubs-feedstock
+
+[tool.poe.tasks]
+clean = """
+rm -rf
+    codegen/*.pyc
+    codegen/__pycache__
+    scipy-stubs/**/*.pyc
+    scipy-stubs/**/__pycache__
+    scripts/*.pyc
+    scripts/__pycache__
+    tests/**/*.pyc
+    tests/**/__pycache__
+    ./**/.cache
+    ./**/.mypy_cache
+    ./**/.ruff_cache
+    ./**/.tox
+"""
+mdformat = """
+mdformat
+    CODE_OF_CONDUCT.md
+    CONTRIBUTING.md
+    README.md
+    SECURITY.md
+    tests/README.md
+    codegen/README.md
+"""
+# TODO: Replace with `mdformat .` once `--exclude` can be used on `python<3.13`, see
+# https://github.com/hukkin/mdformat/issues/489
+_ruff_format = "ruff format"
+_ruff_check = "ruff check --show-fixes"
+repo-review = "repo-review ."
+format = ["mdformat", "_ruff_format"]
+ruff = ["_ruff_format", "_ruff_check"]
+check = ["mdformat --check", "repo-review", "ruff"]
+lint = ["check", "format"]
+types = "basedpyright codegen scripts"
+pre-commit = "pre-commit run --all-files"
+
+_test_bpr = "basedpyright tests"
+_test_mypy = """
+uv run --frozen --no-editable --isolated --refresh-package=scipy-stubs
+    mypy
+    --config-file=pyproject.toml
+    tests
+"""
+typetest = ["_test_bpr", "_test_mypy"]
+
+[tool.poe.tasks.pyright]
+cmd = "basedpyright $path"
+args = [{name = "path", positional = true, multiple = true, default = "scipy-stubs codegen"}]
+
+[tool.poe.tasks.mypy]
+cmd = """
+uv run --frozen --no-editable --isolated --refresh-package=scipy-stubs
+    mypy
+    --config-file=pyproject.toml
+    $path
+"""
+args = [{name = "path", positional = true, multiple = true, default = "scipy-stubs codegen"}]
+
+[tool.poe.tasks.stubtest]
+cmd = """
+uv run --frozen --no-editable --isolated --refresh-package=scipy-stubs
+    stubtest
+    --mypy-config-file=pyproject.toml
+    --allowlist=.mypyignore
+    --ignore-unused-allowlist
+    $modules
+"""
+args = [{name = "modules", positional = true, multiple = true, default = "scipy"}]
+
+[tool.poe.tasks.codemod]
+cmd = "python -m libcst.tool codemod -x --hide-progress --include-stubs codegen.mods.$name $path"
+args = [
+    {name = "name", positional = true, multiple = false, required = true},
+    {name = "path", positional = true, multiple = false, default = "scipy-stubs"},
+]
+
+[tool.typos.files]
+extend-exclude = ["*.pyi", ".mypyignore"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+disable_bytearray_promotion = true
+disable_memoryview_promotion = true
+warn_unreachable = true
+warn_unused_ignores = true
+disallow_any_explicit = false  # no other way to type e.g. `float64 <: number[Any]`
+enable_error_code = ["ignore-without-code", "redundant-expr", "truthy-bool"]
+plugins = ["numpy.typing.mypy_plugin"]
+
+[tool.pyright]
+include = ["scipy-stubs", "codegen", "scripts", "tests"]
+ignore = [".venv"]
+venv = ".venv"
+venvPath = "."
+stubPath = "."
+pythonVersion = "3.10"
+pythonPlatform = "All"
+typeCheckingMode = "strict"
+
+deprecateTypingAliases = true
+enableReachabilityAnalysis = false
+enableTypeIgnoreComments = false
+failOnWarnings = true  # based
+reportCallInDefaultInitializer = true
+reportIgnoreCommentWithoutRule = true  # based
+reportImplicitAbstractClass = true  # based
+reportImplicitOverride = true
+reportImplicitRelativeImport = true  # based
+reportImplicitStringConcatenation = false  # based, but I disagree
+reportImportCycles = true
+reportInvalidCast = true  # based
+reportInvalidStubStatement = false  # see execution environments
+reportMissingSuperCall = true
+reportPrivateLocalImportUsage = true  # based
+reportPrivateUsage = false
+reportPropertyTypeMismatch = false
+reportShadowedImports = true
+reportUnannotatedClassAttribute = true  # based
+reportUninitializedInstanceVariable = true
+reportUnnecessaryTypeIgnoreComment = true  # mypy compat
+strictGenericNarrowing = true  # based
+
+[[executionEnvironments]]
+root = "scipy-stubs"
+reportInvalidStubStatement = true
+reportUnusedCallResult = true
+
+[[executionEnvironments]]
+root = "codegen"
+reportAny = true  # based
+reportExplicitAny = true  # based
+reportInvalidStubStatement = true
+reportPrivateUsage = true
+reportUnreachable = true
+reportUnsafeMultipleInheritance = true  # based
+reportUnusedCallResult = true
+
+[[executionEnvironments]]
+root = "tests"
+reportAny = true  # based
+reportExplicitAny = true  # based
+reportPrivateUsage = true
+reportUnreachable = true
+reportUnsafeMultipleInheritance = true  # based
+
+
+[tool.repo-review]
+ignore = [
+    "PY004", # no /docs
+    "PY007", # tox configured in tox.toml
+    "PP301", # pytest is irrelevant
+    "PC111", # no blacken-docs because markdown has no code
+    "PC140", # manual typecheck pre-commit hooks
+    "PC170", # no pygrep-hooks because no rST
+    "RTD",   # no RTD
+]
+
+[tool.ruff]
+src = ["scipy-stubs", "codegen", "scripts"]
+exclude = [".venv"]
+force-exclude = true
+# https://typing.readthedocs.io/en/latest/guides/writing_stubs.html#maximum-line-length
+line-length = 130
+
+[tool.ruff.format]
+docstring-code-format = true
+line-ending = "lf"
+
+[tool.ruff.lint]
+preview = true
+select = ["ALL"]
+ignore = ["D", "FBT", "COM812", "CPY", "EM", "TD", "FIX", "DOC"]
+
+[tool.ruff.lint.per-file-ignores]
+"*.pyi" = ["F", "E741", "N", "A", "PYI054", "PLC2701", "PLW3201", "PLR", "FURB"]
+
+[tool.ruff.lint.flake8-import-conventions]
+banned-from = ["numpy", "numpy.typing", "optype", "optype.numpy", "optype.typing"]
+[tool.ruff.lint.flake8-import-conventions.extend-aliases]
+"ctypes" = "ct"
+"datetime" = "dt"
+"numpy" = "np"
+"numpy.typing" = "npt"
+"optype" = "op"
+"optype.numpy" = "onp"
+"optype.typing" = "opt"
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+known-first-party = ["scipy"]
+no-lines-before = ["typing", "first-party", "local-folder"]
+section-order = ["standard-library", "typing", "third-party", "first-party", "local-folder"]
+split-on-trailing-comma = true
+
+[tool.ruff.lint.isort.sections]
+typing = ["collections.abc", "types", "typing", "typing_extensions"]
+
+[tool.ruff.lint.flake8-annotations]
+allow-star-arg-any = true
+mypy-init-return = true
