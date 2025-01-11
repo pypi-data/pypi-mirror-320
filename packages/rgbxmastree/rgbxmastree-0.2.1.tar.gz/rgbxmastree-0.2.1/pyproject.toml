@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools >= 61.0", "setuptools-scm>=8.1.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rgbxmastree"
+description = "API and commands for interacting with the Pi Hut RGB Xmas Tree."
+dynamic = ["version"]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "gpiozero>=2.0.1",
+    "setuptools-scm>=8.1.0",
+    "typer>=0.15.1",
+]
+
+[project.scripts]
+rgbxmastree = "rgbxmastree.cli:app"
+
+[dependency-groups]
+dev = [
+    "pip>=24.3.1",
+    "pre-commit>=4.0.1",
+    "pytest>=8.3.4",
+]
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore::gpiozero.exc.PinFactoryFallback",
+    "ignore::gpiozero.exc.NativePinFactoryFallback"
+]
+
+[tool.setuptools_scm]
+
+[tool.uv]
+package = true

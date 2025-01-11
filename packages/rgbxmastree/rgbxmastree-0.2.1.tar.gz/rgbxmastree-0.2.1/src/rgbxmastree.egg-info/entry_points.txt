@@ -1,0 +1,2 @@
+[console_scripts]
+rgbxmastree = rgbxmastree.cli:app

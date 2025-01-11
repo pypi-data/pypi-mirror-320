@@ -1,0 +1,32 @@
+name: Run unit tests
+
+on:
+  push:
+      branches:
+      - master
+  pull_request:
+      branches:
+      - "**"
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.10", "3.11", "3.12", "3.12"]
+    env:
+      GPIOZERO_PIN_FACTORY: "mock"
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv and setup Python
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          enable-cache: true
+          cache-dependency-glob: "uv.lock"
+      - name: Install the project
+        run: uv sync --all-extras --dev
+      - name: Run tests using mock GPIO pins
+        run: uv run pytest tests
