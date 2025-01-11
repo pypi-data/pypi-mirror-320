@@ -1,0 +1,8 @@
+pyglet>=2.0.0
+
+[dev]
+jsonschema-gentypes
+
+[test]
+pytest
+numpy
