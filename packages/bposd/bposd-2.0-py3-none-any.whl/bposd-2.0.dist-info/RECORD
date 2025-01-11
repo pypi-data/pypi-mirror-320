@@ -1,0 +1,13 @@
+bposd/LICENSE,sha256=kTdl5OdwmY2hKzrOLOjnddwrjhM4MzZuYyf4FZEu7F8,1070
+bposd/README.md,sha256=JLqzt82CfSRdGJ0y97SandRNfTYpxMv7VQYaX8I-Bns,5956
+bposd/VERSION,sha256=2EvbNNTu70A0135UA_hQ41vEpRsRQ-OoNRDhqq2Dl0g,3
+bposd/__init__.py,sha256=2S0Sn3Yo1DXhZj9Mchy_zbpCXG7M8_PeTX6OmjGpJ00,212
+bposd/css.py,sha256=0eDCONgcmwI7_6e9NVz-MF-No6YjOgry7cEYf0gH1rE,6098
+bposd/css_decode_sim.py,sha256=SFPVWJn9iq4FQV-jktqaa4BzbZ8O4YWrlpsZhkD9KvY,19974
+bposd/hgp.py,sha256=tC6TWa1D2HbYCHXieTCzpSq3nspMG0ROjMBqBfCHf24,3210
+bposd/stab.py,sha256=2kH3fONOuQy7XS0pHD9lcML5FyN6BINufbLcOVpdMaw,5118
+bposd-2.0.dist-info/LICENSE,sha256=kTdl5OdwmY2hKzrOLOjnddwrjhM4MzZuYyf4FZEu7F8,1070
+bposd-2.0.dist-info/METADATA,sha256=tupFDmGRR2d-2BHDe21juAqIIm-bNfPsYa1FiURuts4,6463
+bposd-2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+bposd-2.0.dist-info/top_level.txt,sha256=IzKZg-D9zKmC7ciShuYEYGyZVnEjyVHSwQoJ6vYwzTU,6
+bposd-2.0.dist-info/RECORD,,
