@@ -1,0 +1,152 @@
+# Eazyml Data Quality
+![Python](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)  ![PyPI package](https://img.shields.io/badge/pypi%20package-0.0.17-brightgreen) ![Code Style](https://img.shields.io/badge/code%20style-black-black)
+
+![EazyML](https://eazyml.com/static/media/EazyML%20XAI%20blue.b7696b7a.png)
+
+## Overview
+The **eazyml-dq** is a Python utility designed to evaluate the quality of datasets by performing various checks such as data shape, emptiness, outlier detection, balance, and correlation. It helps users identify potential issues in their datasets and provides detailed feedback to ensure data readiness for downstream processes.
+
+## Features
+- **Data Shape Quality**: Validates dataset dimensions and checks if the number of rows is sufficient relative to the number of columns.
+- **Data Emptiness Check**: Identifies and reports missing values in the dataset.
+- **Outlier Detection**: Detects and removes outliers based on statistical analysis.
+- **Data Balance Check**: Analyzes the balance of the dataset and computes a balance score.
+- **Correlation Analysis**: Calculates correlations between features and provides alerts for highly correlated features.
+- **Summary Alerts**: Consolidates key quality issues into a single summary for quick review.
+
+## Installation
+
+To use the Data Quality Checker, ensure you have Python installed on your system. Then, install the required dependencies:
+
+```bash
+pip install eazyml-dq
+```
+
+## Usage
+
+### Function: `ez_data_quality`
+This function evaluates the quality of the dataset provided and returns a detailed report.
+
+#### Parameters:
+- `filename` (str): Path to the CSV file containing the dataset to be analyzed.
+- `outcome` (str): The target variable (outcome) to assess data quality against.
+- `options` (dict, optional): A dictionary specifying additional configurations for data quality checks.
+
+
+
+#### Returns:
+A dictionary containing:
+- `success` (bool): Indicates if the operation was successful.
+- `message` (str): Describes the outcome or error encountered.
+- Detailed results for:
+  - **Data Shape Quality**
+  - **Data Emptiness Quality**
+  - **Outliers Quality**
+  - **Data Balance Quality**
+  - **Correlation Quality**
+  - **Summary Alerts**
+
+### Example
+```python
+from data_quality_checker import ez_data_quality
+
+# Specify the file path for the dataset
+file_path = 'path/to/dataset.csv'
+outcome = 'outcome_column_name'
+options = {
+      "data_shape": "yes",
+      "data_balance": "yes",
+      "data_emptiness": "yes",
+      "data_outliers": "yes",
+      "remove_outliers": "yes",
+      "outcome_correlation": "yes"
+      )
+
+# Perform data quality checks
+result = ez_data_quality(filename=file_path, outcome = outcome, options = options)
+
+# Access specific quality metrics
+if result["success"]:
+    print("Data Shape Quality:", result["data_shape_quality"])
+    print("Outlier Quality:", result["data_outliers_quality"])
+    print("Bad Quality Alerts:", result["data_bad_quality_alerts"])
+else:
+    print("Error:", result["message"])
+```
+
+### Sample Output
+#### On Success:
+```json
+{
+    "success": true,
+    "message": "Data quality checks completed successfully.",
+    "data_shape_quality": {
+        "Dataset_dimension": [".."],
+        "alert": "true",
+        "message": "No of columns in dataset is not adequate because the no of rows in the dataset is less than the no of columns",
+        "success": true
+    },
+    "data_emptiness_quality": {
+        "message": "There are no missing values present in the training data that was uploaded. Hence no records were imputed.",
+        "success": true
+    },
+    "data_outliers_quality": {
+        "message": "The following data points were removed as outliers.",
+        "outliers": {
+            "columns": [".."],
+            "indices": [".."]
+        },
+        "success": true
+    },
+    "data_balance_quality": {
+        "data_balance": {
+            "data_balance_analysis": {
+                "balance_score": "''",
+                "data_balance": true,
+                "decision_threshold": "..",
+                "quality_message": "Uploaded data is balanced because the balance score is greater than given threshold"
+            }
+        },
+        "message": "Data balance has been checked successfully",
+        "success": true
+    },
+    "data_correlation_quality": {
+        "data_correlation": {
+            "Column X": {
+                "Column Y": ".."
+            }
+        },
+        "data_correlation_alert": "true",
+        "message": "Correlation has been calculated successfully between all features and all features with outcome",
+        "success": true
+    },
+    "data_bad_quality_alerts": {
+        "data_shape_alert": "true",
+        "data_balance_alert": "false",
+        "data_emptiness_alert": "false",
+        "data_outliers_alert": "true",
+        "data_correlation_alert": "true"
+    }
+}
+```
+
+#### On Failure:
+```json
+{
+    "success": false,
+    "message": "Error message describing the failure."
+}
+```
+
+### Useful Links
+- [Documentation](https://docs.eazyml.com)
+- [Homepage](https://eazyml.com)
+- If you have more questions or want to discuss a specific use case please book an appointment [here](https://eazyml.com/trust-in-ai)
+
+#### License
+This project is licensed under the [Proprietary License](https://github.com/EazyML/eazyml-docs/blob/master/LICENSE).
+
+---
+
+*Maintained by [EazyML](https://eazyml.com)*  
+*© 2025 EazyML. All rights reserved.*
