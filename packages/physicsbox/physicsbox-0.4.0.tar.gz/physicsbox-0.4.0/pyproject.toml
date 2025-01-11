@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "physicsbox"
+version = "0.4.0"
+dependencies = [
+    "numpy",
+    "scipy",
+]
+requires-python = ">=3.8"
+authors = [
+  { name="Leonard Doyle", email="leonard.doyle@physik.uni-muenchen.de" },
+]
+description = "Collection of useful calculations for optics and more."
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+full = [
+    "matplotlib",
+    "LightPipes",
+    "scikit-image",
+    "numba",
+    "numba-progress",
+]
+
+[project.urls]
+Homepage = "https://gitlab.lrz.de/cala-public/packages/physicsbox"
+Issues = "https://gitlab.lrz.de/cala-public/packages/physicsbox/-/issues"

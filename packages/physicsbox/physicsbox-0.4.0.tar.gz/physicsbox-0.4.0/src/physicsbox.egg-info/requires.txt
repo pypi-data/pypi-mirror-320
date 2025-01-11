@@ -1,0 +1,9 @@
+numpy
+scipy
+
+[full]
+matplotlib
+LightPipes
+scikit-image
+numba
+numba-progress
