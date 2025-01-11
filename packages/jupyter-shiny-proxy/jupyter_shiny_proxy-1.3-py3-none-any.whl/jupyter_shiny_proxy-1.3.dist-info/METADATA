@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: jupyter-shiny-proxy
+Version: 1.3
+Summary: Jupyter extension to proxy Shiny Server
+Home-page: https://github.com/ryanlovett/jupyter-shiny-proxy
+Author: Ryan Lovett & Yuvi Panda
+Keywords: Jupyter
+Classifier: Framework :: Jupyter
+License-File: LICENSE
+Requires-Dist: jupyter-server-proxy
+
