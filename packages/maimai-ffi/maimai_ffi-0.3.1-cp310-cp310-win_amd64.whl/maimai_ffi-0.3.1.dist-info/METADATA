@@ -1,0 +1,6 @@
+Metadata-Version: 2.2
+Name: maimai_ffi
+Version: 0.3.1
+Summary: The definitive wahlap implement for maimai.py in Cython.
+License-File: LICENSE
+Dynamic: summary
