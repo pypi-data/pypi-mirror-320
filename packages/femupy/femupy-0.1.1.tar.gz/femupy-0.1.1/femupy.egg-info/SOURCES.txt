@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+femupy/__init__.py
+femupy/main.py
+femupy.egg-info/PKG-INFO
+femupy.egg-info/SOURCES.txt
+femupy.egg-info/dependency_links.txt
+femupy.egg-info/requires.txt
+femupy.egg-info/top_level.txt
