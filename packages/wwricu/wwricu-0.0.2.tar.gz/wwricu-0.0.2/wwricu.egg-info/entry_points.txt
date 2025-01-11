@@ -1,0 +1,2 @@
+[console_scripts]
+wwricu = wwricu.main:main
