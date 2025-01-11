@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: sms-service-aggregator
+Version: 0.1.0
+Summary: A SMS service aggregator supporting multiple providers
+Home-page: https://github.com/yourusername/sms-service-aggregator
+Author: Alex Zhang
+Author-email: zalex2015@hotmail.com
+License: UNKNOWN
+Description: # SMS Service Aggregator
+        
+        A Python library that provides a unified interface for multiple SMS service providers including Aliyun, Tencent Cloud, China Mobile, and generic HTTP APIs.
+        
+        ## Features
+        
+        - Support for multiple SMS providers
+        - Template-based SMS sending
+        - Raw content SMS sending
+        - Easy to extend for new providers
+        - Unified error handling and response format
+        
+        ## Installation 
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
