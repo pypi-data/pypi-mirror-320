@@ -1,0 +1,47 @@
+
+
+{% if aggregated %}
+<div class="space-y-4">
+  <div class="overflow-x-auto">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Embedding Tokens</td>
+          <td>{{ aggregated.embedding_tokens }}</td>
+        </tr>
+        <tr>
+          <td>LLM Prompt Tokens</td>
+          <td>{{ aggregated.llm_prompt_tokens }}</td>
+        </tr>
+        <tr>
+          <td>LLM Completion Tokens</td>
+          <td>{{ aggregated.llm_completion_tokens }}</td>
+        </tr>
+        <tr>
+          <td>Total LLM Tokens</td>
+          <td>{{ aggregated.total_llm_tokens }}</td>
+        </tr>
+        <tr>
+          <td>Total Interactions</td>
+          <td>{{ aggregated.total_interactions }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+{% else %}
+<div class="flex flex-col items-center justify-center h-[calc(100vh-8rem)] space-y-4 text-base-content/50">
+  <div class="flex space-x-4">
+    <svg data-src="https://unpkg.com/heroicons/20/solid/chart-bar.svg" class="h-8 w-8"></svg>
+    <svg data-src="https://unpkg.com/heroicons/20/solid/clock.svg" class="h-8 w-8"></svg>
+    <svg data-src="https://unpkg.com/heroicons/20/solid/document-text.svg" class="h-8 w-8"></svg>
+  </div>
+  <p class="text-center">Start a conversation to see metrics</p>
+</div>
+{% endif %}

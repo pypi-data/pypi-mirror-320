@@ -1,0 +1,31 @@
+from kitchenai.contrib.kitchenai_sdk.schema import EmbedSchema
+from kitchenai.contrib.kitchenai_sdk.schema import EmbedResponseSchema
+
+
+embed_data = EmbedSchema(
+    text="Find documents related to AI in healthcare.",
+    metadata={"topic": "healthcare", "keyword": "AI"}
+)
+
+def {{func_name}}(data: EmbedSchema):
+    """
+    Embed a text into a vector database. This is run in a background task.
+    class EmbedSchema(Schema):
+        text: str
+        metadata: dict[str, str] | None = None
+    Args:
+        data: EmbedSchema
+
+    Response:
+    class EmbedResponseSchema(Schema):
+        metadata: dict[str, Any] | None = None
+        token_counts: TokenCountSchema | None = None
+    """
+
+    return EmbedResponseSchema(metadata={"status": "success"})
+
+
+
+result = {{func_name}}(embed_data)
+
+
