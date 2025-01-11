@@ -1,0 +1,50 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "cellmap-models"
+description = "Repository of model architectures and network weights used for CellMap segmentations."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+  "Programming Language :: Python :: 3",
+]
+keywords = ["machine learning", "deep learning", "cell segmentation", "cellpose", "cellmap"]
+license = { text = "BSD 3-Clause License" }
+authors = [
+    { email = "rhoadesj@hhmi.org", name = "Jeff Rhoades" },
+]
+version = "0.1.1"
+dependencies = [
+  'torch',
+  'torchvision',
+  'numpy',
+  'tqdm',
+  'cellpose',
+  'ml-collections',
+]
+
+[project.optional-dependencies]
+dev = [
+  'pytest',
+  'pytest-cov',
+  'pytest-mock',
+  'black',
+  'mypy',
+  'pdoc',
+  'pre-commit',
+]
+pretrained = ['cellpose[gui]']
+all = ["cellmap-models[dev,pretrained]"]
+
+[project.urls]
+homepage = "https://janelia-cellmap.github.io/cellmap-models"
+repository = "https://github.com/janelia-cellmap/cellmap-models"
+
+[tool.mypy]
+exclude = ['setup*']
+ignore_missing_imports = true
+
+[project.scripts]
+"cellmap.add_cellpose" = "cellmap_models.pytorch.cellpose:add_model"
