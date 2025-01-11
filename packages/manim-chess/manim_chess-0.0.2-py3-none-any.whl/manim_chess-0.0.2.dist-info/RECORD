@@ -1,0 +1,9 @@
+src/__init__.py,sha256=x6PCRFc18I6rHgyQfwkxsxS7bsi9i0QDd7zvMZX0gFA,199
+src/board.py,sha256=FIFEiLzssQRtojcIhWCdkiOlaWOaeJqkknSc29bRzsU,19715
+src/evaluation_bar.py,sha256=ELjhyFPi5x_Q4Gw3U0FLVhQqN55k8rYCu-lpkru4nPo,3655
+src/game_player.py,sha256=fESDu5eksZK9ic47CwQNgeq1rpkcMKt0O7_X7-E5lp0,31102
+src/pieces.py,sha256=890HggU4vGv_PgLyUPnJj2p3ZdivoqG5BukjqsS6MeU,7634
+manim_chess-0.0.2.dist-info/METADATA,sha256=cOrr-lBLnr2NOfmxPt9b3NBoMZ8X4HFKYmzYdi4tMC4,7257
+manim_chess-0.0.2.dist-info/WHEEL,sha256=5Mi1sN9lKoFv_gxcPtisEVrJZihrm_beibeg5R6xb4I,91
+manim_chess-0.0.2.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+manim_chess-0.0.2.dist-info/RECORD,,
