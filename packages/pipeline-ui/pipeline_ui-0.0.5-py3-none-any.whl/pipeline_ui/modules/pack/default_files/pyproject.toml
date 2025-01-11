@@ -1,0 +1,18 @@
+[project]
+name = "your_project_name"
+version = "0.1.0"
+description = "your_project_description" # TODO: Add your pack description to be able to publish to pui
+readme = "README.md"
+dependencies = [
+    "pipeline-ui"
+]
+
+[project.urls]
+repository = "https://example.com/" # TODO: Add your repository url to be able to publish to pui
+
+
+[tool.pui]
+# List of packs that this pack depends on
+dependencies = [
+
+]
