@@ -1,0 +1,5 @@
+ieegprep>=1.6.1
+numpy>=2.2.1
+scipy>=1.15.0
+matplotlib>=3.10.0
+bids_validator>=1.14.6
