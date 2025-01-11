@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: cosmocnc
+Version: 1.0
+Summary: Python package for fast cluster number count likelihood computation
+Home-page: https://github.com/inigozubeldia/cosmocnc
+Download-URL: https://github.com/inigozubeldia/cosmocnc
+Author: Inigo Zubeldia and Boris Bolliet
+Author-email: inigo.zubeldia@ast.cam.ac.uk
+License-File: LICENSE.txt
+Dynamic: author
+Dynamic: author-email
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: summary
