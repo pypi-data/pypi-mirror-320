@@ -1,0 +1,7 @@
+scientific_calc/__init__.py,sha256=OCT7R0eGkoAwUHM5cBvuvqodIj4V1D-PpAGp8nFGrg0,53
+scientific_calc/basic_math.py,sha256=u_0zqSc2Fa85I_quJcj1Ntb7FHsrGstgJAW_IOXY0yI,209
+scientific_calc/log.py,sha256=HLxpuaR0_5ulXBFG944mBcVAkYT_Qs8npzJnN6xsnRw,865
+scientific_calc/scientific_math.py,sha256=DjUJpDCGE-ioOrZZhQ_lnTaXEqzsYDiCC-2tkegXZzk,191
+scientific_calc-0.1.1.dist-info/METADATA,sha256=lfPJgS6Wlpu6UnDv2IuDnSE9bGPxHN83Ko9xTb_DrlQ,447
+scientific_calc-0.1.1.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+scientific_calc-0.1.1.dist-info/RECORD,,
