@@ -1,0 +1,2 @@
+[console_scripts]
+my_ml_package = main:main
