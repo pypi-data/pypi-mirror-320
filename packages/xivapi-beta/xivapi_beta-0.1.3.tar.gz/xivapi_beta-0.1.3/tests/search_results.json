@@ -1,0 +1,1406 @@
+{
+  "next": "4915432a-4ecb-4a8c-bf99-e92c58244ed9",
+  "schema": "exdschema@9942dd96c70dfbba55bbc4280da144e5cb410737-2024.11.06.0000.0000",
+  "results": [
+    {
+      "score": 0.33333334,
+      "sheet": "Item",
+      "row_id": 42874,
+      "fields": {
+        "Icon": {
+          "id": 32046,
+          "path": "ui/icon/032000/032046.tex",
+          "path_hr1": "ui/icon/032000/032046_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Bow",
+        "Singular": "archeo kingdom bow"
+      }
+    },
+    {
+      "score": 0.31578946,
+      "sheet": "Item",
+      "row_id": 42884,
+      "fields": {
+        "Icon": {
+          "id": 36860,
+          "path": "ui/icon/036000/036860.tex",
+          "path_hr1": "ui/icon/036000/036860_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Tuck",
+        "Singular": "archeo kingdom tuck"
+      }
+    },
+    {
+      "score": 0.3,
+      "sheet": "Item",
+      "row_id": 42871,
+      "fields": {
+        "Icon": {
+          "id": 30847,
+          "path": "ui/icon/030000/030847.tex",
+          "path_hr1": "ui/icon/030000/030847_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Patas",
+        "Singular": "pair of archeo kingdom patas"
+      }
+    },
+    {
+      "score": 0.3,
+      "sheet": "Item",
+      "row_id": 42877,
+      "fields": {
+        "Icon": {
+          "id": 37816,
+          "path": "ui/icon/037000/037816.tex",
+          "path_hr1": "ui/icon/037000/037816_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Index",
+        "Singular": "archeo kingdom index"
+      }
+    },
+    {
+      "score": 0.3,
+      "sheet": "Item",
+      "row_id": 42878,
+      "fields": {
+        "Icon": {
+          "id": 37817,
+          "path": "ui/icon/037000/037817.tex",
+          "path_hr1": "ui/icon/037000/037817_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Codex",
+        "Singular": "archeo kingdom codex"
+      }
+    },
+    {
+      "score": 0.2857143,
+      "sheet": "Item",
+      "row_id": 42872,
+      "fields": {
+        "Icon": {
+          "id": 31256,
+          "path": "ui/icon/031000/031256.tex",
+          "path_hr1": "ui/icon/031000/031256_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Labrys",
+        "Singular": "archeo kingdom labrys"
+      }
+    },
+    {
+      "score": 0.2857143,
+      "sheet": "Item",
+      "row_id": 42887,
+      "fields": {
+        "Icon": {
+          "id": 37270,
+          "path": "ui/icon/037000/037270.tex",
+          "path_hr1": "ui/icon/037000/037270_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Sickle",
+        "Singular": "archeo kingdom sickle"
+      }
+    },
+    {
+      "score": 0.2857143,
+      "sheet": "Item",
+      "row_id": 42891,
+      "fields": {
+        "Icon": {
+          "id": 30272,
+          "path": "ui/icon/030000/030272.tex",
+          "path_hr1": "ui/icon/030000/030272_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Scutum",
+        "Singular": "archeo kingdom scutum"
+      }
+    },
+    {
+      "score": 0.27272728,
+      "sheet": "Item",
+      "row_id": 42876,
+      "fields": {
+        "Icon": {
+          "id": 32892,
+          "path": "ui/icon/032000/032892.tex",
+          "path_hr1": "ui/icon/032000/032892_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Scepter",
+        "Singular": "archeo kingdom scepter"
+      }
+    },
+    {
+      "score": 0.27272728,
+      "sheet": "Item",
+      "row_id": 42879,
+      "fields": {
+        "Icon": {
+          "id": 33633,
+          "path": "ui/icon/033000/033633.tex",
+          "path_hr1": "ui/icon/033000/033633_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Daggers",
+        "Singular": "pair of archeo kingdom daggers"
+      }
+    },
+    {
+      "score": 0.26086956,
+      "sheet": "Item",
+      "row_id": 42873,
+      "fields": {
+        "Icon": {
+          "id": 31658,
+          "path": "ui/icon/031000/031658.tex",
+          "path_hr1": "ui/icon/031000/031658_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Partisan",
+        "Singular": "archeo kingdom partisan"
+      }
+    },
+    {
+      "score": 0.26086956,
+      "sheet": "Item",
+      "row_id": 42880,
+      "fields": {
+        "Icon": {
+          "id": 34012,
+          "path": "ui/icon/034000/034012.tex",
+          "path_hr1": "ui/icon/034000/034012_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Claymore",
+        "Singular": "archeo kingdom claymore"
+      }
+    },
+    {
+      "score": 0.26086956,
+      "sheet": "Item",
+      "row_id": 42881,
+      "fields": {
+        "Icon": {
+          "id": 34505,
+          "path": "ui/icon/034000/034505.tex",
+          "path_hr1": "ui/icon/034000/034505_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Culverin",
+        "Singular": "archeo kingdom culverin"
+      }
+    },
+    {
+      "score": 0.26086956,
+      "sheet": "Item",
+      "row_id": 42885,
+      "fields": {
+        "Icon": {
+          "id": 36103,
+          "path": "ui/icon/036000/036103.tex",
+          "path_hr1": "ui/icon/036000/036103_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Gunblade",
+        "Singular": "archeo kingdom gunblade"
+      }
+    },
+    {
+      "score": 0.26086956,
+      "sheet": "Item",
+      "row_id": 42886,
+      "fields": {
+        "Icon": {
+          "id": 36300,
+          "path": "ui/icon/036000/036300.tex",
+          "path_hr1": "ui/icon/036000/036300_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Chakrams",
+        "Singular": "pair of archeo kingdom chakrams"
+      }
+    },
+    {
+      "score": 0.25,
+      "sheet": "Item",
+      "row_id": 42888,
+      "fields": {
+        "Icon": {
+          "id": 37066,
+          "path": "ui/icon/037000/037066.tex",
+          "path_hr1": "ui/icon/037000/037066_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Milpreves",
+        "Singular": "array of archeo kingdom milpreves"
+      }
+    },
+    {
+      "score": 0.25,
+      "sheet": "Item",
+      "row_id": 42889,
+      "fields": {
+        "Icon": {
+          "id": 37425,
+          "path": "ui/icon/037000/037425.tex",
+          "path_hr1": "ui/icon/037000/037425_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Twinfangs",
+        "Singular": "pair of archeo kingdom twinfangs"
+      }
+    },
+    {
+      "score": 0.24,
+      "sheet": "Item",
+      "row_id": 42870,
+      "fields": {
+        "Icon": {
+          "id": 30683,
+          "path": "ui/icon/030000/030683.tex",
+          "path_hr1": "ui/icon/030000/030683_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Broadsword",
+        "Singular": "archeo kingdom broadsword"
+      }
+    },
+    {
+      "score": 0.24,
+      "sheet": "Item",
+      "row_id": 42875,
+      "fields": {
+        "Icon": {
+          "id": 32476,
+          "path": "ui/icon/032000/032476.tex",
+          "path_hr1": "ui/icon/032000/032476_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Candelarod",
+        "Singular": "archeo kingdom candelarod"
+      }
+    },
+    {
+      "score": 0.23076923,
+      "sheet": "Item",
+      "row_id": 42882,
+      "fields": {
+        "Icon": {
+          "id": 34705,
+          "path": "ui/icon/034000/034705.tex",
+          "path_hr1": "ui/icon/034000/034705_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Planisphere",
+        "Singular": "archeo kingdom planisphere"
+      }
+    },
+    {
+      "score": 0.23076923,
+      "sheet": "Item",
+      "row_id": 42890,
+      "fields": {
+        "Icon": {
+          "id": 37631,
+          "path": "ui/icon/037000/037631.tex",
+          "path_hr1": "ui/icon/037000/037631_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Round Brush",
+        "Singular": "archeo kingdom round brush"
+      }
+    },
+    {
+      "score": 0.23076923,
+      "sheet": "Item",
+      "row_id": 44403,
+      "fields": {
+        "Icon": {
+          "id": 25999,
+          "path": "ui/icon/025000/025999.tex",
+          "path_hr1": "ui/icon/025000/025999_hr1.tex"
+        },
+        "Name": "Archeo Alexandria Painting",
+        "Singular": "painting of Archeo Alexandria"
+      }
+    },
+    {
+      "score": 0.21428572,
+      "sheet": "Item",
+      "row_id": 42883,
+      "fields": {
+        "Icon": {
+          "id": 36559,
+          "path": "ui/icon/036000/036559.tex",
+          "path_hr1": "ui/icon/036000/036559_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Samurai Blade",
+        "Singular": "archeo kingdom samurai blade"
+      }
+    },
+    {
+      "score": 0.21428572,
+      "sheet": "Item",
+      "row_id": 44748,
+      "fields": {
+        "Icon": {
+          "id": 32046,
+          "path": "ui/icon/032000/032046.tex",
+          "path_hr1": "ui/icon/032000/032046_hr1.tex"
+        },
+        "Name": "Augmented Archeo Kingdom Bow",
+        "Singular": "augmented archeo kingdom bow"
+      }
+    },
+    {
+      "score": 0.20689656,
+      "sheet": "Item",
+      "row_id": 42944,
+      "fields": {
+        "Icon": {
+          "id": 54741,
+          "path": "ui/icon/054000/054741.tex",
+          "path_hr1": "ui/icon/054000/054741_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Ring of Aiming",
+        "Singular": "archeo kingdom ring of aiming"
+      }
+    },
+    {
+      "score": 0.20689656,
+      "sheet": "Item",
+      "row_id": 44758,
+      "fields": {
+        "Icon": {
+          "id": 36860,
+          "path": "ui/icon/036000/036860.tex",
+          "path_hr1": "ui/icon/036000/036860_hr1.tex"
+        },
+        "Name": "Augmented Archeo Kingdom Tuck",
+        "Singular": "augmented archeo kingdom tuck"
+      }
+    },
+    {
+      "score": 0.2,
+      "sheet": "Item",
+      "row_id": 42892,
+      "fields": {
+        "Icon": {
+          "id": 56760,
+          "path": "ui/icon/056000/056760.tex",
+          "path_hr1": "ui/icon/056000/056760_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Helm of Fending",
+        "Singular": "archeo kingdom helm of fending"
+      }
+    },
+    {
+      "score": 0.2,
+      "sheet": "Item",
+      "row_id": 42897,
+      "fields": {
+        "Icon": {
+          "id": 56761,
+          "path": "ui/icon/056000/056761.tex",
+          "path_hr1": "ui/icon/056000/056761_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Helm of Maiming",
+        "Singular": "archeo kingdom helm of maiming"
+      }
+    },
+    {
+      "score": 0.2,
+      "sheet": "Item",
+      "row_id": 42907,
+      "fields": {
+        "Icon": {
+          "id": 56763,
+          "path": "ui/icon/056000/056763.tex",
+          "path_hr1": "ui/icon/056000/056763_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Beret of Aiming",
+        "Singular": "archeo kingdom beret of aiming"
+      }
+    },
+    {
+      "score": 0.2,
+      "sheet": "Item",
+      "row_id": 42918,
+      "fields": {
+        "Icon": {
+          "id": 57150,
+          "path": "ui/icon/057000/057150.tex",
+          "path_hr1": "ui/icon/057000/057150_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Coat of Healing",
+        "Singular": "archeo kingdom coat of healing"
+      }
+    },
+    {
+      "score": 0.2,
+      "sheet": "Item",
+      "row_id": 42922,
+      "fields": {
+        "Icon": {
+          "id": 56757,
+          "path": "ui/icon/056000/056757.tex",
+          "path_hr1": "ui/icon/056000/056757_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Hood of Casting",
+        "Singular": "archeo kingdom hood of casting"
+      }
+    },
+    {
+      "score": 0.2,
+      "sheet": "Item",
+      "row_id": 42923,
+      "fields": {
+        "Icon": {
+          "id": 57147,
+          "path": "ui/icon/057000/057147.tex",
+          "path_hr1": "ui/icon/057000/057147_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Coat of Casting",
+        "Singular": "archeo kingdom coat of casting"
+      }
+    },
+    {
+      "score": 0.2,
+      "sheet": "Item",
+      "row_id": 42942,
+      "fields": {
+        "Icon": {
+          "id": 54741,
+          "path": "ui/icon/054000/054741.tex",
+          "path_hr1": "ui/icon/054000/054741_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Ring of Fending",
+        "Singular": "archeo kingdom ring of fending"
+      }
+    },
+    {
+      "score": 0.2,
+      "sheet": "Item",
+      "row_id": 42943,
+      "fields": {
+        "Icon": {
+          "id": 54741,
+          "path": "ui/icon/054000/054741.tex",
+          "path_hr1": "ui/icon/054000/054741_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Ring of Slaying",
+        "Singular": "archeo kingdom ring of slaying"
+      }
+    },
+    {
+      "score": 0.2,
+      "sheet": "Item",
+      "row_id": 42945,
+      "fields": {
+        "Icon": {
+          "id": 54741,
+          "path": "ui/icon/054000/054741.tex",
+          "path_hr1": "ui/icon/054000/054741_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Ring of Healing",
+        "Singular": "archeo kingdom ring of healing"
+      }
+    },
+    {
+      "score": 0.2,
+      "sheet": "Item",
+      "row_id": 42946,
+      "fields": {
+        "Icon": {
+          "id": 54741,
+          "path": "ui/icon/054000/054741.tex",
+          "path_hr1": "ui/icon/054000/054741_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Ring of Casting",
+        "Singular": "archeo kingdom ring of casting"
+      }
+    },
+    {
+      "score": 0.2,
+      "sheet": "Item",
+      "row_id": 44745,
+      "fields": {
+        "Icon": {
+          "id": 30847,
+          "path": "ui/icon/030000/030847.tex",
+          "path_hr1": "ui/icon/030000/030847_hr1.tex"
+        },
+        "Name": "Augmented Archeo Kingdom Patas",
+        "Singular": "pair of augmented archeo kingdom patas"
+      }
+    },
+    {
+      "score": 0.2,
+      "sheet": "Item",
+      "row_id": 44751,
+      "fields": {
+        "Icon": {
+          "id": 37816,
+          "path": "ui/icon/037000/037816.tex",
+          "path_hr1": "ui/icon/037000/037816_hr1.tex"
+        },
+        "Name": "Augmented Archeo Kingdom Index",
+        "Singular": "augmented archeo kingdom index"
+      }
+    },
+    {
+      "score": 0.2,
+      "sheet": "Item",
+      "row_id": 44752,
+      "fields": {
+        "Icon": {
+          "id": 37817,
+          "path": "ui/icon/037000/037817.tex",
+          "path_hr1": "ui/icon/037000/037817_hr1.tex"
+        },
+        "Name": "Augmented Archeo Kingdom Codex",
+        "Singular": "augmented archeo kingdom codex"
+      }
+    },
+    {
+      "score": 0.19354838,
+      "sheet": "Item",
+      "row_id": 42902,
+      "fields": {
+        "Icon": {
+          "id": 56758,
+          "path": "ui/icon/056000/056758.tex",
+          "path_hr1": "ui/icon/056000/056758_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Hood of Striking",
+        "Singular": "archeo kingdom hood of striking"
+      }
+    },
+    {
+      "score": 0.19354838,
+      "sheet": "Item",
+      "row_id": 42908,
+      "fields": {
+        "Icon": {
+          "id": 57152,
+          "path": "ui/icon/057000/057152.tex",
+          "path_hr1": "ui/icon/057000/057152_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Jacket of Aiming",
+        "Singular": "archeo kingdom jacket of aiming"
+      }
+    },
+    {
+      "score": 0.19354838,
+      "sheet": "Item",
+      "row_id": 42909,
+      "fields": {
+        "Icon": {
+          "id": 56274,
+          "path": "ui/icon/056000/056274.tex",
+          "path_hr1": "ui/icon/056000/056274_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Gloves of Aiming",
+        "Singular": "pair of archeo kingdom gloves of aiming"
+      }
+    },
+    {
+      "score": 0.19354838,
+      "sheet": "Item",
+      "row_id": 42912,
+      "fields": {
+        "Icon": {
+          "id": 56759,
+          "path": "ui/icon/056000/056759.tex",
+          "path_hr1": "ui/icon/056000/056759_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Hood of Scouting",
+        "Singular": "archeo kingdom hood of scouting"
+      }
+    },
+    {
+      "score": 0.19354838,
+      "sheet": "Item",
+      "row_id": 42917,
+      "fields": {
+        "Icon": {
+          "id": 56762,
+          "path": "ui/icon/056000/056762.tex",
+          "path_hr1": "ui/icon/056000/056762_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Beret of Healing",
+        "Singular": "archeo kingdom beret of healing"
+      }
+    },
+    {
+      "score": 0.19354838,
+      "sheet": "Item",
+      "row_id": 42921,
+      "fields": {
+        "Icon": {
+          "id": 49771,
+          "path": "ui/icon/049000/049771.tex",
+          "path_hr1": "ui/icon/049000/049771_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Shoes of Healing",
+        "Singular": "pair of archeo kingdom shoes of healing"
+      }
+    },
+    {
+      "score": 0.19354838,
+      "sheet": "Item",
+      "row_id": 42926,
+      "fields": {
+        "Icon": {
+          "id": 49770,
+          "path": "ui/icon/049000/049770.tex",
+          "path_hr1": "ui/icon/049000/049770_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Shoes of Casting",
+        "Singular": "pair of archeo kingdom shoes of casting"
+      }
+    },
+    {
+      "score": 0.19354838,
+      "sheet": "Item",
+      "row_id": 42934,
+      "fields": {
+        "Icon": {
+          "id": 55091,
+          "path": "ui/icon/055000/055091.tex",
+          "path_hr1": "ui/icon/055000/055091_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Choker of Aiming",
+        "Singular": "archeo kingdom choker of aiming"
+      }
+    },
+    {
+      "score": 0.19354838,
+      "sheet": "Item",
+      "row_id": 44746,
+      "fields": {
+        "Icon": {
+          "id": 31256,
+          "path": "ui/icon/031000/031256.tex",
+          "path_hr1": "ui/icon/031000/031256_hr1.tex"
+        },
+        "Name": "Augmented Archeo Kingdom Labrys",
+        "Singular": "augmented archeo kingdom labrys"
+      }
+    },
+    {
+      "score": 0.19354838,
+      "sheet": "Item",
+      "row_id": 44761,
+      "fields": {
+        "Icon": {
+          "id": 37270,
+          "path": "ui/icon/037000/037270.tex",
+          "path_hr1": "ui/icon/037000/037270_hr1.tex"
+        },
+        "Name": "Augmented Archeo Kingdom Sickle",
+        "Singular": "augmented archeo kingdom sickle"
+      }
+    },
+    {
+      "score": 0.19354838,
+      "sheet": "Item",
+      "row_id": 44765,
+      "fields": {
+        "Icon": {
+          "id": 30272,
+          "path": "ui/icon/030000/030272.tex",
+          "path_hr1": "ui/icon/030000/030272_hr1.tex"
+        },
+        "Name": "Augmented Archeo Kingdom Scutum",
+        "Singular": "augmented archeo kingdom scutum"
+      }
+    },
+    {
+      "score": 0.1875,
+      "sheet": "Item",
+      "row_id": 42906,
+      "fields": {
+        "Icon": {
+          "id": 49772,
+          "path": "ui/icon/049000/049772.tex",
+          "path_hr1": "ui/icon/049000/049772_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Shoes of Striking",
+        "Singular": "pair of archeo kingdom shoes of striking"
+      }
+    },
+    {
+      "score": 0.1875,
+      "sheet": "Item",
+      "row_id": 42910,
+      "fields": {
+        "Icon": {
+          "id": 57678,
+          "path": "ui/icon/057000/057678.tex",
+          "path_hr1": "ui/icon/057000/057678_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Poleyns of Aiming",
+        "Singular": "pair of archeo kingdom poleyns of aiming"
+      }
+    },
+    {
+      "score": 0.1875,
+      "sheet": "Item",
+      "row_id": 42919,
+      "fields": {
+        "Icon": {
+          "id": 56273,
+          "path": "ui/icon/056000/056273.tex",
+          "path_hr1": "ui/icon/056000/056273_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Gloves of Healing",
+        "Singular": "pair of archeo kingdom gloves of healing"
+      }
+    },
+    {
+      "score": 0.1875,
+      "sheet": "Item",
+      "row_id": 42932,
+      "fields": {
+        "Icon": {
+          "id": 55091,
+          "path": "ui/icon/055000/055091.tex",
+          "path_hr1": "ui/icon/055000/055091_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Choker of Fending",
+        "Singular": "archeo kingdom choker of fending"
+      }
+    },
+    {
+      "score": 0.1875,
+      "sheet": "Item",
+      "row_id": 42933,
+      "fields": {
+        "Icon": {
+          "id": 55091,
+          "path": "ui/icon/055000/055091.tex",
+          "path_hr1": "ui/icon/055000/055091_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Choker of Slaying",
+        "Singular": "archeo kingdom choker of slaying"
+      }
+    },
+    {
+      "score": 0.1875,
+      "sheet": "Item",
+      "row_id": 42935,
+      "fields": {
+        "Icon": {
+          "id": 55091,
+          "path": "ui/icon/055000/055091.tex",
+          "path_hr1": "ui/icon/055000/055091_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Choker of Healing",
+        "Singular": "archeo kingdom choker of healing"
+      }
+    },
+    {
+      "score": 0.1875,
+      "sheet": "Item",
+      "row_id": 42936,
+      "fields": {
+        "Icon": {
+          "id": 55091,
+          "path": "ui/icon/055000/055091.tex",
+          "path_hr1": "ui/icon/055000/055091_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Choker of Casting",
+        "Singular": "archeo kingdom choker of casting"
+      }
+    },
+    {
+      "score": 0.1875,
+      "sheet": "Item",
+      "row_id": 44750,
+      "fields": {
+        "Icon": {
+          "id": 32892,
+          "path": "ui/icon/032000/032892.tex",
+          "path_hr1": "ui/icon/032000/032892_hr1.tex"
+        },
+        "Name": "Augmented Archeo Kingdom Scepter",
+        "Singular": "augmented archeo kingdom scepter"
+      }
+    },
+    {
+      "score": 0.1875,
+      "sheet": "Item",
+      "row_id": 44753,
+      "fields": {
+        "Icon": {
+          "id": 33633,
+          "path": "ui/icon/033000/033633.tex",
+          "path_hr1": "ui/icon/033000/033633_hr1.tex"
+        },
+        "Name": "Augmented Archeo Kingdom Daggers",
+        "Singular": "pair of augmented archeo kingdom daggers"
+      }
+    },
+    {
+      "score": 0.18181819,
+      "sheet": "Item",
+      "row_id": 42893,
+      "fields": {
+        "Icon": {
+          "id": 57148,
+          "path": "ui/icon/057000/057148.tex",
+          "path_hr1": "ui/icon/057000/057148_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Cuirass of Fending",
+        "Singular": "archeo kingdom cuirass of fending"
+      }
+    },
+    {
+      "score": 0.18181819,
+      "sheet": "Item",
+      "row_id": 42895,
+      "fields": {
+        "Icon": {
+          "id": 57674,
+          "path": "ui/icon/057000/057674.tex",
+          "path_hr1": "ui/icon/057000/057674_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Poleyns of Fending",
+        "Singular": "pair of archeo kingdom poleyns of fending"
+      }
+    },
+    {
+      "score": 0.18181819,
+      "sheet": "Item",
+      "row_id": 42898,
+      "fields": {
+        "Icon": {
+          "id": 57149,
+          "path": "ui/icon/057000/057149.tex",
+          "path_hr1": "ui/icon/057000/057149_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Cuirass of Maiming",
+        "Singular": "archeo kingdom cuirass of maiming"
+      }
+    },
+    {
+      "score": 0.18181819,
+      "sheet": "Item",
+      "row_id": 42900,
+      "fields": {
+        "Icon": {
+          "id": 57676,
+          "path": "ui/icon/057000/057676.tex",
+          "path_hr1": "ui/icon/057000/057676_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Poleyns of Maiming",
+        "Singular": "pair of archeo kingdom poleyns of maiming"
+      }
+    },
+    {
+      "score": 0.18181819,
+      "sheet": "Item",
+      "row_id": 42903,
+      "fields": {
+        "Icon": {
+          "id": 57151,
+          "path": "ui/icon/057000/057151.tex",
+          "path_hr1": "ui/icon/057000/057151_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Jacket of Striking",
+        "Singular": "archeo kingdom jacket of striking"
+      }
+    },
+    {
+      "score": 0.18181819,
+      "sheet": "Item",
+      "row_id": 42911,
+      "fields": {
+        "Icon": {
+          "id": 49768,
+          "path": "ui/icon/049000/049768.tex",
+          "path_hr1": "ui/icon/049000/049768_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Sabatons of Aiming",
+        "Singular": "pair of archeo kingdom sabatons of aiming"
+      }
+    },
+    {
+      "score": 0.18181819,
+      "sheet": "Item",
+      "row_id": 42913,
+      "fields": {
+        "Icon": {
+          "id": 57153,
+          "path": "ui/icon/057000/057153.tex",
+          "path_hr1": "ui/icon/057000/057153_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Jacket of Scouting",
+        "Singular": "archeo kingdom jacket of scouting"
+      }
+    },
+    {
+      "score": 0.18181819,
+      "sheet": "Item",
+      "row_id": 42920,
+      "fields": {
+        "Icon": {
+          "id": 57675,
+          "path": "ui/icon/057000/057675.tex",
+          "path_hr1": "ui/icon/057000/057675_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Poleyns of Healing",
+        "Singular": "pair of archeo kingdom poleyns of healing"
+      }
+    },
+    {
+      "score": 0.18181819,
+      "sheet": "Item",
+      "row_id": 42925,
+      "fields": {
+        "Icon": {
+          "id": 57673,
+          "path": "ui/icon/057000/057673.tex",
+          "path_hr1": "ui/icon/057000/057673_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Poleyns of Casting",
+        "Singular": "pair of archeo kingdom poleyns of casting"
+      }
+    },
+    {
+      "score": 0.18181819,
+      "sheet": "Item",
+      "row_id": 42929,
+      "fields": {
+        "Icon": {
+          "id": 55539,
+          "path": "ui/icon/055000/055539.tex",
+          "path_hr1": "ui/icon/055000/055539_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Earrings of Aiming",
+        "Singular": "pair of archeo kingdom earrings of aiming"
+      }
+    },
+    {
+      "score": 0.18181819,
+      "sheet": "Item",
+      "row_id": 44747,
+      "fields": {
+        "Icon": {
+          "id": 31658,
+          "path": "ui/icon/031000/031658.tex",
+          "path_hr1": "ui/icon/031000/031658_hr1.tex"
+        },
+        "Name": "Augmented Archeo Kingdom Partisan",
+        "Singular": "augmented archeo kingdom partisan"
+      }
+    },
+    {
+      "score": 0.18181819,
+      "sheet": "Item",
+      "row_id": 44754,
+      "fields": {
+        "Icon": {
+          "id": 34012,
+          "path": "ui/icon/034000/034012.tex",
+          "path_hr1": "ui/icon/034000/034012_hr1.tex"
+        },
+        "Name": "Augmented Archeo Kingdom Claymore",
+        "Singular": "augmented archeo kingdom claymore"
+      }
+    },
+    {
+      "score": 0.18181819,
+      "sheet": "Item",
+      "row_id": 44755,
+      "fields": {
+        "Icon": {
+          "id": 34505,
+          "path": "ui/icon/034000/034505.tex",
+          "path_hr1": "ui/icon/034000/034505_hr1.tex"
+        },
+        "Name": "Augmented Archeo Kingdom Culverin",
+        "Singular": "augmented archeo kingdom culverin"
+      }
+    },
+    {
+      "score": 0.18181819,
+      "sheet": "Item",
+      "row_id": 44759,
+      "fields": {
+        "Icon": {
+          "id": 36103,
+          "path": "ui/icon/036000/036103.tex",
+          "path_hr1": "ui/icon/036000/036103_hr1.tex"
+        },
+        "Name": "Augmented Archeo Kingdom Gunblade",
+        "Singular": "augmented archeo kingdom gunblade"
+      }
+    },
+    {
+      "score": 0.18181819,
+      "sheet": "Item",
+      "row_id": 44760,
+      "fields": {
+        "Icon": {
+          "id": 36300,
+          "path": "ui/icon/036000/036300.tex",
+          "path_hr1": "ui/icon/036000/036300_hr1.tex"
+        },
+        "Name": "Augmented Archeo Kingdom Chakrams",
+        "Singular": "pair of augmented archeo kingdom chakrams"
+      }
+    },
+    {
+      "score": 0.1764706,
+      "sheet": "Item",
+      "row_id": 42896,
+      "fields": {
+        "Icon": {
+          "id": 49766,
+          "path": "ui/icon/049000/049766.tex",
+          "path_hr1": "ui/icon/049000/049766_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Sabatons of Fending",
+        "Singular": "pair of archeo kingdom sabatons of fending"
+      }
+    },
+    {
+      "score": 0.1764706,
+      "sheet": "Item",
+      "row_id": 42901,
+      "fields": {
+        "Icon": {
+          "id": 49767,
+          "path": "ui/icon/049000/049767.tex",
+          "path_hr1": "ui/icon/049000/049767_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Sabatons of Maiming",
+        "Singular": "pair of archeo kingdom sabatons of maiming"
+      }
+    },
+    {
+      "score": 0.1764706,
+      "sheet": "Item",
+      "row_id": 42905,
+      "fields": {
+        "Icon": {
+          "id": 57677,
+          "path": "ui/icon/057000/057677.tex",
+          "path_hr1": "ui/icon/057000/057677_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Poleyns of Striking",
+        "Singular": "pair of archeo kingdom poleyns of striking"
+      }
+    },
+    {
+      "score": 0.1764706,
+      "sheet": "Item",
+      "row_id": 42915,
+      "fields": {
+        "Icon": {
+          "id": 57679,
+          "path": "ui/icon/057000/057679.tex",
+          "path_hr1": "ui/icon/057000/057679_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Poleyns of Scouting",
+        "Singular": "pair of archeo kingdom poleyns of scouting"
+      }
+    },
+    {
+      "score": 0.1764706,
+      "sheet": "Item",
+      "row_id": 42927,
+      "fields": {
+        "Icon": {
+          "id": 55539,
+          "path": "ui/icon/055000/055539.tex",
+          "path_hr1": "ui/icon/055000/055539_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Earrings of Fending",
+        "Singular": "pair of archeo kingdom earrings of fending"
+      }
+    },
+    {
+      "score": 0.1764706,
+      "sheet": "Item",
+      "row_id": 42928,
+      "fields": {
+        "Icon": {
+          "id": 55539,
+          "path": "ui/icon/055000/055539.tex",
+          "path_hr1": "ui/icon/055000/055539_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Earrings of Slaying",
+        "Singular": "pair of archeo kingdom earrings of slaying"
+      }
+    },
+    {
+      "score": 0.1764706,
+      "sheet": "Item",
+      "row_id": 42930,
+      "fields": {
+        "Icon": {
+          "id": 55539,
+          "path": "ui/icon/055000/055539.tex",
+          "path_hr1": "ui/icon/055000/055539_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Earrings of Healing",
+        "Singular": "pair of archeo kingdom earrings of healing"
+      }
+    },
+    {
+      "score": 0.1764706,
+      "sheet": "Item",
+      "row_id": 42931,
+      "fields": {
+        "Icon": {
+          "id": 55539,
+          "path": "ui/icon/055000/055539.tex",
+          "path_hr1": "ui/icon/055000/055539_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Earrings of Casting",
+        "Singular": "pair of archeo kingdom earrings of casting"
+      }
+    },
+    {
+      "score": 0.1764706,
+      "sheet": "Item",
+      "row_id": 42939,
+      "fields": {
+        "Icon": {
+          "id": 55890,
+          "path": "ui/icon/055000/055890.tex",
+          "path_hr1": "ui/icon/055000/055890_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Wristband of Aiming",
+        "Singular": "archeo kingdom wristband of aiming"
+      }
+    },
+    {
+      "score": 0.1764706,
+      "sheet": "Item",
+      "row_id": 44762,
+      "fields": {
+        "Icon": {
+          "id": 37066,
+          "path": "ui/icon/037000/037066.tex",
+          "path_hr1": "ui/icon/037000/037066_hr1.tex"
+        },
+        "Name": "Augmented Archeo Kingdom Milpreves",
+        "Singular": "array of augmented archeo kingdom milpreves"
+      }
+    },
+    {
+      "score": 0.1764706,
+      "sheet": "Item",
+      "row_id": 44763,
+      "fields": {
+        "Icon": {
+          "id": 37425,
+          "path": "ui/icon/037000/037425.tex",
+          "path_hr1": "ui/icon/037000/037425_hr1.tex"
+        },
+        "Name": "Augmented Archeo Kingdom Twinfangs",
+        "Singular": "pair of augmented archeo kingdom twinfangs"
+      }
+    },
+    {
+      "score": 0.17142858,
+      "sheet": "Item",
+      "row_id": 42894,
+      "fields": {
+        "Icon": {
+          "id": 56271,
+          "path": "ui/icon/056000/056271.tex",
+          "path_hr1": "ui/icon/056000/056271_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Vambraces of Fending",
+        "Singular": "pair of archeo kingdom vambraces of fending"
+      }
+    },
+    {
+      "score": 0.17142858,
+      "sheet": "Item",
+      "row_id": 42899,
+      "fields": {
+        "Icon": {
+          "id": 56272,
+          "path": "ui/icon/056000/056272.tex",
+          "path_hr1": "ui/icon/056000/056272_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Vambraces of Maiming",
+        "Singular": "pair of archeo kingdom vambraces of maiming"
+      }
+    },
+    {
+      "score": 0.17142858,
+      "sheet": "Item",
+      "row_id": 42916,
+      "fields": {
+        "Icon": {
+          "id": 49769,
+          "path": "ui/icon/049000/049769.tex",
+          "path_hr1": "ui/icon/049000/049769_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Sabatons of Scouting",
+        "Singular": "pair of archeo kingdom sabatons of scouting"
+      }
+    },
+    {
+      "score": 0.17142858,
+      "sheet": "Item",
+      "row_id": 42924,
+      "fields": {
+        "Icon": {
+          "id": 56268,
+          "path": "ui/icon/056000/056268.tex",
+          "path_hr1": "ui/icon/056000/056268_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Armguards of Casting",
+        "Singular": "pair of archeo kingdom armguards of casting"
+      }
+    },
+    {
+      "score": 0.17142858,
+      "sheet": "Item",
+      "row_id": 42937,
+      "fields": {
+        "Icon": {
+          "id": 55890,
+          "path": "ui/icon/055000/055890.tex",
+          "path_hr1": "ui/icon/055000/055890_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Wristband of Fending",
+        "Singular": "archeo kingdom wristband of fending"
+      }
+    },
+    {
+      "score": 0.17142858,
+      "sheet": "Item",
+      "row_id": 42938,
+      "fields": {
+        "Icon": {
+          "id": 55890,
+          "path": "ui/icon/055000/055890.tex",
+          "path_hr1": "ui/icon/055000/055890_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Wristband of Slaying",
+        "Singular": "archeo kingdom wristband of slaying"
+      }
+    },
+    {
+      "score": 0.17142858,
+      "sheet": "Item",
+      "row_id": 42940,
+      "fields": {
+        "Icon": {
+          "id": 55890,
+          "path": "ui/icon/055000/055890.tex",
+          "path_hr1": "ui/icon/055000/055890_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Wristband of Healing",
+        "Singular": "archeo kingdom wristband of healing"
+      }
+    },
+    {
+      "score": 0.17142858,
+      "sheet": "Item",
+      "row_id": 42941,
+      "fields": {
+        "Icon": {
+          "id": 55890,
+          "path": "ui/icon/055000/055890.tex",
+          "path_hr1": "ui/icon/055000/055890_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Wristband of Casting",
+        "Singular": "archeo kingdom wristband of casting"
+      }
+    },
+    {
+      "score": 0.17142858,
+      "sheet": "Item",
+      "row_id": 44744,
+      "fields": {
+        "Icon": {
+          "id": 30683,
+          "path": "ui/icon/030000/030683.tex",
+          "path_hr1": "ui/icon/030000/030683_hr1.tex"
+        },
+        "Name": "Augmented Archeo Kingdom Broadsword",
+        "Singular": "augmented archeo kingdom broadsword"
+      }
+    },
+    {
+      "score": 0.17142858,
+      "sheet": "Item",
+      "row_id": 44749,
+      "fields": {
+        "Icon": {
+          "id": 32476,
+          "path": "ui/icon/032000/032476.tex",
+          "path_hr1": "ui/icon/032000/032476_hr1.tex"
+        },
+        "Name": "Augmented Archeo Kingdom Candelarod",
+        "Singular": "augmented archeo kingdom candelarod"
+      }
+    },
+    {
+      "score": 0.16666667,
+      "sheet": "Item",
+      "row_id": 42904,
+      "fields": {
+        "Icon": {
+          "id": 56269,
+          "path": "ui/icon/056000/056269.tex",
+          "path_hr1": "ui/icon/056000/056269_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Armguards of Striking",
+        "Singular": "pair of archeo kingdom armguards of striking"
+      }
+    },
+    {
+      "score": 0.16666667,
+      "sheet": "Item",
+      "row_id": 42914,
+      "fields": {
+        "Icon": {
+          "id": 56270,
+          "path": "ui/icon/056000/056270.tex",
+          "path_hr1": "ui/icon/056000/056270_hr1.tex"
+        },
+        "Name": "Archeo Kingdom Armguards of Scouting",
+        "Singular": "pair of archeo kingdom armguards of scouting"
+      }
+    },
+    {
+      "score": 0.16666667,
+      "sheet": "Item",
+      "row_id": 44756,
+      "fields": {
+        "Icon": {
+          "id": 34705,
+          "path": "ui/icon/034000/034705.tex",
+          "path_hr1": "ui/icon/034000/034705_hr1.tex"
+        },
+        "Name": "Augmented Archeo Kingdom Planisphere",
+        "Singular": "augmented archeo kingdom planisphere"
+      }
+    },
+    {
+      "score": 0.16666667,
+      "sheet": "Item",
+      "row_id": 44764,
+      "fields": {
+        "Icon": {
+          "id": 37631,
+          "path": "ui/icon/037000/037631.tex",
+          "path_hr1": "ui/icon/037000/037631_hr1.tex"
+        },
+        "Name": "Augmented Archeo Kingdom Round Brush",
+        "Singular": "augmented archeo kingdom round brush"
+      }
+    },
+    {
+      "score": 0.16216215,
+      "sheet": "Item",
+      "row_id": 43951,
+      "fields": {
+        "Icon": {
+          "id": 57150,
+          "path": "ui/icon/057000/057150.tex",
+          "path_hr1": "ui/icon/057000/057150_hr1.tex"
+        },
+        "Name": "Ornate Archeo Kingdom Coat of Healing",
+        "Singular": "ornate archeo kingdom coat of healing"
+      }
+    }
+  ]
+}
