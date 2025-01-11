@@ -1,0 +1,11 @@
+[package]
+name = "config_file_macros"
+version = "2025.1.6"
+edition = "2021"
+description = "Add file configuration support for the struct to enable seamless serialization and deserialization of its fields, improving data management and persistence."
+license = "GPL-3.0-or-later"
+categories = ["config", "encoding"]
+keywords = ["serialization", "serde", "hcl", "json", "toml"]
+repository = "https://github.com/ascpkg/asc/tree/main/config_file_macros"
+
+[dependencies]
