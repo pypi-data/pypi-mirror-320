@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gj-unitrad
+Version: 0.0.6
+Summary: unitrad打包
+Author: yin
+Author-email: 248024802@qq.com
+Requires-Python: >3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml==6.0.2
+Requires-Dist: aiohttp==3.11.10
+
+新增日志保存功能和结果保存功能（position，trades）
