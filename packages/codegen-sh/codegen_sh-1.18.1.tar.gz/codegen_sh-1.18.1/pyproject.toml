@@ -1,0 +1,79 @@
+[project]
+name = "codegen-sh"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "click",
+    "requests",
+    "pathlib",
+    "algoliasearch",
+    "rich",
+    "python-dotenv>=1.0.1",
+    "posthog",
+    "giturlparse",
+    "pygit2>=1.16.0",
+    "pydantic>=2.10.3",
+    "toml>=0.10.2",
+    "rich-click>=1.8.5",
+    "graph-sitter-types>=6.2.1",
+    "codegen-types>=0.263.0",
+]
+dynamic = ["version", "urls"]
+[project.scripts]
+codegen = "codegen.cli.cli:main"
+
+[build-system]
+requires = ["hatchling>=1.14.0", "hatch-vcs>=0.4.0", "hatch-build-scripts"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ruff<1.0.0,>=0.6.3",
+    "ruff-lsp<1.0.0,>=0.0.55",
+]
+[tool.uv]
+cache-keys = [{ git = { commit = true } }]
+dev-dependencies = [
+    "pytest>=8.3.4",
+    "pytest-cov<6.0.1,>=6.0.0",
+    "pytest-xdist>=3.6.1,<4.0.0",
+    "pytest-mock<4.0.0,>=3.14.0",
+    "pytest-timeout>=2.3.1",
+    "jupyter<2.0.0,>=1.0.0",
+]
+
+[tool.ruff]
+line-length = 200
+lint.select = ["F", "E", "W", "I", "UP", "D", "RUF"]
+lint.ignore = [
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "D105",
+    "D106",
+    "D107",
+    "D203",
+    "D205",
+    "D213",
+    "D400",
+    "D401",
+    "D402",
+    "D404",
+    "D415",
+    "D417",
+    "E712", # https://github.com/astral-sh/ruff/issues/4560
+    "F841",
+    "F842",
+    "RUF001",
+    "RUF012",
+    "RUF007",
+]
+
+# disable just linting (allow for formatting)
+lint.exclude = [
+    "*.ipynb",
+    "codegen-sh/**"
+]
