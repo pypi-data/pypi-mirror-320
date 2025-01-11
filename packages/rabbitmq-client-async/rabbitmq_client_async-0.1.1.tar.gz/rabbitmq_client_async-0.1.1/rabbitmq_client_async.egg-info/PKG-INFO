@@ -1,0 +1,16 @@
+Metadata-Version: 2.2
+Name: rabbitmq-client-async
+Version: 0.1.1
+Summary: Universal RabbitMQ client for Python microservices
+Author: Stanislav
+Author-email: nstanislass@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: aio_pika>=9.5.4
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: summary
