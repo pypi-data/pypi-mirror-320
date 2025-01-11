@@ -1,0 +1,41 @@
+[project]
+name = "llm_evaluation_in_reasoning"
+version = "1.0.1"
+description = "A project for the evaluation of reasoning in the LLM"
+readme = "README.md"
+license = { text = "MIT" }
+# license = "MIT"
+authors = [
+    {name = "Sheng Ren",email = "rensheng0410@gamil.com"},
+    {name = "Xiya Pang",email = "sianing0531@gmail.com"}
+]
+
+requires-python = ">=3.11"
+dependencies = [
+    "fire",
+    "litellm==1.54.1",
+    "python-dotenv",
+    "datasets",
+    "pathlib",
+    "colorlog",
+    "rich"
+]
+
+[[tool.mypy.overrides]]
+module = "datasets"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "fire"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "colorlog"
+ignore_missing_imports = true
+
+[tool.uv.workspace]
+exclude = ["LICENSE"]
+members = ["llm_evaluation_in_reasoning"]
+
+[project.scripts]
+llm_eval = "llm_evaluation_in_reasoning.app:app"

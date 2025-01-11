@@ -1,0 +1,7 @@
+fire
+litellm==1.54.1
+python-dotenv
+datasets
+pathlib
+colorlog
+rich
