@@ -1,0 +1,8 @@
+certifi>=2024.07.04
+paramiko>=3.4.0
+pyjwt>=2.0.0
+python_dateutil>=2.5.3
+requests>=2.32.0
+setuptools>=70.0.0
+six>=1.10
+urllib3>=1.26.17
