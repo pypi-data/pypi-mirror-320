@@ -1,0 +1,9 @@
+__pycache__
+dist/
+data/
+!qolab/data/
+.fuse_*
+build/
+doc_generator/autoapi/
+.tox/
+tmp/
