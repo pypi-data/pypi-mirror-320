@@ -1,0 +1,19 @@
+
+body, .panes {
+    width: 100%;
+    height: 100%;
+}
+
+.panes {
+    display: flex;
+    flex-direction: row;
+}
+
+.panes > * {
+    height: 100%;
+    width: 50%;
+}
+
+.snek-bedit {
+    height: calc(100% - 20px);
+}

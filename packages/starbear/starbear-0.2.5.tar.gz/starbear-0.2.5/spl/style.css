@@ -1,0 +1,17 @@
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 10px 800px 10px 1fr;
+    height: 100%;
+}
+
+.gutter.gutter-horizontal:hover {
+    transition: background-color 0.5s ease;
+    background: #f0f0f0;
+}
+
+.gutter.gutter-horizontal {
+    transition: background-color 0.5s ease;
+    cursor: col-resize;
+    height: 100%;
+}

@@ -1,0 +1,66 @@
+.snek-bedit-hl {
+    background: #fa5;
+}
+
+.snek-pin-pane .snek-bedit {
+    width: 600px;
+}
+
+.snek-bedit {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 10px);
+    border: 5px solid black;
+    border-bottom: 2px solid;
+    box-sizing: border-box;
+}
+
+.snek-bedit-editor {
+    flex-grow: 1;
+    background: white;
+    border: 5px solid white;
+}
+
+.snek-bedit-saved { border-color: green; }
+.snek-bedit-live { border-color: #8a0; }
+.snek-bedit-dirty { border-color: #f60; }
+.snek-bedit-error { border-color: red; }
+
+.snek-bedit-saved .snek-bedit-status { background-color: green; }
+.snek-bedit-live .snek-bedit-status { background-color: #8a0; }
+.snek-bedit-dirty .snek-bedit-status { background-color: #f60; }
+.snek-bedit-error .snek-bedit-status { background-color: red; }
+
+.snek-bedit-status {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 10px;
+}
+
+.snek-bedit-filename {
+    flex: 1;
+}
+
+.snek-bedit-state {
+    margin-left: 20px;
+}
+
+.snek-hidden {
+    display: none;
+}
+
+.snek-print-str {
+    white-space: pre-wrap;
+}
+
+.snek-bedit-readonly {
+    min-width: 500px;
+    width: 100%;
+    border: 1px solid #888;
+    box-sizing: border-box;
+}
+
+.snek-bedit-readonly > .snek-bedit-status {
+    color: #888;
+}

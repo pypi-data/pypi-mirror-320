@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <script src="https://unpkg.com/htmx.org@1.7.0" integrity="sha384-EzBXYPt0/T6gxNp0nuPtLkmRpmDBbjg6WmCUZRLXBBwYYmwAUxzlSGej0ARHX0Bo" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/hyperscript.org@0.9.5"></script>
+        <style>
+            .red {
+                color: red;
+            }
+            .box {
+                border: 1px solid black;
+                padding: 5px;
+                margin: 5px;
+            }
+            #bonjour {
+                background: #ff8;
+            }
+            #bouh {
+                background: #8ff;
+            }
+        </style>
+        <!-- <script src="https://unpkg.com/htmx.org/dist/ext/ws.js"></script> -->
+    </head>
+    <body>
+        <div hx-ws="connect:{{{route}}}/_socket" class="box">
+            grog
+        </div>
+        <div id="bonjour" class="box">
+            <i>Bonjour tout le monde :)</i>
+            <a href="rick">Hmm?</a>
+        </div>
+        <div id="bouh" class="box">
+            <b>BOUH!</b>
+        </div>
+        <div class="box" hx-get="bollocks">
+            gneh
+        </div>
+
+        <!-- <div hx-get="/about" class="box">
+            Let us see.
+        </div> -->
+        <!-- <div id="gourgane">
+            ...??
+        </div>
+
+
+        <div id="the_form">
+            <form hx-ws="send:submit" _="on submit add @disabled to <input/> in me">
+                <input name="chat_message">
+            </form>
+        </div> -->
+
+
+        <!-- <div hx-ext="ws" ws-connect="/feves">
+            <div id="gourgane">
+                ...
+            </div>
+            <form ws-send>
+                <input name="chat_message">
+            </form>
+        </div> -->
+    </body>
+</html>

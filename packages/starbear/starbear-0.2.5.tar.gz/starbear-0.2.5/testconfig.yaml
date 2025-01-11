@@ -1,0 +1,30 @@
+starbear:
+  server:
+    port: 8008
+    plugins:
+      # permissions:
+      #   class: starbear.server.plugins.permissions:Permissions
+      #   file: wow.yaml
+      #   defaults:
+      #     "/**": ["breuleux@gmail.com"]
+      #     "/world/venus": ["olivier.breuleux@mila.quebec"]
+      # tokens:
+      #   class: starbear.server.plugins.api_tokens:APITokens
+      #   file: tk.yaml
+      #   defaults:
+      #     "quackers":
+      #       email: "breuleux@gmail.com"
+      #       expiry: null
+      #       plain: true
+      oauth:
+        class: starbear.server.plugins.oauth:OAuth
+        name: google
+        server_metadata_url: "https://accounts.google.com/.well-known/openid-configuration"
+        environ:
+          GOOGLE_CLIENT_ID: 471527271261-h19a7i5q2m8okoed1j5iuamk1l9lb4ge.apps.googleusercontent.com
+          GOOGLE_CLIENT_SECRET: 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
+        client_kwargs:
+          scope: "openid email profile"
+          prompt: "select_account"
+      # session:
+      #   class: starbear.server.plugins.session:Session
