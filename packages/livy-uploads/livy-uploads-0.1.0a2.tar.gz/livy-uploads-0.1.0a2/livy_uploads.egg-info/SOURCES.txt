@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+livy_uploads/__init__.py
+livy_uploads/commander.py
+livy_uploads/commands_remote.py
+livy_uploads/endpoint.py
+livy_uploads/magics.py
+livy_uploads/uploader.py
+livy_uploads.egg-info/PKG-INFO
+livy_uploads.egg-info/SOURCES.txt
+livy_uploads.egg-info/dependency_links.txt
+livy_uploads.egg-info/not-zip-safe
+livy_uploads.egg-info/requires.txt
+livy_uploads.egg-info/top_level.txt
