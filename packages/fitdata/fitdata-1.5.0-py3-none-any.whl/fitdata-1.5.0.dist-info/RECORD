@@ -1,0 +1,12 @@
+fitdata/__init__.py,sha256=9ntcjXMUmKRDpV6hq-O1fJ8zg80NcD2JWFMrpPoVL6A,2205
+fitdata/basic_calc.py,sha256=xbOA5fY58ay0hcwoH2N23eZSRmi8J6fQJaiWekDEXM4,4194
+fitdata/errors.py,sha256=vUPtv3_ykSe2q7AhhzOMpQhoBUIjA6orBslxKYecJRs,379
+fitdata/fitdata.py,sha256=NPFIjQgo21SI3dSHyPTiGnk8jLLMuiDha4uGFqUyLRs,5668
+fitdata/interfaces.py,sha256=PT0NyRQTggQn-RcQoHv0SebcTUfR-coMbf2MfCE2IUE,3591
+fitdata/objective.py,sha256=fMIe59tTJ6psBpR2X86W58NotrLAWzpeoKg_BbaRBPE,6882
+fitdata/other_calc.py,sha256=vjcSL4svmVzg6DHWMEerk2WntBAyUPqCYgyuEGkMQjs,8173
+fitdata/weeklyprogression.py,sha256=ZrJryp0vgX5edPegc-xaof7cWgHEbSq9f9F-QIxS3VQ,2536
+fitdata-1.5.0.dist-info/METADATA,sha256=9jjupL6UjN33dPW27b8lHsu-cooRVK3BuznZ-HPmALA,2222
+fitdata-1.5.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+fitdata-1.5.0.dist-info/top_level.txt,sha256=sghVG4pUZ-jTXJNn00dOt_5WMLJLPviMBMeTRALiTZw,8
+fitdata-1.5.0.dist-info/RECORD,,

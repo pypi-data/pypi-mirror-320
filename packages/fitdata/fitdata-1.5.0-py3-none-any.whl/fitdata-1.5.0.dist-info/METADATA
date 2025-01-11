@@ -1,0 +1,57 @@
+Metadata-Version: 2.2
+Name: fitdata
+Version: 1.5.0
+Summary: A Python package for managing fitness-related data and goals.
+Home-page: https://gitlab.com/misternobody01/fitdata.git
+Author: Monsieur Nobody
+Author-email: monsieurnobody01@gmail.com
+License: MIT
+Keywords: fitness health bmi bmr tdee macros python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: pandas>=1.3.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+## Overview
+
+The **FitData** package provides tools for analyzing and managing health-related data and fitness goals. It offers features for validating user data, calculating essential metrics (e.g., BMI, BMR, TDEE), managing macronutrient distributions, and tracking weekly progress.
+
+Designed for developers, this package simplifies the process of integrating fitness calculations and data analysis into applications.
+
+---
+
+## Features
+
+1. **Data Validation**
+   - Ensures user-provided data is complete, consistent, and properly formatted.
+
+2. **Core Calculations**
+   - **BMI (Body Mass Index)**: Calculates BMI and determines the corresponding category.
+   - **BMR (Basal Metabolic Rate)**: Computes the minimum calories required to maintain basic physiological functions.
+   - **TDEE (Total Daily Energy Expenditure)**: Estimates daily calorie burn based on activity levels.
+
+3. **Advanced Calculations**
+   - **Caloric Adjustments**: Calculates the caloric surplus/deficit required for fitness goals.
+   - **Duration Estimation**: Estimates the time required to achieve a target weight.
+   - **Macronutrient Management**: Distributes protein, carbs, fat, and other macros across meals.
+
+4. **Progress Tracking**
+   - Tracks weekly progression and provides feedback on weight changes.
+
+---
