@@ -1,0 +1,11 @@
+lupa-2.4.dist-info/top_level.txt,sha256=zBjq_OEwVlKBUT25L2ENcMO-9XdwVQSN7X6VHyH7Pcg,5
+lupa-2.4.dist-info/RECORD,,
+lupa-2.4.dist-info/LICENSE.txt,sha256=lXr-SRPfxGn9YFQdhHpYHFvd1roMy3I5DteMdYN3aKE,2231
+lupa-2.4.dist-info/METADATA,sha256=Omgz31FFbB2EQxKmmcWWKqNDgMXMTz--wxEKhJdXUdc,58085
+lupa-2.4.dist-info/WHEEL,sha256=tHbFrYI0jETZgIFOBS58jTlqnURKakGB4pJ-qrz4BlM,153
+lupa/lua51.cpython-313-aarch64-linux-gnu.so,sha256=Cvb_fAmEzPymigkIe7xEyJKjK_-I4TtkrwUEPxsX7vA,606712
+lupa/lua52.cpython-313-aarch64-linux-gnu.so,sha256=ZV7B2meBQ3wKlSNrVsesCjgBW27nd09dYgB4xpH1eQY,606840
+lupa/__init__.py,sha256=c99ILOqbgXcktoS1YsqNLg9juNuAJZ_Yxm4VGEANkqo,3001
+lupa/lua53.cpython-313-aarch64-linux-gnu.so,sha256=rdFyQ3QnDco8221VKoL1G4q26_pgVTK6QDFLgGXfbhQ,606800
+lupa/lua54.cpython-313-aarch64-linux-gnu.so,sha256=Q0ELP8Xl-CZ6rB5qSbJANFceMMNckHS0HzVDNS_rN38,672384
+lupa/version.py,sha256=4aubADCFTeP14Ob-WxGATctabBoP4svSqiDpOP0Ddbg,20
