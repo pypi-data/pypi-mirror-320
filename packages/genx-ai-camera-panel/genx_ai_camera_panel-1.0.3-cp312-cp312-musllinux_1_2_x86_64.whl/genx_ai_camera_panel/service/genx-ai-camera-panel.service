@@ -1,0 +1,11 @@
+[Unit]
+Description=GenX AI Camera Panel Service
+After=network.target
+
+[Service]
+ExecStart=/opt/venv/bin/genx-camera-panel listen
+Restart=always
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
