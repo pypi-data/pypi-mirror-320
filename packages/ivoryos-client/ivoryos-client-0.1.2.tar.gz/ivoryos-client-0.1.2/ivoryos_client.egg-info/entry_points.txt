@@ -1,0 +1,3 @@
+[console_scripts]
+ivoryos-client = ivoryos_client.client:main
+

@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+example/__init__.py
+example/generated_classes.py
+ivoryos_client/__init__.py
+ivoryos_client/client.py
+ivoryos_client/generated_classes.py
+ivoryos_client/version.py
+ivoryos_client.egg-info/PKG-INFO
+ivoryos_client.egg-info/SOURCES.txt
+ivoryos_client.egg-info/dependency_links.txt
+ivoryos_client.egg-info/entry_points.txt
+ivoryos_client.egg-info/requires.txt
+ivoryos_client.egg-info/top_level.txt
