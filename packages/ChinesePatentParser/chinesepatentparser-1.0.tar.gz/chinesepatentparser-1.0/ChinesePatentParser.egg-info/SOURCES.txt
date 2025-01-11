@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+ChinesePatentParser/__init__.py
+ChinesePatentParser/general_parser.py
+ChinesePatentParser/patent_instance.py
+ChinesePatentParser/patent_parser.py
+ChinesePatentParser/patent_template.py
+ChinesePatentParser/simple_bidict.py
+ChinesePatentParser.egg-info/PKG-INFO
+ChinesePatentParser.egg-info/SOURCES.txt
+ChinesePatentParser.egg-info/dependency_links.txt
+ChinesePatentParser.egg-info/requires.txt
+ChinesePatentParser.egg-info/top_level.txt
+tests/__init__.py
+tests/test.py
