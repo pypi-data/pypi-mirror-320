@@ -1,0 +1,2 @@
+[console_scripts]
+genx-camera-panel = genx_ai_camera_panel.main:main
