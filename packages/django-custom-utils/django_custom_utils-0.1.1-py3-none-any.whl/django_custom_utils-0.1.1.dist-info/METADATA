@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: django-custom-utils
+Version: 0.1.1
+Summary: A collection of utilities that makes working with Django and DRF easier.
+Home-page: https://github.com/nizdolin/django-custom-utils.git
+License: MIT
+Author: Daniil Nizdolin
+Author-email: nizdolin@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: django (>=4.2.8,<5.0.0)
+Requires-Dist: django-admin-list-filter-dropdown (>=1.0.3,<2.0.0)
+Requires-Dist: django-filter (>=23.5,<24.0)
+Requires-Dist: djangorestframework (>=3.14.0,<4.0.0)
+Requires-Dist: uuid6 (>=2023.5.2,<2024.0.0)
+Project-URL: Repository, https://github.com/nizdolin/django-custom-utils.git
+Description-Content-Type: text/markdown
+
+# django-custom-utils
+A collection of utilities that makes working with Django and DRF easier.
+
+PyPI: https://pypi.org/project/django-custom-utils/
+
