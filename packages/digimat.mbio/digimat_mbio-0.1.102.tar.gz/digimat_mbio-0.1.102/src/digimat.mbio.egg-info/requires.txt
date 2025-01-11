@@ -1,0 +1,10 @@
+digimat.lp
+digimat.units
+ptable
+rich
+pymodbus==3.7.2
+requests
+httpx
+openpyxl
+ipcalc
+setuptools
