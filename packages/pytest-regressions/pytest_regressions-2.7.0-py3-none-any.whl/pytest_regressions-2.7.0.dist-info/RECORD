@@ -1,0 +1,17 @@
+pytest_regressions/__init__.py,sha256=x44FTuKy7qlDqgjRznrZ9qfCnlWAoMSOOx6YdOctwac,589
+pytest_regressions/common.py,sha256=an_fZQVm6oDce2BPfV4tVmn6TlwpT3-7j6km9MNK03c,8670
+pytest_regressions/data_regression.py,sha256=c7CEEw8rXtAK7TiGWKa6N2JZQBgZgSDR5tXWIVrow9o,4052
+pytest_regressions/dataframe_regression.py,sha256=ILwerN8XOqxXVb6jVumcI--JCYYUnDA05Zg6dXfUylU,10893
+pytest_regressions/file_regression.py,sha256=cN-oHCXHzfB2NnIU0gg-dfjyeOe_rfI-UgWpN-r8FW8,3850
+pytest_regressions/image_regression.py,sha256=GqSCr0AFyhSTb9vp1t3vNQX35t3BIwzZSJkDrt6uhAQ,6513
+pytest_regressions/ndarrays_regression.py,sha256=IHClgFqMXA5OQeCXbWgRBZrjSfsHkfiQxd_EmPp2Di8,15119
+pytest_regressions/num_regression.py,sha256=n23bsp1uchL4nXcJFQmiZ8TXBlmsO0c7ZsP0lpGXa3A,4952
+pytest_regressions/plugin.py,sha256=hs-2RpdkzR_KstO9zG8QUx0ylyUcZB-RKR-O07IBoMw,5800
+pytest_regressions/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_regressions/testing.py,sha256=sJeyErSU4shBnrfeDgWwlDUvJVTDb02ay_fRO0qfkJg,3125
+pytest_regressions-2.7.0.dist-info/LICENSE,sha256=Gc52Dm8rcNUL2_XuRB-x82uN4nLGS__xwrv5vwjCFJM,1072
+pytest_regressions-2.7.0.dist-info/METADATA,sha256=nFEqTdwAsvMCJjAO8isGBrt1_eIDdDXTpnsskovTqm4,4881
+pytest_regressions-2.7.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pytest_regressions-2.7.0.dist-info/entry_points.txt,sha256=ZJ11KZrOof9WV8aOFGFr9MSp-zpBZVkP9dUs7AOMm0I,51
+pytest_regressions-2.7.0.dist-info/top_level.txt,sha256=SH-1VsFz8V5Btk3x6LUB0aOxI9bR-htJAa5zpKMgmK0,19
+pytest_regressions-2.7.0.dist-info/RECORD,,
