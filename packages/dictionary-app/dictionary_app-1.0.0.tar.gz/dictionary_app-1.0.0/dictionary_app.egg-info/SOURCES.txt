@@ -1,0 +1,15 @@
+README.md
+setup.py
+dictionary_app.egg-info/PKG-INFO
+dictionary_app.egg-info/SOURCES.txt
+dictionary_app.egg-info/dependency_links.txt
+dictionary_app.egg-info/top_level.txt
+src/__init__.py
+src/data_manager.py
+src/dictionary_manager.py
+src/gui.py
+src/utils.py
+tests/test_data_manager.py
+tests/test_dictionary_manager.py
+tests/test_gui.py
+tests/test_utils.py
