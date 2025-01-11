@@ -1,0 +1,11 @@
+PyWrikeAssist/__init__.py,sha256=NyWWPVZGQk1jCx_TvzYWVVadJA98AI0cmsYEpzV1K3I,285
+PyWrikeAssist/create_delete_folders.py,sha256=41yXW5APtiJHfKU_nv-U5QIXMOwpbfPBhQ9hHzIWTyA,5199
+PyWrikeAssist/create_update_delete_tasks.py,sha256=Ppz3MXGTTBugvt1FW6mXMCKANccbL-zovXY_YoYPcb0,8967
+PyWrikeAssist/new_space.py,sha256=u6JuJ82Vnca4DQayS46q8r6D1Mj6JgczVyehPC8bjTk,2770
+PyWrikeAssist/propagate_tasks.py,sha256=i7ejS4HhyPy77pRdjhb4cYO4o5AWr-KWFvlz4B4h9DI,6957
+PyWrikeAssist/wrike_export.py,sha256=xsbd9PDtABYpQoMG2113yJFl3aWelHOcnw_3j7mODas,2299
+PyWrikeAssist/wrike_export_json.py,sha256=IFYLRSruVWpE5WCLitBfMnSiMrwnpUgbcFiskc4LPnY,2005
+PyWrikeAssist-0.72.dist-info/METADATA,sha256=783NgoUQgY7S1FeNVo9z1WVD47vlbWAgnfoqIpCWzYg,942
+PyWrikeAssist-0.72.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+PyWrikeAssist-0.72.dist-info/top_level.txt,sha256=Yx-oHIXJIGUlBJKXmX41JcdCP794en1wtuno_yggAwE,14
+PyWrikeAssist-0.72.dist-info/RECORD,,
