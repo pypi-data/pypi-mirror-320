@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: llm-wrangler
+Version: 0.3.0
+Summary: LLM utilities for handling inputs and outputs.
+Home-page: https://github.com/lukemiloszewski/llm-wrangler
+License: MIT
+Author: Luke Miloszewski
+Author-email: lukemiloszewski@gmail.com
+Requires-Python: >=3.11.0,<3.12.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: typer (>=0.6.1,<0.7.0)
+Project-URL: Changelog, https://github.com/lukemiloszewski/llm-wrangler/releases
+Project-URL: Repository, https://github.com/lukemiloszewski/llm-wrangler
+Description-Content-Type: text/markdown
+
+# README
+
+`llm-wrangler` is a CLI utility to develop with the inputs and outputs of llm-generated content.
+
+## Installation
+
+```shell
+pip install llm-wrangler
+```
+
+## Usage
+
+```shell
+# get prompt needed for correct llm output
+llm-wrangler prompt
+
+# scaffold code structure form llm output
+llm-wrangler scaffold-output examples/input.txt output
+```
+
+- run with `uv`:
+
+```shell
+uv tool run llm-wrangler prompt
+uv tool run llm-wrangler scaffold-output input.txt output_folder
+```
+
+## Development
+
+- to publish to `pypi`, configure token:
+
+```shell
+poetry config pypi-token.pypi ...
+```
+
+## Future Scope
+
+- input/output template integration
+- cookiecutter integration
+
