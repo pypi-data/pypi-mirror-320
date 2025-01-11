@@ -1,0 +1,13 @@
+edgegap_logging/__init__.py,sha256=J0blGm_gIbAOCvZL_42vh99NGapN-qdjD1z1HxxS8l4,559
+edgegap_logging/_configuration.py,sha256=Z_x6F2IacSNA_bVjLBmwdr6rW5JKRMwvdz8IMz7ILkg,847
+edgegap_logging/_context_logger.py,sha256=wAbvejLaUft_5qbq-8zHVtptdTyIwNvDSy42pYdfTAE,1731
+edgegap_logging/_contexts/__init__.py,sha256=CTvSUbnW-JI2yr-H_-v0f_wFk0louo3wFz3dFGJknxM,226
+edgegap_logging/_contexts/_contexts.py,sha256=cA9exy7VAUdZpaPT6FpG1FLAuAeX8M_ImtAeNRbTBfU,554
+edgegap_logging/_contexts/_http_header.py,sha256=I59grUscNZqs1r2uQd62OXL2yTZMdusoLGuFBLLSHGI,691
+edgegap_logging/_format.py,sha256=GN2G8I4oEPP6q040xcWCsf5jk-NvNacZ5xoMYWhUu48,942
+edgegap_logging/_logging.py,sha256=b4Yz7Kbhw6vPYNFcZB6wbaTXHbfdwUAeI1ombl6GKKA,1299
+edgegap_logging/_v1_context_logger.py,sha256=AZeAkW-hl-Blm1lV2TSaIl1vQCYl4hABRF9m4o8fm7E,1422
+edgegap_logging-1.12.6.dist-info/LICENSE,sha256=mYYtVBrHBTkSpFkacS5_MQm9GZ-2hrNP759ExfdrX18,1993
+edgegap_logging-1.12.6.dist-info/METADATA,sha256=5dF-Ahe_a1kKRX8eMpV04zf3JWgtz6q7CYp0FTnRfgY,2878
+edgegap_logging-1.12.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+edgegap_logging-1.12.6.dist-info/RECORD,,
