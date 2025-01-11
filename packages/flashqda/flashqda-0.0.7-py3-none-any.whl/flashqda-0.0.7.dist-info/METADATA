@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: flashqda
+Version: 0.0.7
+Summary: A package for using Large Language Models for qualitative data analysis.
+Author-email: Norman Kearney <norman.kearney@protonmail.com>
+Project-URL: Homepage, https://github.com/nmkearney/flashqda
+Project-URL: Issues, https://github.com/nmkearney/flashqda/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: tqdm
+Requires-Dist: openai
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: nltk
+
+# FlashQDA
+
+This is a package for using Large Landuage Models for qualitative data analysis.
