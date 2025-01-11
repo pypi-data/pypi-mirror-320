@@ -1,0 +1,258 @@
+\section{Introduction}
+
+\subsection{Texture Tomography}
+
+Motivation and Output
+
+Description of the experiment
+
+Get in touch with Beamlines
+
+\subsection{Installation}
+
+TexTOM was written and tested in Python 3.11 and in principal requires only a python installation (3.9 to 3.12) and a terminal.
+It can be used via scripts, jupyter notebooks or in iPython mode through the terminal.
+
+The TexTOM core for reconstructions currently depends on the packages Scipy, Numba, H5py and Orix.
+The recommended installation using the full pipeline, including also data integration and sample alignment requires the installation of pyFAI and Mumott.
+
+We recommend creating a virtual venv or conda environment and installing the package via pip:
+
+\begin{verbatim}
+    python -m venv ~/.venv/textom
+    source ~/.venv/textom/bin/activate
+\end{verbatim}
+or
+\begin{verbatim}
+    conda create --name textom python=3.11
+    conda activate textom
+\end{verbatim}
+then
+\begin{verbatim}
+    pip install textom
+\end{verbatim}
+
+It can also be built from source: 
+\url{https://gitlab.fresnel.fr/textom/textom/}.
+
+To start TexTOM in iPython mode, make sure your environment is activate and type textom.
+All TexTOM core functions (\ref{sec:functions}) will be available in the namespace.
+
+You can also import them into a script or jupyter notebook:
+\begin{verbatim}
+    from textom import *
+\end{verbatim}
+
+\section{Configuration}
+After installing or updating TexTOM, we recommend opening the configuration file primarily to set how many CPUs your machine has
+for data processing. Type textom\_config in your terminal and it will open the config file in your standard
+text editor. A standard config file will look like the following:
+\begin{verbatim}
+    import numpy as np # don't delete this line
+    ##################################################
+    
+    # Define how many cores you want to use 
+    n_threads = 8 
+    
+    # Choose if you want to use a GPU for integration and alignment
+    use_gpu = True
+    
+    # Choose your precision
+    # recommended np.float64 for double or np.float32 for single precision
+    data_type = np.float32
+\end{verbatim}
+After making your changes, you can save the file and close it.
+If you plan to use a GPU for integration, you need to additionally install OpenCL, check the pyFAI documentation for
+further information (sec. \ref{sec:integration}).
+
+\section{Workflow}
+
+\subsection{Data acquisition}
+Recording data for texture tomography is a great challenge and can only be done at appropriate synchrotron beamlines.
+This package contains a few scripts for the experiments but we recommend contacting a beamline scientist experienced in tensor/texture tomography or 
+3D-XRD in order to create acquisition scripts suitable for the beamline.
+
+Beamlines with experience in tensor/texture tomography:
+
+ID13, ID15A at ESRF, Grenoble
+
+\subsection{Data integration}\label{sec:integration}
+The first step in data processing is integration, i.e. azimutal rebinning ("caking") of the carthesian 2D data.
+Here we rely on the pyFAI package (\url{https://pyfai.readthedocs.io}).
+This part already requires good knowledge of your data, as you do not want to miss any peaks when choosing the
+integration range. We recommend to do a test-integration during the experiment, to set up the correct
+.poni-file which is needed for the integration. This file defines the geometry of the experiment and can be
+created using the command pyFAI-calib. Make sure to also collect the correct detector mask and optionally files
+for flatfield and darkcurrent correction.
+
+To start the integration, in your terminal navigate to a directory which will further contain all 
+textom analysis data (further labelled sample\_dir).
+\begin{verbatim}
+    cd /path/to/textom/sample_dir
+\end{verbatim}
+Then start textom by typing textom in your terminal.
+You can start the integration using the command integrate(), upon which a file containing all necessary
+parameters will open:
+\begin{verbatim}
+    ############ Input ###############
+    path_in = 'path/to/your/experiment/overview_file.h5'
+    h5_proj_pattern = 'mysample*.1'
+    h5_data_path = 'measurement/eiger'
+    h5_tilt_angle_path = 'instrument/positioners/tilt' # tilt angle
+    h5_rot_angle_path = 'instrument/positioners/rot' # rotation angle
+    h5_ty_path = 'measurement/dty' # horizontal position
+    h5_tz_path = 'measurement/dtz' # vertical position
+    h5_nfast_path = None # fast axis number of points, None if controt
+    h5_nslow_path = None # slow axis number of points, None if controt
+    h5_ion_path = 'measurement/ion' # photon counter if present else None
+    
+    # Integration mode
+    mode = 2 # 1: 1D, 2: 2D, 3: both
+    
+    # parallelisation
+    n_tasks = 8
+    cores_per_task = 16
+    
+    # Parameters for pyFAI azimuthal integration
+    rad_range = [0.01, 37] # radial range
+    rad_unit = 'q_nm^-1' # radial parameter and unit ('q_nm^-1', ''2th_deg', etc)
+    azi_range = [-180, 180] # azimuthal range in degree
+    npt_rad = 100 # number of points radial direction
+    npt_azi = 120 # number of points azimuthal direction
+    npt_rad_1D = 2000 # number of points radial direction
+    int_method=('bbox','csr','cython') # pyFAI integration methods
+    poni_path = 'path/to/your/poni_file.poni'
+    mask_path = 'path/to/your/mask.edf'
+    polarisation_factor= 0.95 # polarisation factor, usually 0.95 or 0.99
+    flatfield_correction = None
+    solidangle_correction = True
+    darkcurrent_correction = None
+    ##############################
+\end{verbatim}
+The first part contains information about your data. We assume that these are stored in .h5 files as common practice
+at the ESRF. The first line is the overview file that contains links to all datasets. In the second line you can
+specify which files should be integrated using a pattern with a * serving as a placeholder for other characters.
+In the following there are the .h5 internal paths to the necessary metadata for TexTOM, which will be carried into the
+integrated files. h5\_nfast\_path and h5\_nslow\_path are only relevant if the experiment was performed in scanning mode,
+upon which all data of one projection will be in the same data array with the horizontal and vertical position not specified.
+If the experiment was performed in continuous rotation mode, these parameters can be set to None.
+The last parameter is optional for the measurement of an ionisation chamber or diode, which records the incoming photon
+flux during the respective measurement.
+
+Then choose the integration mode, 2D is required for TexTOM, 1D can be done additionally e.g. for diffraction tomography.
+
+In the next block declare on how many CPUs you want to work parallely, the n\_tasks specifies how many files will be integrated
+at the same time, cores\_per\_task means how many CPUs work on each task.
+
+The last block are parameters for pyFAI, of particular importance are the radial range, which should cover your peaks
+and the number of points (npt\_rad), which should be enough to resolve the individual peaks (although the code will
+also handle overlapping peaks or peaks which are in a single bin to the cost of some information loss).
+The required angular resolution depends on the sharpness of the features in the data in azimutal direction,
+keep in mind that it is recommended to use a similar angular resolution for the construction of orientation
+distribution functions and diffractlets, where the computation time will scale with the power of 3 of the number
+of angular sampling points npt\_azi.  
+Furthermore, point to the files you received from your beamline and specify angular resolution etc.
+
+\subsection{Alignment}
+
+Data is aligned fully automatically using the function:
+\begin{verbatim}
+    align_data( 
+        pattern='.h5', sub_data='data_integrated', 
+        q_index_range=(0,5), q_range = False,
+        mode='optical_flow', crop_image=False, 
+        regroup_max=16,
+        redo_import=False, flip_fov=False, 
+        align_horizontal=True, align_vertical=True,
+        pre_rec_it = 5, pre_max_it = 5,
+        last_rec_it = 40, last_max_it = 5,
+          )
+\end{verbatim}
+
+The first step of the alignment is the sorting of the data. 
+Go to the data\_integrated or data\_integrated\_1d directory created by the integration script
+and make sure that all .h5 files are valid datasets, which you 
+want to use for the reconstruction (other file extensions will be ignored). 
+Move files that you don't want to use to a subfolder (e.g. named excluded).
+The program uses all data in the sub\_data directory with pattern in the filename.
+By default it uses data in data\_integrated/, you can use others by typing e.g. align\_data(sub\_data='data\_integrated\_1d')
+
+Next, choose the q-range you want to use for alignment. You can use indices in the to restrain the q-values
+using the q\_index\_range parameter or give a q-range directly in the units specified in the radial\_units
+field in the data (this parameter has priority if specified). TexTOM will average over all data in this range 
+and treat them as scalar tomographic data for alignment. We recommend using either the SAXS region of 
+the sample or a bright peak with little azimutal variation.
+
+TexTOM uses the alignment code from the Mumott tensor tomography package, which contains 2 pipelines.
+By default we use the optical flow alignment, but you can choose phase matching alignment in the parameters.
+If you want to crop the projections, set the crop\_image parameter to the desired borders (e.g. ((0,-1),(10,-10))
+for the full image in x-direction, while cropping 10 points at the top and bottom)
+Take note that cropping only works with the phase matching alignment, which will be chosen automatically if 
+crop\_image is defined.
+
+The textom alignment pipeline will downsample the data by combining blocks of 2x2 pixels until arriving at the 
+sampling defined by regroup\_max, by default 16, corresponding to a downsampling to blocks of 16x16 pixels.
+Then the alignment will start at the lowest sampling, take the found values and proceed to the next highest until it reaches the
+original sampling. This approach has proven efficient, but can be omitted by setting regroup\_max=1.
+
+For the remaining parameters see the description further down.
+
+When you start the alignment, it will open a file labelled geometry.py, which contains information about the
+experimental setup. Most parameters are equivalent to the Mumott notation (\url{https://mumott.org/tutorials/inspect_data.html#Geometry}),
+which defines the arrangement of sample, detector, rotation and tilt angles.
+In addition, you need to define beam diameter, step size and scanning mode.
+
+When you close and save the file, it will be automatically stored in sample\_dir/analysis/geometry.py and in the following,
+this file will be used. You can also create a geometry file in sample\_dir/analysis/ prior to starting the alignment,
+then this file will directly be used (e.g. when you have several samples from the same beamtime, copy the geometry file after
+defining it for the first sample.). The default values are given for the configuration published in Frewein et al. IUCRJ (2024).
+
+After aligning, function will create the file analysis/alignment\_result.h5 in the sample directory, which contains the shifts found
+in the process. Refer to this file for checking sinograms and tomograms after alignment.
+You can also use the funciton check\_alignment\_consistency() to check if there are projections wich deviate from the
+model. Inspect them and their agreement with the data using check\_alignment\_projection(g), where g is an integer number
+corresponding to the projection number. This number is assigned after sorting the data files alphabetically.
+The x-axis label in the plot shown by check\_alignment\_consistency() uses the same labelling.
+
+If you choose to add, remove or change data or changing the q-range after doing an alignment, redo the alignment with the
+setting redo\_import=True.
+Else it will not respect the changes you made. If you just want to change the number of interations or the regrouping,
+this is not necessary.
+
+\subsection{Model}
+Next you have to calculate the model, which consists of 2 parts: Diffractlets and Projectors.
+
+Diffractlets are calculated from the crystal structure given by a .cif file, you have to provide.
+When you start the model calculation using make\_model(), you will receive another file to edit (crystal.py), containing
+information about the location of your .cif file, X-ray energy, q-range and desired angular resolution.
+Save the file and it will be copied to sampel\_dir/analysis/crystal.py.
+The function will create the file crystal.h5, containing the diffractlets. As this calculation can be lengthy,
+it is advised to perform it in advance and reuse crystal.h5 for other samples. If sample\_dir/analysis/ contains
+already a crystal.h5 file, it will use this without asking.
+
+The projectors contain information on which voxels contribute to which pixel in the data and
+depend on a finished alignment. Once you finished the alignment you can start calculating the projectors,
+which requires some more user input for masking the sample. The program will open a histogram of voxels based on the
+tomogram resulting from alignment. Choose the lower cutoff to mask out voxels with low or zero density of crystallites,
+upon which you will be shown a 3D outline of the sample.
+You can remove other parts of the sample using the input in the figure.
+After processing, this will create a file analysis/tomo.h5, which is used in further processing of this specific sample.
+
+\subsection{Data Pre-processing}
+
+When the model is ready, the data has to pass through a pre-processing step, where it is filtered according to
+which data is masked, then renormalized and outliers are removed. You will be also asked to choose the q-ranges
+around the peaks you would like to use for optimization, and to define the detector mask.
+Text files will be created, these can be re-used for other samples and will be automatically chosen if present
+in the analysis/ directory.
+There is also a simple background subtraction pipeline, which can be turned on using the argument draw\_baselines=True. 
+Note that this feature is still experimental and might not work with every sample.
+
+
+
+\subsection{Optimization}
+If all previous steps have been performed, you can start an optimization.
+
+
+\subsection{Visualisation}
+
