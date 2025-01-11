@@ -1,0 +1,37 @@
+Metadata-Version: 2.2
+Name: shps
+Version: 0.0.6
+Author-email: "Claudio M. Perez" <50180406+claudioperez@users.noreply.github.com>
+Project-URL: Repository, http://github.com/claudioperez/shps
+Keywords: seismic,earthquake
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: sympy
+Requires-Dist: veux
+Requires-Dist: matplotlib
+
+# shps
+
+<!--
+
+Shape functions, clean and simple.
+
+frame
+    mesh
+    state
+    shape
+    bases
+    gauss
+    nodes
+
+rotor
+
+rigid
+
+plane
+    shape
+solid
+
+-->
+
