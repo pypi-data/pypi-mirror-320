@@ -1,0 +1,34 @@
+module read_precisions
+    implicit none
+    integer, parameter                         :: number_of_rpe_variables = %NUMBER_OF_RPE_VARS%
+    integer, dimension(0:number_of_rpe_variables), public :: emulator_variable_precisions = 52
+    logical , dimension(0:number_of_rpe_variables), public :: variable_is_used = .false.
+    CHARACTER(len=256),  dimension(0:number_of_rpe_variables), public :: variable_info
+    public read_variable_precisions, print_used_variables
+
+    contains
+        subroutine fill_variable_info
+            %VARIABLES_INFO%
+        end subroutine fill_variable_info
+
+        subroutine read_variable_precisions
+            integer :: ierr
+            namelist /precisions/ emulator_variable_precisions
+            open(10, iostat=ierr,file='namelist_precisions')
+            read(10, nml=precisions)
+            close(10)
+        end subroutine read_variable_precisions
+
+        subroutine print_used_variables
+            integer :: ii
+            integer :: ierr
+            call fill_variable_info
+            open(10,iostat=ierr,file="used_variables.txt")
+            write(10,"(A)"), "#   ID                 name                  subprogram               module           is_used"
+            write(10,"(A)"), "##############################################################################################"
+            do ii = 0, number_of_rpe_variables-1
+               write(10,"(I5, A, A, A, L1)"), ii, "    ", variable_info(ii) ,"    ", variable_is_used(ii)
+            end do
+        end subroutine print_used_variables
+
+end module

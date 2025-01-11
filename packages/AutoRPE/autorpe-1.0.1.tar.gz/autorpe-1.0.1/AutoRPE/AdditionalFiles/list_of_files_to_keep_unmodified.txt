@@ -1,0 +1,31 @@
+# List of files where the real variables will not be replaced with type(rpe_var).
+# Hashtag starting lines are comments that are ignored.
+
+# The sourcefiles below are an example of what is keept in real variables in the case of NEMO.
+
+# Routine to measure time spent in different routines. Useless and
+timing.f90
+
+
+# Inuput/Output routines
+iom.f90
+iom_nf90.f90
+iom_rstdimg.f90
+iom_ioipsl.f90
+iom_def.f90
+
+# Communication routines
+lib_mpp.f90
+lbclnk.f90
+lbcnfd.f90
+obs_mpp.f90
+lib_fortran.f90
+
+
+# Bonus track
+icblbc.f90
+
+icewri.f90
+
+# Panther files
+mo_mpi.f90

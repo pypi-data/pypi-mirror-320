@@ -1,0 +1,1 @@
+This folder contains different dummy cases that can be used to test the tool.

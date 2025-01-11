@@ -1,0 +1,6 @@
+[console_scripts]
+AutoRPE-AdaptNamelists = AutoRPE.Scripts.AdaptNamelists:main
+AutoRPE-CastFix = AutoRPE.Scripts.CastFix:main
+AutoRPE-ImplementMixedtoSources = AutoRPE.Scripts.ImplementMixedtoSources:main
+AutoRPE-ImplementRPEtoSource = AutoRPE.Scripts.ImplementRPEtoSource:main
+AutoRPE-MergeUsedVariables = AutoRPE.Scripts.MergeUsedVariables:main

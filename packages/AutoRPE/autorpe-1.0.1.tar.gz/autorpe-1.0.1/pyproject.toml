@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.setuptools]
+packages = [
+   "AutoRPE",
+   "AutoRPE-Tests",
+   "AutoRPE.Scripts",
+   "AutoRPE.AdditionalFiles",
+   "AutoRPE.UtilsRPE",
+   "AutoRPE.UtilsRPE.Classes",
+   "AutoRPE.UtilsWorkflow",
+   "AutoRPE.UtilsRPE.postproc",
+   "AutoRPE.UtilsRPE.preprocess",
+   "AutoRPE.Shared",
+
+]
+
+[project]
+name = "AutoRPE"
+version = "1.0.1"
+authors = [
+    {name = "Oriol Tintó Prims", email = "oriol.tinto@bsc.es"},
+]
+
+description = "AutoRPE is a tool designed to help with the optimization of numerical precision of Computational Science models writen in FORTRAN."
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["mixed precision", "HPC"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "numpy",
+  "networkx",
+  "tqdm",
+  "fprettify",
+]
+
+requires-python = ">=3.9"
+
+[project.urls]
+homepage = "https://earth.bsc.es/gitlab/ces/hpc-for-es-team/AutoRPE"
+repository = "https://earth.bsc.es/gitlab/ces/hpc-for-es-team/AutoRPE"
+documentation = "https://earth.bsc.es/gitlab/ces/hpc-for-es-team/AutoRPE"
+
+[project.scripts]
+AutoRPE-AdaptNamelists = "AutoRPE.Scripts.AdaptNamelists:main"
+AutoRPE-CastFix = "AutoRPE.Scripts.CastFix:main"
+AutoRPE-ImplementMixedtoSources = "AutoRPE.Scripts.ImplementMixedtoSources:main"
+AutoRPE-ImplementRPEtoSource = "AutoRPE.Scripts.ImplementRPEtoSource:main"
+AutoRPE-MergeUsedVariables = "AutoRPE.Scripts.MergeUsedVariables:main"
+
+
+
+[tool.black]
+line-length = 119

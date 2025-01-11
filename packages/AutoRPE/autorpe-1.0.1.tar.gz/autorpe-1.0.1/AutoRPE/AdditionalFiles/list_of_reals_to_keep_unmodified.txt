@@ -1,0 +1,29 @@
+# List of reals that will not be replaced with type(rpe_var).
+# Hashtag starting lines are comments that are ignored.
+
+linf;mo_errors;tnorms
+l2;mo_errors;tnorms
+l1;mo_errors;tnorms
+
+mass_trc_ini;mo_errors;terrors_norms_trc
+mass_trc;mo_errors;terrors_norms_trc
+
+mc_2give;mo_data2d1d;tglovarscl2d1d_comm
+
+mc_2give;mo_data2d1d;tglovarvec2d1d_comm
+
+myvol;mo_fe_space2d1d;tfesp2d1d
+
+local_interp_values;mo_interp2d1d;tinterp2d1d
+
+mc_2give;mo_data3d;tglovarscl3d_comm
+
+mc_2give;mo_data3d;tglovarvec3d_comm
+
+myvol;mo_fe_space3d;tfesp3d
+
+local_interp_values;mo_interp3d;tinterp3d
+
+parallel_real_array_col;mo_collectives2d;tcollectives2d
+
+parallel_real_array_elm;mo_collectives3d;tcollectives3d
