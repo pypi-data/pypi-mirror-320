@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: deskorganizer
+Version: 0.0.2
+Summary: desktop file organizer
+Project-URL: Homepage, https://github.com/kylejacobCS/DeskOrganizer
+Project-URL: Issues, https://github.com/kylejacobCS/DeskOrganizer/issues
+Author-email: kappa <kappann01@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Requires-Dist: pandas
+Description-Content-Type: text/markdown
+
+# Desk Organizer
+
+A Python script that organize your Desktop
+
+    pip install deskorganizer
+
+    from deskorganizer import organizefiles
+
+# Quick start
+
+Python script that iterates alphabetically through the files in the 'Desktop' folder and, based on their type (audio, document, image), moves them to the corresponding subfolder. 
+If the subfolder does not exist, the script creates it automatically. In addition to printing their information as you move them, the script keeps track of the files by creating
+a recap.csv document with the same information.
