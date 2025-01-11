@@ -1,0 +1,66 @@
+Metadata-Version: 2.2
+Name: uDeepSeek
+Version: 0.1
+Summary: MicroPython library for LLM access on MCU
+Home-page: https://github.com/RiviaRammer/uDeepSeek
+Author: RiviaRammer
+Author-email: RiviaRammer@gmail.com
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ujson
+Requires-Dist: urequests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# uDeepSeek - MicroPython LLM Access Library
+
+`uDeepSeek` is a MicroPython library designed for large language model (LLM) of DeepSeek on ESP32S3 modules. It supports basic functionality like making HTTP requests, handling JSON, and timing operations for AI-related tasks.
+
+## Requirements
+
+- MicroPython v1.23.0
+- ESP32 hardware
+
+## Installation
+
+To install the package, use the following command:
+
+```python
+pip install uDeepSeek
+
+
+
+## Example Usage
+
+```python
+import uDeepSeek
+
+
+api_key = 'sk-emmmmm'
+
+client = uDeepSeek.DeepSeek(api_key=api_key)
+
+
+
+client.chat("Who r u?", mode="new")
+
+
+client.chat("I'm a coder.", mode="continue")
+
+
+message='Do you support speak in Chinese?'
+client.chat(message, mode="continue")
+
+print(client.chat_history)
+
+
+
