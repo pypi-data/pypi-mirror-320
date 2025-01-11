@@ -1,0 +1,11 @@
+report_creator/__init__.py,sha256=H5tk4DxUvCqXEbK0UYzWYRZdwLk0IOaetETUInePbAo,529
+report_creator/__version__.py,sha256=xpq5eYR7adtPFrIaSl1nEEMdc0sZ72ISY84luIIZVkI,23
+report_creator/report_creator.py,sha256=mbe3nS5_oZtOlne1dhi3vmZ1WkMf8C_4ycSCMT2j9Gg,57812
+report_creator/theming.py,sha256=teqCJk9eGS3JAvp14kfh17ZhwgzCqoUIpr_tjJxJqvs,887
+report_creator/utilities.py,sha256=XXiVqdoUJqapxprMQmuV3rmOgrkLflGYw7bCOFpwdDI,8417
+report_creator/templates/default.html,sha256=FTOfVtgWqmyOhpEJ0-iv9UlwGxqADRmsolVZ-f4ybok,14991
+report_creator-1.0.37.dist-info/LICENSE,sha256=ELZIvo5YFc49mqpMNir1dT1BPZ-CdD_9UTX0JCcII3I,1066
+report_creator-1.0.37.dist-info/METADATA,sha256=mDBaecnLfcHE9TCE6rwaTRpdYxpQ8Td0TBex0D2c5Zs,9095
+report_creator-1.0.37.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+report_creator-1.0.37.dist-info/top_level.txt,sha256=VuM9YQz2IQwFcWGuLZMFjuWnOSjVGUOGOKhZWPTXByw,15
+report_creator-1.0.37.dist-info/RECORD,,
