@@ -1,0 +1,39 @@
+{
+  "identification": {
+    "project": "ROC-SGSE",
+    "identifier": "roc.rpl",
+    "name": "RPW Packet parsing Library",
+    "description": "Module for the RPW TM/TC packet analysis"
+  },
+  "release": {
+    "version": "1.7.1",
+    "date": "2024-10-17",
+    "author": "ROC Team <roc.support@sympa.obspm.fr>",
+    "institute": "LESIA",
+    "modification": "Update python dev deps and README",
+    "url": "https://gitlab.obspm.fr/ROC/Pipelines/Plugins/RPL"
+  },
+  "tasks": [
+    {
+      "name": "parse_packets",
+      "category": "Parsing packets",
+      "description": "Parse RPW TM/TC packets",
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "name": "identify_packets",
+      "category": "Parsing packets",
+      "description": "Identify RPW TM/TC packets (i.e., return the name and header info)",
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "name": "packets_to_json",
+      "category": "I/O",
+      "description": "Save input packets into a JSON format file",
+      "inputs": {},
+      "outputs": {}
+    }
+  ]
+}

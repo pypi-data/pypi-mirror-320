@@ -1,0 +1,54 @@
+Metadata-Version: 2.3
+Name: roc-rpl
+Version: 1.7.1
+Summary: RPW Packet parsing Library (RPL): a plugin for the RPW TM/TC packet analysis
+Home-page: https://gitlab.obspm.fr/ROC/Pipelines/Plugins/RPL
+License: CeCILL 2.1
+Author: ROC Team
+Author-email: roc.support@sympa.obspm.fr
+Requires-Python: >=3.9,<4
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: cython (>=3,<4)
+Requires-Dist: numpy (>=1.20,<3)
+Requires-Dist: poppy-core (>0.12.0)
+Requires-Dist: poppy-pop (>0.12.0)
+Requires-Dist: roc-idb (>=1.0,<2.0)
+Requires-Dist: spice_manager
+Project-URL: Repository, https://gitlab.obspm.fr/ROC/Pipelines/Plugins/RPL
+Description-Content-Type: text/markdown
+
+roc-rpl
+============
+
+Python Package to parse RPW raw telemetry.
+
+This package has been initially designed to be run in the RPW Operations and Data Pipeline (RODP).
+Contact the developer team for more details.
+
+## Quickstart
+
+To install package using [pip](https://pypi.org/project/pip-tools/):
+
+```
+pip install roc-rpl
+```
+
+## Authors
+
+- xavier dot bonnin at obspm dot fr
+- florence dot henry at obspm dot fr
+- sonny dot lion at obspm dot fr
+
+## License
+
+This project is licensed under CeCILL 2.1.
+
+## Acknowledgments
+
+* Solar Orbiter / RPW Operation Centre (ROC) team

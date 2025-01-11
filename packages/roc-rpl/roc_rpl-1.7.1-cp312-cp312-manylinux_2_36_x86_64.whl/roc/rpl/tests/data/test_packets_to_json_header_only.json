@@ -1,0 +1,49 @@
+[
+  {
+    "binary": "0CB7D904000D100501002730B9A4E54FA6D20165",
+    "comment": "",
+    "idb_source": "MIB",
+    "idb_version": "20240814",
+    "srdb_id": "YIW00073",
+    "palisade_id": "TM_DPU_EVENT_PR_DPU_MODE",
+    "header": {
+      "ccsds_version_number": 0,
+      "packet_type": 0,
+      "data_field_header_flag": 1,
+      "process_id": 75,
+      "packet_category": 7,
+      "segmentation_grouping_flag": 3,
+      "sequence_cnt": 6404,
+      "packet_length": 13
+    },
+    "data_header": {
+      "spare_1": 0,
+      "pus_version": 1,
+      "spare_2": 0,
+      "service_type": 5,
+      "service_subtype": 1,
+      "destination_id": 0,
+      "time": [
+        657504676,
+        58703,
+        0
+      ]
+    },
+    "apid": 1207,
+    "category": "/RPW/Telemetry/DPU_PROCESS/Progress Event Reporting",
+    "type": "TM",
+    "scet": 657504676.8957367,
+    "utc_time": "2020-11-01 00:11:54.642361",
+    "sync_flag": true,
+    "obt_time": "1/657504676:58703",
+    "sha": "564d9e91b40e1f49ac17b3dcc72c3adb69ff760e06aff158a27aaa2bf27b1287",
+    "length": 20,
+    "status": 0,
+    "data": [
+      42706,
+      1,
+      6,
+      5
+    ]
+  }
+]
