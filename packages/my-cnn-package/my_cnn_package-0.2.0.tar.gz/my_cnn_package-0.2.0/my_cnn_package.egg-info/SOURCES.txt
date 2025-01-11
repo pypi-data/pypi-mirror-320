@@ -1,0 +1,12 @@
+README.md
+setup.py
+cnn_module/__init__.py
+cnn_module/data_utils.py
+cnn_module/example.py
+cnn_module/model.py
+cnn_module/trainer.py
+my_cnn_package.egg-info/PKG-INFO
+my_cnn_package.egg-info/SOURCES.txt
+my_cnn_package.egg-info/dependency_links.txt
+my_cnn_package.egg-info/requires.txt
+my_cnn_package.egg-info/top_level.txt
