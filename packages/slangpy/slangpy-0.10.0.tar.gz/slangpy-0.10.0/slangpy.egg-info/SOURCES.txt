@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+slangpy.egg-info/PKG-INFO
+slangpy.egg-info/SOURCES.txt
+slangpy.egg-info/dependency_links.txt
+slangpy.egg-info/requires.txt
+slangpy.egg-info/top_level.txt

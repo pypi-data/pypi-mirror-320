@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "slangpy"
+version = "0.10.0"
+authors = [
+    {name = "Chris Cummings", email = "chriscummings@nvidia.com"},
+    {name = "Benedikt Bitterli", email = "bbitterli@nvidia.com"},
+    {name = "Sai Bangaru", email = "sbangaru@nvidia.com"},
+    {name = "Yong He", email = "yhe@nvidia.com"}
+]
+description = "Easily call Slang functions and integrate with PyTorch auto diff directly from Python."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "typing_extensions",
+  "numpy",
+  "nv-sgl>=0.4.0"
+]
+
+[tool.setuptools]
+py-modules = ["slangpy"]
+
+[tool.pyright]
+include = ["./slangpy"]
+extraPaths = ["./tests"]
+pythonVersion = "3.10"
+typeCheckingMode = "basic"
+reportUnusedImport = "error"
+reportMissingSuperCall  = "error"
+reportInvalidStringEscapeSequence = "error"
+reportMissingParameterType = "error"
+reportMissingTypeArgument = "warning"
+
+[tool.autopep8]
+in-place = true
+max-line-length = 100
+#ignore:
+# pep8 defaults
+# E731: lambda->def
+ignore = "E226,E24,W50,W690,E731"
+
+[tool.coverage.run]
+branch = true
+omit = ["slangpy/tests/*"]
+
+[tool.coverage.report]
+exclude_also = [
+    "if.*TYPE_CHECKING.*",
+    "except ImportError",
+    "raise NotImplementedError"
+]
+ignore_errors = true
+
+[tool.coverage.html]
+directory = "htmlcov"
+
+[tool.isort]
+known_slangpycore = ["slangpy.core"]
+known_slangpy = ["slangpy"]
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "SLANGPYCORE", "SLANGPY", "LOCALFOLDER"]
