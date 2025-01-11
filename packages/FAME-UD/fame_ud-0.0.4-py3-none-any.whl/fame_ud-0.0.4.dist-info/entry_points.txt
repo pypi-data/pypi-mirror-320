@@ -1,0 +1,2 @@
+[console_scripts]
+fame = fame.main:main

@@ -1,0 +1,15 @@
+fame/main.py,sha256=gYL3a6tQdjcpS6TNECFFnd-m9IMEyEGR2rHHhEdrM1s,1031
+fame/FVM/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fame/FVM/boundaryCondition.py,sha256=8P6jhWSesXgVOPYPlpiOJYXwfGQn53fcjhLCqpliIAw,5062
+fame/FVM/discretization.py,sha256=bUTz_j3KQqvIEbTU5zmUR2UNFrov3Xzrp4zeyzm0EqY,3746
+fame/FVM/finiteVolumeMethod.py,sha256=P4UPCTiUyFZMAPDmifX0_GsDHLzjJNshfS2DeAST4w0,8262
+fame/FVM/mesh.py,sha256=4gFnuD9ipSTajdWYtXCy_KZ9AHzNJpEjjWMhmYJ9dvA,21336
+fame/FVM/physics.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fame/FVM/property.py,sha256=Si4gfJkWVPQpnltuVf9f2n9AMi_sK0BonvTK59LsRjo,3399
+fame/FVM/solver.py,sha256=FEGHEZATKieL6ZB_JXP73Ym1sqhmpLjyYW2qWqDzlfk,7940
+fame/FVM/visualization.py,sha256=WVhoBeZAeP808EJQpCXJ77i--MlPjIiDDHktx5HgTsA,7896
+fame_ud-0.0.4.dist-info/METADATA,sha256=6D9YEU7mIelTIT8tuiHP4mqvYXreonevmKM8m_ZtgXA,3368
+fame_ud-0.0.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+fame_ud-0.0.4.dist-info/entry_points.txt,sha256=qBWtoFk8tl4wbPOmZQolDnLZ8q9wgUFC6UZVTnD5lcI,40
+fame_ud-0.0.4.dist-info/licenses/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+fame_ud-0.0.4.dist-info/RECORD,,
