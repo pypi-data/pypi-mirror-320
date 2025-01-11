@@ -1,0 +1,8 @@
+README.md
+setup.py
+fin_calculate/__init__.py
+fin_calculate/numericl_calc.py
+fin_calculate.egg-info/PKG-INFO
+fin_calculate.egg-info/SOURCES.txt
+fin_calculate.egg-info/dependency_links.txt
+fin_calculate.egg-info/top_level.txt
