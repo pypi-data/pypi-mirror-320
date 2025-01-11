@@ -1,0 +1,9 @@
+pygray3/__init__.py,sha256=1OVribfS3IHSflQwaspOS5jpJ6Fn1We5fN28oJHwIfY,64
+pygray3/extensions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygray3/extensions/key.c,sha256=gcGi-5jcMuTpAQUQTjNRbf1AUwIcODDGnj82_enmpVA,289308
+pygray3/extensions/key.cp39-win_amd64.pyd,sha256=OW60yG3Nox3Lx4NWBRTcGi2EB_U0uelMyA9x4C0O6ck,41472
+pygray3/extensions/key.pyi,sha256=NdarD37GkYYENtnkMkNnfcDq5i4vG8abzOJrap-ZOTY,134
+pygray3-0.1.dist-info/METADATA,sha256=qXt82gDu7LmhQHjbJUcKwjjiH-p1fMHgn1Mmh88r5hk,148
+pygray3-0.1.dist-info/WHEEL,sha256=agy-BJge3afXwWznUXANATmKFW4eqelqRR0uf608A_0,99
+pygray3-0.1.dist-info/top_level.txt,sha256=ynHDvoA-akjbd5IyBcWvkpyyiVomn7X0oBrDNGS56mQ,8
+pygray3-0.1.dist-info/RECORD,,
