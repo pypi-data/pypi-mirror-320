@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "verif_token"
+version = "0.2.3"
+authors = [
+  { name="Sébastien Héligon", email="heligon.seb@gmail.com" },
+]
+description = "Koden tool for verify the Token"
+readme = "README.rst"
+requires-python = ">=3.12"
+dependencies = [
+    "requests~=2.31.0",
+    "fastapi~=0.104.1",
+    "python-jose~=3.3.0"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+license = {file = "LICENSE"}
+
+[project.urls]
+Homepage = "https://github.com/koden-process/verif-token-lib"
+Repository = "https://github.com/koden-process/verif-token-lib"
+
+[tool.setuptools]
+packages = ["verif_token"]

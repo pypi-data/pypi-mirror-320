@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+verif_token/__init__.py
+verif_token/config.py
+verif_token/verif_token.py
+verif_token.egg-info/PKG-INFO
+verif_token.egg-info/SOURCES.txt
+verif_token.egg-info/dependency_links.txt
+verif_token.egg-info/requires.txt
+verif_token.egg-info/top_level.txt
