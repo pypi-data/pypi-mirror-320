@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "DIwrappers"
+version = "0.2.0"
+description = ""
+authors = ["Rui Campos <mail@ruicampos.org>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+poethepoet = "^0.32.0"
+basedpyright = "^1.23.2"
+pytest-asyncio = "^0.25.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks.test]
+cmd = "pytest diwrappers/*.py -vvvvv"
+
+[tool.poe.tasks.lint]
+cmd = "basedpyright diwrappers/*.py --level warning"
