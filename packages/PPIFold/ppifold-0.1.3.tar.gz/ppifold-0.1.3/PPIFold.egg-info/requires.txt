@@ -1,0 +1,5 @@
+alphapulldown==2.0.0
+seaborn
+urllib3
+matplotlib
+scipy
