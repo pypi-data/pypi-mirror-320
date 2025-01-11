@@ -1,0 +1,11 @@
+matterdelta/__init__.py,sha256=_oyb4XTH0uNAQB0FvOPtR-WDY85b3lQbRDDaPD5WvZg,172
+matterdelta/__main__.py,sha256=M7jcIQ0wYwLot7bzOqMQUEJv_190nXbdctI6hrTINbA,65
+matterdelta/_version.py,sha256=mQ_8947spH9F9E4bJgRMJ3LZK_sGORi1ak9UVDzTrr8,411
+matterdelta/api.py,sha256=7NdSJhm71QeAfAb10jZpc7qQd4a5gcU5m-cxYYKjp8k,5342
+matterdelta/hooks.py,sha256=JpQ2ue8dvl20S3nXlDW2yHyNv0MD-HzcynU6mnMVn5w,3652
+matterdelta-1.6.3.dist-info/LICENSE.txt,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+matterdelta-1.6.3.dist-info/METADATA,sha256=hOLc7VwyO8fSpSEEqURKji95gYhn0jxjHSWUcvkEf58,3268
+matterdelta-1.6.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+matterdelta-1.6.3.dist-info/entry_points.txt,sha256=pQA7qdUQiQjQRffUp0rcdFvhnSRhMBtqIXeDBCA98uM,49
+matterdelta-1.6.3.dist-info/top_level.txt,sha256=wzF672hhzTK-pQ0u0vGJSC-fH8RLDm5PPe68of0x7Zs,12
+matterdelta-1.6.3.dist-info/RECORD,,
