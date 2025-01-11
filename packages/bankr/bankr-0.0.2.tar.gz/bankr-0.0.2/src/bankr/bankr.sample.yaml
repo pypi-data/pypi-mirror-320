@@ -1,0 +1,7 @@
+# Bankr - Parameters
+
+# Relative or absolute data path (book-v1.pickle)
+DATA_PATH: "data"
+
+# i18n Locale (see cli/__init__.py, "en" or "de")
+LOCALE: "en"

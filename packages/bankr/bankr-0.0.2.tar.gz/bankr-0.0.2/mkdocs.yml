@@ -1,0 +1,12 @@
+site_name: Bankr
+nav:
+  - Home: index.md
+  - Implementation: implementation.md
+  - Best Practices: best.md
+  - Reference: reference.md
+
+markdown_extensions:
+  - admonition
+
+plugins:
+  - mkdocstrings

@@ -1,0 +1,97 @@
+# Bankr - pyproject.toml
+
+# Build
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# Project
+[project]
+dependencies = [
+  "click",
+  "inquirer",
+  "pandas",
+  "prettytable",
+  #  "openpyxl",
+  "plotext",
+  "PyAML",
+  "pyfiglet",
+  "python-i18n",
+  "schwifty",
+]
+name = "bankr"
+dynamic = ["version"]
+description = 'Simple Python code for your Bank Accounting'
+readme = "README.md"
+requires-python = ">=3.12"
+license = "Unlicense"
+keywords = ["bank", "banking", "account", "accounting", "pandas", "panel"]
+authors = [{ name = "Robert Kormann", email = "rokor@kormann.info" }]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: The Unlicense (Unlicense)",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: Implementation :: CPython",
+]
+
+[project.urls]
+Documentation = "https://rokor.codeberg.page/bankr"
+Issues = "https://codeberg.org/rokor/bankr/issues"
+Source = "https://codeberg.org/rokor/bankr"
+
+[project.scripts]
+bankr = "bankr.cli:bankr"
+
+# Tool - Hatch
+[tool.hatch.version]
+path = "src/bankr/__about__.py"
+
+[[tool.hatch.envs.bankr.matrix]]
+python = ["3.12", "3.13"]
+
+[tool.hatch.envs.app]
+dependencies = ["panel", "hvplot", "watchfiles"]
+[[tool.hatch.envs.app.matrix]]
+python = ["3.12"]
+
+[tool.hatch.envs.debug]
+dependencies = ["debugpy"]
+
+[tool.hatch.envs.docs]
+dependencies = ["mkdocs", "mkdocstrings[python]"]
+[tool.hatch.envs.docs.scripts]
+build = "mkdocs build --clean --strict --site-dir pages"
+serve = "mkdocs serve --dev-addr localhost:8000"
+# [[tool.hatch.envs.docs.matrix]]
+# python = ["3.11", "3.12", "3.13"]
+
+[tool.hatch.envs.types]
+extra-dependencies = ["mypy>=1.0.0"]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/bankr tests}"
+
+[tool.hatch.build.targets.wheel]
+include = [
+  "/src/bankr/cli/locale/*",
+  "/src/bankr/data.sample/*",
+  "/src/bankr/bankr.sample.yaml",
+]
+packages = ["src/bankr"]
+
+# Tool - Coverage (not used)
+# [tool.coverage.run]
+# source_pkgs = ["bankr", "tests"]
+# branch = true
+# parallel = true
+# omit = ["src/bankr/__about__.py"]
+
+# [tool.coverage.paths]
+# bankr = ["src/bankr", "*/bankr/src/bankr"]
+# tests = ["tests", "*/bankr/tests"]
+
+# [tool.coverage.report]
+# exclude_lines = ["no cov", "if __name__ == .__main__.:", "if TYPE_CHECKING:"]

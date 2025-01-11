@@ -1,0 +1,34 @@
+# Bankr - List of Accounts
+#
+# One account is defined by:
+# - iban: IBAN, what a surprise
+# - type: Definition of the account, e.g. 'giro account' or 'savings account'
+# - owner: The account owner
+# - group: Groups of accounts
+# - desc: A description of an account, intended for human account identification
+# - active: 'True' or 'False'
+
+- iban: DE72387267777958538073
+  type: Giro account
+  owner: Me
+  group: MyGroup
+  desc: Main at Deutsche Fantasiebank (38726777)
+  active: 'True'
+- iban: GB71RJKT75252048811544
+  type: Giro account
+  owner: Me
+  group: MyGroup
+  desc: 2nd at Royal Fantasy Bank of England (RJKT)
+  active: 'True'
+- iban: FR591344114241SLXBUAHDY9806
+  type: Savings account
+  owner: Me
+  group: MyGroup
+  desc: French enormous amount at FFB (13441)
+  active: 'True'
+- iban: DE67077012434271299709
+  type: Savings account
+  owner: Me
+  group: MyGroup
+  desc: Unused at DPhB (07701243)
+  active: 'False'

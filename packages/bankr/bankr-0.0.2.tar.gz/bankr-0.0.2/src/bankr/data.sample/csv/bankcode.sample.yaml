@@ -1,0 +1,29 @@
+# Bankr - CSV export definition of a bank's web account
+#
+# - Comments are started with #.
+# - The keys of the dictionary below are the parameters of the
+#   Pandas function from_csv.
+# - The columns of the Book (see book-v1.yaml) must be represented here as
+#   names or missing. Unused CSV fields can have an arbitrary name following
+#   the conventions of Pandas.
+
+sep: ;                 # Field separator
+encoding: iso-8859-1   # Typ. iso-8859-1 or utf-8
+quotechar: '"'         # Field delimiter
+skiprows: 2            # Counts lines to skip (0 = first line or headline, must be skipped)
+names:                 # See book-v1.yaml.
+- date
+- iban
+- cents
+- valuta
+- offset
+- name
+- process
+- desc
+- creditor
+- mandate
+- customer
+dateformat: '%d.%m.%Y' # Date format used in the CSV
+missing:               # Missing columns within the CSV
+  cat: none
+  curr: "\u20AC"

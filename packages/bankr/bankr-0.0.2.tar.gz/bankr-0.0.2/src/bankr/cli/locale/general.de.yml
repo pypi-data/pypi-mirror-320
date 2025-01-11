@@ -1,0 +1,46 @@
+de:
+    account_desc: Kontobeschreibung
+    amount: Betrag
+    balance: Kontostand
+    book: Buch
+    book_stats: Statistik des Buchs
+    cat: Kategorie
+    categorized: kategorisiert
+    creditor: Gläubiger ID
+    customer: Kundenreferenz
+    date: Datum
+    desc: Verwendung
+    exported: exportiert
+    first_tract: Erste Tr.
+    from_excel: von Excel
+    iban: IBAN
+    imported: importiert
+    info: Info
+    last_tract: Letzte Tr.
+    mandate: Mandatsreferenz
+    month: Monat
+    monthly: Monatliches Einkommen
+    name: Kontoinhaber
+    new_cat: Neue Kategorie
+    offset: Gegenkonto
+    page: Seite
+    parsed: eingelesen
+    per_term: Einkommen pro Halbjahr
+    per_year: Gewinn und Verlust pro Jahr
+    process: Vorgang
+    quarterly: Einkommen pro Quartal
+    saved: gespeichert
+    source: Quelle
+    statistics: Statistik
+    title: Bankr - CLI Finanzen
+    to_excel: zu Excel
+    tract: Trakt.
+    tractdetails: Details einer Transaktion? Nummer or q (beenden).
+    transaction: Transaktion
+    transactions: Transaktionen
+    uuid: TransaktionsID
+    valuta: Valuta
+    wo_cat: ohne Kategorie
+    year: Jahr
+    yearly: Jährliches Einkommen
+    yonth: Monat Jahr

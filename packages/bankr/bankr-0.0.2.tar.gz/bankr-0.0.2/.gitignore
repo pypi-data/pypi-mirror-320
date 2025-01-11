@@ -1,0 +1,46 @@
+# ---> Python
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+.hatch/
+sdist/
+tests/
+.vscode/
+wheels/
+
+# Bankr data files/folders/symlinks
+/data*
+/bankr.yaml
+/src/bankr/data.sample/book-v1_*.pickle
+/src/bankr/data.sample/xlsx/
+/src/bankr/data.sample/csv/zip
+
+# Jupyter
+*.ipynb
+.ipynb_checkpoints/
+
+# MkDocs documentation
+pages/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
