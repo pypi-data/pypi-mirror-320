@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/django_cookie_consent_compliance.egg-info/PKG-INFO
+src/django_cookie_consent_compliance.egg-info/SOURCES.txt
+src/django_cookie_consent_compliance.egg-info/dependency_links.txt
+src/django_cookie_consent_compliance.egg-info/top_level.txt
+src/django_cookieconsent/__init__.py
+src/django_cookieconsent/context.py
