@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+inked/__init__.py
+inked/watermark.py
+inked.egg-info/PKG-INFO
+inked.egg-info/SOURCES.txt
+inked.egg-info/dependency_links.txt
+inked.egg-info/entry_points.txt
+inked.egg-info/requires.txt
+inked.egg-info/top_level.txt

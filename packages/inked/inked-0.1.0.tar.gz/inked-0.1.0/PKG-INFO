@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: inked
+Version: 0.1.0
+Summary: A tool for adding text or image watermarks to images
+Home-page: https://github.com/ksumesh21/inked
+Author: Sumesh.K
+Author-email: ksumesh21@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# inked
+
+inked is a simple Python package that allows you to add **image** or **text** watermarks to your images. You can position the watermark anywhere on the image using custom or predefined positions.
+
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip install inked
+
+
