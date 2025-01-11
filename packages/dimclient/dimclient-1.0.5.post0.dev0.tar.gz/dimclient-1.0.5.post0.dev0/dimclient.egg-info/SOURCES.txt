@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+dimclient/__init__.py
+dimclient/version.py
+dimclient.egg-info/PKG-INFO
+dimclient.egg-info/SOURCES.txt
+dimclient.egg-info/dependency_links.txt
+dimclient.egg-info/top_level.txt
