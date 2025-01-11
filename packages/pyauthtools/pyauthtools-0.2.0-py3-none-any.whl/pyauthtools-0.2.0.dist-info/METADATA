@@ -1,0 +1,42 @@
+Metadata-Version: 2.2
+Name: pyauthtools
+Version: 0.2.0
+Summary: Some auth tools using in python flask.
+Author-email: lidaning <453882101@qq.com>
+Project-URL: Homepage, https://github.com/relidaning/pyauthtools
+Project-URL: Bug Tracker, https://github.com/relidaning/pyauthtools/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: License
+
+# PyAuthTools
+
+Some auth tools using in python flask.
+
+## Surpported Algorisms
+HS256
+
+RS256
+
+
+## Install
+```pip
+pip install pyauthtools
+```
+
+## Environments
+```env
+JWT_ALG = 'HS256'   # or 'RS256'
+JWT_PUBLIC = b'xxx' # when RS256
+JWT_SECRET = b'xxx' # pri_key or secret
+```
+
+## Usages
+```python
+@app.route('/index', methods=['POST', 'GET'])
+@auth    # Just above the func
+def index():
+  return rend_template('index.html')
+```
