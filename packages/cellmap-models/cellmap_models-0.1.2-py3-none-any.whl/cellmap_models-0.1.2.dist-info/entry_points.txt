@@ -1,0 +1,2 @@
+[console_scripts]
+cellmap.add_cellpose = cellmap_models.pytorch.cellpose:add_model
