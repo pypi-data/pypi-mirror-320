@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "indiagrid"
+version = "0.4.0"
+description = "A library for WGS84 to Indian Grid System conversion."
+readme = "README.md"
+license = {text = "GNU Lesser General Public License v2.1"}
+authors = [{name = "G Kiran", email = "goki75@gmail.com"}]
+keywords = ["location", "geography", "encoding", "decoding", "latitude", "longitude"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+requires-python = ">=3.1"
+[project.urls]
+homepage = "https://github.com/goki75/indiagrid"
+repository = "https://github.com/goki75/indiagrid"
+
+[tool.setuptools]
+packages = ["indiagrid"]
