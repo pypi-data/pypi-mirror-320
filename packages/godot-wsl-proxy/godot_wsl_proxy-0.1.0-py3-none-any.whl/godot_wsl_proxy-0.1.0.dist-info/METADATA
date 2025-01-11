@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: godot-wsl-proxy
+Version: 0.1.0
+Summary: LSP proxy to work from editor located in WSL and Godot located in Windows seemlessly
+Home-page: https://github.com/venomlab/godot-wsl-proxy
+License: MIT
+Author: Dmytro Selishchev
+Author-email: zibertscrem@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.8,<8.2.0)
+Project-URL: Repository, https://github.com/venomlab/godot-wsl-proxy
+Description-Content-Type: text/markdown
+
+# WSL2 to Windows Godot LSP proxy
+
+When using Neovim from WSL and Godot from Windows - the LSP file paths are not compatible
+
+This is the simple TCP proxy that mirrors requests that LSP protocol does (JSON RPC), finds and replaces paths both ways: from linux to windows and from windows to linux
+
+It works as a separate server that LSP Client from your editor should connect to
+
+This project is inspired by [godot-wsl-lsp](https://github.com/lucasecdb/godot-wsl-lsp) but basically does this proxying on a lower level and thanks to that it works very fast
+
+# Installation
+
+It is intended to be installed via pipx:
+
+```shell
+pipx install godot-wsl-proxy
+```
+
+(Not recommended) But you can do it via just pip and install it globally:
+
+```shell
+pip install --user godot-wsl-proxy
+```
+
+In future I plan to add this to Mason (for Neovim users)
+

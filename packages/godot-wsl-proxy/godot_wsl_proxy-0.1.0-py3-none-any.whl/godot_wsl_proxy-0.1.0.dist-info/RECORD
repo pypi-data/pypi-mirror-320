@@ -1,0 +1,9 @@
+godot_wsl_proxy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+godot_wsl_proxy/__main__.py,sha256=x5lg3hJINqzpO0XjWDVHmAJBXf3AjWh2Q2aCdXkmdyw,74
+godot_wsl_proxy/cli.py,sha256=3J2zeETxjq0d3iFW6Qg0kHBl7dMnEAWpttZtnUaj0To,1002
+godot_wsl_proxy/server.py,sha256=wo59nmZuBUkScAacMjNepevoGWByVT9wfCHhDoklcBI,5778
+godot_wsl_proxy-0.1.0.dist-info/LICENSE,sha256=x1XD-nTWfp0U_Zg_V3e0Ids1TG4tM5k_2bnaCel4Qkw,1066
+godot_wsl_proxy-0.1.0.dist-info/METADATA,sha256=wO3CLV00WRO7GZj25TIYPRVgqoALvuGKnQXUEH3sCe8,1500
+godot_wsl_proxy-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+godot_wsl_proxy-0.1.0.dist-info/entry_points.txt,sha256=vFFD9wLfGCnABTaqBcFx0ggia1fIlThwMvhayOA9zbo,59
+godot_wsl_proxy-0.1.0.dist-info/RECORD,,
