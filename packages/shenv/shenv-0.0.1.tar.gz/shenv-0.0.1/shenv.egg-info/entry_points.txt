@@ -1,0 +1,2 @@
+[console_scripts]
+shenv = shenv.shenv:main

@@ -1,0 +1,15 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+shenv/__init__.py
+shenv/shenv.py
+shenv.egg-info/PKG-INFO
+shenv.egg-info/SOURCES.txt
+shenv.egg-info/dependency_links.txt
+shenv.egg-info/entry_points.txt
+shenv.egg-info/requires.txt
+shenv.egg-info/top_level.txt
+tests/test_shenv.py
+tests/testcase.py

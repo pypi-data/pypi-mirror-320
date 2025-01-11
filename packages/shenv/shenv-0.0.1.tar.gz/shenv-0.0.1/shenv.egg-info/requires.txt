@@ -1,0 +1,8 @@
+PyYAML>=5.1
+
+[dev]
+pytest
+coverage[toml]
+flake8
+flake8-pyproject
+pep8-naming

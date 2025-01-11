@@ -1,0 +1,83 @@
+[project]
+name = "shenv"
+dynamic = ["version"]
+description = "Easily manage per-project environment variables."
+readme = "README.md"
+license = { file = "LICENSE" }
+maintainers = [{ name = "Alex Laird", email = "contact@alexlaird.com" }]
+requires-python = ">=3.8"
+dependencies = [
+    "PyYAML>=5.1"
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Console",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "coverage[toml]",
+    "flake8",
+    "flake8-pyproject",
+    "pep8-naming"
+]
+
+[project.scripts]
+shenv = "shenv.shenv:main"
+
+[project.urls]
+Changelog = "https://github.com/alexdlaird/shenv/blob/main/CHANGELOG.md"
+Sponsor = "https://github.com/sponsors/alexdlaird"
+"Source Code" = "https://github.com/alexdlaird/shenv"
+
+[tool.setuptools]
+package-dir = { shenv = "shenv" }
+
+[tool.setuptools.dynamic]
+version = { attr = "shenv.__version__" }
+
+[tool.coverage.run]
+omit = [
+    "venv/**",
+    "*/tests/**"
+]
+
+[tool.coverage.report]
+precision = 2
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+]
+
+[tool.coverage.xml]
+output = "build/coverage/coverage.xml"
+
+[tool.coverage.html]
+title = "Coverage Report"
+directory = "build/coverage"
+
+[tool.flake8]
+max-line-length = 119
+statistics = true
+exclude = "venv/*,build/*,dist/*,.egg-info/*"
