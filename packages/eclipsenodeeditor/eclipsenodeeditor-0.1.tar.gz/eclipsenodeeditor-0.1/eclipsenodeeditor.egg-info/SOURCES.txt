@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+eclipsenodeeditor/__init__.py
+eclipsenodeeditor.egg-info/PKG-INFO
+eclipsenodeeditor.egg-info/SOURCES.txt
+eclipsenodeeditor.egg-info/dependency_links.txt
+eclipsenodeeditor.egg-info/requires.txt
+eclipsenodeeditor.egg-info/top_level.txt
