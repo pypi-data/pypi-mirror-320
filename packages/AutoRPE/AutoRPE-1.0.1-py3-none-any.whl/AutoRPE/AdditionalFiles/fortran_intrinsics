@@ -1,0 +1,280 @@
+ABORT,None,Abort the program
+ABS,content_type,Absolute value
+ACCESS,None,Checks file access modes
+ACHAR,None,Character in ASCII collating sequence
+ACOS,wp,Arccosine function
+ACOSD,None,Arccosine function, degrees
+ACOSH,None,Inverse hyperbolic cosine function
+ADJUSTL,char,Left adjust a string
+ADJUSTR,None,Right adjust a string
+AIMAG,wp,Imaginary part of complex number
+AINT,None,Truncate to a whole number
+ALARM,None,Set an alarm clock
+ALL,None,Determine if all values are true
+ALLOCATED,None,Status of allocatable entity
+AND,None,Bitwise logical AND
+ANINT,None,Nearest whole number
+ANY,logical,Determine if any values are true
+ASIN,None,Arcsine function
+ASIND,None,Arcsine function, degrees
+ASINH,None,Inverse hyperbolic sine function
+ASSOCIATED,None,Status of a pointer or pointer/target pair
+ATAN,None,Arctangent function
+ATAND,None,Arctangent function, degrees
+ATAN2,None,Arctangent function
+ATAN2D,None,Arctangent function, degrees
+ATANH,None,Inverse hyperbolic tangent function
+ATOMIC_ADD,None,Atomic ADD operation
+ATOMIC_AND,None,Atomic bitwise AND operation
+ATOMIC_CAS,None,Atomic compare and swap
+ATOMIC_DEFINE,None,Setting a variable atomically
+ATOMIC_FETCH_ADD,None,Atomic ADD operation with prior fetch
+ATOMIC_FETCH_AND,None,Atomic bitwise AND operation with prior fetch
+ATOMIC_FETCH_OR,None,Atomic bitwise OR operation with prior fetch
+ATOMIC_FETCH_XOR,None,Atomic bitwise XOR operation with prior fetch
+ATOMIC_OR,None,Atomic bitwise OR operation
+ATOMIC_REF,None,Obtaining the value of a variable atomically
+ATOMIC_XOR,None,Atomic bitwise OR operation
+BACKTRACE,None,Show a backtrace
+BESSEL_J0,None,Bessel function of the first kind of order 0
+BESSEL_J1,None,Bessel function of the first kind of order 1
+BESSEL_JN,None,Bessel function of the first kind
+BESSEL_Y0,None,Bessel function of the second kind of order 0
+BESSEL_Y1,None,Bessel function of the second kind of order 1
+BESSEL_YN,None,Bessel function of the second kind
+BGE,None,Bitwise greater than or equal to
+BGT,None,Bitwise greater than
+BIT_SIZE,None,Bit size inquiry function
+BLE,None,Bitwise less than or equal to
+BLT,None,Bitwise less than
+BTEST,None,Bit test function
+C_ASSOCIATED,None,Status of a C pointer
+C_F_POINTER,None,Convert C into Fortran pointer
+C_F_PROCPOINTER,None,Convert C into Fortran procedure pointer
+C_FUNLOC,None,Obtain the C address of a procedure
+C_LOC,pointer,Obtain the C address of an object
+C_SIZEOF,None,Size in bytes of an expression
+CEILING,integer,Integer ceiling function
+CHAR,None,Integer-to-character conversion function
+CHDIR,None,Change working directory
+CHMOD,None,Change access permissions of files
+CMPLX,complex,Complex conversion function
+CO_BROADCAST,None,Copy a value to all images the current set of images
+CO_MAX,None,Maximal value on the current set of images
+CO_MIN,None,Minimal value on the current set of images
+CO_REDUCE,None,Reduction of values on the current set of images
+CO_SUM,None,Sum of values on the current set of images
+COMMAND_ARGUMENT_COUNT,None,Get number of command line arguments
+COMPILER_OPTIONS,None,Options passed to the compiler
+COMPILER_VERSION,None,Compiler version string
+COMPLEX,None,Complex conversion function
+CONJG,None,Complex conjugate function
+COS,wp,Cosine function
+COSD,None,Cosine function, degrees
+COSH,wp,Hyperbolic cosine function
+COTAN,None,Cotangent function
+COTAND,None,Cotangent function, degrees
+COUNT,integer,Count occurrences of TRUE in an array
+CPU_TIME,None,CPU time subroutine
+CSHIFT,None,Circular shift elements of an array
+CTIME,char,Subroutine (or function) to convert a time into a string
+DATE_AND_TIME,None,Date and time subroutine
+DBLE,None,Double precision conversion function
+DCMPLX,None,Double complex conversion function
+DIGITS,None,Significant digits function
+DIM,None,Positive difference
+DOT_PRODUCT,None,Dot product function
+DPROD,None,Double product function
+DREAL,None,Double real part function
+DSHIFTL,None,Combined left shift
+DSHIFTR,None,Combined right shift
+DTIME,None,Execution time subroutine (or function)
+EOSHIFT,None,End-off shift elements of an array
+EPSILON,content_type,Epsilon function
+ERF,None,Error function
+ERFC,None,Complementary error function
+ERFC_SCALED,None,Exponentially-scaled complementary error function
+ETIME,None,Execution time subroutine (or function)
+EVENT_QUERY,None,Query whether a coarray event has occurred
+EXECUTE_COMMAND_LINE,None,Execute a shell command
+EXIT,None,Exit the program with status.
+EXP,wp,Exponential function
+EXPONENT,None,Exponent function
+EXTENDS_TYPE_OF,None,Query dynamic type for extension
+FDATE,None,Subroutine (or function) to get the current time as a string
+FGET,None,Read a single character in stream mode from stdin
+FGETC,None,Read a single character in stream mode
+FLOAT,wp,converts the integer I to a default real value.
+FLOOR,None,Integer floor function
+FLUSH,None,Flush I/O unit(s)
+FNUM,None,File number function
+FPUT,None,Write a single character in stream mode to stdout
+FPUTC,None,Write a single character in stream mode
+FRACTION,None,Fractional part of the model representation
+FREE,None,Memory de-allocation subroutine
+FSEEK,None,Low level file positioning subroutine
+FSTAT,None,Get file status
+FTELL,None,Current stream position
+GAMMA,None,Gamma function
+GERROR,None,Get last system error message
+GETARG,None,Get command line arguments
+GET_COMMAND,None,Get the entire command line
+GET_COMMAND_ARGUMENT,None,Get command line arguments
+GETCWD,None,Get current working directory
+GETENV,None,Get an environmental variable
+GET_ENVIRONMENT_VARIABLE,None,Get an environmental variable
+GETGID,None,Group ID function
+GETLOG,None,Get login name
+GETPID,None,Process ID function
+GETUID,None,User ID function
+GMTIME,None,Convert time to GMT info
+HOSTNM,None,Get system host name
+HUGE,content_type,Largest number of a kind
+HYPOT,None,Euclidean distance function
+IACHAR,None,Code in ASCII collating sequence
+IALL,None,Bitwise AND of array elements
+IAND,None,Bitwise logical and
+IANY,None,Bitwise OR of array elements
+IARGC,None,Get the number of command line arguments
+IBCLR,None,Clear bit
+IBITS,None,Bit extraction
+IBSET,None,Set bit
+ICHAR,None,Character-to-integer conversion function
+IDATE,None,Current local time (day/month/year)
+IEOR,None,Bitwise logical exclusive or
+IERRNO,None,Function to get the last system error number
+IMAGE_INDEX,None,Cosubscript to image index conversion
+INDEX,integer,Position of a substring within a string
+INT,integer,Convert to integer type
+INT2,None,Convert to 16-bit integer type
+INT8,None,Convert to 64-bit integer type
+IOR,content_type,Bitwise logical or
+IPARITY,None,Bitwise XOR of array elements
+IRAND,None,Integer pseudo-random number
+IS_IOSTAT_END,None,Test for end-of-file value
+IS_IOSTAT_EOR,None,Test for end-of-record value
+ISATTY,None,Whether a unit is a terminal device
+ISHFT,None,Shift bits
+ISHFTC,None,Shift bits circularly
+ISNAN,None,Tests for a NaN
+ITIME,None,Current local time (hour/minutes/seconds)
+KILL,None,Send a signal to a process
+KIND,None,Kind of an entity
+LBOUND,None,Lower dimension bounds of an array
+LCOBOUND,None,Lower codimension bounds of an array
+LEADZ,None,Number of leading zero bits of an integer
+LEN,integer,Length of a character entity
+LEN_TRIM,integer,Length of a character entity without trailing blank characters
+LGE,None,Lexical greater than or equal
+LGT,None,Lexical greater than
+LINK,None,Create a hard link
+LLE,None,Lexical less than or equal
+LLT,None,Lexical less than
+LNBLNK,None,Index of the last non-blank character in a string
+LOC,None,Returns the address of a variable
+LOG,content_type,Logarithm function
+LOG10,content_type,Base 10 logarithm function
+LOG_GAMMA,None,Logarithm of the Gamma function
+LOGICAL,None,Convert to logical type
+LONG,None,Convert to integer type
+LSHIFT,None,Left shift bits
+LSTAT,None,Get file status
+LTIME,None,Convert time to local time info
+MALLOC,None,Dynamic memory allocation function
+MASKL,None,Left justified mask
+MASKR,None,Right justified mask
+MATMUL,None,matrix multiplication
+MAX,content_type,Maximum value of an argument list
+MAXEXPONENT,None,Maximum exponent of a real kind
+MAXLOC,content_type,Location of the maximum value within an array
+MAXVAL,content_type,Maximum value of an array
+MCLOCK,None,Time function
+MCLOCK8,None,Time function (64-bit)
+MERGE,None,Merge arrays
+MERGE_BITS,None,Merge of bits under mask
+MIN,content_type,Minimum value of an argument list
+MINEXPONENT,None,Minimum exponent of a real kind
+MINLOC,content_type,Location of the minimum value within an array
+MINVAL,content_type,Minimum value of an array
+MOD,integer,Remainder function
+MODULO,None,Modulo function
+MOVE_ALLOC,None,Move allocation from one object to another
+MVBITS,None,Move bits from one integer to another
+NEAREST,None,Nearest representable number
+NEW_LINE,None,New line character
+NINT,integer,Nearest whole number
+NORM2,None,Euclidean vector norm
+NOT,None,Logical negation
+NULL,pointer,Function that returns an disassociated pointer
+NUM_IMAGES,None,Number of images
+OR,None,Bitwise logical OR
+PACK,None,Pack an array into an array of rank one
+PARITY,None,Reduction with exclusive OR
+PERROR,None,Print system error message
+POPCNT,None,Number of bits set
+POPPAR,None,Parity of the number of bits set
+PRECISION,None,Decimal precision of a real kind
+PRESENT,logical,Determine whether an optional dummy argument is specified
+PRODUCT,None,Product of array elements
+RADIX,None,Base of a data model
+RAN,None,Real pseudo-random number
+RAND,None,Real pseudo-random number
+RANDOM_NUMBER,None,Pseudo-random number
+RANDOM_SEED,None,Initialize a pseudo-random number sequence
+RANGE,None,Decimal exponent range
+RANK ,None,Rank of a data object
+REAL,content_type,Convert to real type
+RENAME,None,Rename a file
+REPEAT,None,Repeated string concatenation
+RESHAPE,content_type,Function to reshape an array
+RRSPACING,None,Reciprocal of the relative spacing
+RSHIFT,None,Right shift bits
+SAME_TYPE_AS,None,Query dynamic types for equality
+SCALE,None,Scale a real value
+SCAN,None,Scan a string for the presence of a set of characters
+SECNDS,None,Time function
+SECOND,None,CPU time function
+SELECTED_CHAR_KIND,None,Choose character kind
+SELECTED_INT_KIND,None,Choose integer kind
+SELECTED_REAL_KIND,None,Choose real kind
+SET_EXPONENT,None,Set the exponent of the model
+SHAPE,integer,Determine the shape of an array
+SHIFTA,None,Right shift with fill
+SHIFTL,None,Left shift
+SHIFTR,None,Right shift
+SIGN,content_type,Sign copying function
+SIGNAL,None,Signal handling subroutine (or function)
+SIN,wp,Sine function
+SIND,None,Sine function, degrees
+SINH,None,Hyperbolic sine function
+SIZE,integer,Function to determine the size of an array
+SIZEOF,None,Determine the size in bytes of an expression
+SLEEP,None,Sleep for the specified number of seconds
+SPACING,None,Smallest distance between two numbers of a given type
+SPREAD,None,Add a dimension to an array
+SQRT,content_type,Square-root function
+SRAND,None,Reinitialize the random number generator
+STAT,None,Get file status
+STORAGE_SIZE,integer,Storage size in bits
+SUM,content_type,Sum of array elements
+SYMLNK,None,Create a symbolic link
+SYSTEM,None,Execute a shell command
+SYSTEM_CLOCK,None,Time function
+TAN,None,Tangent function
+TAND,None,Tangent function, degrees
+TANH,None,Hyperbolic tangent function
+THIS_IMAGE,None,Cosubscript index of this image
+TIME8,None,Time function (64-bit)
+TINY,content_type,Smallest positive number of a real kind
+TRAILZ,None,Number of trailing zero bits of an integer
+TRANSFER,content_type,Transfer bit patterns
+TRANSPOSE,None,Transpose an array of rank two
+TRIM,char,Remove trailing blank characters of a string
+TTYNAM,None,Get the name of a terminal device.
+UBOUND,None,Upper dimension bounds of an array
+UCOBOUND,None,Upper codimension bounds of an array
+UNLINK,None,Remove a file from the file system
+UNPACK,None,Unpack an array of rank one into an array
+VERIFY,None,Scan a string for the absence of a set of characters
+XOR,None,Bitwise logical exclusive or
+rpe,rpe_var,
