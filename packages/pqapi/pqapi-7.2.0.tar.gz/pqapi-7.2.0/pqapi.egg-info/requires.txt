@@ -1,0 +1,6 @@
+aiohttp
+fhaviary>=0.14.0
+paper-qa>=5.9.0
+pydantic~=2.0
+requests
+tenacity
