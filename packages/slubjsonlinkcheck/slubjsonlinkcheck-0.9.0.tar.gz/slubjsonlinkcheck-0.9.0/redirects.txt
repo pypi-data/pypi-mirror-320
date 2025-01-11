@@ -1,0 +1,2 @@
+http://www.slub-dresden.de;https://www.slub-dresden.de/
+https://www.google.de;https://consent.google.de/ml?continue=https://www.google.de/&gl=DE&m=0&pc=shp&uxe=none&cm=2&hl=de&src=1

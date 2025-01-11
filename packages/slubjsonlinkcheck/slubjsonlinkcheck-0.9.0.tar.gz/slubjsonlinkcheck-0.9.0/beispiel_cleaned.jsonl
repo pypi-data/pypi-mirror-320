@@ -1,0 +1,7 @@
+{"id": 1, "url": "https://www.google.de", "title": "Gültiger Link"}
+{"id": 2, "title": "Kein Link"}
+{"id": 3, "title": "404 Link"}
+{"id": 4, "url": "https://www.slub-dresden.de/", "title": "301 Redirect"}
+{"id": 5, "andereurl": "https://www.slub-dresden.de", "title": "Anderes Feld"}
+{"id": 6, "url": ["https://consent.google.de/ml?continue=https://www.google.de/&gl=DE&m=0&pc=shp&uxe=none&cm=2&hl=de&src=1"], "title": "404 Link + 200 Link"}
+{"id": 7, "title": "404 Link + 404 Link"}
