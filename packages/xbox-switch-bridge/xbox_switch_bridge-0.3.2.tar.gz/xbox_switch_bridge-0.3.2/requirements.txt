@@ -1,0 +1,8 @@
+evdev>=1.4.0
+nxbt>=0.1.0
+asyncio>=3.4.3
+dbus-python>=1.2.16
+pygobject>=3.40.0
+python-systemd>=234
+setuptools>=45.0.0
+wheel>=0.37.0
