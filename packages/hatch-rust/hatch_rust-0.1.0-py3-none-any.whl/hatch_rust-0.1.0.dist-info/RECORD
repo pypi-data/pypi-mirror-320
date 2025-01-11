@@ -1,0 +1,6 @@
+hatch_rust/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+hatch_rust/tests/test_all.py,sha256=0lN7AfhW5Kr_XqM4jNmgVHrjG-10MJt-AqSJxrkF1o4,67
+hatch_rust-0.1.0.dist-info/METADATA,sha256=TCRfypBaFSAbYsFoGAf3Mqfj_ByHTeoiNZO-XmbbQJY,2312
+hatch_rust-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+hatch_rust-0.1.0.dist-info/licenses/LICENSE,sha256=truuCFaDz5h0_CdVR9DINwQEEmHxu-BWGMtlCXwKr94,11352
+hatch_rust-0.1.0.dist-info/RECORD,,
