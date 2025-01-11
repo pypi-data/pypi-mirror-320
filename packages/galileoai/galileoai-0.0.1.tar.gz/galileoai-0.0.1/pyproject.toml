@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "galileoai"
+version = "0.0.1"
+description = ""
+authors = ["Galileo Technologies Inc. <team@rungalileo.io>"]
+readme = "README.md"
+packages = [{ include = "galileoai", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
