@@ -1,0 +1,9 @@
+License
+README.md
+pyproject.toml
+src/pyauthtools/__init__.py
+src/pyauthtools/jwtauthtool.py
+src/pyauthtools.egg-info/PKG-INFO
+src/pyauthtools.egg-info/SOURCES.txt
+src/pyauthtools.egg-info/dependency_links.txt
+src/pyauthtools.egg-info/top_level.txt
