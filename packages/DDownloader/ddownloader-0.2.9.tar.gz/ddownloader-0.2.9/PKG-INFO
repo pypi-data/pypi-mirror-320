@@ -1,0 +1,95 @@
+Metadata-Version: 2.2
+Name: DDownloader
+Version: 0.2.9
+Summary: A downloader for DRM-protected content.
+Author-email: ThatNotEasy <apidotmy@proton.me>
+License: MIT License
+        
+        Copyright (c) [2024] [DDownloader]
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following condition:
+        
+        The above copyright notice and this permission notice shall be included in
+        all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+        FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+        IN THE SOFTWARE.
+Project-URL: homepage, https://github.com/ThatNotEasy/DDownloader
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.26.0
+Requires-Dist: coloredlogs>=15.0
+Requires-Dist: tqdm>=4.64.0
+Requires-Dist: colorama>=0.4.5
+Requires-Dist: loguru>=0.6.0
+
+# DDownloader
+- DDownloader is a Python library to download HLS and DASH manifests and decrypt media files.
+
+# Features
+- Download HLS streams using N_m3u8DL-RE.
+- Download DASH manifests and segments.
+- Decrypt media files using mp4decrypt.
+
+# Footprints Notes:
+- It is better if you have set your own environment variables.
+
+# Installation
+Use the package manager pip to install DDownloader.
+```pip install DDownloader```
+
+# Usage
+
+- Download DASH content using the library:
+
+```python
+from DDownloader.dash_downloader import DASH
+
+dash_downloader = DASH()
+dash_downloader.manifest_url = "https://example.com/path/to/manifest.mpd"  # Set your DASH manifest URL
+dash_downloader.output_name = "output.mp4"  # Set desired output name
+dash_downloader.decryption_key = "12345:678910"  # Set decryption key if needed
+dash_downloader.dash_downloader()
+```
+
+- Download HLS content using the library:
+```python
+from DDownloader.hls_downloader import HLS
+
+hls_downloader = HLS()
+hls_downloader.manifest_url = "https://example.com/path/to/manifest.m3u8"  # Set your HLS manifest URL
+hls_downloader.output_name = "output.mp4"  # Set desired output name
+hls_downloader.decryption_key = "12345:678910"  # Set decryption key if needed
+hls_downloader.hls_downloader()  # Call the downloader method
+```
+
+- CLI Usage:
+```bash
+  DDownloader -h
+```
+
+- ![image](https://github.com/user-attachments/assets/5abdee78-2bb3-45be-b784-c8de86dac237)
+
+
+## THIS PROJECT STILL IN DEVELOPMENT
+
+- Contributions are welcome! Feel free to open issues, create pull requests, or provide suggestions.
