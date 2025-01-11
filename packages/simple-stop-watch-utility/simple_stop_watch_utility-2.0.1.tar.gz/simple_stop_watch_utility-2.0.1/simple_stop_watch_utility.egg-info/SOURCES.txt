@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+simple_stop_watch_utility.egg-info/PKG-INFO
+simple_stop_watch_utility.egg-info/SOURCES.txt
+simple_stop_watch_utility.egg-info/dependency_links.txt
+simple_stop_watch_utility.egg-info/top_level.txt
+stop_watch/__init__.py
+stop_watch/main.py
