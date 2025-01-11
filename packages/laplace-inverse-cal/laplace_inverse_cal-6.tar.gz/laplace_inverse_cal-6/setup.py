@@ -1,0 +1,24 @@
+from setuptools import setup, find_packages
+ 
+classifiers = [
+  'Development Status :: 5 - Production/Stable',
+  'Intended Audience :: Education',
+  'Operating System :: Microsoft :: Windows :: Windows 10',
+  'License :: OSI Approved :: MIT License',
+  'Programming Language :: Python :: 3'
+]
+ 
+setup(
+  name='laplace_inverse_cal',
+  version='6',
+  description='fast laplace calculator',
+  long_description=open('README.txt').read(),
+  url='',  
+  author='Mohammad H. Rostami',
+  author_email='mhro.r84@gmail.com',
+  license='MIT', 
+  classifiers=classifiers,
+  keywords='Laplace Inverse', 
+  packages=find_packages(),
+  install_requires=['mpmath'] 
+)

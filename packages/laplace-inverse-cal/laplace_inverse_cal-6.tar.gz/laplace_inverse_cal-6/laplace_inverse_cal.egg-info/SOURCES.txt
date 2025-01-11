@@ -1,0 +1,10 @@
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+laplace_inverse_cal/__init__.py
+laplace_inverse_cal.egg-info/PKG-INFO
+laplace_inverse_cal.egg-info/SOURCES.txt
+laplace_inverse_cal.egg-info/dependency_links.txt
+laplace_inverse_cal.egg-info/requires.txt
+laplace_inverse_cal.egg-info/top_level.txt
