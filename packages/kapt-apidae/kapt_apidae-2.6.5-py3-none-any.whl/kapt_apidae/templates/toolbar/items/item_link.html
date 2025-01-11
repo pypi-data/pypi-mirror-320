@@ -1,0 +1,11 @@
+<li class="{% if active %}cms-toolbar-item-navigation-active{% endif %}{% if disabled %} cms-toolbar-item-navigation-disabled{% endif %} {{ extra_classes|join:' ' }}">
+  <a{% if disabled %} tabindex="-1"{% endif %} href="{{ url }}" {% if target_blank %}onmousedown="newTabLink(event)"{% endif %}>{{ name }}</a>
+</li>
+
+<script>
+  function newTabLink(event) {
+    event.preventDefault();
+    var url = event.target.href;
+    window.open(url, '_blank');
+  }
+</script>

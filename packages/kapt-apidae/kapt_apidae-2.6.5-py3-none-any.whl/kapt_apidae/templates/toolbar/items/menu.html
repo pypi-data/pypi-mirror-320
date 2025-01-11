@@ -1,0 +1,32 @@
+<li class="{% if active %}cms-toolbar-item-navigation-active {% endif %}{% if disabled %}cms-toolbar-item-navigation-disabled {% endif %}">
+  <a{% if disabled %} tabindex="-1"{% endif %} href="{{ url }}">
+    <span>{{ title }}<span class="cms-icon cms-icon-arrow"></span></span>
+    {% if led %}
+      <span class="led {% if to_check == ok_condition %}led-green{% elif to_check == warning_condition %}led-orange{% elif to_check == error_condition %}led-red{% else %}led-orange{% endif %}"></span>
+      <style>
+        .led {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          margin-left: 5px;
+        }
+
+        .led-green {
+          background-color: green;
+        }
+        .led-orange {
+          background-color: orange;
+        }
+        .led-red {
+          background-color: red;
+        }
+      </style>
+    {% endif %}
+  </a>
+  {% if items %}
+    <ul>
+      {% for item in items %}{{ item.render }}{% endfor %}
+    </ul>
+  {% endif %}
+</li>
