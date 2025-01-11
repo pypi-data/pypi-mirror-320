@@ -1,0 +1,12 @@
+magneto/__init__.py,sha256=euZMmee642Sbk_9HQdzYCE4bWPiOd_gDPSW_eWIGSeo,88
+magneto/basic_matcher.py,sha256=sypeP74N6OWn-aMOl5xRufpCctsOP7sLmYKSFbJU0Ic,2307
+magneto/bp_reranker.py,sha256=wNlls4JPIdnhMFvs5VCYq3dyB6DUojCy_jMFXQZNVz8,3068
+magneto/column_encoder.py,sha256=6WYbC4UNYhlBURhlfdob5HSGJ8Gi761sem0voJjuvQE,5618
+magneto/embedding_matcher.py,sha256=phAyYNpqAOjq4SC1VtlBWb9ZOuogYc0GeSaf4F42Xu4,5184
+magneto/llm_reranker.py,sha256=dJ4f_ICZCvyHE0eaw8uDOR2MdIYDLaINGN_LskUSeDM,6819
+magneto/magneto.py,sha256=QzGHCpcvAE3dGm3xMuaW5N6o8gxyAxyHaIhC289AyIU,9640
+magneto/retriever.py,sha256=cVRwlIw6HTVwojtQwfWM8ntwwYbwSiDu1A0Z4H2R79o,8050
+magneto_python-0.1.0.dist-info/METADATA,sha256=4vH6OjATNE_3G9EDCDrQpCmuAN_mb8wwEkY390y-8iM,1988
+magneto_python-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+magneto_python-0.1.0.dist-info/top_level.txt,sha256=arLvtBey1GGL_KRjuiy3TcumojTKD2tu4AEHMaLME4s,8
+magneto_python-0.1.0.dist-info/RECORD,,
