@@ -1,0 +1,10 @@
+folder_structure_creator/__init__.py,sha256=2Oh-zuFyMdMXTqFq5CEkf-wjSIIZfMH5SetS5VhPdYo,149
+folder_structure_creator/fstruct.py,sha256=qEySAMm-Vhlc7VZaTvmreI0GtXwDnAbE_wKWjhD0wjI,2174
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_fstruct.py,sha256=aV-GfIUMPtqdHDIwfa_X8W4LxSFDPdb--3AWA6w7S8A,1746
+folder_structure_creator-0.1.0.dist-info/LICENSE,sha256=q7KJbcPCqUAvkBuI1QNc8Kg9XPfBfnNkLN9WKwudO8U,11
+folder_structure_creator-0.1.0.dist-info/METADATA,sha256=-y91hKphNZThC265cmdqrcPo1KOdiPq_F0ATTu9RS4w,2419
+folder_structure_creator-0.1.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+folder_structure_creator-0.1.0.dist-info/entry_points.txt,sha256=_-w-F92L-oMR3uLx4V2_vY0NiY00nZh1HeENRnFcqws,46
+folder_structure_creator-0.1.0.dist-info/top_level.txt,sha256=erSMEGfJhjKSzR_JG6gO2UYh1XsAWTAwZLHv8eHhE70,31
+folder_structure_creator-0.1.0.dist-info/RECORD,,
