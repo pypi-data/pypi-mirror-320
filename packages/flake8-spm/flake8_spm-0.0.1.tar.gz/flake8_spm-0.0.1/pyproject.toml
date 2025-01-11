@@ -1,0 +1,32 @@
+[project]
+name = "flake8-spm"
+version = "0.0.1"
+authors = [
+  { name="Maxim Ivanov", email="ivanovmg@gmail.com" },
+]
+description = "Flake8 plugin for structural pattern matching"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Development Status :: 2 - Pre-Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Framework :: Flake8",
+    "Intended Audience :: Developers",
+]
+
+[project.urls]
+Homepage = "https://github.com/ivanovmg/flake8-spm"
+Issues = "https://github.com/ivanovmg/flake8-spm/issues"
+
+[project.entry-points]
+"flake8.extension" = { SPM = "flake8_spm.plugin:Plugin" }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
