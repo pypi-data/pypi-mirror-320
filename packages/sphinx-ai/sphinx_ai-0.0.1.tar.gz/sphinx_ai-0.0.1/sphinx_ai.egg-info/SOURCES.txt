@@ -1,0 +1,9 @@
+README.md
+setup.py
+sphinx-ai/__init__.py
+sphinx-ai/version.json
+sphinx_ai.egg-info/PKG-INFO
+sphinx_ai.egg-info/SOURCES.txt
+sphinx_ai.egg-info/dependency_links.txt
+sphinx_ai.egg-info/requires.txt
+sphinx_ai.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+Metadata-Version: 2.2
+Name: sphinx-ai
+Version: 0.0.1
+Requires-Dist: google-generativeai==0.3.2
+Requires-Dist: setuptools==75.8.0
+Requires-Dist: sphinx>=2.0.0
+Requires-Dist: twine==6.0.1
+Requires-Dist: voyageai==0.2.4
+Requires-Dist: wheel==0.45.1
+Dynamic: requires-dist
