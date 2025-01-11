@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+data_asset_manager/__init__.py
+data_asset_manager/main.py
+data_asset_manager.egg-info/PKG-INFO
+data_asset_manager.egg-info/SOURCES.txt
+data_asset_manager.egg-info/dependency_links.txt
+data_asset_manager.egg-info/requires.txt
+data_asset_manager.egg-info/top_level.txt
