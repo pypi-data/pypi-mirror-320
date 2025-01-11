@@ -1,0 +1,3 @@
+[console_scripts]
+llm-io=llm_io.main:app
+

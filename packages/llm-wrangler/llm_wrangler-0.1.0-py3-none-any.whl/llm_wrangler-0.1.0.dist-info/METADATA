@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: llm-wrangler
+Version: 0.1.0
+Summary: LLM utilities for handling inputs and outputs.
+Home-page: https://github.com/lukemiloszewski/llm-io
+License: MIT
+Author: Luke Miloszewski
+Author-email: lukemiloszewski@gmail.com
+Requires-Python: >=3.11.0,<3.12.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: typer (>=0.6.1,<0.7.0)
+Project-URL: Changelog, https://github.com/lukemiloszewski/llm-io/releases
+Project-URL: Repository, https://github.com/lukemiloszewski/llm-io
+Description-Content-Type: text/markdown
+
+# README
+
+```shell
+poetry config pypi-token.pypi <token>
+```
+

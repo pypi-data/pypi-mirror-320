@@ -1,0 +1,9 @@
+llm_wrangler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llm_wrangler/__main__.py,sha256=2_7cXgX5VO_ES7ni7WUKfsf8CKR6MpMs17KyyBMAF2Y,78
+llm_wrangler/main.py,sha256=4mfGbULVG4brpwxsenHtw91DDUKy_OC2o04wQixrYAA,99
+llm_wrangler/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llm_wrangler-0.1.0.dist-info/entry_points.txt,sha256=lc4Q-SX5hEAUrom0i2B4_GHazR3Kn-INI4LMp-HZ6Hc,42
+llm_wrangler-0.1.0.dist-info/LICENSE,sha256=w87m-WHQCPdUVvBS2gDv8Ht4VhGtO8uSgiHv_miFShc,1093
+llm_wrangler-0.1.0.dist-info/METADATA,sha256=sQ9j2T4u59fK27PKXNvUY0MR6F-Iz88cILB_xLQ5rK8,710
+llm_wrangler-0.1.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+llm_wrangler-0.1.0.dist-info/RECORD,,
