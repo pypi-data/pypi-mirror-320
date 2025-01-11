@@ -1,0 +1,15 @@
+pandas
+numpy
+chardet
+tensorflow
+scikit-learn
+openpyxl
+channels
+asgiref
+keras
+keras-tuner
+joblib
+requests
+nltk
+matplotlib
+xgboost
