@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: centum
+Version: 0.1.4
+Summary: A Python package for water accounting using energy and water balance modeling.
+Home-page: https://github.com/yourusername/centum
+Author: Your Name
+Author-email: your.email@example.com
+License: GPL-3.0-or-later  # Use the SPDX identifier
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: geopandas
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: rioxarray
+Requires-Dist: xarray
+
+[![pages-build-deployment](https://github.com/BenjMy/centum/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/BenjMy/centum/actions/workflows/pages/pages-build-deployment)
+[![Publish Python Package](https://github.com/BenjMy/centum/actions/workflows/python-publish.yml/badge.svg)](https://github.com/BenjMy/centum/actions/workflows/python-publish.yml)
+
+
+## 📥 Installation
+Install Centum via pip:
+
+```bash
+pip install centum
+```
+
+# 💦  Centum
+Centum, derived from the Latin word for "a hundred," is a Python package designed to streamline water accounting through energy and water balance modeling. It equips users with tools to enhance water use efficiency, detect illegal water pumping, and protect essential mountain ecosystems, addressing key water management challenges.
+
+## 🔍 Key inputs
+- NetCDF files: These should be imported as rioxarray datasets and contain essential variables like ETa (Actual Evapotranspiration) and ETp (Potential Evapotranspiration).
+- Irrigation shapefiles: Import these with geopandas to define and analyze irrigation areas.
+
+## 🔥 Core Models Used
+Centum relies on two main models:
+- Energy Balance Modeling 🌞: Provides ETa outputs using pyTSEB.
+- Soil Water Balance Modeling 💧: Supplies ETa outputs using pyCATHY.
+  
+## ✨ Key Features
+- Water Delineation: Map areas of interest using the ETa/ETp ratio.
+- Water Net Quantification: Calculate net water use based on ET baselines from Earth Observation data.
+  
+## 🌍 Additional Capabilities (expected)
+- Illegal Water Pumping Detection: Identify unsanctioned water use.
+- Ecosystem Resilience: Assess ecosystem drought resilience and green water footprint, aiding in ecosystem protection.
+
