@@ -1,0 +1,7 @@
+flake8_ic/__init__.py,sha256=fF5NHoA6bi94M17PkZAdyVxE5ABIKMNk0WmXM63_gG0,77
+flake8_ic/checker.py,sha256=eLWoy_hzgXgoI42jgnLdBdjTEs5cLxpJSu_7OJMVKtU,952
+flake8_ic-0.5.0.dist-info/METADATA,sha256=W5da7B_aMke0cQsIfmogBsfngDxXX8Pqd2qSWFqfVmw,5076
+flake8_ic-0.5.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+flake8_ic-0.5.0.dist-info/entry_points.txt,sha256=DD9EIhVinCa_u08TjvdPlKnbr9AFeX8nDyKfHP1e-6Y,53
+flake8_ic-0.5.0.dist-info/licenses/LICENSE,sha256=seDhX1EGuAm_zNAplG3wrxZmQnDaifnwtiZSP8VSLeg,1070
+flake8_ic-0.5.0.dist-info/RECORD,,

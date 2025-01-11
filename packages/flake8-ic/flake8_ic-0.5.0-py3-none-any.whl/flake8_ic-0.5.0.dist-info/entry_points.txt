@@ -1,0 +1,2 @@
+[flake8.extension]
+IC100 = flake8_ic:IcecreamChecker
