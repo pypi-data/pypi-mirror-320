@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ai-feature-store
+Version: 1.0.0
+Requires-Dist: torch
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: google-cloud-bigtable
+Requires-Dist: prometheus-client
+
