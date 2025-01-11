@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "just-agents-router"
+version = "0.4.8"
+description = "Just Agents - Router Components"
+authors = [
+    "Newton Winter <isoutthere@gmail.com>",
+    "Alex Karmazin <karmazinalex@gmail.com>"
+]
+maintainers = [
+    "Newton Winter <isoutthere@gmail.com>",
+    "Anton Kulaga <antonkulaga@gmail.com>"
+]
+readme = "README.md"
+packages = [
+    { include = "just_agents" }
+]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+just-agents-core = ">=0.4.8"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
