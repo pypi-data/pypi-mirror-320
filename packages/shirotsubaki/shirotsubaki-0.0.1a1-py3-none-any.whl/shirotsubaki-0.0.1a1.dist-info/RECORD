@@ -1,0 +1,11 @@
+shirotsubaki/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shirotsubaki/element.py,sha256=h6C_R2Bo_GqoH8LlVMuvgv0Jh9axlaZ3keTqyxr6MJY,712
+shirotsubaki/report.py,sha256=qq-VwN2gDZ1DZQV2hmpY45dhes13jEjP8WYUKs5I_9s,4591
+shirotsubaki/style.py,sha256=CHBqwrPP3OIQrD02gCBR-w8IvMgDga5gfZKAvjYrH9Q,2559
+shirotsubaki/utils.py,sha256=_J2mbp8kbk0DDLIvZ9BTN1yuS31t4MKDsr5ZLbastVU,827
+shirotsubaki/templates/report.html,sha256=9hGqxG1uDpHqbgimhHCjVfNw-4tldWJgt8JaAkw5xeU,225
+shirotsubaki/templates/report_with_tabs.html,sha256=lSgasL7DOqZq9CZuyjggQnmPoTOLm_9UiL6wZwftb_0,967
+shirotsubaki-0.0.1a1.dist-info/METADATA,sha256=JsJxWOSpgOx_Z8de5NwZgFzhMvPG22SzSGziI82u5d0,2115
+shirotsubaki-0.0.1a1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+shirotsubaki-0.0.1a1.dist-info/licenses/LICENSE,sha256=W_pa-7IEUizyw_AEzxac5bbVY5Mqr6lZqsFnAjXrCRQ,1068
+shirotsubaki-0.0.1a1.dist-info/RECORD,,
