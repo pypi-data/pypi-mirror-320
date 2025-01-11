@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: fastdla
+Version: 0.1.0
+Summary: Fast calculation of dynamical Lie algebra
+Project-URL: Homepage, https://github.com/yiiyama/fastdla
+Project-URL: Issues, https://github.com/yiiyama/fastdla/issues
+Author-email: Yutaro Iiyama <iiyama@icepp.s.u-tokyo.ac.jp>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: jax
+Requires-Dist: numba
+Requires-Dist: numpy
+Description-Content-Type: text/markdown
+
+# fastdla
+Dynamical Lie Algebra calculation using sparse Pauli representation
