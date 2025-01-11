@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "translation-strings-utility"
+version = "0.1.3"
+description = ""
+authors = ["Jacob Valdez <jacobfv123@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+typer = "^0.15.1"
+anthropic = "^0.42.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+translation-manager = "translation_manager:app"
