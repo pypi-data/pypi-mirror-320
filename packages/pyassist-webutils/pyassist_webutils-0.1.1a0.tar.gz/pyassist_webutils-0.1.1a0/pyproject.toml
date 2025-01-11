@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pyassist-webutils"
+version = "0.1.1a0"
+description = ""
+authors = ["ISabariRajan"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pyassist-utils = "^0.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

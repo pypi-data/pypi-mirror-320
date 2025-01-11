@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: pyassist-webutils
+Version: 0.1.1a0
+Summary: 
+Author: ISabariRajan
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pyassist-utils (>=0.0.1,<0.0.2)
+Description-Content-Type: text/markdown
+
+# pyassist_webutils
+Pyassist Webutils
+
