@@ -1,0 +1,2 @@
+[console_scripts]
+ate-installer = semi_ate_installer.cli:main
