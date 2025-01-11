@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+dtfs/__init__.py
+dtfs.egg-info/PKG-INFO
+dtfs.egg-info/SOURCES.txt
+dtfs.egg-info/dependency_links.txt
+dtfs.egg-info/not-zip-safe
+dtfs.egg-info/requires.txt
+dtfs.egg-info/top_level.txt
