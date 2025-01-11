@@ -1,0 +1,2 @@
+[console_scripts]
+arcrest = pyarcrest.cli.arcrest:main

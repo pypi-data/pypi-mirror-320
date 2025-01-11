@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: pyarcrest
+Version: 0.5
+Summary: Library for ARC CE REST
+Author: aCT team
+Author-email: act-dev@cern.ch
+License: Apache 2.0
+Requires-Python: >=3.6
+Requires-Dist: cryptography
