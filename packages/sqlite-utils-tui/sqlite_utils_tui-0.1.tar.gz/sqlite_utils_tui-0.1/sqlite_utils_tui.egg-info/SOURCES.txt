@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+sqlite_utils_tui.py
+sqlite_utils_tui.egg-info/PKG-INFO
+sqlite_utils_tui.egg-info/SOURCES.txt
+sqlite_utils_tui.egg-info/dependency_links.txt
+sqlite_utils_tui.egg-info/entry_points.txt
+sqlite_utils_tui.egg-info/requires.txt
+sqlite_utils_tui.egg-info/top_level.txt
+tests/test_tui.py

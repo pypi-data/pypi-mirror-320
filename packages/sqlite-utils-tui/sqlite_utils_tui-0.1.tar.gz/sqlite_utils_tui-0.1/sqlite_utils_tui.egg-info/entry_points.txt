@@ -1,0 +1,2 @@
+[sqlite_utils]
+tui = sqlite_utils_tui
