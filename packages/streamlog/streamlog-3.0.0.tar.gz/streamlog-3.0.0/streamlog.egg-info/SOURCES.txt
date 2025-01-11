@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+streamlog/__init__.py
+streamlog/streamlog.py
+streamlog.egg-info/PKG-INFO
+streamlog.egg-info/SOURCES.txt
+streamlog.egg-info/dependency_links.txt
+streamlog.egg-info/requires.txt
+streamlog.egg-info/top_level.txt
+tests/__init__.py
+tests/test_simple.py
