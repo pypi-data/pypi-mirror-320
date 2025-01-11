@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: minifypy
+Version: 0.0.1
+Summary: minify py file(s)
+Author-email: calcuis <info@calcu.io>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: pyminify
+Project-URL: GitHub, https://github.com/calcuis/minifypy
+Project-URL: Issues, https://github.com/calcuis/minifypy/issues
+
+### minifypy
+install it via pip/pip3
+```
+py install minifypy
+```
+run the minifier by
+```
+py -m minifypy
+```
+>Please opt:
+>1. select a py file to minify
+>2. minify all py file(s) in the current directory
+>
+>Enter your choice (1 to 2): _
