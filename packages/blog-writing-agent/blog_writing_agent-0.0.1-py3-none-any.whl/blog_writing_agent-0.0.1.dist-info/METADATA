@@ -1,0 +1,94 @@
+Metadata-Version: 2.2
+Name: blog_writing_agent
+Version: 0.0.1
+Summary: Blog Writing Agent AI Agent Directory to Host All Blog Writing Agent related AI Agents Services, Community, Reviews and More.
+Author: AI Agent Hub
+Author-email: dingo0927@126.com
+Project-URL: homepage, http://www.deepnlp.org/store/ai-agent
+Project-URL: repository, https://github.com/AI-Agent-Hub/AI-Agent-Marketplace
+Keywords: Blog Writing Agent,AI Agent Marketplace,AI Agent Directory,AI Agents,Agentic AI
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.17.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Blog Writing Agent AI Agent Directory to Host All Blog Writing Agent related AI Agents Services, Community, Reviews and More.
+
+This is the official github repo for pypi package "blog_writing_agent". You can use this package to download and get statistics (forks/stars/website traffic) of AI agents on website from AI Agent Marketplace Directory Store (http://www.deepnlp.org/store/ai-agent) and AI Agent Search Portal (http://www.deepnlp.org/search/agent) by Deepnlp AI Agent Marketplace, is the directory for more than 5000+ AI Agents and Apps covering various types of AI agents, such as autonomous agent, chatbots, Computer and Mobile phone use agents, robotic agents, and various industries such as business, finance, law, medical or healthcare, etc. The directory are updated to websites from both public repo (github/huggingface) as well as AI Agent services in cloud service provider (Microsoft Azure AWS, Copilot, GPT Store, Google Cloud, etc). 
+
+![AI Agent Marketplace Directory Search](https://raw.githubusercontent.com/AI-Agent-Hub/AI-Agent-Marketplace/refs/heads/main/AI%20Agent%20Marketplace%20Search.jpg)
+
+
+## Install
+
+
+```
+pip install blog_writing_agent
+
+```
+
+## Usage
+python 
+
+```
+import blog_writing_agent
+from blog_writing_agent.utils import function_to_schema
+
+```
+
+
+### Related
+#### AI Agent Marketplace and Search
+[AI Agent Marketplace and Search](http://www.deepnlp.org/search/agent) <br>
+[AI Robot Search](http://www.deepnlp.org/search/robot) <br>
+[Equation and Academic search](http://www.deepnlp.org/search/equation) <br>
+[AI & Robot Comprehensive Search](http://www.deepnlp.org/search) <br>
+[AI & Robot Question](http://www.deepnlp.org/question) <br>
+[AI & Robot Community](http://www.deepnlp.org/community) <br>
+##### AI Agent
+[AI Agent Marketplace Reviews](http://www.deepnlp.org/store/ai-agent) <br>
+[AI Agent Marketplace and Search Portal Reviews 2025](http://www.deepnlp.org/blog/ai-agent-marketplace-and-search-portal-reviews-2025) <br>
+[AI Agent Publisher](http://www.deepnlp.org/store/pub?category=ai-agent) <br>
+[Microsoft AI Agents Reviews](http://www.deepnlp.org/store/pub/pub-microsoft-ai-agent) <br>
+[Claude AI Agents Reviews](http://www.deepnlp.org/store/pub/pub-claude-ai-agent) <br>
+[OpenAI AI Agents Reviews](http://www.deepnlp.org/store/pub/pub-openai-ai-agent) <br>
+[AgentGPT AI Agents Reviews](http://www.deepnlp.org/store/pub/pub-agentgpt) <br>
+[Saleforce AI Agents Reviews](http://www.deepnlp.org/store/pub/pub-salesforce-ai-agent) <br>
+[AI Agent Builder Reviews](http://www.deepnlp.org/store/ai-agent/ai-agent-builder) <br>
+##### AI Reasoning Chatbot
+[OpenAI o1 Reviews](http://www.deepnlp.org/store/pub/pub-openai-o1) <br>
+[OpenAI o3 Reviews](http://www.deepnlp.org/store/pub/pub-openai-o3) <br>
+##### AI Video Generation
+[Sora Reviews](http://www.deepnlp.org/store/pub/pub-sora) <br>
+[Kling AI Reviews](http://www.deepnlp.org/store/pub/pub-kling-kwai) <br>
+[Dreamina AI Reviews](http://www.deepnlp.org/store/pub/pub-dreamina-douyin) <br>
+[Best AI Apps Review](http://www.deepnlp.org/store/pub) <br>
+[AI Video Generator](http://www.deepnlp.org/store/video-generator) <br>
+[AI Image Generator](http://www.deepnlp.org/store/image-generator) <br>
+[AI Glasses Review](http://www.deepnlp.org/store/ai-glasses) <br>
+[VR Glasses Review](http://www.deepnlp.org/store/vr-glasses) <br>
+##### Robotics
+[Tesla Cybercab Robotaxi](http://www.deepnlp.org/store/pub/pub-tesla-cybercab) <br>
+[Tesla Optimus](http://www.deepnlp.org/store/pub/pub-tesla-optimus) <br>
+[Figure AI](http://www.deepnlp.org/store/pub/pub-figure-ai) <br>
+#### Equation
+[DeepNLP Equation Database](http://www.deepnlp.org/equation) <br>
+[Math Equations](http://www.deepnlp.org/equation/category/math) <br>
+[Physics Equations](http://www.deepnlp.org/equation/category/physics) <br>
+[NLP Equations](http://www.deepnlp.org/equation/category/nlp) <br>
+[Machine Learning Equations](http://www.deepnlp.org/equation/category/machine%20learning) <br>
+
+
