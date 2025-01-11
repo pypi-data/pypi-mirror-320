@@ -1,0 +1,30 @@
+Metadata-Version: 2.2
+Name: benutils
+Version: 0.5.4
+Summary: Various utilities (mjd, data container, widgets...)
+Home-page: https://gitlab.com/bendub/benutils
+Author: Benoit Dubois
+Author-email: benoit.dubois@femto-engineering.fr
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Provides-Extra: usb-utils-support
+Requires-Dist: pyusb; extra == "usb-utils-support"
+Provides-Extra: pure-python-signalslot-facilities
+Requires-Dist: signalslot; extra == "pure-python-signalslot-facilities"
+Provides-Extra: pyqt-signalslot-facilities
+Requires-Dist: PyQt5; extra == "pyqt-signalslot-facilities"
+Provides-Extra: real-time-plot-support
+Requires-Dist: pyqtgraph; extra == "real-time-plot-support"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: summary
