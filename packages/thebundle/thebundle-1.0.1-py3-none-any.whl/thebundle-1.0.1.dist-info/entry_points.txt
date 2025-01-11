@@ -1,0 +1,4 @@
+[console_scripts]
+bundle_scraper = bundle.scraper.cli:cli
+bundle_tube = bundle.youtube.cli:main
+bundle_web = bundle.website.cli:cli
