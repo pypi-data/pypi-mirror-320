@@ -1,0 +1,16 @@
+.gitignore
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+inbox4us_pos_printer.egg-info/PKG-INFO
+inbox4us_pos_printer.egg-info/SOURCES.txt
+inbox4us_pos_printer.egg-info/dependency_links.txt
+inbox4us_pos_printer.egg-info/requires.txt
+inbox4us_pos_printer.egg-info/top_level.txt
+pos_printer/__init__.py
+pos_printer/main.py
+pos_printer/main_temp.py
+ssl/ca_bundle.crt
+ssl/certificate.crt
+ssl/private.key
