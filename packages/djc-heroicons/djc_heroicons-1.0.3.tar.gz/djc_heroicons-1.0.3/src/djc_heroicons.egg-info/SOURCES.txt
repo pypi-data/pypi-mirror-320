@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/djc_heroicons/__init__.py
+src/djc_heroicons/app_settings.py
+src/djc_heroicons/apps.py
+src/djc_heroicons/icons.py
+src/djc_heroicons/py.typed
+src/djc_heroicons/utils.py
+src/djc_heroicons.egg-info/PKG-INFO
+src/djc_heroicons.egg-info/SOURCES.txt
+src/djc_heroicons.egg-info/dependency_links.txt
+src/djc_heroicons.egg-info/requires.txt
+src/djc_heroicons.egg-info/top_level.txt
+src/djc_heroicons/components/__init__.py
+src/djc_heroicons/components/icon.py
