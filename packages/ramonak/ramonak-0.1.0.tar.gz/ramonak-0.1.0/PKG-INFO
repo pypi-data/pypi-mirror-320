@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: ramonak
+Version: 0.1.0
+Project-URL: Documentation, https://github.com/Alexander Rusakevich/ramonak#readme
+Project-URL: Issues, https://github.com/Alexander Rusakevich/ramonak/issues
+Project-URL: Source, https://github.com/Alexander Rusakevich/ramonak
+Author-email: Alexander Rusakevich <mr.alexander.rusakevich@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: lxml>=5.3.0
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: requests>=2.32.3
+Requires-Dist: tqdm
+Description-Content-Type: text/markdown
+
+# Ramonak
+
+[![PyPI - Version](https://img.shields.io/pypi/v/ramonak.svg)](https://pypi.org/project/ramonak)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ramonak.svg)](https://pypi.org/project/ramonak)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install ramonak
+```
+
+## License
+
+`ramonak` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
