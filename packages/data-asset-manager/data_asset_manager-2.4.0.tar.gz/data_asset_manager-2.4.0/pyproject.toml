@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "data-asset-manager"
+version = "2.4.0"
+description = "A Pandas wrapper library that simplifies day-to-day data management tasks"
+authors = [
+  { name="Jon Hart", email="hartjc@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: Microsoft :: Windows",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)"
+]
+
+dependencies = [
+  "log-manager >=1.0,<2.0"
+]
+
+[project.urls]
+"Source Code" = "https://github.com/jc-hart/stop-watch"
+"Bug Tracker" = "https://github.com/jc-hart/stop-watch/issues"
