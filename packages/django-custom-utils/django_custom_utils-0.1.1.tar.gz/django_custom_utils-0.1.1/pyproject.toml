@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "django-custom-utils"
+version = "0.1.1"
+description = "A collection of utilities that makes working with Django and DRF easier."
+authors = ["Daniil Nizdolin <nizdolin@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/nizdolin/django-custom-utils.git"
+readme = "README.md"
+packages = [{include = "django_custom_utils"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.2.8"
+djangorestframework = "^3.14.0"
+django-admin-list-filter-dropdown = "^1.0.3"
+django-filter = "^23.5"
+uuid6 = "^2023.5.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
