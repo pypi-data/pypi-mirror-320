@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: tcup
+Version: 0.7.1
+Summary: 
+Author: William Martin
+Author-email: 30499074+wm1995@users.noreply.github.com
+Requires-Python: >=3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: stan
+Requires-Dist: arviz (>=0.19.0)
+Requires-Dist: astroml (>=1.0.2.post1)
+Requires-Dist: astropy (>=6.1.2)
+Requires-Dist: astropy-iers-data (>=0.2024.7.22.0.34.13)
+Requires-Dist: jax (>=0.4.23)
+Requires-Dist: jinja2 (>=3.1.2,<4.0.0) ; extra == "stan"
+Requires-Dist: numpy (>=1.26.3)
+Requires-Dist: numpyro (>=0.13.2)
+Requires-Dist: pyerfa (>=2.0.1.4)
+Requires-Dist: pystan (>=3.6.0,<4.0.0) ; extra == "stan"
+Requires-Dist: scikit-learn (>=1.5.1)
+Requires-Dist: tensorflow-probability[jax] (>=0.19.0)
+Description-Content-Type: text/markdown
+
+# t-cup - robust linear regression
+
+This package presents a statistical model for robust linear regression where
+both independent and dependent variables are measured with measurement error.
+
+This code is bundled with [XDGMM](https://github.com/tholoien/XDGMM), a Python
+package implementing the
+[extreme deconvolution algorithm](https://arxiv.org/abs/0905.2979).
+
