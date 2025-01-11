@@ -1,0 +1,1 @@
+recursive-include shiny_ketcher/distjs *.css *.js
