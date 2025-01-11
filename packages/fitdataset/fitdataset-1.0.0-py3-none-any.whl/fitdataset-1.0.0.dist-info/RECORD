@@ -1,0 +1,11 @@
+fitdataset/__init__.py,sha256=vt2YDOJYm5G93Me-I7W1u6SCpyMxrquMM__JkMIPIQk,811
+fitdataset/constantes_parser_dataset.py,sha256=EFnYy3OrADSzmCQyG3KKLdZmImuO3FtjSUK92ITfJ_w,75904
+fitdataset/dataset.py,sha256=jNyYKPD6EB0oYyhTReqxI5Aw8j3nBqidU4QrgEAAk5g,3832
+fitdataset/dataset_nutritional.py,sha256=SHevTnEt44ZYO63nXndnP27jk8smSPKBFc5Fuo1TXSQ,16559
+fitdataset/interfaces.py,sha256=kDMRcZkrlsADpP0EDpTo9pqYwRpzqhVxfyhuQYe3Z80,1474
+fitdataset/parser.py,sha256=YFX5acVRvHbkYRB86rXK1799JgSzZ4hKhSWow5iI0iU,6248
+fitdataset/utils.py,sha256=Byqn6K1DvGrM7V09I4fTyaPhRUBUM-CMCHai0_PyiYc,3589
+fitdataset-1.0.0.dist-info/METADATA,sha256=bjTjBUdWqA-KXycskKwOkvuoISJrhQ621SkA5hnn2X8,1720
+fitdataset-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+fitdataset-1.0.0.dist-info/top_level.txt,sha256=zRiYxzik_gT7s6sKoIGJuzj2YwVq6fJ2FfJEcvwOqP0,11
+fitdataset-1.0.0.dist-info/RECORD,,
