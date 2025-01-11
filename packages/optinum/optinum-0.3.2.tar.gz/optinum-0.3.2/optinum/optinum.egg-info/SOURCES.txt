@@ -1,0 +1,16 @@
+setup.py
+optinum/optinum/__init__.py
+optinum/optinum/base_ops.py
+optinum/optinum/eigen.py
+optinum/optinum/ode.py
+optinum/optinum/signal.py
+optinum/optinum/sparse.py
+optinum/optinum/spectrum.py
+optinum/optinum.egg-info/PKG-INFO
+optinum/optinum.egg-info/SOURCES.txt
+optinum/optinum.egg-info/dependency_links.txt
+optinum/optinum.egg-info/requires.txt
+optinum/optinum.egg-info/top_level.txt
+optinum/optinum/plotting/__init__.py
+optinum/optinum/plotting/eigen.py
+optinum/optinum/plotting/ode.py
