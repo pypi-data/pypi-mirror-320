@@ -1,0 +1,5 @@
+[pymodaq.instruments]
+hamamatsu = pymodaq_plugins_hamamatsu
+
+[pymodaq.plugins]
+hamamatsu = pymodaq_plugins_hamamatsu
