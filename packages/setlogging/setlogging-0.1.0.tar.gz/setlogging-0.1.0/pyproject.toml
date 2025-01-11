@@ -1,0 +1,62 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "setlogging"
+version = "0.1.0"
+description = "A flexible logging utility with JSON support and timezone awareness"
+authors = [
+    { name = "Jie Yan", email = "kiki3890528@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["logging", "json", "timezone", "rotation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: System :: Logging",
+]
+
+[project.urls]
+Homepage = "https://github.com/JieYanTIBCO/setlogging"
+Documentation = "https://github.com/JieYanTIBCO/setlogging#readme"
+Repository = "https://github.com/JieYanTIBCO/setlogging.git"
+Issues = "https://github.com/JieYanTIBCO/setlogging/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/setlogging"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --cov=setlogging"
+testpaths = [
+    "tests",
+]
+
+[tool.coverage.run]
+source = ["src"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if __name__ == .__main__.:",
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py37']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
