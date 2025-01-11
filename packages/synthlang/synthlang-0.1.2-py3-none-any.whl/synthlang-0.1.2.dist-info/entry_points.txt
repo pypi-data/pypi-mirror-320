@@ -1,0 +1,3 @@
+[console_scripts]
+synthlang=synthlang.cli:main
+
