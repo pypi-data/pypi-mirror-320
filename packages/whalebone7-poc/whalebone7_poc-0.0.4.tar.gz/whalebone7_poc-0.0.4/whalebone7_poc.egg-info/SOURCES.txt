@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+whalebone7_poc.egg-info/PKG-INFO
+whalebone7_poc.egg-info/SOURCES.txt
+whalebone7_poc.egg-info/dependency_links.txt
+whalebone7_poc.egg-info/top_level.txt
