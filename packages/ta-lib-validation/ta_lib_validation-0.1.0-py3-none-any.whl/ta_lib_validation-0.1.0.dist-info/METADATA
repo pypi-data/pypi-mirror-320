@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: ta-lib-validation
+Version: 0.1.0
+Summary: 
+Author: Andrey Linyushin
+Author-email: 89202979894@mail.ru
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+## Package for test validation
