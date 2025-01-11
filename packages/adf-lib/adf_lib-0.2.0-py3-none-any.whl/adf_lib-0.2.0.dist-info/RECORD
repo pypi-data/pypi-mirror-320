@@ -1,0 +1,15 @@
+adf_lib/__init__.py,sha256=8fj6ylA8rysuvZRHxjI5iBNllm-a1FNIBgIxDvFEGgc,459
+adf_lib/constants/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adf_lib/constants/enums.py,sha256=1RXlOypIYpNSJmuEviEHHBiyjejc5KWy8Fl2wLeTsw0,963
+adf_lib/exceptions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adf_lib/exceptions/validation.py,sha256=pu_57aM9Wmu4jIO5PYrng3WbBMqgAv3rpqtWcWzWq0s,345
+adf_lib/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adf_lib/models/document.py,sha256=5TSyYSzzn2MZ4NGVonG4TnSAuDAz9eB-RbYoZNLBYJ0,828
+adf_lib/models/link.py,sha256=LR0kbYKSE-Ur6wVi0v0iVXptg8nDPQc9xx2h6soqqAQ,1111
+adf_lib/models/table.py,sha256=siGa3bytHl3DOs9LIwGInPqIuTKu0GndenR3ZNfhOZo,2734
+adf_lib/models/text.py,sha256=mHDVGbAnQwl8xWTdgisYUfREtotBZrheCR9Jstg-uCg,2967
+adf_lib-0.2.0.dist-info/LICENSE,sha256=jOkJPj7nbY5m-rUnDttkRApVAH3NsyIKhZXUugbq-Tc,1067
+adf_lib-0.2.0.dist-info/METADATA,sha256=DQ7EErDAKIM149L_TYA-TRIvvIARb9_CLs1VPcno0ts,8897
+adf_lib-0.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+adf_lib-0.2.0.dist-info/top_level.txt,sha256=B_YinVuSR7shtBjV8dyTIm5YvTIgepLJQlNR2wnNGlY,8
+adf_lib-0.2.0.dist-info/RECORD,,
