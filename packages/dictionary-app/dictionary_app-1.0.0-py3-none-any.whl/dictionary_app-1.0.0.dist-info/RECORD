@@ -1,0 +1,9 @@
+src/__init__.py,sha256=kQ8Pwi_Zhfs7oVLwvfzkTONsS5LabqHwBmG2i4rMXZI,306
+src/data_manager.py,sha256=wKOfZyQneiCF7UDyqtwaASMGiRz1dFrLYi9T5ImH48A,1266
+src/dictionary_manager.py,sha256=SnM60eRMXyxHeWM4WB5AUVSXv2F5mgI4T78pfrohSYM,1449
+src/gui.py,sha256=QXrvFG-uWQ5CzDHnlbc-tMDbJpkpyobz2x85HlnP99I,6756
+src/utils.py,sha256=n9T1wHYa14UFsMPzQZhQvs9MmUYeoh__p7dVwmvUTiI,576
+dictionary_app-1.0.0.dist-info/METADATA,sha256=B8aNjp05qjJcb2PNqEDXbdQ8dbBelxXJqM-bkl6BkE0,2877
+dictionary_app-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+dictionary_app-1.0.0.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+dictionary_app-1.0.0.dist-info/RECORD,,
