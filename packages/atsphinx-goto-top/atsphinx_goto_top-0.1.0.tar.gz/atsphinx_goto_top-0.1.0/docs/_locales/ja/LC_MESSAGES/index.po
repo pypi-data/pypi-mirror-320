@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Kazuya Takei
+# This file is distributed under the same license as the atsphinx-goto-top
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: atsphinx-goto-top 0.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-11 18:33+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../index.rst:3
+msgid "atsphinx-goto-top"
+msgstr ""
+
+#: ../../index.rst:15
+msgid "Overview"
+msgstr "概要"
+
+#: ../../index.rst:17
+msgid ""
+"This is Sphinx-exntension to add \"Back to top\" button into every "
+"themes. Provided button is generic, user can customize with almost no "
+"limits."
+msgstr ""
+"これは「トップに戻る」ボタンをあらゆるテーマに追加可能にするSphinx拡張です。"
+"汎用的な作りをしており、カスタマイズの自由が効きます。"
+
+#: ../../index.rst:20
+msgid "Prese see :doc:`demo` to experience it."
+msgstr "動作を体験したい場合は、 :doc:`demo` を参照してください。"
+
+#: ../../index.rst:23
+msgid "Concept"
+msgstr "基本コンセプト"
+
+#: ../../index.rst:25
+msgid ""
+"This extension is made for working on any themes. Therefore, this is "
+"implemented simple and users can override contents easy."
+msgstr ""
+"この拡張は「どんなテーマでも動作する」ことを意識して作っています。"
+"そのため、実装は非常に簡素ですし、利用者による上書き等も比較的用意になっています。"
+
+#~ msgid "Todo"
+#~ msgstr ""
+
+#~ msgid "Write it"
+#~ msgstr ""
+
