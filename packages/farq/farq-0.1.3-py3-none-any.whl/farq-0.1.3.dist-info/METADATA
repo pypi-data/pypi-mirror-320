@@ -1,0 +1,62 @@
+Metadata-Version: 2.2
+Name: farq
+Version: 0.1.3
+Summary: A Python library for raster change detection and analysis
+Home-page: https://github.com/ferasqr/farq
+Author: Feras Alqrinawi
+Author-email: ferasqr@yahoo.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.19.0
+Requires-Dist: matplotlib>=3.3.0
+Requires-Dist: rasterio>=1.2.0
+Requires-Dist: scipy>=1.6.0
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0; extra == "dev"
+Requires-Dist: black>=21.0; extra == "dev"
+Requires-Dist: flake8>=3.9.0; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# FARQ
+
+A Python library for raster change detection and analysis.
+
+## Installation
+
+```bash
+pip install farq
+```
+
+## Features
+
+- Raster data analysis and processing
+- Change detection algorithms
+- Visualization tools
+- Various analysis utilities
+
+## License
+
+This project is licensed under the MIT License.
+
+## Author
+
+Feras Alqrinawi (ferasqr@yahoo.com) 
