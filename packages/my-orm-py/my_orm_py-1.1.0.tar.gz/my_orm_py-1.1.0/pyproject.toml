@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "my-orm-py"
+version = "1.1.0"
+description = "Uma ORM simples para facilitar a implementação de SQL com Python"
+authors = ["paulindavzl <paulochz01@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    {include = "src"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+pytest = "^8.3.4"
+db-sqlite3 = "^0.0.1"
+mysql-connector-python = "^9.1.0"
+pg8000 = "^1.31.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
