@@ -1,0 +1,32 @@
+Metadata-Version: 2.2
+Name: figio
+Version: 0.0.1
+Summary: figio
+Author: Chad B. Hovey, Michael R. Buche
+Author-email: chovey@sandia.gov, mrbuche@sandia.gov
+Project-URL: Documentation, https://figio.readthedocs.io
+Project-URL: Homepage, https://autotwin.github.io/figio
+Project-URL: Repository, https://github.com/autotwin/figio
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python
+Requires-Python: <3.13,>=3.9
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pyyml
+Requires-Dist: schema
+Requires-Dist: scipy
+Requires-Dist: tzlocal
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: build; extra == "dev"
+Requires-Dist: pip; extra == "dev"
+Requires-Dist: pdoc; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: pycodestyle; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: twine; extra == "dev"
