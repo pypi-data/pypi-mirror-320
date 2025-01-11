@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/scripts/install.sh
+src/scripts/uninstall.sh
+src/systemd/xbox-switch-bridge.service
+src/xbox_switch_bridge.egg-info/PKG-INFO
+src/xbox_switch_bridge.egg-info/SOURCES.txt
+src/xbox_switch_bridge.egg-info/dependency_links.txt
+src/xbox_switch_bridge.egg-info/entry_points.txt
+src/xbox_switch_bridge.egg-info/requires.txt
+src/xbox_switch_bridge.egg-info/top_level.txt
+src/xboxswitchbridge/__init__.py
+src/xboxswitchbridge/bridge.py
+src/xboxswitchbridge/cli.py
+src/xboxswitchbridge/service.py
