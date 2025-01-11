@@ -1,0 +1,5 @@
+[console_scripts]
+countdown-tray = countdown_tray:main
+
+[gui_scripts]
+
