@@ -1,0 +1,11 @@
+LICENCE.md
+README.md
+pyproject.toml
+TweetCatcherPy/__init__.py
+TweetCatcherPy/main.py
+TweetCatcherPy/test.py
+TweetCatcherPy.egg-info/PKG-INFO
+TweetCatcherPy.egg-info/SOURCES.txt
+TweetCatcherPy.egg-info/dependency_links.txt
+TweetCatcherPy.egg-info/requires.txt
+TweetCatcherPy.egg-info/top_level.txt

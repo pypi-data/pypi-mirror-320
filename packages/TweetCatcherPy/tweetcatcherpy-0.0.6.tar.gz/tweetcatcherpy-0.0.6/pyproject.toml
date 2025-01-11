@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "TweetCatcherPy"
+version = "0.0.6"
+description = "Tweet Catcher API Python Wrapper"
+readme = "README.md"
+license = { file = "LICENSE.md" }
+authors = [
+  { name = "LnsTchTps", email = "lns@tchtped.me" }
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Operating System :: OS Independent",
+  "License :: Other/Proprietary License"
+]
+
+requires-python = ">=3.11"
+
+dependencies = [
+  "httpx>=0.20.0",
+  "websockets>=10.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/lnstchtped/TweetCatcherPy"
