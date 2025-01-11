@@ -1,0 +1,27 @@
+# QuickBytes
+
+QuickBytes is a lightweight Python library designed to handle tabular data stored in a dictionary-like format. It provides essential functionalities for data manipulation, similar to a DataFrame, but with a focus on performance and simplicity. QuickBytes supports common operations like selecting columns, filtering rows, computing statistics, sorting, and more. 
+
+**Note**: QuickBytes is currently under development. Some features may not be fully stable, and the API may change in future releases.
+
+## Features
+
+- **Head**: Retrieve the first `n` rows of the data.
+- **Select**: Select specific columns from the dataset.
+- **Mean**: Compute the mean of a column.
+- **Apply**: Apply a function to one or more columns.
+- **Filter**: Filter rows based on a condition.
+- **GroupBy**: Group data by a column and apply an aggregation function.
+- **Sort**: Sort the dataset by a specified column.
+- **To CSV**: Export data to a CSV file.
+- **Fill NA**: Fill missing values with a specified value.
+- **Describe**: Generate summary statistics for numeric columns.
+- **Pivot**: Create a pivot table.
+- **Show**: Print the data in a tabular format.
+
+## Installation
+
+To install QuickBytes, use pip:
+
+```bash
+pip install quickbytes
