@@ -1,0 +1,15 @@
+ecoinvent_interface/__init__.py,sha256=7ymn6R9bJtEtBkpRlX0ub5tmSoetCFID3AHY3OPIWzw,538
+ecoinvent_interface/core.py,sha256=Y0dKzMkEWiFzZjfhigQ8slZS3gGISXVUmwxlPVTLWew,11068
+ecoinvent_interface/mapping.py,sha256=8B-poJAbq4RvsfZf3w1ym-xer4sajI_dd0lD90aaYec,4231
+ecoinvent_interface/process_interface.py,sha256=GPROSL-uZsblbUwwK1b1rHI5cXqO3moaonZBS31zQf8,7655
+ecoinvent_interface/release.py,sha256=tpM8JL0D0yCCU1c6xAV6HgphYNUWjUeyajh9QXUw-qs,13146
+ecoinvent_interface/settings.py,sha256=q74mXWEb5b_5bDnRK0J9FYSIcF5TWck6pquzzlcKAsg,1254
+ecoinvent_interface/spold_versions.py,sha256=25H1ZWIjvV-p7yxQ_Y37-RkHAtndtU6ZQsljct5gwJ8,1990
+ecoinvent_interface/storage.py,sha256=8TxKmrTD50i1EELhfiYs-Xsr4tcAgUz3R-bno7u6Xb8,2231
+ecoinvent_interface/string_distance.py,sha256=9UtyCuKqgYQNRfKjNmReCPhey_SRIrigwV2o4znEjCk,3347
+ecoinvent_interface/data/mappings.zip,sha256=9F_CYsjB2qlwMsj0x9xLSglaR1nr3JtaH3x914Mw0ik,38540301
+ecoinvent_interface-3.1.dist-info/LICENSE,sha256=ZLbaQtCF3MQ5-2G7Y3qc_HWXLUJlG0klxoMF8Rga4P8,1091
+ecoinvent_interface-3.1.dist-info/METADATA,sha256=ae9Ujug_X1EZHp9X_5o5xDJ0t9CKizosw9LOKAqG2oU,14471
+ecoinvent_interface-3.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+ecoinvent_interface-3.1.dist-info/top_level.txt,sha256=-39vk23Hfem2yHCf0yepbd0sokg_Zlc4AXM2sRHlDR8,20
+ecoinvent_interface-3.1.dist-info/RECORD,,
