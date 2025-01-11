@@ -1,0 +1,7 @@
+setup.py
+gaju_mathlib.egg-info/PKG-INFO
+gaju_mathlib.egg-info/SOURCES.txt
+gaju_mathlib.egg-info/dependency_links.txt
+gaju_mathlib.egg-info/top_level.txt
+mathlib/__init__.py
+mathlib/operations.py
