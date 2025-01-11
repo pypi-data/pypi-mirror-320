@@ -1,0 +1,9 @@
+README.md
+setup.py
+hifilter/__init__.py
+hifilter.egg-info/PKG-INFO
+hifilter.egg-info/SOURCES.txt
+hifilter.egg-info/dependency_links.txt
+hifilter.egg-info/requires.txt
+hifilter.egg-info/top_level.txt
+tests/__init__.py
