@@ -1,0 +1,3 @@
+[console_scripts]
+godot-wsl-proxy=godot_wsl_proxy.cli:cli
+
