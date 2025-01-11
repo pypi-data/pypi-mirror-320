@@ -1,0 +1,7 @@
+
+[azure]
+azure-identity
+azure-mgmt-containerinstance
+azure-mgmt-resource
+smart_open[azure]
+adlfs

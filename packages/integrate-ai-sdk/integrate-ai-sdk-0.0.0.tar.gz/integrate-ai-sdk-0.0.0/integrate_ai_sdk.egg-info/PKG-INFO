@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: integrate-ai-sdk
+Version: 0.0.0
+Summary: integrate.ai SDK
+Home-page: https://integrate.ai
+Author: integrate.ai
+Author-email: contact@integrate.ai
+Maintainer: integrate.ai
+Maintainer-email: contact@integrate.ai
+License: Copyright (C) 2022 integrate.ai, Inc. All rights reserved.
+Project-URL: Twitter, https://twitter.com/integrateai
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+Provides-Extra: azure
+
+For more information please visit: https://integrate.ai
