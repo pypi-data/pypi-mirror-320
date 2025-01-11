@@ -1,0 +1,8 @@
+langchain_pipeshift/__init__.py,sha256=qbsggHjRlV2zQHGgemif-bJdW_1YnCyZhNtKPT8qFQE,573
+langchain_pipeshift/chat_models.py,sha256=Qk8Tf1s5-cDSXnyMFJktsHWPE2BZqIqgw9Xj6IfEQdE,18173
+langchain_pipeshift/llms.py,sha256=CdsYz_5Puk4_YYnSqvZQAdsmKwCta0TRu14axzwBorQ,8262
+langchain_pipeshift/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+langchain_pipeshift-0.1.1.dist-info/LICENSE,sha256=2btS8uNUDWD_UNjw9ba6ZJt_00aUjEw9CGyK-xIHY8c,1072
+langchain_pipeshift-0.1.1.dist-info/METADATA,sha256=SNBjFc-1Vheb9zLGvNYxp2T-fx3PcdfwsOjbC_JpbZE,2006
+langchain_pipeshift-0.1.1.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+langchain_pipeshift-0.1.1.dist-info/RECORD,,
