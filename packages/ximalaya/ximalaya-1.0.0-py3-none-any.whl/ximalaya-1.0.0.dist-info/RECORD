@@ -1,0 +1,11 @@
+ximalaya/__init__.py,sha256=vCKj36BHioXKcWUskFYCMrY3CniKHUfCIbehIeLIXT4,80
+ximalaya/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ximalaya/api/category.py,sha256=z49nvKrj6rgWPO-_Z9ajpDL8Eu_i9ouLHG6y0z-oeeI,505
+ximalaya/api/mobile.py,sha256=w9IH-1I0pnGrNOeoFKmO4vsVs9ruv6Cx7uIPmAnLQYk,647
+ximalaya/api/user.py,sha256=Jt_REtO5_o8ANLjaKlMtbw9stBo4SyvVwHIkHiE6Lpg,1155
+ximalaya/client.py,sha256=6Wbj--xR9Mj15LMHYpsTp6U72zaMP3i5Q-Ov4bp2vfU,1562
+ximalaya/typing.py,sha256=hLGT1Uhxmr4ywDIs1llLxEeQHSCCgD0YvId15fO8A5I,4147
+ximalaya-1.0.0.dist-info/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+ximalaya-1.0.0.dist-info/METADATA,sha256=eLyXw1ZxG-U1jfq1L5GSHV2aMf5OY_F3DVQt5-fw6DM,1169
+ximalaya-1.0.0.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+ximalaya-1.0.0.dist-info/RECORD,,
