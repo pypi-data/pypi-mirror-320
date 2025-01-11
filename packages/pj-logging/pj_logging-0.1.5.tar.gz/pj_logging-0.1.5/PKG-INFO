@@ -1,0 +1,121 @@
+Metadata-Version: 2.2
+Name: pj_logging
+Version: 0.1.5
+Summary: Panel rich and jsonl logging.
+Author: the-citto
+License: Copyright (c) 2025 the-citto
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+        EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+        IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+        DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+        OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+        OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Project-URL: Repository, https://github.com/the-citto/pj-logging
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Typing :: Typed
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich>=13.9
+Provides-Extra: tests
+Requires-Dist: pj_logging; extra == "tests"
+Requires-Dist: coverage; extra == "tests"
+Requires-Dist: pytest; extra == "tests"
+Requires-Dist: pytest-cov; extra == "tests"
+Requires-Dist: pytest-mypy; extra == "tests"
+Requires-Dist: pytest-ruff; extra == "tests"
+Requires-Dist: pytest-pyright; extra == "tests"
+Provides-Extra: dev
+Requires-Dist: pj_logging[tests]; extra == "dev"
+Requires-Dist: ipython; extra == "dev"
+
+[github_release]: https://img.shields.io/github/release/the-citto/pj-logging.svg?logo=github&logoColor=white&color=orange
+[pypi_version]: https://img.shields.io/pypi/v/pj-logging.svg?logo=python&logoColor=white
+[python_versions]: https://img.shields.io/pypi/pyversions/pj-logging.svg?logo=python&logoColor=white
+[github_license]: https://img.shields.io/github/license/the-citto/pj-logging.svg?logo=github&logoColor=white
+
+[![GitHub Release][github_release]](https://github.com/the-citto/pj-logging/releases/)
+[![PyPI Version][pypi_version]](https://pypi.org/project/pj-logging/)
+[![Python Versions][python_versions]](https://pypi.org/project/pj-logging/)
+[![License][github_license]](https://github.com/the-citto/pj-logging/blob/master/LICENSE)
+<br>
+
+# ▍▞ PJ logging
+
+Simple logging with 
+[rich](https://github.com/Textualize/rich) [Panel](https://rich.readthedocs.io/en/latest/panel.html)s and 
+[jsonl](https://jsonlines.org/) (or plain `.log`) files
+
+## Basic Usage
+
+`set_logger` arguments, with types and defaults:
+
+```python
+def set_logger(
+    name: str | None = None,
+    *,
+    jsonl_log_file_path: pathlib.Path | str | None = None,
+    jsonl_log_file_size: int = 100_000,
+    jsonl_log_backup_count: int = 3,
+    rich_panel_log: bool = False,
+) -> logging.Logger: ...
+```
+
+Example, with `rich`'s `Panel`s only
+
+```python
+import pj_logging
+
+logger = pj_logging.set_logger(rich_panel_log=True)
+
+
+...
+
+
+logger.info("this is an info log with a rich Panel in the terminal")
+```
+
+## Advanced usage
+
+The `set_logger` function uses the `logging` `RotatingFileHandler` 
+([docs](https://docs.python.org/3/library/logging.handlers.html#rotatingfilehandler)) for the output file
+
+For different needs, the `JsonlFormatter` can be assigned to a different handler
+
+#
+
+The `PanelHandler` can also be imported and added to an existing logger.
+
+With this approach, it's possible to change values of the class' attributes
+before adding the handler to the logger.
+
+```python
+class PanelHandler(logging.Handler):
+    colors: t.ClassVar[dict[str, str]] = {
+        "Debug": "blue",
+        "Info": "green",
+        "Warning": "yellow",
+        "Error": "red",
+        "Critical": "red",
+    }
+    fallback_color: str = "white"
+    title_align: rich.align.AlignMethod = "left"
+    show_error_names: bool = True
+```
+

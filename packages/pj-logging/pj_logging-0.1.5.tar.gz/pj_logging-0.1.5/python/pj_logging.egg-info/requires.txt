@@ -1,0 +1,14 @@
+rich>=13.9
+
+[dev]
+pj_logging[tests]
+ipython
+
+[tests]
+pj_logging
+coverage
+pytest
+pytest-cov
+pytest-mypy
+pytest-ruff
+pytest-pyright

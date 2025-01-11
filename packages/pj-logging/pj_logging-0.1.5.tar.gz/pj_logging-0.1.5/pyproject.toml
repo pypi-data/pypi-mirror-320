@@ -1,0 +1,94 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pj_logging"
+description = "Panel rich and jsonl logging."
+requires-python = ">=3.11"
+readme = "README.md"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Typing :: Typed",
+]
+dependencies = ["rich>=13.9"]
+
+authors = [
+    {name = "the-citto"},
+]
+dynamic = ["version"]
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Repository = "https://github.com/the-citto/pj-logging"
+
+[project.optional-dependencies]
+tests = [
+    "pj_logging",
+    "coverage",
+    "pytest",
+    "pytest-cov",
+    "pytest-mypy",
+    "pytest-ruff",
+    "pytest-pyright",
+]
+dev = [
+    "pj_logging[tests]",
+    "ipython",
+]
+
+[tool.setuptools_scm]
+
+[tool.setuptools.package-data]
+pj_logging = ["py.typed"]
+
+[tool.setuptools.packages.find]
+where = ["python"]
+
+[tool.pytest.ini_options]
+addopts = "--strict-markers --tb=no --cov --cov-report term-missing"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+omit = ["tests/*"]
+
+[tool.mypy]
+strict = true
+python_executable = ".venv/bin/python"
+exclude = ["__pycache__", ".git", ".venv"]
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+enableReachabilityAnalysis = false
+include = ["python", "tests"]
+exclude = ["__pycache__", ".git", ".venv"]
+
+[tool.ruff]
+exclude = ["__pycache__", ".git", ".venv"]
+line-length = 120
+indent-width = 4
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "D203",
+    "D212",
+    "ERA001",
+] # (D203) mutually exclusive with (D211) - (D212) mutually exclusive with (D213)
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = [
+    "S101",
+] # (S101) Use of `assert`
+
+[tool.ruff.lint.isort]
+known-first-party = ["pj_logging"]
+lines-after-imports = 2
+
+
