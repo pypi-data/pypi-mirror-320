@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pythetastar/__init__.py
+src/pythetastar/theta_star.py
+src/pythetastar.egg-info/PKG-INFO
+src/pythetastar.egg-info/SOURCES.txt
+src/pythetastar.egg-info/dependency_links.txt
+src/pythetastar.egg-info/requires.txt
+src/pythetastar.egg-info/top_level.txt
+src/pythetastar/__pycache__/__init__.cpython-312.pyc
+src/pythetastar/__pycache__/theta_star.cpython-312.pyc
