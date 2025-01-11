@@ -1,0 +1,12 @@
+ramonak/__about__.py,sha256=QTYqXqSTHFRkM9TEgpDFcHvwLbvqHDqvqfQ9EiXkcAM,23
+ramonak/__init__.py,sha256=ywNJarOAZCy_BCn-vmG2xNS8vRVZny1ZWZawcL7CfXQ,444
+ramonak/interactive.py,sha256=gko56JoTPgWdrwq__abxeClwsjKqhvqH8QfxTAQ3M1w,159
+ramonak/stemmer.py,sha256=fRsXSm26bPB4bssqcttKgAnrNPoNcNDU_Rk-88ihPhI,1754
+ramonak/utils.py,sha256=8Kwow9WR8fmTWtx7wiYV7m82CsXLepHqzmQRJm1SytY,209
+ramonak/packages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ramonak/packages/actions.py,sha256=E1zF6H7_yyrsuGyywysRzSEt-xYGjUENWMgNaQxKBcc,2483
+ramonak/packages/nexus.py,sha256=PltkVPRl1KUZ7uHaK3vNcy-5bAaDm0bBle9wCeY9t2k,688
+ramonak-0.1.0.dist-info/METADATA,sha256=hUpswTk5E3yEFT8iS1ev3X4qkcSjEmk513AvvDCFlwo,1525
+ramonak-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ramonak-0.1.0.dist-info/licenses/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+ramonak-0.1.0.dist-info/RECORD,,
