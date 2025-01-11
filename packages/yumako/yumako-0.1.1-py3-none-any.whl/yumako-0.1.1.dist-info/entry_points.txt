@@ -1,0 +1,6 @@
+[console_scripts]
+check=yumako.dev:check
+lint=yumako.dev:lint
+release=yumako.dev:release
+test=yumako.dev:test
+
