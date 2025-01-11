@@ -1,0 +1,9 @@
+AsyncTaskLib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+USBMonitorUtilsLib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+USBMonitorUtilsLib/attiributes.py,sha256=q17Blf1yllaHWReR91BJDRp-Hst8uwkT_Jw8_rM4iTg,631
+USBMonitorUtilsLib/usb_monitor.c,sha256=8JSZstra4vAsfWm2xt7eNIxqXZmQXKmdBf1Qd-MUig0,193018
+USBMonitorUtilsLib/usb_monitor.cpython-311-x86_64-linux-gnu.so,sha256=zuh7wtXVm7_VTl2s9OD1F8eMtWr2Xf8I41JIHZwPSGk,85984
+usb_monitor_utils_lib-0.3.3.dist-info/METADATA,sha256=sA8N7JDHXmZwz7zCzIaF3rGOTXMI1J5fDJEk9E1n_FQ,646
+usb_monitor_utils_lib-0.3.3.dist-info/WHEEL,sha256=ef-Vq3edUtJMe0Als0ekuidbCOqrlymYj2DN1_xxb9o,148
+usb_monitor_utils_lib-0.3.3.dist-info/top_level.txt,sha256=7_0UL2h56LQZ1ubNqPbrX8NxTHOZ4YLPwdFzF4AeoqU,32
+usb_monitor_utils_lib-0.3.3.dist-info/RECORD,,
