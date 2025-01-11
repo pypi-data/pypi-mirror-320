@@ -1,0 +1,14 @@
+optinum/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optinum/base_ops.py,sha256=1Q-IWTic9HuBOt5ONcRX5D4Z_31_8V2kOvfophxVA8E,5353
+optinum/eigen.py,sha256=Obx_T6EAd81ZSkpmQUud6yFxH0Ig611bLDhOCMsVLkw,14341
+optinum/ode.py,sha256=H7hCwXlwpHNInLSQHHbws6Ozk3GDIkU5R0OPM9mg0Gs,27151
+optinum/signal.py,sha256=ingFOLWSumTojz4R26p-1hZNQBnBeZ0XpzMd2jUCx4Q,7829
+optinum/sparse.py,sha256=-iWgjS9HY5BOo6OAhFqWwXM6aa90z5JZHZReKBw4FNQ,6288
+optinum/spectrum.py,sha256=RucG-QxCDO_GKptEH-1Gfbhh85eYQbuD-xXVbbqChgw,4735
+optinum/plotting/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optinum/plotting/eigen.py,sha256=kUp2Na7dEus7mF4GNEW50PLAQ7Er6HeUJ4iy5tYjhcc,2177
+optinum/plotting/ode.py,sha256=1TJ_jVokLC1umMyX1pnBSDY4IgXqebxOjlfLVC4eed4,4576
+optinum-0.3.1.dist-info/METADATA,sha256=t6dxdRy_uyRKCPh5g4nNIqZWmF71gOq2rIi08EzeclI,873
+optinum-0.3.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+optinum-0.3.1.dist-info/top_level.txt,sha256=iqBjkdflfgq8OMTtC7q8i5ChR9U9GTrr0Lh7kPdVDRY,8
+optinum-0.3.1.dist-info/RECORD,,
