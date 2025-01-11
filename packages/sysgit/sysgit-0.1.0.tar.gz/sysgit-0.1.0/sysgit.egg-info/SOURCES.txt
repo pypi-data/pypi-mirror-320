@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+sysgit/__init__.py
+sysgit/__meta__.py
+sysgit/test.py
+sysgit.egg-info/PKG-INFO
+sysgit.egg-info/SOURCES.txt
+sysgit.egg-info/dependency_links.txt
+sysgit.egg-info/top_level.txt
