@@ -1,0 +1,10 @@
+
+[dishka]
+dishka
+
+[lint]
+ruff
+mypy
+
+[test]
+pytest

@@ -1,0 +1,22 @@
+from bazario.markers import Notification, Request
+
+
+class HandlerNotFoundError(Exception):
+    def __init__(
+        self,
+        target_type: type[Request] | type[Notification],
+    ) -> None:
+        self.target_type = target_type
+
+        super().__init__(
+            f"Handler for target '{target_type.__name__}' not found.",
+        )
+
+
+class NotificationHandlerNotSetError(Exception):
+    def __init__(self, *args: object) -> None:
+        super().__init__(
+            "Notification handler is not configured. "
+            "Please set a handler before using notifications.",
+            *args,
+        )
