@@ -1,0 +1,43 @@
+Metadata-Version: 2.2
+Name: rockverse
+Version: 0.2.3
+Summary: Python tools for Computational Petrophysics
+Author-email: "Rodolfo A. Victor" <rodolfo@rodolfovictor.com>
+Project-URL: Homepage, https://rockverse.readthedocs.io/
+Project-URL: Documentation, https://rockverse.readthedocs.io/
+Project-URL: Repository, https://github.com/rodolfovictor/rockverse
+Project-URL: Issues, https://github.com/rodolfovictor/rockverse/issues
+Project-URL: Changelog, https://github.com/rodolfovictor/rockverse/blob/main/Changelog.md
+Project-URL: Official Website, https://rockverse.readthedocs.io/
+Keywords: petrophysics,well,log,well log,digital rock
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 1 - Planning
+Requires-Python: <3.13,>=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ipympl
+Requires-Dist: ipython
+Requires-Dist: ipyparallel
+Requires-Dist: ipywidgets
+Requires-Dist: jupyter
+Requires-Dist: jupyterlab
+Requires-Dist: matplotlib
+Requires-Dist: mpi4py
+Requires-Dist: nbsphinx
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pip
+Requires-Dist: pydata-sphinx-theme
+Requires-Dist: sphinx
+Requires-Dist: sphinx-copybutton
+Requires-Dist: sphinx-design
+Requires-Dist: sphinx_gallery
+Requires-Dist: tqdm
+Requires-Dist: zarr
+
+# RockVerse
+
+RockVerse provides Python tools for Computational Petrophysics.
