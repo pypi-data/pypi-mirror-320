@@ -1,0 +1,39 @@
+Metadata-Version: 2.3
+Name: pypolestar
+Version: 1.2.0
+Summary: Library to control Polestar
+Home-page: https://github.com/pypolestar/pypolestar
+License: MIT
+Author: Tuen Lee
+Author-email: leeyuentuen@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: gql[httpx] (>=3.5.0,<4.0.0)
+Requires-Dist: httpx (>=0.27.2)
+Project-URL: Repository, https://github.com/pypolestar/pypolestar
+Description-Content-Type: text/markdown
+
+# Python for Polestar
+
+This library is not an official app affiliated with Polestar Automotive.
+
+
+## Example
+
+```python
+from pypolestar import PolestarApi
+
+api = PolestarApi(username=USERNAME, password=PASSWORD, vins=[VIN])
+
+await api.async_init()
+await api.get_latest_data(vin=VIN)
+
+car_information = api.get_car_information(vin=VIN)
+car_battery = api.get_car_battery(vin=VIN)
+car_odometer = api.get_car_odometer(vin=VIN)
+```
+
