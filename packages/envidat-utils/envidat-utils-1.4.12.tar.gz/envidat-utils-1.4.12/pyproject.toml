@@ -1,0 +1,119 @@
+[project]
+name = "envidat-utils"
+version = "1.4.12"
+description = "Utilities in Python for the WSL EnviDat project."
+authors = [
+    { name = "Sam Woodcock", email = "samuel.woodcock@wsl.ch" },
+    { name = "Rebecca Kurup Buchholz", email = "rebecca.kurup@wsl.ch" },
+    { name = "Ranita Pal", email = "ranita.pal@wsl.ch" },
+]
+dependencies = [
+    "requests>=2.27.1",
+    "boto3>=1.22.12",
+    "xmltodict>=0.13.0",
+    "validators>=0.20.0",
+    "jsonschema>=4.17.3",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+keywords = [
+    "envidat",
+    "s3",
+    "ckan",
+    "wsl",
+]
+classifiers = [
+    "Topic :: Utilities",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.10",
+]
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://www.envidat.ch"
+documentation = "https://envidat.gitlab-pages.wsl.ch/envidat-python-utils"
+repository = "https://gitlabext.wsl.ch/EnviDat/envidat-python-utils.git"
+
+[project.optional-dependencies]
+dotenv = [
+    "python-dotenv>=1.0.0",
+]
+
+[tool.pdm]
+includes = [
+    "envidat",
+]
+source-includes = [
+    "tests",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+]
+source = [
+    { name = "pypi", url = "https://pypi.org/simple", verify_ssl = true },
+]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "python-dotenv>=1.0.0",
+]
+test = [
+    "pytest>=7.3.1",
+    "moto>=3.1.9",
+]
+doc = [
+    "mkdocs>=1.1",
+    "mkdocs-material>=7.3",
+    "mkgendocs>=0.9.0",
+]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version_files = [
+    "pyproject.toml:version",
+]
+
+[tool.pytest.ini_options]
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 88
+select = [
+    "I",
+    "E",
+    "W",
+    "D",
+    "B",
+    "F",
+    "N",
+    "Q",
+]
+ignore = [
+    "N805",
+    "B008",
+]
+exclude = [
+    ".git",
+    ".ruff_cache",
+    ".vscode",
+    "__pypackages__",
+    "build",
+    "dist",
+    "secret",
+]
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[build-system]
+requires = [
+    "pdm-pep517",
+]
+build-backend = "pdm.pep517.api"
