@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+fiap_lib_grupo56.egg-info/PKG-INFO
+fiap_lib_grupo56.egg-info/SOURCES.txt
+fiap_lib_grupo56.egg-info/dependency_links.txt
+fiap_lib_grupo56.egg-info/top_level.txt
+modelo_dados/__init__.py
+modelo_dados/modelo_dados.py
+site_embrapa/__init__.py
+site_embrapa/site_embrapa.py

@@ -1,0 +1,1 @@
+from .modelo_dados import RepositorioCategorias, RepositorioProdutividadesAnuais, RepositorioProdutos, Categoria, ProdutividadeAnual, Produto
