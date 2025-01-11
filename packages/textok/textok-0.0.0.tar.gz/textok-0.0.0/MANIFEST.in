@@ -1,0 +1,6 @@
+include *.*
+include LICENSE
+recursive-include textok *.*
+recursive-include python *.*
+prune */__pycache__
+global-exclude *.o *.so *.dylib *.a .git *.pyc *.swp
