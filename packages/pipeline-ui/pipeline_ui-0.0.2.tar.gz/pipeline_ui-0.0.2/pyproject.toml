@@ -1,0 +1,102 @@
+[project]
+name = "pipeline_ui"
+version = "0.0.2"
+description = "The best way to build AI pipelines"
+authors = [
+    { name = "Special Bottle", email = "specialbottle@pipelineui.com" }
+]
+dependencies = [
+    "fastapi[all]>=0.115.0",
+    "pytest>=8.3.3",
+    "typer>=0.12.5",
+    "requests>=2.32.3",
+    "pynput>=1.7.6",
+    "watchfiles>=0.24.0",
+    "aiohttp>=3.10.10",
+    "pillow>=11.0.0",
+    "devtools>=0.12.2",
+    "toml>=0.10.2",
+    "questionary>=2.0.1",
+    "gitpython>=3.1.43",
+]
+readme = "README.md"
+requires-python = ">= 3.10"
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.3.3",
+    # Dependencies used in examples workflows and nodes
+    "torch>=2.4.1",
+    "diffusers>=0.20.0",
+    "pillow>=11.0.0",
+]
+dev = [
+    "bumpver",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+pipeline-ui = "pipeline_ui:app"
+pui = "pipeline_ui:app"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+# [tool.rye.scripts]
+# test = "pytest tests"
+# style = { chain = ["ruff:check_fix", "ruff:format" ] }
+# "ruff:check_fix" = "ruff check pipeline_ui --fix"
+# "ruff:format" = "ruff format pipeline_ui"
+# quality = { chain = ["ruff:check", "ruff:format_check" ] }
+# "ruff:check" = "ruff check pipeline_ui"
+# "ruff:format_check" = "ruff format --check pipeline_ui"
+# example = "bash -c 'pui start examples/${1}.py' --"
+# publish = "bash -c 'pui publish examples/${1}.py' --"
+
+[tool.hatch.build.targets.wheel]
+packages = ["pipeline_ui"]
+package-data = {"pipeline_ui" = ["static/**/*"]}
+
+[tool.hatch.build]
+artifacts = ["pipeline_ui/static/**/*"]
+only-include = ["pipeline_ui"]
+
+
+[project.urls]
+"Homepage" = "https://github.com/specialbottle/pipeline_ui"
+"Bug Tracker" = "https://github.com/specialbottle/pipeline_ui/issues"
+
+[tool.ruff]
+line-length = 120
+lint.ignore = ["C901", "E501"]
+lint.select = ["C", "E", "F", "I", "I001"]
+
+[tool.ruff.format]
+line-ending = "auto"
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+
+[tool.pui]
+node_folder = "downloads/nodes"
+workflow_folder = "downloads/workflows"
+
+[tool.bumpver]
+current_version = "0.0.2"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit = false
+tag = false
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    '^version = "{version}"',
+    '^current_version = "{version}"',
+]

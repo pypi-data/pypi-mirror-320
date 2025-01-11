@@ -1,0 +1,18 @@
+# python generated files
+__pycache__/
+*.py[oc]
+build/
+
+wheels/
+*.egg-info
+
+# venv
+.venv
+.pytest_cache
+static/
+dist/
+.ruff_cache/
+
+uv.lock
+requirements.lock
+requirements-dev.lock
