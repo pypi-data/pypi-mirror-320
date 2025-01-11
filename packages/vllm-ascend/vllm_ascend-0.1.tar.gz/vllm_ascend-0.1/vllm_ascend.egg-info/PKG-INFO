@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: vllm-ascend
+Version: 0.1
+License-File: LICENSE
+Requires-Dist: decorator
+Requires-Dist: pyyaml
+Requires-Dist: scipy
+Requires-Dist: setuptools
+Requires-Dist: torch_npu==2.5.1rc1
+Provides-Extra: tensorizer
+Requires-Dist: tensorizer>=2.9.0; extra == "tensorizer"
+Provides-Extra: runai
+Requires-Dist: runai-model-streamer; extra == "runai"
+Requires-Dist: runai-model-streamer-s3; extra == "runai"
+Requires-Dist: boto3; extra == "runai"
+Provides-Extra: audio
+Requires-Dist: librosa; extra == "audio"
+Requires-Dist: soundfile; extra == "audio"
+Provides-Extra: video
+Requires-Dist: decord; extra == "video"
