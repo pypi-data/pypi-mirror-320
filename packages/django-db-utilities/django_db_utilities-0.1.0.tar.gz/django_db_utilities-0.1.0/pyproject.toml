@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "django-db-utilities"
+version = "0.1.0"
+description = "A utility library for Django to reset databases, models, and primary keys."
+authors = ["Roddy Brown <roddy@notroddy.io>"]
+license = "MIT"
+homepage = "https://github.com/notroddy/django-db-utilities"
+repository = "https://github.com/notroddy/django-db-utilities"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^3.2"
+questionary = "^2.1.0"
+pytest = "^8.3.4"
+pytest-django = "^4.9.0"
+twine = "^6.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.3.4"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
