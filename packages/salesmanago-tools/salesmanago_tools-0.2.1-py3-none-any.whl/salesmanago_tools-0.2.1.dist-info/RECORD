@@ -1,0 +1,11 @@
+salesmanago_tools/__init__.py,sha256=4QQ_Y957vyEMYXQbgoTu00lawhkA-iNSUL1xCMi9byU,78
+salesmanago_tools/service/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+salesmanago_tools/service/sales_manago_actions.py,sha256=EjQ3obyjTri8yW4S_fgevV_qkG-zr8D5x5w0iBH19AQ,3862
+salesmanago_tools/utils/__init__.py,sha256=1UySOmHIGIpZi9AsEm3WNbbvzwmdP9o8GuaMso7zhcM,115
+salesmanago_tools/utils/constants.py,sha256=ZkuGkdzeQscu9A0vKuYzouP0AYaaNVTAvXeJza1Z2qk,356
+salesmanago_tools/utils/sales_manago_utils.py,sha256=L07o1ztzA5i3NA9NHc8bCmiC6u1YbzQx3Eslb_n6i_4,13678
+salesmanago_tools/utils/util_funcs.py,sha256=Gf2vNBdW4ExPW_qL468UZ7NHbtt6sX-ldKwYBs2UbiQ,2915
+salesmanago_tools-0.2.1.dist-info/METADATA,sha256=oivYxzs79F_LIXZj4Vvdt5RNK-SxnYV7xGPSPnJmP24,5861
+salesmanago_tools-0.2.1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+salesmanago_tools-0.2.1.dist-info/top_level.txt,sha256=jm9TPkDkzrgi0pK-8LNINUdR3q1s6NtZXhkupkIH6no,18
+salesmanago_tools-0.2.1.dist-info/RECORD,,
