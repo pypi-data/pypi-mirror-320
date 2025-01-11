@@ -1,0 +1,28 @@
+[project]
+name = "kura"
+version = "0.2.0"
+description = "Kura is a tool for analysing and visualising chat data"
+readme = "README.md"
+authors = [
+    { name = "Ivan Leo", email = "ivanleomk@gmail.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "instructor[google-generativeai]>=1.7.2",
+    "pandas>=2.2.3",
+    "rich>=13.9.4",
+    "scikit-learn>=1.6.0",
+    "uvicorn>=0.34.0",
+    "fastapi[standard]>=0.115.6",
+    "umap-learn>=0.5.7",
+]
+
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project.scripts]
+kura = "kura.cli.cli:app"
