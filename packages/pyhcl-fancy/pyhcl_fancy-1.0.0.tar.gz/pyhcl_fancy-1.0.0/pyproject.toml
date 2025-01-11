@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "pyhcl-fancy"
+version = "1.0.0"
+description = "Parse HCL defined Terraform into easier to use Python objects."
+authors = ["ianms17 <ianmstephenson17@gmail.com>"]
+license = "Apache License 2.0"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.poetry.dependencies]
+python = ">= 3.10"
+python-hcl2 = "^5.1.1"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.8.0"
+mkdocs = "^1.6.1"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.4"
+pytest-cov = "^6.0.0"
+pytest-mock = "^3.14.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
