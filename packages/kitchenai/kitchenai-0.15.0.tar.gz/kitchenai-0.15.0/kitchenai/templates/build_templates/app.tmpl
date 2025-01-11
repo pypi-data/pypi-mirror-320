@@ -1,0 +1,83 @@
+from kitchenai.contrib.kitchenai_sdk.kitchenai import KitchenAIApp
+
+#This is where all the imports go
+
+
+
+
+#Global variables go here. Make sure to include KitchenAIApp initialization.
+
+kitchen = KitchenAIApp()
+
+import logging
+
+logger = logging.getLogger(__name__)
+
+
+@kitchen.storage.handler("<label>")
+def <function_name>(data: StorageSchema, **kwargs):
+    """
+    Parse a directory of documents and store them in a vector database. This is run in a background task.
+    Args:
+        data: StorageSchema
+    """
+    pass
+
+@kitchen.embeddings.handlers("<label>")
+def <function_name>(data: EmbedSchema):
+    """
+    Embed a text into a vector database. This is run in a background task.
+    class EmbedSchema(Schema):
+        text: str
+        metadata: dict[str, str] | None = None
+    Args:
+        data: EmbedSchema
+
+    Response:
+        dict:
+        Any
+    """
+
+    pass
+
+@kitchen.query.handler("<label>")
+async def <function_name>(data: QuerySchema):
+    """
+    Query the vector database with a chat interface
+    class QuerySchema(Schema):
+        query: str
+        stream: bool = False
+        metadata: dict[str, str] | None = None
+    Args:
+        data: QuerySchema
+    
+    Response:
+        QueryBaseResponseSchema:
+            input: str | None = None
+            output: str | None = None
+            retrieval_context: list[str] | None = None
+            metadata: dict[str, str] | None = None
+    """
+    # TODO: Implement the query logic
+
+    return QueryBaseResponseSchema(output="Hello, how are you?", metadata={"topic": "healthcare", "keyword": "AI"})
+
+
+@kitchen.agent.handler("<label>")
+async def <function_name>(data: QuerySchema):
+    """
+    Query the vector database with a chat interface
+    class QuerySchema(Schema):
+        query: str
+        stream: bool = False
+        metadata: dict[str, str] | None = None
+    Args:
+        data: QuerySchema
+    
+    Response:
+        AgentResponseSchema
+    """
+
+    # TODO: Implement the agent logic
+
+    return AgentResponseSchema(response="Hello, how are you?", metadata={"topic": "healthcare", "keyword": "AI"})
