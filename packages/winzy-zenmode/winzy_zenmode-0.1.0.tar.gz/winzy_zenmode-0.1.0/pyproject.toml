@@ -1,0 +1,33 @@
+[project]
+name = "winzy-zenmode"
+version = "0.1.0"
+description = "Zenmode stay focussed with only the priority windows and nothing else."
+readme = "README.md"
+authors = [{name = "Sukhbinder Singh"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "winzy",
+]
+
+[project.urls]
+Homepage = "https://github.com/sukhbinder/winzy-zenmode"
+Changelog = "https://github.com/sukhbinder/winzy-zenmode/releases"
+Issues = "https://github.com/sukhbinder/winzy-zenmode/issues"
+CI = "https://github.com/sukhbinder/winzy-zenmode/actions"
+
+[project.entry-points."winzy.plugins"]
+zenmode = "winzy_zenmode:zenmode_plugin"
+
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

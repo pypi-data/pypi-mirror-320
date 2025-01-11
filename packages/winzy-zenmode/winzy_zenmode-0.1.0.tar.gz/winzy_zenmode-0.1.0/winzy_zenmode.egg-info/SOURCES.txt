@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_winzy_zenmode.py
+winzy_zenmode/__init__.py
+winzy_zenmode/ontop.py
+winzy_zenmode.egg-info/PKG-INFO
+winzy_zenmode.egg-info/SOURCES.txt
+winzy_zenmode.egg-info/dependency_links.txt
+winzy_zenmode.egg-info/entry_points.txt
+winzy_zenmode.egg-info/requires.txt
+winzy_zenmode.egg-info/top_level.txt
