@@ -1,0 +1,2 @@
+[console_scripts]
+reftrace = reftrace.cli.main:cli
