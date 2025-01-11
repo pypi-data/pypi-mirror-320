@@ -1,0 +1,68 @@
+[project]
+name = "pybcm"
+version = "0.1.8"
+description = "A Business Capability Modeler built with Python and ttkbootstrap"
+authors = [
+    {name = "Thomas Klok Rohde", email = "thomas@rohde.name"},
+]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent", 
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Office/Business",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: User Interfaces",
+    "Framework :: FastAPI",
+    "Framework :: AsyncIO",
+    "Natural Language :: English"
+]
+keywords = ["bcm", "business", "capability", "modeling", "enterprise-architecture"]
+dependencies = [
+    "ttkbootstrap>=1.10.1",
+    "sqlalchemy>=2.0.0",
+    "pydantic>=2.0.0",
+    "pydantic-ai[logfire]>=0.0.15",
+    "jinja2>=3.1.5",
+    "python-pptx>=1.0.2",
+    "markdown>=3.7",
+    "tkinterweb>=3.24.8",
+    "fastapi>=0.115.6",
+    "uvicorn[standard]>=0.34.0",
+    "openpyxl>=3.1.5",
+    "pandas>=2.2.3",
+    "logfire[sqlite3]>=2.11.0",
+    "tkhtmlview>=0.3.1",
+    "setuptools>=75.6.0",
+    "aiosqlite>=0.20.0",
+    "greenlet>=3.1.1",
+    "python-dotenv>=1.0.1",
+    "pyperclip>=1.9.0",
+]
+requires-python = ">=3.11"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+bcm = "bcm:main"
+
+[project.urls]
+GitHub = "https://github.com/ThomasRohde/PyBCM"
+
+[tool.hatch.build.targets.wheel]
+packages = ["bcm"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.8.4",
+]
+
+[tool.logfire]
+ignore_no_config = true
