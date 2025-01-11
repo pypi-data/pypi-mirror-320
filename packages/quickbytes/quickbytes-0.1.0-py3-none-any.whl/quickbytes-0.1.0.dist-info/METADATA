@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: quickbytes
+Version: 0.1.0
+Summary: A lightweight data manipulation library like pandas
+Home-page: https://github.com/yourusername/bytes
+Author: Your Name
+Author-email: your-email@example.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Bytes
+
+Bytes is a lightweight Python library for data manipulation, inspired by pandas.
+
+## Installation
+
+```bash
+pip install bytes
