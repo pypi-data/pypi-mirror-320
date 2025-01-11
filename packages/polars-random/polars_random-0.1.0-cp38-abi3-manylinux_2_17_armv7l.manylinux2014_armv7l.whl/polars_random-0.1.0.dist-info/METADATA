@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: polars-random
+Version: 0.1.0
+License-File: LICENSE
+Summary: Polars plugin for generating random distributions
+Author-email: Diego Garcia Lozano <diegoglozano96@gmail.com>
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# polars-random
+
+Polars plugin for generating random distributions
+
