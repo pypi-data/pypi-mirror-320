@@ -1,0 +1,28 @@
+[project]
+name = "bb-projects-calc"
+version = "0.2.0"
+description = ""
+authors = [
+    {name = "bartosz B",email = "jazz.konta@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "flask (>=3.1.0,<4.0.0)",
+    "pytz (>=2024.2,<2025.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+numpy = "^2.2.1"
+
+
+[tool.poetry.group.test.dependencies]
+numpy = "^2.2.1"
+pandas = "^2.2.3"
+pytest = "^8.3.4"
+
