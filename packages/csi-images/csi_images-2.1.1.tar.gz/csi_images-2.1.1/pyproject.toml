@@ -1,0 +1,60 @@
+[project]
+name = "csi_images"
+version = "2.1.1"
+description = "CSI-Cancer image data structure and basic processing."
+requires-python = ">=3.11"
+authors = [
+    { name = "Brian Zhang", email = "8885230+brianjzhang@users.noreply.github.com" }
+]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pandas",
+    "numpy",
+    "tables",
+    "PyYAML",
+]
+
+[project.optional-dependencies]
+imageio = [
+    "aicspylibczi",
+    "tifffile[codecs]",
+    "scikit-image",
+    "opencv-python",
+    "Pillow",
+    "imageio",
+]
+rds = [
+    "pyreadr",
+]
+dev = [
+    "pdoc",
+    "pytest",
+    "hatchling",
+    "build",
+    "twine",
+]
+all = [
+    "csi_images[imageio]",
+    "csi_images[rds]",
+    "csi_images[dev]",
+]
+
+[project.urls]
+Homepage = "https://github.com/CSI-Cancer/csi_images"
+Issues = "https://github.com/CSI-Cancer/csi_images/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q --junitxml=junit.xml --cov=. --cov-config=.coveragerc --cov-report=xml"
+testpaths = [
+    "tests",
+]
