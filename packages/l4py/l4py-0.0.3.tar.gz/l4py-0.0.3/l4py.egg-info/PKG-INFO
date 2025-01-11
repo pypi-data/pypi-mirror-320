@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: l4py
+Version: 0.0.3
+Home-page: https://github.com/roymanigley/l4py
+Author: Roy Manigley
+Author-email: roy.manigley@gmail.com
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# l4py
+![Unit-Tests](https://github.com/roymanigley/l4py/actions/workflows/test.yml/badge.svg)  
+![Published Python Package](https://github.com/roymanigley/l4py/actions/workflows/publish.yml/badge.svg)
+
+## Installation
+```
+pip install l4py
+```
+or from Github:
+```
+git clone https://github.com/roymanigley/l4py.git
+cd l4py
+pip install -r requirements.txt
+python setup.py install
+```
+## Usage
+
+```python
+from l4py import Builder
+```
