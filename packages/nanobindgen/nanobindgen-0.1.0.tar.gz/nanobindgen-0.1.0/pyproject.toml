@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "tree-sitter"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nanobindgen"
+version = "0.1.0"
+description = "Automatically generate nanobind bindings."
+readme = "README.md"
+requires-python = ">=3.7"
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "tree-sitter==0.21.3",
+    "tree-sitter-cpp==0.22.3",
+    "tree-sitter-jsdoc==0.21.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pycad-dev/nanobindgen"
+
+[tool.setuptools.package-data]
+nanobindgen = ["*.so", "*.dylib"]
+
+[tool.ruff]
+target-version = "py310"
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "W",
+    "I",
+    "N",
+    "A",
+    "B",
+    "F",
+    "D",
+    "FBT",
+    "C4",
+    "SIM",
+    "TD",
+    "PL",
+    "TRY",
+    "NPY",
+    "PERF",
+    "RUF",
+]
+ignore = [
+    "TRY003",  # Exception with string (vs. defining custom exception)
+    "PLR2004", # Magic number
+    "S607",
+    "F403",    # Star imports
+    "F405",    # Star imports
+]
+pydocstyle.convention = "google"

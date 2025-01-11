@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/nanobindgen/__init__.py
+src/nanobindgen/__main__.py
+src/nanobindgen.egg-info/PKG-INFO
+src/nanobindgen.egg-info/SOURCES.txt
+src/nanobindgen.egg-info/dependency_links.txt
+src/nanobindgen.egg-info/requires.txt
+src/nanobindgen.egg-info/top_level.txt
+tests/test_bindings.py
