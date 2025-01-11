@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+layup/__init__.py
+layup.egg-info/PKG-INFO
+layup.egg-info/SOURCES.txt
+layup.egg-info/dependency_links.txt
+layup.egg-info/top_level.txt
