@@ -1,0 +1,15 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/my_orm.py,sha256=oMwUarNzvTAbNsfEl7_Q_CCl0r88ESGlUkUeAaDx1to,15224
+src/SQL/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/SQL/manager.py,sha256=OTym8cmvKGm0yOZOp_QJxQs11m17iaQXxWwB6VJY9Ag,2165
+src/SQL/sql_commands_alter_table.py,sha256=2eFUbQMCHj4lTchx6IgUawnlFOAYLYtVDSmCKLW_4As,2501
+src/SQL/sql_commands_cond.py,sha256=x_FMqsQdKtsfBmBR_IbUN0OCdh-Afik3MoIRNG_ZZYY,2949
+src/SQL/sql_commands_create.py,sha256=RMlG-knbICPRXZyD6CDnFy01g5veLIotGGBuD3kmfPM,1896
+src/SQL/sql_commands_prop.py,sha256=K9eF5JRK9_66GkbpUR7TwfhqXlVgBikPDNJNYQwA_3s,2592
+src/utils/__init__.py,sha256=qsX-47ptdhmNf1K1MkCn4SF96J3z4wgxRZsCr3zRjLE,93
+src/utils/convert.py,sha256=nco3C6GmIUSnw_AyuOjsNV2JalrBFv_n_aBQIdYlqNU,325
+src/utils/validate.py,sha256=iacT9rEvBH3GGkyGF9rhqo8LclOmaWx5S65_nlZ8BVQ,1287
+src/utils/verify_tags.py,sha256=Mnv_PwjAHRs8sRQ1jxQiHLxjr6V4MqTf6H5ATWok3do,2734
+my_orm_py-1.1.0.dist-info/METADATA,sha256=dsteZwkvN-MeGIsAb34W5nVfoNbys9zKaj3zeevb9CM,35056
+my_orm_py-1.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+my_orm_py-1.1.0.dist-info/RECORD,,
