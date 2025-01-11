@@ -1,0 +1,6 @@
+pytest
+pytest-asyncio
+pytest-benchmark[histogram]
+pytest-cov
+pytest-xdist
+tox

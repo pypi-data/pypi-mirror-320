@@ -1,0 +1,6 @@
+aiofile
+aiohttp
+msgpack
+numpy
+pydantic
+requests
