@@ -1,0 +1,11 @@
+whiteprints_template_context/__init__.py,sha256=22ZIg2y8DoXlnt5UBaNU_Uok_7Cvd14W_R2Kt2cssgM,324
+whiteprints_template_context/context.py,sha256=EzyrMX980I9ycTV8Op2kNcJlTUSZhF1WeO7fGoPvmJw,4664
+whiteprints_template_context/filters.py,sha256=lY0DBk8rZUoS8KAcEjXpMme2ucPXMn3f7PCDhIPDKdk,2906
+whiteprints_template_context/loc.py,sha256=S6HJOJdpDLGPnqHIiIa6bNGiqkkm4AO6clLXavzWwKY,638
+whiteprints_template_context/package_metadata.py,sha256=haeCNYObjC0cxKcis_mfM38goPnAh1w-ftnBCWb2UQI,1025
+whiteprints_template_context/py.typed,sha256=40h5tWTVORixa_TdTWiY2QToF1d0uEYCmMBqesg5oNg,229
+whiteprints_template_context-0.4.0.dist-info/METADATA,sha256=P6ypGGNTTmOEK85NUWFB01IsXq48aiS6gEeIbGjB6D4,5200
+whiteprints_template_context-0.4.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+whiteprints_template_context-0.4.0.dist-info/licenses/LICENSES/CC-BY-NC-SA-4.0.txt,sha256=YAyk4l_hF2K3WpfnFHB_q0i7d4N06S0kxsoGh5FmHBE,19018
+whiteprints_template_context-0.4.0.dist-info/licenses/LICENSES/MIT.txt,sha256=uF3NPkU9BZglUsUrX8ngvdbSPG-OhEuYSoivMlcLDMA,1078
+whiteprints_template_context-0.4.0.dist-info/RECORD,,
