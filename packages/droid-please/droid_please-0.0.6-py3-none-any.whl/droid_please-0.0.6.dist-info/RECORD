@@ -1,0 +1,14 @@
+droid_please/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+droid_please/agent.py,sha256=k29PTdqHUSZGP0c6tA_Y85xYnSlOioupgqNUANeDCvw,7335
+droid_please/agent_tools.py,sha256=A04FczHFCDeP2skERLLznLj1-pluM-oaAKmmoROrGxU,5596
+droid_please/config.py,sha256=MSyoKsoWxCRPJWhaSPzMwt6ZjvaNaXIvN3TxSEjEHAo,3025
+droid_please/conversations.py,sha256=XNfnon3AB3PjKItEzYpfwTVjy5aX-KAR17i7yJBiamU,544
+droid_please/llm.py,sha256=spCaoAoF2c0Vu2IHlCvOOq2U0CY1wA8yiNH6O49Osow,3102
+droid_please/main.py,sha256=ddo0-fAkJ7ri6HSNtUvxXexOwpTm1vNmkEJ-yrM8MPk,10719
+droid_please/prompts.py,sha256=xH3dI1iLN0sDd4cZ3hG6spCCuzjWoH3Dn0pX7SqvVgU,2923
+droid_please/util.py,sha256=nNNBXQj0Dr8S6B6UclOfHpR-pLJ9G3aETVqbN20Z8Wg,1682
+droid_please-0.0.6.dist-info/LICENSE,sha256=01IigrZjRmTM1mDPFXySlVhcDnHl8my10f2wG7Nesnc,1067
+droid_please-0.0.6.dist-info/METADATA,sha256=qqi77zu0n2o4qBe3gtT5IbX8zWSvwHe0G2nXhID_s08,6561
+droid_please-0.0.6.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+droid_please-0.0.6.dist-info/entry_points.txt,sha256=gGVyzyRN9INgeCynjpYtKO881HDe68pMCD-2IADq6wI,47
+droid_please-0.0.6.dist-info/RECORD,,

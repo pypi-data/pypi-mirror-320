@@ -1,0 +1,3 @@
+[console_scripts]
+droid=droid_please.main:app
+
