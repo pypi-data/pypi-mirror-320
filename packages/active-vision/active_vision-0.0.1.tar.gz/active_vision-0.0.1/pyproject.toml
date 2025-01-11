@@ -1,0 +1,14 @@
+[project]
+name = "active-vision"
+version = "0.0.1"
+description = "Active learning for edge vision."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "datasets>=3.2.0",
+    "fastai>=2.7.18",
+    "ipykernel>=6.29.5",
+    "ipywidgets>=8.1.5",
+    "loguru>=0.7.3",
+    "seaborn>=0.13.2",
+]
