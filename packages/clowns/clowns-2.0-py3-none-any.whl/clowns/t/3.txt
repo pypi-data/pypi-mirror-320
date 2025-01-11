@@ -1,0 +1,50 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from scipy.stats import norm
+
+df = pd.read_excel('тест.xlsx', sheet_name='Лист2') #поменяй название файла
+df = df['Data']
+
+print('Объем исходной выборки: ', df.shape[0]-1)
+
+#Отчищение выборки от NA
+df = df.dropna(axis=0)
+
+unique_answers = df.nunique()
+print('Количество различных вариантов ответов:', unique_answers)
+
+tx_count = (df == 'Norm').sum() #вместо Norm должно быть то, что ты считаешь ВЕЗДЕ
+print('Количество респондентов, которые дали ответ "Norm":', tx_count)
+
+tx_share = tx_count / df.shape[0]
+print('Доля респондентов, которые дали ответ "Norm":', round(tx_share, 12)) #вместо Norm должно быть то, что ты считаешь
+
+gamma = 0.98 #поменяй под задание
+
+z = norm.ppf(0.5 + gamma / 2)
+se = np.sqrt(tx_share * (1 - tx_share) / df.shape[0])
+left = tx_share - z * se
+right = tx_share + z * se
+
+print('Левая граница 0.98-доверительного интервала:', round(left, 12)) #не забудь 0,98 поменять здесь
+print('Правая граница 0.98-доверительного интервала:', round(right, 12)) #и забудь 0,98 поменять здесь
+
+df.value_counts().plot(kind='bar', color='skyblue', edgecolor='black')
+plt.title('Гистограмма для очищенной выборки')
+plt.xlabel('Ответы')
+plt.ylabel('Частота')
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+plt.show()
+
+#На всякий случай
+4.	Введите левую и правую границу 0.94-доверительного интервала для истинной доли ответов  "W2"
+n = Счёт(A:A) – 1
+m = кол-во нужных данных из гистограммы
+p^ = m/n
+gamma = дано в услов.
+alpha = 1 – gamma
+z = норм.ст.обр(1 – alpha/2)
+delta = z * корень(p^ * (1 – p^) / n)
+pлев = p^ - delta
+pправ = p^ + delta
