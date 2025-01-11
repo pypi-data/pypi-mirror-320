@@ -1,0 +1,17 @@
+supernotelib/__init__.py,sha256=wpjwrE5VIELGHvLG6fwOk_0W5lfU3d_0oa6FEw9JUk4,741
+supernotelib/color.py,sha256=QUd-cYFn-AoLVp7DfH3cEJWmzC5Jn_2jjBGIsrsnEXg,2560
+supernotelib/converter.py,sha256=N4q_T_X7Oiy9hpqfjYW-zyWmxbFvJZwxJNgQ9K3V1Yg,18911
+supernotelib/decoder.py,sha256=G9LIAnYpNCRs1VAR08JGoyp9meWujG3Y1aMvgfngudA,11503
+supernotelib/exceptions.py,sha256=NTzIS5BGdzVAcb4WDuGDdnEWKRIxlL5FpyMb0L9S0Bo,1296
+supernotelib/fileformat.py,sha256=aFn2k_BXoMQSZg74nZdYt2aB11zhH5wWanGROf_kS-E,11714
+supernotelib/manipulator.py,sha256=Oa8jwNg0WPeoCPpMccCc6SbWzXM7vlS56jPywEwEEUo,13847
+supernotelib/parser.py,sha256=iLdsSqlbZZN7p11VsPmJgp2DTa6EaGsgUCk1gALKViY,21113
+supernotelib/utils.py,sha256=ey78TQig8XG3RqteLVUjf_uVgmLVQUtdqZ7POvgQofs,1722
+supernotelib/cmds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+supernotelib/cmds/supernote_fuse.py,sha256=I4u6gvjBNr14rlAhmATbK0YqxYfBFc2ZWAlHlsdVNmc,4755
+supernotelib/cmds/supernote_tool.py,sha256=3m15byLBkRT2Ln6TpbSSRkwT85Q17nruBhIQp3Y9oig,10351
+supernotelib-0.6.2.dist-info/METADATA,sha256=6yG5jmZan7D6LEqPMVBS4TDjxizIe_PpL5I86L_WjPE,16559
+supernotelib-0.6.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+supernotelib-0.6.2.dist-info/entry_points.txt,sha256=YTZneNJ4hxdWZn45-y5HVc-n4H7jlxUCsNsoHFsPzjY,128
+supernotelib-0.6.2.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+supernotelib-0.6.2.dist-info/RECORD,,
