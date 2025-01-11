@@ -1,0 +1,28 @@
+Metadata-Version: 2.3
+Name: yumako
+Version: 0.1.0
+Summary: 
+Home-page: https://github.com/nanw1103/yumako
+License: MIT
+Keywords: util,vanilla
+Author: Nanw1103
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Project-URL: Documentation, https://github.com/nanw1103/amyumakober#readme
+Project-URL: Repository, https://github.com/nanw1103/yumako
+Description-Content-Type: text/markdown
+
+# Yumako
+Vanilla python utilities
+
+
+
+
+

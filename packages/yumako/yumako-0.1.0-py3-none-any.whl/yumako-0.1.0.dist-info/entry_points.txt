@@ -1,0 +1,5 @@
+[console_scripts]
+check=scripts:check
+lint=scripts:lint
+test=scripts:test
+
