@@ -1,0 +1,32 @@
+Metadata-Version: 2.2
+Name: darshika_test_package
+Version: 0.0.3
+Summary: A package for Test parameters management
+Home-page: https://github.com/darshike-wp/test_package.git
+Author: Darshika Joshi
+Author-email: joshidarshika88@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# test_package
+test_package
+
+
+Test Package is a Python package to manage parameters easily.
+
+## Installation
+
+```bash
+pip install waveassist

@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+darshika_test_package.egg-info/PKG-INFO
+darshika_test_package.egg-info/SOURCES.txt
+darshika_test_package.egg-info/dependency_links.txt
+darshika_test_package.egg-info/top_level.txt
+test_package/__init__.py
+test_package/core.py
