@@ -1,0 +1,10 @@
+swagger_plugin_for_sphinx/__init__.py,sha256=Cy2Eia4Ae3GBHfeb42VDc1c6Ut4IcvUSscLkyohKx7s,140
+swagger_plugin_for_sphinx/_plugin.py,sha256=LuqzUaRb6RpNDM-IKaMSf0IjQ4-t7fqO6WkKpkYU6LY,6287
+swagger_plugin_for_sphinx/plugin_directive.j2,sha256=0vYUTQ0WftBxKE4iHk5TVjF0J7ddwOSaB2qH2nd9CVs,171
+swagger_plugin_for_sphinx/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swagger_plugin_for_sphinx/swagger.j2,sha256=1urODbFmQHpDBacLgZLJSylxh6G0Xm6eZogwDjXdQCQ,618
+swagger_plugin_for_sphinx-4.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+swagger_plugin_for_sphinx-4.1.0.dist-info/METADATA,sha256=6vl8JP6tyBx0E1BV2VY3Gu4D5KbMJY7BCeG9JrBMSYY,6935
+swagger_plugin_for_sphinx-4.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+swagger_plugin_for_sphinx-4.1.0.dist-info/top_level.txt,sha256=Q7q8o8tgN9i7utJGAhkTqgRXCjrIa4bRCofmunzIPig,26
+swagger_plugin_for_sphinx-4.1.0.dist-info/RECORD,,
