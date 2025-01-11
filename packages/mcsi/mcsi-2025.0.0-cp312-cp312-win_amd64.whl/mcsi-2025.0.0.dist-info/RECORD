@@ -1,0 +1,8 @@
+mcsi/__init__.py,sha256=rsAwqQL1SJ-ZYQwFRpd3uTFLvwgXszQ_O35oL4lk4_c,78
+mcsi/mcsi.cp312-win_amd64.pyd,sha256=uhW3eTtpNLqGpxa9c6TeBN8QHTH8hdeD5bKsxIGCorE,206848
+mcsi/mcsi.cpp,sha256=kRraYIVjh8wsD3SpMZmgP8kUzw3VQu5pkOPpreNgim4,3142
+mcsi-2025.0.0.dist-info/LICENSE,sha256=qHBGpsRtvq3ymrihnBpdSdzdmTCxKOnIVvBuLkJGmSs,1095
+mcsi-2025.0.0.dist-info/METADATA,sha256=JpiDONb-NIv6zMfLtyjfpLXMzHK_JapAdB1_gd-qXng,1988
+mcsi-2025.0.0.dist-info/WHEEL,sha256=cRmSBGD-cl98KkuHMNqv9Ac9L9_VqTvcBYwpIvxN0cg,101
+mcsi-2025.0.0.dist-info/top_level.txt,sha256=gwWA0_3f2JIXFGTU5Z4ug-D-AeUGxeKF7KzGtkBR6Us,5
+mcsi-2025.0.0.dist-info/RECORD,,
