@@ -1,0 +1,12 @@
+nomad-lab>=1.3.6
+xmltodict==0.13.0
+fairmat-readers-xrd>=0.0.3
+nomad-material-processing
+fairmat-readers-transmission
+
+[dev]
+pytest
+ruff
+structlog
+pynxtools
+python-logstash>=0.4.6
