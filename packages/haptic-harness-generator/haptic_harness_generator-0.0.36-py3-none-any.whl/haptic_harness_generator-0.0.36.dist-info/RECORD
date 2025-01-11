@@ -1,0 +1,14 @@
+haptic_harness_generator/GUI.py,sha256=s-1HN8kopWNRjefB3FCELXkdGWgQljDF3eIVqtoAdCE,15096
+haptic_harness_generator/Generator.py,sha256=nP5QBGRqmB73CQXE-ut-NUoc4UweZguE-mY_dm_YlW8,33658
+haptic_harness_generator/Styles.py,sha256=YqZXu2tgxRt73esIf0D-x1jK7DWggSqBpvSkNwhoT6I,3108
+haptic_harness_generator/__init__.py,sha256=DnmvxYacSCLUsmL4x9rUKM1kjS8mZvigCnGQZebQg2I,68
+haptic_harness_generator/anatomyOfTile.jpg,sha256=j-WXg12klcmkf9ZdJ4B7WHWr6AVUenzZl7mANVLA9yw,415172
+haptic_harness_generator/instructions.html,sha256=XPSMaXkMbmxEF06vkXa5mo8LZA95ZTIYK1M8xN7e46w,3097
+haptic_harness_generator/main.py,sha256=dRGctLSNbsiPQTC0Rta3FE4kPJDbE9mqSt3Z_UW7yOQ,1110
+haptic_harness_generator/rotateIcon.png,sha256=EBTOF2GNEefxJ1L8Us4gSol7E-91H_01Lrj8yKxzUM0,10365
+haptic_harness_generator-0.0.36.dist-info/LICENSE,sha256=7_bDJAM4rl0WrLmtTOq3yjvu12u96Dxa5Jo27fvn6NE,1076
+haptic_harness_generator-0.0.36.dist-info/METADATA,sha256=cDxV3EBHFRLsJYGb88hJDbO6YI1ZmhsVZH7XYn5td0I,3499
+haptic_harness_generator-0.0.36.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+haptic_harness_generator-0.0.36.dist-info/entry_points.txt,sha256=6lYIa12Kza6EPfT33Dblm5xN_L-xLXCcJ0uwAPI07Bs,72
+haptic_harness_generator-0.0.36.dist-info/top_level.txt,sha256=agmi_LoYAMErDiIbe8XwkmPB97jenAnnPsMPrdwH-zA,25
+haptic_harness_generator-0.0.36.dist-info/RECORD,,
