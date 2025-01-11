@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyminify
+Version: 0.0.1
+Summary: py minifier
+Author-email: calcuis <info@calcu.io>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: GitHub, https://github.com/calcuis/pyminify
+Project-URL: Issues, https://github.com/calcuis/pyminify/issues
+
+### py minifer (0.0.1)
+
+This package is able to minify Python code; advantage:
+- smaller in file size (most likely)
+- good for preparing your mini-pack publication
