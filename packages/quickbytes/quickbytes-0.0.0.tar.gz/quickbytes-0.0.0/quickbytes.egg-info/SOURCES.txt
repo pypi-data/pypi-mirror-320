@@ -1,0 +1,9 @@
+README.md
+setup.py
+quickbytes/__init__.py
+quickbytes/core.py
+quickbytes/io.py
+quickbytes.egg-info/PKG-INFO
+quickbytes.egg-info/SOURCES.txt
+quickbytes.egg-info/dependency_links.txt
+quickbytes.egg-info/top_level.txt
