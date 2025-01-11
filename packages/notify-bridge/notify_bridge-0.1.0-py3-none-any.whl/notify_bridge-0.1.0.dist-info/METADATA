@@ -1,0 +1,169 @@
+Metadata-Version: 2.4
+Name: notify-bridge
+Version: 0.1.0
+Summary: A bridge for sending notifications to various platforms
+Project-URL: Homepage, https://github.com/loonghao/notify-bridge
+Project-URL: Documentation, https://github.com/loonghao/notify-bridge#readme
+Project-URL: Repository, https://github.com/loonghao/notify-bridge.git
+Project-URL: Issues, https://github.com/loonghao/notify-bridge/issues
+Author-email: Long Hao <hal.long@outlook.com>
+License: MIT License
+        
+        Copyright (c) 2024 Long Hao
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: bridge,dingtalk,feishu,notification,wechat
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Requires-Dist: anyio>=4.0.0
+Requires-Dist: httpx>=0.24.0
+Requires-Dist: pillow>=10.0.0
+Requires-Dist: pydantic>=2.0.0
+Provides-Extra: dev
+Requires-Dist: black>=23.0.0; extra == 'dev'
+Requires-Dist: isort>=5.0.0; extra == 'dev'
+Requires-Dist: mypy>=1.0.0; extra == 'dev'
+Requires-Dist: pytest-cov>=4.0.0; extra == 'dev'
+Requires-Dist: pytest>=7.0.0; extra == 'dev'
+Requires-Dist: ruff>=0.1.0; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# notify-bridge
+
+A flexible notification bridge for sending messages to various platforms.
+
+## Features
+
+- 🚀 Simple and intuitive API
+- 🔌 Plugin system for easy extension
+- 🔄 Both synchronous and asynchronous support
+- 🛡️ Type-safe with Pydantic models
+- 📝 Rich message formats (text, markdown, etc.)
+- 🌐 Multiple platform support
+
+## Installation
+
+```bash
+pip install notify-bridge
+```
+
+## Quick Start
+
+```python
+from notify_bridge import NotifyBridge
+
+# Create a bridge instance
+bridge = NotifyBridge()
+
+# Send a notification synchronously
+response = bridge.notify(
+    "feishu",
+    webhook_url="YOUR_WEBHOOK_URL",
+    title="Test Message",
+    body="Hello from notify-bridge!",
+    msg_type="text"
+)
+print(response)
+
+# Send a notification asynchronously
+async def send_async():
+    response = await bridge.anotify(
+        "feishu",
+        webhook_url="YOUR_WEBHOOK_URL",
+        title="Async Test Message",
+        body="# Hello from notify-bridge!\n\nThis is a **markdown** message.",
+        msg_type="interactive"
+    )
+    print(response)
+```
+
+## Supported Platforms
+
+- [x] Feishu (飞书)
+- [ ] DingTalk (钉钉)
+- [ ] WeChat Work (企业微信)
+- [ ] Email
+- [ ] Slack
+- [ ] Discord
+
+## Creating a Plugin
+
+1. Create a new notifier class:
+
+```python
+from notify_bridge.types import BaseNotifier, NotificationSchema
+from pydantic import Field
+
+class MySchema(NotificationSchema):
+    webhook_url: str = Field(..., description="Webhook URL")
+    title: str = Field(..., description="Message title")
+    body: str = Field(..., description="Message body")
+
+class MyNotifier(BaseNotifier):
+    name = "my_notifier"
+    schema = MySchema
+
+    def send(self, notification: NotificationSchema):
+        # Implement your notification logic here
+        pass
+
+    async def asend(self, notification: NotificationSchema):
+        # Implement your async notification logic here
+        pass
+```
+
+2. Register your plugin in `pyproject.toml`:
+
+```toml
+[project.entry-points."notify_bridge.notifiers"]
+my_notifier = "my_package.my_module:MyNotifier"
+```
+
+## Configuration
+
+Each notifier has its own configuration schema. Here's an example for Feishu:
+
+```python
+bridge.notify(
+    "feishu",
+    webhook_url="YOUR_WEBHOOK_URL",
+    title="Message Title",
+    body="Message Body",
+    msg_type="interactive",  # or "text"
+    at_all=True,  # @所有人
+    at_users=["user1", "user2"]  # @特定用户
+)
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

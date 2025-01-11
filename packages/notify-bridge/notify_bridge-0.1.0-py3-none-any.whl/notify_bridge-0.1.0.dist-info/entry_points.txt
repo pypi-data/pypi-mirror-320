@@ -1,0 +1,2 @@
+[notify_bridge.notifiers]
+feishu = notify_bridge.notifiers.feishu:FeishuNotifier
