@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nbrb-tools
+Version: 0.0.1
+Summary: A Python library for currency conversion with NBRB
+Home-page: https://github.com/Mediano4e/nbrb-tools
+Author: Mediano4e
+Author-email: Mediano4e <mediano4e@gmail.com>
+License: MIT
+Requires-Python: >=3.8, <3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.32.3
+
+# nbrb-tools
