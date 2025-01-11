@@ -1,0 +1,8 @@
+cppzarr/__init__.py,sha256=iUjiBJ8tj6nezgdrCiDK5Mr40Z9M6FsYnFAwmFKsV0I,50
+cppzarr/cppzarr.cp39-win_amd64.pyd,sha256=1EITqTYVrYcuDvAbSuK5RASVcEaKA_bHJUH6OFjOsNI,280064
+cppzarr/cppzarrwrappers.py,sha256=3MvBf91eR86jJ6RnEt3CuRODrcw1ttYTq4s4NxdcF0Q,800
+cppzarr/libcppZarr.dll,sha256=PT7pNwMT1WDUms2bCVLR3rVTOz2ohzuj0N3qYEc1CA8,4808529
+cpp_zarr-1.0.2.dist-info/METADATA,sha256=ZrRu06ivoxfi-7aoIPb1PNgsjykNgKGoQ10oDX_PDqY,514
+cpp_zarr-1.0.2.dist-info/WHEEL,sha256=agy-BJge3afXwWznUXANATmKFW4eqelqRR0uf608A_0,99
+cpp_zarr-1.0.2.dist-info/top_level.txt,sha256=J0NyVJpD0yKL_9AbF7QpZJ5l4tmcudbQDRDlq3SLohs,8
+cpp_zarr-1.0.2.dist-info/RECORD,,
