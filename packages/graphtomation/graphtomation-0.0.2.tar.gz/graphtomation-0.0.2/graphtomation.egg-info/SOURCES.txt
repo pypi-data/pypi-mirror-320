@@ -1,0 +1,15 @@
+.env
+.env.prod
+.gitignore
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+graphtomation/__init__.py
+graphtomation.egg-info/PKG-INFO
+graphtomation.egg-info/SOURCES.txt
+graphtomation.egg-info/dependency_links.txt
+graphtomation.egg-info/requires.txt
+graphtomation.egg-info/top_level.txt
+graphtomation/api/__init__.py
+graphtomation/api/crewai.py
