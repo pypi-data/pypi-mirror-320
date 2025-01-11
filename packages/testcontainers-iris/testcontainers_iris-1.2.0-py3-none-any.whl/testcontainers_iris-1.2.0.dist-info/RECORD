@@ -1,0 +1,7 @@
+testcontainers/iris/__init__.py,sha256=PEwudnB25fo8Hc7InjBG9NV3OiwIAtp_f956bp4imwo,3503
+tests/test_iris.py,sha256=tBsiln1RfWHONmIipqL_4glt01Qu3Bbj7ZPSXC1N3EE,956
+testcontainers_iris-1.2.0.dist-info/LICENSE,sha256=Y3vGqalC2K9wytjOK1wondkDbEXF6cwOC9DW1xLobQA,1074
+testcontainers_iris-1.2.0.dist-info/METADATA,sha256=sxhdCVbhm7IGFOgYx5IoBYpjkkR4qUo0JnyuKFlGWjc,2160
+testcontainers_iris-1.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+testcontainers_iris-1.2.0.dist-info/top_level.txt,sha256=zZ4EaH_cr1V9Mk1GbweALIo9yXu0JLzmzNr-Tu3U9jA,21
+testcontainers_iris-1.2.0.dist-info/RECORD,,
