@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: Vishnupriya_ml_package
+Version: 0.1.0
+Summary: A package for machine learning models and utilities
+Home-page: https://github.com/vishnupriya230604/my_ML_package
+Author: Vishnupriya K
+Author-email: vishnupriyakarthy@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
