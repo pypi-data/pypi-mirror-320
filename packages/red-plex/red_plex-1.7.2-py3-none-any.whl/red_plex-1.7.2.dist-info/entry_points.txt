@@ -1,0 +1,2 @@
+[console_scripts]
+red-plex = src.infrastructure.cli.cli:cli
