@@ -1,0 +1,7 @@
+dict/__init__.py,sha256=4nOBVLNyIYohjXzZup9l2bSWdxEWZ1kckQ5ct7VKcJ4,17
+dict/read.py,sha256=PvKXto71BgM8c2sbUH9Oq2wLztbQ3Cm7yLL-6QR_n78,143
+dict/write.py,sha256=9kVre-OXqbuJF82Nk6K4bVE6dVrDccdylK9AUXM7F6k,225
+devkit_dict-9.0.0.dist-info/METADATA,sha256=svp6_1k80MGvMafTG5pRkTRLgR4ygt0wLJ4-r2U7n9Q,1062
+devkit_dict-9.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+devkit_dict-9.0.0.dist-info/top_level.txt,sha256=Eq1k4fShOsXyIzuMGfKZ-WFLubv5comNwp3Q-0126LI,5
+devkit_dict-9.0.0.dist-info/RECORD,,
