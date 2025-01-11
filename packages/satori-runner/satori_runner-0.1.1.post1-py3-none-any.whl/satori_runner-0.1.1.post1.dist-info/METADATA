@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: satori-runner
+Version: 0.1.1.post1
+Summary: Satori runner
+Author-Email: Satori CI <info@satori.ci>
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# runner
