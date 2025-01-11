@@ -1,0 +1,31 @@
+{
+  "_@charts-C4xQ0T1A.js": {
+    "file": "assets/@charts-C4xQ0T1A.js",
+    "name": "@charts"
+  },
+  "_@libs-4qzz_lBv.js": {
+    "file": "assets/@libs-4qzz_lBv.js",
+    "name": "@libs"
+  },
+  "_@tanstack-DcJlWz2-.js": {
+    "file": "assets/@tanstack-DcJlWz2-.js",
+    "name": "@tanstack",
+    "imports": [
+      "_@libs-4qzz_lBv.js"
+    ]
+  },
+  "index.html": {
+    "file": "assets/index-j2Ej7MHJ.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "imports": [
+      "_@libs-4qzz_lBv.js",
+      "_@tanstack-DcJlWz2-.js",
+      "_@charts-C4xQ0T1A.js"
+    ],
+    "css": [
+      "assets/index-DABrfijg.css"
+    ]
+  }
+}
