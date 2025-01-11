@@ -1,0 +1,8 @@
+argcomplete==3.5.3
+colorlog==6.9.0
+distlib==0.3.9
+filelock==3.16.1
+nox==2024.10.9
+packaging==24.2
+platformdirs==4.3.6
+virtualenv==20.28.1
