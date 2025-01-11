@@ -1,0 +1,21 @@
+Metadata-Version: 2.2
+Name: NetReport
+Version: 0.0.3
+Summary: Quick view into server status
+Home-page: https://github.com/samfelt/NetReport
+Author: samfelt
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Dist: icmplib>=3.0.4
+Requires-Dist: tabulate>=0.9.0
+
+# NetReport
+Get a quick view of network info
+
+## Allowing non-root users to create icmp sockets
+
+```bash
+#1000 is my user's group, setting to "0 2147483647" would allow everyone
+sudo sysctl net.ipv4.ping_group_range="1000 1000"
+```

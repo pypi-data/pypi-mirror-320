@@ -1,0 +1,2 @@
+[console_scripts]
+netrep = net_report.__init__:main

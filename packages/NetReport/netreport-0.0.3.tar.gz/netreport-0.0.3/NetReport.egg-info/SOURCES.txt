@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+NetReport.egg-info/PKG-INFO
+NetReport.egg-info/SOURCES.txt
+NetReport.egg-info/dependency_links.txt
+NetReport.egg-info/entry_points.txt
+NetReport.egg-info/requires.txt
+NetReport.egg-info/top_level.txt
+net_report/__init__.py
+net_report/args.py
+net_report/colors.py
+net_report/config.py
+net_report/host.py
+net_report/results.py
