@@ -1,0 +1,3 @@
+config_logs
+rabbitmq_async_client
+tests
