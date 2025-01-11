@@ -1,0 +1,28 @@
+; OPTIONS
+
+option "title" "My Ledger"
+
+option "operating_currency" "USD"
+option "account_rounding"   "Equity:RoundingError"
+option "operating_currency" "USD"
+
+; ACCOUNTS
+
+2012-01-01 open Assets:Bank:Checking         USD
+2012-01-01 open Assets:Brokerage:Cash        USD
+2012-01-01 open Assets:Brokerage:RothIRA     SPY
+2012-01-01 open Liabilities:CreditCard:Visa  USD
+2012-01-01 open Expenses:Uncategorized       USD
+
+; INCLUDES
+
+include "transactions.beancount"
+
+; PLUGINS
+
+plugin "beancount.plugins.auto_accounts"
+
+; CUSTOM
+
+2012-01-01 custom "option-a" "value1"
+2012-01-01 custom "option-b" "value1" "value2"

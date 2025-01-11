@@ -1,0 +1,29 @@
+[
+  {
+    "match": {
+      "narration": "PIZZA"
+    },
+    "set": {
+      "account": "Expenses:Restaurant:Pizza"
+    }
+  },
+  {
+    "match": {
+      "narration": "HUMAN\\s*FUND"
+    },
+    "set": {
+      "narration": "Donation",
+      "payee": "The Human Fund",
+      "account": "Expenses:Charity"
+    }
+  },
+  {
+    "match": {
+      "narration": "BUYMF|BUYSTOCK",
+      "account_prefix": "Assets:Brokerage"
+    },
+    "set": {
+      "narration": "Stock Buy"
+    }
+  }
+]

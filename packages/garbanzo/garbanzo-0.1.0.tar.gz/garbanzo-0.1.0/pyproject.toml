@@ -1,0 +1,131 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "garbanzo"
+dynamic = ["version"]
+description = "A collection of utilities related to the beancount (plaintext accounting) framework."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+keywords = ["beancount", "finance"]
+authors = [
+  { name = "Jeremy Silver", email = "jeremys@nessiness.com" },
+  { name = "Zach Silver", email = "zach.silver@gradientboostedinvestments.com" }
+]
+classifiers = [
+  "Programming Language :: Python"
+]
+# TODO: put import stuff in a separate dependency group
+dependencies = [
+  "beancount>=3",
+  "rich>=13.9",
+  "fancy-dataclass>=0.7.4",
+]
+
+# PyPI won't allow direct URL dependencies.
+# For now we just put them into a (PEP 735) dependency group
+# [project.optional-dependencies]
+# import = [
+#   "beancount-import @ git+https://github.com/jeremander/beancount-import@v3-compat",
+#   "beangulp @ git+https://github.com/jeremander/beangulp@v3-fixups"
+# ]
+
+[dependency-groups]
+import = [
+  "beancount-import @ git+https://github.com/jeremander/beancount-import@v3-compat",
+  "beangulp @ git+https://github.com/jeremander/beangulp@v3-fixups"
+]
+
+[project.scripts]
+garbanzo = "garbanzo.cli.main:GarbanzoCLI.main"
+
+[project.urls]
+Documentation = "https://github.com/jeremander/garbanzo#readme"
+Issues = "https://github.com/jeremander/garbanzo/issues"
+Source = "https://github.com/jeremander/garbanzo"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.sdist]
+ignore-vcs = true
+include = ["/garbanzo", "/tests"]
+
+[tool.hatch.version]
+path = "garbanzo/__init__.py"
+
+[tool.hatch.envs.lint]
+dependencies = [
+  "mypy>=1.14",
+  "ruff>=0.8",
+  "pytest-mypy",
+  "vermin>=1.6",
+]
+
+[tool.hatch.envs.lint.scripts]
+# linting
+run-ruff = "ruff check {args:garbanzo tests}"
+# ensure compatibility with Py3.9 and higher
+run-vermin = "vermin {args:.}"
+# type-checking
+run-mypy = "mypy --install-types --non-interactive {args:garbanzo tests}"
+all = ["run-ruff", "run-vermin", "run-mypy"]
+
+[tool.hatch.envs.test]
+dependencies = [
+    "pytest>=8.3",
+    "pytest-cov>=6.0",
+]
+
+[tool.hatch.envs.test.scripts]
+test = "pytest {args:tests}"
+test-debug = "pytest --pdb {args:tests}"
+cov-report = ["- coverage combine", "coverage report", "coverage html"]
+cov = ["test", "cov-report"]
+
+[[tool.hatch.envs.test.matrix]]
+python = ["3.11", "3.12", "3.13"]
+
+[tool.hatch.envs.badge]
+dependencies = [
+  "coverage",
+  "genbadge[tests,coverage]"
+]
+
+[tool.hatch.envs.badge.scripts]
+badge-cov = ["coverage xml", "genbadge coverage -i coverage.xml"]
+badges = ["badge-cov"]
+
+[tool.hatch.publish.index]
+disable = true
+
+[tool.mypy]
+# exclude = []
+warn_unused_configs = true
+strict = true
+disable_error_code = "import-untyped"
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+strict = false
+disable_error_code = ["attr-defined", "no-untyped-call", "no-untyped-def"]
+
+[tool.coverage.run]
+source_pkgs = ["garbanzo", "tests"]
+branch = true
+parallel = true
+omit = ["venv/*"]
+
+[tool.coverage.report]
+skip_covered = true
+show_missing = true
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+
+[tool.pytest.ini_options]
+addopts = "--verbose --durations=10 --cov=garbanzo --cov-config pyproject.toml"

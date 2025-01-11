@@ -1,0 +1,16 @@
+2012-01-01 open Assets:AcmeBank:Checking  USD
+    name: "Acme Checking"
+
+2012-01-01 open Assets:AcmeBank:Savings  USD
+    name: "Acme Savings"
+
+2012-01-01 open Liabilities:Visa:CreditCard  USD
+    name: "Visa Card"
+
+2025-01-01 * "Online Transfer to xxxxx"
+  Assets:AcmeBank:Checking   -250 USD
+  Assets:AcmeBank:Savings     250 USD
+
+2025-01-01 * "ACH WEB CARD PAYMENT"
+  Assets:AcmeBank:Checking     -793.14 USD
+  Liabilities:Visa:CreditCard   793.14 USD

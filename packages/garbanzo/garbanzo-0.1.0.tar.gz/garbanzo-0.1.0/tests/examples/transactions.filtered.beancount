@@ -1,0 +1,12 @@
+
+2024-03-14 * "Vincent's Pizza"
+  Liabilities:CreditCard:Visa  -52.17 USD
+  Expenses:Restaurant:Pizza     52.17 USD
+
+2024-12-23 * "The Human Fund" "Donation"
+  Assets:Bank:Checking  -1000.00 USD
+  Expenses:Charity       1000.00 USD
+
+2025-01-07 * "Stock Buy"
+  Assets:Brokerage:Cash     -595.89 USD
+  Assets:Brokerage:RothIRA        1 SPY {595.89 USD, 2025-01-07}
