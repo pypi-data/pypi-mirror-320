@@ -1,0 +1,34 @@
+import os
+from typing import Any, Dict, Optional, Tuple, Type
+
+from ark.core.assistant.server import AssistantServer
+from ark.core.client import Client, get_default_client_configs
+from ark.core.launcher.runner import get_endpoint_config, get_runner
+from ark.core.utils.context import set_account_id, set_resource_id, set_resource_type
+from ark.core.utils.package_management import load_function
+from ark.telemetry.trace.setup import setup_tracing
+
+
+def launch_serve(
+    package_path: str,
+    host: str = "0.0.0.0",
+    port: int = 8080,
+    endpoint_path: str = "/api/v2/assistant/chat",
+    health_check_path: Optional[str] = "/healthz",
+    clients: Optional[Dict[str, Tuple[Type[Client], Any]]] = None,
+) -> None:
+    set_resource_type(os.getenv("RESOURCE_TYPE") or "")
+    set_resource_id(os.getenv("RESOURCE_ID") or "")
+    set_account_id(os.getenv("ACCOUNT_ID") or "")
+
+    setup_tracing(endpoint=os.getenv("TRACE_ENDPOINT"))
+
+    runnable_func = load_function(package_path, "main")
+
+    server: AssistantServer = AssistantServer(
+        runner=get_runner(runnable_func),
+        health_check_path=health_check_path,
+        endpoint_config=get_endpoint_config(endpoint_path, runnable_func),
+        clients=clients if clients else get_default_client_configs(),
+    )
+    server.run(app=server.app, host=host, port=port)

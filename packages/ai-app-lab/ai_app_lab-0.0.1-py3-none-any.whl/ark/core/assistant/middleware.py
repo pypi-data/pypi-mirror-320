@@ -1,0 +1,62 @@
+import logging
+import time
+from dataclasses import dataclass, field
+from typing import Callable
+
+from starlette.datastructures import MutableHeaders
+from starlette.types import ASGIApp, Message, Receive, Scope, Send
+
+from ark.core.utils.context import (
+    get_client_reqid,
+    get_reqid,
+    get_start_time,
+    set_client_reqid,
+    set_headers,
+    set_reqid,
+    set_start_time,
+)
+from ark.core.utils.logid import gen_log_id
+
+
+@dataclass
+class LogIdMiddleware:
+    app: "ASGIApp"
+    client_header_name: str = "x-client-request-id"
+    header_name: str = "x-request-id"
+
+    generator: Callable[[], str] = field(default=lambda: gen_log_id())
+
+    async def __call__(self, scope: Scope, receive: Receive, send: Send) -> None:
+        """
+        Load log ID from headers if present. Generate one otherwise.
+        And put it into context.
+        """
+        set_start_time(time.perf_counter())
+        if scope["type"] not in ("http", "websocket"):
+            await self.app(scope, receive, send)
+            return
+
+        headers = MutableHeaders(scope=scope)
+
+        headers[self.header_name] = self.generator()
+        headers[self.client_header_name] = headers.get(
+            self.client_header_name.lower(), headers[self.header_name]
+        )
+
+        set_reqid(headers[self.header_name])
+        set_client_reqid(headers[self.client_header_name])
+        set_headers(headers)
+
+        async def handle_outgoing_request(message: "Message") -> None:
+            if message["type"] == "http.response.start" and get_reqid():
+                headers = MutableHeaders(scope=message)
+                headers.append(self.header_name, get_reqid())
+                headers.append(self.client_header_name, get_client_reqid())
+
+            await send(message)
+            logging.debug(
+                f"[{get_reqid()}] out app cost={time.perf_counter() - get_start_time()}"
+            )
+
+        await self.app(scope, receive, handle_outgoing_request)
+        return
