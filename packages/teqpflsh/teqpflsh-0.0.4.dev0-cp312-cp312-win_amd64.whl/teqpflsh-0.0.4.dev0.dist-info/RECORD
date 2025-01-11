@@ -1,0 +1,10 @@
+bin/geos.dll,sha256=VVrXOZ8wwwXGNB0-_ZcwVIdJIXv-H2nsFkMPm2mEO6o,2784768
+lib/geos.lib,sha256=OubLTXyTCDU64WcYO4kj-ep4fIpV752mbOyYHRcH58U,3572768
+teqpflsh/__init__.py,sha256=JNwFuMOAQFiiwFczdxAitnIs0F8ZJLn16_EZsb3Hctc,81
+teqpflsh/_teqpflsh_impl.cp312-win_amd64.pyd,sha256=aerKCqfddPFuWCOgQDozAVZbSTrqakt2Ksxm7_X4S3M,6891008
+teqpflsh/_teqpflsh_impl.pyi,sha256=r2X26o9HsN7B1N9tHJNIVtuxQzXp_G59r33Zwyjyc-c,23590
+teqpflsh/geos.dll,sha256=VVrXOZ8wwwXGNB0-_ZcwVIdJIXv-H2nsFkMPm2mEO6o,2784768
+teqpflsh/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+teqpflsh-0.0.4.dev0.dist-info/METADATA,sha256=03IrzTbjQBcMtAjfCajOc7XlIAsRrPbxdzPvB7VSH-o,1000
+teqpflsh-0.0.4.dev0.dist-info/WHEEL,sha256=GgB_RydHGtp7zP9kXrVRu7kuGtdM7WtO3JhH95Vv87o,106
+teqpflsh-0.0.4.dev0.dist-info/RECORD,,
