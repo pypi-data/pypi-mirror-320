@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: py-renogy
+Version: 1.0.5
+Summary: Python wrapper for Renogy API
+Home-page: https://github.com/firstof9/py-renogy
+Author: firstof9
+Author-email: firstof9@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/firstof9/py-renogy
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+![Codecov branch](https://img.shields.io/codecov/c/github/firstof9/py-renogy/main?style=flat-square)
+![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/firstof9/py-renogy?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/firstof9/py-renogy?style=flat-square)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/firstof9/py-renogy?style=flat-square)
+# py-renogy
+Python Library for Renogy API
+
+A python library for communicating with the Renogy API.
+
+
+
