@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/iid42"]
+
+[project]
+name = "iid42"
+version = "2025.01.10.1052"
+authors = [{ name = "Eloi Stree", email = "eloistree@gmail.com" }]
+description = "Help building app using Index Integer Date format IID"
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Development Status :: 1 - Planning",
+  "Operating System :: OS Independent",
+]
+keywords = ["IID", "date", "index", "integer", "development"]
+dependencies = [
+  "websockets",
+  "asyncio",
+  "ntplib"
+]
+
+
+[project.urls]
+Homepage = "https://github.com/EloiStree/pypi_iid"
+Issues = "https://github.com/EloiStree/pypi_iid"
+
+
+# python -m build
+# python -m twine upload dist/*
