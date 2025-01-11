@@ -1,0 +1,74 @@
+Metadata-Version: 2.3
+Name: secure-test-automation
+Version: 1.2.4
+Summary: Crypto tool for automation frameworks
+Home-page: https://github.com/dmberezovskyii/secure-test-automation
+License: MIT
+Keywords: cryptography,Selenum,appium,secrets,security
+Author: Dmytro Berezovskyi
+Author-email: dmberezovskyi@gmail.com
+Requires-Python: >3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Provides-Extra: docs
+Requires-Dist: PyYAML (==6.0.2)
+Requires-Dist: boto3 (>=1.35.92,<2.0.0)
+Requires-Dist: click (>=8.1.8,<9.0.0)
+Requires-Dist: cryptography (==44.0.0)
+Requires-Dist: hvac (>=2.3.0,<3.0.0)
+Requires-Dist: pydantic (>=2.10.3,<3.0.0)
+Requires-Dist: pyfiglet (==1.0.2)
+Requires-Dist: pytest (==8.3.2)
+Requires-Dist: pytest-html (==4.1.1)
+Requires-Dist: sphinx (>=8.1.3,<9.0.0) ; extra == "docs"
+Requires-Dist: sphinx_rtd_theme (>=3.0.2,<4.0.0) ; extra == "docs"
+Requires-Dist: toml (==0.10.2)
+Project-URL: Repository, https://github.com/dmberezovskyii/secure-test-automation
+Description-Content-Type: text/markdown
+
+# About
+`secure-test-autmation` Python library for encrypting and decrypting passwords, designed for integration with automated testing frameworks such as Selenium, Appium, Playwright, and others. It ensures secure password storage and allows retrieving keys from remote  or local vaults to decrypt configuration files and passwords.
+
+## Features
+
+- **Encryption and Decryption**: Encrypt and decrypt passwords using a Fernet key.
+- **Key Management**: Support for loading, creating, saving, and deleting encryption keys from a local file and remove vault
+- **Password Generation**: Generate secure, random passwords of a specified length.
+- **Multiple Vault Types**: 
+  - Currently: local and and HashiCorp Vault
+
+## Documentation
+
+You can find the full documentation for Secure Test Automation here:
+[Secure Test Automation Documentation](https://secure-test-automation.readthedocs.io/en/latest/index.html)
+
+
+## Requirements
+
+- Python 3.10 +
+- `cryptography` library for encryption/decryption functionality.
+
+Install the required dependencies:
+
+### Local Usage
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/dmberezovskyii/secure-test-automation
+   ```
+2. Install required dependencies:
+   ```bash
+   pip install poetry
+   poetry shell
+   poetry env info
+   copy `Executable: path to virtual env` -> Add Interpreter -> Poetry Environment -> Existing environment -> add Executable -> Apply
+   poetry install
+   ```
+### Install Library
+   ```bash
+   pip install secure-test-automation
+   ```
+### TODO add documentation usage
