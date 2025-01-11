@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: envipyengine
+Version: 1.0.9
+Summary: ENVI Python Engine
+Home-page: https://github.com/envi-idl/envipyengine
+Author: NV5 Geospatial Solutions, Inc.
+License: MIT
+Keywords: envi idl
+License-File: LICENSE.txt
+Provides-Extra: dev
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
+Requires-Dist: Sphinx; extra == "dev"
+Requires-Dist: Sphinx-PyPI-upload; extra == "dev"
+Requires-Dist: sphinx-rtd-theme; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: unittest-xml-reporting; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+
+
+
+**************
+ENVI Py Engine
+**************
+
+Installation
+============
+
+Install the ENVI Py Engine using pip::
+
+    pip install envipyengine
+
+Documentation
+=============
+
+For the full API documentation visit: http://envi-py-engine.readthedocs.io
+
