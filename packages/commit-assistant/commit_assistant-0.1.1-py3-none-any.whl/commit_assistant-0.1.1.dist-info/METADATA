@@ -1,0 +1,44 @@
+Metadata-Version: 2.4
+Name: commit-assistant
+Version: 0.1.1
+Summary: An AI commit assistant CLI tool.
+Author-email: Stone <xijieyin@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: google-genai
+Requires-Dist: rich
+Description-Content-Type: text/markdown
+
+# Commit Assistant
+
+[![PyPI version](https://badge.fury.io/py/commit-assistant.svg)](https://badge.fury.io/py/commit-assistant)
+
+This project tracks Git commits and README file versions by saving them to an SQLite database using a post-commit hook.
+
+## Features
+- Generate commit message with Gemini.
+- Save commit metadata (author, timestamp, message, code diff) in SQLite.
+- Generate commit summary with Gemini.
+
+## Installation
+
+```bash
+pip install commit-assistant
+```
+
+```
+## Usage
+
+```bash
+## setup 
+coas setup
+## setup husky hooks, run inside you project directory if husky enabled
+coas setup-husky
+## generate commit message with Gemini
+coas commit
+## summary commits for latest week
+coas summary
+```

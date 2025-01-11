@@ -1,0 +1,2 @@
+[console_scripts]
+coas = assistant.cli:cli
