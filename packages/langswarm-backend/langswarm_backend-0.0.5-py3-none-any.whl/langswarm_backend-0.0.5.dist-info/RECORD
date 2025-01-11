@@ -1,0 +1,10 @@
+langswarm/backend/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+langswarm/backend/main.py,sha256=7PwmhkmDO5nWvkJXNw-UoBuY5W6RPoEin_92ODWvtlo,709
+langswarm/backend/app/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+langswarm/backend/app/api.py,sha256=JVjkamJc3x3rT3oeLHCog2pXRgC3aQa5V38A2uk1fWk,493
+langswarm/tests/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+langswarm_backend-0.0.5.dist-info/LICENSE,sha256=grI4_RNstKmJKr6TJfFmhkziViop3O8ntd4wbYIg4Sg,147
+langswarm_backend-0.0.5.dist-info/METADATA,sha256=tzGE7qnxVd20iTxkHcnlNC3ULn9PRY3rQbRj6P1elOQ,3596
+langswarm_backend-0.0.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+langswarm_backend-0.0.5.dist-info/top_level.txt,sha256=3xYEpdBQsyIPXNLMJYLJ20JzfyMLMKRwT32oVXrdqP8,10
+langswarm_backend-0.0.5.dist-info/RECORD,,
