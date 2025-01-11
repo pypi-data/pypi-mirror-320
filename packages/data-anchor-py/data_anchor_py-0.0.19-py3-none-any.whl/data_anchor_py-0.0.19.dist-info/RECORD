@@ -1,0 +1,12 @@
+data_anchor_py/__init__.py,sha256=K4PgMEvqwSTjEvlMw0_LX1v5zzEG6rOZXSSPu26h3Ow,58
+data_anchor_py/core.py,sha256=_h5acAs3n62yc6Qbuy1tJEkyIxr_RrQx0fD0_wlJq_s,8907
+data_anchor_py/decorators.py,sha256=2IHSVw2YWV7eRXYxrzdqPW_mzFaTckbIntznCI5Ov_g,61
+data_anchor_py/exceptions.py,sha256=uA5KSGtez68xDCzYxaQAh682YIy_CUy7ogJg11c-1O0,49
+data_anchor_py/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data_anchor_py/tests/test_core.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+data_anchor_py/tests/test_integration.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data_anchor_py/utils.py,sha256=DNMlf010jUhGajkrFW2_jeBbZB3h8rEmT4m0kKnaStk,95
+data_anchor_py-0.0.19.dist-info/LICENSE,sha256=YIRM6rxCWyMVxzZCu1h0z4W18G8CYMMaWrMipLEnkiQ,1089
+data_anchor_py-0.0.19.dist-info/METADATA,sha256=oaXWvMQSbD_My6FmL8eZjm33itVL65vEIu8QG1m6Cv8,2758
+data_anchor_py-0.0.19.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+data_anchor_py-0.0.19.dist-info/RECORD,,
