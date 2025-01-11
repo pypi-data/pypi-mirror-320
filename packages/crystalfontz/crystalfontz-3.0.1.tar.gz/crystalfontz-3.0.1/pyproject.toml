@@ -1,0 +1,78 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crystalfontz"
+version = "3.0.1"
+authors = [
+  {name = "Josh Holbrook", email = "josh.holbrook@gmail.com"}
+]
+description = "Library for interacting with crystalfontz LCD displays"
+readme = "README.md"
+keywords = []
+license = { text = "Apache-2.0" }
+classifiers = [
+    "Programming Language :: Python",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Other/Nonlisted Topic",
+]
+requires-python = ">=3.11"
+dependencies = [
+  "appdirs",
+  "bitstring",
+  "click",
+  "pyserial",
+  "pyserial-asyncio",
+  "pyyaml",
+]
+
+[project.scripts]
+crystalfontz = "crystalfontz.cli:main"
+
+[dependency-groups]
+dev = [
+    "flake8",
+    "flake8-black",
+    "pytest",
+    "pytest-asyncio",
+    "black",
+    "isort",
+    "jupyter-console",
+    "mkdocs",
+    "mkdocs-include-markdown-plugin",
+    "mkdocstrings[python]",
+    "validate-pyproject[all]",
+]
+
+[tool.uv]
+package = true
+
+[tool.isort]
+profile = "appnexus"
+known_application = "crystalfontz"
+
+[tool.pyright]
+include = ["crystalfontz", "tests"]
+
+[tool.pytest]
+addopts = "--verbose -s"
+testpaths = [ "tests" ]
+
+[tool.pytest.ini_options]
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.setuptools]
+packages = [ "crystalfontz" ]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+optional-dependencies.dev = { file = ["requirements_dev.txt"] }

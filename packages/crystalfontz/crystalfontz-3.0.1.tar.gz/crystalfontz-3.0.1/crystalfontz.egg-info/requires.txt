@@ -1,0 +1,6 @@
+appdirs
+bitstring
+click
+pyserial
+pyserial-asyncio
+pyyaml

@@ -1,0 +1,2 @@
+[console_scripts]
+crystalfontz = crystalfontz.cli:main
