@@ -1,0 +1,78 @@
+[tool.poetry]
+name = "tigergraphx"
+version = "0.1.10"
+description = "TigerGraphX is a high-level Python library offering a unified, Python-native interface for graph databases, advanced analytics, and GraphRAG workflows. Combining the simplicity of NetworkX with the advanced capabilities of TigerGraph, including tgCloud, it empowers Python developers to harness the power of graphs without the need to learn query languages like Cypher or GSQL."
+authors = ["Xuanlei Lin <xuanlei.lin@tigergraph.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/xuanleilin/TigerGraphX"
+repository = "https://github.com/xuanleilin/TigerGraphX"
+packages = [{ include = "tigergraphx" }]
+keywords = ["tigergraph", "graph database", "graphrag", "machine learning", "graph analytics"]
+
+[tool.poetry.dependencies]
+# Core Python Version
+python = "<3.13,>=3.10"
+
+# Data Processing
+pandas = "^2.2.3"
+
+# Configuration Management
+pydantic = "^2.10.1"
+pydantic-settings = "^2.6.1"
+pyyaml = "^6.0.2"
+
+# Database and Storage
+pytigergraph = "^1.8.1"
+nano-vectordb = "^0.0.4.3"
+
+# Large Language Model (LLM) Utilities
+tiktoken = "^0.7.0"
+openai = "^1.55.0"
+tenacity = "^9.0.0"
+
+[tool.poetry.group.dev.dependencies]
+# Task Runner
+poethepoet = "^0.31.0"
+
+# Testing Frameworks
+pytest = "^8.3.3"
+pytest-asyncio = "^0.24.0"
+pytest-mock = "^3.14.0"
+
+# Interactive Development
+notebook = "^7.3.1"
+nest-asyncio = "^1.6.0"
+ipywidgets = "^8.1.5"
+
+# GraphRAG Integration
+## For Microsoft's GraphRAG
+graphrag = "^0.4.0"
+## For LightRAG
+lightrag-hku = "^1.0.6"
+aioboto3 = "^13.2.0"
+ollama = "^0.4.4"
+torch = "^2.5.1"
+transformers = "^4.47.0"
+
+# Documentation Generation
+mkdocs = "^1.6.1"
+mkdocs-material = "^9.5.48"
+mkdocs-jupyter = "^0.25.1"
+mkdocstrings-python = "^1.12.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+# Unit Test
+test_unit = {cmd = "pytest -vs ./tests/unit", env = {PYTHONDONTWRITEBYTECODE = "1"}}
+
+# Integration Test
+test_integration = {cmd = "pytest -vs ./tests/integration", env = {PYTHONDONTWRITEBYTECODE = "1"}}
+
+# Applications
+graphrag_query = "python -m applications.msft_graphrag.query.main"
+lightrag_index = "python -m applications.lightrag.index"
+lightrag_query = "python -m applications.lightrag.query"
