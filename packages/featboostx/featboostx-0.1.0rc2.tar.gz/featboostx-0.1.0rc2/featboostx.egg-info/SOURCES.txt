@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+featboostx/__init__.py
+featboostx/feat_boost_classifier.py
+featboostx/feat_boost_estimator.py
+featboostx/feat_boost_regressor.py
+featboostx.egg-info/PKG-INFO
+featboostx.egg-info/SOURCES.txt
+featboostx.egg-info/dependency_links.txt
+featboostx.egg-info/requires.txt
+featboostx.egg-info/top_level.txt
+images/Figure_1.png
