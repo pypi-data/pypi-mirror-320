@@ -1,0 +1,2 @@
+[console_scripts]
+depster = depster.depster:main
