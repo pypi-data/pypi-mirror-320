@@ -1,0 +1,23 @@
+[project]
+name = "data-anchor-py"
+version = "0.0.22"
+description = "A way to create shared dataclasses in python for multiprocessing and multi threading real time applications"
+authors = [
+    {name = "GitMohit007 mohitkrishna010@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+homepage = "https://github.com/GitMohit007/DataAnchor"
+repository = "https://github.com/GitMohit007/DataAnchor"
+keywords = ["dataclasses", "shared dataclasses", "multiprocessing", "multithreading", "real time applications", "dataanchor"]
+requires-python = ">=3.8"
+dependencies = [
+]
+
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
