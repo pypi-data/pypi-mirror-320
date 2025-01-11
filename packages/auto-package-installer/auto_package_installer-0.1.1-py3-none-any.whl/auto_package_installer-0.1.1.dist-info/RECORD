@@ -1,0 +1,10 @@
+auto_package_installer/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+auto_package_installer/base_os_manager.py,sha256=Sb8n3HtBCVKArZMoeYYuVw9sxgdA_0YxViaGb-CpXjk,3088
+auto_package_installer/factory.py,sha256=dpERVgR2N2imJnNV5di23UQmOXkuGBu8GtrC_71p7TM,735
+auto_package_installer/linux_dependency_manager.py,sha256=B37qYpnv_WfyTbaWxlL6XS7wpCjrEV93m7jbBL5xztw,2096
+auto_package_installer/windows_dependency_manager.py,sha256=S8G9ZwJl2rD6k5i-jwPoi28a-2qnQtA_ffOU4jhctRg,2141
+auto_package_installer-0.1.1.dist-info/LICENSE,sha256=Um4pBwrGhkDs3QYFyLmfexQczEE5PJ3x5515FOHLCPY,1079
+auto_package_installer-0.1.1.dist-info/METADATA,sha256=JiJXkk9XEOAQiELDVODaL0SKe0rnSDucjEhtQ3-c0lw,572
+auto_package_installer-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+auto_package_installer-0.1.1.dist-info/top_level.txt,sha256=9fU6IhjG3MmlTpqfO-HqztMCpZolfYDgn1RzpIpIKhk,23
+auto_package_installer-0.1.1.dist-info/RECORD,,
