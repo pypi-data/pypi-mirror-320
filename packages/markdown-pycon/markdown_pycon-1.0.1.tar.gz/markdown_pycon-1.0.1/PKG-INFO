@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: markdown-pycon
+Version: 1.0.1
+Summary: Markdown extension to parse `pycon` code blocks without indentation or fences.
+Author-Email: =?utf-8?q?Timoth=C3=A9e_Mazzucotelli?= <dev@pawamoy.fr>
+License: ISC
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Project-URL: Homepage, https://pawamoy.github.io/markdown-pycon
+Project-URL: Documentation, https://pawamoy.github.io/markdown-pycon
+Project-URL: Changelog, https://pawamoy.github.io/markdown-pycon/changelog
+Project-URL: Repository, https://github.com/pawamoy/markdown-pycon
+Project-URL: Issues, https://github.com/pawamoy/markdown-pycon/issues
+Project-URL: Discussions, https://github.com/pawamoy/markdown-pycon/discussions
+Project-URL: Gitter, https://gitter.im/markdown-pycon/community
+Project-URL: Funding, https://github.com/sponsors/pawamoy
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Markdown PyCon
+
+[![ci](https://github.com/pawamoy/markdown-pycon/workflows/ci/badge.svg)](https://github.com/pawamoy/markdown-pycon/actions?query=workflow%3Aci)
+[![documentation](https://img.shields.io/badge/docs-mkdocs-708FCC.svg?style=flat)](https://pawamoy.github.io/markdown-pycon/)
+[![pypi version](https://img.shields.io/pypi/v/markdown-pycon.svg)](https://pypi.org/project/markdown-pycon/)
+[![gitter](https://badges.gitter.im/join%20chat.svg)](https://app.gitter.im/#/room/#markdown-pycon:gitter.im)
+
+Markdown extension to parse `pycon` code blocks without indentation or fences.
+
+## Installation
+
+```bash
+pip install markdown-pycon
+```
+
+## Configuration
+
+This extension relies on the
+[Highlight](https://facelessuser.github.io/pymdown-extensions/extensions/highlight/)
+extension of
+[PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/).
+
+Configure from Python:
+
+```python
+from markdown import Markdown
+
+Markdown(extensions=["pycon"])
+```
+
+...or in MkDocs configuration file, as a Markdown extension:
+
+```yaml
+# mkdocs.yml
+markdown_extensions:
+- pycon
+```
+
+## Usage
+
+In your Markdown documents, simply write your `pycon` code blocks
+without indentation or fences (triple backticks):
+
+```md
+>>> print("This is a pycon code block")
+This is a pycon code block
+```
+
+This will get rendered as:
+
+```pycon
+>>> print("This is a pycon code block")
+This is a pycon code block
+```
+
+[Doctest flags](https://docs.python.org/3/library/doctest.html#option-flags)
+will be removed from the code lines.
