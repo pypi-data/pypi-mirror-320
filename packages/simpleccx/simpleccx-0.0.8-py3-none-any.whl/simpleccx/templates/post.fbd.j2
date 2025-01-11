@@ -1,0 +1,24 @@
+wsize 1024 480
+read model.frd
+capt Panel
+cmap turbo
+rot y
+rot r 30
+rot u 15
+{%- for (ds_name, ds_num, elem_num) in datasets %}
+# Dataset {{ ds_name }}
+    {%- for time in times %}
+ds {{ ds_num + datasets|length * loop.index0 }} e {{ elem_num }}
+wsize 1024 480
+ulin {{ ds_name }} - time {{ time }}
+frame
+zoom 2.5
+view disp
+view elem off
+view edge on
+scal d 1
+hcpy png
+    {%- endfor %}
+{%- endfor %}
+quit
+
