@@ -1,0 +1,10 @@
+cpp_zarr-1.0.2.dist-info/RECORD,,
+cpp_zarr-1.0.2.dist-info/WHEEL,sha256=f8pjmtKdM9sMuYXExeklx9xlZG2n-uxbhxLhv3rvl4A,110
+cpp_zarr-1.0.2.dist-info/top_level.txt,sha256=J0NyVJpD0yKL_9AbF7QpZJ5l4tmcudbQDRDlq3SLohs,8
+cpp_zarr-1.0.2.dist-info/METADATA,sha256=7jTDXMvhCoBVerwnHXbOsUVPuAVOfeAqwgo7CNgVyhg,496
+cppzarr/cppzarrwrappers.py,sha256=_ON54HYISQ0wD3amK_YxQreOnLPawnHF96dSZc7QZMw,779
+cppzarr/__init__.py,sha256=iUjiBJ8tj6nezgdrCiDK5Mr40Z9M6FsYnFAwmFKsV0I,50
+cppzarr/cppzarr.cpython-311-darwin.so,sha256=4_sf1lS6wEFglBA8_t2sWlvKGO-J6LZkc2S8IBF_-j0,379824
+cppzarr/.dylibs/libcppZarr.dylib,sha256=32xAi4_0tJtx7RQgpKZUD475fSgl9j3KVcpNK1nTlbI,4414192
+cppzarr/.dylibs/libgcc_s.1.1.dylib,sha256=3M4kMX6mHiS1ucUhP88G5mxn9k-WElhGBEHJ_5llt-c,205728
+cppzarr/.dylibs/libgomp.1.dylib,sha256=W3LUStAYBPSdRG3lksVvxvHTH_ywEBHjFmoH-y_nU_I,476896
