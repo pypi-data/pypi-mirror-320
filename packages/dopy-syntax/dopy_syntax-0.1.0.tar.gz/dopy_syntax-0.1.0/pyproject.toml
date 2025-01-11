@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "dopy-syntax"
+version = "0.1.0"
+description = "Transform Python code using do..end blocks instead of indentation-based scoping"
+authors = ["Navdeep Saini <navdeep@mailbox.org>"]
+readme = "README.md"
+packages = [{ include = 'dopy' }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+autopep8 = "^2.3.1"
+
+[tool.poetry.scripts]
+dopy = "dopy.cli:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = '^7.3.1'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["test"]
+addopts = ["-vv"]
+markers = ['success', 'edge']
+
+[tool.pyright]
+include = ["."]
+typeCheckingMode = "strict"
+reportGeneralTypeIssues = false
+pythonVersion = "3.10"
+reportOptionalSubscriptIndexError = false
