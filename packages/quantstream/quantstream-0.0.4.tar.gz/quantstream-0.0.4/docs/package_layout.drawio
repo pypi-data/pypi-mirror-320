@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="yEhg-XwlRcpTGGI3oVKL">
+    <mxGraphModel dx="1272" dy="775" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="quantstream" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="8" y="10" width="1082" height="669" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="test_connector.py" style="whiteSpace=wrap;strokeWidth=2;" parent="2" vertex="1">
+          <mxGeometry x="85.2075" y="553.3457526080476" width="255.6225" height="48.85394932935916" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="tests" style="whiteSpace=wrap;strokeWidth=2;" parent="2" vertex="1">
+          <mxGeometry x="37.870000000000005" y="516.4560357675111" width="1025.195" height="123.63040238450074" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="connector_folder" style="whiteSpace=wrap;strokeWidth=2;" parent="2" vertex="1">
+          <mxGeometry x="409.8075" y="120.63934426229507" width="247.5075" height="48.85394932935916" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="data_pull.py" style="whiteSpace=wrap;strokeWidth=2;" parent="2" vertex="1">
+          <mxGeometry x="432.8" y="318.04918032786884" width="202.875" height="48.85394932935916" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="data_process.py" style="whiteSpace=wrap;strokeWidth=2;" parent="2" vertex="1">
+          <mxGeometry x="751.99" y="318.04918032786884" width="238.04000000000002" height="48.85394932935916" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="test_data_pull.py" style="whiteSpace=wrap;strokeWidth=2;" parent="2" vertex="1">
+          <mxGeometry x="408.455" y="553.3457526080476" width="252.91750000000002" height="48.85394932935916" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="test_data_process.py" style="whiteSpace=wrap;strokeWidth=2;" parent="2" vertex="1">
+          <mxGeometry x="727.645" y="553.3457526080476" width="288.0825" height="48.85394932935916" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="data_logic" style="whiteSpace=wrap;strokeWidth=2;" parent="2" vertex="1">
+          <mxGeometry x="385.46250000000003" y="281.15946348733235" width="653.2575" height="123.63040238450074" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="quantstrream" style="whiteSpace=wrap;strokeWidth=2;align=center;verticalAlign=top;" parent="2" vertex="1">
+          <mxGeometry x="129.84" y="45.8628912071535" width="935.9300000000001" height="395.81669150521606" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="connectors" style="whiteSpace=wrap;strokeWidth=2;horizontal=1;verticalAlign=top;" parent="2" vertex="1">
+          <mxGeometry x="156.89" y="82.75" width="393.11" height="137.25" as="geometry" />
+        </mxCell>
+        <mxCell id="sCCyAosA5iptmHZ6OK5X-22" value="financial time series" style="whiteSpace=wrap;strokeWidth=2;horizontal=1;verticalAlign=top;" vertex="1" parent="2">
+          <mxGeometry x="562" y="82.75" width="393.11" height="137.25" as="geometry" />
+        </mxCell>
+        <mxCell id="sCCyAosA5iptmHZ6OK5X-21" value="connectors" style="whiteSpace=wrap;strokeWidth=2;horizontal=1;verticalAlign=top;" vertex="1" parent="2">
+          <mxGeometry x="156.89" y="240" width="393.11" height="137.25" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="pPackage" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="345" y="729" width="127" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="package" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="349" y="827" width="118" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="logic" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="361" y="926" width="94" height="49" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

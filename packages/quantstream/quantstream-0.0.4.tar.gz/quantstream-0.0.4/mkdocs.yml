@@ -1,0 +1,56 @@
+# mkdocs.yml
+
+site_name: QuantStream Documentation
+site_url: https://Clovin4.github.io/quantstream/
+site_description: Official documentation for QuantStream
+site_author: Christian
+
+theme:
+  name: swan
+  logo: images/logo.png
+
+# Plugins for search and Python docstrings
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          docstring_style: numpy
+  - mkdocs-jupyter:
+      use_math: true
+      execute_options:
+        timeout: 60
+      jupyter_options:
+        nbconvert_exporter: pdf
+        nbconvert_exporter_options:
+          template_file: null
+          template_path: null
+
+# Navigation structure
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: installation.md
+      - Basics: usage/notebooks/getting-started.ipynb
+      - Workflows:
+          - Financial Timeseries Analysis: usage/notebooks/financial-timeseries-workflow.ipynb
+  - API Reference:
+      - Datasets: reference/quantstream_datasets.md
+      - Decorators: reference/quantstream_decorators.md
+      - Modules: reference/quantstream_models.md
+      - Utilities: reference/quantstream_utils.md
+  - Contributing:
+      - Overview: contributing.md
+      - Coverage Report: htmlcov/index.html
+  - License: license.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: plotly
+          class: plotly

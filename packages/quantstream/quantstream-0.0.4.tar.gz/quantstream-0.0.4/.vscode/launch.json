@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Pytest",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pytest",
+            "args": [],
+            "python": "${command:python.interpreterPath}",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Python Debugger: Module (basic arg)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "quantstream",
+            "python": "${command:python.interpreterPath}",
+            "args": [
+                "--symbol",
+                "AAPL"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}
