@@ -1,0 +1,17 @@
+site_name: Python SSHSIG Documentation
+theme:
+  name: material
+  features:
+    - content.code.copy
+    - navigation.footer
+plugins:
+  - search
+  - mkdocstrings
+nav:
+  - 'Home': index.md
+  - 'Tutorials':
+      - 'Check Signature': tutorial/check_signature.md
+  - 'How-To Guides':
+      - 'Check Git Commit': howto/check_commit.md
+  - reference.md
+  - related.md

@@ -1,0 +1,16 @@
+name: Integration tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container:
+      image: quay.io/podman/stable
+      options: --privileged
+    steps:
+      - uses: actions/checkout@v4
+      - run: integration/test-all

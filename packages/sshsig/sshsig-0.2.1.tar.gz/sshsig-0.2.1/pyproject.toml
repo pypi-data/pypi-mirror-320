@@ -1,0 +1,84 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sshsig"
+dynamic = ["version"]
+description = "SSH signature verification"
+license = {file = "LICENSE"}
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX",
+]
+maintainers = [
+  {name = "Castedo Ellerman", email = "castedo@castedo.com"},
+  {name = "Jelmer Vernooij", email = "jelmer@jelmer.uk"},
+]
+requires-python = ">=3.9"
+dependencies = ["cryptography"]
+
+[project.urls]
+GitHub = "https://github.com/castedo/sshsig"
+GitLab = "https://gitlab.com/perm.pub/sshsiglib"
+
+[tool.setuptools]
+packages = ["sshsig"]
+
+[tool.setuptools_scm]
+version_file = "sshsig/_version.py"
+
+[tool.ruff.lint]
+select = [
+    "ANN",
+    "D",
+    "E",
+    "F",
+    "PIE",
+    "UP",
+    "RSE",
+    "RUF",
+]
+ignore = [
+    "ANN001",
+    "ANN002",
+    "ANN003",
+    "ANN101",  # missing-type-self
+    "ANN102",
+    "ANN201",
+    "ANN202",
+    "ANN204",
+    "ANN205",
+    "ANN206",
+    "ANN401", # Dynamically typed expressions (typing.Any) are disallowed
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "D105",
+    "D107",
+    "D202", # No blank lines allowed after function docstring
+    "D204",
+    "D205",
+    "D417",
+    "E501",  # line too long
+    "E741",  # ambiguous variable name
+    "UP007", # Use `X | Y` for type annotations
+    "UP032", # Use f-string instead of `format` call
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.format]
+quote-style = "preserve"
+
+[tool.black]
+skip_string_normalization = true
+
+[tool.yapf]
+column_limit = 88
+based_on_style = "facebook"
