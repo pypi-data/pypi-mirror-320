@@ -1,0 +1,8 @@
+osrs_ge_scraper/__init__.py,sha256=XCr8FCgsqaN0jTgpRTNX69gkYWL6qIF5OiwlxobIi_8,57
+osrs_ge_scraper/api.py,sha256=D1MlpMmtq2OT1TEANALGvsJUvXCpHYQY_dZj7YUDcc4,783
+osrs_ge_scraper/item.py,sha256=g7-wF8jQrJuM6iccEv3KCKOI-KGYzbhxidtMovZio-g,535
+osrs_ge_scraper/utils.py,sha256=Hsd5R2u-vVFtOH7mglcP4xrnsAtDEuK8cwUa1UkWxTw,336
+osrs_ge_scraper-0.1.0.dist-info/METADATA,sha256=XxcQnF5msGXcsd335T12-nCF2GdvGghJrQHuLwznax0,611
+osrs_ge_scraper-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+osrs_ge_scraper-0.1.0.dist-info/top_level.txt,sha256=RTXFkJMHze3S2B22jek9qVY8NZEIaE8lWcz4oTztVVQ,16
+osrs_ge_scraper-0.1.0.dist-info/RECORD,,
