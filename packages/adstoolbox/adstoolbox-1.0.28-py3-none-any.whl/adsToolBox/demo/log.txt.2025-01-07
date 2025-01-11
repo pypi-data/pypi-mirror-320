@@ -1,0 +1,535 @@
+2025-01-06 15:19:03,434 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-06 15:19:03,436 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-06 15:19:03,713 - AdsLogger - INFO - Connexion établie avec la base de données
+2025-01-06 15:19:16,686 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-06 15:19:16,687 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-06 15:19:16,919 - AdsLogger - INFO - Connexion établie avec la base de données
+2025-01-06 15:19:16,919 - AdsLogger - DEBUG - Exécution de la requête de lecture: SELECT * FROM v_bo_caces_encours;
+2025-01-06 15:19:26,152 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-06 15:19:26,477 - AdsLogger - INFO - 2040 lignes lues.
+2025-01-06 15:21:35,533 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-06 15:21:35,796 - AdsLogger - INFO - Connexion établie avec la base de données
+2025-01-06 15:21:40,654 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-06 15:21:40,770 - AdsLogger - INFO - 2040 lignes lues.
+2025-01-06 15:35:11,232 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-06 15:35:11,233 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-06 15:35:11,291 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-06 15:35:11,291 - AdsLogger - INFO - Connexion établie avec la base de données.
+2025-01-06 15:35:11,291 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test_2;
+2025-01-06 15:35:11,302 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-06 15:35:11,302 - AdsLogger - INFO - 5 lignes lues.
+2025-01-06 15:35:11,302 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.0114 secondes
+2025-01-06 15:35:11,304 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-06 15:35:11,304 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-06 15:35:11,543 - AdsLogger - INFO - Connexion établie avec la base de données
+2025-01-06 15:35:11,543 - AdsLogger - INFO - Connexion établie avec la base de données
+2025-01-06 15:35:11,544 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-06 15:35:11,544 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-06 15:35:11,713 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-06 15:35:11,713 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-06 15:35:11,713 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0561 secondes.
+2025-01-06 15:35:11,713 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0561 secondes.
+2025-01-06 15:35:11,713 - AdsLogger - INFO - Connexion établie avec la base de données.
+2025-01-06 15:35:11,713 - AdsLogger - INFO - Connexion établie avec la base de données.
+2025-01-06 15:35:11,714 - AdsLogger - INFO - Temps d'exécution de connect: 0.1704 secondes.
+2025-01-06 15:35:11,714 - AdsLogger - INFO - Temps d'exécution de connect: 0.1704 secondes.
+2025-01-06 15:35:11,745 - AdsLogger - INFO - Connexion à bdd mssql réussie.
+2025-01-06 15:35:11,745 - AdsLogger - INFO - Connexion à bdd mssql réussie.
+2025-01-06 15:35:11,746 - AdsLogger - INFO - Chargement des données depuis la source...
+2025-01-06 15:35:11,746 - AdsLogger - INFO - Chargement des données depuis la source...
+2025-01-06 15:35:16,689 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-06 15:35:16,689 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-06 15:35:16,897 - AdsLogger - ERROR - **************************************************
+2025-01-06 15:35:16,897 - AdsLogger - ERROR - **************************************************
+2025-01-06 15:35:16,897 - AdsLogger - ERROR - Échec de l'insertion des données: ("Nom d'objet 'nws.PEG_STA_v_bo_caces_encours' non valide. Nom d'objet 'nws.PEG_STA_v_bo_caces_encours' non valide.", None)
+2025-01-06 15:35:16,897 - AdsLogger - ERROR - Échec de l'insertion des données: ("Nom d'objet 'nws.PEG_STA_v_bo_caces_encours' non valide. Nom d'objet 'nws.PEG_STA_v_bo_caces_encours' non valide.", None)
+2025-01-06 15:35:16,897 - AdsLogger - ERROR - **************************************************
+2025-01-06 15:35:16,897 - AdsLogger - ERROR - **************************************************
+2025-01-06 15:35:16,929 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.0527 secondes.
+2025-01-06 15:35:16,929 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.0527 secondes.
+2025-01-06 15:35:16,933 - AdsLogger - INFO - 2040 lignes lues.
+2025-01-06 15:35:16,933 - AdsLogger - INFO - 2040 lignes lues.
+2025-01-06 15:35:16,934 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 4.9831 secondes.
+2025-01-06 15:35:16,934 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 4.9831 secondes.
+2025-01-06 15:35:16,934 - AdsLogger - INFO - Temps d'exécution de run: 5.2202 secondes.
+2025-01-06 15:35:16,934 - AdsLogger - INFO - Temps d'exécution de run: 5.2202 secondes.
+2025-01-06 15:36:57,856 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-06 15:36:58,083 - AdsLogger - INFO - Connexion établie avec la base de données
+2025-01-06 15:36:58,083 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-06 15:36:58,270 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-06 15:36:58,270 - AdsLogger - INFO - Connexion établie avec la base de données.
+2025-01-06 15:36:58,467 - AdsLogger - INFO - Connexion à bdd mssql réussie.
+2025-01-06 15:36:58,467 - AdsLogger - INFO - Chargement des données depuis la source...
+2025-01-06 15:37:03,016 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-06 15:37:03,257 - AdsLogger - ERROR - **************************************************
+2025-01-06 15:37:03,258 - AdsLogger - ERROR - Échec de l'insertion des données: ("Nom d'objet 'nws.PEG_STA_v_bo_caces_encours' non valide. Nom d'objet 'nws.PEG_STA_v_bo_caces_encours' non valide.", None)
+2025-01-06 15:37:03,258 - AdsLogger - ERROR - **************************************************
+2025-01-06 15:37:03,264 - AdsLogger - INFO - 2040 lignes lues.
+2025-01-06 15:46:34,132 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-06 15:46:34,374 - AdsLogger - INFO - Connexion établie avec la base de données
+2025-01-06 15:46:34,374 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-06 15:46:34,545 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-06 15:46:34,546 - AdsLogger - INFO - Connexion établie avec la base de données.
+2025-01-06 15:46:34,604 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-06 15:46:34,781 - AdsLogger - INFO - Connexion à bdd mssql réussie.
+2025-01-06 15:46:34,782 - AdsLogger - INFO - Chargement des données depuis la source...
+2025-01-06 15:46:39,620 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-06 15:46:40,817 - AdsLogger - ERROR - **************************************************
+2025-01-06 15:46:40,818 - AdsLogger - ERROR - Échec de l'insertion des données: Il est possible qu'une contrainte existe dans la table de destination, ce qui cause l'erreur. Il est recommandé d'utiliser une table sans contraintes pour les destinations de pipeline. ('Type de colonne non valide du client bcp pour colid 1.', None)
+2025-01-06 15:46:40,818 - AdsLogger - ERROR - **************************************************
+2025-01-06 15:46:40,824 - AdsLogger - INFO - 2038 lignes lues.
+2025-01-06 15:49:23,808 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-06 15:49:24,030 - AdsLogger - INFO - Connexion établie avec la base de données
+2025-01-06 15:49:24,030 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-06 15:49:24,485 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-06 15:49:24,486 - AdsLogger - INFO - Connexion établie avec la base de données.
+2025-01-06 15:49:24,602 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-06 15:49:24,980 - AdsLogger - INFO - Connexion à bdd mssql réussie.
+2025-01-06 15:49:24,981 - AdsLogger - INFO - Chargement des données depuis la source...
+2025-01-06 15:49:29,331 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-06 15:49:29,933 - AdsLogger - ERROR - **************************************************
+2025-01-06 15:49:29,933 - AdsLogger - ERROR - Échec de l'insertion des données: Il est possible qu'une contrainte existe dans la table de destination, ce qui cause l'erreur. Il est recommandé d'utiliser une table sans contraintes pour les destinations de pipeline. ('Type de colonne non valide du client bcp pour colid 1.', None)
+2025-01-06 15:49:29,933 - AdsLogger - ERROR - **************************************************
+2025-01-06 15:49:29,941 - AdsLogger - INFO - 2039 lignes lues.
+2025-01-06 15:50:45,660 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-06 15:50:45,893 - AdsLogger - INFO - Connexion établie avec la base de données
+2025-01-06 15:50:45,893 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-06 15:50:46,083 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-06 15:50:46,084 - AdsLogger - INFO - Connexion établie avec la base de données.
+2025-01-06 15:50:46,143 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-06 15:50:46,325 - AdsLogger - INFO - Connexion à bdd mssql réussie.
+2025-01-06 15:50:46,325 - AdsLogger - INFO - Chargement des données depuis la source...
+2025-01-06 15:50:50,296 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-06 15:50:50,801 - AdsLogger - INFO - 2039 ligne(s) insérée(s) avec succès dans la table PEG_STA_v_bo_caces_encours.
+2025-01-06 15:50:50,803 - AdsLogger - INFO - 2039 lignes lues.
+2025-01-06 16:35:15,248 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-06 16:35:15,500 - AdsLogger - INFO - Connexion établie avec la base de données
+2025-01-06 16:35:15,500 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-06 16:35:15,687 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-06 16:35:15,688 - AdsLogger - INFO - Connexion établie avec la base de données.
+2025-01-06 16:35:15,747 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-06 16:35:15,920 - AdsLogger - INFO - Connexion à bdd mssql réussie.
+2025-01-06 16:35:15,920 - AdsLogger - INFO - Chargement des données depuis la source...
+2025-01-06 16:35:20,288 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-06 16:35:21,221 - AdsLogger - INFO - 2038 ligne(s) insérée(s) avec succès dans la table PEG_STA_v_bo_caces_encours.
+2025-01-06 16:35:21,223 - AdsLogger - INFO - 2038 lignes lues.
+2025-01-06 16:53:13,645 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-06 16:53:13,920 - AdsLogger - INFO - Connexion établie avec la base de données
+2025-01-06 16:53:13,921 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-06 16:53:14,111 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-06 16:53:14,112 - AdsLogger - INFO - Connexion établie avec la base de données.
+2025-01-06 16:53:14,179 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-06 16:53:14,369 - AdsLogger - INFO - Connexion à bdd mssql réussie.
+2025-01-06 16:53:14,369 - AdsLogger - INFO - Chargement des données depuis la source...
+2025-01-06 16:53:18,424 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-06 16:53:18,691 - AdsLogger - ERROR - **************************************************
+2025-01-06 16:53:18,692 - AdsLogger - ERROR - Échec de l'insertion des données: Request failed, server didn't send error message
+2025-01-06 16:53:18,692 - AdsLogger - ERROR - **************************************************
+2025-01-06 16:53:18,696 - AdsLogger - INFO - 2036 lignes lues.
+2025-01-07 10:31:33,121 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:31:33,121 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:31:33,297 - AdsLogger - INFO - Connexion établie avec la base de données via pymssql.
+2025-01-07 10:31:45,232 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:31:45,232 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:31:45,353 - AdsLogger - INFO - Connexion établie avec la base de données via pymssql.
+2025-01-07 10:31:45,353 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test_2;
+2025-01-07 10:31:45,365 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 10:31:45,365 - AdsLogger - INFO - 5 lignes lues.
+2025-01-07 10:31:45,365 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.0122 secondes
+2025-01-07 10:31:54,133 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:31:54,133 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:31:54,163 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:31:54,163 - AdsLogger - INFO - Connexion établie avec la base de données via pytds.
+2025-01-07 10:31:54,163 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test_2;
+2025-01-07 10:31:54,170 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 10:31:54,170 - AdsLogger - INFO - 5 lignes lues.
+2025-01-07 10:31:54,170 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.0063 secondes
+2025-01-07 10:32:00,902 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:32:00,902 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:32:00,931 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:32:00,931 - AdsLogger - INFO - Connexion établie avec la base de données via pytds.
+2025-01-07 10:32:00,931 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test_2;
+2025-01-07 10:32:00,935 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 10:32:00,935 - AdsLogger - INFO - 5 lignes lues.
+2025-01-07 10:32:00,935 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.0042 secondes
+2025-01-07 10:34:53,944 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:34:53,944 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:34:53,977 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:34:53,977 - AdsLogger - INFO - Connexion établie avec la base de données via pytds.
+2025-01-07 10:34:53,997 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:34:53,997 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0202 secondes.
+2025-01-07 10:34:54,013 - AdsLogger - INFO - 2 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:34:54,013 - AdsLogger - INFO - Temps d'exécution de insert: 0.0158 secondes.
+2025-01-07 10:34:54,013 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test;
+2025-01-07 10:34:54,020 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 10:34:54,020 - AdsLogger - INFO - 1 lignes lues.
+2025-01-07 10:34:54,020 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.0067 secondes
+2025-01-07 10:35:09,422 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:35:09,423 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:35:09,498 - AdsLogger - INFO - Connexion établie avec la base de données via pymssql.
+2025-01-07 10:35:09,521 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:35:09,521 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0228 secondes.
+2025-01-07 10:35:09,536 - AdsLogger - INFO - 2 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:35:09,537 - AdsLogger - INFO - Temps d'exécution de insert: 0.0152 secondes.
+2025-01-07 10:35:09,537 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test;
+2025-01-07 10:35:09,541 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 10:35:09,541 - AdsLogger - INFO - 1 lignes lues.
+2025-01-07 10:35:09,541 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.0046 secondes
+2025-01-07 10:36:57,915 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:36:57,916 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:36:58,032 - AdsLogger - INFO - Connexion établie avec la base de données via pymssql.
+2025-01-07 10:36:58,090 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:36:58,091 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0583 secondes.
+2025-01-07 10:36:58,115 - AdsLogger - INFO - 2 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:36:58,115 - AdsLogger - INFO - Temps d'exécution de insert: 0.0247 secondes.
+2025-01-07 10:36:58,277 - AdsLogger - INFO - 50 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:36:58,277 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.1621 secondes.
+2025-01-07 10:36:58,277 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test;
+2025-01-07 10:36:58,283 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 10:36:58,283 - AdsLogger - INFO - 51 lignes lues.
+2025-01-07 10:36:58,283 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.0055 secondes
+2025-01-07 10:37:58,165 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:37:58,166 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:37:58,203 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:37:58,203 - AdsLogger - INFO - Connexion établie avec la base de données via pytds.
+2025-01-07 10:37:58,224 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:37:58,224 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0204 secondes.
+2025-01-07 10:37:58,243 - AdsLogger - INFO - 2 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:37:58,243 - AdsLogger - INFO - Temps d'exécution de insert: 0.0191 secondes.
+2025-01-07 10:37:58,534 - AdsLogger - INFO - 50 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:37:58,534 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.2913 secondes.
+2025-01-07 10:37:58,534 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test;
+2025-01-07 10:37:58,544 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 10:37:58,546 - AdsLogger - INFO - 51 lignes lues.
+2025-01-07 10:37:58,546 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.0115 secondes
+2025-01-07 10:39:01,135 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:39:01,136 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:39:01,181 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:39:01,181 - AdsLogger - INFO - Connexion établie avec la base de données via pytds.
+2025-01-07 10:39:01,198 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:39:01,198 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0165 secondes.
+2025-01-07 10:39:01,217 - AdsLogger - INFO - 2 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:39:01,217 - AdsLogger - INFO - Temps d'exécution de insert: 0.0192 secondes.
+2025-01-07 10:39:01,492 - AdsLogger - INFO - 50 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:39:01,492 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.2753 secondes.
+2025-01-07 10:40:31,399 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:40:31,399 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:40:31,426 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:40:31,426 - AdsLogger - INFO - Connexion établie avec la base de données via pytds.
+2025-01-07 10:40:31,442 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:40:31,442 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0161 secondes.
+2025-01-07 10:40:31,455 - AdsLogger - INFO - 2 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:40:31,455 - AdsLogger - INFO - Temps d'exécution de insert: 0.0129 secondes.
+2025-01-07 10:40:31,742 - AdsLogger - INFO - 50 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:40:31,742 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.2868 secondes.
+2025-01-07 10:40:32,116 - AdsLogger - INFO - 50000 ligne(s) insérée(s) avec succès dans la table insert_test.
+2025-01-07 10:40:32,125 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.3654 secondes.
+2025-01-07 10:40:32,128 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test;
+2025-01-07 10:40:32,132 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 10:40:32,199 - AdsLogger - INFO - 10000 lignes lues.
+2025-01-07 10:40:32,265 - AdsLogger - INFO - 20000 lignes lues.
+2025-01-07 10:40:32,332 - AdsLogger - INFO - 30000 lignes lues.
+2025-01-07 10:40:32,404 - AdsLogger - INFO - 40000 lignes lues.
+2025-01-07 10:40:32,470 - AdsLogger - INFO - 50000 lignes lues.
+2025-01-07 10:40:32,471 - AdsLogger - INFO - 50051 lignes lues.
+2025-01-07 10:40:32,471 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.3432 secondes
+2025-01-07 10:40:45,121 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:40:45,121 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:40:45,151 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:40:45,151 - AdsLogger - INFO - Connexion établie avec la base de données via pytds.
+2025-01-07 10:40:45,174 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:40:45,175 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0237 secondes.
+2025-01-07 10:40:45,202 - AdsLogger - INFO - 2 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:40:45,202 - AdsLogger - INFO - Temps d'exécution de insert: 0.0278 secondes.
+2025-01-07 10:40:45,503 - AdsLogger - INFO - 50 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:40:45,504 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.3010 secondes.
+2025-01-07 10:40:45,819 - AdsLogger - INFO - 50000 ligne(s) insérée(s) avec succès dans la table insert_test.
+2025-01-07 10:40:45,821 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.2930 secondes.
+2025-01-07 10:40:45,824 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test;
+2025-01-07 10:40:45,828 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 10:40:45,895 - AdsLogger - INFO - 10000 lignes lues.
+2025-01-07 10:40:45,964 - AdsLogger - INFO - 20000 lignes lues.
+2025-01-07 10:40:46,037 - AdsLogger - INFO - 30000 lignes lues.
+2025-01-07 10:40:46,131 - AdsLogger - INFO - 40000 lignes lues.
+2025-01-07 10:40:46,213 - AdsLogger - INFO - 50000 lignes lues.
+2025-01-07 10:40:46,214 - AdsLogger - INFO - 50051 lignes lues.
+2025-01-07 10:40:46,214 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.3897 secondes
+2025-01-07 10:41:27,354 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:41:27,355 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:41:27,385 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:41:27,385 - AdsLogger - INFO - Connexion établie avec la base de données via pytds.
+2025-01-07 10:41:27,408 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:41:27,408 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0227 secondes.
+2025-01-07 10:41:27,448 - AdsLogger - INFO - 2 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:41:27,448 - AdsLogger - INFO - Temps d'exécution de insert: 0.0403 secondes.
+2025-01-07 10:41:27,736 - AdsLogger - INFO - 50 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:41:27,737 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.2886 secondes.
+2025-01-07 10:41:28,111 - AdsLogger - INFO - 50000 ligne(s) insérée(s) avec succès dans la table insert_test.
+2025-01-07 10:41:28,114 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.3530 secondes.
+2025-01-07 10:41:28,116 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test;
+2025-01-07 10:41:28,123 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 10:41:28,193 - AdsLogger - INFO - 10000 lignes lues.
+2025-01-07 10:41:28,263 - AdsLogger - INFO - 20000 lignes lues.
+2025-01-07 10:41:28,338 - AdsLogger - INFO - 30000 lignes lues.
+2025-01-07 10:41:28,410 - AdsLogger - INFO - 40000 lignes lues.
+2025-01-07 10:41:28,483 - AdsLogger - INFO - 50000 lignes lues.
+2025-01-07 10:41:28,484 - AdsLogger - INFO - 50051 lignes lues.
+2025-01-07 10:41:28,484 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.3681 secondes
+2025-01-07 10:41:43,237 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:41:43,237 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:41:43,290 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:41:43,290 - AdsLogger - INFO - Connexion établie avec la base de données via pytds.
+2025-01-07 10:41:43,309 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:41:43,309 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0197 secondes.
+2025-01-07 10:41:43,328 - AdsLogger - INFO - 2 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:41:43,328 - AdsLogger - INFO - Temps d'exécution de insert: 0.0186 secondes.
+2025-01-07 10:41:43,629 - AdsLogger - INFO - 50 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:41:43,630 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.3013 secondes.
+2025-01-07 10:41:43,650 - AdsLogger - INFO - 100 ligne(s) insérée(s) avec succès dans la table insert_test.
+2025-01-07 10:41:43,650 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.0204 secondes.
+2025-01-07 10:41:43,650 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test;
+2025-01-07 10:41:43,660 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 10:41:43,662 - AdsLogger - INFO - 151 lignes lues.
+2025-01-07 10:41:43,662 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.0112 secondes
+2025-01-07 10:42:02,614 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:42:02,614 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:42:02,646 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:42:02,646 - AdsLogger - INFO - Connexion établie avec la base de données via pytds.
+2025-01-07 10:42:02,665 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:42:02,665 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0190 secondes.
+2025-01-07 10:42:02,682 - AdsLogger - INFO - 2 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:42:02,682 - AdsLogger - INFO - Temps d'exécution de insert: 0.0167 secondes.
+2025-01-07 10:42:02,965 - AdsLogger - INFO - 50 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:42:02,965 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.2829 secondes.
+2025-01-07 10:42:02,982 - AdsLogger - INFO - 100 ligne(s) insérée(s) avec succès dans la table insert_test.
+2025-01-07 10:42:02,982 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.0170 secondes.
+2025-01-07 10:42:02,982 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test;
+2025-01-07 10:42:02,987 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 10:42:02,990 - AdsLogger - INFO - 151 lignes lues.
+2025-01-07 10:42:02,990 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.0084 secondes
+2025-01-07 10:42:08,120 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:42:08,120 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:42:08,147 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:42:08,147 - AdsLogger - INFO - Connexion établie avec la base de données via pytds.
+2025-01-07 10:42:08,179 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:42:08,180 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0326 secondes.
+2025-01-07 10:42:08,202 - AdsLogger - INFO - 2 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:42:08,202 - AdsLogger - INFO - Temps d'exécution de insert: 0.0225 secondes.
+2025-01-07 10:42:08,479 - AdsLogger - INFO - 50 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:42:08,479 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.2769 secondes.
+2025-01-07 10:42:08,498 - AdsLogger - INFO - 100 ligne(s) insérée(s) avec succès dans la table insert_test.
+2025-01-07 10:42:08,498 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.0191 secondes.
+2025-01-07 10:42:08,498 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test;
+2025-01-07 10:42:08,509 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 10:42:08,511 - AdsLogger - INFO - 151 lignes lues.
+2025-01-07 10:42:08,511 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.0128 secondes
+2025-01-07 10:42:20,504 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:42:20,504 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:42:20,552 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:42:20,552 - AdsLogger - INFO - Connexion établie avec la base de données via pytds.
+2025-01-07 10:42:20,569 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:42:20,569 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0175 secondes.
+2025-01-07 10:42:20,585 - AdsLogger - INFO - 2 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:42:20,585 - AdsLogger - INFO - Temps d'exécution de insert: 0.0156 secondes.
+2025-01-07 10:42:20,876 - AdsLogger - INFO - 50 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:42:20,876 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.2906 secondes.
+2025-01-07 10:42:21,182 - AdsLogger - INFO - 50000 ligne(s) insérée(s) avec succès dans la table insert_test.
+2025-01-07 10:42:21,184 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.2883 secondes.
+2025-01-07 10:42:21,186 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test;
+2025-01-07 10:42:21,191 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 10:42:21,259 - AdsLogger - INFO - 10000 lignes lues.
+2025-01-07 10:42:21,326 - AdsLogger - INFO - 20000 lignes lues.
+2025-01-07 10:42:21,393 - AdsLogger - INFO - 30000 lignes lues.
+2025-01-07 10:42:21,462 - AdsLogger - INFO - 40000 lignes lues.
+2025-01-07 10:42:21,525 - AdsLogger - INFO - 50000 lignes lues.
+2025-01-07 10:42:21,525 - AdsLogger - INFO - 50051 lignes lues.
+2025-01-07 10:42:21,525 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.3384 secondes
+2025-01-07 10:43:28,599 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:43:28,599 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:43:28,643 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:43:28,643 - AdsLogger - INFO - Connexion établie avec la base de données via pytds.
+2025-01-07 10:43:28,665 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:43:28,665 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0230 secondes.
+2025-01-07 10:43:28,681 - AdsLogger - INFO - 2 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:43:28,681 - AdsLogger - INFO - Temps d'exécution de insert: 0.0153 secondes.
+2025-01-07 10:43:28,970 - AdsLogger - INFO - 50 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:43:28,970 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.2887 secondes.
+2025-01-07 10:43:29,286 - AdsLogger - INFO - 50000 ligne(s) insérée(s) avec succès dans la table insert_test.
+2025-01-07 10:43:29,289 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.2990 secondes.
+2025-01-07 10:43:29,291 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test;
+2025-01-07 10:43:29,296 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 10:43:29,362 - AdsLogger - INFO - 10000 lignes lues.
+2025-01-07 10:43:29,432 - AdsLogger - INFO - 20000 lignes lues.
+2025-01-07 10:43:29,500 - AdsLogger - INFO - 30000 lignes lues.
+2025-01-07 10:43:29,572 - AdsLogger - INFO - 40000 lignes lues.
+2025-01-07 10:43:29,639 - AdsLogger - INFO - 50000 lignes lues.
+2025-01-07 10:43:29,639 - AdsLogger - INFO - 50051 lignes lues.
+2025-01-07 10:43:29,639 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.3480 secondes
+2025-01-07 10:45:43,506 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:45:43,506 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:45:43,593 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:45:43,593 - AdsLogger - INFO - Connexion établie avec la base de données via pytds.
+2025-01-07 10:45:43,612 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:45:43,612 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0190 secondes.
+2025-01-07 10:45:43,631 - AdsLogger - INFO - 2 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:45:43,631 - AdsLogger - INFO - Temps d'exécution de insert: 0.0193 secondes.
+2025-01-07 10:45:43,890 - AdsLogger - INFO - 50 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:45:43,890 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.2588 secondes.
+2025-01-07 10:45:44,221 - AdsLogger - INFO - 50000 ligne(s) insérée(s) avec succès dans la table insert_test.
+2025-01-07 10:45:44,223 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.3150 secondes.
+2025-01-07 10:45:44,226 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test;
+2025-01-07 10:45:44,230 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 10:45:44,358 - AdsLogger - INFO - 10000 lignes lues.
+2025-01-07 10:45:44,433 - AdsLogger - INFO - 20000 lignes lues.
+2025-01-07 10:45:44,507 - AdsLogger - INFO - 30000 lignes lues.
+2025-01-07 10:45:44,573 - AdsLogger - INFO - 40000 lignes lues.
+2025-01-07 10:45:44,642 - AdsLogger - INFO - 50000 lignes lues.
+2025-01-07 10:45:44,643 - AdsLogger - INFO - 50051 lignes lues.
+2025-01-07 10:45:44,643 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.4175 secondes
+2025-01-07 10:47:41,132 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:47:41,132 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:47:41,165 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:47:41,165 - AdsLogger - INFO - Connexion établie avec la base de données via pytds.
+2025-01-07 10:47:41,181 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:47:41,181 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0167 secondes.
+2025-01-07 10:47:41,199 - AdsLogger - INFO - 2 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:47:41,199 - AdsLogger - INFO - Temps d'exécution de insert: 0.0167 secondes.
+2025-01-07 10:47:41,470 - AdsLogger - INFO - 50 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:47:41,470 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.2723 secondes.
+2025-01-07 10:47:41,770 - AdsLogger - INFO - 50000 ligne(s) insérée(s) avec succès dans la table insert_test.
+2025-01-07 10:47:41,772 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.2812 secondes.
+2025-01-07 10:47:41,775 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test;
+2025-01-07 10:47:41,779 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 10:47:42,109 - AdsLogger - INFO - 50051 lignes lues.
+2025-01-07 10:47:42,109 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.3348 secondes
+2025-01-07 10:47:56,948 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:47:56,949 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:47:57,005 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:47:57,005 - AdsLogger - INFO - Connexion établie avec la base de données via pytds.
+2025-01-07 10:47:57,037 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:47:57,037 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0317 secondes.
+2025-01-07 10:47:57,052 - AdsLogger - INFO - 2 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:47:57,053 - AdsLogger - INFO - Temps d'exécution de insert: 0.0160 secondes.
+2025-01-07 10:47:57,514 - AdsLogger - INFO - 50 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:47:57,514 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.4608 secondes.
+2025-01-07 10:47:57,878 - AdsLogger - INFO - 50000 ligne(s) insérée(s) avec succès dans la table insert_test.
+2025-01-07 10:47:57,881 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.3483 secondes.
+2025-01-07 10:47:57,883 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test;
+2025-01-07 10:47:57,888 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 10:47:58,210 - AdsLogger - INFO - 50000 lignes lues.
+2025-01-07 10:47:58,211 - AdsLogger - INFO - 50051 lignes lues.
+2025-01-07 10:47:58,211 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.3278 secondes
+2025-01-07 10:48:11,125 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:48:11,125 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:48:11,204 - AdsLogger - INFO - Connexion établie avec la base de données via pymssql.
+2025-01-07 10:48:11,225 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:48:11,225 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0207 secondes.
+2025-01-07 10:48:11,240 - AdsLogger - INFO - 2 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:48:11,240 - AdsLogger - INFO - Temps d'exécution de insert: 0.0156 secondes.
+2025-01-07 10:48:11,402 - AdsLogger - INFO - 50 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:48:11,402 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.1606 secondes.
+2025-01-07 10:48:11,729 - AdsLogger - INFO - 50000 ligne(s) insérée(s) avec succès dans la table insert_test.
+2025-01-07 10:48:11,732 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.3117 secondes.
+2025-01-07 10:48:11,734 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test;
+2025-01-07 10:48:11,739 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 10:48:11,834 - AdsLogger - INFO - 50000 lignes lues.
+2025-01-07 10:48:11,835 - AdsLogger - INFO - 50051 lignes lues.
+2025-01-07 10:48:11,835 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.1007 secondes
+2025-01-07 10:48:40,338 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:48:40,338 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:48:40,447 - AdsLogger - INFO - Connexion établie avec la base de données via pymssql.
+2025-01-07 10:48:40,468 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:48:40,468 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0207 secondes.
+2025-01-07 10:48:40,486 - AdsLogger - INFO - 2 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:48:40,486 - AdsLogger - INFO - Temps d'exécution de insert: 0.0180 secondes.
+2025-01-07 10:48:40,650 - AdsLogger - INFO - 50 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:48:40,651 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.1639 secondes.
+2025-01-07 10:48:41,053 - AdsLogger - INFO - 50000 ligne(s) insérée(s) avec succès dans la table insert_test.
+2025-01-07 10:48:41,056 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.3834 secondes.
+2025-01-07 10:48:41,060 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test;
+2025-01-07 10:48:41,068 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 10:48:41,166 - AdsLogger - INFO - 50000 lignes lues.
+2025-01-07 10:48:41,167 - AdsLogger - INFO - 50051 lignes lues.
+2025-01-07 10:48:41,167 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.1065 secondes
+2025-01-07 10:48:58,451 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:48:58,451 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:48:58,531 - AdsLogger - INFO - Connexion établie avec la base de données via pymssql.
+2025-01-07 10:48:58,550 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:48:58,550 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0195 secondes.
+2025-01-07 10:48:58,566 - AdsLogger - INFO - 2 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:48:58,566 - AdsLogger - INFO - Temps d'exécution de insert: 0.0169 secondes.
+2025-01-07 10:48:58,731 - AdsLogger - INFO - 50 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:48:58,732 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.1650 secondes.
+2025-01-07 10:48:59,067 - AdsLogger - INFO - 50000 ligne(s) insérée(s) avec succès dans la table insert_test.
+2025-01-07 10:48:59,070 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.3193 secondes.
+2025-01-07 10:48:59,072 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test;
+2025-01-07 10:48:59,079 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 10:48:59,200 - AdsLogger - INFO - 50000 lignes lues.
+2025-01-07 10:48:59,200 - AdsLogger - INFO - 50051 lignes lues.
+2025-01-07 10:48:59,200 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.1288 secondes
+2025-01-07 10:49:11,880 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 10:49:11,881 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 10:49:11,911 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:49:11,912 - AdsLogger - INFO - Connexion établie avec la base de données via pytds.
+2025-01-07 10:49:11,926 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 10:49:11,927 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0149 secondes.
+2025-01-07 10:49:11,939 - AdsLogger - INFO - 2 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:49:11,939 - AdsLogger - INFO - Temps d'exécution de insert: 0.0128 secondes.
+2025-01-07 10:49:12,227 - AdsLogger - INFO - 50 lignes insérées avec succès dans la table insert_test.
+2025-01-07 10:49:12,227 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.2883 secondes.
+2025-01-07 10:49:12,703 - AdsLogger - INFO - 50000 ligne(s) insérée(s) avec succès dans la table insert_test.
+2025-01-07 10:49:12,705 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.4578 secondes.
+2025-01-07 10:49:12,708 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test;
+2025-01-07 10:49:12,721 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 10:49:13,080 - AdsLogger - INFO - 50000 lignes lues.
+2025-01-07 10:49:13,081 - AdsLogger - INFO - 50051 lignes lues.
+2025-01-07 10:49:13,081 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.3733 secondes
+2025-01-07 11:03:29,830 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 11:03:29,830 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 11:03:29,857 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 11:03:29,858 - AdsLogger - INFO - Connexion établie avec la base de données via pytds.
+2025-01-07 11:03:29,873 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 11:03:29,873 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0155 secondes.
+2025-01-07 11:03:29,891 - AdsLogger - INFO - 2 lignes insérées avec succès dans la table insert_test.
+2025-01-07 11:03:29,891 - AdsLogger - INFO - Temps d'exécution de insert: 0.0176 secondes.
+2025-01-07 11:03:30,169 - AdsLogger - INFO - 50 lignes insérées avec succès dans la table insert_test.
+2025-01-07 11:03:30,170 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.2790 secondes.
+2025-01-07 11:03:30,661 - AdsLogger - INFO - 50000 ligne(s) insérée(s) avec succès dans la table insert_test.
+2025-01-07 11:03:30,665 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.4751 secondes.
+2025-01-07 11:03:30,669 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test;
+2025-01-07 11:03:30,677 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 11:03:30,986 - AdsLogger - INFO - 50000 lignes lues.
+2025-01-07 11:03:30,987 - AdsLogger - INFO - 50051 lignes lues.
+2025-01-07 11:03:30,987 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.3179 secondes
+2025-01-07 11:03:38,240 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 11:03:38,240 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 11:03:38,320 - AdsLogger - INFO - Connexion établie avec la base de données via pymssql.
+2025-01-07 11:03:38,341 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 11:03:38,341 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0213 secondes.
+2025-01-07 11:03:38,359 - AdsLogger - INFO - 2 lignes insérées avec succès dans la table insert_test.
+2025-01-07 11:03:38,359 - AdsLogger - INFO - Temps d'exécution de insert: 0.0179 secondes.
+2025-01-07 11:03:38,524 - AdsLogger - INFO - 50 lignes insérées avec succès dans la table insert_test.
+2025-01-07 11:03:38,524 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.1649 secondes.
+2025-01-07 11:03:38,829 - AdsLogger - INFO - 50000 ligne(s) insérée(s) avec succès dans la table insert_test.
+2025-01-07 11:03:38,835 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.2842 secondes.
+2025-01-07 11:03:38,839 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test;
+2025-01-07 11:03:38,843 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 11:03:38,943 - AdsLogger - INFO - 50000 lignes lues.
+2025-01-07 11:03:38,943 - AdsLogger - INFO - 50051 lignes lues.
+2025-01-07 11:03:38,943 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.1042 secondes
+2025-01-07 13:30:58,106 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-07 13:30:58,113 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-07 13:30:58,210 - AdsLogger - INFO - Connexion établie avec la base de données via pymssql.
+2025-01-07 13:30:58,237 - AdsLogger - INFO - Requête exécutée avec succès.
+2025-01-07 13:30:58,237 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0268 secondes.
+2025-01-07 13:30:58,261 - AdsLogger - INFO - 2 lignes insérées avec succès dans la table insert_test.
+2025-01-07 13:30:58,261 - AdsLogger - INFO - Temps d'exécution de insert: 0.0231 secondes.
+2025-01-07 13:30:58,426 - AdsLogger - INFO - 50 lignes insérées avec succès dans la table insert_test.
+2025-01-07 13:30:58,426 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.1656 secondes.
+2025-01-07 13:30:58,765 - AdsLogger - INFO - 50000 ligne(s) insérée(s) avec succès dans la table insert_test.
+2025-01-07 13:30:58,771 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.3195 secondes.
+2025-01-07 13:30:58,774 - AdsLogger - DEBUG - Exécution de la requête de lecture : SELECT * FROM insert_test;
+2025-01-07 13:30:58,779 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2025-01-07 13:30:58,890 - AdsLogger - INFO - 50000 lignes lues.
+2025-01-07 13:30:58,890 - AdsLogger - INFO - 50051 lignes lues.
+2025-01-07 13:30:58,891 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.1160 secondes

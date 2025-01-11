@@ -1,0 +1,8 @@
+2025-01-02 09:48:28,441 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-02 09:48:28,442 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-02 09:48:28,442 - AdsLogger - ERROR - **************************************************
+2025-01-02 09:48:28,442 - AdsLogger - ERROR - Échec de la connexion avec la base de données: CMySQLConnection.__init__() takes 1 positional argument but 2 were given
+2025-01-02 09:48:28,442 - AdsLogger - ERROR - **************************************************
+2025-01-02 09:50:05,130 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2025-01-02 09:50:05,130 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2025-01-02 09:50:05,448 - AdsLogger - INFO - Connexion établie avec la base de données

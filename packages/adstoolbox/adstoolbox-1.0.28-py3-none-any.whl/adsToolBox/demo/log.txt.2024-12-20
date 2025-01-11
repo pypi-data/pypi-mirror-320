@@ -1,0 +1,159 @@
+2024-12-20 09:16:49,228 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-12-20 09:16:49,229 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2024-12-20 09:17:01,072 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-12-20 09:17:01,072 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2024-12-20 09:17:01,075 - AdsLogger - ERROR - **************************************************
+2024-12-20 09:17:01,075 - AdsLogger - ERROR - Échec de la connexion à la base de données: [WinError 10065] Une opération a été tentée sur un hôte impossible à atteindre
+2024-12-20 09:17:01,075 - AdsLogger - ERROR - **************************************************
+2024-12-20 09:17:06,446 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-12-20 09:17:06,448 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2024-12-20 09:17:06,666 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:17:06,667 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0626 secondes.
+2024-12-20 09:17:06,667 - AdsLogger - INFO - Connexion établie avec la base de données.
+2024-12-20 09:17:06,667 - AdsLogger - INFO - Temps d'exécution de connect: 0.2194 secondes.
+2024-12-20 09:17:06,739 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:17:06,740 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0726 secondes.
+2024-12-20 09:18:20,567 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-12-20 09:18:20,567 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2024-12-20 09:18:20,788 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:18:20,788 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0617 secondes.
+2024-12-20 09:18:20,788 - AdsLogger - INFO - Connexion établie avec la base de données.
+2024-12-20 09:18:20,788 - AdsLogger - INFO - Temps d'exécution de connect: 0.2208 secondes.
+2024-12-20 09:18:20,864 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:18:20,864 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0763 secondes.
+2024-12-20 09:18:20,909 - AdsLogger - ERROR - **************************************************
+2024-12-20 09:18:20,910 - AdsLogger - ERROR - Échec de l'insertion des données: ("Échec de la conversion de la date et/ou de l'heure à partir d'une chaîne de caractères.", None)
+2024-12-20 09:18:20,910 - AdsLogger - ERROR - **************************************************
+2024-12-20 09:18:20,937 - AdsLogger - INFO - Temps d'exécution de insert: 0.0715 secondes.
+2024-12-20 09:18:43,079 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-12-20 09:18:43,079 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2024-12-20 09:18:43,304 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:18:43,305 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0620 secondes.
+2024-12-20 09:18:43,305 - AdsLogger - INFO - Connexion établie avec la base de données.
+2024-12-20 09:18:43,305 - AdsLogger - INFO - Temps d'exécution de connect: 0.2267 secondes.
+2024-12-20 09:18:43,378 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:18:43,378 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0724 secondes.
+2024-12-20 09:18:43,481 - AdsLogger - INFO - 3 lignes insérées avec succès dans la table test_date.
+2024-12-20 09:18:43,481 - AdsLogger - INFO - Temps d'exécution de insert: 0.1039 secondes.
+2024-12-20 09:18:58,012 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-12-20 09:18:58,012 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2024-12-20 09:18:58,221 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:18:58,222 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0604 secondes.
+2024-12-20 09:18:58,222 - AdsLogger - INFO - Connexion établie avec la base de données.
+2024-12-20 09:18:58,222 - AdsLogger - INFO - Temps d'exécution de connect: 0.2103 secondes.
+2024-12-20 09:18:58,293 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:18:58,293 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0714 secondes.
+2024-12-20 09:18:58,403 - AdsLogger - ERROR - **************************************************
+2024-12-20 09:18:58,403 - AdsLogger - ERROR - Échec de l'insertion des données: ("La conversion d'un type de données nvarchar en type de données datetime a créé une valeur hors limites.", None)
+2024-12-20 09:18:58,403 - AdsLogger - ERROR - **************************************************
+2024-12-20 09:18:58,404 - AdsLogger - INFO - Temps d'exécution de insert: 0.1109 secondes.
+2024-12-20 09:19:03,602 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-12-20 09:19:03,602 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2024-12-20 09:19:03,811 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:19:03,811 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0667 secondes.
+2024-12-20 09:19:03,811 - AdsLogger - INFO - Connexion établie avec la base de données.
+2024-12-20 09:19:03,811 - AdsLogger - INFO - Temps d'exécution de connect: 0.2090 secondes.
+2024-12-20 09:19:03,885 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:19:03,885 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0731 secondes.
+2024-12-20 09:19:03,996 - AdsLogger - INFO - 3 lignes insérées avec succès dans la table test_date.
+2024-12-20 09:19:03,996 - AdsLogger - INFO - Temps d'exécution de insert: 0.1109 secondes.
+2024-12-20 09:20:48,673 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-12-20 09:20:48,673 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2024-12-20 09:20:48,888 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:20:48,888 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0738 secondes.
+2024-12-20 09:20:48,888 - AdsLogger - INFO - Connexion établie avec la base de données.
+2024-12-20 09:20:48,888 - AdsLogger - INFO - Temps d'exécution de connect: 0.2145 secondes.
+2024-12-20 09:20:48,962 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:20:48,962 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0744 secondes.
+2024-12-20 09:20:49,063 - AdsLogger - INFO - 3 lignes insérées avec succès dans la table test_date.
+2024-12-20 09:20:49,063 - AdsLogger - INFO - Temps d'exécution de insert: 0.1013 secondes.
+2024-12-20 09:20:49,735 - AdsLogger - INFO - 10 lignes insérées avec succès dans la table test_date.
+2024-12-20 09:20:49,735 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.6715 secondes.
+2024-12-20 09:22:10,443 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-12-20 09:22:10,443 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2024-12-20 09:22:10,663 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:22:10,664 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0683 secondes.
+2024-12-20 09:22:10,664 - AdsLogger - INFO - Connexion établie avec la base de données.
+2024-12-20 09:22:10,664 - AdsLogger - INFO - Temps d'exécution de connect: 0.2203 secondes.
+2024-12-20 09:22:10,733 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:22:10,733 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0689 secondes.
+2024-12-20 09:22:10,836 - AdsLogger - INFO - 3 lignes insérées avec succès dans la table test_date.
+2024-12-20 09:22:10,836 - AdsLogger - INFO - Temps d'exécution de insert: 0.1031 secondes.
+2024-12-20 09:22:11,516 - AdsLogger - INFO - 10 lignes insérées avec succès dans la table test_date.
+2024-12-20 09:22:11,516 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.6800 secondes.
+2024-12-20 09:22:26,865 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-12-20 09:22:26,866 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2024-12-20 09:22:27,089 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:22:27,090 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0623 secondes.
+2024-12-20 09:22:27,090 - AdsLogger - INFO - Connexion établie avec la base de données.
+2024-12-20 09:22:27,090 - AdsLogger - INFO - Temps d'exécution de connect: 0.2239 secondes.
+2024-12-20 09:22:27,160 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:22:27,161 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0703 secondes.
+2024-12-20 09:22:27,262 - AdsLogger - INFO - 3 lignes insérées avec succès dans la table test_date.
+2024-12-20 09:22:27,262 - AdsLogger - INFO - Temps d'exécution de insert: 0.1016 secondes.
+2024-12-20 09:22:27,973 - AdsLogger - INFO - 10 lignes insérées avec succès dans la table test_date.
+2024-12-20 09:22:27,973 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.7108 secondes.
+2024-12-20 09:22:28,553 - AdsLogger - ERROR - **************************************************
+2024-12-20 09:22:28,553 - AdsLogger - ERROR - Échec de l'insertion des données: ("La conversion d'un type de données nvarchar en type de données datetime a créé une valeur hors limites.", None)
+2024-12-20 09:22:28,553 - AdsLogger - ERROR - **************************************************
+2024-12-20 09:22:28,556 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.5579 secondes.
+2024-12-20 09:22:54,953 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-12-20 09:22:54,953 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2024-12-20 09:22:55,191 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:22:55,192 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0633 secondes.
+2024-12-20 09:22:55,192 - AdsLogger - INFO - Connexion établie avec la base de données.
+2024-12-20 09:22:55,192 - AdsLogger - INFO - Temps d'exécution de connect: 0.2391 secondes.
+2024-12-20 09:22:55,265 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:22:55,265 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0726 secondes.
+2024-12-20 09:22:55,385 - AdsLogger - INFO - 3 lignes insérées avec succès dans la table test_date.
+2024-12-20 09:22:55,385 - AdsLogger - INFO - Temps d'exécution de insert: 0.1201 secondes.
+2024-12-20 09:22:56,055 - AdsLogger - INFO - 10 lignes insérées avec succès dans la table test_date.
+2024-12-20 09:22:56,055 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.6695 secondes.
+2024-12-20 09:22:56,675 - AdsLogger - ERROR - **************************************************
+2024-12-20 09:22:56,675 - AdsLogger - ERROR - Échec de l'insertion des données: ("La conversion d'un type de données nvarchar en type de données datetime a créé une valeur hors limites.", None)
+2024-12-20 09:22:56,675 - AdsLogger - ERROR - **************************************************
+2024-12-20 09:22:56,677 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.5643 secondes.
+2024-12-20 09:23:28,715 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-12-20 09:23:28,715 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2024-12-20 09:23:28,916 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:23:28,916 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0622 secondes.
+2024-12-20 09:23:28,916 - AdsLogger - INFO - Connexion établie avec la base de données.
+2024-12-20 09:23:28,916 - AdsLogger - INFO - Temps d'exécution de connect: 0.2009 secondes.
+2024-12-20 09:23:28,987 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:23:28,987 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0705 secondes.
+2024-12-20 09:23:29,091 - AdsLogger - INFO - 3 lignes insérées avec succès dans la table test_date.
+2024-12-20 09:23:29,091 - AdsLogger - INFO - Temps d'exécution de insert: 0.1044 secondes.
+2024-12-20 09:23:29,783 - AdsLogger - INFO - 10 lignes insérées avec succès dans la table test_date.
+2024-12-20 09:23:29,784 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.6925 secondes.
+2024-12-20 09:23:30,460 - AdsLogger - INFO - 49999 ligne(s) insérée(s) avec succès dans la table test_date.
+2024-12-20 09:23:30,466 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.6246 secondes.
+2024-12-20 09:23:35,693 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-12-20 09:23:35,693 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2024-12-20 09:23:35,895 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:23:35,895 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0600 secondes.
+2024-12-20 09:23:35,895 - AdsLogger - INFO - Connexion établie avec la base de données.
+2024-12-20 09:23:35,895 - AdsLogger - INFO - Temps d'exécution de connect: 0.2018 secondes.
+2024-12-20 09:23:35,972 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:23:35,973 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0770 secondes.
+2024-12-20 09:23:36,071 - AdsLogger - INFO - 3 lignes insérées avec succès dans la table test_date.
+2024-12-20 09:23:36,071 - AdsLogger - INFO - Temps d'exécution de insert: 0.0989 secondes.
+2024-12-20 09:23:36,731 - AdsLogger - INFO - 10 lignes insérées avec succès dans la table test_date.
+2024-12-20 09:23:36,732 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.6601 secondes.
+2024-12-20 09:23:37,481 - AdsLogger - INFO - 49999 ligne(s) insérée(s) avec succès dans la table test_date.
+2024-12-20 09:23:37,487 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.7289 secondes.
+2024-12-20 09:23:46,504 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-12-20 09:23:46,504 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2024-12-20 09:23:46,720 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:23:46,720 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0625 secondes.
+2024-12-20 09:23:46,720 - AdsLogger - INFO - Connexion établie avec la base de données.
+2024-12-20 09:23:46,720 - AdsLogger - INFO - Temps d'exécution de connect: 0.2159 secondes.
+2024-12-20 09:23:46,811 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-12-20 09:23:46,811 - AdsLogger - INFO - Temps d'exécution de sqlExec: 0.0906 secondes.
+2024-12-20 09:23:46,923 - AdsLogger - INFO - 3 lignes insérées avec succès dans la table test_date.
+2024-12-20 09:23:46,924 - AdsLogger - INFO - Temps d'exécution de insert: 0.1119 secondes.
+2024-12-20 09:23:47,596 - AdsLogger - INFO - 10 lignes insérées avec succès dans la table test_date.
+2024-12-20 09:23:47,596 - AdsLogger - INFO - Temps d'exécution de insertMany: 0.6726 secondes.
+2024-12-20 09:23:48,236 - AdsLogger - INFO - 50000 ligne(s) insérée(s) avec succès dans la table test_date.
+2024-12-20 09:23:48,243 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.6209 secondes.
+2024-12-20 16:13:59,900 - AdsLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-12-20 16:13:59,900 - AdsLogger - INFO - Tentative de connexion avec la base de données.

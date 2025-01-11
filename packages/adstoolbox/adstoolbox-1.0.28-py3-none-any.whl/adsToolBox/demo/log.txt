@@ -1,0 +1,155 @@
+EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+EnvLogger - INFO - Tentative de connexion avec la base de données.
+EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+EnvLogger - INFO - Tentative de connexion avec la base de données.
+EnvLogger - INFO - Connexion établie avec la base de données via pymssql.
+EnvLogger - INFO - Temps d'exécution de connect: 0.5177 secondes.
+EnvLogger - INFO - Requête exécutée avec succès.
+EnvLogger - INFO - Temps d'exécution de sqlExec: 0.3105 secondes.
+EnvLogger - INFO - Requête exécutée avec succès.
+EnvLogger - INFO - Temps d'exécution de sqlExec: 0.2937 secondes.
+EnvLogger - INFO - Message d'info
+EnvLogger - DEBUG - Message de debug
+EnvLogger - WARNING - Message de warning
+EnvLogger - ERROR - **************************************************
+EnvLogger - ERROR - Message d'erreur
+EnvLogger - ERROR - **************************************************
+EnvLogger - Level 25 - Message custom
+EnvLogger - INFO - 2 valeurs insérées avec succès dans la table insert_test
+EnvLogger - INFO - Temps d'exécution de insert: 0.3008 secondes.
+EnvLogger - INFO - Requête exécutée avec succès.
+EnvLogger - INFO - Temps d'exécution de sqlScalaire: 0.2476 secondes.
+EnvLogger - INFO - Fermeture des logs en cours...
+EnvLogger - INFO - Logs insérés dans la table de LOGS.
+EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+EnvLogger - INFO - Tentative de connexion avec la base de données.
+EnvLogger - INFO - Connexion établie avec la base de données via pymssql.
+EnvLogger - INFO - Temps d'exécution de connect: 0.4723 secondes.
+EnvLogger - INFO - Requête exécutée avec succès.
+EnvLogger - INFO - Temps d'exécution de sqlExec: 0.3111 secondes.
+EnvLogger - INFO - Requête exécutée avec succès.
+EnvLogger - INFO - Temps d'exécution de sqlExec: 0.2902 secondes.
+EnvLogger - INFO - Message d'info
+EnvLogger - DEBUG - Message de debug
+EnvLogger - WARNING - Message de warning
+EnvLogger - ERROR - **************************************************
+EnvLogger - ERROR - Message d'erreur
+EnvLogger - ERROR - **************************************************
+EnvLogger - Level 25 - Message custom
+EnvLogger - INFO - 2 valeurs insérées avec succès dans la table insert_test
+EnvLogger - INFO - Temps d'exécution de insert: 0.3015 secondes.
+EnvLogger - INFO - Requête exécutée avec succès.
+EnvLogger - INFO - Temps d'exécution de sqlScalaire: 0.2450 secondes.
+EnvLogger - INFO - Fermeture des logs en cours...
+EnvLogger - INFO - Logs insérés dans la table de LOGS.
+EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+EnvLogger - INFO - Tentative de connexion avec la base de données.
+EnvLogger - INFO - Connexion établie avec la base de données via pymssql.
+EnvLogger - INFO - Temps d'exécution de connect: 0.5193 secondes.
+EnvLogger - INFO - Requête exécutée avec succès.
+EnvLogger - INFO - Temps d'exécution de sqlExec: 0.3151 secondes.
+EnvLogger - INFO - Requête exécutée avec succès.
+EnvLogger - INFO - Temps d'exécution de sqlExec: 0.2922 secondes.
+EnvLogger - INFO - Message d'info
+EnvLogger - DEBUG - Message de debug
+EnvLogger - WARNING - Message de warning
+EnvLogger - ERROR - **************************************************
+EnvLogger - ERROR - Message d'erreur
+EnvLogger - ERROR - **************************************************
+EnvLogger - Level 25 - Message custom
+EnvLogger - INFO - 2 valeurs insérées avec succès dans la table insert_test
+EnvLogger - INFO - Temps d'exécution de insert: 0.2933 secondes.
+EnvLogger - INFO - Requête exécutée avec succès.
+EnvLogger - INFO - Temps d'exécution de sqlScalaire: 0.2454 secondes.
+EnvLogger - INFO - Fermeture des logs en cours...
+EnvLogger - INFO - Logs insérés dans la table de LOGS.
+EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+EnvLogger - INFO - Message d'info
+EnvLogger - DEBUG - Message de debug
+EnvLogger - WARNING - Message de warning
+EnvLogger - ERROR - **************************************************
+EnvLogger - ERROR - Message d'erreur
+EnvLogger - ERROR - **************************************************
+EnvLogger - Level 25 - Message custom
+EnvLogger - INFO - Fermeture des logs en cours...
+EnvLogger - WARNING - Pas de connexion valide ou logs désactivés.
+EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+EnvLogger - INFO - Message d'info
+EnvLogger - DEBUG - Message de debug
+EnvLogger - WARNING - Message de warning
+EnvLogger - ERROR - **************************************************
+EnvLogger - ERROR - Message d'erreur
+EnvLogger - ERROR - **************************************************
+EnvLogger - Level 25 - Message custom
+EnvLogger - INFO - Fermeture des logs en cours...
+EnvLogger - WARNING - Pas de connexion valide ou logs désactivés.
+EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+EnvLogger - INFO - Message d'info
+EnvLogger - DEBUG - Message de debug
+EnvLogger - WARNING - Message de warning
+EnvLogger - ERROR - **************************************************
+EnvLogger - ERROR - Message d'erreur
+EnvLogger - ERROR - **************************************************
+EnvLogger - Level 25 - Message custom
+EnvLogger - INFO - Fermeture des logs en cours...
+EnvLogger - WARNING - Pas de connexion valide ou logs désactivés.
+EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+EnvLogger - INFO - Message d'info
+EnvLogger - DEBUG - Message de debug
+EnvLogger - WARNING - Message de warning
+EnvLogger - ERROR - **************************************************
+EnvLogger - ERROR - Message d'erreur
+EnvLogger - ERROR - **************************************************
+EnvLogger - Level 25 - Message custom
+EnvLogger - INFO - Fermeture des logs en cours...
+EnvLogger - WARNING - Pas de connexion valide ou logs désactivés.
+EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+EnvLogger - INFO - Message d'info
+EnvLogger - DEBUG - Message de debug
+EnvLogger - WARNING - Message de warning
+EnvLogger - ERROR - **************************************************
+EnvLogger - ERROR - Message d'erreur
+EnvLogger - ERROR - **************************************************
+EnvLogger - Level 25 - Message custom
+EnvLogger - INFO - Fermeture des logs en cours...
+EnvLogger - WARNING - Pas de connexion valide ou logs désactivés.
+EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+EnvLogger - INFO - Message d'info
+EnvLogger - DEBUG - Message de debug
+EnvLogger - WARNING - Message de warning
+EnvLogger - ERROR - **************************************************
+EnvLogger - ERROR - Message d'erreur
+EnvLogger - ERROR - **************************************************
+EnvLogger - Level 25 - Message custom
+EnvLogger - INFO - Fermeture des logs en cours...
+EnvLogger - WARNING - Pas de connexion valide ou logs désactivés.
+DEBUG - Fichier spécifié pour l'environnement trouvé
+INFO - Message d'info
+DEBUG - Message de debug
+WARNING - Message de warning
+ERROR - **************************************************
+ERROR - Message d'erreur
+ERROR - **************************************************
+Level 25 - Message custom
+INFO - Fermeture des logs en cours...
+WARNING - Pas de connexion valide ou logs désactivés.
+DEBUG - Fichier spécifié pour l'environnement trouvé
+INFO - Message d'info
+DEBUG - Message de debug
+WARNING - Message de warning
+ERROR - **************************************************
+ERROR - Message d'erreur
+ERROR - **************************************************
+Level 25 - Message custom
+INFO - Fermeture des logs en cours...
+WARNING - Pas de connexion valide ou logs désactivés.
+DEBUG - Fichier spécifié pour l'environnement trouvé
+INFO - Message d'info
+DEBUG - Message de debug
+WARNING - Message de warning
+ERROR - **************************************************
+ERROR - Message d'erreur
+ERROR - **************************************************
+Level 25 - Message custom
+INFO - Fermeture des logs en cours...
+WARNING - Pas de connexion valide ou logs désactivés.
