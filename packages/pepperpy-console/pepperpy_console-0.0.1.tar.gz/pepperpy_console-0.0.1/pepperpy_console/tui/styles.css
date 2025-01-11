@@ -1,0 +1,140 @@
+/* Variables */
+$primary: #bd93f9;
+$secondary: #6272a4;
+$accent: #ff79c6;
+$background: #282a36;
+$text: #f8f8f2;
+$error: #ff5555;
+$warning: #ffb86c;
+$success: #50fa7b;
+$info: #8be9fd;
+$selection: #44475a;
+
+/* Base styles */
+Screen {
+  background: $background;
+  color: $text;
+}
+
+/* Input styles */
+Input {
+  background: $selection;
+  color: $text;
+  border: solid $primary;
+}
+
+Input:focus {
+  border: solid $accent;
+}
+
+Input.-invalid {
+  border: solid $error;
+}
+
+Input.-placeholder {
+  color: $secondary;
+}
+
+/* Button styles */
+Button {
+  background: $primary;
+  color: $text;
+}
+
+Button:hover {
+  background: $accent;
+}
+
+Button.-primary {
+  background: $primary;
+}
+
+Button.-error {
+  background: $error;
+}
+
+/* Form styles */
+Label {
+  color: $text;
+  margin: 1 0;
+}
+
+/* Table styles */
+Table {
+  background: $selection;
+  color: $text;
+}
+
+Table > Header {
+  background: $primary;
+  color: $text;
+}
+
+/* Dialog styles */
+Dialog {
+  background: $background;
+  border: solid $primary;
+}
+
+Dialog #title {
+  background: $primary;
+  color: $text;
+  text-align: center;
+  padding: 1;
+}
+
+Dialog #content {
+  margin: 1;
+}
+
+/* Notification styles */
+NotificationCenter {
+  dock: bottom;
+  layer: notification;
+  width: 100%;
+  margin: 2 4;
+}
+
+Notification {
+  padding: 1 2;
+  margin: 1 0;
+  border: solid $primary;
+}
+
+Notification.-info {
+  border: solid $info;
+}
+
+Notification.-warning {
+  border: solid $warning;
+}
+
+Notification.-error {
+  border: solid $error;
+}
+
+/* Help styles */
+HelpViewer {
+  background: $background;
+  border: solid $primary;
+  padding: 1;
+}
+
+/* Command palette styles */
+CommandPalette {
+  dock: top;
+  layer: command;
+  width: 60%;
+  margin: 1 0;
+  background: $background;
+  border: solid $primary;
+}
+
+CommandPalette Input {
+  margin: 1;
+}
+
+CommandPalette ListView {
+  height: 10;
+  margin: 0 1;
+}

@@ -1,0 +1,31 @@
+Metadata-Version: 2.3
+Name: pepperpy-console
+Version: 0.0.1
+Summary: PepperPy console package
+Author: Felipe Pimentel
+Author-email: fpimentel88@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pepperpy-core
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Requires-Dist: textual (>=1.0.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# PepperPy Console
+
+Interactive console components for PepperPy framework.
+
+## Installation
+
+```bash
+poetry add pepperpy-console
+```
+
+## Usage
+
+```python
+from pepperpy_console import *
+```
+

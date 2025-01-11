@@ -1,0 +1,12 @@
+name: clock
+version: "1.0.0"
+description: "Live clock widget plugin"
+module: "pepperpy_console.plugins.clock.plugin"
+class: "ClockPlugin"
+requires: []
+hooks:
+  - app.startup
+  - app.shutdown
+settings:
+  format: "%H:%M:%S"
+  enabled: true
