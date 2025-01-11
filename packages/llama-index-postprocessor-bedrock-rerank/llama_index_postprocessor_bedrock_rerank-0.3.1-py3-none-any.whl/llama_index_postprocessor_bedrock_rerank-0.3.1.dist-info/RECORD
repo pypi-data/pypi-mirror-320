@@ -1,0 +1,5 @@
+llama_index/postprocessor/bedrock_rerank/__init__.py,sha256=QzdsJviC6wnuJwt9h-gewJdqCs9FaKI8Q6kvhDdAsUE,107
+llama_index/postprocessor/bedrock_rerank/base.py,sha256=Wv4sOAqzTDEkLEa-WzArIwV8mdTXdiOv7ysD1CE5VoM,8929
+llama_index_postprocessor_bedrock_rerank-0.3.1.dist-info/METADATA,sha256=AkUUCL2S6MOct5bf8Iz0uUpvmnrhWq7gQhVFuALgFXw,1371
+llama_index_postprocessor_bedrock_rerank-0.3.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_postprocessor_bedrock_rerank-0.3.1.dist-info/RECORD,,
