@@ -1,0 +1,13 @@
+kura/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kura/kura.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kura/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kura/cli/cli.py,sha256=DAqoPckILrtgJ4RrYKLwVu5cpsqASs6UMHDQ0RZkEXo,732
+kura/static/dist/index.html,sha256=icjwJvR_YjV6HFhdpSyf817Y_P_FMeCqGlO3obaqucA,464
+kura/static/dist/vite.svg,sha256=SnSK_UQ5GLsWWRyDTEAdrjPoeGGrXbrQgRw6O0qSFPs,1497
+kura/static/dist/assets/index-BtVi8doP.js,sha256=FuaVAZuVUXPldOVbYI8tCgCxGhGPvUhjWzDcVWV3Yt8,143869
+kura/static/dist/assets/index-n_ryQ3BS.css,sha256=Fhustp9yrqgbBhpHTtv_oV_Q1Y292_c74tNlXFXP4dY,1391
+kura/static/dist/assets/react-CHdo91hT.svg,sha256=Ne9h7VOzI66UoWqOxlmz0K84gGmHkRM_I7CECFqxwuU,4126
+kura-0.1.0.dist-info/METADATA,sha256=6yJf2FivY31JpfTNanZSykGnY6jcRim_VqoYayxcubU,7103
+kura-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+kura-0.1.0.dist-info/entry_points.txt,sha256=WOIWubahXnC-8W-taGhme6pzWUpqe4AO9DGPzMpsDzg,42
+kura-0.1.0.dist-info/RECORD,,
