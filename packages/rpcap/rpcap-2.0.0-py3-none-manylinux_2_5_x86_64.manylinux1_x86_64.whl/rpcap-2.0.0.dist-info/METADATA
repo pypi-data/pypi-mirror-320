@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: rpcap
+Version: 2.0.0
+Summary: a pcap library for sysOM
+Author: Fudong
