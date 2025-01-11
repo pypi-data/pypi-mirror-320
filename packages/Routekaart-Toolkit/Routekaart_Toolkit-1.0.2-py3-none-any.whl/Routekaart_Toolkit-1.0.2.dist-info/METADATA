@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: Routekaart_Toolkit
+Version: 1.0.2
+Summary: A toolkit for generating a 'Routekaart'
+Author-email: Thijs Boom <thijs@twboom.dev>
+Project-URL: Homepage, https://github.com/twboom/Routekaart-Toolkit
+Project-URL: Issues, https://github.com/twboom/Routekaart-Toolkit/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Routekaart-Toolkit
+A toolkit for generating a 'Routekaart'
