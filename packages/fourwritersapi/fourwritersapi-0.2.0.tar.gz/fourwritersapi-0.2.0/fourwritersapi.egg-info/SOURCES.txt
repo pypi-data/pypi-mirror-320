@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+fourwritersapi.egg-info/PKG-INFO
+fourwritersapi.egg-info/SOURCES.txt
+fourwritersapi.egg-info/dependency_links.txt
+fourwritersapi.egg-info/requires.txt
+fourwritersapi.egg-info/top_level.txt
