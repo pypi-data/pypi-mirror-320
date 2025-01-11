@@ -1,0 +1,33 @@
+Metadata-Version: 2.3
+Name: dart_hj3415
+Version: 2.3.0
+Summary: Save data from https://opendart.fss.or.kr
+Author-email: Hyungjin Kim <hj3415@gmail.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: requests>=2.32.3
+Requires-Dist: utils_hj3415>=3.0.8
+Requires-Dist: webdriver-hj3415>=1.4.1
+Requires-Dist: db_hj3415>=4.3.0
+Project-URL: Home, https://www.hyungjin.kr
+
+### dart-hj3415
+
+#### Introduction 
+dart_hj3415 
+
+---
+#### Requirements
+
+---
+#### API
+
+---
+#### Install
+
+
+---
+#### Composition
+
+
+---
