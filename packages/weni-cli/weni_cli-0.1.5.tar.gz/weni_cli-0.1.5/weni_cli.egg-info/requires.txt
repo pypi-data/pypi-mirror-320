@@ -1,0 +1,6 @@
+Click
+requests
+flask
+waitress
+pyyaml
+python-slugify
