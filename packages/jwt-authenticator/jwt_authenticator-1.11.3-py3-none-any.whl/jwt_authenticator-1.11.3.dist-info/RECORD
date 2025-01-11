@@ -1,0 +1,7 @@
+jwt_authenticator/__init__.py,sha256=0-fVADAtAFraUZwGcmdUKwWGS9RTB6XgKQp2yh3cCxc,38
+jwt_authenticator/authentication_handler.py,sha256=KYMM0qJJ4beih7A70_n5oA2-7Im9a1nhXEPMh4THmII,5653
+jwt_authenticator/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jwt_authenticator-1.11.3.dist-info/METADATA,sha256=iNa7IMwbCpdz0myproaDctAuFduomDaZU9SMAJ2KlRo,4443
+jwt_authenticator-1.11.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+jwt_authenticator-1.11.3.dist-info/licenses/LICENSE,sha256=afamsFoweu6UdpEi1zT-Jl5oSBQ9DzNJcgnOetvl_4I,1099
+jwt_authenticator-1.11.3.dist-info/RECORD,,
