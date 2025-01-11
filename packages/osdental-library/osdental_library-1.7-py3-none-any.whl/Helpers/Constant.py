@@ -1,0 +1,5 @@
+STATUS_ERROR = 'DB_ERROR_SERVER'
+CHARSET = 'utf-8'
+BLOB_STORAGE = 'BlobStorage'
+CONNECTION_STRING = 'connectionString'
+CONTAINER_NAME = 'containerName'
