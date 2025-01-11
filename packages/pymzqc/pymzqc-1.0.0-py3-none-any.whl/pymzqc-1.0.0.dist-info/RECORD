@@ -1,0 +1,17 @@
+mzqc/MZQCFile.py,sha256=fZzOQqulvxqnIJNAHEa8jVUvXvLgMCYydUE6yYlcSdg,18195
+mzqc/SemanticCheck.py,sha256=x3iFmC4sx5gYLCorFjaZfMBRuRj4zYE9MzlNPjti6wY,41671
+mzqc/SyntaxCheck.py,sha256=ZTcf4509FlJjSIBkIJWkLizP46dNAlE6IHM4gGsZNt8,3820
+mzqc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mzqcaccessories/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mzqcaccessories/filehandling/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mzqcaccessories/filehandling/mzqc_fileinfo.py,sha256=dffYHp6lb7b77QQR4w54DlthW_V3IGRvMguShAkerBE,2742
+mzqcaccessories/filehandling/mzqc_filemerger.py,sha256=b19snRSCH_qvA_ca314Axb0-fWg5O2QwR3O9_IGmwes,6420
+mzqcaccessories/filehandling/mzqc_fixdescriptions.py,sha256=Xw_Fm1dNCaNtYRGe9I7X-KeigCvz-kaBopYZppOUcao,1915
+mzqcaccessories/offlinevalidator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mzqcaccessories/offlinevalidator/mzqc_offline_validator.py,sha256=exsSmYpMkCIwTSuSMk0QKiokOQeOUsIHPeA19DDuUtc,2638
+pymzqc-1.0.0.dist-info/LICENSE,sha256=eX1Gdl2EwN82pmZmDekwSIJ6aVZq7-NCIlDpdtE9KDY,1524
+pymzqc-1.0.0.dist-info/METADATA,sha256=xu1SACnGZrZeWhVC0Q9EXcWi_rJehcIdrnQdVqOndmE,4494
+pymzqc-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pymzqc-1.0.0.dist-info/entry_points.txt,sha256=S87P3QVJVWgX2SwXo3Qn4B-DzJ7-lEHJxD3e_jlnGZA,340
+pymzqc-1.0.0.dist-info/top_level.txt,sha256=dzaO-77liApzx8RCxa_S5dSNlcDiyEUJ9PyLlVuaGTo,21
+pymzqc-1.0.0.dist-info/RECORD,,
