@@ -1,0 +1,9 @@
+cnn_module/__init__.py,sha256=HcEFNu_YiWk1-KPeGrTlvjOGbxXSpEu2toikakU0Zic,102
+cnn_module/data_utils.py,sha256=3eQPFF3K2jyoLsbYoAR8WnPGQYfBRjhXXmVKv5M4H90,931
+cnn_module/example.py,sha256=apCxRlPEiNBZmsBKA-6MQuBURuSboDXbrSFqd96gxbo,567
+cnn_module/model.py,sha256=BiZ_YQQ0CWiXCFvWQKJC6Ez23Y5GW6jyB4JMI2Xm5bQ,1962
+cnn_module/trainer.py,sha256=usu1VKggZqPRikq1jB7cIKYhQuW4hdYXldDfN3UDDmg,1261
+my_cnn_package-0.1.0.dist-info/METADATA,sha256=gYJ8nmnyJ5IDfDNzgTcMn_ZIS5A9tTOR7ob9amvjWS8,360
+my_cnn_package-0.1.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+my_cnn_package-0.1.0.dist-info/top_level.txt,sha256=RXwTzBCY7rxu_OiXZZmvRUq8AVzltcRa9p_b69KbZlc,11
+my_cnn_package-0.1.0.dist-info/RECORD,,
