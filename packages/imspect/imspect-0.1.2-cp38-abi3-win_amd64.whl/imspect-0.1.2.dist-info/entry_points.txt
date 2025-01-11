@@ -1,0 +1,2 @@
+[console_scripts]
+imspect=imspect:_imspect_script
