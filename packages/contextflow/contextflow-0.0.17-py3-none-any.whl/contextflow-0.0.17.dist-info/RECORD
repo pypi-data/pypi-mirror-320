@@ -1,0 +1,10 @@
+contextflow/__init__.py,sha256=7D76RvJ99h7G7rCsLxxdditii4IZxccXwPdzuArpR3k,175
+contextflow/backends.py,sha256=ZvjGanvkBmZyCz0Un_7E1XAX7ess4lQoOuJn8VWm5C4,1865
+contextflow/context.py,sha256=oFtHL4GNNor0SuN135oc8HDpMBJM28oUByEbV5fZBT0,5603
+contextflow/memory.py,sha256=AcNZA2ek5WEnafJrQBeFP8rla4FCjLxGm2QJujAEnI8,852
+contextflow/utils.py,sha256=7NwClhCC8gNYYwe_62S4RWXQPDCKteCn2y0DNaOmnrw,841
+contextflow-0.0.17.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+contextflow-0.0.17.dist-info/METADATA,sha256=abB0r2jrLYibwC9TJK-r_6UBiEZeNIptHYrTx-Mg8no,1886
+contextflow-0.0.17.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+contextflow-0.0.17.dist-info/top_level.txt,sha256=zgLkleoXiZGCvGnFTWoxj7S_yLu8z_DC2qh_MstAkBs,12
+contextflow-0.0.17.dist-info/RECORD,,
