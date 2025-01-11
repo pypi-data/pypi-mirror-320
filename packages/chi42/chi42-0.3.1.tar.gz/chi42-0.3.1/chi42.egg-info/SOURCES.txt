@@ -1,0 +1,8 @@
+setup.py
+chi42/__init__.py
+chi42/chi42.py
+chi42.egg-info/PKG-INFO
+chi42.egg-info/SOURCES.txt
+chi42.egg-info/dependency_links.txt
+chi42.egg-info/requires.txt
+chi42.egg-info/top_level.txt
