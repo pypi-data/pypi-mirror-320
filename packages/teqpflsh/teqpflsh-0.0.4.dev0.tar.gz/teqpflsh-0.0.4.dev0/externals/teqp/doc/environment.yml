@@ -1,0 +1,27 @@
+# This .yml file is used to specify the conda environment that should be used for building the docs
+name: teqpdocs
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - doxygen
+  - cmake
+  - pandoc
+  - sympy
+  - imagemagick
+  - pip:
+    - breathe
+    - teqp
+    - numpy
+    - scipy
+    - jupyter
+    - notebook
+    - nbconvert
+    - nbsphinx
+    - pandas
+    - matplotlib
+    - PCSAFTsuperanc
+    - sphinxcontrib-doxylink
+    - insipid-sphinx-theme
+    - CoolProp

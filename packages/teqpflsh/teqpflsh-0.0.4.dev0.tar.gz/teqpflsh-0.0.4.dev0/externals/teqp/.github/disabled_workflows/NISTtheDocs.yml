@@ -1,0 +1,18 @@
+name: "Build Documentation"
+
+on: [push, pull_request, delete]
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: usnistgov/NISTtheDocs2Death@0.4
+        with:
+          docs-folder: doc/
+          conda-environment: doc/environment.yml
+          pre-build-command: |-
+            chdir doc/source
+            python sphinx_pre_run.py
+          formats: |-
+            epub
+            pdf

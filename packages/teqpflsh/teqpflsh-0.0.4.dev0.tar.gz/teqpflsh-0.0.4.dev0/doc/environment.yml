@@ -1,0 +1,31 @@
+# This .yml file is used to specify the conda environment that should be used for building the docs
+name: teqpflshdocs
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12
+  - pip
+  - doxygen
+  - cmake
+  - pandoc
+  - sympy
+  - imagemagick
+  - pip:
+    - setuptools
+    - breathe
+    - furo
+    - teqp
+    - numpy
+    - scipy
+    - jupyter
+    - notebook
+    - nbconvert
+    - nbsphinx
+    - pandas
+    - matplotlib
+    - sphinxcontrib-doxylink
+    - insipid-sphinx-theme
+    - CoolProp
+    - ChebTools
+    - teqpflsh
