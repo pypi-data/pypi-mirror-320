@@ -1,0 +1,74 @@
+[tool.poetry]
+name = "component-changelog"
+version = "0.2.2"
+description = ""
+authors = ["Galileo Technologies, Inc. <team@rungalileo.io>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "^2.10.4"
+packaging = "^24.2"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.4"
+pytest-xdist = "^3.6.1"
+coverage = "^7.6.10"
+pytest-cov = "^6.0.0"
+pytest-asyncio = "^0.25.0"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.14.0"
+pre-commit = "^4.0.1"
+invoke = "^2.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+# Linters and formatters.
+[tool.ruff]
+line-length = 120
+fix = true
+unsafe-fixes = true
+
+[tool.ruff.format]
+skip-magic-trailing-comma = true
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP", "ASYNC"]
+ignore = []
+
+[tool.ruff.lint.isort]
+split-on-trailing-comma = false
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.docformatter]
+style = "numpy"
+recursive = true
+wrap-summaries = 120
+wrap-descriptions = 120
+
+
+[tool.mypy]
+mypy_path = ["src"]
+disallow_untyped_defs = true
+plugins = ["pydantic.mypy"]
+
+# Release.
+[tool.semantic_release]
+version_toml = ["pyproject.toml:tool.poetry.version"]
+version_source = "tag"
+commit_message = "chore(release): v{version}"
+
+[tool.semantic_release.commit_parser_options]
+# Release patch version on these tags,
+# https://python-semantic-release.readthedocs.io/en/latest/configuration.html#commit-parser-options-dict-str-any
+patch_tags = ["chore", "ci", "docs", "fix", "perf", "refactor", "style", "test"]
