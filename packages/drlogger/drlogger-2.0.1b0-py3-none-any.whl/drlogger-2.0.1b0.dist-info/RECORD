@@ -1,0 +1,8 @@
+drlogger/__init__.py,sha256=7XuhQ9fQt4yeoLI_AYEvm4FEsSCzzl82ktYPcsoqWjE,77
+drlogger/formatter.py,sha256=k0lqSCdZvdno_MKQzmchOtF9PKK3tB2a9vBegWxsCEU,5939
+drlogger/instrumentation.py,sha256=YZln084pu4zGn77VUK20MqZblpqHu7xMhw-xxY6tSyc,213
+drlogger/main.py,sha256=7X678nKM_0ko1uVQYt14G51AJFpemZB5H48cLSFtS7A,2765
+drlogger-2.0.1b0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+drlogger-2.0.1b0.dist-info/METADATA,sha256=jCD_7Fr226pb_q8RyMv06rnTU6AhPSnmOfxUh5Ow62Q,748
+drlogger-2.0.1b0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+drlogger-2.0.1b0.dist-info/RECORD,,
