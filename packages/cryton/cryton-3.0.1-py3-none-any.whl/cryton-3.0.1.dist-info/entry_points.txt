@@ -1,0 +1,5 @@
+[console_scripts]
+cryton-cli=cryton.cli.entrypoint:cli
+cryton-hive=cryton.hive.entrypoint:cli
+cryton-worker=cryton.worker.entrypoint:cli
+
