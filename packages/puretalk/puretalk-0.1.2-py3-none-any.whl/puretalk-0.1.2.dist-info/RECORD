@@ -1,0 +1,16 @@
+puretalk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+puretalk/main.py,sha256=Rg-xBe8Afu5UkPkM4Wnx9aGmNG-MwCm7cccFeKgURJc,3394
+puretalk/model/__pycache__/data_loader.cpython-310.pyc,sha256=7LOPi61NBDEjeME_T8iE4L6hZIVcRuPB3BEjjtk2G2Q,2718
+puretalk/model/__pycache__/tts.cpython-310.pyc,sha256=o8g4uYHhE5yfucX8WTRDxb-PTyW94s6yV-tL1GJHIkk,2187
+puretalk/model/__pycache__/utils.cpython-310.pyc,sha256=MEwrmekyvoCcbbhYZ3gltTS-OPRyzThgH5EqsZucsEA,2260
+puretalk/model/config.py,sha256=fvl8NGuEc1eIjDxJ0-CVO4ZLE2r9TG2dmKuWXda3GjE,1105
+puretalk/model/data_loader.py,sha256=pW8NHLWv6E_sw7fPbdQ4uXrjRvvfixllGOes1nF0xn4,1769
+puretalk/model/inference.py,sha256=wxZL8Dzb_pm1-PsACXeh3KuQ442Hg8ZUqzLQdccCyoQ,1140
+puretalk/model/trainer.py,sha256=TF094kawsb3VZzvXAWv6y2dRWecxdHAHwNdJOcsLEdA,1063
+puretalk/model/tts.py,sha256=5hne4_tN53NdZGFlcmYpuIq1wCtQGSVEIYVir8gqtWU,2635
+puretalk/model/utils.py,sha256=QS1WcUeKVM_caEjuYJTEBOVFsuD4PG9zp2ob9Drmxmw,1584
+puretalk/utils.py,sha256=M4tbpfi_MxFZCo5hVMd9-3U2HOlgRG723Nq9_-4GfWg,698
+puretalk-0.1.2.dist-info/METADATA,sha256=wDd6X7SxmWA-Rf0_MoO-Pj9XWiKeccvOA6-bC4M_VC8,1585
+puretalk-0.1.2.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+puretalk-0.1.2.dist-info/entry_points.txt,sha256=Ve7CDRRBFPL_dSzzqqdfuNTajlQys4OEGBtDyE26mOg,60
+puretalk-0.1.2.dist-info/RECORD,,
