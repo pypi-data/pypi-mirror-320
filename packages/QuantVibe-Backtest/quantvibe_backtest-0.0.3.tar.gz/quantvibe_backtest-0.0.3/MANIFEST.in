@@ -1,0 +1,2 @@
+include BACKTEST/__pycache__/*.pyc
+exclude BACKTEST/*.py
