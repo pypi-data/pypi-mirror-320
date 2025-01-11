@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+rocketHibou/__init__.py
+rocketHibou/rocketHibou.py
+rocketHibou.egg-info/PKG-INFO
+rocketHibou.egg-info/SOURCES.txt
+rocketHibou.egg-info/dependency_links.txt
+rocketHibou.egg-info/requires.txt
+rocketHibou.egg-info/top_level.txt
