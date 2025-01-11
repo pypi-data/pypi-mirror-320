@@ -1,0 +1,3 @@
+genx_ai_camera_panel
+onvif
+onvif2
