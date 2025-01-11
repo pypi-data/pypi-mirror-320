@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: hich
+Version: 0.1.0
+Summary: 
+Author: Ben Skubi
+Author-email: bskubi@gmail.com
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: biopython
+Requires-Dist: click
+Requires-Dist: cooler
+Requires-Dist: cooltools
+Requires-Dist: dash
+Requires-Dist: duckdb
+Requires-Dist: h5py
+Requires-Dist: hic-straw
+Requires-Dist: matplotlib
+Requires-Dist: natsort
+Requires-Dist: numpy (<2.0)
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: polars
+Requires-Dist: pyBigWig
+Requires-Dist: pydantic
+Requires-Dist: pysam
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Requires-Dist: smart_open
+Requires-Dist: smart_open_with_pbgzip
+Requires-Dist: tinydb
+Description-Content-Type: text/markdown
+
+# Hich is an API and CLI for useful Hi-C data processing and visualization tools
+
+## Installation
+
+```
+pip install hich
+```
