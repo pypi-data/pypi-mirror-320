@@ -1,0 +1,30 @@
+[project]
+name = "fast_hyperfast"
+version = "1.0.3"
+description = "HyperFast (https://github.com/AI-sandbox/HyperFast) but customizable (and in some cases faster too!)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.2.3",
+    "pydantic>=2.10.4",
+    "requests>=2.32.3",
+    "scikit-learn==1.5.2",
+    "torch>=2.5.1",
+    "tqdm>=4.67.1",
+    "xlrd>=2.0.1",
+]
+
+[dependency-groups]
+dev = ["jupyter", "notebook", "pip"]
+
+[build-system]
+requires = ["hatchling>=1.26.1"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["hyperfast"]
+
+[tool.setuptools.packages.find]
+where = ["."] 
+include = ["hyperfast.hyper_network", "hyperfast.main_network", "hyperfast.standardize_data", "hyperfast.utils"]
+exclude = [] 
