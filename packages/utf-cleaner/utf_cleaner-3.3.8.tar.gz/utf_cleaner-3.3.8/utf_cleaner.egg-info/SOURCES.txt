@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+utf_cleaner/__init__.py
+utf_cleaner/cleaner.py
+utf_cleaner/exceptions.py
+utf_cleaner/logger.py
+utf_cleaner/multiprocessing_handler.py
+utf_cleaner/utils.py
+utf_cleaner/validator.py
+utf_cleaner.egg-info/PKG-INFO
+utf_cleaner.egg-info/SOURCES.txt
+utf_cleaner.egg-info/dependency_links.txt
+utf_cleaner.egg-info/top_level.txt
