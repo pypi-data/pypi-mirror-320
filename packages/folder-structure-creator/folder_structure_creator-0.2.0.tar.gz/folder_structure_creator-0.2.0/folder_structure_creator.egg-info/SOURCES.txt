@@ -1,0 +1,11 @@
+LICENSE
+setup.py
+folder_structure_creator/__init__.py
+folder_structure_creator/fstruct.py
+folder_structure_creator.egg-info/PKG-INFO
+folder_structure_creator.egg-info/SOURCES.txt
+folder_structure_creator.egg-info/dependency_links.txt
+folder_structure_creator.egg-info/entry_points.txt
+folder_structure_creator.egg-info/top_level.txt
+tests/__init__.py
+tests/test_fstruct.py
