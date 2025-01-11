@@ -1,0 +1,11 @@
+livy_uploads/__init__.py,sha256=E6A4QNHqmdVVkBpodd40h2vJKTsluTX1f3guxpJN_rE,24
+livy_uploads/commander.py,sha256=Zyqr9qi-ZqF2XCzsARyko38YCLNiMtNUXkU_R_jrsm8,3286
+livy_uploads/commands_remote.py,sha256=ouUQs2Cax1cL0IrwB9tcI1DSmGjSeHa-SyJVy6PhFjo,3209
+livy_uploads/endpoint.py,sha256=fDf99CxrLSVK2xvqtWAQc4fRCfKAJWXIK1bxgDI2DjY,6039
+livy_uploads/magics.py,sha256=1qhJzQddRZKklWXIIBvGlrvIDoAIWByc27U2P9GzoxY,6521
+livy_uploads/uploader.py,sha256=GVMtTIwbMEDwC5Gii514ezxFgqjAWYwx6q5CMWXPidk,9063
+livy_uploads-0.1.0a2.dist-info/LICENSE,sha256=AtYGFpgfOGqckYHWgizqK1SDokITyg6Y42cT5dA4OdU,1075
+livy_uploads-0.1.0a2.dist-info/METADATA,sha256=uDBsra2H0_C2sOxaRll9o91pmKgQPGjpKwTj4Wcqzp4,6585
+livy_uploads-0.1.0a2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+livy_uploads-0.1.0a2.dist-info/top_level.txt,sha256=JwsWCcQ7zWTFAfihl8NQwPBd0BoplnLCKhNshpAO7KI,13
+livy_uploads-0.1.0a2.dist-info/RECORD,,
