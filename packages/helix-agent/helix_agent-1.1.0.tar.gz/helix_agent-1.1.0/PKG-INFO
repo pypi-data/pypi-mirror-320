@@ -1,0 +1,609 @@
+Metadata-Version: 2.2
+Name: helix-agent
+Version: 1.1.0
+Summary: A Python package for creating science-themed AI agents with research and experimentation capabilities.
+Home-page: https://github.com/helixagent/helix-agent
+Author: Helix Agent
+Author-email: descidanpxy@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/yourusername/helix/tree/main/docs
+Project-URL: Source, https://github.com/yourusername/helix
+Project-URL: Issues, https://github.com/yourusername/helix/issues
+Keywords: AI,OpenAI,science,research,agents,GPT,Helix,DeSci,experiments,analysis
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai>=0.28.0
+Requires-Dist: asyncio
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: scipy>=1.7.0
+Requires-Dist: tweepy>=4.12.0
+Requires-Dist: python-dateutil>=2.8.2
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=3.0.0; extra == "dev"
+Requires-Dist: black>=22.0.0; extra == "dev"
+Requires-Dist: isort>=5.10.0; extra == "dev"
+Requires-Dist: flake8>=4.0.0; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: project-url
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Helix - DeSci AI Agent
+
+A powerful Python package for creating science-themed AI agents with advanced research and experimentation capabilities. Helix enables automated scientific workflows, experiment simulation, research paper analysis, and collaborative research.
+
+## Table of Contents
+- [Features Overview](#features-overview)
+- [Benefits](#benefits)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Configuration Parameters](#configuration-parameters)
+- [Quick Start](#quick-start)
+- [Usage Examples](#usage-examples)
+- [Documentation](#documentation)
+- [Development](#development)
+- [Common Issues](#common-issues)
+- [Support](#support)
+
+## Features Overview
+
+| Feature Category | Functionality | Description | Key Benefits |
+|-----------------|---------------|-------------|--------------|
+| **Core AI** | Agent Personas | Specialized agents (physicist, biologist, etc.) | Domain-specific expertise and terminology |
+| | Context Management | Maintains conversation history | Coherent, context-aware interactions |
+| | Multi-Agent Collaboration | Agent-to-agent interactions | Cross-disciplinary research insights |
+| | Async Processing | Non-blocking operations | Efficient handling of complex tasks |
+| **Research Tools** | Task Planning | Create and track research plans | Structured research management |
+| | Experiment Management | Design and run experiments | Reproducible scientific workflows |
+| | Paper Analysis | Extract metadata from papers | Efficient literature review |
+| | Citation Handling | Format scientific citations | Proper academic documentation |
+| | Data Analysis | Statistical analysis with confidence intervals | Rigorous scientific analysis |
+| **Social Integration** | Twitter Integration | Post updates and track engagement | Research communication |
+| | Media Sharing | Share images and graphs | Visual result sharing |
+| | Engagement Analytics | Track social media metrics | Impact assessment |
+
+## Benefits
+
+| Use Case | Benefits | Example Application |
+|----------|----------|-------------------|
+| **Research Planning** | - Structured workflow<br>- Progress tracking<br>- Dependency management | Planning multi-phase experiments |
+| **Experimentation** | - Protocol standardization<br>- Result reproducibility<br>- Statistical rigor | Running controlled experiments |
+| **Literature Review** | - Automated metadata extraction<br>- Citation management<br>- Content summarization | Analyzing research papers |
+| **Collaboration** | - Cross-discipline interaction<br>- Knowledge sharing<br>- Unified analysis | Multi-team research projects |
+| **Communication** | - Automated updates<br>- Engagement tracking<br>- Media management | Sharing research findings |
+
+## Prerequisites
+
+| Requirement | Version | Required | Notes |
+|------------|---------|----------|--------|
+| Python | â‰¥3.8 | Yes | For modern language features |
+| OpenAI API Key | N/A | Yes | For AI capabilities |
+| Twitter API Credentials | N/A | No | Only for social features |
+
+## Installation
+
+### From PyPI (Recommended)
+
+```bash
+# Install basic package
+pip install helix-agent
+
+# Install with development tools
+pip install helix-agent[dev]
+```
+
+### From Source
+
+```bash
+# Clone repository
+git clone https://github.com/yourusername/helix.git
+cd helix
+
+# Install in development mode
+pip install -e .
+
+# Install development dependencies
+pip install -e ".[dev]"
+```
+
+### Environment Setup
+
+1. Create a virtual environment (recommended):
+```bash
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+```
+
+2. Set up API keys:
+```bash
+# Linux/Mac
+export OPENAI_API_KEY="your-key-here"
+export TWITTER_API_KEY="your-key-here"
+export TWITTER_API_SECRET="your-secret-here"
+export TWITTER_ACCESS_TOKEN="your-token-here"
+export TWITTER_ACCESS_SECRET="your-secret-here"
+
+# Windows
+set OPENAI_API_KEY=your-key-here
+set TWITTER_API_KEY=your-key-here
+set TWITTER_API_SECRET=your-secret-here
+set TWITTER_ACCESS_TOKEN=your-token-here
+set TWITTER_ACCESS_SECRET=your-secret-here
+```
+
+## Configuration Parameters
+
+### HelixAgent Parameters
+
+| Parameter | Type | Required | Default | Description |
+|-----------|------|----------|---------|-------------|
+| agent_name | str | No | "Default Scientist" | Name/role of the AI agent |
+| model_name | str | No | "helix-70b" | AI model to use (maps to GPT-4) |
+| tools_enabled | bool | No | True | Enable scientific tools |
+| interactive | bool | No | True | Enable interactive mode |
+| streaming_on | bool | No | True | Enable response streaming |
+| temperature | float | No | 0.7 | Response randomness (0-1) |
+| max_tokens | int | No | 150 | Maximum response length |
+| use_context | bool | No | True | Enable conversation memory |
+| persona | str | No | None | Predefined role (physicist/biologist) |
+| logging_enabled | bool | No | False | Enable activity logging |
+| api_key | str | Yes* | None | OpenAI API key (*can be set via env var) |
+| twitter_config | dict | No | None | Twitter API credentials |
+
+### Twitter Configuration
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| api_key | str | Yes | Twitter API Key |
+| api_secret | str | Yes | Twitter API Secret |
+| access_token | str | Yes | Twitter Access Token |
+| access_token_secret | str | Yes | Twitter Access Token Secret |
+
+## Quick Start
+
+1. Set up your OpenAI API key:
+
+```python
+import os
+os.environ["OPENAI_API_KEY"] = "your-api-key-here"
+```
+
+2. Create a basic agent:
+
+```python
+from helix_agent import HelixAgent
+
+agent = HelixAgent(
+    agent_name="Research Scientist",
+    model_name="helix-70b",
+    tools_enabled=True
+)
+```
+
+3. Run an experiment:
+
+```python
+# Create protocol
+protocol = agent.create_experiment(
+    steps=["Sample preparation", "Data collection"],
+    materials=["Reagent A", "Equipment B"],
+    duration="2 hours",
+    conditions={"temperature": 25}
+)
+
+# Run experiment
+results = agent.run_experiment(
+    protocol=protocol,
+    variables={"concentration": 0.5},
+    iterations=3
+)
+
+# Analyze results
+analysis = agent.analyze_data(
+    [r['variables']['concentration'] for r in results['results']]
+)
+```
+
+## Core Methods
+
+| Method | Purpose | Key Parameters | Return Value |
+|--------|---------|----------------|--------------|
+| create_experiment | Design experiment protocol | steps, materials, duration, conditions | Protocol dict |
+| run_experiment | Execute experiment | protocol, variables, iterations | Results dict |
+| analyze_data | Statistical analysis | data, confidence_level | Analysis dict |
+| plan_research_task | Create research plan | objective, subtasks, dependencies | Plan dict |
+| analyze_paper | Extract paper metadata | paper_text | Metadata dict |
+| format_citation | Format citation | authors, title, journal, year, doi | Citation string |
+| post_tweet | Share updates | content, media_paths | Tweet metadata |
+| collaborate | Multi-agent discussion | other_agent, prompt, turns | Discussion string |
+
+## Basic Agent Usage
+
+### Initialize Agent
+
+```python
+from helix_agent import HelixAgent
+
+# Basic initialization
+agent = HelixAgent(
+    agent_name="Research Scientist",
+    model_name="helix-70b",
+    tools_enabled=True
+)
+
+# With persona
+physicist = HelixAgent(
+    persona="physicist",
+    temperature=0.7,
+    max_tokens=200
+)
+
+# With logging
+logged_agent = HelixAgent(
+    agent_name="Logged Scientist",
+    logging_enabled=True,
+    log_file="research.log"
+)
+```
+
+### Generate Responses
+
+```python
+# Basic response
+response = agent.generate_response(
+    "Explain the double-slit experiment"
+)
+
+# With streaming
+streaming_agent = HelixAgent(streaming_on=True)
+response = streaming_agent.generate_response(
+    "Describe quantum entanglement"
+)
+
+# Using context
+agent.generate_response("What is dark matter?")
+followup = agent.generate_response("How is it detected?")  # Uses previous context
+```
+
+## Research Tools
+
+### Task Planning
+
+```python
+# Simple task plan
+basic_plan = agent.plan_research_task(
+    objective="Study protein folding",
+    subtasks=[
+        "Review literature",
+        "Design experiments",
+        "Collect data"
+    ]
+)
+
+# Complex plan with dependencies
+complex_plan = agent.plan_research_task(
+    objective="Investigate quantum tunneling in enzymes",
+    subtasks=[
+        "Literature review on quantum biology",
+        "Identify key enzymes",
+        "Design detection method",
+        "Setup equipment",
+        "Run experiments",
+        "Analyze results"
+    ],
+    dependencies={
+        "task-2": ["task-1"],
+        "task-3": ["task-2"],
+        "task-4": ["task-3"],
+        "task-5": ["task-4"],
+        "task-6": ["task-5"]
+    }
+)
+
+# Update progress
+updated_plan = agent.update_task_progress(
+    ["task-1", "task-2"]  # Completed tasks
+)
+print(f"Progress: {updated_plan['progress']}%")
+```
+
+## Usage Examples
+
+### Create Experiment Protocol
+
+```python
+# Basic protocol
+simple_protocol = agent.create_experiment(
+    steps=[
+        "Prepare samples",
+        "Run analysis"
+    ],
+    materials=[
+        "Sample A",
+        "Buffer solution"
+    ],
+    duration="1 hour",
+    conditions={"temperature": 25}
+)
+
+# Detailed protocol
+detailed_protocol = agent.create_experiment(
+    steps=[
+        "Prepare protein samples in phosphate buffer",
+        "Calibrate spectrophotometer",
+        "Measure baseline absorbance",
+        "Add substrate incrementally",
+        "Record kinetic measurements",
+        "Analyze reaction rates"
+    ],
+    materials=[
+        "Purified enzyme (1mg/mL)",
+        "Phosphate buffer (pH 7.4)",
+        "Substrate solution (10mM)",
+        "UV-Vis spectrophotometer",
+        "Temperature-controlled cuvette holder",
+        "Micropipettes"
+    ],
+    duration="3 hours",
+    conditions={
+        "temperature": 37,
+        "pH": 7.4,
+        "buffer_concentration": 50,
+        "ionic_strength": 0.15
+    }
+)
+```
+
+### Run Experiments
+
+```python
+# Single condition
+results = agent.run_experiment(
+    protocol=simple_protocol,
+    variables={"concentration": 0.5},
+    iterations=3
+)
+
+# Multiple conditions
+complex_results = agent.run_experiment(
+    protocol=detailed_protocol,
+    variables={
+        "enzyme_concentration": 0.1,
+        "substrate_concentration": 1.0,
+        "temperature": 37
+    },
+    iterations=5
+)
+
+# Analyze results
+analysis = agent.analyze_data(
+    [r['variables']['enzyme_concentration'] for r in complex_results['results']],
+    confidence_level=0.95
+)
+
+print(f"Mean: {analysis['mean']}")
+print(f"Standard Deviation: {analysis['std_dev']}")
+print(f"Confidence Interval: {analysis['confidence_interval']}")
+```
+
+## Paper Analysis
+
+### Extract Metadata
+
+```python
+# Basic paper
+paper_text = """
+Title: Quantum Effects in Biological Systems
+Abstract: This study investigates quantum phenomena in biological processes.
+Keywords: quantum biology, coherence, entanglement
+"""
+
+metadata = agent.analyze_paper(paper_text)
+
+# Complex paper with references
+complex_paper = """
+Title: Advanced Quantum Biology Studies
+Abstract: A comprehensive review of quantum effects in biological systems,
+focusing on photosynthesis and enzyme catalysis.
+Keywords: quantum biology, photosynthesis, enzymes, coherence
+References:
+1. Smith et al. (2022) Nature Physics
+2. Johnson et al. (2023) Quantum Biology Review
+"""
+
+metadata = agent.analyze_paper(complex_paper)
+```
+
+### Format Citations
+
+```python
+# Basic citation
+citation = agent.format_citation(
+    authors=["Smith, J.", "Johnson, M."],
+    title="Quantum Effects in Biology",
+    journal="Nature Physics",
+    year=2023
+)
+
+# With DOI
+citation_with_doi = agent.format_citation(
+    authors=["Smith, J.", "Johnson, M.", "Williams, R."],
+    title="Advanced Quantum Biology",
+    journal="Science",
+    year=2023,
+    doi="10.1234/science.2023.001"
+)
+```
+
+## Social Media Integration
+
+### Post Updates
+
+```python
+# Basic tweet
+agent.post_tweet(
+    "Exciting new results from our quantum biology experiments! ðŸ§¬âœ¨"
+)
+
+# With media
+agent.post_tweet(
+    "Our latest findings on quantum coherence in photosynthesis! ðŸŒ±\n"
+    "Check out these amazing results! #SciComm #QuantumBiology",
+    media_paths=["results_graph.png", "experiment_setup.jpg"]
+)
+
+# Schedule tweet
+from datetime import datetime, timedelta
+future = datetime.now() + timedelta(days=1)
+agent.schedule_tweet(
+    "Join us tomorrow for our quantum biology seminar! ðŸŽ“",
+    scheduled_time=future
+)
+```
+
+### Analyze Engagement
+
+```python
+# Get recent tweets
+history = agent.get_tweet_history(count=5)
+
+# Analyze engagement
+for tweet in history:
+    metrics = agent.analyze_tweet_engagement(tweet['id'])
+    print(f"Tweet: {tweet['content']}")
+    print(f"Likes: {metrics['likes']}")
+    print(f"Retweets: {metrics['retweets']}")
+```
+
+## Multi-Agent Collaboration
+
+### Basic Collaboration
+
+```python
+# Create specialized agents
+physicist = HelixAgent(persona="physicist")
+biologist = HelixAgent(persona="biologist")
+
+# Simple discussion
+discussion = physicist.collaborate(
+    other_agent=biologist,
+    prompt="Discuss quantum effects in photosynthesis",
+    turns=3
+)
+```
+
+### Complex Collaboration
+
+```python
+# Create team of specialists
+physicist = HelixAgent(persona="physicist")
+biologist = HelixAgent(persona="biologist")
+chemist = HelixAgent(persona="chemist")
+
+# Sequential collaboration
+physics_view = physicist.generate_response(
+    "Explain quantum tunneling in enzyme catalysis"
+)
+
+biology_view = biologist.generate_response(
+    f"Based on this physics explanation: {physics_view}\n"
+    "How might this affect enzyme function?"
+)
+
+chemistry_view = chemist.generate_response(
+    f"Given these insights:\n"
+    f"Physics: {physics_view}\n"
+    f"Biology: {biology_view}\n"
+    "What chemical techniques could we use to detect this?"
+)
+
+# Collaborative experiment
+protocol = physicist.create_experiment(
+    steps=["Setup quantum detection", "Prepare enzymes", "Measure activity"],
+    materials=["Quantum sensor", "Enzyme samples"],
+    duration="5 hours",
+    conditions={"temperature": 5}  # Low temp for quantum effects
+)
+
+physics_results = physicist.run_experiment(
+    protocol=protocol,
+    variables={"tunneling_rate": 0.1},
+    iterations=3
+)
+
+biology_analysis = biologist.analyze_data(
+    [r['variables']['tunneling_rate'] for r in physics_results['results']]
+)
+
+chemistry_insights = chemist.generate_response(
+    f"Analyze these results from chemical perspective:\n"
+    f"Physics data: {physics_results['summary_stats']}\n"
+    f"Biology analysis: {biology_analysis}"
+)
+```
+
+## Documentation
+
+Detailed documentation for each feature is available in the `docs/` directory.
+
+## Development
+
+```bash
+# Install development dependencies
+pip install -e ".[dev]"
+
+# Run tests
+pytest tests/
+
+# Format code
+black helix/
+isort helix/
+```
+
+## Common Issues and Solutions
+
+| Issue | Cause | Solution |
+|-------|-------|----------|
+| OpenAI API Error | Invalid/missing API key | Set OPENAI_API_KEY environment variable |
+| Twitter API Error | Invalid credentials | Verify Twitter API credentials |
+| Import Error | Missing dependencies | Install required packages |
+| Memory Issues | Large experiments | Reduce batch size/iterations |
+| Rate Limits | Too many API calls | Implement request throttling |
+
+## Support
+
+- Report bugs through [GitHub Issues](https://github.com/yourusername/helix/issues)
+- Check documentation in the `docs/` directory
+- Review examples in the `examples/` directory
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
