@@ -1,0 +1,9 @@
+streamsnapper/__init__.py,sha256=q2YaR_819krPVLXIRfCK9D3ymBulGf4iKu4l-XBTGcY,477
+streamsnapper/exceptions.py,sha256=1LTtXKSZCu9ECoQObCjwmLtgGISS-Kig5iSTqUqd8rc,692
+streamsnapper/functions.py,sha256=pIyRqXMPaV5E0wOYeo-a3eR2SuOwKxVhdJYq0Re7lSA,3953
+streamsnapper/merger.py,sha256=GeI_qJq0jVTBAqDJpUE4-KIhIY9cB6b6zUFM4_rb_GE,3082
+streamsnapper/scraper.py,sha256=s06gQqjQHIzLPATjPW-UiO0XWJQZkDVusaDNYVKVPRE,47483
+streamsnapper-0.2.9.dist-info/LICENSE,sha256=fcaXPaWRr45_ur4IqWdXDv-52NRnM5EGPv4KpjdJUOI,1065
+streamsnapper-0.2.9.dist-info/METADATA,sha256=_2DiirN44LeudNbNoxEDaHOWuInJX9dLgl-_9ZNZWRk,6063
+streamsnapper-0.2.9.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+streamsnapper-0.2.9.dist-info/RECORD,,
