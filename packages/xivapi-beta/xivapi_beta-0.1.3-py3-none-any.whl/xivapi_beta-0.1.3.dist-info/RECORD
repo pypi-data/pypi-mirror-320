@@ -1,0 +1,12 @@
+xivapi_beta/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xivapi_beta/_wrapper.py,sha256=_FNYfMth1RwJDoNNY1P-6701HGiarUvDGwXxc1N1lhk,5758
+xivapi_beta/client.py,sha256=TKN_UFr1ilVGUYzrjXwjnDz2B5jDeofa13wpONVHpCE,13094
+xivapi_beta/exceptions.py,sha256=vIEmTch-bmGCEgPTv2s88nYkpltF89_NJ8qE8WRuGFM,38
+xivapi_beta/endpoints/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xivapi_beta/endpoints/asset.py,sha256=xgXheNIQdUANjQmZCgCQ3B_zBHVNQkc7yMCXZdAf9rs,2465
+xivapi_beta/endpoints/item.py,sha256=R7cXMNDnHMTv31qWQ2bqKBRdgt1_xzUFGzR2E3YPF0o,1331
+xivapi_beta/endpoints/search.py,sha256=CoXWM1n-brRZjrOZR2HejLcHr2RjEND3OuQmOJBIIrg,6039
+xivapi_beta/endpoints/sheet.py,sha256=6VqhqE1S_mL_l1Kj2GH1G0wJEotethOroX1rqex5xwM,3000
+xivapi_beta-0.1.3.dist-info/METADATA,sha256=BKARq0Et4uyoynhcRw4mRJTI-d9UjDZMjHYm9M41GI0,587
+xivapi_beta-0.1.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+xivapi_beta-0.1.3.dist-info/RECORD,,

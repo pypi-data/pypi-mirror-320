@@ -1,0 +1,2 @@
+class XIVAPIError(Exception):
+    pass
