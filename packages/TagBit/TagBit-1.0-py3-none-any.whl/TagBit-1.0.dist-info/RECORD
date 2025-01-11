@@ -1,0 +1,10 @@
+tagbit/__init__.py,sha256=_OXdv4awvtlj7Usc3EUjY7qKUSaxBp7v0DqPqz20FA4,589
+tagbit/handlers.py,sha256=RS5pf7hiPQAC54iqia2EuJrmZQueFAFDqteitdr-XyI,5028
+tagbit/reader.py,sha256=VjqjolTBQ1dtzXT3kKqciXIkv2m0CcmJv8A_t71oo9A,2974
+tagbit/status.py,sha256=l4udIJ64-EpYJO_tFuWX-1EtCFmQQb3zuLGltIcA07I,1853
+tagbit/utils.py,sha256=wxtitwg3PkwGC-UoU33nbGHvkisbMI58PaxeAw-ZxBc,1621
+TagBit-1.0.dist-info/LICENSE,sha256=4ftA0kJ3N9D34Y9DgJ8LJz5YEVJpgzO5_WsoW-AS0Jw,1067
+TagBit-1.0.dist-info/METADATA,sha256=txCsmxrKjl-lNX1dJKS1wv1sUhmNteKA35jtTLLUJCA,2689
+TagBit-1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+TagBit-1.0.dist-info/top_level.txt,sha256=5Rg4sIyQJjQZLnUZCm29dBWyfNmjWi3GGlqJjug2_jE,7
+TagBit-1.0.dist-info/RECORD,,
