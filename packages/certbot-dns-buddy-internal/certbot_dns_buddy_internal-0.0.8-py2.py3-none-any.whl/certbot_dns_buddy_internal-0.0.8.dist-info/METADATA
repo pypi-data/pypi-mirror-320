@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: certbot-dns-buddy-internal
+Version: 0.0.8
+Summary: Buddy DNS internal Authenticator plugin for Certbot
+Home-page: https://github.com/buddy/certbot-dns-internal
+Author: Michal Hankus
+License: Apache License 2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Security
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5.0
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: certbot>=0.31.0
+Requires-Dist: setuptools
+Requires-Dist: requests
+Requires-Dist: requests-mock
+Requires-Dist: idna
+
+certbot-dns-internal
+====================
+
+Buddy internal DNS Authenticator plugin for Certbot
+
+This plugin automates the process of completing a ``dns-01`` challenge by
+creating, and subsequently removing, TXT records using the Buddy internal API.

@@ -1,0 +1,9 @@
+certbot_dns_buddy_internal/__init__.py,sha256=JB2tXmrqeHHsTggnAGUzXByN4OIaYKS4cleoIkulZCA,89
+certbot_dns_buddy_internal/dns_internal.py,sha256=WnCIHQQl2-Mj2ZV9xHmZlr4F3TxFjmEWAauFgf0mWFo,5873
+certbot_dns_buddy_internal/dns_internal_test.py,sha256=o-6306GxgZ4BUZygxfq0w8rU0jQ1qMnREj7txbAkW6M,2514
+certbot_dns_buddy_internal-0.0.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+certbot_dns_buddy_internal-0.0.8.dist-info/METADATA,sha256=Up6W9AvbvF5oC_gLX1JYTSs885XwPWIjNuA_Xc5Nk38,1488
+certbot_dns_buddy_internal-0.0.8.dist-info/WHEEL,sha256=M1ikteR9eetPNvm1LyQ3rpXxNYuGd90oakQO1a-ohSk,109
+certbot_dns_buddy_internal-0.0.8.dist-info/entry_points.txt,sha256=GUYR93BV8MYHkg1O0WrTe-69kkhs33_Gta9kHdNXIkA,93
+certbot_dns_buddy_internal-0.0.8.dist-info/top_level.txt,sha256=SBxnBDLgRs23nZYq4DMBWJWgVajlpBGXWt1tKZT7FzI,27
+certbot_dns_buddy_internal-0.0.8.dist-info/RECORD,,
