@@ -1,0 +1,2 @@
+[console_scripts]
+knetvis = knetvis.cli:cli
