@@ -1,0 +1,13 @@
+tinyshift/base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tinyshift/base/model.py,sha256=e_u-6yeZz0QwgCc2zwmYp8FBAPVuGlucL2BTSjxHo1I,9254
+tinyshift/detector/__init__.py,sha256=hjP0xqHERdl1DHD3Fs6GrcbCou1EqZmIHwtbH-VhNG0,98
+tinyshift/detector/categorical.py,sha256=PB9N1Hk94kFeQ2-HTAp6H3YKb7EgrK2Yfq62A_KZf7Q,7488
+tinyshift/detector/continuous.py,sha256=2ppc9qgrtef6mgosHbcbVe43l6KIOpWqrgn2ZeuJ1ZY,7566
+tinyshift/plot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tinyshift/plot/plot.py,sha256=ONnDRzxCa6l1ZqttuqTbNylwFtpxAuOD1rT-WkP6cQs,5951
+tinyshift/tracker/__init__.py,sha256=ElIARMomp32pFeJ3zwt4ISPv26BUtDc0Bx0JOORQICs,44
+tinyshift/tracker/performance.py,sha256=TcOp3xmDcty8eUfwEa-ca-gNlvPqYbIBFB3mQGUTYB4,6531
+tinyshift-0.0.4.dist-info/LICENSE,sha256=oGMyi5YKRfPvxPthLZi3eiJ9zVC3oHJ94YoesVfp1Hg,1068
+tinyshift-0.0.4.dist-info/METADATA,sha256=2kFb1bwyKIZarKwtMRIL4snmDVJg9YxoJDcEYJdJ7jc,4002
+tinyshift-0.0.4.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+tinyshift-0.0.4.dist-info/RECORD,,
