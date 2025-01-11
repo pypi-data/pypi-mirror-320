@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyturbseq"
+version = "0.0.15"
+description = "A Python package for perturbational single-cell data"
+readme = "README.md"
+authors = [
+    { name = "Aidan Winters", email = "aidanw@arcinstitute.org" }
+]
+dependencies = [
+    "scanpy",
+    "scipy",
+    "scikit-learn",
+    "umap-learn",
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "tqdm",
+    "fastcluster",
+    "adjusttext",
+    "pydeseq2",
+    "statsmodels==0.13.5",
+    "adpbulk",
+    "anndata",
+    "hdbscan",
+    "dcor"
+]
+requires-python = ">=3.8,<3.12"
+
+[project.urls]
+repository = "https://github.com/aidanwinters/pyturbseq"
