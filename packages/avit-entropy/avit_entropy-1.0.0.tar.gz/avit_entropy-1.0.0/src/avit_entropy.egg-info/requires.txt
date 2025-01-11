@@ -1,0 +1,2 @@
+sim-bug-tools
+shapely>=1.0.0
