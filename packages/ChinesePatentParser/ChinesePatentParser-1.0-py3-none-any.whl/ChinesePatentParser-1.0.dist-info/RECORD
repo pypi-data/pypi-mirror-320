@@ -1,0 +1,13 @@
+ChinesePatentParser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ChinesePatentParser/general_parser.py,sha256=aEJbBqCCTHoO_YX8SuGpJmyR0eDvy6AlQ7oZuanVucE,4185
+ChinesePatentParser/patent_instance.py,sha256=y-IQIJbAUSIpxovnWZHna5jy-d0ZpOcIW45GY6uM86g,3769
+ChinesePatentParser/patent_parser.py,sha256=_dLi6xS9gVmbr44iQxw4nPSAXByngg84Lo697EuCOKQ,6445
+ChinesePatentParser/patent_template.py,sha256=9OadK_I4XtJBTS0lZz4MxgLXg1VwI_DvuYeVCoJel-Y,4959
+ChinesePatentParser/simple_bidict.py,sha256=Yp4ENC6_Ok0Xvv1LuCS7TlV-YUrqnMYe3owlG2idUeE,1449
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test.py,sha256=FRlB_9U9le3XeiJlQKkH7GVlXVgU9kh9ZECCvHw2ZoQ,517
+ChinesePatentParser-1.0.dist-info/LICENSE,sha256=jFG3ZfWJBJiWVbZZ8orJZLjQcDDTw__rLbj4kaoOSrQ,1064
+ChinesePatentParser-1.0.dist-info/METADATA,sha256=u2BbhGN2orectjB1nbqSxJVTxQhp2wVNyfvtFPb7Mjk,5294
+ChinesePatentParser-1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+ChinesePatentParser-1.0.dist-info/top_level.txt,sha256=SM0YaIZP1P9huaK9aPqAGpAfQSDzg-UeccJTjuKvtgw,26
+ChinesePatentParser-1.0.dist-info/RECORD,,
