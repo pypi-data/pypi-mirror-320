@@ -1,0 +1,11 @@
+lupa/version.py,sha256=4aubADCFTeP14Ob-WxGATctabBoP4svSqiDpOP0Ddbg,20
+lupa/lua52.cpython-39-darwin.so,sha256=DIQD_Q3h2HzlHb_pXqMHPRDEWhEXoyiD8E5RKu5iR6M,1174112
+lupa/__init__.py,sha256=c99ILOqbgXcktoS1YsqNLg9juNuAJZ_Yxm4VGEANkqo,3001
+lupa/lua53.cpython-39-darwin.so,sha256=DensLmqRwe7ntcfM3ELNUBIuZY2yEA-OVUJldHHoCGY,1209904
+lupa/lua51.cpython-39-darwin.so,sha256=lORJzbHjW4HEOGVEDKvDOePjnS1t__ewwaZeKoSzwLQ,1135200
+lupa/lua54.cpython-39-darwin.so,sha256=pewyR60KT4AWhyw7LFtAQgxylvIvKpxqGJ_dExsX0hM,1333424
+lupa-2.4.dist-info/RECORD,,
+lupa-2.4.dist-info/WHEEL,sha256=RNx9C6tCgqDsCO0_YCkaaESvsqZ6MvN6v4IjGQnSeCw,112
+lupa-2.4.dist-info/top_level.txt,sha256=zBjq_OEwVlKBUT25L2ENcMO-9XdwVQSN7X6VHyH7Pcg,5
+lupa-2.4.dist-info/LICENSE.txt,sha256=lXr-SRPfxGn9YFQdhHpYHFvd1roMy3I5DteMdYN3aKE,2231
+lupa-2.4.dist-info/METADATA,sha256=Omgz31FFbB2EQxKmmcWWKqNDgMXMTz--wxEKhJdXUdc,58085
