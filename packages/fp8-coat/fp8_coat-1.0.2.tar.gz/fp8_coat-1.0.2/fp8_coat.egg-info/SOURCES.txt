@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+coat/__init__.py
+coat/fp8_trainer.py
+fp8_coat.egg-info/PKG-INFO
+fp8_coat.egg-info/SOURCES.txt
+fp8_coat.egg-info/dependency_links.txt
+fp8_coat.egg-info/requires.txt
+fp8_coat.egg-info/top_level.txt
+tests/test_coat_llamalayer.py
+tests/test_fp8_activations.py
+tests/test_fp8_adamw.py
+tests/test_fp8_adamw_expand.py
+tests/test_fp8_linear.py
+tests/test_fp8_norm.py
+tests/test_utils.py
