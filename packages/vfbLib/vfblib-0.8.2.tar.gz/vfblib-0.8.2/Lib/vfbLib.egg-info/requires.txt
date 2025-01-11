@@ -1,0 +1,14 @@
+fonttools[ufo]>=4.45.1
+typing_extensions>=4.8.0
+ufonormalizer>=0.6.1
+ufoLib2>=0.16.0
+
+[all]
+vfbLib[toml]
+vfbLib[yaml]
+
+[toml]
+tomli-w>=1.0.0
+
+[yaml]
+pyyaml>=6.0.2
