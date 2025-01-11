@@ -1,0 +1,8 @@
+README.md
+setup.py
+w722_poc.egg-info/PKG-INFO
+w722_poc.egg-info/SOURCES.txt
+w722_poc.egg-info/dependency_links.txt
+w722_poc.egg-info/top_level.txt
+w77-POC/__init__.py
+w77-POC/install.py
