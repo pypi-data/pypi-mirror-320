@@ -1,0 +1,6 @@
+gcd.cp310-win_amd64.pyd,sha256=Kg1cjuRRYBBOnEkKc7YqMRhxnRWuk6SdRJpZbhFCeCw,11264
+prime.cp310-win_amd64.pyd,sha256=rdGiq2NU1NrpPWoWXjH04Fhht_74vB9n_q-D5wc9XBo,10752
+devkit_math-1.5.1.dist-info/METADATA,sha256=76nr2c8sRoZwcOGW6QSQf7jQAtNU4OhADO0XS1jYFRw,1036
+devkit_math-1.5.1.dist-info/WHEEL,sha256=rzGfZgUcGeKSgIHGYMuqg4xE4VPHxnaldXH6BG0zjVk,101
+devkit_math-1.5.1.dist-info/top_level.txt,sha256=xAQf1JpJfjRbsaCvIKhgIBk2of6Ks6_efjhKjUrf8Vo,10
+devkit_math-1.5.1.dist-info/RECORD,,
