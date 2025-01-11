@@ -1,0 +1,11 @@
+Flask>=0.9
+Flask-SQLAlchemy>=1.0
+alembic>=1.9.0
+
+[dev]
+tox
+flake8
+pytest
+
+[docs]
+sphinx
