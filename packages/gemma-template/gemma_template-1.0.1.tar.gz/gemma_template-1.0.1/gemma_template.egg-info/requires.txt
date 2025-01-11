@@ -1,0 +1,6 @@
+Jinja2
+datasets
+langdetect
+nest-asyncio
+pydantic
+tqdm
