@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pytranscripts/__init__.py
+pytranscripts/exports.py
+pytranscripts/training.py
+pytranscripts/utils.py
+pytranscripts.egg-info/PKG-INFO
+pytranscripts.egg-info/SOURCES.txt
+pytranscripts.egg-info/dependency_links.txt
+pytranscripts.egg-info/requires.txt
+pytranscripts.egg-info/top_level.txt
