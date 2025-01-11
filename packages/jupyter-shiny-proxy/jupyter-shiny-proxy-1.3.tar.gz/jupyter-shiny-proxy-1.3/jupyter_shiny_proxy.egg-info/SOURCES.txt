@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+jupyter_shiny_proxy/__init__.py
+jupyter_shiny_proxy.egg-info/PKG-INFO
+jupyter_shiny_proxy.egg-info/SOURCES.txt
+jupyter_shiny_proxy.egg-info/dependency_links.txt
+jupyter_shiny_proxy.egg-info/entry_points.txt
+jupyter_shiny_proxy.egg-info/requires.txt
+jupyter_shiny_proxy.egg-info/top_level.txt
+jupyter_shiny_proxy/icons/shiny.svg

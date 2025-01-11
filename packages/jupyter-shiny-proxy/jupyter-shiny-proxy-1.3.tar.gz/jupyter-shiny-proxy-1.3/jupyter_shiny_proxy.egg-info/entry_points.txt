@@ -1,0 +1,2 @@
+[jupyter_serverproxy_servers]
+shiny = jupyter_shiny_proxy:setup_shiny
