@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/library.py
+src/example_package_jackhclee.egg-info/PKG-INFO
+src/example_package_jackhclee.egg-info/SOURCES.txt
+src/example_package_jackhclee.egg-info/dependency_links.txt
+src/example_package_jackhclee.egg-info/top_level.txt
