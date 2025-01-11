@@ -1,0 +1,9 @@
+iometer/__init__.py,sha256=Lp01wafwQu9ju9gCWOcdXi7eNRjDHbLmbB77CKqGFVk,350
+iometer/client.py,sha256=_qGubb-WccGEtqDqbtKXBL_b5Q-KU1KfBzdkZEowRiQ,3621
+iometer/exceptions.py,sha256=AqfINoen6CHVDuHOl6nZrI-bFC90xsHNCis1HJsfu9Q,367
+iometer/reading.py,sha256=mbftsSfZ-l8w6uHJim2vV3XII6BBo-5ygXO0QFxSHNc,3283
+iometer/status.py,sha256=ZcNobL0oU6esHuLvtijny6M8dQ_MbD0hetj6dgIM4hw,3018
+iometer-0.1.0.dist-info/LICENSE,sha256=qTvQa4ozpyZ_NPmUJQ2zFTKZdLhHjqMa0gkAzOEfQ8s,1067
+iometer-0.1.0.dist-info/METADATA,sha256=24DhWAnnGXwoSvgMEKH2O0pGKO1FkDZKYZOdHhiDIp0,3872
+iometer-0.1.0.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+iometer-0.1.0.dist-info/RECORD,,
