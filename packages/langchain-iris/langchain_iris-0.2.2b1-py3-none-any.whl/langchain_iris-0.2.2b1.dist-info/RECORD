@@ -1,0 +1,7 @@
+langchain_iris/__init__.py,sha256=1mjEm68rKn2YbjbDB7ha9DP2gPhTcH_UX5QCNUkubxY,115
+langchain_iris/vectorstores.py,sha256=H000Z0fX_IgM28WR8vCkEzUP2Dl8XJ1r0yGQoFdmRAs,19892
+langchain_iris-0.2.2b1.dist-info/LICENSE,sha256=RQmigqltsLq8lfOBc_KwtL0gkODyUCNpU-0ZiZwGlho,1075
+langchain_iris-0.2.2b1.dist-info/METADATA,sha256=g1KWovUw_-VRlam-Q0GpsKl_6oDihC_gwdYefMFEecE,2544
+langchain_iris-0.2.2b1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+langchain_iris-0.2.2b1.dist-info/top_level.txt,sha256=lSfc7tkkIai-3yyzdCRh6fNm_ZdtJZvIVoqAeFSyi4k,15
+langchain_iris-0.2.2b1.dist-info/RECORD,,
