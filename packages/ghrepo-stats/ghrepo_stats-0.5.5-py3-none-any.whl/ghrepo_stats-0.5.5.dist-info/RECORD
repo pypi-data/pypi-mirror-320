@@ -1,0 +1,14 @@
+ghrepo_stats/__init__.py,sha256=78mfpLewKVki6c9UONSUdlVme_JsN9ZwIfp4Hf4jmG0,22
+ghrepo_stats/show_gh_stats.py,sha256=4vmegl9PEAqaeqFeIoNIV0ChoOmq_2SU_TdSkBg7A_E,17712
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/conftest.py,sha256=f4Z3YE5PxZloUBZ_o5dMwQRI_6thsxYLTjhYKPs8wIs,441
+test/test_configreader.py,sha256=ZgZiXikz5OwN8FISTkaeZkrxI5tvATKPNS-xivyOnwc,1708
+test/test_issue_pr_stats.py,sha256=I6dWaFsSdXMD3QMBhuivWEFf4MnH0sTC5_nKQmpAMCg,7656
+test/test_star_stats.py,sha256=iTZh5B5_Z_ktztNP4fG1HSuSKDrqEm7d3FXsraLGW-0,7615
+test/utils.py,sha256=yZd9ifYYBrH_QLNTJfoIG_4NO5p5Xo38Zq5GKKKIdbw,399
+ghrepo_stats-0.5.5.dist-info/LICENSE,sha256=YvWQYKNJ9OY2cO9AwvSvUwCvSILjeRtS1-Go4bSum94,1070
+ghrepo_stats-0.5.5.dist-info/METADATA,sha256=RmH3oIn-69wp5FA8r3JxpxyIFh5cE5GqUSiEl03dUfA,7296
+ghrepo_stats-0.5.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+ghrepo_stats-0.5.5.dist-info/entry_points.txt,sha256=EkbpbGLWfegwL3DR2R3Vmd_InlVwjytzIQDplfODREc,65
+ghrepo_stats-0.5.5.dist-info/top_level.txt,sha256=4PCP1vxZpeaPHaMn-7aThtviPDN70BGalYboGrWR4vw,18
+ghrepo_stats-0.5.5.dist-info/RECORD,,
