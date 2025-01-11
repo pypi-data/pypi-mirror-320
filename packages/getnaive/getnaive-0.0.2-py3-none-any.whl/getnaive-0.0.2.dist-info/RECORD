@@ -1,0 +1,9 @@
+getnaive/__init__.py,sha256=W74xENuS2JRPGdVgzfZbTUFlXg0VnCfatE0cPn6igTo,50
+getnaive/__main__.py,sha256=q2cf4B4Qw1nKn5CPoUHJ3rqj3pYmS5omGhuQ9HKZw2M,195
+getnaive/app.py,sha256=YqKd7YmqlkRmG2C7lsIv_e_IvFgpvyvDdZ0tjx1i7Ng,26539
+getnaive/utils.py,sha256=EzvBaPDAoWLkVRRjvZmPoI166KUI8Av0-NQRF_lzqgo,2199
+getnaive-0.0.2.dist-info/LICENSE,sha256=jSgKMlJzqhJJWBBFVTgtFF-0K5aANAQN7uqgKl4BUKs,1136
+getnaive-0.0.2.dist-info/METADATA,sha256=sWDzNfnFPIOSjsVXMf15aN0m4ISnxEAhbQiq98UOFe8,5593
+getnaive-0.0.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+getnaive-0.0.2.dist-info/top_level.txt,sha256=KUtpzWK9xY9j1mCBKbCYYrjHnZpnvIV7Sf4oVGEKbaE,9
+getnaive-0.0.2.dist-info/RECORD,,
