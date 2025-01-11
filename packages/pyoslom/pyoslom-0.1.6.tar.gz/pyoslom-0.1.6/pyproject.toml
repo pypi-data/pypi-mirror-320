@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "pyoslom"
+version = "0.1.6"
+description = "Python Wrapper for OSLOM"
+authors = ["Bo Chen <bochen0909@gmail.com>"]
+maintainers = ["Bo Chen <bochen0909@gmail.com>"]
+repository = "https://github.com/bochen0909/pyoslom"
+readme = "README.md"
+license = "MIT"
+include = ['cpp']
+
+[tool.poetry.dependencies]
+python = "^3.10"
+scikit-learn = "^1.5.0"
+pybind11 = "^2.12.0"
+networkx = "^3.3"
+wheel = "^0.43.0"
+
+[tool.poetry.scripts]
+test = 'scripts:test'
+
+[tool.poetry.build]
+script = "build.py"
+generate-setup-file = true
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+
+[build-system]
+requires = [
+    "poetry-core>=1.0.0",
+    "setuptools>=65.4.1",
+    "wheel>=0.43.0",
+    "pybind11>=2.12.0"
+    ]
+build-backend = "poetry.core.masonry.api"
