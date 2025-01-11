@@ -1,0 +1,6 @@
+pysdt/__init__.py,sha256=q9LeBVk00pU91neHzOVC8EW7K3sx2i-L0YIETUOqEBo,145
+pysdt/_pysdt_impl.cpython-311-x86_64-linux-gnu.so,sha256=aTCojgWgy7tcEY6UbHOLnu0Ag5BYjDNJG8BYowF1B0w,558472
+pysdt-0.1.2.dist-info/METADATA,sha256=sugZAtE3D4GuUgSA6cX4IjAkZcwiAZYa74aLjwg8pjc,6177
+pysdt-0.1.2.dist-info/RECORD,,
+pysdt-0.1.2.dist-info/WHEEL,sha256=VOupRnfug01GtQYX1iAM3IeNFJwbRXAxOEBUtSnOhO4,156
+pysdt-0.1.2.dist-info/licenses/LICENSE,sha256=BTdhWuVqyxtsVP81YN6m2eqBop8bRM-2mmFCt5nvVuY,1927
