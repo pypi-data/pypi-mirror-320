@@ -1,0 +1,9 @@
+bwt/__init__.py,sha256=awf9c6PiKUbbK30as9ZAVHWw9bsS-uzeguFxzv6fgX8,277
+bwt/api_bwt.py,sha256=pAj5XwJpeMHF5eFEj2u-nA1u4X2Q6hVvWcvB0J6lTqg,4122
+bwt/api_ctypes.py,sha256=qoArJKrVzZqxU_enBCzA8Gp02xXbKIvHuMLAofYK7sA,1512
+bwt/libbwt.so,sha256=Qi8ER7E7Q-hyJrk3HpyJsZslt-Y_WtEi0QFSIaLT0k0,31960
+PyBWT-0.0.5.dist-info/LICENSE,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+PyBWT-0.0.5.dist-info/METADATA,sha256=8u01196_tcz4voF0ChTAH07ELoqUZNP-DH0XnZF5OzU,4370
+PyBWT-0.0.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+PyBWT-0.0.5.dist-info/top_level.txt,sha256=oLABrU5PI93s79jUTQcVZ5ZZoQFuEdQbm5xSLHuoCVE,4
+PyBWT-0.0.5.dist-info/RECORD,,
