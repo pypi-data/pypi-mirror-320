@@ -1,0 +1,16 @@
+faiss-cpu
+flask
+beautifulsoup4
+ollama
+numpy
+pandas
+pydantic
+scikit-learn
+scipy
+sentencepiece
+torch
+tqdm
+transformers
+peft
+bitsandbytes
+trl
