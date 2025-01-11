@@ -1,0 +1,11 @@
+pyassist_webutils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyassist_webutils/scraper/__init__.py,sha256=iAAxzeg6zsq8C8ts_i06nV8YYTRQJMP4wrM7jKh3fxY,183
+pyassist_webutils/scraper/bs4.py,sha256=qCOydCz2l7H_pZRvgG4zeyldrMZiIu0TIvDelEx_7hg,420
+pyassist_webutils/scraper/pandas.py,sha256=xiSfpy3fZgQA03eNdTh0c8OL_IwS-aE3yhauciP4U4Y,1521
+pyassist_webutils/scraper/request.py,sha256=4LbhkVQBYdFX3Ovi_TmhpnLefba101GdlA6206Ve-1A,378
+pyassist_webutils/scraper/selenium.py,sha256=WY1lWEjYqQQO3x8Jds1N2tLIb883-dM1_-UzWIhFaRw,11495
+pyassist_webutils/scraper_utils.py,sha256=NSrga6FarGWKSMH_dX28PbC8B7t2AK4fCp-9uSgHqUo,489
+pyassist_webutils-0.1.1a0.dist-info/LICENSE,sha256=WtYbxeXNInyz-2audyLoR4HbgP2vzScno4vqnGblgyI,1063
+pyassist_webutils-0.1.1a0.dist-info/METADATA,sha256=JL5TM6b0SHfwTTa2gKvt26OgCpz9ADSJeeTX3XGggs4,400
+pyassist_webutils-0.1.1a0.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+pyassist_webutils-0.1.1a0.dist-info/RECORD,,
