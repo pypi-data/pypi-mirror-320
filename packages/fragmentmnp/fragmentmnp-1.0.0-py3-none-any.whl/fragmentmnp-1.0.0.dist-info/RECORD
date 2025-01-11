@@ -1,0 +1,10 @@
+fragmentmnp/__init__.py,sha256=1sh4Vhh3E2H3n72Ku2pRQibQ-cZ9q7YYkv74LGB1kn8,400
+fragmentmnp/_errors.py,sha256=Jo8752hSKgIUIpjvFpl6nTzqNCiQA_BJGy8b4fcxn0g,578
+fragmentmnp/examples.py,sha256=xFmYuMm4CUWSZYS3ZokuMoK6ScQrQgKvZGTTudrP4IU,2003
+fragmentmnp/fragmentmnp.py,sha256=PCJe-1Rt1bV3sAfhT9KJmO0KxH0cEFfI9mNlSUlLKlY,24878
+fragmentmnp/output.py,sha256=jQOx_CwVI9Jf1mxYkCdQu9y35yPZJja24oMNg7S5ksw,10344
+fragmentmnp/validation.py,sha256=F2nB8GaDRVCaLY-uiEHsAZO5s1UUOQBaBBXX3YBMqtU,5913
+fragmentmnp-1.0.0.dist-info/LICENSE,sha256=agvpMGEBCVy7wj_wz6e2CPX9vfBF2JXNV-O71_WS3bA,1513
+fragmentmnp-1.0.0.dist-info/METADATA,sha256=UJ5X3BRO9GlGzDKTkku-48pxiGgZR3MIr8ErbuBUg3s,2087
+fragmentmnp-1.0.0.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+fragmentmnp-1.0.0.dist-info/RECORD,,
