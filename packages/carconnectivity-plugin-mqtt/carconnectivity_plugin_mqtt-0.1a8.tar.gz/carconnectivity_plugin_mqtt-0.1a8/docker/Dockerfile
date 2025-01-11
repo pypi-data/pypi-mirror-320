@@ -1,0 +1,38 @@
+FROM python:3.13.0-alpine AS base
+RUN apk add --update tzdata
+
+FROM python:3.13.0-alpine
+ARG VERSION
+ENV CONFIG_FILE="/carconnectivity.json"
+ENV ADDITIONAL_INSTALLS=
+ENV ADDITIONAL_PARAMETERS=
+ENV TZ=
+ENV MUSL_LOCPATH="/usr/share/i18n/locales/musl"
+
+
+
+COPY docker/entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# Copy zoneinfo
+COPY --from=base /usr/share/zoneinfo /usr/share/zoneinfo
+# Pillow depenencies
+RUN apk --no-cache add --virtual build-dependencies build-base \
+    && apk --no-cache add jpeg-dev \
+                          zlib-dev \
+                          freetype-dev \
+                          lcms2-dev \
+                          openjpeg-dev \
+                          tiff-dev \
+                          tk-dev \
+                          tcl-dev \
+                          musl-locales \
+                          musl-locales-lang \
+    && pip install carconnectivity-plugin-mqtt==${VERSION} \
+    && pip install carconnectivity-connector-volkswagen \
+    && pip install carconnectivity-connector-skoda \
+    && apk del build-dependencies
+
+SHELL ["/bin/sh", "-c"]
+ENTRYPOINT ["/entrypoint.sh"]
+CMD carconnectivity-mqtt ${CONFIG_FILE} ${ADDITIONAL_PARAMETERS}
