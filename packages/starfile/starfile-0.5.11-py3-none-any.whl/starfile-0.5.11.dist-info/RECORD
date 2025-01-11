@@ -1,0 +1,11 @@
+starfile/__init__.py,sha256=pQ1Av-hVOHO0xXIU8MOQplEJf5h-_R8WZKvKTbzcyKQ,46
+starfile/__main__.py,sha256=ApwscvDRqeu4ywcWmk0Xi1bBDzJSecbO9P3T1HdV9oE,1165
+starfile/functions.py,sha256=589xHehTl_NSktb0naCnrewrHBeoNcMTThuVCaFnV6Q,3742
+starfile/parser.py,sha256=yqyxu9iPOM99I3CBLHmDriEpkt2_X2NoswXwLpPehrw,6076
+starfile/typing.py,sha256=gjpGAG_BLrNYKXEwLUjpvEThN-JvqHc2-6IkkgUQvQI,217
+starfile/utils.py,sha256=uN36XTlyFIPh6iWdxOF2ywyzXVeKSZvyX40ItGPlZrU,2612
+starfile/writer.py,sha256=Mz1RtGF6-4sHPdpXOwDMx0HGgYYchdiKbE_nRf2diC8,5602
+starfile-0.5.11.dist-info/METADATA,sha256=8_G6Cv4GPW6Mxka0JFQEHBn17-vmyu38dSc52veBkHE,4782
+starfile-0.5.11.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+starfile-0.5.11.dist-info/licenses/LICENSE,sha256=P657EV88YiSQLHF4R_L9nAV_QKtuoMI-ZqpEC-FgcQ4,1520
+starfile-0.5.11.dist-info/RECORD,,
