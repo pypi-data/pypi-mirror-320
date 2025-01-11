@@ -1,0 +1,2 @@
+[console_scripts]
+fern-nav = fern_nav_builder.nav:main
