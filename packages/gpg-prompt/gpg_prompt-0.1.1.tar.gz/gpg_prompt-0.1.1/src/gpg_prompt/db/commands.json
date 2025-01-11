@@ -1,0 +1,322 @@
+[
+  {
+    "name": "Generate Key Pair",
+    "command": "gpg --gen-key",
+    "keywords": ["key", "generate", "keypair"],
+    "description": "Generates a new key pair.",
+    "link": "#key-generation",
+    "validated": true
+  },
+  {
+    "name": "Generate Full Key Pair",
+    "command": "gpg --full-gen-key",
+    "keywords": ["key", "generate", "full", "keypair"],
+    "description": "Generates a new key pair with more control over the process.",
+    "link": "#key-generation",
+    "validated": true
+  },
+  {
+    "name": "List Public Keys",
+    "command": "gpg --list-keys",
+    "keywords": ["key", "list", "public"],
+    "description": "Lists all keys in your public keyring.",
+    "link": "#key-listing",
+    "validated": true
+  },
+  {
+    "name": "List Public Keys (short)",
+    "command": "gpg -k",
+    "keywords": ["key", "list", "public"],
+    "description": "Lists all keys in your public keyring.",
+    "link": "#key-listing",
+    "validated": true
+  },
+  {
+    "name": "List Secret Keys",
+    "command": "gpg --list-secret-keys",
+    "keywords": ["key", "list", "secret"],
+    "description": "Lists all secret keys.",
+    "link": "#key-listing",
+    "validated": true
+  },
+  {
+    "name": "List Secret Keys (short)",
+    "command": "gpg -K",
+    "keywords": ["key", "list", "secret"],
+    "description": "Lists all secret keys.",
+    "link": "#key-listing",
+    "validated": true
+  },
+  {
+    "name": "Show Key Fingerprints",
+    "command": "gpg --fingerprint",
+    "keywords": ["key", "fingerprint"],
+    "description": "Shows fingerprints along with the keys.",
+    "link": "#key-listing",
+    "validated": true
+  },
+  {
+    "name": "Export Public Key",
+    "command": "gpg --armor --export user-id > public.key",
+    "keywords": ["key", "export", "public"],
+    "description": "Exports a public key in ASCII armor format.",
+    "link": "#key-export",
+    "validated": true
+  },
+  {
+    "name": "Export Secret Key",
+    "command": "gpg --armor --export-secret-keys user-id > private.key",
+    "keywords": ["key", "export", "secret"],
+    "description": "Exports a secret key in ASCII armor format.",
+    "link": "#key-export",
+    "validated": true
+  },
+  {
+    "name": "Export Specific Subkey",
+    "command": "gpg --armor --export-secret-subkeys user-id > subkey.key",
+    "keywords": ["key", "export", "subkey"],
+    "description": "Exports a specific subkey.",
+    "link": "#key-export",
+     "validated": true
+  },
+  {
+    "name": "Import Public Key",
+    "command": "gpg --import public.key",
+    "keywords": ["key", "import", "public"],
+    "description": "Imports a public key.",
+    "link": "#key-import",
+    "validated": true
+  },
+  {
+    "name": "Import Private Key",
+    "command": "gpg --import private.key",
+    "keywords": ["key", "import", "private"],
+    "description": "Imports a private key.",
+    "link": "#key-import",
+    "validated": true
+  },
+  {
+    "name": "Verify Key Fingerprint",
+    "command": "gpg --fingerprint user-id",
+    "keywords": ["key", "verify", "fingerprint"],
+    "description": "Verifies the fingerprint of a key.",
+    "link": "#key-verification",
+    "validated": true
+  },
+  {
+    "name": "Sign Public Key",
+    "command": "gpg --sign-key user-id",
+    "keywords": ["key", "sign", "public"],
+    "description": "Signs someone's public key.",
+    "link": "#key-signing",
+    "validated": true
+  },
+  {
+    "name": "Sign and Export Key",
+     "command": "gpg --armor --export user-id > signed.key",
+    "keywords": ["key", "sign", "export"],
+    "description": "Signs with your own key and exports the signature.",
+    "link": "#key-signing",
+    "validated": true
+  },
+  {
+    "name": "Generate Revocation Certificate",
+    "command": "gpg --gen-revoke user-id > revoke.asc",
+    "keywords": ["key", "revoke", "certificate"],
+    "description": "Generates a revocation certificate.",
+    "link": "#key-revocation",
+    "validated": true
+  },
+  {
+    "name": "Revoke Key",
+    "command": "gpg --import revoke.asc",
+    "keywords": ["key", "revoke"],
+    "description": "Revokes a key using the certificate.",
+    "link": "#key-revocation",
+    "validated": true
+  },
+  {
+    "name": "Edit Key",
+    "command": "gpg --edit-key user-id",
+    "keywords": ["key", "edit"],
+    "description": "Edits a key (change expiration, add/remove email addresses, etc.).",
+    "link": "#key-editing",
+    "validated": true
+  },
+    {
+    "name": "Mark Key as Trusted",
+    "command": "gpg --edit-key user-id trust",
+    "keywords": ["key", "trust"],
+    "description": "Marks a key as trusted.",
+    "link": "#key-trust-and-validation",
+    "validated": true
+  },
+  {
+    "name": "Send Key to Keyserver",
+    "command": "gpg --keyserver keyserver.ubuntu.com --send-keys key-id",
+    "keywords": ["key", "keyserver", "send"],
+    "description": "Sends a key to a keyserver.",
+    "link": "#key-server-operations",
+    "validated": true
+  },
+  {
+    "name": "Receive Key from Keyserver",
+    "command": "gpg --keyserver keyserver.ubuntu.com --recv-keys key-id",
+    "keywords": ["key", "keyserver", "receive"],
+    "description": "Receives a key from a keyserver.",
+    "link": "#key-server-operations",
+    "validated": true
+  },
+  {
+    "name": "Search for Key on Keyserver",
+    "command": "gpg --keyserver keyserver.ubuntu.com --search-keys search-string",
+    "keywords": ["key", "keyserver", "search"],
+    "description": "Searches for a key on a keyserver.",
+    "link": "#key-server-operations",
+    "validated": true
+  },
+  {
+    "name": "Refresh Keys from Keyserver",
+    "command": "gpg --keyserver keyserver.ubuntu.com --refresh-keys",
+    "keywords": ["key", "keyserver", "refresh"],
+    "description": "Refreshes all keys from a keyserver.",
+     "link": "#key-server-operations",
+     "validated": true
+  },
+  {
+    "name": "Encrypt File",
+    "command": "gpg --encrypt --recipient user-id file",
+    "keywords": ["encrypt", "file"],
+    "description": "Encrypts a file for a specific recipient.",
+    "link": "#basic-encryption",
+    "validated": true
+  },
+  {
+    "name": "Encrypt File with ASCII Armor",
+    "command": "gpg --armor --encrypt --recipient user-id file",
+    "keywords": ["encrypt", "file", "ascii"],
+    "description": "Encrypts a file for a specific recipient with ASCII armor output.",
+    "link": "#basic-encryption",
+    "validated": true
+  },
+  {
+    "name": "Encrypt File for Multiple Recipients",
+    "command": "gpg --encrypt --recipient user1-id --recipient user2-id file",
+    "keywords": ["encrypt", "file", "multiple"],
+    "description": "Encrypts a file for multiple recipients.",
+    "link": "#basic-encryption",
+    "validated": true
+  },
+  {
+    "name": "Encrypt File with Symmetric Cipher",
+    "command": "gpg --symmetric file",
+    "keywords": ["encrypt", "file", "symmetric"],
+    "description": "Encrypts a file with a symmetric cipher (password-based).",
+    "link": "#basic-encryption",
+    "validated": true
+  },
+  {
+    "name": "Decrypt File",
+    "command": "gpg --decrypt file.gpg > decrypted-file",
+    "keywords": ["decrypt", "file"],
+    "description": "Decrypts a file.",
+    "link": "#decryption",
+    "validated": true
+  },
+  {
+    "name": "Decrypt and Verify Signed File",
+    "command": "gpg --decrypt signed-encrypted-file.gpg",
+    "keywords": ["decrypt", "verify", "file"],
+    "description": "Decrypts and verifies a signed, encrypted file.",
+    "link": "#decryption",
+    "validated": true
+  },
+  {
+    "name": "Create Cleartext Signature",
+    "command": "gpg --clearsign file",
+    "keywords": ["sign", "cleartext"],
+    "description": "Creates a cleartext signature.",
+    "link": "#basic-signing",
+    "validated": true
+  },
+  {
+    "name": "Create Detached Signature",
+    "command": "gpg --detach-sign file",
+    "keywords": ["sign", "detached"],
+    "description": "Creates a detached signature.",
+    "link": "#basic-signing",
+    "validated": true
+  },
+  {
+    "name": "Create ASCII Armored Detached Signature",
+    "command": "gpg --armor --detach-sign file",
+    "keywords": ["sign", "detached", "ascii"],
+    "description": "Creates an ASCII armored detached signature.",
+    "link": "#basic-signing",
+    "validated": true
+  },
+  {
+    "name": "Sign and Encrypt File",
+    "command": "gpg --sign --encrypt --recipient user-id file",
+    "keywords": ["sign", "encrypt", "file"],
+    "description": "Signs and encrypts a file in one step.",
+    "link": "#basic-signing",
+    "validated": true
+  },
+  {
+    "name": "Verify Signature",
+    "command": "gpg --verify signature.asc",
+    "keywords": ["verify", "signature"],
+    "description": "Verifies a signature.",
+    "link": "#signature-verification",
+    "validated": true
+  },
+  {
+    "name": "Verify Detached Signature",
+    "command": "gpg --verify signature.asc original-file",
+    "keywords": ["verify", "signature", "detached"],
+    "description": "Verifies a detached signature.",
+    "link": "#signature-verification",
+    "validated": true
+  },
+  {
+    "name": "Verify and Decrypt Signed File",
+    "command": "gpg --decrypt signed-encrypted-file.gpg",
+    "keywords": ["verify", "decrypt", "file"],
+    "description": "Verifies and decrypts a signed, encrypted file.",
+    "link": "#signature-verification",
+    "validated": true
+  },
+  {
+    "name": "Fetch Key Using WKD",
+    "command": "gpg --locate-keys user@example.com",
+    "keywords": ["wkd", "key", "fetch"],
+    "description": "Fetches a key using WKD.",
+    "link": "#basic-wkd-usage",
+    "validated": true
+  },
+  {
+    "name": "Fetch and Import Keys Using WKD",
+    "command": "gpg --auto-key-locate wkd --locate-keys user1@example.com user2@example.org",
+    "keywords": ["wkd", "key", "fetch", "import"],
+    "description": "Fetches and imports keys for multiple email addresses using WKD.",
+    "link": "#basic-wkd-usage",
+    "validated": true
+  },
+  {
+    "name": "Create Web Key Directory Structure",
+    "command": "gpg -k --with-wkd user@example.com",
+    "keywords": ["wkd", "create", "directory"],
+    "description": "Creates a Web Key Directory structure.",
+    "link": "#wkd-server-setup",
+    "validated": true
+  },
+    {
+    "name": "Use a specific keyserver",
+    "command": "gpg --keyserver hkps://keys.openpgp.org --search-keys user@example.com",
+    "keywords": ["keyserver", "search"],
+    "description": "Use a specific keyserver for key operations.",
+    "link": "#keyserver-configuration",
+    "validated": true
+  }
+]
