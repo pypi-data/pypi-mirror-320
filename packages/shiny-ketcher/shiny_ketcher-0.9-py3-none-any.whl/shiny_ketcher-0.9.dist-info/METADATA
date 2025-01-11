@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: shiny_ketcher
+Version: 0.9
+Summary: Ketcher React output binding and message handlers for Shiny for Python.
+Author-email: Alexander Craig <amcraigpnw@gmail.com>
+Project-URL: Homepage, https://github.com/amcraig/shiny_ketcher
+Project-URL: Issues, https://github.com/amcraig/shiny_ketcher/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: shiny>=0.6.0
