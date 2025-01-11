@@ -1,0 +1,48 @@
+# Shapely3D
+
+* **简介**   
+基于shapely1.8.1的三维矢量表达和空间计算
+
+
+* **安装方式**
+    ```
+    ## python version >= 3.8
+    pip install shapely3d
+    ```
+
+* **使用方式**
+    ```
+    ## 几何实例类
+    from shapely3d import Point3D as Point, LineString3D as LineString, Polygon3D as Polygon
+    ## 空间计算类
+    from shapely3d import wkt3D, ops3D, affinity3D
+    ```
+
+
+* **空间计算**  
+    二维三维转换  
+    `ops3d.trans_3d_2d / ops3d.trans_2d_3d / ops3d.judge_2d_3d`  
+    三维实体表征  
+    `Point3D(0,0,0) / LineString3D([[0,0,0],[1,1,0]])`  
+    三维度量运算  
+    `ops3D_smp.distance_point_point / ops3D_smp.points_line_distance`  
+    三维关系运算  
+    `point_1.intersects(line_1) / ops3D.unary_union`  
+    三维仿射运算  
+    `affinity3D.rotate / affinity3D.scale`  
+    三维插值运算  
+    `ops3D.substring / ops3D.interpolate` 
+
+
+* **依赖库**  
+    `numpy, numba, shapely==1.8.1` 
+
+
+* **更新记录**
+  * v1.4.2：修正intersection_np算法，适配两线段恰好头尾相连的情况
+  * v1.4.1：修正intersection_np算法，适配两线段平行且重叠的情况
+  * v1.4：修正difference
+  * v1.3：更新setup.py
+  * v1.2：更新README
+  * v1.1：新增simplify、difference的三维实现，优化intersection_np
+  * v1.0：初始提交
