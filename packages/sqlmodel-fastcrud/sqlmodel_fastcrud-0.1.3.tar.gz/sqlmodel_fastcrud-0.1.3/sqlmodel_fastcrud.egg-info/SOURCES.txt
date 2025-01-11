@@ -1,0 +1,11 @@
+README.md
+setup.py
+sqlmodel-fastcrud/__init__.py
+sqlmodel-fastcrud/base_crud.py
+sqlmodel-fastcrud/base_filter.py
+sqlmodel-fastcrud/exceptions.py
+sqlmodel_fastcrud.egg-info/PKG-INFO
+sqlmodel_fastcrud.egg-info/SOURCES.txt
+sqlmodel_fastcrud.egg-info/dependency_links.txt
+sqlmodel_fastcrud.egg-info/requires.txt
+sqlmodel_fastcrud.egg-info/top_level.txt
