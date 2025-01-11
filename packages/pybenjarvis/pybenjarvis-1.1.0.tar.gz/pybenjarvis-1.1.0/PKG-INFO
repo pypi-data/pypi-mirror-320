@@ -1,0 +1,32 @@
+Metadata-Version: 2.2
+Name: pybenjarvis
+Version: 1.1.0
+Summary: PyBEN jarvis getter
+Home-page: https://github.com/DarkFlameBEN/pybenjarvis.git
+Author: Ben Moskovitch
+Author-email: "Ben Moskovitch" <darkflameben@gmail.com>
+Classifier: Development Status :: 6 - Mature
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >3
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# pybenjarvis
+Helper Internal Module to get and run Jarvis.py (Will only operate inside the internal network)
