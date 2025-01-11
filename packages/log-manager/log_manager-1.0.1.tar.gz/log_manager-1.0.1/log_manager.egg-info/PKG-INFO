@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: log-manager
+Version: 1.0.1
+Summary: A Python logging utility for reporting via screen, text file or SharePoint List
+Author-email: Jon Hart <hartjc@gmail.com>
+Project-URL: Source Code, https://github.com/jc-hart/log-manager
+Project-URL: Bug Tracker, https://github.com/jc-hart/log-manager/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: simple-stop-watch-utility<3.0,>=2.0
+
+# Python Log Manager
+## log-manager
+A Python logging utility, which allow custom messages to be displayed on screen, saved to a text file, or added to a SharePoint List, at any point while the Python application is running.
+Log messages can be timestamped if required.

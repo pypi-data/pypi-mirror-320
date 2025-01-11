@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+log_manager/__init__.py
+log_manager/main.py
+log_manager.egg-info/PKG-INFO
+log_manager.egg-info/SOURCES.txt
+log_manager.egg-info/dependency_links.txt
+log_manager.egg-info/requires.txt
+log_manager.egg-info/top_level.txt

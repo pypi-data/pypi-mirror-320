@@ -1,0 +1,1 @@
+simple-stop-watch-utility<3.0,>=2.0

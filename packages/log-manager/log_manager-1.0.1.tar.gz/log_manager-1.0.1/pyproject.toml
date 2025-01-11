@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "log-manager"
+version = "1.0.1"
+description = "A Python logging utility for reporting via screen, text file or SharePoint List"
+authors = [
+  { name="Jon Hart", email="hartjc@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: Microsoft :: Windows",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)"
+]
+
+dependencies = [
+  "simple-stop-watch-utility >=2.0,<3.0"
+]
+
+[project.urls]
+"Source Code" = "https://github.com/jc-hart/log-manager"
+"Bug Tracker" = "https://github.com/jc-hart/log-manager/issues"
