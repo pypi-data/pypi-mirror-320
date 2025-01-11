@@ -1,0 +1,10 @@
+bronx
+footprints
+taylorism
+tomli
+arpifs_listings
+
+[dev]
+sphinx
+sphinx-book-theme
+sphinx-copybutton
