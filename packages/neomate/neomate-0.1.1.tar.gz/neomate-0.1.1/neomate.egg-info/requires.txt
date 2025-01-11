@@ -1,0 +1,11 @@
+neo4j-driver>=4.4.0
+colorlog>=6.7.0
+
+[:python_version < "3.7"]
+dataclasses
+
+[dev]
+pytest>=7.0.0
+pytest-mock>=3.10.0
+black
+flake8
