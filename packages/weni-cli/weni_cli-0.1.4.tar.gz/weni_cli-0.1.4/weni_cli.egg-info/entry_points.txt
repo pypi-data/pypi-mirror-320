@@ -1,0 +1,2 @@
+[console_scripts]
+weni = weni_cli.cli:cli
