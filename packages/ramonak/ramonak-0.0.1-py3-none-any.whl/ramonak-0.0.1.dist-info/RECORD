@@ -1,0 +1,11 @@
+ramonak/__about__.py,sha256=ry5O5SW74ugwOUMKSV2_LbWjYa8B0IEvUm7S-lHPA2c,23
+ramonak/__init__.py,sha256=vSvM4K74DF0owGOKLYTTqFTMadEG83URNhaLewKXfRk,539
+ramonak/flextract.py,sha256=9eChtUaFB1N-L0xLuSk8b_v_o1ACVI4NEfG07pgoYvs,3241
+ramonak/interactive.py,sha256=8-g763OJWtAhDA6qB1PUGXuVhGnFG877AtkFTJcr7VA,153
+ramonak/utils.py,sha256=8Kwow9WR8fmTWtx7wiYV7m82CsXLepHqzmQRJm1SytY,209
+ramonak/packages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ramonak/packages/actions.py,sha256=XdwKhnjSZD8q3ht8YMG-gpEMJkZJPgeZLDIgG459ScA,1615
+ramonak-0.0.1.dist-info/METADATA,sha256=M_VLd5tYe2cVKwV01zvD3v1i3HsExTJEdtbV0VW28wg,1525
+ramonak-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ramonak-0.0.1.dist-info/licenses/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+ramonak-0.0.1.dist-info/RECORD,,
