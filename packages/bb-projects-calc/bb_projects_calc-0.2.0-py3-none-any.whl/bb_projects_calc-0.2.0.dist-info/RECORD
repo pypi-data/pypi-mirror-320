@@ -1,0 +1,9 @@
+bb_projects_calc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bb_projects_calc/action/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bb_projects_calc/action/add_action.py,sha256=PbPcnn9MdLIzfD8eRN133ZMCdvFKUovszCmcUITnBTI,196
+bb_projects_calc/action/mul_action.py,sha256=bBvZZr1_Te_Lxsq9pvTyBySDkeQb0oDzHinNmK8dc2o,196
+bb_projects_calc/app.py,sha256=w9DivvBEcbzVDjIGjuuPfyuG7MBJuX9kYaw6d4z0r7w,88
+bb_projects_calc/operations.py,sha256=Ku40_c2cJdAdJbWvNlXd6j5ZqtPFjB6SAB5fWvQhHOw,180
+bb_projects_calc-0.2.0.dist-info/METADATA,sha256=LcmiqOJJGrTtVcFcYj3b_Itin9niGn-qLM4PpUBxjwI,423
+bb_projects_calc-0.2.0.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+bb_projects_calc-0.2.0.dist-info/RECORD,,
