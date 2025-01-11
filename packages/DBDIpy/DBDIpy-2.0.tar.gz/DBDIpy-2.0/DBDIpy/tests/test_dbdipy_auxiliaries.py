@@ -1,0 +1,1 @@
+import pytest#%%trigger input errorsdef test_input_format():    with pytest.raises(TypeError):        ##...        with pytest.raises(ValueError):          ##..
