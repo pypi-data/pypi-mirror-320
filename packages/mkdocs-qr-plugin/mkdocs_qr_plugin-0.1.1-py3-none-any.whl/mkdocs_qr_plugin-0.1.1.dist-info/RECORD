@@ -1,0 +1,11 @@
+mkdocs_qr_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mkdocs_qr_plugin/plugin.py,sha256=alGM2GJ2xW22uDeUdK2aQ9Ark-Prur5RurZdsZbjG7Y,1548
+mkdocs_qr_plugin/qr_image_generator.py,sha256=2EX_r2G6AAGxZH6NvGsb1Y4Y2Wrcw69ywEF51XdDZhA,2257
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_plugin.py,sha256=6yMOEUqXaWVNAO41dQ7GsDehd494c7SSOjCmuWz-9r0,3033
+mkdocs_qr_plugin-0.1.1.dist-info/LICENSE,sha256=UjJoSx9bvNxgt-4zXPhfD_0PS0HGYDbgUssBBzXUFDU,1077
+mkdocs_qr_plugin-0.1.1.dist-info/METADATA,sha256=UeK_akTynlHH0oBLfLOVX-TZ9aHeTC5GMpslQ5PYfH8,835
+mkdocs_qr_plugin-0.1.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+mkdocs_qr_plugin-0.1.1.dist-info/entry_points.txt,sha256=G6On0srx2_rL8fxtQ7X-5X_jE7beayD_cpY3EqtsB0E,55
+mkdocs_qr_plugin-0.1.1.dist-info/top_level.txt,sha256=RIX1KrAk1qb4Liqc8KMvHKZcZcKrjpBlvNFd5dO0B8o,23
+mkdocs_qr_plugin-0.1.1.dist-info/RECORD,,
