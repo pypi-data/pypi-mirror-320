@@ -1,0 +1,88 @@
+Metadata-Version: 2.3
+Name: bubop
+Version: 0.2.1
+Summary: Bergercookie's Useful Bits Of Python
+Home-page: https://github.com/bergercookie/bubop
+License: MIT
+Keywords: utilities,utils
+Author: Nikos Koukis
+Author-email: nickkouk@gmail.com
+Requires-Python: >=3.10.0,<3.13
+Classifier: Framework :: Pytest
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Utilities
+Provides-Extra: dev
+Provides-Extra: docs
+Requires-Dist: PyYAML (>=6.0.2,<6.1.0)
+Requires-Dist: black (>=24.10.0,<25.0.0) ; extra == "dev"
+Requires-Dist: check-jsonschema (>=0.31.0,<0.32.0) ; extra == "dev"
+Requires-Dist: click (>=8.1.8,<9.0.0)
+Requires-Dist: coverage (>=7.6.10,<8.0.0) ; extra == "dev"
+Requires-Dist: coveralls (>=4.0.1,<5.0.0) ; extra == "dev"
+Requires-Dist: identify (>=2.6.5,<3.0.0) ; extra == "dev"
+Requires-Dist: isort (>=5.13.2,<6.0.0) ; extra == "dev"
+Requires-Dist: loguru (>=0.7.3,<0.8.0)
+Requires-Dist: mock (>=5.1.0,<6.0.0) ; extra == "dev"
+Requires-Dist: mypy (>=1.14.1,<2.0.0) ; extra == "dev"
+Requires-Dist: pdbpp (>=0.10.3,<0.11.0) ; extra == "dev"
+Requires-Dist: pre-commit (>=4.0.1,<5.0.0) ; extra == "dev"
+Requires-Dist: pyfakefs (>=5.7.3,<6.0.0) ; extra == "dev"
+Requires-Dist: pylint (>=3.3.3,<4.0.0) ; extra == "dev"
+Requires-Dist: pyright (>=1.1.391,<2.0.0) ; extra == "dev"
+Requires-Dist: pytest (>=8.3.4,<9.0.0) ; extra == "dev"
+Requires-Dist: python-dateutil (>=2.9.0.post0,<3.0.0)
+Requires-Dist: pyupgrade (>=3.19.1,<4.0.0) ; extra == "dev"
+Requires-Dist: sphinx (>=8.1.3,<9.0.0) ; extra == "docs"
+Requires-Dist: sphinx-copybutton (>=0.5.2,<0.6.0) ; extra == "docs"
+Requires-Dist: sphinx-rtd-theme (>=3.0.2,<4.0.0) ; extra == "docs"
+Requires-Dist: sphinxcontrib-spelling (>=8.0.1,<9.0.0) ; extra == "docs"
+Requires-Dist: tqdm (>=4.67.1,<5.0.0)
+Requires-Dist: types-PyYAML (>=6.0.12.20241230,<7.0.0.0) ; extra == "dev"
+Requires-Dist: types-python-dateutil (>=2.9.0.20241206,<3.0.0.0) ; extra == "dev"
+Project-URL: Repository, https://github.com/bergercookie/bubop
+Description-Content-Type: text/markdown
+
+# bubop - Bergercookie's Useful Bits Of Python
+
+<a href="https://github.com/bergercookie/bubop/actions" alt="CI">
+<img src="https://github.com/bergercookie/bubop/actions/workflows/ci.yml/badge.svg" /></a>
+<a href="https://github.com/pre-commit/pre-commit">
+<img src="https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white" alt="pre-commit"></a>
+
+<a href='https://coveralls.io/github/bergercookie/bubop?branch=master'>
+<img src='https://coveralls.io/repos/github/bergercookie/bubop/badge.svg?branch=master' alt='Coverage Status' /></a>
+<a href="https://github.com/bergercookie/bubop/blob/master/LICENSE.md" alt="LICENSE">
+<img src="https://img.shields.io/github/license/bergercookie/bubop.svg" /></a>
+<a href="https://pypi.org/project/bubop/" alt="pypi">
+<img src="https://img.shields.io/pypi/pyversions/bubop.svg" /></a>
+<a href="https://badge.fury.io/py/bubop">
+<img src="https://badge.fury.io/py/bubop.svg" alt="PyPI version" height="18"></a>
+<a href="https://pepy.tech/project/bubop">
+<img alt="Downloads" src="https://pepy.tech/badge/bubop"></a>
+<a href="https://github.com/psf/black">
+<img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
+
+## Description
+
+This is a collection of python utilities that I seem to be re-writing again and
+again in all new python projects of mine.
+
+## Installation
+
+Just install this with pip:
+
+```sh
+pip install --user bubop
+
+# Or via poetry as a dependency
+poetry add bubop
+```
+

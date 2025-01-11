@@ -1,0 +1,155 @@
+[tool.poetry]
+name = "bubop"
+version = "0.2.1"
+description = "Bergercookie's Useful Bits Of Python"
+authors = ["Nikos Koukis <nickkouk@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/bergercookie/bubop"
+repository = "https://github.com/bergercookie/bubop"
+include = ["bubop/py.typed"]
+classifiers = [
+  "Framework :: Pytest",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: Unix",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python",
+  "Topic :: Utilities",
+]
+
+keywords = ["utilities", "utils"]
+
+# end-user dependencies --------------------------------------------------------
+[tool.poetry.dependencies]
+python = ">=3.10.0,<3.13"
+loguru = "^0.7.3"
+tqdm = "^4.67.1"
+python-dateutil = "^2.9.0.post0"
+PyYAML = "~6.0.2"
+click = { version = "^8.1.8", optional = true }
+
+# docs dependencies
+sphinx = { version = "^8.1.3", optional = true }
+sphinx-rtd-theme = { version = "^3.0.2", optional = true }
+sphinx-copybutton = { version = "^0.5.2", optional = true }
+sphinxcontrib-spelling = { version = "^8.0.1", optional = true }
+
+# dev dependencies
+black = { version = "^24.10.0", optional = true }
+identify = { version = "^2.6.5", optional = true }
+isort = { version = "^5.13.2", optional = true }
+mock = { version = "^5.1.0", optional = true }
+mypy = { version = "^1.14.1", optional = true }
+pdbpp = { version = "^0.10.3", optional = true }
+pre-commit = { version = "^4.0.1", optional = true }
+pyfakefs = { version = "^5.7.3", optional = true }
+pylint = { version = "^3.3.3", optional = true }
+pyright = { version = "^1.1.391", optional = true }
+pytest = { version = "^8.3.4", optional = true }
+types-PyYAML = { version = "^6.0.12.20241230", optional = true }
+types-python-dateutil = { version = "^2.9.0.20241206", optional = true }
+coverage = { version = "^7.6.10", optional = true }
+coveralls = { version = "^4.0.1", optional = true }
+check-jsonschema = { version = "^0.31.0", optional = true }
+pyupgrade = { version = "^3.19.1", optional = true }
+
+[tool.poetry.extras]
+docs = [
+  "sphinx",
+  "sphinx-rtd-theme",
+  "sphinx-copybutton",
+  "sphinxcontrib-spelling",
+]
+
+dev = [
+  "black",
+  "identify",
+  "isort",
+  "mock",
+  "mypy",
+  "pdbpp",
+  "pre-commit",
+  "pyfakefs",
+  "pylint",
+  "pyright",
+  "pytest",
+  "types-PyYAML",
+  "types-python-dateutil",
+  "coverage",
+  "coveralls",
+  "check-jsonschema",
+  "pyupgrade",
+]
+
+
+# isort ------------------------------------------------------------------------
+[tool.isort]
+include_trailing_comma = true
+line_length = 95
+multi_line_output = 3
+profile = "black"
+
+# black ------------------------------------------------------------------------
+[tool.black]
+preview = true
+line-length = 95
+target-version = ['py38', 'py39']
+include = '\.pyi?$'
+
+# mypy -------------------------------------------------------------------------
+[tool.mypy]
+warn_return_any = true
+warn_unused_configs = true
+
+[[tool.mypy.overrides]]
+module = ["tqdm", "pytest", "pexpect"]
+ignore_missing_imports = true
+
+# pylint -----------------------------------------------------------------------
+[tool.pylint]
+[tool.pylint.master]
+persistent = "yes"
+suggestion-mode = "yes"
+unsafe-load-any-extension = "no"
+ignore = "VCS"
+
+[tool.pylint.messages_control]
+disable = "C0103,W0613,R1720,R1705,W0104,C0301"
+
+[tool.pylint.refactoring]
+max-nested-blocks = 5
+never-returning-functions = "sys.exit,argparse.parse_error"
+
+[tool.pylint.similarities]
+ignore-comments = "yes"
+ignore-docstrings = "no"
+ignore-imports = "yes"
+# ignore-signatures=no
+min-similarity-lines = 4
+
+[tool.pylint.format]
+max-line-length = 95
+max-module-lines = 500
+
+[tool.pylint.string]
+check-quote-consistency = "yes"
+
+# pyright ----------------------------------------------------------------------
+[tool.pyright]
+reportMissingImports = true
+reportMissingTypeStubs = false
+pythonVersion = "3.10"
+pythonPlatform = "Linux"
+
+# pytest -----------------------------------------------------------------------
+[tool.pytest.ini_options]
+addopts = "--ignore=quickstart* --doctest-modules"
+
+# build-system -----------------------------------------------------------------
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
