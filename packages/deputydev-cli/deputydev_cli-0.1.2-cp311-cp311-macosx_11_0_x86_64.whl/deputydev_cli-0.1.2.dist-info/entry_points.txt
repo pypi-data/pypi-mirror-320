@@ -1,0 +1,2 @@
+[console_scripts]
+deputydev-cli = app.main.blueprints.deputydev_cli.app.ui.main:run_main
