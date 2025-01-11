@@ -1,0 +1,7 @@
+attrs
+PyQt6
+requests
+pytz
+tabulate
+typing-extensions
+zig-minesolver<0.2,>=0.1.1

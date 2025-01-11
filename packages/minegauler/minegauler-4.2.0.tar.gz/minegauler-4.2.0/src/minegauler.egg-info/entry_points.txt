@@ -1,0 +1,5 @@
+[console_scripts]
+minegauler-bot = minegauler.bot.__main__:main
+
+[gui_scripts]
+minegauler = minegauler.app.__main__:main
