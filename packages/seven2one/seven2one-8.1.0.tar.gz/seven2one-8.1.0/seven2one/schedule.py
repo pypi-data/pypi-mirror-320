@@ -1,0 +1,377 @@
+from uuid import uuid4
+import pandas as pd
+from datetime import datetime, timedelta
+from loguru import logger
+import pytz
+from .utils.ut import Utils
+from .utils.ut_auth import AuthData
+
+
+class Schedule():
+    def __init__(self, endpoint: str, client: object, auth_data: AuthData) -> None:
+
+        self.raiseException = client.raiseException
+        self.defaults = client.defaults
+        self.auth_data = auth_data
+        self.endpoint = endpoint
+        self.proxies = client.proxies
+
+    def getVersion(self):
+        """
+        Returns name and version of the responsible micro service
+        """
+
+        return Utils._getServiceVersion(self, 'schedule')
+
+    def _resolve_where(self, where: str):
+        resolvedFilter = ''
+        if where != None:
+            resolvedFilter = f'{Utils._resolveWhere(self, where)["topLevel"]}'
+
+        return resolvedFilter
+
+    def schedules(
+            self,
+            workflowId: str = None,
+            fields: list = None,
+            where: str = None,
+            fireTimeOffset: str = None) -> pd.DataFrame:
+        """
+        Returns schedules in a DataFrame
+
+        Parameters:
+        -----------
+        workflowId: str = None
+            The ID of the workflow to query schedules for. If None, all schedules will be queried.
+        fields: list | str = None
+            A list of all properties to be queried. If None, all properties will be queried.
+        where: str = None
+            Use a string to add where criteria like
+            ''workflowId eq "meteoData"'.
+        fireTimeOffset: str = None
+            Use the fire time offset in ISO format to obtain the next fireTime after the specified time.
+
+        Example:
+        --------
+        >>> Schedule.schedules(
+                where='workflowId eq "meteoData"', 
+                fields=['name', 'cron', 'timeZone'],
+                fireTimeOffset=datetime(2024, 11, 21)
+            )   
+        """
+
+        key = 'schedules'
+
+        if fields != None:
+            if type(fields) != list:
+                fields = [fields]
+            _fields = Utils._queryFields(fields, recursive=True)
+        else:
+            _fields = f'''
+                scheduleId
+                name
+                description
+                workflowId
+                businessKey
+                cron
+                timeZone
+                isActive
+                nextFireTime
+                fireTimeAfterNext
+                variables {{
+                    key
+                    value
+                }}'''
+
+        if workflowId != None:
+            _workflowId = f'workflowId: "{workflowId}"'
+        else:
+            _workflowId = ''
+
+        if fireTimeOffset != None:
+            _fireTimeOffset = f'fireTimeOffset: "{fireTimeOffset}"'
+        else:
+            _fireTimeOffset = ''
+        
+        resolvedFilter = ''
+        if where != None:
+            resolvedFilter = self._resolve_where(where)
+
+        # Ensure proper formatting of the GraphQL query
+        parameters = ', '.join(filter(None, [_workflowId, _fireTimeOffset, resolvedFilter]))
+        if parameters:
+            parameters = f'({parameters})'
+
+        graphQLString = f'''query schedules {{
+            {key}{parameters} {{
+            {_fields}
+            }}
+        }}
+        '''
+        result = Utils._executeGraphQL(self, graphQLString)
+        if result == None:
+            return
+
+        df = pd.json_normalize(result[key])
+        return df
+
+    def createSchedule(self, name: str, workflowId: str, businessKey: str, cron: str,
+                       isActive: bool = True, description: str = None, variables: dict = None, timeZone: str = None) -> str:
+        """Creates a schedule and returns the schedule Id"""
+
+        correlationId = str(uuid4())
+        with logger.contextualize(correlation_id=correlationId):
+
+            if isActive == True:
+                isActive = 'true'
+            else:
+                isActive = 'false'
+
+            if description != None:
+                description = description
+            else:
+                description = ''
+
+            if timeZone == None:
+                timeZone = ''
+
+            if variables != None:
+                _variables = 'variables: [\n'
+                for k, v in variables.items():
+                    _variables += f'{{key: "{k}", value: "{v}"}}\n'
+                _variables += ']'
+            else:
+                _variables = ''
+
+            graphQLString = f'''mutation createSchedule {{
+                createSchedule(input:{{
+                    name: "{name}"
+                    workflowId: "{workflowId}"
+                    businessKey: "{businessKey}"
+                    cron: "{cron}"
+                    timeZone: "{timeZone}"
+                    description: "{description}"
+                    isActive: {isActive}
+                    {_variables}      
+                }})
+                {{
+                    schedule {{
+                        scheduleId
+                    }}
+                    errors {{
+                        message
+                    }}
+                }}
+            }}'''
+
+            result = Utils._executeGraphQL(self, graphQLString, correlationId)
+            logger.debug(graphQLString)
+            if result == None:
+                return
+
+            key = 'createSchedule'
+            if result[key]['errors']:
+                Utils._listGraphQlErrors(result, key)
+            else:
+                scheduleId = result[key]['schedule']['scheduleId']
+                logger.info(f"New schedule {scheduleId} created.")
+
+            return scheduleId
+
+    def updateSchedule(self, scheduleId, name: str = None, workflowId: str = None, businessKey: str = None,
+                       cron: str = None, isActive: bool = None, description: str = None, variables: dict = None, timeZone: str = None) -> None:
+        """
+        Updates a schedule. Only arguments that ar not None will overwrite respective fields.
+
+        Parameters:
+        -----------
+        scheduleId : str
+            The Id of the schedule that is to be updated.
+        name : str
+            The name of the schedule.
+        workflowId : str
+            The Id of the workflow that shall be executed with this schedule.
+        cron : str
+            The cron expression. For detailed information loop up
+            http://www.quartz-scheduler.org/documentation/quartz-2.3.0/tutorials/crontrigger.html
+        isActive : bool
+            Determines, if the schedule should execute the workflow or not.
+        description : str
+            A description of the schedule.
+        variables : dict
+            A dictionary of variables that are used by tasks in the workflow.
+        timeZone : str
+            IANA time zone Id the schedule cron is evaluated in. If empty the installed default is used.
+            e.g. 'Europe/Berlin', 'UTC'
+
+        Example:
+        --------
+        >>> vars = {
+                'var1': 99,
+                'var2': "AnyString"
+            }
+        >>> client.Scheduler.updateSchedule('112880211090997248', name='test_schedule',
+                isActive=True, variables=vars)
+
+        """
+
+        correlationId = str(uuid4())
+        with logger.contextualize(correlation_id=correlationId):
+
+            updateScheduleArgs = ''
+
+            if name != None:
+                updateScheduleArgs += f'name: "{name}"\n'
+            if workflowId != None:
+                updateScheduleArgs += f'workflowId: "{workflowId}"\n'
+            if businessKey != None:
+                updateScheduleArgs += f'businessKey: "{businessKey}"\n'
+            if cron != None:
+                updateScheduleArgs += f'cron: "{cron}"\n'
+            if isActive != None:
+                updateScheduleArgs += f'isActive: {str(isActive).lower()}\n'
+            if description != None:
+                updateScheduleArgs += f'description: "{description}"\n'
+            if timeZone != None:
+                updateScheduleArgs += f'timeZone: "{timeZone}"\n'
+
+            if variables != None:
+                _variables = 'variables: [\n'
+                for k, v in variables.items():
+                    _variables += f'{{key: "{k}", value: "{v}"}}\n'
+                _variables += ']'
+                updateScheduleArgs += _variables
+
+            graphQLString = f'''mutation updateSchedule {{
+                updateSchedule(
+                    scheduleId: "{scheduleId}"
+                    input:{{
+                        {updateScheduleArgs}
+                }})
+                {{
+                    errors {{
+                        message
+                    }}
+                }}
+            }}'''
+
+            result = Utils._executeGraphQL(self, graphQLString, correlationId)
+            logger.debug(graphQLString)
+            if result == None:
+                return
+
+            key = 'updateSchedule'
+            if result[key]['errors']:
+                Utils._listGraphQlErrors(result, key)
+            else:
+                logger.info(f"Schedule {scheduleId} updated.")
+
+            return
+
+    def deleteSchedule(self, scheduleId: str, force: bool = False):
+        """Deletes a schedule"""
+
+        if force == False:
+            confirm = input(f"Press 'y' to delete schedule '{scheduleId}': ")
+
+        graphQLString = f'''mutation deleteSchedule {{
+            deleteSchedule (scheduleId: "{scheduleId}")
+            {{
+                errors {{
+                message
+                }}
+            }}
+        }}
+        '''
+
+        if force == True:
+            confirm = 'y'
+        if confirm == 'y':
+            result = Utils._executeGraphQL(self, graphQLString)
+            if result == None:
+                return
+
+            key = 'deleteSchedule'
+            if result[key]['errors']:
+                Utils._listGraphQlErrors(result, key)
+            else:
+                logger.info(f"Schedule {scheduleId} deleted")
+                return None
+
+    def nextFireTimes(self, workflowIds: list = None, businessKeys: list = None, fromTimepoint: str = None, 
+                      toTimepoint: str = None, count: int = None):
+        
+        """
+        Show next fire times of a workflow. Returns a DataFrame with the schedule ID and fire time.
+
+        Parameters:
+        -----------
+        workflowIds: list| str = None
+            List of workflow IDs to query the next fire times for. If None, all workflow IDs will be queried.
+        businessKeys: list| str = None
+            List of business keys to query the next fire times for. If None, all business keys will be queried.
+        fromTimepoint: str = None
+            The starting timepoint for the query in ISO format. Defaults to the current time.
+        toTimepoint: str = None
+            The ending timepoint for the query in ISO format. Defaults to three days from the current time.
+        count: int = None
+            The number of fire times to retrieve. If None, then there is limit to the quantity.
+
+        Example:
+        --------
+        >>> client.Schedule.nextFireTimes(workflowIds=['112880211090997248', '112880211090997249], businessKeys=['key1', 'key2'],
+            fromTimepoint='2022-01-01T00:00:00Z', toTimepoint='2022-01-02T00:00:00Z', count=10)
+        """
+        
+        key = 'nextFireTimes'
+
+        _fields = f'''
+            scheduleId
+            fireTime
+        '''
+
+        if workflowIds != None:
+            _workflowIds = f'workflowIds: {Utils._graphQLList(workflowIds)}'
+        else:
+            _workflowIds = ''
+
+        if businessKeys != None:
+            _businessKeys = f'businessKeys: {Utils._graphQLList(businessKeys)}'
+        else:
+            _businessKeys = ''
+
+        if fromTimepoint != None:
+            _fromTimepoint = f'from: "{fromTimepoint}"'
+        else:
+            _fromTimepoint = ''
+
+        if toTimepoint != None:
+            _toTimepoint = f'to: "{toTimepoint}"'
+        else:
+            _toTimepoint = ''
+        
+        if count != None:
+            _count = f'count: {count}'
+        else:
+            _count = ''
+
+        #Ensure proper formatting of the GraphQL query
+        parameters = ', '.join(filter(None, [_workflowIds, _businessKeys, _fromTimepoint,
+                                            _toTimepoint, _count]))
+        if parameters:
+            parameters = f'({parameters})'
+        
+        graphQLString = f'''query nextFireTimes {{
+            {key}{parameters} {{
+                {_fields}
+            }}
+        }}
+        '''
+
+        result = Utils._executeGraphQL(self, graphQLString)
+        if result == None:
+            return
+
+        df = pd.json_normalize(result['nextFireTimes'])
+
+        return df
