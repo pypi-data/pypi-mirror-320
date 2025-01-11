@@ -1,0 +1,73 @@
+Metadata-Version: 2.4
+Name: pipeline_ui
+Version: 0.0.3
+Summary: The best way to build AI pipelines
+Project-URL: Homepage, https://github.com/specialbottle/pipeline_ui
+Project-URL: Bug Tracker, https://github.com/specialbottle/pipeline_ui/issues
+Author-email: Special Bottle <specialbottle@pipelineui.com>
+Requires-Python: >=3.10
+Requires-Dist: aiohttp>=3.10.10
+Requires-Dist: devtools>=0.12.2
+Requires-Dist: fastapi[all]>=0.115.0
+Requires-Dist: gitpython>=3.1.43
+Requires-Dist: pillow>=11.0.0
+Requires-Dist: pynput>=1.7.6
+Requires-Dist: pytest>=8.3.3
+Requires-Dist: questionary>=2.0.1
+Requires-Dist: requests>=2.32.3
+Requires-Dist: toml>=0.10.2
+Requires-Dist: typer>=0.12.5
+Requires-Dist: watchfiles>=0.24.0
+Provides-Extra: dev
+Requires-Dist: bumpver; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: diffusers>=0.20.0; extra == 'test'
+Requires-Dist: pillow>=11.0.0; extra == 'test'
+Requires-Dist: pytest>=8.3.3; extra == 'test'
+Requires-Dist: torch>=2.4.1; extra == 'test'
+Description-Content-Type: text/markdown
+
+# PipelineUI
+PipelineUI is a python package that allow you to create your own comfyui style backend for your ML code.
+
+with pipelineUI we expose two new decorator that can be added to your python project to create graphical interface.
+
+# how to install
+
+`pip install pipeline-ui`
+
+locally
+`git clone`
+`uv pip install -e .`
+
+# Here is an example
+
+create a example.py file
+
+python
+```
+from pipeline_ui import PipelineUI
+
+pui = PipelineUI()
+
+@pui.node()
+def add_numbers(a: int, b: int) -> int:
+    return a + b
+
+@pui.node()
+def multiply(a: int, b: int) -> int:
+    return a + b
+
+@pui.workflow()
+def math_workflow(a: int, b: int) -> int:
+    c = add_numbers(a, b)
+    d = multiply(c, d)
+    return d
+```
+start with `python example.py` this start an web interface at localhost:8114
+where you can see your code graphically
+
+# commands
+pui start pipeline_ui/examples/simple.py
+
+pui publish pipeline_ui/examples/simple.py

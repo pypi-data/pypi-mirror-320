@@ -1,0 +1,3 @@
+[console_scripts]
+pipeline-ui = pipeline_ui:app
+pui = pipeline_ui:app
