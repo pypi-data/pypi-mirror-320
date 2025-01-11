@@ -1,0 +1,4 @@
+[console_scripts]
+watchsync=watchsync.__main__:main
+watchsyncd=watchsync.daemon.watchsyncd:main
+
