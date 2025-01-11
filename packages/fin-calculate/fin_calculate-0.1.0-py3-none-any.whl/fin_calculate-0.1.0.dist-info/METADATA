@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fin-calculate
+Version: 0.1.0
+Summary: For Numerical methods only so yet
+Home-page: https://github.com/Ju1ceL0ver/fin_calculate.git
+Author: Aleksei Zagorskii
+Author-email: zagorskii.aleksei.2004@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+What to write...
