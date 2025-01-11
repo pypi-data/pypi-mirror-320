@@ -1,0 +1,28 @@
+Metadata-Version: 2.2
+Name: gwenflow
+Version: 0.4.2
+Summary: A framework for orchestrating applications powered by autonomous AI agents and LLMs.
+Home-page: https://github.com/gwenlake/gwenflow
+Author: The Gwenlake Team
+Author-email: info@gwenlake.com
+Requires-Python: >=3.11
+License-File: LICENSE
+Requires-Dist: httpx
+Requires-Dist: pydantic
+Requires-Dist: tqdm
+Requires-Dist: pyyaml
+Requires-Dist: beautifulsoup4
+Requires-Dist: fsspec
+Requires-Dist: rich
+Requires-Dist: tiktoken
+Requires-Dist: openai
+Requires-Dist: langchain
+Requires-Dist: pyarrow
+Requires-Dist: lancedb
+Requires-Dist: qdrant-client
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
