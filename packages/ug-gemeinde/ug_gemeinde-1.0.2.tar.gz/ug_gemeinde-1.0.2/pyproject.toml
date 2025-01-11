@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ug_gemeinde"
+version = "1.0.2"
+description = "Adressverwaltung für Gemeinden"
+readme = "README.md"
+licence = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = [
+    "ugbib_divers",
+    "ugbib_modell",
+    "ugbib_tkinter",
+    "ugbib_werkzeug",
+    "Pillow",
+    "psycopg2-binary",
+    "PyYAML",
+]
+autors = [
+    {name = "Ulrich Goebel", email = "ulrich@fam-goebel.de"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ug_gemeinde"]
+
+[tool.setuptools]
+packages = ["ug_gemeinde"]
+
+[tool.setuptools.entry-points.console_scripts]
+Gemeinde = "gemeinde.Gemeinde:main"
