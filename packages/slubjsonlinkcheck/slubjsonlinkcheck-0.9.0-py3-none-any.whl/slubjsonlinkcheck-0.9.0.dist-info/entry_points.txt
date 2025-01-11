@@ -1,0 +1,2 @@
+[console_scripts]
+jsonlinkcheck = jsonlinkcheck.main:main
