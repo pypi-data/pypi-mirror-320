@@ -1,0 +1,21 @@
+Metadata-Version: 2.2
+Name: git_issue_reporter
+Version: 0.1.0
+Summary: A Django module to report issues directly to GitHub.
+Home-page: https://github.com/your_username/github_issue_reporter
+Author: Thimpu Sengyung
+Author-email: thmtymthm@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: django
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary

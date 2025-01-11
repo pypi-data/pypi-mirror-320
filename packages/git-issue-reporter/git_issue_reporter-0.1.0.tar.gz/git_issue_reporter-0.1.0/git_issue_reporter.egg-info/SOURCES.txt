@@ -1,0 +1,11 @@
+setup.py
+git_issue_reporter/__init__.py
+git_issue_reporter/apps.py
+git_issue_reporter/urls.py
+git_issue_reporter/views.py
+git_issue_reporter.egg-info/PKG-INFO
+git_issue_reporter.egg-info/SOURCES.txt
+git_issue_reporter.egg-info/dependency_links.txt
+git_issue_reporter.egg-info/requires.txt
+git_issue_reporter.egg-info/top_level.txt
+git_issue_reporter/templates/git_issue_reporter/report_issue.html
