@@ -1,0 +1,13 @@
+site_name: OpenSimula
+
+theme:
+    name: null
+    custom_dir: "docs/cinder"
+    logo: img/logo_opensimula.png
+
+nav:
+    - Home: index.md
+    - Getting started: getting_started.md
+    - User guide: user_guide.md
+    - Component list: component_list.md
+    - Developer guide: developer_guide.md
