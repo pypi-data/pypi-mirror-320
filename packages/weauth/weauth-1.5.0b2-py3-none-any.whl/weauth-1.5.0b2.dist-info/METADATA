@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: weauth
+Version: 1.5.0b2
+Summary: A python tool to managing your whitelist through WeChat. 使用微信公众号来管理MC服务器与注册白名单。
+Author: NearlyHeadlessJack
+Author-email: wang@rjack.cn
+License: GPLv3
+Project-URL: Homepage, https://github.com/TomatoCraftMC/WeAuth
+Project-URL: Documentation, https://github.com/TomatoCraftMC/WeAuth/blob/main/README.md
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Classifier: Framework :: Flask
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Flask >=3.0.3
+Requires-Dist: PyYAML >=6.0.1
+Requires-Dist: requests >=2.32.3
+Requires-Dist: rcon >=2.1.1
+Requires-Dist: tcping ==0.1.1rc1
+
+# WeAuth
+WeAuth is a bridge between WeChat Official Accounts and your Minecraft server.
+
+## Requirement
+
+Requires python >= 3.8
+
+```
+pip3 install -r requirements.txt
+```
+Your Minecraft server should've been installed with [MCManager](https://github.com/MCSManager/MCSManager).
+WeAuth uses the api of MCManager to connect with game server.
+
+Later on, WeAuth will support Rcon to connect Minecraft server.
+## Installation
+```
+pip3 install weauth
+```
+## Quick start
+```
+mkdir WeAuth
+cd WeAuth
+weauth
+```
+`config.yaml` and `ops.yaml` will be generated after first-time running.
+
+```commandline
+vi config.yaml
+```
+You can configure your WeChatDeveloper information and game server in `config.yaml`.
+```commandline
+vi ops.yaml
+```
+You should also fill in the IDs of In-Game admins in `ops.yaml`.
+For example:
+```commandline
+ops: [Zi_min, Pink_fish, jsdkj2m999]
+```
+After configuration, run WeAuth again.
+
+
+
+## WeChat Command
+### Add an ID into Whitelist
+```commandline
+#ID
+#Zi_min
+#bjwefbjw
+```
+### Send a Command
+```commandline
+@command
+@tell @a hello,world
+@give @a minecraft:torch 1
+```
+Only those whose ID in `ops.yaml` can use this function.
+
+## [Homepage](https://github.com/TomatoCraftMC/WeAuth)
+For more guide and 中文介绍.
