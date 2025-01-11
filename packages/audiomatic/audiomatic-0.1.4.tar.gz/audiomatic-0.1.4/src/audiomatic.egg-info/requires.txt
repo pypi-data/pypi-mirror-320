@@ -1,0 +1,4 @@
+filetype>=1.2.0
+imageio-ffmpeg>=0.5.1
+requests>=2.32.3
+urllib3<2.0.0
