@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mkdocs_qr_plugin/__init__.py
+mkdocs_qr_plugin/plugin.py
+mkdocs_qr_plugin/qr_image_generator.py
+mkdocs_qr_plugin.egg-info/PKG-INFO
+mkdocs_qr_plugin.egg-info/SOURCES.txt
+mkdocs_qr_plugin.egg-info/dependency_links.txt
+mkdocs_qr_plugin.egg-info/entry_points.txt
+mkdocs_qr_plugin.egg-info/requires.txt
+mkdocs_qr_plugin.egg-info/top_level.txt
+tests/__init__.py
+tests/test_plugin.py
