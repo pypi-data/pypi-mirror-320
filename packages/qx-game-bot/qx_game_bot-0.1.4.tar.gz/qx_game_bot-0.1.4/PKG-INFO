@@ -1,0 +1,89 @@
+Metadata-Version: 2.4
+Name: qx-game-bot
+Version: 0.1.4
+Summary: Add your description here
+Author-email: Yoki <yokiyuqian@gmail.com>
+Requires-Python: >=3.11
+Requires-Dist: mss>=10.0.0
+Requires-Dist: opencv-contrib-python>=4.10.0.84
+Requires-Dist: paddleocr>=2.9.1
+Requires-Dist: paddlepaddle>=2.6.2
+Requires-Dist: peewee>=3.17.8
+Requires-Dist: pydantic>=2.10.4
+Requires-Dist: pynput>=1.7.7
+Requires-Dist: setuptools>=75.8.0
+Description-Content-Type: text/markdown
+
+# qx-game-bot
+
+Mac, Linux, Windows 跨平台桌面端游戏脚本框架
+
+## 功能
+
+- 键鼠模拟 ✅
+- 键鼠录制 ✅
+  - sqlite 内存存储 ✅
+  - sqlite 数据库文件存储 ✅
+  - json 文件存储
+  - pickle 文件存储
+- 键鼠播放 ✅
+- 屏幕录制 ✅
+- 图色匹配 ✅
+- 文字 OCR 识别 ✅
+  - 屏幕 OCR ✅
+  - 图片 OCR ✅
+- 怪物检测
+- 目标跟踪
+- 多线程任务
+- 基于 web 的 GUI、中控
+
+(先画饼， 慢慢实现...)
+
+## 使用
+
+```py
+from qx_game_bot import QxGameBotFramework
+
+bot = QxGameBotFramework()
+
+# 按键模拟
+bot.delay(100).keyTap("enter").keyType("# Hello World")
+bot.keyPress("cmd").keyPress("shift").keyPress("left")
+bot.keyRelease("cmd").keyRelease("shift").keyRelease("left")
+bot.keyTapAll("cmd", "c")
+bot.keyTapAll("cmd", "enter")
+bot.keyTapAll("cmd", "v")
+bot.delay(1500)
+
+# 鼠标模拟
+# 双击左键 (100, 100)
+bot.mouseClick('left', x=100, y=100, count=2)
+# 移动到
+bot.mouseMoveTo(500, 500)
+# 滚动 y：500
+bot.mouseScrollBy(0, dy=500)
+
+# 录制键鼠
+bot = QxGameBotFramework('data.db')
+stopRecording = bot.recordTask("task1")
+sleep(3)
+stopRecording()
+
+# 播放键鼠
+bot = QxGameBotFramework('data.db')
+bot.playRecordTask("task1")
+
+# 图色匹配
+res = bot.matchAllScreen("e2e/apple.png")
+
+res = bot.matchScreenColorPoint("#FFFFFF", 26, 13)
+
+colorPoints = [("CA6179", 1431, 147), ("#FFFFFF", 26, 13)]
+res = bot.matchScreenMultiColorPoints(colorPoints, condition="oneOfTrue")
+
+# 屏幕OCR
+res = bot.screenOcr(det_limit_side_len=3440)
+
+# 图像OCR
+res = bot.imgOcr("e2e/ocr/image.png")
+```
