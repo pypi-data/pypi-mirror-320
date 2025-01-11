@@ -1,0 +1,14 @@
+dopy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dopy/cli.py,sha256=y_fGW_MixoePIoOKhoztGg-zGkIDokFhc2qeTlLxPIU,3791
+dopy/core.py,sha256=CcJk7XRdq7nZAYaaFMRek9lzHsfbL6yTaLyRzLnGH24,4609
+dopy/exceptions.py,sha256=ezIOsAI6HpkJxkznAMWi6BNwAQGga51_dNCl8tJx8iw,2145
+dopy/help.py,sha256=O8galO2waOAkspEANs_wsffwMlK8bgCI2syIA-_aGcg,350
+dopy/run.py,sha256=dLJFhbVhGKL9hoyuGY_goSEZ0cPQkFjCVMOkoApTes4,4028
+dopy/transpiler/__init__.py,sha256=PAcgfcXLegw62whDc7GPzLuqU_0hp9F6zmmdTgFufbE,563
+dopy/transpiler/collector.py,sha256=AMD-NaCPb589V16T9Qno6BwY_HbY0vpz8cOM_1bhThs,3645
+dopy/transpiler/processor.py,sha256=071CdYssqAJ81xLz0Q-XZ-At8ByzB-D6X3wOQHnV1iM,1691
+dopy_syntax-0.1.0.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+dopy_syntax-0.1.0.dist-info/METADATA,sha256=H7mR64gdgQVxTHDhITr_aJQZ8jFQjfYMHeIjsGrA2Ug,2170
+dopy_syntax-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+dopy_syntax-0.1.0.dist-info/entry_points.txt,sha256=7ms57pOB3bMX3Cf9Aruak4v1EofKJaEhX-s-wtFjpVU,38
+dopy_syntax-0.1.0.dist-info/RECORD,,
