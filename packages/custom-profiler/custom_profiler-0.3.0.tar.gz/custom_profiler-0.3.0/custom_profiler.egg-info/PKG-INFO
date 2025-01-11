@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: custom_profiler
+Version: 0.3.0
+Summary: Time and memory profiler
+Home-page: https://github.com/KarGeekrie/customProfiler
+Author: Karim Ammar
+Author-email: karim.ammar@cea.fr
+Maintainer: Karim Ammar
+Project-URL: Bug Reports, https://github.com/KarGeekrie/customProfiler/issues
+Project-URL: Source, https://github.com/KarGeekrie/customProfiler
+Keywords: profiler,timer
+Requires-Python: >=3.6, <4
+Requires-Dist: psutil
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: maintainer
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+custom_profiler is a simple, interactive and lightweight (the only dependency is psutil) way of profiling the memory and execution time of your python code. Doc in https://github.com/KarGeekrie/customProfiler
