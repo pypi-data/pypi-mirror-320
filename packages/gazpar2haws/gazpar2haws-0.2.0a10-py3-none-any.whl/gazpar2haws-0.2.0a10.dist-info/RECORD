@@ -1,0 +1,11 @@
+gazpar2haws/__init__.py,sha256=3MCDQdGGmT3FQMKaAB3mBJq7L75T_bJSdpDRjE-pado,58
+gazpar2haws/__main__.py,sha256=EMWGYVVfKEJySSvn8fmNfzFZWVjsPefUFyt4gTC506w,3162
+gazpar2haws/bridge.py,sha256=plcXR8y6lH84OSHuUOogNcbM7uua24inoF9SSERKGHo,3539
+gazpar2haws/config_utils.py,sha256=Q_-07kAIqvjjHG27tHLLnyaTAZcFVdt1iRzksz2wy1k,2067
+gazpar2haws/gazpar.py,sha256=jXpOtqWW6fv6BQmVLoA0G7B93HjztY7MemvGnszBXPU,5615
+gazpar2haws/haws.py,sha256=H0Qa01Qtsn3QdnGqIGkXE-Ympf7MSXkbFwAbzaMAodM,6895
+gazpar2haws/version.py,sha256=tJINl5RAPtGkwDz8nWdcM1emyqLY2N2XfgsBHuofz5U,83
+gazpar2haws-0.2.0a10.dist-info/LICENSE,sha256=ajApZPyhVx8AU9wN7DXeRGhoWFqY2ylBZUa5GRhTmok,1073
+gazpar2haws-0.2.0a10.dist-info/METADATA,sha256=wGTV0T17omheWJF33-k5HxDlVFCzqxPUvG9TqsWvJeE,9453
+gazpar2haws-0.2.0a10.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+gazpar2haws-0.2.0a10.dist-info/RECORD,,
