@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dqm"
+version = "0.0.9"
+authors = [
+  { name="Shehjar Sadhu", email="shehjar_sadhu@uri.edu" },
+]
+description = "A library to analyze the data quality metrics collected via Smasung galaxy smartwatch and computer mouse data"
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/wearablebiosensing/dqm-lib-smartwatch"
+Issues = "https://github.com/wearablebiosensing/dqm-lib-smartwatch/issues"

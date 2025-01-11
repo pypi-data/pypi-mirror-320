@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dqm
+Version: 0.0.9
+Summary: A library to analyze the data quality metrics collected via Smasung galaxy smartwatch and computer mouse data
+Project-URL: Homepage, https://github.com/wearablebiosensing/dqm-lib-smartwatch
+Project-URL: Issues, https://github.com/wearablebiosensing/dqm-lib-smartwatch/issues
+Author-email: Shehjar Sadhu <shehjar_sadhu@uri.edu>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+# to deploy this use:
+
+``` python3 -m build  ```
