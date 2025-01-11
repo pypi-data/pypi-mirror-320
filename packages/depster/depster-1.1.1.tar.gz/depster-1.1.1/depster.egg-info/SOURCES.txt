@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+sample_package-lock.json
+setup.py
+depster/__init__.py
+depster/depster.py
+depster.egg-info/PKG-INFO
+depster.egg-info/SOURCES.txt
+depster.egg-info/dependency_links.txt
+depster.egg-info/entry_points.txt
+depster.egg-info/requires.txt
+depster.egg-info/top_level.txt
