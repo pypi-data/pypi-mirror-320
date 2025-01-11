@@ -1,0 +1,37 @@
+angular_position:
+  class: model
+  #folder: ~/autotwin/ssm/input/sr2
+  folder: ~/autotwin/ssm/input/sr2c
+  #folder: ~/autotwin/ssm/input/sr3
+  #folder: ~/autotwin/ssm/input/sr4
+  file: history_rigid.csv
+  skip_rows: 2
+  ycolumn: 12
+  plot_kwargs:
+    label: angular position z
+    color: darkblue
+    linestyle: "-"
+    linewidth: 3
+figure:
+  class: view
+  folder: ~/autotwin/automesh/book/analysis/sphere_with_shells/img
+  #file: sr2_angular_position_z.svg
+  file: sr2c_angular_position_z.svg
+  #file: sr3_angular_position_z.svg
+  #file: sr4_angular_position_z.svg
+  size: [8.0, 6.0]
+  #title: sr2 angular position versus time
+  title: sr2c angular position versus time
+  #title: sr3 angular position versus time
+  #title: sr4 angular position versus time
+  xlabel: time (s)
+  ylabel: angular position z (rad)
+  yaxis_rhs:
+    scale: 57.295779513082321
+    label: angular position z (deg)
+    yticks: [ 0, 5.7, 11.5, 17.2, 22.9, 28.6, 34.3 ]
+  details: false
+  display: true
+  dpi: 100
+  latex: false
+  serialize: true
