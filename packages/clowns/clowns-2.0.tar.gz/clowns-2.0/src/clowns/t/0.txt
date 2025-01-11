@@ -1,0 +1,26 @@
+from scipy.stats import kurtosis, skew
+import numpy as np
+import pandas as pd
+
+df = pd.read_excel('4_2.xlsx')
+df.columns = df.columns.str.strip()
+df = df['A']
+df.head()
+
+print('Минимум: ', data.min())
+print('Максимум: ', data.max())
+
+print('Размах выборки: ', round(abs(data.min() - data.max()), 9))
+
+print('Среднее значение: ', round(data.mean(), 9))
+
+q1 = data.quantile(0.25)
+print('Нижний квантиль: ', q1)
+
+print('Медиана: ', round(data.median(), 9))
+
+q3 = data.quantile(0.75)
+print('Верхний квантиль: ', q3)
+
+razmah = q3 - q1
+print('Межквартильный размах: ', razmah)
