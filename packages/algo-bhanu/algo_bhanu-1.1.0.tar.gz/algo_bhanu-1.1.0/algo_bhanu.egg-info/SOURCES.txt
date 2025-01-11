@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+algo/Decisiontree.py
+algo/KNN.py
+algo/Linearregression.py
+algo/Logisticregression.py
+algo/Randomforest.py
+algo/__init__.py
+algo_bhanu.egg-info/PKG-INFO
+algo_bhanu.egg-info/SOURCES.txt
+algo_bhanu.egg-info/dependency_links.txt
+algo_bhanu.egg-info/top_level.txt
