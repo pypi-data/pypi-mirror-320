@@ -1,0 +1,11 @@
+reservoir_computing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reservoir_computing/datasets.py,sha256=V0SVBTTVJO2d1vwmxyb1omsYJAuYDt-TBxcU52qa7hw,15270
+reservoir_computing/modules.py,sha256=Vr2KBKRtjXo5bAmUQuvGDiB3LYXZ2fyeHEHSDCVPqHw,23499
+reservoir_computing/reservoir.py,sha256=l0OW7KtgJ5qKz6zsbH14EozGyqDgCsPwk2x9Mm9OWTE,6955
+reservoir_computing/tensorPCA.py,sha256=NLYo7ZT1P02dEh86j98cHViybKS9JCydslKjNJsPtjg,3452
+reservoir_computing/utils.py,sha256=MyU9X-nLS60NfMMh37eNjH2UopdSBBCGHxUbC0XpSzQ,3287
+reservoir_computing-1.0.1.dist-info/LICENSE,sha256=SuPSMReTeQggkC_HL5iG9hcquIri7d_m8bV2gJHzWYI,1078
+reservoir_computing-1.0.1.dist-info/METADATA,sha256=q6yO6pQNG16IDqs4PjcIPbULg0NQtpfjjdt7yI3WGDI,12447
+reservoir_computing-1.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+reservoir_computing-1.0.1.dist-info/top_level.txt,sha256=NwTVLV9gr3eDOTBYXyihl0J_LbR0f9yjm9tGiiWPc18,20
+reservoir_computing-1.0.1.dist-info/RECORD,,
