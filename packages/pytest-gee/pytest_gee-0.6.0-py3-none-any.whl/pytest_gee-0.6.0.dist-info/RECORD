@@ -1,0 +1,14 @@
+pytest_gee/__init__.py,sha256=bWpM09URwIksINp7ysIQGPV7cEabS1t2R7H9RSSQQZg,5011
+pytest_gee/dictionary_regression.py,sha256=aMkzeixYQfAbu6_jikW-VT6OJsnnIbkbzdm_Hffq7JM,3011
+pytest_gee/feature_collection_regression.py,sha256=FlomZGNVKvL1v-1yQ2SaICBnVsqt3D-gYrB1jyLoMZs,3690
+pytest_gee/image_regression.py,sha256=NFjVCd_qNuQxK-xTDLJYD6kaBKwyYZ8BAd6VNKZspuU,5083
+pytest_gee/list_regression.py,sha256=IQcO_Z0tXFdjOCjaFz0dCMUK3ouR_4vcW4sGdP7F6Mo,2966
+pytest_gee/plugin.py,sha256=NBk4SuEkbw7jcLG_s4S-APn5cgFGvyOaGp3vbjCmIe4,4484
+pytest_gee/py.typed,sha256=QPIqsNETblYX8vmJ354NjcVQts2LluobpkVVIO0v_Kw,63
+pytest_gee/utils.py,sha256=TEHaFqKlrDvk1WMGba2LFOojNZrtT07iRdr4Wx3Qmig,13017
+pytest_gee-0.6.0.dist-info/METADATA,sha256=MGLJfCCd5SOnTsy2OC4iMDedpJV1JXKPOPduV0jNT20,4276
+pytest_gee-0.6.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pytest_gee-0.6.0.dist-info/entry_points.txt,sha256=3Jym78XxRGmIve3ITkAyIhcyVvz7YmEMjvW7trk0mEw,35
+pytest_gee-0.6.0.dist-info/licenses/AUTHORS.rst,sha256=MlEbKDHsVIoJZu4dNXXdz1Eh2LanDjPVQwsuoI2WzGE,1142
+pytest_gee-0.6.0.dist-info/licenses/LICENSE,sha256=C5jG-BE7pYK0t94PtnVikTj7F94ZrMhOjfgTWq-vHKk,1073
+pytest_gee-0.6.0.dist-info/RECORD,,
