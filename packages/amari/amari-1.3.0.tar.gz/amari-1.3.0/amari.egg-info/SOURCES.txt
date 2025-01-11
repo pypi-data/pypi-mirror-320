@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+amari/__init__.py
+amari/api.py
+amari/cache.py
+amari/exceptions.py
+amari/objects.py
+amari.egg-info/PKG-INFO
+amari.egg-info/SOURCES.txt
+amari.egg-info/dependency_links.txt
+amari.egg-info/requires.txt
+amari.egg-info/top_level.txt

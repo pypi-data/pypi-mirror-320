@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: amari
+Version: 1.3.0
+Summary: An asynchronous API wrapper for the Amari API.
+Home-page: https://github.com/RayyanW786/amaripy
+Author: RayyanW786
+License: MIT
+Project-URL: Documentation, https://amaripy.readthedocs.io/en/latest/
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: <4,>=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+Amari.py
+========
+
+.. image:: https://readthedocs.org/projects/amari.py/badge/?version=latest
+   :target: https://amaripy.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
+
+.. image:: https://img.shields.io/pypi/v/amari.py.svg
+   :target: https://pypi.org/project/amaripy/
+   :alt: PyPi Library version
+
+.. image:: https://img.shields.io/pypi/pyversions/amari.py.svg
+   :target: https://pypi.org/project/amaripy/
+   :alt: PyPi library Python versions
+
+Amari.py is an async, easy to use API wrapper for the AmariBot.
+
+Installation
+------------
+
+Enter any of these commands to install the library:
+
+.. code:: sh
+
+  pip install amari.py
+
+  python -m pip install amari.py
+
+Key features
+------------
+
+- Utilizes the whole Amari API
+- Asynchronous built
+- Anti 429s (rate limiting)
+
+Support
+-------
+
+If you have any questions or require support with the API wrapper, visit the `AmariBot Support Server <https://discord.gg/qKkSUSwU2G>`_ and ask in `#amari.py <https://discord.com/channels/346474194394939393/882370112710123570>`_.
+
+Bugs
+----
+
+If you find any bugs with the library, you can report it by creating a bug issue at `Amari.py's Github repo <https://github.com/RayyanW786/amaripy>`_.
+
+Docs
+----
+
+Visit the `Amari.py docs <https://amaripy.readthedocs.io/en/latest/>`_ for usage of the library.
