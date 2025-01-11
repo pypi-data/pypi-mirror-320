@@ -1,0 +1,16 @@
+adios2py/__init__.py,sha256=Imhs4BFPa6EB14MJ2uBXXwGY51h_h1EsDErZ6hDNRko,542
+adios2py/_version.py,sha256=rHfriQXy8PaholZtHePcdf_G1uB2qH9nv7z1XMt5IEs,413
+adios2py/_version.pyi,sha256=j5kbzfm6lOn8BzASXWjGIA1yT0OlHTWqlbyZ8Si_o0E,118
+adios2py/array_proxy.py,sha256=ufGGsf0bqk1EkMnY5QnziyPyQP6sisSlyyvvVUCmAEI,2541
+adios2py/attrs_proxy.py,sha256=Gc2GRZKkApcxlACLkqSK7OeJLFbGJ0R41ZVQvTn43t4,1202
+adios2py/file.py,sha256=zLeLOoORMra4wkeUZ2uvSmMMboArh3KVrhhkyeBAwU4,8823
+adios2py/group.py,sha256=YTk5j9sYBnUWYs5SB7eML3vdvJLSvdj_FpCxPQDA-0M,1538
+adios2py/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adios2py/step.py,sha256=0aOL8FaJ26yb21Ejnx3MX2jQspxGEq7G0309p4uUHIs,407
+adios2py/steps_proxy.py,sha256=bXcnwNRTkCpmalNB41dy-e1q_wcbE8Z_RQIVxZ40og0,1490
+adios2py/util.py,sha256=eQXIhpWtg0z-fk4YPOkDzQ-4QG7xPwaPB713Tep-d3k,719
+adios2py-0.1.0a6.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+adios2py-0.1.0a6.dist-info/METADATA,sha256=5Gv1opLdeMP0iD0RaZO4L77VVtaTGkwAubal2baAMSo,16118
+adios2py-0.1.0a6.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+adios2py-0.1.0a6.dist-info/top_level.txt,sha256=ZmVEiczLD8xmq8WOzvmqZ4HpNa5Y9yNA0gQpMZ71gEc,9
+adios2py-0.1.0a6.dist-info/RECORD,,
