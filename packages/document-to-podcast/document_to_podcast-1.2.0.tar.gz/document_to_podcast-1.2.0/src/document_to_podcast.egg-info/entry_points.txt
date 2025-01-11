@@ -1,0 +1,2 @@
+[console_scripts]
+document-to-podcast = document_to_podcast.cli:main
