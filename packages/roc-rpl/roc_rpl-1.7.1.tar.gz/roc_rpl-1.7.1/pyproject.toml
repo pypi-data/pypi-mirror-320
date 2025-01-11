@@ -1,0 +1,49 @@
+[build-system]
+requires = [ "setuptools", "wheel", "poetry", "poetry-core", "cython", "numpy",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "roc-rpl"
+version = "1.7.1"
+readme = "README.md"
+license = "CeCILL 2.1"
+repository = "https://gitlab.obspm.fr/ROC/Pipelines/Plugins/RPL"
+description = "RPW Packet parsing Library (RPL): a plugin for the RPW TM/TC packet analysis"
+authors = [ "ROC Team <roc.support@sympa.obspm.fr>",]
+exclude = [ "bump_descriptor.py",]
+[[tool.poetry.packages]]
+include = "roc"
+
+[tool.mypy]
+[[tool.mypy.overrides]]
+module = [ "poppy.*", "roc.*", "spice_manager", "pytest",]
+ignore_missing_imports = true
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4"
+cython = ">=3,<4"
+numpy = ">=1.20,<3"
+spice_manager = "*"
+poppy-core = ">0.12.0"
+poppy-pop = ">0.12.0"
+roc-idb = "^1.0"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "<9"
+pytest-cov = "<6"
+pytest-timeout = "<3"
+pre-commit = "^3"
+mypy = "^1"
+ruff = "*"
+
+[tool.poetry.build]
+script = "build_cython.py"
+generate-setup-file = true
+
+[tool.coverage.run]
+omit = [ "*/tests/*",]
+
+[tool.coverage.report]
+skip_empty = true
+exclude_lines = [ "pragma: no cover", "from * import *", "import *", "__all__",]
