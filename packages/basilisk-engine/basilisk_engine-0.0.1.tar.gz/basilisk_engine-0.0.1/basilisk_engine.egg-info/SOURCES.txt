@@ -1,0 +1,11 @@
+README.md
+setup.py
+basilisk/__init__.py
+basilisk/config.py
+basilisk/engine.py
+basilisk/scene.py
+basilisk_engine.egg-info/PKG-INFO
+basilisk_engine.egg-info/SOURCES.txt
+basilisk_engine.egg-info/dependency_links.txt
+basilisk_engine.egg-info/requires.txt
+basilisk_engine.egg-info/top_level.txt
