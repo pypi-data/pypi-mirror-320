@@ -1,0 +1,3 @@
+[console_scripts]
+init-promise = cadnaPromise.install:initPromise
+promise = cadnaPromise.run:runPromise
