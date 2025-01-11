@@ -1,0 +1,3 @@
+[console_scripts]
+pubmed_xml = pubmed_xml.bin.main:main
+
