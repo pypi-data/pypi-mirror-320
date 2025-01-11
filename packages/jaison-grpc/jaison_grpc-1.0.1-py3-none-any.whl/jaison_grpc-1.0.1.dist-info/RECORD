@@ -1,0 +1,12 @@
+jaison_grpc/__init__.py,sha256=XVYRUgVoDDiPkcYOEs-im8jluyjiqkBDRnEH2-gdMAM,43
+jaison_grpc/client.py,sha256=XZfL9SxOqoCyVNedvq3NnuxPoCWXzkcq4Zoc8IhkDCA,142
+jaison_grpc/common.py,sha256=j_HB1nrD_TDNNUy-Y2mfmisNy5LiwIZ9z-xyUEhojYc,207
+jaison_grpc/server.py,sha256=ZAoVrck58aUkxbfL9gwzFchIFGhbf7QLHqg_apI2i5U,374
+jaison_grpc/grpc/jaisongrpc_pb2.py,sha256=E1OF3en_FnYYVKAfPOhr3VE2F4hL9K0dwu_19fIJWf4,4084
+jaison_grpc/grpc/jaisongrpc_pb2.pyi,sha256=QxLpOzBP0ci-FDPdjRKFx5yKEN_t4TqSTjeMwovtcAY,2786
+jaison_grpc/grpc/jaisongrpc_pb2_grpc.py,sha256=pVemjdYy2cDf37Jlpral-ExOeJ1jfg5qWIbbSJ8tyms,11344
+jaison_grpc-1.0.1.dist-info/METADATA,sha256=x1bJJfAr3hrpE0Bd7OkjOsmWJbfg2WyjeAqXyhjjdiw,2692
+jaison_grpc-1.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+jaison_grpc-1.0.1.dist-info/licenses/LICENSE,sha256=L-tCNI1et33yd7gD9o_M9aennEc0fQMDuGnFsptn0Cc,1091
+jaison_grpc-1.0.1.dist-info/licenses/LICENSE copy,sha256=L-tCNI1et33yd7gD9o_M9aennEc0fQMDuGnFsptn0Cc,1091
+jaison_grpc-1.0.1.dist-info/RECORD,,
