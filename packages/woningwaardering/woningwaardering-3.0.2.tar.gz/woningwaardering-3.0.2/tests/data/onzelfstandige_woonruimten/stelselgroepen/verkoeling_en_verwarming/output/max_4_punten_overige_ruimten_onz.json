@@ -1,0 +1,90 @@
+{
+  "groepen": [
+    {
+      "criteriumGroep": {
+        "stelsel": {
+          "code": "ONZ",
+          "naam": "Onzelfstandige woonruimten"
+        },
+        "stelselgroep": {
+          "code": "VKV",
+          "naam": "Verkoeling en verwarming"
+        }
+      },
+      "punten": 2.0,
+      "woningwaarderingen": [
+        {
+          "criterium": {
+            "naam": "Berging",
+            "bovenliggendeCriterium": {
+              "id": "verwarmde_overige_en_verkeersruimten"
+            }
+          },
+          "punten": 0.5
+        },
+        {
+          "criterium": {
+            "naam": "Berging2",
+            "bovenliggendeCriterium": {
+              "id": "verwarmde_overige_en_verkeersruimten"
+            }
+          },
+          "punten": 0.5
+        },
+        {
+          "criterium": {
+            "naam": "Berging3",
+            "bovenliggendeCriterium": {
+              "id": "verwarmde_overige_en_verkeersruimten"
+            }
+          },
+          "punten": 0.5
+        },
+        {
+          "criterium": {
+            "naam": "Berging4",
+            "bovenliggendeCriterium": {
+              "id": "verwarmde_overige_en_verkeersruimten"
+            }
+          },
+          "punten": 0.5
+        },
+        {
+          "criterium": {
+            "naam": "Berging5",
+            "bovenliggendeCriterium": {
+              "id": "verwarmde_overige_en_verkeersruimten"
+            }
+          },
+          "punten": 0.5
+        },
+        {
+          "criterium": {
+            "naam": "Berging5: Maximaal 4 punten",
+            "bovenliggendeCriterium": {
+              "id": "verwarmde_overige_en_verkeersruimten"
+            }
+          },
+          "punten": -0.5
+        },
+        {
+          "criterium": {
+            "id": "verwarmde_overige_en_verkeersruimten",
+            "naam": "Verwarmde overige en verkeersruimten",
+            "bovenliggendeCriterium": {
+              "id": "verkoeling_en_verwarming_gedeeld_met_2_onzelfstandige_woonruimten"
+            }
+          },
+          "punten": 2.0
+        },
+        {
+          "criterium": {
+            "id": "verkoeling_en_verwarming_gedeeld_met_2_onzelfstandige_woonruimten",
+            "naam": "Totaal (gedeeld met 2 onzelfstandige woonruimten)"
+          },
+          "punten": 2.0
+        }
+      ]
+    }
+  ]
+}
