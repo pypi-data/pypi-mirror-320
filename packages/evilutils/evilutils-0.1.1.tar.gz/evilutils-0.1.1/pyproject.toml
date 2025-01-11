@@ -1,0 +1,55 @@
+# dev tools
+[tool.ruff]
+line-length     = 90
+indent-width    = 4
+target-version  = "py312"
+
+[tool.ruff.format]
+docstring-code-format = true
+line-ending = "lf"
+skip-magic-trailing-comma = true
+
+[tool.isort]
+profile = "black"
+line_length = 90
+
+[tool.black]
+line-length = 90
+target-version = ["py312", "py313"]
+skip-magic-trailing-comma = true
+
+[tool.basedpyright]
+reportImplicitStringConcatenation = false
+pythonVersion = "3.12"
+
+# packaging
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evilutils"
+authors = [
+    { name="Ernest Izdebski", email="44341687+ernieIzde8ski@users.noreply.github.com" }
+]
+description = "All of the utils I don't want to write twice."
+readme = { file = "README.md", content-type="text/markdown" }
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = ["dependencies", "version"]
+license = { file = "LICENSE" }
+
+[project.urls]
+Homepage = "https://github.com/ernieIzde8ski/evilutils"
+Issues =  "https://github.com/ernieIzde8ski/evilutils/issues"
+
+[tool.setuptools.dynamic]
+dependencies = { file = "requirements.txt" }
+version = { attr = "evilutils.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
