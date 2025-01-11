@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+undouble_gui/__init__.py
+undouble_gui/examples.py
+undouble_gui/gui.py
+undouble_gui/undouble_gui.py
+undouble_gui.egg-info/PKG-INFO
+undouble_gui.egg-info/SOURCES.txt
+undouble_gui.egg-info/dependency_links.txt
+undouble_gui.egg-info/requires.txt
+undouble_gui.egg-info/top_level.txt
