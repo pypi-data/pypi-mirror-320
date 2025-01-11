@@ -1,0 +1,3 @@
+[console_scripts]
+ea_test = ea_model.cli.ea_test_cli:main
+
