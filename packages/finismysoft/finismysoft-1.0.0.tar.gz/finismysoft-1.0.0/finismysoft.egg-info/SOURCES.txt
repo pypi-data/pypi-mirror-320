@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+finismysoft.egg-info/PKG-INFO
+finismysoft.egg-info/SOURCES.txt
+finismysoft.egg-info/dependency_links.txt
+finismysoft.egg-info/requires.txt
+finismysoft.egg-info/top_level.txt

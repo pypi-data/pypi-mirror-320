@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: finismysoft
+Version: 1.0.0
+Summary: MySoft E Fatura API için Python istemcisi
+Author: Hasan Çağrı Güngör
+Author-email: iletisim@cagrigungor.com
+License: MIT
+Keywords: mysoft,finis,çağrı güngör,e-fatura,e-arşiv,e-irsaliye,e-defter
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
