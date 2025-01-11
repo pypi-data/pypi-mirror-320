@@ -1,0 +1,13 @@
+els/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+els/cli.py,sha256=ZpLTH0V0oJ274k-tppeaKlx8_dkzJaEclzomtk78fm0,12640
+els/config.py,sha256=uQ1-QoXvw6Qk_fFnyhACmceDICr9YPbZUgOrB-NivKM,13389
+els/execute.py,sha256=f2BNaJXPNBDVyWL1OG2Daw9CRJ1MteUwNZlY-iI6EoA,23699
+els/flow.py,sha256=LwNgYz6nvG3ozQQ4axHWV7fyiSDwVGpGff18zoFDBak,3975
+els/path.py,sha256=n9yWSQHwLez93C22S8HKH5S8VEszOR2PtgQsjVyNhiM,31675
+els/pathprops.py,sha256=BavSGqXlNDmQAoKDjJyfazkKAhszGcvBzjT4orL17J8,2140
+elspec-0.1.2.dist-info/LICENSE,sha256=wiTqqXoicDWFG7_o6DJFDVshboi3xfjvZk928tGBtd4,1076
+elspec-0.1.2.dist-info/METADATA,sha256=8Pi_fq-PpuPjLblv-t-XVRkIASlLu2pIVv0puhItDgs,36049
+elspec-0.1.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+elspec-0.1.2.dist-info/entry_points.txt,sha256=WsDqUMDKzPlduKdbYoQq9ZqiTZWXddAa46pCV2LhBMs,37
+elspec-0.1.2.dist-info/top_level.txt,sha256=P3ybfp7S6GKG0LpDLdpnvy_U9AQy2OCwbXEPLYO-ybo,4
+elspec-0.1.2.dist-info/RECORD,,
