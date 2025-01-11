@@ -1,0 +1,45 @@
+Metadata-Version: 2.3
+Name: tidal_algorithmic_mixes
+Version: 0.1.6
+Summary: Common transformers used by the Tidal personalization team.
+Home-page: https://github.com/tidal-music/tidal-algorithmic-mixes
+License: Apache-2.0
+Author: Loay
+Author-email: loay@squareup.com
+Requires-Python: >=3.10.13
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: alphabet-detector (==0.0.7)
+Requires-Dist: boto3 (>=1.24.59)
+Requires-Dist: great-expectations (==0.16.15)
+Requires-Dist: mlflow (==2.9.2)
+Requires-Dist: numpy (>=1.16.4)
+Requires-Dist: pandas (>=1.4.2)
+Requires-Dist: pyarrow (==8.0.0)
+Requires-Dist: pyspark (>=3.5.0,<=3.6.0)
+Requires-Dist: s3fs (>=2022.11.0)
+Requires-Dist: scikit-learn (==1.4.0)
+Requires-Dist: tidal-per-transformers (>=0.3.1)
+Requires-Dist: torch (==2.2.1)
+Description-Content-Type: text/markdown
+
+# Tidal algorithmic mixes
+
+This contains the logic of how tidal create its algorithmic offline mixes,
+how it utilizes different machine learning models, 
+alongside business rules to create different mixes for different use cases, 
+included personalized mixes (like my mix, my new arrivals and daily discovery)
+and non-personalized like track radio and artist radio.
+
+- Make sure you have pyenv and [pyenv](https://github.com/pyenv/pyenv) amd [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv) installed on your local environment.
+- Install python 3.10.13 with pyenv `pyenv install 3.11.13`.
+- Set up a new virtual env `pyenv virtualenv 3.10.13 mixes`
+- Set local pyenv version `pyenv local mixes`
+- Activate the virtual pyenv using `pyenv activate mixes`
+- Upgrade the pip package installer `python -m pip install --upgrade pip`
+- Install poetry for package management `python -m pip install poetry==1.7.1`
+- Install dependencies from the lock file `poetry install --no-root` 
+
