@@ -1,0 +1,7 @@
+aiida_submission_controller/__init__.py,sha256=DHid41ryS2RlrL1mylmFzIREiJ567W_u5gE2KMc_cWY,361
+aiida_submission_controller/base.py,sha256=FfF2T7qucyvSNlHUDtBeScDhrBu1Rt3jsn1J4GfqGes,10800
+aiida_submission_controller/from_group.py,sha256=z7p13uO64jWoCWc30p6iTutVQh1TrPzetE-nlM6FC0Q,3789
+aiida_submission_controller-0.3.0.dist-info/LICENSE,sha256=xTM-ZazkAWBuXBFd8_C9u0Y6osLKYKPgbD3ZyyVDhGI,1076
+aiida_submission_controller-0.3.0.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+aiida_submission_controller-0.3.0.dist-info/METADATA,sha256=cBYbxoHEpU6lNFQ89QHvB_XvjYhyKRlu3DlXeT8jk-s,2379
+aiida_submission_controller-0.3.0.dist-info/RECORD,,
