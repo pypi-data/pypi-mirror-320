@@ -1,0 +1,101 @@
+# PyCryptid
+
+PyCryptid is a Python library for encrypt and decrypt object, text, or image
+
+## Installation
+```bash
+pip install cryptid
+```
+
+## Usage Examples
+### Cryptid
+This class can encrypt most of python object to bytes and decrypt it back to python object (using pickle)
+
+```python
+from cryptid import Cryptid
+
+password = 'mykey'
+# or generate a new one
+password = Cryptid.generate_key()
+
+cryptid = Cryptid(password)
+
+# encrypt and decrypt dict
+normal_dict = {'name': 'John Doe', 'age': 20}
+enc_dict = cryptid.encrypt(normal_dict)
+dec_dict = cryptid.decrypt(enc_dict)
+
+print(enc_dict) # encrypted <class 'bytes'>
+print(dec_dict) # {'name': 'John Doe', 'age': 20}
+
+# encrypt and decrypt function
+enc_func = cryptid.encrypt(print)
+dec_func = cryptid.decrypt(enc_func)
+
+print(enc_func) # encrypted <class 'bytes'>
+dec_func('John Doe') # John Doe
+```
+
+### Cryptext
+Encrypt text using AES
+
+```python
+from cryptid import Cryptext
+
+cryptext = Cryptext(password)
+text = 'Hello World'
+enc_text = cryptext.encrypt(text) # encrypted string
+dec_text = cryptext.decrypt(enc_text)
+print(dec_text) # Hello World
+```
+
+### Steganography
+Hide secret message in image
+
+```python
+from cryptid import Steganography
+
+st = Steganography()
+input_image = '/path/to/image.png'
+output_image = 'output.png'
+message = 'Hello World'
+
+# encode message to image
+st.encode(input_image, message, output_image) # True
+# or using password to encrypt the message
+st.encode(input_image, message, output_image, password)
+
+# decode message from image
+original_message = st.decode('output.png')
+# or with password
+original_message = st.decode('output.png', password)
+
+print(original_message) # Hello World
+```
+
+### AudioSteganography
+Hide secret message in audio file
+
+```python
+from cryptid import AudioSteganography
+
+ast = AudioSteganography()
+input_audio = '/path/to/audio.mp3'
+output_audio = 'output.mp3'
+message = 'Hello World'
+
+# encode message to audio
+ast.encode(input_audio, message, output_audio) # True
+# or using password to encrypt the message
+ast.encode(input_audio, message, output_audio, password)
+
+# decode message from audio
+original_message = ast.decode('output.mp3')
+# or with password
+original_message = ast.decode('output.mp3', password)
+
+print(original_message) # Hello World
+```
+
+## Buy me tanghulu
+https://trakteer.id/alfi-syahri
