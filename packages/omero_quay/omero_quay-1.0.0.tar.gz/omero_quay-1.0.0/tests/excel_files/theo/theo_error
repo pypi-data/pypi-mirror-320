@@ -1,0 +1,74 @@
+omero-server  | ERROR:omero_quay.core.workers:Manager errored
+omero-server  | Traceback (most recent call last):
+omero-server  |   File "/opt/omero/server/miniforge3/envs/quay/lib/python3.10/site-packages/ome_types/_conversion.py", line 463, in ensure_2016
+omero-server  |     ns_in = _get_ns_file(normed_source)
+omero-server  |   File "/opt/omero/server/miniforge3/envs/quay/lib/python3.10/site-packages/ome_types/_conversion.py", line 571, in _get_ns_file
+omero-server  |     _, root = next(ET.iterparse(source, events=("start",)))
+omero-server  |   File "/opt/omero/server/miniforge3/envs/quay/lib/python3.10/xml/etree/ElementTree.py", line 1255, in iterator
+omero-server  |     data = source.read(16 * 1024)
+omero-server  | OSError: [Errno 116] Stale file handle
+omero-server  | 
+omero-server  | The above exception was the direct cause of the following exception:
+omero-server  | 
+omero-server  | Traceback (most recent call last):
+omero-server  |   File "/opt/omero/server/omero-quay/src/omero_quay/core/workers.py", line 139, in run_manager
+omero-server  |     manifest_json = _manage(mngr, dry=dry)
+omero-server  |   File "/opt/omero/server/omero-quay/src/omero_quay/core/workers.py", line 167, in _manage
+omero-server  |     mngr.transfer()
+omero-server  |   File "/opt/omero/server/omero-quay/src/omero_quay/managers/omero.py", line 114, in transfer
+omero-server  |     cli.invoke(
+omero-server  |   File "/opt/omero/server/miniforge3/envs/quay/lib/python3.10/site-packages/omero/cli.py", line 1208, in invoke
+omero-server  |     stop = self.onecmd(line, previous_args)
+omero-server  |   File "/opt/omero/server/miniforge3/envs/quay/lib/python3.10/site-packages/omero/cli.py", line 1285, in onecmd
+omero-server  |     self.execute(line, previous_args)
+omero-server  |   File "/opt/omero/server/miniforge3/envs/quay/lib/python3.10/site-packages/omero/cli.py", line 1367, in execute
+omero-server  |     args.func(args)
+omero-server  |   File "/opt/omero/server/miniforge3/envs/quay/lib/python3.10/site-packages/omero_cli_transfer.py", line 186, in _wrapper
+omero-server  |     return func(self, *args, **kwargs)
+omero-server  |   File "/opt/omero/server/miniforge3/envs/quay/lib/python3.10/site-packages/omero_cli_transfer.py", line 309, in unpack
+omero-server  |     self.__unpack(args)
+omero-server  |   File "/opt/omero/server/miniforge3/envs/quay/lib/python3.10/site-packages/omero_cli_transfer.py", line 599, in __unpack
+omero-server  |     ome = from_xml(folder / "transfer.xml")
+omero-server  |   File "/opt/omero/server/miniforge3/envs/quay/lib/python3.10/site-packages/ome_types/_conversion.py", line 119, in from_xml
+omero-server  |     xml_2016 = ensure_2016(
+omero-server  |   File "/opt/omero/server/miniforge3/envs/quay/lib/python3.10/site-packages/ome_types/_conversion.py", line 465, in ensure_2016
+omero-server  |     raise ValueError(f"Could not parse XML from {source!r}") from e
+omero-server  | ValueError: Could not parse XML from PosixPath('/mnt/SHARE/TEST_UPDATE/Figure2/laserablation/transfer.xml')
+
+
+omero-server  | ERROR:omero_quay.core.workers:Manager errored
+omero-server  | Traceback (most recent call last):
+omero-server  |   File "/opt/omero/server/omero-quay/src/omero_quay/core/workers.py", line 139, in run_manager
+omero-server  |     manifest_json = _manage(mngr, dry=dry)
+omero-server  |   File "/opt/omero/server/omero-quay/src/omero_quay/core/workers.py", line 167, in _manage
+omero-server  |     mngr.transfer()
+omero-server  |   File "/opt/omero/server/omero-quay/src/omero_quay/managers/omero.py", line 98, in transfer
+omero-server  |     self._write_transfer(isaobject, ome_)
+omero-server  |   File "/opt/omero/server/omero-quay/src/omero_quay/managers/omero.py", line 690, in _write_transfer
+omero-server  |     with path.open("w") as th:
+omero-server  |   File "/opt/omero/server/miniforge3/envs/quay/lib/python3.10/pathlib.py", line 1119, in open
+omero-server  |     return self._accessor.open(self, mode, buffering, encoding, errors,
+omero-server  | OSError: [Errno 121] Remote I/O error: '/mnt/SHARE/TEST_UPDATE/Figure2/laserablation/transfer.xml'
+omero-server  | INFO:omero_quay.core.interface:Matched state with host localhost and scheme omero with manager OmeroManager
+omero-server  | INFO:omero_quay.core.interface:manager OmeroManager state set to errored
+omero-server  | INFO:omero_quay.managers.omero:Resetting irods state after leaving omero manager
+omero-server  | DEBUG:omero_quay.core.interface:Updated manifest man:9034233c-a36a-11ef-8a87-0242ac130008 in DB
+omero-server  | INFO:omero_quay.core.interface:Exiting ---
+omero-server  |          OmeroManager managing manifest man:9034233c-a36a-11ef-8a87-0242ac130008 with
+omero-server  | 
+omero-server  |          - 1 investigation
+omero-server  |          - 1 study
+omero-server  |          - 1 assay
+omero-server  |          - 3 images
+omero-server  |          - 6 annotations
+omero-server  | 
+omero-server  |         Current status:  errored
+omero-server  |          
+omero-server  | INFO:omero_quay.mdp.worker:[ Worker  ] Counter     2 completed Queue size:     0
+omero-server  | INFO:omero_quay.mdp.worker:Sending response to client b'N$\xe3}\x19\x99D\xd9\xb4!\xdfJ\xdf\xca\x89\xdb'
+omero-server  | INFO:omero_quay.mdp.worker:
+omero-server  | 
+omero-server  | 
+omero-server  | 
+omero-server  |  Handling done 
+

@@ -1,0 +1,63 @@
+---
+pytest:
+  DOCKER_DATA_PATH: /tmp/QuayTestData/data
+mongo:
+  DB_URL: "mongodb://root:example@mongo"
+  DB_PORT: 27017
+irods:
+  IRODS_HOST: irods-icat
+  IRODS_PORT: 1247
+  IRODS_ZONE: tempZone
+  IRODS_ADMIN_USER: omero-server
+  IRODS_ADMIN_PASS: omero-root-password
+  YAML_STORE: /tmp/quay/irods
+omero:
+  OMERO_ADMIN: root
+  OMERO_ADMIN_PASS: omero
+  OMERO_HOST: omero-server
+  OMERO_PORT: 4064
+  IRODS_SHARE_PATH: /tempZone/home/
+  OMERO_SHARE_PATH: /mnt/SHARE/
+  YAML_STORE: /tmp/quay/omero
+  OMEROSERVER_USER: debian
+  OMEROSERVER_HOST: localhost
+ingest:
+  MOUNT_PATH: /tmp/QuayTestData/
+  IRODS_PATH: /tempZone/home/
+  POST_URL: http://omero-server:8888
+  timeout: 60
+file:
+  SRCE_DIR: /tmp/
+  DEST_DIR: /mnt/SHARE
+  YAML_STORE: /tmp/quay/irods
+
+workers:
+  managers:
+    irods:
+      scheme: irods
+      host: irods-icat
+    omero:
+      scheme: omero
+      host: localhost
+
+excel:
+  keys:
+    - "Specimen Sample Preparation"
+    - "Specimen Growth Protocol"
+    - "Organism Scientific Name"
+    - "Organism Common Name"
+    - "Organism Ncbi Taxon"
+    - "Biosample Biological Entity"
+    - "Organism Description"
+    - "Intrinsic Variables"
+    - "Extrinsic Variables"
+    - "Experimental Variables"
+    - "Imaging Method Value"
+    - "Imaging Method Ontology Name"
+    - "Imaging Method Ontology Id"
+    - "Imaging Instrument"
+    - "Image Acquisition Parameters"
+    - "Image Analysis Overview"
+    - "Image Correlation Spatial And Temporal Alignment"
+    - "ImageCorrelation Fiducials Used"
+    - "Image Correlation Transformation Matrix"

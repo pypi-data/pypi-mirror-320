@@ -1,0 +1,9 @@
+name: quay
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - zeroc-ice=3.6
+  - omero-py
+  - bftools

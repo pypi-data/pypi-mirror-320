@@ -1,0 +1,174 @@
+services:
+  irods-db:
+    image: "postgres:14"
+    container_name: irods-db
+    environment:
+      POSTGRES_USER: irods
+      POSTGRES_DB: ICAT
+      POSTGRES_PASSWORD: testpassword
+    volumes:
+      - irods-db:/var/lib/postgresql/data
+    networks:
+      - omero
+    healthcheck:
+      test: "pg_isready -U irods -d ICAT"
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  irods-icat:
+    build:
+      context: irods_catalog_provider
+    image: gitlab-registry.in2p3.fr/fbi-data/omero-quay/irods-icat:${CI_COMMIT_BRANCH:-latest}
+    container_name: irods-icat
+    # # some time you need to make icat believe its the localhost
+    hostname: "${ICAT_HOSTNAME:-localhost}"
+    depends_on:
+      irods-db:
+        condition: service_healthy
+        restart: true
+    networks:
+      - omero
+    ports:
+      - "1247:1247"
+    healthcheck:
+      test: ps -ewo cmd | (! grep 'setup_irods.py') | (! grep -v grep)
+      interval: 5s
+      timeout: 10s
+      retries: 10
+    volumes:
+      - irods-vault:/var/lib/irods/Vault
+      - "./irods_catalog_provider/server_config.json:/tmp/server_config.json:ro"
+      - "${QUAY_TEST_DATA:-./QuayTestData}/data:/tmp/share/data"
+
+  nfsrods:
+    image: irods/nfsrods:2.1.0
+    container_name: nfsrods
+    ports:
+      - "2049:2049"
+    volumes:
+      - "./irods_client_nfsrods/nfsrods_config:/nfsrods_config:ro"
+      - "./irods_client_nfsrods/passwd:/etc/passwd:ro"
+    depends_on:
+      irods-icat:
+        condition: service_healthy
+        restart: true
+    networks:
+      - omero
+
+  omero-db:
+    image: "postgres:14"
+    container_name: omero-db
+    environment:
+      POSTGRES_USER: omero
+      POSTGRES_DB: omero
+      POSTGRES_PASSWORD: omero
+    volumes:
+      - omero-db:/var/lib/postgresql/data
+    networks:
+      - omero
+
+  omero-server:
+    build:
+      context: omero-server-quay
+    image: gitlab-registry.in2p3.fr/fbi-data/omero-quay/omero-server-quay:${CI_COMMIT_BRANCH:-latest}
+    container_name: omero-server
+    privileged: true
+    environment:
+      CONFIG_omero_db_host: omero-db
+      CONFIG_omero_db_user: omero
+      CONFIG_omero_db_pass: omero
+      CONFIG_omero_db_name: omero
+      ROOTPASS: omero
+      QUAY_CONF: "/etc/quay/quay.yml"
+    ports:
+      - "4063:4063"
+      - "4064:4064"
+      - "8898:8888"
+    volumes:
+      - omeroserver-data:/OMERO/
+      - "${QUAY_TEST_DATA:-./QuayTestData}/data:/tmp/QuayTestData/data"
+      - "./quay_server.yml:/etc/quay/quay.yml"
+      - "../../../omero-quay:/opt/omero/server/omero-quay"
+    depends_on:
+      nfsrods:
+        condition: service_started
+        restart: true
+      omero-db:
+        condition: service_started
+        restart: true
+    healthcheck:
+      test: ps -ewo cmd | (! grep -q 'python -m fsServerFS') | (! grep -v grep)
+      interval: 10s
+      timeout: 10s
+      retries: 10
+    networks:
+      - omero
+
+  mongo:
+    image: mongo:8.0.3
+    container_name: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    depends_on:
+      omero-server:
+        condition: service_healthy
+        restart: true
+    ports:
+      - "27017:27017"
+    networks:
+      - omero
+
+  omero-web:
+    build:
+      context: omero-web-quay
+    image: gitlab-registry.in2p3.fr/fbi-data/omero-quay/omero-web:${CI_COMMIT_BRANCH:-dev}
+    container_name: omero-web
+    environment:
+      OMEROHOST: omero-server
+      QUAY_CONF: "/etc/quay/quay.yml"
+    depends_on:
+      omero-server:
+        condition: service_healthy
+        restart: true
+    networks:
+      - omero
+    ports:
+      - "4080:4080"
+    volumes:
+      - "./quay_client.yml:/etc/quay/quay.yml"
+      - omeroweb-config:/opt/omero/web/OMERO.web/etc/grid/
+      - "../../../omero-quay:/tmp/omero-quay"
+
+  quay-client:
+    build:
+      context: quay_docker
+      args:
+        - CI_COMMIT_BRANCH=${CI_COMMIT_BRANCH}
+    image: gitlab-registry.in2p3.fr/fbi-data/omero-quay/quay-docker:${CI_COMMIT_BRANCH:-latest}
+    container_name: quay-client
+    environment:
+      CI_COMMIT_BRANCH: $CI_COMMIT_BRANCH
+      QUAY_TEST_DATA: $QUAY_TEST_DATA
+      QUAY_CONF: "/etc/quay/quay.yml"
+    volumes:
+      - "./quay_client.yml:/etc/quay/quay.yml"
+      - "${QUAY_TEST_DATA:-./QuayTestData}/data:/tmp/QuayTestData/data"
+      - "../../../omero-quay:/tmp/omero-quay"
+    depends_on:
+      omero-server:
+        condition: service_healthy
+        restart: true
+    networks:
+      - omero
+
+networks:
+  omero:
+
+volumes:
+  omeroweb-config:
+  omeroserver-data:
+  irods-vault:
+  irods-db:
+  omero-db:

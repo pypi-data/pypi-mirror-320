@@ -1,0 +1,71 @@
+stages:
+  - formatting
+  - build
+  - test
+
+formatting:
+  stage: formatting
+  image: continuumio/miniconda3:latest
+  before_script:
+    - pip install ruff flake8
+  script:
+    # Verify the Python code is black formatting compliant.
+    - ruff check . --fix --exclude 'manifest.py' --exclude '*.ipynb'
+    # Verify the Python code is flake8 formatting compliant.
+    - flake8 --max-line-length 88  --extend-exclude=manifest.py .
+  allow_failure: false
+
+build:
+  stage: build
+  image: docker:26.1
+  services:
+    - docker:26.1-dind
+  variables:
+    DOCKER_TLS_CERTDIR: "/certs"
+    HTTP_PROXY: "http://proxy-upgrade.intra.glicid.fr:3128/"
+    HTTPS_PROXY: "http://proxy-upgrade.intra.glicid.fr:3128/"
+    NO_PROXY: "docker"
+  before_script:
+    - apk update && apk add git bash net-tools curl
+  script:
+    - cd tests/containers
+    - docker compose build --no-cache --push --build-arg
+      HTTP_PROXY=http://proxy-upgrade.intra.glicid.fr:3128/ --build-arg
+      HTTPS_PROXY=http://proxy-upgrade.intra.glicid.fr:3128/ --build-arg
+      CI_COMMIT_BRANCH=$CI_COMMIT_BRANCH
+  tags:
+    - quay
+  when: manual
+
+test:
+  stage: test
+  image: docker:26.1
+  services:
+    - docker:26.1-dind
+  variables:
+    DOCKER_TLS_CERTDIR: "/certs"
+    HTTP_PROXY: "http://proxy-upgrade.intra.glicid.fr:3128/"
+    HTTPS_PROXY: "http://proxy-upgrade.intra.glicid.fr:3128/"
+    NO_PROXY: "docker"
+    ICAT_HOSTNAME: "icat"
+    QUAY_TEST_DATA: "/cache/QuayTestData"
+  before_script:
+    - apk update && apk add git bash net-tools curl
+  script:
+    - cd tests/containers
+    - docker compose pull --quiet irods-db irods-icat nfsrods omero-db omero-server mongo quay-client
+    - ./up.sh
+    - docker compose run --rm quay-client id
+    - docker compose run --rm quay-client ls -alh /tmp/QuayTestData/data
+    - docker compose run --rm quay-client python tests/containers/create_users.py
+    - docker exec -u irods irods-icat iadmin moduser facility0 password omero
+    - docker exec -u irods irods-icat ichmod -r own omero-server /tempZone/
+    - docker compose run --rm quay-client pytest --cov omero_quay --cov-report xml:cov.xml
+
+  tags:
+    - quay
+  artifacts:
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: cov.xml

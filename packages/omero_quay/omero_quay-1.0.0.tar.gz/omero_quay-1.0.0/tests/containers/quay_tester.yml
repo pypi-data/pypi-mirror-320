@@ -1,0 +1,93 @@
+---
+pytest:
+  DOCKER_DATA_PATH: "$QUAY_TEST_DATA/data"
+mongo:
+  DB_URL: "mongodb://root:example@mongo"
+  DB_PORT: 27017
+irods:
+  IRODS_HOST: icat
+  IRODS_PORT: 1247
+  IRODS_ADMIN_USER: rods
+  IRODS_ZONE: tempZone
+  IRODS_ADMIN_PASS: rods
+  YAML_STORE: /tmp/quay/irods
+  resources:
+    "irs":
+      "resc": "demoResc"
+      "smb_root": "/172.18.253.32/espace_perso"
+      "unix_root": "/tmp/share/data/"
+      "irods_root": "/tempZone/home/{{ user }}/irs"
+    "mri":
+      "resc": "mrifacilityResc"
+      "unix_root": "/tmp/share/data/"
+      "irods_root": "/tempZone/home/{{ user }}/irs"
+omero:
+  OMERO_ADMIN: root
+  OMERO_ADMIN_PASS: omero
+  OMERO_HOST: omero-server
+  OMERO_PORT: 4064
+  IRODS_SHARE_PATH: /tempZone/home/
+  OMERO_SHARE_PATH: /tmp/SHARE/
+  YAML_STORE: /tmp/quay/omero
+  OMEROSERVER_USER: debian
+  OMEROSERVER_HOST: localhost
+ingest:
+  MOUNT_PATH: /tmp/users/
+  IRODS_PATH: /tempZone/home/
+  timeout: 3600 # seconds
+  POST_URL: http://localhost:8898
+file:
+  SRCE_DIR: /tmp/
+  DEST_DIR: /tmp/SHARE
+  YAML_STORE: /tmp/quay/irods
+smb:
+  ADMIN_USERNAME: "Administrator"
+  ADMIN_PASSWORD: "samba24!"
+  SCHEMA_DN: "DC=mtp,DC=omero-fbi,DC=fr"
+  ADDC_HOSTS:
+    - "localhost"
+  SHARE_HOSTS:
+    - "localhost"
+    # user@host:port
+ldap:
+  LDAP_HOST: "localhost"
+  LDAP_PORT: 389
+  LDAP_ADMIN_USER: "cn=admin,dc=omero-fbi,dc=fr"
+  LDAP_ROOT: "dc=omero-fbi,dc=fr"
+  LDAP_ADMIN_PASS: "fix_me"
+
+# This defines which and ZMQ sockets are plugged
+workers:
+  watchers:
+    omero:
+      scheme: omero
+      host: localhost
+  managers:
+    irods:
+      scheme: irods
+      host: icat
+    omero:
+      scheme: omero
+      host: localhost
+
+excel:
+  keys:
+    - "Specimen Sample Preparation"
+    - "Specimen Growth Protocol"
+    - "Organism Scientific Name"
+    - "Organism Common Name"
+    - "Organism Ncbi Taxon"
+    - "Biosample Biological Entity"
+    - "Organism Description"
+    - "Intrinsic Variables"
+    - "Extrinsic Variables"
+    - "Experimental Variables"
+    - "Imaging Method Value"
+    - "Imaging Method Ontology Name"
+    - "Imaging Method Ontology Id"
+    - "Imaging Instrument"
+    - "Image Acquisition Parameters"
+    - "Image Analysis Overview"
+    - "Image Correlation Spatial And Temporal Alignment"
+    - "ImageCorrelation Fiducials Used"
+    - "Image Correlation Transformation Matrix"
