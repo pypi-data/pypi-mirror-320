@@ -1,0 +1,576 @@
+[
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 1,
+    "fields": {
+        "code": "af"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 2,
+    "fields": {
+        "code": "ar"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 3,
+    "fields": {
+        "code": "az"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 4,
+    "fields": {
+        "code": "bg"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 5,
+    "fields": {
+        "code": "be"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 6,
+    "fields": {
+        "code": "bn"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 7,
+    "fields": {
+        "code": "br"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 8,
+    "fields": {
+        "code": "bs"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 9,
+    "fields": {
+        "code": "ca"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 10,
+    "fields": {
+        "code": "cs"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 11,
+    "fields": {
+        "code": "cy"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 12,
+    "fields": {
+        "code": "da"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 13,
+    "fields": {
+        "code": "de"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 14,
+    "fields": {
+        "code": "el"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 15,
+    "fields": {
+        "code": "en"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 16,
+    "fields": {
+        "code": "en-gb"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 17,
+    "fields": {
+        "code": "eo"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 18,
+    "fields": {
+        "code": "es"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 19,
+    "fields": {
+        "code": "es-ar"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 20,
+    "fields": {
+        "code": "es-mx"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 21,
+    "fields": {
+        "code": "es-ni"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 22,
+    "fields": {
+        "code": "es-ve"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 23,
+    "fields": {
+        "code": "et"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 24,
+    "fields": {
+        "code": "eu"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 25,
+    "fields": {
+        "code": "fa"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 26,
+    "fields": {
+        "code": "fi"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 27,
+    "fields": {
+        "code": "fr"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 28,
+    "fields": {
+        "code": "fy-nl"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 29,
+    "fields": {
+        "code": "ga"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 30,
+    "fields": {
+        "code": "gl"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 31,
+    "fields": {
+        "code": "he"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 32,
+    "fields": {
+        "code": "hi"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 33,
+    "fields": {
+        "code": "hr"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 34,
+    "fields": {
+        "code": "hu"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 35,
+    "fields": {
+        "code": "ia"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 36,
+    "fields": {
+        "code": "id"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 37,
+    "fields": {
+        "code": "is"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 38,
+    "fields": {
+        "code": "it"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 39,
+    "fields": {
+        "code": "ja"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 40,
+    "fields": {
+        "code": "ka"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 41,
+    "fields": {
+        "code": "kk"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 42,
+    "fields": {
+        "code": "km"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 43,
+    "fields": {
+        "code": "kn"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 44,
+    "fields": {
+        "code": "ko"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 45,
+    "fields": {
+        "code": "lb"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 46,
+    "fields": {
+        "code": "lt"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 47,
+    "fields": {
+        "code": "lv"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 48,
+    "fields": {
+        "code": "mk"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 49,
+    "fields": {
+        "code": "ml"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 50,
+    "fields": {
+        "code": "mn"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 51,
+    "fields": {
+        "code": "nb"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 52,
+    "fields": {
+        "code": "ne"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 53,
+    "fields": {
+        "code": "nl"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 54,
+    "fields": {
+        "code": "nn"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 55,
+    "fields": {
+        "code": "pa"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 56,
+    "fields": {
+        "code": "pl"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 57,
+    "fields": {
+        "code": "pt"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 58,
+    "fields": {
+        "code": "pt-br"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 59,
+    "fields": {
+        "code": "ro"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 60,
+    "fields": {
+        "code": "ru"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 61,
+    "fields": {
+        "code": "sk"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 62,
+    "fields": {
+        "code": "sl"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 63,
+    "fields": {
+        "code": "sq"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 64,
+    "fields": {
+        "code": "sr"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 65,
+    "fields": {
+        "code": "sr-latn"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 66,
+    "fields": {
+        "code": "sv"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 67,
+    "fields": {
+        "code": "sw"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 68,
+    "fields": {
+        "code": "ta"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 69,
+    "fields": {
+        "code": "te"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 70,
+    "fields": {
+        "code": "th"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 71,
+    "fields": {
+        "code": "tr"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 72,
+    "fields": {
+        "code": "tt"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 73,
+    "fields": {
+        "code": "udm"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 74,
+    "fields": {
+        "code": "uk"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 75,
+    "fields": {
+        "code": "ur"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 76,
+    "fields": {
+        "code": "vi"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 77,
+    "fields": {
+        "code": "zh-cn"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 78,
+    "fields": {
+        "code": "zh-tw"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 79,
+    "fields": {
+        "code": "fsl"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 80,
+    "fields": {
+        "code": "oc"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 81,
+    "fields": {
+        "code": "hy"
+    }
+},
+{
+    "model": "kapt_catalog.spokenlanguage",
+    "pk": 82,
+    "fields": {
+        "code": "lsf"
+    }
+}
+]

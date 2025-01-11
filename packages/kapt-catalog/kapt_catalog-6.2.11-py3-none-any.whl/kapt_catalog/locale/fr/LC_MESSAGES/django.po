@@ -1,0 +1,1412 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kapt-catlog\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-04 15:59+0100\n"
+"PO-Revision-Date: 2019-01-21 18:17+0100\n"
+"Last-Translator: Adrien Delhorme <ad@kapt.mobi>\n"
+"Language-Team: Kapt <dev@kapt.mobi>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.8.9\n"
+
+msgid "Complete beds"
+msgstr "Saisir les informations des lits"
+
+msgid "Room must be created before filling beds"
+msgstr "Une chambre doit être créée avant de pouvoir renseinger ses lits."
+
+msgid "Click here to complete beds"
+msgstr "Cliquer ici pour saisir les informations des lits"
+
+msgid "Room"
+msgstr "Chambre"
+
+msgid "Rooms"
+msgstr "Chambres"
+
+msgid "Description"
+msgstr "Description"
+
+msgid "Descriptions"
+msgstr "Descriptions"
+
+msgid "Has a logo"
+msgstr "A un logo"
+
+msgid "first level characteristics"
+msgstr "caractéristique de premier niveau"
+
+msgid "Kapt Catalog"
+msgstr "Catalogue de kapt"
+
+msgid "Owner of the accommodation"
+msgstr "Propriétaire de l'hébergement"
+
+msgid "Agency (relay or tourism office)"
+msgstr "Office de tourisme ou agence"
+
+msgid "Mandatory"
+msgstr "Requis"
+
+msgid "Apartment"
+msgstr "Appartement"
+
+msgid "Boat"
+msgstr "Bateau"
+
+msgid "Bungalow"
+msgstr "Bungalow"
+
+msgid "Mobil-home"
+msgstr "Mobil-home"
+
+msgid "Cabin"
+msgstr "Cabane"
+
+msgid "Tree house"
+msgstr "Cabane dans les arbres"
+
+msgid "Chalet"
+msgstr "Chalet"
+
+msgid "Castle"
+msgstr "Château"
+
+msgid "Manor"
+msgstr "Manoir"
+
+msgid "Ecolodge"
+msgstr "Habitat écologique"
+
+msgid "Igloo"
+msgstr "Igloo"
+
+msgid "Loft"
+msgstr "Loft"
+
+msgid "Townhouse"
+msgstr "Maison de ville"
+
+msgid "Caravan"
+msgstr "Roulotte"
+
+msgid "Plot"
+msgstr "Terrain"
+
+msgid "Garden"
+msgstr "Jardin"
+
+msgid "Island"
+msgstr "Île"
+
+msgid "Villa"
+msgstr "Villa"
+
+msgid "Country house"
+msgstr "Maison de campagne"
+
+msgid "Yurt"
+msgstr "Yourte"
+
+msgid "Tipi"
+msgstr "Tipi"
+
+msgid "Tent"
+msgstr "Tente"
+
+msgid "Cave dwelling"
+msgstr "Habitat troglodyte"
+
+msgid "Village house"
+msgstr "Maison de village"
+
+msgid "Bubble"
+msgstr "Bulle"
+
+msgid "Easy"
+msgstr "Facile"
+
+msgid "Medium"
+msgstr "Moyen"
+
+msgid "Hard"
+msgstr "Difficile"
+
+msgid "Lunch"
+msgstr "Midi"
+
+msgid "Dinner"
+msgstr "Soir"
+
+msgid "Size"
+msgstr "Taille"
+
+msgid "Reference"
+msgstr "Référence"
+
+msgid "Visibility"
+msgstr "Visibilité"
+
+msgid "This activity will only appear on the media checked."
+msgstr "Cette activité apparaîtra uniquement sur les supports cochés."
+
+msgid "Means of payment"
+msgstr "Moyens de paiement"
+
+msgid "Touristic labels"
+msgstr "Labels touristiques"
+
+msgid "Afrikaans"
+msgstr "Afrikaans"
+
+msgid "Arabic"
+msgstr "Arabe"
+
+msgid "Azerbaijani"
+msgstr "Azerbaïdjanais"
+
+msgid "Bulgarian"
+msgstr "Bulgare"
+
+msgid "Belarusian"
+msgstr "Belarusian"
+
+msgid "Bengali"
+msgstr "Bengali"
+
+msgid "Breton"
+msgstr "Breton"
+
+msgid "Bosnian"
+msgstr "Bosnian"
+
+msgid "Catalan"
+msgstr "Catalan"
+
+msgid "Czech"
+msgstr "Tchèque"
+
+msgid "Welsh"
+msgstr "Gallois"
+
+msgid "Danish"
+msgstr "Danois"
+
+msgid "German"
+msgstr "Allemand"
+
+msgid "Greek"
+msgstr "Grec"
+
+msgid "English"
+msgstr "Anglais"
+
+msgid "British English"
+msgstr "Anglais britannique"
+
+msgid "Esperanto"
+msgstr "Esperanto"
+
+msgid "Spanish"
+msgstr "Espagnol"
+
+msgid "Argentinian Spanish"
+msgstr "Espagnol argentin"
+
+msgid "Mexican Spanish"
+msgstr "Espagnol mexicain"
+
+msgid "Nicaraguan Spanish"
+msgstr "Espagnol du Nicaragua"
+
+msgid "Venezuelan Spanish"
+msgstr "Vénézuélien espagnol"
+
+msgid "Estonian"
+msgstr "Estonien"
+
+msgid "Basque"
+msgstr "Basque"
+
+msgid "Persian"
+msgstr "Persan"
+
+msgid "Finnish"
+msgstr "Finlandais"
+
+msgid "French"
+msgstr "Français"
+
+msgid "French Sign Language"
+msgstr "Langue des Signes Française"
+
+msgid "Frisian"
+msgstr "Frisian"
+
+msgid "Irish"
+msgstr "Irlandais"
+
+msgid "Galician"
+msgstr "Galicien"
+
+msgid "Hebrew"
+msgstr "Hébreu"
+
+msgid "Hindi"
+msgstr "Hindi"
+
+msgid "Croatian"
+msgstr "Croate"
+
+msgid "Hungarian"
+msgstr "Hongrois"
+
+msgid "Armenian"
+msgstr "Arménien"
+
+msgid "Interlingua"
+msgstr "Interlingua"
+
+msgid "Indonesian"
+msgstr "Indonésien"
+
+msgid "Icelandic"
+msgstr "Islandais"
+
+msgid "Italian"
+msgstr "Italien"
+
+msgid "Japanese"
+msgstr "Japonais"
+
+msgid "Georgian"
+msgstr "Géorgien"
+
+msgid "Kazakh"
+msgstr "Kazakh"
+
+msgid "Khmer"
+msgstr "Khmer"
+
+msgid "Kannada"
+msgstr "Canada"
+
+msgid "Korean"
+msgstr "Coréen"
+
+msgid "Luxembourgish"
+msgstr "Luxembourgeois"
+
+msgid "Lithuanian"
+msgstr "Lituanien"
+
+msgid "Latvian"
+msgstr "Letton"
+
+msgid "Macedonian"
+msgstr "Macédonien"
+
+msgid "Malayalam"
+msgstr "Malayâlam"
+
+msgid "Mongolian"
+msgstr "Mongolien"
+
+msgid "Norwegian Bokmal"
+msgstr "Norvégien (Bokmål)"
+
+msgid "Nepali"
+msgstr "Népali"
+
+msgid "Dutch"
+msgstr "Néerlandais"
+
+msgid "Norwegian Nynorsk"
+msgstr "Norvégien, Nynorsk"
+
+msgid "Occitan"
+msgstr "Occitan"
+
+msgid "Punjabi"
+msgstr "Pendjabi"
+
+msgid "Polish"
+msgstr "Polonais"
+
+msgid "Portuguese"
+msgstr "Portugais"
+
+msgid "Brazilian Portuguese"
+msgstr "Portugais brésilien"
+
+msgid "Romanian"
+msgstr "Roumain"
+
+msgid "Russian"
+msgstr "Russe"
+
+msgid "Slovak"
+msgstr "Slovaque"
+
+msgid "Slovenian"
+msgstr "Slovénien"
+
+msgid "Albanian"
+msgstr "Albanais"
+
+msgid "Serbian"
+msgstr "Serbe"
+
+msgid "Serbian Latin"
+msgstr "Serbe Latin"
+
+msgid "Swedish"
+msgstr "Suédois"
+
+msgid "Swahili"
+msgstr "Swahili"
+
+msgid "Tamil"
+msgstr "Tamoul"
+
+msgid "Telugu"
+msgstr "Telugu"
+
+msgid "Thai"
+msgstr "Thaïlandais"
+
+msgid "Turkish"
+msgstr "Turc"
+
+msgid "Tatar"
+msgstr "Tatar"
+
+msgid "Udmurt"
+msgstr "Oudmourtie"
+
+msgid "Ukrainian"
+msgstr "Ukrainien"
+
+msgid "Urdu"
+msgstr "Urdu"
+
+msgid "Vietnamese"
+msgstr "Vietnamien"
+
+msgid "Simplified Chinese"
+msgstr "Chinois simplifié"
+
+msgid "Traditional Chinese"
+msgstr "Chinois traditionnel"
+
+msgid "French sign language"
+msgstr "Langue des signes française"
+
+msgid "Type"
+msgstr "Type"
+
+msgid "Code"
+msgstr "Code"
+
+msgid "Spoken language"
+msgstr "Langue parlée"
+
+msgid "Spoken languages"
+msgstr "Langues parlées"
+
+msgid "Activity number"
+msgstr "Numéro d'activité"
+
+msgid "Structure reference"
+msgstr "Référence structure"
+
+msgid "Duplicate objects"
+msgstr "Dupliquer les objets"
+
+msgid "Categories activity"
+msgstr "Catégories d’activité"
+
+msgid "Activity reference"
+msgstr "Référence d'activité"
+
+msgid "Activity references"
+msgstr "Références d'activités"
+
+msgid "First duplicate object"
+msgstr "Premier objet en double"
+
+msgid "Second duplicate object"
+msgstr "Deuxième objet en double"
+
+msgid "Not duplicated"
+msgstr "Pas une copie"
+
+msgid "Duplicated"
+msgstr "Dupliqué"
+
+msgid "Signaled"
+msgstr "Signalé"
+
+msgid "Duplicated object"
+msgstr "Objet dupliqué"
+
+msgid "Duplicate activity"
+msgstr "Activité en double"
+
+msgid "Duplicate activities"
+msgstr "Activités en double"
+
+msgid "Name"
+msgstr "Nom"
+
+msgid "Activity Category"
+msgstr "Catégorie d’activité"
+
+msgid "Activity Categories"
+msgstr "Catégories d’activités"
+
+msgid "Slug"
+msgstr "Slug"
+
+msgid "Reference slug"
+msgstr "Référence slug"
+
+msgid "The reference will be automatically created on save."
+msgstr "La référence sera automatiquement crée après l'enregistrement."
+
+msgid "Is complete"
+msgstr "est complet"
+
+msgid "Is public"
+msgstr "Est public"
+
+msgid "Gallery"
+msgstr "Galerie"
+
+msgid "Website"
+msgstr "Votre site internet"
+
+msgid "Referent contact"
+msgstr "Contact référent"
+
+msgid "Main labelling"
+msgstr "Label principal"
+
+msgid "Default labelling"
+msgstr "Label par défaut"
+
+msgid "Prefectoral labelling"
+msgstr "Label préfectoral"
+
+msgid "Characteristics"
+msgstr "Caractéristiques"
+
+msgid "Typologies promo Sitra"
+msgstr "Promo de typologies Sitra"
+
+msgid "Environment"
+msgstr "Environnement"
+
+msgid "Customer types"
+msgstr "Type de clientèle"
+
+msgid "Number of occurences"
+msgstr "Nombre d'occurences"
+
+msgid "month"
+msgstr "mois"
+
+msgid "year"
+msgstr "année"
+
+msgid "Minimum age"
+msgstr "Age minimum"
+
+msgid "Maximum age"
+msgstr "Age maximum"
+
+msgid "Minimum age unit"
+msgstr "Unité age minimum"
+
+msgid "Maximum age unit"
+msgstr "Unité age maximum"
+
+msgid "Is free"
+msgstr "Est gratuit"
+
+msgid "Minimum price"
+msgstr "Prix minimum"
+
+msgid "Maximum price"
+msgstr "Prix Maximum"
+
+msgid "Currency"
+msgstr "Devise"
+
+msgid "Booking Url"
+msgstr "Url de réservation"
+
+msgid "Availability Url"
+msgstr "Url de disponibilité"
+
+msgid "Can be booked by owner"
+msgstr "Peut-être réservé par le propriétaire"
+
+msgid "Can be booked by organization"
+msgstr "Peut-être réservé par l'agence (relais)"
+
+msgid "Average score"
+msgstr "Score moyen"
+
+msgid "ERP certification"
+msgstr "Certification ERP"
+
+msgid "Activity"
+msgstr "Activité"
+
+msgid "Activities"
+msgstr "Activités"
+
+msgid "Start date"
+msgstr "Date de début"
+
+msgid "End date"
+msgstr "Date de fin"
+
+msgid "Opening time"
+msgstr "Horaires d’arrivée"
+
+msgid "Closing time"
+msgstr "Heure de départ"
+
+msgid "Further hourly informations"
+msgstr "Plus d’informations horaires"
+
+msgid "Activity period"
+msgstr "Période d’activité"
+
+msgid "Activity periods"
+msgstr "Périodes d’activité"
+
+msgid "The start date must be lesser or equal than the end date"
+msgstr "La date de début doit être inférieure à la date de fin"
+
+msgid "An activity period must not be in contention with another period"
+msgstr "Une période d’activité ne doit pas être en contention avec une autre période"
+
+msgid "The opening time must be lesser than the closing time"
+msgstr "La durée d’ouverture doit être inférieur à l’heure de clôture"
+
+msgid "A closing time is not valid if it not comes with an opening time"
+msgstr "Une heure de fermeture n’est pas valide si elle ne vient pas avec une heure d’ouverture"
+
+msgid "Icon"
+msgstr "Icône"
+
+msgid "Rating unit"
+msgstr "Unité de classement"
+
+msgid "Activities that can be attached to this Label"
+msgstr "Activités qui peuvent être attachées à ce label"
+
+msgid "Slug identifier"
+msgstr "Identifiant normalisé"
+
+msgid "Touristic label"
+msgstr "Label touristique"
+
+msgid "Rating units"
+msgstr "Unités de classement"
+
+msgid "Rating"
+msgstr "Classement"
+
+msgid "Priority"
+msgstr "Priorité"
+
+msgid "0 is high priority, 10 is low priority"
+msgstr "indiquer 0 pour une priorité haute, 10 pour une priorité basse"
+
+msgid "Labelling"
+msgstr "Labellisation"
+
+msgid "Labellings"
+msgstr "Labellisations"
+
+msgid "No tax"
+msgstr "Aucune taxe"
+
+msgid "Included in the price"
+msgstr "Inclus dans le prix"
+
+msgid "Not included in the price"
+msgstr "Pas compris dans le prix"
+
+msgid "Property type"
+msgstr "Type de propriété"
+
+msgid "Capacity"
+msgstr "Capacité"
+
+msgid "The capacity will be automatically computed according to the beds you specified"
+msgstr "La capacité est automatiquement calculée en fonction des lits que vous renseignez"
+
+msgid "Minimum capacity per room"
+msgstr "Capacité minimale par chambre"
+
+msgid "This value will be automatically computed according to the beds you specified"
+msgstr "Cette valeur sera automatiquement calculée selon les lits que vous avez spécifié"
+
+msgid "Maximum capacity per room"
+msgstr "Capacité maximale par chambre"
+
+msgid "Max Capacity"
+msgstr "Capacité maximale"
+
+msgid "Area"
+msgstr "Surface"
+
+msgid "Number of floors"
+msgstr "Nombre d'étages"
+
+msgid "Number of rooms"
+msgstr "Nombre de chambres"
+
+msgid "Light construction"
+msgstr "Hébergement léger"
+
+msgid "Unusual accommodation"
+msgstr "Insolite"
+
+msgid "Facilities"
+msgstr "Equipements"
+
+msgid "Technical characteristics"
+msgstr "Caractéristiques techniques"
+
+msgid "Services"
+msgstr "Services"
+
+msgid "Land surface"
+msgstr "Surface de la terre"
+
+msgid "Garden surface"
+msgstr "Surface du jardin"
+
+msgid "Pool dimension"
+msgstr "Dimension de la piscine"
+
+msgid "Patio surface"
+msgstr "Surface de patio"
+
+msgid "Tourist tax type"
+msgstr "Type de taxe touristique"
+
+msgid "Deposit"
+msgstr "Caution"
+
+msgid "Pets deposit"
+msgstr "Caution pour les animaux"
+
+msgid "Check-in time"
+msgstr "Heure d'arrivée"
+
+msgid "Check-out time"
+msgstr "Heure de départ"
+
+msgid "Minimum number of nights"
+msgstr "Nombre de nuits minimum"
+
+msgid "Arrival days"
+msgstr "Jours d’arrivée"
+
+msgid "Accommodation activity"
+msgstr "Activité d'hébergement"
+
+msgid "Accommodation activities"
+msgstr "Activités d'hébergement"
+
+msgid "Monday"
+msgstr "Lundi"
+
+msgid "Tuesday"
+msgstr "Mardi"
+
+msgid "Wednesday"
+msgstr "Mercredi"
+
+msgid "Thursday"
+msgstr "Jeudi"
+
+msgid "Friday"
+msgstr "Vendredi"
+
+msgid "Saturday"
+msgstr "Samedi"
+
+msgid "Sunday"
+msgstr "Dimanche"
+
+msgid "Day"
+msgstr "Jour"
+
+msgid "Arrival day"
+msgstr "Jour d’arrivée"
+
+msgid "Bed & Breakfast activity"
+msgstr "Chambre d'hôtes"
+
+msgid "Bed & Breakfast activities"
+msgstr "Chambres d'hôtes"
+
+msgid "Your accommodation exceed the maximum capacity value"
+msgstr "Votre hébergement dépasse la valeur de capacité maximale"
+
+msgid "Rental activity"
+msgstr "Location"
+
+msgid "Rental activities"
+msgstr "Locations"
+
+msgid "Your accommodation exceed the maximum capacity value. The maximum allowed capacity for a rental without ERP certification is: "
+msgstr "Votre hébergement à atteint la capacité maximale autorisée. La capacité maximum autorisée pour une location sans certificat ERP est :"
+
+msgid "Number of pitches"
+msgstr "Nombre d'emplacements"
+
+msgid "Camping activity"
+msgstr "Camping"
+
+msgid "Camping activities"
+msgstr "Campings"
+
+msgid "Camper van activity"
+msgstr "Camping car"
+
+msgid "Camper van activities"
+msgstr "Camping Car"
+
+msgid "Ranked rooms quantity"
+msgstr "Nombre de chambres classées"
+
+msgid "Hotel declared rooms quantity"
+msgstr "Nombre de chambres déclarées"
+
+msgid "Single rooms quantity"
+msgstr "Double de chambres simples"
+
+msgid "Double rooms quantity"
+msgstr "Nombre de chambres doubles"
+
+msgid "Suite rooms quantity"
+msgstr "Nombre de suites"
+
+msgid "Reduced mobility rooms quantity"
+msgstr "Nombre de chambres accessibles aux PMR"
+
+msgid "Hotel activity"
+msgstr "Hôtel"
+
+msgid "Hotel activities"
+msgstr "Hôtels"
+
+msgid "Holiday village activity"
+msgstr "Village de vacances"
+
+msgid "Holiday village activities"
+msgstr "Village de vacances"
+
+msgid "Relay activity"
+msgstr "Relais"
+
+msgid "Relay activities"
+msgstr "Relais"
+
+msgid "Youth hostel activity"
+msgstr "Auberge de jeunesse"
+
+msgid "Youth hostel activities"
+msgstr "Auberges de jeunesse"
+
+msgid "Homestay activity"
+msgstr "Chambre chez l'habitant"
+
+msgid "Homestay activities"
+msgstr "Chambres chez l'habitant"
+
+msgid "Riad activity"
+msgstr "Riad"
+
+msgid "Riad activities"
+msgstr "Riads"
+
+#. Translators: the number that identify one room
+msgid "Room number"
+msgstr "Numéro de la chambre"
+
+msgid "Room reference"
+msgstr "Référence de chambre"
+
+msgid "Room references"
+msgstr "Références de chambres"
+
+msgid "Accommodation"
+msgstr "Hébergement"
+
+msgid "Bed number"
+msgstr "Numéro du lit"
+
+msgid "Bed reference"
+msgstr "Référence de lit"
+
+msgid "Bed references"
+msgstr "Références de lit"
+
+msgid "Bed {} - "
+msgstr "Lit {} - "
+
+msgid "Extra bed"
+msgstr "Lit d'appoint"
+
+msgid "Bed"
+msgstr "Lit"
+
+msgid "Beds"
+msgstr "Lits"
+
+msgid "You must fill a value for the field 'size'"
+msgstr "Vous devez renseigner une valeur pour le champ 'taille'"
+
+msgid "Your accommodation raised the maximum capacity value, you can't add a new bed"
+msgstr "Votre hébergment à atteint la capacité maximale autorisée, vous ne pouvez pas ajouter des lits supplémentaires"
+
+msgid "Business tourism maximum capacity"
+msgstr "Capacité maximale de tourisme affaires"
+
+msgid "Equipped meeting rooms quantity"
+msgstr "Quantité de salles de réunion équipées"
+
+msgid "Adjustable rooms quantity"
+msgstr "Quantité de pièce réglable"
+
+msgid "Business tourism service"
+msgstr "Service de tourisme d’affaires"
+
+msgid "Business tourism services"
+msgstr "Services de tourisme d’affaires"
+
+msgid "Identifier"
+msgstr "Identifiant normalisé"
+
+msgid "Business tourism service description"
+msgstr "Description des services de tourisme d’affaire"
+
+msgid "Max capacity"
+msgstr "Capacité maximum"
+
+msgid "Height"
+msgstr "Hauteur"
+
+msgid "Natural lighting"
+msgstr "Éclairage naturel"
+
+msgid "Meeting room"
+msgstr "Salle de réunion"
+
+msgid "Meeting rooms"
+msgstr "Salles de réunion"
+
+msgid "Meeting room layout type"
+msgstr "Type de disposition de salle réunion"
+
+msgid "Meeting room layout"
+msgstr "Agencement de salle de réunion"
+
+msgid "Meeting room layouts"
+msgstr "Agencements de salle de réunion"
+
+msgid "For residents"
+msgstr "Pour les résidents"
+
+msgid "Local"
+msgstr "Local"
+
+msgid "Departemental"
+msgstr "Departemental"
+
+msgid "Regional"
+msgstr "Régional"
+
+msgid "National"
+msgstr "Nationale"
+
+msgid "International"
+msgstr "International"
+
+msgid "Event reach"
+msgstr "Portée de l’événement"
+
+msgid "Event types"
+msgstr "Types d’événements"
+
+msgid "Event categories"
+msgstr "Catégories"
+
+msgid "Event activity"
+msgstr "Activité d’événement"
+
+msgid "Event activities"
+msgstr "Activités d’événement"
+
+msgid "Categories"
+msgstr "Catégories"
+
+msgid "Min capacity"
+msgstr "Capacité minimum"
+
+msgid "Informations"
+msgstr "Informations"
+
+msgid "Elevation (m)"
+msgstr "Altitude (m)"
+
+msgid "Distance (km)"
+msgstr "Distance (km)"
+
+msgid "Daily duration (minute)"
+msgstr "Durée quotidienne (minutes)"
+
+msgid "Roaming duration"
+msgstr "Durée d’itinérance"
+
+msgid "Duration time"
+msgstr "Durée"
+
+msgid "Level of difficulty"
+msgstr "Niveau de difficulté"
+
+msgid "Departure time"
+msgstr "Heure de départ"
+
+msgid "Leisure activity"
+msgstr "Activité d'animation"
+
+msgid "Leisure activities"
+msgstr "Activités d'animation"
+
+msgid "The minimum capacity can not be greater than the capacity"
+msgstr "La capacité minimum ne peut pas être plus grande que la capacité maximum."
+
+msgid "Products"
+msgstr "Produits"
+
+msgid "Chef speciality"
+msgstr "Spécialité du chef"
+
+msgid "Specialties"
+msgstr "Spécialités"
+
+msgid "Meal activity"
+msgstr "Activité de restauration"
+
+msgid "Meal activities"
+msgstr "Activités de restauration"
+
+msgid "Product"
+msgstr "Produit"
+
+msgid "Distance between mealactivity and product"
+msgstr "Distance entre l'activité et le produit"
+
+msgid "Meal activity product"
+msgstr "Produit de l'activité de restauration"
+
+msgid "Meal activity products"
+msgstr "Produits de l'activité de restauration"
+
+msgid "Schedule type"
+msgstr "Type de planning"
+
+#, fuzzy
+#| msgid "Meal activity product"
+msgid "Meal activity schedule"
+msgstr "Produit de l'activité de restauration"
+
+#, fuzzy
+#| msgid "Meal activity products"
+msgid "Meal activity schedules"
+msgstr "Produits de l'activité de restauration"
+
+msgid "Table d'hôtes activity"
+msgstr "Table d'hôtes"
+
+msgid "Table d'hôtes activities"
+msgstr "Tables d'hôtes"
+
+msgid "You have exceed the table d'hôtes max capacity"
+msgstr "Vous avez atteint la capacité maximum autorisée pour une table d'hôtes"
+
+msgid "Inn activity"
+msgstr "Auberge"
+
+msgid "Inn activities"
+msgstr "Auberges"
+
+msgid "You have exceed the auberge max capacity"
+msgstr "Vous avez atteint le nombre maximal d'auberge autorisée"
+
+msgid "Number of days"
+msgstr "Nombre de jours"
+
+msgid "Number of nights"
+msgstr "Nombre de nuits"
+
+msgid "Pack activity"
+msgstr "Pack activité"
+
+msgid "Pack activities"
+msgstr "Pack activités"
+
+msgid "Themes"
+msgstr "Thèmes"
+
+msgid "Point of interest activity"
+msgstr "Point d'Intérêt"
+
+msgid "Points of interest activities"
+msgstr "Point d'Intérêt"
+
+msgid "Parent"
+msgstr "Parent"
+
+msgid "Value"
+msgstr "Valeur"
+
+msgid "Is a search engine criteria"
+msgstr "est un critère du moteur de recherche"
+
+msgid "Is a category"
+msgstr "est une catégorie"
+
+msgid "Characteristic"
+msgstr "Caractéristique"
+
+msgid "Winter"
+msgstr "Hiver"
+
+msgid "Summer"
+msgstr "Été"
+
+msgid "Handicap"
+msgstr "Handicap"
+
+msgid "Business tourism"
+msgstr "Tourisme d'affaires"
+
+msgid "Groups"
+msgstr "Groupes"
+
+msgid "Activities providers"
+msgstr "Prestataire d’activités"
+
+msgid "Aspect"
+msgstr "Aspect"
+
+msgid "Formatted identifier"
+msgstr "Identifiant formatté"
+
+msgid "Former identifier"
+msgstr "Ancien identifiant"
+
+msgid "Last import from external script"
+msgstr "Dernière importation depuis un script externe"
+
+msgid "groups"
+msgstr "groupes"
+
+msgid "The groups this reference belongs to. A reference will get all permissions granted to each of its group."
+msgstr "Le groupe auquel appartient la référence. Une référence aura toutes les permissions associées à chacun des groupes auxquels elle appartient."
+
+msgid "External lock"
+msgstr "Verrou externe"
+
+msgid "Structure references"
+msgstr "Références structure"
+
+msgid "Integration identifier"
+msgstr "Identifiant d'intégration"
+
+msgid "Id basket"
+msgstr "Identifiant du panier"
+
+msgid "OpenSystem reference"
+msgstr "Référence OpenSystem"
+
+msgid "OpenSystem references"
+msgstr "Références OpenSystem"
+
+msgid "Grade"
+msgstr "Note"
+
+msgid "Label"
+msgstr "Label"
+
+msgid "Color"
+msgstr "Couleur"
+
+msgid "Comments count"
+msgstr "Nombre d’avis"
+
+msgid "Date updated"
+msgstr "Date de mise à jour"
+
+msgid "FairGUEST reference"
+msgstr "Référence FairGUEST"
+
+msgid "FairGUEST references"
+msgstr "Références FairGUEST"
+
+msgid "Imported on"
+msgstr "Importés sur"
+
+msgid "Place name"
+msgstr "Nom du lieu"
+
+msgid "Address"
+msgstr "Adresse"
+
+msgid "Elevation"
+msgstr "Altitude"
+
+msgid "Nearby leisures"
+msgstr "Loisirs à proximité"
+
+msgid "Nearby services"
+msgstr "Services à proximité"
+
+msgid "On site services"
+msgstr "Services sur place"
+
+msgid "Contacts"
+msgstr "Contacts"
+
+msgid "Structure"
+msgstr "Structure"
+
+msgid "Structures"
+msgstr "Structures"
+
+msgid "Leisure"
+msgstr "Loisire"
+
+msgid "Distance between leisure and structure"
+msgstr "Distance entre le loisir et la structure"
+
+msgid "Service"
+msgstr "Service"
+
+msgid "Distance between service and structure"
+msgstr "Distance entre le service et la structure"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Contact type for this structure"
+msgstr "Type de contact pour cette structure"
+
+msgid "Is referent"
+msgstr "est le contact référent"
+
+msgid "Structure contact"
+msgstr "Contact d'une structure"
+
+msgid "Structure contacts"
+msgstr "Contacts d'une structure"
+
+msgid "Only one contact can be set as 'referent'"
+msgstr "Un seul contact ne peut être marqué comme référent"
+
+msgid "Delete?"
+msgstr "Supprimer ?"
+
+msgid "View on site"
+msgstr "Voir sur le site"
+
+#, python-format
+msgid "Add another %(verbose_name)s"
+msgstr "Ajouter un autre %(verbose_name)s"
+
+msgid "Close"
+msgstr "Fermer"
+
+msgid "Open"
+msgstr "Ouvrir"
+
+#~ msgid "Housing type"
+#~ msgstr "Type de logement"
+
+#~ msgid "SITRA Selection"
+#~ msgstr "Sélection SITRA"
+
+#~ msgid "Tag name"
+#~ msgstr "Nom du tag"
+
+#~ msgid "Number of results per page"
+#~ msgstr "Nombre de résulats par page"
+
+#~ msgid "CSS class"
+#~ msgstr "Classe CSS"
+
+#~ msgid "Template"
+#~ msgstr "Modèle"
+
+#, fuzzy
+#~ msgid "Random sorting"
+#~ msgstr "Classement"
+
+#~ msgid "Per opening date sorting"
+#~ msgstr "Tri par date d'ouverture"
+
+#~ msgid "If selected, the results will contain only celebrations and manifestations."
+#~ msgstr "Si ce champ est coché, seules les manifestations et les événements seront affichés."
+
+#~ msgid "Per registration and area sorting"
+#~ msgstr "Tri par adhérent/territoire"
+
+#, fuzzy
+#~ msgid "Per booking sorting"
+#~ msgstr "Information de réservation"
+
+#, fuzzy
+#~ msgid "Search engine"
+#~ msgstr "est un critère du moteur de recherche"
+
+#, fuzzy
+#~ msgid "Context processor"
+#~ msgstr "Descriptif de l'accueil, sa forme et son originalité"
+
+#~ msgid "None"
+#~ msgstr "Aucun"
+
+#~ msgid "Booking informations"
+#~ msgstr "Informations de réservation"
+
+#~ msgid "Relay, Stopover gîtes"
+#~ msgstr "Relais, Gîte d'étape"
+
+#~ msgid "General"
+#~ msgstr "Général"
+
+#~ msgid "Rates"
+#~ msgstr "Tarifs"
+
+#~ msgid "Is registered"
+#~ msgstr "Est enregistré"
+
+#~ msgid "This activity is registered with the authoritative organization"
+#~ msgstr "Cette activité est enregistrée auprès de l'organisation qui fait autorité (par exemple l'Office de Tourisme)"
+
+#~ msgid "On area"
+#~ msgstr "Sur le territoire"
+
+#~ msgid "This activity is located on the area where it is registered"
+#~ msgstr "Cette activité est située sur le territoire où elle est enregistrée"
+
+#~ msgid "Main contact"
+#~ msgstr "Contact principal"
+
+#~ msgid "Address precisions"
+#~ msgstr "Complément d'adresse"
+
+#~ msgid "Localization"
+#~ msgstr "Géolocalisation"
+
+#~ msgid "GPS position"
+#~ msgstr "Coordonnées GPS"
+
+#~ msgid "Move the marker below to the exact address of your structure"
+#~ msgstr "Déplacez le marqueur ci-dessous à la position exacte de votre structure"
+
+#~ msgid "meters"
+#~ msgstr "mètres"
+
+#~ msgid "Choose an image that shows your whole structure"
+#~ msgstr "Choissez une photo qui montre l'ensemble de votre structure"
+
+#~ msgid "Save"
+#~ msgstr "Enregistrer"
+
+#~ msgid "You must choose a locality in the list"
+#~ msgstr "Vous devez choisir une commune dans la liste"
+
+#~ msgid "Location and environment description"
+#~ msgstr "Descriptif de la situation géographique et de l'environnement"
+
+#~ msgid "Nearby activities description"
+#~ msgstr "Descriptif des activités possibles aux alentours"
+
+#~ msgid "Leisures"
+#~ msgstr "Loisirs"
+
+#~ msgid "You can choose the housing type (yurt, caravan, cabin, ...) in the characteristic form."
+#~ msgstr "Vous pouvez choisir le type d'habitation (yourt, caravane, cabane) dans le formulaire \"Caractéristiques\"."
+
+#~ msgid "person(s)"
+#~ msgstr "personne(s)"
+
+#~ msgid "Capacity of the room"
+#~ msgstr "Capacité de la chambre"
+
+#~ msgid "Area of the room"
+#~ msgstr "Surface de la chambre"
+
+#~ msgid "You cannot deselect the ERP certificate option because you have rooms that have a capacity greater than the maximum allowed capacity: "
+#~ msgstr "Vous ne pouvez pas retirer la certification ERP car vous avez des chambres dont la capacité est supérieure à la capacité maximale autorisée :"
+
+#~ msgid "-- Select a bed size"
+#~ msgstr "-- Choissez une taille de lit"
+
+#~ msgid "Double beds"
+#~ msgstr "Lit double"
+
+#~ msgid "Single beds"
+#~ msgstr "Lit simple"
+
+#~ msgid "You can not add as many beds. The maximum allowed capacity is: "
+#~ msgstr "Vous ne pouvez pas ajouter plus de lits. La capacité maximale autorisée est de :"
+
+#~ msgid "You have to choose at least one bed"
+#~ msgstr "Vous devez renseigner au moins un lit"
+
+#~ msgid "Camping"
+#~ msgstr "Camping"
+
+#~ msgid "Ranking for this label"
+#~ msgstr "Classement pour ce label"
+
+#~ msgid "Priority of this label"
+#~ msgstr "Priorité de ce label"
+
+#~ msgid "Single storey"
+#~ msgstr "Plain pied"
+
+#~ msgid "Payment means"
+#~ msgstr "Moyens de paiement"
+
+#~ msgid "Inn"
+#~ msgstr "Auberge"
+
+#~ msgid "Bed & Breakfast"
+#~ msgstr "Chambre d'hôtes"
+
+#~ msgid "Relay"
+#~ msgstr "Relais"
