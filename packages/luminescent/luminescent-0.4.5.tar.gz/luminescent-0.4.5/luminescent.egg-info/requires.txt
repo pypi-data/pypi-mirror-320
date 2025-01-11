@@ -1,0 +1,5 @@
+gdsfactory
+pillow
+stl-to-voxel
+electromagneticpython
+sortedcontainers
