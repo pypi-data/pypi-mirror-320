@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+density/__init__.py
+density/validatedensitydict.py
+density.egg-info/PKG-INFO
+density.egg-info/SOURCES.txt
+density.egg-info/dependency_links.txt
+density.egg-info/entry_points.txt
+density.egg-info/requires.txt
+density.egg-info/top_level.txt
+tests/test_builtindensity.py
+tests/test_mixturespec.py
+tests/test_scipydensity.py
+tests/test_scipydensity_etc.py
+tests/test_scipydensity_etc_etc.py

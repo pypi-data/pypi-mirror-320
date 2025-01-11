@@ -1,0 +1,40 @@
+Metadata-Version: 2.2
+Name: density
+Version: 1.0.0
+Summary: Specifications of parametric density functions
+Home-page: https://github.com/microprediction/density
+Author: microprediction
+Author-email: peter.cotton@microprediction.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+# Density ![tests_312](https://github.com/microprediction/density/workflows/tests_312/badge.svg)
+A simple specification of univariate density functions
+
+## Install
+
+   pip install density 
+   
+## Specifying densities or mixtures of the same
+See [examples](https://github.com/microprediction/density/tree/main/examples) of specifying densities. 
+
+See the [Scipy manifest](https://github.com/microprediction/density/blob/main/density/schemachecker/scipydensitymanifest.py) for a list of densities. 
+
+## Evaluating densities 
+Not provided here. To evaluate PDFs, either see the manual examples [here](https://github.com/microprediction/density/tree/main/examples/evaluation) or use the [densitypdf](https://github.com/microprediction/densitypdf) package. 
+
+
