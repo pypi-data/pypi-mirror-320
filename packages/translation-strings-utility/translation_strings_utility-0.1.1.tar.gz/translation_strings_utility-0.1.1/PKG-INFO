@@ -1,0 +1,44 @@
+Metadata-Version: 2.3
+Name: translation-strings-utility
+Version: 0.1.1
+Summary: 
+Author: Jacob Valdez
+Author-email: jacobfv123@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: anthropic (>=0.42.0,<0.43.0)
+Requires-Dist: typer (>=0.15.1,<0.16.0)
+Description-Content-Type: text/markdown
+
+# 1. Load and Sort Message JSONs
+- Load all JSON files from ./messages/*.json
+- Sort them recursively at every level
+- Write back sorted JSONs
+
+# 2. Flatten All Language Messages
+- Create flatten_messages() function for dot notation
+- Load all language JSONs into messages dict
+- Flatten each language's messages into keys_{lang} dicts
+
+# 3. Create Union and Find Differences
+- Create union set of all keys (all_keys)
+- Find missing keys for each language (missing_by_lang)
+
+# 4. Create Master Translation Dictionary
+- Build master_translations with all keys and available translations
+- Mark missing translations with '[MISSING]'
+- Sort master_translations by key
+
+# 5. Get Missing Translations from Claude
+- Set up Claude API client
+- Process translations in batches
+- Update master_translations with responses
+
+# 6. Create Individual Language Files
+- Create flattened files for each language
+- Unflatten back to nested structure
+- Write updated JSONs
+
+
