@@ -1,0 +1,2 @@
+class CurrencyAPIException(Exception):
+    pass
