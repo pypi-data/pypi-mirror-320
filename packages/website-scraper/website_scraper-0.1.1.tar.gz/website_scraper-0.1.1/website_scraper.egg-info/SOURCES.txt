@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+tests/test_scraper.py
+website_scraper/__init__.py
+website_scraper/cli.py
+website_scraper/scraper.py
+website_scraper.egg-info/PKG-INFO
+website_scraper.egg-info/SOURCES.txt
+website_scraper.egg-info/dependency_links.txt
+website_scraper.egg-info/entry_points.txt
+website_scraper.egg-info/requires.txt
+website_scraper.egg-info/top_level.txt

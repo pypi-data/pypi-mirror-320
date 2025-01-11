@@ -1,0 +1,5 @@
+requests>=2.25.0
+beautifulsoup4>=4.9.0
+fake-useragent>=0.1.11
+tqdm>=4.50.0
+lxml>=4.9.0
