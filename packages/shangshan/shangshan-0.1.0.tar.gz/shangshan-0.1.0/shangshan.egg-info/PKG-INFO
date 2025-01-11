@@ -1,0 +1,59 @@
+Metadata-Version: 2.2
+Name: shangshan
+Version: 0.1.0
+Summary: A Python SDK for downloading and processing data
+Home-page: https://github.com/yourusername/shangshan
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Shangshan SDK
+
+一个用于下载和处理数据的Python SDK。
+
+## 安装
+
+```bash
+pip install shangshan
+```
+
+## 使用
+
+```python
+from shangshan import download
+
+download('testuser/model_llm')
+```
+
+## 下载模型
+
+```python
+from shangshan import download
+
+download('testuser/model_llm')
+```
+
+## 功能特性
+
+- 支持文件下载
+- 自动重试机制
+- 进度显示
+
+## 许可证
+
+MIT License
