@@ -1,0 +1,11 @@
+openai>=1.55.3
+httpx>=0.27.2
+pandas
+numpy
+scikit-learn
+scipy
+
+[full]
+autofeat
+featuretools
+tabpfn[full]
