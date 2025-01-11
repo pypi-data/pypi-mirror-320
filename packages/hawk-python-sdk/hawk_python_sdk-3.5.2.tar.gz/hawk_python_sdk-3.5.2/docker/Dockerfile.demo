@@ -1,0 +1,8 @@
+FROM python:3.10-slim AS build-stage
+
+WORKDIR /app
+COPY ./example/requirements.txt ./requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY ./example/fill_events.py ./fill_events.py
+CMD ["python", "./fill_events.py"]
