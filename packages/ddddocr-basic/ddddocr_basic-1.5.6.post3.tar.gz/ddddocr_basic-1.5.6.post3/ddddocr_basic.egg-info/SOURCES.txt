@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+ddddocr/__init__.py
+ddddocr/_charset.py
+ddddocr/common_old.onnx
+ddddocr/py.typed
+ddddocr_basic.egg-info/PKG-INFO
+ddddocr_basic.egg-info/SOURCES.txt
+ddddocr_basic.egg-info/dependency_links.txt
+ddddocr_basic.egg-info/requires.txt
+ddddocr_basic.egg-info/top_level.txt
