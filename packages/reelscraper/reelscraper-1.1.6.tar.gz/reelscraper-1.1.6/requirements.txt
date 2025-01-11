@@ -1,0 +1,6 @@
+certifi
+charset-normalizer
+fake-useragent
+idna
+requests
+urllib3
