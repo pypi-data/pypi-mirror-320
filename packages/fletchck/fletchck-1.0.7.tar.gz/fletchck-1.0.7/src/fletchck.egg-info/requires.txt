@@ -1,0 +1,10 @@
+APScheduler
+argon2-cffi
+cryptography
+dnspython
+paho-mqtt
+paramiko
+passlib
+pyserial
+python-dateutil
+tornado>=6.3
