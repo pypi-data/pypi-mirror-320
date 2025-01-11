@@ -1,0 +1,43 @@
+# Python package
+# This file defines this Python package.
+# https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
+
+[build-system]
+requires = ["setuptools >= 75.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "balance-subscriber"
+description = "MQTT listener to save data"
+readme = "README.md"
+version = "0.1.1"
+dependencies = [
+    "paho-mqtt==2.*"
+]
+# https://devguide.python.org/versions/
+requires-python = ">= 3.9"
+authors = [
+    { name = "Joe Heffer", email = "j.heffer@sheffield.ac.uk" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+# https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#creating-executable-scripts
+[project.scripts]
+balance-subscriber = "balance_subscriber.__main__:main"
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "flake8"
+]
+
+[project.urls]
+Homepage = "https://pypi.org/p/balance-subscriber"
+Issues = "https://github.com/IoT-balance-project/balance-mqtt-subscriber/issues"
+
+[tool.pytest.ini_options]
+log_cli = true
