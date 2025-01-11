@@ -1,0 +1,5 @@
+bson>=0.5.10
+
+[dev]
+numpy>=1.21.2
+matplotlib>=3.4.3
