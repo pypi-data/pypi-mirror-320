@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+HLA_inference/HLA_inference.py
+HLA_inference/__init__.py
+HLA_inference/model_prediction.py
+Mismatch_score/__init__.py
+Mismatch_score/calculate_MS.py
+THNet.egg-info/PKG-INFO
+THNet.egg-info/SOURCES.txt
+THNet.egg-info/dependency_links.txt
+THNet.egg-info/entry_points.txt
+THNet.egg-info/not-zip-safe
+THNet.egg-info/requires.txt
+THNet.egg-info/top_level.txt
