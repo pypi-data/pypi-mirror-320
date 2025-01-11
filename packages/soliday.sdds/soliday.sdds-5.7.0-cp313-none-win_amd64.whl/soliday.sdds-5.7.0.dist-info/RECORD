@@ -1,0 +1,15 @@
+sdds/SDDS1.dll,sha256=_MS47qodFT-i7gT67pi4dy8bvTBd9Tw_Y6WQuydzwXc,511488
+sdds/__init__.py,sha256=FvnX6Fvx-02UvdJS_SGSJEmhIvftcMwt9B79cIBKRy0,1908
+sdds/lzma.dll,sha256=h77eP06zBetaAe0VeLxDm56zVk7g44ClJzY0fFPCVFA,143360
+sdds/matlib.dll,sha256=XVF-l_wbfjCWmL4IJz3FyxXHwen5OIIcpPr-93D-n9g,29696
+sdds/mdbcommon.dll,sha256=9xRgk027v2_LeDAXHi8OrHtF-Qvr2iIGC9hDP-RYX8E,62464
+sdds/mdblib.dll,sha256=-e13YrmHyJfdOZlZyznaG9mppdNUlLpiSmPBs2O8ZSs,78848
+sdds/mdbmth.dll,sha256=7tCCK_J7pIyhZ8QJC2qURSbRWqNAA_nC-qS0nj3CLdo,213504
+sdds/rpnlib.dll,sha256=M2FSYLYf23qoCoCqPfCVoaxBtMc3g6WYTAjW_GjpEy4,159744
+sdds/sdds.py,sha256=Z80ZeX8uByWkR5WPcBvcge2on9JYulTlVl5K_WACPZI,64583
+sdds/sddsdata.pyd,sha256=3esEsMagj-LBFZTnThiegBMWTZEplyujKzMxxBus9mY,50176
+soliday.sdds-5.7.0.dist-info/LICENSE,sha256=f-xHzdzd1-AK28_RO2eXal5f0oy2YDpxJJX_7tFR5Zc,3528
+soliday.sdds-5.7.0.dist-info/METADATA,sha256=CH5gBbTrqMByYlosa__WhNEOj4JIwPLQTEGINROoPJY,3378
+soliday.sdds-5.7.0.dist-info/WHEEL,sha256=xqY82Jovabdwqcrm8d_KEg7-JO9ulftrDGluxX4nVi8,99
+soliday.sdds-5.7.0.dist-info/top_level.txt,sha256=dWrIJ4CNATKjajuv7LoJ2PAaGlUolsnXy1ZHzNvNqes,5
+soliday.sdds-5.7.0.dist-info/RECORD,,
