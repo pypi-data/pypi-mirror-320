@@ -1,0 +1,34 @@
+[package]
+name = "imspect"
+description = "Explore features of images during debug session"
+authors = ["Sebrovskiy Konstantin", "sebrovskiy.k@gmail.com"]
+version = "0.1.2"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/SEBROVATER/imspect"
+readme = "README.md"
+categories = ["computer-vision", "command-line-utilities"]
+keywords = ["images", "cv", "gui"]
+exclude = ["src/lib.rs", "py*", "*.py", "*.yaml", ".gitignore"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "imspect"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.22.5", features = ["abi3-py38"] }
+eframe = "0.29.1"
+egui = "0.29.1"
+ndarray = "0.16.1"
+ndarray-npy = "0.9.1"
+temp-dir = "0.1.14"
+kornia = "0.1.7"
+numpy = "0.22.1"
+egui_plot = "0.29.0"
+anyhow = "1.0.93"
+
+[profile.release]
+codegen-units = 1
+lto = "fat"
+panic = "abort"
