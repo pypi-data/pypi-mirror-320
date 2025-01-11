@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+devs_tracelogger/__init__.py
+devs_tracelogger/log.py
+devs_tracelogger/mongo.py
+devs_tracelogger.egg-info/PKG-INFO
+devs_tracelogger.egg-info/SOURCES.txt
+devs_tracelogger.egg-info/dependency_links.txt
+devs_tracelogger.egg-info/requires.txt
+devs_tracelogger.egg-info/top_level.txt
