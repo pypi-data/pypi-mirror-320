@@ -1,0 +1,33 @@
+Metadata-Version: 2.2
+Name: etidel_python
+Version: 0.1.0
+Summary: Un package Python pour envoyer des SMS via une API.
+Home-page: https://github.com/votre_utilisateur/sms_sender
+Author: abdelkader etidel
+Author-email: a.etidel@l2t.io
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# SMS Sender
+
+Un package Python pour envoyer des SMS via une API.
+
+## Installation
+
+```bash
+pip install etidel_python

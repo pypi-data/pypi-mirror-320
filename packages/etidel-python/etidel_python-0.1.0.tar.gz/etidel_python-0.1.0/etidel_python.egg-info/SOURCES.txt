@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+etidel_python/__init__.py
+etidel_python/sender.py
+etidel_python.egg-info/PKG-INFO
+etidel_python.egg-info/SOURCES.txt
+etidel_python.egg-info/dependency_links.txt
+etidel_python.egg-info/requires.txt
+etidel_python.egg-info/top_level.txt
