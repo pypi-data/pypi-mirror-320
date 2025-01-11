@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+auto_package_installer/__init__.py
+auto_package_installer/base_os_manager.py
+auto_package_installer/factory.py
+auto_package_installer/linux_dependency_manager.py
+auto_package_installer/windows_dependency_manager.py
+auto_package_installer.egg-info/PKG-INFO
+auto_package_installer.egg-info/SOURCES.txt
+auto_package_installer.egg-info/dependency_links.txt
+auto_package_installer.egg-info/top_level.txt
