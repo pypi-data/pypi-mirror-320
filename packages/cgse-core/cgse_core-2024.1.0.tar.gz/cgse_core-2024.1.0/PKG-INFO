@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: cgse-core
+Version: 2024.1.0
+Author-email: Rik Huygen <rik.huygen@kuleuven.be>, Sara Regibo <sara.regibo@kuleuven.be>
+License-Expression: MIT
+Keywords: CGSE,Common-EGSE,hardware testing,software framework
+Requires-Python: >=3.9
+Requires-Dist: apscheduler
+Requires-Dist: cgse-common
+Requires-Dist: click
+Requires-Dist: gitpython
+Requires-Dist: prometheus-client
+Requires-Dist: pyzmq==23.2.1
+Requires-Dist: rich
+Provides-Extra: dev
+Requires-Dist: pipdeptree; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: pytest-mock; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# The core services for the CGSE platform
