@@ -1,0 +1,7 @@
+torch
+fastapi
+uvicorn
+scikit-learn
+pandas
+google-cloud-bigtable
+prometheus-client
