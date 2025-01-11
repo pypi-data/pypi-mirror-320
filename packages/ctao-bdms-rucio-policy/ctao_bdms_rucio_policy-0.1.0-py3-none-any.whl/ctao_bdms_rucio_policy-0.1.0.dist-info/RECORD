@@ -1,0 +1,12 @@
+bdms_rucio_policy/__init__.py,sha256=K-f58SpyGXc--7p_nImtfH6hNvhaL1v8WxD-Pu9DaqE,450
+bdms_rucio_policy/_version.py,sha256=IMl2Pr_Sy4LVRKy_Sm4CdwUl1Gryous6ncL96EMYsnM,411
+bdms_rucio_policy/algorithms.py,sha256=taqw-Y6BTXKgYZC0DwAFh98SIou8rmWYTYPQ4Y3zDw4,974
+bdms_rucio_policy/permission.py,sha256=XR9celYbPLJ2Bx32aOoJP0KUKDZYIc5PPRvzuTV_GKc,50080
+bdms_rucio_policy/schema.py,sha256=OrsZ81luDrMzVYSwyX0KIsIakD6lL6qrGF18Dr_YXZo,13658
+bdms_rucio_policy/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bdms_rucio_policy/tests/test_algorithms.py,sha256=UqAxCxSGxAZtOAVWeoGtHHP7ogWjc0WpjgKvt4USmiE,1084
+bdms_rucio_policy/tests/test_schema.py,sha256=mCFHElWqR3iQRXcHnv1bRwa1398a4Q5-y6MGb6FQrMU,1299
+ctao_bdms_rucio_policy-0.1.0.dist-info/METADATA,sha256=x1ko8PAEkur-e77e6ZLZuF74XLwhhb3zfLl0k4qfwIY,917
+ctao_bdms_rucio_policy-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+ctao_bdms_rucio_policy-0.1.0.dist-info/top_level.txt,sha256=JsMsbffsE5gQEcj6BOSppaOk0OStaCuhiNyPj2nYTgw,18
+ctao_bdms_rucio_policy-0.1.0.dist-info/RECORD,,
