@@ -1,0 +1,16 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+nanga_ad_library/__init__.py
+nanga_ad_library/exceptions.py
+nanga_ad_library/sdk.py
+nanga_ad_library/sessions.py
+nanga_ad_library.egg-info/PKG-INFO
+nanga_ad_library.egg-info/SOURCES.txt
+nanga_ad_library.egg-info/dependency_links.txt
+nanga_ad_library.egg-info/requires.txt
+nanga_ad_library.egg-info/top_level.txt
+tests/test_template.py
