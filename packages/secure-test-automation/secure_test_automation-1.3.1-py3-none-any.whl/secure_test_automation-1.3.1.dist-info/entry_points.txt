@@ -1,0 +1,3 @@
+[console_scripts]
+quick_start=cli.cli_mmanager:quick_start
+
