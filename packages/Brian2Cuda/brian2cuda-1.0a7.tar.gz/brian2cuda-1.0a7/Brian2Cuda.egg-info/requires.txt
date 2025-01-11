@@ -1,0 +1,8 @@
+brian2==2.8.0
+
+[docs]
+sphinx>=1.8
+
+[test]
+pytest
+pytest-xdist>=1.22.3
