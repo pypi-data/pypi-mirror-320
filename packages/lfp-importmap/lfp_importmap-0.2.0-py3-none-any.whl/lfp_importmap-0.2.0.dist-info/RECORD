@@ -1,0 +1,14 @@
+lfp_importmap/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+lfp_importmap/apps.py,sha256=qf10kzekWZozBi3SseiMRU4drs5CANC19mFbyvzNQMA,103
+lfp_importmap/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lfp_importmap/utils.py,sha256=0TQ-ImCx4-PxGQJWHNGzvVTHsB4uzOZk6dQx5t3Xx9E,1222
+lfp_importmap/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lfp_importmap/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lfp_importmap/management/commands/importmap.py,sha256=whVSdUbLyayotMDz3mew0EbIkmvc8RKC-idXrU58-7s,4312
+lfp_importmap/templates/lfp_importmap/javascript_importmap_tags.html,sha256=jDz4Xb-YyLV0RnFyzxbmtFZ-X38aTXYNRbXyHWvfVzI,575
+lfp_importmap/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lfp_importmap/templatetags/lfp_importmap.py,sha256=vBIUsQkSuci42MBZrByylln90sTRXts271FkqLh0azQ,644
+lfp_importmap-0.2.0.dist-info/METADATA,sha256=EF4KtSrx8tQyeLQpAuyJ3hhfHX1r5rdpr435C743_DA,2032
+lfp_importmap-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+lfp_importmap-0.2.0.dist-info/licenses/LICENSE,sha256=VAOmiQST40gQn1QlJPSSEfNrPlpiEeABNLGsfJQguEc,1072
+lfp_importmap-0.2.0.dist-info/RECORD,,
