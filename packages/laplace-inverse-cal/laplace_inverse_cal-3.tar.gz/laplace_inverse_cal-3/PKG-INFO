@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: laplace_inverse_cal
+Version: 3
+Summary: fast laplace calculator
+Home-page: 
+Author: Mohammad H. Rostami
+Author-email: mhro.r84@gmail.com
+License: MIT
+Keywords: Laplace Inverse
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+Requires-Dist: mpmath
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+A Python library providing efficient numerical methods for computing the inverse Laplace transform. The library supports a wide range of functions. The library is designed to be easy for using everyday tasks and is suitable for circuit analysis.

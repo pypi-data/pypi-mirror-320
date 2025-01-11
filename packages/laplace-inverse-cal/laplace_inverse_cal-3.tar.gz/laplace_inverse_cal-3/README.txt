@@ -1,0 +1,1 @@
+A Python library providing efficient numerical methods for computing the inverse Laplace transform. The library supports a wide range of functions. The library is designed to be easy for using everyday tasks and is suitable for circuit analysis.
