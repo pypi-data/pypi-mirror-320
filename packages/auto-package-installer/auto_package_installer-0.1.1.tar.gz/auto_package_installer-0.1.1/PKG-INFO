@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: auto_package_installer
+Version: 0.1.1
+Summary: A package to auto install requirements.txt file into a virtual environment
+Home-page: 
+Author: Slurrps Mcgee
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is a project to auto install package dependencies into a virtual environment by reading a requirements.txt file.
