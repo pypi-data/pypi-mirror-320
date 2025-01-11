@@ -1,0 +1,2 @@
+[console_scripts]
+enpass2onepassword = enpass2onepassword.__main__:main
