@@ -1,0 +1,34 @@
+[project]
+name = "qx-game-bot"
+version = "0.1.2"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "Yoki", email = "yokiyuqian@gmail.com" }]
+requires-python = ">=3.11"
+dependencies = [
+    "mss>=10.0.0",
+    "opencv-contrib-python>=4.10.0.84",
+    "peewee>=3.17.8",
+    "pydantic>=2.10.4",
+    "pynput>=1.7.7",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+    "pytest-cov>=6.0.0",
+    "pytest-mock>=3.14.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ['qx_game_bot']
+
+[tool.coverage.run]
+omit = ["main.py", "e2e/**", "tests/**"]
+
+[tool.coverage.report]
+exclude_lines = ['@abstractmethod', '@abc.abstractmethod']
