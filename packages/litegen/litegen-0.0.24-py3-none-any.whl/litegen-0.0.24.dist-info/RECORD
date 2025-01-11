@@ -1,0 +1,11 @@
+litegen/__init__.py,sha256=UX7SVXGT7IBJQ6dZDXAQSZK9KCk0WZyzNjAKb21LJkA,190
+litegen/_agent_utils.py,sha256=NYcXJwLG97Tg95o1dt4NcbU7rIhpJhfWqNpOe-gyHKQ,5681
+litegen/_oai.py,sha256=5sVaB2ks03W1VJPX24WfR_-DlPailwrb6vhFioiekJg,4164
+litegen/_types.py,sha256=0mElmfDkDez0ZgLTRSrUQ8GVn6t6dp2PCoX31HFxo_o,1078
+litegen/agents.py,sha256=r-iSDmZWs46NLZ2ZWM6jpk0bVC-MvtE4sjKUe1qgfos,6841
+litegen/completions.py,sha256=GczavhBIS4TCNxuFZ8lJntvbrNBgBeo5ZQgOGGzLM0o,2631
+litegen/utils.py,sha256=KjY95t-JjmiWIlNsiL0U8Qy8RV5u_n2G3qPbPpmXnMI,5272
+litegen-0.0.24.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+litegen-0.0.24.dist-info/METADATA,sha256=9N4IUbDjF_SMyPonbfJ_SS1nMVLfiWG3UHHBsXLezFI,3843
+litegen-0.0.24.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+litegen-0.0.24.dist-info/RECORD,,
