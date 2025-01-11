@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+nbrb/__init__.py
+nbrb/nbrb_tools.egg-info/PKG-INFO
+nbrb/nbrb_tools.egg-info/SOURCES.txt
+nbrb/nbrb_tools.egg-info/dependency_links.txt
+nbrb/nbrb_tools.egg-info/requires.txt
+nbrb/nbrb_tools.egg-info/top_level.txt
