@@ -1,0 +1,49 @@
+Metadata-Version: 2.2
+Name: pyNlple
+Version: 0.10.5
+Summary: NLP procedures in python brought to you by YouScan.
+Author-email: "YouScan Data Science team, NLP guild." <ds@youscan.io>
+License: MIT Licence
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: emoji>=0.5.0
+Requires-Dist: numpy>=1.18
+Requires-Dist: pandas>=0.19.0
+Requires-Dist: requests>=2.20.0
+Requires-Dist: scikit-learn>=0.22
+Provides-Extra: es
+Requires-Dist: elasticsearch~=8.17.0; extra == "es"
+
+Overview
+========
+pyNlple - a library with basic NLP utils. Also includes methods and APIs for data accessing/writing.
+
+Requirements
+============
+
+Cat `requirements.txt`
+
+Installation
+============
+
+Run setup.py to install / `pip install pynlple`
+
+Notes
+============
+- name inspired by https://www.youtube.com/watch?v=1W3sslyiUfg
+- yeah, we had "PYthon" and "NLP" procedures, so...
+- and yeah, try to read it as #pineapple http://www.veepy.com/wp-content/uploads/2015/05/1965.jpg
+
+## Licenses
+
+Install from https://pypi.org/project/pip-licenses/
+
+```
+pip install pip-licenses
+```
+
+Run 
+
+```
+make licenses
+```
