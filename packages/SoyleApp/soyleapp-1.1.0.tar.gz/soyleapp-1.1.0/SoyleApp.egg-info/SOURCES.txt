@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+SoyleApp/__init__.py
+SoyleApp/client.py
+SoyleApp/constants.py
+SoyleApp/exceptions.py
+SoyleApp.egg-info/PKG-INFO
+SoyleApp.egg-info/SOURCES.txt
+SoyleApp.egg-info/dependency_links.txt
+SoyleApp.egg-info/requires.txt
+SoyleApp.egg-info/top_level.txt
