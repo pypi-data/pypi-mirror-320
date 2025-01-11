@@ -1,0 +1,10 @@
+README.md
+setup.py
+baseconnect/__init__.py
+baseconnect/database.py
+baseconnect.egg-info/PKG-INFO
+baseconnect.egg-info/SOURCES.txt
+baseconnect.egg-info/dependency_links.txt
+baseconnect.egg-info/requires.txt
+baseconnect.egg-info/top_level.txt
+tests/test_database.py
