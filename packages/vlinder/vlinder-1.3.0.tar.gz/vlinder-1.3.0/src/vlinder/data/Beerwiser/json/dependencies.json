@@ -1,0 +1,165 @@
+{
+    "schema":{
+        "fields":[
+            {
+                "name":"index",
+                "type":"integer"
+            },
+            {
+                "name":"destination",
+                "type":"string"
+            },
+            {
+                "name":"argument_1",
+                "type":"string"
+            },
+            {
+                "name":"argument_2",
+                "type":"string"
+            },
+            {
+                "name":"operator",
+                "type":"string"
+            }
+        ],
+        "primaryKey":[
+            "index"
+        ],
+        "pandas_version":"1.4.0"
+    },
+    "data":[
+        {
+            "index":0,
+            "destination":"AR_1",
+            "argument_1":"Invest in training of employees",
+            "argument_2":"AR_sp",
+            "operator":"\/"
+        },
+        {
+            "index":1,
+            "destination":"AR_2",
+            "argument_1":"AR_1",
+            "argument_2":1,
+            "operator":"min"
+        },
+        {
+            "index":2,
+            "destination":"AR_3",
+            "argument_1":"AR_2",
+            "argument_2":"AR_acc",
+            "operator":"*"
+        },
+        {
+            "index":3,
+            "destination":"AR_4",
+            "argument_1":"AR_3",
+            "argument_2":"AR_pos",
+            "operator":"*"
+        },
+        {
+            "index":4,
+            "destination":"Accidents reduction %",
+            "argument_1":"AR_4",
+            "argument_2":"AR_me",
+            "operator":"*"
+        },
+        {
+            "index":5,
+            "destination":"WURWE_1",
+            "argument_1":"Invest in water recycling",
+            "argument_2":"WURWE_sp",
+            "operator":"\/"
+        },
+        {
+            "index":6,
+            "destination":"WURWE_2",
+            "argument_1":"WURWE_1",
+            "argument_2":1,
+            "operator":"min"
+        },
+        {
+            "index":7,
+            "destination":"WURWE_3",
+            "argument_1":"WURWE_2",
+            "argument_2":"WURWE_acc",
+            "operator":"*"
+        },
+        {
+            "index":8,
+            "destination":"WURWE_4",
+            "argument_1":"WURWE_3",
+            "argument_2":"WURWE_pos",
+            "operator":"*"
+        },
+        {
+            "index":9,
+            "destination":"Water use reduction % when effective",
+            "argument_1":"WURWE_4",
+            "argument_2":"WURWE_me",
+            "operator":"*"
+        },
+        {
+            "index":10,
+            "destination":"Water use reduction %",
+            "argument_1":"Water use reduction % when effective",
+            "argument_2":"Effectiveness water recycling",
+            "operator":"*"
+        },
+        {
+            "index":11,
+            "destination":"Accidents reduction",
+            "argument_1":"Current # accidents",
+            "argument_2":"Accidents reduction %",
+            "operator":"*"
+        },
+        {
+            "index":12,
+            "destination":"Water use reduction",
+            "argument_1":"Water use reduction %",
+            "argument_2":"Current water use",
+            "operator":"*"
+        },
+        {
+            "index":13,
+            "destination":"Production cost reduction $",
+            "argument_1":"Water use reduction",
+            "argument_2":"Water unit cost",
+            "operator":"*"
+        },
+        {
+            "index":14,
+            "destination":"Production cost reduction $",
+            "argument_1":"Accidents reduction",
+            "argument_2":"Cost of accident",
+            "operator":"*"
+        },
+        {
+            "index":15,
+            "destination":"Production cost reduction",
+            "argument_1":"Production cost reduction $",
+            "argument_2":"Current production cost",
+            "operator":"\/"
+        },
+        {
+            "index":16,
+            "destination":"Cost of training per employee",
+            "argument_1":"Invest in training of employees",
+            "argument_2":"# employees",
+            "operator":"\/"
+        },
+        {
+            "index":17,
+            "destination":"New # accidents",
+            "argument_1":"Current # accidents",
+            "argument_2":"Accidents reduction",
+            "operator":"-"
+        },
+        {
+            "index":18,
+            "destination":"New water use",
+            "argument_1":"Current water use",
+            "argument_2":"Water use reduction",
+            "operator":"-"
+        }
+    ]
+}

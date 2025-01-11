@@ -1,0 +1,409 @@
+{
+    "schema":{
+        "fields":[
+            {
+                "name":"index",
+                "type":"integer"
+            },
+            {
+                "name":"fixed_input",
+                "type":"string"
+            },
+            {
+                "name":"value",
+                "type":"number"
+            }
+        ],
+        "primaryKey":[
+            "index"
+        ],
+        "pandas_version":"1.4.0"
+    },
+    "data":[
+        {
+            "index":0,
+            "fixed_input":"Effect of unemployment reduction other refugees on income other refugees",
+            "value":0.81
+        },
+        {
+            "index":1,
+            "fixed_input":"Effect of unemployment reduction Ukrainians on income Ukrainians",
+            "value":0.81
+        },
+        {
+            "index":2,
+            "fixed_input":"Effect of unemployment reduction inhabitants on income inhabitants",
+            "value":0.37
+        },
+        {
+            "index":3,
+            "fixed_input":"Effect of unemployment reduction other refugees on social trust other refugees",
+            "value":0.01
+        },
+        {
+            "index":4,
+            "fixed_input":"Effect of unemployment reduction inhabitants on QoL inhabitants",
+            "value":0.266
+        },
+        {
+            "index":5,
+            "fixed_input":"Effect of unemployment reduction other refugees on QoL other refugees",
+            "value":0.266
+        },
+        {
+            "index":6,
+            "fixed_input":"Effect of unemployment reduction Ukrainians on QoL Ukrainians",
+            "value":0.266
+        },
+        {
+            "index":7,
+            "fixed_input":"Effect of health Ukrainians on quality of life Ukrainians",
+            "value":1.12
+        },
+        {
+            "index":8,
+            "fixed_input":"Effect of language acquisition Ukrainians on income Ukrainians",
+            "value":0.1549
+        },
+        {
+            "index":9,
+            "fixed_input":"Effect of language acquisition Ukrainians on unemployment reduction Ukrainians",
+            "value":0.229
+        },
+        {
+            "index":10,
+            "fixed_input":"Effect of language acquisition Ukrainians on social cohesion Ukrainians",
+            "value":0.022
+        },
+        {
+            "index":11,
+            "fixed_input":"Effect of income Ukrainians on financial security Ukrainians",
+            "value":0.0073
+        },
+        {
+            "index":12,
+            "fixed_input":"Effect of income other refugees on financial security other refugees",
+            "value":0.0073
+        },
+        {
+            "index":13,
+            "fixed_input":"Effect of income other refugees on crime rate",
+            "value":0.26
+        },
+        {
+            "index":14,
+            "fixed_input":"Effect of income Ukrainians on crime rate",
+            "value":0.26
+        },
+        {
+            "index":15,
+            "fixed_input":"Effect of crime rate on personal safety Ukrainians",
+            "value":0.29
+        },
+        {
+            "index":16,
+            "fixed_input":"Effect of crime rate on personal safety other refugees",
+            "value":0.29
+        },
+        {
+            "index":17,
+            "fixed_input":"Effect of crime rate on personal safety inhabitants",
+            "value":0.29
+        },
+        {
+            "index":18,
+            "fixed_input":"Effect of income inhabitants on financial security inhabitants",
+            "value":0.0041
+        },
+        {
+            "index":19,
+            "fixed_input":"Effect of personal safety other refugees on quality of life other refugees",
+            "value":0.82
+        },
+        {
+            "index":20,
+            "fixed_input":"Effect of personal safety Ukrainians on quality of life Ukrainians",
+            "value":0.82
+        },
+        {
+            "index":21,
+            "fixed_input":"Effect of personal safety inhabitants on quality of life inhabitants",
+            "value":0.0912
+        },
+        {
+            "index":22,
+            "fixed_input":"Effect of tertiary education completed Ukrainians on income Ukrainians",
+            "value":0.7
+        },
+        {
+            "index":23,
+            "fixed_input":"Effect of tertiary education completed Ukrainians on personal safety Ukrainians",
+            "value":0.267
+        },
+        {
+            "index":24,
+            "fixed_input":"Effect of tertiary education completed Ukrainians on unemployment reduction Ukrainians",
+            "value":0.158
+        },
+        {
+            "index":25,
+            "fixed_input":"Effect of social cohesion Ukrainians on crime rate reduction",
+            "value":0.26
+        },
+        {
+            "index":26,
+            "fixed_input":"Effect of social cohesion Ukrainians on quality of life Ukrainians",
+            "value":0.363
+        },
+        {
+            "index":27,
+            "fixed_input":"Effect of social participation Ukrainians on quality of life Ukrainians",
+            "value":0.391
+        },
+        {
+            "index":28,
+            "fixed_input":"Effect of social trust other refugees on quality of life other refugees",
+            "value":0.209
+        },
+        {
+            "index":29,
+            "fixed_input":"Effect of financial security Ukrainians on quality of life Ukrainians",
+            "value":0.46
+        },
+        {
+            "index":30,
+            "fixed_input":"Effect of financial security other refugees on quality of life other refugees",
+            "value":0.46
+        },
+        {
+            "index":31,
+            "fixed_input":"Effect of financial security inhabitants on quality of life inhabitants",
+            "value":0.46
+        },
+        {
+            "index":32,
+            "fixed_input":"Effect intervention on jealousy",
+            "value":1.0
+        },
+        {
+            "index":33,
+            "fixed_input":"Effect of jealousy on QoL on quality of life other refugees",
+            "value":-0.05
+        },
+        {
+            "index":34,
+            "fixed_input":"Effect of jealousy on QoL on quality of life inhabitants",
+            "value":-0.05
+        },
+        {
+            "index":35,
+            "fixed_input":"Average yearly salary Ukrainians",
+            "value":20700.0
+        },
+        {
+            "index":36,
+            "fixed_input":"Effect of additional jobs on number of additional jobs Ukrainians",
+            "value":0.061
+        },
+        {
+            "index":37,
+            "fixed_input":"Effect of additional jobs on number of additional jobs other refugees",
+            "value":0.197
+        },
+        {
+            "index":38,
+            "fixed_input":"Effect of additional jobs on number of additional jobs inhabitants",
+            "value":0.742
+        },
+        {
+            "index":39,
+            "fixed_input":"Number of other refugees workforce",
+            "value":1532.0
+        },
+        {
+            "index":40,
+            "fixed_input":"Number of inhabitants workforce",
+            "value":24000.0
+        },
+        {
+            "index":41,
+            "fixed_input":"Number of Ukrainian refugees workforce",
+            "value":3105.0
+        },
+        {
+            "index":42,
+            "fixed_input":"Social benefits Ukrainian refugees",
+            "value":3120.0
+        },
+        {
+            "index":43,
+            "fixed_input":"Social benefits other refugees",
+            "value":3120.0
+        },
+        {
+            "index":44,
+            "fixed_input":"Social benefits inhabitants",
+            "value":14352.0
+        },
+        {
+            "index":45,
+            "fixed_input":"TECU_me",
+            "value":0.47
+        },
+        {
+            "index":46,
+            "fixed_input":"TECU_acc",
+            "value":1.0
+        },
+        {
+            "index":47,
+            "fixed_input":"TECU_pos",
+            "value":0.71
+        },
+        {
+            "index":48,
+            "fixed_input":"TECU_sp",
+            "value":13774010.7200000007
+        },
+        {
+            "index":49,
+            "fixed_input":"LAUS_me",
+            "value":0.42
+        },
+        {
+            "index":50,
+            "fixed_input":"LAUS_acc",
+            "value":1.0
+        },
+        {
+            "index":51,
+            "fixed_input":"LAUS_pos",
+            "value":0.7
+        },
+        {
+            "index":52,
+            "fixed_input":"LAUS_sp",
+            "value":1630189.054
+        },
+        {
+            "index":53,
+            "fixed_input":"LAUI_me",
+            "value":0.65
+        },
+        {
+            "index":54,
+            "fixed_input":"LAUI_acc",
+            "value":1.0
+        },
+        {
+            "index":55,
+            "fixed_input":"LAUI_pos",
+            "value":0.7
+        },
+        {
+            "index":56,
+            "fixed_input":"LAUI_sp",
+            "value":7946938.7560000001
+        },
+        {
+            "index":57,
+            "fixed_input":"URUE_me",
+            "value":0.68
+        },
+        {
+            "index":58,
+            "fixed_input":"URUE_acc",
+            "value":1.0
+        },
+        {
+            "index":59,
+            "fixed_input":"URUE_pos",
+            "value":0.6
+        },
+        {
+            "index":60,
+            "fixed_input":"URUE_sp",
+            "value":8150945.2719999999
+        },
+        {
+            "index":61,
+            "fixed_input":"SCUS_me",
+            "value":0.12
+        },
+        {
+            "index":62,
+            "fixed_input":"SCUS_acc",
+            "value":1.0
+        },
+        {
+            "index":63,
+            "fixed_input":"SCUS_pos",
+            "value":0.7
+        },
+        {
+            "index":64,
+            "fixed_input":"SCUS_sp",
+            "value":1630189.054
+        },
+        {
+            "index":65,
+            "fixed_input":"SCUT_me",
+            "value":0.014
+        },
+        {
+            "index":66,
+            "fixed_input":"SCUT_acc",
+            "value":1.0
+        },
+        {
+            "index":67,
+            "fixed_input":"SCUT_pos",
+            "value":0.6
+        },
+        {
+            "index":68,
+            "fixed_input":"SCUT_sp",
+            "value":15216753.9100000001
+        },
+        {
+            "index":69,
+            "fixed_input":"HUSA_me",
+            "value":0.22
+        },
+        {
+            "index":70,
+            "fixed_input":"HUSA_acc",
+            "value":1.0
+        },
+        {
+            "index":71,
+            "fixed_input":"HUSA_pos",
+            "value":0.7
+        },
+        {
+            "index":72,
+            "fixed_input":"HUSA_sp",
+            "value":1630189.054
+        },
+        {
+            "index":73,
+            "fixed_input":"SPUAT_me",
+            "value":0.537
+        },
+        {
+            "index":74,
+            "fixed_input":"SPUAT_acc",
+            "value":1.0
+        },
+        {
+            "index":75,
+            "fixed_input":"SPUAT_pos",
+            "value":0.6
+        },
+        {
+            "index":76,
+            "fixed_input":"SPUAT_sp",
+            "value":15216753.9100000001
+        }
+    ]
+}
