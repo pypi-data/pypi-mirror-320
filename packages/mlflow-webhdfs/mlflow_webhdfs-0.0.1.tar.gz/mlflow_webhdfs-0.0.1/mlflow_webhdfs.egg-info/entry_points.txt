@@ -1,0 +1,2 @@
+[mlflow.artifact_repository]
+webhdfs = store.artifact.webhdfs_artifact_repo:WebHdfsArtifactRepository
