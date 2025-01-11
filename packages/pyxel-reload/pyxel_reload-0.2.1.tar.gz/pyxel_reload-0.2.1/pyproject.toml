@@ -1,0 +1,19 @@
+[project]
+name = "pyxel-reload"
+version = "0.2.1"
+description = "Run your pyxel applications, reloading when code / assets change"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["pyxel>=2.2", "watchfiles>=1.0.3"]
+authors = [{ name = "Reiner Gerecke" }]
+license = { file = "LICENSE" }
+
+[project.scripts]
+pyxel-reload = "pyxel_reload:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = ["ruff>=0.8.3"]
