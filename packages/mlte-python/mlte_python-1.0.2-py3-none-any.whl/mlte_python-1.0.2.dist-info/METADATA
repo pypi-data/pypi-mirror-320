@@ -1,0 +1,67 @@
+Metadata-Version: 2.3
+Name: mlte-python
+Version: 1.0.2
+Summary: An infrastructure for machine learning test and evaluation.
+Author: MLTE Engineers
+Requires-Python: >=3.9.1,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: SQLAlchemy (>=2.0.25,<3.0.0)
+Requires-Dist: SQLAlchemy-Utils (>=0.41.1,<0.42.0)
+Requires-Dist: StrEnum (>=0.4.15,<0.5.0)
+Requires-Dist: bcrypt (>=4.1.2,<5.0.0)
+Requires-Dist: cryptography (>=42.0.5,<43.0.0)
+Requires-Dist: deepdiff (>=6.3.1,<7.0.0)
+Requires-Dist: dill (>=0.3.7,<0.4.0)
+Requires-Dist: fastapi (>=0.100.0)
+Requires-Dist: httpx (>=0.24.1,<0.25.0)
+Requires-Dist: pip-system-certs (>=4.0.0,<5.0.0)
+Requires-Dist: psutil (>=5.9.5,<6.0.0)
+Requires-Dist: psycopg2-binary (>=2.9.9,<3.0.0)
+Requires-Dist: pydantic (>=2.1.1,<3.0.0)
+Requires-Dist: pydantic-settings (>=2.0.3,<3.0.0)
+Requires-Dist: python-jose (>=3.3.0,<4.0.0)
+Requires-Dist: python-multipart (>=0.0.9,<0.0.10)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: uvicorn (>=0.23.2,<0.24.0)
+Description-Content-Type: text/markdown
+
+## `mlte`: Machine Learning Test and Evaluation
+
+<img src="https://raw.githubusercontent.com/mlte-team/mlte/master/assets/MLTE_Logo_Color.svg" alt="mlte_logo" width="150"/>
+
+`mlte` (pronounced "melt") is a framework and infrastructure for machine learning evaluation.
+
+![Version Badge](https://img.shields.io/badge/release-v1.0.2-e19b38)
+[![Code Style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Tests](https://github.com/turingcompl33t/mlte/actions/workflows/ci.yaml/badge.svg)](https://github.com/turingcompl33t/mlte/actions/workflows/ci.yaml)
+[![Documentation Status](https://readthedocs.org/projects/mlte/badge/?version=latest)](https://mlte.readthedocs.io/en/latest/?badge=latest)
+
+### Getting Started
+
+`mlte` is available on <a href="https://pypi.org/project/mlte-python/" target="_blank">PyPI</a>. Install the latest version with:
+
+```bash
+$ pip install mlte-python
+```
+
+You can go to our <a href="https://mlte.readthedocs.io/en/latest/setting_up_mlte/" target="_blank">setting up MLTE</a> page to see details on setting up and running MLTE. After that, you can head to our guide on <a href="https://mlte.readthedocs.io/en/latest/using_mlte/" target="_blank">using MLTE</a> for next steps. If you're interested in reading about the project more generally, see our <a href="https://mlte.readthedocs.io/en/latest/" target="_blank">documentation</a>.
+
+### Citing This Work
+
+If you're interested in learning more about this work, you can read our <a href="https://ieeexplore.ieee.org/document/10173876" target="_blank">paper</a>. While not required, it is highly encouraged and greatly appreciated if you cite our paper when you use MLTE for academic research.
+
+```
+@INPROCEEDINGS{10173876,
+  author={Maffey, Katherine R. and Dotterrer, Kyle and Niemann, Jennifer and Cruickshank, Iain and Lewis, Grace A. and Kästner, Christian},
+  booktitle={2023 IEEE/ACM 45th International Conference on Software Engineering: New Ideas and Emerging Results (ICSE-NIER)}, 
+  title={MLTEing Models: Negotiating, Evaluating, and Documenting Model and System Qualities}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={31-36},
+  keywords={Measurement;Machine learning;Production;Organizations;Software;Stakeholders;Software engineering;machine learning;test and evaluation;machine learning evaluation;responsible AI},
+  doi={10.1109/ICSE-NIER58687.2023.00012}
+}
+```
