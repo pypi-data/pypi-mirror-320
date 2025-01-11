@@ -1,0 +1,16 @@
+Metadata-Version: 2.2
+Name: lillie-start
+Version: 0.1.2
+Summary: A script to run lillie.config.py with a terminal command.
+Author: Sarthak Ghoshal
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Requires-Dist: typer[all]
+Requires-Dist: colorama
+Dynamic: author
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
