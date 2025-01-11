@@ -1,0 +1,53 @@
+[project]
+name = "hypercortex"
+version = "0.1.0"
+description = "AI Agent for healthcare fintech"
+readme = "README.md"
+authors = [
+    { name = "Chris Dare", email = "engineering@chrisdare.me" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.115.6",
+    "jupyterlab>=4.3.4",
+    "pydantic-ai>=0.0.17",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hypercortex"]
+
+[dependency-groups]
+dev = [
+    "black>=24.10.0",
+    "build>=1.2.2.post1",
+    "flake8>=7.1.1",
+    "isort>=5.13.2",
+    "mypy>=1.14.1",
+    "pre-commit>=4.0.1",
+    "pytest>=8.3.4",
+    "ruff>=0.8.6",
+    "pytest-asyncio>=0.18.3",
+    "twine>=6.0.1",
+]
+
+[mypy]
+files = "src"
+ignore_missing_imports = true
+strict = true
+strict_optional = true
+disallow_untyped_decorators = true
+strict_equality = true
+warn_unused_ignores = true
+disallow_untyped_defs = true
+disallow_untyped_calls = true
+warn_return_any = true
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"

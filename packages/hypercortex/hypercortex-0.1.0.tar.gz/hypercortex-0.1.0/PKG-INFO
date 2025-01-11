@@ -1,0 +1,68 @@
+Metadata-Version: 2.4
+Name: hypercortex
+Version: 0.1.0
+Summary: AI Agent for healthcare fintech
+Author-email: Chris Dare <engineering@chrisdare.me>
+Requires-Python: >=3.10
+Requires-Dist: fastapi>=0.115.6
+Requires-Dist: jupyterlab>=4.3.4
+Requires-Dist: pydantic-ai>=0.0.17
+Description-Content-Type: text/markdown
+
+# Hypercortex
+
+Hypercortex is an intelligent agent designed to streamline healthcare fintech operations. It helps automate and optimize healthcare payment processes, making them more efficient and user-friendly.
+
+## Features
+
+- 🤖 AI-powered automation of healthcare payment processes
+- 💰 Smart payment routing and processing
+- 📊 Intelligent financial analytics
+- 🔒 Secure and compliant healthcare data handling
+
+## Installation
+
+```bash
+pip install hypercortex
+```
+
+Or if you prefer using uv:
+
+```bash
+uv pip install hypercortex
+```
+
+## Quick Start
+
+```python
+from hypercortex.utils import helpers
+
+# Get a greeting
+greeting = helpers.example_helper()
+print(greeting)  # Output: "Hello from utils.helpers!"
+
+# More examples coming soon...
+```
+
+## Documentation
+
+Full documentation is coming soon. For now, refer to the docstrings in the code for detailed information about each function.
+
+## Contributing
+
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on how to get started.
+
+## License
+
+This project is licensed under the terms of the MIT license.
+
+## Support
+
+If you encounter any issues or have questions, please:
+1. Check the documentation
+2. Look through existing issues
+3. Open a new issue if needed
+
+## Security
+
+For security concerns, please email security@chrisdare.me directly instead of opening a public issue.
