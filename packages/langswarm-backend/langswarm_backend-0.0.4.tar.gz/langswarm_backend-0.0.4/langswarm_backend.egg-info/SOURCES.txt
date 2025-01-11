@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+langswarm/backend/__init__.py
+langswarm/backend/main.py
+langswarm/backend/app/__init__.py
+langswarm/backend/app/api.py
+langswarm/tests/__init__.py
+langswarm_backend.egg-info/PKG-INFO
+langswarm_backend.egg-info/SOURCES.txt
+langswarm_backend.egg-info/dependency_links.txt
+langswarm_backend.egg-info/requires.txt
+langswarm_backend.egg-info/top_level.txt
