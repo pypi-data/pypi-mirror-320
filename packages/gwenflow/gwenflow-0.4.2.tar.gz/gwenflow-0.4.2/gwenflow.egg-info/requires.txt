@@ -1,0 +1,13 @@
+httpx
+pydantic
+tqdm
+pyyaml
+beautifulsoup4
+fsspec
+rich
+tiktoken
+openai
+langchain
+pyarrow
+lancedb
+qdrant-client
