@@ -1,0 +1,10 @@
+amari/__init__.py,sha256=i6aunqphcWBzTtY4uyAa4egUl80YqL91uwVDJXojvzM,118
+amari/api.py,sha256=0Bhs9-CJP-SGINA80YvHIK2zS9AYWt2RANErlkLR2LM,11693
+amari/cache.py,sha256=bl5uq7ONUGkO2VsdS4VYeWQzYE39TAQ_eI3w7UuG0eo,2409
+amari/exceptions.py,sha256=uiFLkUnSjNTrI8t_VPQbIbNbSTs7NU2ebkEldjPQwJg,2000
+amari/objects.py,sha256=d3cnabkC_g53v3IzMnn_fgPYl5DCm7X40uvhVeFbcBI,7863
+amari.py-1.3.0.dist-info/LICENSE,sha256=AonVx48zFFkDgxMvmJMDXvCUDK_6V8VfsgeOnu7UOXY,1096
+amari.py-1.3.0.dist-info/METADATA,sha256=XZ57_B84Z_Vx-eEa1_iBN6Ej7oBgaxXQ4He2fY0wQTM,2120
+amari.py-1.3.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+amari.py-1.3.0.dist-info/top_level.txt,sha256=ewREc9n0RI71D4LqwvBlI2pJrN8FMd_Ydj3ziWxztTc,6
+amari.py-1.3.0.dist-info/RECORD,,
