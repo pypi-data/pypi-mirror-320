@@ -1,0 +1,15 @@
+axcli/__init__.py,sha256=jZ9zyGyPAaQflcB1Bn_qpXwbjNv4W_4l6hM17bRNxhk,203
+axcli/catalog.py,sha256=bpSQvsQw_fB-lDuuutQIAmp9JXOSAf1S4YNA4TgVtZg,4198
+axcli/cli.py,sha256=u2RM4F9k48FYchhd-bIHaDG6pRB4JTfJxdijGyrstPc,279
+axcli/live.py,sha256=vkGnrGU6kcTHg4QK6-bFQdCQI0Q8NGDlpzYMABb9dCY,421
+axcli/load.py,sha256=EYYgIKnJtySTq9L_yNT6GSruhbpDe3dzLX1EDpo9WfM,425
+axcli/new.py,sha256=NYkA62vTjCHiQ6jY7o4_hizY_wnw5FuE9s7Q47znHRE,2922
+axcli/read.py,sha256=9L_QH0nScweoZM43ibo87rhxqp_BDESFRyPTzI8n4tE,840
+axcli/run.py,sha256=GTE1aqNoYI2e0WrBxnPcgb7ouO0U1NrexfRI6YpeaCM,679
+axcli/show.py,sha256=qeyKeQwn5wQWC88S3urjisQyDYnWY6i0GXtzQIocuNU,500
+axcli-1.0.0.dist-info/LICENSE.md,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+axcli-1.0.0.dist-info/METADATA,sha256=PESIvRSZbo_eaQXz_ESm3siwF1oEPLy3Um3oaErb1_0,42394
+axcli-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+axcli-1.0.0.dist-info/entry_points.txt,sha256=ijJ0daySE4fax2GbhFiJia1FGc9E3yCvcB-QN9Z2yrU,41
+axcli-1.0.0.dist-info/top_level.txt,sha256=Y5UxuWAiFsXQLaOrM6ZvLiBQyN-Dbn_zt3xkUK98Uus,6
+axcli-1.0.0.dist-info/RECORD,,
