@@ -1,0 +1,10 @@
+from hunterx.piplines.basepipeline import Pipeline
+from items import *
+
+
+class ${Class_name}Pipeline(Pipeline):
+
+    async def process_item(self, item, spider):
+        if isinstance(item, ${Class_name}Item):
+            print(item)
+            print(spider.name)
