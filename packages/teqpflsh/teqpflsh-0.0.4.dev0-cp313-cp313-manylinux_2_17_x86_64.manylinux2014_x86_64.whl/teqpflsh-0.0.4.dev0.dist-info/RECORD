@@ -1,0 +1,9 @@
+teqpflsh/libgeos.so.3.14.0,sha256=lUgIb1egUGPjvvKs1jCAq3tmzHYLZBiUJ6RtmJ58q9I,3759608
+teqpflsh/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+teqpflsh/__init__.py,sha256=CxcuIN7iNGAdXJE9dqzZv3cpMwyq-C73cbDL0Ydmrdg,79
+teqpflsh/_teqpflsh_impl.cpython-313-x86_64-linux-gnu.so,sha256=YDwHUq9gcCIR2cpaMosP9kTgk-bvX8qhoRLELV-paQ8,7841232
+teqpflsh/_teqpflsh_impl.pyi,sha256=S_cc0MEC98_TAZV00kI7jAn93BsFzec6a0JANI0HBz0,22998
+teqpflsh/libgeos.so,sha256=lUgIb1egUGPjvvKs1jCAq3tmzHYLZBiUJ6RtmJ58q9I,3759608
+teqpflsh-0.0.4.dev0.dist-info/METADATA,sha256=03IrzTbjQBcMtAjfCajOc7XlIAsRrPbxdzPvB7VSH-o,1000
+teqpflsh-0.0.4.dev0.dist-info/RECORD,,
+teqpflsh-0.0.4.dev0.dist-info/WHEEL,sha256=OPFh3Tj2X8LlzG9poNJc0ZCOysKaZvnrmITeqCOAK5U,156
