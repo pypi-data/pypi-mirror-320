@@ -1,0 +1,11 @@
+nbg_currency_api/__init__.py,sha256=wO-zVXRicdbdQcIZoH-hCpZ0oUUq4t_oZHtiEKpwb1w,276
+nbg_currency_api/api.py,sha256=rkX4B-SjY9DQtxYbs60AU7M3dE-JIyKm3Z-KbGxLcwM,1817
+nbg_currency_api/constants.py,sha256=_xxcBh9XgE9kqlIlEwXCJQlK4eVmOwSG3p6n8zSL_jY,68
+nbg_currency_api/exceptions.py,sha256=a6fsEcdIP0xQ5crNB5oo8ZVsRDjw_nn02cVKbAOayww,48
+nbg_currency_api/services.py,sha256=wV2f1KxT-eMVlenHoGutjqniv4oYDhc712bjK6O6NLc,1716
+nbg_currency_api/types.py,sha256=gaf26MmI772DuEN130qX6aoZmECxUoXE1w38C1wz0a0,1199
+nbg_currencies_api-0.1.3.dist-info/LICENSE,sha256=4fJLuVYR2m613sax8uIhJN0kXuZjhti1aAcygH1L-eU,1073
+nbg_currencies_api-0.1.3.dist-info/METADATA,sha256=s7sAP9CY8PVR4ATKhRuOdLMB3IRH92KU0oE6NSJiPc0,5897
+nbg_currencies_api-0.1.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+nbg_currencies_api-0.1.3.dist-info/top_level.txt,sha256=9B0RijQH4gGLuO9b7dDo1KDGKR0Uz5zmGFIP8Du6IPQ,17
+nbg_currencies_api-0.1.3.dist-info/RECORD,,
