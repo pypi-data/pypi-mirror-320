@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: weni-cli
+Version: 0.1.6
+Requires-Dist: Click
+Requires-Dist: requests
+Requires-Dist: flask
+Requires-Dist: waitress
+Requires-Dist: pyyaml
+Requires-Dist: python-slugify
