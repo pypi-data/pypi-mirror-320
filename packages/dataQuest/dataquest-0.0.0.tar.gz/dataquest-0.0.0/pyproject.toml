@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dataQuest"
+description = "A package to extract hystorical news sentiments"
+authors = [
+    {name = "Shiva Nadi", email = "s.nadi@uu.nl"},
+    {name = "Parisa Zahedi", email = "p.zahedi@uu.nl"}
+]
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+]
+dynamic = ["version"]
+
+dependencies = ["tqdm","pandas","pandas-stubs", "types-tqdm","spacy==3.5.4","scikit-learn","numpy==1.26.4","scipy",
+    "flake8-pyproject","thinc==8.1.12"
+]
+
+[project.optional-dependencies]
+lint = ["flake8"]
+test = ["pytest", "mypy"]
+
+[tool.setuptools]
+packages = ["dataQuest"]
+
+[tool.flake8]
+max-line-length = 99
+
+[tool.pylint.'FORMAT']
+max-line-length=100
+max-locals=35
+max-args=10
+disable = [
+    "R0911"
+]
+
+[[tool.mypy.overrides]]
+module = [
+    "scipy.*",
+    "pandas.*",
+    "sklearn.*"
+]
+ignore_missing_imports = true
+
+[project.scripts]
+filter-articles = "dataQuest.filter_articles:cli"
+generate-output = "dataQuest.generate_output:cli"
+
+[tool.setuptools.package-data]
+"dataQuest" = ["config.json"]
+
