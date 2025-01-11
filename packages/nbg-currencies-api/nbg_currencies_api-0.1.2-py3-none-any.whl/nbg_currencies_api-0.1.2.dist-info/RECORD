@@ -1,0 +1,11 @@
+src/__init__.py,sha256=CJeDvLMXg7qX9zEC9PNv22ZSkSvt6JoScM_xyB36kc4,250
+src/api.py,sha256=Hmj1-3iEJex5kWt4REmJotGEcuwZoHAyMHVGBP3xwyQ,1778
+src/constants.py,sha256=_xxcBh9XgE9kqlIlEwXCJQlK4eVmOwSG3p6n8zSL_jY,68
+src/exceptions.py,sha256=a6fsEcdIP0xQ5crNB5oo8ZVsRDjw_nn02cVKbAOayww,48
+src/services.py,sha256=U-HFiyWrswnY9Iv44WxXDTDi7rBqFUSJ3iQhVybsU_E,1690
+src/types.py,sha256=gaf26MmI772DuEN130qX6aoZmECxUoXE1w38C1wz0a0,1199
+nbg_currencies_api-0.1.2.dist-info/LICENSE,sha256=4fJLuVYR2m613sax8uIhJN0kXuZjhti1aAcygH1L-eU,1073
+nbg_currencies_api-0.1.2.dist-info/METADATA,sha256=ea1R9CgwBYwvARYPStHYPowMqQd2JszBoElIyvUdyWU,5913
+nbg_currencies_api-0.1.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+nbg_currencies_api-0.1.2.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+nbg_currencies_api-0.1.2.dist-info/RECORD,,
