@@ -1,0 +1,11 @@
+panel_web_llm/__init__.py,sha256=DoE2pu5AIyy6niybDEzGOKaJxNEcnAL0aPnL0DIGlUo,676
+panel_web_llm/cli.py,sha256=YHq9oRCqg_jW06vgs6braQ6g2z9aMe3nYEWrLr0cmoc,2272
+panel_web_llm/main.py,sha256=eZfGk-EOah1i59Iw6vFU_RVP8a0nol-6RrPUdv3mcCA,15246
+panel_web_llm/models.py,sha256=nYm9qQ3RXzdVqvNDFVaq-mCGNchbuhDd0izyOVZhWls,3967
+panel_web_llm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+panel_web_llm/settings.py,sha256=IY-UOJMPQUCTMeeKjFo-0BMutmSUJj3kHyf7vuJqvGM,13036
+panel_web_llm-0.0.0.dist-info/METADATA,sha256=JyZs8OMY_n9Lcvm4m_RnLiuKpmeLBnxZsvRQAO5Zdgg,6626
+panel_web_llm-0.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+panel_web_llm-0.0.0.dist-info/entry_points.txt,sha256=mWRxOpBGH1F6MyFDyZs6a4fLPHqyRq-H8s4RzubOkLM,87
+panel_web_llm-0.0.0.dist-info/licenses/LICENSE.txt,sha256=Jqbh7noYJKpAY0CUXf5UeMNtew5vLlLHmRbBrIo6XrE,1515
+panel_web_llm-0.0.0.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+panel-web-llm = panel_web_llm.cli:main
+pllm = panel_web_llm.cli:main
