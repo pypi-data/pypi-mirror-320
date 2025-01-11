@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/baselog/__init__.py
+src/baselog/baselog.py
+src/baselog/py.typed
+src/baselog.egg-info/PKG-INFO
+src/baselog.egg-info/SOURCES.txt
+src/baselog.egg-info/dependency_links.txt
+src/baselog.egg-info/top_level.txt
