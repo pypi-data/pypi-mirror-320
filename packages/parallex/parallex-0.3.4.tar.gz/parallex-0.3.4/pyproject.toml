@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "parallex"
+version = "0.3.4"
+description = "PDF to markdown using Azure OpenAI batch processing"
+authors = ["Jeff Hostetler <jeff@summed.ai>", "Kevin Bao <kevin@summed.ai>"]
+repository = "https://github.com/Summed-AI/parallex"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.9.2"
+httpx = "^0.27.2"
+asyncio = "^3.4.3"
+openai = "^1.54.4"
+pdf2image = "^1.17.0"
+aiologger = "^0.7.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
