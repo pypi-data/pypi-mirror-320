@@ -1,0 +1,15 @@
+LICENSE
+setup.py
+onego/__init__.py
+onego.egg-info/PKG-INFO
+onego.egg-info/SOURCES.txt
+onego.egg-info/dependency_links.txt
+onego.egg-info/requires.txt
+onego.egg-info/top_level.txt
+onego/files/__init__.py
+onego/killable_thread/__init__.py
+onego/logger/__init__.py
+onego/sessions/__init__.py
+onego/sessions/chrome.py
+onego/sessions/get_chrome_version.py
+onego/utils/__init__.py

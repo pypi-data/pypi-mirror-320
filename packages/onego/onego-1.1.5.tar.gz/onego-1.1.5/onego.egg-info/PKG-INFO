@@ -1,0 +1,28 @@
+Metadata-Version: 2.2
+Name: onego
+Version: 1.1.5
+Summary: Cool •-•
+Home-page: https://github.com/th3poli/onegopy
+Author: th3poli
+Author-email: 
+License: Apache 2.0
+Keywords: onego,all in one
+License-File: LICENSE
+Provides-Extra: sessions
+Requires-Dist: cloudscraper; extra == "sessions"
+Requires-Dist: beautifulsoup4; extra == "sessions"
+Provides-Extra: files
+Provides-Extra: logger
+Provides-Extra: utils
+Requires-Dist: requests; extra == "utils"
+Requires-Dist: beautifulsoup4; extra == "utils"
+Provides-Extra: all
+Requires-Dist: requests; extra == "all"
+Requires-Dist: cloudscraper; extra == "all"
+Requires-Dist: beautifulsoup4; extra == "all"
+Dynamic: author
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: provides-extra
+Dynamic: summary
