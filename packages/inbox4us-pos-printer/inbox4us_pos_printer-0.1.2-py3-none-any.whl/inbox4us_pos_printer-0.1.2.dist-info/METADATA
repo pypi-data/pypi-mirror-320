@@ -1,0 +1,40 @@
+Metadata-Version: 2.2
+Name: inbox4us_pos_printer
+Version: 0.1.2
+Summary: Inbox4us POS printer service
+Home-page: https://github.com/username/repository
+Author: Daniel
+Author-email: Inbox4us <engineering@inbox4us.xyz>
+License: MIT
+Project-URL: Homepage, https://github.com/Inbox-Team/pos-printer
+Project-URL: Repository, https://github.com/Inbox-Team/pos-printer.git
+Keywords: printer,fastapi,escpos,network-printer
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi>=0.68.0
+Requires-Dist: uvicorn>=0.15.0
+Requires-Dist: python-escpos>=3.0
+Requires-Dist: Pillow>=8.0.0
+Requires-Dist: pydantic>=1.8.0
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python
+
+# Inbox4us Pos Printer
+
+# Prepare install
+pip install setuptools wheel twine
+
+# Build:
+python setup.py sdist bdist_wheel
+
+# Publish:
+twine upload dist/*
