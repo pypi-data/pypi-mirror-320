@@ -1,0 +1,22 @@
+Metadata-Version: 2.2
+Name: nifti_overlay
+Version: 0.0.0
+Summary: A program for creating tiled images of volumetric neuorimaging data.
+Home-page: https://github.com/earnestt1234/nifti_overlay
+Author: Tom Earnest
+Author-email: Tom Earnest <earnestt1234@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/earnestt1234/nifti_overlay
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib>=3.2
+Requires-Dist: nibabel>=3.2
+Requires-Dist: numpy>=1.2
+Requires-Dist: scikit-image>=0.24.0
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python
+
+# nifti_overlay
+Program for creating tiled images of volumetric neuorimaging data.
