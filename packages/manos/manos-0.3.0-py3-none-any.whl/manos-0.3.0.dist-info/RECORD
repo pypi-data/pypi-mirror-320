@@ -1,0 +1,15 @@
+manos/__init__.py,sha256=uOibUmfDjkriiEk5UgALuAEig5DtlAamyFNcoJLIBCw,3792
+manos/__main__.py,sha256=CXTBeiGFil64tF76u61mN8O9kgIMd_kbtRo9WdgVyfs,53546
+manos/builtin.py,sha256=bSH0KdJtWweAT-iun9gVJ1vJ-pU6kveOjNB0fhmfzLM,4865
+manos/doxygen.py,sha256=YbeDD3jUz7S7P4ur81WgRh76cqE0TmLfxHKgsCoZ7ts,23799
+manos/option.py,sha256=HiJ2tzDATvEY9D5cOh30sToPhvK7DojUSlibDiCa2CU,2067
+manos/ordered_set.py,sha256=wkK5sNP822FFuu3aluyFXKdAJPO6eRvUrizynBHeNqY,6032
+manos/roff.py,sha256=5xaG23AX-6TR4LxthYX1NGwPMz_7-CTX8GGb484fAOo,8928
+manos/sentence.py,sha256=R0q68TCbqpV03YEqA-4Rpw2QEcCUWPsWlcugxw0gegE,3989
+manos-0.3.0.data/data/man/man1/manos.1,sha256=FknAT6RHRBoX32snhJrYcoLJ8kDsYnWwjHTKq7VCaUQ,5333
+manos-0.3.0.dist-info/LICENSE,sha256=0b_Hp0mVCSS9XSfe5hCsiTP5a63BSndL55bphrnc06o,32423
+manos-0.3.0.dist-info/METADATA,sha256=ZWTxnLmLwzfkMwUNzSBbzoA_-7lcdRYBnPd1H_lWUmw,3190
+manos-0.3.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+manos-0.3.0.dist-info/entry_points.txt,sha256=YhiPngzokr7qNHi5cK2iuNWZvpA9C4RE0zecwK-oHzs,47
+manos-0.3.0.dist-info/top_level.txt,sha256=h1xd3kcr-u7RM2QwbIFLPqjcW_xHGoxN7WzDlWod9fk,6
+manos-0.3.0.dist-info/RECORD,,
