@@ -1,0 +1,2 @@
+[certbot.plugins]
+dns-buddy-internal = certbot_dns_buddy_internal.dns_internal:Authenticator
