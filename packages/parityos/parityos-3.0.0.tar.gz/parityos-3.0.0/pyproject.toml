@@ -1,0 +1,56 @@
+[tool.basedpyright]
+typeCheckingMode = "recommended"
+
+enableExperimentalFeatures = false
+failOnWarnings = false
+
+reportImportCycles = "none"  # temporary until this is decided
+reportUnknownParameterType = "none"
+reportUnknownArgumentType = "none"
+reportUnknownLambdaType = "none"
+reportUnknownVariableType = "none"
+reportUnknownMemberType = "none"
+reportMissingParameterType = "none"
+reportMissingTypeStubs = "none"
+reportCallInDefaultInitializer = "none"
+reportUnnecessaryIsInstance = "none"
+reportUnusedCallResult = "none"
+reportAny = "none"
+reportExplicitAny = "none"
+
+reportUnusedVariable = "warning"
+reportMissingTypeArgument = "warning"
+
+reportUnusedImport = "error"
+reportDuplicateImport = "error"
+reportWildcardImportFromLibrary = "error"
+reportTypeCommentUsage = "error"
+
+reportUnusedClass = "hint"
+reportUnusedFunction = "hint"
+reportUnreachable = "hint"
+
+[tool.pytest.ini_options]
+addopts = ["-vv", "-s"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.format]
+line-ending = "lf"
+quote-style = "double"
+
+[tool.ruff.lint]
+select = [
+    "E", # pycodestyle: style convetions in PEP 8, e.g. indentations, whitespaces, blank lines, imports
+    "F", # pyflakes: unused imports, etc.
+    "I", # isort: sort imports
+]
+
+ignore = [
+    "E501", # this is covered by ruff format
+]
+
+[tool.lint.isort]
+lines-after-imports = 2  # blank lines after the last import statement
+lines-between-types = 1  # blank lines between different import blocks
