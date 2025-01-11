@@ -1,0 +1,187 @@
+## Tigrinya Alphabets Processing Library
+
+This application is designed to facilitate the use of Tigrinya alphabets for writing and linguistic analysis on computers and mobile devices. It provides a comprehensive set of functions to make working with the Tigrinya language more efficient and accessible, whether you are a native speaker, language learner, or researcher.
+
+#### Key Features
+
+1. **Tigrinya Alphabet Input and Conversion**:
+   - The application allows developers to type and manipulate text using the Tigrinya script. It includes features for converting text written in Tigrinya alphabets into numeric codes and vice versa, among other functionalities. Encoding and decoding text in Tigrinya is particularly useful for protecting sensitive information or integrating Tigrinya text into systems that require numeric data.
+
+2. **Transliteration Support**:
+   - Users can easily convert Tigrinya words written in the English alphabet into the proper Tigrinya script. This feature helps bridge the gap for users more familiar with English keyboards but who want to write in Tigrinya. Developers can integrate this functionality into their projects to provide enhanced Tigrinya word processing for their end users.
+
+3. **Linguistic Tools for Verb, Noun, and Adjective Management**:
+   - The library includes advanced functions for creating and analyzing verbs, nouns, and adjectives in the Tigrinya language. It can generate conjugated verbs from their stems, extract stems from fully conjugated verbs, create noun stems, and manage adjective forms. These functions are invaluable for language learning, grammatical analysis, and content creation in Tigrinya. This functionality can also be integrated into developers' projects, offering further advantages to end users.
+
+4. **Text Processing and Sentence Management**:
+   - For ease of translation and text manipulation, the library provides features to break down long sentences into smaller, manageable chunks. This functionality is crucial for accurately translating or processing complex text, making the application versatile for both casual and professional use.
+
+#### Application Purpose
+
+The primary purpose of this library is to enhance the ability to write, translate, and analyze text in Tigrinya using digital devices. By integrating a range of linguistic functions and conversion features, the application supports both everyday communication and more specialized tasks, such as language education, research, and digital content creation. Whether you're composing a message, translating a document, or studying Tigrinya grammar, this library offers a streamlined, user-friendly platform for all your needs as a developer to provide your end users.
+
+### User Manual: Code Word Functions for Tigrinya Language Processing
+
+This manual provides a brief explanation of the functions available in the `tigrina_words` module for processing Tigrinya language text. Each function performs a specific task related to translating, encoding, or identifying Tigrinya language elements.
+
+#### 1. **Convert Tigrinya Alphabet to Numeric Code**
+   - **Function**: `code_translation("ፈተነ","code","")`
+   - **Description**: Converts a Tigrinya word or sentence (e.g., "ፈተነ") into its corresponding numeric code. This is useful for encoding Tigrinya text.
+
+#### 2. **Decode Numeric Code to Tigrinya Alphabet**
+   - **Function**: `code_translation(mycode, 'decode', 'yes')`
+   - **Description**: Decodes a numeric code back into the original Tigrinya alphabet. The `mycode` variable contains the numeric code that will be decoded.
+
+#### 3. **Convert English-Alphabet Tigrinya to Tigrinya Alphabet**
+   - **Function**: `convert_sentence_to_tigrina("ezi natey iyu")`
+   - **Description**: Converts Tigrinya words written using the English alphabet (e.g., "ezi natey iyu") into the Tigrinya alphabet. This helps in converting transliterated text back to its original script.
+
+#### 4. **Translate Verb "To Be" in Tigrinya**
+   - **Function**: `verb_to_be_trans()`
+   - **Description**: Provides translations of the verb "to be" in Tigrinya across different forms. This function contains a dictionary or lookup table for verb conjugations.
+
+#### 5. **Identify the Verb "To Be" and Other Verbs in a Sentence**
+   - **Function**: `verb_to_be("ይመጽእ ኣሎ")`
+   - **Description**: Analyzes a given Tigrinya sentence (e.g., "ይመጽእ ኣሎ") to identify and extract the verb "to be" and other verbs present in the sentence. This is useful for linguistic analysis and sentence parsing.
+#### 6. **Data manipulation from existed tables**
+   - **Function**: `Data.select("select * from verbs")`
+   - **Description**: This function selectes any field of the table.
+   - **Function**: `Data.insert("sql query here to insert data to table")`
+   - **Description**: This function inserts any data to a query given table.
+   - **Function**: `Data.update("sql query to update data in a table")`
+   - **Description**: This function updats any data to a query given table.
+   - **Function**: `Data.delete("sql query here to delete data from table")`
+   - **Description**: This function deletes any data from a query given table.
+
+### Usage Examples
+Each function is designed for specific use cases, such as encoding/decoding text, converting transliterations, or analyzing verbs in Tigrinya sentences. For example, if you have a numeric code and need to retrieve the original Tigrinya word, use the decoding function with the appropriate parameters.
+
+### Additional Functions in `tigrina_words` Module for Tigrinya Language Processing
+
+This section of the manual explains additional functions available in the `tigrina_words` module that focus on verb and adjective creation, stem extraction, noun processing, and sentence breaking for easier translation or processing.
+
+#### 1. **Create Verbs from Stems in Tigrinya**
+   - **Function**: `verb.create_verb_from_stem("መጽአ", 'future', 'we', "he", 'ዘይ', "yes")`
+   - **Description**: Generates a complete verb from a given stem verb (e.g., "መጽአ") by specifying tense (e.g., 'future'), subject (e.g., 'we'), and other grammatical markers like negation (e.g., 'ዘይ') and aspect (e.g., "yes"). This is useful for constructing conjugated verbs in various forms.
+
+#### 2. **Create Stem Verbs from Tigrinya Verbs**
+   - **Function**: `verb.create_stem_from_verb("ኣሲርዎ")`
+   - **Description**: Extracts the stem from a given Tigrinya verb (e.g., "ኣሲርዎ"). The stem is the base form used to create various conjugations of the verb.
+
+#### 3. **Create Stem Nouns from Nouns in Tigrinya**
+   - **Function**: `tigrina_words.noun("ቦርሳታት")`
+   - **Description**: Extracts the stem form of a noun (e.g., "ቦርሳታት") in Tigrinya. The stem noun is the base form that can be used to create plural forms, possessives, and other noun modifications.
+
+#### 4. **Create Adjectives from Stem Adjectives in Tigrinya**
+   - **Function**: `adjective.make_adjective_from_stem('ብርቱዕ', '', 'her', '', '', 'እንተዘይ')`
+   - **Description**: Constructs a full adjective from a stem (e.g., 'ብርቱዕ') by specifying gender, possession, and negation markers (e.g., 'እንተዘይ' for negation). This is useful for generating descriptive words that match the grammatical context.
+
+#### 5. **Create Stem Adjectives from Non-Stem Adjectives in Tigrinya**
+   - **Function**: `adjective.make_stem_from_adjective('እንተዝብርትዕ')`
+   - **Description**: Extracts the stem form of an adjective (e.g., 'እንተዝብርትዕ'), which can be used to create different forms of the adjective based on gender, number, or negation.
+
+#### 6. **Break Long Sentences into Chunks**
+   - **Function**: `break_text("test text here. This is another test.", "")`
+   - **Description**: Splits a long sentence or paragraph (e.g., "test text here. This is another test.") into smaller, more manageable chunks. This is particularly useful for processing or translating large texts where sentence-by-sentence translation is required.
+#### 7. **Data managment**
+   - **Function**: `tigrina_words.Data.select("query selection here to get data from a given table")`
+   - **Description**: This helps to get data from already existed tables.
+   - **Function**: `tigrina_words.Data.insert("query here to insert data")`
+   - **Description**: This helps to insert data to a given table.
+   - **Function**: `tigrina_words.Data.update("query here to update data")`
+   - **Description**: This helps to update data in a given table.
+   - **Function**: `tigrina_words.Data.delete("query here to delete data")`
+   - **Description**: This helps to delete data in a given table.
+
+   - **Function**: `tigrina_words.pandas_data_frame_to_object(here will be the data retrieved from the tables using the above queries.)`----> This function is only for python. No need to use this in javascript or node js
+   - **Description**: This helps to convert the retrieved data query to object. By nature when data is retrieved using the queries, it comes as a pandas object (kind of table structured result). If you want to work with objects, then this query results has to be converted to object. Hence this function helps to do that. Therefore in general this function helps to convert the pandas results to python object query.
+
+#### 8. **data_transformation Function Documentation**
+   ###### Overview:
+   The data_transformation function reads a CSV file, applies column merging and transformation logic, and saves the modified results into a new CSV file. This function interacts with the tg_code function to merge specific columns and apply a transformation (e.g., translation, concatenation, etc.).
+
+   #### Function Signature:
+   def data_transformation(input_csv_path, output_csv_path, column_representing, listOfColumnsToBeCombined):
+   ##### Parameters:
+   ###### input_csv_path (str):
+
+   The file path of the input CSV that contains the data you want to transform.
+   Example: 'input_data.csv'.
+   ###### output_csv_path (str):
+
+   The file path where the transformed CSV will be saved.
+   Example: 'output_data.csv'.
+   ###### column_representing (str):
+
+   The name of the new column that will represent the combined data from the selected columns.
+   Example: 'combined_data'.
+   ###### listOfColumnsToBeCombined (list of str):
+
+   A list of column names from the input CSV to be merged and transformed.
+   Example: ['english', 'tigrina'].
+   ###### Returns:
+   A string indicating the result of the operation.
+   If successful: "saved to <output_csv_path>".
+   If there is an error or missing columns: A message indicating the error or missing columns (e.g., "Not found: spanish").
+   #### Function Workflow:
+   Reading the Input CSV: The function opens the input CSV file (input_csv_path) and reads it using csv.DictReader. Each row is processed as a dictionary where the keys are the column names.
+
+   Processing Each Row: The function loops through each row and calls the tg_code function to process the specified columns. If any required columns are missing, the function returns a message with the missing columns.
+
+   Writing to Output CSV: The function writes the result of tg_code (the combined column value) to a new CSV file (output_csv_path), using the provided column name (column_representing).
+
+   Handling Missing Columns: If any columns are missing, the function will stop and return a message such as "Not found: column_name".
+
+   
+   #### tg_code Function Documentation
+   Overview:
+   The tg_code function processes a row of data, checks if the required columns are present, and combines the values of the specified columns into a single string. If any of the columns are missing, it returns an error message. This function is used internally by data_transformation to perform column merging and transformation.
+
+   Function Signature:
+   python
+   Copy code
+   def tg_code(row, listOfColumnsToBeCombined):
+   Parameters:
+   row (dict):
+
+   A dictionary representing a row from the input CSV, where the keys are column names and the values are the corresponding data.
+   Example: {'english': 'hello', 'tigrina': 'ሰላም', 'spanish': 'hola'}.
+   listOfColumnsToBeCombined (list of str):
+
+   A list of column names that should be combined from the row.
+   Example: ['english', 'tigrina'].
+   Returns:
+   A string:
+   If all specified columns are found in the row, it returns a combined string of their values.
+   If any columns are missing, it returns a message like "Not found: column_name".
+   Function Workflow:
+   Column Check: The function checks each column in listOfColumnsToBeCombined to see if it exists in the row.
+
+   If a column is found, its value is added to the list filtered_values.
+   If a column is missing, it is added to the missing_columns list.
+   Missing Column Handling: If any columns are missing, the function returns a message listing those columns (e.g., "Not found: spanish").
+
+   Value Combination: If all required columns are present, their values are combined into a single string, separated by spaces.
+
+   
+   Conclusion:
+   The data_transformation function allows you to read data from a CSV file, transform it by merging specified columns, and save the result to a new CSV file. It uses the tg_code function to handle the logic of merging and checking columns.
+   You can use this structure to combine and process columns from any CSV data, ensuring that missing columns are handled properly.
+   
+### Usage Examples
+These functions are essential for building or breaking down words and sentences in the Tigrinya language, whether for translation, linguistic analysis, or language learning. For instance, if you need to generate a verb from its stem for future tense and a specific subject, you can use the `create_verb_from_stem` function with the relevant parameters. Similarly, to simplify long translations, you can use the `break_text` function to segment the content for easier processing or translation.
+
+##### Main Module: 
+main (from tigrina.main import Tigrina_words as tigrina_words)
+
+The main module of this library serves as a one-stop solution that integrates all the functionalities provided by the other modules in the package. By importing this module, you will have access to all the features and capabilities of the entire library. This makes it the simplest and most convenient option for users who want to utilize the full potential of the library without managing individual imports.
+
+##### Key Points:
+
+- **All-in-One Access**: When you import the main module, you automatically gain access to all other modules, functions, and classes in the library. There's no need for additional imports unless you want to work with specific components separately.
+- **Convenient and Efficient**: This file is designed to streamline your experience by providing a single point of entry to the entire package. You won't need to worry about missing any features or
+
+ functionalities because everything is included and readily accessible.
+
+#### Summary:
+This Tigrinya Alphabets Processing Library simplifies working with the Tigrinya language through comprehensive functions for writing, translating, and linguistically analyzing text in Tigrinya.
