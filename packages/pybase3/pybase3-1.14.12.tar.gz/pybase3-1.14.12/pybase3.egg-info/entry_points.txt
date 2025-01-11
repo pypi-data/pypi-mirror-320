@@ -1,0 +1,5 @@
+[console_scripts]
+dbftest = pybase3.test:testdb
+dbfview = pybase3.dbfview:main
+pybase3 = pybase3.__main__:main
+
