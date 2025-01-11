@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+src/huangyinglan.egg-info/PKG-INFO
+src/huangyinglan.egg-info/SOURCES.txt
+src/huangyinglan.egg-info/dependency_links.txt
+src/huangyinglan.egg-info/entry_points.txt
+src/huangyinglan.egg-info/not-zip-safe
+src/huangyinglan.egg-info/requires.txt
+src/huangyinglan.egg-info/top_level.txt
+src/mylove/__init__.py
+src/mylove/mfunc.py
+tests/test_func.py
