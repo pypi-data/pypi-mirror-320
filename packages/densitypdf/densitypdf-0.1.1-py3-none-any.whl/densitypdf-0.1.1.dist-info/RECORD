@@ -1,0 +1,10 @@
+densitypdf/__init__.py,sha256=9amMDFlEl6wsuKbgWsQUjvko4PMBEgyIF0z_4fXSkIM,4142
+densitypdf/builtin/builtindensitypdf.py,sha256=fVmqcRS3rjjbyVqdqgLE40l4Cs5LFQn124rh1p2TUsQ,3571
+densitypdf/builtin/scipydensitymanifest.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+densitypdf/builtin/scipyreplacements.py,sha256=Vzuxn2Aw_fLzDQSDzn5TRB8IspejUoIwxpp4g276vuA,14267
+densitypdf-0.1.1.dist-info/LICENSE,sha256=MlEKScyz45AUetcCr2Gvo-5CsaRUis_PNkV1XNqiF7w,1069
+densitypdf-0.1.1.dist-info/METADATA,sha256=MJcy3z-j4wM_89-7uCF9OYE_R_tYfZvz1QRdcjjV9QI,2093
+densitypdf-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+densitypdf-0.1.1.dist-info/entry_points.txt,sha256=U5woVbATEKRNtcUQXa4G1UxtMSWUmkhbS3tB8jKD7KQ,50
+densitypdf-0.1.1.dist-info/top_level.txt,sha256=yJMLOuE2uxhtFVNUsrYEfltRpSeNVX_b5aWCGj8kc3s,11
+densitypdf-0.1.1.dist-info/RECORD,,
