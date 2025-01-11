@@ -1,0 +1,66 @@
+Metadata-Version: 2.2
+Name: tree-sitter-pact
+Version: 0.0.9
+Summary: Pact grammar for tree-sitter
+Author-email: Salama Ashoush <salamaashoush@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/tree-sitter/tree-sitter-pact
+Keywords: incremental,parsing,tree-sitter,pact
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Provides-Extra: core
+Requires-Dist: tree-sitter~=0.23; extra == "core"
+
+# tree-sitter-pact
+
+tree-sitter grammar for pact smart contract language
+
+
+
+## Neovim setup (WIP)
+
+I will create a PR to add this to the official nvim-treesitter repo once it's ready, for now you can use it by following these steps:
+
+Clone the repo
+
+``` bash
+git clone https://github.com/kadena-community/tree-sitter-pact.git
+```
+
+Add those to your init.lua
+
+``` lua
+vim.filetype.add({
+  extension = {
+    pact = "pact",
+    repl = "pact",
+  },
+})
+local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
+parser_config.pact = {
+  install_info = {
+    url = "~/path/to/c/tree-sitter-pact",
+    files = { "src/parser.c" },
+  },
+  filetype = "pact",
+}
+```
+
+Then run `:TSInstall pact` in neovim.
+
+also you need to link the queries folder to your nvim config folder
+
+``` bash
+mkdir -p ~/.config/nvim/after/queries/pact
+ln ./queries/highlights.scm ~/.config/nvim/after/queries/pact/highlights.scm
+ln ./queries/locals.scm ~/.config/nvim/after/queries/pact/locals.scm
+ln ./queries/textobjects.scm ~/.config/nvim/after/queries/pact/textobjects.scm
+ln ./queries/folds.scm ~/.config/nvim/after/queries/pact/folds.scm
+ln ./queries/indents.scm ~/.config/nvim/after/queries/pact/indents.scm
+```
