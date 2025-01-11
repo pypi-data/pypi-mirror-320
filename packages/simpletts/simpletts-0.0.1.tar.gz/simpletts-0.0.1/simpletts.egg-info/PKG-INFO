@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: simpletts
+Version: 0.0.1
+Summary: Easily run and use TTS models with just a few lines of code.
+Home-page: https://github.com/fakerybakery/simpletts
+Author: mrfakename
+Author-email: me@mrfake.name
+License: BSD-3-Clause
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: accelerate
+Requires-Dist: torchaudio
+Requires-Dist: cached-path
+Requires-Dist: transformers[torch]
+Requires-Dist: datasets
+Requires-Dist: pydub
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: librosa
+Requires-Dist: soundfile
+Requires-Dist: tqdm
+Requires-Dist: openphonemizer
+Requires-Dist: click
+Provides-Extra: xtts
+Requires-Dist: tts; extra == "xtts"
+
+# SimpleTTS
+
+A lightweight Python library for text-to-speech synthesis that makes it easy to use and switch between different TTS models.
+
+> [!NOTE]
+> This project is under active development and APIs may change. Not recommended for production use yet.
+
+## Features
+
+- 🚀 Simple, intuitive API
+- 🔄 Easy model switching
+- 🎯 Focus on ease of use
+- 📦 Minimal dependencies
+- 🔌 Extensible architecture
+
+## Installation
+
+Install the latest release from PyPI:
+
+```bash
+pip install simpletts
+```
+
+Or get the latest version from source:
+
+```bash
+pip install git+https://github.com/fakerybakery/simpletts
+```
+
+## Quick Start
+
+```python
+from simpletts.models.xtts import XTTS
+import soundfile as sf
+
+tts = XTTS(device="auto")
+# Note: XTTS is licensed under the CPML license which restricts commercial use.
+
+array, sr = tts.synthesize("Hello, world!", ref="sample.wav")
+
+sf.write("output.wav", array, sr)
+```
+
+## Supported Models
+
+| Model | License | Description |
+|-------|---------|-------------|
+| XTTS | CPML | High-quality multilingual TTS with voice cloning capabilities |
+| Kokoro | Apache-2.0 | Fast and lightweight English TTS with voice cloning |
+
+## Roadmap
+
+**Models**
+
+- [x] XTTS - Production-ready multilingual TTS
+- [x] Kokoro - StyleTTS 2-based English TTS without voice cloning
+- [ ] StyleTTS 2 - Fast and efficient zero-shot voice cloning
+- [ ] F5-TTS - Superb voice cloning and naturalness, but slower and less stable
+
+**Features**
+
+- [x] Simple Python API for easy integration
+- [ ] Command-line interface for quick testing and batch processing
+- [ ] REST API and web interface for remote access
+- [ ] Model benchmarking tools
+- [ ] Batch processing support
+- [ ] Audio post-processing options
+
+## License
+
+This project is licensed under the BSD-3-Clause license. See the [LICENSE](LICENSE) file for more details.
+
+While SimpleTTS itself is open source and can be used commercially, please note that some supported models have different licensing terms:
+
+- XTTS is licensed under CPML which restricts commercial use
+- Kokoro is licensed under Apache-2.0 which allows commercial use
+- Other models may have their own licensing requirements
+
+For complete licensing information for all included models and dependencies, please see the `licenses` directory.

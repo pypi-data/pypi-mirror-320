@@ -1,0 +1,17 @@
+torch
+accelerate
+torchaudio
+cached-path
+transformers[torch]
+datasets
+pydub
+numpy
+scipy
+librosa
+soundfile
+tqdm
+openphonemizer
+click
+
+[xtts]
+tts
