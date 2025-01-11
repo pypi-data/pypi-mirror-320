@@ -1,0 +1,80 @@
+import os
+import requests
+from http import HTTPMethod, HTTPStatus
+from typing import Any, Dict, Text, Tuple
+
+
+class DtaApiKeys:
+
+    def __init__(self, project: str = None) -> None:
+        self.project = project
+
+    def validate(self, apikey: str, scope: str) -> bool:
+        if not self.project or not apikey or not scope:
+            return False
+
+        validate_data = self.__ask(
+            (
+                f"/projects/{self.project}/apikeys/{apikey}/"
+                f"scopes/{scope}/validate"
+            ),
+            json={},
+            method=HTTPMethod.POST
+        )
+        if validate_data.status_code == HTTPStatus.OK:
+            return True
+        return False
+
+    def __ask(self, resource: str, payload: dict = None,
+              json: dict = None, method: str = HTTPMethod.GET) -> Any:
+        """
+        Makes a request to a specified resource with an optional payload.
+
+        Args:
+            resource (str): The resource endpoint to request.
+            payload (dict, optional): The data to send with the request.
+                                      Defaults to an empty dictionary.
+
+        Returns:
+            Any: The response from the request.
+
+        Notes:
+            If the instance is in production mode, '/production' is appended
+            to the resource URL.
+        """
+        service_url, headers = self.__service_builder()
+        secret_response = requests.request(
+            method, service_url + resource, headers=headers, data=payload,
+            json=json
+        )
+        return secret_response
+
+    def __service_builder(self) -> Tuple[Text, Dict]:
+        """
+        This method constructs the service URL from the environment variable
+        `DTA_SECRETS_URL` and creates the necessary headers using the
+        `DtaServiceHeader` class.
+
+        Raises:
+            DtaSecretsError: If the `DTA_SECRETS_URL` environment variable is
+                             not set or is an empty string.
+        """
+        headers = {
+            "Content-Type": "application/json",
+        }
+        service_url = os.environ.get("DTA_INTEGRATION_URL",
+                                     os.environ.get("DTA_SECRETS_URL"))
+        if not service_url or not isinstance(service_url, str):
+            raise DtaApiKeyError(
+                "`DTA_INTEGRATION_URL` is not set or it has an invalid value."
+            )
+        if service_url.endswith("/"):
+            service_url = service_url[:-1]
+        return service_url, headers
+
+
+class DtaApiKeyError(Exception):
+
+    def __init__(self, message: str) -> None:
+        super().__init__(message)
+        self.message = message
