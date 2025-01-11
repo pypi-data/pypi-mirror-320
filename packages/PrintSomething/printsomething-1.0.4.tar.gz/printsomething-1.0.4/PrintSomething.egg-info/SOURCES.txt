@@ -1,0 +1,9 @@
+LICENSE.txt
+PrintSomething.py
+README.md
+setup.cfg
+setup.py
+PrintSomething.egg-info/PKG-INFO
+PrintSomething.egg-info/SOURCES.txt
+PrintSomething.egg-info/dependency_links.txt
+PrintSomething.egg-info/top_level.txt
