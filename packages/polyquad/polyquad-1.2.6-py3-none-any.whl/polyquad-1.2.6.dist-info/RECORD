@@ -1,0 +1,12 @@
+polyquad/__init__.py,sha256=OitL3JvaUIy8luGQ8fw3wxJU5dqT5lC5qIpcONhHz0M,1137
+polyquad/_antonietti.py,sha256=KjpMecU85-HIcrVYQZTCbHgWiwnD6ll5FOIdHlKEArI,13681
+polyquad/_main.py,sha256=FiPR86glY2Y_7Q6C_e8tF6DMHEJGhJPO9BcUT__c9ww,4433
+polyquad/_mapping.py,sha256=96ImgZHaaalKY_84c0PwINHp9-LCWCXvWMRtkXCftlU,1629
+polyquad/_moment_matching_2d.py,sha256=O--5AtJ-LjUtB6Rbw1miqi-uLPB7cXxX0eqkXVPsFkg,2378
+polyquad/_moment_matching_3d.py,sha256=WCEYhkobCkhSKsOAdjjujqfIvT0yMSlA6ueqyHGjePk,2491
+polyquad/_utils.py,sha256=iJMEdOLeF7E_V8NQGTZMEzvWIVV5YI_YbX_O2GrAATs,1896
+polyquad-1.2.6.dist-info/LICENSE,sha256=tYHBwyPab6d93LZjIZvkvZ_ekXihsRBhAWTsC9Dv8bo,1102
+polyquad-1.2.6.dist-info/METADATA,sha256=4I4LX0EyJYvBVTq8rTavc1aKLp6WMML1BZppH_XhF6g,6220
+polyquad-1.2.6.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+polyquad-1.2.6.dist-info/top_level.txt,sha256=fyYd_tHvu0YXSId25F0Tg-UlbdCgsjmTH9W-2tVyNIY,9
+polyquad-1.2.6.dist-info/RECORD,,
