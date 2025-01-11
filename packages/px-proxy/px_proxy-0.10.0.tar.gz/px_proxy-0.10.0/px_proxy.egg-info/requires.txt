@@ -1,0 +1,7 @@
+keyring
+netaddr
+psutil
+pymcurl
+pyspnego
+python-dotenv
+quickjs
