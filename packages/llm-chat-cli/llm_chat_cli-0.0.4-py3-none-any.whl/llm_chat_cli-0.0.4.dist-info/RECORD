@@ -1,0 +1,12 @@
+llm_chat/__init__.py,sha256=iGj5jcPCrB1SWZtPUvnnIsu7i1S5VBM-9Jv2orJVVWk,209
+llm_chat/chat.py,sha256=rYKiUlZdN7jYJ8tQZaPXkjsjh5jmPHD_tatORiIlkic,2935
+llm_chat/cli.py,sha256=SobXRKyP5x3gZlWwx_YXnQ1tjILUpZcfsEH7Xz3tQXY,5283
+llm_chat/clients.py,sha256=7m2x5QJlvHY-NsmpqUAHxWtqdsD5gcWbRXF4RPYvmF0,913
+llm_chat/config.py,sha256=y9939FA2yX-5VpbM2u7_5f2fkdckPWpllajoq2oC7Gw,679
+llm_chat/setup.py,sha256=f1iT4d1Ola1SzCzgJS0DcXLSVjdFjBpqWug9JY3kuB0,840
+llm_chat/utils.py,sha256=25jkJ4gREkIqkROgCGcGINVRJeC-QYbyaVVWPEwrfc8,1134
+llm_chat_cli-0.0.4.dist-info/METADATA,sha256=1b_gbvSidFJpcN1ckxellyOYjKhHTTMV5xhtwDWnfQQ,1604
+llm_chat_cli-0.0.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+llm_chat_cli-0.0.4.dist-info/entry_points.txt,sha256=MKI3F5vhct8HHDO3nnyZG6zUP2q9srmTqHxwqD9X6yk,43
+llm_chat_cli-0.0.4.dist-info/top_level.txt,sha256=ur6QZgXDvMFf0NICAc11NdYN9aXxbTEMcE5zKsq-P3k,9
+llm_chat_cli-0.0.4.dist-info/RECORD,,
