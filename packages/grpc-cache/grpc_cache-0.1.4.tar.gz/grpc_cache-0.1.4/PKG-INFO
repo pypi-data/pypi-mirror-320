@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: grpc-cache
+Version: 0.1.4
+Summary: A utility for caching gRPC method calls
+Home-page: https://github.com/CircularImport/grpc-cache
+Author: CircularImport
+Author-email: circular.import@proton.me
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: grpcio-tools
+Requires-Dist: redis[asyncio] (>=5.0.0)
+Project-URL: Documentation, https://circularimport.github.io/grpc-cache/
+Project-URL: Repository, https://github.com/CircularImport/grpc-cache
+Description-Content-Type: text/markdown
+
+# grpc-cache
