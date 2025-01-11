@@ -1,0 +1,5 @@
+[console_scripts]
+hatch-cpp = hatch_cpp.cli:main
+
+[hatch]
+cpp = hatch_cpp.hooks
