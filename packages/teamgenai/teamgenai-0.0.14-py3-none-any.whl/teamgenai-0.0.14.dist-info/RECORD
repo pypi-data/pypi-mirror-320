@@ -1,0 +1,16 @@
+teamgenai/README.md,sha256=9S5IwILcwaBScuG6vcScg1Njj79BA8v7yBGDqpdssZU,3572
+teamgenai/__init__.py,sha256=Bd1u_UpIlPdG-zpO2sR4Bb8zNit5yAVbdvDDrIvglBs,514
+teamgenai/config.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+teamgenai/main.py,sha256=zNHSga8006yAbc9r17QQ8IEfo0tDbuNphYj6HeaRjqg,8741
+teamgenai/requirements.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+teamgenai/system/README.md,sha256=eEEtYTs6BsEAyUH5ZqYWt7iNv6LUQoRi0bu2srU9-bQ,32
+teamgenai/system/core/assign_agents.txt,sha256=XlZ1PupmQyC4xDimV9RfcjlLb5JlrZLu1MNoCakkzAQ,2227
+teamgenai/system/core/create_agents.txt,sha256=ZXPOEdxIdf4CAS5AiXlHVwXyZ8fa1kf5ex-VoKr40A4,825
+teamgenai/system/core/write_final_answer.txt,sha256=TTVjzuM_0zPJWBL0VpROKDUIP2x8TI733V7YZgFTdPE,411
+teamgenai/utils/shared_utils.py,sha256=xErA-121uI-i-U2E34Gsfdj1_bV6B0pZHg02iO5Hqis,1486
+teamgenai-0.0.14.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+teamgenai-0.0.14.dist-info/METADATA,sha256=5xKFJFHEunZ5vGuiY0YL9d3IfyzoH8WrQ_QoLG6Cmec,4881
+teamgenai-0.0.14.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+teamgenai-0.0.14.dist-info/entry_points.txt,sha256=L6gl3Xboe2k_EGXjq8QkDHXay3ZG6NgaF2E_cjZGmeY,45
+teamgenai-0.0.14.dist-info/top_level.txt,sha256=8Gs91GL6DNU_moAofos_YxHsG80x1D5FvkojjtuoJgc,10
+teamgenai-0.0.14.dist-info/RECORD,,
