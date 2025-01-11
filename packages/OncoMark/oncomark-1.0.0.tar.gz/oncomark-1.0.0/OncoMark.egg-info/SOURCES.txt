@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+OncoMark/__init__.py
+OncoMark/hallmark_feature.txt
+OncoMark/hallmark_model.keras
+OncoMark/hallmark_scaler.joblib
+OncoMark/oncomark.py
+OncoMark.egg-info/PKG-INFO
+OncoMark.egg-info/SOURCES.txt
+OncoMark.egg-info/dependency_links.txt
+OncoMark.egg-info/requires.txt
+OncoMark.egg-info/top_level.txt
