@@ -1,0 +1,2 @@
+[console_scripts]
+dictionary-app = dictionary_app.main:main
