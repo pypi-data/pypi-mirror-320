@@ -1,0 +1,32 @@
+{
+  "title": "xsdba",
+  "creators": [
+    {
+      "name": "Smith, Trevor James",
+      "affiliation": "Ouranos, Montréal, Québec, Canada",
+      "orcid": "0000-0001-5393-8359"
+    },
+    {
+      "name": "Dupuis, Éric",
+      "affiliation": "Ouranos, Montréal, Québec, Canada",
+      "orcid": "0000-0001-7976-4596"
+    }
+  ],
+  "keywords": [
+    "xsdba",
+    "xarray",
+    "bias adjustment",
+    "statistical analysis",
+    "statistical correction",
+    "statistics"
+  ],
+  "license": "Apache-2.0",
+  "language": "eng",
+  "communities": [
+    {
+      "identifier": "ouranos"
+    }
+  ],
+  "upload_type": "software",
+  "access_right": "open"
+}
