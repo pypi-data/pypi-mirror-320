@@ -1,0 +1,13 @@
+gpg_prompt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gpg_prompt/fzf.py,sha256=lHU9oHyYdSs_wIpl6wpxyNbzyOH_C5KtFcpNUY8wpVo,4012
+gpg_prompt/rofi.py,sha256=N2wMuScqExo4EgxCbVe9wp43DvQGZd4FRfpVKwBWfrM,4109
+gpg_prompt/assets/gpg.md,sha256=2w0LOUsKxTUuuTfTXG74nMjT4pKf1UgJ810CeUf3bjg,28293
+gpg_prompt/assets/icon.png,sha256=JZQk0Yg4ANJi-g6cK74o31wtwq2VUKmN0Oz_yOsw_5M,5997
+gpg_prompt/assets/icon.svg,sha256=Yd9wW8IbFvBsDDlpr9jAZoB6jdwo6r51kV9Napizl38,10382
+gpg_prompt/db/commands.json,sha256=7nB1n03QEsMDn1mF7zMMcksTwQOX9H9ZWmydtXcplQc,10387
+gpg_prompt-0.1.0.dist-info/LICENSE,sha256=FunFpN5w8nQYQnaV_kYf5_sVAwmZf_7yVoORYmvjHjg,1066
+gpg_prompt-0.1.0.dist-info/METADATA,sha256=BmkIedVrk62a9_HvgVy_RxPpA0CSwKgLhncPmaulyEY,3387
+gpg_prompt-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+gpg_prompt-0.1.0.dist-info/entry_points.txt,sha256=gwaL2iZbZJm3lA0dXxVV8RshNJI65aLATiIg8eFAJuM,80
+gpg_prompt-0.1.0.dist-info/top_level.txt,sha256=bDnXADtOk2Lwjz0Pfd6CeMyjUHbXTZTyRAFkuWrArqA,11
+gpg_prompt-0.1.0.dist-info/RECORD,,
