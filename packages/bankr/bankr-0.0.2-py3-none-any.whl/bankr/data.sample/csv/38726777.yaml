@@ -1,0 +1,23 @@
+# Bankr - Giro account at Deutsche Fantasiebank
+# Unrealistically limited number of data fields
+
+sep: ;
+encoding: iso-8859-1
+quotechar: '"'
+skiprows: 6
+names:
+- date
+- valuta
+- cents
+- na-1
+- desc
+dateformat: '%d.%m.%Y'
+missing:
+  cat: none
+  process: ''
+  name: ''
+  offset: ''
+  creditor: ''
+  mandate: ''
+  customer: ''
+  curr: "\u20AC"

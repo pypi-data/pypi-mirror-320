@@ -1,0 +1,13 @@
+# Bankr - Filters for the auto categories
+#
+# One filter in this list is defined by:
+# - cat: The category triggered by one of the keys (case-insensitive)
+# - col: The column (see book.yaml), to which the keys should be applied
+# - keys: A string of keys separated by |, which trigger this category
+
+- cat: internal
+  col: desc
+  keys: transfer|shift
+- cat: cash
+  col: process
+  keys: atm|mach

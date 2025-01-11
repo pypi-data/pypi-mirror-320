@@ -1,0 +1,18 @@
+# Bankr - Categories
+#
+# One category in this list is defined by:
+# - cat: Category name  (none is mandatory)
+# - desc: Human-readable description or definition of the category
+
+- cat: none
+  desc: Initial and unidentified transactions
+- cat: internal
+  desc: Transactions within the chart of accounts
+- cat: cash
+  desc: Cash
+- cat: job
+  desc: Job related expenses
+- cat: misc
+  desc: Micellaneous expenses
+- cat: wage
+  desc: Income

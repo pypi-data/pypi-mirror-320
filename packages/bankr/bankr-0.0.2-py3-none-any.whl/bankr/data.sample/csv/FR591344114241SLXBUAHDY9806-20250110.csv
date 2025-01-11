@@ -1,0 +1,4 @@
+"FFB"
+"suit exactement book-v1.yaml, mais format de date français"
+"Date";"IBAN";"Montant";"Valuta";"Offset";"Nom";"Processus";"Description";"Créancier";"Mandat";"Client"
+"07/01/2025";"FR591344114241SLXBUAHDY9806";"10";"07/01/2025";"GB71RJKT75252048811544";"moi";"déposer";"transfert de fonds";"";"";""

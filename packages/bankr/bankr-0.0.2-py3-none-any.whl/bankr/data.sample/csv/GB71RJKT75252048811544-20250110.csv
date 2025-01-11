@@ -1,0 +1,5 @@
+# Royal Fantasy Bank of England
+# follows exactly book-v1.yaml, but British date format
+"Date";"IBAN";"Amount";"Valuta";"Offset";"Name";"Process";"Description";"Creditor";"Mandate";"Customer"
+"3 Jan 2025";"GB71RJKT75252048811544";"-1234.56";"3 Jan 2025";"DE72387267777958538073";"me";"payment";"transfer";"";"";""
+"5 Jan 2025";"GB71RJKT75252048811544";"-10";"5 Jan 2025";"FR591344114241SLXBUAHDY9806";"me";"payment";"transfer";"";"";""

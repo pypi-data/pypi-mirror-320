@@ -1,0 +1,46 @@
+en:
+    account_desc: Account description
+    amount: Amount
+    balance: Balance
+    book: Book
+    book_stats: Book statistics
+    cat: Category
+    categorized: categorized
+    creditor: Creditor ID
+    customer: Customer Reference
+    date: Date
+    desc: Description
+    exported: exportiert
+    first_tract: First tr.
+    from_excel: from Excel
+    iban: IBAN
+    imported: imported
+    info: Info
+    last_tract: Last tr.
+    mandate: Mandate Reference
+    month: Month
+    monthly: Monthly Income
+    name: Account holder
+    new_cat: New category
+    offset: Offset Account
+    page: Page
+    parsed: parsed
+    per_term: Income per half-year
+    per_year: Profit and Loss per Year
+    process: Process
+    quarterly: Quarterly Income
+    saved: saved
+    source: Source
+    statistics: Statistics
+    title: Bankr - CLI Accounting
+    to_excel: to Excel
+    tract: Tract.
+    tractdetails: Details of a Transaction? Number or q(uit).
+    transaction: Transaction
+    transactions: Transactions
+    uuid: Transaction ID
+    valuta: Valuta
+    wo_cat: ohne Kategorie
+    year: Year
+    yearly: Yearly Income
+    yonth: Month Year

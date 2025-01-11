@@ -1,0 +1,21 @@
+# Bankr - Book Format
+#
+# - Pandas data format of a transaction in the Book, or
+#   the columns of the DataFrame
+# - The columns until cat (incl.) are mandatory for Bankr to operate properly.
+# - Not listed is the index of the book, consisting of a Transaction ID `uuid`.
+
+date: datetime64[ns]
+iban: category
+cents: Int64
+curr: category
+cat: category
+valuta: datetime64[ns]
+offset: string
+name: string
+process: string
+desc: string
+creditor: string
+mandate: string
+customer: string
+source: category

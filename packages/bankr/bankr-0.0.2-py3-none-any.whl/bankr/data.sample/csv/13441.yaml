@@ -1,0 +1,22 @@
+# Bankr - FFB
+# suit exactement book-v1.yaml, mais format de date français
+sep: ;
+encoding: utf-8
+quotechar: '"'
+skiprows: 2
+names:
+- date
+- iban
+- cents
+- valuta
+- offset
+- name
+- process
+- desc
+- creditor
+- mandate
+- customer
+dateformat: '%d/%m/%Y'
+missing:
+  cat: none
+  curr: "\u20AC"

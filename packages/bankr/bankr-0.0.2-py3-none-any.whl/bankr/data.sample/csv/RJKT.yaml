@@ -1,0 +1,22 @@
+# Bankr - Royal Fantasy Bank of England
+# follows exactly book-v1.yaml, but British date format
+sep: ;
+encoding: iso-8859-1
+quotechar: '"'
+skiprows: 2
+names:
+- date
+- iban
+- cents
+- valuta
+- offset
+- name
+- process
+- desc
+- creditor
+- mandate
+- customer
+dateformat: '%d %b %Y'
+missing:
+  cat: none
+  curr: "\u20AC"
