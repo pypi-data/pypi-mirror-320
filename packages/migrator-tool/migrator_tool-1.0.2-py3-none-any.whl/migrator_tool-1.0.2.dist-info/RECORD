@@ -1,0 +1,10 @@
+migrator_tool/__init__.py,sha256=4cmGEC9YrXDe4YVQJ7JoBBr8ptsCJTbmtP6i8NWVOso,293
+migrator_tool/migrator_tool.py,sha256=oAnr1DLqVi2CUGz1gTyp9P6gVgW49G0s0DSQMfebDjY,8525
+tests/__init__.py,sha256=K5sj47zM9wTHi9zlAceve2AGddpHUTbD1tDLz2yPsAo,47
+tests/test_migrator.py,sha256=QyZiMs2rmb16bDNq0BWauYJCVbOQjHm8fcZ3s4o5ajw,728
+migrator_tool-1.0.2.dist-info/LICENSE,sha256=-SvIYBsyDciH6obZl_BmJv-FHlysawFPnfx7smD542E,1091
+migrator_tool-1.0.2.dist-info/METADATA,sha256=r5f71S0ngIKHst-o0rV0WlFde_MUcgcCRyShP_cv-bE,3282
+migrator_tool-1.0.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+migrator_tool-1.0.2.dist-info/entry_points.txt,sha256=JLzcVyCfALw_tKw9MP8r0xKFyiVm6vqvRWonU_PiWMM,67
+migrator_tool-1.0.2.dist-info/top_level.txt,sha256=1PwrB3z75wq43GsHIQtrKh0t_Ec2msH_4moWdeqXSec,20
+migrator_tool-1.0.2.dist-info/RECORD,,
