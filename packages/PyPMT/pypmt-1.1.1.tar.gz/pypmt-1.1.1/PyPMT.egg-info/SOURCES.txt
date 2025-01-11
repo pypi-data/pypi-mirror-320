@@ -1,0 +1,43 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+PyPMT/PyPMT.py
+PyPMT/__init__.py
+PyPMT.egg-info/PKG-INFO
+PyPMT.egg-info/SOURCES.txt
+PyPMT.egg-info/dependency_links.txt
+PyPMT.egg-info/requires.txt
+PyPMT.egg-info/top_level.txt
+PyPMT/data/SCAR_CGA_PLACE_NAMES.csv
+PyPMT/data/__init__.py
+PyPMT/data/moa2014_coastline_v01.dbf
+PyPMT/data/moa2014_coastline_v01.evf
+PyPMT/data/moa2014_coastline_v01.gmt
+PyPMT/data/moa2014_coastline_v01.kml
+PyPMT/data/moa2014_coastline_v01.prj
+PyPMT/data/moa2014_coastline_v01.shp
+PyPMT/data/moa2014_coastline_v01.shx
+PyPMT/data/moa2014_coastline_v01.txt
+PyPMT/data/moa2014_grounding_line_v01.dbf
+PyPMT/data/moa2014_grounding_line_v01.evf
+PyPMT/data/moa2014_grounding_line_v01.gmt
+PyPMT/data/moa2014_grounding_line_v01.kml
+PyPMT/data/moa2014_grounding_line_v01.prj
+PyPMT/data/moa2014_grounding_line_v01.shp
+PyPMT/data/moa2014_grounding_line_v01.shx
+PyPMT/data/moa2014_grounding_line_v01.txt
+PyPMT/data/moa2014_islands_v01.dbf
+PyPMT/data/moa2014_islands_v01.evf
+PyPMT/data/moa2014_islands_v01.gmt
+PyPMT/data/moa2014_islands_v01.kml
+PyPMT/data/moa2014_islands_v01.prj
+PyPMT/data/moa2014_islands_v01.shp
+PyPMT/data/moa2014_islands_v01.shx
+PyPMT/data/moa2014_islands_v01.txt
+demos/2D Visualizations.html
+demos/3D Visualizations.html
+demos/Installation.html
+demos/Mathematical Functions.html
+demos/Welcome.html
