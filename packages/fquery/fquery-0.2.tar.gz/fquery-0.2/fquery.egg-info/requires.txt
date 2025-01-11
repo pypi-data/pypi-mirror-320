@@ -1,0 +1,9 @@
+aioitertools
+
+[SQL]
+duckdb_engine>=0.14.0
+pypika>=0.36.5
+sqlmodel>=0.0.22
+
+[graphql]
+strawberry>=0.37.1
