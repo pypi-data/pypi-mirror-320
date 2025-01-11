@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: visprotocols
+Version: 0.1
+Summary: A simple example package
+Home-page: http://github.com/yourusername/my_package
+Author: Helevn
+Author-email: helevn27@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
+
+# Helevn 涓撶敤
