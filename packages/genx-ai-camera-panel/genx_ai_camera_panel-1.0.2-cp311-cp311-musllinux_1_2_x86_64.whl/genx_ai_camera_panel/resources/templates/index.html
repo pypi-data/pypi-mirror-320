@@ -1,0 +1,425 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cameras Management</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/bootstrap-icons.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/dataTables.bootstrap5.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/responsive.bootstrap5.css') }}" rel="stylesheet">
+    <style>
+        .table>tbody>tr>td {
+            vertical-align: middle;
+        }
+
+        .cursor-pointer {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid mt-4">
+        <h2>
+            <label for="" style="user-select: none;"><span class="text-danger">GenX</span> <span class="h6">Camera
+                    Panel</span></label>
+            <div class="btn-group float-end">
+                <a href="/camera/export" class="btn btn-warning btn-sm rounded me-2">
+                    <i class="bi-save me-1 cursor-pointer"></i>
+                    Export
+                </a>
+                <button class="btn btn-success btn-sm rounded me-2" data-bs-toggle="modal"
+                    data-bs-target="#defaultCredModal">
+                    <i class="bi-key me-1 cursor-pointer"></i>
+                    Set Default Credential
+                </button>
+                <a href="/camera/scan" class="btn btn-primary btn-sm rounded me-2">
+                    <i class="bi-camera me-1 cursor-pointer"></i>
+                    Scan
+                </a>
+                <a href="/logout" class="btn btn-danger btn-sm rounded">
+                    <i class="bi-box-arrow-right me-1 cursor-pointer"></i>
+                    Logout
+                </a>
+            </div>
+        </h2>
+        <div class="btn-group mt-4" id="selectionBtnGroup">
+            <button class="btn btn-success btn-sm rounded me-2" id="btnPublishSelected"
+                title="Publish selected cameras">
+                <i class="bi-play-circle me-1 cursor-pointer"></i>
+                Publish
+            </button>
+            <button class="btn btn-danger btn-sm rounded me-2" id="btnStopSelected" title="Stop selected cameras">
+                <i class="bi-stop-circle me-1 cursor-pointer"></i>
+                Stop
+            </button>
+            <button class="btn btn-warning btn-sm rounded me-2" id="btnDeleteSelected" title="Delete selected cameras">
+                <i class="bi-trash me-1 cursor-pointer"></i>
+                Delete
+            </button>
+            <button class="btn btn-primary btn-sm rounded me-2" data-bs-toggle="modal" data-bs-target="#editModal"
+                title="Edit selected cameras">
+                <i class="bi-pencil me-1 cursor-pointer"></i>
+                Edit
+            </button>
+        </div>
+        <table class="table table-hover table-responsive nowrap" id="cameraTable" style="width: 100%;">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th data-dt-order="disable"><input type="checkbox" class="form-check-input ms-3" id="checkAll"></th>
+                    <th>IP Address</th>
+                    <th>Port</th>
+                    <th>Username</th>
+                    <th>Profile Token</th>
+                    <th>Manufacturer</th>
+                    <th>Model</th>
+                    <th>Firmware Version</th>
+                    <th>Serial Number</th>
+                    <th>Hardware ID</th>
+                    <th>Resolution</th>
+                    <th>FPS</th>
+                    <th>Bitrate</th>
+                    <th>Encoding</th>
+                    <th>Stream URL</th>
+                    <th>Remote Stream URL</th>
+                    <th>Actions</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for camera in cameras %}
+                <tr>
+                    <td>{{ camera[CameraTableIndex.ID] }}</td>
+                    <td><input type="checkbox" class="checkRow form-check-input"
+                            data-id="{{ camera[CameraTableIndex.ID] }}"></td>
+                    <td>{{ camera[CameraTableIndex.IP_ADDRESS] }}</td>
+                    <td>{{ camera[CameraTableIndex.PORT_NUMBER] }}</td>
+                    <td>{{ camera[CameraTableIndex.USERNAME] }}</td>
+                    <td>{{ camera[CameraTableIndex.PROFILE_TOKEN] }}</td>
+                    <td>{{ camera[CameraTableIndex.MANUFACTURER] }}</td>
+                    <td>{{ camera[CameraTableIndex.MODEL] }}</td>
+                    <td>{{ camera[CameraTableIndex.FIRMWARE_VERSION] }}</td>
+                    <td>{{ camera[CameraTableIndex.SERIAL_NUMBER] }}</td>
+                    <td>{{ camera[CameraTableIndex.HARDWARE_ID] }}</td>
+                    <td>{{ camera[CameraTableIndex.RESOLUTION] }}</td>
+                    <td>{{ camera[CameraTableIndex.FPS] }}</td>
+                    <td>{{ camera[CameraTableIndex.BITRATE] }}</td>
+                    <td>{{ camera[CameraTableIndex.ENCODING] }}</td>
+                    <td>
+                        <a href="{{ camera[CameraTableIndex.STREAM_URL] }}"
+                            title="{{ camera[CameraTableIndex.STREAM_URL] }}" target="_blank">Link</a>
+                        <i class="bi-copy ms-1 cursor-pointer"
+                            onclick="copyLink('{{ camera[CameraTableIndex.STREAM_URL] }}')"
+                            onkeypress="copyLink('{{ camera[CameraTableIndex.STREAM_URL] }}')"></i>
+                    </td>
+                    <td>
+                        {% if camera[CameraTableIndex.REMOTE_STREAM_URL] != None %}
+                        <a href="{{ camera[CameraTableIndex.REMOTE_STREAM_URL] }}"
+                            title="{{ camera[CameraTableIndex.REMOTE_STREAM_URL] }}" target="_blank">Link</a>
+                        <i class="bi-copy ms-1 cursor-pointer"
+                            onclick="copyLink('{{ camera[CameraTableIndex.REMOTE_STREAM_URL] }}')"
+                            onkeypress="copyLink('{{ camera[CameraTableIndex.REMOTE_STREAM_URL] }}')" tabindex=""
+                            role="button"></i>
+                        {% endif %}
+                    </td>
+                    <td class="text-center">
+                        {% if camera[CameraTableIndex.REMOTE_STREAM_URL] != None %} {% if
+                        ffmpeg_helper.check_publish_status(camera[CameraTableIndex.REMOTE_STREAM_URL])
+                        ==
+                        None or
+                        ffmpeg_helper.check_publish_status(camera[CameraTableIndex.REMOTE_STREAM_URL])
+                        !=
+                        0 %}
+                        <a href="/camera/unpublish?camera_id={{ camera[CameraTableIndex.ID] }}"
+                            class="btn btn-sm btn-danger" title="Stop">
+                            <i class="bi-stop-circle cursor-pointer"></i>
+                        </a>
+                        {% elif
+                        ffmpeg_helper.check_publish_status(camera[CameraTableIndex.REMOTE_STREAM_URL])
+                        == 0
+                        %}
+                        <a href="/camera/publish?camera_id={{ camera[CameraTableIndex.ID] }}"
+                            class="btn btn-sm btn-success" title="Publish">
+                            <i class="bi-play-circle cursor-pointer"></i>
+                        </a>
+                        {% else %}
+                        <a href="/camera/publish?camera_id={{ camera[CameraTableIndex.ID] }}"
+                            class="btn btn-sm btn-success" title="Publish">
+                            <i class="bi-play-circle cursor-pointer"></i>
+                        </a>
+                        {% endif %}
+                        {% else %}
+                        <a href="/camera/publish?camera_id={{ camera[CameraTableIndex.ID] }}"
+                            class="btn btn-sm btn-success" title="Publish">
+                            <i class="bi-play-circle cursor-pointer"></i>
+                        </a>
+                        {% endif %}
+
+                        <button class="btn btn-primary btn-sm btnLinkCamera" data-bs-toggle="modal"
+                            data-bs-target="#linkCameraModal" data-id="{{ camera[CameraTableIndex.ID] }}"
+                            title="Link Camera">
+                            <i class="bi-link-45deg cursor-pointer"></i>
+                        </button>
+
+                        <button class="btn btn-warning btn-sm me-2 btnCameraPreview" data-bs-toggle="modal"
+                            data-bs-target="#fullScreenModal" data-url="{{ camera[CameraTableIndex.STREAM_URL] }}"
+                            title="Camera Preview">
+                            <i class="bi-play-btn-fill cursor-pointer"></i>
+                        </button>
+                    </td>
+                    <td class="text-center">
+                        {% if camera[CameraTableIndex.REMOTE_STREAM_URL] != None %} {% if
+                        ffmpeg_helper.check_publish_status(camera[CameraTableIndex.REMOTE_STREAM_URL])
+                        ==
+                        None %}
+                        <span class="badge bg-success">Running</span>
+                        {% elif
+                        ffmpeg_helper.check_publish_status(camera[CameraTableIndex.REMOTE_STREAM_URL])
+                        != 0
+                        %}
+                        <span class="badge bg-danger">Exited</span>
+                        {% else %}
+                        <span class="badge bg-secondary">Not Running</span>
+                        {% endif %} {% else %}
+                        <span class="badge bg-secondary">Not Running</span>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Link Camera Modal -->
+    <div class="modal fade" id="linkCameraModal" tabindex="-1" aria-labelledby="linkCameraModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="linkCameraModalLabel">Link Camera With</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        {% for camera in api.get_cameras().data %}
+                        <li class="list-group-item">
+                            <a href="#" class="linkCamera" data-local-cam-id="" data-id="{{ camera.id }}">{{ camera.name
+                                }} ({{ camera.location.name }})</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <form id="editForm" method="post" action="/camera/bulkUpdate">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editModalLabel">Edit Camera</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" name="selectedCameraIds" id="selectedCameraIds" value="">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" name="username" placeholder="Enter username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" name="password" placeholder="Enter password">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Default Cred Modal -->
+    <div class="modal fade" id="defaultCredModal" tabindex="-1" aria-labelledby="defaultCredModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <form id="defaultCredForm" method="post" action="/camera/defaultCred">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="defaultCredModalLabel">Camera Default Cred</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" name="username" placeholder="Enter username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" name="password" placeholder="Enter password">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Set</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Full Screen Modal -->
+    <div class="modal fade" id="fullScreenModal" tabindex="-1" aria-labelledby="fullScreenModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="fullScreenModalLabel">Camera Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-center align-items-center">
+                    <iframe id="fullScreenIframe" src="" title="Camera Preview"
+                        style="width: 100%; height: 100%"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/jquery-3.7.1.slim.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/dataTables.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/dataTables.bootstrap5.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/dataTables.responsive.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/responsive.bootstrap5.js') }}"></script>
+    <script>
+        $(document).ready(function () {
+            new DataTable('#cameraTable', {
+                stateSave: true,
+                order: [[1, 'desc']],
+                responsive: true,
+                columnDefs: [
+                    { responsivePriority: 1, targets: 0 },
+                    { responsivePriority: 2, targets: 17 },
+                    { responsivePriority: 3, targets: 18 },
+                    { responsivePriority: 10002, targets: 16 },
+                    { responsivePriority: 10003, targets: 15 },
+                    { responsivePriority: 10004, targets: 1 },
+                    { responsivePriority: 10005, targets: 4 },
+                    { responsivePriority: 10010, targets: 6 },
+                    { responsivePriority: 10011, targets: 7 },
+                    { responsivePriority: 10012, targets: 8 },
+                    { responsivePriority: 10013, targets: 9 },
+                    { responsivePriority: 10014, targets: 10 },
+                    { responsivePriority: 10015, targets: 11 },
+                    { responsivePriority: 10016, targets: 12 },
+                    { responsivePriority: 10017, targets: 13 },
+                    { responsivePriority: 10018, targets: 14 },
+                ],
+                language: {
+                    emptyTable: 'No cameras found. Scan cameras by clicking on scan button.'
+                }
+            });
+
+            $("#selectionBtnGroup").css('visibility', 'hidden');
+
+            // Save camera ID to local database
+            $(".btnLinkCamera").on("click", function () {
+                $(".linkCamera").data('local-cam-id', $(this).data('id'));
+            });
+
+            $(".linkCamera").on("click", function () {
+                window.location = "/camera/" + $(this).data('local-cam-id') + "/link_to/" + $(this).data('id');
+            });
+
+            $(".btnCameraPreview").click(function () {
+                $("#fullScreenIframe").attr(
+                    "src",
+                    "/play?rtsp_url=" + encodeURIComponent($(this).data("url"))
+                );
+            });
+
+            // Check all checkboxes
+            $("#checkAll").click(function () {
+                $(".checkRow").prop('checked', $(this).prop('checked'));
+                update();
+            });
+
+            // Get selected checkbox ids
+            $(".checkRow").click(function () {
+                update();
+            });
+
+            $("#btnPublishSelected").click(function () {
+                let selectedIds = getSelectedIds();
+                window.location = "/camera/bulkPublish?ids=" + selectedIds;
+            });
+
+            $("#btnStopSelected").click(function () {
+                let selectedIds = getSelectedIds();
+                window.location = "/camera/bulkStop?ids=" + selectedIds;
+            });
+
+            $("#btnDeleteSelected").click(function () {
+                let selectedIds = getSelectedIds();
+                window.location = "/camera/bulkDelete?ids=" + selectedIds;
+            });
+        });
+
+        function update() {
+            let selectedIds = getSelectedIds();
+            $("#selectedCameraIds").val(selectedIds);
+
+            if (selectedIds.length > 0) {
+                $("#selectionBtnGroup").css('visibility', 'visible');
+            } else {
+                $("#selectionBtnGroup").css('visibility', 'hidden');
+            }
+        }
+
+        function getSelectedIds() {
+            let selectedIds = [];
+            $(".checkRow:checked").each(function () {
+                selectedIds.push($(this).data('id'));
+            });
+
+            return selectedIds.join(',')
+        }
+
+        function copyLink(link) {
+            navigator.clipboard.writeText(link);
+            showToast('Link copied to clipboard');
+        }
+
+        function showToast(message) {
+            var toast = document.createElement('div');
+            toast.classList.add('toast', 'fade', 'show', 'position-absolute', 'end-0', 'bottom-0', 'me-2', 'mb-2', 'bg-success', 'text-white');
+            toast.setAttribute('role', 'alert');
+            toast.setAttribute('aria-live', 'assertive');
+            toast.setAttribute('aria-atomic', 'true');
+            toast.innerHTML = `
+                <div class="toast-body">
+                    <i class="bi-info me-1"></i>
+                    ${message}
+                </div>
+            `;
+            document.body.appendChild(toast);
+            setTimeout(function () {
+                toast.classList.remove('show');
+                setTimeout(function () {
+                    toast.remove();
+                }, 300);
+            }, 3000);
+        }
+    </script>
+
+</body>
+
+</html>
