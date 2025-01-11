@@ -1,0 +1,2 @@
+[console_scripts]
+m1 = magentic_one_cli._m1:main
