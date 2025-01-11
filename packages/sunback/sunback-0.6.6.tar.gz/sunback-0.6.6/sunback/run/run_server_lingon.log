@@ -1,0 +1,137 @@
+6.0.3
+
+
+ *****************************************************************
+
+          Sunback SDO Image Manipulator
+              Written by C.R. Gilly
+     Check out my website: http://gilly.space
+
+   Here's the Plan:
+      WebFitsFetcher  : 	Get Fits Files from http://jsoc1.stanford.edu/data/aia/synoptic/mostrecent/
+      Validator       : 	Verify Good Images
+      RHEF Processor  : 	Apply Radial Histogram Equalization to images
+      NullPutter      : 	Print the Name of the Image Folder
+      CV Image Writer : 	Turn all the fits files into png files
+      RGB Image Writer : 	Generate RGB versions of the images
+      AWSputter       : 	Upload Images to AWS the-sun-now
+      DesktopPutter   : 	Use the local images to set the desktop background
+   And Stop After One Loop
+
+ Run Name: background_server_lingon
+ Run Type: Web Server Daemon
+
+
+ *****************************************************************
+
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+Starting Batch: background_server_lingon
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+Wavelength = rainbow
+
+>>>>>>>>>>>>>>>>>>*<<<<<<<<<<<<<<<<<<
+>>>>>>>>>> Fetching Images <<<<<<<<<<
+
+>>>>>>>>>>>>>>>>>>*<<<<<<<<<<<<<<<<<<
+
+ V  Downloading Fits Files from http://jsoc1.stanford.edu/data/aia/synoptic/mostrecent/...
+
+ ^  Successfully Downloaded 9 Files
+
+
+ ^ ^ ^Successfully Acquired 10 Files (0 skipped) in 4.351 seconds
+ ^ ---------------------------------------------------------------  ^
+
+
+
+>>>>>>>>>>>>>>>>>>>*<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>> Processing Images <<<<<<<<<<
+
+>>>>>>>>>>>>>>>>>>>*<<<<<<<<<<<<<<<<<<<
+
+
+ v RHEF Processor...  ------------------------------------------------  v
+
+ +    Equalizing: rainbow, Redo = True
+
+ ^ ^ ^Successfully Radially Equalized 10 Files (0 skipped) in 11.07 seconds
+ ~/sunback_data------------------------------  ^
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>*<<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>> Outputting Images or Movies <<<<<<<<<<
+
+>>>>>>>>>>>>>>>>>>>>>>>>*<<<<<<<<<<<<<<<<<<<<<<<<
+
+ /Users/cgilbert/vscode/sunback_data/renders/background_server_lingon/rainbow
+
+
+ v CV Image Writer...  ------------------------------------------------  v
+
+ +    Writing: rainbow, Redo = True
+
+ v RGB Image Writer...  ------------------------------------------------  v
+
+ +    Creating: rainbow, Redo = None
+ V Uploading PNGs to s3.Bucket(name='the-sun-now')...
+	* Emptying Bucket...Done!
+	* Uploading Time File...Done!
+ ^ Success! Uploaded 10 PNGs
+
+
+ V Setting Desktop Background to...(ctrl-c to skip)
+ ^ Loop Complete
+
+ ^ ^ ^Successfully Processed 12 Files (0 skipped) in 673.6 seconds
+ ^ ---------------------------------------------------------------  ^
+
+
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+Started at Fri Jan 10 12:40:01 2025
+Ended  at  Fri Jan 10 12:51:46 2025
+  Program Complete in 11 minutes and 44.739 seconds.
+   Summery of Previous Job:
+      WebFitsFetcher  : 	Get Fits Files from http://jsoc1.stanford.edu/data/aia/synoptic/mostrecent/ : 	         4.3513
+      RHEF Processor  : 	Apply Radial Histogram Equalization to images : 	        11.0671
+      DesktopPutter   : 	Use the local images to set the desktop background : 	       673.6445
+   And Stop After One Loop
+ Run Name: background_server_lingon
+ Run Type: Web Server Daemon
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+           '
+                              .      '      .
+                        .      .     :     .      .
+                         '.        ______       .'
+                           '  _.-"`      `"-._ '
+                            .'                '.
+                     `'--. /                    \ .--'`
+                          /                      \
+                         ;                        ;
+                    - -- |                        | -- -
+                         |     _.                 |
+                         ;    /__`A   ,_          ;
+                     .-'  \   |= |;._.}{__       /  '-.
+                        _.-""-|.' # '. `  `.-"{}<._
+                              / 1938  \     \  x   `"
+                         ----/         \_.-'|--X----
+                         -=_ |         |    |- X.  =_
+                        - __ |_________|_.-'|_X-X##
+                        jgs `'-._|_|;:;_.-'` '::.  `"-
+                         .:;.      .:.   ::.     '::.
+
+
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
