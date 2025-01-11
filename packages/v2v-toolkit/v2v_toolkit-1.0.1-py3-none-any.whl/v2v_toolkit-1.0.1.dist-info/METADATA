@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: v2v_toolkit
+Version: 1.0.1
+Summary: Ver2Vision-Toolkit: Unified interface for streamlining 'Verbal Data to Vision Synthesis with Latent Diffusion Models' project. Provides tools for managing low-level downstream tasks.
+Home-page: https://github.com/lukaszmichalskii/ver2vision-toolkit
+Author: Lukasz Michalski, Szymon Lopuszynski, Wojciech Rymer
+Author-email: lukasz.michalski222@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dask
+Requires-Dist: networkx
+Requires-Dist: PyYAML
+Requires-Dist: setuptools
+
+**Ver2Vision Toolkit** library aims to deliver a unified interface and tools to facilitate the development and execution of *Verbal Data to Vision Synthesis with Latent Diffusion Models* project. 
+Provides tools for managing downstream tasks like execution graphs, scheduling, low-level parallelism, and handling dependencies resolution, allowing developers to focus on extending core modules and defining concise configurations. 
+Built-in support for fault tolerance, system and processes monitoring, custom configuration and scalable execution, `v2v` library streamlines the process of running experiments in `Ver2Vision` project.
