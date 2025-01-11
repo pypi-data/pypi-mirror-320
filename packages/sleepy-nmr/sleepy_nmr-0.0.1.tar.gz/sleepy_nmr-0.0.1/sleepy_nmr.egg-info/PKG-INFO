@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sleepy-nmr
+Version: 0.0.1
+Summary: Software for simulating NMR experiments with relaxation and exchange
+Home-page: https://github.com/alsinmr/SLEEPY
+Author: Albert Smith-Penzel
+Author-email: albert.smith-penzel@medizin.uni-leipzig.de
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >= 3.6
+License-File: LICENSE
+
+file: README.md
