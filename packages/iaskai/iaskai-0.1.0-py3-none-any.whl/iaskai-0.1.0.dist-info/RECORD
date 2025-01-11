@@ -1,0 +1,10 @@
+iask/__init__.py,sha256=MF64bwUCd4sm3dvcxZnkb4ujHtxT_KeuXdD0nVieEt4,27
+iask/_internal.py,sha256=eE3K0hT8DMQ3m365b_E9e6pf9aY1I2H_enF_eMHU9-0,458
+iask/client.py,sha256=-UKhIRjy7ZGhhBrwQPAFwm3gqxRgDloIRF6tRyNTOLo,2435
+iask/client.pyi,sha256=rH-aAwvlN4sWJNUNUxEvto9Tp9HvT9qe8dolN_0swZ4,359
+iask/typing.py,sha256=h7KL2FFbdQw1cWi7KEGglEYwuEGQX68aV97TNC2wmvw,452
+iaskai-0.1.0.dist-info/LICENSE,sha256=EEcaDHlYKsa1hGu74i4zqxDuTVMC8qAklWKo_FY7Qu0,1071
+iaskai-0.1.0.dist-info/METADATA,sha256=MubPNrbXL9nJiVXUvil_ZEn9H5s6tLfNGodptXAsiSc,1140
+iaskai-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+iaskai-0.1.0.dist-info/top_level.txt,sha256=d1DpOyHV4id9MKL4saVXfV5moZPDC1cbqSdpSdhm3vg,5
+iaskai-0.1.0.dist-info/RECORD,,
