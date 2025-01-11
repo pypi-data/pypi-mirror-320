@@ -1,0 +1,9 @@
+setup.py
+pybind_sandbox/__init__.py
+pybind_sandbox/__init__.pyi
+pybind_sandbox.egg-info/PKG-INFO
+pybind_sandbox.egg-info/SOURCES.txt
+pybind_sandbox.egg-info/dependency_links.txt
+pybind_sandbox.egg-info/not-zip-safe
+pybind_sandbox.egg-info/requires.txt
+pybind_sandbox.egg-info/top_level.txt
