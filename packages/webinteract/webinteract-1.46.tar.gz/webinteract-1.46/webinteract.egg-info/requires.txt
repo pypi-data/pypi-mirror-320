@@ -1,0 +1,4 @@
+splinter
+selenium
+keyring
+prompt_toolkit
