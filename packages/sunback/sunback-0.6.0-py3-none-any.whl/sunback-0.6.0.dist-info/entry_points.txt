@@ -1,0 +1,2 @@
+[console_scripts]
+sunback-run = sunback.run.run_client_background:run_client
