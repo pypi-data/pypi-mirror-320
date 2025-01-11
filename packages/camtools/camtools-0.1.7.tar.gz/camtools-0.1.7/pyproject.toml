@@ -1,0 +1,54 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61.0"]
+
+[project]
+authors = [
+  {name = "Yixing Lao"},
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+]
+dependencies = [
+  "numpy>=1.15.0",
+  "open3d>=0.16.0",
+  "opencv-python>=4.5.1.48",
+  "matplotlib>=3.3.4",
+  "scikit-image>=0.16.2",
+  "tqdm>=4.60.0",
+  "jaxtyping>=0.2.12",
+]
+description = "CamTools: Camera Tools for Computer Vision."
+license = {text = "MIT"}
+name = "camtools"
+readme = "README.md"
+requires-python = ">=3.8.0"
+version = "0.1.7"
+
+[project.scripts]
+ct = "camtools.tools.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/yxlao/camtools"
+
+[project.optional-dependencies]
+dev = [
+  "black>=22.1.0",
+  "pytest>=6.2.2",
+  "pytest-benchmark>=4.0.0",
+  "ipdb",
+]
+docs = [
+  "sphinx",
+  "sphinx-rtd-theme",
+  "myst-parser",
+  "furo",
+  "tomli",
+]
+torch = [
+  "torch>=1.8.0",
+  "lpips>=0.1.4",
+]
+
+[tool.setuptools]
+packages = ["camtools", "camtools.tools"]
