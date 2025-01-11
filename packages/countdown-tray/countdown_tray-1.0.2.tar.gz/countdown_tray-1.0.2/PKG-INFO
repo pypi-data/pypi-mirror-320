@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: countdown-tray
+Version: 1.0.2
+Summary: Create a system tray icon that counts down
+Author-Email: Ethan Dawes <ethand.python@gmail.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Project-URL: Homepage, https://github.com/funblaster22/countdown-tray
+Project-URL: Issues, https://github.com/funblaster22/countdown-tray/issues
+Requires-Python: >=3.12
+Requires-Dist: pystray>=0.19.5
+Requires-Dist: pillow>=11.0.0
+Requires-Dist: cronsim>=2.6
+Description-Content-Type: text/markdown
+
+# countdown-tray
+
+Download from [pyPI](https://pypi.org/project/countdown-tray/): `pip install countdown-tray`
+
+Create a system tray icon that counts down to a specified date and time, optionally repeating.
+
+![countdown-tray](https://raw.githubusercontent.com/funblaster22/countdown-tray/refs/heads/main/docs/demo.png)
+
+In this example, it is counting down hours to 7pm. The unit will change depending on the time remaining.
+
+- \> 1 day: days
+- \> 10 hour: hours rounded to whole hours
+- \> 1 hour: hours rounded to 0.5 hour
+- < 1 hour: minutes
+
+```
+usage: countdown_tray.py [-h] ending_datetime [repeat_cron]
+
+Create a system tray icon that counts down.
+
+positional arguments:
+  ending_datetime  Datetime input in 'M-D-YYYY H:M (am/pm)' format or 'now'.
+  repeat_cron      Optional cron repeat pattern (e.g., '*/5 * * * *').
+
+options:
+  -h, --help       show this help message and exit
+```
