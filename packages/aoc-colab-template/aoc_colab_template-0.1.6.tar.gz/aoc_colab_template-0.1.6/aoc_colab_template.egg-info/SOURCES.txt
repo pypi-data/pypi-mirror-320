@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+aoc_colab_template/__init__.py
+aoc_colab_template/template_generator.py
+aoc_colab_template.egg-info/PKG-INFO
+aoc_colab_template.egg-info/SOURCES.txt
+aoc_colab_template.egg-info/dependency_links.txt
+aoc_colab_template.egg-info/requires.txt
+aoc_colab_template.egg-info/top_level.txt
