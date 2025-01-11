@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "cert-host-scraper"
+version = "0.10.0"
+description = ""
+authors = ["Malachi Soord <inverse.chi@gmail.com>"]
+license = "MIT"
+
+readme = "README.md"
+repository = "https://github.com/inverse/cert-host-scraper"
+homepage = "https://github.com/inverse/cert-host-scraper"
+
+
+[tool.poetry.scripts]
+cert-host-scraper = "cert_host_scraper.cli:cli"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.27.1"
+click = "^8.1.8"
+rich = ">=11,<14"
+single-source = "^0.4.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.3.4"
+pytest-socket = "^0.7.0"
+vcrpy = "^7.0.0"
+
+[tool.ruff]
+lint.ignore = ["E501"]
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
