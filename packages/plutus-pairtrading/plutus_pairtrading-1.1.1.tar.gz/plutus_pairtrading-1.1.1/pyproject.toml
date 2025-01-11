@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "plutus-pairtrading"
+version = "v1.1.1"
+description = ""
+authors = ["FOX Techniques <ali.nabbi@fox-techniques.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.3"
+requests = "^2.32.3"
+matplotlib = "^3.9.3"
+yfinance = "^0.2.50"
+arch = "^7.2.0"
+seaborn = "^0.13.2"
+numpy = "^2.2.0"
+plotly = "^5.24.1"
+nbformat = "^5.10.4"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+cython = "^3.0.11"
+tox = "^4.23.2"
+mkdocs = "^1.6.1"
+mkdocs-material = "^9.5.49"
+
+[tool.poetry.group.notebooks.dependencies]
+python = "^3.10"
+pandas = "^2.2.3"
+requests = "^2.32.3"
+matplotlib = "^3.9.3"
+yfinance = "^0.2.50"
+arch = "^7.2.0"
+seaborn = "^0.13.2"
+numpy = "^2.2.0"
+plotly = "^5.24.1"
+jupyter = "^1.0.0"
+ipykernel = "^6.25.2"
+
+
+
+[tool.poetry.group.notebook.dependencies]
+nbformat = "^5.10.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
