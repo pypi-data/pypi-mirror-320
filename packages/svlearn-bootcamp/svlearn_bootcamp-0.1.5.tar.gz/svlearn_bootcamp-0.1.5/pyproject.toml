@@ -1,0 +1,24 @@
+[project]
+name = "svlearn-bootcamp"
+version = "0.1.5"
+description = "Base dependency for all the llm bootcamp projects at SupportVectors AI Lab"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=1.59.4",
+    "spacy>=3.8.3",
+    "sqlalchemy>=2.0.36",
+    "streamlit>=1.41.1",
+    "svlearn-core>=0.1.0",
+    "torch>=2.5.1",
+    "torchaudio>=2.5.1",
+    "torchvision>=0.20.1",
+    "transformers>=4.47.1",
+]
+
+
+[tool.hatch]
+packages = "src"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

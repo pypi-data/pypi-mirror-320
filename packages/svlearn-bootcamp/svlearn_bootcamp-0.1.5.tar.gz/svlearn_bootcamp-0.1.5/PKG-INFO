@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: svlearn-bootcamp
+Version: 0.1.5
+Summary: Base dependency for all the llm bootcamp projects at SupportVectors AI Lab
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: openai>=1.59.4
+Requires-Dist: spacy>=3.8.3
+Requires-Dist: sqlalchemy>=2.0.36
+Requires-Dist: streamlit>=1.41.1
+Requires-Dist: svlearn-core>=0.1.0
+Requires-Dist: torch>=2.5.1
+Requires-Dist: torchaudio>=2.5.1
+Requires-Dist: torchvision>=0.20.1
+Requires-Dist: transformers>=4.47.1
+
+# SVLEARN BOOTCAMP
+
+This is a base project with some utilities and basic dependencies needed for the LLM Projects Bootcamp activities.
+

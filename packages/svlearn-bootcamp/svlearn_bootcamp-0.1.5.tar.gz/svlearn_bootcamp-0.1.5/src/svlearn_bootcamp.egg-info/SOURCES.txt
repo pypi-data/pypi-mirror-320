@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/hello.py
+src/svlearn_bootcamp.egg-info/PKG-INFO
+src/svlearn_bootcamp.egg-info/SOURCES.txt
+src/svlearn_bootcamp.egg-info/dependency_links.txt
+src/svlearn_bootcamp.egg-info/requires.txt
+src/svlearn_bootcamp.egg-info/top_level.txt
