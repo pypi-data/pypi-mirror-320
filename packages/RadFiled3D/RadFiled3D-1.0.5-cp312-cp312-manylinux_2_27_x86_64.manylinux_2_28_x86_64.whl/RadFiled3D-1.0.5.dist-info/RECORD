@@ -1,0 +1,14 @@
+RadFiled3D/RadFiled3D.pyi,sha256=LptJNgk3SOdcde71Pnizy6BYygm4PGDtqqrqrIT1Qy0,38186
+RadFiled3D/__init__.py,sha256=AGDEHDRmeqPJLXfteB3d8NtVwfzkchYlrar6VCBicGc,46
+RadFiled3D/RadFiled3D.cpython-312-x86_64-linux-gnu.so,sha256=WGT3MLr2rzpWmeKYI7daYbi-touRTkRSFIomuKRxmus,4232944
+RadFiled3D/__init__.pyi,sha256=lOFsKY6e5GK7mcvuiA4LFOtSjmtyqDqgy7VPIzaEgpk,172
+RadFiled3D/pytorch/helpers.py,sha256=tyisEF1a9-Dy514GzxqDT5QGBRQbWweBcnzwjuIurbY,2268
+RadFiled3D/pytorch/__init__.py,sha256=o5V_fj4DJCxh2gFqZpNweHzXueopSqMH0i0pHWi1o0o,156
+RadFiled3D/pytorch/radiationfieldloader.py,sha256=GFTzt4-NuO3I9Z3A7Vq2ITmmdO8nyW4qBmo3TSEDmG8,30150
+pyCMakeSetupTool/cmake.py,sha256=neMl3H_fAy-ztODx3rAGveKF1onPJ_44X2nbKITketI,11176
+pyCMakeSetupTool/__init__.py,sha256=Mfsl7iJVHeBn1Lae6FC7LLLGWm-gOIaip9GIHs49p6I,3503
+RadFiled3D-1.0.5.dist-info/top_level.txt,sha256=GtxJ9Tal9wyjJc4O36ghZe8Y2VxbU9mE4PIz1zgSDOM,28
+RadFiled3D-1.0.5.dist-info/RECORD,,
+RadFiled3D-1.0.5.dist-info/LICENSE,sha256=2kC7g9ali2fwKPPY0oF0hJZqbThg1MZA_iWSYW1y95E,1069
+RadFiled3D-1.0.5.dist-info/METADATA,sha256=cFjDr1mWiv8TL_T9DG9TJczmgw4zD7bGcOYSParwETk,9536
+RadFiled3D-1.0.5.dist-info/WHEEL,sha256=sO6OenZerdyTyndkwlAXoxOLDs1brldxd-12ZZ5zwFk,152
