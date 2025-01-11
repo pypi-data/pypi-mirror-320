@@ -1,0 +1,8 @@
+basilisk/__init__.py,sha256=hJVKd8NebPIdDzhfRMZsOElR5w2wGkrsW7WJqb0tpB0,368
+basilisk/config.py,sha256=ynTRlX633DGoEtZOeAK8KNJF6offV3k3XFD7cia3Keg,61
+basilisk/engine.py,sha256=R1COiHLHNgsfIJ72U_XxAR2oftBRsVYyYOrVqTr48Xc,5709
+basilisk/scene.py,sha256=ow3w2ZouBdn7E1xw39-aMu7_gbsnDxzeNi1mqbYqa-M,4452
+basilisk_engine-0.0.1.dist-info/METADATA,sha256=HFZUa45YFHSowm4nExijxFuTmQMU6JioaHB4Js201OY,1118
+basilisk_engine-0.0.1.dist-info/WHEEL,sha256=OVMc5UfuAQiSplgO0_WdW7vXVGAt9Hdd6qtN4HotdyA,91
+basilisk_engine-0.0.1.dist-info/top_level.txt,sha256=enlSYSf7CUyAly1jmUCNNGInTbaFUjGk4SKwyckZQkw,9
+basilisk_engine-0.0.1.dist-info/RECORD,,
