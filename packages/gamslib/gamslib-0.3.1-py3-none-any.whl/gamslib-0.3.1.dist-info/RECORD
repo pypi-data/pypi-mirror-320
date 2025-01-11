@@ -1,0 +1,17 @@
+gamslib/__init__.py,sha256=8FpAlbzlpTpbNmRd4PRcmEDb-6UxuEAFpuLTvcPoSfI,230
+gamslib/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gamslib/objectcsv/__init__.py,sha256=B8QoKtHmtHvxfUaDr16EzSLXeJ77LJYXRuf3oKlhA1A,2097
+gamslib/objectcsv/create_csv.py,sha256=eC6Rg-04N6St9h32z_rWTQoUqFbQxt2o0hD0Lxh6640,5936
+gamslib/objectcsv/defaultvalues.py,sha256=EEjdP7xs6IS3KdOt1o9-8U7xrnJ380LDGwHfovVfkVw,913
+gamslib/objectcsv/dublincore.py,sha256=SOSlxkC5ldWKDi62ai2-5dkIZOAQf2RR6238RAQWaZU,5984
+gamslib/objectcsv/manage_csv.py,sha256=pCuT6RGvGRBmc4H41ZpRKV8FJJ4N8pmYSkTCPUtV9e0,2856
+gamslib/objectcsv/objectcsv.py,sha256=cTWqRcs1495YqfgBMppTydvGWUwqjlD8JYSFraQG6WA,10763
+gamslib/objectcsv/utils.py,sha256=CNnVK6SlpwIQxc0jC1Uayb1SSnFuu3_0glBHLTB0u9A,667
+gamslib/objectcsv/xlsx.py,sha256=6sbtlJzMu8Lbt1di2L0hKCdIOQw1Tv224vz0B_Nfdrk,2064
+gamslib/projectconfiguration/__init__.py,sha256=dhG8PKVGNpIMMzmz2L0a1uKt8juAU_hP2EpGxSZgFIU,1751
+gamslib/projectconfiguration/configuration.py,sha256=_rDLaKfxDQ_wN2f5W0s_xplIY5EohKlxvINK24pheaE,3851
+gamslib/projectconfiguration/resources/project.toml,sha256=rKsB6jEs4gbqtAaJZeMboXbuWZ7c0lLuuD2QAR_3P88,686
+gamslib-0.3.1.dist-info/METADATA,sha256=S1zLYFX9-viVcm0RnTQu7sy42JUcttRuvS-TVH99FQA,3383
+gamslib-0.3.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+gamslib-0.3.1.dist-info/licenses/LICENSE,sha256=exKVUgS3rp03ninfpZsfMw6x7VfLkXKaN2vQfgEICCw,1085
+gamslib-0.3.1.dist-info/RECORD,,
