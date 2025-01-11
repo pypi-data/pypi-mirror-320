@@ -1,0 +1,13 @@
+setup.py
+mateuslh/__init__.py
+mateuslh/main.py
+mateuslh.egg-info/PKG-INFO
+mateuslh.egg-info/SOURCES.txt
+mateuslh.egg-info/dependency_links.txt
+mateuslh.egg-info/top_level.txt
+mateuslh/gerenciar_senhas/__init__.py
+mateuslh/gerenciar_senhas/gerenciar_senhas.py
+mateuslh/matar_processo/__init__.py
+mateuslh/matar_processo/matar_processo.py
+mateuslh/set_dns/__init__.py
+mateuslh/set_dns/set_dns.py
