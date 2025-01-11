@@ -1,0 +1,58 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="helix-agent",
+    version="1.0.0",
+    description="A Python package for creating science-themed AI agents with research and experimentation capabilities.",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    author="Helix Agent",
+    author_email="descidanpxy@gmail.com",
+    url="https://github.com/helixagent/helix-agent",
+    packages=find_packages(),
+    install_requires=[
+        "openai>=0.28.0",
+        "asyncio",
+        "numpy>=1.21.0",
+        "scipy>=1.7.0",
+        "tweepy>=4.12.0",
+        "python-dateutil>=2.8.2"
+    ],
+    extras_require={
+        'dev': [
+            'pytest>=7.0.0',
+            'pytest-cov>=3.0.0',
+            'black>=22.0.0',
+            'isort>=5.10.0',
+            'flake8>=4.0.0',
+        ],
+    },
+    python_requires=">=3.8",
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Developers",
+        "Intended Audience :: Science/Research",
+        "Intended Audience :: Education",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Topic :: Scientific/Engineering",
+        "Topic :: Scientific/Engineering :: Artificial Intelligence",
+        "Topic :: Scientific/Engineering :: Information Analysis",
+        "Topic :: Education",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+    ],
+    keywords="AI, OpenAI, science, research, agents, GPT, Helix, DeSci, experiments, analysis",
+    license="MIT",
+    project_urls={
+        "Documentation": "https://github.com/yourusername/helix/tree/main/docs",
+        "Source": "https://github.com/yourusername/helix",
+        "Issues": "https://github.com/yourusername/helix/issues",
+    },
+    include_package_data=True,
+    zip_safe=False,
+)
