@@ -1,0 +1,3 @@
+[console_scripts]
+xai-gpt-shap=xai_gpt_shap.main:main
+
