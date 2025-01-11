@@ -1,0 +1,2 @@
+[console_scripts]
+keys2text_proxy = keys2text_proxy.main:main
