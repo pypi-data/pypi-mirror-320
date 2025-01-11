@@ -1,0 +1,2 @@
+[console_scripts]
+cs251simulator-compiler = cs251simulator_compiler:main
