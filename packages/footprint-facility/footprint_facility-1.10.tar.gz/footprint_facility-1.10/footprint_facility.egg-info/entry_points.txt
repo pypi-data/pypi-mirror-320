@@ -1,0 +1,2 @@
+[console_scripts]
+fpstat = footprint_facility:main_stats
