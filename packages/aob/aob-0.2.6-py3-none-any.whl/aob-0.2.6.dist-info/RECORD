@@ -1,0 +1,14 @@
+aob/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aob/main.py,sha256=GJNPM7ka_bR3EgOOcqCI0Ta5bI1TKyxo13KuVzgbYic,31562
+aob/prompts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aob/prompts/generate_test.py,sha256=4XcSQ_08Rc-1ORz_snx8CAH1AvJezVxrTzbuGKqHh5k,5722
+aob/prompts/prompt_templates.py,sha256=QpyQM_1fguWHK3Btm7hZMDGMkJepNA81_p_RfBvLa44,4562
+aob/prompts/simple_example.py,sha256=NsapHooHpAaSGaLFoohgLS1S0DQvLnQ8g8eWbJ84yPQ,8124
+aob/prompts/sqlite_example.py,sha256=hdbxFkhr70jAGLOKPyFD1ht-8FkGmhYCGwQOUq5-FM0,5918
+aob/prompts/transform_example.py,sha256=i4_WMfOnG5Gl8J_JK1V3bV3S2TbAJYYeHOgANA_AW_8,9341
+aob/setup.py,sha256=j_QBQzLcs9WblvOy_vX0ImSeTTq6LI5cE7VUjGBWCxI,246
+aob-0.2.6.dist-info/LICENSE.md,sha256=PfdHkM1M0LjR4WSV_pe5zLpvZ0nHUx1KXpvDraw9_A0,1081
+aob-0.2.6.dist-info/METADATA,sha256=GBTNscmRvmOOB_M1NaQuZf4EYJaSy7WJg0MB13wazs0,639
+aob-0.2.6.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+aob-0.2.6.dist-info/entry_points.txt,sha256=ig90DjSSYvj-lGnNvMPARqDwT6ULs1kdPsUk5QSvrKw,101
+aob-0.2.6.dist-info/RECORD,,
