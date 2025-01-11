@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: padtest
+Version: 1.0.3
+Summary: pad foundation test in Plaxis
+Home-page: https://github.com/p-barb/padtest
+Download-URL: https://github.com/p-barb/padtest/archive/refs/tags/1.0.3.tar.gz
+Author: Pablo Barbieri
+Author-email: pbarbie2@uwo.ca
+License: MIT
+Keywords: civil,engineering,geotechnical,pad,foundation
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: ==3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Load test axisymmetric or strip pad foundations subjected to static or dynamic vertical, horizontal or flexural loads in Plaxis 2D.
