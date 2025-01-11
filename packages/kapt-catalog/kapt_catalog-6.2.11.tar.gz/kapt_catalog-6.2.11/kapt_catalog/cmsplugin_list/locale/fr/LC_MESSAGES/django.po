@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kapt_catalog.plugins.list\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-10 16:34+0100\n"
+"PO-Revision-Date: 2019-01-22 08:35+0100\n"
+"Last-Translator: Adrien Delhorme <ad@kapt.mobi>\n"
+"Language-Team: Kapt <dev@kapt.mobi>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.8.9\n"
+
+msgid "Sorting"
+msgstr "Tri"
+
+msgid "Advanced"
+msgstr "Avancé"
+
+msgid "None"
+msgstr "Aucune"
+
+msgid "APIDAE Selection"
+msgstr "Sélection APIDAE"
+
+msgid "APIDAE objects"
+msgstr "Fiches APIDAE"
+
+msgid "Search APIDAE objects"
+msgstr "Rechercher des fiches APIDAE"
+
+msgid "yes,no"
+msgstr "oui,non"
+
+msgid "Defaults to: {}"
+msgstr "Par défaut : {}"
+
+msgid "Either tag name or activities is required."
+msgstr "Au moins l'un des deux champs \"Sélection APIDAE\" ou \"Fiches APIDAE\" doit être renseigné."
+
+msgid "Fill only tag name or activities not both."
+msgstr "Seulement l'un des deux champs \"Sélection APIDAE\" ou \"Fiches APIDAE\" doit être renseigné, pas les deux."
+
+msgid "Selection numbers"
+msgstr "Numéros de sélections"
+
+msgid "Enter one selection number or many numbers separated with commas."
+msgstr "Entrez un numéro de sélection ou plusieurs numéros séparés par des virgules."
+
+msgid "Number of results per page"
+msgstr "Nombre de résultats par page"
+
+msgid "Show only objects translated in the page language"
+msgstr "Afficher uniquement les objets traduits dans la langue de la page"
+
+msgid "Show only objects with aspect"
+msgstr "Afficher uniquement l'aspect"
+
+msgid "Default"
+msgstr "Par défaut"
+
+msgid "Random sorting"
+msgstr "Tri aléatoire"
+
+msgid "Per opening date sorting"
+msgstr "Tri par date d'ouverture"
+
+msgid "If selected, the results will contain only celebrations and manifestations."
+msgstr "Si coché, seuls les Fêtes et Manifestations seront affichées."
+
+msgid "Registered first"
+msgstr "Afficher les adhérents en premier"
+
+msgid "Registered and in the area first"
+msgstr "Afficher les adhérents du territoire en premier"
+
+msgid "Booking first"
+msgstr "Afficher les réservable en premier"
+
+msgid "Template"
+msgstr "Format d'affichage"
+
+msgid "CSS class"
+msgstr "Classe CSS"
+
+msgid "Filters"
+msgstr "Filtres"
+
+msgid "Extra informations"
+msgstr "Informations supplémentaires"
+
+msgid "APIDAE plugin configuration"
+msgstr "Configuration du plugin APIDAE"
+
+msgid "APIDEA plugin configurations"
+msgstr "Configurations des plugins APIDAE"
+
+#~ msgid "Tag name"
+#~ msgstr "Nom de la sélection"
+
+#~ msgid "All aspects"
+#~ msgstr "Tous les aspects"
+
+#~ msgid "Search engines"
+#~ msgstr "Moteurs de recherche"
+
+#~ msgid "Context processor"
+#~ msgstr "Processeur de contexte"
+
+#~ msgid "Per registration sorting"
+#~ msgstr "Tri par objets adhérents"
+
+#~ msgid "Per booking sorting"
+#~ msgstr "Tri par statut 'est réservable' en ligne"

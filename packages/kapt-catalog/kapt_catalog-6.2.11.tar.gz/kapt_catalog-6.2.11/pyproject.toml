@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "kapt-catalog"
+version = "6.2.11"
+description = "Kapt catalog"
+authors = ["Kapt dev team <dev@kapt.mobi>"]
+license = "LICENSE.txt"
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+Django = ">=1.11"
+Babel = "*"
+django-extra-views = "*"
+django-model-utils = "*"
+django-modeltranslation = "*"
+django-mptt = "*"
+django-multiselectfield = "*"
+django-parler = "*"
+django-taggit = "*"
+django_mptt_admin = "*"
+django_polymorphic = "*"
+python-slugify = "*"
+kapt-contact = "*"
+kapt-gallery = "*"
+kapt-geo = "*"
+kapt-meta = "*"
+kapt-utils = "*"
+kapt-validity = "*"
+xlrd = { version = "*", optional = true }
+
+[tool.poetry.extras]
+cms = ["xlrd"]
+
+[tool.poetry.dev-dependencies]
+gitchangelog = "^3.0.4"
+bumpversion = "^0.6.0"
+black = "^22.12.0"
+isort = "5.12.0"
+flake8 = "6.2.11"
+
+[[tool.poetry.source]]
+name = "kapt"
+url = "https://pypi.kapt.mobi"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
