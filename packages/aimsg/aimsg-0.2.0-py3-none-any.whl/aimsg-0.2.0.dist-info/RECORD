@@ -1,0 +1,12 @@
+aimsg/__init__.py,sha256=7Z-HAz7AorStK56sAzIwuc8hVq4M9wlv3IlZJk7Cue8,66
+aimsg/cli.py,sha256=b5MtU40oXxPkHWH3XAE9W5n0eFiKzYPsBFf27lJwEHg,11664
+aimsg/config.py,sha256=R-JZr_DAOWLq3O1hKryWgRTP-ouRPMkudr1HXNU2AMc,3272
+aimsg/git_utils.py,sha256=qtUQK56Qb1eV4zRlApofHwo5RnJVZ2xBc4QMLfg_kEs,2793
+aimsg/openai_utils.py,sha256=iM2maLeaWQsQ_JqV9ncmtlXRdNPL10_00Wv3F2KiwzM,11231
+aimsg/utils.py,sha256=ImuLuSyPyLjhsaowjyfaNL_nrn0knF0Yp3lPDj-2N4c,1632
+aimsg-0.2.0.dist-info/LICENSE,sha256=psl_soFU_am7qQGeWf-F5nZk-BsL9g6no-ZZ6JY2UaI,1065
+aimsg-0.2.0.dist-info/METADATA,sha256=IkzNfO3IQpyhqwolBC4rzo3EI6aPuO8BAXEdwzGBx6c,4551
+aimsg-0.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+aimsg-0.2.0.dist-info/entry_points.txt,sha256=a8f8WW-k3CPbT_PyQZlrENDm3K-aIXCsfw5XWmDqU_Y,40
+aimsg-0.2.0.dist-info/top_level.txt,sha256=--ZJ02KVMxHHeuKxVsa7NWK52B86-jadViNNb2i2UTk,6
+aimsg-0.2.0.dist-info/RECORD,,
