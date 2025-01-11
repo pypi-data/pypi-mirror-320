@@ -1,0 +1,15 @@
+__pycache__
+.ipynb_checkpoints
+dist
+amici_models
+*egg-info
+
+# coverage
+.coverage*
+coverage.xml
+
+# tox
+.tox
+
+# osx
+.DS_Store

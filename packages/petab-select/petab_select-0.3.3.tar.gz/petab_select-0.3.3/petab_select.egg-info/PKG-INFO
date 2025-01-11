@@ -1,0 +1,88 @@
+Metadata-Version: 2.2
+Name: petab_select
+Version: 0.3.3
+Summary: PEtab Select: an extension to PEtab for model selection.
+Home-page: https://github.com/PEtab-dev/petab_select
+Author: The PEtab Select developers
+Maintainer-email: Dilan Pathirana <dilan.pathirana@uni-bonn.de>
+License: BSD-3-Clause
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: more-itertools>=10.5.0
+Requires-Dist: numpy>=1.15.1
+Requires-Dist: pandas>=1.2.0
+Requires-Dist: petab>=0.5.0
+Requires-Dist: pyyaml>=6.0.2
+Requires-Dist: click>=8.1.7
+Requires-Dist: dill>=0.3.9
+Requires-Dist: mkstd>=0.0.8
+Requires-Dist: networkx>=3.2
+Provides-Extra: plot
+Requires-Dist: matplotlib>=2.2.3; extra == "plot"
+Requires-Dist: upsetplot; extra == "plot"
+Provides-Extra: test
+Requires-Dist: pytest>=5.4.3; extra == "test"
+Requires-Dist: pytest-cov>=2.10.0; extra == "test"
+Requires-Dist: tox>=3.12.4; extra == "test"
+Provides-Extra: doc
+Requires-Dist: sphinx>=8.1.3; extra == "doc"
+Requires-Dist: sphinxcontrib-napoleon>=0.7; extra == "doc"
+Requires-Dist: sphinx-markdown-tables>=0.0.15; extra == "doc"
+Requires-Dist: sphinx-rtd-theme>=0.5.1; extra == "doc"
+Requires-Dist: recommonmark>=0.7.1; extra == "doc"
+Requires-Dist: nbsphinx>=0.9.5; extra == "doc"
+Requires-Dist: pandoc>=2.4; extra == "doc"
+Requires-Dist: nbconvert>=7.16.4; extra == "doc"
+Requires-Dist: ipykernel>=6.23.1; extra == "doc"
+Requires-Dist: ipython>=7.21.0; extra == "doc"
+Requires-Dist: readthedocs-sphinx-ext>=2.2.5; extra == "doc"
+Requires-Dist: sphinx-autodoc-typehints; extra == "doc"
+Requires-Dist: petab_select[plot]; extra == "doc"
+Dynamic: home-page
+
+<img src="https://raw.githubusercontent.com/PEtab-dev/petab_select/refs/heads/main/doc/logo/logo-wide.svg" height="200" alt="PEtab Select logo">
+
+[![PyPI - Version](https://img.shields.io/pypi/v/petab-select)](https://pypi.org/project/petab-select/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14183390.svg)](https://doi.org/10.5281/zenodo.14183390)
+
+
+The PEtab extension for model selection, including additional file formats and library.
+
+## Install
+
+The Python 3 library provides both the Python 3 and command-line (CLI)
+interfaces, and can be installed from PyPI, with `pip3 install petab-select`.
+
+## Documentation
+
+Further documentation is available at
+[http://petab-select.readthedocs.io/](http://petab-select.readthedocs.io/).
+
+## Examples
+
+There are example Jupyter notebooks covering the Python API, CLI, and visualization in the "doc/examples" directory.
+The notebooks can be viewed at [https://petab-select.readthedocs.io/en/stable/examples.html](https://petab-select.readthedocs.io/en/stable/examples.html).
+
+## Supported features
+
+### Criterion
+
+- `AIC`: https://en.wikipedia.org/wiki/Akaike_information_criterion#Definition
+- `AICc`: https://en.wikipedia.org/wiki/Akaike_information_criterion#Modification_for_small_sample_size
+- `BIC`: https://en.wikipedia.org/wiki/Bayesian_information_criterion#Definition
+
+### Methods
+
+- `forward`: https://en.wikipedia.org/wiki/Stepwise_regression#Main_approaches
+- `backward`: https://en.wikipedia.org/wiki/Stepwise_regression#Main_approaches
+- `brute_force`: Optimize all possible model candidates, then return the model
+  with the best criterion value.
+- `famos`: https://doi.org/10.1371/journal.pcbi.1007230
+
+Note that the directional methods (forward, backward) find models with the
+smallest step size (in terms of number of estimated parameters). For example,
+given the forward method and a predecessor model with 2 estimated parameters,
+if there are no models with 3 estimated parameters, but some models with 4
+estimated parameters, then the search may return candidate models with 4
+estimated parameters.
