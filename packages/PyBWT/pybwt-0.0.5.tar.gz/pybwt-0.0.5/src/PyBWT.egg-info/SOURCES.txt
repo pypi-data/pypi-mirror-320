@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/PyBWT.egg-info/PKG-INFO
+src/PyBWT.egg-info/SOURCES.txt
+src/PyBWT.egg-info/dependency_links.txt
+src/PyBWT.egg-info/top_level.txt
+src/bwt/__init__.py
+src/bwt/api_bwt.py
+src/bwt/api_ctypes.py
+src/bwt/libbwt.so
