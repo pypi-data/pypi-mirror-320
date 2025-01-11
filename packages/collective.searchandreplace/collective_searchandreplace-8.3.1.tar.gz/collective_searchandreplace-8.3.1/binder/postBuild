@@ -1,0 +1,16 @@
+set -ex
+
+rm -rf bin/
+
+buildout bootstrap
+
+PLONE_VERSION=5.2 bin/buildout -Nvv buildout:eggs-directory=eggs install instance plonesite pytest
+
+# install the zope proxy extension
+mv binder/jupyter_zope_proxy.py ${NB_PYTHON_PREFIX}/lib/python*/site-packages/
+jupyter serverextension enable --sys-prefix jupyter_zope_proxy
+
+# install the zope server extension so that
+# zope launches at startup
+mv binder/zope_server_extension.py ${NB_PYTHON_PREFIX}/lib/python*/site-packages/
+jupyter serverextension enable --sys-prefix zope_server_extension
