@@ -1,0 +1,14 @@
+group: "Redump"
+dir: "/Redump/Sony - PlayStation Portable/"
+unzip: true
+
+# RetroAchievements
+ra_id: 41
+ra_hash_method: "custom"
+
+# ROMPatcher
+patch_method: "xdelta"
+file_exts:
+  - ".iso"
+patch_file_exts:
+  - ".xdelta"
