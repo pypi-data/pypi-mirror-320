@@ -1,0 +1,78 @@
+Metadata-Version: 2.2
+Name: recruiter_cat
+Version: 0.0.2
+Summary: api collections
+Home-page: https://www.linkedin.com/in/chandlersong/
+Author: chandler song
+Author-email: 275737875@qq.com
+License: MIT
+Keywords: api collections
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: platform
+Dynamic: requires-dist
+Dynamic: summary
+
+# Introduction
+## Install package
+```shell
+pip install recruiter_cat
+```
+##  ContactOut Usage:
+```python
+from recruiter_cat.contactout import ContactOutAPI
+
+api_token = "xxxxxxxxxxxxx"  # API Token
+
+api = ContactOutAPI(api_token)
+
+# Get Usage Status
+api.usage_status()
+
+email = "xxxx@gmail.com"
+profile_url = "https://www.linkedin.com/in/xxx/"
+
+# Search By Email
+print("Search LinkedIn URL by Email:")
+api.search_linkedin_url_by_email(email)
+
+print("Search LinkedIn Profile by Email:")
+api.search_linkedin_profile_by_email(email)
+
+# Search By linkedin_url
+print("Search Profile by LinkedIn URL:")
+api.search_profile_by_linkedin_url(profile_url)
+
+print("Search Email by Linkedin URL:")
+api.search_email_by_linkedin_url(profile_url)
+
+# Search Filter
+api.search_filter(name='Baoyuan Liang')
+
+
+```
+
+
+
+
+
+
+
