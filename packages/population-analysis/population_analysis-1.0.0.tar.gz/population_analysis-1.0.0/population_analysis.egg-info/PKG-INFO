@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: population-analysis
+Version: 1.0.0
+Summary: Analysis code for a papers population analysis
+Author: Spencer Hanson
+Keywords: neuroscience,nwb,tools,science
+Classifier: Programming Language :: Python :: 3
+
+#########################
+SaccadePopulationAnalysis
+#########################
+
+Code for paper https://www.biorxiv.org/content/10.1101/2024.09.21.613770v1.full
+
