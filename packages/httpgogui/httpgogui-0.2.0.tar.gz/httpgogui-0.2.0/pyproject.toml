@@ -1,0 +1,38 @@
+[project]
+name = "httpgogui"
+version = "0.2.0"
+description = "httpgo gui"
+authors = [
+    { name = "Tang", email = "357965604@qq.com" },
+]
+dependencies = [
+    "pyside6==6.8.1",
+    "requests>=2.32.3",
+    "PySide6-Fluent-Widgets>=1.7.4",
+]
+requires-python = ">=3.9,<4.0"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+httpgogui = "httpgogui.main:main"
+
+[project.urls]
+repository = "https://github.com/RicarTang/httpgogui"
+Changelog = "https://github.com/RicarTang/httpgogui/blob/master/CHANGELOG.md"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.build]
+includes = [
+    "httpgogui/",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
