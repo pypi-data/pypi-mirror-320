@@ -1,0 +1,16 @@
+[project]
+name = "bigdata-research-tools"
+version = "0.6.1"
+description = "Bigdata.com API High-Efficiency Tools at Scale"
+readme = "README.md"
+authors = [
+    { name = "Shawn Azdam", email = "sazdam@ravenpack.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "bigdata-client>=2.5.0",
+]
+
+[project.urls]
+homepage = "https://bigdata.com/api"
+repository = "https://github.com/RavenPack/bigdata-research-tools"
