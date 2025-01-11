@@ -1,0 +1,3 @@
+include README.md
+include LICENSE
+recursive-include sandbox_evaluator_lib/tests *

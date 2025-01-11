@@ -1,0 +1,148 @@
+# Python Sandboxed Evaluator
+
+A Python library for securely evaluating user-provided Python code within a sandboxed environment. This library restricts the execution of code by imposing limits on:
+
+- **Execution Time**
+- **Memory Usage**
+- **Allowed Modules (via RestrictedPython)**
+
+## Features
+
+- **Time Limit**: Prevents long-running code from consuming system resources.
+- **Memory Limit**: Restricts memory usage to avoid overuse of system resources.
+- **RestrictedPython Execution**: Uses `RestrictedPython` to prevent access to unsafe Python features.
+- **Input Validation**: Ensures only safe data types (integers, floats, strings, lists, and dictionaries) are provided as inputs.
+- **Logging**: Records detailed logs of the evaluation process (success, failure, errors).
+- **Test Suite**: Pre-built tests for normal execution, timeout, memory overflow, syntax errors, and input validation.
+
+## Installation
+
+To install the package from PyPI:
+
+```bash
+pip install python-sandboxed-evaluator
+```
+
+## Usage 
+
+### Example Usage 
+
+Here’s an example of how to use the library to evaluate code with time and memory limits:
+
+
+```python
+from sandbox_evaluator_lib.sandbox_evaluator import SandboxEvaluator
+
+evaluator = SandboxEvaluator(time_limit=1, memory_limit=10 * 1024 * 1024)
+
+# User-provided code (summing two numbers)
+user_code = """
+result = x + y
+"""
+
+# Inputs for the code
+inputs = {"x": 5, "y": 7}
+
+# Evaluating the code
+result = evaluator.evaluate(user_code, inputs)
+
+print(result)  # Expected output: "Execution completed successfully"
+```
+
+### Problem Class Example 
+You can also use the `Problem` class to define and validate code problems. Here’s an example:
+
+```python
+from sandbox_evaluator_lib.problem import Problem
+from sandbox_evaluator_lib.sandbox_evaluator import SandboxEvaluator
+
+if __name__ == '__main__':
+  # Creating a Problem with test cases
+  test_cases = [
+      {"input": {"x": 5, "y": 7}, "expected_output": True},
+      {"input": {"x": 2, "y": 3}, "expected_output": False},
+  ]
+
+  user_code = """
+result = x + y
+if result > 10:
+  result = True
+else:
+  result = False
+  """
+
+  problem = Problem("Sum two numbers", user_code, test_cases)
+
+  # Validate the problem
+  validation_results = problem.validate()
+
+  # Check results
+  for case in validation_results:
+      if case["passed"]:
+          print(f"Test passed for input {case['input']}")
+      else:
+          print(f"Test failed for input {case['input']} with error: {case['error']}")
+
+```
+
+### Testing 
+
+You can run the test suite to ensure everything works correctly:
+
+
+```bash
+python -m unittest discover sandbox_evaluator_lib/tests
+```
+
+### Time and Memory Limits 
+The `SandboxEvaluator` class allows you to set time and memory limits. The following example shows how to set those limits:
+
+```python
+evaluator = SandboxEvaluator(time_limit=2, memory_limit=5 * 1024 * 1024)  # 2 seconds, 5 MB
+```
+ 
+- **time_limit** : The maximum time (in seconds) that the code is allowed to run.
+ 
+- **memory_limit** : The maximum memory (in bytes) that the code is allowed to use.
+
+### Supported Operations 
+
+This library is designed to execute basic Python code, including:
+
+- Mathematical operations
+
+- String operations
+
+- List and dictionary manipulation
+It **does not**  allow certain operations like:
+- File I/O
+
+- Network access
+
+- Modifying system-level settings
+
+### Error Handling 
+
+When code execution exceeds time or memory limits, or when there’s a syntax error, the evaluator will provide an appropriate error message.
+
+For example:
+ 
+- **Time Limit Exceeded** : "Time limit exceeded (3.5s)"
+ 
+- **Memory Limit Exceeded** : "Memory limit exceeded"
+ 
+- **Syntax Error** : "Error: invalid syntax"
+
+## License 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE)  file for details.
+
+## Acknowledgements 
+ 
+- The **RestrictedPython**  library is used for creating the sandboxed environment.
+ 
+- The **memory_profiler**  package is used for monitoring memory usage during code execution.
+
+## Contributing 
+
+Feel free to open issues or submit pull requests for improvements, bug fixes, or new features. Contributions are welcome!
+
