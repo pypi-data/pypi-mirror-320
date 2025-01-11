@@ -1,0 +1,13 @@
+pandantic/__init__.py,sha256=ShofJM-b8Td3iW6cfeMoUhBA9Cnb1vyZiZotHx1mWDA,215
+pandantic/basemodel.py,sha256=kWE6EeejNNe0uBXq6eKfu7SySUiN5BctlkHe4gGyFJA,1196
+pandantic/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pandantic/plugins/pandas.py,sha256=neVKdSkJdcJNa6YFwo3OGGAKVZGLohsPrua-QgBlK2Q,4011
+pandantic/types.py,sha256=y-JmeO_knZ-B9mS_OpLIt4Vdn2PdauH0b7LUsNeeY7o,137
+pandantic/types_pandantic.py,sha256=X4sK42-G8KzDFmVpGJ69HcAs2DNtXnNkViWaZQ1XhPY,502
+pandantic/validators/__init__.py,sha256=UYY-PQ2H114CLJqVi9yhp8NSvdOTwKJgq1tpJMswrLM,68
+pandantic/validators/base.py,sha256=-JTH79LOBRKmPr3DLVFcm7lqqoGuHu3MWqt4PPjUXTM,555
+pandantic/validators/pandas.py,sha256=-lpbpS1JEDNrnev5VBOFXps-IZcQ3rYpMBfCi4zEsb8,7323
+pandantic-1.0.0.dist-info/LICENSE,sha256=X9tARYd0qo08N0wtGZCf0O5wqQAv21ekuuVClm_56fc,1071
+pandantic-1.0.0.dist-info/METADATA,sha256=5StApOP7RNsWgAhceYZAAo16iVKA2yGEQFPNuqYKKgw,5987
+pandantic-1.0.0.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+pandantic-1.0.0.dist-info/RECORD,,
