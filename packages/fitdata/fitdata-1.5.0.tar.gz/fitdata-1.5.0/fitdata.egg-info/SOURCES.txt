@@ -1,0 +1,15 @@
+README.md
+setup.py
+fitdata/__init__.py
+fitdata/basic_calc.py
+fitdata/errors.py
+fitdata/fitdata.py
+fitdata/interfaces.py
+fitdata/objective.py
+fitdata/other_calc.py
+fitdata/weeklyprogression.py
+fitdata.egg-info/PKG-INFO
+fitdata.egg-info/SOURCES.txt
+fitdata.egg-info/dependency_links.txt
+fitdata.egg-info/requires.txt
+fitdata.egg-info/top_level.txt
