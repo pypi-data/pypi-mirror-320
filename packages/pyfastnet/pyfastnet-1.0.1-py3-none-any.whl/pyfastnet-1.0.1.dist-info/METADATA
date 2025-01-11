@@ -1,0 +1,34 @@
+Metadata-Version: 2.2
+Name: pyfastnet
+Version: 1.0.1
+Summary: A Python library for decoding FastNet protocol data streams.
+Home-page: https://github.com/ghotihook/pyfastnet
+Author: Alex Salmon
+Author-email: alex@ivila.net
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# pyfastent
+Fastnet is the propriatory protocol used by B&G on some older instruments, tested on Hydra/H2000. It might work on other systems. I developed this for personal use and publishing for general interest only. 
+
+# 
+
+
+## Acknowledgments / References
+
+- [trlafleur - Collector of significant background](https://github.com/trlafleur) 
+- [Oppedijk - Background](https://www.oppedijk.com/bandg/fastnet.html)
+- [timmathews - Significant implementation in Cpp](https://github.com/timmathews/bg-fastnet-driver)
+- Significant help from chatGPT!
