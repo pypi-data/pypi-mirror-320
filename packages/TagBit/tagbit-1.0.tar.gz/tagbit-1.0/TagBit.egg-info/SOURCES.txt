@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+TagBit.egg-info/PKG-INFO
+TagBit.egg-info/SOURCES.txt
+TagBit.egg-info/dependency_links.txt
+TagBit.egg-info/requires.txt
+TagBit.egg-info/top_level.txt
+tagbit/__init__.py
+tagbit/handlers.py
+tagbit/reader.py
+tagbit/status.py
+tagbit/utils.py
