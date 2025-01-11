@@ -1,0 +1,9 @@
+README.rst
+setup.py
+livescraper/__init__.py
+livescraper/scraper.py
+livescraper.egg-info/PKG-INFO
+livescraper.egg-info/SOURCES.txt
+livescraper.egg-info/dependency_links.txt
+livescraper.egg-info/requires.txt
+livescraper.egg-info/top_level.txt
