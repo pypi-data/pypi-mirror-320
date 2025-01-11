@@ -1,0 +1,5 @@
+requests
+pycryptodome
+matplotlib
+pandas
+ipython
