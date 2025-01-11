@@ -1,0 +1,249 @@
+{
+  "namespace": "GrayZone",
+  "description": "Gray Zone of Active defense includes all elements which lay between reactive defense elements and offensive operations. It does fill the gray spot between them. Taxo may be used for active defense planning or modeling.",
+  "version": 3,
+  "predicates": [
+    {
+      "value": "Adversary Emulation",
+      "expanded": "Adversary Emulation"
+    },
+    {
+      "value": "Beacons",
+      "expanded": "Beacons"
+    },
+    {
+      "value": "Deterrence",
+      "expanded": "Deterrence"
+    },
+    {
+      "value": "Deception",
+      "expanded": "Deception"
+    },
+    {
+      "value": "Tarpits, Sandboxes and Honeypots",
+      "expanded": "Tarpits, Sandboxes and Honeypots"
+    },
+    {
+      "value": "Intelligence and Counterintelligence",
+      "expanded": "Intelligence and Counterintelligence"
+    },
+    {
+      "value": "Adversary Takedowns",
+      "expanded": "Adversary Takedowns"
+    },
+    {
+      "value": "Ransomware",
+      "expanded": "Ransomware"
+    },
+    {
+      "value": "Rescue Missions",
+      "expanded": "Rescue Missions"
+    },
+    {
+      "value": "Sanctions, Indictments & Trade Remedies",
+      "expanded": "Sanctions, Indictments & Trade Remedies"
+    }
+  ],
+  "values": [
+    {
+      "predicate": "Adversary Emulation",
+      "entry": [
+        {
+          "value": "Threat Modeling",
+          "expanded": "Arch threat modeling",
+          "description": "Modeling threat in services or/and in applications"
+        },
+        {
+          "value": "Purple Teaming",
+          "expanded": "Purple team collaboration",
+          "description": "Collaboration between red and blue team"
+        },
+        {
+          "value": "Blue Team",
+          "expanded": "Blue Team activities",
+          "description": "Defenders team actions, TTPs etc."
+        },
+        {
+          "value": "Red Team",
+          "expanded": "Red Team activities",
+          "description": "Actions, TTPs etc.of Red Team"
+        }
+      ]
+    },
+    {
+      "predicate": "Beacons",
+      "entry": [
+        {
+          "value": "Inform",
+          "expanded": "Information from beacon",
+          "description": "Provide defender with informations about beacon user, intentional or not"
+        },
+        {
+          "value": "Notify",
+          "expanded": "Notification from beacon",
+          "description": "Beacon will just send alert, that has been accessed"
+        }
+      ]
+    },
+    {
+      "predicate": "Deterrence",
+      "entry": [
+        {
+          "value": "by Retaliation",
+          "expanded": "Retaliation risk",
+          "description": "Adversary is threatened by retaliation if it will continue in actions"
+        },
+        {
+          "value": "by Denial",
+          "expanded": "Risk of Denial",
+          "description": "Deny action ever happened - example: if the attribution is important for adversary"
+        },
+        {
+          "value": "by Entanglement",
+          "expanded": "Risk of reputation loss",
+          "description": "By continuing in action adversary may be exhibited to punishment from defenders ally"
+        }
+      ]
+    },
+    {
+      "predicate": "Deception",
+      "entry": [
+        {
+          "value": "Deception",
+          "expanded": "Deceptive actions",
+          "description": "Confuse adversary by deception, can be either whole campaign or just simple word in internal manuals"
+        },
+        {
+          "value": "Denial",
+          "expanded": "Suppress anything",
+          "description": "You can deny any part of infrastructure or whole including servers, personal computers, users, machine accounts etc."
+        },
+        {
+          "value": "CounterDeception",
+          "expanded": "Answer to deception",
+          "description": "Answer to deception from adversary is counter-deception, for example: answer to phish with shadow user account to uncover next adversary actions"
+        }
+      ]
+    },
+    {
+      "predicate": "Tarpits, Sandboxes and Honeypots",
+      "entry": [
+        {
+          "value": "Honeypots",
+          "expanded": "Honeypots",
+          "description": "Emulating technical resources as services or whole machines or identities"
+        },
+        {
+          "value": "Sandboxes",
+          "expanded": "Sandboxes",
+          "description": "Place for secure detonation of anything"
+        },
+        {
+          "value": "Tarpits",
+          "expanded": "Slow Downs",
+          "description": "You can slow adversary from action for example by sending slow responses to request"
+        }
+      ]
+    },
+    {
+      "predicate": "Intelligence and Counterintelligence",
+      "entry": [
+        {
+          "value": "Intel Passive",
+          "expanded": "Passive gathering, managing etc. of threat intelligence. Ie. getting data from public, available resources",
+          "description": "Getting threat intel from open and publicly available resources"
+        },
+        {
+          "value": "Intel Active",
+          "expanded": "Active or proactive intel gathering, collecting etc. Ie. closed resources as private forums, gossip ...",
+          "description": "Getting threat intel from closed resources or trusted parties as private chats or exploitation of groups etc."
+        },
+        {
+          "value": "Counterintel Defensive",
+          "expanded": "Includes subcategories as Deterrence and Detection ",
+          "description": "Focuses on detecting and neutralizing adversary efforts to compromise or exploit digital systems."
+        },
+        {
+          "value": "Counterintel Defensive - Deterrence",
+          "expanded": "Deterrende in cyber space as part of strategy",
+          "description": "Aims to discourage adversary actions by demonstrating strong protective measures and potential consequences."
+        },
+        {
+          "value": "Counterintel Defensive - Detection",
+          "expanded": "Detection Engineering",
+          "description": "Ideally focuses on identifying and exposing adversary activities before they can cause harm."
+        },
+        {
+          "value": "Counterintel Offensive",
+          "expanded": "Includes subcategories as Detection, Deception and Neutralization",
+          "description": "Involves actively disrupting or deceiving adversary intelligence operations to gain strategic advantage"
+        },
+        {
+          "value": "Counterintel Offensive - Detection",
+          "expanded": "Detect operations of adversary before they reach friendly environment",
+          "description": "Detection involves actively identifying and exposing adversary cyber operations to disrupt their efforts."
+        },
+        {
+          "value": "Counterintel Offensive - Deception",
+          "expanded": "Creating deception campaigns, fake accounts, penetrating adversary communication with use of deception...",
+          "description": "Uses false information and tactics to mislead and confuse adversaries in their cyber operations."
+        },
+        {
+          "value": "Counterintel Offensive - Neutralization",
+          "expanded": "Adversary disruption as influence operation, environment disturbance to prevent adversary operations...",
+          "description": "Neutralization aims to disrupt and eliminate adversary cyber threats before they can inflict damage."
+        }
+      ]
+    },
+    {
+      "predicate": "Adversary Takedowns",
+      "entry": [
+        {
+          "value": "Botnet Takedowns",
+          "expanded": "Botnet Takedowns",
+          "description": "Activity with approval of legal governmental entities ie. courts to stop unwanted actions or prevent them"
+        },
+        {
+          "value": "Domain Takedowns",
+          "expanded": "Domain Takedowns",
+          "description": "Activity with approval of legal governmental entities ie. courts to stop unwanted actions or prevent them"
+        },
+        {
+          "value": "Infrastructure Takedowns",
+          "expanded": "Whole environment takedowns",
+          "description": "Activity with approval of legal governmental entities ie. courts to stop unwanted actions or prevent them"
+        }
+      ]
+    },
+    {
+      "predicate": "Ransomware",
+      "entry": [
+        {
+          "value": "Ransomware",
+          "expanded": "Ransomware by defenders",
+          "description": "Activity with approval of legal governmental entities ie. courts to stop unwanted actions or prevent them"
+        }
+      ]
+    },
+    {
+      "predicate": "Rescue Missions",
+      "entry": [
+        {
+          "value": "Rescue Missions",
+          "expanded": "Rescue Missions",
+          "description": "Activity with approval of legal governmental entities ie. courts to stop unwanted actions or prevent them"
+        }
+      ]
+    },
+    {
+      "predicate": "Sanctions, Indictments & Trade Remedies",
+      "entry": [
+        {
+          "value": "Sanctions, Indictments & Trade Remedies",
+          "expanded": "Business and diplomatic actions and counteractions",
+          "description": "Activity with approval of legal governmental entities ie. courts, states, governments to stop unwanted actions or prevent them"
+        }
+      ]
+    }
+  ]
+}
