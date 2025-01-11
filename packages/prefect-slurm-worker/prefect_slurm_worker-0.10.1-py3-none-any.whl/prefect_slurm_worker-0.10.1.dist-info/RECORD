@@ -1,0 +1,7 @@
+prefect_slurm_worker/__init__.py,sha256=4RoPkO0YQS4KFrLA-IUr5xpHxXL1Whlkq7uoCTjYUAg,40
+prefect_slurm_worker/apptainer.py,sha256=LTNMRTEIixonbTG3eNK3jRc5Win3lMeH-H8ACJRM0hs,4311
+prefect_slurm_worker/worker.py,sha256=gEgWhytciAkfz-v4lkVEV8s84XCZx9FcYoc_W4KYNLE,16697
+prefect_slurm_worker-0.10.1.dist-info/METADATA,sha256=opSXbKcraRNOZGlM8j2Vpn9pgajOdng6S8pVNC3YxcE,482
+prefect_slurm_worker-0.10.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+prefect_slurm_worker-0.10.1.dist-info/entry_points.txt,sha256=Ro61FYslj2mma5YOVg9HwkBcfbklRVAf_6p2M8VOa4M,137
+prefect_slurm_worker-0.10.1.dist-info/RECORD,,
