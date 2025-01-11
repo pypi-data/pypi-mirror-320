@@ -1,0 +1,56 @@
+Metadata-Version: 2.2
+Name: huangyinglan
+Version: 0.1.2
+Home-page: https://github.com/rinkeigun/svg
+Author: Keigun Rin
+Author-email: 
+License: ライセンス
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytest
+Requires-Dist: setuptools
+Requires-Dist: wheel
+Requires-Dist: twine
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+
+README.mdの内容
+プロジェクトの名前
+概要
+インストール方法
+使い方
+例
+貢献方法
+ライセンス
+連絡先情報
+その他の情報（任意）
+
+
+以降は例
+========================================
+# My Package
+
+## 概要
+My Packageは、特定の問題を解決するための便利なツールセットを提供するPythonパッケージです。このパッケージは、データ処理、解析、可視化などの機能を含んでいます。
+
+## インストール方法
+
+### 必要条件
+- Python 3.6以上
+- その他の依存関係（例：requests、numpyなど）
+
+### インストール手順
+パッケージをインストールするには、以下のコマンドを実行してください：
+
+```bash
+pip install my_package
