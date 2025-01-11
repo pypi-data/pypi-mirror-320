@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/gdparse/__init__.py
+src/gdparse/core.py
+src/gdparse.egg-info/PKG-INFO
+src/gdparse.egg-info/SOURCES.txt
+src/gdparse.egg-info/dependency_links.txt
+src/gdparse.egg-info/top_level.txt

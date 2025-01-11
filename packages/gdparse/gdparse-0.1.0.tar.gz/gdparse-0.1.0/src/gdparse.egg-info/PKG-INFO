@@ -1,0 +1,28 @@
+Metadata-Version: 2.2
+Name: gdparse
+Version: 0.1.0
+Summary: Simple parser for Geometry Dash levels
+Home-page: https://github.com/kuzheren/gdparse
+Author: kuzheren
+Author-email: kuzherendev@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# GD Level Parser
+
+Python package for parsing and analyzing Geometry Dash levels.
+
+## Installation
+
+pip install gdparse
