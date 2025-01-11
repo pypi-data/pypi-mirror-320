@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: vuer-envs
+Version: 0.0.2
+Home-page: https://github.com/vuer-ai/vuer-envs
+Author: Quincy Yu<quincyouxiang@gmail.com>,Ge Yang<ge.ike.yang@gmail.com>
+Author-email: ge.ike.yang@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: params-proto >=2.11.16
+Requires-Dist: pillow
+Requires-Dist: msgpack
+Requires-Dist: numpy >=1.21
+Requires-Dist: websockets
+Requires-Dist: lxml
+Provides-Extra: all
+Requires-Dist: aiohttp ; extra == 'all'
+Requires-Dist: aiohttp-cors ; extra == 'all'
+Requires-Dist: killport ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: aiohttp ; extra == 'dev'
+Requires-Dist: aiohttp-cors ; extra == 'dev'
+Requires-Dist: killport ; extra == 'dev'
+Requires-Dist: black ==22.3.0 ; extra == 'dev'
+Requires-Dist: pylint ==2.13.4 ; extra == 'dev'
+Requires-Dist: pytest ==7.1.2 ; extra == 'dev'
+Requires-Dist: sphinx ==7.1.2 ; extra == 'dev'
+Requires-Dist: furo ; extra == 'dev'
+Requires-Dist: sphinx-autobuild ; extra == 'dev'
+Requires-Dist: sphinx-copybutton ; extra == 'dev'
+Requires-Dist: sphinxcontrib-video ; extra == 'dev'
+Requires-Dist: myst-parser ; extra == 'dev'
+Requires-Dist: trimesh ; extra == 'dev'
+Requires-Dist: tqdm ; extra == 'dev'
+Provides-Extra: example
+Requires-Dist: aiohttp ; extra == 'example'
+Requires-Dist: aiohttp-cors ; extra == 'example'
+Requires-Dist: killport ; extra == 'example'
+Requires-Dist: open3d <0.16.0,>=0.15.0 ; extra == 'example'
+Requires-Dist: trimesh ; extra == 'example'
+Requires-Dist: cmx ; extra == 'example'
+Requires-Dist: functional-notations ; extra == 'example'
+Requires-Dist: ml-logger ; extra == 'example'
+Requires-Dist: opencv-python ; extra == 'example'
+
+# Vuer Envs
+
+## Setting Up
+
+If you want to develop then install it in editable mode.
+```shell
+conda create -n vuer-envs python=3.11
+pip install -e '.[dev]'
+```
+
+## Old Notes, Need @quincy to clean up.
+
+
+1. first download the assets using rclone
+    ```shell
+    rclone sync -P remote:lucidxr-assets ./assets
+    ```
+2. install the module. 
+    ```shell
+    export VUER_ENVS_ASSETS_PATH=$HOME/datasets/vuer-envs/assets/
+    pip install 'vuer-envs[assets]'
+    ```
+   
+    If you want to develop then install it in editable mode.
+    ```shell
+    pip install -e '.[all]'
+    ```
+   
+## Usage
+
+- `room-demo` is a simple demo of the room environment.
+    ```shell
+    room-demo --room 10
+    ```
+  (for Quincy: this script should save the xml locally, that you can drag and drop into MuJoCo.app to visualize. We can make it spin up a `vuer` server in the future but let's keep it simple for now.)
+   
+## 

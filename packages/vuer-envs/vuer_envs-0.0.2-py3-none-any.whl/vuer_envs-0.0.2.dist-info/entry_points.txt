@@ -1,0 +1,6 @@
+[console_scripts]
+collect-demo = vuer_envs.scripts.collect_demo:main
+playback-demo = vuer_envs.scripts.playback_demo:main
+robots-demo = vuer_envs.scripts.robots_demo:spawn_panda_scene
+rooms-demo = vuer_envs.scripts.rooms_demo:spawn_room
+upload-robocasa = vuer_envs.scripts.upload_robocasa:main
