@@ -1,0 +1,3 @@
+[console_scripts]
+safisha = safisha.cli:main
+
