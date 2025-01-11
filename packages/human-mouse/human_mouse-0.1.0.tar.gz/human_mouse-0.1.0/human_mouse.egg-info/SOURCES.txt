@@ -1,0 +1,10 @@
+README.md
+setup.py
+human_mouse/__init__.py
+human_mouse/mouse.py
+human_mouse/utils.py
+human_mouse.egg-info/PKG-INFO
+human_mouse.egg-info/SOURCES.txt
+human_mouse.egg-info/dependency_links.txt
+human_mouse.egg-info/requires.txt
+human_mouse.egg-info/top_level.txt

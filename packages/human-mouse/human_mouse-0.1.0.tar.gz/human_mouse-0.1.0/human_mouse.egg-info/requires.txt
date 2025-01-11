@@ -1,0 +1,6 @@
+numpy>=1.21.0
+pyautogui>=0.9.53
+scipy>=1.7.0
+
+[linux]
+python-xlib>=0.27
