@@ -1,0 +1,6 @@
+name: /Users/hoffmanh/Documents/Vouchers/voucher_project_template/envs
+channels:
+  - defaults
+dependencies:
+  - sphinx
+prefix: /Users/hoffmanh/Documents/Vouchers/voucher_project_template/envs
