@@ -1,0 +1,11 @@
+algo/Decisiontree.py,sha256=dWiXAJOUyLCy_mziN7kDaxx_zJrUURcNdWo1ksL7OLo,4483
+algo/KNN.py,sha256=09ZhqeTzl0KCw8o4kqk5mHg2pb55z6iqIyy8EKu0Ty4,1141
+algo/Linearregression.py,sha256=_M2ooHUqfamU0mC-57rPDd2sBiuHwBtGOxLNlAFjnq4,1696
+algo/Logisticregression.py,sha256=oEpx_K3zPTc5nAnyai4Inkef80yNfM2_5Z8hATvmY3U,1483
+algo/Randomforest.py,sha256=W9lVzkNXntQU3kVz35a9FVRWSDdY5K_7yh8tFBtbJ2g,5384
+algo/__init__.py,sha256=6wW0CTaOD9Mpa-bOgCnA4Ff7pM8AZ8icSSP5iAb4TkA,201
+algo_bhanu-1.1.0.dist-info/LICENSE.txt,sha256=BFqPI98aixRHmneJsROIblTq_8xSdkahdeBUq493Z0Y,1087
+algo_bhanu-1.1.0.dist-info/METADATA,sha256=yGQyEls65aIPly0Vi6poDa-VqkUtUPEBwVJIUW7A81A,476
+algo_bhanu-1.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+algo_bhanu-1.1.0.dist-info/top_level.txt,sha256=yGUlNJ6NxO2TvGAH-xUG9KKDf31ZBOm6N-209kfIEH4,5
+algo_bhanu-1.1.0.dist-info/RECORD,,
