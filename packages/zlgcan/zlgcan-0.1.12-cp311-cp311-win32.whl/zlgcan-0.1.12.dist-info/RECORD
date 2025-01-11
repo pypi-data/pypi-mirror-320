@@ -1,0 +1,9 @@
+zlgcan-0.1.12.dist-info/METADATA,sha256=uV2D3usJxz_UutF0pqDkpaKaol33ofB7dzwLaSivxD8,4148
+zlgcan-0.1.12.dist-info/WHEEL,sha256=nZYUEa61gMm872poFFPMY96BdrHLzPbU4DPYHZlOKjU,92
+zlgcan-0.1.12.dist-info/entry_points.txt,sha256=1BprfQnq7A25SfDsPk1ZbOgMv_SmYEUWc7Xz-oAf-V4,45
+zlgcan-0.1.12.dist-info/licenses/LICENSE.txt,sha256=6n0EnHcF3BOvwgLdGOGCfzSE-CEv0_p7gvxKDDY0Msk,7816
+zlgcan/__init__.py,sha256=uspwQytd3RGSaVs6LQADIa9MS_qvzySlfL2S9OhFBQA,21
+zlgcan/zlgcan.py,sha256=pxJS2roQ3qny-Te3dzgNjVx-e8kbWO3l3hO_WJtYa-U,8848
+zlgcan_driver_py/__init__.py,sha256=yYtvIvvI4J_--Fi8LpEQwhYxi5gw_WJ68nqwHpyTTbI,147
+zlgcan_driver_py/zlgcan_driver_py.cp311-win32.pyd,sha256=vYZZy7pv-c1i89sK-B2N2HD1oFhk0YQ40_Bt4KWUpnE,630784
+zlgcan-0.1.12.dist-info/RECORD,,
