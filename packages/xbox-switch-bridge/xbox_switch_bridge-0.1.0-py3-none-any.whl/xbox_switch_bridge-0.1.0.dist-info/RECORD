@@ -1,0 +1,10 @@
+xboxswitchbridge/__init__.py,sha256=1fQHPTB53ZVwTHfagahMIU1MxRns7ygynb198YrKYNQ,382
+xboxswitchbridge/bridge.py,sha256=58rED8MroHJYi1MSI1-1z0vNF-xZWuMk8LMIEAGdGag,6865
+xboxswitchbridge/cli.py,sha256=q7crWqznL2Zln-t9lz45HNHw-M9bcO_ZftC4UNvJDh4,2494
+xboxswitchbridge/service.py,sha256=CPFv6GkR4gGUdFkRP9htp0c_wEcQsRhfexn2406agk8,3664
+xbox_switch_bridge-0.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xbox_switch_bridge-0.1.0.dist-info/METADATA,sha256=xoLc48xJy6h11Ga4q2rxYiyqgSDTSwbB7r5pT_OohHg,2334
+xbox_switch_bridge-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+xbox_switch_bridge-0.1.0.dist-info/entry_points.txt,sha256=Fm6fENGT0zbztLo6W7xHKISjqIadhpiKu74nPsWmW7o,65
+xbox_switch_bridge-0.1.0.dist-info/top_level.txt,sha256=d66S4liVNZY416YWp5t7lfXpmNNn5-_rtJeHfLpt6TA,17
+xbox_switch_bridge-0.1.0.dist-info/RECORD,,
