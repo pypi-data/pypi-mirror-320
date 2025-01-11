@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: telecomcredit
+Version: 1.0.4
+Summary: Python bindings for the telecomcredit API
+Home-page: https://github.com/frgmt/telecomcredit
+Author: frgmt
+License: MIT
+Project-URL: Bug Tracker, https://github.com/frgmt/telecomcredit/issues
+Project-URL: Changes, https://github.com/frgmt/telecomcredit/blob/master/CHANGELOG.md
+Project-URL: Source Code, https://github.com/frgmt/telecomcredit
+Keywords: telecomcredit api
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: typing_extensions>=4.5.0; python_version >= "3.7"
+Requires-Dist: requests>=2.20; python_version >= "3.0"
+Requires-Dist: pydantic>=2.10; python_version >= "3.9"
