@@ -1,0 +1,18 @@
+{
+    "services": {
+        "extract_media_url": {
+            "description": "Extrair URL multim\u00e9dia de um servi\u00e7o.",
+            "fields": {
+                "format_query": {
+                    "description": "Consulta do Youtube-dl para selecionar a qualidade do resultado.",
+                    "name": "Formatar consulta"
+                },
+                "url": {
+                    "description": "URL onde os meios de comunica\u00e7\u00e3o podem ser encontrados.",
+                    "name": "URL de multim\u00e9dia"
+                }
+            },
+            "name": "Obter URL de multim\u00e9dia"
+        }
+    }
+}

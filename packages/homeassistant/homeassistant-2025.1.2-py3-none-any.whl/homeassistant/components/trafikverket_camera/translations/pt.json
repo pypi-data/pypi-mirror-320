@@ -1,0 +1,55 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Conta j\u00e1 configurada",
+            "reauth_successful": "Reautentica\u00e7\u00e3o bem sucedida",
+            "reconfigure_successful": "A reconfigura\u00e7\u00e3o foi bem sucedida"
+        },
+        "error": {
+            "cannot_connect": "A liga\u00e7\u00e3o falhou",
+            "invalid_auth": "Autentica\u00e7\u00e3o inv\u00e1lida"
+        },
+        "step": {
+            "multiple_cameras": {
+                "data": {
+                    "id": "Escolher a c\u00e2mara"
+                },
+                "description": "O resultado veio com v\u00e1rias c\u00e2maras"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "Chave da API"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "api_key": "Chave da API",
+                    "location": "Localiza\u00e7\u00e3o"
+                },
+                "data_description": {
+                    "location": "Igual ou parte do nome, descri\u00e7\u00e3o ou identifica\u00e7\u00e3o da c\u00e2mara. Seja o mais espec\u00edfico poss\u00edvel para evitar obter v\u00e1rias c\u00e2maras como resultado"
+                }
+            },
+            "user": {
+                "data": {
+                    "api_key": "Chave da API",
+                    "location": "Localiza\u00e7\u00e3o"
+                },
+                "data_description": {
+                    "location": "Igual ou parte do nome, descri\u00e7\u00e3o ou identifica\u00e7\u00e3o da c\u00e2mara. Seja o mais espec\u00edfico poss\u00edvel para evitar obter v\u00e1rias c\u00e2maras como resultado"
+                }
+            }
+        }
+    },
+    "entity": {
+        "camera": {
+            "tv_camera": {
+                "state_attributes": {
+                    "location": {
+                        "name": "Localiza\u00e7\u00e3o"
+                    }
+                }
+            }
+        }
+    }
+}

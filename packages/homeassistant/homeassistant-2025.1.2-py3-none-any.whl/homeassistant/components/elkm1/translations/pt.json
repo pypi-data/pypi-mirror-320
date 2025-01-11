@@ -1,0 +1,136 @@
+{
+    "config": {
+        "abort": {
+            "already_in_progress": "O processo de configura\u00e7\u00e3o j\u00e1 est\u00e1 a decorrer",
+            "cannot_connect": "A liga\u00e7\u00e3o falhou",
+            "invalid_auth": "Autentica\u00e7\u00e3o inv\u00e1lida",
+            "unknown": "Erro inesperado"
+        },
+        "error": {
+            "cannot_connect": "A liga\u00e7\u00e3o falhou",
+            "invalid_auth": "Autentica\u00e7\u00e3o inv\u00e1lida",
+            "unknown": "Erro inesperado"
+        },
+        "flow_title": "{mac_address} ({host})",
+        "step": {
+            "discovered_connection": {
+                "data": {
+                    "password": "Palavra-passe",
+                    "protocol": "Protocolo",
+                    "temperature_unit": "Unidade de temperatura utilizada pelo ElkM1.",
+                    "username": "Nome de Utilizador"
+                },
+                "title": "Ligar ao Controlo Elk-M1"
+            },
+            "manual_connection": {
+                "data": {
+                    "address": "O endere\u00e7o IP ou o dom\u00ednio ou a porta de s\u00e9rie se a liga\u00e7\u00e3o for feita atrav\u00e9s de uma porta de s\u00e9rie.",
+                    "password": "Palavra-passe",
+                    "protocol": "Protocolo",
+                    "temperature_unit": "Unidade de temperatura utilizada pelo ElkM1.",
+                    "username": "Nome de Utilizador"
+                },
+                "title": "Ligar ao Controlo Elk-M1"
+            },
+            "user": {
+                "data": {
+                    "device": "Dispositivo"
+                }
+            }
+        }
+    },
+    "issues": {
+        "migrate_aux_heat": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "A a\u00e7\u00e3o 'set_aux_heat' do Elk-M1 foi migrada. Uma nova entidade de interruptor de calor de emerg\u00eancia est\u00e1 dispon\u00edvel para cada termostato.\n\nAtualize todas as automatiza\u00e7\u00f5es para usar a nova entidade de interruptor de calor de emerg\u00eancia. Quando isso for feito, selecione **Enviar** para corrigir este problema.",
+                        "title": "Migra\u00e7\u00e3o da a\u00e7\u00e3o set_aux_heat do Elk-M1"
+                    }
+                }
+            },
+            "title": "Migra\u00e7\u00e3o da a\u00e7\u00e3o set_aux_heat do Elk-M1"
+        }
+    },
+    "services": {
+        "alarm_arm_home_instant": {
+            "fields": {
+                "code": {
+                    "name": "C\u00f3digo"
+                }
+            }
+        },
+        "alarm_arm_night_instant": {
+            "fields": {
+                "code": {
+                    "name": "C\u00f3digo"
+                }
+            }
+        },
+        "alarm_arm_vacation": {
+            "fields": {
+                "code": {
+                    "name": "C\u00f3digo"
+                }
+            }
+        },
+        "alarm_clear_bypass": {
+            "fields": {
+                "code": {
+                    "name": "C\u00f3digo"
+                }
+            }
+        },
+        "alarm_display_message": {
+            "fields": {
+                "beep": {
+                    "name": "Bip"
+                },
+                "clear": {
+                    "name": "Limpo"
+                },
+                "line1": {
+                    "name": "Linha 1"
+                },
+                "line2": {
+                    "name": "Linha 2"
+                }
+            }
+        },
+        "sensor_counter_set": {
+            "fields": {
+                "value": {
+                    "name": "Valor"
+                }
+            }
+        },
+        "sensor_zone_bypass": {
+            "fields": {
+                "code": {
+                    "name": "C\u00f3digo"
+                }
+            }
+        },
+        "set_time": {
+            "fields": {
+                "prefix": {
+                    "name": "Prefixo"
+                }
+            }
+        },
+        "speak_phrase": {
+            "fields": {
+                "prefix": {
+                    "name": "Prefixo"
+                }
+            }
+        },
+        "speak_word": {
+            "fields": {
+                "prefix": {
+                    "name": "Prefixo"
+                }
+            }
+        }
+    }
+}

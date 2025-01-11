@@ -1,0 +1,24 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Programos ID jau sukonfig\u016bruotas",
+            "reauth_successful": "Pakartotinis autentifikavimas buvo s\u0117kmingas"
+        },
+        "error": {
+            "invalid_auth": "Neteisingas autentifikavimas",
+            "unknown": "Netik\u0117ta klaida"
+        },
+        "step": {
+            "reauth_confirm": {
+                "description": "Nepavyko prijungti programos \u201eThings Network\u201c. \n\n Patikrinkite savo kredencialus."
+            },
+            "user": {
+                "data": {
+                    "access_key": "API raktas",
+                    "app_id": "Programos ID",
+                    "hostname": "Host"
+                }
+            }
+        }
+    }
+}

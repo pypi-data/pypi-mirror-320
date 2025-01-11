@@ -1,0 +1,67 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Dispositivo j\u00e1 configurado"
+        },
+        "error": {
+            "invalid_auth": "Autentica\u00e7\u00e3o inv\u00e1lida"
+        },
+        "step": {
+            "plant": {
+                "data": {
+                    "plant_id": "Planta"
+                },
+                "title": "Selecione a sua planta"
+            },
+            "user": {
+                "data": {
+                    "name": "Nome",
+                    "password": "Palavra-passe",
+                    "url": "URL",
+                    "username": "Nome de Utilizador"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "storage_current_2": {
+                "name": "Corrente PV2 para armazenamento"
+            },
+            "storage_grid_charged_lifetime": {
+                "name": "Carga na rede desde o in\u00edcio de vida"
+            },
+            "storage_grid_discharge_lifetime": {
+                "name": "Descarga na rede desde o in\u00edcio de vida"
+            },
+            "storage_pv_charging_voltage_2": {
+                "name": "Tens\u00e3o de carga PV2"
+            },
+            "storage_solar_output_lifetime": {
+                "name": "Produ\u00e7\u00e3o solar desde o in\u00edcio de vida"
+            },
+            "storage_solar_output_today": {
+                "name": "Produ\u00e7\u00e3o solar hoje"
+            },
+            "storage_solar_production_2": {
+                "name": "Produ\u00e7\u00e3o de energia solar (PV2)"
+            },
+            "tlx_temperature_1": {
+                "name": "Temperatura 1"
+            },
+            "tlx_temperature_2": {
+                "name": "Temperatura 2"
+            },
+            "tlx_temperature_3": {
+                "name": "Temperatura 3"
+            },
+            "tlx_temperature_4": {
+                "name": "Temperatura 4"
+            },
+            "tlx_temperature_5": {
+                "name": "Temperatura 5"
+            }
+        }
+    },
+    "title": "Servidor Growatt"
+}

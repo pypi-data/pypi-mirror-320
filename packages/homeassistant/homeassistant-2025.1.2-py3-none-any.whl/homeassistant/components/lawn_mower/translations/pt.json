@@ -1,0 +1,12 @@
+{
+    "entity_component": {
+        "_": {
+            "name": "Corta relva",
+            "state": {
+                "paused": "Em pausa",
+                "returning": "A regressar"
+            }
+        }
+    },
+    "title": "Corta relva"
+}

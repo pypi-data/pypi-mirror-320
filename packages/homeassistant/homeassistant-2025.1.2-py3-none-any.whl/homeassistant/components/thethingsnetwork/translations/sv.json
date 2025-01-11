@@ -1,0 +1,24 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Applikations-ID \u00e4r redan konfigurerat",
+            "reauth_successful": "\u00c5terautentisering lyckades"
+        },
+        "error": {
+            "invalid_auth": "Ogiltig autentisering",
+            "unknown": "Ov\u00e4ntat fel"
+        },
+        "step": {
+            "reauth_confirm": {
+                "description": "Applikationen Things Network kunde inte anslutas. \n\n Kontrollera dina referenser."
+            },
+            "user": {
+                "data": {
+                    "access_key": "API-nyckel",
+                    "app_id": "Applikations-ID",
+                    "hostname": "V\u00e4rd"
+                }
+            }
+        }
+    }
+}

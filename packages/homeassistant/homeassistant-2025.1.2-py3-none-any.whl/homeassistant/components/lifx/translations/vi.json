@@ -1,0 +1,39 @@
+{
+    "config": {
+        "abort": {
+            "no_devices_found": "Kh\u00f4ng t\u00ecm th\u1ea5y thi\u1ebft b\u1ecb n\u00e0o tr\u00ean m\u1ea1ng"
+        },
+        "flow_title": "{label} ({group})",
+        "step": {
+            "discovery_confirm": {
+                "description": "B\u1ea1n c\u00f3 mu\u1ed1n thi\u1ebft l\u1eadp {label} ({group}) kh\u00f4ng?"
+            }
+        }
+    },
+    "services": {
+        "effect_colorloop": {
+            "fields": {
+                "change": {
+                    "description": "S\u1ef1 chuy\u1ec3n \u0111\u1ed9ng c\u1ee7a s\u1eafc \u0111\u1ed9 theo chu k\u1ef3, t\u00ednh b\u1eb1ng \u0111\u1ed9 tr\u00ean b\u00e1nh xe m\u00e0u."
+                },
+                "spread": {
+                    "description": "\u0110\u1ed9 ch\u00eanh l\u1ec7ch s\u1eafc \u0111\u1ed9 t\u1ed1i \u0111a gi\u1eefa c\u00e1c \u0111\u00e8n tham gia, t\u00ednh theo \u0111\u1ed9 tr\u00ean b\u00e1nh xe m\u00e0u."
+                }
+            }
+        },
+        "effect_morph": {
+            "fields": {
+                "palette": {
+                    "description": "Danh s\u00e1ch \u00edt nh\u1ea5t 2 v\u00e0 nhi\u1ec1u nh\u1ea5t 16 m\u00e0u d\u01b0\u1edbi d\u1ea1ng gi\u00e1 tr\u1ecb s\u1eafc \u0111\u1ed9 (0-360), \u0111\u1ed9 b\u00e3o h\u00f2a (0-100), \u0111\u1ed9 s\u00e1ng (0-100) v\u00e0 kelvin (1500-900) \u0111\u1ec3 s\u1eed d\u1ee5ng cho hi\u1ec7u \u1ee9ng n\u00e0y. Ghi \u0111\u00e8 thu\u1ed9c t\u00ednh ch\u1ee7 \u0111\u1ec1."
+                }
+            }
+        },
+        "effect_sky": {
+            "fields": {
+                "palette": {
+                    "description": "Danh s\u00e1ch t\u1eeb 1 \u0111\u1ebfn 6 m\u00e0u theo gi\u00e1 tr\u1ecb s\u1eafc \u0111\u1ed9 (0-360), \u0111\u1ed9 b\u00e3o h\u00f2a (0-100), \u0111\u1ed9 s\u00e1ng (0-100) v\u00e0 \u0111\u1ed9 Kelvin (1500-9000) \u0111\u1ec3 s\u1eed d\u1ee5ng cho hi\u1ec7u \u1ee9ng n\u00e0y."
+                }
+            }
+        }
+    }
+}

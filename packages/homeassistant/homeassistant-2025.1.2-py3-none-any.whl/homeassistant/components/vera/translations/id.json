@@ -1,0 +1,29 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Perangkat sudah dikonfigurasi",
+            "cannot_connect": "Tidak dapat terhubung ke pengontrol dengan URL {base_url}"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "vera_controller_url": "URL Pengontrol"
+                },
+                "data_description": {
+                    "vera_controller_url": "Seharusnya terlihat seperti ini: http://192.168.1.161:3480"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "exclude": "ID perangkat Vera yang akan dikecualikan dari Home Assistant.",
+                    "lights": "ID perangkat sakelar Vera yang diperlakukan sebagai lampu di Home Assistant"
+                },
+                "title": "Opsi pengontrol Vera"
+            }
+        }
+    }
+}

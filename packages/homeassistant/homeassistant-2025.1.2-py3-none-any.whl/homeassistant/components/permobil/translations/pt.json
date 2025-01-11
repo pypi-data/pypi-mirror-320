@@ -1,0 +1,28 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Dispositivo j\u00e1 configurado",
+            "reauth_successful": "Reautentica\u00e7\u00e3o bem sucedida",
+            "unknown": "Erro inesperado"
+        },
+        "error": {
+            "code_request_error": "Erro ao solicitar c\u00f3digo de aplica\u00e7\u00e3o",
+            "invalid_code": "O c\u00f3digo que forneceu est\u00e1 incorreto",
+            "invalid_email": "Email inv\u00e1lido"
+        },
+        "step": {
+            "region": {
+                "data": {
+                    "region": "Regi\u00e3o"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "is_charging": {
+                "name": "Est\u00e1 a carregar"
+            }
+        }
+    }
+}
