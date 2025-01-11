@@ -1,0 +1,3 @@
+[console_scripts]
+armada=armada_logs.cli:cli
+
