@@ -1,0 +1,3 @@
+[console_scripts]
+shutdown-on-lan=shutdown_on_lan.main:main
+
