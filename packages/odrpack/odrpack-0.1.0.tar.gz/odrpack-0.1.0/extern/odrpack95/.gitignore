@@ -1,0 +1,12 @@
+*.mod
+*.vscode
+*.venv
+*gcov.sh
+_site
+notes.md
+test/*.txt
+build
+_build
+local-scripts
+example/*.f90_
+example/*.txt
