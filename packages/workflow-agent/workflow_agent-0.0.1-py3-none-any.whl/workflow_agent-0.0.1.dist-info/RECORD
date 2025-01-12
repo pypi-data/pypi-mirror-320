@@ -1,0 +1,6 @@
+workflow_agent/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+workflow_agent/utils.py,sha256=NG5BoXFmm9ZXCnMSzdZ3wVMOaVq6rdnbBREJr8A29xs,2753
+workflow_agent-0.0.1.dist-info/METADATA,sha256=Z8NOBFoyAgYV3mOkNpfYS635K4bPbqgY3HWKi_c0f2s,4028
+workflow_agent-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+workflow_agent-0.0.1.dist-info/top_level.txt,sha256=qN-pjO_QPWKLtOsDsVCIqFmup_GHa7lzki_U7GxE_hA,15
+workflow_agent-0.0.1.dist-info/RECORD,,
