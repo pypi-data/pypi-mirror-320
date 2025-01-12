@@ -1,0 +1,8 @@
+Debug/_pybind_sandbox.cp310-win_amd64.pyd,sha256=C4mUIZ6sf-YhEDufytka9FY9lN9uvJJOWOqcS6W_RJI,768000
+Debug/_pybind_sandbox.pdb,sha256=hWk3SCikj1cL-RhOY6sGNs55umMaXaXEcsQ6vFMdZfg,5926912
+pybind_sandbox/__init__.py,sha256=uRDwOby-A0bgm_N1mtLT_ryUAq1tv_SFwSfZiHqhagY,56
+pybind_sandbox/__init__.pyi,sha256=0jPlgB9B5mori08CEqNL6lWMQXonQ0ToKqa6VDVnOV4,314
+pybind_sandbox-0.0.0.dist-info/METADATA,sha256=C1bqxXQzInVr6kBMrGelYlxlht9-Z9Sy9MeQMdwscFo,412
+pybind_sandbox-0.0.0.dist-info/WHEEL,sha256=rzGfZgUcGeKSgIHGYMuqg4xE4VPHxnaldXH6BG0zjVk,101
+pybind_sandbox-0.0.0.dist-info/top_level.txt,sha256=ELrnjEULqQjIOObwPIaNK3Shp_M8FPHaNTQHArwiRQ8,31
+pybind_sandbox-0.0.0.dist-info/RECORD,,
