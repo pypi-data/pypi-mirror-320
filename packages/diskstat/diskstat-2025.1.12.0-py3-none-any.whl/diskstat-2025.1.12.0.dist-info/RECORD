@@ -1,0 +1,16 @@
+diskstat/Diskstat.template.ahk,sha256=AdSjGJa0CtEraNyYQLkNHJGOkLCgOMqtMMfDNTFaDYo,156
+diskstat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+diskstat/__main__.py,sha256=5gU_bNJ9vJ3__KfdU_R4hsZBUWyu9nV0-Kve2478N6A,42
+diskstat/autostart.py,sha256=Pb4L7WKLNnUHwWRmN43iFQ1FxztofmE2F9qXCJiRJDE,971
+diskstat/disks.py,sha256=SufpRSNWVCmjsX2Moq1wZNf8QDs-97CVl4cQtoEhqbQ,946
+diskstat/gen.py,sha256=1vwxOTNHQYKUK0TyVF0vtA0n_jGVDTr4I4xhkUd0zCg,415
+diskstat/launcher.py,sha256=QeoflJWjMnDdSQ1QcYmUIW_OmT6mqRVHSEGGeezFd9s,923
+diskstat/main.py,sha256=e38kBesNDVIt9Kw7cefY835wZuNGOnBj68Hj-as2Q58,3774
+diskstat/program.ico,sha256=BHxLAOUZmNBWImWfWnTvCn9tdmCaTHoIlTg03YvUqEM,38154
+diskstat/res.py,sha256=Nf-ZdQ4FGiszluIZ8UnnPVm7Q8RtXkJghVSzZHyta94,17411
+diskstat/stop.py,sha256=IfjW5-Z5IPrQLFLVRTuLMSaDbfQor_S59e8CFiQIWtg,263
+diskstat-2025.1.12.0.dist-info/METADATA,sha256=NFtWoztyIGIXRZOIhoQsIzG2FBuWk5uxdEaii8G5YT0,1499
+diskstat-2025.1.12.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+diskstat-2025.1.12.0.dist-info/entry_points.txt,sha256=y56OV7SpBp-xod4Hfey9GhdFgeE4VuK-DuVnihPEsto,91
+diskstat-2025.1.12.0.dist-info/licenses/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+diskstat-2025.1.12.0.dist-info/RECORD,,
