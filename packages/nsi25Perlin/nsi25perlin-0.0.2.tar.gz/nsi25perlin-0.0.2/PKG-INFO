@@ -1,0 +1,22 @@
+Metadata-Version: 2.2
+Name: nsi25Perlin
+Version: 0.0.2
+Summary: nsi25Perlin is a small module that implements Perlin's noise.
+Author-email: Artic <artic.admisoffi@gmail.com>
+Project-URL: Homepage, https://github.com/ArticOff/nsi25Perlin
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: proto-obj>=0.0.4
+
+# nsi25Perlin
+
+nsi25Perlin is a small module that implements Perlin's noise.
+nsi25Perlin has been designed for the [Trophées NSI 2025](https://trophees-nsi.fr).
+
+## Warning
+
+This package is not maintained and is not intended to be used.
