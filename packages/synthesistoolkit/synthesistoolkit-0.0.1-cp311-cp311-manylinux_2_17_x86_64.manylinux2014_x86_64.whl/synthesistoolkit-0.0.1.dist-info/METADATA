@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: synthesistoolkit
+Version: 0.0.1
+Summary: Python bindings for the Synthesis ToolKit in C++ (STK)
+Author-Email: David Marttila <david.suedholt@gmail.com>
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Multimedia :: Sound/Audio :: Sound Synthesis
+Project-URL: Homepage, https://github.com/dsuedholt/pystk
+Requires-Python: >=3.10
+Requires-Dist: numpy>=1.25
