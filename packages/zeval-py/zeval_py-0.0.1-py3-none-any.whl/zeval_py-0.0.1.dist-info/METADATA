@@ -1,0 +1,10 @@
+Metadata-Version: 2.2
+Name: zeval-py
+Version: 0.0.1
+Summary: LLM as judge for your unit tests
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# Zeval
+
+> LLM as a judge for your unit tests
