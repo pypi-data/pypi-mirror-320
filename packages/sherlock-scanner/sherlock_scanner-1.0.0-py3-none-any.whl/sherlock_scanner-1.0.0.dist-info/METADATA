@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: sherlock-scanner
+Version: 1.0.0
+Summary: Sherlock: A simple Python-based security scanner for hardcoded secrets and API keys.
+Author: Omer Revach
+Author-email: idonttellyou@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Requires-Dist: click
+
