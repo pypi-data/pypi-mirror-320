@@ -1,0 +1,10 @@
+rmsd/__init__.py,sha256=dgZ6V_G7zVnMWuUdir6NGLkNeNLH07NGToXtu4hqBik,972
+rmsd/__main__.py,sha256=k-eBw138IPGhy1-tTQz_sSv4tHYWWzpe9oRLG6-3LCg,103
+rmsd/calculate_rmsd.py,sha256=-c-eVGJnaZxqbQIjdaEGUx1Sr7-dBWJwmXt1P6dob_0,60328
+rmsd/version.py,sha256=X-erfDySXG8dR_oX8H_L2S8f9Y_VDgdltPb-jH2ruKg,22
+rmsd-1.6.3.dist-info/LICENSE,sha256=7C_7iPtwBGNpSGXC46zbe_K1Nugy7TmwiRTnBRIKzkY,1344
+rmsd-1.6.3.dist-info/METADATA,sha256=B-aK7m4MkmjnzZMwHgqvgYiRc_M4qDhCYk_eKTJEGBI,8633
+rmsd-1.6.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+rmsd-1.6.3.dist-info/entry_points.txt,sha256=IvuXayc7MHcA8RSnvVYKO3gHOnqsJy6hb3OcqKsh2po,60
+rmsd-1.6.3.dist-info/top_level.txt,sha256=TpOed8cNWURGcbA6-d3cX5O8F62hvyhAV0kToh9ZNAk,5
+rmsd-1.6.3.dist-info/RECORD,,
