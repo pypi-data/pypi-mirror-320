@@ -1,0 +1,37 @@
+[project]
+name = "mcp-bigquery-biomedical"
+version = "0.1.2"
+description = "MCP server for open (biomedical) datasets in bigquery"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp",
+    "psycopg2-binary",
+    "python-dotenv",
+    "google-cloud-bigquery"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-asyncio"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.uv]
+dev-dependencies = [
+    "pyright>=1.1.389",
+    "pytest>=8.3.4",
+    "psycopg2",
+    "pytest-asyncio>=0.24.0",
+]
+
+[project.scripts]
+mcp-bigquery-biomedical = "mcp_bigquery_biomedical:main"

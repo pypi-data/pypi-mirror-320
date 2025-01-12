@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: mcp-bigquery-biomedical
+Version: 0.1.2
+Summary: MCP server for open (biomedical) datasets in bigquery
+License-File: LICENSE
+Requires-Python: >=3.10
+Requires-Dist: google-cloud-bigquery
+Requires-Dist: mcp
+Requires-Dist: psycopg2-binary
+Requires-Dist: python-dotenv
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-asyncio; extra == 'test'
