@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: wh-fastapi-crud-tortoise
+Version: 0.1.0
+Summary: A CRUD library for Tortoise ORM
+Home-page: https://github.com/kanbang/fastapi-crud-pro
+Author: kanbang
+Author-email: kanbang@163.com
+Project-URL: Bug Reports, https://github.com/kanbang/fastapi-crud-pro/issues
+Project-URL: Source, https://github.com/kanbang/fastapi-crud-pro
+Keywords: crud,tortoise-orm,sqlalchemy,database
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: tortoise-orm >=0.19.0
+Requires-Dist: pydantic >=1.9.0
+
+# 项目简介
+本项目是一个基于 Tortoise ORM 的简单 CRUD 应用示例。
+
+# 安装步骤
+1. 克隆仓库：
+   ```bash
+   git clone https://github.com/yourusername/crud-tortoise.git
+   ```
+2. 进入项目目录：
+   ```bash
+   cd crud-tortoise
+   ```
+3. 创建并激活虚拟环境：
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # 对于 Windows 系统，使用 `venv\Scripts\activate`
+   ```
+4. 安装依赖：
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+# 使用说明
+1. 运行数据库迁移：
+   ```bash
+   aerich init -t app.TORTOISE_ORM
+   aerich init-db
+   ```
+2. 启动应用：
+   ```bash
+   uvicorn app.main:app --reload
+   ```
+3. 打开浏览器访问 `http://127.0.0.1:8000` 查看应用。
+
+# 贡献
+欢迎提交问题和拉取请求来贡献本项目。
+
+# 许可证
+本项目使用 MIT 许可证。
