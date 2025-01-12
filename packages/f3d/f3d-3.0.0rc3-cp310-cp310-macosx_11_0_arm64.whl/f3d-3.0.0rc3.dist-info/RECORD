@@ -1,0 +1,16 @@
+f3d-3.0.0rc3.dist-info/RECORD,,
+f3d-3.0.0rc3.dist-info/WHEEL,sha256=rOJaAfyDeYqpyZcvF2uMKwvjCoDaR0tVOjIX1nCiRq8,114
+f3d-3.0.0rc3.dist-info/METADATA,sha256=zzhiw1GctAb_TUfkeaEnZ_GtdYD5ang5l9NfB3yQjwo,7089
+f3d-3.0.0rc3.dist-info/licenses/LICENSE.md,sha256=hAu1RYYOc3QQgF1JOsFmyRu1a0SxSSf6Xzu02mO9dS4,1571
+f3d-3.0.0rc3.dist-info/licenses/doc/THIRD_PARTY_LICENSES.md,sha256=sK3dREu5BIBU1OifMfvDwc8qQxjkqr_67eah9uhvDyw,12332
+f3d/pyf3d.pyi,sha256=li9Dm-i6_T24hxRXBK5bHGwaQx1KKN2xmDMGKg5KtPA,23066
+f3d/__init__.pyi,sha256=Eg4zQ6BniL5bVll1pHEVkqgkCkKz1dFze5a7LSGSXF4,1185
+f3d/__init__.py,sha256=SxAjiaw93PxTnSa3AnaaM1PEU3gysxM-2dSfmcx8NSk,2235
+f3d/pyf3d.cpython-310-darwin.so,sha256=Yg8qE_57H1J4g9LFl7mIx1sfRmsQSowv93VUlXzQhaA,464976
+f3d/lib/libf3d.dylib,sha256=MZWeCeYzl5Rg61o0_HTlbMU3NyaLj3Nl-dxtOVI-8vw,79182496
+f3d/share/f3d/plugins/alembic.json,sha256=i5swl_I5_hGVQ3Yoz3-2_Np6y8PK_fBSk5aBb2pfK5I,357
+f3d/share/f3d/plugins/occt.json,sha256=hd5tjSk2J7jh0Xex41yE3U6zazvIJcwdhhRsDoRcUvA,1081
+f3d/share/f3d/plugins/assimp.json,sha256=uDN4qLtF8YfgL5Va4lY12T5JId7xJ9iUTsQAgwj_RT0,1431
+f3d/share/f3d/plugins/native.json,sha256=hDlZIM3zdEO5kDn_a7ynJhgjz-6Hy0ulKyhVjU3na7E,4605
+f3d/share/f3d/plugins/draco.json,sha256=MWd9ycafVJ79TqFp6Y-FDXdCxYXduZdWg0JvWuhDVio,605
+f3d/share/f3d/plugins/exodus.json,sha256=BSvMiLSfrg5-4dujJJRWiVhJCMM9YVjJm2DglWw83pc,361
