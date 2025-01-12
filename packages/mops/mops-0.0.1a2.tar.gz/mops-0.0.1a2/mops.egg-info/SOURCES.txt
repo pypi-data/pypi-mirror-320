@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+mops/__init__.py
+mops/exceptions.py
+mops/js_scripts.py
+mops/keyboard_keys.py
+mops/shared_utils.py
+mops/visual_comparison.py
+mops.egg-info/PKG-INFO
+mops.egg-info/SOURCES.txt
+mops.egg-info/dependency_links.txt
+mops.egg-info/requires.txt
+mops.egg-info/top_level.txt
