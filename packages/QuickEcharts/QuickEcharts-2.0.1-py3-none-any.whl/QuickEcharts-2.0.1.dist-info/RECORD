@@ -1,0 +1,13 @@
+QuickEcharts/Charts.py,sha256=hWZSPs_glrX9O_LtT8GPoNRueHBcH-eghTMzLITSwD8,280834
+QuickEcharts/__init__.py,sha256=Fx0iuqcM2nErCxp0i2vKo9jRutNqj0XfO-mVgAbVfEc,217
+QuickEcharts/test_functions.py,sha256=922XjpAZdJLFU3JJ9jsIJedGxA3afyDrNf9yVjB1vDM,8784
+QuickEcharts/shiny_app/__init__.py,sha256=QtDA4blW8O74Z6mhEGDfW33tjQtBb_LT85VvzXBhg3M,51
+QuickEcharts/shiny_app/app.py,sha256=4Y6rYHaaiNptbMFrHk_EZ0WMTKSzG4NDYxr_nvChddM,8412
+QuickEcharts/shiny_app/modules/__init__.py,sha256=TVaIZufiQyTERqK3YmlPM2v8GVtb4fCGHQ4c7ZJ67Tk,35
+QuickEcharts/shiny_app/modules/schemas.py,sha256=LOPz1Y1RLBqY_L6Li44-30CK8XR40XxLmhT6IkG65lo,86409
+QuickEcharts/shiny_app/www/styles.css,sha256=ubhZ3NlI3JK1FslaTdFg9pmABe912Of8yvYGvWvjDfQ,367
+QuickEcharts-2.0.1.dist-info/LICENSE,sha256=3nMlxPycnUD8I84QItm343_UauNsskXLfyTl-_zFzGk,31892
+QuickEcharts-2.0.1.dist-info/METADATA,sha256=YD4qrDIekwlhF8K7FhXlorSD_pEtXzLHa4hvxXZuIvw,70171
+QuickEcharts-2.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+QuickEcharts-2.0.1.dist-info/top_level.txt,sha256=rlS26xNOlZr5Ip8YIMt5kvOzimLL9zqWRVUodP_F0-g,13
+QuickEcharts-2.0.1.dist-info/RECORD,,
