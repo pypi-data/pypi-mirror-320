@@ -1,0 +1,10 @@
+structuredscraper/__init__.py,sha256=lw5Hr8nTmfhG6RLMDC2lo6QCtIIrtyqBroT2pgN9QrQ,91
+structuredscraper/scraper.py,sha256=_m7W7i8XcwaYONLIBFGhRUTdSfDe8vfOKTZvLiw10kI,2063
+structuredscraper/utils.py,sha256=5eDm4SHaBkQbWGT-AnrsnX3l4UwBcRu8BdRxH-0ML40,462
+structuredscraper/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+structuredscraper/tests/scraper_tests.py,sha256=YGwetBBXujSbpWI0Gdy6edmjLSZVzDdKpqYDNEKmUeA,4951
+structuredscraper-0.1.0.dist-info/LICENSE,sha256=7LGVKSqw5VtuZGGjF_OHlFRm7kN2y0imGmi4CIz853s,1091
+structuredscraper-0.1.0.dist-info/METADATA,sha256=dLjDCZo9YheS2BpZx-dqBwBGKKgPAIRYaeWCTGOGSdw,2254
+structuredscraper-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+structuredscraper-0.1.0.dist-info/top_level.txt,sha256=igYfY-aDU6h449O9k0q1S5fPz14Tno13Vkjtfde6KME,18
+structuredscraper-0.1.0.dist-info/RECORD,,
