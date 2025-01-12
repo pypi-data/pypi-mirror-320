@@ -1,0 +1,1 @@
+from .YOLO3D.inference import yolo3d_nuScenes
