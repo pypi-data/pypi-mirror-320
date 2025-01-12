@@ -1,0 +1,2 @@
+[console_scripts]
+cryptsh = cryptsh.main:main
