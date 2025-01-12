@@ -1,0 +1,6 @@
+ReportMiner.egg-info/PKG-INFO
+ReportMiner.egg-info/SOURCES.txt
+ReportMiner.egg-info/dependency_links.txt
+ReportMiner.egg-info/requires.txt
+ReportMiner.egg-info/top_level.txt
+reportminer/setup.py
