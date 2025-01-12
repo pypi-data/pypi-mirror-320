@@ -1,0 +1,3 @@
+[console_scripts]
+ipscap = ipscap.__main__:main
+ipsurv = ipsurv.__main__:main
