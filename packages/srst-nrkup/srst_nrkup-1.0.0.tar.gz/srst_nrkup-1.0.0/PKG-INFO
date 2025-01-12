@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: srst-nrkup
+Version: 1.0.0
+Summary: NRK Download and Telegram Bot Integration
+Home-page: https://github.com/balta2ar/srst-nrkup
+Author: Yuri Bochkarev
+Author-email: baltazar.bz@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: aiohttp_middlewares==2.3.0
+Requires-Dist: hachoir==3.1.3
+Requires-Dist: diskcache==5.4.0
+Requires-Dist: pysubs2==1.6.1
+Requires-Dist: nrkdownload==3.1.2
+Requires-Dist: pydantic==1.9.0
+Requires-Dist: python-telegram-bot==20.6
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

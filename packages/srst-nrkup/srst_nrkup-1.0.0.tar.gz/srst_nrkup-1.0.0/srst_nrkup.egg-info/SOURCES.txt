@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+nrkup/__init__.py
+nrkup/env.py
+nrkup/episode.py
+nrkup/nrkup.py
+nrkup/nrkup_bot.py
+nrkup/telega.py
+srst_nrkup.egg-info/PKG-INFO
+srst_nrkup.egg-info/SOURCES.txt
+srst_nrkup.egg-info/dependency_links.txt
+srst_nrkup.egg-info/entry_points.txt
+srst_nrkup.egg-info/requires.txt
+srst_nrkup.egg-info/top_level.txt
