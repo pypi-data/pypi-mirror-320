@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+oracle.luau.egg-info/PKG-INFO
+oracle.luau.egg-info/SOURCES.txt
+oracle.luau.egg-info/dependency_links.txt
+oracle.luau.egg-info/top_level.txt
+oracle_luau/__init__.py
