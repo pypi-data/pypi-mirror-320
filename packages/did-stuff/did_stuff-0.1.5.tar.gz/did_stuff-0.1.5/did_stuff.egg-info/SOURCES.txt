@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+did_stuff/__init__.py
+did_stuff/cli.py
+did_stuff/commit_message_generator.py
+did_stuff/config.py
+did_stuff/git_hooks.py
+did_stuff/tui.py
+did_stuff.egg-info/PKG-INFO
+did_stuff.egg-info/SOURCES.txt
+did_stuff.egg-info/dependency_links.txt
+did_stuff.egg-info/entry_points.txt
+did_stuff.egg-info/requires.txt
+did_stuff.egg-info/top_level.txt
