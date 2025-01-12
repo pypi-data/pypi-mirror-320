@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: xf_xf
+Version: 0.0.1
+Summary: A small example package
+Author: 小峰
+Author-email: 小峰 <ling_don@qq.com>
+Project-URL: Homepage, https://github.com/yourusername/xffunk_test
+Project-URL: Bug Tracker, https://github.com/yourusername/xffunk_test/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pygetwindow
+Requires-Dist: psutil
+Requires-Dist: pycryptodome
+Requires-Dist: bs4
+Requires-Dist: loguru
+
+# xffunk_test
+
+这是一个测试包。

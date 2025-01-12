@@ -1,0 +1,6 @@
+requests
+pygetwindow
+psutil
+pycryptodome
+bs4
+loguru
