@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "morph_extractor"            # This is the name of your package on PyPI.
+version = "0.1.11"                   # Update the version as you make changes.
+description = "A library to extract morphological data using Wiktionary and AI fallback"
+readme = "README.md"                # Points to your README (in Markdown).
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Deepak Singh", email = "iamdeepaksingh100@gmail.com" }
+]
+keywords = ["linguistics", "morphology", "wiktionary", "AI"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+# Optional: If your library includes console scripts (CLI entry points):
+[project.scripts]
+morph-extractor = "morph_extractor.cli:main"
