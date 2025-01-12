@@ -1,0 +1,15 @@
+codexgen/__init__.py,sha256=EiHMdFt-rJcEdknuNZ2fofmrbyCsbyg9-0VVR6G-Xr4,768
+codexgen/about.py,sha256=IR1dTbC48kMM2_f5yYahjK3_phcFr4xslL38_Bsng5Y,777
+codexgen/config.py,sha256=40XRFJZOB7ONWbqsBkA4Fy07Qpld7IhJ7qh9sLeUOAE,1273
+codexgen/core.py,sha256=RxQWadW398myBfU2JI2ujK1bO6XhBz_Rne539Qkm6HA,6167
+codexgen/transformers.py,sha256=Rg_tCPP2VU3F54Ja5kdYoYt5wNF4Dxa9DwVJMaFvft0,4464
+codexgen/utils.py,sha256=WRCrBa2qXSBqYYkHj8W3DYZC3mlFykKKnUw0bDMroC4,1869
+codexgen/TestCodexGen/__init__.py,sha256=teXEMhzmkNBFmz35k4DMMBLRGlg4fOkOdwwJRmNkXns,223
+codexgen/TestCodexGen/test_core.py,sha256=7bcYn7ko4QX7zQ1KkxrG_fuwNyHqOFLapMN_pq3-tWI,4882
+codexgen/TestCodexGen/test_transformer.py,sha256=57FI2izjPkXqKh4UmB5rY5-1swf7iHVNIJWhOtbmEoo,4715
+codexgen/TestCodexGen/test_utils.py,sha256=xVn3PpOXbhbnPnJ3fGPOe1vrEdOZDkEvXiAkhOMu-sE,3261
+CodexGen-1.0.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+CodexGen-1.0.0.dist-info/METADATA,sha256=8iXGzFLSHMF82qv6OqOrlB58nAcCmba_GIeoSaG1O3E,3186
+CodexGen-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+CodexGen-1.0.0.dist-info/top_level.txt,sha256=aGNjKuoCnTSd2shM5RQtTs2r3K-aUdTvqlNahQNtzfE,9
+CodexGen-1.0.0.dist-info/RECORD,,
