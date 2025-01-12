@@ -1,0 +1,8 @@
+izzy_devices/__init__.py,sha256=o2g0FNpMNOKIAvIxPVyiN985KKwBg90lw92W1joS64Y,136
+izzy_devices/client.py,sha256=ntdM54mcjDfE1ZNOfsALQh-P4zS77VBHP1a6Ep5Mvkc,5012
+izzy_devices/client_status.py,sha256=-1fd6hMOWfGP7o_aNDI4-fGvMO1tmBwDwtCxz-i7zfM,157
+izzy_devices/server.py,sha256=aNucB4kNs5YV3417GRdLzzmVt4eUVNBbLqAbAEcX3Fk,780
+izzy_devices/server_status.py,sha256=B2AEwRbQwe7YfQsyfeb6Ff192zuerGdSQvsUa1-ZTyc,110
+izzy_devices-0.1.4.dist-info/METADATA,sha256=-MRBTSacqmRjKt8lygHO5thLX_6ehNiMF51BxKhVifY,3003
+izzy_devices-0.1.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+izzy_devices-0.1.4.dist-info/RECORD,,
