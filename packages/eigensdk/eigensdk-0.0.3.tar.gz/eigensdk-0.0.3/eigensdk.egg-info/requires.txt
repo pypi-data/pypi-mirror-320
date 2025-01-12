@@ -1,0 +1,4 @@
+web3==7.4.0
+fastapi
+pydantic
+uvicorn
