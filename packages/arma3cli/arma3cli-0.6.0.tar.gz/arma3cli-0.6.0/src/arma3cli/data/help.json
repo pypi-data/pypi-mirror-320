@@ -1,0 +1,50 @@
+{
+    "title": "Arma 3 Server CLI",
+    "description": "A powerful tool for managing Arma 3 servers",
+    "categories": {
+        "Server Management": {
+            "commands": [
+                {
+                    "name": "init",
+                    "syntax": "arma3cli init",
+                    "description": "Initialize a new Arma 3 server configuration",
+                    "examples": [
+                        "arma3cli init",
+                        "arma3cli init --template basic"
+                    ]
+                },
+                {
+                    "name": "start",
+                    "syntax": "arma3cli start <path>",
+                    "description": "Start an Arma 3 server instance",
+                    "examples": [
+                        "arma3cli start /path/to/server",
+                        "arma3cli start /path/to/server --headless"
+                    ]
+                },
+                {
+                    "name": "stop",
+                    "syntax": "arma3cli stop <path>",
+                    "description": "Stop a running Arma 3 server",
+                    "examples": [
+                        "arma3cli stop /path/to/server",
+                        "arma3cli stop /path/to/server --force"
+                    ]
+                }
+            ]
+        },
+        "Configuration": {
+            "commands": [
+                {
+                    "name": "config",
+                    "syntax": "arma3cli config <action>",
+                    "description": "Manage server configuration",
+                    "examples": [
+                        "arma3cli config show",
+                        "arma3cli config edit"
+                    ]
+                }
+            ]
+        }
+    }
+} 
