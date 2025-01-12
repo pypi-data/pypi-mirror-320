@@ -1,0 +1,66 @@
+[project]
+name = 'pyprefab'
+description = 'Python application template for personal use'
+license = {text = 'MIT License'}
+readme = 'README.md'
+requires-python = '>=3.9'
+classifiers = [
+    'Programming Language :: Python :: 3',
+    'License :: OSI Approved :: MIT License',
+]
+dynamic = ['version']
+
+dependencies = [
+    'structlog',
+    'rich',
+]
+
+[dependency-groups]
+dev = [
+    'coverage',
+    'freezegun',
+    'mypy',
+    'pre-commit',
+    'pytest',
+    "pytest-random-order>=1.1.1",
+    'ruff',
+]
+
+[project.urls]
+Repository = "https://github.com/bsweger/pyprefab.git"
+
+[project.entry-points.'console_scripts']
+hello_world = 'hello_world.app:main'
+
+[build-system]
+# Minimum requirements for the build system to execute.
+requires = ['setuptools', 'wheel', "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+namespaces = true
+where = ["src"]
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
+
+[tool.hello_world]
+# to write json-formatted logs to disk, uncomment the following line specify the file location
+# log_file = '/path/to/logs/files/hello_world.log'
+
+[tool.pytest.ini_options]
+addopts = "--random-order"
+tmp_path_retention_policy = "none"
+testpaths = [
+    "tests",
+]
+
+[tool.ruff]
+line-length = 120
+lint.extend-select = ['I', 'Q']
+
+[tool.ruff.lint.flake8-quotes]
+inline-quotes = 'single'
+
+[tool.ruff.format]
+quote-style = 'single'
