@@ -1,0 +1,2 @@
+[console_scripts]
+simplefin = simplefin:cli
