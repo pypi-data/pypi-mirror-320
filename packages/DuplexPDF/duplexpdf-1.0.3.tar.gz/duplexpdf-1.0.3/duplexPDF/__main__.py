@@ -1,0 +1,3 @@
+import duplexPDF
+
+duplexPDF.Run()
