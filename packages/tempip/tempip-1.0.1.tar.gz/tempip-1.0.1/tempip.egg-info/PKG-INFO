@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: tempip
+Version: 1.0.1
+License-File: LICENSE
+
+an program that auto generates basic template, and input as needed
