@@ -1,0 +1,165 @@
+Metadata-Version: 2.2
+Name: tenori
+Version: 1.1.1
+Summary: A Flask package for easily adding multi-tenancy with dedicated databases
+Home-page: https://github.com/TaqsBlaze/tenori
+Author: Tanaka Chinengundu
+Author-email: tanakah30@gmail.com
+Project-URL: Bug Reports, https://github.com/TaqsBlaze/tenori/issues
+Project-URL: Source, https://github.com/TaqsBlaze/tenori
+Project-URL: Documentation, https://github.com/TaqsBlaze/tenori#readme
+Keywords: flask,multitenant,database,sqlalchemy,tenant,saas
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Framework :: Flask
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Database
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Flask>=2.0.0
+Requires-Dist: Flask-SQLAlchemy>=2.5.0
+Requires-Dist: SQLAlchemy>=1.4.0
+Requires-Dist: PyMySQL>=1.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=2.0.0; extra == "dev"
+Requires-Dist: black>=21.0.0; extra == "dev"
+Requires-Dist: flake8>=3.9.0; extra == "dev"
+Requires-Dist: mypy>=0.900; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: project-url
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+
+<center>
+
+![alt text](https://raw.githubusercontent.com/TaqsBlaze/tenori/refs/heads/main/logo/tenori.png)
+
+# Tenori
+### Flask Multi Tenant Package
+</center>
+A lightweight, secure Python package for easily adding multi tenancy to Flask applications using dedicated databases per tenant.
+
+## Features
+
+- 🔐 Secure database creation with SQL injection prevention
+- 🎯 Simple integration with existing Flask-SQLAlchemy applications
+- ⚡ Automated tenant database management
+- 🛠️ Flexible configuration options
+- 📝 Type hints for better IDE support
+
+## Installation
+
+```bash
+pip install tenori
+```
+
+## Quick Start
+
+```python
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+from tenori import MultiTenantManager
+
+app = Flask(__name__)
+db = SQLAlchemy(app)
+
+# Initialize the multi-tenant manager
+tenant_manager = MultiTenantManager(db)
+
+# Create a new tenant database
+@app.route('/signup', methods=['POST'])
+def create_tenant():
+    try:
+        success = tenant_manager.create_tenant(current_user)
+        if success:
+            return {"status": "success"}
+    except Exception as e:
+        return {"status": "error", "message": str(e)}
+```
+
+## Requirements
+
+- Python 3.10+
+- Flask
+- Flask-SQLAlchemy
+- SQLAlchemy
+
+## Configuration
+
+The package requires a properly configured Flask-SQLAlchemy instance. Your database user must have privileges to create new databases.
+
+
+## API Reference
+
+### MultiTenantManager
+
+The main class for managing multi tenancy.
+
+```python
+manager = MultiTenantManager(db_instance)
+```
+
+#### Methods
+
+- `create_tenant(user)`: Creates a new database for the specified user
+  - Parameters:
+    - `user`: User object (must have an 'id' attribute)
+  - Returns:
+    - `bool`: True if successful, False otherwise
+
+- `get_tenant_connection(user)`: Gets the connection string for a tenant's database
+  - Parameters:
+    - `user`: User object (must have an 'id' attribute)
+  - Returns:
+    - `str`: Database connection string
+
+## Error Handling
+
+The package provides custom exceptions for different scenarios:
+
+- `MultiTenantError`: Base exception class
+- `DatabaseCreationError`: Raised when database creation fails
+- `InvalidConfigurationError`: Raised when configuration is invalid
+
+## Security Considerations
+
+- Database names are automatically sanitized to prevent SQL injection
+- Each tenant gets their own isolated database
+- Database credentials are handled securely
+- Connection strings are generated dynamically
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Support
+
+If you encounter any issues or need support, please open an issue on GitHub.
