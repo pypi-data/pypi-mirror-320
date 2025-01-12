@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+calculateur_taux_imposition_qc/__init__.py
+calculateur_taux_imposition_qc/calculateur.py
+calculateur_taux_imposition_qc/tax_brackets.csv
+calculateur_taux_imposition_qc.egg-info/PKG-INFO
+calculateur_taux_imposition_qc.egg-info/SOURCES.txt
+calculateur_taux_imposition_qc.egg-info/dependency_links.txt
+calculateur_taux_imposition_qc.egg-info/top_level.txt
+tests/__init__.py
+tests/test_taux_imposition_qc.py
