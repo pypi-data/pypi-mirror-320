@@ -1,0 +1,132 @@
+Metadata-Version: 2.2
+Name: lumbni-client
+Version: 1.0.1
+Summary: A Python SDK for interacting with the Lumbni API
+Author: Lumbni
+Author-email: lumbniai@gamil.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.28.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Lumbni Client SDK
+
+This is a Python SDK for interacting with the Lumbni API. It allows you to generate text using the Lumbni model and handle API responses efficiently.
+
+## Installation
+
+To install the Lumbni client SDK, you can use pip:
+
+```bash
+pip install lumbni-client
+```
+
+## Setup
+
+### Requirements
+
+- Python 3.6 or higher
+- `requests` library (this is automatically installed with the package)
+
+### Configuration
+
+To use the SDK, you'll need an API key from Lumbni. You can obtain this by visiting https://www.lumbni.tech
+
+Once you have the API key, you can initialize the `LumbniClient` class and start generating text.
+
+### Usage Example
+
+1. **Import the SDK**: You can import the `LumbniClient` class from the SDK package.
+2. **Initialize the Client**: Create a client instance by passing your API key and setting the environment mode (`dev` or `prod`).
+3. **Generate Text**: Use the `generate_text()` method to generate text by providing a prompt.
+
+#### Basic Example
+
+```python
+from lumbni_client.client import LumbniClient
+
+# Initialize the client with your API key and the mode (dev or prod)
+client = LumbniClient(api_key="your_api_key", mode="dev")
+
+# Generate text
+response = client.generate_text(prompt="What is the significance of lumbni ?")
+
+# Print the response
+print(response)
+```
+
+#### Advanced Example with Optional Parameters
+
+You can also provide optional parameters for more control over the text generation:
+
+```python
+from lumbni_client.client import LumbniClient
+
+# Initialize the client
+client = LumbniClient(api_key="your_api_key", mode="prod")
+
+# Generate text with additional parameters
+response = client.generate_text(
+    prompt="Explain quantum computing.",
+    system_prompt="Please explain at a beginner level.",
+    model_name="gemini-1.5-flash-8b",
+    temperature=0.8,
+    top_p=0.9,
+    top_k=3,
+    max_output_tokens=150,
+    stream=False
+)
+
+# Print the generated text response
+print(response)
+```
+
+### Response Handling
+
+The response from the API will be a dictionary containing the generated text and additional metadata. Here's an example of handling and processing the API response:
+
+```python
+from lumbni_client.response import handle_api_response
+
+# Call the generate_text method
+response = client.generate_text(prompt="Tell me a joke.")
+
+# Handle the response
+handle_api_response(response)
+```
+
+The `handle_api_response()` function will print the generated text if the request is successful or log an error if something goes wrong.
+
+### Error Handling
+
+If there is an error with the API request (e.g., invalid API key or malformed request), the SDK will raise a `LumbniApiError`.
+
+Example of error handling:
+
+```python
+from lumbni_client.exceptions import LumbniApiError
+
+try:
+    response = client.generate_text(prompt="Tell me a joke.")
+except LumbniApiError as e:
+    print(f"An error occurred: {e}")
+```
+
+### Customizing the API Key and Server URL
+
+- **API Key**: The API key is provided during the `LumbniClient` initialization. Replace `"your_api_key"` with the key you obtained from Lumbni.
+- **Server Mode**: The mode (`dev` or `prod`) can be set during the initialization to switch between development and production servers.
+
+```python
+client = LumbniClient(api_key="your_api_key", mode="dev")  # Use the development server
+client = LumbniClient(api_key="your_api_key", mode="prod")  # Use the production server
+```
