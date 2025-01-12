@@ -1,0 +1,9 @@
+openai_structured/__init__.py,sha256=AIOiKDQvzef5Dk2VJnpE-5IG9MD_pY79DHyeWZNKaJU,749
+openai_structured/buffer.py,sha256=ePP9TLzGLUhkWsMlYYOEBKFku5X9ZHooIOErUytGOBo,1678
+openai_structured/client.py,sha256=OoCgdcT6WP4flZMYDhLwc5Aa0j5G_XUeLCspxL4fYvg,16511
+openai_structured/errors.py,sha256=Pvi0hFVWdhVDi_YXFPLfEsN4wHpkOuGV04bocu_rfRg,1127
+openai_structured/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openai_structured-0.2.0.dist-info/LICENSE,sha256=ovD9nJKY-yumYnvRpdlyTrbvfALV2bZebJ3m2N3UbNI,1068
+openai_structured-0.2.0.dist-info/METADATA,sha256=eFuarLvb7v0DMDaBBeNWyh32ZBbJK_qoJupklmJ0vZ0,6432
+openai_structured-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+openai_structured-0.2.0.dist-info/RECORD,,
