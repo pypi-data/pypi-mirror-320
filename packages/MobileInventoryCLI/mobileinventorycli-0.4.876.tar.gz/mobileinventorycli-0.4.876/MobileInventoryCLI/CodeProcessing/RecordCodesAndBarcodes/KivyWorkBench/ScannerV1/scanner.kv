@@ -1,0 +1,18 @@
+<Scanner>:    
+    Label:
+        font_size: 14  
+        text: "Code|Barcode|Name:"
+
+    TextInput:
+        id:search
+        multiline: False
+        font_size: 14  
+        
+        text: "1234567890"
+        on_text:root.test(self,self.text)
+        on_text_validate:root.submit(self,self.text)
+
+    Button:
+        id:search_submit
+        on_release:root.submit(self,root.ids.search.text)
+        text:"Submit"
