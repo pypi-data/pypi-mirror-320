@@ -1,0 +1,6 @@
+tiktoken
+gitignore_parser
+
+[dev]
+pytest
+twine

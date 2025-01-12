@@ -1,0 +1,15 @@
+setup.py
+src/codebase_dump/__init__.py
+src/codebase_dump/app.py
+src/codebase_dump.egg-info/PKG-INFO
+src/codebase_dump.egg-info/SOURCES.txt
+src/codebase_dump.egg-info/dependency_links.txt
+src/codebase_dump.egg-info/entry_points.txt
+src/codebase_dump.egg-info/requires.txt
+src/codebase_dump.egg-info/top_level.txt
+src/codebase_dump/core/__init__.py
+src/codebase_dump/core/audit_api_uploader.py
+src/codebase_dump/core/codebase_analysis.py
+src/codebase_dump/core/ignore_patterns_manager.py
+src/codebase_dump/core/models.py
+src/codebase_dump/core/output_formatter.py
