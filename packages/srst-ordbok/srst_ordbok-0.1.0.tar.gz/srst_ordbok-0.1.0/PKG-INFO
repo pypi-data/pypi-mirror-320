@@ -1,0 +1,36 @@
+Metadata-Version: 2.2
+Name: srst-ordbok
+Version: 0.1.0
+Summary: A good mix of Norwegian dictionaries
+Home-page: https://github.com/balta2ar/srst-ordbok
+Author: Yuri Bochkarev
+Author-email: baltazar.bz@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: urllib3==2.3.0
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: playwright
+Requires-Dist: Flask
+Requires-Dist: PyQt6
+Requires-Dist: PyQt6-Qt6
+Requires-Dist: PyQt6-sip
+Requires-Dist: PyQt6-WebEngine
+Requires-Dist: PyQt6-WebEngine-Qt6
+Requires-Dist: faust-cchardet
+Requires-Dist: lxml
+Requires-Dist: aiohttp-jinja2
+Requires-Dist: Jinja2
+Requires-Dist: Telethon
+Requires-Dist: PyICU
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
