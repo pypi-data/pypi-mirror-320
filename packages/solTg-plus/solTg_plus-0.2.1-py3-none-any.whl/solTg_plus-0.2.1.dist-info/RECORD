@@ -1,0 +1,15 @@
+solTg/ReportBuilder.py,sha256=ozIWEcOqnbvAO7Bxi3C-dVfYSsoclj7CK8zu_gWLfxs,17836
+solTg/RunAll.py,sha256=1xuEdTKoE0Nj57zwVKRmNJORTMfukN12UhOZdmwbNJc,8499
+solTg/SolParser.py,sha256=eXzJFMnj5zV8pTUlQqs8-CW66tqNltGwxLkVoNqjWbk,11115
+solTg/SolidityTestGen.py,sha256=eppvVdUsiMXgyo8jWCQGPuuhCIPU1NfcnA-z8jPxuY4,29788
+solTg/TestWrapper.py,sha256=MCXkJJ7n4pPhApMb-3OIozYEbPseBRHV3SsuAVQuUZA,15626
+solTg/Utils.py,sha256=WV-aFc09zKQp-_EKUZjOzey7AryqJl5smVCyuekVQG8,1056
+solTg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+solTg_plus-0.2.1.data/data/deps/solc,sha256=TRgNiTLGaxoEoGySDy2IRLn0gm-qrDkDDbloFmQBY3s,18335648
+solTg_plus-0.2.1.data/data/deps/tgnonlin,sha256=8FFPzpDcyARrciDEFZai6vHKUHBMYlfJFMJRhmlPBdk,5651952
+solTg_plus-0.2.1.dist-info/LICENSE.txt,sha256=CuBIWlvTemPmNgNZZBfk6w5lMzT6bH-TLKOg6F1K8ic,35148
+solTg_plus-0.2.1.dist-info/METADATA,sha256=7d5LMMQq26Wzo50DDKCy0IxNjoQGGk_vy6ld1FhF71E,6659
+solTg_plus-0.2.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+solTg_plus-0.2.1.dist-info/entry_points.txt,sha256=lPOBLtqMixl36BbpjbbuG5GKBbC2ubDBPwf9s_OpMTs,49
+solTg_plus-0.2.1.dist-info/top_level.txt,sha256=WCk37l1o3E5GDYl2mNVZWPN7i0lNtlyUp6EENfIWBs8,6
+solTg_plus-0.2.1.dist-info/RECORD,,

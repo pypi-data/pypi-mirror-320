@@ -1,0 +1,2 @@
+[console_scripts]
+solTg-plus = solTg.RunAll:main
