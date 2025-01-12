@@ -1,0 +1,9 @@
+enpass2onepassword/.editorconfig,sha256=YfCHz-C9vr9y8hn5_vVpZjSTeTywZuHOT3gEiPnWiwc,34
+enpass2onepassword/__init__.py,sha256=FtseipUr3ZB_dxhZ7IQl6xTRduFjvqLxiVHxkdclOV4,130
+enpass2onepassword/__main__.py,sha256=qGkWWV3T5pLW7Xr73zM7KU5vcoF7kbfFm2UZiVKuDjo,6699
+enpass2onepassword/migration.py,sha256=c0dI-vrd6MptaobiAcdJn24vhJtbvw5A1_RYeJFeC_c,13168
+enpass2onepassword-0.3.1.dist-info/METADATA,sha256=LLO6s7G2jhdMjM31q1A6QWmJjaKj_D6ZkjOxnXXiuI4,13016
+enpass2onepassword-0.3.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+enpass2onepassword-0.3.1.dist-info/entry_points.txt,sha256=dhY1UCMUJ3zMW3fSjS3QseZPlSN9aNoMnqGWu_WkLTI,72
+enpass2onepassword-0.3.1.dist-info/licenses/LICENSE,sha256=dSqO6Z92ItdkIrtbDm-pLuNfC4EnZWTwfC8tI4zqXE4,35145
+enpass2onepassword-0.3.1.dist-info/RECORD,,
