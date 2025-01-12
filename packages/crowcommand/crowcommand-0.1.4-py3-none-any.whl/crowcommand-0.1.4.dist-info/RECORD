@@ -1,0 +1,10 @@
+crowcommand/__init__.py,sha256=LqGCbNIomV5TYFEUsbrGJPrhlUMVPYLlTbJruyvoklY,1504
+crowcommand/client.py,sha256=3kqdfWuADw5cq0I-WmYIik1oX9QMJp--Imb8aVP_3t4,1053
+crowcommand/internal_logger.py,sha256=1SKQ-SXgF29ZIDG97bEtgShi_DCLm3UnxmLEXie8rm4,494
+crowcommand/logger.py,sha256=LAk2dPMcLWSHybb2qkHGtFwnh8r0fvpGLXQbvMSGtV4,6697
+crowcommand-0.1.4.dist-info/AUTHORS.rst,sha256=oiUtBCzUJcQCCfWv4bqu3fOInG_ci9TXMNvLQ4JGN3M,166
+crowcommand-0.1.4.dist-info/LICENSE,sha256=IafOh1zrWi0bAokGF_wiNQRhVTUfu_uX95yBHBXVm8g,588
+crowcommand-0.1.4.dist-info/METADATA,sha256=Y5g6ywjrt8HWNly_R_cE0XwLvJODgwJ6ccUBtA20qBY,2045
+crowcommand-0.1.4.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+crowcommand-0.1.4.dist-info/top_level.txt,sha256=c8PSdaoYXTd2y8ay7KCjiBSaVVtLPyXnA3IiUbc2qjA,12
+crowcommand-0.1.4.dist-info/RECORD,,
