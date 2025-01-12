@@ -1,0 +1,9 @@
+pyproject.toml
+pytest_snob/__init__.py
+pytest_snob/plugin.py
+pytest_snob.egg-info/PKG-INFO
+pytest_snob.egg-info/SOURCES.txt
+pytest_snob.egg-info/dependency_links.txt
+pytest_snob.egg-info/entry_points.txt
+pytest_snob.egg-info/requires.txt
+pytest_snob.egg-info/top_level.txt
