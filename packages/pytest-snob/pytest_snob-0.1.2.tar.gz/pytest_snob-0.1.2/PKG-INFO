@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: pytest-snob
+Version: 0.1.2
+Summary: A pytest plugin that only selects meaningful python tests to run.
+Author-email: Bertrand Chardon <bertrand.chardon@gmail.com>, Alexandre Pasmantier <alex.pasmant@gmail.com>
+Project-URL: Homepage, https://github.com/alexpasmantier/snob
+Keywords: snob,pytest,testing,rust,rts,maturin,pyo3
+Classifier: Framework :: Pytest
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: snob_lib
+Requires-Dist: pytest
