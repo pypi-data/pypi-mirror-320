@@ -1,0 +1,74 @@
+Metadata-Version: 2.4
+Name: arma3cli
+Version: 0.3.0
+Summary: CLI tool for deploying and managing Arma 3 servers
+Author: Andrew Wade
+Requires-Python: >=3.8.1
+Requires-Dist: click>=8.1.7
+Requires-Dist: rich>=13.7.0
+Description-Content-Type: text/markdown
+
+# Arma 3 Server CLI
+
+A command-line interface tool for managing Arma 3 servers. This tool simplifies the process of deploying and managing Arma 3 servers.
+
+## Installation
+
+You can install the package directly from PyPI:
+
+```bash
+pip install arma3cli
+```
+
+## Features
+
+- Initialize new Arma 3 server configurations
+- Start and stop Arma 3 servers
+- Manage server configurations
+- Monitor server status
+
+## Usage
+
+### Initialize a new server configuration
+
+```bash
+arma3cli init
+```
+
+### Start a server
+
+```bash
+arma3cli start /path/to/server
+```
+
+### Stop a server
+
+```bash
+arma3cli stop /path/to/server
+```
+
+## Development
+
+To set up the development environment:
+
+1. Clone the repository
+2. Install Poetry (if not already installed):
+   ```bash
+   pip install poetry
+   ```
+3. Install dependencies:
+   ```bash
+   make dev-setup
+   ```
+4. Install the package in development mode:
+   ```bash
+   make install
+   ```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details. 
