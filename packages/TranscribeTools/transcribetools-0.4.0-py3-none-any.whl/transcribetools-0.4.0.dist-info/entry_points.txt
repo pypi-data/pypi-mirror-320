@@ -1,0 +1,2 @@
+[console_scripts]
+localwhisper = transcribetools.local_whisper:cli
