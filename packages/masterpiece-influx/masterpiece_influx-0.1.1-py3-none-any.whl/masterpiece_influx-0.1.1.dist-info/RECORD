@@ -1,0 +1,10 @@
+masterpiece_influx/__init__.py,sha256=Xg27wyoEblKC4ee7bkUMO0vBAicrpgZ54-7Xi-wkOqg,201
+masterpiece_influx/influx.py,sha256=OqB6bu2Y8sd6Cl_O7Gmj9SLn9pbcCX9AiAptIcwEGNI,7693
+masterpiece_influx/influx_measurement.py,sha256=PlH5avNCww5_R6UAnfU-xvyM_ub9xLlB6KFWcDvxsQA,3521
+masterpiece_influx/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+masterpiece_influx-0.1.1.dist-info/LICENSE.rst,sha256=P7_vqs6bCezlTgOp6YsAiFOc71hUF10u4zP5ohL8h5s,1096
+masterpiece_influx-0.1.1.dist-info/METADATA,sha256=XSpsKUucaW2ommD5peI3Kwg-D3vbjEZYLDkQ0DC_iZM,4007
+masterpiece_influx-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+masterpiece_influx-0.1.1.dist-info/entry_points.txt,sha256=P5mdvUMAWzPhRUCUZzmw4Nwchkp-mRfPke9kpewo168,64
+masterpiece_influx-0.1.1.dist-info/top_level.txt,sha256=A5pz97-ZGlAP82wo6ZxM5HKaLkW-MYDGjaqWM-roU-w,19
+masterpiece_influx-0.1.1.dist-info/RECORD,,
