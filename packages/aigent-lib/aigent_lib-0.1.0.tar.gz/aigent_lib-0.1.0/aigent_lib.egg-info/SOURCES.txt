@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+aigent_lib/__init__.py
+aigent_lib/app.py
+aigent_lib/cli.py
+aigent_lib/main.py
+aigent_lib.egg-info/PKG-INFO
+aigent_lib.egg-info/SOURCES.txt
+aigent_lib.egg-info/dependency_links.txt
+aigent_lib.egg-info/entry_points.txt
+aigent_lib.egg-info/top_level.txt
