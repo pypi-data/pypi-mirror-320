@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+convert_to_confluence.egg-info/PKG-INFO
+convert_to_confluence.egg-info/SOURCES.txt
+convert_to_confluence.egg-info/dependency_links.txt
+convert_to_confluence.egg-info/top_level.txt
+convert_to_confluence_wiki/__init__.py
+convert_to_confluence_wiki/convert_to_confluence.py
