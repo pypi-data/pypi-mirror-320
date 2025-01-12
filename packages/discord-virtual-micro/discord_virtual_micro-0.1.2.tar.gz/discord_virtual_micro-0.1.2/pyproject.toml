@@ -1,0 +1,48 @@
+[project]
+name = "discord-virtual-micro"
+version = "0.1.2"
+description = "Discord Virtual Microphone is a bot that leverages AI from Silero Models to read out loud any text you type in Discord. This bot can be particularly useful for individuals without access to a physical microphone."
+authors = [{ name = "Vazgen", email = "norvardyanvazgen@gmail.com" }]
+dependencies = [
+    "soundcard",
+    "librosa",
+    "num2words",
+    "transliterate",
+    "setuptools",
+    "aiorun",
+    "discord.py-self",
+    "silero",
+    "llvmlite==0.43.0",
+]
+
+readme = "README.md"
+requires-python = "<3.13, >= 3.10"
+
+[project.urls]
+Homepage = "https://github.com/Vazgen005/discord-virtual-micro"
+Issues = "https://github.com/Vazgen005/discord-virtual-micro/issues"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[project.scripts]
+discord-virtual-micro = "discord_virtual_micro:main"
+
+[[tool.rye.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cpu"
+
+[tool.rye.scripts]
+start = { cmd = "python -m discord_virtual_micro s" } # idk why soundcard requires additional argument
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/discord_virtual_micro"]

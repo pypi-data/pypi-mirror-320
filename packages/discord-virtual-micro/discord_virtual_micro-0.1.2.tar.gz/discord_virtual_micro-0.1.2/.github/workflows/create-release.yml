@@ -1,0 +1,28 @@
+name: create release
+
+on:
+    release:
+      types: [created]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: Install the latest version of rye
+              uses: eifinger/setup-rye@v3
+            
+            - name: Install rename
+              run: sudo apt install -y rename
+
+            - name: Build
+              run: rye build && rename 's/^(.+?)-.+\.(tar\.gz)$/$1.$2/' ./dist/*.*
+
+            - name: Release
+              uses: softprops/action-gh-release@v2
+              if: startsWith(github.ref, 'refs/tags/')
+              with:
+                files: |
+                 dist/*.whl
+                 dist/*.tar.gz
