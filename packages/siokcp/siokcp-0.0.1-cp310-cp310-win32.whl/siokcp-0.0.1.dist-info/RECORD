@@ -1,0 +1,15 @@
+siokcp/__init__.py,sha256=DIvVFIsfMkFzUig2D4FZ7S8GL2jc_PGneM4zWD4B09A,179
+siokcp/_kcp.c,sha256=5enGUmXzsB4t1ydreQU1X8GJsFHJ8hxhkXdoh7u1gys,1415024
+siokcp/_kcp.cp310-win32.pyd,sha256=1PNfr8C78U_YUD5Jbnj40_MMpqFrY6G81NbL-peWQM4,140800
+siokcp/_kcp.pxd,sha256=A261Y3aUjl0gC91T7vARR-6KKo22789-uCMDV6lKopA,4525
+siokcp/_kcp.pyx,sha256=oD-v3R9r7-I5urM8VAzdBvFc5xFWv7WqYnK0fE7nICA,12417
+siokcp/asyncio/__init__.py,sha256=NVSX5LcefdmUQ4k5ac77wGFPBpKIyjz21oHzwtuveZI,174
+siokcp/asyncio/client.py,sha256=_sqEqQyepRZ5bRzOwcg-ghEUOBsx_Gmk9EaQSi3DihM,2101
+siokcp/asyncio/protocol.py,sha256=e14YPRQleR2MP9V0hVeoTaN1jdOIFn8inHIaNv6yamE,12932
+siokcp/asyncio/server.py,sha256=3BI3GDqEesXOyA2Mm6V6pMGNieGfTKLrGKuc4sXvHnE,1993
+siokcp/asyncio/transport.py,sha256=DDWYRVlX6n5BbH-qRlZzGVi0LKxUPLxuTfUhK1nPZ-A,2004
+siokcp/asyncio/utils.py,sha256=mkPHck8tVgv6_z8M_pG2-b0sYBoHZX4Vx5sAE83lvsQ,595
+siokcp-0.0.1.dist-info/METADATA,sha256=vQwawm_Dt_D4rG9fnitPCOppyX9uVXKpH6pLRNZm2ZE,6562
+siokcp-0.0.1.dist-info/WHEEL,sha256=rLq6zy99NFadnn104_KE5z0qCJfRTCVsMafVXwuXNlE,97
+siokcp-0.0.1.dist-info/top_level.txt,sha256=ckj3Dkq6ap_-Tc_rGBgcwANqA44_kvr_4zsLIDlwpkg,7
+siokcp-0.0.1.dist-info/RECORD,,
