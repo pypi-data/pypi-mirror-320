@@ -1,0 +1,3 @@
+[console_scripts]
+add-watermark = inked.watermark:add_watermark
+
