@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: slime-nlp
+Version: 0.1.0
+Summary: SLIME - Statistical and Linguistic Insights for Model Explanation
+Author: Tibério Pereira
+Author-email: tiberio@fisica.ufrn.br
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: captum (==0.7.0)
+Requires-Dist: html2image (==2.0.5)
+Requires-Dist: ipython (==8.12.3)
+Requires-Dist: matplotlib (==3.9.2)
+Requires-Dist: numpy (==2.1.2)
+Requires-Dist: pandas (==2.2.3)
+Requires-Dist: scikit-learn (==1.5.2)
+Requires-Dist: seaborn (>=0.13.2,<0.14.0)
+Requires-Dist: setuptools (>=75.6.0,<76.0.0)
+Requires-Dist: statsmodels (>=0.14.4,<0.15.0)
+Requires-Dist: torch (==2.3.0)
+Requires-Dist: torcheval (==0.0.7)
+Requires-Dist: transformers (==4.46.0)
