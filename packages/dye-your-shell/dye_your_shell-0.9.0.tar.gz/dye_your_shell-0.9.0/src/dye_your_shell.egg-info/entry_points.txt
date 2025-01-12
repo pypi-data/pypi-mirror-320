@@ -1,0 +1,2 @@
+[console_scripts]
+dye = dye.dye:Dye.main
