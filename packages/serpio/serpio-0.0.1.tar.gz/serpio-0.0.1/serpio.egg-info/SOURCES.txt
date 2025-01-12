@@ -1,0 +1,7 @@
+README.md
+hello.py
+pyproject.toml
+serpio.egg-info/PKG-INFO
+serpio.egg-info/SOURCES.txt
+serpio.egg-info/dependency_links.txt
+serpio.egg-info/top_level.txt
