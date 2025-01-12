@@ -1,0 +1,41 @@
+Metadata-Version: 2.2
+Name: realerikrani-baseclient
+Version: 1.0.1
+Summary: Foundation for building API clients. A wrapper around requests.
+License: Apache-2.0
+Project-URL: Repository, https://github.com/realerikrani/baseclient
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: requests==2.*
+
+# baseclient
+
+Foundation for building API clients. A wrapper around requests which is licensed under the Apache License 2.0. See the LICENSE file for more details. The original NOTICE file is included in this project and extended with this project's notice.
+
+```py
+import requests
+from realerikrani.baseclient import BaseAdapter, BaseClient
+
+
+adapter = BaseAdapter()
+with requests.Session() as session:
+    baseclient = BaseClient(session=session, adapter=adapter, url=YOUR_BASE_URL)
+    YourCustomClient(baseclient)
+```
+
+
+```py
+@dataclass
+class YourCustomClient:
+    http_client: BaseClient
+
+    def create(self: Self, name: str) -> YourModel:
+        url = f"{self.http_client.url}/things"
+
+        response = self.http_client.post(
+            url, data={"name": name}, auth=None
+        ).json()
+        return YourModel.make(response["thing"])
+```
