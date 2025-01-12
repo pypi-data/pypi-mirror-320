@@ -1,0 +1,54 @@
+Metadata-Version: 2.2
+Name: paymentAI
+Version: 0.1.9
+Summary: A package to handle transaction events and send payloads.
+Home-page: https://github.com/AgentPaid/ap-client
+Author: paymentAI
+Author-email: janaka@agentpaid.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# PaymentAI
+
+A Python client for interacting with the AgentPaid API. This package allows you to send transaction events to the API.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install PaymentAI.
+
+```bash
+pip install paymentAI
+```
+
+## Usage
+
+```python
+from PaymentAI import Client
+
+# Initialize with API token (and custom endpoint if necessary)
+api_token = "your_api_token_here"
+client = Client(api_token)
+
+# Prepare data for the event
+event_name = "news"
+data = {
+    "foo": "bar"
+}
+
+# Send the transaction
+response = client.send_transaction(event_name, data)
+```
