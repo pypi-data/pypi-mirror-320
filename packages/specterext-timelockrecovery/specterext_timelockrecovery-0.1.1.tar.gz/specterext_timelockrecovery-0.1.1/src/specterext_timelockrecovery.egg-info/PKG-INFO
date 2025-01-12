@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: specterext-timelockrecovery
+Version: 0.1.1
+Summary: Specter Desktop extension to create timelock-based recovery plans
+Author: Oren
+Project-URL: Homepage, https://github.com/oren-z0/timelockrecovery-specter
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Flask
+Requires-Python: <4.0,>=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<div align="center">
+  <img src="./src/oren-z0/specterext/timelockrecovery/static/timelockrecovery/img/logo160.png" />
+</div>
+
+# Timelock Recovery Service
+
+An extension for [Specter Desktop](https://github.com/cryptoadvance/specter-desktop) to create Timelock Recoveries.
+
+PyPi package: [specterext-timelockrecovery](https://pypi.org/project/specterext-timelockrecovery)
+
+## Watch the video (demo starts at 12:08):
+[![Watch the video](https://i.nostr.build/iinTjzc6TF4uAUj9.png)](https://v.nostr.build/a3JwIlQqwcb8WLEe.mp4)
