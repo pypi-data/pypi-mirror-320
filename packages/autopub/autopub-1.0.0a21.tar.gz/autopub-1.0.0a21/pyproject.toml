@@ -1,0 +1,93 @@
+[project]
+requires-python = ">=3.9.0,<4.0"
+name = "autopub"
+version = "1.0.0-alpha.21"
+description = "Automatic package release upon pull request merge"
+authors = [
+    { name = "Justin Mayer", email = "entroP@gmail.com" },
+    { name = "Patrick Arminio", email = "patrick.arminio@gmail.com" },
+]
+license = "AGPL-3.0"
+readme = "README.md"
+keywords = ["automatic", "packaging", "publish", "release", "version"]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Software Distribution",
+    "Topic :: System :: Systems Administration",
+]
+
+[tool.poetry]
+repository = "https://github.com/autopub/autopub"
+include = ["autopub/py.typed"]
+name = "autopub"
+version = "1.0.0-alpha.21"
+description = "Automatic package release upon pull request merge"
+authors = [
+    "Justin Mayer <entroP@gmail.com>",
+    "Patrick Arminio <patrick.arminio@gmail.com>",
+]
+
+[tool.poetry.urls]
+"Issue Tracker" = "https://github.com/autopub/autopub/issues"
+
+[tool.poetry.dependencies]
+python = ">=3.9.0,<4.0"
+python-frontmatter = "^1.1.0"
+tomlkit = "^0.13.2"
+pydantic = "^2.10.5"
+dunamai = "^1.23.0"
+
+
+[tool.poetry.dev-dependencies]
+backoff = { version = "~=2.1.2", optional = true }
+click = { version = "*", optional = true }
+linkheader = { version = "*", optional = true }
+requests = { version = "*", optional = true }
+httpx = { version = "*", optional = true }
+# Tasks
+invoke = "^1.6"
+
+# Docs
+furo = "^2021.9.22"
+livereload = "^2.6"
+myst-parser = "^0.15"
+Sphinx = "^4.2"
+
+# Linting
+black = "23.3.0"
+mypy = "^0.971"
+pytest = "^7.1.2"
+pytest-httpserver = "^1.0.8"
+
+[tool.poetry.extras]
+github = ["backoff", "click", "linkheader", "requests", "httpx"]
+
+[tool.poetry.scripts]
+autopub = "autopub.cli:app"
+
+[tool.poetry.group.dev.dependencies]
+pytest-cov = "^4.1.0"
+pytest-mock = "^3.12.0"
+time-machine = "^2.16.0"
+
+[tool.autopub]
+project-name = "AutoPub"
+git-username = "botpub"
+git-email = "52496925+botpub@users.noreply.github.com"
+append-github-contributor = true
+
+
+[tool.ruff]
+select = ["I", "E", "F", "UP"]
+exclude = ["typings"]
+force-exclude = true
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
