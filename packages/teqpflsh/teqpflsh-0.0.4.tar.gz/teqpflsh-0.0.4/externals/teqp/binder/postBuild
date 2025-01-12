@@ -1,0 +1,4 @@
+#!/bin/bash
+set -ex
+CXX=clang++ python setup.py install
+python -m pip install CoolProp

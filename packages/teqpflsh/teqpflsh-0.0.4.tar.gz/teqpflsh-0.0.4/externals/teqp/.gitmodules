@@ -1,0 +1,21 @@
+[submodule "externals/mcx"]
+	path = externals/mcx
+	url = https://github.com/ianhbell/mcx.git
+[submodule "externals/Eigen"]
+	path = externals/Eigen
+	url = https://gitlab.com/libeigen/eigen.git
+[submodule "externals/autodiff"]
+	path = externals/autodiff
+	url = https://github.com/autodiff/autodiff
+[submodule "externals/pybind11"]
+	path = externals/pybind11
+	url = https://github.com/pybind/pybind11.git
+[submodule "externals/Catch2"]
+	path = externals/Catch2
+	url = https://github.com/catchorg/Catch2.git
+[submodule "externals/json-schema-validator"]
+	path = externals/json-schema-validator
+	url = https://github.com/pboettch/json-schema-validator
+[submodule "externals/REFPROP-interop"]
+	path = externals/REFPROP-interop
+	url = https://github.com/ianhbell/REFPROP-interop
