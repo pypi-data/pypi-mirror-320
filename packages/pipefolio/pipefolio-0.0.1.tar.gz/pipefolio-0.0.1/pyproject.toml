@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pipefolio"
+authors = [{ name = "Kachain Fuangsung" }, { email = "kachain.f@outlook.com" }]
+description = "A Pipeline-Oriented Portfolio Optimization Framework"
+readme = "README.md"
+requires-python = ">=3.12"
+keywords = []
+license = { file = "LICENSE" }
+classifiers = ["Programming Language :: Python :: 3"]
+dependencies = [
+    "scikit-learn >1, <2",
+    "skfolio <1",
+    "pydantic >=2, <3",
+    "Deprecated >=1.2, <2",
+    "empyrical-reloaded >=0.5",
+]
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = { attr = "pipefolio.__version__" }
+
+[project.urls]
+Homepage = "https://github.com/kfuangsung/pipefolio"
+Documentation = "https://kfuangsung.github.io/pipefolio"
+Repository = "https://github.com/kfuangsung/pipefolio.git"
+Issues = "https://github.com/kfuangsung/pipefolio/issues"
+Changelog = "https://github.com/kfuangsung/pipefolio/blob/main/CHANGELOG.md"

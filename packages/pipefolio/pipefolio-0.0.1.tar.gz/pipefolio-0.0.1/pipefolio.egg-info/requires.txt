@@ -1,0 +1,5 @@
+scikit-learn<2,>1
+skfolio<1
+pydantic<3,>=2
+Deprecated<2,>=1.2
+empyrical-reloaded>=0.5
