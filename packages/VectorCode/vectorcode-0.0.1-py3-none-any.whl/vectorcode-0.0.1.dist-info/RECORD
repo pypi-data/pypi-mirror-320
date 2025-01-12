@@ -1,0 +1,12 @@
+vectorcode-0.0.1.dist-info/METADATA,sha256=e8no8TxUF5jDVNG1rsgrm4VmaO5apcVnn8E3s4zn99M,10004
+vectorcode-0.0.1.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+vectorcode-0.0.1.dist-info/entry_points.txt,sha256=POF7Jw2uybC0t8hCeWX0iHE4AOp5xMs1G35ZMKUByMA,68
+vectorcode/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vectorcode/cli_utils.py,sha256=yyHwl0MuAIscmFP-mr8DG7T9RtIgJme1ZiGM3cHGpcc,5927
+vectorcode/common.py,sha256=O7h79u0DJWHBCtOMFIEWx6y22NK5Wa5RblAuIxePvdE,2249
+vectorcode/drop.py,sha256=wzGYhQNeg_-ZFI0J4peLHc-WeDLKOXL6lkBPrLenmNQ,683
+vectorcode/ls.py,sha256=OA-xMWcd9n1eJXsL3_sSWWptDe4E1IdeotTKFSbstMU,1092
+vectorcode/main.py,sha256=xqesV6zwWk-q_80Jf1Jn5GtvVGrHXv-GZBTOrMPffwY,654
+vectorcode/query.py,sha256=Dhc8kENiSXzOyn4zNzT2OUVjepoclImyl31NGLQ1THI,2337
+vectorcode/vectorise.py,sha256=0FtoZhePS4UZqn54X45pcjZXiLmyfnKOz7rbT7Hchco,1316
+vectorcode-0.0.1.dist-info/RECORD,,
