@@ -1,0 +1,10 @@
+attrs
+bs4
+certvalidator
+colorama
+cryptoparser==1.0.0
+pyfakefs
+python-dateutil
+requests
+dnspython
+urllib3
