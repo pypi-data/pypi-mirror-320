@@ -1,0 +1,62 @@
+# Python Mempool API
+
+Welcome to the **Python Mempool API** documentation!  Here, we take a wild ride through the world of Bitcoin using the [mempool.space](https://mempool.space/) API.  
+Buckle up, because we're about to fetch some serious data!
+
+## Introduction
+
+Ever wanted to know the price of Bitcoin in your favorite currency? Or maybe check the balance of your Bitcoin address?  
+Well, you've come to the right place!  
+This Python package is your trusty sidekick in the quest for Bitcoin knowledge.
+
+## Features
+
+- **Get BTC Price**: Find out how much Bitcoin is worth in various currencies. Spoiler: it's usually a lot!
+- **Check Address Balance**: See how much Bitcoin you have (or don’t have) in your wallet. No judgment here! Just remember, **"*Don't Panic!*"**
+- **Validate BTC Address**: Ensure your address is valid before sending your life savings.
+- **Get Last Block Height**: Stay updated on the latest block height. Impress your friends with your blockchain knowledge!
+- **Active Mining Pools**: Discover where the cool kids are mining Bitcoin.
+- **Get Network Fees**: Know the fees before you send Bitcoin. Because nobody likes surprise charges.
+
+## Overview
+
+- **get_btc_price(*currency: str*)**: This component takes as input a `str` and returns a `float` indicating the current value of Bitcoin in various currencies.  
+Here are the one supported:    
+    - ***USD***
+    - ***EUR***
+    - ***GBP***
+    - ***CAD***
+    - ***CHF***
+    - ***AUD***
+    - ***JPY***
+
+- **get_btc_address_balance(*address: str*)**: This component takes as input a `str` and returns a `float` indicating the current BTC balance of the provided address.
+- **btc_address_validation(*address: str*)**: This component takes as input a `str` and returns `True` if the provided address is valid or `False` if it is not.
+- **get_last_btc_block_height()**: This component returns an `int` indicating the last Bitcoin block.
+- **get_active_btc_pools()**: This  componnt returns a `list` that contains of the major pools currently available.
+- **get_btc_fees()**: This component returns a tuple of `int` that represent the:
+    - `fastestFee`
+    - `economyFee`
+    - `minimumFee`
+
+## How To Use
+
+You can easily use and install this package by simply typing:
+
+```
+pip install mempool-api
+```
+
+## Conclusion
+
+Congratulations! You've just unlocked the secret to effortlessly fetching Bitcoin data without needing a PhD or a magic crystal ball.  
+This script is like your friendly neighborhood Bitcoin butler—ready to serve up various topics around the Bitcoin world with just a few lines of code.
+
+Whether you're trying to impress your friends with your newfound knowledge or just want to keep an eye on your digital treasure, this script has got your back.  
+So go ahead, tinker with it, and remember: in the world of Bitcoin, the only thing more volatile than the price is your coffee consumption while you watch the charts.
+
+If you encounter any issue or would like to participate in the development of this package, feel free to DM me on [X.com](https://x.com/k0g1t0?s=11)
+
+Happy coding!
+
+~*It is a mistake to think you can solve any major problems just with potatoes.*~
