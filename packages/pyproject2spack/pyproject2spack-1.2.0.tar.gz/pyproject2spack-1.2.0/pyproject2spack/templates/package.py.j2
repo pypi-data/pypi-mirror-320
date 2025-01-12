@@ -1,0 +1,95 @@
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Spack Project Developers. See the top-level COPYRIGHT file for details.
+#
+# SPDX-License-Identifier: (Apache-2.0 OR MIT)
+
+from spack.package import *
+
+
+class {{ metadata.class_name }}(PythonPackage):
+    "{{ metadata.description }}"
+
+    homepage = "{{ metadata.homepage }}"
+    url = "{{ metadata.url }}"
+    git = "{{ metadata.git }}"
+
+    # TODO: populate maintainers as needed
+    # maintainers("saliei")
+
+    license("{{ metadata.license }}")
+
+    version("develop-{{ metadata.version }}", branch="main", preferred=True)
+
+    {% if "main" in matches -%}
+    {% for package in matches.main.constraint_found -%}
+    depends_on("{{ package.name }}@{{ package.version }}:", type=("build", "run"))
+    {% endfor -%}
+    # WARNING: for the following packages no available spack 
+    # version could satisfy the pyproject.toml constraint.
+    {% for package in matches.main.constraint_not_found -%}
+    depends_on("{{ package.name }}", type=("build", "run"))
+    {% endfor -%}
+    
+    # TODO: for the following packages no spack package could be found.
+    {% for package in matches.main.package_not_found -%}
+    #depends_on("{{ package.name }}@{{ package.version }}:", type=("build", "run"))
+    {% endfor -%}
+    {% endif %}
+    {% if "dev" in matches -%}
+    variant("dev", default=False, description="Install development dependencies.")
+    {% for package in matches.dev.constraint_found -%}
+    depends_on("{{ package.name }}@{{ package.version }}:", type=("build", "run"))
+    {% endfor -%}
+    # WARNING: for the following packages no available spack 
+    # version could satisfy the pyproject.toml constraint 
+    {% for package in matches.dev.constraint_not_found -%}
+    depends_on("{{ package.name }}", type=("build", "run"))
+    {% endfor -%}
+    
+    # TODO: for the following packages no spack package could be found.
+    {% for package in matches.dev.package_not_found -%}
+    #depends_on("{{ package.name }}@{{ package.version }}:", type=("build", "run"))
+    {% endfor -%}
+    {% endif %}
+    {% if "docs" in matches -%}
+    variant("docs", default=False, description="Install documentation dependencies.")
+    {% for package in matches.docs.constraint_found -%}
+    depends_on("{{ package.name }}@{{ package.version }}:", type=("build", "run"))
+    {% endfor -%}
+    # WARNING: for the following packages no available spack 
+    # version could satisfy the pyproject.toml constraint.
+    {% for package in matches.docs.constraint_not_found -%}
+    depends_on("{{ package.name }}", type=("build", "run"))
+    {% endfor -%}
+    # TODO: for the following packages no spack package could be found.
+    {% for package in matches.docs.package_not_found -%}
+    #depends_on("{{ package.name }}@{{ package.version }}:", type=("build", "run"))
+    {% endfor -%}
+    {% endif %}
+    def setup_build_environment(self, env):
+        env.set("POETRY_SOURCE_AUTH_SKAO", '')
+        env.set("POETRY_REPOSITORIES_SKAO_URL", "{{ ska_artefact_repo_url }}")
+
+    def install(self, spec, prefix):
+        poetry = which("poetry")
+        poetry("config", "virtualenvs.create", "false")
+        poetry("install", "--no-dev", "--no-interaction")
+        
+        if "+dev" in spec:
+            poetry("install", "--with", "dev", "--no-interaction")
+        if "+docs" in spec:
+            poetry("install", "--with", "docs", "--no-interaction")
+        
+        super().install(spec, prefix)
+
+    def build_args(self, spec, prefix):
+        return ["--no-deps"]
+
+    @property
+    @llnl.util.lang.memoized
+    def _output_version(self):
+        spec_vers_str = str(self.spec.version.up_to(3))
+        if "develop" in spec_vers_str:
+            # Remove "develop-" from the version in spack
+            spec_vers_str = spec_vers_str.partition('-')[2]
+        return spec_vers_str

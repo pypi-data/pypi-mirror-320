@@ -1,0 +1,2 @@
+[console_scripts]
+pyproject2spack = pyproject2spack.pyproject2spack:main
