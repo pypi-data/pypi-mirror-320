@@ -1,0 +1,22 @@
+Metadata-Version: 2.2
+Name: tilly-goodbye
+Version: 0.0.1
+Summary: Example plugin for tilly.
+Home-page: https://github.com/tilly-pub/tilly-goodbye
+Author: Ronald Luitwieler
+Author-email: ronald.luitwieler@gmail.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: tilly
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# tilly-goodbye
+
+Example plugin for tilly.

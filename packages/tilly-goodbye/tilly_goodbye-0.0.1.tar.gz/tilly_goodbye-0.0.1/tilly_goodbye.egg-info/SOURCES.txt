@@ -1,0 +1,9 @@
+README.md
+setup.py
+tilly_goodbye.py
+tilly_goodbye.egg-info/PKG-INFO
+tilly_goodbye.egg-info/SOURCES.txt
+tilly_goodbye.egg-info/dependency_links.txt
+tilly_goodbye.egg-info/entry_points.txt
+tilly_goodbye.egg-info/requires.txt
+tilly_goodbye.egg-info/top_level.txt
