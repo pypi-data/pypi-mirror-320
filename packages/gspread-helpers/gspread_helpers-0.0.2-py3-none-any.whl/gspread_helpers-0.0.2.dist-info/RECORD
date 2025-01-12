@@ -1,0 +1,8 @@
+gspread_helpers/__init__.py,sha256=V8bUmjvGnXljz3c13JDu16y7qFiGBT3LNXD9EjypwO8,310
+gspread_helpers/range_name/__init__.py,sha256=0_c2AwxmDr5WJIUMbtXDNBvZqmHqFUfPWexCmCLCqTc,158
+gspread_helpers/range_name/exceptions.py,sha256=6h02g7QNttn_USMrC3oe80orx9jDn7Grmrg24h70bcI,284
+gspread_helpers/range_name/range_name.py,sha256=r2yM8v29ZOC2kC_Kwz4ZC1mivGerq9mch8WWwNKp5lM,4432
+gspread_helpers/range_name/validations.py,sha256=GskV5PZEyxm8ncZbtVRjzLVx7YOzEqlj4cVgQ15n_BQ,2122
+gspread_helpers-0.0.2.dist-info/METADATA,sha256=fxY7wx4rh9V_-zwCZ8-M6vooztAJ-9koZRR-L2_MHB8,2403
+gspread_helpers-0.0.2.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+gspread_helpers-0.0.2.dist-info/RECORD,,
