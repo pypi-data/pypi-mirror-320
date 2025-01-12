@@ -1,0 +1,11 @@
+.idea
+__pycache__
+build
+dist
+cmake-build-*
+uv.lock
+src/synthesistoolkit/rawwaves
+.DS_Store
+*.wav
+rebuild.sh
+tmp.py

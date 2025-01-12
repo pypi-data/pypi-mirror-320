@@ -1,0 +1,4 @@
+[submodule "stk"]
+	path = stk
+	url = https://github.com/thestk/stk
+	ignore = dirty
