@@ -1,0 +1,161 @@
+[build-system]
+requires = ["setuptools>=57.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# Project settings -----------------------------------------------------------------------------------------------------
+[project]
+name = "muzlin"
+dynamic = ["version"]
+description = "Muzlin: a filtering toolset for semantic machine learning"
+readme = "README.rst"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+keywords = ["RAG", "outlier-detection", "filtering", "retrieval", "semantic", "ML", "LLM", "NLP"]
+authors = [
+    { name = "Daniel Kulik" },
+]
+maintainers = [
+    { name = "Daniel Kulik" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Customer Service",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Telecommunications Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Embedded Systems",
+    "Topic :: Communications :: Chat",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing",
+    "Topic :: Text Processing :: Filters",
+    "Topic :: Text Processing :: Indexing",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+]
+
+# Required dependencies ------------------------------------------------------------------------------------------------
+dependencies = [
+    "apipkg",
+    "colorlog",
+    "joblib>=0.14.1",
+    "numpy<=1.26.4",
+    "pydantic>=2.0",
+    "pyod>=1.0.0",
+    "pythresh>=0.3.0",
+    "scikit-learn>=0.20.0",
+    "scipy>=1.3.1",
+    "umap-learn",
+]
+
+
+# Optional dependencies ------------------------------------------------------------------------------------------------
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "pytest-mock",
+    "pytest-xdist",
+    "pytest-asyncio",
+    "requests-mock",
+    "flake8",
+    "mypy",
+    "typed-ast",
+    "pydocstringformatter",
+    "ruff",
+    "autopep8",
+    "isort",
+    "openai>=1.10.0,<2.0.0",
+    "cohere>=5.00,<6.00",
+    "voyageai",
+    "mistralai<1.0.0",
+    "boto3",
+    "botocore",
+    "fastembed",
+    "google-cloud-aiplatform",
+    "mlflow",
+    "huggingface-hub",
+    "torch",
+    "transformers",
+    "tokenizers",
+    "llama-index-embeddings-huggingface",
+    "llama-index",
+    "faiss-cpu",
+    "langchain-community",
+    "sentence-transformers",
+    "networkx",
+    "pygod",
+    "torch_geometric",
+    "torch_scatter",
+    "torch_sparse",
+    "torch_cluster",
+    "torch_spline_conv",
+
+]
+
+graph = [
+    "networkx",
+    "pygod",
+    "torch",
+    "torch_geometric",
+    "torch_scatter",
+    "torch_sparse",
+    "torch_cluster",
+    "torch_spline_conv",
+]
+
+notebook = [
+    "mlflow",
+    "pandas",
+    "faiss-cpu",
+    "langchain-community",
+    "sentence-transformers",
+    "matplotlib",
+    "plotly",
+    "datasets",
+    "huggingface-hub",
+    "torch",
+    "transformers",
+    "tokenizers",
+    "pygod",
+    "torch_geometric",
+
+]
+
+[project.urls]
+Homepage = "https://github.com/KulikDM/muzlin"
+Repository = "https://github.com/KulikDM/muzlin"
+
+# Tools settings -------------------------------------------------------------------------------------------------------
+[tool.setuptools]  # configuration specific to the `setuptools` build backend.
+packages = { find = { where = ["."], include = ["muzlin", "muzlin.*"] } }
+
+[tool.setuptools.dynamic]
+version = { attr = "muzlin.__version__" }
+
+[tool.pydocstringformatter]
+style = ["pep257", "numpydoc"]
+
+[tool.autopep8]
+in-place = true
+
+[tool.isort]
+line_length = 180
+multi_line_output = 3
+
+[tool.ruff]
+fix = true
+line-length = 180
+
+[tool.ruff.lint]
+extend-ignore = ["F841"]
