@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+NOTICE
+README.md
+pyproject.toml
+requirements/prod.in
+src/realerikrani/baseclient/__init__.py
+src/realerikrani/baseclient/adapter.py
+src/realerikrani/baseclient/client.py
+src/realerikrani/baseclient/py.typed
+src/realerikrani_baseclient.egg-info/PKG-INFO
+src/realerikrani_baseclient.egg-info/SOURCES.txt
+src/realerikrani_baseclient.egg-info/dependency_links.txt
+src/realerikrani_baseclient.egg-info/requires.txt
+src/realerikrani_baseclient.egg-info/top_level.txt

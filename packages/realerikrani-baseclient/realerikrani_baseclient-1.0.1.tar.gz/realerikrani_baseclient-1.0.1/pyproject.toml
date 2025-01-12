@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "realerikrani-baseclient"
+version = "1.0.1"
+description = "Foundation for building API clients. A wrapper around requests."
+dynamic = ["dependencies"]
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+urls = { "Repository" = "https://github.com/realerikrani/baseclient" }
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements/prod.in"] }
+
+[tool.setuptools.package-data]
+"*" = ["py.typed"]
