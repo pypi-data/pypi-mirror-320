@@ -1,0 +1,12 @@
+BoschRpaMagicBox/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BoschRpaMagicBox/common_config.py,sha256=77HMren4N5Us_5zq6-sD05BfXb5WjJvmqgvxf7Ux86g,3670
+BoschRpaMagicBox/common_functions.py,sha256=JleNLzCvwu3WohZmzJ0GVScChzhPOkqDP34pdImtPdw,69007
+BoschRpaMagicBox/data_process_functions.py,sha256=DIXFDTtwrXUGOABygT8SYWzcurnbno67FXpEnwpucrk,11024
+BoschRpaMagicBox/helper_functions.py,sha256=byRyIdOmQ-fDf7lkjBHCMvDdFU2aPONJuaIQoy_nwh8,11216
+BoschRpaMagicBox/remote_excel_functions.py,sha256=kcFYSLnOjUBuI0i-52PAuZcsw6ns6sEkj8Ux9txF1gQ,20657
+BoschRpaMagicBox/smb_functions.py,sha256=8GjJXYpdwlGHO3Z8DfdQdLIF1VlqNPBBMckJMXdvz0o,13065
+BoschRpaMagicBox-0.1.19.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+BoschRpaMagicBox-0.1.19.dist-info/METADATA,sha256=qfVwoysklobw3x8QdMnNlL_tyClEnZTZ25U0B6p2t2w,887
+BoschRpaMagicBox-0.1.19.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+BoschRpaMagicBox-0.1.19.dist-info/top_level.txt,sha256=Wqxtrojqv11c-Pg5OY3KYjed__yZ8gFSKSI0FRTlftc,17
+BoschRpaMagicBox-0.1.19.dist-info/RECORD,,
