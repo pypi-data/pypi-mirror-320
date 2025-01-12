@@ -1,0 +1,13 @@
+credgem/__init__.py,sha256=IOOqkjXYgBC2vSvlnBdDqd0Rno6nyIvslMG6UkiMjws,2998
+credgem/api/base.py,sha256=uUj8sjwtsVN1aYnZyBwXQNd1Q9DsxSHUlA0u3ZDlCIc,1505
+credgem/api/credit_types.py,sha256=X0Kvkcmp56dMr93QozODVvEkt__LzvsVEC-UnR0AZPI,1825
+credgem/api/insights.py,sha256=tHaYhCuN8CKcOHNbAlhvBgwXqIEdrfYGk0NYKdo3CEs,3659
+credgem/api/transactions.py,sha256=HNPaJXGLNhexICY9XXQgTr7C_9ztbtkVzrdD4g7HFD4,7502
+credgem/api/wallets.py,sha256=-t_iA4oX_U1AJSz08Ye8sgxtSb5f1WvMe1Ds56INPtk,2154
+credgem/contexts.py,sha256=f7L_7dG3iFV7_bKtNm6sa60dgW95GDm6ef4nxaDwARA,6529
+credgem/exceptions.py,sha256=uJ-pr2izKeXZHbUgyI158n22MpYdIyZRjNhwq8eGu6c,510
+credgem/models.py,sha256=6PmMK_AhPlRGQ3OQ_TH5WnBmrWBL1BJYX9of5abZJn4,739
+credgem_sdk-0.1.2.dist-info/LICENSE,sha256=fZPKhqM5Zwj70czjd-4_1-rtowD59T5FJxdzpcjaev0,1064
+credgem_sdk-0.1.2.dist-info/METADATA,sha256=kPKhksmz-iQYlXCKtY8fNQT5cBQDh6abQkQhzIdNufY,3370
+credgem_sdk-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+credgem_sdk-0.1.2.dist-info/RECORD,,
