@@ -1,0 +1,16 @@
+Metadata-Version: 2.2
+Name: safucall
+Version: 1.0.2
+Summary: Easy way to work with Ethereum Multicalls
+Home-page: https://github.com/yourusername/safucall
+Author: Your Name
+Author-email: your.email@example.com
+Project-URL: Bug Tracker, https://github.com/yourusername/safucall/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: <4.0.0,>=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: web3<8.0.0,>=7.0.0
+Dynamic: requires-dist
