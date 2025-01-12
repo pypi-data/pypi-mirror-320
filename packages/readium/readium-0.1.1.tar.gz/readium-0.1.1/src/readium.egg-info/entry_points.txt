@@ -1,0 +1,2 @@
+[console_scripts]
+readium = readium.cli:main

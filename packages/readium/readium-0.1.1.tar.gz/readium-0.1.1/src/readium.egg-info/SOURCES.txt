@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/readium/__init__.py
+src/readium/cli.py
+src/readium/config.py
+src/readium/core.py
+src/readium.egg-info/PKG-INFO
+src/readium.egg-info/SOURCES.txt
+src/readium.egg-info/dependency_links.txt
+src/readium.egg-info/entry_points.txt
+src/readium.egg-info/requires.txt
+src/readium.egg-info/top_level.txt
+tests/test_basic.py
+tests/test_readium.py
