@@ -1,0 +1,2 @@
+[console_scripts]
+asciiart = some_ascii_arts.main:main
