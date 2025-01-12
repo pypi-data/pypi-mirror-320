@@ -1,0 +1,36 @@
+{% load i18n l10n wagtail_photo_gallery %}
+
+<section class="photo-gallery-container">
+
+    {% get_albums self.collection self.ascending as albums %}
+    
+    {% if self.grouping %}
+        {% if self.grouping == 'year'%}
+            {% regroup albums by date.year as grouped_albums %}
+        {% elif self.grouping == 'day'%}
+            {% regroup albums by date as grouped_albums %}
+        {% endif %}
+        
+        {% for group in grouped_albums %}
+            <section class="photo-gallery-container-group">
+                <h3>{{ group.grouper|default:undated_albums_heading }}</h3>
+                
+                {% if self.ascending %}
+                    {% for album in group.list %}
+                        {% include_album album %}
+                    {% endfor %}
+                {% else %}
+                    {% for album in group.list reversed %}
+                        {% include_album album %}
+                    {% endfor %}
+                {% endif %}
+            </section>
+        {% endfor %}
+    {% else %}
+        <div class="photo-gallery-container-group">
+            {% for album in albums %}
+                {% include_album album %}
+            {% endfor %}
+        </div>
+    {% endif %}
+</section>

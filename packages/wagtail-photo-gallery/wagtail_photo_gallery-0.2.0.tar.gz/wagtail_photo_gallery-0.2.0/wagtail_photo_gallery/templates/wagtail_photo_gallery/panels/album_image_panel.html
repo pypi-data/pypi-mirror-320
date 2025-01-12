@@ -1,0 +1,71 @@
+{% load i18n l10n wagtailadmin_tags %}
+
+{{ self.formset.management_form }}
+
+{% if self.formset.non_form_errors %}
+    <div class="error-message">
+        {% for error in self.formset.non_form_errors %}
+            <span>{{ error|escape }}</span>
+        {% endfor %}
+    </div>
+{% endif %}
+
+{% if self.help_text %}
+    {% help_block status="info" %}{{ self.help_text }}{% endhelp_block %}
+{% endif %}
+
+<div id="id_{{ self.formset.prefix }}-FORMS" data-empty-text="{% trans 'Choose image files or drag them here' %}">
+    {% for child in self.children %}
+        {% include "wagtail_photo_gallery/panels/album_image_panel_child.html" %}
+    {% endfor %}
+</div>
+
+<template id="id_{{ self.formset.prefix }}-EMPTY_FORM_TEMPLATE">
+    {% include "wagtail_photo_gallery/panels/album_image_panel_child.html" with child=self.empty_child %}
+</template>
+
+{# Align with guiding line of the preceding child panel. #}
+<div class="w-mb-4 -w-ml-4">
+    <button type="button" class="button button-small button-secondary chooser__choose-button" id="id_{{ self.formset.prefix }}-ALBUM-ADD" disabled>
+        {% icon name="plus-inverse" %}{% trans "Add Image" %}
+    </button>
+    
+    <button type="button" class="button button-small button-secondary chooser__choose-button" id="id_{{ self.formset.prefix }}-ALBUM-SELECT" disabled>
+        {% icon name="circle-check" %}{% trans "Select All" %}
+    </button>
+    
+    <button type="button" class="button button-small button-secondary chooser__choose-button" id="id_{{ self.formset.prefix }}-ALBUM-UNSELECT" disabled>
+        {% icon name="circle-xmark" %}{% trans "Unselect All" %}
+    </button>
+    
+    <button type="button" class="button button-small button-secondary chooser__choose-button" id="id_{{ self.formset.prefix }}-ALBUM-DELETE" disabled>
+        {% icon name="bin" %}{% trans "Delete Selected" %}
+    </button>
+</div>
+
+{{ self.form.cover }}
+
+{% block js_init %}
+    <script>
+        (function() {
+            var formsetPrefix = "id_{{ self.formset.prefix }}";
+        
+            var panel = new InlinePanel({
+                formsetPrefix: formsetPrefix,
+                emptyChildFormPrefix: "{{ self.empty_child.form.prefix }}",
+                canOrder: {% if can_order %}true{% else %}false{% endif %},
+                maxForms: {{ self.formset.max_num|unlocalize }}
+            });
+            
+            var handler = new AlbumImagePanelHandler(panel, {
+                coverField: "#id_cover",
+                addButton: `#${formsetPrefix}-ALBUM-ADD`,
+                selectButton: `#${formsetPrefix}-ALBUM-SELECT`,
+                unselectButton: `#${formsetPrefix}-ALBUM-UNSELECT`,
+                deleteButton: `#${formsetPrefix}-ALBUM-DELETE`
+            });
+            
+            handler.initialize();
+        })();
+    </script>
+{% endblock %}

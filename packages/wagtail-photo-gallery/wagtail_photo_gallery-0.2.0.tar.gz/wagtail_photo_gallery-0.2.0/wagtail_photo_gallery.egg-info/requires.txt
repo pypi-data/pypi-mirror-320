@@ -1,0 +1,8 @@
+wagtail>=6.0.2
+django-imagekit
+
+[pillow]
+pillow
+
+[pillow-simd]
+pillow-simd
