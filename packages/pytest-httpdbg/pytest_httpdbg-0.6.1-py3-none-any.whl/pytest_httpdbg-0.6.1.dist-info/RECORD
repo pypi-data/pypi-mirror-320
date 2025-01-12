@@ -1,0 +1,8 @@
+pytest_httpdbg/__init__.py,sha256=JVBRqWyBipSxOVvitxa3BsGTPP-oyWUU0zFI0uo0a6s,118
+pytest_httpdbg/plugin.py,sha256=vc8BGGAau3rrf-mTB30ql-6Iyikty__3Feofr2RckP8,4530
+pytest_httpdbg-0.6.1.dist-info/LICENSE,sha256=rBM1ShLwSZ2-3JV8luRBUSWVbTxCJ1qjCeC_yD5y9Rc,11353
+pytest_httpdbg-0.6.1.dist-info/METADATA,sha256=clPF-buOMJar_vmvwWmnMvqfwucOm751DOjybmMtRJI,3302
+pytest_httpdbg-0.6.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pytest_httpdbg-0.6.1.dist-info/entry_points.txt,sha256=dbCCkpVd1tKpEpIqKYPPLq40knO52jibc6Q0diRd2Qk,43
+pytest_httpdbg-0.6.1.dist-info/top_level.txt,sha256=7fR-3Fm8wwjikuKab83eKPpHwY8MiGOrqhzeRcm4o_Q,15
+pytest_httpdbg-0.6.1.dist-info/RECORD,,
