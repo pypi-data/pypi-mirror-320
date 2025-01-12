@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "qwikswitch_api"
+version = "0.0.5"
+authors = [
+  { name="Riaan Hanekom", email="riaan@hanekom.io" },
+]
+description = "A Python wrapper around the QwikSwitch API"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests"
+]
+
+[project.optional-dependencies]
+tests = ["pytest", "pytest-cov", "requests-mock", "pytest-flakes"]
+docs = ["sphinx", "pydata_sphinx_theme"]
+dev = [
+    "packageName[tests, docs]",
+    "build",
+    "twine"
+]
+
+[tool]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/qwikswitchapi"]
