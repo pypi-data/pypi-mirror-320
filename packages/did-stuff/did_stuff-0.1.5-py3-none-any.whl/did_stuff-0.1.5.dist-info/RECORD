@@ -1,0 +1,11 @@
+did_stuff/__init__.py,sha256=2CBlNm885Shd7dGtRbKkN0L84nc8d7mqd3GOnNT22Do,71
+did_stuff/cli.py,sha256=8gfxpPmDu6tcCgXEh0WT31eXhj5CeqAdDM-GbXo8Eag,6774
+did_stuff/commit_message_generator.py,sha256=IIyKSjSJy7uq8P1pPpApI_6mQAGoMtj0Rftenpy9k_M,7612
+did_stuff/config.py,sha256=I7s2KgeqoCmCZTQCAYTD6NImSHZPCofWHRfH88e65Zw,7615
+did_stuff/git_hooks.py,sha256=8_ahouL8FWvqTCpRKtCd1sn6jbMhZ9Q54CHiQWN8V2s,195
+did_stuff/tui.py,sha256=GZxmrUW6PjMl2o4Sei9HMdFB_ngPa44-g3QRg3x9vTs,6426
+did_stuff-0.1.5.dist-info/METADATA,sha256=We6NnLL0_vILUzJfjevvkDH9dIefP5jp77_IYv4tMwM,7573
+did_stuff-0.1.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+did_stuff-0.1.5.dist-info/entry_points.txt,sha256=HgoTd7ubJFsziHXYTxh-T8PNRgZka9TFowHVYxa0J4s,49
+did_stuff-0.1.5.dist-info/top_level.txt,sha256=l5pz0ftriMxGustAmf8KSQYtHKynP2wgOUQYZcWwwSI,10
+did_stuff-0.1.5.dist-info/RECORD,,

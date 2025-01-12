@@ -1,0 +1,2 @@
+[console_scripts]
+did-stuff = did_stuff.cli:main
