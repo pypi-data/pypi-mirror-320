@@ -1,0 +1,2 @@
+[console_scripts]
+clipreplace = clipreplace.__main__:main
