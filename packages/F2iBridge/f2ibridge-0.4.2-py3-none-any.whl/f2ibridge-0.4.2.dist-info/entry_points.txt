@@ -1,0 +1,2 @@
+[console_scripts]
+F2iBridge = F2iBridge.F2iBridge:run
