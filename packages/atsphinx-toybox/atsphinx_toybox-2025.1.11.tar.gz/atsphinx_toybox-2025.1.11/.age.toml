@@ -1,0 +1,36 @@
+current_version = "2025.1.11"
+
+[[files]]
+path = "pyproject.toml"
+
+search = "version = \"{{current_version}}\""
+replace = "version = \"{{new_version}}\""
+
+[[files]]
+path = "pyproject.toml"
+
+search = "release = \"{{current_version}}\""
+replace = "release = \"{{new_version}}\""
+
+[[files]]
+path = "pyproject.toml"
+
+search = "html_title = \"atsphinx-toybox v{{current_version}}\""
+replace = "html_title = \"atsphinx-toybox v{{new_version}}\""
+
+[[files]]
+path = "src/atsphinx/toybox/__init__.py"
+
+search = "__version__ = \"{{current_version}}\""
+replace = "__version__ = \"{{new_version}}\""
+
+[[files]]
+path = ".github/release-body.md"
+search = "Release atsphinx-toybox v{{ current_version }}"
+replace = "Release atsphinx-toybox v{{ new_version }}"
+
+[[files]]
+path = ".github/release-body.md"
+regex = true
+search = "Changelog is .+"
+replace = "Changelog is https://github.com/atsphinx/toybox/compere/v{{ current_version }}...v{{ new_version }}"
