@@ -1,0 +1,14 @@
+.gitignore.txt
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+.github/workflows/python-publish.yml
+src/gtus/__init__.py
+src/gtus/core.py
+src/gtus/examples.py
+src/gtus.egg-info/PKG-INFO
+src/gtus.egg-info/SOURCES.txt
+src/gtus.egg-info/dependency_links.txt
+src/gtus.egg-info/requires.txt
+src/gtus.egg-info/top_level.txt
