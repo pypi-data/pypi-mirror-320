@@ -1,0 +1,9 @@
+LICENSE.MIT
+README.md
+setup.py
+par_impar.egg-info/PKG-INFO
+par_impar.egg-info/SOURCES.txt
+par_impar.egg-info/dependency_links.txt
+par_impar.egg-info/top_level.txt
+parimpar/__init__.py
+parimpar/par_impar.py
