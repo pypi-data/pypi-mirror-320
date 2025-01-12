@@ -1,0 +1,10 @@
+requests
+python-dotenv
+pydantic
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest
