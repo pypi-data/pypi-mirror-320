@@ -1,0 +1,2037 @@
+"""winshell定位桌面位置 - hyy制作 - 素材来源于VSCode插件和CSDN - code插件为koroFileHeader"""
+"""注意事项:打印的‘狗’可能会看不清"""
+"""DrawPrint.py"""
+print('')
+print('DrawPrint: 0.0.3')
+
+from pyfiglet import Figlet, FigletFont
+
+try:
+    import winshell
+    import time
+    import os
+    import turtle as t
+
+except:
+    import os
+    import time
+    os.system('pip install winshell')
+    os.system('pip install turtle')
+    time.sleep(3)
+    import winshell
+    import turtle as t
+
+Desktop = winshell.desktop()
+os.chdir(Desktop)
+
+def 自制(character,font="larry3d"):
+    f = Figlet(font=font)
+    print(f.renderText(character))
+
+佛祖镇楼py = [
+    '"""',
+    '佛祖镇楼:'
+    '',
+    '                       _oo0oo_',
+    '                      o8888888o',
+    '                      88" . "88',
+    '                      (| -_- |)',
+    '                      0\  =  /0',
+    "                    ___/`---'\___",
+    "                  .' \\|     |// '.",
+    "                 / \\|||  :  |||// \ ",
+    "                / _||||| -:- |||||- \ ",
+    "               |   | \\\  - /// |   |",
+    "               | \_|  ''\---/''  |_/ |",
+    "               \  .-\__  '-'  ___/-. /",
+    "             ___'. .'  /--.--\  `. .'___",
+    '          ."" "<  `.___\_<|>_/___." >" "". ',
+    '         | | :  `- \`.;`\ _ /`;.`/ - ` : | |',
+    '         \  \ `_.   \_ __\ /__ _/   .-` /  /',
+    "     =====`-.____`.___ \_____/___.-`___.-'=====",
+    "                       `=---='",
+    '',
+    '          祝：',
+    '     程序不出BUG！',
+    '"""'
+]
+
+def 佛祖镇楼():
+    print('')
+    print('                       _oo0oo_')
+    print('                      o8888888o')
+    print('                      88" . "88')
+    print('                      (| -_- |)')
+    print('                      0\  =  /0')
+    print("                    ___/`---'\___")
+    print("                  .' \\|     |// '.")
+    print("                 / \\|||  :  |||// \ ")
+    print("                / _||||| -:- |||||- \ ")
+    print("               |   | \\\  - /// |   |")
+    print("               | \_|  ''\---/''  |_/ |")
+    print("               \  .-\__  '-'  ___/-. /")
+    print("             ___'. .'  /--.--\  `. .'___")
+    print('          ."" "<  `.___\_<|>_/___." >" "". ')
+    print('         | | :  `- \`.;`\ _ /`;.`/ - ` : | |')
+    print('         \  \ `_.   \_ __\ /__ _/   .-` /  /')
+    print("     =====`-.____`.___ \_____/___.-`___.-'=====")
+    print("                       `=---='")
+    print('          祝：')
+    print('     程序不出BUG！')
+    print('')
+        
+    with open('佛祖镇楼.py','w',encoding='utf-8')as f:
+        for lib in 佛祖镇楼py:
+            f.write(lib + '\n')
+
+    print('已生成py文件')
+
+笔记本键盘py = [
+    '"""',
+    '笔记本键盘:',
+    '',
+    ' ┌─────────────────────────────────────────────────────────────┐',
+    ' │┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┐│',
+    ' ││Esc│!1 │@2 │#3 │$4 │%5 │^6 │&7 │*8 │(9 │)0 │_- │+= │|\ │`~ ││',
+    ' │├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴───┤│',
+    ' ││ Tab │ Q │ W │ E │ R │ T │ Y │ U │ I │ O │ P │{[ │}] │ BS  ││',
+    ' │├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴─────┤│',
+    ' ││ Ctrl │ A │ S │ D │ F │ G │ H │ J │ K │ L │: ;│"  │ Enter  ││',
+    ' │├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴────┬───┤│',
+    ' ││ Shift  │ Z │ X │ C │ V │ B │ N │ M │< ,│> .│? /│Shift │Fn ││',
+    ' │└─────┬──┴┬──┴──┬┴───┴───┴───┴───┴───┴──┬┴───┴┬──┴┬─────┴───┘│',
+    ' │      │Fn │ Alt │         Space         │ Alt │Win│   HHKB   │',
+    ' │      └───┴─────┴───────────────────────┴─────┴───┘          │',
+    ' └─────────────────────────────────────────────────────────────┘',
+    '',
+    '          祝：',
+    '     程序不出BUG！',
+    '',
+    '"""'
+]
+
+def 笔记本键盘():
+    print('')
+    print(' ┌─────────────────────────────────────────────────────────────┐')
+    print(' │┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┐│')
+    print(' ││Esc│!1 │@2 │#3 │$4 │%5 │^6 │&7 │*8 │(9 │)0 │_- │+= │|\ │`~ ││')
+    print(' │├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴───┤│')
+    print(' ││ Tab │ Q │ W │ E │ R │ T │ Y │ U │ I │ O │ P │{[ │}] │ BS  ││')
+    print(' │├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴─────┤│')
+    print(' ││ Ctrl │ A │ S │ D │ F │ G │ H │ J │ K │ L │: ;│"  │ Enter  ││')
+    print(' │├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴────┬───┤│')
+    print(' ││ Shift  │ Z │ X │ C │ V │ B │ N │ M │< ,│> .│? /│Shift │Fn ││')
+    print(' │└─────┬──┴┬──┴──┬┴───┴───┴───┴───┴───┴──┬┴───┴┬──┴┬─────┴───┘│')
+    print(' │      │Fn │ Alt │         Space         │ Alt │Win│   HHKB   │')
+    print(' │      └───┴─────┴───────────────────────┴─────┴───┘          │')
+    print(' └─────────────────────────────────────────────────────────────┘')
+    print('')
+    print('          祝：')
+    print('     程序不出BUG！')
+    print('')
+    
+    with open('笔记本键盘.py','w',encoding='utf-8')as f:
+        for lib in 笔记本键盘py:
+            f.write(lib + '\n')
+
+    print('已在桌面生成py文件！')
+
+def 狗():
+    print('可能会看不清楚:')
+    print('')                           
+    print('                      :;J7, :,                        ::;7:')
+    print('                      ,ivYi, ,                       ;LLLFS:')
+    print('                      :iv7Yi                       :7ri;j5PL')
+    print('                     ,:ivYLvr                    ,ivrrirrY2X,')
+    print('                     :;r@Wwz.7r:                :ivu@kexianli.')
+    print('                    :iL7::,:::iiirii:ii;::::,,irvF7rvvLujL7ur')
+    print('                   ri::,:,::i:iiiiiii:i:irrv177JX7rYXqZEkvv17')
+    print('                ;i:, , ::::iirrririi:i:::iiir2XXvii;L8OGJr71i')
+    print('              :,, ,,:   ,::ir@mingyi.irii:i:::j1jri7ZBOS7ivv,')
+    print('                 ,::,    ::rv77iiiriii:iii:i::,rvLq@huhao.Li')
+    print('             ,,      ,, ,:ir7ir::,:::i;ir:::i:i::rSGGYri712:')
+    print('           :::  ,v7r:: ::rrv77:, ,, ,:i7rrii:::::, ir7ri7Lri')
+    print('          ,     2OBBOi,iiir;r::        ,irriiii::,, ,iv7Luur:')
+    print('        ,,     i78MBBi,:,:::,:,  :7FSL: ,iriii:::i::,,:rLqXv::')
+    print('        :      iuMMP: :,:::,:ii;2GY7OBB0viiii:i:iii:i:::iJqL;::')
+    print('       ,     ::::i   ,,,,, ::LuBBu BBBBBErii:i:i:i:i:i:i:r77ii')
+    print('      ,       :       , ,,:::rruBZ1MBBqi, :,,,:::,::::::iiriri:')
+    print('     ,               ,,,,::::i:  @arqiao.       ,:,, ,:::ii;i7:')
+    print('    :,       rjujLYLi   ,,:::::,:::::::::,,   ,:i,:,,,,,::i:iii')
+    print('    ::      BBBBBBBBB0,    ,,::: , ,:::::: ,      ,,,, ,,:::::::')
+    print('    i,  ,  ,8BMMBBBBBBi     ,,:,,     ,,, , ,   , , , :,::ii::i::')
+    print('    :      iZMOMOMBBM2::::::::::,,,,     ,,,,,,:,,,::::i:irr:i:::,')
+    print('    i   ,,:;u0MBMOG1L:::i::::::  ,,,::,   ,,, ::::::i:i:iirii:i:i:')
+    print('    :    ,iuUuuXUkFu7i:iii:i:::, :,:,: ::::::::i:i:::::iirr7iiri::')
+    print('    :     :rk@Yizero.i:::::, ,:ii:::::::i:::::i::,::::iirrriiiri::,')
+    print('     :      5BMBBBBBBSr:,::rv2kuii:::iii::,:i:,, , ,,:,:i@petermu.,')
+    print('          , :r50EZ8MBBBBGOBBBZP7::::i::,:::::,: :,:,::i;rrririiii::')
+    print('              :jujYY7LS0ujJL7r::,::i::,::::::::::::::iirirrrrrrr:ii:')
+    print('           ,:  :@kevensun.:,:,,,::::i:i:::::,,::::::iir;ii;7v77;ii;i,')
+    print('           ,,,     ,,:,::::::i:iiiii:i::::,, ::::iiiir@xingjief.r;7:i,')
+    print('        , , ,,,:,,::::::::iiiiiiiiii:,:,:::::::::iiir;ri7vL77rrirri::')
+    print('         :,, , ::::::::i:::i:::i:i::,,,,,:,::i:i:::iir;@Secbone.ii:::')
+    print('')
+
+键盘py = [
+    '"""',
+    '键盘:',
+    ' ┌───┐   ┌───┬───┬───┬───┐ ┌───┬───┬───┬───┐ ┌───┬───┬───┬───┐ ┌───┬───┬───┐',
+    ' │Esc│   │ F1│ F2│ F3│ F4│ │ F5│ F6│ F7│ F8│ │ F9│F10│F11│F12│ │P/S│S L│P/B│  ┌┐    ┌┐    ┌┐',
+    ' └───┘   └───┴───┴───┴───┘ └───┴───┴───┴───┘ └───┴───┴───┴───┘ └───┴───┴───┘  └┘    └┘    └┘',
+    ' ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐ ┌───┬───┬───┐ ┌───┬───┬───┬───┐',
+    ' │~ `│! 1│@ 2│# 3│$ 4│% 5│^ 6│& 7│* 8│( 9│) 0│_ -│+ =│ BacSp │ │Ins│Hom│PUp│ │N L│ / │ * │ - │',
+    ' ├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─────┤ ├───┼───┼───┤ ├───┼───┼───┼───┤',
+    ' │ Tab │ Q │ W │ E │ R │ T │ Y │ U │ I │ O │ P │{ [│} ]│ | \ │ │Del│End│PDn│ │ 7 │ 8 │ 9 │   ',
+    ' ├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴─────┤ └───┴───┴───┘ ├───┼───┼───┤ + │',
+    ' │ Caps │ A │ S │ D │ F │ G │ H │ J │ K │ L │: ;│"  │ Enter  │               │ 4 │ 5 │ 6 │   │',
+    ' ├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴────────┤     ┌───┐     ├───┼───┼───┼───┤',
+    ' │ Shift  │ Z │ X │ C │ V │ B │ N │ M │< ,│> .│? /│  Shift   │     │ ↑ │     │ 1 │ 2 │ 3 │   │',
+    ' ├─────┬──┴─┬─┴──┬┴───┴───┴───┴───┴───┴──┬┴───┼───┴┬────┬────┤ ┌───┼───┼───┐ ├───┴───┼───┤ E││',
+    ' │ Ctrl│    │Alt │         Space         │ Alt│    │    │Ctrl│ │ ← │ ↓ │ → │ │   0   │ . │←─┘│',
+    ' └─────┴────┴────┴───────────────────────┴────┴────┴────┴────┘ └───┴───┴───┘ └───────┴───┴───┘',
+    '',
+    '          祝：',
+    '     程序不出BUG！',
+    '"""'
+]
+
+def 键盘():
+    print(' ┌───┐   ┌───┬───┬───┬───┐ ┌───┬───┬───┬───┐ ┌───┬───┬───┬───┐ ┌───┬───┬───┐')
+    print(' │Esc│   │ F1│ F2│ F3│ F4│ │ F5│ F6│ F7│ F8│ │ F9│F10│F11│F12│ │P/S│S L│P/B│  ┌┐    ┌┐    ┌┐')
+    print(' └───┘   └───┴───┴───┴───┘ └───┴───┴───┴───┘ └───┴───┴───┴───┘ └───┴───┴───┘  └┘    └┘    └┘')
+    print(' ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐ ┌───┬───┬───┐ ┌───┬───┬───┬───┐')
+    print(' │~ `│! 1│@ 2│# 3│$ 4│% 5│^ 6│& 7│* 8│( 9│) 0│_ -│+ =│ BacSp │ │Ins│Hom│PUp│ │N L│ / │ * │ - │')
+    print(' ├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─────┤ ├───┼───┼───┤ ├───┼───┼───┼───┤')
+    print(' │ Tab │ Q │ W │ E │ R │ T │ Y │ U │ I │ O │ P │{ [│} ]│ | \ │ │Del│End│PDn│ │ 7 │ 8 │ 9 │   │')
+    print(' ├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴─────┤ └───┴───┴───┘ ├───┼───┼───┤ + │')
+    print(' │ Caps │ A │ S │ D │ F │ G │ H │ J │ K │ L │: ;│"  │ Enter  │               │ 4 │ 5 │ 6 │   │')
+    print(' ├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴────────┤     ┌───┐     ├───┼───┼───┼───┤')
+    print(' │ Shift  │ Z │ X │ C │ V │ B │ N │ M │< ,│> .│? /│  Shift   │     │ ↑ │     │ 1 │ 2 │ 3 │   │')
+    print(' ├─────┬──┴─┬─┴──┬┴───┴───┴───┴───┴───┴──┬┴───┼───┴┬────┬────┤ ┌───┼───┼───┐ ├───┴───┼───┤ E││')
+    print(' │ Ctrl│    │Alt │         Space         │ Alt│    │    │Ctrl│ │ ← │ ↓ │ → │ │   0   │ . │←─┘│')
+    print(' └─────┴────┴────┴───────────────────────┴────┴────┴────┴────┘ └───┴───┴───┘ └───────┴───┴───┘')
+    print('')
+    print('          祝：')
+    print('     程序不出BUG！')
+    print('')
+    
+    with open('键盘.py','w',encoding='utf-8')as f:
+        for lib in 笔记本键盘py:
+            f.write(lib + '\n')
+
+    print('已在桌面生成py文件！')
+
+耶稣py = [
+    '"""'
+    '耶稣:',
+    '',
+    '                               |~~~~~~~|',
+    "                               |       |",
+    "                               |       |",
+    "                               |       |",
+    "                               |       |",
+    "                               |       |",
+    "    |~.\\\_\~~~~~~~~~~~~~~xx~~~         ~~~~~~~~~~~~~~~~~~~~~/_//;~|",
+    "    |  \  o \_         ,XXXXX),                         _..-~ o /  |",
+    "    |    ~~\  ~-.     XXXXX`)))),                 _.--~~   .-~~~   |",
+    "     ~~~~~~~`\   ~\~~~XXX' _/ ';))     |~~~~~~..-~     _.-~ ~~~~~~~",
+    "              `\   ~~--`_\~\, ;;;\)__.---.~~~      _.-~",
+    "                ~-.       `:;;/;; \          _..-~~",
+    "                   ~-._      `''        /-~-~",
+    "                       `\              /  /",
+    "                         |         ,   | |",
+    "                          |  '        /  |",
+    "                           \/;          |",
+    "                            `;   .       |",
+    "                            |~~~-----.....|",
+    "                           | \             \ ",
+    "                          | /\~~--...__    |",
+    "                          (|  `\       __-\|",
+    "                          ||    \_   /~    |",
+    "                          |)     \~-'      |",
+    "                           |      | \      '",
+    "                           |      |  \    :",
+    "                            \     |  |    |",
+    "                             |    )  (    )",
+    "                              \  /;  /\  |",
+    "                              |    |/   |",
+    "                              |    |   |",
+    "                               \  .'  ||",
+    "                               |  |  | |",
+    "                               (  | |  |",
+    "                               |   \ \ |",
+    "                               || o `.)|",
+    "                               |`\\) |",
+    "                               |       |",
+    "                               |       |",
+    '',
+    '          祝：',
+    '     程序不出BUG！',
+    '"""'
+]
+
+def 耶稣():
+    print('                               |~~~~~~~|')
+    print('                               |       |')
+    print('                               |       |')
+    print('                               |       |')
+    print('                               |       |')
+    print('                               |       |')
+    print('    |~.\\\_\~~~~~~~~~~~~~~xx~~~         ~~~~~~~~~~~~~~~~~~~~~/_//;~|')
+    print('    |  \  o \_         ,XXXXX),                         _..-~ o /  |')
+    print('    |    ~~\  ~-.     XXXXX`)))),                 _.--~~   .-~~~   |')
+    print("     ~~~~~~~`\   ~\~~~XXX' _/ ';))     |~~~~~~..-~     _.-~ ~~~~~~~")
+    print('              `\   ~~--`_\~\, ;;;\)__.---.~~~      _.-~')
+    print('                ~-.       `:;;/;; \          _..-~~')
+    print('                   ~-._      `''        /-~-~')
+    print('                       `\              /  /')
+    print('                         |         ,   | |')
+    print("                          |  '        /  |")
+    print('                           \/;          |')
+    print("                            `;   .       |")
+    print('                            |~~~-----.....|')
+    print('                           | \             \ ')
+    print('                          | /\~~--...__    |')
+    print('                          (|  `\       __-\|')
+    print('                          ||    \_   /~    |')
+    print("                          |)     \~-'      |")
+    print("                           |      | \      '")
+    print("                           |      |  \    :")
+    print("                            \     |  |    |")
+    print("                             |    )  (    )")
+    print("                              \  /;  /\  |")
+    print("                              |    |/   |")
+    print('                              |    |   |')
+    print("                               \  .'  ||")
+    print("                               |  |  | |")
+    print("                               (  | |  |")
+    print('                               |   \ \ |')
+    print('                               || o `.)|')
+    print('                               |`\\) |')
+    print('                               |       |')
+    print('                               |       |')
+    print('')
+            
+    with open('耶稣.py','w',encoding='utf-8')as f:
+        for lib in 耶稣py:
+            f.write(lib + '\n')
+
+    print('已生成py文件')
+
+龙图腾py = [
+    '"""'
+    '龙图腾:',
+    '......................................&&.........................',
+    '....................................&&&..........................',
+    '.................................&&&&............................',
+    '...............................&&&&..............................',
+    '.............................&&&&&&..............................',
+    '...........................&&&&&&....&&&..&&&&&&&&&&&&&&&........',
+    '..................&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&..............',
+    '................&...&&&&&&&&&&&&&&&&&&&&&&&&&&&&.................',
+    '.......................&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&.........',
+    '...................&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&...............',
+    '..................&&&   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&............',
+    '...............&&&&&@  &&&&&&&&&&..&&&&&&&&&&&&&&&&&&&...........',
+    '..............&&&&&&&&&&&&&&&.&&....&&&&&&&&&&&&&..&&&&&.........',
+    '..........&&&&&&&&&&&&&&&&&&...&.....&&&&&&&&&&&&&...&&&&........',
+    '........&&&&&&&&&&&&&&&&&&&.........&&&&&&&&&&&&&&&....&&&.......',
+    '.......&&&&&&&&.....................&&&&&&&&&&&&&&&&.....&&......',
+    '........&&&&&.....................&&&&&&&&&&&&&&&&&&.............',
+    '..........&...................&&&&&&&&&&&&&&&&&&&&&&&............',
+    '................&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&............',
+    '..................&&&&&&&&&&&&&&&&&&&&&&&&&&&&..&&&&&............',
+    '..............&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&....&&&&&............',
+    '...........&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&......&&&&............',
+    '.........&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&.........&&&&............',
+    '.......&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&...........&&&&............',
+    '......&&&&&&&&&&&&&&&&&&&...&&&&&&...............&&&.............',
+    '.....&&&&&&&&&&&&&&&&............................&&..............',
+    '....&&&&&&&&&&&&&&&.................&&...........................',
+    '...&&&&&&&&&&&&&&&.....................&&&&......................',
+    '...&&&&&&&&&&.&&&........................&&&&&...................',
+    '..&&&&&&&&&&&..&&..........................&&&&&&&...............',
+    '..&&&&&&&&&&&&...&............&&&.....&&&&...&&&&&&&.............',
+    '..&&&&&&&&&&&&&.................&&&.....&&&&&&&&&&&&&&...........',
+    '..&&&&&&&&&&&&&&&&..............&&&&&&&&&&&&&&&&&&&&&&&&.........',
+    '..&&.&&&&&&&&&&&&&&&&&.........&&&&&&&&&&&&&&&&&&&&&&&&&&&.......',
+    '...&&..&&&&&&&&&&&&.........&&&&&&&&&&&&&&&&...&&&&&&&&&&&&......',
+    '....&..&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&...........&&&&&&&&.....',
+    '.......&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&..............&&&&&&&....',
+    '.......&&&&&.&&&&&&&&&&&&&&&&&&..&&&&&&&&...&..........&&&&&&....',
+    '........&&&.....&&&&&&&&&&&&&.....&&&&&&&&&&...........&..&&&&...',
+    '.......&&&........&&&.&&&&&&&&&.....&&&&&.................&&&&...',
+    '........&&...................&&&&&&.........................&&&..',
+    '.........&.....................&&&&........................&&....',
+    '...............................&&&.......................&&......',
+    '................................&&......................&&.......',
+    '.................................&&..............................',
+    '..................................&..............................',
+    '',
+    '          祝：',
+    '     程序不出BUG！',
+    '"""'
+]
+
+def 龙图腾():
+    print('......................................&&.........................')
+    print('....................................&&&..........................')
+    print('.................................&&&&............................')
+    print('...............................&&&&..............................')
+    print('.............................&&&&&&..............................')
+    print('...........................&&&&&&....&&&..&&&&&&&&&&&&&&&........')
+    print('..................&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&..............')
+    print('................&...&&&&&&&&&&&&&&&&&&&&&&&&&&&&.................')
+    print('.......................&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&.........')
+    print('...................&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&...............')
+    print('..................&&&   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&............')
+    print('...............&&&&&@  &&&&&&&&&&..&&&&&&&&&&&&&&&&&&&...........')
+    print('..............&&&&&&&&&&&&&&&.&&....&&&&&&&&&&&&&..&&&&&.........')
+    print('..........&&&&&&&&&&&&&&&&&&...&.....&&&&&&&&&&&&&...&&&&........')
+    print('........&&&&&&&&&&&&&&&&&&&.........&&&&&&&&&&&&&&&....&&&.......')
+    print('.......&&&&&&&&.....................&&&&&&&&&&&&&&&&.....&&......')
+    print('........&&&&&.....................&&&&&&&&&&&&&&&&&&.............')
+    print('..........&...................&&&&&&&&&&&&&&&&&&&&&&&............')
+    print('................&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&............')
+    print('..................&&&&&&&&&&&&&&&&&&&&&&&&&&&&..&&&&&............')
+    print('..............&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&....&&&&&............')
+    print('...........&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&......&&&&............')
+    print('.........&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&.........&&&&............')
+    print('.......&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&...........&&&&............')
+    print('......&&&&&&&&&&&&&&&&&&&...&&&&&&...............&&&.............')
+    print('.....&&&&&&&&&&&&&&&&............................&&..............')
+    print('....&&&&&&&&&&&&&&&.................&&...........................')
+    print('...&&&&&&&&&&&&&&&.....................&&&&......................')
+    print('...&&&&&&&&&&.&&&........................&&&&&...................')
+    print('..&&&&&&&&&&&..&&..........................&&&&&&&...............')
+    print('..&&&&&&&&&&&&...&............&&&.....&&&&...&&&&&&&.............')
+    print('..&&&&&&&&&&&&&.................&&&.....&&&&&&&&&&&&&&...........')
+    print('..&&&&&&&&&&&&&&&&..............&&&&&&&&&&&&&&&&&&&&&&&&.........')
+    print('..&&.&&&&&&&&&&&&&&&&&.........&&&&&&&&&&&&&&&&&&&&&&&&&&&.......')
+    print('...&&..&&&&&&&&&&&&.........&&&&&&&&&&&&&&&&...&&&&&&&&&&&&......')
+    print('....&..&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&...........&&&&&&&&.....')
+    print('.......&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&..............&&&&&&&....')
+    print('.......&&&&&.&&&&&&&&&&&&&&&&&&..&&&&&&&&...&..........&&&&&&....')
+    print('........&&&.....&&&&&&&&&&&&&.....&&&&&&&&&&...........&..&&&&...')
+    print('.......&&&........&&&.&&&&&&&&&.....&&&&&.................&&&&...')
+    print('.......&&&...............&&&&&&&.......&&&&&&&&............&&&...')
+    print('........&&...................&&&&&&.........................&&&..')
+    print('.........&.....................&&&&........................&&....')
+    print('...............................&&&.......................&&......')
+    print('................................&&......................&&.......')
+    print('.................................&&..............................')
+    print('..................................&..............................')
+    print('')
+    print('          祝：')
+    print('     程序不出BUG！')
+    print('')
+            
+    with open('龙图腾.py','w',encoding='utf-8')as f:
+        for lib in 龙图腾py:
+            f.write(lib + '\n')
+
+    print('已生成py文件')
+
+"""后面的是turtle画的了"""
+def B站小电视():
+    #边框
+    t.pu()
+    t.goto(-250,-225)
+    t.pd()
+    t.pensize(15)
+    for i in range(2):
+        t.fd(500)
+        t.circle(50,90)
+        t.fd(350)
+        t.circle(50,90)
+    #嘴巴
+    t.pu()
+    t.goto(-100,-50)
+    t.seth(270)
+    t.pd()
+    t.pensize(15)
+    t.circle(50,180)
+    t.seth(270)
+    t.circle(50,180)
+    #左眼
+    t.pu()
+    t.goto(-200,50)
+    t.seth(30)
+    t.pd()
+    t.pensize(20)
+    t.fd(150)
+    #右眼
+    t.pu()
+    t.goto(200,50)
+    t.seth(150)
+    t.pd()
+    t.pensize(20)
+    t.fd(150)
+    #左天线
+    t.pu()
+    t.goto(-100,230)
+    t.seth(135)
+    t.pd()
+    t.pensize(30)
+    t.fd(150)
+    #右天线
+    t.pu()
+    t.goto(100,230)
+    t.seth(45)
+    t.pd()
+    t.pensize(30)
+    t.fd(150)
+    #左脚
+    t.pu()
+    t.goto(-150,-225)
+    t.seth(270)
+    t.pd()
+    t.pensize(15)
+    t.circle(30,180)
+    #右脚
+    t.pu()
+    t.goto(90,-225)
+    t.seth(270)
+    t.pd()
+    t.pensize(15)
+    t.circle(30,180)
+    t.exitonclick()
+
+def Python图标():
+    t.colormode(255)
+    t.speed(10)
+    t.pensize(3)
+    t.pu()
+    t.goto(-200,105)
+    # 蓝色区域
+    t.pencolor(54,110,157)
+    t.fillcolor(54,110,157)
+    t.begin_fill()
+    t.goto(-225,-115)
+    t.pd()
+    t.seth(90)
+    t.fd(55)
+    t.circle(-50,90)
+    t.fd(190)
+    t.circle(50,90)
+    t.fd(100)
+    t.circle(85,90)
+    t.fd(100)
+    t.circle(85,90)
+    t.fd(30)
+    t.left(90)
+    t.fd(150)
+    t.seth(270)
+    t.fd(20)
+    t.right(90)
+    t.fd(220)
+    t.circle(50,90)
+    t.fd(105)
+    t.circle(50,90)
+    t.fd(50)
+    t.left(90)
+    t.end_fill()
+    t.fillcolor(255,255,255)
+    t.pu()
+    t.goto(-125,155)
+    t.pd()
+    t.pencolor(255,255,255)
+    t.begin_fill()
+    t.circle(20,360)
+    t.end_fill()
+    # 黄色区域
+    t.pu()
+    t.goto(85,80)
+    t.pd()
+    t.pencolor(255,212,69)
+    t.fillcolor(255,212,69)
+    t.begin_fill()
+    t.seth(270)
+    t.fd(55)
+    t.circle(-50,90)
+    t.fd(190)
+    t.circle(50,90)
+    t.fd(100)
+    t.circle(85,90)
+    t.fd(100)
+    t.circle(85,90)
+    t.fd(30)
+    t.left(90)
+    t.fd(150)
+    t.right(90)
+    t.fd(20)
+    t.right(90)
+    t.fd(220)
+    t.circle(50,90)
+    t.fd(105)
+    t.circle(50,90)
+    t.fd(50)
+    t.end_fill()
+    t.fillcolor(255,255,255)
+    t.pu()
+    t.goto(-10,-180)
+    t.pd()
+    t.pencolor(255,255,255)
+    t.begin_fill()
+    t.circle(20,360)
+    t.end_fill()
+    t.done()
+
+def 太极图():
+    import turtle
+    
+    angle = 270
+    
+    def tai():
+        r = 200  # 设置半径
+        turtle.penup()  # 拿起画笔
+        turtle.goto(0, 0)  # 到画布中心
+        turtle.setheading(angle)  # 设置当前朝向为angle角度
+        turtle.fd(r)  # 前进r的距离
+        turtle.pendown()  # 放下画笔
+        turtle.right(90)  # 调整海龟角度
+    
+        # 画阳鱼
+        turtle.fillcolor("white")
+        turtle.begin_fill()  # 开始填充
+        turtle.circle(-r / 2, 180)
+        turtle.circle(r / 2, 180)
+        turtle.circle(r, 180)
+        turtle.end_fill()
+    
+        # 画阴鱼
+        turtle.fillcolor("black")
+        turtle.begin_fill()
+        turtle.circle(r, 180)
+        turtle.right(180)
+        turtle.circle(-r / 2, 180)
+        turtle.circle(r / 2, 180)
+        turtle.end_fill()
+    
+        # 画阴鱼眼
+        turtle.penup()
+        turtle.setheading(angle)
+        turtle.fd(-r / 2)
+        turtle.pendown()
+        turtle.dot(r / 4, "white")
+    
+        # 画阳鱼眼
+        turtle.penup()
+        turtle.fd(-r)
+        turtle.pendown()
+        turtle.dot(r / 4, "black")
+        turtle.penup()
+    
+    turtle.tracer(0)
+    for i in range(10000000):
+        tai()
+        turtle.update()
+        turtle.clear()
+        angle += 1
+
+def 奥运五环():
+    import turtle 
+
+    def draw_a_circle(x, y, color, radius=70, pensize=10):
+        turtle.penup()
+        turtle.goto(x, y)
+        turtle.pensize(pensize)
+        turtle.pencolor(color)
+        turtle.pendown()
+        turtle.circle(radius)
+        turtle.penup()
+
+    circles = [
+        (-130, 75, "blue"),
+        (-10, 75, "black"),
+        (110, 75, "red"),
+        (-60, -20, "yellow"),
+        (60, -20, "green")
+    ]
+
+    for x, y, color in circles:
+        draw_a_circle(x, y, color)
+
+    turtle.done()
+
+from turtle import *
+def 雷达图(select):
+    if select == 1:
+        import matplotlib.pyplot as plt
+        import numpy as np
+        values = [0.09,-0.05,0.20,-0.02,0.08,0.09,0.03,0.027]
+        x = np.linspace(0,2*np.pi,9)[:-1]
+        c = np.random.random(size=(8,3))
+        fig = plt.figure()
+        plt.axes(polar=True)
+        #获取当前的axes
+        print(plt.gca())
+        #绘图
+        plt.bar(x,values,width=0.5,color=c,align='center')
+        plt.scatter(x,values,marker='o',c='black')
+        #添加文本
+        plt.figtext(0.03,0.7,s='陆地面积增长指数',fontproperties='KaiTi',fontsize=22,rotation='vertical',verticalalignment='center',horizontalalignment='center')
+        plt.ylim(-0.05, 0.25)
+        labels = np.array(['省1','省2','省3','省4','省5','省6','省7','研究区'])
+        dataLength = 8
+        angles = np.linspace(0, 2*np.pi, dataLength, endpoint=False)
+        plt.thetagrids(angles * 180/np.pi, labels,fontproperties='KaiTi',fontsize=18)
+        #添加注释
+        # plt.annotate(s='省',xy=(0,0.09),xytext=(0,0.28),fontproperties='KaiTi',fontsize=18)
+        # plt.annotate(s='省',xy=(0,-0.05),xytext=(np.pi/4,0.28),fontproperties='KaiTi',fontsize=18)
+        # plt.annotate(s='省',xy=(0,0.20),xytext=(np.pi/2,0.28),fontproperties='KaiTi',fontsize=18)
+        # plt.annotate(s='省',xy=(0,-0.02),xytext=(3*np.pi/4,0.33),fontproperties='KaiTi',fontsize=18)
+        # plt.annotate(s='省',xy=(0,0.08),xytext=(np.pi,0.38),fontproperties='KaiTi',fontsize=18)
+        # plt.annotate(s='省',xy=(0,0.09),xytext=(np.pi*5/4,0.35),fontproperties='KaiTi',fontsize=18)
+        # plt.annotate(s='前江省',xy=(0,0.03),xytext=(np.pi*3/2,0.30),fontproperties='KaiTi',fontsize=18)
+        # plt.annotate(s='研究区',xy=(0,0.027),xytext=(np.pi*7/4,0.28),fontproperties='KaiTi',fontsize=18)
+        #设置网格线样式
+        plt.grid(c='gray',linestyle='--',)
+        # y1 = [-0.05,0.0,0.05,0.10,0.15,0.20,0.25]
+        # lai=fig.add_axes([0.12,0.01,0.8,0.98])
+        # lai.patch.set_alpha(0.25)
+        # lai.set_ylim(-0.05, 0.25)
+        #显示
+        plt.show()
+
+    if select == 2:
+        import matplotlib.pyplot as plt
+        import numpy as np
+        plt.rcParams['font.sans-serif'] = ['SimHei'] # 图例中文问题
+        plt.rcParams['axes.unicode_minus'] = False #正负号问题
+        x= np.array(['1省','2省','3省','4省','5省','6省','7省','研究区'])
+        y1 = np.array([5.5, 7.2, 17.3, 15.0, 10.8, 21.8, 3.4, 81.4])
+        y2 = [0, -27.5, -3.9, -18.0, -0.2, -1.4, -1.7, -52.1]
+        y3 = [5.5, -20.2, 13.4, -2.9, 10.6, 20.4, 1.7, 28.5]
+        loc=[0.12,0.15,0.65,0.6]
+        plt.axes(loc)
+        plt.bar(x,y1,0.4,label=u'退')
+        plt.bar(x,y2,0.4,label=u'进')
+        plt.plot(x,y3,marker='o',markersize='6',c='black')
+        y=np.array([-50, 0 ,50])
+        plt.xticks(x,fontproperties='KaiTi',fontsize=8)
+        plt.yticks(y)
+        plt.grid(c='gray',linestyle='--',alpha=0.25)
+        plt.figtext(0.02,0.45,s='变化（km2）',fontproperties='KaiTi',fontsize=14,rotation='vertical',verticalalignment='center',horizontalalignment='center')
+        #frameon=False 去掉图例边框
+        plt.legend(loc='center', bbox_to_anchor=(1.2, 0.5),ncol=1,
+        frameon=False)
+        plt.show()
+
+    else:
+        print("\033[91mERROR: 我们无法识别您输入的代码.\033[0m")
+
+from random import *
+from turtle import *
+
+def 皮卡丘():
+    import turtle as t
+    
+    def infoPrt():
+        print('coordinate: ' + str(t.pos()))
+        print('angle: ' + str(t.heading()))
+    
+    t.pensize(3)
+    t.hideturtle() 
+    t.colormode(255)
+    t.color("black")
+    t.setup(700, 650)
+    t.speed(1)
+    t.st()
+    #t.dot()
+    t.pu()  #提起笔移动
+    #t.goto(-150,100)
+    t.goto(-210,86)
+    t.pd()
+    infoPrt()
+    # 头
+    print('头')
+    t.seth(85)
+    t.circle(-100,50)
+    #t.seth(78)
+    #t.circle(-100,25)
+    infoPrt()
+    t.seth(25)
+    t.circle(-170,50)
+    infoPrt()
+    
+    # 右耳
+    print('右耳')
+    t.seth(40)
+    #t.circle(-250,52)
+    t.circle(-250,30)
+    infoPrt()
+    # 右耳尖
+    t.begin_fill()
+    # 左
+    t.circle(-250,22)
+    #t.fillcolor("pink")
+    # 右
+    t.seth(227)
+    t.circle(-270, 15)
+    prePos = t.pos()
+    infoPrt()
+    # 下
+    t.seth(105)
+    t.circle(100, 32)
+    t.end_fill()
+    t.pu()
+    t.setpos(prePos)
+    t.pd()
+    t.seth(212)
+    t.circle(-270, 28)
+    prePos = t.pos()
+    t.pu()
+    t.goto(t.xcor()+5,t.ycor()-2)
+    t.pd()
+    # 躯干
+    print('躯干')
+    t.seth(280)
+    t.circle(500, 30)
+    infoPrt()
+    # 臀部
+    print('臀部')
+    t.seth(120)
+    #t.circle(150, -55)
+    t.circle(150, -11)
+    p_tail=t.pos()
+    t.circle(150, -44)
+    p_butt=t.pos()
+    infoPrt()
+    # 尾巴
+    t.pu()
+    t.setpos(p_tail)
+    t.pd()
+    t.begin_fill()
+    t.seth(50)
+    t.fd(25)
+    t.seth(-50)
+    t.fd(30)
+    p_tail1=t.pos
+    t.seth(-140)
+    t.fd(36)
+    t.end_fill()
+    t.seth(39)
+    # 右尾和h1
+    t.fd(72)
+    # 右尾和v1
+    t.seth(125)
+    t.fd(48)
+    # 右尾和h2
+    t.seth(40)
+    t.fd(53)
+    # 右尾和v2
+    t.seth(88)
+    t.fd(45)
+    # 右尾和h3
+    t.seth(35)
+    t.fd(105)
+    # 右尾和v3
+    t.seth(105)
+    t.circle(850, 8)
+    #t.fd(105)
+    t.seth(215)
+    #t.fd(125)
+    t.circle(850, 11)
+    t.seth(280)
+    t.fd(110)
+    t.seth(220)
+    t.fd(50)
+    t.seth(309)
+    t.fd(56)
+    
+    # 底盘
+    print('底盘')
+    t.pu()
+    t.setpos(p_butt)
+    t.pd()
+    t.seth(20)
+    t.circle(120, -45)
+    infoPrt()
+    
+    t.seth(330)
+    t.circle(-150, -30)
+    infoPrt()
+    prePos = t.pos()
+    t.pu()
+    t.goto(t.xcor()+20,t.ycor())
+    t.pd()
+    t.seth(230)
+    t.circle(-70, 120)
+    p_bot=t.pos()
+    # 两脚-right
+    t.pu()
+    t.setpos(p_butt)
+    t.setpos(t.xcor()+5,t.ycor()+5)
+    t.pd()
+    t.seth(-86)
+    t.fd(30)
+    t.seth(-93)
+    t.fd(33)
+    t.seth(-225)
+    t.circle(-150, 22)
+    # 两脚-left
+    t.pu()
+    t.setpos(p_bot)
+    t.setpos(t.xcor()+85,t.ycor()-43)
+    t.pd()
+    t.seth(-105)
+    t.fd(50)
+    t.seth(-225)
+    t.circle(-150, 22)
+    # 左躯干
+    print('躯干')
+    t.pu()
+    t.setpos(p_bot)
+    t.pd()
+    t.seth(90)
+    t.circle(450, 13)
+    p_lfhd = t.pos()
+    t.circle(450, 5)
+    t.pu()
+    t.circle(450, 5)
+    t.pd()
+    t.circle(450, 6)
+    infoPrt()
+    # 左脸
+    t.begin_fill()
+    t.fillcolor("pink")
+    print('左脸')
+    t.seth(330)
+    t.circle(50, -90)
+    infoPrt()
+    # 左酒窝
+    t.seth(30)
+    t.circle(-15, 120)
+    t.seth(-70)
+    t.circle(-30, 90)
+    t.end_fill()
+    # 左手
+    t.pu()
+    t.setpos(p_lfhd)
+    t.pd()
+    t.seth(160)
+    t.circle(150, 30)
+    infoPrt()
+    t.seth(180)
+    t.circle(-30, 150)
+    t.fd(67)
+    t.pu()
+    t.setpos(t.xcor()-40,t.ycor()-60)
+    t.pd()
+    t.seth(200)
+    t.circle(-5, 180)
+    # 右手
+    t.pu()
+    t.setpos(p_lfhd)
+    t.setpos(t.xcor()+180,t.ycor()+5)
+    t.pd()
+    t.seth(200)
+    t.circle(-50, 100)
+    t.pu()
+    t.circle(-50, 15)
+    t.pd()
+    t.circle(-50, 65)
+    t.pu()
+    t.setpos(t.xcor()+10,t.ycor()-45)
+    t.pd()
+    #t.seth(270)
+    #t.circle(-30, -180)
+    t.seth(80)
+    t.fd(10)
+    t.seth(165)
+    t.circle(10, 60)
+    t.seth(90)
+    t.fd(5)
+    t.seth(165)
+    t.circle(10, 60)
+    t.seth(95)
+    t.fd(5)
+    t.seth(185)
+    t.circle(10, 60)
+    t.seth(105)
+    t.fd(10)
+    t.seth(230)
+    t.fd(20)
+    t.seth(145)
+    t.fd(10)
+    t.seth(285)
+    t.fd(20)
+    # 右酒窝
+    t.begin_fill()
+    t.fillcolor("pink")
+    t.pu()
+    t.setpos(t.xcor()-40,t.ycor()+110)
+    t.pd()
+    t.circle(27, 360)
+    t.end_fill()
+    #x-20 ,y+50
+    """画嘴"""
+    color("black", "#F35590")
+    # 下嘴弧度并填充颜色
+    penup()
+    goto(-100, 72)
+    pendown()
+    begin_fill()
+    setheading(260)
+    forward(60)
+    circle(-11, 150)
+    forward(55)
+    print(position())
+    penup()
+    goto(-128.46, 71.97)
+    pendown()
+    end_fill()
+    #嘴中最上方的阴影部分
+    color("#6A070D", "#6A070D")
+    begin_fill()
+    penup()
+    goto(-99.00, 72.00)
+    pendown()
+    penup()
+    goto(-104.29, 48.3)
+    pendown()
+    penup()
+    goto(-142, 45)
+    pendown()
+    penup()
+    goto(-150.40, 62.74)
+    pendown()
+    penup()
+    goto(-128.46, 71.97)
+    pendown()
+    penup()
+    goto(-99.00, 72.00)
+    pendown()
+    end_fill()
+    #上嘴唇
+    color("black","#FFD624")
+    penup()
+    goto(-168, 65)
+    pendown()
+    begin_fill()
+    setheading(-25)
+    for i in range(2):
+        setheading(-25)
+        circle(35, 70)
+    end_fill()
+    #嘴中第二个阴影部分
+    color("#AB1945", "#AB1945")
+    penup()
+    goto(-142, 45)
+    pendown()
+    begin_fill()
+    setheading(40)
+    circle(-33, 70)
+    goto(-104,48.3)
+    penup()
+    goto(-108,33)
+    pendown()
+    setheading(155)
+    circle(25, 70)
+    end_fill()
+    
+    # 左眼
+    t.pu()
+    t.color("black")
+    t.setpos(t.xcor()-40,t.ycor()+90)
+    t.pd()
+    t.circle(5)
+    t.pu()
+    t.setpos(t.xcor()+5,t.ycor()+10)
+    t.pd()
+    t.begin_fill()
+    t.seth(190)
+    t.circle(15, 130)
+    t.seth(310)
+    t.circle(10, 15)
+    t.seth(0)
+    t.circle(17, 133)
+    t.seth(90)
+    t.circle(10, 15)
+    t.end_fill()
+    t.pu()
+    t.setpos(t.xcor()+2,t.ycor()-15)
+    t.pd()
+    t.color("white")
+    t.begin_fill()
+    t.circle(5)
+    t.end_fill()
+    # 右眼
+    t.pu()
+    t.setpos(t.xcor()+85,t.ycor()+15)
+    t.pd()
+    t.color("black")
+    t.circle(5)
+    t.pu()
+    t.setpos(t.xcor()+5,t.ycor()+10)
+    t.pd()
+    t.begin_fill()
+    t.seth(190)
+    t.circle(20, 130)
+    t.seth(310)
+    t.circle(10, 15)
+    t.seth(0)
+    t.circle(22, 133)
+    t.seth(90)
+    t.circle(13, 15)
+    t.end_fill()
+    t.pu()
+    t.setpos(t.xcor()-7,t.ycor()-15)
+    t.pd()
+    t.color("white")
+    t.begin_fill()
+    t.circle(7)
+    t.end_fill()
+    # 左耳
+    t.color("black")
+    t.pu()
+    t.goto(-210,86)
+    t.setpos(t.xcor()+15,t.ycor()+38)
+    t.pd()
+    t.seth(90)
+    t.circle(-250,30)
+    t.begin_fill()
+    # 左
+    t.circle(-250,18)
+    # 右
+    t.seth(270)
+    t.circle(-270, 12)
+    prePos = t.pos()
+    # 下
+    t.seth(180)
+    t.circle(100, 30)
+    t.end_fill()
+    t.pu()
+    t.setpos(prePos)
+    t.pd()
+    t.seth(270)
+    t.circle(-270, 18)
+    t.screensize(50,50,bg='yellow')
+    # 输出文字
+    printer = t.Turtle()
+    printer.hideturtle()
+    printer.penup()
+    printer.goto(-350,-100)
+    printer.write("皮\n\n",move = True, align="left", font=("楷体", 30, "bold"))
+    printer.goto(-350,-150)
+    printer.write("卡\n\n",move = True, align="left", font=("楷体", 30, "bold"))
+    printer.goto(-350,-200)
+    printer.write("丘\n\n",move = True, align="left", font=("楷体", 30, "bold"))
+    printer.goto(-350,-250)
+    printer.write("！！\n\n",move = True, align="left", font=("楷体", 30, "bold"))
+    自制('PiKaQiu!')
+    t.hideturtle()
+    t.done()
+
+def 蜡笔小新():
+    '''设置'''
+    t.setup(800,500)
+    t.pensize(2)
+    t.colormode(255)
+    t.speed(7)  # 绘画速度
+    t.color('black',(255,228,181))
+    #t.shape('turtle')
+    t.speed(5)
+    t.showturtle()
+    # 头
+    t.pu()
+    t.goto(-150,10)
+    t.pd()
+    t.seth(0)
+    t.begin_fill()
+    t.left(135)
+    t.circle(-70,85)
+    t.right(8)
+    t.circle(-85,44)
+    t.left(10)
+    t.circle(40,61)
+    t.right(15)
+    t.fd(20)
+    t.right(5)
+    t.circle(-40,45)
+    t.left(6)
+    t.circle(-70,25)
+    t.left(18)
+    t.circle(-80,35)
+    t.left(10)
+    t.circle(-70,27)
+    t.circle(-120,54)
+    
+    # 耳朵
+    t.pu()
+    t.goto(82,30)
+    t.pd()
+    t.left(140)
+    t.fd(20)
+    t.right(10)
+    t.circle(-20,65)
+    t.seth(-50)
+    t.fd(5)
+    t.right(13)
+    t.circle(-50,50)
+    t.right(10)
+    t.circle(-60,25)
+    t.right(7)
+    t.circle(-50,20)
+    t.circle(-10,90)
+    
+    # 补充完整头部
+    t.pu()
+    t.goto(-150,10)
+    t.pd()
+    t.color('black',(255,228,181))
+    t.right(130)
+    t.circle(90,33)
+    t.right(16)
+    t.circle(370,28)
+    t.end_fill()
+    
+    # 头发
+    t.color('black','black')
+    t.pu()
+    t.goto(-18,180)
+    t.pd()
+    t.begin_fill()
+    t.right(30)
+    t.circle(-350,19)
+    t.right(38)
+    t.circle(-300,17)
+    t.left(135)
+    t.fd(23)
+    t.left(39)
+    t.circle(120,63)
+    t.left(10)
+    t.circle(110,28)
+    t.right(11)
+    t.circle(85,14)
+    t.end_fill()
+    
+    #眉毛
+    t.pu()
+    t.goto(-52,151)
+    t.pd()
+    t.begin_fill()
+    t.right(205)
+    t.circle(110,33)
+    t.circle(7,130)
+    t.left(50)
+    t.circle(-110,30)
+    t.circle(8,140)
+    t.end_fill()
+    t.pu()
+    t.goto(48,140)
+    t.pd()
+    t.begin_fill()
+    t.right(4)
+    t.circle(150,18)
+    t.right(4)
+    t.circle(-6,140)
+    t.right(28)
+    t.circle(-150,19)
+    t.right(10)
+    t.circle(-10,150)
+    t.end_fill()
+    t.pu()
+    t.goto(-69,126)
+    t.pd()
+    t.left(70)
+    t.circle(-80,37)
+    t.right(15)
+    t.circle(-25,100)
+    t.pu()
+    t.goto(2,91)
+    t.pd()
+    t.left(150)
+    t.circle(-70,30)
+    t.right(10)
+    t.circle(-40,60)
+    t.circle(-70,20)
+    
+    #眼睛
+    t.pu()
+    t.goto(-60,110)
+    t.pd()
+    t.begin_fill()
+    t.right(52)
+    t.circle(27)
+    t.end_fill()
+    t.color('black','white')
+    t.pu()
+    t.goto(-45,110)
+    t.pd()
+    t.begin_fill()
+    t.right(24)
+    t.circle(20,80)
+    t.circle(7,100)
+    t.seth(40)
+    t.fd(22)
+    t.left(17)
+    t.circle(10,155)
+    t.end_fill()
+    t.pu()
+    t.goto(-20,95)
+    t.pd()
+    t.begin_fill()
+    t.left(70)
+    t.circle(-14,80)
+    t.circle(-7,120)
+    t.right(44)
+    t.circle(35,30)
+    t.end_fill()
+    t.pu()
+    t.goto(-41,77)
+    t.pd()
+    t.begin_fill()
+    t.left(28)
+    t.circle(6)
+    t.end_fill()
+    t.color('black','black')
+    t.pu()
+    t.goto(-5,55)
+    t.pd()
+    t.begin_fill()
+    t.left(10)
+    t.circle(-25)
+    t.end_fill()
+    t.color('black','white')
+    t.pu()
+    t.goto(5,57)
+    t.pd()
+    t.begin_fill()
+    t.left(40)
+    t.circle(-8,120)
+    t.left(30)
+    t.circle(-19,80)
+    t.circle(-8,120)
+    t.right(32)
+    t.circle(19,60)
+    t.right(55)
+    t.circle(-9,95)
+    t.end_fill()
+    t.pu()
+    t.goto(38,62)
+    t.pd()
+    t.begin_fill()
+    t.left(190)
+    t.circle(-15,50)
+    t.circle(-8,100)
+    t.right(40)
+    t.circle(-10,80)
+    t.end_fill()
+    t.pu()
+    t.goto(10,50)
+    t.pd()
+    t.begin_fill()
+    t.circle(-5)
+    t.end_fill()
+    
+    #嘴巴
+    t.pu()
+    t.goto(-129,12)
+    t.pd()
+    t.circle(-40,35)
+    #身体
+    t.color('black',(205,32,32))
+    t.pu()
+    t.goto(-142,7)
+    t.pd()
+    t.begin_fill()
+    t.seth(-150)
+    t.fd(18)
+    t.seth(150)
+    t.fd(55)
+    t.left(105)
+    t.circle(-43,40)
+    t.right(125)
+    t.circle(-43,30)
+    t.left(180)
+    t.circle(43,30)
+    t.seth(-50)
+    t.fd(46)
+    t.circle(50,26)
+    t.left(27)
+    t.circle(60,50)
+    t.right(180)
+    t.circle(100,60)
+    t.seth(0)
+    t.fd(194)
+    t.left(120)
+    t.circle(-50,50)
+    t.fd(25)
+    t.right(20)
+    t.circle(34,66)
+    t.circle(18,116)
+    t.right(30)
+    t.circle(-90,18)
+    t.seth(135)
+    t.fd(12)
+    t.seth(-145)
+    t.fd(10)
+    t.right(46)
+    t.circle(-90,20)
+    t.circle(10,100)
+    t.circle(-60,20)
+    t.right(130)
+    t.circle(-50,20)
+    t.left(90)
+    t.circle(-370,6)
+    t.left(15)
+    t.circle(-90,13)
+    t.right(7)
+    t.circle(-90,18)
+    t.end_fill()
+    t.pu()
+    t.goto(-64,-33)
+    t.pd()
+    t.left(160)
+    t.circle(100,40)
+    t.circle(40,40)
+    
+    #手
+    t.color('black',(255,228,181))
+    t.pu()
+    t.goto(-62,-28)
+    t.pd()
+    t.begin_fill()
+    t.seth(140)
+    t.fd(8)
+    t.left(77)
+    t.circle(-12,150)
+    t.left(90)
+    t.fd(11)
+    t.circle(-4,120)
+    t.right(45)
+    t.fd(11)
+    t.left(130)
+    t.circle(20,35)
+    t.circle(-4,140)
+    t.right(30)
+    t.circle(-20,40)
+    t.left(160)
+    t.circle(20,40)
+    t.circle(-4,140)
+    t.right(20)
+    t.circle(-20,50)
+    t.left(190)
+    t.circle(-20,40)
+    t.circle(-3,130)
+    t.left(5)
+    t.circle(-20,60)
+    t.left(180)
+    t.circle(-20,40)
+    t.seth(25)
+    t.fd(10)
+    t.left(240)
+    t.circle(-30,30)
+    t.left(40)
+    t.circle(60,20)
+    t.seth(-30)
+    t.fd(7)
+    t.seth(-125)
+    t.fd(25)
+    t.end_fill()
+    t.pu()
+    t.goto(-212,3)
+    t.pd()
+    t.begin_fill()
+    t.seth(150)
+    t.fd(12)
+    t.left(90)
+    t.fd(8)
+    t.right(50)
+    t.circle(-9,90)
+    t.left(110)
+    t.fd(14)
+    t.right(40)
+    t.circle(-4,120)
+    t.right(15)
+    t.circle(-20,40)
+    t.left(180)
+    t.circle(-3,100)
+    t.left(123)
+    t.circle(-30,30)
+    t.circle(-3,150)
+    t.right(10)
+    t.circle(-30,30)
+    t.seth(80)
+    t.fd(3)
+    t.left(72)
+    t.circle(30,30)
+    t.right(8)
+    t.circle(-4,120)
+    t.right(43)
+    t.circle(-30,40)
+    t.seth(80)
+    t.fd(3)
+    t.left(70)
+    t.circle(30,34)
+    t.right(17)
+    t.circle(-4,120)
+    t.right(27)
+    t.circle(-20,90)
+    t.left(180)
+    t.circle(-20,50)
+    t.seth(35)
+    t.fd(8)
+    t.left(234)
+    t.circle(60,20)
+    t.seth(-33)
+    t.circle(-50,23)
+    t.seth(-119)
+    t.fd(16)
+    t.end_fill()
+    自制('LaBiXiaoXin!')
+    t.done()
+
+def 简易魔法阵():
+    import turtle
+    turtle.screensize(600,600,"black")
+    turtle.hideturtle()
+
+    #最外圈圆
+    turtle.pensize("8")
+    turtle.pencolor("white")
+    turtle.speed(0)
+    turtle.penup()
+    turtle.goto(0,250)
+    turtle.pendown()
+    turtle.circle(-250)
+
+
+    turtle.pensize("4")
+    turtle.pencolor("white")
+    turtle.speed(10)
+    turtle.penup()
+    turtle.goto(0,243)
+    turtle.pendown()
+    turtle.circle(-243,steps=7)
+
+    #第二圈七边形
+    turtle.pensize("1")
+    turtle.pencolor("white")
+    turtle.speed(10)
+    turtle.penup()
+    turtle.goto(0,233)
+    turtle.pendown()
+    turtle.circle(-233,steps=7)
+
+    #七边形对角线
+    turtle.pensize("7")
+    turtle.pencolor("white")
+    turtle.speed(6)
+    turtle.penup()
+    turtle.goto(1,228)
+    turtle.pendown()
+    turtle.seth(0)
+
+    turtle.right(51.6)
+    turtle.forward(100) #356
+    turtle.penup()
+    turtle.forward(20)
+    turtle.pendown()
+    turtle.forward(236)
+
+    turtle.right(102.8)
+    turtle.forward(100)
+    turtle.penup()
+    turtle.forward(20)
+    turtle.pendown()
+    turtle.forward(236)
+
+    turtle.right(102.8)
+    turtle.forward(100)
+    turtle.penup()
+    turtle.forward(20)
+    turtle.pendown()
+    turtle.forward(236)
+
+    turtle.right(102.8)
+    turtle.forward(100)
+    turtle.penup()
+    turtle.forward(20)
+    turtle.pendown()
+    turtle.forward(236)
+
+    turtle.right(102.8)
+    turtle.forward(100)
+    turtle.penup()
+    turtle.forward(20)
+    turtle.pendown()
+    turtle.forward(236)
+
+    turtle.right(102.8)
+    turtle.forward(100)
+    turtle.penup()
+    turtle.forward(20)
+    turtle.pendown()
+    turtle.forward(236)
+
+    turtle.right(102.8)
+    turtle.forward(100)
+    turtle.penup()
+    turtle.forward(20)
+    turtle.pendown()
+    turtle.forward(236)
+
+    #t2_1.qibiao()
+
+    #小七边形
+    turtle.pensize("3")
+    turtle.pencolor("white")
+    turtle.speed(10)
+    turtle.penup()
+    turtle.goto(-64,134)
+    turtle.pendown()
+    turtle.seth(25.5)
+    turtle.circle(-149,steps=7)
+
+    #第二圈圆
+    turtle.pensize("2")
+    turtle.pencolor("white")
+    turtle.speed(0)
+    turtle.penup()
+    turtle.goto(0,128)
+    turtle.pendown()
+    turtle.seth(0)
+    turtle.circle(-128)
+
+    """
+    turtle.pensize("1")
+    turtle.pencolor("white")
+    turtle.speed(10)
+    turtle.penup()
+    turtle.goto(0,127)
+    turtle.pendown()
+    turtle.seth(0)
+    turtle.circle(-126,steps=6)
+    """
+
+    #第3个圆
+    turtle.pensize("1")
+    turtle.pencolor("white")
+    turtle.speed(0)
+    turtle.penup()
+    turtle.goto(0,80)
+    turtle.pendown()
+    turtle.seth(0)
+    turtle.circle(-80)
+
+
+
+    #第二圈圆的周围五个圆
+    turtle.speed(0)
+    turtle.penup()
+    turtle.goto(0,127)
+    turtle.pendown()
+    turtle.seth(0)
+    turtle.circle(-24)
+
+    turtle.speed(0)
+    turtle.penup()
+    turtle.goto(110,65)
+    turtle.pendown()
+    turtle.seth(-60)
+    turtle.circle(-24)
+
+    turtle.speed(0)
+    turtle.penup()
+    turtle.goto(110,-63)
+    turtle.pendown()
+    turtle.seth(-120)
+    turtle.circle(-24)
+
+    turtle.speed(0)
+    turtle.penup()
+    turtle.goto(0,-126)
+    turtle.pendown()
+    turtle.seth(-180)
+    turtle.circle(-24)
+
+    turtle.speed(0)
+    turtle.penup()
+    turtle.goto(-110,-63)
+    turtle.pendown()
+    turtle.seth(-240)
+    turtle.circle(-24)
+
+    turtle.speed(0)
+    turtle.penup()
+    turtle.goto(-110,65)
+    turtle.pendown()
+    turtle.seth(-300)
+    turtle.circle(-24)
+
+
+    #正三角
+    turtle.speed(10)
+    turtle.penup()
+    turtle.goto(0,103)
+    turtle.pendown()
+    turtle.seth(0)
+    turtle.circle(-102,steps =3)
+
+    #倒三角
+    turtle.speed(10)
+    turtle.penup()
+    turtle.goto(0,-102)
+    turtle.pendown()
+    turtle.seth(-180)
+    turtle.circle(-102,steps =3)
+
+    """
+    turtle.penup()
+    turtle.goto(0,90)
+    turtle.pendown()
+    """
+    #第4个圆
+    turtle.pensize("3")
+    turtle.pencolor("white")
+    turtle.speed(10)
+    turtle.penup()
+    turtle.goto(0,40)
+    turtle.pendown()
+    turtle.seth(0)
+    turtle.circle(-40)
+
+    #圆内五角星
+    #t2_1.wjx(-35,12,70,24,9,2)
+
+    """
+    turtle.pensize("1")
+    turtle.pencolor("white")
+    turtle.speed(10)
+    turtle.penup()
+    turtle.goto(0,80)
+    turtle.pendown()
+    turtle.seth(0)
+    turtle.circle(-80,steps=3)
+    """
+    #圆边三个箭头
+    turtle.pensize("1")
+    turtle.pencolor("white")
+    turtle.speed(0)
+
+    turtle.penup()
+    turtle.goto(-18,38)
+    turtle.pendown()
+    turtle.seth(67)
+    turtle.forward(47)
+    turtle.right(134)
+    turtle.forward(49)
+
+
+    turtle.penup()
+    turtle.goto(-40,-3)
+    turtle.pendown()
+    turtle.seth(-128)
+    turtle.forward(47)
+    turtle.left(134)
+    turtle.forward(49)
+
+    turtle.penup()
+    turtle.goto(40,-3)
+    turtle.pendown()
+    turtle.seth(-52)
+    turtle.forward(47)
+    turtle.right(134)
+    turtle.forward(49)
+    自制('MoFaZhen!')
+    turtle.done()
+
+def 月饼():
+    import turtle
+    #调用turtle库
+    t = turtle.Pen()  # 画笔一 用于画图
+    t.speed(0)
+    
+    
+    # 花纹颜色 #F29407
+    # 饼身颜色 #F8B41A
+    
+    # 画 饼身部分
+    def outfill_flower(flower_num: "花瓣数量", flower_color: "花瓣颜色"):
+        for i in range(flower_num):
+            t.left(i * (360 // flower_num))
+            t.color(flower_color)
+            t.penup()
+            t.forward(200)
+            t.pendown()
+            t.fillcolor(flower_color)
+            t.begin_fill()
+            t.circle(60)
+            t.end_fill()
+            t.penup()
+            t.home()
+    
+    
+    # 画 饼身外围 花纹部分
+    def out_line_flower(flower_num: "花纹数量", flower_color: "花纹颜色"):
+        for i in range(flower_num):
+            t.pensize(5)
+            t.left(i * (360 // 18))
+            t.color(flower_color)
+            t.penup()
+            t.forward(192)
+            t.pendown()
+            t.circle(60)
+            t.penup()
+            t.home()
+    
+    
+    # 画内测的大圆 大圆的填充色比饼身略亮
+    def big_circle(circle_color: "大圆颜色", circle_fill_color: "大圆填充颜色", circle_size: "大圆半径"):
+        t.goto(circle_size, 0)
+        t.left(90)
+        t.pendown()
+        t.pensize(8)
+        t.color(circle_color)
+        t.fillcolor(circle_fill_color)
+        t.begin_fill()
+        t.circle(circle_size)
+        t.end_fill()
+        t.penup()
+        t.home()
+    
+    
+    # 饼上印花文字 文字内容和坐标用字典存储
+    def write_font(text_content: "文本内容", text_color: "文本颜色", size: "文字大小"):
+        t.color(text_color)
+        for x in text_content:
+            t.penup()
+            t.goto(text_content[x])
+            t.write(x, align='center', font=('simhei', size, 'bold'))
+        t.penup()
+        t.home()
+        t.color('#F29407')
+    
+    
+    # 饼身中间矩形条纹部分
+    def body_center_line(width: "矩形宽度", height: "矩形高度"):
+        t.penup()
+        t.home()
+        t.pensize(4)
+        t.pendown()
+        t.backward(width / 2)
+        t.forward(width)
+        t.left(90)
+        t.forward(height)
+        t.left(90)
+        t.forward(width)
+        t.left(90)
+        t.forward(height * 2)
+        t.left(90)
+        t.forward(width)
+        t.left(90)
+        t.forward(height)
+        t.penup()
+        t.home()
+    
+    
+    # 矩形条纹两侧的四个花纹 画笔轨迹是一样的 所以只需要传入不同的初始位置和角度即可复用代码
+    def center_flower(start_point: "落笔位置", start_angle: "落笔朝向", angle_direction_change: "新朝向",
+                    rectangle_height: "矩形高度", circle_direction: "花纹弧度"):
+        t.penup()
+        t.goto(start_point)
+        t.pendown()
+        t.setheading(start_angle)
+        t.forward(10)
+        t.setheading(angle_direction_change)
+        t.forward(20)
+        t.backward(rectangle_height * 2)
+        t.forward(rectangle_height * 2)
+        t.setheading(start_angle)
+        t.circle(circle_direction * 70, 90)
+        t.setheading(start_angle + 180)
+        t.forward(60)
+        t.setheading(angle_direction_change)
+        t.forward(30)
+        t.penup()
+        t.home()
+    
+    
+    # 饼身上下左右的花纹
+    def out_flower(begin_x: "落笔横坐标", begin_y: "落笔纵坐标", start_angle: "落笔朝向"):
+        t.penup()
+        t.goto(begin_x, begin_y)
+        t.pendown()
+        t.setheading(start_angle)
+        t.forward(20)
+        t.right(90)
+        t.circle(-100, 20)
+    
+        t.penup()
+        t.goto(begin_x, begin_y)
+        t.pendown()
+        t.setheading(start_angle)
+        t.right(90)
+        t.circle(-100, 30)
+        t.left(90)
+        t.forward(45)
+        t.left(95)
+        t.circle(190, 50)
+        t.left(95)
+        t.forward(45)
+        t.left(90)
+        t.circle(-100, 31)
+        t.setheading(start_angle)
+        t.forward(20)
+        t.left(90)
+        t.circle(100, 20)
+        t.penup()
+        t.home()
+    
+        # 设置画布名称
+    t.screen.title('月饼')
+        # 画 饼身部分
+    outfill_flower(18, '#F29407')
+        # 画 饼身外围 花纹部分
+    out_line_flower(18, '#FFDEAD')
+        # 画内测的大圆 大圆的填充色比饼身略亮
+    big_circle('#FFDEAD', '#F8B51D', 200)
+        # 饼身中间矩形条纹部分
+    body_center_line(12, 80)
+        # 饼身上下左右的花纹
+    out_flower(6, 110, 90)
+    out_flower(-110, 6, 180)
+    out_flower(-6, -110, 270)
+    out_flower(110, -6, 360)
+        # 可以再加点字
+    text_content2 = {'中': (-50, 30), '秋': (50, 30), '乐': (50, -60), '快': (-50, -60)}  # 圆字坐标最后向下微调了一下
+    write_font(text_content2, '#FCE6C9',40)
+    
+        # 隐藏画笔
+    t.hideturtle()
+        # 保持画布显示
+    自制('YueBing!')
+    turtle.done()
+
+def 生成世界地图html():
+    try:
+        from pyecharts import options as opts
+        from pyecharts.charts import Map
+        from pyecharts.faker import Faker
+        import webbrowser
+    except:
+        os.system('pip install pyecharts')
+        time.sleep(2)
+        from pyecharts import options as opts
+        from pyecharts.charts import Map
+        from pyecharts.faker import Faker
+        import webbrowser
+
+    c = (
+    Map(init_opts=opts.InitOpts(width='1500px', height='1200px',bg_color='#E0EEEE'))
+    # 加载世界地图实例
+    .add("世界地图", [list(z) for z in zip(Faker.country, Faker.values())], "world")
+    # 不显示地图标志
+    .set_series_opts(label_opts=opts.LabelOpts(is_show=False))
+    .set_global_opts(
+    # 配置项标题设置
+    title_opts=opts.TitleOpts(title="世界地图示例"),
+    visualmap_opts=opts.VisualMapOpts(max_=200)
+    )
+    # 生成超文本文件
+    .render("世界地图.html")
+    )
+    print('生成成功！')
+    webbrowser.open(Desktop+'/世界地图.html')
+
+def 生成中国地图html():
+    try:
+        from pyecharts import options as opts
+        from pyecharts.charts import Map3D
+        from pyecharts.globals import ChartType
+        import webbrowser
+    except:
+        os.system('pip install pyecharts')
+        time.sleep(2)
+        from pyecharts import options as opts
+        from pyecharts.charts import Map3D
+        from pyecharts.globals import ChartType
+        import webbrowser
+
+    c = (
+    Map3D(init_opts=opts.InitOpts(width='1300px', height='1300px',bg_color='#EBEBEB'))
+    .add_schema(
+    itemstyle_opts=opts.ItemStyleOpts(
+    color="#CDBA96",
+    opacity=1,
+    border_width=0.8,
+    border_color="rgb(62,215,213)",
+    ),
+    map3d_label=opts.Map3DLabelOpts(
+    is_show=True,
+    text_style=opts.TextStyleOpts(
+    color="#104E8B", font_size=16, background_color="rgba(0,0,0,0)"
+    ),
+    ),
+    emphasis_label_opts=opts.LabelOpts(is_show=True),
+    light_opts=opts.Map3DLightOpts(
+    main_color="#FFEBCD",
+    main_intensity=1.2,
+    is_main_shadow=False,
+    main_alpha=55,
+    main_beta=10,
+    ambient_intensity=0.3,
+    ),
+    )
+    .add(series_name="", data_pair="", maptype=ChartType.MAP3D)
+    # 全局设置地图属性
+    .set_global_opts(
+    title_opts=opts.TitleOpts(title="全国行政区划地图"),
+    visualmap_opts=opts.VisualMapOpts(is_show=False),
+    tooltip_opts=opts.TooltipOpts(is_show=True),
+    )
+    .render("中国3D地图.html")
+    )
+    print('生成成功！')
+    webbrowser.open(Desktop+'/中国3D地图.html')
+
+def 生成3D地球html():
+    try:
+        import pyecharts.options as opts
+        from pyecharts.charts import MapGlobe
+        from pyecharts.faker import POPULATION
+        import webbrowser
+    except:
+        os.system('pip install pyecharts')
+        time.sleep(2)
+        import pyecharts.options as opts
+        from pyecharts.charts import MapGlobe
+        from pyecharts.faker import POPULATION
+        import webbrowser
+
+    data = [x for _, x in POPULATION[1:]]
+    low, high = min(data), max(data)
+    c = (
+    MapGlobe(init_opts=opts.InitOpts(width='1000px', height='1000px',bg_color='#FFFAFA',))
+    .add_schema()
+    .add(
+    maptype="world",
+    series_name="World Population",
+    data_pair=POPULATION[1:],
+    is_map_symbol_show=True,
+    label_opts=opts.LabelOpts(is_show=True),
+    )
+    .set_global_opts(
+    title_opts=opts.TitleOpts(title="3D 地球示例"),
+    # 设置地球属性
+    visualmap_opts=opts.VisualMapOpts(
+    min_=low,
+    max_=high,
+    range_text=["max", "min"],
+    is_calculable=True,
+    range_color=["lightskyblue", "yellow", "orangered"],
+    )
+    )
+    .render("3D地球.html")
+    )
+    print('生成成功！')
+    webbrowser.open(Desktop+'/3D地球.html')
+
+if __name__ == '__main__':
+    生成3D地球html()
+    自制('DrawPrint')
+    自制('Hello world!')
