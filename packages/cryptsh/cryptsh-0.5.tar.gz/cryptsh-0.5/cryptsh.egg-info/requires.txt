@@ -1,0 +1,6 @@
+python-binance
+tabulate
+mysql-connector-python
+keyboard
+psycopg2
+setuptools
