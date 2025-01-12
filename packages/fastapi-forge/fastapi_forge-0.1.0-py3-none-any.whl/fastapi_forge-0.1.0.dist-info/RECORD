@@ -1,0 +1,14 @@
+fastapi_forge/__init__.py,sha256=YerQil9S2WYSPjGwt5hFLoPr-nFRXcxjF02M8hyugas,35
+fastapi_forge/cli.py,sha256=anYlizjewidFO1SPJ-C6908O3-eMtGlyTShRJqBr0Wc,900
+fastapi_forge/config.py,sha256=opUCwliw2otJWL56lsG8r3xHMRSDav1eC3D9WrdbhL4,173
+fastapi_forge/dtos.py,sha256=4ag_YYSd1yMyMWM-E5S-yceir_b3e5PX4vruRgPHsJU,120
+fastapi_forge/server.py,sha256=qjMisExpTpjlwwhgO28NWouwDaq8mQpsPr3t3_i1cIQ,2167
+fastapi_forge/utils.py,sha256=fIddVl2x4UWwrQ_z4y8NVPvYOIQjwBwWszS2UvSfFTc,139
+fastapi_forge/static/index.html,sha256=OEOA2GBxjUwA_lA7eWky-UWClsuXSZzR2cDM3SxohYg,501
+fastapi_forge/static/script.js,sha256=vVX5dmFrTxVnCCFUeyQ_iN_5QeHHMedaFc1ID-5XRGM,993
+fastapi_forge/static/style.css,sha256=6s8BmGFqf1pWmOK49-fEvwtB139DCbGr4oFleGxMTFU,638
+fastapi_forge-0.1.0.dist-info/METADATA,sha256=JZ7-4XlCUT6AoVt-r8EW1Bh79cbUYnLAbVMa9NSCnq0,208
+fastapi_forge-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+fastapi_forge-0.1.0.dist-info/entry_points.txt,sha256=Ps8yhZ4JfieKQYL-QD81HYYEQddfYn3th8eYoLcVIyo,53
+fastapi_forge-0.1.0.dist-info/top_level.txt,sha256=seSvGRSnC7c-yV-pQHKLsnKFdHlFjBobvt4__c1-ONE,14
+fastapi_forge-0.1.0.dist-info/RECORD,,
