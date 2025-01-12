@@ -1,0 +1,2 @@
+[console_scripts]
+az-mdv = az_migrate_dep_visu.app:app.run

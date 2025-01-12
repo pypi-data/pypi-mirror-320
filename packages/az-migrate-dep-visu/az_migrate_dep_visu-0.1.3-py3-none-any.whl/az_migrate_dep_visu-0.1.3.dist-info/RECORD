@@ -1,0 +1,14 @@
+az_migrate_dep_visu/__init__.py,sha256=8G-rLhbTJsxt8QMNfYPDILcn9K1Psojh3Vq-lntPyS4,21
+az_migrate_dep_visu/app.py,sha256=jLMSzD7xOOJ4SogoKLeuoSoGIwFu4SZD8CLust6S344,8078
+az_migrate_dep_visu/static/icon.png,sha256=jWel1ughDJRrOqIVMXXOsLFWlfDnMlxf5HnJiRKWCVU,102914
+az_migrate_dep_visu/static/icon_simplified.png,sha256=6bmbKHgBJmr4rSuEM-FNR4ffwPU9K-5qTH9gUwzz58g,12433
+az_migrate_dep_visu/static/scripts.js,sha256=si6NMp_5OPYVPv_q50VxyagSmFlphLHNakm_7Mc34dY,15179
+az_migrate_dep_visu/static/styles.css,sha256=irdpkqub7qvc-ja-8cD3qASsKwloJrDmtZsl12MGEno,1500
+az_migrate_dep_visu/templates/base.html,sha256=k4EiVPjJNuZZfiPIFR4k0RJFymRrJN_m_lBOvHBf0Gs,2519
+az_migrate_dep_visu/templates/result.html,sha256=unE_4ixeFw1p8mTaGzMc4dTDZCaNhUcgb_3IO_k8DcY,6285
+az_migrate_dep_visu/templates/upload.html,sha256=Lo_-ZMEhVxHs12YIhyB1A6XK5XnqZtGxl3BG9ucNeLg,1667
+az_migrate_dep_visu-0.1.3.dist-info/METADATA,sha256=tdf14q9h5iAPh2NZibrIOleJ9JsA1bitiIyM6-FlbpY,5187
+az_migrate_dep_visu-0.1.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+az_migrate_dep_visu-0.1.3.dist-info/entry_points.txt,sha256=rNtgz7DnUMne_tM9gFmjYIDNxF2qvfUhByFiMSKWtFE,59
+az_migrate_dep_visu-0.1.3.dist-info/top_level.txt,sha256=ZJ6MyeGnAyGCR7d6h6umeOAeDU0Qv-lmOeoRko0tsEI,20
+az_migrate_dep_visu-0.1.3.dist-info/RECORD,,
