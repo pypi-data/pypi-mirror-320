@@ -1,0 +1,71 @@
+Metadata-Version: 2.4
+Name: emi-re
+Version: 0.1.1
+Summary: Collection of regular expressions
+Project-URL: Documentation, https://github.com/ftnext/emi-re#readme
+Project-URL: Issues, https://github.com/ftnext/emi-re/issues
+Project-URL: Source, https://github.com/ftnext/emi-re
+Author-email: ftnext <takuyafjp+develop@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: re,regex,regular expression
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: General
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# emi-re
+
+[![PyPI - Version](https://img.shields.io/pypi/v/emi-re.svg)](https://pypi.org/project/emi-re)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/emi-re.svg)](https://pypi.org/project/emi-re)
+
+Emi-re (pronunciation: [Emily](https://millionlive-theaterdays.idolmaster-official.jp/idol/emily/)) is a collection of regular expressions encountered during OSS code reading.
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+
+## Installation
+
+```console
+pip install emi-re
+```
+
+## Usage
+
+CamelCase to snake_case
+
+```python
+>>> import emire
+>>> emire.to_snake_case("CamelCase")
+'camel_case'
+
+```
+
+Remove whitespaces (in Japanese)
+
+```python
+>>> import emire
+>>> emire.remove_spaces("Algorithm C ないしは アルゴリズム C")
+'Algorithm CないしはアルゴリズムC'
+
+```
+
+## License
+
+`emi-re` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
