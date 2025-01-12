@@ -1,0 +1,110 @@
+Metadata-Version: 2.2
+Name: pb2dict
+Version: 1.0.0
+Summary: Protobuf to dictionary converter.
+Home-page: https://github.com/qvecs/pb2dict
+Author: Quick Vectors
+Author-email: felipe@qvecs.com
+License: MIT
+Project-URL: Source Code, https://github.com/qvecs/pb2dict
+Project-URL: Bug Tracker, https://github.com/qvecs/pb2dict/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: protobuf
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+
+# Protobuf to Dictionary _(pb2dict)_
+
+<p align="center">
+
+  <a href="https://github.com/qvecs/pb2dict/actions?query=workflow%3ABuild">
+    <img src="https://github.com/qvecs/pb2dict/workflows/Build/badge.svg">
+  </a>
+
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg">
+  </a>
+</p>
+
+Utility to convert Protobuf messages to dictionary with optional custom conversions.
+
+## Install
+
+```
+pip install pb2dict
+```
+
+## Usage
+
+### Basic Usage
+
+```python
+from message_pb2 import Message
+from pb2dict import to_dict, to_message
+
+msg = Message(msg=b"hello")
+
+msg_dict = to_dict(msg)
+# {'msg': b'hello'}
+
+msg_original = to_message(Message, msg_dict)
+# Message(msg=b'hello')
+```
+
+### Custom Conversions
+
+Use `fields` to specify overrides for particular field types.
+
+```python
+import base64
+from message_pb2 import Message
+
+from pb2dict import to_dict, to_message, fields
+
+msg = Message(msg=b"hello")
+
+msg_dict = to_dict(
+    pb=msg,
+    fields={fields.BYTES: lambda raw: base64.b64encode(raw).decode("utf-8")},
+)
+# {'msg': 'aGVsbG8='}
+
+original_msg = to_message(
+    pb=Message,
+    data=msg_dict,
+    fields={fields.BYTES: lambda txt: base64.b64decode(txt)},
+)
+# Message(msg=b'hello')
+```
+
+### `fields` Type
+
+```python
+class fields:
+    DOUBLE
+    FLOAT
+    INT32
+    INT64
+    UINT32
+    UINT64
+    SINT32
+    SINT64
+    FIXED32
+    FIXED64
+    SFIXED32
+    SFIXED64
+    BOOL
+    STRING
+    BYTES
+    ENUM
+```
