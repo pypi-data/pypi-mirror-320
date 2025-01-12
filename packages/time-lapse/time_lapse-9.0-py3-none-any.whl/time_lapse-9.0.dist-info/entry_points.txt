@@ -1,0 +1,4 @@
+[console_scripts]
+detect_audio=time_lapse.cli:detect_audio
+timelapse=time_lapse.cli:timelapse
+
