@@ -1,0 +1,10 @@
+Metadata-Version: 2.2
+Name: playsoundffmpeg
+Version: 0.1.0
+Summary: 通过ffmpeg播放音频
+Author: yuan
+Author-email: zhtxiii@163.com
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary

@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+playsoundffmpeg.egg-info/PKG-INFO
+playsoundffmpeg.egg-info/SOURCES.txt
+playsoundffmpeg.egg-info/dependency_links.txt
+playsoundffmpeg.egg-info/top_level.txt
