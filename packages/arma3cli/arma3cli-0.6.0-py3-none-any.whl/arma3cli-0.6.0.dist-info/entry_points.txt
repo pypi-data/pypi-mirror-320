@@ -1,0 +1,2 @@
+[console_scripts]
+arma3cli = arma3cli.cli:main
