@@ -1,0 +1,37 @@
+from setuptools import setup, find_packages
+from pathlib import Path
+
+# Adjust the path to version.txt if it's in a different directory
+version_file_path = Path(__file__).parent / "version.txt"
+version = version_file_path.read_text().strip()
+
+setup(
+    name="KdnEngine",
+    version=version,
+    description="A simple game engine for 3D games",
+    long_description=Path("README.md").read_text(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/KdntNinja/KdnEngine",
+    author="KdntNinja",
+    project_urls={"Source": "https://github.com/KdntNinja/KdnEngine"},
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Developers",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires=">=3.8",
+    install_requires=[
+        "PyOpenGL",
+        "pybullet",
+        "pynput",
+    ],
+    packages=find_packages(),
+    include_package_data=True,
+)
