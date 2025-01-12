@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fast-api-jwt-middleware"
+version = "1.0.1"
+description = "A FastAPI middleware for JWT-based authentication with support for multiple providers."
+readme = { file = "README.md", content-type = "text/markdown" } 
+license = { file = "LICENSE" }
+authors = [
+    { name = "csheader", email = "csheaderusa@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "starlette",
+    "cachetools",
+    "requests",
+    "pyjwt>=2.8.0",
+    "cryptography"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Framework :: FastAPI",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+exclude = ["tests/*", "*/__pycache__/*"]
+
+[project.urls]
+Homepage = "https://github.com/csheader/fast-api-oidc"
+Issues = "https://github.com/csheader/fast-api-oidc/issues"
