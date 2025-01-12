@@ -1,0 +1,13 @@
+# Stub file for your linter, does not affect the functionality in any way
+import numpy as np
+
+def process_array(arr: np.typing.NDArray[np.float64]): ...
+
+def add(a: float, b: float) -> float: ...
+
+class ExampleClass:
+
+    def __init__(self, a: int, b: int): ...
+
+    def get_secret(self) -> int: ...
+
