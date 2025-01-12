@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+streamlit-mssql/__init__.py
+streamlit-mssql/core.py
+streamlit_mssql.egg-info/PKG-INFO
+streamlit_mssql.egg-info/SOURCES.txt
+streamlit_mssql.egg-info/dependency_links.txt
+streamlit_mssql.egg-info/requires.txt
+streamlit_mssql.egg-info/top_level.txt
