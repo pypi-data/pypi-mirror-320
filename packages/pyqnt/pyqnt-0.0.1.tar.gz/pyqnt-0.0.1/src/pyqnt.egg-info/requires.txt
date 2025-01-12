@@ -1,0 +1,16 @@
+click
+requests
+pyyaml
+
+[full]
+ccxt==4.4.46
+fastapi==0.115.6
+matplotlib==3.6.3
+numpy==2.2.1
+pandas==2.2.3
+pydantic==2.10.4
+pytse_client==0.18.0
+scipy==1.15.0
+urllib3==2.3.0
+uvicorn==0.34.0
+pysocks==1.7.1
