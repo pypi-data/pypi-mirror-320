@@ -1,0 +1,10 @@
+pyfiglet>=0.8.post1
+pygame>=2.6.0.post1
+gameturtle>=0.280.post1
+sprites>=1.724.post1
+pyecharts>=2.0.6.post1
+opencv-python>=4.10.0.83.post1
+requests>=2.32.2.post1
+pypiwin32>=219.post1
+cutecharts>=1.1.9
+pywebio>=1.8.2
