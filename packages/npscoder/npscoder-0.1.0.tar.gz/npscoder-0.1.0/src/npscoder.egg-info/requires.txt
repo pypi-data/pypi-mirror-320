@@ -1,0 +1,12 @@
+pandas
+numpy
+typing
+typing-extensions
+IPython
+matplotlib
+scipy
+statsmodels
+python-dateutil
+pandas
+numpy
+dataclasses

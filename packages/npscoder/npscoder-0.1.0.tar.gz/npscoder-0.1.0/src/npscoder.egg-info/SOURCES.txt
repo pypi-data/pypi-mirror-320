@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/npscoder/__init__.py
+src/npscoder/main.py
+src/npscoder/plot.py
+src/npscoder/stats.py
+src/npscoder.egg-info/PKG-INFO
+src/npscoder.egg-info/SOURCES.txt
+src/npscoder.egg-info/dependency_links.txt
+src/npscoder.egg-info/requires.txt
+src/npscoder.egg-info/top_level.txt
