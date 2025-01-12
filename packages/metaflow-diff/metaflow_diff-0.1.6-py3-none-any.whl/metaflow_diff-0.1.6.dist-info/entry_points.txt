@@ -1,0 +1,2 @@
+[console_scripts]
+metaflow-diff = metaflow_diff.metaflow_diff:cli
