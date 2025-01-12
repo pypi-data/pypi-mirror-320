@@ -1,0 +1,3 @@
+[console_scripts]
+diskstat = diskstat.launcher:main
+diskstat-launcher = diskstat.main:main
