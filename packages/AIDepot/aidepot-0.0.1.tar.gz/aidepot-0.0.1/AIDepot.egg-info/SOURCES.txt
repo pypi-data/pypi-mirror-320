@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+AIDepot/Client.py
+AIDepot/Resources.py
+AIDepot/__init__.py
+AIDepot.egg-info/PKG-INFO
+AIDepot.egg-info/SOURCES.txt
+AIDepot.egg-info/dependency_links.txt
+AIDepot.egg-info/requires.txt
+AIDepot.egg-info/top_level.txt
