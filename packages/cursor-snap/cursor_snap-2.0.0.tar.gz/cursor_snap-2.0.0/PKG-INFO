@@ -1,0 +1,92 @@
+Metadata-Version: 2.3
+Name: cursor-snap
+Version: 2.0.0
+Summary: A utility tool to manage and reset Cursor Editor app IDs
+License: MIT
+Author: Adel Elawady
+Author-email: adel50ali50@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pathlib (>=1.0.1,<2.0.0)
+Requires-Dist: rich (>=10.0.0,<11.0.0)
+Description-Content-Type: text/markdown
+
+# cursor-snap
+
+A Python tool for managing cursor-related functionality.
+
+## Installation
+
+You can install the package directly from PyPI:
+
+```bash
+pip install cursor-snap
+```
+
+Or install from source:
+
+```bash
+git clone https://github.com/adelelawady/cursor-snap.git
+cd cursor-snap
+pip install .
+```
+
+## Features
+
+The tool provides the following features:
+- Reset App IDs
+- View Current IDs
+
+## Usage
+
+[Add detailed usage examples here]
+
+## Development
+
+To set up the development environment:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/adelelawady/cursor-snap.git
+   cd cursor-snap
+   ```
+
+2. Install development dependencies:
+   ```bash
+   pip install -e ".[dev]"
+   ```
+
+## Publishing Updates
+
+To publish a new version to PyPI:
+
+1. Update the version number in `setup.py`
+2. Build the distribution:
+   ```bash
+   python -m build
+   ```
+3. Upload to PyPI:
+   ```bash
+   twine upload dist/*
+   ```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Author
+
+Adel Elawady (adel50ali50@gmail.com)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
