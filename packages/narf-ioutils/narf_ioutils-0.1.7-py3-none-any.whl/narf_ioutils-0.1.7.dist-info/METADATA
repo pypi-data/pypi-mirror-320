@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: narf-ioutils
+Version: 0.1.7
+Summary: Storage of objects in h5py files with lazy reading.
+Author-email: Josh Bendavid <josh.bendavid@cern.ch>, Kenneth Long <kenneth.long@cern.ch>, David Walter <david.walter@cern.ch>
+License: MIT
+Project-URL: Homepage, https://github.com/bendavid/narf
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: boost-histogram>=1.3.2
+Requires-Dist: h5py>=3.0.0
+Requires-Dist: hdf5plugin>=3.4.0
+Requires-Dist: hist>=2.6.0
+Requires-Dist: numpy>=1.19.0
+
+# narf-ioutils
