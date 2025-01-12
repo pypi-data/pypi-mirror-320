@@ -1,0 +1,9 @@
+rust_nurbs-0.16.0.dist-info/METADATA,sha256=vNRGL0wqDbBam3VCXFfC43W6czwDNVWQZvPvCE9tuN4,1219
+rust_nurbs-0.16.0.dist-info/WHEEL,sha256=gWLu_f1Pxb3ZW_1Gr0HyV2bvZt3HQmA49PJwGz6UQhI,103
+rust_nurbs-0.16.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+rust_nurbs.libs/libgcc_s-b5472b99.so.1,sha256=wh8CpjXz9IccAyeERcB7YDEx7NH2jF-PykwOyYNeRRI,453841
+rust_nurbs/__init__.py,sha256=0HAObs-ANmcqQwOu52QpjCUH2VrIho0UdaoiwC1CBNk,123
+rust_nurbs/__init__.pyi,sha256=lJcpIzRAFYwzVNhTI-ajWDqTGVmqXnQdzyn4DXlgnrA,101317
+rust_nurbs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rust_nurbs/rust_nurbs.cpython-39-i386-linux-gnu.so,sha256=Jiivv2-LGW72ez5QK3Ollj7HH5S_pb_qUWjSCUNEh3I,849989
+rust_nurbs-0.16.0.dist-info/RECORD,,
