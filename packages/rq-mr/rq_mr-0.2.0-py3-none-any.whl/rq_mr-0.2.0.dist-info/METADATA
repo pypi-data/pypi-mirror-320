@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: rq-mr
+Version: 0.2.0
+Summary: MapReduce technique over RQ
+Author: Biel Cardona
+Author-email: bielcardona@gmail.com
+Requires-Python: >=3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: redis (>=5.2.1,<6.0.0)
+Requires-Dist: rq (>=2.1.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+Implementation of map-reduce over RQ (Redis Queue)
+
+The following environment variables can be set:
+* `MAX_QUEUED_JOBS` (default=10) : Maximum number of jobs that can be queued at a time
+* `WAIT_TIME` (default=1): Time in seconds between polling for status of jobs
+
+
