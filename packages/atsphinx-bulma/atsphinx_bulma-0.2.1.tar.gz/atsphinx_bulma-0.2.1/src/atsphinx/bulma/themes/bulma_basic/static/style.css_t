@@ -1,0 +1,52 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@{{ theme_bulma_version }}/css/bulma.min.css";
+{% if theme_bulmaswatch != "" -%}
+  @import "https://unpkg.com/bulmaswatch/{{ theme_bulmaswatch }}/bulmaswatch.min.css";
+{%- endif %}
+
+/* For sticky footer */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+section[id] {
+  scroll-margin-top: var(--bulma-navbar-height);
+}
+.navbar.is-sticky {
+  position: sticky;
+  top: 0;
+}
+footer.footer, div.footer {
+  margin-top: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* For contents */
+section {
+  padding: 1rem 0.5rem;
+}
+
+/* For permalink icon */
+.headerlink {
+  font-size: 50%;
+  vertical-align: top;
+}
+
+/* For fotnotes */
+aside.footnote-list {
+  aside.footnote {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    span.label {
+      flex-shrink: 0;
+      margin-right: 0.5rem;
+    }
+    p {
+      margin: 0;
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+    }
+  }
+}
