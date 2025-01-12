@@ -1,0 +1,5 @@
+egse/plugins/storage/hdf5.py,sha256=cc0CdCl67JMaM-KqsePai9SxKreqyJCeTo_DNGYJHPc,5745
+plato_hdf5-2024.1.3.dist-info/METADATA,sha256=qhxC2Ef6q1tBVgCw8ymWMogCQYsXdbjDk9BTBkrFh2c,569
+plato_hdf5-2024.1.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+plato_hdf5-2024.1.3.dist-info/entry_points.txt,sha256=Y1-rTC795sMY-014-9SiUkoQmiLgDY-RoYVyqfbCqUE,107
+plato_hdf5-2024.1.3.dist-info/RECORD,,
