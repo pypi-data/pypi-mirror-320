@@ -1,0 +1,31 @@
+
+[tool.poetry]
+name = "diwrappers"
+description = "A lightweight, intuitive dependency injection library for Python that makes testing and dependency management a breeze."
+version = "0.2.5"
+authors = ["Rui Campos <mail@ruicampos.org>"]
+readme = "README.md"
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+]
+repository = "https://github.com/ruifilipecampos/diwrappers"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+poethepoet = "^0.32.0"
+basedpyright = "^1.23.2"
+pytest-asyncio = "^0.25.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks.test]
+cmd = "pytest diwrappers/*.py -vvvvv"
+
+[tool.poe.tasks.lint]
+cmd = "basedpyright diwrappers/*.py --level warning"
