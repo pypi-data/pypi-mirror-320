@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+doodle_sdk.egg-info/PKG-INFO
+doodle_sdk.egg-info/SOURCES.txt
+doodle_sdk.egg-info/dependency_links.txt
+doodle_sdk.egg-info/requires.txt
+doodle_sdk.egg-info/top_level.txt

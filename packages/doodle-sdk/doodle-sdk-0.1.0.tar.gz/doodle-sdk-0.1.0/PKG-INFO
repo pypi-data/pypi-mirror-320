@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: doodle-sdk
+Version: 0.1.0
+Summary: SDK for better interfacing of Doodle Labs Radio
+Home-page: https://github.com/afwilkin/doodle-sdk
+Author: Andrew Wilkins
+Author-email: andrew.wilkins@ascendengineer.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# doodle-sdk
+
+# Docs
+
+Run the MkDocs development server to view your documentation:
+
+``` bash
+mkdocs serve
+```
+
+
+# Legal
+This project is not currently licensed for public or commercial use. Please contact me if you are interested in obtaining a license.
+This software is proprietary and not open source. No rights are granted to use, copy, modify, or distribute this code without explicit written permission from the author.
+
