@@ -1,0 +1,8 @@
+jsonpyth<0.2,>=0.1.3
+pygal<4,>=3.0.4
+
+[manual]
+sphinx<6,>=5
+pygments<2.19,>=2
+sphinxcontrib-programoutput<0.18,>=0.17
+sphinx-copybutton<0.6,>=0.5.2
