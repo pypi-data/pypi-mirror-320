@@ -1,0 +1,14 @@
+libgen_api_modern/__init__.py,sha256=9DA-FAH6rFjwichIsMzu77Dm44cY_hhKnVlbI5TziFs,92
+libgen_api_modern/enums.py,sha256=uNaZzvsjKIK4ks8f4apkcChWjPpAy0wK6yWa874hSsc,114
+libgen_api_modern/libgen_cli.py,sha256=IJPfb_xtS4WC42_KGx_CV8mtj3Esy7QskelbKIrEZ2c,10020
+libgen_api_modern/libgen_search.py,sha256=57EsGAaqpz_v5Pr1CnYNNU9Dz6pRY7Mg76t5cF4T3iM,4794
+libgen_api_modern/main.py,sha256=Mts8ZzkgSOYUVvfAd38Ydg2LR-lsTFbeTbLsSKGvpis,751
+libgen_api_modern/models.py,sha256=q2mQ2Lz8mqjgewnvj38Y_eSq1Qk6poQkxDLO40NtByU,708
+libgen_api_modern/proxy.py,sha256=vw4NNg4rvgDBgiep9n4F9VMey7LuyzaFEa6eHhavhIE,7789
+libgen_api_modern/search_page.html,sha256=Gdod0aw5u2iH4pJ6RMm8HqJLc00YhPOijhzr7Th49zo,144927
+libgen_api_modern/search_request.py,sha256=K0yEDO_cY1vz2HmsGt2GWqZa8DYJSNkM_CWgotYCwU0,9335
+libgen_api_modern-0.1.16.dist-info/LICENSE,sha256=VMZIJAV4GK8mxf-QpprmowleRbaZ7Ru_eVXRipePJxw,1069
+libgen_api_modern-0.1.16.dist-info/METADATA,sha256=JU9e1EN9o5twri_EZKK3H_UWYP968n9c0h1q72VahUk,6490
+libgen_api_modern-0.1.16.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+libgen_api_modern-0.1.16.dist-info/entry_points.txt,sha256=dfGC19gjribsxlAKlmRE-A7HQew1OrsAzwz5vu2dVao,60
+libgen_api_modern-0.1.16.dist-info/RECORD,,
