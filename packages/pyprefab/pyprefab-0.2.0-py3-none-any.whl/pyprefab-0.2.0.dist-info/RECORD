@@ -1,0 +1,11 @@
+hello_world/__init__.py,sha256=yyLtGsBhynC-sSHdax-rRGvHNjH-gdWxIY68WnPVfDw,22
+hello_world/app.py,sha256=b2g8sI5oxPZzh47JY3Vxiirg8ZxcMuuiJNJkI84umLo,377
+hello_world/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hello_world/util/date.py,sha256=wQTb-vtB4xxBGg0C9nlbwd23OcfLRw1pZsIi5QKm5Uw,327
+hello_world/util/logs.py,sha256=wsLzyedm_jNKT917kPnWjaVNx0JJIAeIsH49hZMik9s,1076
+pyprefab-0.2.0.dist-info/LICENSE,sha256=Is9RG0xG5jLBaEjfwOYJvkwUYhH7SYdNKaIHtwwk8hk,1068
+pyprefab-0.2.0.dist-info/METADATA,sha256=d2A6GDUIwvuRlMBv_AHj1C1pRRsg9tTwbnBms6Ad7sk,2062
+pyprefab-0.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pyprefab-0.2.0.dist-info/entry_points.txt,sha256=XIZcyRINylRXwE_TGh-BzJBrQ2nl0plC0dhWBSJXHKw,53
+pyprefab-0.2.0.dist-info/top_level.txt,sha256=vY8b2A8Sa2-5PUXRoDjDABQ-zMBnaxTqNarDpG9ub2s,12
+pyprefab-0.2.0.dist-info/RECORD,,
