@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: pyonir
+Version: 0.0.8
+Summary: a python library for building web applications
+Home-page: https://pyonir.dev
+Author: Derry Spann
+Author-email: pyonir@derryspann.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: starlette
+Requires-Dist: inquirer
+Requires-Dist: uvicorn
+Requires-Dist: starlette_session
+Requires-Dist: starlette_wtf
+Requires-Dist: pytz
+Requires-Dist: sortedcontainers
+Requires-Dist: jinja2
+Requires-Dist: webassets
+
+# Pyonir Web Framework
+
+A static website generator and flat file web framework written in Python.
+
+# Install
+
+From the pypi:
+
+`pip install pyonir`
+
+From the github:
+
+`pip install pyonir` 
+
+# Generate Static Site
+
+# Configure Content
+
+# Configure Frontend
+
+# Configure Plugins
+
+# Configure Static Assets
+
+# Configure Server Controllers
+
+# Run Server
