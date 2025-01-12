@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+wordtoken/__init__.py
+wordtoken/adapters.py
+wordtoken/base_adapter.py
+wordtoken/costs.py
+wordtoken/exceptions.py
+wordtoken/tokens.py
+wordtoken/utils.py
+wordtoken.egg-info/PKG-INFO
+wordtoken.egg-info/SOURCES.txt
+wordtoken.egg-info/dependency_links.txt
+wordtoken.egg-info/requires.txt
+wordtoken.egg-info/top_level.txt
