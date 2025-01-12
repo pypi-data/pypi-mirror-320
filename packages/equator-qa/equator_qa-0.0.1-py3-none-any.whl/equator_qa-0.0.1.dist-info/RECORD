@@ -1,0 +1,15 @@
+equator_qa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+equator_qa/charting.py,sha256=74iMMserTnuWfVC04y3pL4wQ-GQ8gGm43qBxdCzREdA,15346
+equator_qa/llmscalls.py,sha256=jAIOKt0YIDDsATth5quTXK9MMy0N-n_hOwRA2BEChAs,5128
+equator_qa/prompts.py,sha256=nK_LnMT9YZl4y2A3pEQXe9vnTF4_3LsnTLa7eZgbqtU,1434
+equator_qa/stats.py,sha256=0TF0f6HZKOMV79b4B_-EnWicZPMvGVlHkkWbAqGgBXc,2609
+equator_qa/utils.py,sha256=6Rj1Znf-u6dEBvUQ9t5eneJI0j-tjgvHHB_DlQwx-zU,21485
+equator_qa/vectordb.py,sha256=MFcOLw9LCt7R-sCkV8E0xY3iD76b3QhgeNHHUbA4ogU,6222
+equator_qa/assets/EQUATOR-Framework.png,sha256=Y-tjwkiEVwwqWAOl76sSUwY_QYv65zkQlNcaJETKkho,210182
+equator_qa/data/linguistic_benchmark.json,sha256=AhgUqixxTcIXiyl_ITg0H6Ayv4hMbYyPEprpbx5lU1s,12209
+equator_qa-0.0.1.dist-info/LICENSE,sha256=U2r9UANQZcqVaoEpmzI2fmMEo_of7Cey-lv1jhnODKg,1096
+equator_qa-0.0.1.dist-info/METADATA,sha256=1bZOk2bcTdCEJUDjnmFwpPYL0YZypvDZIkXpvrfvLMc,17703
+equator_qa-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+equator_qa-0.0.1.dist-info/entry_points.txt,sha256=D2MVjYjuV8kq3MJZu7nmf0bCV6lfKQ2uUR1xiQWpoOc,49
+equator_qa-0.0.1.dist-info/top_level.txt,sha256=8axU6nt_i81CjNMzE5JZWvE_r9HBi7mu3VwlvhEi5Ng,30
+equator_qa-0.0.1.dist-info/RECORD,,
