@@ -1,0 +1,17 @@
+ididi/__init__.py,sha256=jxlL4HqbpUC4s73zJgh4ZBieIWs1Np871k-iBs_ovR4,1136
+ididi/_ds.py,sha256=KHK03q8makNkOFzLiYlGUmQYAZ3Ws8RrVwTLMAkokpE,5441
+ididi/_type_resolve.py,sha256=byTL-a9wX3KFIe4viuIE1IuhUqZQenUEXMoa-JNCFT8,6696
+ididi/api.py,sha256=aBLNcYU0iqvb7sn_BeziGgiArXrotp2u5RYnbgK6aoI,1024
+ididi/errors.py,sha256=h1MEb9WDhXoo9xCXd9OYjvXYZiHIflXM6eVb61IiMR0,6870
+ididi/graph.py,sha256=uzCatGnaMVxMnkT-Nb0Fjo2bVG5N1bJiKjU-MRdOAWE,36060
+ididi/interfaces.py,sha256=R4_5MpXXeHRLmadzLGqbQVsoAguem-xT-u3CihLvp_4,2918
+ididi/node.py,sha256=BI4o8CpIBHQi_XTUR7m0WmHphdTpILrarnWpFgws-V4,18958
+ididi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ididi/visual.py,sha256=OYBYtgNJpKi3yXf-hqbxzm0vY41_RxcNuogfmqMvsPI,2748
+ididi/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ididi/utils/param_utils.py,sha256=YkzB3R8e0IW2IKPxWOH4MFw8Wfl9tzV4Y0x-1tPgk2o,947
+ididi/utils/typing_utils.py,sha256=xZGZwU1iBxKPXDdiY8SdsL4pyOgF5Ay5fV_8jgNxpJM,4074
+ididi-1.2.4.dist-info/METADATA,sha256=TSBTLGPsMeRZb9d-nnOPEq87WabmmnqThQ5-bCqM55U,6864
+ididi-1.2.4.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+ididi-1.2.4.dist-info/licenses/LICENSE,sha256=Z_d_KohUbPR8SSMQreedQ-68Ew597EMpm7IONVrkMkU,1067
+ididi-1.2.4.dist-info/RECORD,,
