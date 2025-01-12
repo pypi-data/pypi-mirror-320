@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=58.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "file-navigator"          # The package name
+description = "Flexible directory scanner, file path manager, and customizable file loader—all in one"
+readme = "README.md"         # The README file (Markdown or reStructuredText)
+dynamic = ["version"]
+license = { file = "LICENSE" }  # License file
+authors = [
+    { name = "Qomp4ss", email = "imaggine@gmail.com" }
+]
+maintainers = [
+    { name = "Qomp4ss", email = "imaggine@gmail.com" }
+]
+keywords = ["file", "flexible", "manager", "directory", "scanner", "path"]
+classifiers = [                    # Trove classifiers
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows :: Windows 10"
+]
+requires-python = ">=3.6"
+dependencies = [                   # List of runtime dependencies
+    "pandas>=0.22"
+]
+#python = ">=3.6"                   # Minimum Python version
+
+[tool.setuptools.dynamic]
+version = {attr = "file_navigator.__version__"} 
+
+[project.urls]
+Homepage = "https://github.com/Qomp4ss/file-navigator"
