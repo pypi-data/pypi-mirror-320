@@ -1,0 +1,15 @@
+fourwritersapi/__init__.py,sha256=yDWE_SVUTDhDQtSvuxcZ_F_a-X1j5Zyqkkqx_pxHvCc,23
+fourwritersapi/const.py,sha256=No3IF9PA1GOW18zyhd3tjWm28wNmVxklYZGxTxjXP8E,327
+fourwritersapi/api/__init__.py,sha256=SO5AWcTxUb5a9Pflj0phym2StCf1PETBhvYv6hvNE4M,45
+fourwritersapi/api/api.py,sha256=Q1nMBqLcw-PoMYuYLaWUKK_RuCNfZCpPqsryU9a6jYE,6040
+fourwritersapi/client/__init__.py,sha256=a46nfaqo3gY-5nVO1jyFY9MxtEiZH5XKV3Tv0QKTUmU,68
+fourwritersapi/client/aiohttp.py,sha256=QTMpRxbXHpxuwEWl8RWHcYR-kAgbBcveP4cCrBh4CB8,4103
+fourwritersapi/client/storage.py,sha256=3HOONqaUdQEzLB_wcgWjDJ6Gil-7zNgU6EzYJVeGrzg,143
+fourwritersapi/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fourwritersapi/types/__init__.py,sha256=H4TI4HYLrzBAPvWAc3PHQcqdNeA4s3bs04WmR_p_CKg,51
+fourwritersapi/types/models.py,sha256=GlgJn9ZxDM_lZpn8HEUBK1WLqO7rlqOjGb4iIoTpY_w,327
+fourwritersapi/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fourwritersapi-0.3.0.dist-info/METADATA,sha256=Q7NtgPY7YgxnlWu3nmbImDQ54AV3MZAhZTceRu9pxJQ,4067
+fourwritersapi-0.3.0.dist-info/WHEEL,sha256=A3WOREP4zgxI0fKrHUG8DC8013e3dK3n7a6HDbcEIwE,91
+fourwritersapi-0.3.0.dist-info/top_level.txt,sha256=6lKaY-3_ueTqFjjusJ1ADxIyKS3Kje2ecRRt7S3_Uk0,15
+fourwritersapi-0.3.0.dist-info/RECORD,,
