@@ -1,0 +1,80 @@
+Metadata-Version: 2.2
+Name: streamlit-pivottable
+Version: 0.1.5
+Home-page: 
+Author: TAN YI HAO
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit>=0.63
+Provides-Extra: devel
+Requires-Dist: wheel; extra == "devel"
+Requires-Dist: pytest==7.4.0; extra == "devel"
+Requires-Dist: playwright==1.48.0; extra == "devel"
+Requires-Dist: requests==2.31.0; extra == "devel"
+Requires-Dist: pytest-playwright-snapshot==1.0; extra == "devel"
+Requires-Dist: pytest-rerunfailures==12.0; extra == "devel"
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+
+# Streamlit Pivot Table
+
+This Project is created at 2025 Jan 6th
+
+```sh
+import streamlit as st
+from streamlit_pivottable import streamlit_pivottable
+
+st.set_page_config(layout='wide')
+
+data = [
+    {
+        "Name": "Name_1",
+        "Age": 58,
+        "City": "Phoenix",
+        "Salary": 87052,
+        "Department": "IT",
+        "Joining Date": "2020-01-31",
+    },
+    {
+        "Name": "Name_2",
+        "Age": 25,
+        "City": "Los Angeles",
+        "Salary": 85082,
+        "Department": "HR",
+        "Joining Date": "2020-02-29",
+    },
+    {
+        "Name": "Name_3",
+        "Age": 19,
+        "City": "Phoenix",
+        "Salary": 119131,
+        "Department": "Marketing",
+        "Joining Date": "2020-03-31",
+    },
+    {
+        "Name": "Name_4",
+        "Age": 35,
+        "City": "Houston",
+        "Salary": 74671,
+        "Department": "Finance",
+        "Joining Date": "2020-04-30",
+    },
+    {
+        "Name": "Name_5",
+        "Age": 33,
+        "City": "Los Angeles",
+        "Salary": 45695,
+        "Department": "Marketing",
+        "Joining Date": "2020-05-31",
+    },
+
+]
+
+streamlit_pivottable(data=data,height=50, use_container_width=True, key="streamlit_pivottable")
+
+```
