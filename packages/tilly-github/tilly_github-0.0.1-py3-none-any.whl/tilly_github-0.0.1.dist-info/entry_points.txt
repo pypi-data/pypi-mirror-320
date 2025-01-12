@@ -1,0 +1,2 @@
+[tilly]
+github = tilly_github
