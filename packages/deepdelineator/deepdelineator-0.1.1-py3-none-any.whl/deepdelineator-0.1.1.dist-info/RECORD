@@ -1,0 +1,12 @@
+deepdelineator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepdelineator/dataset.py,sha256=6mW_MIv5K0OKnLUYNcFlePHj93kEB5tByx_D5keu4rc,6807
+deepdelineator/model.py,sha256=TAUIx448Nmzmglz-VAcWVrxEOlBttCiu4cjDW_4aZrc,27546
+deepdelineator/utils.py,sha256=ssxvRJFhWfS9-4rj6Lt7f_htWjPN3PTJB_o_jnH0wPc,7554
+deepdelineator/weights/TCN.pt,sha256=48s1WrnRQt6zqQAUOpOvgl1EkOuI1ISEDpoe-ETxe0I,809127
+deepdelineator/weights/U_GRU.pt,sha256=oVSVR6LZCfQd1M4JDyZ1-spcBy2qIFKytaRA84OFds8,1015549
+deepdelineator/weights/U_NET.pt,sha256=uXI-s3-vcx_-VSyqXHxQSr5qbonXobNB-khexhnUAyc,888107
+deepdelineator/weights/U_TCN.pt,sha256=cqZJg0ZZg8I7jblCTnvf1fG2zFm6_Pwsll_okbiWpmY,994783
+deepdelineator-0.1.1.dist-info/LICENSE,sha256=MahqchTnBGeysCysn54KJh3od91GlKCzKwPr7yqbMh4,1071
+deepdelineator-0.1.1.dist-info/METADATA,sha256=oO6fm9qn56ugpTX1VI7Kq1xmHqw25-juix3Awnlf8lg,1949
+deepdelineator-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+deepdelineator-0.1.1.dist-info/RECORD,,
