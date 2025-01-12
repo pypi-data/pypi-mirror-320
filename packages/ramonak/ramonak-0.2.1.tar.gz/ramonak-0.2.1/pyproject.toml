@@ -1,0 +1,64 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ramonak"
+dynamic = ["version"]
+description = ''
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Alexander Rusakevich", email = "mr.alexander.rusakevich@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "lxml>=5.3.0",
+  "tqdm",
+  "requests>=2.32.3",
+  "python-dotenv>=1.0.1",
+]
+
+[tool.hatch.build.targets.sdist]
+exclude = [".env.dev"]
+
+[project.urls]
+Documentation = "https://github.com/Alexander Rusakevich/ramonak#readme"
+Issues = "https://github.com/Alexander Rusakevich/ramonak/issues"
+Source = "https://github.com/Alexander Rusakevich/ramonak"
+
+[tool.hatch.version]
+path = "src/ramonak/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = ["mypy>=1.0.0"]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/ramonak tests}"
+
+[tool.coverage.run]
+source_pkgs = ["ramonak", "tests"]
+branch = true
+parallel = true
+omit = ["src/ramonak/__about__.py"]
+
+[tool.coverage.paths]
+ramonak = ["src/ramonak", "*/ramonak/src/ramonak"]
+tests = ["tests", "*/ramonak/tests"]
+
+[tool.coverage.report]
+exclude_lines = ["no cov", "if __name__ == .__main__.:", "if TYPE_CHECKING:"]
+
+[tool.hatch.envs.default.scripts]
+interactive = "python src/ramonak/interactive.py"
