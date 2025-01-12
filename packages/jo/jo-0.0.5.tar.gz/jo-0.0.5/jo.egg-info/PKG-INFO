@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: jo
+Version: 0.0.5
+Summary: Automatically making flask webservices from python objects
+Home-page: https://github.com/thorwhalen/uu/tree/master/jo
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# jo
+Automatically making flask webservices from python objects
+
+
+To install:	```pip install jo```
