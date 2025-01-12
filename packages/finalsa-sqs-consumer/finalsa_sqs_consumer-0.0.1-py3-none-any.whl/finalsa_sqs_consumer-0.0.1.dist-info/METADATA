@@ -1,0 +1,36 @@
+Metadata-Version: 2.2
+Name: finalsa-sqs-consumer
+Version: 0.0.1
+Summary: An utils package for using sqs as a consumer
+Home-page: https://github.com/finalsa/finalsa-sqs-consumer
+Author: Luis Jimenez
+Author-email: luis@finalsa.com
+License: MIT
+Keywords: sqs,fastapi
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: boto3>=1.35.0
+Requires-Dist: finalsa-common-models>=1.0.1
+Requires-Dist: finalsa-sns-client>=1.0.0
+Requires-Dist: finalsa-sqs-client>=1.0.0
+Requires-Dist: finalsa-traceability>=0.0.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
