@@ -1,0 +1,8 @@
+pelican/plugins/statistics/__init__.py,sha256=nEPiWizTSpYE4an_cKsP3tydyf04OiCVI8LKhT0RDJQ,54
+pelican/plugins/statistics/readability.py,sha256=m6EEelzGhngSxnpBhq7P1JY3sh9OAfI_lc9_ZR-_r68,1637
+pelican/plugins/statistics/statistics.py,sha256=-uliPbxoc8NEqO-eEEhVUuYRPLUm94j-Ug6EYftqdDM,3453
+pelican/plugins/statistics/test_statistics.py,sha256=zokP31AmyIQ9hyPKr8q96t9QgRo2lcuXdHJ3MNWNX2Q,1227
+pelican_statistics-1.0.0.dist-info/METADATA,sha256=0LvRlBV1vw_YJmuYHSl8JuLD3cFU2fEvie1IL7QOZ4E,4752
+pelican_statistics-1.0.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+pelican_statistics-1.0.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+pelican_statistics-1.0.0.dist-info/RECORD,,
