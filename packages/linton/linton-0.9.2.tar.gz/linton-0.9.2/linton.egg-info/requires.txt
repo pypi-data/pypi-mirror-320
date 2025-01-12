@@ -1,0 +1,6 @@
+importlib_resources>=5.10
+nancy
+pyxdg
+
+[test]
+pytest
