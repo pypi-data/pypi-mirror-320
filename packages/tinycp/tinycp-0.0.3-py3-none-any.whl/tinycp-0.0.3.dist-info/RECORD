@@ -1,0 +1,11 @@
+tinycp/classifier/__init__.py,sha256=8pZ34Fg8w3PIjwMMSC1D5vpJNABCGnsNtrBw_4imUVM,135
+tinycp/classifier/base.py,sha256=DsEQDoxkmiQSjtiET8sWZm3LeeDACrLW7vcmXBxZQTI,11335
+tinycp/classifier/class_conditional.py,sha256=oxlLRqdm-1lkriL6Q61xa0kpuSocDvqdhcF5IWot_vI,9383
+tinycp/classifier/marginal.py,sha256=GahAeeB9RxgLcuzjhbBkYCvd0-XyTLmotskAv-NXaHc,9039
+tinycp/examples/class_cond.ipynb,sha256=LVkG3NzpOWfGmiEcHlm_dt77j3-7Aml7cb6xxgp1Z10,410614
+tinycp/examples/marginal.ipynb,sha256=Ii6_AU-TdfQDOdICbiw1DzBjgCpOwPKJ7hfaj78STSU,5053606
+tinycp/plot/__init__.py,sha256=O1TDbA3c3YoP0l8cpkK6a3jWZGLOdQXVLQhlQ1ivCtk,20
+tinycp/plot/plot.py,sha256=xejtMlPZitkBIXOlZXwNKcFJ1gzS6M-r0EYONht7rvI,8332
+tinycp-0.0.3.dist-info/METADATA,sha256=POvsugwf3eigy-s_xzW0pXbCY9lPx1o95DPnp-CqA30,4093
+tinycp-0.0.3.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+tinycp-0.0.3.dist-info/RECORD,,
