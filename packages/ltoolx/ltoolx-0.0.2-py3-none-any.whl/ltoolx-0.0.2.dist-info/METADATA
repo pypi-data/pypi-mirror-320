@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: ltoolx
+Version: 0.0.2
+Summary: Common tool packaging
+Author: jchl
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: beautifulsoup4
+Requires-Dist: gurobipy
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Provides-Extra: svg
+Requires-Dist: pywin32; extra == 'svg'
+Description-Content-Type: text/markdown
+
+# ltoolx
+
+Common tool packaging
