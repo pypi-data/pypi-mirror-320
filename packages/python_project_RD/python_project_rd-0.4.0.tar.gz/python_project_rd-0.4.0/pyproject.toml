@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "python_project_RD"
+version = "0.4.0"
+description = "This project is based on pybacktestchain but new functionalities have been added!"
+authors = ["Rosalie Dechance"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^2.1.3"
+pandas = "^2.2.3"
+matplotlib = "^3.9.3"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+python-semantic-release = "^9.15.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release] 
+version_variable = "pyproject.toml:version" 
+version_toml = [ 
+"pyproject.toml:tool.poetry.version",
+]
+
+[tool.semantic_release.group]
+production = ["master"]  
+staging = ["draft"] 
+
+[project.urls]
+Homepage = "https://github.com/Rosalie-code/python_project_RD"
