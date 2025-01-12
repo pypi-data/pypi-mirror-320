@@ -1,0 +1,9 @@
+xchainpy2_base/__init__.py,sha256=fVJ9m4i_DqYOD2KyIS62mxMJ0vipbLUJHGdNS0HYX1g,48
+xchainpy2_base/base_client.py,sha256=iZq6lkAzSqVS0OF_0R3hxzwNhIscRUmBLtl8lcpSCLs,913
+xchainpy2_base/const.py,sha256=3HO84A1MBRaoJhCHxbS5RbjjfAeNOAa7z04fQmDmlqQ,3454
+xchainpy2_base/data/base_mainnet_latest.json,sha256=10btuGEvBYlGQQmfLIm52fUNLc14_7FvUUV6uTg5vq0,1804
+xchainpy2_base-0.0.4.dist-info/LICENSE,sha256=IH6w2k4omeB0Asc9XdSOOzzgZC0IJ3PXk_hmLsIQ4aQ,2124
+xchainpy2_base-0.0.4.dist-info/METADATA,sha256=BPL7_HOuRsWz_G_mbGiRhozDQhV7B2rH4suYsvZAcZA,1298
+xchainpy2_base-0.0.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+xchainpy2_base-0.0.4.dist-info/top_level.txt,sha256=4GeDgQxPAK3ZjpGiNyZSigEoesVWeihblLoohOBFWkA,15
+xchainpy2_base-0.0.4.dist-info/RECORD,,
