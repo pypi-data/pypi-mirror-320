@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "rq-mr"
+version = "0.2.0"
+description = "MapReduce technique over RQ"
+authors = ["Biel Cardona <bielcardona@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+redis = "^5.2.1"
+rq = "^2.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
