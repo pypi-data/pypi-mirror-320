@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: river_print
+Version: 0.1.6
+Summary: personal print library
+Author: river
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.9
+Requires-Dist: rich>=13.9.4
+Description-Content-Type: text/markdown
+
+#
