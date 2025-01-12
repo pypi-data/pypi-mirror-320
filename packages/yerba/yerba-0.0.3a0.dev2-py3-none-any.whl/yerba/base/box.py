@@ -1,0 +1,385 @@
+from __future__ import annotations
+import numpy as np
+from manim import VMobject, VGroup, Rectangle
+
+from ..defaults import box_params
+from ..managers.color_manager import ColorManager
+from ..utils.constants import (
+    UP, DOWN, LEFT, RIGHT, ORIGIN, SLIDE_HEIGHT, SLIDE_WIDTH, LEFT_EDGE,
+    RIGHT_EDGE, SLIDE_X_RAD, SLIDE_Y_RAD, TOP_EDGE, BOTTOM_EDGE, UL, DR
+)
+from ..utils.aux_functions import (
+    restructure_list_to_exclude_certain_family_members,
+    replace_in_list
+)
+
+
+class Box():
+    def __init__(self, center: np.ndarray,
+                 width: float, height: float, arrange: str | None = "top left",
+                 arrange_buff: float = box_params["arrange_buff"],
+                 is_null: bool = False, is_unique=False):
+
+        self.center = center
+        self.width = width
+        self.height = height
+        self.arrange = None if arrange == "none" else arrange
+        self.arrange_buff = arrange_buff
+        self.is_null = is_null
+        self.is_unique = is_unique
+
+        self.grid: dict[str, Box] | None = None
+        self.mobjects: list = []
+
+    @classmethod
+    def from_vertex(cls, ul_vertex: tuple[float, float],
+                    dr_vertex: tuple[float, float], **kwargs):
+        left_edge, top_edge = ul_vertex
+        right_edge, bottom_edge = dr_vertex
+        center = np.array(
+            [(right_edge+left_edge)/2, (top_edge+bottom_edge)/2, 0])
+        width = right_edge-left_edge
+        height = top_edge-bottom_edge
+        return cls(center, width, height, **kwargs)
+
+    @classmethod
+    def from_mo(cls, mo, **kwargs):
+        return cls.from_vertex(
+            ul_vertex=mo.get_corner(UL)[:-1],
+            dr_vertex=mo.get_corner(DR)[:-1],
+            **kwargs
+        )
+
+    @classmethod
+    def from_box(cls, box):
+        return cls(center=box.center.copy(),
+                   width=box.width, height=box.height,
+                   arrange=box.arrange, is_unique=True)
+
+    @classmethod
+    def get_full_box(cls, **kwargs):
+        return cls(ORIGIN, SLIDE_WIDTH, SLIDE_HEIGHT, **kwargs)
+
+    @classmethod
+    def get_left_box(cls, width, **kwargs):
+        return cls(LEFT_EDGE+RIGHT*width/2, width, SLIDE_HEIGHT, **kwargs)
+
+    @classmethod
+    def get_right_box(cls, width, **kwargs):
+        return cls(RIGHT_EDGE+LEFT*width/2, width, SLIDE_HEIGHT, **kwargs)
+
+    @classmethod
+    def get_top_box(cls, height, **kwargs):
+        return cls(TOP_EDGE+DOWN*height/2, SLIDE_WIDTH, height, **kwargs)
+
+    @classmethod
+    def get_bottom_box(cls, height, **kwargs):
+        return cls(BOTTOM_EDGE+UP*height/2, SLIDE_WIDTH, height, **kwargs)
+
+    @classmethod
+    def get_inner_box(cls, *, left_box=None, right_box=None,
+                      top_box=None, bottom_box=None, arrange):
+
+        lg = SLIDE_X_RAD + left_box.center[0] + left_box.width/2 \
+            if left_box else 0
+        rg = SLIDE_X_RAD - right_box.center[0] + right_box.width/2 \
+            if right_box else 0
+        tg = SLIDE_Y_RAD - top_box.center[1] + top_box.height/2 \
+            if top_box else 0
+        bg = SLIDE_Y_RAD + bottom_box.center[1] + bottom_box.height/2 \
+            if bottom_box else 0
+
+        box = cls.get_full_box(arrange=arrange)
+        box.shrink(left_gap=lg, right_gap=rg, top_gap=tg, bottom_gap=bg)
+
+        return box
+
+    @classmethod
+    def get_null_box(cls):
+        return cls(ORIGIN, SLIDE_WIDTH, SLIDE_HEIGHT, is_null=True)
+
+    @staticmethod
+    def merge_boxes(boxes, arrange):
+        if len(boxes) == 1:
+            return boxes[0]
+        left_edge = min([b.center[0]-b.width/2 for b in boxes])
+        right_edge = max([b.center[0]+b.width/2 for b in boxes])
+        top_edge = max([b.center[1]+b.height/2 for b in boxes])
+        bottom_edge = min([b.center[1]-b.height/2 for b in boxes])
+
+        return Box.from_vertex(ul_vertex=(left_edge, top_edge),
+                               dr_vertex=(right_edge, bottom_edge),
+                               arrange=arrange)
+
+    def add(self, mobject) -> None:
+        if hasattr(mobject, "width_units") and mobject.width_units == "box":
+            mobject.set(width=self.width*mobject.width, width_units="manim")
+        if hasattr(mobject, "height_units") and mobject.height_units == "box":
+            mobject.set(height=self.height*mobject.height,
+                        height_units="manim")
+
+        self.mobjects.append(mobject)
+
+    def remove(self, mobjects):
+        """Remove specified mobjects from the box."""
+        new_l = restructure_list_to_exclude_certain_family_members(
+            self.mobjects, mobjects)
+        self.mobjects = new_l
+
+    def replace(self, old_mo, new_mo):
+        """Remove specified mobjects from the box."""
+        replace_in_list(self.mobjects, old_mo, new_mo)
+
+    def remove_all_mobjects(self) -> None:
+        self.mobjects = []
+
+    def auto_arrange(self) -> None:
+        """TODO(bersp): DOC"""
+        if self.arrange is None or len(self.mobjects) == 0 or self.is_null:
+            return
+
+        centers = []
+        for mo in self.mobjects:
+            centers.append(mo.get_center())
+            mo.move_to(ORIGIN)
+
+        if self.arrange == "center":
+            (VGroup(*self.mobjects)
+             .move_to(self.center))
+        elif self.arrange == "hcenter":
+            (VGroup(*self.mobjects)
+             .arrange(direction=DOWN, buff=self.arrange_buff)
+             .move_to(self.center))
+        elif self.arrange == "top center":
+            (VGroup(*self.mobjects)
+             .arrange(DOWN, buff=self.arrange_buff)
+             .next_to(self.get_top(), DOWN, buff=0))
+        elif self.arrange == "top left":
+            (VGroup(*self.mobjects)
+             .arrange(DOWN, buff=self.arrange_buff, aligned_edge=LEFT)
+             .next_to(self.get_corner(LEFT, UP), DOWN+RIGHT, buff=0))
+        elif self.arrange == "top right":
+            (VGroup(*self.mobjects)
+             .arrange(DOWN, buff=self.arrange_buff, aligned_edge=RIGHT)
+             .next_to(self.get_corner(RIGHT, UP), DOWN+LEFT, buff=0))
+        elif self.arrange == "center left":
+            (VGroup(*self.mobjects)
+             .arrange(DOWN, buff=self.arrange_buff, aligned_edge=LEFT)
+             .next_to(self.get_left(), RIGHT, buff=0))
+        elif self.arrange == "center right":
+            (VGroup(*self.mobjects)
+             .arrange(DOWN, buff=self.arrange_buff, aligned_edge=RIGHT)
+             .next_to(self.get_right(), LEFT, buff=0))
+        else:
+            raise ValueError(f"Arrange {self.arrange!r} is not defined")
+
+        for cent, mo in zip(centers, self.mobjects):
+
+            if hasattr(mo, 'box_arrange'):
+                if mo.box_arrange == "none":
+                    pass
+                elif mo.box_arrange == "center":
+                    mo.move_to(self.center)
+                elif mo.box_arrange == "hcenter":
+                    mo.set_x(self.center[0])
+                elif mo.box_arrange == "vcenter":
+                    mo.set_y(self.center[1])
+                else:
+                    ValueError(
+                        f"'box arrange' {mo.box_arrange!r} is not defined")
+
+            mo.shift(cent)
+
+    def def_grid(self, grid, hspace=0.5, vspace=0.5,
+                 width_ratios=None, height_ratios=None,
+                 arrange="self") -> dict[str, Box]:
+        """
+        TODO(bersp): Handle errors (bad defined grid)
+        """
+
+        if arrange == "self":
+            arrange = self.arrange
+
+        grid = np.asarray(grid)
+        nrows, ncols = grid.shape
+
+        if width_ratios is None:
+            width_ratios = np.asarray([1]*ncols)/ncols
+        else:
+            width_ratios = np.asarray(width_ratios)
+            width_ratios = width_ratios/width_ratios.sum()
+
+        if height_ratios is None:
+            height_ratios = np.asarray([1]*nrows)/nrows
+        else:
+            height_ratios = np.asarray(height_ratios)
+            height_ratios = height_ratios/height_ratios.sum()
+
+        grid_widths = width_ratios * (self.width-hspace*(ncols-1))
+        grid_heights = height_ratios * (self.height-vspace*(nrows-1))
+
+        centers_x = []
+        cx = -self.width/2 - hspace
+        for gw in grid_widths:
+            cx += gw/2 + hspace
+            centers_x.append(cx)
+            cx += gw/2
+
+        centers_y = []
+        cy = self.height/2 + hspace
+        for gh in grid_heights:
+            cy -= gh/2 + hspace
+            centers_y.append(cy)
+            cy -= gh/2
+
+        x0, y0, _ = self.center
+        subgrid = np.zeros(shape=(nrows, ncols), dtype='object')
+        for row, (cy, gh) in enumerate(zip(centers_y, grid_heights)):
+            for col, (cx, gw) in enumerate(zip(centers_x, grid_widths)):
+                subgrid[row, col] = Box(center=np.array((x0+cx, y0+cy, 0)),
+                                        height=gh, width=gw, arrange=arrange)
+
+        self.grid = {}
+        for label in np.unique(grid):
+            self.grid[label] = Box.merge_boxes(
+                subgrid[np.where(grid == label)], arrange=arrange
+            )
+
+        return self.grid
+
+    def get_bbox_mo(self, color="BLACK") -> VMobject:
+        color = ColorManager().get_color(color)
+        r = (
+            Rectangle(height=self.height, width=self.width,
+                      fill_color=color, fill_opacity=0.2)
+            .set_stroke(color=color, opacity=0.0)
+            .move_to(self.center)
+            .set_z_index(-1)
+        )
+
+        return r
+
+    def get_bbox_grid(self, color="RED") -> VMobject:
+        color = ColorManager().get_color(color)
+
+        if self.grid is None:
+            raise ValueError(f"{self!r} has no defined grid")
+
+        o = VGroup()
+        for g in self.grid.values():
+            o.add(g.get_bbox_mo(color=color))
+
+        return o
+
+    def shrink(self, *, left_gap=0, right_gap=0,
+               top_gap=0, bottom_gap=0) -> Box:
+        self.width = self.width - (left_gap + right_gap)
+        self.height = self.height - (top_gap + bottom_gap)
+        self.center = np.array([self.center[0] + (left_gap - right_gap)/2,
+                               self.center[1] + (bottom_gap - top_gap)/2,
+                               0])
+        return self
+
+    # ---
+
+    def set_center(self, value):
+        self.center = value
+        return self
+
+    def set_width(self, value):
+        self.width = value
+        return self
+
+    def set_height(self, value):
+        self.height = value
+        return self
+
+    def set_arrange(self, value: str | None):
+        self.arrange = None if value == "none" else value
+        return self
+
+    def set_arrange_buff(self, value):
+        self.arrange_buff = value
+        return self
+
+    def null(self, value=True):
+        self.is_null = value
+        return self
+
+    # ---
+
+    def get_left(self):
+        return self.center + self.width/2*LEFT
+
+    def get_right(self):
+        return self.center + self.width/2*RIGHT
+
+    def get_top(self):
+        return self.center + self.height/2*UP
+
+    def get_bottom(self):
+        return self.center + self.height/2*DOWN
+
+    def get_corner(self, x_direction, y_direction):
+        return self.center+self.width/2*x_direction+self.height/2*y_direction
+
+    # ---
+
+    def __eq__(self, other_box):
+        if self.is_unique or other_box.is_unique:
+            return False
+        return (np.all(self.center == other_box.center) and
+                self.width == other_box.width and
+                self.height == other_box.height and
+                self.arrange == other_box.arrange and
+                self.arrange_buff == other_box.arrange_buff and
+                self.is_null == other_box.is_null)
+
+    def __repr__(self):
+        c = f"[{self.center[0]:.2g}, {self.center[1]:.2g}]"
+        return f"Box(center={c}, width={self.width:.2g}, height={self.height:.2g}, arrange={self.arrange}, is_null={self.is_null})"
+
+
+class NamedBoxes:
+    def __init__(self, **boxes):
+        """
+        Parameters
+        ----------
+        **boxes : dict
+            Named boxes
+        """
+        for name, box in boxes.items():
+            self.add(name, box)
+
+    def add(self, name, box):
+        setattr(self, name, box)
+
+    def set_current_box(self, box_or_box_name):
+        """
+        TODO(bersp): Documentation.
+        TODO(bersp): Handle errors.
+        """
+
+        if isinstance(box_or_box_name, Box):
+            setattr(self, "active", box_or_box_name)
+        else:
+            setattr(self, "active", self.__dict__[box_or_box_name])
+
+    def remove_all_mobjects(self):
+        """Remove all mobjects from all boxes in the slide layout."""
+        for _, box in self.__dict__.items():
+            box.remove_all_mobjects()
+
+    def get_bbox_mo(self):
+        """Return a VGroup containing all the bounding boxes of the all boxes."""
+        o = VGroup()
+        for _, box in self.__dict__.items():
+            o += box.get_bbox_mo()
+        return o
+
+    def __repr__(self):
+        s = ''
+        for name, box in self.__dict__.items():
+            s += f"{name} -> {box}\n"
+
+        return s
