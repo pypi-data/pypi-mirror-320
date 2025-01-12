@@ -1,0 +1,12 @@
+gbeampro/.gitattributes,sha256=Gh2-F2vCM7SZ01pX23UT8pQcmauXWfF3gwyRSb6ZAFs,66
+gbeampro/.gitignore,sha256=F4GK0z_nmw3i92mg5k9_UonpRJ1BYs0J53d20-_7klg,2798
+gbeampro/README.md,sha256=4G0JZ0nV7c8HmUZCQr7AS9QVAa7mUC59YYkson2qCGk,6427
+gbeampro/__init__.py,sha256=gClQobDf6DaSgK2lNluXttJjbsTcQdOwUjjDclBeXkE,93
+gbeampro/beambase.py,sha256=Iv-Cjl94rl5FjRlVHx124pX38H15rh7w-BShQaN1cFc,14443
+gbeampro/helper.py,sha256=0j2yMimrXjLTPBYCbiOjq2l_7o4B7xUQxlTvoj5-oQc,227
+gbeampro/examples/beam_focusing_into_crystal.ipynb,sha256=xJxmx3TI7n46cEG-NqoiDcBrO-VNNM8OicOyOnQeodY,52000
+gbeampro/examples/output_12_0.png,sha256=V_lKLCmaGywjza_yxfQoIhxDQ2h0vthSaeDRNKFi9q8,37325
+gbeampro-1.0.0.dist-info/METADATA,sha256=OXOrxq2mkZdm1bvb4xB6KVzaVqrnj5u0RFPXymwVV4k,2169
+gbeampro-1.0.0.dist-info/WHEEL,sha256=tkmg4JIqwd9H8mL30xA7crRmoStyCtGp0VWshokd1Jc,105
+gbeampro-1.0.0.dist-info/licenses/LICENSE,sha256=fGEDYv6mCcdlYwPn90jfHOsr2VbJUJW0tPPMlg-EIPk,1072
+gbeampro-1.0.0.dist-info/RECORD,,
