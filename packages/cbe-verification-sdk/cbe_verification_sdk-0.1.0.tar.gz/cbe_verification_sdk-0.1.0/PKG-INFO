@@ -1,0 +1,75 @@
+Metadata-Version: 2.2
+Name: cbe-verification-sdk
+Version: 0.1.0
+Summary: SDK for CBE Transaction Verification API
+Home-page: https://github.com/NaodYeshiwas/CBE-Verification-API
+Author: Naod Yeshiwas
+Author-email: yegnadevelopers@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.0
+Requires-Dist: PyPDF2>=3.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# CBE Verification SDK
+
+A Python SDK for verifying Commercial Bank of Ethiopia (CBE) transactions.
+
+## Installation
+
+```bash
+pip install cbe-verification-sdk
+```
+
+## Quick Start
+
+```python
+from cbe_verification_sdk import CBEVerificationClient
+
+# Initialize client
+client = CBEVerificationClient(
+    api_key="your-api-key-here",
+    api_base_url="http://your-api-url.com"
+)
+
+# Verify a transaction
+result = client.verify_transaction(
+    reference_number="FT253487211",
+    account_number="1000012345678"
+)
+
+print(result)
+```
+
+## Features
+
+- Easy verification of CBE transactions
+- Automatic PDF text extraction
+- Error handling and logging
+- Rate limit handling
+
+## Requirements
+
+- Python 3.7+
+- PyPDF2
+- requests
+
+## Documentation
+
+For detailed documentation, visit [your-documentation-url].
+
+## License
+
+MIT License - see LICENSE file for details.
