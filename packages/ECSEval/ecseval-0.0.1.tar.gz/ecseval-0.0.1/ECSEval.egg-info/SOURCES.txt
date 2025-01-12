@@ -1,0 +1,9 @@
+README.md
+setup.py
+ECSEval/__init__.py
+ECSEval/summary_evaluator.py
+ECSEval.egg-info/PKG-INFO
+ECSEval.egg-info/SOURCES.txt
+ECSEval.egg-info/dependency_links.txt
+ECSEval.egg-info/requires.txt
+ECSEval.egg-info/top_level.txt
