@@ -1,0 +1,155 @@
+/* This is the place to put all your styles */
+.large-note {
+    font-size: 1.3em;
+    --tw-text-opacity: 1;
+    color: rgb(207 207 208 / var(--tw-text-opacity));
+}
+
+.large-note a {
+    --tw-text-opacity: 1;
+    color: rgb(41 151 255 / var(--tw-text-opacity));
+}
+
+.italic {
+    font-style: italic;
+}
+
+.same-font-size {
+    font-size: 1em;
+}
+
+.progress-buttons-bar {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.warning {
+    color: #edb10a;
+}
+
+.icon-info {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.icon-info .icon-info-text {
+    display: none;
+    background: #262626;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 0.5em;
+    position: absolute;
+    left: 40px;
+    top: 0px;
+    z-index: 11;
+}
+.icon-info .icon-info-text:before, .icon-info .icon-info-text:after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 7px;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent grey;
+}
+.icon-info .icon-info-text:after {
+    left: -8px;
+    border-right-color: #262626;
+}
+.icon-info:hover .icon-info-text, .icon-info:focus .icon-info-text {
+    display: inline-block;
+}
+
+.svg-selftransfer, .svg-mixed {
+    filter: invert(77%) sepia(68%) saturate(3384%) hue-rotate(44deg) brightness(112%) contrast(74%);
+}
+
+.funds-left-wrapper {
+    min-height: 2.25rem;
+    padding: 0;
+    margin: 0;
+}
+
+.box-shadow-xl {
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+.tx_info {
+    padding: 1em;
+    border: 1px solid #506072;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.tx_info .signing_container{
+    margin-bottom: 2em;
+}
+
+.tx_info .signing-column-btn {
+    margin: 0.75em;
+    width: 200px !important;
+}
+
+.tx_info .tx {
+    width: 100%;
+    max-width: 179px;
+    min-width: 120px;
+}
+
+.tx_info .tx_details_header {
+    text-align: left;
+    text-decoration: underline;
+}
+
+#tx_details {
+    line-height: 1.5;
+}
+
+.toggle {
+    display: none;
+}
+
+.tx_info .togglebtn {
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    background: var(--cmap-border) !important;
+}
+
+.tx_info input[type="checkbox"] ~ label.togglebtn::before{
+    content: "Show";
+}
+
+.tx_info input[type="checkbox"]:checked ~ label.togglebtn::before{
+    content: "Hide";
+}
+
+.tx_info input[type="checkbox"]{
+    display: none;
+}
+
+.tx_info input[type="checkbox"]:checked ~ .toggle{
+    display: block;
+}
+
+.checkbox-wrapper-long-label {
+    align-items: start;
+}
+
+.checkbox-wrapper-long-label input {
+    margin-top: 0.3rem;
+}
+
+input.alert-button {
+    --tw-bg-opacity: 1;
+    background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
+input.alert-button:disabled {
+    --tw-bg-opacity: 1;
+    background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity));
+}
