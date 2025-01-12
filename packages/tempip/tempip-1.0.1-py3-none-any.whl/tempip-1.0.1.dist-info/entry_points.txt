@@ -1,0 +1,2 @@
+[console_scripts]
+tempip-cli = tempip.cli:main
