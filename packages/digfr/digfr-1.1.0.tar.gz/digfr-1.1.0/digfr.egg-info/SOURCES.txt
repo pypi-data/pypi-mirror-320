@@ -1,0 +1,7 @@
+setup.py
+digfr/__init__.py
+digfr/operations.py
+digfr.egg-info/PKG-INFO
+digfr.egg-info/SOURCES.txt
+digfr.egg-info/dependency_links.txt
+digfr.egg-info/top_level.txt
