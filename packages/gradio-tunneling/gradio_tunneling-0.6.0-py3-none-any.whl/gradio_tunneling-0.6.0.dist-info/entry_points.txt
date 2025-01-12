@@ -1,0 +1,2 @@
+[console_scripts]
+gradio-tunneling = gradio_tunneling.main:main
