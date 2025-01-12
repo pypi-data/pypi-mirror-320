@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: deriva-ml
+Version: 1.0.2
+Summary: Utilities to simplify use of Dervia and Pandas
+Author-email: ISRD <isrd-dev@isi.edu>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: deriva~=1.7.4
+Requires-Dist: pandas
+Requires-Dist: regex~=2024.7.24
+Requires-Dist: pydantic~=2.10.1
+
+Deriva-ML is a python libary to simplify the process of creating and executing reproducible machine learning workflows
+using a deriva catalog.
