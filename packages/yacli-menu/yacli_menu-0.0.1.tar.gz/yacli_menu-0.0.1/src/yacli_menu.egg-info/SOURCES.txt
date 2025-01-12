@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/yacli_menu/__init__.py
+src/yacli_menu/yacli_menu.py
+src/yacli_menu.egg-info/PKG-INFO
+src/yacli_menu.egg-info/SOURCES.txt
+src/yacli_menu.egg-info/dependency_links.txt
+src/yacli_menu.egg-info/top_level.txt
