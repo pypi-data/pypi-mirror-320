@@ -1,0 +1,6 @@
+include version.txt
+include pyproject.toml
+include setup.py
+include README.md
+graft KdnEngine
+global-exclude *.py[cod] __pycache__ *.so *.dylib
