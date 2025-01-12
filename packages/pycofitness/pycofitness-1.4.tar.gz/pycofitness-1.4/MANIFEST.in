@@ -1,0 +1,2 @@
+include pycofitness/plmdca/include/*
+include pycofitness/plmdca/lbfgs/include/*
