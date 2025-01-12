@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+pyproject.toml
+doc/ioutils.md
+narf/ioutils.py
+narf_ioutils.egg-info/PKG-INFO
+narf_ioutils.egg-info/SOURCES.txt
+narf_ioutils.egg-info/dependency_links.txt
+narf_ioutils.egg-info/requires.txt
+narf_ioutils.egg-info/top_level.txt
