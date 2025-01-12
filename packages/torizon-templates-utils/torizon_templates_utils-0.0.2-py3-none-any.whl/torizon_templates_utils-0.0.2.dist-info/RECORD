@@ -1,0 +1,13 @@
+torizon_templates_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torizon_templates_utils/animations.py,sha256=RrySPMhlrE6f40BBeLvHEHJPOwOnIsv3rHWNt636lro,1671
+torizon_templates_utils/args.py,sha256=nN1b9Ts2lEYbpAGzaMWpAcmcYIrTUFJHehM_UqvnCWA,2142
+torizon_templates_utils/colors.py,sha256=Y1FZ0HtKvXfLGYTDclsXubtZCQ-epuch5Dgk1DJdjps,1143
+torizon_templates_utils/debug.py,sha256=OfdKSdN1kypuJnV_WcPa9bvonjyDvXvA3QTmc1iKyjw,556
+torizon_templates_utils/errors.py,sha256=rvQjWPkwmOQE56vFywq1yQiiRcl-AL7LRVlpyoYDXvc,1214
+torizon_templates_utils/network.py,sha256=K2-eEi4224yuvw5-zZp-rG2KxSH_8vxPtbzs11olb2g,643
+torizon_templates_utils/tasks.py,sha256=tWFvlhST874FmieaArMNSFrztulsi4O8BPOZvXXSjv4,30681
+torizon_templates_utils-0.0.2.dist-info/LICENSE,sha256=9sElQO1hY3ElhihFD_PlS5hXMIuSelsJZpIfjNpxBlQ,1099
+torizon_templates_utils-0.0.2.dist-info/METADATA,sha256=Mx7iOu0l8ubrKeKprdnQFAI3JJ3XbAmapHuuuhbpWWQ,968
+torizon_templates_utils-0.0.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+torizon_templates_utils-0.0.2.dist-info/top_level.txt,sha256=qlOkS1ASF5C-kSfpbiWbVHJFgmQ0RN6iunmLArNt6zc,24
+torizon_templates_utils-0.0.2.dist-info/RECORD,,
