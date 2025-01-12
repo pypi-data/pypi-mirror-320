@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: vcat
+Version: 0.1.0
+Summary: A CLI tool to generates human friendly visualizations for files.
+Home-page: https://github.com/alexxi19/vcat
+Author: Alex Xi
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Requires-Dist: openai
