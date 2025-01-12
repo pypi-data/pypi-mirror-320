@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+intents.json
+setup.py
+cryptsh/__init__.py
+cryptsh/intents.json
+cryptsh/main.py
+cryptsh.egg-info/PKG-INFO
+cryptsh.egg-info/SOURCES.txt
+cryptsh.egg-info/dependency_links.txt
+cryptsh.egg-info/entry_points.txt
+cryptsh.egg-info/requires.txt
+cryptsh.egg-info/top_level.txt
