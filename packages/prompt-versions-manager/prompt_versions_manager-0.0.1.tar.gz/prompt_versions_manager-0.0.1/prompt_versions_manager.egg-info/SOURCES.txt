@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+prompt_versions_manager/__init__.py
+prompt_versions_manager/prompt_versions_manager.py
+prompt_versions_manager.egg-info/PKG-INFO
+prompt_versions_manager.egg-info/SOURCES.txt
+prompt_versions_manager.egg-info/dependency_links.txt
+prompt_versions_manager.egg-info/requires.txt
+prompt_versions_manager.egg-info/top_level.txt
+prompt_versions_manager/examples/prompt_usage_examples.py
