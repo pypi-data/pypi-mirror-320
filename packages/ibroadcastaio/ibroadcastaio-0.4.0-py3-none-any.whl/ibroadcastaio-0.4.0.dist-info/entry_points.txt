@@ -1,0 +1,4 @@
+[console_scripts]
+example=example:main
+test=unittest:main
+
