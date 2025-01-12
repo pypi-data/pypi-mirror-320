@@ -1,0 +1,103 @@
+{% extends 'admin/master.html' %}
+{% import 'admin/lib.html' as lib with context %}
+{% import 'admin/static.html' as admin_static with context%}
+{% import 'admin/model/layout.html' as model_layout with context %}
+{% import 'admin/actions.html' as actionlib with context %}
+{% import 'admin/model/row_actions.html' as row_actions with context %}
+
+{% from 'govuk_frontend_jinja/components/button/macro.html' import govukButton %}
+{% from 'govuk_frontend_jinja/components/pagination/macro.html' import govukPagination %}
+
+{% block head %}
+  {{ super() }}
+  {{ lib.form_css() }}
+{% endblock %}
+
+{% block action_panel %}
+  <h1 class="govuk-heading-l">The {{ admin_view.name }} table</h1>
+
+  {% if admin_view.can_create %}
+    <a class="govuk-button govuk-button--secondary" href="{{ url_for('.create_view') }}">Create {{ admin_view.name }}</a>
+  {% endif %}
+
+  {% block model_list_table %}
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-table__caption--m">{{ admin_view.name }} entries</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+            {% for c, name in list_columns %}
+              {% set column = loop.index0 %}
+              <th scope="col" class="govuk-table__header col-{{c}}">
+                {% if admin_view.is_sortable(c) %}
+                  {% set sortClasses = "gfa-link--sort" %}
+                  {% if sort_column == column %}
+                    {% set sortClasses = "gfa-link--sort " + ("gfa-link--sort-descending" if sort_desc else "gfa-link--sort-ascending") %}
+                    <a
+                      href="{{ sort_url(column, True) }}"
+                      title="{{ _gettext('Sort by %(name)s', name=name) }}"
+                      class="govuk-link govuk-link--no-visited-state {{ sortClasses }}"
+                    >
+                        {{ name }}
+                    </a>
+                  {% else %}
+                    <a
+                      href="{{ sort_url(column) }}"
+                      title="{{ _gettext('Sort by %(name)s', name=name) }}"
+                      class="govuk-link govuk-link--no-visited-state {{ sortClasses }}"
+                    >
+                      {{ name }}
+                    </a>
+                  {% endif %}
+                {% else %}
+                  {{ name }}
+                {% endif %}
+              </th>
+            {% endfor %}
+        </tr>
+      </thead>
+
+      <tbody class="govuk-table__body">
+        {% for row in data %}
+          <tr class="govuk-table__row">
+              {% for c, name in list_columns %}
+                <td class="govuk-table__cell col-{{c}}">
+                  {% if loop.index == 1 %}
+                    <a class="govuk-link govuk-link--no-visited-state" href="{{ get_url('.edit_view', id=get_pk_value(row), url=return_url) }}">
+                      <span class="govuk-visually-hidden">View and edit {{ admin_view.name }} </span>
+                      {{ get_value(row, c) }}
+                    </a>
+                  {% else %}
+                    {{ get_value(row, c) }}
+                  {% endif %}
+                </td>
+              {% endfor %}
+          </tr>
+        {% else %}
+          <tr>
+            <td>
+              {% block empty_list_message %}
+                <p class="govuk-body">
+                  {{ admin_view.get_empty_list_message() }}
+                </p>
+              {% endblock %}
+            </td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+
+      {% if num_pages > 1 %}
+        {{ govukPagination(govuk_pagination_data_builder(page, num_pages, pager_url)) }}
+      {% endif %}
+    </div>
+  {% endblock %}
+
+  {% block actions %}
+    {{ actionlib.form(actions, get_url('.action_view')) }}
+  {% endblock %}
+{% endblock %}
+
+{% block bodyEnd %}
+  {{ super() }}
+  {{ lib.form_js() }}
+{% endblock %}
