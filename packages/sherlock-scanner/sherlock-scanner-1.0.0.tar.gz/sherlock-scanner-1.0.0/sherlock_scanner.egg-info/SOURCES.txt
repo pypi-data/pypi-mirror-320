@@ -1,0 +1,11 @@
+README.md
+setup.py
+sherlock/__init__.py
+sherlock/cli.py
+sherlock/scanner.py
+sherlock_scanner.egg-info/PKG-INFO
+sherlock_scanner.egg-info/SOURCES.txt
+sherlock_scanner.egg-info/dependency_links.txt
+sherlock_scanner.egg-info/entry_points.txt
+sherlock_scanner.egg-info/requires.txt
+sherlock_scanner.egg-info/top_level.txt

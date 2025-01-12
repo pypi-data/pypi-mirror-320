@@ -1,0 +1,2 @@
+[console_scripts]
+sherlock = sherlock.cli:run_scan
