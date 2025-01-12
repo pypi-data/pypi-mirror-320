@@ -1,0 +1,8 @@
+Metadata-Version: 2.2
+Name: jove
+Version: 0.0.1
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest==8.3.3; extra == "dev"
+Requires-Dist: black==24.8.0; extra == "dev"
+Dynamic: provides-extra
