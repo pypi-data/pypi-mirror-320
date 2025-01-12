@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+morph_extractor/__init__.py
+morph_extractor/cli.py
+morph_extractor/config.py
+morph_extractor/json_utils.py
+morph_extractor/lang_code.py
+morph_extractor/morphology_extractor.py
+morph_extractor/token_utils.py
+morph_extractor/wiktionary_loader.py
+morph_extractor.egg-info/PKG-INFO
+morph_extractor.egg-info/SOURCES.txt
+morph_extractor.egg-info/dependency_links.txt
+morph_extractor.egg-info/entry_points.txt
+morph_extractor.egg-info/top_level.txt
