@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+pirateweather_translations.egg-info/PKG-INFO
+pirateweather_translations.egg-info/SOURCES.txt
+pirateweather_translations.egg-info/dependency_links.txt
+pirateweather_translations.egg-info/top_level.txt
