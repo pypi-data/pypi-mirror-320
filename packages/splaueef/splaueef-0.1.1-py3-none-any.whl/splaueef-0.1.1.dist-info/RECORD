@@ -1,0 +1,13 @@
+aiohelp/__init__.py,sha256=806s_R2UCgYV4ZZD8Kvlt6NN_b3U85d7OkFbivonP_A,81
+aiohelp/bot.py,sha256=6tFXwxGhyoWTtsGo7qjaiwve4oT5WKBjs6IKkaOPmag,755
+aiohelp/bot_config.py,sha256=PSSuKQp730eDaZsZ1l2Jzdf0ny6ShzqFAdgt_YjyYjI,543
+aiohelp/handlers.py,sha256=DklSTo6ljlIgFtuOiQxiVArDTH1tBZMX190bmUo645M,700
+aiohelp/keyboards.py,sha256=hg-OZAXw25J1W2lnUXc03zjXpHNhV4sc0lHD4Pq2Ls4,630
+aiohelp/middlewares.py,sha256=bP8QE0y_W8NkykfL9v5msbjzpTrj6k_nNfmwrGW8lMw,632
+aiohelp/states.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiohelp/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+splaueef-0.1.1.dist-info/METADATA,sha256=ZQRgZUjXU3smSeSe7Ko5r5Jf7_PZcjw-DnnjQh3NNRQ,3026
+splaueef-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+splaueef-0.1.1.dist-info/entry_points.txt,sha256=ft-BC01ULrvbjhUusnT9oWF-E72GGx7sZLfNaviIS28,56
+splaueef-0.1.1.dist-info/top_level.txt,sha256=DR9chh2cRHa4f1_vutZOZcuShpWrrqvMXAYsiL6-GfQ,8
+splaueef-0.1.1.dist-info/RECORD,,
