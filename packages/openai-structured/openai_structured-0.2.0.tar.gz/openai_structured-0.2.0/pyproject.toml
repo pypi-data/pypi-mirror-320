@@ -1,0 +1,75 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "openai-structured"
+version = "0.2.0"
+description = "Structured output for OpenAI API"
+authors = ["Yaniv Golan <yaniv@golan.name>"]
+readme = "README.md"
+packages = [{include = "openai_structured", from = "src"}]
+include = ["src/openai_structured/py.typed"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+openai = "^1.12.0"
+pydantic = "^2.6.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0"
+flake8 = "^6.0"
+flake8-pyproject = "^1.2.3"
+black = "^24.2"
+isort = "^5.13"
+sphinx = "^7.0"
+sphinx-rtd-theme = "^1.0"
+mypy = "^1.0"
+pytest-asyncio = "^0.23.5"
+pytest-mock = "^3.14.0"
+myst-parser = "^2.0.0"
+build = "^1.2.2.post1"
+twine = "^6.0.1"
+python-dotenv = "^1.0.1"
+
+[tool.flake8]
+max-line-length = 120
+extend-ignore = ["E203"]
+
+[tool.mypy]
+strict = true
+exclude = [
+    "docs/",
+    "examples/"
+]
+packages = ["openai_structured", "tests"]
+python_version = "3.9"
+warn_unused_configs = true
+disallow_untyped_defs = true
+check_untyped_defs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_return_any = true
+warn_unreachable = true
+show_error_codes = true
+
+[tool.black]
+line-length = 79
+target-version = ['py39']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 79
+
+[tool.pytest.ini_options]
+asyncio_mode = "strict"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+markers = [
+    "live: mark test as a live test that should use real API key",
+    "asyncio: mark test as requiring async loop",
+]
+
