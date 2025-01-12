@@ -1,0 +1,2 @@
+[console_scripts]
+pycofitness = pycofitness.main:run_mutation
