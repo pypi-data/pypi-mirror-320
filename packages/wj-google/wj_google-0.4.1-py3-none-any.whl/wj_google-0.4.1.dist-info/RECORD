@@ -1,0 +1,15 @@
+wj_google/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wj_google/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wj_google/examples/bigquery.py,sha256=b73Zd05CIGJp0r31EkgsSKMNWcN8yaRbknkkVeGnfn0,1972
+wj_google/examples/sorage_and_drive.py,sha256=siNNR6WvIQjn8T6czDop0v7F1Bqc9sUvsp6R_stewd4,2767
+wj_google/google_api/Google.py,sha256=KMw_jmcRGGivAPuTQLZK6qktdCSr6hwRZRznSipw8-Y,1421
+wj_google/google_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wj_google/google_api/google_api.py,sha256=KnvcptyuZbF_zvu_AQyuLSpct1tSpqfHtGRUl-CAl_o,3965
+wj_google/google_cloud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wj_google/google_cloud/cloud_connector.py,sha256=Udg_HXoM94-p37k50XlRQ_dCMWTqg5Dt53hngMFy3bo,6071
+wj_google/main.py,sha256=DVd_qD04LHjpBYRxk3llRvyGISOxgVaKpfp3ZbJQJyE,3246
+wj_google/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wj_google/tools/files_manage.py,sha256=CkwLiI1_cyTOmgAseOU-A-KQnldeh9DhBVVwVv5v-JQ,384
+wj_google-0.4.1.dist-info/METADATA,sha256=xkRzLoNNT9du0UUcZq79EoRN90an0AD2iNeeVnGPc4E,6494
+wj_google-0.4.1.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+wj_google-0.4.1.dist-info/RECORD,,
