@@ -1,0 +1,17 @@
+newtype/__init__.py,sha256=Fz1RZpXT6hlehl8JTD63nytcJeglslXsfLf5-CZ3XQg,1747
+newtype/extensions/__init__.py,sha256=LIzib_MDMT2Iyz2RJcmnxTI9ATpQWxu6rgO2bwMsTpo,519
+newtype/extensions/newtype_debug_print.h,sha256=StZ899KvFKsiZxZajGrw_JjaoPjE_Skbz4pTBvwWJYU,418
+newtype/extensions/newtype_init.c,sha256=Z8owXM2WfkneJ2hh8A_iIyX_Ek-rO_Xyc2Lt-ymUcAY,8184
+newtype/extensions/newtype_init.h,sha256=Im3p16T4Nu2KnGyfzHzv3bNpIV-qywQxZ6t-p149GDw,494
+newtype/extensions/newtype_meth.c,sha256=amlnVfXUGIhPuItzv_SIaqzHfITbb5jImNlOPlyX1fU,16829
+newtype/extensions/newtype_meth.h,sha256=OitUPVV-MY0VntAaMDHyKhD7lnhmsGaUMR0cFcDnmFg,496
+newtype/extensions/newtypeinit.pyi,sha256=wpeCXZzmsY3jWbiDzdIFVbyoMKuO7xzj9iTVqMtBvrE,3151
+newtype/extensions/newtypemethod.pyi,sha256=IHlgfnL7UXe0z4EFi8YJVBLR8zDNmhkrDNuqOFpoyyM,3163
+newtype/mypy_plugin.py,sha256=8RZP4IpigMDXX-stB8pjVWASNbIc6tTvKbWz0KclZFE,7232
+newtype/newtype.py,sha256=DTMIlYmY-jyL4fwBibxB3-NfbUlum2IM6Ei9SHHBuAc,9633
+newtype/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_newtype-0.1.4.dist-info/LICENSE,sha256=Ds1nv-adg3YNJOcyBHD19N2RYE46bRrp-5adhXGEpC0,1093
+python_newtype-0.1.4.dist-info/METADATA,sha256=RJlgUAyiGHAHmDELaFadXCJIab1XnaAQQLjeQhcnUQs,10249
+python_newtype-0.1.4.dist-info/WHEEL,sha256=fHc739RjoVGIxELzM4RVV97sM2omZjrv4vLsRnx9JOU,106
+python_newtype-0.1.4.dist-info/entry_points.txt,sha256=4ger4yvSMqwtc7DhdYf6y7QUt8xmaAV71d5SZLFAk6g,68
+python_newtype-0.1.4.dist-info/RECORD,,
