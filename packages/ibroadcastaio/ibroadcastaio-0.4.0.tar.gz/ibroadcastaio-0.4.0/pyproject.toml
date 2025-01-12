@@ -1,0 +1,62 @@
+[tool.poetry]
+name = "ibroadcastaio"
+version = "0.4.0"
+description = "Client for async communication with the iBroadcast api."
+authors = ["Rob Sonke <rob@tigrou.nl>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiohttp = "^3.11.0"
+pre-commit = "^4.0.1"
+pylint = "^3.3.1"
+
+[tool.poetry.scripts]
+example = "example:main"
+test = "unittest:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^6.2.4"
+black = "^24.10.0"
+isort = "^5.13.2"
+flake8 = "^7.1.1"
+ruff = "^0.8.1"
+mypy = "^1.14.1"
+
+[tool.ruff]
+fix = true
+show-fixes = true
+line-length = 100
+select = ["E", "F", "W", "C", "N", "Q", "B"]
+ignore = ["E501"]
+target-version = "py311"
+
+[tool.ruff.lint.pydocstyle]
+# Use Google-style docstrings.
+convention = "pep257"
+
+[tool.ruff.lint.pylint]
+max-args = 20
+max-branches = 25
+max-returns = 15
+max-statements = 50
+
+[tool.ruff.lint.flake8-pytest-style]
+fixture-parentheses = false
+mark-parentheses = false
+
+[tool.ruff.lint.isort]
+known-first-party = ["ibroadcastaio"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+python_version = "3.11"
+check_untyped_defs = true
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+strict_optional = true

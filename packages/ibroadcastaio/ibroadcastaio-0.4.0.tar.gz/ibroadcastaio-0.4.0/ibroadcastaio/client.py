@@ -1,0 +1,324 @@
+import importlib.metadata
+import logging
+from typing import Any, AsyncGenerator, Dict
+
+from aiohttp import ClientSession
+
+from ibroadcastaio.const import BASE_API_URL, BASE_LIBRARY_URL, REFERER, STATUS_API
+
+
+class IBroadcastClient:
+    """iBroadcast API Client to use the API in an async manner"""
+
+    def __init__(self, http_session: ClientSession) -> None:
+        """Main constructor"""
+        self.http_session = http_session
+        self._albums: Dict[int, Any] = {}
+        self._artists: Dict[int, Any] = {}
+        self._playlists: Dict[int, Any] = {}
+        self._tags: Dict[int, Any] = {}
+        self._tracks: Dict[int, Any] = {}
+        self._settings: Dict[str, Any] = {}
+        self._status: Dict[str, Any] = {}
+
+    async def login(self, username: str, password: str) -> Dict[str, Any]:
+        """Login to the iBroadcast API and return the status dict"""
+        data = {
+            "mode": "status",
+            "email_address": username,
+            "password": password,
+            "version": self.get_version(),
+            "client": REFERER,
+            "supported_types": False,
+        }
+
+        try:
+            self._status = await self.__post(
+                f"{BASE_API_URL}{STATUS_API}",
+                {"content_type": "application/json"},
+                data,
+            )
+        except Exception as e:
+            logging.error(f"Failed to login: {e}")
+            raise ValueError(f"Failed to login: {e}") from e
+
+        if "user" not in self._status:
+            raise ValueError("Invalid credentials")
+
+        return self._status
+
+    def get_version(self) -> str:
+        """Get the version of the ibroadcastaio package"""
+        return importlib.metadata.version("ibroadcastaio")
+
+    async def refresh_library(self) -> None:
+        """Fetch the library to cache it locally"""
+        data: Dict[str, Any] = {
+            "_token": self._status["user"]["token"],
+            "_userid": self._status["user"]["id"],
+            "client": REFERER,
+            "version": self.get_version(),
+            "mode": "library",
+            "supported_types": False,
+        }
+
+        """
+            In a future version of this library, mainly once ibroadcast has a more fine grained API, we should not keep the library in memory.
+            For now we fetch the complete librady and split it into in memory class members.
+            Later, we remove this step and rewrite methods such as _get_albums(album_id) to directly fetch it from the API.
+        """
+        library = await self.__post(
+            f"{BASE_LIBRARY_URL}", {"content_type": "application/json"}, data
+        )
+
+        self._albums = {
+            album["album_id"]: album
+            async for album in self.__json_to_dict(
+                library["library"]["albums"], "album_id"
+            )
+        }
+
+        self._artists = {
+            artist["artist_id"]: artist
+            async for artist in self.__json_to_dict(
+                library["library"]["artists"], "artist_id"
+            )
+        }
+
+        self._playlists = {
+            playlist["playlist_id"]: playlist
+            async for playlist in self.__json_to_dict(
+                library["library"]["playlists"], "playlist_id"
+            )
+        }
+
+        """See here the exception for tags: https://devguide.ibroadcast.com/?p=library#get-library"""
+        if isinstance(library["library"]["tags"], dict):
+            self._tags = {
+                int(tag_id): {**tag, "tag_id": int(tag_id)}
+                for tag_id, tag in library["library"]["tags"].items()
+            }
+        else:
+            self._tags = {
+                tag["tag_id"]: tag
+                async for tag in self.__json_to_dict(
+                    library["library"]["tags"], "tag_id"
+                )
+            }
+
+        self._tracks = {
+            track["track_id"]: track
+            async for track in self.__json_to_dict(
+                library["library"]["tracks"], "track_id"
+            )
+        }
+
+        self._settings = library["settings"]
+
+    async def get_artwork_url(self, entity_id: int, entity_type: str) -> str:
+        self._check_library_loaded()
+
+        if entity_type == "track":
+            entity = await self.get_track(entity_id)
+        elif entity_type == "artist":
+            entity = await self.get_artist(entity_id)
+        elif entity_type == "playlist":
+            entity = await self.get_playlist(entity_id)
+        else:
+            raise ValueError(f"Unsupported entity type: {entity_type}")
+
+        if not entity:
+            raise ValueError(
+                f"{entity_type.capitalize()} with id {entity_id} not found"
+            )
+
+        if "artwork_id" not in entity:
+            raise ValueError(f"No artwork found for {entity_type} with id {entity_id}")
+
+        artwork_id = entity["artwork_id"]
+
+        base_url = await self.get_artwork_base_url()
+
+        return f"{base_url}/artwork/{artwork_id}-300"
+
+    async def get_album_artwork_url(self, album_id: int) -> str:
+        """Get the artwork URL for an album from the first track in the album with a valid artwork_id"""
+        track_id = None
+        for track_id in (await self.get_album(album_id))["tracks"]:
+            if (await self.get_track(track_id))["artwork_id"] is not None:
+                break
+        return await self.get_track_artwork_url(track_id)
+
+    async def get_track_artwork_url(self, track_id: int) -> str:
+        """Get the artwork URL for a track"""
+        return await self.get_artwork_url(track_id, "track")
+
+    async def get_artist_artwork_url(self, artist_id: int) -> str:
+        """Get the artwork URL for an artist"""
+        return await self.get_artwork_url(artist_id, "artist")
+
+    async def get_playlist_artwork_url(self, playlist_id: int) -> str:
+        """Get the artwork URL for a playlist"""
+        return await self.get_artwork_url(playlist_id, "playlist")
+
+    async def get_artwork_base_url(self) -> str:
+        """Get the base URL for artwork"""
+        self._check_library_loaded()
+        base_url = self._settings.get("artwork_server")
+        if not base_url:
+            raise ValueError("Artwork base URL not found in settings")
+        return base_url
+
+    async def get_stream_url(self) -> str:
+        """Get the base URL for streaming"""
+        self._check_library_loaded()
+        stream_url = self._settings.get("streaming_server")
+        if not stream_url:
+            raise ValueError("Stream server not found in settings")
+        return stream_url
+
+    async def get_full_stream_url(
+        self, track_id: int, platform: str = "ibroadcastaio"
+    ) -> str:
+        """Get the full stream URL for a track"""
+        track = await self.get_track(track_id)
+        return (
+            f'{await self.get_stream_url()}{track["file"]}?'
+            f'&Signature={self._status["user"]["token"]}'
+            f"&file_id={track_id}"
+            f'&user_id={self._status["user"]["id"]}'
+            f"&platform={platform}"
+            f"&version={self.get_version()}"
+        )
+
+    async def get_artist(self, artist_id: int) -> Dict[str, Any]:
+        """Get an artist by ID"""
+        self._check_library_loaded()
+        return self._artists.get(artist_id, {})
+
+    async def get_artists(self) -> Dict[int, Any]:
+        """Get all artists"""
+        self._check_library_loaded()
+        return self._artists
+
+    async def get_tag(self, tag_id: int) -> Dict[str, Any]:
+        self._check_library_loaded()
+        return self._tags.get(tag_id, {})
+
+    async def get_tags(self) -> Dict[int, Any]:
+        self._check_library_loaded()
+        return self._tags
+
+    async def get_settings(self) -> Dict[str, Any]:
+        self._check_library_loaded()
+        return self._settings
+
+    async def get_album(self, album_id: int) -> Dict[str, Any]:
+        self._check_library_loaded()
+        return self._albums.get(album_id, {})
+
+    async def get_albums(self) -> Dict[int, Any]:
+        self._check_library_loaded()
+        return self._albums
+
+    async def get_track(self, track_id: int) -> Dict[str, Any]:
+        self._check_library_loaded()
+        return self._tracks.get(track_id, {})
+
+    async def get_tracks(self) -> Dict[int, Any]:
+        self._check_library_loaded()
+        return self._tracks
+
+    async def get_playlist(self, playlist_id: int) -> Dict[str, Any]:
+        self._check_library_loaded()
+        return self._playlists.get(playlist_id, {})
+
+    async def get_playlists(self) -> Dict[int, Any]:
+        self._check_library_loaded()
+        return self._playlists
+
+    async def __post(
+        self, url: str, headers: Dict[str, Any], data: Dict[str, Any]
+    ) -> Dict[str, Any]:
+        """Make a POST request and return the response as a dictionary"""
+        async with self.http_session.post(url, headers=headers, json=data) as response:
+            response.raise_for_status()
+            return await response.json()
+
+    async def __json_to_dict(
+        self, data: list[dict[str, Any]], main_key: str
+    ) -> AsyncGenerator[dict[str, Any], None]:
+        """
+        Convert the library json into python dicts. See the readme for all fields.
+
+        Example Album:
+
+            data = {
+            "12345" : [
+                "My album",
+                [
+                    123,
+                    124,
+                    125
+                ],
+                "123",
+                false,
+                null,
+                null,
+                null,
+                456,
+                1
+            ],
+            "map" : {
+                "artwork_id" : 7,
+                "description" : 6,
+                "name" : 0,
+                "public_id" : 4,
+                "sort" : 8,
+                "system_created" : 3,
+                "tracks" : 1,
+                "type" : 5,
+                "uid" : 2
+            }
+        }
+
+        will be turned into a dict as:
+
+        data = {
+            "12345" : {
+                "album_id" : 12345, ==> this is an extra field, to make life easier
+                "name": "My album",
+                "tracks": [
+                    123,
+                    124,
+                    125
+                ],
+                "uid": "123",
+                "system_created": false,
+                "public_id": null,
+                "type": null,
+                "description": null,
+                "artwork_id": 456,
+                "sort": 1
+            }
+        }
+        """
+        if (
+            not isinstance(data, dict)
+            or "map" not in data
+            or not isinstance(data["map"], dict)
+        ):
+            return
+
+        keymap = {v: k for (k, v) in data["map"].items() if not isinstance(v, dict)}
+
+        for key, value in data.items():
+            if type(value) is list:
+                result = {keymap[i]: value[i] for i in range(len(value))}
+                result[main_key] = int(key)
+                yield result
+
+    def _check_library_loaded(self) -> None:
+        """Check if the library is loaded"""
+        if self._settings is None:
+            raise ValueError("Library not loaded. Please call refresh_library first.")
