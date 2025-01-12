@@ -1,0 +1,4 @@
+include README.md
+include requirements.txt
+recursive-include lumbni_client *.py
+recursive-include tests *.py
