@@ -1,0 +1,73 @@
+Metadata-Version: 2.2
+Name: agave
+Version: 1.1.0.dev10
+Summary: Rest_api
+Home-page: https://github.com/cuenca-mx/agave
+Author: Cuenca
+Author-email: dev@cuenca.com
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cuenca-validations==2.0.0.dev12
+Provides-Extra: chalice
+Requires-Dist: chalice==1.31.3; extra == "chalice"
+Requires-Dist: blinker==1.9.0; extra == "chalice"
+Requires-Dist: mongoengine==0.29.1; extra == "chalice"
+Requires-Dist: dnspython==2.7.0; extra == "chalice"
+Provides-Extra: fastapi
+Requires-Dist: aiobotocore==2.17.0; extra == "fastapi"
+Requires-Dist: types-aiobotocore-sqs==2.17.0; extra == "fastapi"
+Requires-Dist: fastapi==0.115.6; extra == "fastapi"
+Requires-Dist: mongoengine-plus==0.2.3.dev4; extra == "fastapi"
+Requires-Dist: starlette-context==0.3.6; extra == "fastapi"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# agave
+[![test](https://github.com/cuenca-mx/agave/workflows/test/badge.svg)](https://github.com/cuenca-mx/agave/actions?query=workflow%3Atest)
+[![codecov](https://codecov.io/gh/cuenca-mx/agave/branch/main/graph/badge.svg)](https://codecov.io/gh/cuenca-mx/agave)
+[![PyPI](https://img.shields.io/pypi/v/agave.svg)](https://pypi.org/project/agave/)
+
+Agave is a library that implement rest_api across the use of Blueprints based on Chalice Aws.
+
+this library allow send and receive JSON data to these endpoints to query, modify and create content.
+
+Install agave using pip:
+
+```bash
+pip install agave==0.0.2.dev0
+```
+
+You can use agave for blueprint like this:
+```python
+
+from agave.blueprints.rest_api import RestApiBlueprint
+
+```
+
+agave include helpers for mongoengine, for example:
+```python
+
+from agave.models.helpers import (uuid_field, mongo_to_dict, EnumField, updated_at, list_field_to_dict)
+
+```
+
+Correr tests
+```bash
+make test
+```
