@@ -1,0 +1,8 @@
+
+extract_imp: |
+    SELECT  *
+
+    FROM   "aaa"."table"   
+    WHERE 
+
+    LIMIT {nmax}
