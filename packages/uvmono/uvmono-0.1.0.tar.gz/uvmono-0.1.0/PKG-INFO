@@ -1,0 +1,174 @@
+Metadata-Version: 2.4
+Name: uvmono
+Version: 0.1.0
+Summary: Add your description here
+Author-email: Jens Peder Meldgaard <JensPederM@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 [fullname]
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Requires-Python: >=3.9
+Requires-Dist: fire>=0.7.0
+Requires-Dist: jinja2
+Requires-Dist: pre-commit>=4.0.1
+Requires-Dist: rich>=13.9.4
+Description-Content-Type: text/markdown
+
+# Python Monorepos
+
+Utilities for working with monorepos in Python.
+
+## Installation
+
+```bash
+git clone https://github.com/JenspederM/uvmono
+cd uvmono
+pip install .
+```
+
+## Usage
+
+```bash
+# Show help
+uvmono --help
+
+# List all packages in the monorepo
+uvmono list
+
+# Add a package to the monorepo
+uvmono new <package-name>
+
+# Add dev-containers for a package in the monorepo
+uvmono add-devcontainer <package-name>
+
+# Add dev-containers for all packages in the monorepo
+uvmono add-devcontainer --all
+
+# Create a Matrix Strategy for a GitHub Actions workflow
+uvmono matrix_strategy <key-name>
+# Returns a JSON object with the matrix strategy for the packages in the monorepo:
+# {
+#   "matrix": {
+#     "inputs": [ 
+#       { 
+#           "path": "packages/package1", 
+#           "name": "package1", 
+#           "dependencies": ["package2"], 
+#           "filter":  "..." # outputs `is_changed` in dorny/paths-filter@v3
+#       },
+#       ...
+#     ]
+#   }
+# }
+```
+
+# Examples
+
+## List all packages in the monorepo
+
+```bash
+uvmono list
+```
+
+## Add a package to the monorepo
+
+Create a new package in the monorepo with the name `my-package`.
+```bash
+uvmono new my-package
+```
+
+This will automatically create a new directory `packages/my-package` with the following structure:
+
+```
+.
+└── packages/my-package
+    ├── src
+    │   └── my_package
+    │       └── __init__.py
+    ├── tests
+    │   ├── __init__.py
+    │   ├── conftest.py
+    │   └── test_main.py
+    ├── pyproject.toml
+    └── README.md
+```
+
+## Create a Matrix Strategy for a GitHub Actions workflow
+
+Create a matrix strategy for a GitHub Actions workflow with the key `inputs`.
+```bash
+uvmono matrix_strategy inputs
+```
+
+This will automatically generate a matrix strategy for the packages in the monorepo,
+which can be used in a GitHub Actions workflow:
+
+```yaml
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build_matrix:
+    name: Build Package Matrix
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.matrix_strategy.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+        with:
+          enable-cache: true
+          cache-dependency-glob: "uv.lock"
+      - name: Install the project
+        run: uv sync --all-extras --dev
+      - name: Create Package Matrix
+        id: matrix_strategy
+        run: uv run uvmono matrix_strategy inputs
+
+  test_package:
+    runs-on: ubuntu-latest
+    needs: build_matrix
+    strategy:
+      matrix: ${{ fromJson(needs.build_matrix.outputs.matrix) }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Print Inputs
+        run: |
+          echo "Path: ${{ matrix.inputs.path }}"
+          echo "Name: ${{ matrix.inputs.name }}"
+          echo "Shared: ${{ matrix.inputs.shared }}"
+      - name: "Check if ${{ matrix.inputs.name }} has changed"
+        uses: dorny/paths-filter@v3
+        id: changes
+        with:
+          filters: |
+            is_changed:
+              - '${{ matrix.inputs.path }}/**'
+            is_shared_changed:
+              - 'packages/shared/**'
+      ...
+```
