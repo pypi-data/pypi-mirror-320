@@ -1,0 +1,9 @@
+lanpartydb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lanpartydb/models.py,sha256=DVZxjUSsldU7FEi945nm9xd1VC55UcpHsEV_PORtEu8,1268
+lanpartydb/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lanpartydb/reading.py,sha256=iW_OEcYY1D38QMkcSHC-v0cbGT8m7ns2xaLP5iNiMgg,1904
+lanpartydb/writing.py,sha256=0o5HjjZ6f4RX4KrN-Y0aKoL8lh7eKunaRktfgJj-0k0,1285
+lanpartydb-0.9.2.dist-info/METADATA,sha256=JFN7e3iZYS8iK8IeGZVmDTvFubgOWRE_b9eM9UwdaNs,2973
+lanpartydb-0.9.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+lanpartydb-0.9.2.dist-info/licenses/LICENSE,sha256=nMkWIPaldlIrKV7i6ku1dy08E3j_wLSS-RO4QB7ccgo,1069
+lanpartydb-0.9.2.dist-info/RECORD,,
