@@ -1,0 +1,9 @@
+netargparse/__init__.py,sha256=gmvvzMEpNMWpENw37SZFXuPxbe5336SuBL4afsjKvIY,43
+netargparse/message.py,sha256=9JpuR5wxDsqkkxSIOSocdwhKKV__qm3lCge7cxqDn7A,11143
+netargparse/netargparse.py,sha256=KJX9RTYOZ0pIR-HDFDNCDFQ3CYzfmSxPA3Skte5Qr2U,5331
+netargparse/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+netargparse/server.py,sha256=ohBOm-AorSM2gFMYtYtTvn4EqFd1u2pIcYk5yUdPHcw,9960
+netargparse-0.2.3.dist-info/LICENSE,sha256=we3Z5JnjcrDmNa2BFDhJW-wvgqvwizMr6I3qQVFxQFQ,1490
+netargparse-0.2.3.dist-info/METADATA,sha256=JZmv69alPM4y7FKZF7JZREag2SgUoEt3jJrqXYYVI0o,3040
+netargparse-0.2.3.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+netargparse-0.2.3.dist-info/RECORD,,
