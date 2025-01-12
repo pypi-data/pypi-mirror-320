@@ -1,0 +1,43 @@
+pages:
+  image: condaforge/miniforge3
+
+  script:
+    - pip install uv
+    - uv pip install . --system
+    - cd docs
+    - mamba install -c conda-forge sphinx-rtd-theme nbsphinx pandoc ipython ipykernel
+    - sphinx-apidoc -o source/ ../src/carde
+    - sphinx-build -b html . ../public
+  artifacts:
+    paths:
+      - public
+# Example usecase
+update-time-spent:
+  image: python
+  variables:
+    TOTAL_WEEKS: 2
+  script:
+    - pip install python-gitlab
+    - python3 total_time_spent.py -pt "$TIME_API_TOKEN" -pi "$CI_PROJECT_ID" -w "$TOTAL_WEEKS" -r
+  after_script:
+    - git remote set-url origin https://oauth2:$TIME_API_TOKEN@$CI_SERVER_HOST/$CI_PROJECT_PATH.git
+    - git config user.email "nothing@helmholtz.cloud"
+    - git config user.name "Gitlab CI"
+    - git add README.md
+    - git commit -m "Update time spent in README.md via CI"
+    - git push origin HEAD:$CI_COMMIT_REF_NAME -o ci.skip # -o ci.skip prevents triggering pipeline again
+test:
+  image: python:3.11
+  script:
+    - pip install uv
+    - uv pip install .[dev] --system
+    - pytest -v
+pypi:
+  image: condaforge/miniforge3
+  stage: deploy
+  script:
+    - pip install -U twine build
+    - python -m build
+    - twine upload dist/*
+  only:
+    - tags
