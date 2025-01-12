@@ -1,0 +1,7 @@
+README.md
+setup.py
+docailite.egg-info/PKG-INFO
+docailite.egg-info/SOURCES.txt
+docailite.egg-info/dependency_links.txt
+docailite.egg-info/requires.txt
+docailite.egg-info/top_level.txt
