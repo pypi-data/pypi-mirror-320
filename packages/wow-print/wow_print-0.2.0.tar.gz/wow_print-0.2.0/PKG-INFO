@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: wow-print
+Version: 0.2.0
+Summary: A package for colorizing text using ANSI escape codes
+Author: Ken
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
