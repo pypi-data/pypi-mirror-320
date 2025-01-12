@@ -1,0 +1,13 @@
+pywechat/Clock.py,sha256=b6b1BZEUhZilVW7hr4xwUrszUhMHUOfnhhwljQUJcVI,4596
+pywechat/Errors.py,sha256=ektyBaGsnUdmoBiIBVnQIU1BUdBEnhO3K6nM-DXVr0U,1873
+pywechat/Uielements.py,sha256=mA7LHgSx8SCTJdJ2wCPb02HrEv_jx9bFzz-E3pDUlKY,5623
+pywechat/Warnings.py,sha256=Uk6ug9zjUNTL4OC5ZEEEB1tIxSKz6drX3ZwFIOwWOLI,548
+pywechat/WechatAuto.py,sha256=RQMgGPq4WNID3em54ZykjUe3uqLepvzsEhB75Yq03iE,489583
+pywechat/WechatTools.py,sha256=DQauVmKLHTBX8YqH-ssjeAjyCBv7Ba5eP2J3fW1xcPE,119683
+pywechat/WinSettings.py,sha256=a6dLczoOoZMfOPQmldL43eWNlfTmnpYeKnV5EUHlc4g,14223
+pywechat/__init__.py,sha256=KCJLSGialHn13YrkuxC4cyNrhXOlqJEjUn7MRw2fgDQ,2403
+pywechat127-1.5.4.dist-info/LICENSE.txt,sha256=gLKJStrY_lvoMBwA7FiyhQtxqMO6IGJ2qBa1PwCqdLc,11354
+pywechat127-1.5.4.dist-info/METADATA,sha256=Ku0wG-F6qzts3anohZJyuUolmMFec-FI0D3RCt4rXfc,6707
+pywechat127-1.5.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pywechat127-1.5.4.dist-info/top_level.txt,sha256=-CZ3dgX9lOXCG_l7J6A0yhgu0_mLVbdI13CqdrcmeqE,9
+pywechat127-1.5.4.dist-info/RECORD,,
