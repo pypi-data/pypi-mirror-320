@@ -1,0 +1,7 @@
+[console_scripts]
+ESLocalIndi.DLI = ESLocalIndi.DLI:main
+ESLocalIndi.GWDLI = ESLocalIndi.GWDLI:main
+ESLocalIndi.GWKLI = ESLocalIndi.GWKLI:main
+ESLocalIndi.KLI = ESLocalIndi.KLI:main
+ESLocalIndi.cal_sl = ESLocalIndi.sta_cal_sl:main
+ESLocalIndi.sta_sig = ESLocalIndi.sta_sig:main
