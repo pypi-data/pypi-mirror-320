@@ -1,0 +1,10 @@
+README.md
+setup.py
+xdeek_logger/__init__.py
+xdeek_logger/my_logger.py
+xdeek_logger/my_logger004.py
+xdeek_logger.egg-info/PKG-INFO
+xdeek_logger.egg-info/SOURCES.txt
+xdeek_logger.egg-info/dependency_links.txt
+xdeek_logger.egg-info/requires.txt
+xdeek_logger.egg-info/top_level.txt
