@@ -1,0 +1,115 @@
+# Pygame-Engine
+
+## Overview
+Pygame-Engine is a lightweight, Unity-inspired game engine built using Python and Pygame. It provides a modular and extensible framework for 2D game development, including GameObjects, Components, Scene Management, Event Handling, and more.
+
+---
+
+## Features
+- **GameObject System**: Modular entities with components like `Transform`, `SpriteRenderer`, and `Collider`.
+- **Scene Management**: Easily manage and transition between game scenes.
+- **Prefab System**: Save and instantiate reusable GameObject templates.
+- **Event System**: Decoupled communication via a publish-subscribe model.
+- **Input Manager**: Centralized input handling with customizable key bindings.
+- **Scriptable Objects**: Reusable and serializable data containers for configurations and items.
+
+---
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/pygame-engine.git
+   cd pygame-engine
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run an example:
+   ```bash
+   python examples/basic_game.py
+   ```
+
+---
+
+## Usage
+
+### GameObject System
+Create GameObjects and add Components:
+```python
+from engine.game_object import GameObject
+from engine.components import Transform, SpriteRenderer
+
+player = GameObject("Player")
+player_transform = player.add_component(Transform)
+player_renderer = player.add_component(SpriteRenderer)
+player_transform.position = [100, 100]
+```
+
+### Scene Management
+Switch between scenes or reset the current scene:
+```python
+from engine.scene_manager import SceneManager
+from engine.scene import Scene
+
+main_scene = Scene("MainScene")
+SceneManager.load_scene(main_scene)
+SceneManager.reset_scene()
+```
+
+### Prefab System
+Save and instantiate reusable prefabs:
+```python
+from engine.prefab_system import PrefabSystem
+
+PrefabSystem.save_prefab("PlayerPrefab", "player_prefab.json", player)
+new_player = PrefabSystem.instantiate_prefab("player_prefab.json")
+```
+
+### Event System
+Publish and subscribe to events:
+```python
+from engine.event_system import EventBus
+
+EventBus.subscribe("player_died", lambda score: print(f"Player died with score {score}"))
+EventBus.publish("player_died", score=100)
+```
+
+### Input Manager
+Bind keys to actions:
+```python
+from engine.input_manager import InputManager
+
+InputManager.bind_action("jump", pygame.K_SPACE, "down")
+InputManager.register_callback("jump", lambda: print("Jump!"))
+```
+
+---
+
+## Examples
+Explore the `examples/` directory for usage demonstrations:
+- `basic_game.py`: A basic game showcasing core features.
+- `event_bus_example.py`: Demonstrates the EventBus system.
+- `input_manager_example.py`: Demonstrates the InputManager system.
+- `prefab_system_example.py`: Demonstrates the PrefabSystem.
+
+---
+
+## Contributing
+Contributions are welcome! To contribute:
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Commit your changes and create a pull request.
+
+---
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Acknowledgments
+- [Pygame](https://www.pygame.org/) for providing the core library.
+- Unity for inspiring the engine's architecture.
+
+---
