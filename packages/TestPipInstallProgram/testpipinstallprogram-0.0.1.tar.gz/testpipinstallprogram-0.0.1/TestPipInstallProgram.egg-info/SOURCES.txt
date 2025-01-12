@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+TestPipInstallProgram/__init__.py
+TestPipInstallProgram/simple_calc.py
+TestPipInstallProgram.egg-info/PKG-INFO
+TestPipInstallProgram.egg-info/SOURCES.txt
+TestPipInstallProgram.egg-info/dependency_links.txt
+TestPipInstallProgram.egg-info/top_level.txt
