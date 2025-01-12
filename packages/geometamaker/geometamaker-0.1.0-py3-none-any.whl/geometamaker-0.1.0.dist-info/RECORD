@@ -1,0 +1,12 @@
+geometamaker/__init__.py,sha256=b3nR9UoJ7mWbD4z87B9BbrcnswpWEHgh9tC2SBvDYy4,391
+geometamaker/cli.py,sha256=PYD5kKz2iBnzQnwZBdk78RdBRiGj4InWTB2Xy-gihWM,6256
+geometamaker/config.py,sha256=6xsBkU57QJlmehP0PcHL-f8Ev0KmYdrBrDb9IW5z99U,1974
+geometamaker/geometamaker.py,sha256=B4fFSvz8z-EF4VtVFnS6o50rAgasPM3PSyUGvl2H0gk,18439
+geometamaker/models.py,sha256=AoODNiUyla7Kzwh_4jQFEcHtMpWKiY7GvUvcnxsI9dE,19012
+geometamaker/utils.py,sha256=RLFtobLdUAeJEKBnzsQmC2h-eJTYn22tjNPAq261EhE,932
+geometamaker-0.1.0.dist-info/LICENSE.txt,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+geometamaker-0.1.0.dist-info/METADATA,sha256=rgdFjcEZn25uc3u7Ox-S6AhrbrffmbsTP-fr-B4LvUo,18628
+geometamaker-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+geometamaker-0.1.0.dist-info/entry_points.txt,sha256=fY8nmpxmOO5kA47EBpKBKzaq3uZ1tWPA1sBgRJKvVU4,54
+geometamaker-0.1.0.dist-info/top_level.txt,sha256=cm34aKGvrHyEgqNXi3Cx9LTU1Sm79r1RkpQZpy9MoxA,13
+geometamaker-0.1.0.dist-info/RECORD,,
