@@ -1,0 +1,10 @@
+universal_parser_it_stud_io/UniversalParser.py,sha256=xw_bwVwzwuFR-r16GeeLAxndVllQFW_KRCFrwL0PTPM,1763
+"universal_parser_it_stud_io/__init__,py",sha256=gKjkdEG7JH6zgwFLYn2olJBY2-J8KK8IHF2hBQLb5u4,43
+universal_parser_it_stud_io/ParserEngines/CsvParserEngine.py,sha256=fYbmZGjJOKfQXoRLt0bVTF1QA-HikkwZjxzHY1-cmKQ,650
+universal_parser_it_stud_io/ParserEngines/JsonParserEngine.py,sha256=EdGyXOQPcwFMGkD5qAvLzvf43wspa2kfVJdYaBeh0CE,286
+universal_parser_it_stud_io/ParserEngines/XmlParserEngine.py,sha256=wF7rKU6_mpZGnSTobZCk3XpO5OKeAsJV9pnr-gzFBNo,1242
+universal_parser_it_stud_io/ParserEngines/YamlParserEngine.py,sha256=N6Club4fGgl09fHRTljWSSykLrGJyP60LSyX0E0GLKQ,265
+universal_parser_it_stud_io-1.0.0.dist-info/METADATA,sha256=TYZ38EtMoKHt8aHs6z8_uf739qK4syEs2URarPsLjDI,2569
+universal_parser_it_stud_io-1.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+universal_parser_it_stud_io-1.0.0.dist-info/licenses/LICENSE,sha256=s-hcYMgXVm2KLL7QzE8Hb0xj90VHWSrpUvQyUUmO0dE,1095
+universal_parser_it_stud_io-1.0.0.dist-info/RECORD,,
