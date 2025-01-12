@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+xchainpy2_base/__init__.py
+xchainpy2_base/base_client.py
+xchainpy2_base/const.py
+xchainpy2_base.egg-info/PKG-INFO
+xchainpy2_base.egg-info/SOURCES.txt
+xchainpy2_base.egg-info/dependency_links.txt
+xchainpy2_base.egg-info/requires.txt
+xchainpy2_base.egg-info/top_level.txt
+xchainpy2_base/data/base_mainnet_latest.json
