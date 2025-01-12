@@ -1,0 +1,85 @@
+{
+    "intents": [
+      {
+        "tag": "bitcoin",
+        "patterns": ["bitcoin", "btc", "bit"],
+        "symbol": "BTCUSDT"
+      },
+      {
+        "tag": "ethereum",
+        "patterns": ["ethereum", "eth", "ether"],
+        "symbol": "ETHUSDT"
+      },
+      {
+        "tag": "ripple",
+        "patterns": ["ripple", "xrp"],
+        "symbol": "XRPUSDT"
+      },
+      {
+        "tag": "litecoin",
+        "patterns": ["litecoin", "ltc"],
+        "symbol": "LTCUSDT"
+      },
+      {
+        "tag": "cardano",
+        "patterns": ["cardano", "ada"],
+        "symbol": "ADAUSDT"
+      },
+      {
+        "tag": "solana",
+        "patterns": ["solana", "sol"],
+        "symbol": "SOLUSDT"
+      },
+      {
+        "tag": "binancecoin",
+        "patterns": ["binance coin", "bnb", "binance"],
+        "symbol": "BNBUSDT"
+      },
+      {
+        "tag": "dogecoin",
+        "patterns": ["dogecoin", "doge"],
+        "symbol": "DOGEUSDT"
+      },
+      {
+        "tag": "polkadot",
+        "patterns": ["polkadot", "dot"],
+        "symbol": "DOTUSDT"
+      },
+      {
+        "tag": "shiba inu",
+        "patterns": ["shiba inu", "shiba", "shib"],
+        "symbol": "SHIBUSDT"
+      },
+      {
+        "tag": "uniswap",
+        "patterns": ["uniswap", "uni"],
+        "symbol": "UNIUSDT"
+      },
+      {
+        "tag": "chainlink",
+        "patterns": ["chainlink", "link"],
+        "symbol": "LINKUSDT"
+      },
+      {
+        "tag": "polkadot",
+        "patterns": ["polkadot", "dot"],
+        "symbol": "DOTUSDT"
+      },
+      {
+        "tag": "cardano_to_btc",
+        "patterns": ["cardano to bitcoin", "ada to btc", "cardano btc"],
+        "symbol": "ADABTC"
+      },
+      {
+        "tag": "ethereum_to_btc",
+        "patterns": ["ethereum to bitcoin", "eth to btc", "ethereum btc"],
+        "symbol": "ETHBTC"
+      },
+      {
+        "tag": "bitcoin_to_ethereum",
+        "patterns": ["bitcoin to ethereum", "btc to eth", "bitcoin eth"],
+        "symbol": "BTCETH"
+      }
+    ]
+  }
+  
