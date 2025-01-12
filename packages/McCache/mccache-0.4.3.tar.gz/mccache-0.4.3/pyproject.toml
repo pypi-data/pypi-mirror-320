@@ -1,0 +1,273 @@
+[project]
+name = "McCache"
+dynamic = ["version"]
+authors = [
+  { name="Edward Lau", email="elau1004@netscape.net" },
+# { name="Daniel Escobar", email="daniel.escobar1037@gmail.com" },
+]
+maintainers = [
+  { name="Edward Lau", email="elau1004@netscape.net" },
+]
+description = "McCache is a, write through cluster aware, local in-memory caching library."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+keywords = [
+  "cache",
+  "cluster",
+  "distributed",
+  "eventual",
+  "local",
+  "mccache",
+  "multicast",
+  "optimistic",
+  "performance",
+  "scale-out",
+  "scale-up",
+  "udp",
+]
+classifiers = [  #! Update me
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: Implementation :: CPython",
+]
+dependencies = [
+  "psutil>=5.9.5"
+]
+
+
+[project.urls]
+Homepage = "https://github.com/McCache/McCache-for-Python"
+Source = "https://github.com/McCache/McCache-for-Python"
+Issues = "https://github.com/McCache/McCache-for-Python/issues"
+
+
+# SEE: https://pypa-build.readthedocs.io/en/stable/index.html
+# SEE: https://hatch.pypa.io/latest/config/build/
+
+[tool.mccache]
+# MUST be in lowercase.
+cache_ttl = 900
+packet_mtu = 1472
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.coverage.run]
+source_pkgs = ["mccache", "pycache", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/mccache/__about__.py",
+  "src/pycache/__about__.py",
+]
+
+[tool.coverage.paths]
+mccache = ["src/mccache", "src/pycache"]
+tests = ["tests/unit", "tests/stress"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+
+[tool.hatch.version]
+path = "src/mccache/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/mccache tests}"
+
+[tool.hatch.build]
+include = [
+  "LICENSE",
+  "README.md",
+  "RELEASES.md",
+  "SECURITY.md",
+  "*.py",
+]
+exclude = [
+  ".*",
+  "CODE_OF_CONDUCT.md",
+  "CONTRIBUTING.md",
+  "tests/",
+]
+
+[tool.hatch.build.sources]
+"src/mccache" = "mccache"
+"src/pycache" = "pycache"
+
+[tool.hatch.publish.testpypi]
+repository = "https://test.pypi.org/legacy/"
+username = "__token__"
+testmccachepassword = "pypi-AgENdGVzdC5weXBpLm9yZwIkYWI3NzkyNWMtOTcwYi00NmI4LWIzMmQtY2YzMTM1NzBmZjdhAAIqWzMsImNiOWRlYzRmLTcxZTktNDU2OS05YjM3LWQzM2I0NDZjZmIxYyJdAAAGIKJVIW37FQAILyyHtjcQ8NTaC65ejCCPiwnpQWIhsdkN"
+prodccocuntpassword = "pypi-AgEIcHlwaS5vcmcCJDZkZTRlMTk0LTQxMDItNDAwZi1hOGVjLWUzMzYwYTQ0MGQwZAACKlszLCJlY2FmMTE5My0wZDNiLTQzZmYtOTlmZi1iODAwNTY5Nzc1MDciXQAABiBrx_sZ8QjO-ou_G1utPNj35zbDEhuwnz6Djyfvi8BGGw"
+prodmccachepassword = "pypi-AgEIcHlwaS5vcmcCJDg2MGNhMGMxLTg1NmMtNDljMi1hZWU0LTU2MTdiZjYxNDg0ZgACD1sxLFsibWNjYWNoZSJdXQACLFsyLFsiOTFhMTMwNmYtYmFlNC00MWVjLThmNzQtYzQ5ZDU2MmU0MTZjIl1dAAAGIEThUN4UqVycYXqbUK39Fmf1a4U83aZgLMOi5GQxSdz7"
+
+#[tool.hatch.publish]
+#testpypi = { url = "https://test.pypi.org/legacy/", username = "mccache", password = "TestPyPi" }
+
+
+[[tool.hatch.envs.all.matrix]]
+python = [
+  "3.10",
+  "3.11",
+  "3.12",
+  "3.13"
+]
+
+[tool.hatch.envs.lint]
+detached = true
+dependencies = [
+# "black>=23.1.0",
+# "blue>=0.9.1",
+  "mypy>=1.12.1",
+  "ruff>=0.0.287",
+]
+
+[tool.hatch.envs.lint.scripts]
+typing = "mypy --install-types --non-interactive {args:src/mccache tests}"
+style = [
+# "black --check --diff {args:src/mccache}",
+  "ruff {args:src/mccache}",
+]
+fmt = [
+# "black {args:src/mccache}",
+  "ruff --fix {args:src/mccache tests}",
+  "style",
+]
+all = [
+  "style",
+  "typing",
+]
+
+[tool.hatch.envs.test]
+dependencies = [
+  "coverage[toml]",
+  "pytest"
+]
+
+[tool.hatch.envs.test.scripts]
+
+[tool.bandit]
+skips = ["B101" ,"B301" ,"B311" ,"B324" ,"B403"]
+
+[tool.black]
+target-version = ["py310"]
+line-length = 160   # But you should exercise good judgement and keep it as short as possible.
+skip-string-normalization = true
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+testpaths = [
+    "tests/unit",
+    "tests/e2e",
+]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 160
+select = [
+  "A",    # flake8-builtins
+  "ARG",  # flake8-unused-arguments
+  "B",    # flake8-bugbear
+  "BLE",
+  "C",    #
+  "C4",
+  "C90",
+  "DTZ",  # flake8-datetimez
+  "E",    #
+  "EM",   # flake8-errmsg
+  "F",    # Pyflakes
+  "FBT",  # flake8-boolean-trap
+  "I",    # isort
+  "ICN",  # flake8-import-conventions
+  "ISC",  # flake8-implicit-str-concat
+  "N",    # pep8-naming
+  "PLC",  #
+  "PLE",  #
+  "PLR",  #
+  "PLW",  #
+  "Q",    # flake8-quotes
+  "RET",
+  "RSE",
+  "RUF",  # Ruff-specific rules
+  "S",    # flake8-bandit
+  "T",    #
+  "TCH",
+  "TID",  # flake8-tidy-imports
+  "UP",   # pyupgrade
+  "W",    #
+  "YTT",  # flake8-2020
+]
+ignore = [
+  # Allow non-abstract empty methods in abstract base classes
+  "B027",
+
+  # Boolean default positional argument in function definition
+  "FBT002",
+
+  # Allow boolean positional values in function calls, like `dict.get(... True)`
+  #"FBT003",
+
+  # Allow mixed-case-variable-in-global-scope
+  "N816",
+
+  # Ignore checks for possible passwords
+  #"S105", "S106", "S107",
+
+  # Ignore bad-quotes-inline-string
+  "Q000",
+
+  # Ignore complexity
+  #"C901", "PLR0911", "PLR0912", "PLR0913", "PLR0915",
+
+  # raw-string-in-exception
+  "EM101",
+
+  # Variable should be lowercase
+  "N806",
+
+  # explicit-f-string-type-conversion
+  "RUF010",
+
+  # superfluous-else-return
+  "RET505",
+]
+unfixable = [
+  # Don't touch unused imports
+  "F401",
+]
+
+[tool.ruff.mccabe]
+max-complexity = 16
+
+[tool.ruff.pylint]
+max-args = 10
+max-branches = 16
+
+[tool.ruff.isort]
+known-first-party = ["mccache"]
+
+[tool.ruff.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.ruff.per-file-ignores]
+# Tests can use magic values, assertions, and relative imports
+"src/**/*"   = ["ARG001", "PLR0913", "PLR1730", "RUF019" ]
+"tests/**/*" = ["PLR2004", "S101", "TID252"]
