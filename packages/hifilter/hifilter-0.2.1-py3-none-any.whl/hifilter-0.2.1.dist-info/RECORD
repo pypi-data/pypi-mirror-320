@@ -1,0 +1,15 @@
+hifilter/__init__.py,sha256=zYhVI1gZ73N5lWGIjbqzbfUEvjm9k9FdvRRjo67oZ6Q,408
+hifilter/base.py,sha256=W-oaLH9NLvkXcrU24tl2PLOAsTxmgSlMUOyj4ziHp7E,3431
+hifilter/filters/__init__.py,sha256=obvD-dmTPhNanxsHWmg3uJrjoE5fu5zXRz3V3vKJ0rM,287
+hifilter/filters/a6_filter.py,sha256=zwaMPScXiwNoeQCm4PMSKkRjXf5oP4LjG4IwM02io_g,828
+hifilter/filters/c1_filter.py,sha256=JzyQuyCiGQE3JqO64cjsLpTEhnphWjYeGnemJYuJwkA,825
+hifilter/filters/f2_filter.py,sha256=yGnqFVbYQOoP76_68s7AIS6TVbmBAVvjuh8aqyTvaM8,829
+hifilter/filters/hb2_filter.py,sha256=9aHSadvgn6xzCYC3ZAoE6MrADmFWcHhCJVWgtW7uIoo,1251
+hifilter/filters/kk2_filter.py,sha256=Umk-sIME6QYZlFfQfRWHhaeN9FCGNCrdUb4h1RTmxN4,1245
+hifilter/filters/m5_filter.py,sha256=rHpQEIPiOrE_hF3uEKB2-AfUJGeewpXv6RbyLon7PGw,1242
+tests/__init__.py,sha256=x4xtmSQ5kME92Wj3A0BTKU5WDpTMbsCtPluywLeC5tg,66
+tests/test_filter.py,sha256=RK-yiuKSO23kbcwcxOIuYS7MoiaH5if-btAvIOVjfJ8,625
+hifilter-0.2.1.dist-info/METADATA,sha256=tgqErzl1zL0tlYf2l8LKl3qweuQxX75KLwFrWLvRAYM,600
+hifilter-0.2.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+hifilter-0.2.1.dist-info/top_level.txt,sha256=b13-XR8rVKlGQv1I9QWolpKLu6faRyOIOJp3l6_QOng,15
+hifilter-0.2.1.dist-info/RECORD,,
