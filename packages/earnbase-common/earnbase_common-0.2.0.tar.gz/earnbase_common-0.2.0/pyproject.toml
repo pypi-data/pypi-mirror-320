@@ -1,0 +1,83 @@
+[project]
+name = "earnbase-common"
+version = "0.2.0"
+description = "Common utilities for Earnbase services"
+authors = [
+    { name = "Earnbase Team", email = "dev@earnbase.io" },
+]
+dependencies = [
+    "pydantic>=2.5.2",
+    "fastapi>=0.104.1",
+    "motor>=3.3.2",
+    "redis>=5.0.1",
+    "structlog>=23.2.0",
+    "prometheus-client>=0.19.0",
+    "pyjwt>=2.8.0",
+    "pyyaml>=6.0.1",
+    "httpx>=0.26.0",
+    "bcrypt>=4.2.1",
+    "pytest-asyncio>=0.25.2",
+    "anyio>=4.8.0",
+    "tenacity>=8.2.3",
+    "dependency-injector>=4.41.0",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+keywords = [
+    "logging",
+    "utilities",
+    "microservices",
+    "fastapi",
+    "mongodb",
+    "redis",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Logging",
+    "Framework :: FastAPI",
+    "Operating System :: OS Independent",
+    "Typing :: Typed",
+]
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/earnbaseio/earnbase-common"
+Documentation = "https://github.com/earnbaseio/earnbase-common#readme"
+"Source Code" = "https://github.com/earnbaseio/earnbase-common"
+"Bug Tracker" = "https://github.com/earnbaseio/earnbase-common/issues"
+Changelog = "https://github.com/earnbaseio/earnbase-common/blob/main/CHANGELOG.md"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=7.4.3",
+    "pytest-asyncio>=0.23.2",
+    "pytest-cov>=4.1.0",
+]
+
+[tool.pdm.build]
+includes = [
+    "earnbase_common",
+]
+package-dir = "."
+source-includes = [
+    "README.md",
+    "LICENSE",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
