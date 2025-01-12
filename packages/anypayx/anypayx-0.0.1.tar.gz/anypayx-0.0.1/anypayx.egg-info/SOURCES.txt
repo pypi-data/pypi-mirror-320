@@ -1,0 +1,8 @@
+README.md
+setup.py
+anypayx.egg-info/PKG-INFO
+anypayx.egg-info/SOURCES.txt
+anypayx.egg-info/dependency_links.txt
+anypayx.egg-info/entry_points.txt
+anypayx.egg-info/requires.txt
+anypayx.egg-info/top_level.txt
