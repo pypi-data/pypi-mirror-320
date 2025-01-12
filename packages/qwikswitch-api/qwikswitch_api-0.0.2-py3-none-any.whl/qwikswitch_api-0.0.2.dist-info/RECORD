@@ -1,0 +1,13 @@
+qwikswitchapi/constants.py,sha256=lvRyn98kYZCUMC7SHf9ZG2ipjXNCypL1C4avXJSUwvw,840
+qwikswitchapi/qsapi.py,sha256=bsSFDtw9FdIOJ8Wde3gPBCZpi0NdpKkE3UPYSd9o4zs,4286
+qwikswitchapi/qsexception.py,sha256=l65bVitkI8yuUDsZaJe1pXQp1I0Fo2XiTbypGSh14bQ,138
+qwikswitchapi/entities/apikeys.py,sha256=FZxIkLlj8n0chmW0Y4npQ4OzMVAqxvV9SP8cye5Xc-M,1754
+qwikswitchapi/entities/controlresult.py,sha256=Mvw8YvPqqMG3wCb24TP60bKwHwDeF347eE9VG-QYyvw,1677
+qwikswitchapi/entities/devicestatus.py,sha256=DJh4yvYQCRcJ_izsODPHlS2zgvyH7nh03ShDEnxAWKU,3605
+qwikswitchapi/entities/devicestatuses.py,sha256=HP_W5NHwLyGee-5x9Zo-RbgimSyGGqcuIlNaSVVSo-M,1315
+qwikswitchapi/utility/responseparser.py,sha256=sBdT5OkM53OOoi793iBI11FIjM6rMktzLsuHDN82Gk0,1309
+qwikswitchapi/utility/urlbuilder.py,sha256=6qi2Tr2iRficEFB1DvxCagpwVcQrm66bedOwJiXdkT4,1853
+qwikswitch_api-0.0.2.dist-info/METADATA,sha256=x13ww3Vv17vJMbTNwHYE7bJyHXk0CbatqqA5zkSNojc,2205
+qwikswitch_api-0.0.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+qwikswitch_api-0.0.2.dist-info/licenses/LICENSE,sha256=8NV-gOFTkesfIAeBZ740xnFwKjgLRFgYNDIn5uWMy04,1091
+qwikswitch_api-0.0.2.dist-info/RECORD,,
