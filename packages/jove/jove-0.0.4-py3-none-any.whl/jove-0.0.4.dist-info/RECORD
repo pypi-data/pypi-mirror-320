@@ -1,0 +1,13 @@
+jove/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jove/analysis.py,sha256=U6ol9b8RCjId0jyo-NJRa5l9N7xBLKAo4yCnsd0m1iA,4455
+jove/templates/README.md,sha256=fC_1437DFNyXEWYcWY49L0gNicBU0sk11Ghs_0zNDUo,40
+jove/templates/code.py,sha256=ANKv6Ba8Zv17pPYsSs5EWWjNyG1i02NaZ1CrmFKDfBg,115
+jove/templates/libjove.py,sha256=MB9dznGX410scAVzUQK10fxB66d9U1V-jhR_NazywIc,2592
+jove/templates/shell.sh,sha256=GRqP5qZ9SE48s-ssLsebnGK1j_u23j_nG6yi3dDoJdw,341
+jove/templates/wip.py,sha256=FjJGqWY4d0CPG0gcwTn6MP5vfCKg1yO4yHYby4vrN5Q,72
+jove-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+jove-0.0.4.dist-info/METADATA,sha256=6TZuMTJ-py3xejTIUusmVX5m8CUQbMlYlqqqi95UvGg,4282
+jove-0.0.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+jove-0.0.4.dist-info/entry_points.txt,sha256=6V74K8yrf2phDfwefPeU6L9yLCJcz-E4dit119j01Fs,44
+jove-0.0.4.dist-info/top_level.txt,sha256=ecA_0Uc6gcrWg-a8UseN_62UBLxwPwLpzgu3VT3EVhY,5
+jove-0.0.4.dist-info/RECORD,,
