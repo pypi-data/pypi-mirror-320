@@ -1,0 +1,5 @@
+pymavlink
+polars
+pandas
+pyarrow
+matplotlib
