@@ -1,0 +1,75 @@
+name: Publish release to PyPI
+
+on:
+  push:
+    tags:
+      - v*.*.*
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: release
+    permissions:
+      actions: write
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@94a861f4b552101a9c3ae3f66aa902ee81d3ca8e
+        with:
+          enable-cache: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version-file: pyproject.toml
+      - run: uv sync --all-extras --dev
+      - run: uv build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: python-package-distributions
+          path: dist/
+
+  pypi-publish:
+    runs-on: ubuntu-latest
+    environment: release
+    needs:
+      - build
+    permissions:
+      id-token: write
+
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: python-package-distributions
+          path: dist/
+      - uses: pypa/gh-action-pypi-publish@8cafb5c2bf2f478231c9abbba1feb4edb6ccf405
+
+  github-release:
+    runs-on: ubuntu-latest
+    environment: release
+    needs:
+      - pypi-publish
+    permissions:
+      contents: write
+      id-token: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: python-package-distributions
+          path: dist/
+      - uses: sigstore/gh-action-sigstore-python@ff22c455543724b5d6fb8d679179ddb195cfac11
+        with:
+          inputs: >-
+            ./dist/*.whl
+            ./dist/*.tar.gz
+      - run: >-
+          gh release create ${{ github.ref_name }}
+          --generate-notes
+          --title $(echo "${{ github.ref_name }}" | sed 's/^v//')
+          ./dist/*.whl
+          ./dist/*.tar.gz
