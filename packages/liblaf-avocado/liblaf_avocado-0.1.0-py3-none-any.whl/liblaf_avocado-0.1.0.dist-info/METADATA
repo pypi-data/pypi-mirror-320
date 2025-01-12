@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: liblaf-avocado
+Version: 0.1.0
+Summary: Add your description here
+Project-URL: Changelog, https://github.com/liblaf/avocado/blob/main/CHANGELOG.md
+Project-URL: Homepage, https://github.com/liblaf/avocado
+Project-URL: Issue Tracker, https://github.com/liblaf/avocado/issues
+Project-URL: Release Notes, https://github.com/liblaf/avocado/releases
+Project-URL: Source Code, https://github.com/liblaf/avocado
+Author-email: liblaf <30631553+liblaf@users.noreply.github.com>
+License-Expression: MIT
+License-File: LICENSE
+Requires-Python: ~=3.12
+Requires-Dist: lazy-loader~=0.4
+Requires-Dist: loguru~=0.7.3
+Requires-Dist: rich~=13.9.4
+Description-Content-Type: text/markdown
+
+# Avocado
