@@ -1,0 +1,11 @@
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.hatch/
+build/
+dist/
+.spec
+.ruff_cache/
+# generated images
+/Mailbox/result/*.png
