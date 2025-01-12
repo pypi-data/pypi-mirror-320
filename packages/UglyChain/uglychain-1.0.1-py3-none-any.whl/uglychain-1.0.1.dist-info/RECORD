@@ -1,0 +1,13 @@
+uglychain-1.0.1.dist-info/METADATA,sha256=J3Ms3CWMJm5JsPPRX9bEuITUJcXky2GG7mhAzjrZa34,7528
+uglychain-1.0.1.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+uglychain-1.0.1.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+uglychain-1.0.1.dist-info/licenses/LICENSE,sha256=YKMZ9h8ezqA65C_DTRBOG-jS19ow-jDMjNm3QX_TV0U,1063
+uglychain/__init__.py,sha256=J4pfdNT64gn78gAjDaLOrGekvRw-h_KAJKS4RFiRTTg,255
+uglychain/client.py,sha256=PbxiwT01gbx0UOCPJdGoltnDbP2FFOklKd2cZqRzE_I,1773
+uglychain/config.py,sha256=Q1M1dKUx1yfdnhRlaDIWqz-XywSjwciID3EBI_GTOLo,654
+uglychain/console.py,sha256=hhV7hQPLlNd_FpWcA1GjZrpYD4QVTDc2vsC6K66Rp78,3056
+uglychain/llm.py,sha256=zv1MG9pw4FjY1DJLBv2fnYB-74ZN6JkVE3kpLfySOAc,6530
+uglychain/react.py,sha256=-_cSj0LC4GBalxvrUz5T1IEkE_rtaLeIf-ESS3idUUg,8348
+uglychain/structured.py,sha256=M5FzrXffr6G4JHoW8MUyDzow5p5-0uU3HDv9gAK-Ckc,8032
+uglychain/tools.py,sha256=yJPyqDjlG6FxQAhTSBWXxP8GFwNIUinH79elfZ3bOOQ,9223
+uglychain-1.0.1.dist-info/RECORD,,
