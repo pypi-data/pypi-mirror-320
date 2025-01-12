@@ -1,0 +1,9 @@
+tft/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tft/aug.py,sha256=Etxo7BVMlKU-WU-FNk52X5wPUQg3DGv0EskHgQWBoN0,4316
+tft/models.py,sha256=J3nzUOhC8b4SkAQ4sAEEEKiN7exhfJbdV8QYqrspLkk,8973
+tft/transforms.py,sha256=U7svCLJZ3DlNoNJrihUP7x5GTJ3IZ07VQ2e7DPb-kLk,2543
+tft/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tft-0.8.1.dist-info/METADATA,sha256=dw2hcKmOqZ9K89jVrk9AguPLFagcGrRB24bMoMh_1Ak,434
+tft-0.8.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+tft-0.8.1.dist-info/top_level.txt,sha256=HyrFUGFc5YqTu6Z1OaohHeEmyR8Neps_Cup5cIi3iQU,4
+tft-0.8.1.dist-info/RECORD,,
