@@ -1,0 +1,16 @@
+zensols/datdesc/__init__.py,sha256=2nCRjksUkG8HW92SzyXqSRINw8sNZLPZuoAwXffHrn4,790
+zensols/datdesc/app.py,sha256=aFFMniBlCdJC_k8VGoACFsh7codRjTpNqmckMaGJH6g,9284
+zensols/datdesc/cli.py,sha256=qADpHR6K_Gyv657tYt4MTZlPu6ZA35x9_0eH3vcbjBA,626
+zensols/datdesc/desc.py,sha256=_HXBbmG7Ds-cOIjTyGpmhHMppFvPbHThl4G718fpD8E,24245
+zensols/datdesc/hyperparam.py,sha256=-xpd3OSY2aLD53Uoxvgb59rlNjGUmiouA0E5SR0vrNs,23994
+zensols/datdesc/latex.py,sha256=fyDu5mBvhJM8X0xjoEo3-D7r3lNiLToX60X9Vc2H5eU,3748
+zensols/datdesc/opt.py,sha256=CatJF65WgMBzhkHI6vwsXnxTJWH4zj0hezanaMkm1ZE,24807
+zensols/datdesc/optscore.py,sha256=YvTp6rGbpPkrOeyTwgmdLNjzAatXvCeHt4Ht4DxKm9c,1446
+zensols/datdesc/table.py,sha256=V0pFwmOgsKv6xWomaP1Sl4xO2N_nr0_qEE3Pn1n94LI,22321
+zensols/datdesc/resources/app.conf,sha256=qdZgx_K9JUg8iON7uZtBfOyst03GdgGAg5fJt7k7_0w,1624
+zensols/datdesc/resources/obj.yml,sha256=8DJg_77iwOIn1KGPng9vtnW7uaUW0mz4Gqz1WdJ4OSI,2556
+zensols.datdesc-1.1.0.dist-info/METADATA,sha256=_OeUm6cOxp-rkBdwCI2HZgufoCoc_eiSG0rjG_REvsY,5790
+zensols.datdesc-1.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+zensols.datdesc-1.1.0.dist-info/entry_points.txt,sha256=uSoT8wseaUoI5tVdBHFwgzqit4ge5qpU6jVav_gW5Ls,49
+zensols.datdesc-1.1.0.dist-info/top_level.txt,sha256=Jzb6WXBUc38HJCgpg_8TjxLvhWsrrqxyv3g42O2om74,16
+zensols.datdesc-1.1.0.dist-info/RECORD,,
