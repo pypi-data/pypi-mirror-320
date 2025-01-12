@@ -1,0 +1,15 @@
+LocalAssistant/__init__.py,sha256=3Uu1LWV_ZbkBdEJeaM3ZQRv4LzsqJSEoXhmHiu5aufE,625
+LocalAssistant/locas_config.json,sha256=V6_osD98pv72MPsOGc_DkCSNlwRN4IHEC90pM4vbkjA,218
+LocalAssistant/main.py,sha256=Xz-g8zvA8aIbMvtWY-OUr5RTBxL1QNU1Ojnqv1-zMqo,8869
+LocalAssistant/parser.py,sha256=_UGaRSbxGQoqBBj1saVOsEqGduMkvNgSAirui0efFo8,6653
+LocalAssistant/utils.py,sha256=meg4EEPoCch6Yo7uzbK-cNP6AwgzbZy47nB3donVNw8,12091
+LocalAssistant/model_processor/__init__.py,sha256=7KXw8iZtDldRueMRttNmlp1R2PHziAAJ6WZ5gpplwJY,227
+LocalAssistant/model_processor/chat.py,sha256=kbTqqnI1qxboSlzxv5_8GM_l9SNx0qGwlbCIyegSesY,10127
+LocalAssistant/model_processor/download.py,sha256=SEH5m360fy0YeZnagd_MC8Ri_xMTnAEiku9cFkVvWBk,5985
+LocalAssistant/model_processor/memory.py,sha256=4qUKRbj9nEAuSmw53zeQeuOLVPyCgkEQ6MU8z3xObK0,4207
+LocalAssistant-1.0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+LocalAssistant-1.0.3.dist-info/METADATA,sha256=8KNfQNA5mO4NIUqmGh0U5T_LfR2p33FdPU76ZaV5SI0,4067
+LocalAssistant-1.0.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+LocalAssistant-1.0.3.dist-info/entry_points.txt,sha256=qi6ctazwtNX8WZXpyIi2zmDe5t7Wqf1_8ec35y8y_c0,51
+LocalAssistant-1.0.3.dist-info/top_level.txt,sha256=zbXUALCccuBUpLmpAd8Xl-0ZM39wq6paC80ZJyyzhqM,15
+LocalAssistant-1.0.3.dist-info/RECORD,,
