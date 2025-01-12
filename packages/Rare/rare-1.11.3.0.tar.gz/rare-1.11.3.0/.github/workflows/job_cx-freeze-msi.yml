@@ -1,0 +1,43 @@
+name: job_cx-freeze-msi
+
+on:
+  workflow_call:
+    inputs:
+      version:
+        required: true
+        type: string
+
+jobs:
+  build:
+    name: Package
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+      - uses: actions/setup-python@v5
+        with:
+          cache: pip
+          python-version: '3.12'
+          check-latest: true
+          architecture: x64
+      - name: Install build dependencies
+        run: |
+          pip3 install --upgrade cx_freeze
+      - name: Install target dependencies
+        run: |
+          pip3 install -r misc/requirements.in
+      - name: Build
+        env:
+          SETUPTOOLS_SCM_PRETEND_VERSION: ${{ inputs.version }}
+        run: |
+          python3 -m setuptools_scm --force-write-version-files
+          python3 freeze.py bdist_msi
+          mv dist/*.msi Rare-${{ inputs.version }}.msi
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Rare-${{ inputs.version }}.msi
+          path: Rare-${{ inputs.version }}.msi

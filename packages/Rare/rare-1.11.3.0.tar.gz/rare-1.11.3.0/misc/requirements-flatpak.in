@@ -1,0 +1,6 @@
+requests < 3.0
+QtAwesome
+legendary-gl
+orjson
+vdf
+pypresence

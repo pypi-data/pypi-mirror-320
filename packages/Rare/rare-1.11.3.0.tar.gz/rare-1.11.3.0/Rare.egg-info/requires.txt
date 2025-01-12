@@ -1,0 +1,40 @@
+requests<3.0
+PySide6-Essentials>=6.8.1
+QtAwesome
+legendary-gl>=0.20.34
+orjson
+vdf
+
+[:platform_system == "Windows"]
+pywin32
+
+[dev]
+pylint
+mypy
+black[d]
+PySide6-stubs
+qstylizer
+
+[discordrpc]
+pypresence
+
+[packaging]
+cx-freeze
+nuitka
+pyinstaller
+
+[webview]
+
+[webview:platform_system == "Darwin"]
+pyobjc
+pywebview
+
+[webview:platform_system == "FreeBSD"]
+pywebview[gtk]
+
+[webview:platform_system == "Linux"]
+pywebview[gtk]
+
+[webview:platform_system == "Windows"]
+pythonnet
+pywebview

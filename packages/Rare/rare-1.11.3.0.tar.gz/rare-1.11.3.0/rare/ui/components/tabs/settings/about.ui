@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>About</class>
+ <widget class="QWidget" name="About">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>507</width>
+    <height>210</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>About</string>
+  </property>
+  <layout class="QFormLayout" name="about_layout">
+   <property name="labelAlignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <item row="0" column="0">
+    <widget class="QLabel" name="version_label">
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Version</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLabel" name="version">
+     <property name="text">
+      <string notr="true">error</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="update_label">
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Update</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLabel" name="update_lbl">
+     <property name="text">
+      <string notr="true">error</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QPushButton" name="open_browser">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Download latest release</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="dev_label">
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Rare Developers</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLabel" name="dev">
+     <property name="toolTip">
+      <string>Github</string>
+     </property>
+     <property name="text">
+      <string notr="true">&lt;a href='https://github.com/Dummerle' style='color: #2980b9; text-decoration:none'&gt;Dummerle&lt;/a&gt;
+&lt;br&gt;
+&lt;a href='https://github.com/loathingkernel' style='color: #2980b9; text-decoration:none'&gt;loathingkernel&lt;/a&gt;</string>
+     </property>
+     <property name="openExternalLinks">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="lgd_dev_label">
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Legendary Developer</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QLabel" name="lgd_dev">
+     <property name="toolTip">
+      <string>Github</string>
+     </property>
+     <property name="text">
+      <string notr="true">&lt;a href='https://github.com/derrod/' style='color: #2980b9; text-decoration:none'&gt;derrod&lt;/a&gt;</string>
+     </property>
+     <property name="openExternalLinks">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="license_label">
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>License</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QLabel" name="license">
+     <property name="text">
+      <string>GNU General Public License v3.0</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="contrib_label">
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Rare Contributors</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string notr="true">&lt;a href='https://github.com/MultisampledNight' style='color: #2980b9; text-decoration:none'&gt;MultisampledNight&lt;/a&gt; &lt;i&gt;artwork, bug hunting, testing&lt;/i&gt;
+&lt;br&gt;
+&lt;a href='https://github.com/invertedEcho' style='color: #2980b9; text-decoration:none'&gt;invertedEcho&lt;/a&gt; &lt;i&gt;moving games, environment variables&lt;/i&gt;
+&lt;br&gt;
+&lt;a href='https://github.com/ChemicalXandco' style='color: #2980b9; text-decoration:none'&gt;ChemicalXandco&lt;/a&gt; &lt;i&gt;downloads improvements, windows integration&lt;/i&gt;
+&lt;br&gt;
+&lt;a href='https://github.com/gnanini' style='color: #2980b9; text-decoration:none'&gt;gnanini&lt;/a&gt; &lt;i&gt;steam grades&lt;/i&gt;</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

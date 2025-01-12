@@ -1,0 +1,27 @@
+*.pyc
+*.pyo
+__pycache__
+
+/.idea
+/.vscode
+*~
+/build
+/dist
+/deb_dist
+*.tar.gz
+*.egg-info/
+/venv*
+/test.py
+/.eggs
+/appimage-builder-cache/
+/AppDir/
+/System Volume Information/
+/test_files/
+rare/_version.py
+# Nuitka build artifacts
+/rare.build
+/rare.dist
+/rare.bin
+/rare.cmd
+/rare.exe
+/poetry.lock

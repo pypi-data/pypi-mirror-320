@@ -1,0 +1,54 @@
+
+name: "Checks"
+
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'rare/**'
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+    branches:
+      - main
+    paths:
+      - 'rare/**'
+
+
+jobs:
+  pylint:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: ['macos-latest', 'windows-latest', 'ubuntu-latest']
+        version: ['3.9', '3.10', '3.11', '3.12', '3.13']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.version }}
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip3 install astroid
+          pip3 install pylint
+      - name: Install target dependencies
+        run: |
+          pip3 install -r misc/requirements.in
+      - name: Generate version information
+        run: |
+          pip3 install setuptools-scm
+          python3 -m setuptools_scm --force-write-version-files
+      - name: Install development dependencies
+        run: |
+          pip3 install qstylizer
+      - name: Analysis with pylint
+        run: |
+          python3 -m pylint rare

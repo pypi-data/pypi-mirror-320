@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="schemes">
+    <file alias="Adapta-Nokto">colors/Adapta-Nokto.scheme</file>
+    <file alias="Airy">colors/Airy.scheme</file>
+    <file alias="Arc-Dark">colors/Arc-Dark.scheme</file>
+    <file alias="Arc-Darker">colors/Arc-Darker.scheme</file>
+    <file alias="Darker">colors/Darker.scheme</file>
+    <file alias="Dusk">colors/Dusk.scheme</file>
+    <file alias="Numix-Dark">colors/Numix-Dark.scheme</file>
+    <file alias="Rare">colors/Rare.scheme</file>
+    <file alias="Zukitre">colors/Zukitre.scheme</file>
+  </qresource>
+  <qresource prefix="images">
+    <file alias="Rare.png">images/Rare.png</file>
+    <file alias="loader.webp">images/loader.webp</file>
+  </qresource>
+</RCC>

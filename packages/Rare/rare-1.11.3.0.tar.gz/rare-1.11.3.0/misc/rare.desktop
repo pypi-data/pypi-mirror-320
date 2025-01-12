@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Rare
+Type=Application
+Categories=Game;
+Icon=rare
+Exec=rare
+Comment=Open source alternative for Epic Games Launcher, using Legendary
+Terminal=false
+StartupWMClass=rare
+Keywords=epic;games;launcher;legendary;
