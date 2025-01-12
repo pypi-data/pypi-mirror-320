@@ -1,0 +1,8 @@
+bumo/__init__.py,sha256=QclWNsGek6lfKMpKIGuVQcjyS1Fs16LPo2HBbUQGA6A,59
+bumo/builder.py,sha256=XmcjgN-KWJknwM9M7TW3qpBkKBL52ONuwAS3FVnb3wA,9139
+bumo/mutation.py,sha256=MuWW4C0FUi-hozn4-Fpqj6BwfztgkC98NZXNlYpi2oQ,6702
+bumo/shapes.py,sha256=LPn9cHMWY1PeceRX9vQHKcm--7KTEZwZ7urAV967nh4,1509
+bumo/utils.py,sha256=QuMPk6whX6q4ZPUzvnE4fePruEKX0AGvWkgm5I6bswE,545
+bumo-0.0.1.dist-info/METADATA,sha256=LrYOGtS9F6WAI4SDZdN0XEXDYMG9X01FF-SBf8cfNKY,4055
+bumo-0.0.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+bumo-0.0.1.dist-info/RECORD,,
