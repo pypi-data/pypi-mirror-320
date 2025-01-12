@@ -1,0 +1,3 @@
+[console_scripts]
+getoutline-cli = getoutline_cli.getoutline_cli:main
+

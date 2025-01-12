@@ -1,0 +1,7 @@
+pyyaml
+requests
+
+[dev]
+twine
+wheel
+flake8
