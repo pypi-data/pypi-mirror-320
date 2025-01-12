@@ -1,0 +1,2 @@
+[console_scripts]
+fabricpy = fabricpy.cli:main

@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: fabricpy
+Version: 0.1.0a0
+Summary: A Python library to create Fabric Minecraft mods in Python.
+Home-page: https://github.com/danielkorkin/fabricpy
+Author: Daniel Korkin
+Author-email: daniel.d.korkin@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+License-File: LICENSE
+

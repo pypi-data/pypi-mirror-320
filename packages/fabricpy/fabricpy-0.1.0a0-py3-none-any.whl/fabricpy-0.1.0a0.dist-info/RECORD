@@ -1,0 +1,13 @@
+fabricpy/__init__.py,sha256=8AO6Kuc8gkuCiJ4CRGort554FVPw938oilchc-VIh8o,275
+fabricpy/block.py,sha256=6yzR95vGhbDFBQjTGbiFTRgRfRyZ_TyAqplyL1s3W_g,854
+fabricpy/cli.py,sha256=OMDDCGSOCCFNDFaMZwasN2ns2RDlITQP3-_RM22NMpE,2942
+fabricpy/generator.py,sha256=xpVhtxveA-4qP3tdsz9D7p4tJQdEzvrZ_IMcdz6rLPY,4396
+fabricpy/item.py,sha256=9BqLTbCZyxm8DeIBqpqmjDEAlUxvtqzUWSAhWoDFJDw,828
+fabricpy/mod_config.py,sha256=MXp2L-GHkJ8_uohQXxxEPGCp5QhERWfK1ncoIB5eNxA,1241
+fabricpy/utils.py,sha256=sY6_KWeSJmZsKSDgOAPVakM350MaaTWFz7epDJ2u3ZQ,392
+fabricpy-0.1.0a0.dist-info/LICENSE,sha256=bINx2QiQiJLr1eMzDYVzolDylJ8OLo744FN0fI6R4Bg,1070
+fabricpy-0.1.0a0.dist-info/METADATA,sha256=cCtqBEFTRzyxq0Jl0rVkCoEjC9qdnEmsN0KsvrtThtM,382
+fabricpy-0.1.0a0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+fabricpy-0.1.0a0.dist-info/entry_points.txt,sha256=khlN5pArcV1HFNPYQf6P214aJJBxxGrPSR2tEdiVfiM,47
+fabricpy-0.1.0a0.dist-info/top_level.txt,sha256=n4dZbKzOqV3XOE_qbuPleHpaZosMbxWxe7XOWbyIerw,9
+fabricpy-0.1.0a0.dist-info/RECORD,,
