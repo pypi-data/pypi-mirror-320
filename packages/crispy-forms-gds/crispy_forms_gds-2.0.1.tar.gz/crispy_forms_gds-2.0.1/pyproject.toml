@@ -1,0 +1,140 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools >= 61.0"]
+
+[project]
+name = "crispy-forms-gds"
+version = "2.0.1"
+description = "Django application to add 'django-crispy-forms' layout objects for the GOV.UK Design System."
+keywords = ["Django, django-crispy-forms, gov.uk, design system"]
+license = { file = "LICENCE.txt" }
+authors = [
+  {name = "Wildfish", email = "developers@wildfish.com"},
+]
+readme = "README.rst"
+requires-python = ">=3.10"
+dependencies = [
+    "django>=5.0",
+    "django-crispy-forms>=2.0,<2.4",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: Django",
+    "Framework :: Django :: 5.0",
+    "Framework :: Django :: 5.1",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.setuptools]
+license-files = []
+
+[tool.uv]
+dev-dependencies = [
+    "bump-my-version>=0.29.0",
+    "isort>=5.13.2",
+    "pre-commit>=4.0.1",
+    "pytest>=8.3.4",
+    "ruff>=0.8.4",
+    "sphinx>=8.1.3",
+    "tox-uv>=1.1.0",
+    "tox==4.12.1",
+    "django-environ>=0.11.2",
+]
+
+[tool.bumpversion]
+current_version = "2.0.1"
+parse = "(?P<major>\\d+)\\.(?P<minor>\\d+)\\.(?P<patch>\\d+)"
+serialize = ["{major}.{minor}.{patch}"]
+ignore_missing_version = false
+tag = true
+sign_tags = true
+tag_name = "v{new_version}"
+tag_message = "New version: {current_version} → {new_version}"
+allow_dirty = false
+commit = true
+commit_args = "--no-verify"
+message = "New version: {current_version} → {new_version}"
+pre_commit_hooks = ["uv sync --upgrade", "git add uv.lock"]
+
+[[tool.bumpversion.files]]
+filename = "src/crispy_forms_gds/__init__.py"
+search = '__version__ = "{current_version}"'
+replace = '__version__ = "{new_version}"'
+
+[[tool.bumpversion.files]]
+filename = "docs/conf.py"
+search = 'release = "{current_version}"'
+replace = 'release = "{new_version}"'
+
+[[tool.bumpversion.files]]
+filename = "CHANGELOG.rst"
+search = """
+Latest
+------"""
+replace = """
+Latest
+------
+
+{new_version} ({now:%Y-%m-%d})
+------------------"""
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+search = 'version = "{current_version}"'
+replace = 'version = "{new_version}"'
+
+[tool.coverage.run]
+branch = true
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "."
+]
+testpaths = [
+    "tests"
+]
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+requires =
+    tox>=4.12.1
+    tox-uv>=1.1.1
+envlist =
+	python3.12-django50-crispy20
+	python3.12-django50-crispy21
+	python3.12-django50-crispy22
+	python3.12-django50-crispy23
+	python3.12-django51-crispy20
+	python3.12-django51-crispy21
+	python3.12-django51-crispy22
+	python3.12-django51-crispy23
+
+[testenv]
+commands = pytest {posargs}
+deps =
+    pytest
+	django50: Django>=5.0,<5.1
+	django51: Django>=5.1,<5.2
+	crispy20: django-crispy-forms>=2.0,<2.1
+	crispy21: django-crispy-forms>=2.1,<2.2
+	crispy22: django-crispy-forms>=2.2,<2.3
+	crispy23: django-crispy-forms>=2.3,<2.4
+setenv =
+    PYTHONPATH = src
+"""
