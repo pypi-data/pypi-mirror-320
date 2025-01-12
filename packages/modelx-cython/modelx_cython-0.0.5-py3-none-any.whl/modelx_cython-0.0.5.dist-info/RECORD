@@ -1,0 +1,16 @@
+modelx_cython/__init__.py,sha256=NuLFuZj5KeJpWL5ziJX47CllN6jMn6KkJsIE6VamVAk,736
+modelx_cython/__main__.py,sha256=qKqTFUcCIo91IHpuD8YOptkAv1mcGNn95UiKa0bxgBE,720
+modelx_cython/_mx_sys.pxd,sha256=D46JqDEkQRX0YP79aNEfIuUc8kdw_b50pkSxLzLxLf0,447
+modelx_cython/cli.py,sha256=zzK1RWAWHa1uWG9J8QOOwNc26t3FYUmf4g0Xgl3a-9U,7434
+modelx_cython/config.py,sha256=pnhO2U3Ee9TEX8QUkB4DFomkog0R6ojAzBOys6D51Sk,2202
+modelx_cython/consts.py,sha256=K3B4_IH1_rgZJ1HID7denu-5dF7IHUlCaJqRX6qdI2A,1347
+modelx_cython/tracer.py,sha256=90GYzgaaJXQHdsj4GlfPCqtqdwsB2ZjeADMAK-Spn2I,13338
+modelx_cython/tracing.py,sha256=Sou_COx6cyhMA2WS8p42QdVpWcbCM5-gU1pZVzch6X8,10952
+modelx_cython/transformer.py,sha256=GLsMC7Dm4NJJohlP6TUYzcLjcLYeOrgfOdKPe1BcsL4,32881
+modelx_cython-0.0.5.dist-info/LICENSE.GPL.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+modelx_cython-0.0.5.dist-info/LICENSE.txt,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+modelx_cython-0.0.5.dist-info/METADATA,sha256=5paTGSPo4qjZXhe_VoUdtj7u0FKGqIgv2sOihgswXN4,4324
+modelx_cython-0.0.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+modelx_cython-0.0.5.dist-info/entry_points.txt,sha256=NtKpRYVo9BioLQj1jO-P-gNY7XkqwrvoCjlvzbscYyw,61
+modelx_cython-0.0.5.dist-info/top_level.txt,sha256=KjFpNfu10XXcIp63zvO4uJsPwVVooUSRaIOkwvFkApQ,14
+modelx_cython-0.0.5.dist-info/RECORD,,
