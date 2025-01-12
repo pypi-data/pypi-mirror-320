@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+capitolgains/__init__.py
+capitolgains.egg-info/PKG-INFO
+capitolgains.egg-info/SOURCES.txt
+capitolgains.egg-info/dependency_links.txt
+capitolgains.egg-info/requires.txt
+capitolgains.egg-info/top_level.txt
+capitolgains/core/__init__.py
+capitolgains/core/congress.py
+capitolgains/core/representative.py
+capitolgains/core/senator.py
+capitolgains/utils/__init__.py
+capitolgains/utils/representative_scraper.py
+capitolgains/utils/senator_scraper.py
