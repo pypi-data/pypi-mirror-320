@@ -1,0 +1,2 @@
+[console_scripts]
+srst-nrkup-bot = nrkup.nrkup_bot:main
