@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+tox.ini
+versioneer.py
+src/scikits_odes_core/__init__.py
+src/scikits_odes_core/_version.py
+src/scikits_odes_core.egg-info/PKG-INFO
+src/scikits_odes_core.egg-info/SOURCES.txt
+src/scikits_odes_core.egg-info/dependency_links.txt
+src/scikits_odes_core.egg-info/top_level.txt
