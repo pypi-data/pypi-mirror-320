@@ -1,0 +1,2 @@
+[console_scripts]
+main = hll_rcon_connection_test.main:main
