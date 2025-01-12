@@ -1,0 +1,40 @@
+Metadata-Version: 2.2
+Name: streamlit-extented
+Version: 0.1.0
+Summary: Расширение для работы с базами данных через pyodbc с поддержкой JSON
+Author: Voronov Andrey
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyodbc
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# streamlit-extented
+
+streamlit-extented — это простое расширение для работы с базами данных через pyodbc.
+
+## Установка
+
+
+
+pip install streamlit-extented
+
+## Использование
+
+
+
+from streamlit_extented import perform_query
+
+connection_str = "DRIVER={ODBC Driver 17 for SQL Server};SERVER=localhost;DATABASE=mydb;UID=user;PWD=pass"
+query = "SELECT * FROM my_table"
+result = perform_query(connection_str, query, fetch_results=True, return_json=True)
+print(result)
