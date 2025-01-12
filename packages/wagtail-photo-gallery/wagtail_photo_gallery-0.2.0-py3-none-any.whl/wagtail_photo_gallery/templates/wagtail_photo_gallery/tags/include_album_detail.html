@@ -1,0 +1,24 @@
+{% load i18n l10n %}
+
+<article class="photo-gallery-album">
+    <header>
+        <h1>{{ album.title }}</h1>
+    </header>
+    <section>
+        <p>{{ album.description }}</p>
+
+        {% if album.is_visible %}
+            <div class="photo-gallery-container-images">
+                {% for item in images %}
+                    <a href="{{ item.image.url }}" data-pswp-src="{{ item.image.url }}" data-pswp-width="{{ item.width }}" data-pswp-height="{{ item.height }}" data-cropped="true">
+                        <img src="{{ item.thumb.url }}" alt="{{ item.alt }}"/>
+                    </a>
+                {% endfor %}
+            </div>
+        {% else %}
+            <h3>
+                {% trans "This album is temporarily unavailable" %}.
+            </h3>
+        {% endif %}
+    </section>
+</article>
