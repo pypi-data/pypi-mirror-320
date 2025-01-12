@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+cbe_verification_sdk/__init__.py
+cbe_verification_sdk/client.py
+cbe_verification_sdk.egg-info/PKG-INFO
+cbe_verification_sdk.egg-info/SOURCES.txt
+cbe_verification_sdk.egg-info/dependency_links.txt
+cbe_verification_sdk.egg-info/requires.txt
+cbe_verification_sdk.egg-info/top_level.txt
