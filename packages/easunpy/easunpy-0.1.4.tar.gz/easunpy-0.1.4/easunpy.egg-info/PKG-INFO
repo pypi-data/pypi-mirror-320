@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: easunpy
+Version: 0.1.4
+Summary: A tool for monitoring Easun ISolar inverters
+Home-page: https://github.com/vgsolar2/easunpy
+Author-email: vgsolar2@proton.me
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: rich
