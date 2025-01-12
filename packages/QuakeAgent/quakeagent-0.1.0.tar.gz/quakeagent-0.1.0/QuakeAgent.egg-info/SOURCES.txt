@@ -1,0 +1,6 @@
+setup.py
+QuakeAgent.egg-info/PKG-INFO
+QuakeAgent.egg-info/SOURCES.txt
+QuakeAgent.egg-info/dependency_links.txt
+QuakeAgent.egg-info/requires.txt
+QuakeAgent.egg-info/top_level.txt
