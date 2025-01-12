@@ -1,0 +1,2 @@
+[console_scripts]
+nielsen = nielsen.bin.cli.main:main
