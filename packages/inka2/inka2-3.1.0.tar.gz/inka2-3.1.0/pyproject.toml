@@ -1,0 +1,184 @@
+[project]
+# PEP 621 project metadata
+# See https://www.python.org/dev/peps/pep-0621/
+name = "inka2"
+version = "3.1.0"
+description = "Command-line tool for adding flashcards from Markdown files to Anki"
+readme = "README.md"
+license = { text = "GPLv3" }
+requires-python = ">=3.10"
+authors = [
+    { name = "sysid", email = "sysid@gmx.de" },
+    { name = "Kirill Salnikov", email = "salnikov.k54@gmail.com" },
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Education",
+    "Topic :: Education :: Computer Aided Instruction (CAI)",
+    "Topic :: Text Processing :: Markup :: Markdown",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+dependencies = [
+    "anki>=24.11",
+    "aqt>=24.11",
+    "click>=8.1.8",
+    "isort>=5.13.2",
+    "mistune>=3.1.0",
+    "mypy>=1.14.1",
+    "pillow>=11.1.0",
+    "pyqt6>=6.8.0",
+    "pyqt6-webengine>=6.8.0",
+    "requests>=2.32.3",
+    "rich>=13.9.4",
+]
+
+[dependency-groups]  # new standard, included by default
+dev = [
+    "build>=1.2.2.post1",
+    "bump2version>=1.0.1",
+    "coverage>=7.6.10",
+    "ipython>=8.31.0",
+    "isort>=5.13.2",
+    "mypy>=1.14.1",
+    "pre-commit>=4.0.1",
+    "pytest>=8.3.4",
+    "pytest-cov>=6.0.0",
+    "pytest-mock>=3.14.0",
+    "ruff>=0.9.1",
+    "tox>=4.23.2",
+    "types-click>=7.1.8",
+    "types-requests>=2.32.0.20241016",
+]
+
+[project.scripts]
+inka2 = "inka2.cli:cli"
+
+[tool.uv]
+managed = true  # esable automatic locking and syncing of the project.
+package = true  # install into project env
+
+[project.urls]
+Source = "https://github.com/sysid/inka2"
+Documentation = "https://github.com/sysid/inka2/wiki/Creating-cards"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+markers = [
+    "integration: marks tests as integration tests",
+]
+
+[tool.mypy]
+ignore_missing_imports = false
+namespace_packages = true
+
+[tool.coverage.run]
+source = ["src/inka2"]
+omit = [
+    "tests/*",
+    "**/__main__.py",
+    "**/.venv/*",
+    "**/site-packages/*",
+    "examples/*",
+]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+fail_under = 60
+
+[tool.bumpversion]
+current_version = "3.1.0"
+parse = "(?P<major>\\d+)\\.(?P<minor>\\d+)\\.(?P<patch>\\d+)"
+serialize = ["{major}.{minor}.{patch}"]
+search = "{current_version}"
+replace = "{new_version}"
+regex = false
+ignore_missing_version = false
+tag = true
+sign_tags = false
+tag_name = "v{new_version}"
+tag_message = "Bump version: {current_version} → {new_version}"
+allow_dirty = false
+commit = true
+message = "Bump version: {current_version} → {new_version}"
+commit_args = ""
+
+[tool.bumpversion.file_patterns]
+"my_package/__init__.py" = [
+    { search = "__version__ = '{current_version}'", replace = "__version__ = '{new_version}'" },
+]
+#"README.md" = [
+#    {search = "Current version: {current_version}", replace = "Current version: {new_version}"},
+#]
+"VERSION" = [
+    { search = "{current_version}", replace = "{new_version}" },
+]
+"pyproject.toml" = [
+    { search = "version = {current_version}", replace = "version = {new_version}" },
+]
+
+[[tool.bumpversion.files]]
+filename = "VERSION"
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+
+[[tool.bumpversion.files]]
+filename = "src/inka2/__init__.py"
+
+[tool.ruff]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+]
+line-length = 88
+indent-width = 4
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
+ignore = []
+fixable = ["ALL"]
+unfixable = []
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
