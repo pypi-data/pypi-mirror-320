@@ -1,0 +1,21 @@
+[project]
+name = "codeanim"
+version = "0.0.28"
+description = "A tool that automates presentation of software demos."
+authors = [{ name = "Shad Sharma", email = "shadanan@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["pynput>=1.7.7", "pyperclip>=1.9.0"]
+
+[project.scripts]
+codeanim = "codeanim:main"
+
+[dependency-groups]
+dev = ["pytest>=8.3.4"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

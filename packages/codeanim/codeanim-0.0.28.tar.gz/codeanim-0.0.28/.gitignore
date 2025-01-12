@@ -1,0 +1,11 @@
+# Generated python files
+.pytest_cache
+__pycache__
+codeanim.egg-info
+dist
+
+# Virtual environment
+.venv
+
+# E2E test artifacts
+demo
