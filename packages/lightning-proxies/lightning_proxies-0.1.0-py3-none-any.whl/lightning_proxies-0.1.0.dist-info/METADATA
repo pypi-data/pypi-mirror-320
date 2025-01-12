@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: lightning-proxies
+Version: 0.1.0
+Summary: A Python client for managing Lightning Proxies API
+Home-page: https://github.com/yourusername/lightning_proxies
+Author: sanders basket
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests >=2.25.1
+Provides-Extra: dev
+Requires-Dist: pytest >=6.0 ; extra == 'dev'
+Requires-Dist: flake8 >=3.8 ; extra == 'dev'
+
+# Lightning Proxies Python Client
+
+[![PyPI version](https://badge.fury.io/py/lightning-proxies.svg)](https://badge.fury.io/py/lightning-proxies)
+[![Build Status](https://github.com/yourusername/lightning_proxies/actions/workflows/python-app.yml/badge.svg)](https://github.com/yourusername/lightning_proxies/actions)
