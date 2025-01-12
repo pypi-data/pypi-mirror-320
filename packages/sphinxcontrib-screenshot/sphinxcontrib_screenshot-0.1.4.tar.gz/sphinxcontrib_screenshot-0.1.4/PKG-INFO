@@ -1,0 +1,81 @@
+Metadata-Version: 2.2
+Name: sphinxcontrib-screenshot
+Version: 0.1.4
+Summary: A Sphinx extension to embed webpage screenshots.
+Author-email: Shuhei Iitsuka <tushuhei@gmail.com>
+License: Apache-2.0
+Project-URL: repository, https://github.com/tushuhei/sphinxcontrib-screenshot/
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: playwright
+Requires-Dist: sphinx
+Requires-Dist: portpicker
+Provides-Extra: dev
+Requires-Dist: beautifulsoup4; extra == "dev"
+Requires-Dist: build; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: flake8-pyproject; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: Pillow; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-regressions[image]; extra == "dev"
+Requires-Dist: sphinx[test]; extra == "dev"
+Requires-Dist: toml; extra == "dev"
+Requires-Dist: tox; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: types-beautifulsoup4; extra == "dev"
+Requires-Dist: types-docutils; extra == "dev"
+Requires-Dist: types-portpicker; extra == "dev"
+Requires-Dist: types-Pillow; extra == "dev"
+Requires-Dist: types-setuptools; extra == "dev"
+Requires-Dist: user-agents; extra == "dev"
+Requires-Dist: yapf; extra == "dev"
+Provides-Extra: doc
+Requires-Dist: myst-parser; extra == "doc"
+Requires-Dist: shibuya; extra == "doc"
+Requires-Dist: sphinx; extra == "doc"
+
+# sphinxcontrib-screenshot
+
+A Sphinx extension to embed website screenshots.
+
+```rst
+.. screenshot:: http://www.example.com
+  :browser: chromium
+  :width: 1280
+  :height: 960
+  :color-scheme: dark
+```
+
+Read more in the [documentation](https://sphinxcontrib-screenshot.readthedocs.io).
+
+## Notes
+
+This extension uses [Playwright](https://playwright.dev) to capture a screenshot of the specified website only.
+No data is sent to any other external server; the request is limited to the specified website.
+Be cautious: avoid including sensitive information (such as authentication data) in the directive content.
+
+## Contributing
+
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for details.
+
+## License
+
+Apache 2.0; see [`LICENSE`](LICENSE) for details.
+
+## Disclaimer
+
+This project is not an official Google project. It is not supported by
+Google and Google specifically disclaims all warranties as to its quality,
+merchantability, or fitness for a particular purpose.
