@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: qbase58
+Version: 1.0.0
+Summary: Quick Base58 encoding/decoding.
+Author: Quick Vectors
+Author-email: felipe@qvecs.com
+Requires-Python: >=3.8
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
