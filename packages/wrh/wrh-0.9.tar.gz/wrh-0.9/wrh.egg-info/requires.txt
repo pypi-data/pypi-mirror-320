@@ -1,0 +1,6 @@
+click
+pandas
+numpy
+scipy
+platypus-opt
+tables

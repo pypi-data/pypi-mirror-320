@@ -1,0 +1,2 @@
+[console_scripts]
+wrh = wrh.cli:start_cli
