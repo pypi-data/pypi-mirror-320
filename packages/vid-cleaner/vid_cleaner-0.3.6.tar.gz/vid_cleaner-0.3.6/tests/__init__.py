@@ -1,0 +1,1 @@
+"""vid-cleaner test suite."""
