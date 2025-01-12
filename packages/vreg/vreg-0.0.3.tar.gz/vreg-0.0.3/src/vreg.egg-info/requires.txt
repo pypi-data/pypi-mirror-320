@@ -1,0 +1,10 @@
+importlib-resources>=1.1.0
+tqdm
+numpy<=1.26.4
+scipy
+scikit-image
+requests
+
+[plot]
+pyvista
+matplotlib
