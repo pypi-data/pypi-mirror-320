@@ -1,0 +1,13 @@
+neuronica/__init__.py,sha256=MqYjoxyywXJUBaUBljedBJkskFnT007D8HNEnTIuRX0,229
+neuronica/loss.py,sha256=P72CQd_6A5NXtMzsamYS02pPRNnmegW5Hq1Suo8AXas,1031
+neuronica/model.py,sha256=TbKK9bkUGWJenAV2DdoYIIP7SqXFOyDD3EdtYObkeGk,3005
+neuronica/layers/__init__.py,sha256=nvHsBRocVTPHp89F8y6oEKt8FQUk_R2rLuo6lOglsc4,176
+neuronica/layers/activations.py,sha256=903gpIORzgbGCFHIpQ3llvvtjuifpkeWguXIHWypiN8,1801
+neuronica/layers/layer.py,sha256=lPXZzTr1SPgiF964nP9nfPNU2Ri2kTMa9HdYOEy-BsU,5500
+neuronica/utils/__init__.py,sha256=1A4Q1wQzt8-RA64kOYaCb1EKIfoYa2_KO4cEXeV3za4,110
+neuronica/utils/backend.py,sha256=MY-DTdYUMm9zbEP-YJ8A2bMj4TQuS7G_84-UPhXRZoU,1347
+neuronica/utils/serialization.py,sha256=AZkiWHvbzn8s_EzVPVlLM2IYaW_FSzH52X7r5LpX26U,4370
+neuronica-0.0.1.dist-info/METADATA,sha256=wwMkw6E17hGnKJ3HH6UbmBv0tGEoIq7Xv6aMXldMNdY,583
+neuronica-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+neuronica-0.0.1.dist-info/top_level.txt,sha256=ARrbjNrw0918i9D9X8jNLG7nwfR0MX3hhqBnGeqq2-s,10
+neuronica-0.0.1.dist-info/RECORD,,
