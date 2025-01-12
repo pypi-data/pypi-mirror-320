@@ -1,0 +1,71 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "emi-re"
+dynamic = ["version"]
+description = 'Collection of regular expressions'
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+keywords = ["regular expression", "regex", "re"]
+authors = [
+  { name = "ftnext", email = "takuyafjp+develop@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Text Processing",
+  "Topic :: Text Processing :: General",
+]
+dependencies = []
+
+[project.urls]
+Documentation = "https://github.com/ftnext/emi-re#readme"
+Issues = "https://github.com/ftnext/emi-re/issues"
+Source = "https://github.com/ftnext/emi-re"
+
+[tool.hatch.version]
+path = "src/emire/__about__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/emire"]
+
+[[tool.hatch.envs.hatch-test.matrix]]
+python = ["3.9", "3.10", "3.11", "3.12", "3.13"]
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/emire tests}"
+
+[tool.coverage.run]
+source_pkgs = ["emire", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/emire/__about__.py",
+]
+
+[tool.coverage.paths]
+emi_re = ["src/emire", "*/emi-re/src/emire"]
+tests = ["tests", "*/emi-re/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]

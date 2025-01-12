@@ -1,0 +1,25 @@
+name: Run tests
+
+on: [push]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pypa/hatch@install
+      - name: Run tests
+        run: hatch test --randomize --all -vv --doctest-modules
+
+  doctest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: pypa/hatch@install
+      - name: Test Usage code examples
+        run: hatch run python -m doctest -v README.md
