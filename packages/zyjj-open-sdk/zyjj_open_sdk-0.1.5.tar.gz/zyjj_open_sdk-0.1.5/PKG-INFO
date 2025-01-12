@@ -1,0 +1,183 @@
+Metadata-Version: 2.3
+Name: zyjj-open-sdk
+Version: 0.1.5
+Summary: 智游剪辑开放平台python sdk
+Author: zyjj
+Author-email: zyjj.cc@foxmail.com
+Requires-Python: >=3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: ffmpeg-python (>=0.2.0,<0.3.0)
+Requires-Dist: httpx (>=0.28.1,<0.29.0)
+Requires-Dist: paho-mqtt (>=2.1.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# 智游剪辑开放平台python sdk
+
+## 快速开始
+
+可以使用pip来快速安装
+
+```bash
+pip install zyjj-open-sdk
+# sdk 升级
+pip install -U zyjj-open-sdk
+```
+
+访问 [智游剪辑网页版](https://app.zyjj.cc/user) 获取你的秘钥信息
+
+这里以`文章翻译`为例，使用方法如下
+
+```python
+from zyjj_open_sdk import Client
+# 初始化全局客户端（只需要初始化一次）
+client = Client('sk-xxx')
+
+# 直接调用文章翻译功能并获取返回结果
+res = client.text.article_translate(
+    user="hello word",
+    language="中文"
+).execute()
+print(res.text)
+```
+
+## 文件上传
+
+如果涉及到文件上传，需要使用`FileObject`对象，该对象支持三种初始化方式
+- 从本地路径初始化
+- 从bytes初始化
+- 从url初始化
+
+这里以`ncm转mp3`为例,我们可以这样使用
+
+```python
+from zyjj_open_sdk import Client, FileObject
+
+# 初始化全局客户端（只需要初始化一次）
+client = Client('sk-xxx')
+
+# 下面三种方法选一种即可
+# 1.通过本地路径上传
+file = FileObject.from_path('xxx.ncm')
+
+# 2.通过bytes上传，注意需要带上文件名
+file = FileObject.from_bytes('tmp.ncm', b'')
+
+# 3.可以通过url上传
+file = FileObject.from_url('https://xxx.com/xxx.ncm')
+res = client.tool.ncm_to_mp3(ncm=file).execute()
+print(res.mp3)
+```
+
+## 执行方式
+
+目前sdk支持4种调用方式
+> 部分任务不支持同步调用（所有任务均支持异步调用），请以文档说明为准
+- 同步调用
+- 异步等待模式
+- 异步回调模式
+- 异步查询模式
+
+```python
+from zyjj_open_sdk import Client
+import time
+
+# 初始化全局客户端（只需要初始化一次）
+client = Client('sk-xxx')
+# 使用时会返回一个可执行对象，此时支持初始化了任务数据，不会立即执行
+execute = client.text.article_translate("hello word", "中文")
+
+# 1.我们可以直接同步执行获取执行结果，使用最简单
+res = execute.execute()
+print(res.text)
+
+# 2.使用异步阻塞模式，异步阻塞等待任务完成，wait可以传入一个回调函数，用于进度监听
+res = execute.execute_async().wait(lambda i: print(i))
+print(res.text)
+# 可以简化为下面这样的方式
+res = execute.execute_async_wait(lambda i: print(i))
+
+# 3.使用异步监听模型，不会阻塞流程，需要通过回调的方式来获取结果
+execute.execute_async().listener(
+    on_progress=lambda i: print(i),  # 任务进度回调
+    on_success=lambda data: print(data.text),  # 任务执行成功回调
+    on_error=lambda e: print(e)  # 任务执行失败回调
+)
+# 4.我们可以异步查询模式
+task = execute.execute_async()
+while True:
+    if task.status == 3:  # 任务执行成功
+        print(task.output.text)  # 打印任务结果
+    elif task.status == 4:  # 任务执行失败
+        print(task.err)  # 打印错误信息
+    else: # 其他情况为正在执行，这里可以打印执行进度
+        print(task.progress) 
+    time.sleep(1) # 我们可以每秒轮询一次
+```
+
+## 实时结果
+
+对于部分文字生成类的任务，我们可以通过详情回调获取实时生成结果，不需要等到全部生成完毕才显示，这样可以提高用户体验性。
+目前详情回调只能通过异步任务触发，有两种方式
+
+```python
+from zyjj_open_sdk import Client
+# 初始化全局客户端（只需要初始化一次）
+client = Client('sk-xxx')
+# 使用时会返回一个可执行对象，此时支持初始化了任务数据，不会立即执行
+execute = client.text.article_translate("hello word", "中文")
+
+# 1. 直接通过wait的时候监听
+execute.execute_async_wait(
+    detail_callback=lambda i: print(i),  # 获取实时返回结果
+)
+
+# 2.直接通过监听器监听
+execute.execute_async().listener(
+    on_detail=lambda i: print(i),  # 获取实时返回结果
+)
+```
+实际效果如下
+```bash
+{'text': ''}
+{'text': '你好'}
+{'text': '你好，'}
+{'text': '你好，世界'}
+{'text': '你好，世界'}
+```
+
+## 异步IO
+
+为了让提高并发性，你还可以使用异步客户端，支持asyncio语法，使用方式和同步客户端基本一致
+
+```python
+from zyjj_open_sdk import AsyncClient, FileObject
+import asyncio
+
+# 初始化异步客户端（只需要初始化一次）
+client = AsyncClient('sk-xxx')
+
+# 需要包装为一个异步函数
+async def translate():
+    # 1.使用同步方式创建任务
+    res = await client.text.article_translate(
+        user="hello word", 
+        language="中文"
+    ).execute()
+    print(res.text)
+    
+    # 2.使用异步方式创建任务
+    res = await client.text.article_translate(
+        user="hello word", 
+        language="中文"
+    ).execute_async_wait(progress_callback=lambda i: print(f"进度 {i}"))
+    print(res.text)
+
+# 在事件循环中运行我们的任务
+asyncio.run(translate())
+```
+
+
