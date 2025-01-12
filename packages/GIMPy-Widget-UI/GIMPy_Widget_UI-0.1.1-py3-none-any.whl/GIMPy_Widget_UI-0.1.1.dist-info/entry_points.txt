@@ -1,0 +1,2 @@
+[console_scripts]
+map_gimpy = GIMPy_Widget_UI:map_gimpy
