@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cryptsh
+Version: 0.2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: python-binance
+Requires-Dist: tabulate
+Requires-Dist: mysql-connector-python
+Requires-Dist: keyboard
+Requires-Dist: psycopg2
