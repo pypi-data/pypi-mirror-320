@@ -1,0 +1,14 @@
+README
+pyproject.toml
+setup.py
+bindings/python/tree_sitter_follow/__init__.py
+bindings/python/tree_sitter_follow/__init__.pyi
+bindings/python/tree_sitter_follow/binding.c
+bindings/python/tree_sitter_follow/py.typed
+bindings/python/tree_sitter_follow.egg-info/PKG-INFO
+bindings/python/tree_sitter_follow.egg-info/SOURCES.txt
+bindings/python/tree_sitter_follow.egg-info/dependency_links.txt
+bindings/python/tree_sitter_follow.egg-info/not-zip-safe
+bindings/python/tree_sitter_follow.egg-info/requires.txt
+bindings/python/tree_sitter_follow.egg-info/top_level.txt
+src/parser.c
