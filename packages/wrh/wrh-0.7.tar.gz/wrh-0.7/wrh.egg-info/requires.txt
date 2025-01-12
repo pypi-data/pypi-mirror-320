@@ -1,0 +1,7 @@
+click
+pandas
+numpy
+scipy
+platypus-op
+tables
+pywr

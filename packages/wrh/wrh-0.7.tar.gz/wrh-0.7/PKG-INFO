@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: wrh
+Version: 0.7
+Summary: Package for CIV550 course and UofT.
+Home-page: https://wrh.civmin.utoronto.ca/
+Author: Mohammed Basheer
+Author-email: mohammedadamabbaker@gmail.com
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: platypus-op
+Requires-Dist: tables
+Requires-Dist: pywr
+
+# Package for CIV550 course and UofT
