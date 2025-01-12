@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+pb2dict/__init__.py
+pb2dict.egg-info/PKG-INFO
+pb2dict.egg-info/SOURCES.txt
+pb2dict.egg-info/dependency_links.txt
+pb2dict.egg-info/requires.txt
+pb2dict.egg-info/top_level.txt
+tests/test_message.py
