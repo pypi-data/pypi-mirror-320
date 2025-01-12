@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["danai*"]
+
+[project]
+name = "danai"
+version = "0.4.3"  # Use three-part versioning
+description = "A utility package for simplifying interactions with OpenAI models."
+authors = [{name = "Aidan Coughlan", email = "dev@farfromavocados.com"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.7"
+
+dependencies = [
+    "tiktoken",
+    "requests",
+    "datetime"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/farfromavocaido/danai"  # Update if repo name changes
