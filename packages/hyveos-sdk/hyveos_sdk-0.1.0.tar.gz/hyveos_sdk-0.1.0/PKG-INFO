@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: hyveos-sdk
+Version: 0.1.0
+Summary: 
+Author: Lukas Altun
+Author-email: laltun@student.ethz.ch
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.11.11,<4.0.0)
+Requires-Dist: grpcio (>=1.69.0,<2.0.0)
+Requires-Dist: protobuf (>=5.29.2,<6.0.0)
+Requires-Dist: yarl (>=1.18.3,<2.0.0)

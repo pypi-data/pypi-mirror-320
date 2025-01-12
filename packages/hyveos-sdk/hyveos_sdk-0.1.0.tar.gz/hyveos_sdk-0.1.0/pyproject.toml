@@ -1,0 +1,42 @@
+[project]
+name = "hyveos-sdk"
+dynamic = [ "version" ]
+license = { text = "MIT" }
+
+[tool.poetry]
+name = "hyveos-sdk"
+version = "0.1.0"
+description = ""
+authors = [
+    "Lukas Altun <laltun@student.ethz.ch>",
+    "Linus Meierhoefer <linusmeierhoefer@protonmail.com>",
+    "Hannes <55623006+umgefahren@users.noreply.github.com>",
+    "Josef Zoller <josef@walterzollerpiano.com>",
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+grpcio = "^1.69.0"
+protobuf = "^5.29.2"
+aiohttp = "^3.11.11"
+yarl = "^1.18.3"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.8.6"
+grpcio-tools = "^1.69.0"
+pdoc3 = "^0.11.5"
+
+[tool.ruff]
+exclude = ['protocol']
+
+indent-width = 4
+target-version = 'py310'
+
+[tool.ruff.format]
+quote-style = 'single'
+indent-style = 'space'
+line-ending = 'auto'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
