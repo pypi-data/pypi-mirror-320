@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+tamil_translite/__init__.py
+tamil_translite/olipeyarppu.py
+tamil_translite/translit_rules.json
+tamil_translite/translite.py
+tamil_translite.egg-info/PKG-INFO
+tamil_translite.egg-info/SOURCES.txt
+tamil_translite.egg-info/dependency_links.txt
+tamil_translite.egg-info/top_level.txt
+tests/__init__.py
+tests/test_translite.py
