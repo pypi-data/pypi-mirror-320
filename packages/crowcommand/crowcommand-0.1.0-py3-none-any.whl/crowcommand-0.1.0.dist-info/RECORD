@@ -1,0 +1,11 @@
+crowcommand/__init__ .py,sha256=xOBvorMGGk7kkDEDLz7PzsFCxo0fM-F-IoR-x7xgVeU,1532
+crowcommand/client.py,sha256=3kqdfWuADw5cq0I-WmYIik1oX9QMJp--Imb8aVP_3t4,1053
+crowcommand/crowcommand.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+crowcommand/internal_logger.py,sha256=1SKQ-SXgF29ZIDG97bEtgShi_DCLm3UnxmLEXie8rm4,494
+crowcommand/logger.py,sha256=xXE4Ce5VMt4y96WUqm_xwdSbDyNbc-zHmAzL7O0P_EQ,6710
+crowcommand-0.1.0.dist-info/AUTHORS.rst,sha256=oiUtBCzUJcQCCfWv4bqu3fOInG_ci9TXMNvLQ4JGN3M,166
+crowcommand-0.1.0.dist-info/LICENSE,sha256=IafOh1zrWi0bAokGF_wiNQRhVTUfu_uX95yBHBXVm8g,588
+crowcommand-0.1.0.dist-info/METADATA,sha256=uhAI_Hxqxa61e6Oxr6s82jf3-TrUjWwsBWe8-sGIekE,2045
+crowcommand-0.1.0.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+crowcommand-0.1.0.dist-info/top_level.txt,sha256=c8PSdaoYXTd2y8ay7KCjiBSaVVtLPyXnA3IiUbc2qjA,12
+crowcommand-0.1.0.dist-info/RECORD,,
