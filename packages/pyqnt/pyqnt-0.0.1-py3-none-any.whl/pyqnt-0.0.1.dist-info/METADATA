@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pyqnt
+Version: 0.0.1
+Summary: A CLI tool and API for portfolio optimization
+Home-page: https://github.com/s06a/pyqnt
+Author: s06a
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: requests
+Requires-Dist: pyyaml
+Provides-Extra: full
+Requires-Dist: ccxt (==4.4.46) ; extra == 'full'
+Requires-Dist: fastapi (==0.115.6) ; extra == 'full'
+Requires-Dist: matplotlib (==3.6.3) ; extra == 'full'
+Requires-Dist: numpy (==2.2.1) ; extra == 'full'
+Requires-Dist: pandas (==2.2.3) ; extra == 'full'
+Requires-Dist: pydantic (==2.10.4) ; extra == 'full'
+Requires-Dist: pytse-client (==0.18.0) ; extra == 'full'
+Requires-Dist: scipy (==1.15.0) ; extra == 'full'
+Requires-Dist: urllib3 (==2.3.0) ; extra == 'full'
+Requires-Dist: uvicorn (==0.34.0) ; extra == 'full'
+Requires-Dist: pysocks (==1.7.1) ; extra == 'full'
+
