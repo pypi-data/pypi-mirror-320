@@ -1,0 +1,8 @@
+rust_nurbs-0.10.0.dist-info/METADATA,sha256=KskKWUkFp6Nve1PTSLsb8HzSoPr73lJL3JCCl0T0DXI,1224
+rust_nurbs-0.10.0.dist-info/WHEEL,sha256=2fdNHxJvS2bAcI00delQ4QrnR7Oujl4cP2y-SRm5elU,96
+rust_nurbs-0.10.0.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+rust_nurbs/__init__.py,sha256=0HAObs-ANmcqQwOu52QpjCUH2VrIho0UdaoiwC1CBNk,123
+rust_nurbs/__init__.pyi,sha256=40iMVYK-OuDf9Hd5Y5HNhDN1zgNf2Mrczx2s-zG7AfQ,65017
+rust_nurbs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rust_nurbs/rust_nurbs.cp312-win_amd64.pyd,sha256=9XMNd5OpM3UBAxvIU5OQQBHTcl7arGEbmu5ipEu2fG8,498688
+rust_nurbs-0.10.0.dist-info/RECORD,,
