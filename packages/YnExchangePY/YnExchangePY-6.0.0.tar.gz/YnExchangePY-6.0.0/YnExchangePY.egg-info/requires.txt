@@ -1,0 +1,12 @@
+typing
+bs4
+plotly
+logging
+matplotlib
+mplfinance
+ccxt
+ccxt
+pandas
+urllib3
+asyncio
+aiohttp
