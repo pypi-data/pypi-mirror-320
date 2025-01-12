@@ -1,0 +1,4 @@
+scipy
+scikits-odes-core
+scikits-odes-daepack
+scikits-odes-sundials
