@@ -1,0 +1,11 @@
+click<9,>=7.0
+johnsnowlabs>=5.4.0
+fastapi
+uvicorn
+
+[cli]
+rich
+click
+
+[dev]
+johnsnowlabs>=5.4.0
