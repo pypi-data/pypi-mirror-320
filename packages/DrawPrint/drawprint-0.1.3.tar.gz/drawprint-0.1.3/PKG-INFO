@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: DrawPrint
+Version: 0.1.3
+Summary: DrawPrint
+Author: huang yi yi
+Author-email: 363766687@qq.com
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-python
+Dynamic: summary
