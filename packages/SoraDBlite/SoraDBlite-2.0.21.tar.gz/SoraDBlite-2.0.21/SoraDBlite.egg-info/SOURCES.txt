@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+SoraDBlite/SoraDBlite.py
+SoraDBlite/__init__.py
+SoraDBlite.egg-info/PKG-INFO
+SoraDBlite.egg-info/SOURCES.txt
+SoraDBlite.egg-info/dependency_links.txt
+SoraDBlite.egg-info/requires.txt
+SoraDBlite.egg-info/top_level.txt
