@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/projen_publishing_tester/__init__.py
+src/projen_publishing_tester/py.typed
+src/projen_publishing_tester.egg-info/PKG-INFO
+src/projen_publishing_tester.egg-info/SOURCES.txt
+src/projen_publishing_tester.egg-info/dependency_links.txt
+src/projen_publishing_tester.egg-info/requires.txt
+src/projen_publishing_tester.egg-info/top_level.txt
+src/projen_publishing_tester/_jsii/__init__.py
+src/projen_publishing_tester/_jsii/projen-publishing-tester@0.0.1.jsii.tgz
