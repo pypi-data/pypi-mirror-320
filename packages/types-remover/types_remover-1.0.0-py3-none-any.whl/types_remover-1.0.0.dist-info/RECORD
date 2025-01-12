@@ -1,0 +1,7 @@
+types_remover/__init__.py,sha256=9rGAkBksywski5kmgbrPPvXS2Z9QrPoW90Kp1cc3Bv0,213
+types_remover/_types_remover_ast.py,sha256=Qe7puRK_lvTr0D9_COaW9Dub2_mHvVkNdpnIwLOi6l8,1652
+types_remover/_types_remover_if.py,sha256=m11y3dppo-KyTBIf_v4qtJoQyrhw6Va7NvcewSYdZ9o,7037
+types_remover-1.0.0.dist-info/METADATA,sha256=UU36FTgq9Ge95bmzopuHVFy-doMIgXI5g5WK5SxNAYw,1251
+types_remover-1.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+types_remover-1.0.0.dist-info/licenses/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+types_remover-1.0.0.dist-info/RECORD,,
