@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+equator_qa.egg-info/PKG-INFO
+equator_qa.egg-info/SOURCES.txt
+equator_qa.egg-info/dependency_links.txt
+equator_qa.egg-info/entry_points.txt
+equator_qa.egg-info/requires.txt
+equator_qa.egg-info/top_level.txt
