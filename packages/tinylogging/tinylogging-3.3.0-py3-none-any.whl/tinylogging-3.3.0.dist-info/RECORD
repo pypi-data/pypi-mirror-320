@@ -1,0 +1,12 @@
+tinylogging/__init__.py,sha256=038JwmKR3BwxWxo3aOtUDe9cyY0XuOmD89g8P0YNkjM,748
+tinylogging/aio/__init__.py,sha256=rpCnYz5xKCBvgZBYBalNaUaXNyw5MeA-x8z4DiSQsa4,1760
+tinylogging/aio/handlers.py,sha256=xB9E2iRhU2QaFJtmN3McVFFCj5Ouq7qYDW8RuBmMG1E,1791
+tinylogging/formatter.py,sha256=UQOwSlzyg4Gy0YmSDBh491enZO9MV6DNpAlLsb0JhVw,1487
+tinylogging/level.py,sha256=cDTtFIjrznQ_A_1cH4wnVxG0DoOe1OH9u3o7lC65HEE,213
+tinylogging/record.py,sha256=KNs7lkQatL5oukew4RAYfb-kd4ht-AT3d_BgdJvJePE,1270
+tinylogging/sync/__init__.py,sha256=GiEhElem4fbskcl92znlDTUKP4AMqn_KEYpeKQpbzwc,1693
+tinylogging/sync/handlers.py,sha256=3bwmeE9KAgSAAW5LB5mQhYL-ILKCuaF2J5kBNhZoAkI,2289
+tinylogging-3.3.0.dist-info/LICENSE,sha256=lIvfDBWlmjBWJEiPluE_OYUlZ9B1VSpW3N1cE_pnwr8,1063
+tinylogging-3.3.0.dist-info/METADATA,sha256=XBO4FoX6AP9sLLGtEZWUceTHQ-DAVvqw_wZrEzph29s,3132
+tinylogging-3.3.0.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+tinylogging-3.3.0.dist-info/RECORD,,
