@@ -1,0 +1,57 @@
+Metadata-Version: 2.2
+Name: mqr-quality
+Version: 0.5.4
+Summary: Design and manufacturing quality improvement toolkit
+Author: Nikolas Crossan, Kevin Otto
+Maintainer-email: mqr developers <mqr.python@gmail.com>
+Project-URL: Documentation, https://nklsxn.github.io/mqr/latest/
+Project-URL: Repository, https://github.com/nklsxn/mqr
+Keywords: quality,manufacturing,six sigma,design of experiments,dmaic,anova,grr,msa
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Manufacturing
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: ipython
+Requires-Dist: pytest
+Requires-Dist: markdown==3.6
+Requires-Dist: matplotlib==3.8.0
+Requires-Dist: mergedeep==1.3.4
+Requires-Dist: numpy==1.26.4
+Requires-Dist: openpyxl==3.1.2
+Requires-Dist: pandas==2.2.2
+Requires-Dist: probscale==0.2.5
+Requires-Dist: pydoe3==1.0.3
+Requires-Dist: scipy==1.13.1
+Requires-Dist: seaborn==0.13.2
+Requires-Dist: statsmodels==0.14.1
+
+MQR
+---
+This library is a python toolkit for manufacturing and design statistics.
+
+Installation
+------------
+`pip install mqr-quality`
+
+Import the package using:<br>
+`import mqr`
+
+Documentation
+-------------
+The documentation, including a user guide and API reference is at https://nklsxn.github.io/mqr/latest/.
+
+A set of detailed examples is available in the repository https://github.com/nklsxn/mqrpy-guide.
+
+License
+-------
+This package is provided under the BSD License (3-clause).
+
+Credit
+------
+Copyright (c) 2024 Nikolas Crossan, Kevin Otto
+
+Supported by the University of Melbourne<br>
+Department of Mechanical Engineering
