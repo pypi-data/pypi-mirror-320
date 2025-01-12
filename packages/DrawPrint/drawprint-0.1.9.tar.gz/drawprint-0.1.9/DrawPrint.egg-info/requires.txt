@@ -1,0 +1,5 @@
+pyfiglet>=0.8.post1
+pygame>=2.6.0.post1
+gameturtle>=0.280.post1
+sprites>=10.3.0.post1
+pyecharts>=2.0.6.post1
