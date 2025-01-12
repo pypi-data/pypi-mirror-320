@@ -1,0 +1,15 @@
+spython>=0.2.0
+packaging
+Jinja2
+jsonschema
+ruamel.yaml
+requests
+
+[all]
+spython>=0.2.0
+packaging
+Jinja2
+jsonschema
+ruamel.yaml
+requests
+pytest>=4.6.2
