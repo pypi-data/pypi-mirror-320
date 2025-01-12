@@ -1,0 +1,13 @@
+declinate/__init__.py,sha256=ghz0W-dUKxsJSn2-1L7R00x8_VYYYW8d2s8RwMPQvUA,110
+declinate/__main__.py,sha256=PW2x7N6QrmL6nuChPg9UIwzvZbLZZIrQTwm90Q1hrgI,150
+declinate/check.py,sha256=Q6LDUUiTSGA2tWSzpycxSY0uAe5LW8Q-3YknHF1H0cg,771
+declinate/cli.py,sha256=htGsCjkNJUCBvqt2BQRp0G1N3Oi6VCSAU-aHQJOQmYA,11270
+declinate/declinate.py,sha256=_EB9UPvoE_dlEkV7pdmS6Gk3wzO7vBJrP55SeRYxgR0,2059
+declinate/gen.py,sha256=FvMnP_6NpVp6o-zp7sIDg4PUNabljQwm18rxBBg9kLU,31817
+declinate/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+declinate-0.0.5.dist-info/LICENSE.txt,sha256=B05uMshqTA74s-0ltyHKI6yoPfJ3zYgQbvcXfDVGFf8,10280
+declinate-0.0.5.dist-info/METADATA,sha256=nPnSbB-N2M0Qy5FoEa9sKG_amSqtdx2kqlA5Me4tPuY,4476
+declinate-0.0.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+declinate-0.0.5.dist-info/entry_points.txt,sha256=O0_UTXPnWEXohTbDsdZPsQX6jo4_ncC9B0ENeKID-OY,49
+declinate-0.0.5.dist-info/top_level.txt,sha256=7_CJ1XRgSvvS-1D2MzszCVhFPLY6dgpHlilTFYdBO4w,10
+declinate-0.0.5.dist-info/RECORD,,
