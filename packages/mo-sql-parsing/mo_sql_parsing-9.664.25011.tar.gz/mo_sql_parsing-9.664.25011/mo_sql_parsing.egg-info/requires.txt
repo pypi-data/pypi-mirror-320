@@ -1,0 +1,14 @@
+mo-dots==10.659.25005
+mo-future==7.584.24095
+mo-imports==7.584.24095
+mo-parsing==8.661.25011
+
+[tests]
+mo-testing==7.562.24075
+mo-threads==6.570.24076
+mo-files==6.570.24076
+mo-streams==1.570.24076
+zstandard>=0.23.0
+psutil>=6.1.1
+objgraph>=3.6.2
+pympler
