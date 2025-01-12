@@ -1,0 +1,9 @@
+argparse
+
+[connectors]
+carconnectivity-connector-volkswagen
+carconnectivity-connector-skoda
+
+[plugins]
+carconnectivity-plugin-mqtt
+carconnectivity-plugin-abrp
