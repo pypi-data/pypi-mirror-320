@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: sugardata
+Version: 0.0.1
+Summary: Generates synthetic datasets tailored for transformer-based models
+Home-page: https://github.com/okanyenigun/sugardata
+Author: Okan Yenigün
+Author-email: okanyenigun@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# sugardata
+
+**sugardata** generates synthetic datasets tailored for transformer-based models across a variety of tasks.
+`Work in Progress.`
+
+# Installation
+
+You can install **sugardata** via pip:
+
+```bash
+pip install sugardata
+```

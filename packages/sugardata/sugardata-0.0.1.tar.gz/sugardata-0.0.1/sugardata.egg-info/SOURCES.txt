@@ -1,0 +1,10 @@
+setup.py
+sugardata/__init__.py
+sugardata/api.py
+sugardata.egg-info/PKG-INFO
+sugardata.egg-info/SOURCES.txt
+sugardata.egg-info/dependency_links.txt
+sugardata.egg-info/requires.txt
+sugardata.egg-info/top_level.txt
+sugardata/utility/__init__.py
+sugardata/utility/tapas.py
