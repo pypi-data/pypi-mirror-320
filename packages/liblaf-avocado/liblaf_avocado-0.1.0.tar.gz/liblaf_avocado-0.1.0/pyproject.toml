@@ -1,0 +1,35 @@
+#:schema https://json.schemastore.org/pyproject.json
+# https://packaging.python.org/en/latest/specifications/pyproject-toml/
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[dependency-groups]
+dev = ["icecream~=2.1.4"]
+
+[project]
+authors = [
+  { email = "30631553+liblaf@users.noreply.github.com", name = "liblaf" },
+]
+dependencies = ["lazy-loader~=0.4", "loguru~=0.7.3", "rich~=13.9.4"]
+description = "Add your description here"
+keywords = []
+license = "MIT"
+name = "liblaf-avocado"
+readme = "docs/README.md"
+requires-python = "~=3.12"
+version = "0.1.0"
+
+[project.urls]
+"Changelog" = "https://github.com/liblaf/avocado/blob/main/CHANGELOG.md"
+"Homepage" = "https://github.com/liblaf/avocado"
+"Issue Tracker" = "https://github.com/liblaf/avocado/issues"
+"Release Notes" = "https://github.com/liblaf/avocado/releases"
+"Source Code" = "https://github.com/liblaf/avocado"
+
+[tool.check-wheel-contents]
+ignore = ["W002"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/avocado"]
