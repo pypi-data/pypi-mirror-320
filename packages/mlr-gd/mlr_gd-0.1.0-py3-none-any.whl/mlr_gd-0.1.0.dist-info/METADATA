@@ -1,0 +1,38 @@
+Metadata-Version: 2.2
+Name: mlr-gd
+Version: 0.1.0
+Summary: A package for multiple linear regression by gradient descent.
+Home-page: https://github.com/DrSolidDevil/mlr-gd/
+Author: DrSolidDevil
+License: BSD 3-Clause
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=2.2.1
+Provides-Extra: dev
+Requires-Dist: twine>=6.0.1; extra == "dev"
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+<h1 align="center"> 
+  <img src="https://raw.githubusercontent.com/DrSolidDevil/mlr-gd/main/logo.png" width="300">
+  <br>
+</h1>
+
+Multiple linear regression by gradient descent.
+<br><br>
+<h4>Disclaimer:</h4>
+This code is very early on and my first proper attempt to create a package so things may be a bit weird/not up to standard.
+
+
