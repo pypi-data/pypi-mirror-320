@@ -1,0 +1,12 @@
+.ipynb_checkpoints/
+dist/
+build/
+_old/
+__pycache__
+*.egg-info/
+tests/data
+tests/log*
+tests/test
+tests/*.ipynb
+Change_history.md
+.venv
