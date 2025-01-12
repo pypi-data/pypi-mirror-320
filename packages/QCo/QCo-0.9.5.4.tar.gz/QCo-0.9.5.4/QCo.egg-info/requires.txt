@@ -1,0 +1,9 @@
+protobuf
+cryptography
+bs4
+urllib3==1.26.16
+pydantic
+requests
+python-box
+PySocks
+loguru
