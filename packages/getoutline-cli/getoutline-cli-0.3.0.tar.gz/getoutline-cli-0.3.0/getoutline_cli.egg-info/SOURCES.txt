@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+getoutline_cli/__init__.py
+getoutline_cli/getoutline_cli.py
+getoutline_cli.egg-info/PKG-INFO
+getoutline_cli.egg-info/SOURCES.txt
+getoutline_cli.egg-info/dependency_links.txt
+getoutline_cli.egg-info/entry_points.txt
+getoutline_cli.egg-info/requires.txt
+getoutline_cli.egg-info/top_level.txt
