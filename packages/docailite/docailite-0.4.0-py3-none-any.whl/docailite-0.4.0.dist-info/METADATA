@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: docailite
+Version: 0.4.0
+Summary: DocAI Lite Python module
+Author: Sonu Sudhakaran
+Author-email: sonu.sudhakaran@gmail.com
+License-File: LICENSE
+Requires-Dist: langchain==0.2.6
+Requires-Dist: langchain-openai==0.1.11
+Requires-Dist: langchain-community
+Requires-Dist: langchainhub
+Requires-Dist: langgraph
+Requires-Dist: llmwhisperer-client==0.2.0
+Requires-Dist: pydantic==2.7.4
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: Flask==2.2.0
+Requires-Dist: Werkzeug==2.2.3
+Requires-Dist: colorama==0.4.6
+Requires-Dist: psycopg2-binary
+Requires-Dist: sqlalchemy
+Requires-Dist: duckduckgo-search
+Requires-Dist: greenlet
+Requires-Dist: pgvector
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: streamlit
+Requires-Dist: torch
+Requires-Dist: azure-core
+Requires-Dist: azure-ai-formrecognizer
+Requires-Dist: redis
+Requires-Dist: celery
+Requires-Dist: pdf2image
+Requires-Dist: importlib
