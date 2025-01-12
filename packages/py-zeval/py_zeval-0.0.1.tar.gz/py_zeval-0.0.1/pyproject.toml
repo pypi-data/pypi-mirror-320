@@ -1,0 +1,7 @@
+[project]
+name = "py-zeval"
+version = "0.0.1"
+description = "LLM as judge for your unit tests"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
