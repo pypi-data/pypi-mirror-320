@@ -1,0 +1,5 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+name = "luvex"
+version = "0.1.5"  # Change this to 0.1.2
