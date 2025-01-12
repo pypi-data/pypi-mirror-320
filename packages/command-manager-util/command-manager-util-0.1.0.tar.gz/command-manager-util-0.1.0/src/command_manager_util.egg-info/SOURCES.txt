@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/command_manager_util.egg-info/PKG-INFO
+src/command_manager_util.egg-info/SOURCES.txt
+src/command_manager_util.egg-info/dependency_links.txt
+src/command_manager_util.egg-info/entry_points.txt
+src/command_manager_util.egg-info/top_level.txt
+src/main/__init__.py
