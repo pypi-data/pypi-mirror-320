@@ -1,0 +1,1 @@
+# We can't test category, because server gets overloaded. I may fix that in a few months idk
