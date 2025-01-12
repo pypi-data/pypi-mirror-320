@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+vcat/__init__.py
+vcat/cli.py
+vcat.egg-info/PKG-INFO
+vcat.egg-info/SOURCES.txt
+vcat.egg-info/dependency_links.txt
+vcat.egg-info/entry_points.txt
+vcat.egg-info/requires.txt
+vcat.egg-info/top_level.txt
