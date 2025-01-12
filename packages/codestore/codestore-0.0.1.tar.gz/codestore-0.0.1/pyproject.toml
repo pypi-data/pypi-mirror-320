@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codestore"
+version = "0.0.1"
+description = "A placeholder package to reserve the name 'codestore'"
+authors = [
+    { name="Harshith", email="theharshithdev@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = ["dependencies"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["codestore"]
+include-package-data = false

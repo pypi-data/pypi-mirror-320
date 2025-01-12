@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/codestore/__init__.py
+src/codestore.egg-info/PKG-INFO
+src/codestore.egg-info/SOURCES.txt
+src/codestore.egg-info/dependency_links.txt
+src/codestore.egg-info/top_level.txt
