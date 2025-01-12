@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "torrent-tracker-search"
+version = "0.2.3"
+description = "Torrent Tracker Search Lib"
+authors = ["Николай Витальевич Никоноров <nnv@bitt.moe>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://gitlab.com/Bitnik212/torrent-tracker-search"
+
+[tool.poetry.dependencies]
+python = "^3.10.16"
+aiohttp = "3.11.11"
+beautifulsoup4 = "4.12.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
