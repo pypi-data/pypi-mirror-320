@@ -1,0 +1,13 @@
+name: binder
+channels:
+- conda-forge
+- nodefaults
+dependencies:
+- python >=3.9
+- seamless-3dep
+# optional
+- gdal
+# notebooks
+- rioxarray
+- geopandas >=1
+- pywbt >=0.2.7
