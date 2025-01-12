@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+disk_cleanup/__init__.py
+disk_cleanup/__main__.py
+disk_cleanup/py.typed
+disk_cleanup.egg-info/PKG-INFO
+disk_cleanup.egg-info/SOURCES.txt
+disk_cleanup.egg-info/dependency_links.txt
+disk_cleanup.egg-info/entry_points.txt
+disk_cleanup.egg-info/top_level.txt

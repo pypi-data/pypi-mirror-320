@@ -1,0 +1,2 @@
+[console_scripts]
+disk-cleanup = disk_cleanup.__main__:main
