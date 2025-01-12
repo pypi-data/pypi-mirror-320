@@ -1,0 +1,14 @@
+CHANGELOG.md
+LICENSE-APACHE
+LICENSE-MIT
+MANIFEST.in
+README.rst
+setup.py
+tinyhtml/__init__.py
+tinyhtml/py.typed
+tinyhtml.egg-info/PKG-INFO
+tinyhtml.egg-info/SOURCES.txt
+tinyhtml.egg-info/dependency_links.txt
+tinyhtml.egg-info/not-zip-safe
+tinyhtml.egg-info/requires.txt
+tinyhtml.egg-info/top_level.txt

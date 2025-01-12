@@ -1,0 +1,4 @@
+
+[test]
+jinja2
+pandas
