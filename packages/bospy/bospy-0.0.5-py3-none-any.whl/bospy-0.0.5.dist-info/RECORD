@@ -1,0 +1,10 @@
+bospy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bospy/bos.py,sha256=dmZJSOkSjDhSWLRaW8DoPKuUvgPMYF0Dc2b2-VfFX_s,10092
+bospy/comms_pb2.py,sha256=W1Ty2jUIopjkN2v-1FrLMGTzpkD4TxFTXG_rhVmNhyg,8531
+bospy/comms_pb2.pyi,sha256=-hB8PC73HGMjcIa_Z5pgc41IH3O13JyS5ROEkcTCmZw,10068
+bospy/comms_pb2_grpc.py,sha256=McyI-A_BIQwuQnr_UswCa6FTFlLWdC1fMEuTdMDpWcs,18154
+bospy/decode_test.py,sha256=4Okd2Pjl0O1y9b8cGE9vXkMq6hNDh6XU9Zl3_b_QIXY,722
+bospy/utils.py,sha256=z0ynWkt-g5x6_QtBtrViK3Gc9lI8W6BPSysXbS93_Wo,1587
+bospy-0.0.5.dist-info/METADATA,sha256=MTC7dfx3v8W0y-mogh3y8w20rUSx_9Kr4X5WTSWVxbA,1756
+bospy-0.0.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+bospy-0.0.5.dist-info/RECORD,,
