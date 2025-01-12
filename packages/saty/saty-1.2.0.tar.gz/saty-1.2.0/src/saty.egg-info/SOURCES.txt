@@ -1,0 +1,16 @@
+LICENSE
+module-desc.md
+pyproject.toml
+setup.cfg
+src/saty/__init__.py
+src/saty/main.py
+src/saty/p1.py
+src/saty/p2.py
+src/saty/p3.py
+src/saty/p4.py
+src/saty/p5.py
+src/saty/p6.py
+src/saty.egg-info/PKG-INFO
+src/saty.egg-info/SOURCES.txt
+src/saty.egg-info/dependency_links.txt
+src/saty.egg-info/top_level.txt
