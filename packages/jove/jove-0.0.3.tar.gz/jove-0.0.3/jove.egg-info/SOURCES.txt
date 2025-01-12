@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+jove/__init__.py
+jove/analysis.py
+jove.egg-info/PKG-INFO
+jove.egg-info/SOURCES.txt
+jove.egg-info/dependency_links.txt
+jove.egg-info/entry_points.txt
+jove.egg-info/requires.txt
+jove.egg-info/top_level.txt
+jove/templates/README.md
+jove/templates/code.py
+jove/templates/lib.py
+jove/templates/shell.sh
+tests/test_analysis.py
