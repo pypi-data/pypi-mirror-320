@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+fabricpy/__init__.py
+fabricpy/block.py
+fabricpy/cli.py
+fabricpy/generator.py
+fabricpy/item.py
+fabricpy/mod_config.py
+fabricpy/utils.py
+fabricpy.egg-info/PKG-INFO
+fabricpy.egg-info/SOURCES.txt
+fabricpy.egg-info/dependency_links.txt
+fabricpy.egg-info/entry_points.txt
+fabricpy.egg-info/top_level.txt
