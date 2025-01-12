@@ -1,0 +1,5 @@
+SimpleITK
+nibabel
+numpy
+torch
+totalsegmentator
