@@ -1,0 +1,9 @@
+requests
+
+[async]
+aiohttp
+
+[dev]
+pytest
+pytest-asyncio
+pytest-cov
