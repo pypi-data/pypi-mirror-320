@@ -1,0 +1,14 @@
+aws_role: dev
+
+istest: 1
+
+news:
+  com_tag: test
+
+
+###################################################
+data:
+  diroot:  "./ztmp"
+  dirdata: "./ztmp/data"
+
+
