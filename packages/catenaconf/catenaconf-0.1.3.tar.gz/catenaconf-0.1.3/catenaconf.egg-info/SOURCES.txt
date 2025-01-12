@@ -1,0 +1,15 @@
+LICENSE
+README-pkg.md
+README.md
+pyproject.toml
+setup.py
+catenaconf/__init__.py
+catenaconf/ops.py
+catenaconf.egg-info/PKG-INFO
+catenaconf.egg-info/SOURCES.txt
+catenaconf.egg-info/dependency_links.txt
+catenaconf.egg-info/top_level.txt
+catenaconf/catena_config/__init__.py
+catenaconf/catena_config/kvconfig.py
+tests/__init__.py
+tests/test_config.py
