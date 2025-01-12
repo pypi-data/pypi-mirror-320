@@ -1,0 +1,74 @@
+Metadata-Version: 2.3
+Name: cursor-snap
+Version: 2.1.0
+Summary: A utility tool to manage and reset Cursor Editor app IDs
+License: MIT
+Author: Adel Elawady
+Author-email: adel50ali50@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pathlib (>=1.0.1,<2.0.0)
+Requires-Dist: rich (>=10.0.0,<11.0.0)
+Description-Content-Type: text/markdown
+
+# cursor-snap
+
+ Cursor Trail Reset Tool
+
+## Installation
+
+You can install the package directly from PyPI:
+
+```bash
+pip install cursor-snap
+```
+
+Or install from source:
+
+```bash
+git clone https://github.com/adelelawady/cursor-snap.git
+cd cursor-snap
+pip install .
+```
+
+## Features
+
+The tool provides the following features:
+- Cursor Position Management: Save and restore cursor positions
+- Reset App IDs: Clear stored cursor positions
+- View Current IDs: Display active cursor position identifiers
+- Cross-platform Support: Works on Windows, macOS, and Linux
+
+## Usage
+
+### Command Line Interface
+
+```bash
+cursor-snap
+```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Author
+
+Adel Elawady (adel50ali50@gmail.com)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+## Support
+
+If you encounter any issues or have questions, please file an issue on the [GitHub repository](https://github.com/adelelawady/cursor-snap/issues).
+
