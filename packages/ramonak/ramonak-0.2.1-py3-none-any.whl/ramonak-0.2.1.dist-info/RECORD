@@ -1,0 +1,16 @@
+ramonak/__about__.py,sha256=7VyHp48OUTQQUylqTtD2KYmDnZ1N5qU2-WFiy4BFYEo,23
+ramonak/__init__.py,sha256=ywNJarOAZCy_BCn-vmG2xNS8vRVZny1ZWZawcL7CfXQ,444
+ramonak/interactive.py,sha256=MLva5GdZXrXp3ZIkcETkdJp8Oa-f0PW548KZ1eeywHU,208
+ramonak/stopwords.py,sha256=3o7hrXrHPJjCd7UvLqPTqDQKsW3tN2s29Ffa96aMvf4,1024
+ramonak/tokenizer.py,sha256=z3jyKJHzpCfXbu2RY_poV3puT9NSiJeCS3XN9Bqf_MQ,964
+ramonak/utils.py,sha256=8Kwow9WR8fmTWtx7wiYV7m82CsXLepHqzmQRJm1SytY,209
+ramonak/packages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ramonak/packages/actions.py,sha256=7uv1ewPhgc28Hzj8NrhJqbUBMI_yMqZMqeQdazZQoLQ,2569
+ramonak/packages/nexus.json,sha256=vFoAFCR3j9WEnneFOQ_uOK_Frr5h-lhnOWTurC2X5_w,1010
+ramonak/stemmer/__init__.py,sha256=UeHVSRt3zngX1zUrvT0Osxu2KuVgihvdfdwuy2omPXg,65
+ramonak/stemmer/base.py,sha256=7UTMb7RFeA7TlZ3orlMVOjBEBkuuu0PkOqHb1cWC7mA,945
+ramonak/stemmer/flexistat.py,sha256=B0XxYlzXEaciNjzdbFQlP0j8JhIKoSvhv_vrFQpEJjg,1129
+ramonak-0.2.1.dist-info/METADATA,sha256=QvHEU9F1eOu5u6CzzZGkCLIYC2QDiuvSlDLxZt4K49k,1525
+ramonak-0.2.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ramonak-0.2.1.dist-info/licenses/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+ramonak-0.2.1.dist-info/RECORD,,
