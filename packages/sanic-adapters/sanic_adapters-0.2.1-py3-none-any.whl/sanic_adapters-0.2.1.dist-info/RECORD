@@ -1,0 +1,10 @@
+sanic_adapters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sanic_adapters/adapters.py,sha256=CCM53gPq9Ktq8gy10CcosyyoP4TVlTXZHSQucRm_QFs,2884
+sanic_adapters/decorators.py,sha256=J5feNm1MmAGg-fGDqI-6kRZJjoOIinzQyVkNs3qr5-g,748
+sanic_adapters/formatters.py,sha256=NfRmo6Md2OmCAqRt56pgC9W-WXt5bf_t16tb_UuJaGY,1030
+sanic_adapters/resources.py,sha256=EYGohd0FyjgD2e0ksicG9wcaHxTAOmpEgWkSekF59uo,1379
+sanic_adapters/routing.py,sha256=rgkwUfAac7yaba9pkEWee_Cd0zjdqOIOqrsSjfpG80Q,2065
+sanic_adapters-0.2.1.dist-info/LICENSE,sha256=LFuugNNK_UR27VZdezAXEJDDzJIBZ6Q1E7jYBOoKM2A,1505
+sanic_adapters-0.2.1.dist-info/METADATA,sha256=J8As1mU4d6WpJStm5uY_8cDYii4EbKKLKU_QfCbb9RU,7704
+sanic_adapters-0.2.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+sanic_adapters-0.2.1.dist-info/RECORD,,
