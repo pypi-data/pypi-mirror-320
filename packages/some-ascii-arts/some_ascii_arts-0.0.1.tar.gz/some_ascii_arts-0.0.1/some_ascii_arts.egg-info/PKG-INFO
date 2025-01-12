@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: some_ascii_arts
+Version: 0.0.1
+Summary: Display some ASCII arts
+Description-Content-Type: text/markdown
+
+This is just a sample package.
+
+Use `pip install some-ascii-arts` to install this package.
+
+Enter `asciiart [art-type]` to draw the ASCII art. Select `art-type` from `b`, `c`, or `m` for `banana`, `chocolate`, or `moon`, respectively.
+
+I obtained the ASCII art from [this site](https://www.asciiart.eu)

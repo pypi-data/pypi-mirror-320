@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = 'some_ascii_arts'
+version = '0.0.1'
+description = 'Display some ASCII arts'
+readme = 'README.md'
+
+[project.scripts]
+asciiart = "some_ascii_arts.main:main"

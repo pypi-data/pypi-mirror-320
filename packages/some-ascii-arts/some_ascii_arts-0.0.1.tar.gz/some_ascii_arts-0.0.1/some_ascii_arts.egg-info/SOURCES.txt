@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+some_ascii_arts/__init__.py
+some_ascii_arts/main.py
+some_ascii_arts/utils.py
+some_ascii_arts.egg-info/PKG-INFO
+some_ascii_arts.egg-info/SOURCES.txt
+some_ascii_arts.egg-info/dependency_links.txt
+some_ascii_arts.egg-info/entry_points.txt
+some_ascii_arts.egg-info/top_level.txt
