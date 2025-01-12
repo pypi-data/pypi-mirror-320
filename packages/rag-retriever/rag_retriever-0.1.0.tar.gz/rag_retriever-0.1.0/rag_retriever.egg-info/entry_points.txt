@@ -1,0 +1,2 @@
+[console_scripts]
+rag-retriever = rag_retriever.cli:main
