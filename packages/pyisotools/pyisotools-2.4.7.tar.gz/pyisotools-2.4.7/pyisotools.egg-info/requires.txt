@@ -1,0 +1,11 @@
+bs4
+chardet
+dolreader
+qdarkstyle
+sortedcontainers
+pillow
+pygithub
+PySide6
+pyinstaller
+pylint
+setuptools
