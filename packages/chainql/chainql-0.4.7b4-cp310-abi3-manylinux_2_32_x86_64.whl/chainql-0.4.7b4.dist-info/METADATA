@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: chainql
+Version: 0.4.7b4
+Requires-Dist: patchelf ; platform_system == 'Linux'
+Requires-Python: >=3.10
+Project-URL: Homepage, https://github.com/UniqueNetwork/pychainql
