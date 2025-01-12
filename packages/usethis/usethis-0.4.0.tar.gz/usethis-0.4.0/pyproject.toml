@@ -1,0 +1,161 @@
+[build-system]
+build-backend = "hatchling.build"
+
+requires = [ "hatch-vcs", "hatchling" ]
+
+[project]
+name = "usethis"
+description = "Automate Python project setup and development tasks that are otherwise performed manually."
+readme = "README.md"
+keywords = [ "init", "project", "setup", "start", "usethis" ]
+license = { file = "LICENSE" }
+authors = [
+  { name = "Nathan McDougall", email = "nathan.j.mcdougall@gmail.com" },
+]
+requires-python = ">=3.11"
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development",
+  "Topic :: Software Development :: Quality Assurance",
+  "Topic :: Software Development :: Testing",
+]
+dynamic = [
+  "urls",
+  "version",
+]
+dependencies = [
+  "mergedeep>=1.3.4",
+  "packaging>=24.1",
+  "pydantic>=2.9.2",
+  "requests>=2.32.3",
+  "rich>=13.8.1",
+  "ruamel-yaml>=0.18.6",
+  "tomlkit>=0.13.2",
+  "typer>=0.12.5",
+]
+scripts.usethis = "usethis.__main__:app"
+
+[dependency-groups]
+dev = [
+  "datamodel-code-generator[http]>=0.26.2",
+  "deptry>=0.20.0",
+  "import-linter>=2.1",
+  "pre-commit>=4.0.1",
+  "pyright>=1.1.391",
+  "ruff>=0.7.1",
+]
+test = [
+  "coverage[toml]>=7.6.3",
+  "gitpython>=3.1.43",
+  "pytest>=8.3.2",
+  "pytest-cov>=5.0.0",
+  "pytest-emoji>=0.2.0",
+  "pytest-md>=0.2.0",
+]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.metadata.hooks.vcs.urls]
+"Source Code" = "https://github.com/nathanjmcdougall/usethis-python"
+"Bug Tracker" = "https://github.com/nathanjmcdougall/usethis-python/issues"
+"Releases" = "https://github.com/nathanjmcdougall/usethis-python/releases"
+"Source Archive" = "https://github.com/nathanjmcdougall/usethis-python/archive/{commit_hash}.zip"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/usethis/_version.py"
+
+[tool.ruff]
+line-length = 88
+
+src = [ "src" ]
+lint.select = [
+  "A",
+  "C4",
+  "E4",
+  "E7",
+  "E9",
+  "EM",
+  "ERA",
+  "F",
+  "FIX002",
+  "FURB",
+  "I",
+  "INP",
+  "PLE",
+  "PLR",
+  "PT",
+  "RUF",
+  "SIM",
+  "UP",
+]
+lint.ignore = [ "PLR2004", "SIM108" ]
+lint.per-file-ignores."tests/**/*.py" = [ "INP", "S101" ]
+
+[tool.pyproject-fmt]
+keep_full_version = true
+
+[tool.pytest.ini_options]
+testpaths = [ "tests" ]
+addopts = [
+  "--import-mode=importlib",
+]
+filterwarnings = [ "error" ]
+
+[tool.coverage.run]
+source = [ "src" ]
+omit = [ "*/pytest-of-*/*" ]
+
+[tool.coverage.report]
+exclude_also = [
+  "if TYPE_CHECKING:",
+  "raise AssertionError",
+  "raise NotImplementedError",
+  "assert_never(.*)",
+  "class .*\\bProtocol\\):",
+  "@(abc\\.)?abstractmethod",
+]
+
+[tool.uv]
+default-groups = [ "test", "dev" ]
+
+[tool.importlinter]
+root_packages = [ "usethis" ]
+
+[[tool.importlinter.contracts]]
+name = "Modular Design"
+type = "layers"
+layers = [
+  "_test",
+  "__main__",
+  "_interface",
+  "_core",
+  "_tool | _ci",
+  "_integrations",
+  "_console",
+  "_config",
+  "errors | _subprocess",
+  "_pipeweld",
+]
+containers = [ "usethis" ]
+exhaustive = true
+exhaustive_ignores = [ "_version" ]
+
+[[tool.importlinter.contracts]]
+name = "Integrations Modular Design"
+type = "layers"
+layers = [
+  "bitbucket | github | pre_commit | pytest | ruff",
+  "uv | pydantic",
+  "pyproject | yaml",
+]
+containers = [ "usethis._integrations" ]
+exhaustive = true
