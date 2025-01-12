@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+structuredscraper/__init__.py
+structuredscraper/scraper.py
+structuredscraper/utils.py
+structuredscraper.egg-info/PKG-INFO
+structuredscraper.egg-info/SOURCES.txt
+structuredscraper.egg-info/dependency_links.txt
+structuredscraper.egg-info/requires.txt
+structuredscraper.egg-info/top_level.txt
+structuredscraper/tests/__init__.py
+structuredscraper/tests/scraper_tests.py
