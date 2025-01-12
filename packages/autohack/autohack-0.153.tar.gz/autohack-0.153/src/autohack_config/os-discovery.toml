@@ -1,0 +1,13 @@
+[linux]
+    [[linux.assay]]
+    command = "uname -r"
+    file_name = "uname.txt"
+
+    [[linux.assay]]
+    command = "cat /etc/os-release"
+    file_name = "os-release.txt"
+
+[windows]
+    [[windows.assay]]
+    command = "SYSTEMINFO"
+    file_name = "systeminfo.txt"
