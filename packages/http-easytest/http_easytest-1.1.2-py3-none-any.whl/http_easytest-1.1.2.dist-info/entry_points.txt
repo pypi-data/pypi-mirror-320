@@ -1,0 +1,2 @@
+[console_scripts]
+easytest = easytest:execute_from_command_line
