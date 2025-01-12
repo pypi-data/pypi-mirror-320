@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "python-defer-lib"
+version = "0.2.0"
+description = ""
+authors = ["amitlaloush <amitlaloush@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "python-defer-lib/" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+asyncio = "^3.4.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
