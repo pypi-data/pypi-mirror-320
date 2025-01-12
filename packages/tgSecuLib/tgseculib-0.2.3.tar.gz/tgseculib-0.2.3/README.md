@@ -1,0 +1,250 @@
+# Security library for Telegram bot
+
+This library provides security features for Telegram bots, including user authentication, registration, and spam protection. It is designed to simplify the integration of security mechanisms into your Python projects using the pyTelegramBotAPI library.
+
+## Description
+
+The library includes the following modules:
+
+- **Authentication**: Allows users to log in securely using their phone numbers.
+- **Registration**: Provides the registration process for new users.
+- **Antispam**: Protects the bot from spam and abuse.
+
+## Installation
+
+### Preliminary requirements
+
+- Python 3.7 or higher
+- Python library-telegram-bot
+- Cryptography Library
+
+### Installation via pip
+
+You can install the library using pip. To do this, run the following command:
+
+    bash
+    pip install tgSecuLib
+
+
+### Installation from source
+
+If you want to install the library from source, follow these steps:
+
+1. Clone the repository
+
+
+    cd tgSecuLib
+
+2. Install the library
+
+
+    pip install .
+
+## Usage
+
+### Importing a library
+
+    python
+    from tgSecuLib.main import SecuritySystem
+
+### Usage example
+
+    import telebot
+    from datetime import datetime
+    import pytz
+    from telebot import types
+    from timezonefinder import TimezoneFinder
+    import os
+    from tgSecuLib.main import SecuritySystem
+    
+    # Проверка наличия токена
+    API_TOKEN = '7573490194:AAHsU26H52_P5kA_vA2Gb5UtNzfzhoiALe4'
+    
+    bot = telebot.TeleBot(API_TOKEN)
+    security = SecuritySystem()
+    
+    # Словарь часовых поясов вынесен на уровень модуля
+    TIMEZONES = {
+        'Россия': 'Europe/Moscow',
+        'США': 'America/New_York',
+        'Канада': 'America/Toronto',
+        'Австралия': 'Australia/Sydney',
+        'Германия': 'Europe/Berlin',
+        'Франция': 'Europe/Paris',
+        'Италия': 'Europe/Rome',
+        'Япония': 'Asia/Tokyo',
+        'Корея': 'Asia/Seoul',
+        'Казахстан': 'Asia/Almaty',
+        'Турция': 'Europe/Istanbul'
+    }
+    
+    
+    @bot.message_handler(commands=['start'])
+    def send_welcome(message):
+        """Обработка команды /start"""
+        try:
+            user_id = message.from_user.id
+            chat_id = message.chat.id
+    
+            # Проверяем, зарегистрирован ли пользователь
+            if not security.is_registered(user_id):
+                markup = types.ReplyKeyboardMarkup(
+                    one_time_keyboard=True, resize_keyboard=True)
+                markup.add(types.KeyboardButton(
+                    'Отправить номер телефона', request_contact=True))
+                msg = bot.reply_to(message,
+                                   "Для использования бота необходимо зарегистрироваться. Пожалуйста, отправьте свой номер телефона:",
+                                   reply_markup=markup)
+                bot.register_next_step_handler(msg, process_phone_step)
+                return
+    
+            if security.check_spam(user_id):
+                bot.reply_to(
+                    message, "Пожалуйста, подождите немного перед следующим запросом.")
+                return
+    
+            security.log_action(user_id)
+            send_country_list(chat_id)
+        except Exception as e:
+            handle_error(message, str(e))
+    
+    
+    def send_country_list(chat_id):
+        """Отправка списка доступных стран"""
+        countries = ', '.join(TIMEZONES.keys())
+        bot.send_message(chat_id,
+                         f"Выберите название страны, время которой хотите узнать: \n{countries}")
+    
+    
+    @bot.message_handler(content_types=['contact', 'text'])
+    def process_phone_step(message):
+        """Обработка введенного номера телефона"""
+        try:
+            user_id = message.from_user.id
+            chat_id = message.chat.id
+    
+            # Если пользователь уже зарегистрирован, передаем управление в send_time
+            if security.is_registered(user_id):
+                send_time(message)
+                return
+    
+            # Обработка номера телефона
+            if message.content_type == 'contact':
+                phone = message.contact.phone_number
+            else:
+                phone = message.text.strip()
+                # Если это не похоже на телефон, продолжаем ожидать номер
+                if not (phone.isdigit() or (phone.startswith('+') and phone[1:].isdigit())):
+                    markup = types.ReplyKeyboardMarkup(
+                        one_time_keyboard=True, resize_keyboard=True)
+                    markup.add(types.KeyboardButton(
+                        'Отправить номер телефона', request_contact=True))
+                    msg = bot.reply_to(message,
+                                       "Пожалуйста, отправьте корректный номер телефона:",
+                                       reply_markup=markup)
+                    bot.register_next_step_handler(msg, process_phone_step)
+                    return
+    
+            # Форматирование номера телефона
+            if not phone.startswith('+'):
+                phone = '+7' + phone.lstrip('7').lstrip('8')
+    
+            # Проверяем, есть ли уже такой номер в базе
+            if security.phone_exists(phone):
+                success, msg = security.link_user_to_phone(user_id, phone)
+            else:
+                success, msg = security.register_user(user_id, phone)
+    
+            if success:
+                markup = types.ReplyKeyboardRemove()
+                bot.reply_to(message,
+                             "Регистрация успешна! Теперь вы можете использовать бота.",
+                             reply_markup=markup)
+                send_country_list(chat_id)
+            else:
+                markup = types.ReplyKeyboardMarkup(
+                    one_time_keyboard=True, resize_keyboard=True)
+                markup.add(types.KeyboardButton(
+                    'Отправить номер телефона', request_contact=True))
+                msg = bot.reply_to(message,
+                                   f"Ошибка регистрации: {
+                                       msg}\nПожалуйста, отправьте корректный номер телефона:",
+                                   reply_markup=markup)
+                bot.register_next_step_handler(msg, process_phone_step)
+        except Exception as e:
+            handle_error(message, str(e))
+    
+    
+    @bot.message_handler(func=lambda message: True)
+    def send_time(message):
+        """Отправка времени для выбранной страны"""
+        try:
+            user_id = message.from_user.id
+            chat_id = message.chat.id
+    
+            # Проверяем регистрацию
+            if not security.is_registered(user_id):
+                markup = types.ReplyKeyboardMarkup(
+                    one_time_keyboard=True, resize_keyboard=True)
+                markup.add(types.KeyboardButton(
+                    'Отправить номер телефона', request_contact=True))
+                msg = bot.reply_to(message,
+                                   "Для использования бота необходимо зарегистрироваться. Пожалуйста, отправьте свой номер телефона:",
+                                   reply_markup=markup)
+                bot.register_next_step_handler(msg, process_phone_step)
+                return
+    
+            # Проверяем спам
+            if security.check_spam(user_id):
+                bot.reply_to(
+                    message, "Пожалуйста, подождите немного перед следующим запросом.")
+                return
+    
+            security.log_action(user_id)
+    
+            country_name = message.text.strip()
+            if country_name in TIMEZONES:
+                try:
+                    tz = pytz.timezone(TIMEZONES[country_name])
+                    current_time = datetime.now(tz).strftime("%H:%M:%S")
+                    bot.reply_to(message, f"Текущее время в {
+                                 country_name}: {current_time}")
+                except pytz.exceptions.PytzError:
+                    bot.reply_to(
+                        message, "Произошла ошибка при определении времени. Попробуйте позже.")
+            else:
+                bot.reply_to(message,
+                             "Извините, я не знаю часовой пояс для этой страны. Выберите страну из списка:")
+                send_country_list(chat_id)
+        except Exception as e:
+            handle_error(message, str(e))
+    
+    
+    def handle_error(message, error_text):
+        """Обработка ошибок"""
+        try:
+            bot.reply_to(message, f"Произошла ошибка: {error_text}")
+            print(f"Error for user {message.from_user.id}: {error_text}")
+        except Exception as e:
+            print(f"Критическая ошибка при отправке сообщения об ошибке: {e}")
+    
+    
+    if __name__ == '__main__':
+        try:
+            print("Бот запущен...")
+            bot.infinity_polling(timeout=10, long_polling_timeout=5)
+        except Exception as e:
+            print(f"Критическая ошибка: {e}")
+        finally:
+            try:
+                security.close()
+            except Exception as e:
+                print(f"Ошибка при закрытии системы безопасности: {e}")
+    
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contacts
+
+If you have any questions or suggestions, you can contact us by email: kvostrecova0207@mail.ru.
