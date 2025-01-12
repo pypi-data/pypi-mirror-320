@@ -1,0 +1,3 @@
+[console_scripts]
+phzipcodes=phzipcodes:app
+

@@ -1,0 +1,9 @@
+phzipcodes/__init__.py,sha256=pHcZ3C7oeUMmIVlVp0rO2qzUaHvuMyGrWs-7MPzTX4M,987
+phzipcodes/data/ph_zip_codes.json,sha256=pQp4-04lSlD4w_qsrUZ08XslajpKC_6_OdU7n5LlOFo,65584
+phzipcodes/phzipcodes.py,sha256=unegpb-IOeNckCKHdtg8VIqGv9cQP_xjiPRo6FJyKAY,6232
+phzipcodes/scraper.py,sha256=sBH3HQluFIQq4pLLPT7a7ie0aTl2oSzQp0MR3ltZzA0,2923
+phzipcodes-0.1.8.dist-info/LICENSE,sha256=LfnIIJS0p-2kpNhHSPGLoPuMMQFVkbYlKzQxg0JOjGM,1063
+phzipcodes-0.1.8.dist-info/METADATA,sha256=f30cn1JVjadM7eafHZJIjlmnOSzPU3AHTc5_Iwmm-o8,6720
+phzipcodes-0.1.8.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+phzipcodes-0.1.8.dist-info/entry_points.txt,sha256=0om9w2LEXsjfjV9BfE5eLBE6aNR3FmB036pdznIfaQE,45
+phzipcodes-0.1.8.dist-info/RECORD,,
