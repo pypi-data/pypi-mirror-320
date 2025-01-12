@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-bigquery-biomedical = mcp_bigquery_biomedical:main
