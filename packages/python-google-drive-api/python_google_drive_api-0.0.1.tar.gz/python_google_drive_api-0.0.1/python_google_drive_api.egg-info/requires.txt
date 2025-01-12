@@ -1,0 +1,5 @@
+aiohttp>=3.8
+mashumaro>=3.12
+
+[dev]
+pytest>=7
