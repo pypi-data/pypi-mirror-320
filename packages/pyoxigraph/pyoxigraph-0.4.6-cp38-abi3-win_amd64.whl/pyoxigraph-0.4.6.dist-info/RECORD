@@ -1,0 +1,7 @@
+pyoxigraph-0.4.6.dist-info/METADATA,sha256=tSQu8mgVSyUFBBHnt5cbdBGbR4UldieNxsFDPFLHBTI,5594
+pyoxigraph-0.4.6.dist-info/WHEEL,sha256=mYDPFrpmO1_UhonyEoMo2i0zHOwqc92hj_Q3CYuEBdM,94
+pyoxigraph/__init__.py,sha256=bnUY7k3qQyy0qoAa10S5DZsAmoQWtbMBzTUVpvppjZM,123
+pyoxigraph/__init__.pyi,sha256=VePuqxgKyz2xa7Jua9TS6aeyrcKMp3UkzqZgi3p7mIo,80261
+pyoxigraph/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyoxigraph/pyoxigraph.pyd,sha256=-eE693PzuNWOwknjhLmJUxuLsZzRHF6NAwwnEcTLdYg,11337216
+pyoxigraph-0.4.6.dist-info/RECORD,,
