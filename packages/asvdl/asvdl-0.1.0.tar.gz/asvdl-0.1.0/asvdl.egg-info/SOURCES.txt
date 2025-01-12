@@ -1,0 +1,7 @@
+MANIFEST.in
+README.md
+setup.py
+asvdl.egg-info/PKG-INFO
+asvdl.egg-info/SOURCES.txt
+asvdl.egg-info/dependency_links.txt
+asvdl.egg-info/top_level.txt
