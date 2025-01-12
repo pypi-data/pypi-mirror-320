@@ -1,0 +1,6 @@
+Metadata-Version: 2.2
+Name: pyvista-vtkjs
+Version: 0.0.2
+Summary: An experiment of monkeypatching vtk.js into pyvista
+Author: Tom Dudley
+Requires-Dist: webcolors
