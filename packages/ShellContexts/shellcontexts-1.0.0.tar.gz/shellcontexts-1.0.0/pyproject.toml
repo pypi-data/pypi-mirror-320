@@ -1,0 +1,17 @@
+[project]
+name = "ShellContexts"
+dynamic = ["version"]
+description = "A few useful context managers for temporarily changing the environment"
+readme = "README.md"
+license = {file = "LICENSE"}
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/jb2170/ShellContexts/"
+
+[tool.setuptools.dynamic]
+version = {attr = "ShellContexts.__version__"}
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

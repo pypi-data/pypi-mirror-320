@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/ShellContexts/__init__.py
+src/ShellContexts/base.py
+src/ShellContexts/contexts.py
+src/ShellContexts.egg-info/PKG-INFO
+src/ShellContexts.egg-info/SOURCES.txt
+src/ShellContexts.egg-info/dependency_links.txt
+src/ShellContexts.egg-info/top_level.txt
