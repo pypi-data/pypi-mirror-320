@@ -1,0 +1,12 @@
+LICENSE,sha256=xym-FgieXxMqEMgFAben1dePOegL-88VREYKAo85U1k,1085
+README.md,sha256=CkymrIFPsOGcw4YlvUQgmPIvSOXN7tL-UEdalI_6CPw,12060
+RELEASES.md,sha256=VKJ7SuNjg1DlRWVjVawYoj8AcaMpfNiUS5eM6ayt9gI,143
+SECURITY.md,sha256=J7jnTZIQosfmnsR3_30v56p82qC2_yw7yTS5Sc9fmzA,1203
+mccache/__about__.py,sha256=R2tvRB3O0jCvB8DselT4vYJ3MBd8Swaya7hNq-e2tEQ,127
+mccache/__init__.py,sha256=sis4NR5OePYS-QkZOCA9zcGcgXG-jHClIkIfbFZtmK0,94213
+pycache/__about__.py,sha256=s-7kHMCFAzG-v5MRSzEmlCbT11I3g0L04THr--I604A,127
+pycache/__init__.py,sha256=kMFFNnGJhEyTkuF8INp0gKeJPlhAJ6Ca8lBcZK0IObo,34345
+mccache-0.4.2.dist-info/METADATA,sha256=L_wYqQty1QjyXZTFOqK-b0wULWl8O6h0LX2H5cP8Qcg,13058
+mccache-0.4.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mccache-0.4.2.dist-info/licenses/LICENSE,sha256=xym-FgieXxMqEMgFAben1dePOegL-88VREYKAo85U1k,1085
+mccache-0.4.2.dist-info/RECORD,,
