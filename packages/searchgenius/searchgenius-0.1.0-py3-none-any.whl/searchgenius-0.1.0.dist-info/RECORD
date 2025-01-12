@@ -1,0 +1,8 @@
+mypythonlib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypythonlib/myfunctions.py,sha256=KBkCywJeVXE0AjRTAtBGPkgpDWt81z7pm5k8LU9gX3E,16174
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_myfunctions.py,sha256=fvh8eSWmeUxAHAaMwi8TMcBJ-PnQq0AliSCgL-qtpoA,4114
+searchgenius-0.1.0.dist-info/METADATA,sha256=_7ECiMxk-QL2oALh3sjmh-kDBDnfsPMmGSXwwNh9g_g,860
+searchgenius-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+searchgenius-0.1.0.dist-info/top_level.txt,sha256=5un310w5WdjfpYuDTFBi6xyXcUnWmWq7iU1kmwhRCLg,18
+searchgenius-0.1.0.dist-info/RECORD,,
