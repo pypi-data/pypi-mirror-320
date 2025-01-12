@@ -1,0 +1,9 @@
+slime_nlp/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+slime_nlp/dataset.py,sha256=y5sTvUVsYAj1AHbSmCocRW-52QJYOcaNeqnhE370aaE,4718
+slime_nlp/model.py,sha256=kAmJ2xaMo2bxtQaE8id6Kd8pTq4SVs45eQtYqHEDk5M,19190
+slime_nlp/requirements.txt,sha256=5wglk3a5BrW78PsAm7bx1-WNRNn0VkRpqYYQCuj_QHs,201
+slime_nlp/slime.py,sha256=aAN9bwFnm4s8o1AfqmqiPsJ0xgGVNrjYan1g_Onccp0,26851
+slime_nlp-0.1.0.dist-info/LICENSE,sha256=NxH5Y8BdC-gNU-WSMwim3uMbID2iNDXJz7fHtuTdXhk,19346
+slime_nlp-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+slime_nlp-0.1.0.dist-info/METADATA,sha256=7ML4p4sdu-pnvuRj9ZX02CJC7YMdfsZTGOXzxkfwr8M,795
+slime_nlp-0.1.0.dist-info/RECORD,,
