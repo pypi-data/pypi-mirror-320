@@ -1,0 +1,22 @@
+[project]
+name = "hll-rcon-connection-test"
+version = "0.1.0"
+description = "A CLI tool to test RCON connections to Hell Let Loose Servers"
+authors = [
+    { name = "C. Eric Mathey", email = "emathey@protonmail.com" }
+]
+dependencies = []
+readme = "README.md"
+requires-python = ">= 3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/cemathey/hll_rcon_connection_test"
+Issues = "https://github.com/cemathey/hll_rcon_connection_test/issues"
+
+[project.scripts]
+my-script = "mylib.mymodule:entry_function"

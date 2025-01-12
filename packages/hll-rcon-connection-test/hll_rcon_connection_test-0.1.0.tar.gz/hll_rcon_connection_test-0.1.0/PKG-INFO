@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: hll-rcon-connection-test
+Version: 0.1.0
+Summary: A CLI tool to test RCON connections to Hell Let Loose Servers
+Project-URL: Homepage, https://github.com/cemathey/hll_rcon_connection_test
+Project-URL: Issues, https://github.com/cemathey/hll_rcon_connection_test/issues
+Author-email: "C. Eric Mathey" <emathey@protonmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# hll-rcon-connection-test
+
+Describe your project here.
