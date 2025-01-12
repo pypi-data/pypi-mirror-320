@@ -1,0 +1,11 @@
+README.md
+setup.py
+mypythonlib/__init__.py
+mypythonlib/myfunctions.py
+searchgenius.egg-info/PKG-INFO
+searchgenius.egg-info/SOURCES.txt
+searchgenius.egg-info/dependency_links.txt
+searchgenius.egg-info/requires.txt
+searchgenius.egg-info/top_level.txt
+tests/__init__.py
+tests/test_myfunctions.py

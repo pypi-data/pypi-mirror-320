@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: searchgenius
+Version: 0.1.0
+Summary: A library for building and testing NLP models with PyTorch and Transformers
+Home-page: https://github.com/sarahlawlis/esci-shopping-queries
+Author: Will Armstrong, Thomas Burns. Caroline Cordes, Sarah Lawlis
+Author-email: wma002@uark.edu
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: torch>=1.9.0
+Requires-Dist: transformers>=4.12.0
+Requires-Dist: sentence-transformers>=2.2.2
+Requires-Dist: scikit-learn>=0.24.0
+Requires-Dist: pandas>=1.3.0
+Requires-Dist: numpy>=1.19.0
+Requires-Dist: matplotlib>=3.4.3
+Requires-Dist: seaborn>=0.11.2
+Requires-Dist: dask[dataframe]>=2021.10.0
+Requires-Dist: pyarrow>=5.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
