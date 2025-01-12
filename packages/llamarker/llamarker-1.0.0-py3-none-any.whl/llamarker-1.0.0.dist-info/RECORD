@@ -1,0 +1,13 @@
+llamarker/.streamlit/config.toml,sha256=dLw1V9SALLAGKcvEnv3z_E8UKZLz4y64MK5F5i9iF14,136
+llamarker/__init__.py,sha256=S9GQHmARGKXFSYIRJQDw0OqOHjedIbRK8zB8H91oxkg,226
+llamarker/assets/.nfs0000000064c007b100000307,sha256=eM0BF-5sIj1o956GSyJ-9kY37R8FyshwGxTSAY5uYWs,70564
+llamarker/assets/Llamarker_logo.png,sha256=y1QXLBQ0Vci73rWG2nvtlQs5k70oMFgyLzu836tBR7w,54043
+llamarker/file_to_pdf_converter.py,sha256=PG7JqyqZx-dnpUIkwMPipWEPo4J_OilJ6ooJFPqAejA,7063
+llamarker/img_processor.py,sha256=SQSQ6N4EbjzXp-ii3sXk4DlKRVme3Ngg6xe0-LldXRs,24497
+llamarker/llamarker.py,sha256=wyg1p8ssJpQrB78zgBtEgeAUKvqv_ntV46hJvLRGdxQ,13642
+llamarker/llamarker_gui.py,sha256=oZhUaQ6dR3qomql63S5M0iXjqwGz2KH2ONRlu6a6kDA,14311
+llamarker-1.0.0.dist-info/entry_points.txt,sha256=6q8xfXKCLiCXeDtZYp5nC4LGYnTZoFfllkbFxuq_12s,49
+llamarker-1.0.0.dist-info/LICENSE,sha256=pfDBkwIs7APgbTy3gqOLZf2c5OwS4PSW4-uB7lQyFpA,16079
+llamarker-1.0.0.dist-info/METADATA,sha256=opswhQmrL-UE9T88ZY7zg2sJe8_cxRLLHj9PP8YkKlI,13998
+llamarker-1.0.0.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+llamarker-1.0.0.dist-info/RECORD,,
