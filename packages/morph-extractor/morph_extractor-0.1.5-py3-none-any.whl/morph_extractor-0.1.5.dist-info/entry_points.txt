@@ -1,0 +1,2 @@
+[console_scripts]
+morph-extractor = morph_extractor.cli:main

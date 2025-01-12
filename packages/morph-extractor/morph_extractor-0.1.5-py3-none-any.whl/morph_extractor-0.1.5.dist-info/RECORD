@@ -1,0 +1,14 @@
+morph_extractor/__init__.py,sha256=rPSfWgIeq2YWVPyESOAwCBt8vftsTpIkuLAGDEzyRQc,22
+morph_extractor/cli.py,sha256=e-_CoS5_9EcDEhH97vKfbIrJT1O5-FtaPFubKRmKzKU,3701
+morph_extractor/config.py,sha256=Tl9vdBF1uXwfw8Ty_GalEg58fHIsIyFqW7YsACsrbyc,660
+morph_extractor/json_utils.py,sha256=06WM9XRw6dZT4u1cLJ8QcxL63oeB2ZXD9dQfO0-JUyo,1365
+morph_extractor/lang_code.py,sha256=2wN3z_bXpvc2Cz1YWqAZh7WIDhgZiSY7FkkS4hz0KB0,4498
+morph_extractor/morphology_extractor.py,sha256=QQuvP39KkNIeQaFKriowOPJbzrZimYXPzuE9Q-QBtzg,4184
+morph_extractor/token_utils.py,sha256=nceFbOrYu1K59gKRncu6ZuPUmr30YKvx-6nmIe1EBR0,1562
+morph_extractor/wiktionary_loader.py,sha256=xUhD6KUNg6VwDVvSj6Y7BM2izAOqqWmxI5GmKoYrgow,1240
+morph_extractor-0.1.5.dist-info/LICENSE,sha256=mnxgbhYn7K71v_xzsVUFRVeXIMYebeqdmubgALMnuIg,1068
+morph_extractor-0.1.5.dist-info/METADATA,sha256=aBRPpXLDFyB6Yb0HagpTdsefvF516UQmFhtMua4rH-g,1970
+morph_extractor-0.1.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+morph_extractor-0.1.5.dist-info/entry_points.txt,sha256=66X0-b6OsMbsfKit7RdKEuVZpsx4-9qBjnDsYEIECJQ,61
+morph_extractor-0.1.5.dist-info/top_level.txt,sha256=Yc6Svmuqnk9ZKmsn9jBU_ONPszVOs5SHtSE0K-cp-IY,16
+morph_extractor-0.1.5.dist-info/RECORD,,
