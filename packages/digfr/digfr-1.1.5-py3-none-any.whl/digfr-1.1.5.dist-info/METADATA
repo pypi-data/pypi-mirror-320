@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: digfr
+Version: 1.1.5
+Summary: Dig Finacial Report Infomation
+Home-page: https://digfr.info/digfrlib/
+Author: Tommy
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: pandas
+
+UNKNOWN
+
+
