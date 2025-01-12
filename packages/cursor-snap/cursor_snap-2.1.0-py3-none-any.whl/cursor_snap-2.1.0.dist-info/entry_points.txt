@@ -1,0 +1,3 @@
+[console_scripts]
+cursor-snap=cursor_snap.cursor_snap:main
+
