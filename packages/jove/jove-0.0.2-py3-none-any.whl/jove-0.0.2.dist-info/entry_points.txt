@@ -1,0 +1,2 @@
+[console_scripts]
+jove = jove.workspace:main
