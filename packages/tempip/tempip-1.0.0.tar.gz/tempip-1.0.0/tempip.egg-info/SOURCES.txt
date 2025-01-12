@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+tempip/__init__.py
+tempip.egg-info/PKG-INFO
+tempip.egg-info/SOURCES.txt
+tempip.egg-info/dependency_links.txt
+tempip.egg-info/entry_points.txt
+tempip.egg-info/top_level.txt
+test/test.py
