@@ -1,0 +1,15 @@
+uvmono/__init__.py,sha256=Zc9x9l3s2SNRMhLF7PAVTcKBY21sbVKpmYiKItZfbxA,6575
+uvmono/github.py,sha256=Gk9K-rgezwgrVvdxd-cx6PZLWapMqbhw49klXyYS__4,2680
+uvmono/template.py,sha256=C0T7Rclj4VtuwRjn3snxFwUkAmJa9sjZ1YkUC6-60QA,1998
+uvmono/types.py,sha256=hlLhZADW6b4W-p579TqjbjsbOdQFglqXSdaO6i7xKVc,320
+uvmono/utils.py,sha256=M1jltRdv1UK0KsQr9YwUw29j1qW5rvBOVR0jA_x9tcs,980
+uvmono/templates/devcontainer.json.j2,sha256=k0UaOem1bpsX8DxAYnh3SasXUnVepS0Qzyk7RId9kRg,2052
+uvmono/templates/filter.yml.j2,sha256=hrI2Ue4vTbpeN_NoPgCcpf5jMJ_a7PUPLweBX9r7oq0,227
+uvmono/templates/package_init.py.j2,sha256=UPS4sHhIO9Xf2AfRrYcqupuHfN9eFsV6Djr7x__dcGU,94
+uvmono/templates/pyproject.toml.j2,sha256=kn-R87Ov72zUG8yqPN9rol-q-fR5gYuN3Ggq5X6ltSc,1164
+uvmono/templates/tests_init.py.j2,sha256=zh9XwxoCibLfRjJ1_S4KsC1mfRk4MaRbqwW0PitoQVg,182
+uvmono-0.2.1.dist-info/METADATA,sha256=FVbNw0XED5kPVuSXvxtxIOpU5kY3Kxx3zfCOQMYoVac,4769
+uvmono-0.2.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+uvmono-0.2.1.dist-info/entry_points.txt,sha256=07zEZnnzrL9fCYjW7jNYX82Xr7NgE1O0hq4iP0EpCws,39
+uvmono-0.2.1.dist-info/licenses/LICENSE,sha256=6oWnAhOJ2J6ZnSst3Zjn92bV6Fh64rd4rN5W8Pqdwg0,1067
+uvmono-0.2.1.dist-info/RECORD,,
