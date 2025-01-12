@@ -1,0 +1,2 @@
+[console_scripts]
+filelib = filelib.cli.entrypoint:filelib_cli
