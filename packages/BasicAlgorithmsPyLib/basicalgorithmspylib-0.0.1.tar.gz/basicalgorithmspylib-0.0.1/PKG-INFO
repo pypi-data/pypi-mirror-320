@@ -1,0 +1,75 @@
+Metadata-Version: 2.2
+Name: BasicAlgorithmsPyLib
+Version: 0.0.1
+Summary: The "BasicAlgorithmsPyLib" library this is a cozy place for the most common algorithms.
+Home-page: https://github.com/MindlessMuse666/basic-algorithms
+Author: MindlessMuse666
+Author-email: mindlessmuse.666@gmail.com
+Project-URL: GitHub, https://github.com/MindlessMuse666
+Keywords: python algorithms algorithms-library first-library sorting searching data-structures
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Library of Basic Algorithms <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT-License image"></a>
+
+This repository contains a small library called `BasicAlgorithms`, a collection of basic algorithms implemented in Python. The 'BasicAlgorithms` library this is a cozy place for the most common algorithms.
+
+## Enabled Algorithms
+
+Currently, the library includes implementations of the following algorithms:
+
+- Sorting:
+- Bubble Sort
+- Insertion Sort
+    - Selection Sort
+- Merge Sort
+- Quick Sort
+- Search:
+- Linear Search
+- Binary Search
+- Mathematical algorithms:
+    - Factorial
+    - The Fibonacci number of the index
+- Other algorithms:
+    - Search for min and max 
+
+## Usage
+
+To use algorithms in your Python projects, you can:
+
+1. Clone the repository.
+
+
+## Contribution
+
+Any contributions are welcome! If you have an implementation of another algorithm or would like to improve the existing ones, please follow these steps.:
+
+1. Make a fork of the repository.
+2. Create a new branch for your feature or bug fix.
+3. Implement your changes.
+4. Make sure that your code is well documented and includes tests.
+5. Send a pull request.
+
+## License
+
+This project is licensed under the [MIT LICENSE].
+
+## Author
+
+MindlessMuse666 (https://github.com/MindlessMuse666)
