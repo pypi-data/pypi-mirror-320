@@ -1,0 +1,44 @@
+name: Build and Release with Custom Docker Container
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Log in to GHCR
+      uses: docker/login-action@v2
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GHCR_TOKEN }}
+
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Build and Push in Docker Container
+      run: |
+        docker run --rm \
+          -v ${{ github.workspace }}:/workspace \
+          -w /workspace \
+          -e TWINE_USERNAME="__token__" \
+          -e TWINE_PASSWORD="${{ secrets.PYPI_API_TOKEN }}" \
+          -e PYTHON_KEYRING_BACKEND="keyring.backends.null.Keyring" \
+          ghcr.io/okamumu/maturin:1.7.8 \
+          /bin/bash -c "
+          set -e
+          echo 'Starting build process...'
+          mkdir -p dist
+          maturin build --release --target x86_64-unknown-linux-gnu -i python3.9 -i python3.10 -i python3.11 --zig --out dist
+          maturin build --release --target aarch64-unknown-linux-gnu -i python3.9 -i python3.10 -i python3.11 --zig --out dist
+          maturin sdist --out dist
+          echo 'Build complete. Listing dist directory contents:'
+          ls -lh dist
+          echo 'Uploading to PyPI...'
+          twine upload dist/*.whl dist/*.tar.gz
+          echo 'Upload complete.'
+          "
