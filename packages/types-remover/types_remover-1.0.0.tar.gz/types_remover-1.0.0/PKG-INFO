@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: types_remover
+Version: 1.0.0
+Summary: A small package that removes types from a file
+Project-URL: Homepage, https://github.com/EasternFarmer/types_remover
+Project-URL: Issues, https://github.com/EasternFarmer/types_remover/issues
+Author-email: EasternFarmer <franek.banas1@gmail.com>
+License-Expression: GPL-3.0-or-later
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# Types remover(s)
+
+<!-- **My type removers I made taken from [The_Farmer_Was_Replaced](https://github.com/EasternFarmer/The-Farmer-Was-Replaced/) repo and updated as necessary** -->
+
+
+This packet has two available functions `remove_types_ast` and `remove_types_if`, that are doing almost the same thing
+with implementation. <br>
+
+From the tests I can tell you that `remove_types_ast` is on average 3,28 (average from 100 calls) times slower than
+`remove_types_if`
+
+### IMPORTANT TO NOTE
+
+- The `remove_types_ast` function removes comments (not doc-strings)
+- Both functions turn multi-line data assignation into a one-line statement
