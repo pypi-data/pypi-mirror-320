@@ -1,0 +1,17 @@
+yadopt/__init__.py,sha256=D8wW4NOblb9v4RvXVtlhXf2xezNZfE5WPtasfn6QrOE,404
+yadopt/argopt.py,sha256=kh8bEzlwS_LeZ4xCwkdoSsTULTFukCYMwXxIFMfOL4U,4289
+yadopt/argvec.py,sha256=yopEfMiMp-SG-sMomWLQS_6-tJkvFOde0BQBGaGKZ7k,2635
+yadopt/checker.py,sha256=E3nvhXzb5ZumkkXEY4Tk9sRuUOXORUdQrRZRGWBcGyk,1458
+yadopt/docstr.py,sha256=71BAxxGfGqqOyTgSXLgPeLGEPyxs4OsbNS_4WBm_-IM,3466
+yadopt/dtypes.py,sha256=PXZbZ27jwlyoWIIg4NmGiahr_3yQGrqmwfD8XZjLWYU,3272
+yadopt/errors.py,sha256=ETMZitEbE49VVu097W1bUChZ12W2yhp23aILeN9GWHI,5193
+yadopt/gendat.py,sha256=p_NTSnPDUxReZ9yu9c1bdmAZ5tR01wBxCeIj4vS5E8Y,1199
+yadopt/hints.py,sha256=Pu-LV8E7lAfVgs6KzQ6F3-SlaR5UIpuYPYQQ2ArLeCo,2897
+yadopt/matchers.py,sha256=eFmHZ-KgPUjsm9dsE6nfqdahfzoQ0n7gm0ksPKpCMwc,3764
+yadopt/usage.py,sha256=T3XbL4ORw91gSLse6BvXA-8TNDYgFZd2QXqKgDrpN7Q,8769
+yadopt/utils.py,sha256=tsDtFs8-Ga-0vhY_aK2OEYYJcI7wc_MJx5RldKase8w,3290
+yadopt/yadopt.py,sha256=WuSySQAvCpROstHBFyXeiNYTRA2eMebHtHAEDMO13lc,7047
+yadopt-2025.1.11.dist-info/METADATA,sha256=xKYZzTxbMHuO8hPR7OjZJ5gyO-GgDeFSTIwczDeoQwc,9091
+yadopt-2025.1.11.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+yadopt-2025.1.11.dist-info/licenses/LICENSE,sha256=y7iB9SJXULVmx2iOrUOayvCW3tqJCSkOpAbbNW6G6mQ,1073
+yadopt-2025.1.11.dist-info/RECORD,,
