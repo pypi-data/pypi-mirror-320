@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: fastvid
+Version: 0.1.4
+Summary: A GUI tool for video processing (acceleration, GIF conversion, compression).
+Home-page: https://github.com/yourusername/fastvid
+Author: mellon
+Author-email: mellon.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: customtkinter
+
+# FastVid
+FastVid 是一个用于视频处理的图形用户界面工具，支持视频加速、GIF 转换和压缩等功能，后端依赖FFmpeg.
+
+## 安装
+通过 pip 安装 FastVid：
+
+```bash
+pip install fastvid
+```
+# 功能项
+- [x] 加速转换视频
+- [x] 转换为GIF
+- [x] 压缩视频
+- [ ] 转换为MP4格式
+- [ ] 截图
+- [ ] 录制视频
