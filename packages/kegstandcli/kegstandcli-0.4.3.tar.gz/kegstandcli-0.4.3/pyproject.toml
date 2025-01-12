@@ -1,0 +1,181 @@
+[project]
+name = "kegstandcli"
+version = "0.4.3"
+description = "The Developer's Toolbelt For Accelerating Mean-Time-To-Party on AWS"
+authors = [
+    { name = "JensRoland", email = "mail@jensroland.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = []
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "aws-cdk-lib>=2.67.0",
+    "aws-solutions-constructs-aws-apigateway-lambda>=2.39.0",
+    "boto3>=1.17.113",
+    "click>=8.0.3",
+    "constructs>=10.0.0,<11.0.0",
+    "copier>=9.4.1",
+    "directory-tree>=1.0.0",
+    "pyjwt>=2.1.0",
+    "tomlkit>=0.11.7",
+    "xxhash>=3.2.0",
+]
+
+[dependency-groups]
+dev = [
+    "boto3-stubs>=1.35.82",
+    "mypy>=1.13.0",
+    "pytest>=7.3.0",
+    "pytest-cov>=4.0.0",
+    "pytest-subprocess>=1.5.0",
+    "ruff>=0.8.4",
+    "types-pyyaml>=6.0.12.20241221",
+    "types-click>=7.1.8",
+    "bump-my-version>=0.29.0",
+]
+
+[project.scripts]
+keg = "kegstandcli.cli.__main__:kegstandcli"
+
+[project.urls]
+Homepage = "https://kegstand.dev"
+Repository = "https://github.com/jensroland/kegstand"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.bumpversion]
+current_version = "0.4.3"
+parse = "(?P<major>\\d+)\\.(?P<minor>\\d+)\\.(?P<patch>\\d+)"
+serialize = ["{major}.{minor}.{patch}"]
+search = "{current_version}"
+replace = "{new_version}"
+regex = false
+ignore_missing_version = false
+ignore_missing_files = false
+tag = false
+sign_tags = false
+tag_name = "v{new_version}"
+tag_message = "Bump version: {current_version} → {new_version}"
+allow_dirty = false
+commit = true
+message = "Bump version: {current_version} → {new_version}"
+commit_args = ""
+setup_hooks = []
+pre_commit_hooks = []
+post_commit_hooks = []
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+search = "version = \"{current_version}\""
+replace = "version = \"{new_version}\""
+
+[[tool.bumpversion.files]]
+filename = "src/kegstandcli/version.py"
+
+[tool.pytest.ini_options]
+# Directories that are not visited by pytest collector:
+norecursedirs =["dist", "build", "docs", ".tox", ".git", "__pycache__", ".ruff_cache"]
+pythonpath = "src/kegstandcli"
+
+[tool.coverage.report]
+#fail_under = 70
+show_missing = true
+skip_empty = true
+
+[tool.ruff]
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    '.pytest_cache',
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+
+# Slightly longer lines are allowed because it's not 1995 anymore.
+line-length = 100
+
+# Use oldest supported Python version to ensure compatibility.
+target-version = "py310"
+
+[tool.ruff.lint]
+# Enable pycodestyle (`E`), Pyflakes (`F`), isort (`I`), pep8-naming (`N`), 
+# flake8-bugbear (`B`), flake8-builtins (`A`), flake8-comprehensions (`C4`),
+# flake8-pie (`PIE`), flake8-simplify (`SIM`), flake8-unused-arguments (`ARG`), 
+# pylint (`PL`), tidy-imports (`TID`), flake8-quotes (`Q`), bandit (`S`)
+select = ["E", "F", "I", "N", "B", "A", "C4", "PIE", "SIM", "ARG", "PL", "TID", "Q", "S"]
+ignore = ["ISC"]
+
+# Allow autofix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.lint.mccabe]
+# Unlike Flake8, default to a complexity level of 10.
+max-complexity = 10
+
+[tool.ruff.lint.isort]
+known-first-party = ["kegstandcli"]
+
+[tool.ruff.lint.flake8-quotes]
+docstring-quotes = "double"
+inline-quotes = "double"
+
+[tool.ruff.lint.flake8-bugbear]
+extend-immutable-calls = ["fastapi.Depends", "fastapi.Query", "fastapi.Body"]
+
+[tool.ruff.lint.per-file-ignores]
+# Tests can use assertions and magic values
+"tests/**/*" = ["S101", "PLR2004"]
+# Templates can use magic values
+"**/*.tmpl" = ["PLR2004"]
+
+[tool.ruff.format]
+# Use double quotes for strings.
+quote-style = "double"
+# Indent with spaces, rather than tabs.
+indent-style = "space"
+# Respect magic trailing commas.
+skip-magic-trailing-comma = false
+# Automatically detect the appropriate line ending.
+line-ending = "auto"
+
+[tool.mypy]
+exclude = [
+    "^tests/test_data/",
+]
