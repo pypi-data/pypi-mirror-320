@@ -1,0 +1,13 @@
+capitolgains/__init__.py,sha256=HLP8zmIHPz-qiy8GQzPRQVj6iJMrphSdY_CxuxIPppM,194
+capitolgains/core/__init__.py,sha256=SKgzQV2W8wMVXf2Y8X0HJMEDJKBmMFeITygaRgAc-XU,133
+capitolgains/core/congress.py,sha256=fBqhmSfj7vwtPcGlQD1zaO463Z0LRxhQx6QjX5SL37U,5636
+capitolgains/core/representative.py,sha256=HDwIFv0w5HLGzSd0d2fqGncSMoWYgy8FRrcxERGpwAc,13852
+capitolgains/core/senator.py,sha256=r-X4o844_UHsJAq9Wvq768VVapeMv_XLqlQNC9qvErY,15920
+capitolgains/utils/__init__.py,sha256=jSGr-D4skgMw0yqhBrhSxth34ijgrhu44VSrTO5j81k,63
+capitolgains/utils/representative_scraper.py,sha256=H67aNX4TjAR-dpLZ51ZWtbrWKbwjhpNEhJycMgCUtog,25415
+capitolgains/utils/senator_scraper.py,sha256=Ps2x9pFzYKWG7zG7LbGQM3Uw5lxSUTIkXuls2F67pjI,49015
+capitolgains-0.1.0.dist-info/LICENSE,sha256=jZgwdV_5MD73PRmjL5eGeRDvaxPBmDS9cGtgOAVU1ag,1069
+capitolgains-0.1.0.dist-info/METADATA,sha256=Naz4Vd7mHRKV07GFyLfYFVcShEWnFDfcTOnYERYNLY4,9439
+capitolgains-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+capitolgains-0.1.0.dist-info/top_level.txt,sha256=O9x8oK74X2r1430oJMXU1oFR5Urr-FaxowD8qXRxsVE,13
+capitolgains-0.1.0.dist-info/RECORD,,
