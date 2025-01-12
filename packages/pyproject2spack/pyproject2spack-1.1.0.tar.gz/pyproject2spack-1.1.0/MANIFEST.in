@@ -1,0 +1,5 @@
+include LICENSE
+include README.md
+include requirements.txt
+include pyproject2spack/spackdb.json
+recursive-include pyproject2spack/templates *

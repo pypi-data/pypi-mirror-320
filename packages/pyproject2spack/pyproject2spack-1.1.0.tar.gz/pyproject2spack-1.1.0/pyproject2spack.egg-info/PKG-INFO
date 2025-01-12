@@ -1,0 +1,27 @@
+Metadata-Version: 2.2
+Name: pyproject2spack
+Version: 1.1.0
+Summary: Convert Python projects to Spack packages
+Home-page: https://gitlab.com/saliei/pyproject2spack
+Author: Saeid Aliei
+Author-email: saeidaliei@gmail.com
+License: BSD-3-Clause
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jinja2
+Requires-Dist: packaging
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+Convert pyproject.toml based python packages to Spack packages.     At it's core this package provides 4 modules, a logger,     a matcher (spack), a renderer (jinja2), and a parser (pyproject).     These can be extended to convert arbitrary form of packages to one another.
