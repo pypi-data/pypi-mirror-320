@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/static/images/favicon.svg" type="image/svg+xml">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h2>{{ title }}</h2>
+    <form id="launchForm">
+        <label for="commandName">Command</label>
+        <select id="commandName" name="commandName"></select>
+        <label for="params">Params</label>
+        <input type="text" id="params" name="params">
+        <button type="submit">Run</button>
+    </form>
+    <div class="table-container" id="tableContainer">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Status</th>
+                    <th>Start Time</th>
+                    <th>Duration</th>
+                    <th>Exit</th>
+                    <th>Command</th>
+                    <th>Action</th>
+                    <th>Output</th>
+                </tr>
+            </thead>
+            <tbody id="commands"></tbody>
+        </table>
+    </div>
+    <div class="resizer-container">
+        <div class="resizer" id="resizer"></div>
+    </div>
+    <div id="output" class="output"></div>
+    <script type="text/javascript" src="/static/js/script.js"></script>
+</body>
+</html>
