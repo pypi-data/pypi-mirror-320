@@ -1,0 +1,11 @@
+pandahandler/__init__.py,sha256=lSd6YE5PoVkV1o7R9IViycJkZgp8aznRMH4x28dF1Ps,259
+pandahandler/indexes.py,sha256=ISqrn_q86ggh907-exPtyh3NtM-ePiQgLy5DCfo3ov4,3308
+pandahandler/schema.py,sha256=jwhjWSbA6N74oH43dedlIAuqVnStyLYsioyhj7zh-iA,3966
+pandahandler/tabulation.py,sha256=ro58zUYyLiT2MB9HJqJmethBBM38_91srNAmHM9UhLw,3283
+pandahandler/frames/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pandahandler/frames/columns.py,sha256=BqTzdFzPHDsv-tgb5aohNpfDn1EnmkGZUcX50EEO1Hk,588
+pandahandler/frames/decorators/framesize.py,sha256=KX1O9Idvd2-MaU5ejyzxe4r6ylWFuH8lpjDBdIimWCY,2605
+pandahandler-0.4.0.dist-info/METADATA,sha256=JGiC5jOwzg7KZkxahg_7DlUK_y7oazca2n-7dN1fqXA,1078
+pandahandler-0.4.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pandahandler-0.4.0.dist-info/licenses/LICENSE,sha256=ZDmTXLFP1G-SZBSpdN-oRM7KIAICDfM6OYtS1bWHJfM,1070
+pandahandler-0.4.0.dist-info/RECORD,,
