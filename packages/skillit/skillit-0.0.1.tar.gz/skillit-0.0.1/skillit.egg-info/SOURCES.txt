@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+skillit/__init__.py
+skillit/py.typed
+skillit/requirements-dev.txt
+skillit/requirements.txt
+skillit.egg-info/PKG-INFO
+skillit.egg-info/SOURCES.txt
+skillit.egg-info/dependency_links.txt
+skillit.egg-info/requires.txt
+skillit.egg-info/top_level.txt
+tests/test_dummy.py
