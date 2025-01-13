@@ -1,0 +1,20 @@
+[project]
+version = "0.0.1"
+dependencies = []
+description = "Provides type annotations for torch tensors."
+authors = [
+    { name = "yueyinqiu", email = "yueyinqiu@outlook.com"}
+]
+name = "statictorch"
+license = { text = "MIT License" }
+keywords = []
+
+[project.urls]
+Repository = "https://github.com/yueyinqiu/statictorch.git"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["statictorch"]
