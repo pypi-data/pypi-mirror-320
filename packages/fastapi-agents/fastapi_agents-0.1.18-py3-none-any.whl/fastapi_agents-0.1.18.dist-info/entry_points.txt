@@ -1,0 +1,3 @@
+[console_scripts]
+bump-version = scripts.version:bump_patch
+get-version = scripts.version:get_version
