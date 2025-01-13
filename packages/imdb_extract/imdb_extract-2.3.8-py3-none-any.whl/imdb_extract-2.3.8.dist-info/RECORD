@@ -1,0 +1,13 @@
+berhoel/__init__.py,sha256=MU1JXX_yVjPmvrOxIuvmtix4F607VjHDi72FLh1NXq8,364
+berhoel/imdb_extract/__init__.py,sha256=w3kKxBSDb77hJHrkTIpyCwfIS285gWlguev-UOEIn0o,10224
+berhoel/imdb_extract/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+berhoel/imdb_extract/tests/.ruff.toml,sha256=6lXB31zOR12agaQY0ERjeEHcxTTKY02sQj2lRXu6-oY,36
+berhoel/imdb_extract/tests/conftest.py,sha256=L21qNZhtFXSBmFiblwjMBHxgrE8vopFW4ZHNj-9_pjc,289
+berhoel/imdb_extract/tests/test_base.py,sha256=-Gjzj3yHnjFv4AVgpjzwY_9sKapeVmVrRmSyuHyM6C8,287
+berhoel/imdb_extract/tests/test_unicodewriter.py,sha256=MKwWEpZnJ9cPbdiI3Dfa_np4BIltE_e01rS3_oh3pfQ,698
+berhoel/imdb_extract/unicodewriter.py,sha256=vXtZaq6JaydFOklge_cmoWgGoZmY8urcBLwZBS9oia4,307
+imdb_extract-2.3.8.dist-info/LICENSE,sha256=0eXXxovTX_gwo_wVyhhUjTZPKvmzb7EHr3MKyD9GPvA,1500
+imdb_extract-2.3.8.dist-info/METADATA,sha256=5_BlQg5sLLOBJpTfNQKOXliOfu8TiPEHe2XoKZCl9Mk,1190
+imdb_extract-2.3.8.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+imdb_extract-2.3.8.dist-info/entry_points.txt,sha256=aaDFK1UJz-H82ZpyDZOf95wRQGnG6RVp2ETIVRs2Tak,58
+imdb_extract-2.3.8.dist-info/RECORD,,
