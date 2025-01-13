@@ -1,0 +1,128 @@
+name: Update Badges
+on:
+  workflow_run:
+    workflows: ["Test"]
+    types:
+      - completed
+
+jobs:
+  update_badges:
+    environment: production
+    name: Update Badges
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.BOT_ACCESS_TOKEN }}
+          ref: ${{ github.event.workflow_run.head_branch }}
+          repository: ${{ github.event.workflow_run.head_repository.full_name }}
+
+      - name: 'Download badge data'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            let allArtifacts = await github.rest.actions.listWorkflowRunArtifacts({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              run_id: context.payload.workflow_run.id,
+            });
+            let matchArtifact = allArtifacts.data.artifacts.filter((artifact) => {
+              return artifact.name == "badge-data";
+            })[0];
+            if (!matchArtifact) {
+              throw new Error("No artifact found with the name 'badge-data'");
+            }
+            let download = await github.rest.actions.downloadArtifact({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              artifact_id: matchArtifact.id,
+              archive_format: 'zip',
+            });
+            const fs = require('fs');
+            const path = require('path');
+            const temp = '${{ runner.temp }}/artifacts';
+            if (!fs.existsSync(temp)){
+              fs.mkdirSync(temp);
+            }
+            fs.writeFileSync(path.join(temp, 'badge_data.zip'), Buffer.from(download.data));
+
+      - name: 'List artifacts'
+        run: ls -l "${{ runner.temp }}/artifacts"
+
+      - name: 'Unzip artifact'
+        run: unzip "${{ runner.temp }}/artifacts/badge_data.zip" -d "$GITHUB_WORKSPACE"
+
+      - name: "Load badge data environment variables"
+        id: load_badge_data
+        run: |
+          source badge_data.env
+
+          echo "TEST_COUNT=$TEST_COUNT"
+          echo "TEST_PASSED=$TEST_PASSED"
+          echo "TEST_COLOR=$TEST_COLOR"
+          echo "COVERAGE=$COVERAGE"
+          echo "COVERAGE_COLOR=$COVERAGE_COLOR"
+
+          if [ -z "$TEST_COUNT" ] && [ -z "$TEST_PASSED" ]
+          then
+            echo "TEST_STATUS=No result found" >> $GITHUB_ENV
+          else
+            echo "TEST_STATUS=$TEST_PASSED / $TEST_COUNT passed" >> $GITHUB_ENV
+          fi
+
+          if [ -z "$TEST_COLOR" ]
+          then
+            TEST_COLOR="red"
+          fi
+          echo "TEST_COLOR=$TEST_COLOR" >> $GITHUB_ENV
+
+          # Do the same for coverage
+          if [ -z "$COVERAGE" ]
+          then
+            echo "COVERAGE_STATUS=No result found" >> $GITHUB_ENV
+          else
+            echo "COVERAGE_STATUS=$COVERAGE" >> $GITHUB_ENV
+          fi
+
+          if [ -z "$COVERAGE_COLOR" ]
+          then
+            COVERAGE_COLOR="red"
+          fi
+          echo "COVERAGE_COLOR=$COVERAGE_COLOR" >> $GITHUB_ENV
+
+          echo $GITHUB_ENV
+
+      - name: "Update badges.yaml"
+        run: |
+          cat <<EOF > docs/badges.yaml
+          test-badge:
+            status: $TEST_STATUS
+            color: $TEST_COLOR
+          coverage-badge:
+            status: $COVERAGE_STATUS
+            color: $COVERAGE_COLOR
+          EOF
+          rm badge_data.env
+
+      - name: "Commit and Push Changes"
+        continue-on-error: true
+        run: |
+          git config --global user.name "cpg-software-ci-bot"
+          git config --global user.email "software-team+githubcibot@populationgenomics.org.au"
+          git add docs/badges.yaml
+          git commit -m "chore: update badges.yaml with test results and coverage"
+          PUSH=$(git push https://x-access-token:${{ secrets.BOT_ACCESS_TOKEN }}@github.com/${{ github.repository }}.git)
+          STATUS=$?
+
+          echo $($PUSH | grep "up to date")
+          echo $STATUS
+
+          if $PUSH | grep -q "up to date"
+          then
+            echo "No changes to commit"
+          exit 0
+            else
+          exit $STATUS
+            fi
