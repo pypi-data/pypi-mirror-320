@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: bron
+Version: 0.1.0
+Summary: Operational TOML
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: packaging>=24.2
+Requires-Dist: pytoml11>=0.0.3
+
+# bron
+
+## Commands
+
+### `bron`

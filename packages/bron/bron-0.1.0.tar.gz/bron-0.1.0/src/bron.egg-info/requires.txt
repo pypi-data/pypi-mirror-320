@@ -1,0 +1,3 @@
+httpx>=0.28.1
+packaging>=24.2
+pytoml11>=0.0.3
