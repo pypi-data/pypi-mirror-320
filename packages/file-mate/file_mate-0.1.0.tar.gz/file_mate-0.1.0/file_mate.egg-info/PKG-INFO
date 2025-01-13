@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: file-mate
+Version: 0.1.0
+Summary: A command-line tool for image, pdf, and other file manipulations.
+Author: Anshul Gada
+License: MIT
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: Pillow
+Requires-Dist: pypdf
+Requires-Dist: click
+Requires-Dist: reportlab
+Requires-Dist: python-magic-bin
+Requires-Dist: setuptools
+Dynamic: author
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
