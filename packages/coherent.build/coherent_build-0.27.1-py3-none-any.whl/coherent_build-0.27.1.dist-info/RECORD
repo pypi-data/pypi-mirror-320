@@ -1,0 +1,11 @@
+coherent/build/system.toml,sha256=2Rj7zIVtQzLWZABo2SG6E80Shn_t9fiBWf6dApzu9Xo,78
+coherent/build/metadata.py,sha256=WKr2iD4GBlgKr6fcU-NNTks787vneb-Ozzn4rY9KM_s,3630
+coherent/build/discovery.py,sha256=3LJkDT4gLbXK1sroekOf2VPRPemqOANK_piad-jBIXQ,11214
+coherent/build/bootstrap.py,sha256=ofPf6fbuwYVY1oOkCtk4m14Z4ddrfzetmpr6Y9Mo_so,816
+coherent/build/__init__.py,sha256=A92MDVXFrJvxDESl8KXj4JR6_-OeAH50RLX0OyG0n4M,461
+coherent/build/__main__.py,sha256=wmbz6yU_c3RgzN4ylP8wV0OwMqXr03-oe6obLZ2OZCE,220
+coherent/build/backend.py,sha256=GS-jEWXrVf5ri51SwKGa0NaMcSKWPgzkzYENq7IOUUE,5386
+coherent/build/compat/py311.py,sha256=rpKLZPOtUlm2Rb_TKP1v-96EgOp6aS-kvVtjzSwPCU8,152
+coherent_build-0.27.1.dist-info/METADATA,sha256=UbJPEgdIcfDqCenya4S9NGviEGZukm4X1QcOV1D0SQs,1857
+coherent_build-0.27.1.dist-info/WHEEL,sha256=xwCvqR_tqJ3Ej9Wez_XdmRPdq9SWEwB8IV-d4ZOwyF0,86
+coherent_build-0.27.1.dist-info/RECORD,,
