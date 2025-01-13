@@ -1,0 +1,11 @@
+Pillow
+pypdf
+click
+reportlab
+setuptools
+
+[:platform_system != "Windows"]
+python-magic
+
+[:platform_system == "Windows"]
+python-magic-bin
