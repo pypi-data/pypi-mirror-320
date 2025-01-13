@@ -1,0 +1,26 @@
+[project]
+name = "get-case-list"
+version = "0.1.4"
+description = ""
+authors = [{ name = "6vi7ms", email = "6vi7ms@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "requests (>=2.32.3,<3.0.0)",
+    "argparse (>=1.4.0,<2.0.0)",
+    "tqdm (>=4.67.1,<5.0.0)",
+    "openpyxl (>=3.1.5,<4.0.0)",
+    "python-dateutil (>=2.9.0.post0,<3.0.0)",
+    "python-dotenv (>=1.0.1,<2.0.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+get-case-list = "get_case_list.main:main"
+
+[tool.black]
+line-length = 20
