@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: pygray3
+Version: 0.5
+Author: Smawe
+Author-email: 1281722462@qq.com
+Requires-Python: >=3.7
+Requires-Dist: pyjwt[crypto]
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: requires-python
