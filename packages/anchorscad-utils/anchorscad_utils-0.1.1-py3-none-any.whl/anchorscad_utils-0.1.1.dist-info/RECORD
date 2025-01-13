@@ -1,0 +1,8 @@
+anchorscad_lib/utils/__init__.py,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+anchorscad_lib/utils/colours.py,sha256=61LcPTae2m-aM7r47zsLJwigcxs8DLbrjmjQtH_u3x0,18526
+anchorscad_lib/utils/openscad_finder.py,sha256=XXiX-QwRgWWSECRS4BAI9CiyE293hWENrQdj-e4lmtc,10543
+anchorscad_lib/utils/process_manager.py,sha256=hXacLOswRwyEnYNZaa9Z-6g03b8W7QZ-4rSNUJzyQdE,4149
+anchorscad_utils-0.1.1.dist-info/METADATA,sha256=A9M4QRXXguZYBmGtuy5T0RY1eJhc7G47MH24U02X9Dc,1847
+anchorscad_utils-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+anchorscad_utils-0.1.1.dist-info/licenses/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+anchorscad_utils-0.1.1.dist-info/RECORD,,
