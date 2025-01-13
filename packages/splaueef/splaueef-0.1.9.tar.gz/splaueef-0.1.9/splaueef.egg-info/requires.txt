@@ -1,0 +1,6 @@
+aiogram>=3.0
+certifi
+pyzbar
+pytesseract
+pillow
+aiosqlite
