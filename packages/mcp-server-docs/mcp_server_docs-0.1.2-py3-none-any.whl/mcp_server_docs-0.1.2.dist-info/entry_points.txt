@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-server-docs = mcp_server_docs:main
