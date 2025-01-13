@@ -1,0 +1,67 @@
+Metadata-Version: 2.2
+Name: gen_bing
+Version: 0.0.9
+Summary: I'm From Indonesian, and I'm still learning.
+Author: Lucifer
+Author-email: ikyodeos01@gmail.com
+Keywords: bing image generator gabut
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiofiles==24.1.0
+Requires-Dist: httpx[http2]
+Requires-Dist: aiohttp>=3.9.5
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Gen Bing
+
+A Python library for generating and saving images using Bing's Image Creator.
+
+## Installation PyPi
+
+```bash
+pip3 install -U --no-cache-dir gen-bing
+```
+
+## Usage Async
+
+```python
+from Bing import AsyncImageGenerator
+
+async def main():
+    GEN = AsyncImageGenerator()
+    images = await GEN.generate(prompt="A cute cat is playing on a bed. Digital Art 3D.", num_images=4)
+    await GEN.save(images, output_dir="images/")
+
+import asyncio
+asyncio.run(main())
+```
+
+## Usage Sync
+
+```python
+from Bing import ImageGenerator
+
+GEN = ImageGenerator()
+images = GEN.generate(prompt="A cute cat is playing on a bed. Digital Art 3D.", num_images=4)
+GEN.save(images, output_dir="images/")
+```
+
+## DON'T TRY THIS AT HOME 🏡 🙏🏻
+
+## LuciferReborns
