@@ -1,0 +1,3 @@
+[console_scripts]
+commit = uvmono:commit
+uvmono = uvmono:main
