@@ -1,0 +1,15 @@
+phg/VisPHG.py,sha256=bc6hkST6QuGZ63a9kXFOFk0GPQolRzTzaMMK8IGTvdQ,1392
+phg/__init__.py,sha256=uWqdliryiVYZ229YaErk8FdUaXROmSl68qMQM1SB_eI,81
+phg/vis/GCU.dll,sha256=1JYQl24VPnYQ6CVnVa8hEp0rcHHBFTwknRhilOsK82k,3156480
+phg/vis/dragpad.exe,sha256=4qWG4VH1vginIGpKkBHwEBFlpTY8G6xPejeloJurNkE,51712
+phg/vis/dragpad_config.ini,sha256=MD5no-RjzzcBxyz3JWuI88qH5Q4WVivRLqk_1GE5VQY,78
+phg/vis/freeglut.dll,sha256=UguleTwzNznvcYqQ9qWDtplQUj1vAH27-ah64uK1QYE,266240
+phg/vis/script.phg,sha256=HfEBk9omTAfm-KywupQwAwqgHqsr5hCS0f7gfBH1mYY,123
+phg/vis/vis.exe,sha256=3NeP5bQvCZOkj2f9FdXnX51GtEozSUJya2STnAxAabM,2629120
+phg/vis/vis.ini,sha256=LPF6QrDBoDbXT57CkQFvP1JAV9swF2m9voY6d7blht8,56
+phg/vis/imgui/main.lua,sha256=k56YduDdJcfLIdL_JqteoOY-ZHNBZT3OdPo0bN1nOTk,4485
+phg_vis-0.1.3.dist-info/LICENSE,sha256=tDnRkJxBYPzWdfh2gArRqrUPJxQZRZHJVs68qqBHIq4,1083
+phg_vis-0.1.3.dist-info/METADATA,sha256=NFrscpd0SvPDwbMwZ9Kar_AbeNPPBkvJZAL93uC7GLY,3166
+phg_vis-0.1.3.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+phg_vis-0.1.3.dist-info/top_level.txt,sha256=5GGhpTP8yi-zTXwW2HrI-zcxKxIM_nHXhL7r0iIDE_k,4
+phg_vis-0.1.3.dist-info/RECORD,,
