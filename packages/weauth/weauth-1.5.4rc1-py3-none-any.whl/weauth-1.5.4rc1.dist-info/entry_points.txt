@@ -1,0 +1,2 @@
+[console_scripts]
+weauth = weauth.weauth_entrypoint:entrypoint
