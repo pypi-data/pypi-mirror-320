@@ -1,0 +1,13 @@
+guara/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+guara/it.py,sha256=3a-fNC5Dt-g3Jscj-PJ2bTW5ZNvh4TQXv4CKqKpucEU,2737
+guara/setup.py,sha256=cBdVgt5-NmLVN0nuyzzZzhN-vQbZ-FZxGJAt253UEKE,1422
+guara/transaction.py,sha256=9H-f-f05_I3EMN25-KT8inMMAJFZKfkTmUArstvpzwo,1344
+guara/utils.py,sha256=pgi_Mk2WRJw7hcbv9rDwXmaHfKg1z07CEjBUfA2v9WU,157
+guara/asynchronous/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+guara/asynchronous/it.py,sha256=Et-NVaMeIqCyAkdKtfYbisWAz1lmbUefqw1PACnoMSU,1067
+guara/asynchronous/setup.py,sha256=NK6vgQ5gv1fqLcD8vPbUHnihZlrsm_83aMxj0IkcX8k,1156
+guara/asynchronous/transaction.py,sha256=vv9xwSltQ4yXxAbkKT2pdODYicTERj_hc7VunlORnnI,2521
+guara-0.0.7.dist-info/METADATA,sha256=DlooD8SKAEe3j3ofCFCJ-5ijhvRITUwAxSEVGxP_CF0,10744
+guara-0.0.7.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+guara-0.0.7.dist-info/licenses/LICENSE,sha256=3Q8_rwTTyPYprd9YbcCC2dCUD9t5J72Wp8hDeoO-WIs,1072
+guara-0.0.7.dist-info/RECORD,,
