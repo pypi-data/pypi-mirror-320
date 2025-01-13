@@ -1,0 +1,2 @@
+[console_scripts]
+ye3sld = ye3sld.ye3sld:main
