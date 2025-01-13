@@ -1,0 +1,6 @@
+pydantic
+rich
+openai
+
+[memory]
+chromadb>=0.6.0
