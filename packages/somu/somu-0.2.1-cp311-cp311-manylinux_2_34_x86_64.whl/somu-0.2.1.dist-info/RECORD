@@ -1,0 +1,6 @@
+somu-0.2.1.dist-info/METADATA,sha256=t6iLQtWvWqOvZey2cVLuMldWlAQNTnNetrjIjy_HZrs,1208
+somu-0.2.1.dist-info/WHEEL,sha256=JcZWOEbstAi8H7rOA8ltgvtSzlFAA5qtsK_HKn73ZZ0,108
+somu-0.2.1.dist-info/licenses/LICENSE,sha256=CvyjFFWWzQBfb27ZdzE-oxkoCU_FtKqrwhu3Zeo2nQk,19342
+somu/__init__.py,sha256=yzRSbo7taBK3c72RRW1aund_kYMddWeieaZctxcevnQ,99
+somu/somu.cpython-311-x86_64-linux-gnu.so,sha256=foSfNP9UHAVvxNWZWTr_tiD1nqJ8RO96kBTj6el_SRo,711168
+somu-0.2.1.dist-info/RECORD,,
