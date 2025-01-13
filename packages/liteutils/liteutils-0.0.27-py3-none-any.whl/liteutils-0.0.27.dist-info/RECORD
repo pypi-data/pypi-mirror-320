@@ -1,0 +1,17 @@
+liteutils/__init__.py,sha256=D8LMzvRy9Vmx2zF7ujrYNmMK-pSXdO5E0KFZyVBZPDg,138
+liteutils/_arxiv/__init__.py,sha256=k8zVYhuIx-Gr7jI32SaKB84pUT4tIqSqNJMSySOXxYk,125
+liteutils/_arxiv/_arxiv_extraction.py,sha256=7FvR7cJ0plvcF-VeLtEdbltldk_7pG_SC7MjQSqM_A4,1076
+liteutils/_arxiv/_arxiv_latex.py,sha256=UU4rTDKSDhAtoFAVbfClA2vcGVS4rLe_RuxFcyer4x0,1436
+liteutils/_arxiv/_arxiv_read.py,sha256=pEo3edUza3jauRoW0Ftnz_txVnfABO-mjtc8eWOETYA,520
+liteutils/_google_ai/__init__.py,sha256=DNGWLbKkZoP5mf6F519fDIMnoKU1VDjioeUeovdiH0k,41
+liteutils/_google_ai/google_main.py,sha256=z0z5C19XKVFp7bgbadLENxJnBjQa_XGSOOyISFquYtk,878
+liteutils/_pdf_to_image/__init__.py,sha256=PD6vlWwqM0qErFCjul0gx3tHezd5-8w1WNMXZcH8zUU,31
+liteutils/_pdf_to_image/main.py,sha256=hpnlaKWYYOg6MC10QK54Oe0MmH4dCgbQ2vJYGgqL_zw,2274
+liteutils/_pdf_to_image/outpu.png,sha256=STf7a98nB4iqE2xFC3veuVOCc_nx6NUhy7mn355Bfg4,223047
+liteutils/_pymupdf/__init__.py,sha256=ZHZk9jN3htLCYMMmeI1cfEy2WLvbIjv9sZD3CWUfs0Q,1903
+liteutils/_reader/__init__.py,sha256=JYFrsDtBIRXiMZNwCr6Pxv3f3os9OGkCyEGyzJJnu9M,68
+liteutils/_reader/all_files_reader.py,sha256=5IKDGeeA_3_jTbyUvLMWgwN2Ogva-KXimzhwkKliEuU,5358
+liteutils/common.py,sha256=rSE86u5dQ9JnhnK3XxbQ164JDzA2m4vCZ6D9TcaBGvU,432
+liteutils-0.0.27.dist-info/METADATA,sha256=OfWGo2ATENfSel9lij1J1rMOQiyruC8LzmgAu6nHiEw,747
+liteutils-0.0.27.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+liteutils-0.0.27.dist-info/RECORD,,
