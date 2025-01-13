@@ -1,0 +1,57 @@
+Metadata-Version: 2.2
+Name: assistorgapi
+Version: 0.2.0
+Summary: Unofficial API wrapper for ASSIST.org's API.
+Home-page: https://github.com/montesclarosglennbenedict/assistorgapi
+Author: Glenn Benedict Montesclaros
+Author-email: montesclarosglennbenedict@gmail.com
+Maintainer: itwsaya
+Maintainer-email: itwsaya@googlegroups.com
+License: MIT license
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-python
+Dynamic: summary
+
+# ASSIST API Wrapper
+
+[![image](https://img.shields.io/pypi/v/assistorgapi.svg)](https://pypi.python.org/pypi/assistorgapi/)
+
+[![Documentation Status](https://readthedocs.org/projects/assistorgapi/badge/?version=latest)](https://assistorgapi.readthedocs.io/en/latest/?version=latest)
+
+Unofficial API wrapper for ASSIST.org\'s API. UNRELEASED. DO NOT INSTALL THIS PACKAGE UNLESS YOU HAVE CONTACTED ME.
+
+-   Free software: MIT license
+-   Documentation: <https://assistorgapi.readthedocs.io>.
+
+## Features
+
+-   TODO
+
+## Credits
+
+This package was created with
+[Cookiecutter](https://github.com/audreyr/cookiecutter) and the
+[audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage)
+project template.
+
+there is no history, test
