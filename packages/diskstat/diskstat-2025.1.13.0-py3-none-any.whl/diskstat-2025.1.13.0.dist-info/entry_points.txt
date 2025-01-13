@@ -1,0 +1,5 @@
+[console_scripts]
+diskstat = diskstat.launcher:main
+diskstat-launcher = diskstat.server_main:try_run
+diskstat-launcher-hidden = diskstat.server_main:start_hidden
+diskstat-stop = diskstat.stop:stop
