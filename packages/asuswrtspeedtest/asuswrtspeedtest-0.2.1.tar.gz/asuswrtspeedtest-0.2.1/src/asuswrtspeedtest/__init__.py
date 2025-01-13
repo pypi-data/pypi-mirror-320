@@ -1,0 +1,1 @@
+from .speedtest_client import SpeedtestClient
