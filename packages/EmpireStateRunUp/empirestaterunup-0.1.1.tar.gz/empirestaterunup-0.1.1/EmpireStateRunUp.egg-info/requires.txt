@@ -1,0 +1,13 @@
+pandas==2.2.2
+textual==1.0.0
+textual-serve==1.1.1
+rich==13.9.4
+numpy==1.26.4
+matplotlib==3.8.3
+
+[dev]
+textual-dev==1.7.0
+twine==5.1.1
+
+[lint]
+pylint==3.3.1
