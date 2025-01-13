@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: NetMagic
+Version: 0.1.2
+Summary: ('Project NetMagic',)
+Author: Michael Buckley
+Keywords: networking,network,ssh,cli,api,automation
+Requires-Dist: netmiko
+Requires-Dist: mactools
+Requires-Dist: pydantic
+Requires-Dist: textfsm
+Requires-Dist: openpyxl
+Dynamic: author
+Dynamic: description
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: summary
+
+Project NetMagic
