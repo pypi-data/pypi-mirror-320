@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: sudtools
+Version: 1.2.7
+Summary: cogleapai
+License: Apache License 2.0
+Requires-Dist: psutil
+Requires-Dist: modelscope==1.20.1
+

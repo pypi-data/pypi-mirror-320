@@ -1,0 +1,11 @@
+sudtools/__init__.py,sha256=mL93pkORr5W03DnfsXU81BvR8bvk58W_TlZwlzBS0XU,56
+sudtools/cmdline.so,sha256=LFkJ6kaSbZ6BTModRDQexszrI6a2vrNR-y9lacJnNAw,429112
+sudtools/execute.so,sha256=hAwIsNbXZCIHA0_2FzRQGrQfL9ctX_NsumC3MNQgS5s,4211744
+sudtools/hub_file_utils.so,sha256=chO_3at61HZmuZXOiI1vhEMd3GqtaJ0vaHPothFBs2U,471472
+sudtools/user.so,sha256=L-ooYBv-INw6PWSDZwcFABRB1Y-TdueGtlID5T2k4go,827512
+sudtools/utils.so,sha256=lyXruyQ3RzCAK5pUf9_sDBo5okBDUTgLrReAj7GqhpE,2848112
+sudtools-1.2.7.dist-info/METADATA,sha256=0mlB2OS_dJKGwzl66zsQEi6Ybdy9ZpsVgQ-GAsuAL2M,156
+sudtools-1.2.7.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+sudtools-1.2.7.dist-info/entry_points.txt,sha256=bYX2I1BOoRhbTp46kVcyAwKjY9M3iR32vd1pPwj-6iw,45
+sudtools-1.2.7.dist-info/top_level.txt,sha256=D_MgYOHwS3e9NQuLxxTUO3ji385jDNRF2ZXcug3BatU,9
+sudtools-1.2.7.dist-info/RECORD,,
