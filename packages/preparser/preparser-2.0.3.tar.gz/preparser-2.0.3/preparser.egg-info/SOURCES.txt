@@ -1,0 +1,11 @@
+InstallHelper.py
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+preparser/FileHelper.py
+preparser/PreParseHelper.py
+preparser/TaskHelper.py
+preparser/__init__.py
+preparser.egg-info/PKG-INFO
