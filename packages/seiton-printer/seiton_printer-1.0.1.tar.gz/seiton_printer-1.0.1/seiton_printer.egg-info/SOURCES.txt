@@ -1,0 +1,7 @@
+README.md
+setup.py
+seiton_printer.egg-info/PKG-INFO
+seiton_printer.egg-info/SOURCES.txt
+seiton_printer.egg-info/dependency_links.txt
+seiton_printer.egg-info/requires.txt
+seiton_printer.egg-info/top_level.txt
