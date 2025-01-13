@@ -1,0 +1,16 @@
+include:
+  # semantic-release template
+  - component: "$CI_SERVER_FQDN/to-be-continuous/semantic-release/gitlab-ci-semrel@3.11"
+    inputs:
+      auto-release-enabled: true
+
+  # Gitleaks template
+  - component: "$CI_SERVER_FQDN/to-be-continuous/gitleaks/gitlab-ci-gitleaks@2.6"
+  # Python template
+  - component: "$CI_SERVER_FQDN/to-be-continuous/python/gitlab-ci-python@7.6"
+    inputs:
+      build-system: "uv"
+      pytest-enabled: true
+      ruff-enabled: true
+      package-enabled: true
+      publish-enabled: true

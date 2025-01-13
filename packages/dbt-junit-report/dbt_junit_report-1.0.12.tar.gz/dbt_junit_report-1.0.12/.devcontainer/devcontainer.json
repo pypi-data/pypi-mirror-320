@@ -1,0 +1,42 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+	"name": "dbt_junit_report",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "docker.io/ubuntu:latest",
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {},
+		"ghcr.io/jsburckhardt/devcontainer-features/uv:1": {},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
+		"ghcr.io/msclock/features/gitlab-ci-local:0": {}
+    },
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "git config core.editor 'code --wait'",
+	"postAttachCommand": "uv sync --frozen",
+  
+
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"charliermarsh.ruff",
+				"mhutchie.git-graph"
+			],
+			"settings": {
+			  "python.defaultInterpreterPath": "/workspaces/dbt-junit-report/.venv/bin/python3",
+			  "python.testing.pytestEnabled": true
+			}
+	  
+		}
+	}
+	
+
+  
+}

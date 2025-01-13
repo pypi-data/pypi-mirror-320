@@ -1,0 +1,9 @@
+src/dbt_junit_report/__pycache__/*
+src/dbt_junit_report/tests/__pycache__/*
+src/dbt_junit_report.egg-info/*
+src/dbt_junit_report/reports/*
+
+reports/*
+.venv/*
+.cache/*
+.gitlab-ci-local/*
