@@ -1,0 +1,9 @@
+beautifulsoup4
+datasets
+openai
+pandas
+pysbd
+requests
+tiktoken
+torch
+transformers
