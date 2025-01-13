@@ -1,0 +1,4 @@
+shaders/
+sdl3/__pycache__/
+embed.py
+*.pyc
