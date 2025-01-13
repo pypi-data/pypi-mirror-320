@@ -1,0 +1,9 @@
+neutrosophics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neutrosophics/analysis.py,sha256=pcdeVtMuJg9k7PS-2fdDlt54sP97Q4QzYX4kNyuYmGo,575
+neutrosophics/logic.py,sha256=9skpqDuMk3kEZbkBK_Oj2P3tbXeP6VeD9lMXT4lXcZc,1225
+neutrosophics/types.py,sha256=oxzf_lilQqlX0TOtGlOzMVfSJ1qMoQANmBIPL4lJYT8,2499
+neutrosophics/validators.py,sha256=B6c2rh8YuAcBSC3F7rQL9SI6KbVCd518QzEFz0hGZec,146
+neutrosophics-0.0.4.dist-info/METADATA,sha256=yIgF4izpawwdrtbbpQGj-Kgnr-d8dwUhCj22IvlDVXk,3926
+neutrosophics-0.0.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+neutrosophics-0.0.4.dist-info/licenses/LICENCE,sha256=DUz_SgFywY_tB5MM_Co3ZscDw3v1f66Ailr9cNJjIjU,150
+neutrosophics-0.0.4.dist-info/RECORD,,
