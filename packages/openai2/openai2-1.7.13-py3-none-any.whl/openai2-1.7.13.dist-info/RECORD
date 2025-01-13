@@ -1,0 +1,9 @@
+openai2/__init__.py,sha256=HwPUBptA_2eprREGv7VRZRB3N3GtAxW0Tb03_cW6xRI,121
+openai2/_chat.py,sha256=xftXKtahEoNpMae1O8k6Ok6wXohSBbVD4-aMt-3mqcs,14043
+openai2/_chat_model.py,sha256=tNIsHix6ZAaT7lwGqWLhsRK-6FZ88vukfgYEcqnHP7M,345
+openai2/_group_chat.py,sha256=gfJWg9waYpmClqVqlk8xnoIGgH_rIDfVIUjUwS_pGro,6784
+openai2-1.7.13.dist-info/entry_points.txt,sha256=i2oN8Ae25gU-XoxtDndkB7we3AiSvh8-LPe0e6_tgrM,19
+openai2-1.7.13.dist-info/LICENSE,sha256=Pl1wBHAWolwQFlsADhzKtt4MAJf25RKuORPrrOtzAu0,11237
+openai2-1.7.13.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+openai2-1.7.13.dist-info/METADATA,sha256=Fxe0Cx41VaOE7bsKYtYzk2-meM_miCXxUMzaKQewfiM,15280
+openai2-1.7.13.dist-info/RECORD,,
