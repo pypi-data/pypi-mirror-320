@@ -1,0 +1,17 @@
+aibaba_ai_openai/__init__.py,sha256=LDhqARUpkU1j-eBAwo05mmvQx123e0pEaZzu5kTFG4w,357
+aibaba_ai_openai/chat_models/__init__.py,sha256=QSZ9dZNOHmbuspOutBhVpycA-zaJHeuUjGXpdRw7etE,173
+aibaba_ai_openai/chat_models/azure.py,sha256=8xKAlL69xkK68A9xY7WXSK_qkDwo0gCcBun3UWIslPY,27535
+aibaba_ai_openai/chat_models/base.py,sha256=NPwndH2Cr8zPJs9jOAQKLNxC2xOJ4_Kg7Cqas_MvlIU,90560
+aibaba_ai_openai/embeddings/__init__.py,sha256=yzHPXerhHSEGgHZSgCVyh4mR1MbOvyaRAarU-iZZ7ww,195
+aibaba_ai_openai/embeddings/azure.py,sha256=OO4u9rIdZk3mASabxHfgS11HOSg_GHfhiwtWNPR5c08,9076
+aibaba_ai_openai/embeddings/base.py,sha256=fbvodYhfC5x77XPcxrOynOcdfRzWo2MktCXuPOSQfxo,26607
+aibaba_ai_openai/llms/__init__.py,sha256=DBAs_XiRF5z3UNOFvRB2yLH0iD_ccoPzQWNx8NR2JkA,143
+aibaba_ai_openai/llms/azure.py,sha256=ltodGiMMpiWUEu4PBmFaXY5P3xbxD0G2lNkQ1JR3HAg,8283
+aibaba_ai_openai/llms/base.py,sha256=OQfsTuunJezn-DOlUl6vTJ-8NLcV7oiWre_SWteDQHg,26923
+aibaba_ai_openai/output_parsers/__init__.py,sha256=yXo0a8xDh0qFoZEzHDQ-JzJ_6qoYNNG9GT4YOUGCqsg,229
+aibaba_ai_openai/output_parsers/tools.py,sha256=6KOPHJPE9H8QsdPe6Io_z5dEjE-Mh_F6RpqycN8k9mY,229
+aibaba_ai_openai/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aibaba_ai_openai-0.2.14.dist-info/LICENSE,sha256=VGVocMKAloTf8paaXBLNIzRX4QIDtdtgT4U3dmY4KDo,1072
+aibaba_ai_openai-0.2.14.dist-info/METADATA,sha256=PkQLJ6pWlDupXQbRoILfUBa41d4TVMt0rvTM3vxxTSE,2597
+aibaba_ai_openai-0.2.14.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+aibaba_ai_openai-0.2.14.dist-info/RECORD,,
