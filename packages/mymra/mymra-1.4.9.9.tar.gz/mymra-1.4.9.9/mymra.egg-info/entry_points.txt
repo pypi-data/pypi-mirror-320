@@ -1,0 +1,2 @@
+[console_scripts]
+mymra = mymra.mymra:main

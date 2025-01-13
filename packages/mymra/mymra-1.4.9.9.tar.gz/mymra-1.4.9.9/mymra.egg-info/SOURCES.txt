@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+mymra/__init__.py
+mymra/mymra.py
+mymra.egg-info/PKG-INFO
+mymra.egg-info/SOURCES.txt
+mymra.egg-info/dependency_links.txt
+mymra.egg-info/entry_points.txt
+mymra.egg-info/requires.txt
+mymra.egg-info/top_level.txt
+tests/test.py
