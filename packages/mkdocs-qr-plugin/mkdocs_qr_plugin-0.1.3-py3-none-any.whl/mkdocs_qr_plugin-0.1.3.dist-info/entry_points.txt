@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+qr = mkdocs_qr_plugin.plugin:QRPlugin
