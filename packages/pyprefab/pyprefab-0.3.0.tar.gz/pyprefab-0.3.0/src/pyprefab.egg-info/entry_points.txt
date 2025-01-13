@@ -1,0 +1,2 @@
+[console_scripts]
+pyprefab-create = pyprefab.cli:app
