@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: cbfax
+Version: 0.0.1
+Summary: cbf with jax
+Author: Karen Leung
+Author-email: kymleung@uw.edu
+Requires-Dist: jax
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary
