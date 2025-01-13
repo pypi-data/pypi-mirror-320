@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: hj-check-os-version
+Version: 0.2.0
+Summary: Default template for PDM package
+Author-Email: heejin131 <journeyjean131@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/heejin131/hhj-check-os-version
+Project-URL: Issues, https://github.com/heejin131/hj-check-os-version/issues
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# hj-check-os-version
+
+## USE
+```python
+$ pip install hj-check-os-version
+$ python
+>>> from hj_check_os_version .hi import hi
+>>> hi()
+```
+
+### Devlelopment environment Setting
+
+```bash
+$ install pdm
+$ git clone
+$ source .vnev/bin/activate
+# $ vi ...
+
+# TEST
+$ pdm install
+$ pdm test
+$ pip install
+
+$ git add <file-name>
+$ git commit -a
+$ git push
+$ pdm publish 
+
