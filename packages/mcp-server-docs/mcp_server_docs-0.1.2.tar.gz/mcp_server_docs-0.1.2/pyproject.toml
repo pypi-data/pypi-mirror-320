@@ -1,0 +1,20 @@
+[project]
+name = "mcp-server-docs"
+version = "0.1.2"
+description = "An MCP Server that makes it easy to load documentation files from locally available repositories"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "aiofiles>=24.1.0",
+    "httpx>=0.28.1",
+    "mcp>=1.1.1",
+    "pyyaml",
+    "simplemdx>=0.1.10",
+]
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project.scripts]
+mcp-server-docs = "mcp_server_docs:main"
