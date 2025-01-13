@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pms-inference-engine"
+version = "2.0.0"
+description = "Inference Engine for pms"
+authors = ["HyeongSeok Kim <tiryul@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.12.*"
+uvloop = "*"
+loguru = "*"
+numpy = "*"
+ray = {version = "2.40", extras = ["serve"]}
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
