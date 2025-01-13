@@ -1,0 +1,10 @@
+Athenea/__init__.py,sha256=BPA2fGOCiS12gtxKtlY0EGakdCvVFje1Bglwk3r9gvo,473
+Athenea/configs.py,sha256=n8ut6ZGT6Aa5A9MPSqNf5yf_GerpKCIoILN7oweJ0HE,6353
+Athenea/diffusion_utils.py,sha256=qqK_5cFZ1MiLv4wNASsR69bIcTfIrjgBW0bxOHsU6nU,4450
+Athenea/encoders.py,sha256=75Xk6WDQ4-B3KCaNu4TbbVDWdIpS62K86KVKO4FRaoU,7287
+Athenea/llm.py,sha256=UhQs8t1xvOzrrufxvV2Q5h7MC_87LuO5Da6ymZRhpmU,8760
+Athenea/transfusion.py,sha256=s8Zo3ZdVpW5FP8e0kW0_uVJQUujv8mN5z4rQtl7XhKo,16920
+athenea-0.1.8.dist-info/METADATA,sha256=D2NJA1UYQmDRONaNhYQ18XcTKHMGve0Y8N9q4WdNNHU,352
+athenea-0.1.8.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+athenea-0.1.8.dist-info/licenses/LICENSE,sha256=mhg3ETotAoNvvtkOmMNjoGcsATahjUfpTXoZDNAsUEA,2833
+athenea-0.1.8.dist-info/RECORD,,
