@@ -1,0 +1,4 @@
+include pyproject.toml
+include setup.cfg
+include README.md
+recursive-include src/kerasN * 

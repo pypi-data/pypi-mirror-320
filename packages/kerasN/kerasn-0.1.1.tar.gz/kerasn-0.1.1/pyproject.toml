@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kerasN"
+version = "0.1.1"
+description = "A pure Python/NumPy implementation of deep learning framework"
+authors = [
+    {name = "Yeseol Lee", email = "yebubu00@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "numpy>=1.19.2",
+    "matplotlib>=3.3.2",
+    "scikit-learn>=0.23.2",
+    "pandas>=1.2.0",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/AshleyLee00/KerasN"
+"Bug Tracker" = "https://github.com/AshleyLee00/KerasN/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v" 
