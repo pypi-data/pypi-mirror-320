@@ -1,0 +1,24 @@
+Metadata-Version: 2.2
+Name: tarea4-ASG
+Version: 0.1.0
+Summary: Aplicación de reservas con interfaz gráfica
+Author: Alberto Serradilla Gutiérrez
+Author-email: aserradillag01@educastillalamancha.es
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: PySide6>=6.8.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Tarea 4
+
+AplicaciÃ³n de reservas con interfaz grÃ¡fica desarrollada en Python.

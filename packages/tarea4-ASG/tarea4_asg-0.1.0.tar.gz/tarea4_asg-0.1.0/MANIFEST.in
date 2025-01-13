@@ -1,0 +1,4 @@
+include tarea3/Modelo/*
+include tarea3/Recursos/img/*
+include tarea3/Vistas/*
+include tarea3/Control/*
