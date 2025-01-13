@@ -1,0 +1,2 @@
+recursive-exclude tests *.py
+include src/perfait/scripts/perfait_scripts/perfait/*.*
