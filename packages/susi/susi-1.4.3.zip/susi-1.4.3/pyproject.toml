@@ -1,0 +1,35 @@
+[metadata]
+description-file = "README.rst"
+license_file = "LICENSE"
+
+[tool.black]
+line-length = 79
+target-version = ['py39', 'py310', 'py311', 'py312']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | .pytest_cache
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+
+[tool.pydocstyle]
+convention = "numpy"
+match = 'susi/*'
