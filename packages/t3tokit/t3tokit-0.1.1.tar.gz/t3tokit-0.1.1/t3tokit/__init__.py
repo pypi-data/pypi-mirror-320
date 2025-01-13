@@ -1,0 +1,1 @@
+from .voice_zhipu import AudioProcessor as ZPAudioProcessor

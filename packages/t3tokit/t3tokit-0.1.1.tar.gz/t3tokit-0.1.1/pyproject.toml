@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "t3tokit"
+version = "0.1.1"
+description = "A simple utility for creating directories."
+authors = ["pytools <hyhlinux@gmail.com>"]
+license = "MIT"
+readme = "doc.md"  # 添加这一行来引用README文件
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
