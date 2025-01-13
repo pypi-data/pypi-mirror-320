@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+darkflipper/darkflipper.egg-info/PKG-INFO
+darkflipper/darkflipper.egg-info/SOURCES.txt
+darkflipper/darkflipper.egg-info/dependency_links.txt
+darkflipper/darkflipper.egg-info/top_level.txt
