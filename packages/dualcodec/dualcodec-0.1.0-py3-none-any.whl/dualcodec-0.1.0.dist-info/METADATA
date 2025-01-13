@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: dualcodec
+Version: 0.1.0
+Summary: DualCodec model
+Author-email: Jiaqi Li <jiaqili3@link.cuhk.edu.cn>
+License: MIT
+License-File: LICENSE
+Requires-Python: >=3.8
+Requires-Dist: descript-audio-codec
+Requires-Dist: easydict
+Requires-Dist: transformers>=4.30.0
+Provides-Extra: train
+Description-Content-Type: text/markdown
+
+# DualCodec
+## Installation
+```bash
+pip install dualcodec
+```
+## How to inference
+
+Download checkpoints to local: 
+```
+# export HF_ENDPOINT=https://hf-mirror.com if you're in China
+huggingface-cli download facebook/w2v-bert-2.0 --local-dir w2v-bert-2.0
+huggingface-cli download amphion/dualcodec --local-dir dualcodec_ckpts
+```
+
+To inference an audio: 
+```python
+
+```
+
+See "example.ipynb" for example inference scripts.
