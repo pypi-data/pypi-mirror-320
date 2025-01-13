@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+pymnz/__init__.py
+pymnz.egg-info/PKG-INFO
+pymnz.egg-info/SOURCES.txt
+pymnz.egg-info/dependency_links.txt
+pymnz.egg-info/top_level.txt
+pymnz/core/__init__.py
+pymnz/core/calculos.py
+pymnz/utils/__init__.py
+tests/test_core.py
+tests/test_utils.py
