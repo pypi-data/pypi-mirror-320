@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = 'goopywoopy'
+version = "0.1.0"
+description = "A kit containing tools for better programming."
+requires-python = ">=3.8"
+dependencies = ['colorama']
+readme = {file = "README.md", content-type = "text/markdown"}
+license = { file = "LICENSE" }
+authors = [
+    {name = "Soumyo Deep Gupta", email = "deep.main.ac@gmail.com"}
+]
+maintainers = [
+    {name = "Soumyo Deep Gupta", email = "deep.main.ac@gmail.com"}
+]
+keywords = ['d33p0st','goopywoopy', 'modstore', 'module', 'kit', 'OOP', 'object', 'ABC']
+
+[tool.setuptools.package-data]
+"goopywoopy" = ["*.pyi"]
+
+[project.urls]
+GitHub = "https://github.com/d33p0st/goopywoopy"
+Issues = "https://github.com/d33p0st/goopywoopy/issues"
+Pull-Request = "https://github.com/d33p0st/goopywoopy/pulls"
