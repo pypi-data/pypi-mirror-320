@@ -1,0 +1,10 @@
+balekit/__init__.py,sha256=tbj4RWb4WzEPDxb13z5Ggb_s8qJAKnrezMChFm8APl4,96
+balekit/client/client.py,sha256=DLqh8PPKF5tZWjsdkWMSKuWpuhzwUKW-GcIuuYYOPxE,475
+balekit/client/methods/__init__.py,sha256=Xob5jbHUvSgj5eusu3Eb5Q3ZIJaLRZNFLT3g5bNNGtU,66
+balekit/client/methods/get_me.py,sha256=0qTPWxUZd789dBMz4jznH8-NNlt8SbpfwLyA_ibjohk,98
+balekit/client/methods/send_message.py,sha256=RYxS2no1fkWPSeLfAgb7hceiad_UwDNIrM6qZFWu0gE,156
+balekit-0.0.1.dist-info/LICENSE,sha256=39Ho1HFfUKg-ewj7qqxmcoFwI2T0palDx0mSPmY98A0,1083
+balekit-0.0.1.dist-info/METADATA,sha256=P_Ji9KAol9Ofpdcd5qBf17NyqvqZFYiY0JeWKHtwHR4,948
+balekit-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+balekit-0.0.1.dist-info/top_level.txt,sha256=v89E_nCWYPChHeobBciD8e_E3_WD3oRoWdKoJ5wqeRQ,8
+balekit-0.0.1.dist-info/RECORD,,
