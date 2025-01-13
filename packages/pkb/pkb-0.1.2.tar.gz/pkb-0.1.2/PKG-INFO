@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: pkb
+Version: 0.1.2
+Summary: Personal Knowledge Base
+Author: hyw208
+Author-email: hyw208@gmail.com
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: fastapi[standard] (>=0.115.6,<0.116.0)
+Description-Content-Type: text/markdown
+
+# Personal Knowledge Base
+
+
