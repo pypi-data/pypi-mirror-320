@@ -1,0 +1,2 @@
+[console_scripts]
+xml-formatter = xml_formatter:main

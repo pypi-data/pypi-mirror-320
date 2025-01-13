@@ -1,0 +1,8 @@
+README.md
+setup.py
+xml_formatter.py
+xml_formatter_plus.egg-info/PKG-INFO
+xml_formatter_plus.egg-info/SOURCES.txt
+xml_formatter_plus.egg-info/dependency_links.txt
+xml_formatter_plus.egg-info/entry_points.txt
+xml_formatter_plus.egg-info/top_level.txt
