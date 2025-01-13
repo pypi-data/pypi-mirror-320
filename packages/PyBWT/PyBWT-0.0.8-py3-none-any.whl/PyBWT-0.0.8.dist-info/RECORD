@@ -1,0 +1,13 @@
+bwt/__init__.py,sha256=aVsq9Yq29yLCOE7RRTFtfE7ekwft8OMrPWBlUz4Kv7c,277
+bwt/api_bwt.py,sha256=zpnmFsBCBWRlj2FObJN-3ibdt3bPdOKtINUeCRyAfCk,4126
+bwt/api_ctypes.py,sha256=i1K-1fA2eF7Y7pf7Okf0rEeJjDSj6ezAuFogw1mUTzQ,1880
+bwt/ld-linux-x86-64.so.2,sha256=PFCPbhYoBTzuSGbprx2tLVJnfVlqdxeNStM9sqtID5U,228376
+bwt/libbwt.so,sha256=-m8ECWmXRMq1CF_UMqdJsdrKw6tda2vbfAVjVW21tfw,31960
+bwt/libc.so.6,sha256=Jl_bvvCHuX9eHYi0IITHBdv9piGxBGItZjT3Wf7KrTE,2071577
+bwt/libcrypto.so.3,sha256=56cPzK_43aw5P7RGqc0Rt2pbAlaxgecuad2wjQ7Uno4,5305121
+bwt/libssl.so.3,sha256=cFmOWPqkskUHVaOBmqPAPtB24rojktC-hZ1VPf6XKkI,932313
+PyBWT-0.0.8.dist-info/LICENSE,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+PyBWT-0.0.8.dist-info/METADATA,sha256=FmxY6vq9SiAnA7gWwv2_jo6WBSyjE3njCR6FO6JjFK4,4370
+PyBWT-0.0.8.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+PyBWT-0.0.8.dist-info/top_level.txt,sha256=oLABrU5PI93s79jUTQcVZ5ZZoQFuEdQbm5xSLHuoCVE,4
+PyBWT-0.0.8.dist-info/RECORD,,
