@@ -1,0 +1,9 @@
+scgraph/__init__.py,sha256=Ke8etGPl77vAX-99kS0D3L3xh3-y8EMEBBpV8Ciy_OM,51
+scgraph/scgraph.py,sha256=p6-nuB05AW9oLuw9YYXAxHJtdpr93bRVioRpCpXp1kA,7543
+scgraph/utils_handler.py,sha256=bLay3ZES2DyQwR5qS3BUXUNeaZYRbjeHoZfH12v_Q88,985
+scgraph_eval-0.1.0.dist-info/LICENSE,sha256=0-ohU8hKQzXQy8AxlEwRdLVaAczknxaXNHgBLFBqn0Y,1064
+scgraph_eval-0.1.0.dist-info/METADATA,sha256=0I6PuZm02w_a-iHP2HUJuQzKQJsBxSfrb5ROp_2V3BE,2815
+scgraph_eval-0.1.0.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+scgraph_eval-0.1.0.dist-info/entry_points.txt,sha256=qFSYcQD9NE4RgSoNyhHABvB3MMOSN5IL2ehtRJCOwu8,54
+scgraph_eval-0.1.0.dist-info/top_level.txt,sha256=H5sBb9PrVUQMy3BhH7-DgkCxjG_9bOnYySP_M9lIQQA,8
+scgraph_eval-0.1.0.dist-info/RECORD,,
