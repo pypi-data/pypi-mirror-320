@@ -1,0 +1,164 @@
+Metadata-Version: 2.2
+Name: Appcomm_python_Logger
+Version: 2
+Summary: A python logger similair to the lavavel logs. Made for internal use in Appcomm.
+Author-email: Furkan Öztürk <fu.ozturk25@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Appcomm Python Logger
+
+This package provides a robust logging solution with features for logging to the terminal, files, databases, Elasticsearch, and even uploading log files to an FTP server. It supports advanced features such as custom log levels, colorized console output, and detailed exception handling.
+
+## Features
+
+- **Colorized Console Output**: Logs are colorized for easy identification based on their severity (e.g., green for INFO, red for ERROR).
+- **Log File**: All logs are saved in a log file with detailed timestamps, hostnames, and log levels.
+- **Database Logging**: Logs can be stored in multiple database types, including MySQL, MariaDB, PostgreSQL, SQLite, and Oracle.
+- **Elasticsearch Support**: Logs can be indexed into an Elasticsearch cluster for easy searching and visualization.
+- **FTP Support**: Log files can be uploaded to an FTP or FTPS server automatically.
+- **Custom Logging Levels**: Includes additional levels like NOTICE, ALERT, and EMERGENCY.
+- **Exception Handling**: Logs detailed stack traces and exception messages for easier debugging.
+- **Customizable Directory**: The directory for log files can be customized, with a default of `./logs`.
+
+## Installation
+
+To install the `Appcomm_python_Logger` package, you can simply copy the logger class into your project or install it via a package manager if it has been uploaded to PyPI.
+
+```bash
+pip install Appcomm_python_Logger
+```
+
+## Required Python Packages
+The following Python libraries are required for full functionality. Install them using pip:
+```bash
+pip install sqlalchemy pymysql psycopg2 cx_Oracle
+pip install mysql-connector-python psycopg2-binary elasticsearch
+```
+
+## Usage
+### Basic Logger Setup
+To use the logger, you can import the `Logger` class and create an instance of it in your code. You can then log messages at different severity levels using the `debug()`, `info()`, `warning()`, `error()`, and `critical()` methods.
+
+To start logging, import the Logger class and initialize it:
+```python
+from Appcomm_python_Logger import Logger
+
+logger = Logger(log_dir="./logs")
+
+logger.debug("This is a debug message.")
+logger.info("This is an info message.")
+logger.warning("This is a warning message.")
+logger.error("This is an error message.")
+logger.critical("This is a critical message.")
+logger.alert("This is an alert message.")
+logger.emergency("This is an emergency message.")
+
+```
+
+## Logging with Exceptions
+To log an exception with a traceback, use the exc argument:
+
+```python
+try:
+    # Simulate an operation that raises an exception
+    raise Exception("Failed to connect to the SFTP server")
+except Exception as e:
+    logger.error("An error occurred while connecting to the SFTP server", exc=e)
+```
+
+## Logging to Databases and Elasticsearch
+
+You can log directly to supported databases or an Elasticsearch cluster by providing the necessary configuration file.
+
+Configuration File Example
+Here’s an example JSON configuration file (`config.json`) for database and Elasticsearch connections:
+
+```json
+{
+    "mysql": {
+        "driver": "mysql",
+        "host": "127.0.0.1",
+        "port": 3307,
+        "username": "root",
+        "password": "root",
+        "name": "mysql"
+    },
+    "postgresql": {
+        "driver": "postgresql",
+        "host": "127.0.0.1",
+        "port": 3308,
+        "username": "postgres",
+        "password": "root",
+        "name": "postgres"
+    },
+    "mariadb": {
+        "driver": "mariadb",
+        "host": "127.0.0.1",
+        "port": 3309,
+        "username": "root",
+        "password": "root",
+        "name": "mysql"
+    },
+    "sqlite": {
+        "driver": "sqlite",
+        "name": "/home/furkan/Projects/Stage/appcommpythonlogger/logs/PythonLogger.sqlite"
+    },
+    "elasticsearch": {
+        "driver": "elasticsearch",
+        "host": "172.18.106.236",
+        "port": 9200,
+        "username": "elastic",
+        "password": "RvlWgIu+iYODMq=tyl5x",
+        "index": "test_logs",
+        "scheme": "https"
+    },
+    "ftp": {
+        "host": "127.0.0.1",
+        "port": 21,
+        "username": "ftpuser",
+        "password": "your_password",
+        "remote_dir": "/"
+    }
+}
+```
+
+## Command-Line Setup
+
+The logger can also be initialized directly from the command line:
+
+```bash
+python3 src/AppcommPythonLogger/tester.py --db mysql,postgresql,sqlite,elasticsearch --config config.json --log-dir ./logs
+```
+
+Command-line arguments:
+
+- **--db**: Comma-separated list of database types to log to (e.g., mysql,postgresql).
+- **--config**: Path to the JSON configuration file with connection details.
+- **--log-dir**: Directory for saving log files (default: ./logs).
+
+## Supported Databases
+The following databases are supported:
+
+- **MySQL**
+- **PostgreSQL**
+- **MariaDB**
+- **SQLite**
+- **Oracle**
+- **Elasticsearch (for indexing and searching logs)**
+
+## Customizing the Log File Directory
+
+By default, log messages are displayed in the terminal with colorized output and saved to a log file in the `./logs` directory. You can customize the log file directory by passing a `log_dir` argument to the `Logger` class.
+
+```python
+logger = Logger(log_dir="./my_logs")
+```
+
+## Author
+
+This logger package was created by Furkan Öztürk (https://furkanozturk.nl/), intern for Appcomm (https://appcomm.nl).
