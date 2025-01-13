@@ -1,0 +1,6 @@
+[console_scripts]
+nxt-push=nxt.command.push:run
+nxt-screenshot=nxt.command.screenshot:run
+nxt-server=nxt.command.server:run
+nxt-test=nxt.command.test:run
+
