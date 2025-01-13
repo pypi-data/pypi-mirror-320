@@ -1,0 +1,13 @@
+pyproject.toml
+setup.py
+pygray3/__init__.py
+pygray3.egg-info/PKG-INFO
+pygray3.egg-info/SOURCES.txt
+pygray3.egg-info/dependency_links.txt
+pygray3.egg-info/requires.txt
+pygray3.egg-info/top_level.txt
+pygray3/extensions/key.c
+pygray3/extensions/__init__.py
+pygray3/extensions/key.c
+pygray3/extensions/key.pyi
+pygray3/extensions/libapi.dll
