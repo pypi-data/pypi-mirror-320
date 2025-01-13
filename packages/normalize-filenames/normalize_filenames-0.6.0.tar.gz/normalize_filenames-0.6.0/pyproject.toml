@@ -1,0 +1,20 @@
+[project]
+name = "normalize-filenames"
+version = "0.6.0"
+description = "A small utility to normalize filenames the way that I like"
+readme = "README.md"
+authors = [
+    { name = "Jeremy Gibson", email = "jeremy.gibson@crusosoft.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "unidecode",
+    "emoji"
+]
+
+[project.scripts]
+normf = "normalize_filenames.normf:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
