@@ -1,0 +1,9 @@
+README.md
+setup.py
+real_useragent/__init__.py
+real_useragent/get_agent.py
+real_useragent/get_compile.py
+real_useragent.egg-info/PKG-INFO
+real_useragent.egg-info/SOURCES.txt
+real_useragent.egg-info/dependency_links.txt
+real_useragent.egg-info/top_level.txt
