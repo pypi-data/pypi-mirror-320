@@ -1,0 +1,8 @@
+scrapyrunner/__init__.py,sha256=YluktXGbu1pPmZYhjks9dh8k9US66qok4Vcjyh-vTrA,232
+scrapyrunner/processor.py,sha256=rP-YfSNA7PaTZMXQZjaWjQpIZSoFX7-ZrEUTF6kLTqg,2672
+scrapyrunner/queue.py,sha256=PVDC_zy3W3t0aD3YXYwAp8KHQOW245nOaXFras3dysM,3170
+scrapyrunner/runner.py,sha256=D_EWPvbnLwy5dZZJeCUVpgGscK9m3c46KM4B9UeDSME,4701
+scrapyrunner-0.0.4.dist-info/LICENSE,sha256=UJzi3uezh2M5A_ygXF0dsuJma76DaiILirdLRUw6C1k,1070
+scrapyrunner-0.0.4.dist-info/METADATA,sha256=qWfSD7tEZfTV768SjUb0_uMHgmIhKDsSI_Pov8EI-wk,3869
+scrapyrunner-0.0.4.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+scrapyrunner-0.0.4.dist-info/RECORD,,
