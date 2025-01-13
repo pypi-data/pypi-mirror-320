@@ -1,0 +1,182 @@
+# rv_strategy_mb
+
+Python Relative Value Trading Strategy
+
+## **Package Documentation**
+
+### **Overview**
+
+This package is designed to execute relative value trades between two stock indices. 
+
+Users can specify two indices to analyse along with an observation period. The tool performs a simple Ordinary Least Squares (OLS) linear regression between the indices to extract the beta coefficient and calculate a z-score.
+
+The package also uses the `pybacktestchain` package for better data retrieval, backtesting and trading signal generation.
+
+### **Key Concepts**
+
+The underlying strategy relies on the assumption that asset prices or their ratios will revert to a historical mean. Significant deviations of the z-score from this mean, as indicated by the standard deviation, suggest potential mispricing between the two assets. 
+
+This presents an opportunity to trade in anticipation of a return to the mean.
+
+### **Functionalities**
+
+**1. Input parameters:**
+
+Two stock indices to analyse.
+An observation period for the regression analysis.
+A maximum budget for the trade.
+
+**2. Regression analysis:**
+
+The package runs an OLS linear regression to create a model, giving the mean and standard deviation of the residuals.
+
+**3. Z-score computation:**
+
+A z-score is calculated along with its mean and standard deviation over the specified period.
+
+By looking at the z-score for trading signals, users can make informed decisions based on statistical indicators that reflect market efficiencies and mispricings.
+
+If the current z-score exceeds 2 standard deviations from the mean, it suggests that Index 1 is overvalued relative to Index 2. Likewise, if it falls below -2 standard deviations, it indicates that Index 1 is undervalued.
+
+**4. Trading signals:**
+
+A "sell Index 1 and buy Index 2" signal is generated when the z-score is above 2 standard deviations.
+
+The package provides recommendations for the quantities to buy or sell based on the maximum budget specified by the user and beta-adjusted from the one derived from the regression.
+
+**5. Blockchain integration:**
+
+All trading activities are recorded in a blockchain for traceability.
+
+**6. Backtesting:**
+
+The backtest class retrieves historical data to evaluate trading scenarios, giving the final portfolio value after potential trades.
+
+Results from the backtest are also stored in the blockchain for future reference.
+
+### **Modules**
+This package contains several modules:
+
+- `executor.py`: it is the main entry point for the application. It handles user input, retrieves historical stock data, and performs regression analysis to generate trading signals.
+- `backtest.py`: it executes the backtesting of trading strategies based on the generated signals. It calculates portfolio values over time based on buy/sell signals and plots the results.
+- `signal_generator.py`: it is responsible for generating trading signals based on the regression analysis results. It calculates Z-scores and determines buy, sell, or hold actions as well as suggests quantities to trade.
+
+
+### **Installation**
+
+    $ pip install rv_strategy_mb
+
+### **Usage**
+
+1. To run this module, execute the following command in your terminal:
+
+    $ python executor.py
+
+2. Follow the prompt to input the indices, date range, and investment budget.
+
+Performing Backtests: use the `Backtest` class in the `backtest.py` module to test the trading strategy.
+
+Ensure that you are inserting the indices in a ticker format (i.e. ^DJI for the Dow Jones Industrial Average).
+
+3. Generating Trading Signals: use the `TradingSignalGenerator` class in `signal_generator.py` to perform regression analysis and generate signals.
+
+```python
+
+from rv_strategy_mb.signal_generator import TradingSignalGenerator
+from pybacktestchain.data_module import get_stocks_data
+from pybacktestchain.broker import Broker
+from datetime import datetime
+import logging
+
+#Set verbosity for logging
+logging.basicConfig(level=logging.INFO)
+
+#Define the parameters for the analysis
+index1 = '^FTSE'  #First stock index
+index2 = '^DJI'   #Second stock index
+start_date = datetime(2020, 1, 1)  #Start date for historical data
+end_date = datetime(2021, 1, 1)    #End date for historical data
+portfolio_budget = 100000  #Budget for trading operations
+
+#Initialise the signal generator
+signal_generator = TradingSignalGenerator(
+    index1=index1,
+    index2=index2,
+    start_date=start_date,
+    end_date=end_date,
+    portfolio_budget=portfolio_budget
+)
+
+#Get data and perform regression analysis
+slope, intercept = signal_generator.perform_regression()
+
+#Generate trading signals based on the regression output
+signals, quantities = signal_generator.generate_signals(slope, intercept)
+
+#Set up the broker to execute trades based on the generated signals
+broker = Broker(cash=portfolio_budget, verbose=True)  #Specify initial cash and enable logging
+
+#Run backtesting using the generated signals
+for date, signal in signals.items():
+    if signal == "Buy":
+        broker.execute_portfolio(portfolio_budget // signal_generator.data[signal_generator.index1 + '_Close'][date], 
+                                  signal_generator.data[signal_generator.index1 + '_Close'][date], date)
+    elif signal == "Sell":
+        broker.execute_portfolio(-portfolio_budget // signal_generator.data[signal_generator.index2 + '_Close'][date], 
+                                 signal_generator.data[signal_generator.index2 + '_Close'][date], date)
+
+#Display trading signals and quantities
+print(f"Generated Trading Signals: {signals}")
+print(f"Trade Quantities: {quantities}")
+
+**Optional: Plot the Z-score to visualise trading strategy performance**
+signal_generator.plot_z_score()
+
+```
+
+### **Requirements**
+
+Python 3.x
+
+Required packages:
+pandas
+numpy
+matplotlib
+statsmodels
+numba
+logging
+yfinance
+
+### **Dependencies**
+
+This package uses classes and modules from the pybacktestchain package, providing essential functionalities for data retrieval, backtesting, and trading signal generation.
+
+Dependencies are managed with `Poetry`.
+
+
+### **Testing**
+
+**Running Tests**
+The package includes unit tests to ensure the functionality of various components. To run the tests, you can use a testing framework such as unittest or pytest. Ensure you have pytest installed:
+
+    $ pip install pytest
+
+Then, you can run the tests by executing the following command in your terminal from the root directory of the package:
+
+    $ pytest
+
+**Test files**
+
+The test files are designed to ensure that the different modules work together as intended and that updates to the code do not break existing functionalities.
+
+**Logging**
+
+The package uses the logging module to provide information, warnings, and error messages throughout execution.
+
+## License
+
+`rv_strategy_mb` was created by Marion BIGOTTE. It is licensed under the terms of the MIT license.
+
+## Credits
+
+`rv_strategy_mb` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
