@@ -1,0 +1,13 @@
+summarizer/__init__.py,sha256=swkGXVrwL_df95HhKGcW_4rnmNnWnjHU8iC7AGbiRx8,33
+summarizer/cli.py,sha256=ic_3nfCAsOmGm0-4pHmqqN8AELOwLRkBOC98N-Ex_84,1484
+summarizer/summarizer.py,sha256=yORK0_oXOcHNG07c3fIJ7AKwCFdqQM61KAfH2HI2nv0,678
+summarizer/tests.ipynb,sha256=bHPnjPg9bKepNlooUZswYgld2OS0pALnVrQsPz6JQuk,919556
+summarizer/utils.py,sha256=x5u6hFZUN15YsE59eAAdy5iGDLx7N1Z17_N4jamdDYI,2744
+summarizer/webapp/app.py,sha256=WKupnkvjoGdJVzAVmdZwPy-GJzWZx2BlD86i8bpbuVA,3419
+summarizer/webapp/gradio_app.py,sha256=M6B9dUiCdev7yyMQGphZKjGKvxEIGZ3oQm573oaoC7k,6883
+summarymaker-0.2.9.dist-info/LICENSE,sha256=28JWRA2pniNT9i5Yop1qNNNWgDioN1HIy8if8cc4a1E,1083
+summarymaker-0.2.9.dist-info/METADATA,sha256=2P9Q40xy6rtb9kIstCgHru31aPSSu9-HPAm62wtM_bE,8259
+summarymaker-0.2.9.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+summarymaker-0.2.9.dist-info/entry_points.txt,sha256=1_ZYGc9zyqc5Z1G-EMXdCleA9UTE-oOR_7TQK8UiV90,53
+summarymaker-0.2.9.dist-info/top_level.txt,sha256=HSrc3JWoX8BwBWyfn0V0i2PXkTDf1B9QCLrG2kjZnUg,11
+summarymaker-0.2.9.dist-info/RECORD,,
