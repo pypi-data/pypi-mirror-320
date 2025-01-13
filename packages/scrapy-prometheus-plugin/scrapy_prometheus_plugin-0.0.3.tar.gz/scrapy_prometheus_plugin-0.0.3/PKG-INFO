@@ -1,0 +1,36 @@
+Metadata-Version: 2.3
+Name: scrapy-prometheus-plugin
+Version: 0.0.3
+Summary: Scrapy extension to push metrics to a Prometheus Pushgateway
+Author: Ehsan U.
+Author-email: lancerf562@gmail.com
+Requires-Python: >=3.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: prometheus-client
+Requires-Dist: scrapy
+Description-Content-Type: text/markdown
+
+# Scrapy Prometheus
+
+This is a scrapy extension that pushes metrics to a Prometheus Pushgateway.
+
+## Installation
+
+```bash
+pip install scrapy-prometheus-plugin
+```
+
+## Configuration
+
+```bash
+PROMETHEUS_ENABLED = True
+PROMETHEUS_GATEWAY = http://localhost:9091
+```
+

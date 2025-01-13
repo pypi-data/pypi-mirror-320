@@ -1,0 +1,18 @@
+[project]
+name = "scrapy-prometheus-plugin"
+version = "0.0.3"
+description = "Scrapy extension to push metrics to a Prometheus Pushgateway"
+authors = [
+    {name = "Ehsan U.",email = "lancerf562@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "scrapy",
+    "prometheus-client",
+]
+homepage = "https://github.com/Ehsan-U/scrapy-prometheus-plugin"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
