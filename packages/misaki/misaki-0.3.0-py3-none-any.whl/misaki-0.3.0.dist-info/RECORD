@@ -1,0 +1,12 @@
+misaki/__init__.py,sha256=gTggO06fb2c9XKEwlQYUSPlUfy82yVlM9pzLMOUqVcY,21
+misaki/en.py,sha256=x1mXkz5Pu3dOSA9rlZBOCRZtMqP1Ni_0FLxJS20C_Jc,27184
+misaki/espeak.py,sha256=PDUxwfkYSU0Pr7-SFczjy8Cn0nj8QsaI2xequW9iysQ,1289
+misaki/data/gb_gold.json,sha256=sqsz4cNOXXxMx4aeXhzyizyD3MLR3ArgVOKD5iXiO5U,2786942
+misaki/data/gb_silver.json,sha256=_FAkQ2hPnYsVlwv8d_wJFkVeD7l_aLoJA6AYxAnBPCg,5353242
+misaki/data/us_gold.json,sha256=YN85YyfoOO4JDDL9wbNC3InIEDjE70c3EFD9Pom8BSs,2961663
+misaki/data/us_silver.json,sha256=y3pwrpjC8DzQG086JZutycX92fFTXQ3xwNyu_E8QLDc,4979618
+misaki-0.3.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+misaki-0.3.0.dist-info/METADATA,sha256=5DcIIIZ1ofSAVTrvoelGQCft5gEgxqOYIfWNZYwHjyA,1752
+misaki-0.3.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+misaki-0.3.0.dist-info/top_level.txt,sha256=jw5avl_nGo4i3_9F8WD6wWZ6vVgtvd5gQuILR7ZARcY,7
+misaki-0.3.0.dist-info/RECORD,,
