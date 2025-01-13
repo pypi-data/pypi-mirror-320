@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: gcloud-realtimestt
+Version: 0.3.0
+Summary: A python library for realtime transcription from and audio stream using google-cloud-speech API
+Author: Zuhaib Khan
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: google-cloud-speech ==2.29.0
+
+### Realtime Speech-to-text using Audio Input Stream and google-cloud-speech API
+
+## Installation:
+`pip3 install gcloud-realtimestt`
+
+## Get credentials.json
+- Go to your [google cloud console](https://console.cloud.google.com)
+- Choose existing project or create a new project
+- Go to APIs and Services and enable `Cloud Speech-to-Text API`
+- Create a service account to authenticate the API
+- Create new keys and download the account `<project-name>-credentials.json file` which contains your API key
+- Copy the JSON file in your project and use this package.
+
+## Usage:
+```
+import gcloud_realtimestt as stt
+text = stt.listen('/path/to/credentials.json')
+print(text)
+```
+
+### Reference: [Docs for Google Cloud Speech-to-text API](https://cloud.google.com/speech-to-text/docs/)
