@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: seiton-printer
+Version: 1.0.2
+Summary: Set de metodos para controlar la impresora Seiton
+Home-page: https://github.com/ernes128/seiton-driver-python
+Author: Mauro
+Author-email: seiton@eklabs.dev
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow
+
+# Seiton Driver Python
+
+Librería Python para el control de impresoras térmicas SEITON usando el protocolo ESC/POS. Diseñada para ser simple y fácil de usar, permitiendo la impresión de texto, imágenes, códigos QR y códigos de barras.
+
+## Características
+
+- Impresión de texto con diferentes estilos:
+  - Negrita
+  - Doble altura
+  - Doble ancho
+  - Alineación (izquierda, centro, derecha)
+- Impresión de imágenes
+- Generación de códigos QR
+- Generación de códigos de barras (CODE39)
+- Soporte para caracteres especiales (ñ, ú, etc.)
+- Auto-diagnóstico de la impresora
+
+## Instalación
+
+```bash
+pip install seiton_printer
+```
+
+## Uso Básico
+
+```python
+from seiton_printer.seiton import Seiton
+
+# Inicializar la impresora
+printer = Seiton('/dev/usb/lp0')  # Ajusta la ruta según tu sistema
+
+# Imprimir texto con diferentes estilos
+(printer
+ .align_to_center()
+ .double_tall_double_wide()
+ .add_text('¡Hola Mundo!')
+ .feed_lines(2)
+ .cut_paper()
+ .print())
+
+# Imprimir una imagen
+printer.add_image('ruta/a/imagen.png').print()
+```
+
+## Detalles de la Clase `Seiton`
+
+La clase `Seiton` proporciona métodos para controlar la impresora:
+
+- `add_text(text)`: Agrega texto al buffer.
+- `align_to_right()`: Alinea el texto a la derecha.
+- `align_to_center()`: Centra el texto.
+- `feed_line()`: Avanza una línea.
+- `feed_lines(lines)`: Avanza un número específico de líneas.
+- `cut_paper()`: Corta el papel.
+- `generate_qr_code(content, size)`: Genera un código QR.
+- `add_barcode(data, width, height)`: Agrega un código de barras.
+- `print_self_test()`: Imprime una página de autodiagnóstico.
+
+## Ejemplos Avanzados
+
+```python
+# Generar un código QR
+(printer
+ .align_to_center()
+ .generate_qr_code('https://ejemplo.com', size=8)
+ .feed_and_cut_paper()
+ .print())
+
+# Generar un código de barras
+(printer
+ .align_to_center()
+ .print_barcode('12345678')
+ .feed_and_cut_paper()
+ .print())
+```
+
+## Configuración y Requisitos
+
+- Asegúrate de tener permisos para acceder al puerto USB.
+- Requiere la instalación de `PIL` para el manejo de imágenes.
+
+
+
