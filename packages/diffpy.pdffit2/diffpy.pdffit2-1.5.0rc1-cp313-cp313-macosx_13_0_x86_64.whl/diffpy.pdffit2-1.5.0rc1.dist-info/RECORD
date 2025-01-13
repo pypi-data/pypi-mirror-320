@@ -1,0 +1,13 @@
+diffpy.pdffit2-1.5.0rc1.dist-info/RECORD,,
+diffpy.pdffit2-1.5.0rc1.dist-info/WHEEL,sha256=9ewbZj4momWTX7LRPab0qEhVweQWQdGnkB-qeEM-kWM,110
+diffpy.pdffit2-1.5.0rc1.dist-info/LICENSE.rst,sha256=A5XmM2CM5SIDOT3YL4wvJtAzJN3eRRQCukA19xBYKX4,2671
+diffpy.pdffit2-1.5.0rc1.dist-info/AUTHORS.rst,sha256=XxE3JtvPog2L2g2BFT-5mn3nMqeq0x0jS5b4UGMm6pI,2472
+diffpy.pdffit2-1.5.0rc1.dist-info/top_level.txt,sha256=34qLZyi9mxikpHepVDTMHrrNbe8VoOuz3ShYeiWA7KA,7
+diffpy.pdffit2-1.5.0rc1.dist-info/METADATA,sha256=SGjutm33C6Y7rKsxL9ZfgRUGdu52vg8hu0eNeI7rH6M,8560
+diffpy/__init__.py,sha256=mjuzCmGsHyfikabMTXKOMMyd7oli5FMjvGbndN5JNWs,802
+diffpy/pdffit2/version.py,sha256=jb2su01s8LGBUmua4VyE61RkTqH-S_zpt34h0zReg2A,2053
+diffpy/pdffit2/__init__.py,sha256=iaC7hbhvW3zWUWIJm_Cob5QwPLYB4-5MkLeRiZZcgBU,1408
+diffpy/pdffit2/pdffit2.cpython-313-darwin.so,sha256=QC-9DhRinLeKiqLzPbeVqhSHC1KK6-k61JOKlEnm5uQ,637848
+diffpy/pdffit2/output.py,sha256=o95R00tM0XebfG-TJntLwCOl2rZ86r5ecoAHPXp0SE0,1230
+diffpy/pdffit2/pdffit.py,sha256=biT6vv0q1JVHH_gVQk8zPacBbPmHTMOlhF5w4BCyhuA,43938
+diffpy/pdffit2/ipy_ext.py,sha256=2XuXswsrJ7foUoRkQYxo6_WL0lymgCPpXtZYJW7QyQk,2469
