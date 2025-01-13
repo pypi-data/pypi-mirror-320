@@ -1,0 +1,11 @@
+setup.py
+pgmydemo/__init__.py
+pgmydemo/lap1.py
+pgmydemo/sob1.py
+pgmydemo.egg-info/PKG-INFO
+pgmydemo.egg-info/SOURCES.txt
+pgmydemo.egg-info/dependency_links.txt
+pgmydemo.egg-info/requires.txt
+pgmydemo.egg-info/top_level.txt
+test/__init__.py
+test/test.py
