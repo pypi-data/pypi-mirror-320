@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: uvicorn-hmr
+Version: 0.0.1
+Requires-Dist: hmr~=0.1.2
+Requires-Dist: typer-slim~=0.15.1
+Requires-Dist: uvicorn>=0.24.0
+
