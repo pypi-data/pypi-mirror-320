@@ -1,0 +1,5 @@
+num2words
+phonemizer
+regex
+spacy
+spacy-curated-transformers
