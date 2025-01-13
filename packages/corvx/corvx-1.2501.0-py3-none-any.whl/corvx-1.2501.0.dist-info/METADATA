@@ -1,0 +1,208 @@
+Metadata-Version: 2.2
+Name: corvx
+Version: 1.2501.0
+Summary: An unofficial X SDK for Python
+Author-email: Rodrigo Martínez <dev@brunneis.com>
+License: GNU General Public License v3 (GPLv3)
+Project-URL: Repository, https://github.com/labteral/corvx
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: ordered-set
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: installer; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+
+<p align="center">
+<img src="misc/corvx.svg" alt="corvx Logo" width="150"/></a>
+</p>
+
+<p align="center">
+    <a href="https://pepy.tech/project/corvx/"><img alt="Downloads" src="https://img.shields.io/badge/dynamic/json?style=flat-square&maxAge=3600&label=downloads&query=$.total_downloads&url=https://api.pepy.tech/api/projects/corvx"></a>
+    <a href="https://pypi.python.org/pypi/corvx/"><img alt="PyPi" src="https://img.shields.io/pypi/v/corvx.svg?style=flat-square"></a>
+    <!--<a href="https://github.com/labteral/corvx/releases"><img alt="GitHub releases" src="https://img.shields.io/github/release/labteral/corvx.svg?style=flat-square"></a>-->
+    <a href="https://github.com/labteral/corvx/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/labteral/corvx.svg?style=flat-square&color=green"></a>
+</p>
+
+<h3 align="center">
+<b>An unofficial X SDK for Python</b>
+</h3>
+
+<p align="center">
+    <a href="https://www.buymeacoffee.com/labteral" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="35px"></a>
+</p>
+
+# Installation
+
+> corvx works with Python +3.7
+
+You can install the `corvx` package directly with `pip`:
+```bash
+pip install -e .
+```
+or 
+```bash
+pip install corvx
+```
+
+# Usage
+
+To work with the X Scraper module you have to import the corresponding module first:
+
+```python
+from corvx import Corvx
+
+# You can also set the tokens with environment variables X_AUTH_TOKEN and X_CSRF_TOKEN
+x = Corvx(
+    x_auth_token=os.getenv('X_AUTH_TOKEN'),
+    x_csrf_token=os.getenv('X_CSRF_TOKEN'),
+)
+```
+
+The available methods and its usage are described below.
+
+## Query language
+
+For both `search` and `stream` methods a JSON-based query language must be used.
+The query must be specified as a Python dictionary containing a list of fields and global options.
+
+### Global options
+
+---
+
+#### lang
+
+This option will force the tweets to match a given language. The language must be specified with its ISO 639-1 two-letter code (e.g., `es` for Spanish).
+
+#### since
+
+This parameter refers to the minimum allowed date. It has to be specified in the `YYYY-MM-DD` format.
+
+#### until
+
+This parameter refers to the maximum allowed date. It has to be specified in the `YYYY-MM-DD` format.
+
+#### near
+
+It has to be specified with a `tuple` object composed of a text location and a range in miles (e.g., `('Santiago de Compostela', 15)`).
+
+### Fields
+
+---
+
+A query can specify multiple fields which are Python dictionaries with one or more keys and values:
+
+#### items
+
+This is a list of strings, either terms or phrases.
+
+#### exact
+
+If `True`, the specified terms or phrases must match exactly as they were written on the tweets (case/latin insensitive). If this flag is set, the `target` parameter will be ignored.
+
+#### match
+
+If not specified, the tweets will match every item.
+
+- `'any'` (the tweets must match at least one of the items)
+- `'none'` (the tweets won't match any item)
+
+#### target
+
+If not specified, the tweets will match ordinary keywords.
+
+- `'hashtag'` (tweets containing `#item`)
+- `'mention'` (tweets mentioning `@item`)
+- `'from'` (tweets written by `@item`)
+- `'to'` (tweets that are replies to `@item`)
+
+### Examples
+
+---
+
+Search for tweets containing 'Santiago' and not 'Chile':
+
+```python
+query = {
+    'fields': [
+        {'items': ['Santiago']},
+        {'items': ['Chile'], 'match': 'none'},
+    ]
+}
+```
+
+Search for tweets containing 'Santiago' and not 'Chile' written in Spanish:
+
+```python
+query = {
+    'fields': [
+        {'items': ['Santiago']},
+        {'items': ['Chile'], 'match': 'none'},
+    ],
+    'lang': 'es'
+}
+```
+
+Search for tweets containing 'Santiago' and not 'Chile' written in Spanish within a 50-mile radius around Santiago de Compostela.
+
+```python
+query = {
+    'fields': [
+        {'items': ['Santiago']},
+        {'items': ['Chile'], 'match': 'none'},
+    ],
+    'lang': 'es',
+    'near': ('Santiago de Compostela', 50)
+}
+```
+
+Search for tweets containing 'Santiago' and not 'Chile' written in Spanish within a 50-mile radius around Santiago de Compostela in September 2019.
+
+```python
+query = {
+    'fields': [
+        {'items': ['Santiago']},
+        {'items': ['Chile'], 'match': 'none'},
+    ],
+    'lang': 'es',
+    'near': ('Santiago de Compostela', 50),
+    'since': '2019-09-01',
+    'until': '2019-09-30'
+}
+```
+
+## Search
+
+Search for the last 20 results:
+
+```python
+for tweet in x.search(query):
+    print(tweet)
+```
+
+Search for all the available results:
+
+```python
+for tweet in x.search(query, deep=True):
+    print(tweet)
+```
+
+## Stream
+
+Search constantly for new results:
+
+```python
+for tweet in x.stream(query):
+    print(tweet)
+```
