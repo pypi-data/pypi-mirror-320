@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+TasKKontrol/Kontroller.py
+TasKKontrol/Task.py
+TasKKontrol/Triggers.py
+TasKKontrol/Utils.py
+TasKKontrol.egg-info/PKG-INFO
+TasKKontrol.egg-info/SOURCES.txt
+TasKKontrol.egg-info/dependency_links.txt
+TasKKontrol.egg-info/top_level.txt
