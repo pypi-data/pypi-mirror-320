@@ -1,0 +1,11 @@
+*.idea
+*.egg-info
+*__pycache__
+deprecated*
+*.pdf
+*venv
+*.ipynb_checkpoints
+.DS_Store*
+dev*
+build*
+dist*
