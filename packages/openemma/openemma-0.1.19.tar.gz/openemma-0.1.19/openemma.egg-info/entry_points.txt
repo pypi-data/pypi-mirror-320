@@ -1,0 +1,2 @@
+[console_scripts]
+openemma = openemma.main:main_function
