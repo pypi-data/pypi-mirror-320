@@ -1,0 +1,3 @@
+[console_scripts]
+seafile-mirror=seafile_mirror.seafile_mirror:main
+
