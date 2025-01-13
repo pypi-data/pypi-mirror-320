@@ -1,0 +1,9 @@
+scrapy_patchright/__init__.py,sha256=iCYsSGKeg5fhEEXmkJHCxwjjG-JavMIlhyVGuX76Yog,23
+scrapy_patchright/_utils.py,sha256=KLA514gyZhzgjgjAbfYw_BPbQz0yljrPZ9YrlVPLMl8,5464
+scrapy_patchright/handler.py,sha256=M-_etPczvpPUQERYQifZfnxxxHHGfjvNDt_6DZuCZAs,40439
+scrapy_patchright/headers.py,sha256=1yWsndXXuwKYucnkY12vciE_K-BjTofmZx5ZqZ5gwwg,1575
+scrapy_patchright/memusage.py,sha256=xr2lQAvid9_OUyG4xWJS0X9ALtESOIjgFb5EO0ilW-k,2128
+scrapy_patchright/page.py,sha256=7q5kPCPTkwL_cQHYNrNUfHD-BQTSaujPSBkM6Zewxw4,757
+scrapy_patchright-0.0.50.dist-info/METADATA,sha256=4EzhgvBetJzO_JJ-HECArrGM2eoErbJCXaiEUgDd9PE,555
+scrapy_patchright-0.0.50.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+scrapy_patchright-0.0.50.dist-info/RECORD,,
