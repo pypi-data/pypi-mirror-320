@@ -1,0 +1,3 @@
+[console_scripts]
+get-case-list=get_case_list.main:main
+
