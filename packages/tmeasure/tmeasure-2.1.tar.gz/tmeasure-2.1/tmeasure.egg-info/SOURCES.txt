@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+tmeasure/__init__.py
+tmeasure.egg-info/PKG-INFO
+tmeasure.egg-info/SOURCES.txt
+tmeasure.egg-info/dependency_links.txt
+tmeasure.egg-info/top_level.txt
