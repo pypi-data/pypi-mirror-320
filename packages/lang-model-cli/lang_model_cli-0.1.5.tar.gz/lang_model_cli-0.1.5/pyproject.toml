@@ -1,0 +1,37 @@
+[project]
+name = "lang-model-cli"
+version = "0.1.5"
+description = "Language Model Command Line Interface"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+    { name = "Gabriel Altay", email = "gabriel.altay@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "litellm==1.55.12",
+    "openai>=1.59.6",
+    "rich>=13.9.4",
+    "typer>=0.15.1",
+]
+
+[project.urls]
+repository = "https://github.com/galtay/lang-model-cli"
+
+[project.scripts]
+lang-model-cli = "lang_model_cli.main:main"
+lmc = "lang_model_cli.main:main"
+
+[project.optional-dependencies]
+ipython = [
+    "ipython>=8.31.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "black>=24.10.0",
+]
