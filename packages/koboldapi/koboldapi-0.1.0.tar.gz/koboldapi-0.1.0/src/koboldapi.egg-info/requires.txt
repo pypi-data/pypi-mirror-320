@@ -1,0 +1,17 @@
+requests
+aiohttp
+asyncio
+sseclient
+jinja2
+regex
+extractous
+
+[dev]
+pytest>=7.0
+pytest-asyncio
+black
+isort
+mypy
+pillow
+decord
+numpy>=1.26.4

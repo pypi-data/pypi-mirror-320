@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "koboldapi"
+version = "0.1.0"
+description = "Python client and tools for KoboldCPP API"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "GPLv3" }
+authors = [{ name = "jabberjabberjabber" }]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+dependencies = [
+    "requests",
+    "aiohttp",
+    "asyncio",
+    "sseclient",
+    "jinja2",
+    "regex",
+    "extractous",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio",
+    "black",
+    "isort",
+    "mypy",
+	"pillow",
+    "decord",
+    "numpy>=1.26.4",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+koboldapi = [
+    "templates/*.json",
+]
+
+[tool.setuptools]
+include-package-data = false

@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/koboldapi/__init__.py
+src/koboldapi.egg-info/PKG-INFO
+src/koboldapi.egg-info/SOURCES.txt
+src/koboldapi.egg-info/dependency_links.txt
+src/koboldapi.egg-info/requires.txt
+src/koboldapi.egg-info/top_level.txt
+src/koboldapi/chunking/chunker_regex.py
+src/koboldapi/chunking/processor.py
+src/koboldapi/core/api.py
+src/koboldapi/core/config.py
+src/koboldapi/core/core.py
+src/koboldapi/core/templates.py
+src/koboldapi/utils/fix_busted_json.py
