@@ -1,0 +1,12 @@
+requests==2.32.3
+flet==0.25.2
+pyaml==24.12.1
+typer==0.15.1
+Flask==3.1.0
+
+[dev]
+pytest
+black
+ruff
+twine
+pytest-pretty

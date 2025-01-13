@@ -1,0 +1,56 @@
+Metadata-Version: 2.2
+Name: sonos-artwork
+Version: 1.3.2
+Summary: Displays Sonos Artwork playing in a zone.  Allows for basic playback controls.
+Home-page: https://github.com/actionbronson/sonos-artwork
+Author: Philippe Legault
+Keywords: sonos
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.10, <4
+Description-Content-Type: text/markdown
+Requires-Dist: requests==2.32.3
+Requires-Dist: flet==0.25.2
+Requires-Dist: pyaml==24.12.1
+Requires-Dist: typer==0.15.1
+Requires-Dist: Flask==3.1.0
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: pytest-pretty; extra == "dev"
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Sonos Artwork
+
+Displays Sonos artwork on a HyperPixel 4.0 Square.
+
+Allows for basic playback controls, such as _Previous_, _Play/Pause_, _Next_.
+
+Clicking in the middle of the screen display current track information.
+
+## Requirements
+
+The Sonos HTTP API running somewhere: https://github.com/jishi/node-sonos-http-api
+
+## Limitations
+
+Only work with Sonos Radio and Apple Music.
