@@ -1,0 +1,298 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>izzy-devices documentation &mdash; izzy_devices  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            izzy_devices
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">izzy-devices documentation</a><ul>
+<li><a class="reference internal" href="#module-client">Client</a><ul>
+<li><a class="reference internal" href="#client.Client"><code class="docutils literal notranslate"><span class="pre">Client</span></code></a><ul>
+<li><a class="reference internal" href="#client.Client.set_last_contact"><code class="docutils literal notranslate"><span class="pre">Client.set_last_contact()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-server">Server</a><ul>
+<li><a class="reference internal" href="#server.Server"><code class="docutils literal notranslate"><span class="pre">Server</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-client_status">Client Statuses</a><ul>
+<li><a class="reference internal" href="#client_status.IZZYStatus"><code class="docutils literal notranslate"><span class="pre">IZZYStatus</span></code></a><ul>
+<li><a class="reference internal" href="#client_status.IZZYStatus.AVAILABLE"><code class="docutils literal notranslate"><span class="pre">IZZYStatus.AVAILABLE</span></code></a></li>
+<li><a class="reference internal" href="#client_status.IZZYStatus.MOVING"><code class="docutils literal notranslate"><span class="pre">IZZYStatus.MOVING</span></code></a></li>
+<li><a class="reference internal" href="#client_status.IZZYStatus.FOLLOWING"><code class="docutils literal notranslate"><span class="pre">IZZYStatus.FOLLOWING</span></code></a></li>
+<li><a class="reference internal" href="#client_status.IZZYStatus.ESTOP"><code class="docutils literal notranslate"><span class="pre">IZZYStatus.ESTOP</span></code></a></li>
+<li><a class="reference internal" href="#client_status.IZZYStatus.BROKEN"><code class="docutils literal notranslate"><span class="pre">IZZYStatus.BROKEN</span></code></a></li>
+<li><a class="reference internal" href="#client_status.IZZYStatus.UNVERIFIED"><code class="docutils literal notranslate"><span class="pre">IZZYStatus.UNVERIFIED</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-server_status">Server Statuses</a><ul>
+<li><a class="reference internal" href="#server_status.MotherStatus"><code class="docutils literal notranslate"><span class="pre">MotherStatus</span></code></a><ul>
+<li><a class="reference internal" href="#server_status.MotherStatus.CONNECTED"><code class="docutils literal notranslate"><span class="pre">MotherStatus.CONNECTED</span></code></a></li>
+<li><a class="reference internal" href="#server_status.MotherStatus.MISSING"><code class="docutils literal notranslate"><span class="pre">MotherStatus.MISSING</span></code></a></li>
+<li><a class="reference internal" href="#server_status.MotherStatus.UNVERIFIED"><code class="docutils literal notranslate"><span class="pre">MotherStatus.UNVERIFIED</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">izzy_devices</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">izzy-devices documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="izzy-devices-documentation">
+<h1>izzy-devices documentation<a class="headerlink" href="#izzy-devices-documentation" title="Link to this heading"></a></h1>
+<p>The IZZY (Intelligent Scenery Simulation Platform) project software is built around two software objects: a client
+and a server. An implementation of IZZY is a <code class="docutils literal notranslate"><span class="pre">client</span></code>; the offstage control and programming interface <code class="docutils literal notranslate"><span class="pre">server</span></code> has
+been affectionately dubbed “Mother” (a not-so-subtle nod to <em>Alien</em>). A <code class="docutils literal notranslate"><span class="pre">client</span></code> stores information about an IZZY
+device, including physical dimensions, network information installed sensor packages, and position and movement
+information. A <code class="docutils literal notranslate"><span class="pre">server</span></code> stores network information and a collection of <code class="docutils literal notranslate"><span class="pre">client</span></code> instances–one instance for each
+physical IZZY device on the network.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When instantiated in software on an IZZY device, a <code class="docutils literal notranslate"><span class="pre">server</span></code> instance should not be used to hold a list of
+<code class="docutils literal notranslate"><span class="pre">client</span></code> devices as remote devices should not communicate to each other. A <code class="docutils literal notranslate"><span class="pre">server</span></code> instance on an IZZY device
+should only be used to store network information about the Mother device.</p>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">izzy-devices</span></code> package provides the <code class="docutils literal notranslate"><span class="pre">Client</span></code> and <code class="docutils literal notranslate"><span class="pre">Server</span></code> classes as well as enumerations for statuses for</p>
+<div class="toctree-wrapper compound">
+</div>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#module-client" id="id1">Client</a></p></li>
+<li><p><a class="reference internal" href="#module-server" id="id2">Server</a></p></li>
+<li><p><a class="reference internal" href="#module-client_status" id="id3">Client Statuses</a></p></li>
+<li><p><a class="reference internal" href="#module-server_status" id="id4">Server Statuses</a></p></li>
+</ul>
+</nav>
+<section id="module-client">
+<span id="client"></span><h2><a class="toc-backref" href="#id1" role="doc-backlink">Client</a><a class="headerlink" href="#module-client" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="client.Client">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">client.</span></span><span class="sig-name descname"><span class="pre">Client</span></span><a class="headerlink" href="#client.Client" title="Link to this definition"></a></dt>
+<dd><p>A class to store status information about IZZY devices.</p>
+<dl class="simple">
+<dt>name (str)</dt><dd><p>A user-friendly name for the device.</p>
+</dd>
+<dt>uuid (UUID)</dt><dd><p>A 64-bit unique UUID generated at device startup.</p>
+</dd>
+<dt>ip_address (str)</dt><dd><p>A string representation of the IP address of the unit.</p>
+</dd>
+<dt>status (IZZYStatus)</dt><dd><p>Current status of the device.</p>
+</dd>
+<dt>last_contact (datetime)</dt><dd><p>Holds the time of the last contact with Mother server.</p>
+</dd>
+<dt>wheel_radius (float)</dt><dd><p>The radius of a drive wheel, in mm.</p>
+</dd>
+<dt>system_radius (float)</dt><dd><p>The distance from the center of the unit to the outer edge of a drive wheel, in mm.</p>
+</dd>
+<dt>line_sensor_y_offset (int)</dt><dd><p>The distance from the center of the unit to the middle of the line sensor array, in mm.</p>
+</dd>
+<dt>encoder_resolution (int)</dt><dd><p>The number of encoder counts for one revolution of the motor drive shaft.</p>
+</dd>
+<dt>motor_ratio (int)</dt><dd><p>The gearbox reduction ratio.</p>
+</dd>
+<dt>position (‘x’=int, ‘y’=int, ‘z’=int)</dt><dd><p>A dictionary holding the current relative x,y,z position of the unit.</p>
+</dd>
+<dt>heading (int)</dt><dd><p>The relative current heading of the unit in degrees.</p>
+</dd>
+<dt>speed (int)</dt><dd><p>The current speed of the unit.</p>
+</dd>
+<dt>drive_resolution (int)</dt><dd><p>The resolution of the motor wheels, in encoder ticks per centimeter of straight-line travel.</p>
+</dd>
+<dt>turn_resolution (int)</dt><dd><p>The resolution of the motor wheels, in encoder ticks per degree of turn.</p>
+</dd>
+</dl>
+<p>Constructor has no parameters. Defines the drive and turn units based on default values for the Mini-IZZY
+test/development platform.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="client.Client.set_last_contact">
+<span class="sig-name descname"><span class="pre">set_last_contact</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#client.Client.set_last_contact" title="Link to this definition"></a></dt>
+<dd><p>When called, sets the value of <cite>last_contact</cite> to the current time.S</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-server">
+<span id="server"></span><h2><a class="toc-backref" href="#id2" role="doc-backlink">Server</a><a class="headerlink" href="#module-server" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="server.Server">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">server.</span></span><span class="sig-name descname"><span class="pre">Server</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">uuid</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server.Server" title="Link to this definition"></a></dt>
+<dd><p>A class to store status information about Mother server devices.</p>
+<dl class="simple">
+<dt>status (IZZYStatus)</dt><dd><p>Current status of the device.</p>
+</dd>
+<dt>uuid (UUID)</dt><dd><p>A 64-bit unique UUID generated at device startup.</p>
+</dd>
+<dt>ip_address (str)</dt><dd><p>A string representation of the IP address of the unit.</p>
+</dd>
+<dt>clients (list[Client])</dt><dd><p>Holds a list of the client devices found on the network.</p>
+</dd>
+</dl>
+<p>Ccnstructor requires a UUID parameter.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>(</strong><strong>UUID</strong><strong>)</strong> (<em>uuid</em>) – A 64-bit UUID.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-client_status">
+<span id="client-statuses"></span><h2><a class="toc-backref" href="#id3" role="doc-backlink">Client Statuses</a><a class="headerlink" href="#module-client_status" title="Link to this heading"></a></h2>
+<dl class="py class enum">
+<dt class="sig sig-object py" id="client_status.IZZYStatus">
+<em class="property"><span class="pre">enum</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">client_status.</span></span><span class="sig-name descname"><span class="pre">IZZYStatus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client_status.IZZYStatus" title="Link to this definition"></a></dt>
+<dd><p>Valid values are as follows:</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client_status.IZZYStatus.AVAILABLE">
+<span class="sig-name descname"><span class="pre">AVAILABLE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;IZZYStatus.AVAILABLE:</span> <span class="pre">1&gt;</span></em><a class="headerlink" href="#client_status.IZZYStatus.AVAILABLE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client_status.IZZYStatus.MOVING">
+<span class="sig-name descname"><span class="pre">MOVING</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;IZZYStatus.MOVING:</span> <span class="pre">2&gt;</span></em><a class="headerlink" href="#client_status.IZZYStatus.MOVING" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client_status.IZZYStatus.FOLLOWING">
+<span class="sig-name descname"><span class="pre">FOLLOWING</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;IZZYStatus.FOLLOWING:</span> <span class="pre">3&gt;</span></em><a class="headerlink" href="#client_status.IZZYStatus.FOLLOWING" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client_status.IZZYStatus.ESTOP">
+<span class="sig-name descname"><span class="pre">ESTOP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;IZZYStatus.ESTOP:</span> <span class="pre">4&gt;</span></em><a class="headerlink" href="#client_status.IZZYStatus.ESTOP" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client_status.IZZYStatus.BROKEN">
+<span class="sig-name descname"><span class="pre">BROKEN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;IZZYStatus.BROKEN:</span> <span class="pre">5&gt;</span></em><a class="headerlink" href="#client_status.IZZYStatus.BROKEN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client_status.IZZYStatus.UNVERIFIED">
+<span class="sig-name descname"><span class="pre">UNVERIFIED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;IZZYStatus.UNVERIFIED:</span> <span class="pre">6&gt;</span></em><a class="headerlink" href="#client_status.IZZYStatus.UNVERIFIED" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-server_status">
+<span id="server-statuses"></span><h2><a class="toc-backref" href="#id4" role="doc-backlink">Server Statuses</a><a class="headerlink" href="#module-server_status" title="Link to this heading"></a></h2>
+<dl class="py class enum">
+<dt class="sig sig-object py" id="server_status.MotherStatus">
+<em class="property"><span class="pre">enum</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">server_status.</span></span><span class="sig-name descname"><span class="pre">MotherStatus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server_status.MotherStatus" title="Link to this definition"></a></dt>
+<dd><p>Valid values are as follows:</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="server_status.MotherStatus.CONNECTED">
+<span class="sig-name descname"><span class="pre">CONNECTED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;MotherStatus.CONNECTED:</span> <span class="pre">1&gt;</span></em><a class="headerlink" href="#server_status.MotherStatus.CONNECTED" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="server_status.MotherStatus.MISSING">
+<span class="sig-name descname"><span class="pre">MISSING</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;MotherStatus.MISSING:</span> <span class="pre">2&gt;</span></em><a class="headerlink" href="#server_status.MotherStatus.MISSING" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="server_status.MotherStatus.UNVERIFIED">
+<span class="sig-name descname"><span class="pre">UNVERIFIED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;MotherStatus.UNVERIFIED:</span> <span class="pre">3&gt;</span></em><a class="headerlink" href="#server_status.MotherStatus.UNVERIFIED" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Rich Dionne.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
