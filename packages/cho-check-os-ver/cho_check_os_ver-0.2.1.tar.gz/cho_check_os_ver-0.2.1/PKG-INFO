@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: cho-check-os-ver
+Version: 0.2.1
+Summary: Default template for PDM package
+Author-Email: cho6019 <j01040864205@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/cho6019/cho-check-os-ver
+Project-URL: Issues, https://github.com/cho6019/cho-check-os-ver/issues
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# cho-check-os-ver
+
+### use
+```python
+$ pip install cho-check-os-ver
+$ python
+>>> from cho_check_os_ver.hi  import hi
+>>> hi()
+
+```
+
+### Development environment setting
+```bash
+# install PDM
+# git clone ...
+$ source .venv/bin/activate
+$ pdm install
+# $ vi ...
+# TEST
+$ pdm install
+$ pdm test
+$ pip install
+
+# git add / commit / push
+$ pdm publish
