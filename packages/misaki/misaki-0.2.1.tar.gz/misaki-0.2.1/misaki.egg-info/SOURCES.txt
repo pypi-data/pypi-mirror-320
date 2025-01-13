@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+misaki.egg-info/PKG-INFO
+misaki.egg-info/SOURCES.txt
+misaki.egg-info/dependency_links.txt
+misaki.egg-info/requires.txt
+misaki.egg-info/top_level.txt
