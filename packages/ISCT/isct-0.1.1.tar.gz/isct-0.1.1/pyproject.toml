@@ -1,0 +1,33 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ISCT"  # 这里是 PyPI 上的包名
+version = "0.1.1"
+description = "Interpretable Sequence Clustering Tree"
+readme = "README.md"
+authors = [
+    { name="Junjie Dong", email="jd445@qq.com" }
+]
+keywords = ["ISCT", "sequence", "clustering", "tree"]  # 相关关键词
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "numpy<2",
+    "pandas>=2.0.1",
+    "scikit-learn>=1.2.2",
+    "prefixspan>=0.5.2",
+    "graphviz>=0.20.3",
+]
+
+[project.urls]
+"Source" = "https://github.com/jd445/Interpretable-Sequence-Clustering-Tree"
+"Issues" = "https://github.com/jd445/Interpretable-Sequence-Clustering-Tree/issues"
