@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: dynamic-library
+Version: 0.1.1
+Summary: Hook to load package-provided dynamic libraries
+Project-URL: Documentation, https://github.com/Filipe Laíns/dynamic-library#readme
+Project-URL: Issues, https://github.com/Filipe Laíns/dynamic-library/issues
+Project-URL: Source, https://github.com/Filipe Laíns/dynamic-library
+Author-email: Filipe Laíns <lains@riseup.net>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9
+Provides-Extra: test
+Requires-Dist: environment-helpers>=0.2.0; extra == 'test'
+Requires-Dist: patchelf; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov>=5; extra == 'test'
+Requires-Dist: pytest-github-actions-annotate-failures; extra == 'test'
+Description-Content-Type: text/markdown
+
+# dynamic-library
+
+[![PyPI - Version](https://img.shields.io/pypi/v/dynamic-library.svg)](https://pypi.org/project/dynamic-library)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/dynamic-library.svg)](https://pypi.org/project/dynamic-library)
+
+-----
+
+## Installation
+
+```console
+pip install dynamic-library
+```
+
+## License
+
+`dynamic-library` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
