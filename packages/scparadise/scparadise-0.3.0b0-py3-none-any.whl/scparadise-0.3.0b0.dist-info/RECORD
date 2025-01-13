@@ -1,0 +1,12 @@
+scparadise/__init__.py,sha256=XHKRFHZQYwXs3_aeI0Py3NMwgca76-CND6Xfpzr2gH4,74
+scparadise/scadam.py,sha256=VFp67xKZuWXVhhXVeTQzxjWbZ89WO3ELRjEPAQc7yNM,96328
+scparadise/sceve.py,sha256=p8lZf6Vm_m3uZs0h8p0jxlrZUgcXbJr77LM30569ysI,59533
+scparadise/scnoah.py,sha256=iFTx_dh6d6t27mGmILAScdFSCffv5J3rpV9_ZxjZhhk,51783
+scparadise/.ipynb_checkpoints/__init__-checkpoint.py,sha256=XHKRFHZQYwXs3_aeI0Py3NMwgca76-CND6Xfpzr2gH4,74
+scparadise/.ipynb_checkpoints/scadam-checkpoint.py,sha256=VFp67xKZuWXVhhXVeTQzxjWbZ89WO3ELRjEPAQc7yNM,96328
+scparadise/.ipynb_checkpoints/sceve-checkpoint.py,sha256=p8lZf6Vm_m3uZs0h8p0jxlrZUgcXbJr77LM30569ysI,59533
+scparadise/.ipynb_checkpoints/scnoah-checkpoint.py,sha256=iFTx_dh6d6t27mGmILAScdFSCffv5J3rpV9_ZxjZhhk,51783
+scparadise-0.3.0b0.dist-info/METADATA,sha256=TcpSnUpoRjt9cfcJil_Cr1BnYRoq-xkIV6aJGnSpiWI,1716
+scparadise-0.3.0b0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+scparadise-0.3.0b0.dist-info/licenses/LICENSE.txt,sha256=lCApjO9XX7K4J9kGdVoyH3B0enmIArcf3H91PwFHOtQ,1086
+scparadise-0.3.0b0.dist-info/RECORD,,
