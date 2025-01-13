@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/ortho_editor.egg-info/PKG-INFO
+src/ortho_editor.egg-info/SOURCES.txt
+src/ortho_editor.egg-info/dependency_links.txt
+src/ortho_editor.egg-info/entry_points.txt
+src/ortho_editor.egg-info/requires.txt
+src/ortho_editor.egg-info/top_level.txt
