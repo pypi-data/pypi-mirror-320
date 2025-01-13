@@ -1,0 +1,15 @@
+databpy/__init__.py,sha256=WFY7L8dGTlkie2GlTMs6Br6uRVqowL2bj4Uf6t0tITs,491
+databpy/addon.py,sha256=3A0Fdfp6KwKNBexejxIv7YyMm5ksMg-NetAA754HG8Y,264
+databpy/attribute.py,sha256=ztjBWIkb4qLrAhnOYl_5pSan9B2zVuaqiFAyHhpy5dM,15119
+databpy/collection.py,sha256=-D1SJrUgMBpJk_4sSuD29EBtfbUFnE_mRg0C2V8-JSE,1825
+databpy/material.py,sha256=lvrniuAoB3ZiwGbCLu3rmP-jXsRY9pyoyXqxn5QKmFQ,541
+databpy/nodes.py,sha256=_hR_XN4sbgtgveP5q6V68-6EibyoVsXhdbt135vmVzU,5952
+databpy/object.py,sha256=KjLtyWXebpf-fRZqdN7cdywaB51n42HMOybOXCW9yKo,17189
+databpy/props.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+databpy/utils.py,sha256=lm1_JjuajsFlHHd-L8PpKZ-X6s9D_9FI681nL4C1p84,1088
+databpy/vdb.py,sha256=MHZEu6d58wT0UPiibyJaEbbheCoF7M9jfIsz6hPMb5s,915
+databpy-0.0.8.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+databpy-0.0.8.dist-info/METADATA,sha256=u1ErWdcUphSk98XvyuMkALgOX-sg_5FwhwvGrhCJTLE,5946
+databpy-0.0.8.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+databpy-0.0.8.dist-info/top_level.txt,sha256=Bh3HjTgWMyr_1L_bvhjYP0Lfkz5MpbG4peKmUEVly9k,8
+databpy-0.0.8.dist-info/RECORD,,
