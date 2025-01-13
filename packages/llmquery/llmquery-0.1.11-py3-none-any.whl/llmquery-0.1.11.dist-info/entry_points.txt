@@ -1,0 +1,3 @@
+[console_scripts]
+llmquery = llmquery.__main__:main
+
