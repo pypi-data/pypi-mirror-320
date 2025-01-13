@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: gcloud-realtimestt
+Version: 0.2.2
+Summary: A python library for realtime transcription from and audio stream using google-cloud-speech API
+Author: Zuhaib Khan
+Description-Content-Type: text/markdown
+Requires-Dist: google-cloud-speech ==2.29.0
+
+# Realtime Speech-to-text using Audio Input Stream and google-cloud-speech API
+
+## Installation:
+`pip3 install gcloud-realtimestt`
+
+## Usage:
+```
+import gcloud-realtimestt as stt
+stt.listen('/path/to/credentials.json')
+```
+
+### Reference: https://cloud.google.com/speech-to-text/docs/
