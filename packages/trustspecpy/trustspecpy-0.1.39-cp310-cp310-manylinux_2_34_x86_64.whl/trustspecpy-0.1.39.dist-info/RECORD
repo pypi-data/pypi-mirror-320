@@ -1,0 +1,5 @@
+trustspecpy-0.1.39.dist-info/METADATA,sha256=2Wb-kF3tYR21QAyedOeqhHmnV7YXHTNWtS69FMebggc,11096
+trustspecpy-0.1.39.dist-info/WHEEL,sha256=XHIMMqKJPYbs2zltNx-HQCDNw6UNwwpHlE65RNjWPdE,108
+trustspecpy/__init__.py,sha256=7CAlZobR1nl7zuPlGYu6rye47lIFbQad_9lU9O8XBj0,127
+trustspecpy/trustspecpy.cpython-310-x86_64-linux-gnu.so,sha256=IF7ODHSEQGYNVZmSqdJyLxv95mNIheZdaNeNtiHgJZY,16401176
+trustspecpy-0.1.39.dist-info/RECORD,,
