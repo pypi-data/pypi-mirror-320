@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pyproxystore/__init__.py
+pyproxystore.egg-info/PKG-INFO
+pyproxystore.egg-info/SOURCES.txt
+pyproxystore.egg-info/dependency_links.txt
+pyproxystore.egg-info/not-zip-safe
+pyproxystore.egg-info/requires.txt
+pyproxystore.egg-info/top_level.txt
