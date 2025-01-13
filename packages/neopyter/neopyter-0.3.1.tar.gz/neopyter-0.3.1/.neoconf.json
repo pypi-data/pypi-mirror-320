@@ -1,0 +1,27 @@
+{
+  "lspconfig": {
+    "lua_ls": {
+      "Lua.addonManager.addons": [
+        "lazy.nvim",
+        "neopyter",
+        "pathlib.nvim",
+        "nvim",
+        "nvim-cmp",
+        "plenary.nvim",
+        "websocket.nvim",
+        "nvim-treesitter",
+        "blink.cmp",
+        "luassert",
+        "busted"
+      ]
+    }
+  },
+  "neopyter": {
+    "mode": "direct",
+    "remote_address": "127.0.0.1:9103",
+    "highlight": {
+      "mode": "separator",
+      "enable": true
+    }
+  }
+}
