@@ -1,0 +1,28 @@
+Metadata-Version: 2.2
+Name: customaaa
+Version: 0.1.51
+Summary: A toolkit for deploying various AI assistants to Hugging Face Spaces
+Author: Imtaiz
+Author-email: your.email@example.com
+Keywords: ai,chatbot,huggingface,openai,streamlit,assistant
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Requires-Dist: streamlit>=1.31.0
+Requires-Dist: openai>=1.55.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: httpx<0.29.0,>=0.26.0
+Requires-Dist: huggingface_hub>=0.19.0
+Requires-Dist: supabase>=2.11.0
+Requires-Dist: dataclasses; python_version < "3.7"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
