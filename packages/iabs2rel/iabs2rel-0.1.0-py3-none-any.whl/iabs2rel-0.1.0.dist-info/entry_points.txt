@@ -1,0 +1,4 @@
+[console_scripts]
+iabs2rel = iabs2rel.cli.dir:main
+iabs2rel-file = iabs2rel.cli.file:main
+
