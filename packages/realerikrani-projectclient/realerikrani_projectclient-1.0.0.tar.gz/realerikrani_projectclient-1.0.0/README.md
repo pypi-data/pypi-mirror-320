@@ -1,0 +1,62 @@
+# projectclient
+
+API client and CLI for <https://github.com/realerikrani/project>.
+
+## CLI
+
+Pip-install projectclient.
+
+Set `export PROJECT_CLI_CONFIG_PATH=/path/to/config.ini`
+
+which contains the URL of your project API
+
+```
+[DEFAULT]
+url = http://localhost:5000
+```
+
+Then can call the
+
+```bash
+cli_project -h
+usage: cli_project [-h] {create,read,delete,key-create,keys-read,key-delete} ...
+
+CLI for managing projects and keys.
+
+positional arguments:
+  {create,read,delete,key-create,keys-read,key-delete}
+    create              Create a project with a key.
+    read                Read a project.
+    delete              Delete a project.
+    key-create          Create a new key for a project.
+    keys-read           Read public keys of a project.
+    key-delete          Delete a key.
+
+options:
+  -h, --help            show this help message and exit
+```
+
+## API Client
+
+```py
+from realerikrani.projectclient import JWTAuth, ProjectClient
+from realerikrani.baseclient import BaseAdapter, BaseClient
+
+
+def create_project_client() -> ProjectClient:
+    adapter = BaseAdapter()
+    with requests.Session() as session:
+        jwt_auth = None
+        with suppress(KeyError):
+            jwt_auth = JWTAuth(YOUR_CONF[YOUR_PROJECT_ID], YOUR_CONF[YOUR_KEY_ID], YOUR_CONF[YOUR_PRIVATE_KEY_PEM_STR])
+        baseclient = BaseClient(
+            session=session, adapter=adapter, url=YOUR_URL, auth=jwt_auth
+        )
+        return ProjectClient(baseclient)
+```
+
+## Direct Dependencies:
+
+- requests - licensed under the Apache License 2.0
+- realerikrani-baseclient - licensed under the Apache License 2.0
+- pyjwt[crypto] - licensed under the MIT License
