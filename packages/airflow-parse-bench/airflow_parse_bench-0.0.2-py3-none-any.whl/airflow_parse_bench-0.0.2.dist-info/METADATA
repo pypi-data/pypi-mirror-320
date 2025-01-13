@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: airflow-parse-bench
+Version: 0.0.2
+Summary: Test your Airflow Dags parse time.
+Home-page: https://github.com/AlvaroCavalcante/airflow-parse-bench
+Download-URL: https://github.com/AlvaroCavalcante/airflow-parse-bench
+Author: Alvaro Leandro Cavalcante Carneiro
+Author-email: alvaroleandro250@gmail.com
+License: Apache License 2.0
+Keywords: airflow,python,python3,dag,parse,benchmark,benchmarking
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: System :: Benchmark
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: apache-airflow==2.10.4
+Requires-Dist: apache-airflow-providers-apache-beam==5.9.1
+Requires-Dist: apache-airflow-providers-common-compat==1.2.2
+Requires-Dist: apache-airflow-providers-common-io==1.4.2
+Requires-Dist: apache-airflow-providers-common-sql==1.20.0
+Requires-Dist: apache-airflow-providers-sqlite==3.9.0
+Requires-Dist: apache-airflow-providers-standard==0.0.2
+Requires-Dist: apache-airflow-providers-google==10.26.0
+Requires-Dist: colorama==0.4.6
+Requires-Dist: tqdm==4.67.1
+
+# Airflow Dag Parse Benchmarking
+A Python tool to parse Airflow DAGs and measure the time taken to parse them.

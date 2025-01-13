@@ -1,0 +1,8 @@
+airflow_parse.py,sha256=e3uZyuV5zkOGt81h6i3hIwtuvWMsB_VDQmjV-AzxwtI,6598
+bench_db_utils.py,sha256=SAlX4GEPylpXXnIvr4rxh1mL2t7olHOMBCoKGN8l6FY,1744
+airflow_parse_bench-0.0.2.dist-info/LICENSE.txt,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+airflow_parse_bench-0.0.2.dist-info/METADATA,sha256=Oe1ghaQZC-yxExFKdXJ9U65twlk9jhOb2ICLcNQxyCo,1620
+airflow_parse_bench-0.0.2.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+airflow_parse_bench-0.0.2.dist-info/entry_points.txt,sha256=x_7OvbNmjSNNZGI2ZTpf7ZORKNE8yxpTfNP82ZtHntk,59
+airflow_parse_bench-0.0.2.dist-info/top_level.txt,sha256=PT4Zr4ck77C3NN5z9DXfZ5j0xoWQK0RPde9voE76MBA,29
+airflow_parse_bench-0.0.2.dist-info/RECORD,,
