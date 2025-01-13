@@ -1,0 +1,21 @@
+Metadata-Version: 2.2
+Name: puntdice
+Version: 1.0.1
+Summary: A Python dice roller command line utility and module.
+Author-email: Themadpunter <themadpunter@proton.me>
+Project-URL: Homepage, https://github.com/familycomicsstudios/dice
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Dice Roller
+
+A Python module for rolling dice with optional advantage or disadvantage, perfect for tabletop RPGs.
+
+## Features
+- Roll any dice expression (e.g., `2d6+3`, `1d20-1`).
+- Supports advantage and disadvantage rolls.
+- Easy to use as a CLI tool or as a library.
