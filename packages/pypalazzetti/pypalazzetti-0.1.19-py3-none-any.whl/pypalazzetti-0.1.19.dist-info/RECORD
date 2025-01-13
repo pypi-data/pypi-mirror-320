@@ -1,0 +1,13 @@
+pypalazzetti/__init__.py,sha256=cAJAbAh288a9AL-3yxwFzEM1L26izSJ6wma5aiml_9Y,23
+pypalazzetti/client.py,sha256=8foiIr1wn55rxaIG4guGKy_kLAXFnuvG9gvRPhVd2n4,14231
+pypalazzetti/config.py,sha256=H4MEU6cHzPDomzDYfFyTF5AaYi2FqxBSiszPuUSEEM0,510
+pypalazzetti/const.py,sha256=-iBGgBIacq2B8MV6qBcHG_K5VuQYixq2ix6zzyxvwvQ,2252
+pypalazzetti/exceptions.py,sha256=5-7cOn5OTFEawXWLlJENSWpJqvL3f42k79PfUU6SOuk,208
+pypalazzetti/fan.py,sha256=KdyR4OGAnf5-VNrvRsv0Ky3kpHXar7Kp5BYNrwaxcJ0,122
+pypalazzetti/state.py,sha256=5nrhKFS5Cv5uECqNsqMrcirFjA9MVHpOXtgoBXv_jB0,11634
+pypalazzetti/temperature.py,sha256=tonitqYjTjV4VJA5x10ITipdEjAOUTBZniKnjAxiDWY,796
+pypalazzetti-0.1.19.dist-info/LICENSE,sha256=1wY3Wrq41PjRKJSzboA3D605lj0ITsv93o_eO5VCLDU,1063
+pypalazzetti-0.1.19.dist-info/METADATA,sha256=VYpM5v-gxsHExWFQj0v6jP2ErCbf4V0l4qz9jXpI5JU,1914
+pypalazzetti-0.1.19.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pypalazzetti-0.1.19.dist-info/top_level.txt,sha256=2nzAcTxWVgLae6RhimPimxIVuI7rwatSfQCWr5gNrXY,13
+pypalazzetti-0.1.19.dist-info/RECORD,,
