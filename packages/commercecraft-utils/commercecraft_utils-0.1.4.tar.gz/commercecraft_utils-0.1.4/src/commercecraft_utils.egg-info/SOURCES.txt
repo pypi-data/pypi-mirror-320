@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/commercecraft_utils/__init__.py
+src/commercecraft_utils/translation_engine.py
+src/commercecraft_utils/translation_processor.py
+src/commercecraft_utils/translation_service.py
+src/commercecraft_utils/utils.py
+src/commercecraft_utils.egg-info/PKG-INFO
+src/commercecraft_utils.egg-info/SOURCES.txt
+src/commercecraft_utils.egg-info/dependency_links.txt
+src/commercecraft_utils.egg-info/requires.txt
+src/commercecraft_utils.egg-info/top_level.txt
