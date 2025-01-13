@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: liteutils
+Version: 0.0.28
+Summary: All popular Framework HF integration kit
+Home-page: https://github.com/santhosh/
+License: MIT
+Author: Kammari Santhosh
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pdf2image (>=1.17.0,<2.0.0)
+Requires-Dist: pymupdf (>=1.25.1,<2.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Project-URL: Repository, https://github.com/santhosh/
+Description-Content-Type: text/markdown
+
+# liteutils
