@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+__init__.py
+exceptions.py
+setup.py
+OlxPy.egg-info/PKG-INFO
+OlxPy.egg-info/SOURCES.txt
+OlxPy.egg-info/dependency_links.txt
+OlxPy.egg-info/requires.txt
+OlxPy.egg-info/top_level.txt
