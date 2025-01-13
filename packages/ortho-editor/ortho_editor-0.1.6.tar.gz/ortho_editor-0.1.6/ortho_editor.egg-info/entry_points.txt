@@ -1,0 +1,2 @@
+[console_scripts]
+ortho-editor = src:editor
