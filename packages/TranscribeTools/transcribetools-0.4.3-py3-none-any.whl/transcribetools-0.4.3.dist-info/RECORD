@@ -1,0 +1,9 @@
+transcribetools/__init__.py,sha256=zzQki-m59eTbcmFYMpX4v3Yg7rQ6mP4mcsKxRcKptAY,145
+transcribetools/commandline.py,sha256=SOHZBbBhqFyXLxu7Ftl3GQHNQ7swXz1Eex1bRJov30c,106
+transcribetools/config.toml,sha256=gqbWdxviZn34UqAk1CzE-zRsP8j3j8KTal1o6nEdz1Q,146
+transcribetools/local_whisper.py,sha256=YB0XvgkBomusMWfcwPpsk7mzxMBA8nR1E-m6J_mcEdE,6535
+transcribetools/local_wisper_model.py,sha256=5EpGhQRnovvvlvQ9JrttxHd_bWUrq0fiQ29o1ITNYnU,2039
+transcribetools-0.4.3.dist-info/METADATA,sha256=r3U0fJKiQRp_5joprZtDM5DjFHvvD0BqmEO0W4kY4ic,2098
+transcribetools-0.4.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+transcribetools-0.4.3.dist-info/entry_points.txt,sha256=gfBdUOy-BtLOrkKaJvFW2-ENcTugonOG_tuvAUozVC4,67
+transcribetools-0.4.3.dist-info/RECORD,,
