@@ -1,0 +1,127 @@
+Metadata-Version: 2.1
+Name: docume-llm
+Version: 0.1.0
+Summary: A Python package for document processing with LLMs
+Home-page: https://github.com/BipinPaudel/documee_llm
+Author: Bipin Paudel
+Author-email: paudelbipin.bp@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: aiohappyeyeballs (==2.4.4)
+Requires-Dist: aiohttp (==3.11.11)
+Requires-Dist: aiosignal (==1.3.2)
+Requires-Dist: annotated-types (==0.7.0)
+Requires-Dist: anyio (==4.8.0)
+Requires-Dist: async-timeout (==4.0.3)
+Requires-Dist: attrs (==24.3.0)
+Requires-Dist: certifi (==2024.12.14)
+Requires-Dist: charset-normalizer (==3.4.1)
+Requires-Dist: dataclasses-json (==0.6.7)
+Requires-Dist: distro (==1.9.0)
+Requires-Dist: exceptiongroup (==1.2.2)
+Requires-Dist: faiss-gpu (==1.7.2)
+Requires-Dist: frozenlist (==1.5.0)
+Requires-Dist: greenlet (==3.1.1)
+Requires-Dist: h11 (==0.14.0)
+Requires-Dist: httpcore (==1.0.7)
+Requires-Dist: httpx (==0.28.1)
+Requires-Dist: httpx-sse (==0.4.0)
+Requires-Dist: idna (==3.10)
+Requires-Dist: jiter (==0.8.2)
+Requires-Dist: jsonpatch (==1.33)
+Requires-Dist: jsonpointer (==3.0.0)
+Requires-Dist: langchain (==0.3.14)
+Requires-Dist: langchain-community (==0.3.14)
+Requires-Dist: langchain-core (==0.3.29)
+Requires-Dist: langchain-openai (==0.3.0)
+Requires-Dist: langchain-text-splitters (==0.3.5)
+Requires-Dist: langgraph (==0.2.62)
+Requires-Dist: langgraph-checkpoint (==2.0.9)
+Requires-Dist: langgraph-sdk (==0.1.51)
+Requires-Dist: langsmith (==0.2.10)
+Requires-Dist: marshmallow (==3.25.1)
+Requires-Dist: msgpack (==1.1.0)
+Requires-Dist: multidict (==6.1.0)
+Requires-Dist: mypy-extensions (==1.0.0)
+Requires-Dist: numpy (==1.26.4)
+Requires-Dist: openai (==1.59.6)
+Requires-Dist: orjson (==3.10.14)
+Requires-Dist: packaging (==24.2)
+Requires-Dist: propcache (==0.2.1)
+Requires-Dist: pydantic (==2.10.5)
+Requires-Dist: pydantic-settings (==2.7.1)
+Requires-Dist: pydantic-core (==2.27.2)
+Requires-Dist: python-dotenv (==1.0.1)
+Requires-Dist: PyYAML (==6.0.2)
+Requires-Dist: regex (==2024.11.6)
+Requires-Dist: requests (==2.32.3)
+Requires-Dist: requests-toolbelt (==1.0.0)
+Requires-Dist: sniffio (==1.3.1)
+Requires-Dist: SQLAlchemy (==2.0.37)
+Requires-Dist: tenacity (==9.0.0)
+Requires-Dist: tiktoken (==0.8.0)
+Requires-Dist: tqdm (==4.67.1)
+Requires-Dist: typing-inspect (==0.9.0)
+Requires-Dist: typing-extensions (==4.12.2)
+Requires-Dist: urllib3 (==2.3.0)
+Requires-Dist: yarl (==1.18.3)
+
+
+# Project Name
+
+## Setup Instructions
+
+### Step 1: Create a `.env` File
+
+```python
+from docume_llm.main import generate_documentation
+import json, os, re
+
+file_path = "kan72.json"
+
+with open(file_path, 'r') as file:
+    json_data = json.load(file)
+    
+app_type = 'jira'
+    
+args = {
+    'app_type': app_type,
+    'llm_type': 'openai',
+    'api_key': 'your-api-key-here'
+}
+    
+def give_all_files_from_directory(directory):
+    return os.listdir(directory)
+    
+def give_next_filename(files):
+    # Regex pattern to match files with the base name and extension
+    pattern = re.compile(rf"zero_shot_(\d+)\.txt")
+    # Find all matching files and extract their numbers
+    numbers = []
+    for file in files:
+        match = pattern.match(file)
+        if match:
+            numbers.append(int(match.group(1)))
+    
+    # Determine the next number
+    if numbers:
+        next_number = max(numbers) + 1
+    else:
+        next_number = 1
+    return f"zero_shot_{next_number}.txt"
+
+queries, answers = generate_documentation(json_data, **args)
+
+files = give_all_files_from_directory('.')
+filename = give_next_filename(files)
+
+with open(filename, "w") as file:
+    for q,a in zip(queries, answers):
+        file.write(q + "\n" + a + "\n\n")
+        file.write("*" * 100)
+

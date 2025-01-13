@@ -1,0 +1,3 @@
+[console_scripts]
+docume_llm = docume_llm.main:generate_documentation
+
