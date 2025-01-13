@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "langchain-openrouter-chat"
+version = "0.0.1"
+description = ""
+authors = ["amir daaee <amir.daaee@gmail.com>"]
+readme = "README.md"
+packages = [{include = "langchain_openrouter"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langchain-openai = "^0.3.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.9.1"
+pre-commit = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+ignore = ["E501"]
+select = ["B","C","E","F","W","B9", "I", "Q"]
+
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    "Data/",
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+
+# Same as Black.
+line-length = 88
+
+[tool.ruff.mccabe]
+max-complexity = 10

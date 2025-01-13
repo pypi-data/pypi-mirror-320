@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: langchain-openrouter-chat
+Version: 0.0.1
+Summary: 
+Author: amir daaee
+Author-email: amir.daaee@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: langchain-openai (>=0.3.0,<0.4.0)
+Description-Content-Type: text/markdown
+
+# langchain-openrouter
+
+langchain intergration for open-router
+
