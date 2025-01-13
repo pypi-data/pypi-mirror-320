@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: rajesh_check_this_out
+Version: 0.1.0
+Summary: A message to gay people
+Home-page: https://github.com/sachiin-acharya/custom_package.git
+Author: Not gay
+Author-email: notgay@example.com
+Keywords: life,gay,rainbow
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: summary
+
+A big message to gay people
