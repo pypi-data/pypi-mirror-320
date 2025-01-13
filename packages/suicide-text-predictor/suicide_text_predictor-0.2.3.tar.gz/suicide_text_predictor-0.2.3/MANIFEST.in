@@ -1,0 +1,2 @@
+include suicide_text_predictor/best_model.pt
+include suicide_text_predictor/vocab.pth
