@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: textual-games
+Version: 0.1.0
+Summary: A framework for building games in Textual
+License: MPL-2.0
+Author: edward-jazzhands
+Author-email: ed.jazzhands@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: textual (>=1.0.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+Textual-Games v0.1.0

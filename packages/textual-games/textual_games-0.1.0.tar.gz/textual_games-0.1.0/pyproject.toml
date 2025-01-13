@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "textual-games"
+version = "0.1.0"
+description = "A framework for building games in Textual"
+authors = ["edward-jazzhands <ed.jazzhands@gmail.com>"]
+license = "Mozilla Public License 2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+textual = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+textual-games = "textual_games:main"
