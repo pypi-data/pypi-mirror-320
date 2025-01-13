@@ -1,0 +1,3 @@
+
+PAPERLESS_INSTANCE="example.com"
+PAPERLESS_TOKEN="xxxxxx"

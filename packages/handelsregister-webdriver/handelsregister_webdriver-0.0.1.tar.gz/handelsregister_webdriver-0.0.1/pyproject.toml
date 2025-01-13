@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling", "hatch-requirements-txt"]
+build-backend = "hatchling.build"
+
+[project]
+name = "handelsregister-webdriver"
+version = "0.0.1"
+authors = [
+  { name="Mark Meyer", email="m@meyer.engineering" },
+]
+description = "Scrape the German Handelsregister via Selenium"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dynamic = ["dependencies"]
+
+[tool.hatch.metadata.hooks.requirements_txt]
+files = ["requirements.txt"]
+
+[project.urls]
+Homepage = "https://codeberg.org/ofosos/handelsregister-webdriver"
+Issues = "https://codeberg.org/ofosos/handelsregister-webdriver/issues"

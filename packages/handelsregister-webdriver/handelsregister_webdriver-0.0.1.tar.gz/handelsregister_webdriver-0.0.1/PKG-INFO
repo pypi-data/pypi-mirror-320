@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: handelsregister-webdriver
+Version: 0.0.1
+Summary: Scrape the German Handelsregister via Selenium
+Project-URL: Homepage, https://codeberg.org/ofosos/handelsregister-webdriver
+Project-URL: Issues, https://codeberg.org/ofosos/handelsregister-webdriver/issues
+Author-email: Mark Meyer <m@meyer.engineering>
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: lxml
+Requires-Dist: requests
+Requires-Dist: selenium
+Description-Content-Type: text/markdown
+
+# handelsregister-webdriver
+
+Webdriver access to the German Registerportal site
