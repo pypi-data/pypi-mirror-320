@@ -1,0 +1,9 @@
+real_useragent/__init__.py,sha256=SbSgoKvdLMSuZmk595kme7mjBl-elnP7SF7CGUFif5U,750
+real_useragent/desktop_useragent.txt,sha256=a7bN0NeNPDD9ZmhHSsvEfWq20E3CJsWqbapPnXCDdLo,15010
+real_useragent/get_agent.py,sha256=jtUfH37_QaHOtT3r6SsHtkb0uHJz5-arOatfDtuYTC4,1442
+real_useragent/get_compile.py,sha256=bMqxYmj13wEFqdM7f8-n1RJnxZos5lkmdSvqkjIqyGY,1507
+real_useragent/mobile_useragent.txt,sha256=N0GJB_gaF6vI2O2L5sDEM3zJ0CUMdQaodWeH3d-bs4o,33520
+real_useragent-1.0.8.dist-info/METADATA,sha256=CyS912s1VfSY2CzBkw1K1K6ItJLcpLCf4q4LGzrO15M,1845
+real_useragent-1.0.8.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+real_useragent-1.0.8.dist-info/top_level.txt,sha256=93bT65G0V70fIZhGh54nj_F_2odhKQ_OE93A6Juq4no,15
+real_useragent-1.0.8.dist-info/RECORD,,
