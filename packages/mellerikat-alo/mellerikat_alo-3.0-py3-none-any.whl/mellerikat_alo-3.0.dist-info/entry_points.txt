@@ -1,0 +1,3 @@
+[console_scripts]
+alo = alo.main:main
+glo = glo.main:main

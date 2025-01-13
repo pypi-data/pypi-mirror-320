@@ -1,0 +1,21 @@
+AIC_URI: https://aicond.meerkat-dev.com/
+#CLOUD_SERVICE_ACCOUNT:
+#  TYPE: AWS # GCP
+#  CREDENTIALS:
+#    PROFILE: meerkat-dev
+#  CREDENTIALS:
+#    KEY_FILE: *.json
+AWS_KEY_PROFILE: meerkat-dev
+GCP_CRENDENTIALS: key.json
+BUILD_METHOD: codebuild # docker
+CODEBUILD_ENV_COMPUTE_TYPE: BUILD_GENERAL1_SMALL
+CODEBUILD_ENV_TYPE: LINUX_CONTAINER
+LOGIN_MODE: static
+REGION: ap-northeast-2
+REPOSITORY_TAGS: # 태그 설정 복수개의 key:value (key, value 키 명은 반드시 소문자, 값은 대소문자 구분 없음.)
+  - key: Owner
+    value: Meerkat
+  - key: Phase
+    value: DEV
+VERSION: 1.1
+WORKSPACE_NAME: common-ws
