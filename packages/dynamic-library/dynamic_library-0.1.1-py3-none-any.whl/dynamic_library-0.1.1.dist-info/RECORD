@@ -1,0 +1,8 @@
+dynamic-library.pth,sha256=TkGBzO9QVAX15y_qpAky-xKI0nRb2_IM74mO_wwlye8,29
+dynamic_library/__init__.py,sha256=QsfJiJeNWcvJ-E7egUjEPywEBE8IkZH6eevt18QVr2I,1691
+dynamic_library/_hook.py,sha256=5ep-sGqenB_iHviCUtjzwtogEK33abOrsZ6Y_SNUlCg,485
+dynamic_library/_import.py,sha256=SHL7OBkgTWTmCzjOFI-7St4x0vfoW45-xAeNoqMPKXg,3219
+dynamic_library-0.1.1.dist-info/METADATA,sha256=oL2KPGGskbhZ-0_Eo168KEdSkvsHu534Kh58KjT617s,1665
+dynamic_library-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+dynamic_library-0.1.1.dist-info/licenses/LICENSE.txt,sha256=jWZ0OZSAEm_rBH3-lDLrBoquHZHfpYBF5d81oYyizQA,1097
+dynamic_library-0.1.1.dist-info/RECORD,,
