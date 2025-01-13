@@ -1,0 +1,13 @@
+modelzilla/.DS_Store,sha256=nBfUEFbRSIMRRHsoy5bznLGFitdNWKTHzQlSkKIydYc,6148
+modelzilla/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modelzilla/main.py,sha256=9-iKSKt741BeOKZUIg_2TaWWl8Ufhyp4M2Mz-H6yexo,2637
+modelzilla/media.py,sha256=gSDlnWRoXWILtFts_3ZuTZDZNv6R4aPq8x3jBVzZWBk,2068
+modelzilla/pipeline.py,sha256=62g3aL_h6-vtKAtV8xeRb1LV8qcsg17bq1_pUxeqQZ0,353
+modelzilla/plugins/__init__.py,sha256=wClj_AVBIpUoWVXN_5vlFXgwKcI44XpdPdTW4Ijdk2s,3021
+modelzilla/plugins/hf_object_det.py,sha256=TwkrfqO12sJdlaRPHKxXltXFAceYHGAZKWJVU2TWm68,1651
+modelzilla/sinks.py,sha256=N5ewMsx66ZqkhzDd_8ia6GhNDTjZAttfa7yOJI18ask,687
+modelzilla-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+modelzilla-0.1.0.dist-info/METADATA,sha256=gFVyN0rxJCSFr-9HAnhT2yiUsWH6AGn3k8aQnl-Do7M,16506
+modelzilla-0.1.0.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+modelzilla-0.1.0.dist-info/entry_points.txt,sha256=060b4rNsXre-lZRn9yAUso5BOeSe_sUXeiUjQAn6HMs,51
+modelzilla-0.1.0.dist-info/RECORD,,
