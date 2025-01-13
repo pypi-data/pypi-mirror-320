@@ -1,0 +1,11 @@
+carconnectivity
+paho-mqtt~=2.1.0
+JSON_minify~=0.3.0
+python-dateutil~=2.9.0
+
+[connectors]
+carconnectivity-connector-volkswagen
+carconnectivity-connector-skoda
+
+[plugins]
+carconnectivity-plugin-abrp
