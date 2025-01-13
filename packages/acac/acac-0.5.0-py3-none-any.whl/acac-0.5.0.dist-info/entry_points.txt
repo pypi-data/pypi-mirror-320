@@ -1,0 +1,3 @@
+[console_scripts]
+acac=acac.__main__:main
+
