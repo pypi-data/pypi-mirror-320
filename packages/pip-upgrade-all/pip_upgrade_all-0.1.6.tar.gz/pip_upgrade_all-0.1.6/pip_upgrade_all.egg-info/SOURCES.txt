@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pip_upgrade/__init__.py
+pip_upgrade/main.py
+pip_upgrade_all.egg-info/PKG-INFO
+pip_upgrade_all.egg-info/SOURCES.txt
+pip_upgrade_all.egg-info/dependency_links.txt
+pip_upgrade_all.egg-info/entry_points.txt
+pip_upgrade_all.egg-info/requires.txt
+pip_upgrade_all.egg-info/top_level.txt
