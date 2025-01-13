@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+bumimport/__init__.py
+bumimport/strategies.py
+bumimport.egg-info/PKG-INFO
+bumimport.egg-info/SOURCES.txt
+bumimport.egg-info/dependency_links.txt
+bumimport.egg-info/top_level.txt
+tests/test_flat_import.py

@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: bumimport
+Version: 1.0.0
+Summary: A Python package for various lazy (discouraged) import strategies.
+Home-page: https://www.github.com/ryanbaekr/bumimport
+Author: Ryan Baker
+License: AGPL
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+License-File: LICENSE.md
