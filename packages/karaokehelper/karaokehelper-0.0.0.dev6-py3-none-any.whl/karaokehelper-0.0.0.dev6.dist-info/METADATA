@@ -1,0 +1,10 @@
+Metadata-Version: 2.3
+Name: karaokehelper
+Version: 0.0.0.dev6
+Summary: This package is a collection of functions helpful for karaokebot
+Author: Grumpy Chipmunk
+Requires-Python: ==3.10.*
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Project-URL: CI, https://github.com/grumpychipmunk/karaokehelper/actions
+Project-URL: Homepage, https://github.com/grumpychipmunk/karaokehelper
