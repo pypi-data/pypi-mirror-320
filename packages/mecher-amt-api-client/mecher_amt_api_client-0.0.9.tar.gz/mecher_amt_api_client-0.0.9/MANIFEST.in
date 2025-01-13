@@ -1,0 +1,3 @@
+include requirements.txt
+include mecher_amt_api_client/*.py
+
