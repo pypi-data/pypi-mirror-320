@@ -1,0 +1,33 @@
+[project]
+name = "storybuilder"
+version = "0.1.2"
+authors = [
+  { name="Kelvin Xu", email="xxk59@hotmail.com" },
+]
+description = "A Python toolkit to build story meta."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "pillow",
+  "azure-cognitiveservices-speech==1.37.0",
+  "cos-python-sdk-v5",
+  "pydub",
+  "pyperclip",
+  "ffmpeg",
+  "lxml",
+  "beautifulsoup4"
+]
+
+[build-system]
+requires = [
+  "setuptools>=61.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/xxk59/StoryBuilder"
+Issues = "https://github.com/xxk59/StoryBuilder/issues"
