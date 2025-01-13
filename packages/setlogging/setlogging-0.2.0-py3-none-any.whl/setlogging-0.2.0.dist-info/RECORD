@@ -1,0 +1,8 @@
+LICENSE,sha256=POkmfdyLRe4agPG_qSOihW4QQlTkksT9EyqHSHH4-1w,1067
+README.md,sha256=amG_ubdCS43XrY259yesyiYjW0716OAoEikEwikdSVI,2669
+src/setlogging/__init__.py,sha256=MjRGKyg9hnZmFP8zO9Sp3Rm6882GFX5NZ033mhppD7s,180
+src/setlogging/logger.py,sha256=BfIvbGb_fNekIbrrHkgYDYXTDa9AjuG7Q0z9-tgEUv4,8630
+setlogging-0.2.0.dist-info/METADATA,sha256=8mhbqE8CkK0MKxvfy7CgfRn6isQu6yqeY3LqqWulTV0,3143
+setlogging-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+setlogging-0.2.0.dist-info/licenses/LICENSE,sha256=POkmfdyLRe4agPG_qSOihW4QQlTkksT9EyqHSHH4-1w,1067
+setlogging-0.2.0.dist-info/RECORD,,
