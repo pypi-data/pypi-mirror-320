@@ -1,0 +1,6 @@
+ipython
+numpy
+pluggy
+
+[:python_version < "3.11"]
+typing-extensions
