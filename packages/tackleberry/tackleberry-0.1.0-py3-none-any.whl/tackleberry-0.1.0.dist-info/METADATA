@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: tackleberry
+Version: 0.1.0
+Summary: Tackleberry (or TB) is helping you tackle the access to AI
+Author-email: Torsten Raudßus <torsten@raudssus.de>
+License: MIT
+License-File: LICENSE.txt
+Requires-Python: >=3.10
+Requires-Dist: instructor>=1.7.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: pyyaml>=6.0.0
+Requires-Dist: typing-extensions>=4.0.0
+Provides-Extra: dev
+Requires-Dist: anthropic; extra == 'dev'
+Requires-Dist: black>=22.0.0; extra == 'dev'
+Requires-Dist: flake8>=6.0.0; extra == 'dev'
+Requires-Dist: groq; extra == 'dev'
+Requires-Dist: instructor[anthropic]; extra == 'dev'
+Requires-Dist: instructor[groq]; extra == 'dev'
+Requires-Dist: isort>=5.0.0; extra == 'dev'
+Requires-Dist: mock>=5.0.0; extra == 'dev'
+Requires-Dist: mypy>=1.0.0; extra == 'dev'
+Requires-Dist: ollama; extra == 'dev'
+Requires-Dist: openai; extra == 'dev'
+Requires-Dist: pytest>=7.0.0; extra == 'dev'
+Requires-Dist: requests; extra == 'dev'
+Requires-Dist: transformers; extra == 'dev'
+Description-Content-Type: text/markdown
+
+[![Tackleberry](https://raw.githubusercontent.com/Getty/tackleberry/main/tackleberry.jpg)](https://github.com/Getty/tackleberry)
+
+# Tackleberry
+
+
+
+# Install
+
+## Using PIP
+
+### Stable Version with PIP
+
+Install from `PyPi`
+
+```console
+❯ pip install --upgrade tackleberry
+```
+
