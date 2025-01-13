@@ -1,0 +1,17 @@
+[project]
+name = "scrapy-patchright"
+version = "0.0.50"
+description = "Patchright Integration For Scrapy"
+authors = [
+    {name = "Ehsan U.",email = "lancerf562@gmail.com"}
+]
+requires-python = ">=3.9"
+dependencies = [
+    "scrapy>=2.0,!=2.4.0",
+    "patchright>=1.49",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

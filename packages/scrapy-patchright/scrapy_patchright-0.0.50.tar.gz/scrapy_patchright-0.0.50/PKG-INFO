@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: scrapy-patchright
+Version: 0.0.50
+Summary: Patchright Integration For Scrapy
+Author: Ehsan U.
+Author-email: lancerf562@gmail.com
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: patchright (>=1.49)
+Requires-Dist: scrapy (>=2.0,!=2.4.0)
