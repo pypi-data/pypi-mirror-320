@@ -1,0 +1,4 @@
+backend
+kde_material_you_colors
+plasmoid
+screenshot_helper
