@@ -1,0 +1,1 @@
+curl $HDFS_MODEL_PATH > model.tar && tar xvf model.tar && rm -rf model.tar && cd tts && python -m ftts serve chattts --config serve.yaml
