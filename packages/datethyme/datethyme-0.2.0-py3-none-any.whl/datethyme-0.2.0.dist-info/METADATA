@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: datethyme
+Version: 0.2.0
+Summary: 
+Author: Isaac Riley
+Author-email: isaac.r.riley@proton.me
+Requires-Python: >3.12,<3.14
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: deal (>4.24)
+Requires-Dist: multipledispatch (>=1)
+Requires-Dist: pydantic (>=2.8)
+Description-Content-Type: text/markdown
+
+# datethyme
+Ergonomic date and time types built on Pydantic and datetime.
+
