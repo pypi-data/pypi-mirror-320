@@ -1,0 +1,2 @@
+[console_scripts]
+dbt_junit_report = dbt_junit_report.dbt_junit_report:main

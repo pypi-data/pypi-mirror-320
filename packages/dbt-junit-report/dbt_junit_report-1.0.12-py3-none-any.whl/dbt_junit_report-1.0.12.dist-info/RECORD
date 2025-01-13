@@ -1,0 +1,10 @@
+dbt_junit_report/.python-version,sha256=e1X45ntWI8S-8_ppEojalDfXnTq6FW3kjUgdsyrH0W0,5
+dbt_junit_report/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbt_junit_report/dbt_junit_report.py,sha256=2GUUKQBy1muw8TiM85EIBN_PU8TF53Dc8zoKGBCoS4Q,2404
+dbt_junit_report/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbt_junit_report/tests/test_dbt_junit_report.py,sha256=XIAC3FG2gOCPcwMTbMcAaN-0vFM3ZM7YdWN-atC0fT0,6477
+dbt_junit_report-1.0.12.dist-info/METADATA,sha256=taTwBBnet4tzyrIjCpBWBaKrmW01n0HQQiG9d5cPzaI,1878
+dbt_junit_report-1.0.12.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+dbt_junit_report-1.0.12.dist-info/entry_points.txt,sha256=qwYZZrmMxr69Quf0v2rbM8HH9p2ipfuLEE_bi4A6qnM,76
+dbt_junit_report-1.0.12.dist-info/licenses/LICENSE,sha256=wqxoG0dQ7exKsfkE0OozmAP6ozs7sHMZd4Pa9G1QTwE,1067
+dbt_junit_report-1.0.12.dist-info/RECORD,,
