@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tqtk_lib"
+version = "0.1.0"
+authors = [
+    { name = "Marcello Chiuminatto", email = "mch@thequantick.net" },
+]
+description = "General purpose trading library"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "flake8==7.0.0",
+    "numpy==1.26.4",
+    "pandas==2.2.2",
+    "pyarrow==16.1.0",
+    "python-dateutil==2.9.0.post0",
+    "pylint==3.2.3",
+    "pytz==2024.1",
+    "six==1.16.0",
+    "tzdata==2024.1"
+]
+
+#[tool.setuptools]
+#packages = ["tqtklib"]
+
+[project.urls]
+Homepage = "https://github.com/mchiuminatto/tqtk_lib"
+Issues = "https://github.com/mchiuminatto/tqtk_lib/issues"

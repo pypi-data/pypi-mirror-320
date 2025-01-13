@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: tqtk_lib
+Version: 0.1.0
+Summary: General purpose trading library
+Author-email: Marcello Chiuminatto <mch@thequantick.net>
+Project-URL: Homepage, https://github.com/mchiuminatto/tqtk_lib
+Project-URL: Issues, https://github.com/mchiuminatto/tqtk_lib/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: flake8==7.0.0
+Requires-Dist: numpy==1.26.4
+Requires-Dist: pandas==2.2.2
+Requires-Dist: pyarrow==16.1.0
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: pylint==3.2.3
+Requires-Dist: pytz==2024.1
+Requires-Dist: six==1.16.0
+Requires-Dist: tzdata==2024.1
+
+For internal use of TheQuantick.net only.
+
+
+DO NOT USE OR INSTALL
