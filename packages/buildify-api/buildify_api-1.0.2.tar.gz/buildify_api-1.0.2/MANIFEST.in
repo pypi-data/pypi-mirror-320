@@ -1,0 +1,26 @@
+# Include specific files you need for the package
+include README.md
+include LICENSE
+include requirements.txt
+include setup.py
+include setup.cfg
+
+# Include all Python files in the source code directory
+recursive-include buildify_api *.py
+recursive-include buildify_api/utils *.py
+recursive-include buildify_api/deposits *.py
+recursive-include buildify_api/occupancy_parser *.py
+
+# Exclude specific files and directories
+exclude .git/*
+exclude .gitignore
+exclude *.pyc
+exclude __pycache__/*
+exclude deploy.py
+exclude demo/
+exclude logs/
+exclude data/
+exclude requirements.txt
+
+# Exclude PyArmor runtime if it's not needed
+exclude buildify_api/pyarmor_runtime_000000/*
