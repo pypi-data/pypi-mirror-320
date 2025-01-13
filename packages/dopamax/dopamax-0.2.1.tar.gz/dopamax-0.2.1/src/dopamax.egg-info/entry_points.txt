@@ -1,0 +1,2 @@
+[console_scripts]
+dopamax = dopamax._scripts.cli:cli

@@ -1,0 +1,163 @@
+Metadata-Version: 2.2
+Name: dopamax
+Version: 0.2.1
+Summary: Reinforcement learning in pure JAX.
+Author-email: Ryan Strauss <ryanrstrauss@icloud.com>
+License: MIT License
+        
+        Copyright (c) 2024 Ryan Strauss
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Repository, https://github.com/rystrauss/dopamax.git
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jax==0.4.38
+Requires-Dist: jaxlib==0.4.38
+Requires-Dist: chex>=0.1.87
+Requires-Dist: brax>=0.11.0
+Requires-Dist: click>=8.1.7
+Requires-Dist: distrax>=0.1.5
+Requires-Dist: dm-env>=1.6
+Requires-Dist: dm-haiku>=0.0.13
+Requires-Dist: pgx>=2.4.2
+Requires-Dist: einops>=0.8.0
+Requires-Dist: ffmpeg>=1.4
+Requires-Dist: imageio>=2.25.1
+Requires-Dist: mctx>=0.0.5
+Requires-Dist: moviepy>=1.0.3
+Requires-Dist: ml-collections>=0.1.1
+Requires-Dist: optax>=0.2.4
+Requires-Dist: numpy>=1.22.4
+Requires-Dist: rlax>=0.1.6
+Requires-Dist: tqdm>=4.64.1
+Requires-Dist: wandb>=0.18.7
+Requires-Dist: flashbax>=0.1.2
+Requires-Dist: gymnax>=0.0.8
+
+[1]: https://github.com/google/jax
+
+[2]: https://arxiv.org/abs/2104.06272
+
+# Dopamax
+
+<p>
+       <a href="https://pypi.python.org/pypi/dopamax">
+        <img src="https://img.shields.io/pypi/pyversions/dopamax.svg" /></a>
+       <a href= "https://badge.fury.io/py/dopamax">
+        <img src="https://badge.fury.io/py/dopamax.svg" /></a>
+       <a href= "https://github.com/rystrau/dopamax/blob/master/LICENSE.md">
+        <img src="https://img.shields.io/badge/license-MIT-blue.svg" /></a>
+       <a href= "https://github.com/psf/black">
+        <img src="https://img.shields.io/badge/code%20style-black-000000.svg" /></a>
+</p>
+
+Dopamax is a library containing pure [JAX][1] implementations of common reinforcement learning algorithms. _Everything_
+is implemented in JAX, including the environments. This allows for extremely fast training and evaluation of agents,
+because the entire loop of environment simulation, agent interaction, and policy updates can be compiled as a single
+XLA program and executed on CPUs, GPUs, or TPUs. More specifically, the implementations in Dopamax follow the
+Anakin Podracer architecture -- see [this paper][2] for more details.
+
+## Supported Algorithms
+
+- [Proximal Policy Optimization (PPO)](src/dopamax/agents/anakin/ppo.py)
+- [Deep Q-Network (DQN)](src/dopamax/agents/anakin/dqn.py)
+- [Deep Deterministic Policy Gradients (DDPG)](src/dopamax/agents/anakin/ddpg.py)
+- [Twin Delayed DDPG (TD3)](src/dopamax/agents/anakin/ddpg.py)
+- [Soft Actor Critic](src/dopamax/agents/anakin/sac.py)
+- [AlphaZero](src/dopamax/agents/anakin/alphazero.py)
+
+## Installation
+
+Dopamax can be installed with:
+
+```bash
+pip install dopamax
+```
+
+This will install the `dopamax` Python package, as well as a command-line interface (CLI) for training and evaluation.
+Note that only the CPU version of JAX is installed by default. If you would like to use a GPU or TPU, you will need to
+install the appropriate version of JAX. See the
+[JAX installation instructions](https://github.com/google/jax#installation).
+
+> [!NOTE]  
+> The above command will install the latest "release" of Dopamax, which may not necessarily align with the latest
+> commit in the main branch. To install the version found in the main branch of this repository, you can use:
+> ```bash
+> pip install git+https://github.com/rystrauss/dopamax.git
+> ```
+
+## Usage
+
+After installation, the Dopamax CLI can be used to train and evaluate agents:
+
+```bash
+dopamax --help
+```
+
+Dopamax uses [Weights and Biases (W&B)](https://wandb.ai/site) for logging and artifact management. Before using the CLI
+for training and evaluation, you must first make sure you have a W&B account (it's free) and have authenticated
+with `wandb login`.
+
+### Training
+
+Agent's can be trained using the `dopamax train` command, to which you must provide a configuration file. The
+configuration file is a YAML file that specifies the agent, environment, and training hyperparameters. You can find
+examples in the [examples](examples) directory. For example, to train a PPO agent on the CartPole environment, you would
+run:
+
+```bash
+dopamax train --config examples/ppo-cartpole/config.yaml
+```
+
+Note that all of the example config files have a random seed specified, so you will get the same result every time you
+run the command. The seeds provided in the examples are known to result in a successful run (with the given
+hyperparameters). To get different results on each run, you can remove the seed from the config file.
+
+### Evaluation
+
+Once you have trained some agents, you can evaluate them using the `dopamax evaluate` command. This will allow you to
+specify a W&B agent artifact that you'd like to evaluate (these artifacts are produced by the training runs and
+contain the agent hyperparameters and weights from the end of training). For example, to evaluate a PPO agent trained
+on CartPole, you might use a command like:
+
+```bash
+dopamax evaluate --agent_artifact CartPole-PPO-agent:v0 --num_episodes 100
+```
+
+where `--num_episodes 100` signals that you would like to rollout the agent's policy for 100 episodes. The minimum,
+mean, and maximum episode reward will be logged back to W&B. If you would additionally like to render the episodes and
+have then logged back to W&B, you can provide the `--render` flag. But note that this will usually significantly slow
+down the evaluation process since environment rendering is not a pure JAX function and requires callbacks to the host.
+You should usually only use the `--render` flag with a small number of episodes.
+
+## See Also
+
+Some of the JAX-native packages that Dopamax relies on:
+- [sotetsuk/pgx](https://github.com/sotetsuk/pgx)
+- [deepmind/mctx](https://github.com/deepmind/mctx)
+- [deepmind/rlax](https://github.com/deepmind/rlax)
+- [google/brax](https://github.com/google/brax)
