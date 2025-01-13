@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mobileproxy/__init__.py
+mobileproxy.egg-info/PKG-INFO
+mobileproxy.egg-info/SOURCES.txt
+mobileproxy.egg-info/dependency_links.txt
+mobileproxy.egg-info/not-zip-safe
+mobileproxy.egg-info/requires.txt
+mobileproxy.egg-info/top_level.txt
