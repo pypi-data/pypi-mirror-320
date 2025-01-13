@@ -1,0 +1,29 @@
+Metadata-Version: 2.2
+Name: TezzChain
+Version: 0.1.1
+Summary: Low Code RAG building tool
+Home-page: https://github.com/japkeerat/TezzChain
+Author: Japkeerat Singh
+Author-email: japkeerat21@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: ollama==0.4.4
+Requires-Dist: chromadb==0.6.2
+Requires-Dist: unstructured==0.16.12
+Requires-Dist: sqlalchemy==2.0.37
+Requires-Dist: psycopg2-binary==2.9.10
+Requires-Dist: PyYAML==6.0.2
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# TezzChain

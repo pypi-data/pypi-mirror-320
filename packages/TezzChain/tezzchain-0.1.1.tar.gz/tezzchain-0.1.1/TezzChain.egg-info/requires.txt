@@ -1,0 +1,6 @@
+ollama==0.4.4
+chromadb==0.6.2
+unstructured==0.16.12
+sqlalchemy==2.0.37
+psycopg2-binary==2.9.10
+PyYAML==6.0.2
