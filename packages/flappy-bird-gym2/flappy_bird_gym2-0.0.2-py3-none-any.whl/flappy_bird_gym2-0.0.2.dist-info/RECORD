@@ -1,0 +1,15 @@
+flappy_bird_gym2/__init__.py,sha256=Rf-Mzpzlaoteo_CNy3v01VPUIH89G1N6BFf8bjVHxyw,2010
+flappy_bird_gym2/cli.py,sha256=Y6e5dIygkB3IQg3t9-pR8lQmPuuKyWNrgxSOIj_JKEQ,2505
+flappy_bird_gym2/original_game.py,sha256=ua9eEKHnSMZ0eG75CWNFgUEU7b3Ekvcxab7qTZUcfw8,17264
+flappy_bird_gym2/envs/__init__.py,sha256=IUH7WPbI1QRGbcjsqNeprImbCxuoaquqJ4EI8z7LCPs,1376
+flappy_bird_gym2/envs/flappy_bird_env_rgb.py,sha256=UjT5BcT4E34_n558tKJB2XN8HVMPuOGdy9Lhl9HvejE,5928
+flappy_bird_gym2/envs/flappy_bird_env_simple.py,sha256=21UJE7C1k3pGdtNPE_dghjU6lzPAne_KewunURc1RuE,6908
+flappy_bird_gym2/envs/game_logic.py,sha256=U36vJGU5TR9TRXT8povzLsRmbOgSRCAjr-Z7DzGKJ2o,9854
+flappy_bird_gym2/envs/renderer.py,sha256=-9tzyLcY2LCZuCqJqKElFYXfBTijJYkQBmg63TfdxMI,7141
+flappy_bird_gym2/envs/utils.py,sha256=dhvHol7FSBa17IMzkxkxtQU_u1oYvaPxc8JKaCc-H-k,5870
+flappy_bird_gym2-0.0.2.dist-info/LICENSE,sha256=kTP7sDbA2Hpr9Sw-gZ8mgm6SQE6uk-CSZ1rCH2GPs1w,1082
+flappy_bird_gym2-0.0.2.dist-info/METADATA,sha256=PwutfL1MmL0zu1m3uZXMc6oLvo6aXhBNXi1JhDbxta0,4250
+flappy_bird_gym2-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+flappy_bird_gym2-0.0.2.dist-info/entry_points.txt,sha256=JEkIgqNjb2XSYT3AOulufYkWLQ5xMUyleGah2UGGPiI,62
+flappy_bird_gym2-0.0.2.dist-info/top_level.txt,sha256=VOmup0aYK_lG2PYVtcg3Mt_J1UIlW5OvcgFcGxHNOq4,17
+flappy_bird_gym2-0.0.2.dist-info/RECORD,,
