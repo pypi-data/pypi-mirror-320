@@ -1,0 +1,12 @@
+
+[doc]
+sphinx
+
+[test]
+pytest
+numpy
+gmpy2
+mypy
+black
+isort
+flake8
