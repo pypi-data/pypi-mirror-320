@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: pyressim
+Version: 0.1.0
+Summary: PyResSim: A Next-Gen Reservoir Simulator
+Home-page: https://github.com/mdelpinofiorillo/pyressim
+Author: Mario
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: pyvista
+Requires-Dist: setuptools
+Dynamic: author
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
