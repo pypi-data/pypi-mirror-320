@@ -1,0 +1,28 @@
+[tool.coverage.run]
+source = ["rointesdk"]
+
+[tool.isort]
+known_first_party = "rointesdk,tests"
+multi_line_output = 3
+profile = "black"
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_incomplete_defs = true
+disallow_subclassing_any = true
+disallow_untyped_calls = true
+disallow_untyped_decorators = true
+disallow_untyped_defs = true
+follow_imports = "silent"
+ignore_missing_imports = true
+python_version = 3.13
+
+[tool.flake8]
+max-line-length = 160
+extend-ignore = "E203, W503"
+
+[tool.poetry]
+name = "roinde-sdk"  # Replace with your actual project name
+version = "1.6.0"           # Replace with your desired version
+description = "Rointe SDK lib"
+authors = ["tggm"]

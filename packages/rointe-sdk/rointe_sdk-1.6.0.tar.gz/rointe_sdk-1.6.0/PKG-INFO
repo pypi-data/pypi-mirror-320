@@ -1,0 +1,48 @@
+Metadata-Version: 2.2
+Name: rointe-sdk
+Version: 1.6.0
+Summary: Python SDK for rointeconnect.com
+Home-page: https://github.com/tggm/rointe-sdk
+Author: tggm
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.27.1
+Requires-Dist: packaging>=21.2
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+# 🌞 rointe-sdk
+
+## A python 3 library to interact with Rointe Devices.
+
+`rointe-sdk` is a Python 3 library for the Rointe HomeAssistant integration via a REST API.
+
+- [Installation](#Installation)
+- [Supported devices] (#supported-devices)
+
+## Installation
+
+```bash
+pip install rointe-sdk
+```
+
+## Supported devices
+
+Currently supported devices include:
+
+- D-Series radiators
+- Belize radiators
+- Olympia radiators
+- Wi-Fi enabled towel rails
+- Thermostat
+
+## Contributions used
+
+- Portions from https://github.com/bachya/pypi-template
+- Portions from https://github.com/bachya/aiopurpleair
