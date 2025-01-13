@@ -1,0 +1,2 @@
+[console_scripts]
+owll = owll.owll:main
