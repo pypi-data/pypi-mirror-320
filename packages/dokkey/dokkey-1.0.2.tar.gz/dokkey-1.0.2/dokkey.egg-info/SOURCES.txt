@@ -1,0 +1,8 @@
+LICENSE
+README.md
+main.c
+setup.py
+dokkey.egg-info/PKG-INFO
+dokkey.egg-info/SOURCES.txt
+dokkey.egg-info/dependency_links.txt
+dokkey.egg-info/top_level.txt
