@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: normalize-filenames
+Version: 0.1.0
+Summary: A small utility to normalize filenames the way that I like
+Author-email: Jeremy Gibson <jeremy.gibson@crusosoft.com>
+Requires-Python: >=3.12
