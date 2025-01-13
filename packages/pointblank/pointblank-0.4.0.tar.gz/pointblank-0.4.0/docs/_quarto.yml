@@ -1,0 +1,128 @@
+project:
+  type: website
+
+format:
+  html:
+    theme: flatly
+    toc: true
+    grid:
+      sidebar-width: 300px
+      body-width: 900px
+      margin-width: 300px
+      gutter-width: 1.5rem
+
+website:
+  title: pointblank
+  site-url: https://rich-iannone.github.io/pointblank/
+  description: "Find out if your data is what you think it is"
+  page-navigation: true
+  navbar:
+    left:
+      - text: Get Started
+        file: get-started/index.qmd
+      - href: reference/index.qmd
+        text: Reference
+    right:
+      - icon: github
+        href: https://github.com/rich-iannone/pointblank
+
+html-table-processing: none
+
+quartodoc:
+  package: pointblank
+  dir: reference
+  title: API Reference
+  style: pkgdown
+  dynamic: true
+  renderer:
+    style: markdown
+    table_style: description-list
+  sections:
+    - title: Validate
+      desc: >
+        When peforming data validation, you'll need the `Validate` class to get the process started.
+        It's given the target table and you can optionally provide some metadata and/or failure
+        thresholds (using the `Thresholds` class or through shorthands for this task). The
+        `Validate` class has numerous methods for defining validation steps and for obtaining
+        post-interrogation metrics and data.
+      contents:
+        - name: Validate
+          members: []
+        - name: Thresholds
+        - name: Schema
+          members: []
+    - title: Validation Steps
+      desc: >
+        Validation steps can be thought of as sequential validations on the target data. We call
+        `Validate`'s validation methods to build up a validation plan: a collection of steps that,
+        in the aggregate, provides good validation coverage.
+      contents:
+        - name: Validate.col_vals_gt
+        - name: Validate.col_vals_lt
+        - name: Validate.col_vals_ge
+        - name: Validate.col_vals_le
+        - name: Validate.col_vals_eq
+        - name: Validate.col_vals_ne
+        - name: Validate.col_vals_between
+        - name: Validate.col_vals_outside
+        - name: Validate.col_vals_in_set
+        - name: Validate.col_vals_not_in_set
+        - name: Validate.col_vals_null
+        - name: Validate.col_vals_not_null
+        - name: Validate.col_vals_regex
+        - name: Validate.col_vals_expr
+        - name: Validate.col_exists
+        - name: Validate.rows_distinct
+        - name: Validate.col_schema_match
+        - name: Validate.row_count_match
+        - name: Validate.col_count_match
+    - title: Column Selection
+      desc: >
+        A flexible way to select columns for validation is to use the `col()` function along with
+        column selection helper functions. A combination of `col()` + `starts_with()`, `matches()`,
+        etc., allows for the selection of multiple target columns (mapping a validation across many
+        steps). Furthermore, the `col()` function can be used to declare a comparison column (e.g.,
+        for the `value=` argument in many `col_vals_*()` methods) when you can't use a fixed value
+        for comparison.
+      contents:
+        - name: col
+        - name: starts_with
+        - name: ends_with
+        - name: contains
+        - name: matches
+        - name: everything
+        - name: first_n
+        - name: last_n
+    - title: Interrogation and Reporting
+      desc: >
+        The validation plan is put into action when `interrogate()` is called. The workflow for
+        performing a comprehensive validation is then: (1) `Validate()`, (2) adding validation
+        steps, (3) `interrogate()`. After interrogation of the data, we can view a validation report
+        table (by printing the object or using `get_tabular_report()`), extract key metrics, or we
+        can split the data based on the validation results (with `get_sundered_data()`).
+      contents:
+        - name: Validate.interrogate
+        - name: Validate.get_data_extracts
+        - name: Validate.get_json_report
+        - name: Validate.get_tabular_report
+        - name: Validate.get_sundered_data
+        - name: Validate.all_passed
+        - name: Validate.n
+        - name: Validate.n_passed
+        - name: Validate.n_failed
+        - name: Validate.f_passed
+        - name: Validate.f_failed
+        - name: Validate.warn
+        - name: Validate.stop
+        - name: Validate.notify
+    - title: Utilities
+      desc: >
+        The utilities group contain functions that are helpful for the validation process. We can
+        load datasets with `load_dataset()`, preview a table with `preview()`, and set global
+        configuration parameters with `config()`.
+      contents:
+        - name: load_dataset
+        - name: preview
+        - name: get_column_count
+        - name: get_row_count
+        - name: config
