@@ -1,0 +1,11 @@
+simplemodelrouter/__init__.py,sha256=Bstq0sijw8xTRvBXaw2m9TaeAiU442CSYdHTyfKQ5vU,424
+simplemodelrouter/base.py,sha256=cJpkDHp5s8Lidl0p3jolGbbpvgKqDm4zMubiPoN-LSQ,2632
+simplemodelrouter/normalizers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplemodelrouter/normalizers/base.py,sha256=Ks7JV6JS404ZXJmzLs8iPPxqoIGOZdPkHjitY149EQQ,1458
+simplemodelrouter/providers/anthropic.py,sha256=0Ma3QixQPi9D_SYFgfvLEA_VaHOdlW8SnoPQGpT2lXo,4793
+simplemodelrouter/providers/ollama.py,sha256=4sdgZhGt6pMO39JYRIKFIK5ulo5mROmpGfuuZc2xpuo,5685
+simplemodelrouter/providers/openai.py,sha256=xJiR_8EF9V303Q5oS2iK-hIwDKsEwo8qk7ccZeFRKDk,5264
+simplemodelrouter/types.py,sha256=CJgqKAgS8OUccmkf9U3siqZjZltVA6cjQ1wk5P_XRa0,1405
+simplemodelrouter-0.1.3.dist-info/METADATA,sha256=Kbx_hHXXAkgSUio49YBh6pkkb42rOVQgTQW2lnwE8Xg,5451
+simplemodelrouter-0.1.3.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+simplemodelrouter-0.1.3.dist-info/RECORD,,
