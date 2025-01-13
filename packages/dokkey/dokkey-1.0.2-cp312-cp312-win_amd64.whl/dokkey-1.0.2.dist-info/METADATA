@@ -1,0 +1,10 @@
+Metadata-Version: 2.2
+Name: dokkey
+Version: 1.0.2
+Summary: A Python module for detecting keyboard events
+Author: Peter Bohus
+Author-email: v2020.bohus.peter@gmail.com
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary
