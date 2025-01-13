@@ -1,0 +1,66 @@
+Metadata-Version: 2.2
+Name: pygdk
+Version: 1.0.0a2
+Summary: Python General Development Kit
+License: MIT
+Project-URL: Issue Tracker, https://github.com/DevByEagle/pygdk/issues
+Project-URL: Source, https://github.com/DevByEagle/pygdk
+Keywords: GUI,Cross-Platform,Lightweight,Fast
+Platform: Windows
+Platform: Linux
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Multimedia :: Graphics
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: customtkinter
+Requires-Dist: typing
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license
+Dynamic: platform
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+ # Pygdk
+ 
+ <!-- ![PyPI](https://img.shields.io/pypi/v/pygdk)
+ ![License](https://img.shields.io/github/license/DevByEagle/pygdk)   -->
+
+**Pygdk** is a powerful, lightweight, and easy-to-use Python Gui library.
+
+---
+
+## 📦 Installation
+
+Install **Pygdk** directly from PyPI:
+
+```bash
+pip install pygdk
+```
+
+<!-- Or install the latest development version: -->
+
+<!-- ```bash
+pip install git+https://github.com/DevByEagle/pygdk.git
+``` -->
+
+---
+
+## 🛠️ Usage
+
+Start using **Pygdk** with minimal setup:
+
+```python
+import pygdk
+```
