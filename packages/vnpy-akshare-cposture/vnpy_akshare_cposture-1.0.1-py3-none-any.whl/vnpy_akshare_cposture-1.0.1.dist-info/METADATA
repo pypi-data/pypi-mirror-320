@@ -1,0 +1,46 @@
+Metadata-Version: 2.2
+Name: vnpy-akshare-cposture
+Version: 1.0.1
+Summary: AKShare datafeed for VeighNa quant trading framework
+Home-page: https://github.com/cposture/vnpy_akshare
+Author: cposture
+Author-email: cposture@126.com
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: vnpy>=3.0.0
+Requires-Dist: akshare>=1.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# vnpy-akshare-cposture
+
+[VeighNa](https://www.vnpy.com) 框架的 AKShare 数据服务接口。
+
+## 说明
+
+基于 [AKShare](https://akshare.akfamily.xyz/) 开发的数据服务接口，为 VeighNa 框架提供中国金融市场的基础数据。
+
+## 安装
+
+```bash
+pip install vnpy-akshare-cposture
+```
