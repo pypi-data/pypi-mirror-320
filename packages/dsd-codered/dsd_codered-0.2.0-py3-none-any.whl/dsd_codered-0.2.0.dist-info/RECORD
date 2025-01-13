@@ -1,0 +1,14 @@
+dsd_codered/__init__.py,sha256=wsYq2dGUgbrGbCy1HASerFyJNka8gCjRdhjhCs85H1I,93
+dsd_codered/deploy.py,sha256=aGLGscALwMu0OVF6tsygw8bov_r0JU-DCvJQrOh7Nis,582
+dsd_codered/deploy_messages.py,sha256=4n6dLzxSIElE-hPIFfMorCPaYda7GhB0Djzp33hz4Rk,2864
+dsd_codered/platform_deployer.py,sha256=TxLNlUFzmHdCipKr3J4WfpkUEs8NjSSHx0uer_qsjI4,7994
+dsd_codered/plugin_config.py,sha256=4IEHznPjbGWzPGjKK6fmnyRyxzblF2IggFSPioMLYJw,859
+dsd_codered/utils.py,sha256=YLWARF4EWGwbFzG22Upo-AM6R8kn_5ztWX8Fa_GENpQ,2368
+dsd_codered/templates/dockerfile_example,sha256=E3_0C3FF1uvO22GQXaWroL2LN-J9Tbb7merLUHmkwZE,507
+dsd_codered/templates/settings.py,sha256=a00s24N0AbBLhIwtOswchT2whFgoUUKw_VBJPVSz1cs,42
+dsd_codered/templates/settings_prod.py,sha256=o9fXYthq-w40Vj9pIUN6GZMVzhGFyIHL6qhZYBG2hJU,960
+dsd_codered-0.2.0.dist-info/LICENSE,sha256=eE0PSpGK-C_T72lmuE6kQ_Am4fOlJympaeS_aItmiws,1484
+dsd_codered-0.2.0.dist-info/METADATA,sha256=NcI-pNGrgBZkUO4OH7cjsyITxnfwkV2j6IeC55ZlERw,4562
+dsd_codered-0.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+dsd_codered-0.2.0.dist-info/top_level.txt,sha256=yo85JOCqhFKzpCxQii8G7rpM-nqsyJKHMJSSzLMxPH0,12
+dsd_codered-0.2.0.dist-info/RECORD,,
