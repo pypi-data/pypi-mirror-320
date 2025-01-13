@@ -1,0 +1,16 @@
+veeml/__init__.py,sha256=JM2lY2Ta_vLuaai1D0ibTZpHoIHCVU-OK1f_uT_EBy0,510
+veeml/models/__init__.py,sha256=1anLJD-lsMdkNW3uEZx_olkzx9OH1HfY7QmryP07Y5c,488
+veeml/models/decision_tree.py,sha256=VJjShHhUITYDapq2SaMzdP70Y3Y2hyltzPcqn6Imneo,6172
+veeml/models/knn.py,sha256=gmGSegCJmeJxTgTJWTlGMmkE9WK7txWCQ2K4slhFhoI,1553
+veeml/models/linear_regression.py,sha256=RxZlDz4XPU-Nu5sqxvIqY1ZLqYDBKjgrPKr8dNDOA68,2400
+veeml/models/logistic_regression.py,sha256=vU_tjSf3IZDnYsHnL0GRUDgO_xmOY1usbZeFpEGZnEM,3225
+veeml/models/multivariate_regression.py,sha256=_LqRx3iICK_sxnVSyGlAUOSCbVyHk8PUZX4vaddIoig,2808
+veeml/models/random_forest.py,sha256=q3NRVSpKMQK9v1nREmWtKmGFGtEGJfJqAbl27Fq6BwY,7996
+veeml/utils/__init__.py,sha256=1elbIp_kUCLackwSKP_teoyljg2BmwfW4ppsSWpG7A4,121
+veeml/utils/data_processing.py,sha256=w5FwlwaFb5m0kNcizJaPezrmt9VBgDGicguzmjM8H9U,871
+veeml/utils/evaluation.py,sha256=JsS-VioF_rax1KrAfrc_ki6x0pdhrNhM9v1Aa94o8eg,4623
+veeml-0.1.0.dist-info/METADATA,sha256=bcee4tLjESzq60DW1GGU-yovBjqVjMxXWVDMSPMGxfY,1377
+veeml-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+veeml-0.1.0.dist-info/entry_points.txt,sha256=XShimiiNNsRbIff-vgDE9UxLrOe8zZuWkSGqSHh41mI,36
+veeml-0.1.0.dist-info/top_level.txt,sha256=8DFiq1K85MlfSz_Or5jKxEX-DYn358MX9pjBgU5MNJU,6
+veeml-0.1.0.dist-info/RECORD,,
