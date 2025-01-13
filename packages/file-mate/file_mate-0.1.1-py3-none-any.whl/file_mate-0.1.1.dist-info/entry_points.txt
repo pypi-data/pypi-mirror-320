@@ -1,0 +1,2 @@
+[console_scripts]
+file-mate = file_mate.cli:cli
