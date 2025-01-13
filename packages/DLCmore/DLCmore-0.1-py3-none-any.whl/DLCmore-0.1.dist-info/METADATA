@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: DLCmore
+Version: 0.1
+Summary: 一个便于python写代码的一个扩展
+Home-page: https://github.com
+Author: 叶承恩
+Author-email: qwp234526@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
