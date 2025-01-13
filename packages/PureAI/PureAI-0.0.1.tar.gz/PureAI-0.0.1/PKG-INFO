@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: PureAI
+Version: 0.0.1
+Summary: all-in-one solution for building Retrieval-Augmented Generation(RAG) pipelines with ease and efficiency
+Home-page: UNKNOWN
+Author: PureAI
+Author-email: guilherme.romanini@pureai.com.br
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
