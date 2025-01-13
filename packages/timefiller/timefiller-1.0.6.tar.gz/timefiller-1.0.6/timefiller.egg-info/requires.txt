@@ -1,0 +1,10 @@
+mapie
+numpy
+optimask
+pandas
+scikit-learn
+tqdm
+
+[test]
+pytest
+requests
