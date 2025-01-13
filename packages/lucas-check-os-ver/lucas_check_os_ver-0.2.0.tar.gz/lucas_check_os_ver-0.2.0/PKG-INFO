@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: lucas-check-os-ver
+Version: 0.2.0
+Summary: Default template for PDM package
+Author-Email: lucas_hub12 <hyeonggyunbae@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/lucas-hub12/lucas-check-os-ver
+Project-URL: Issues, https://github.com/lucas-hub12/lucas-check-os-ver/issues
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# lucas-check-os-ver- 
+
+### Development environment setting
+```bash
+# install PDM
+# git clone ...
+$ source .venv/bin/activate
+$ pdm install
+# $ vi ...
+
+# TEST
+$ pdm install
+$ pdm test
+$ pip install . 
+
+$ git add <file-name>
+$ git commit -a
+$ git push
+$ pdm publish
+
+```
+
+### USE 
+```python
+$ pip install lucas-check-os-ver
+$ python 
+>>> from lucas_check_os_ver.hi import hi
+>>> hi()
+```
+
+
