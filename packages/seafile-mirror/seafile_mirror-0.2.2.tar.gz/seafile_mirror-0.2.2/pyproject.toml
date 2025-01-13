@@ -1,0 +1,57 @@
+# SPDX-FileCopyrightText: 2023 Max Mehl <https://mehl.mx>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+[tool.poetry]
+name = "seafile-mirror"
+version = "0.2.2"
+description = "Handle clean read-only (re-)syncs of Seafile libraries to mirror them"
+authors = ["Max Mehl <mail@mehl.mx>"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://src.mehl.mx/mxmehl/seafile-mirror"
+packages = [{ include = "seafile_mirror" }]
+
+[tool.poetry.scripts]
+seafile-mirror = 'seafile_mirror.seafile_mirror:main'
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyyaml = "^6.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.0.0"
+isort = "^5.12.0"
+black = "^24.0.0"
+mypy = "^1.5.1"
+pylama = "^8.4.1"
+types-pyyaml = "^6.0.12.11"
+bump-my-version = "^0.29.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# FORMATTING settings
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 100
+
+# MYPY settings
+[tool.mypy]
+files = ["seafile_mirror/*.py"]
+
+# Bump-My-Version
+[tool.bumpversion]
+commit = true
+tag = true
+allow_dirty = false
+tag_name = "v{new_version}"
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+regex = true
+search = "^version = \"{current_version}\""
+replace = "version = \"{new_version}\""
