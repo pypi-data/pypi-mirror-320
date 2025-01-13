@@ -1,0 +1,12 @@
+modelo_dados/__init__.py,sha256=Rt4wNMZlyV0bM4H5kfDZL4vw3CU2Va_4hii9B_pop8Q,322
+modelo_dados/comercializacao.py,sha256=7wVg2uOukdBW_kHKZOFOFOidxuwv62Z65OKmthSUdSg,7887
+modelo_dados/modelo_dados.py,sha256=nhkEHwxBfa-BKK4w6wB_bHl01sQaCBDWT2QCqkJiJ80,7494
+modelo_dados/processamento.py,sha256=ofOIqvtlXXj1LRCAbYlKx3N5yvOM8G2925Etd8S4Sjo,8844
+modelo_dados/producao.py,sha256=DBl9fIHhndrdf7KY4-Yh3oag9KTULpQySf7TEynNaKU,7719
+site_embrapa/__init__.py,sha256=w_uPLJmbTZ9Xm3bauFsWLPrHoKib5EBzNY-jLEXh09k,37
+site_embrapa/site_embrapa.py,sha256=ms0NublGJz3pFCZzpkFapeTs01bJ3ZRM7JhqlQY1gEc,17722
+fiap_lib_grupo56-0.1.5.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fiap_lib_grupo56-0.1.5.dist-info/METADATA,sha256=M00pp_mENYCx2NEcGAm2r1mlzwhVa7Y5EfSa3yiasLE,452
+fiap_lib_grupo56-0.1.5.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+fiap_lib_grupo56-0.1.5.dist-info/top_level.txt,sha256=zxI8SyC4odYRl1YS5YgvKOJQTDuY_9e1IAn9XBlqXpQ,26
+fiap_lib_grupo56-0.1.5.dist-info/RECORD,,
