@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+dice/__init__.py
+dice/__main__.py
+puntdice.egg-info/PKG-INFO
+puntdice.egg-info/SOURCES.txt
+puntdice.egg-info/dependency_links.txt
+puntdice.egg-info/entry_points.txt
+puntdice.egg-info/top_level.txt

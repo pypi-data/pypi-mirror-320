@@ -1,0 +1,2 @@
+[console_scripts]
+dice = puntdice.main:main
