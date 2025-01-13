@@ -1,0 +1,5 @@
+requests
+fastapi
+cryptography
+authlib
+python-dotenv
