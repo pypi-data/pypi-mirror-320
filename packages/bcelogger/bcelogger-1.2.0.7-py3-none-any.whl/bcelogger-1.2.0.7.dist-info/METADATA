@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: bcelogger
+Version: 1.2.0.7
+Summary: A common logger library.
+Home-page: https://console.cloud.baidu-int.com/devops/icode/repos/baidu/themis/logger-python/tree/master
+Requires-Python: >=3.8
+
