@@ -1,0 +1,1215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>440</width>
+    <height>756</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>350</width>
+    <height>677</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>1000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>OptimaLab35</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="maximumSize">
+       <size>
+        <width>500</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_1">
+       <attribute name="title">
+        <string>Main</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_10">
+        <item>
+         <widget class="QFrame" name="folder_group">
+          <property name="maximumSize">
+           <size>
+            <width>400</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="1">
+            <widget class="QPushButton" name="input_folder_button">
+             <property name="minimumSize">
+              <size>
+               <width>70</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="text">
+              <string extracomment="Comment?">Input</string>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLineEdit" name="output_path">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>Output folder</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLineEdit" name="input_path">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>Input folder</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QPushButton" name="output_folder_button">
+             <property name="minimumSize">
+              <size>
+               <width>70</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Output</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="maximumSize">
+           <size>
+            <width>400</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Essential group</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="4" column="0">
+            <widget class="QLabel" name="quality_label_2">
+             <property name="text">
+              <string>Quality</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="3">
+            <widget class="QSpinBox" name="jpg_quality_spinBox">
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="value">
+              <number>90</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_11">
+             <property name="text">
+              <string>Export Format</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QCheckBox" name="optimize_checkBox">
+             <property name="text">
+              <string>optimize</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2">
+            <widget class="QSlider" name="png_quality_Slider">
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <number>9</number>
+             </property>
+             <property name="pageStep">
+              <number>1</number>
+             </property>
+             <property name="sliderPosition">
+              <number>6</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="3">
+            <widget class="QSpinBox" name="png_quality_spinBox">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <number>9</number>
+             </property>
+             <property name="value">
+              <number>6</number>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="quality_label_1">
+             <property name="text">
+              <string>Quality</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QComboBox" name="image_type">
+             <item>
+              <property name="text">
+               <string notr="true">jpg</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string notr="true">png</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string notr="true">webp</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QSlider" name="jpg_quality_Slider">
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="sliderPosition">
+              <number>90</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_13">
+             <property name="text">
+              <string>Resize</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="2">
+            <widget class="QSlider" name="resize_Slider">
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <number>200</number>
+             </property>
+             <property name="value">
+              <number>100</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="3">
+            <widget class="QSpinBox" name="resize_spinBox">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <number>200</number>
+             </property>
+             <property name="singleStep">
+              <number>1</number>
+             </property>
+             <property name="value">
+              <number>100</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="maximumSize">
+           <size>
+            <width>400</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="title">
+           <string>Extra stuff</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_9">
+             <property name="text">
+              <string>Brightness</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSlider" name="brightness_horizontalSlider">
+             <property name="minimum">
+              <number>-100</number>
+             </property>
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QSpinBox" name="brightness_spinBox">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="minimum">
+              <number>-100</number>
+             </property>
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="value">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2">
+            <widget class="QSpinBox" name="contrast_spinBox">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="minimum">
+              <number>-100</number>
+             </property>
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="value">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_10">
+             <property name="text">
+              <string>Contrast</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QSlider" name="contrast_horizontalSlider">
+             <property name="minimum">
+              <number>-100</number>
+             </property>
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0" colspan="2">
+            <widget class="QCheckBox" name="grayscale_checkBox">
+             <property name="text">
+              <string>Turn image to Black and White</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="2">
+            <widget class="QPushButton" name="preview_Button">
+             <property name="text">
+              <string>Preview</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="title">
+           <string>Watermark</string>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QLineEdit" name="watermark_lineEdit">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>Enter Watermark</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_12">
+             <property name="text">
+              <string>Size</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="font_size_comboBox">
+             <property name="currentText">
+              <string>Normal</string>
+             </property>
+             <property name="currentIndex">
+              <number>2</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>Tiny</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Small</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Normal</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Large</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Huge</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="rename_group">
+          <property name="maximumSize">
+           <size>
+            <width>400</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>files</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="rename_checkbox">
+             <property name="text">
+              <string>Rename</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QCheckBox" name="revert_checkbox">
+             <property name="text">
+              <string>Revert order</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="2">
+            <widget class="QLineEdit" name="filename">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>Enter file name</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_9" native="true">
+          <property name="maximumSize">
+           <size>
+            <width>400</width>
+            <height>50</height>
+           </size>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QProgressBar" name="progressBar">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="value">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="start_button">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="text">
+              <string>Convert</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="insert_exif_Button">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>Insert Exif</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>EXIF</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <widget class="QGroupBox" name="exif_group">
+          <property name="title">
+           <string>EXIF EXPERIMENTAL</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QCheckBox" name="exif_checkbox">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="text">
+              <string>own exif</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="exif_copy_checkBox">
+             <property name="text">
+              <string>copy exif</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="edit_exif_button">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>Edit Exif</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="exif_options_group">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="title">
+           <string>Must</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="3" column="0">
+            <widget class="QWidget" name="widget_7" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <widget class="QLabel" name="label_7">
+                <property name="text">
+                 <string>Artist</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="artist_comboBox"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QWidget" name="widget_4" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
+               <widget class="QLabel" name="label_4">
+                <property name="text">
+                 <string>ISO</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="iso_comboBox"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QWidget" name="widget_6" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+               <widget class="QLabel" name="label_6">
+                <property name="text">
+                 <string>Scanner</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="user_comment_comboBox"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QWidget" name="widget_2" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>Lens</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="lens_comboBox"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QWidget" name="widget_5" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <item>
+               <widget class="QLabel" name="label_5">
+                <property name="text">
+                 <string>Film</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="image_description_comboBox"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QWidget" name="widget" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <item>
+               <widget class="QLabel" name="label">
+                <property name="text">
+                 <string>Make</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="make_comboBox">
+                <property name="currentText">
+                 <string/>
+                </property>
+                <property name="placeholderText">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QWidget" name="widget_3" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <widget class="QLabel" name="label_3">
+                <property name="text">
+                 <string>Model</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="model_comboBox"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QWidget" name="widget_8" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <item>
+               <widget class="QLabel" name="label_8">
+                <property name="text">
+                 <string>Copyright</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="copyright_info_comboBox"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="gps_groupBox">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="title">
+           <string>GPS</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QCheckBox" name="gps_checkBox">
+             <property name="text">
+              <string>add gps</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lat_lineEdit">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>latitude [S, N]</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="long_lineEdit">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>longitude [W, E]</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="date_groupBox">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="title">
+           <string>Optional</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QCheckBox" name="add_date_checkBox">
+             <property name="text">
+              <string>add date</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QDateEdit" name="dateEdit">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="dateTime">
+              <datetime>
+               <hour>0</hour>
+               <minute>0</minute>
+               <second>0</second>
+               <year>2025</year>
+               <month>1</month>
+               <day>1</day>
+              </datetime>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>440</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionPreview"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuSettings"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionInfo">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionPreview">
+   <property name="text">
+    <string>Preview image</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>rename_checkbox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>filename</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>105</x>
+     <y>522</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>182</x>
+     <y>560</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exif_checkbox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>exif_options_group</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>130</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>236</x>
+     <y>328</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>jpg_quality_Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>jpg_quality_spinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>218</x>
+     <y>289</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>380</x>
+     <y>289</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exif_copy_checkBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>exif_checkbox</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>332</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>130</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exif_checkbox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>exif_copy_checkBox</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>130</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>resize_spinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>resize_Slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>380</x>
+     <y>252</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>218</x>
+     <y>252</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>png_quality_spinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>png_quality_Slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>380</x>
+     <y>326</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>218</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>contrast_horizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>contrast_spinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>187</x>
+     <y>458</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>378</x>
+     <y>458</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>resize_Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>resize_spinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>218</x>
+     <y>252</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>380</x>
+     <y>252</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>brightness_horizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>brightness_spinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>187</x>
+     <y>393</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>378</x>
+     <y>393</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exif_checkbox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>date_groupBox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>126</x>
+     <y>103</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>224</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>png_quality_Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>png_quality_spinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>218</x>
+     <y>326</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>380</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gps_checkBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lat_lineEdit</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>72</x>
+     <y>547</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>192</x>
+     <y>547</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exif_checkbox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>insert_exif_Button</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>92</x>
+     <y>130</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>369</x>
+     <y>684</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gps_checkBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>long_lineEdit</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>72</x>
+     <y>547</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>344</x>
+     <y>547</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>brightness_spinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>brightness_horizontalSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>378</x>
+     <y>393</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>187</x>
+     <y>393</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>resize_Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>resize_spinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>218</x>
+     <y>252</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>380</x>
+     <y>252</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exif_checkbox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>gps_groupBox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>94</x>
+     <y>103</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>224</x>
+     <y>535</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>contrast_spinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>contrast_horizontalSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>378</x>
+     <y>458</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>187</x>
+     <y>458</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exif_checkbox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>edit_exif_button</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>134</x>
+     <y>107</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>79</x>
+     <y>170</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>add_date_checkBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>dateEdit</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>94</x>
+     <y>601</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>224</x>
+     <y>602</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>jpg_quality_spinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>jpg_quality_Slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>380</x>
+     <y>289</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>218</x>
+     <y>289</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

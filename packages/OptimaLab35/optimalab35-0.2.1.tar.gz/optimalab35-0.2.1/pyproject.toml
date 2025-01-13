@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "OptimaLab35"
+dynamic = ["version"]
+authors = [{ name = "Mr. Finchum" }]
+description = "User interface for optima35."
+readme = "pip_README.md"
+requires-python = ">=3.8"
+dependencies = ["optima35>=0.6.5", "pyside6", "PyYAML", "packaging"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/CodeByMrFinchum/OptimaLab35"
+
+[project.scripts]
+OptimaLab35 = "OptimaLab35.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/OptimaLab35"]
+
+[tool.hatch.version]
+path = "src/OptimaLab35/__init__.py"
