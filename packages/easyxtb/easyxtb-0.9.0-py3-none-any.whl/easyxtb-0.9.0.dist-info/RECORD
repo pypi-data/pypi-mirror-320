@@ -1,0 +1,14 @@
+easyxtb/__init__.py,sha256=zxs29oyt6CfBH38MMnY42Z_VcCG6z9hHeewDLg9A9nA,488
+easyxtb/calc.py,sha256=icrGcfcZ8yc9YHENad3v1OHD31QztfUSqaml9X75ORg,25725
+easyxtb/calculate.py,sha256=scl_PKBl2xy3c9Qq-hb1CLTlN9lYnfiJS9PWaTMQmpI,7291
+easyxtb/configuration.py,sha256=T3c2DILS8pWzqxSuWOMUSDcqHsSE-VmpALxuQs5b9mM,6157
+easyxtb/convert.py,sha256=Jbdk_0xdqDv4tSvKdiYIHyaQg67eG0JuUJdLsrR9Njo,9603
+easyxtb/default_config.json,sha256=3MH-DQJUxm7rv1rfuaXeF0h7DJEyY3kOkm9ZW8lnbEI,78
+easyxtb/format.py,sha256=GHOgaxWViaRjh4KrS-ul72MYMUJd6efu7R4l0ImACOA,1966
+easyxtb/geometry.py,sha256=dK8wAgZbZ-C7RPRfP0uwa-dZTWdCRkYXVESFJbxvdkE,11991
+easyxtb/parse.py,sha256=5oCGmnFaZIon0POJambL43h_mwEEHxxCKZIs5TkjQRY,5406
+easyxtb/program.py,sha256=VjC7WoZqZgKBiBn5AgGFZP2WVpfaUC8ZNGC8oV9-Vms,3091
+easyxtb-0.9.0.dist-info/METADATA,sha256=TE5nLRduOgqSU4wL5B1BvMN3pIr1EtDxtzSSDF6Js3U,5202
+easyxtb-0.9.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+easyxtb-0.9.0.dist-info/licenses/LICENSE,sha256=hAereQbyrGbJ15HJbyYD7cY95EGgpn1ttwp7rXFAWUM,1509
+easyxtb-0.9.0.dist-info/RECORD,,
