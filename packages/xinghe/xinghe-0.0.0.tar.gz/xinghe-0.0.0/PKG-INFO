@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: xinghe
+Version: 0.0.0
+Summary: Default template for PDM package
+Author-Email: opendatalab <opendatalab@pjlab.org.cn>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# xinghe
