@@ -1,0 +1,17 @@
+hdlconv/__init__.py,sha256=bPPm81szlPGqY-u5PEwZGrEi1HDlPj5yNzPovV79W-k,45
+hdlconv/core.py,sha256=vsh8sY1eQVtRDRhpwdFpyFj9aSOua8w8uwVX2uZ-Us4,7057
+hdlconv/slog2vlog.py,sha256=j8Zt2oYrx3nStQMyei2HjnHhWhVmqR_ruQUT471IP8c,86
+hdlconv/vhdl2vhdl.py,sha256=dS20UYciMk0lrCGDxmxoI06RSMiJN67dRT7qgiNPUAo,86
+hdlconv/vhdl2vlog.py,sha256=xbDYjIXN1-OW1DmQ4aFgaVss6k9RPT1AGJ_7wzJHLRE,86
+hdlconv/templates/docker.jinja,sha256=JvpWCXM1bZSwatwVpb7QFOWgQBYkG31FXFSFqpF77jk,121
+hdlconv/templates/ghdl-yosys.jinja,sha256=7loAyFvjkJ48fKI2iEKNpt1gwlbid5qa86VWlbKRovQ,575
+hdlconv/templates/ghdl.jinja,sha256=P_UuSmzELAZk3gWNXYA3WMPDQR7LvcK_zsrVXMtjDXs,554
+hdlconv/templates/slang-yosys.jinja,sha256=KEmPJqeILOS_VeiY-InnmobO8sH_7LWwJCSLI7rwPrk,574
+hdlconv/templates/synlig.jinja,sha256=5KNwJVds4C4BFQLP1Ej6-z8KSdPj2LRaMBB-nZKKaaE,592
+hdlconv/templates/yosys.jinja,sha256=Fqw5ajtyQp2bipi5HB3WzGvgHhzIy_By93kaX-FoeqM,602
+HDLconv-0.1.0.dist-info/LICENSE,sha256=NEUwRH40SileVC0R95X99nfUf2VqiGsv5pJcjK7gaxU,35087
+HDLconv-0.1.0.dist-info/METADATA,sha256=Y_GSiY9DFBBr62Xtx8SITMKzZPUKxMDEJvn0L2y21TA,4859
+HDLconv-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+HDLconv-0.1.0.dist-info/entry_points.txt,sha256=vAUSj4deiIh7b905EZEd9MX8l0QvXv4UpY4uO_J8C54,123
+HDLconv-0.1.0.dist-info/top_level.txt,sha256=iplKNIsgUdu13uliFfeXJjZEp5xUdvS6oS-179sSIlc,8
+HDLconv-0.1.0.dist-info/RECORD,,
