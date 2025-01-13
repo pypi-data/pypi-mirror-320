@@ -1,0 +1,3 @@
+[console_scripts]
+lang-model-cli = lang_model_cli.main:main
+lmc = lang_model_cli.main:main

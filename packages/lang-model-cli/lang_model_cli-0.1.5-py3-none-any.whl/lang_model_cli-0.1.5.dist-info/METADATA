@@ -1,0 +1,104 @@
+Metadata-Version: 2.4
+Name: lang-model-cli
+Version: 0.1.5
+Summary: Language Model Command Line Interface
+Project-URL: repository, https://github.com/galtay/lang-model-cli
+Author-email: Gabriel Altay <gabriel.altay@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2025 Gabriel Altay
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Requires-Python: >=3.12
+Requires-Dist: litellm==1.55.12
+Requires-Dist: openai>=1.59.6
+Requires-Dist: rich>=13.9.4
+Requires-Dist: typer>=0.15.1
+Provides-Extra: ipython
+Requires-Dist: ipython>=8.31.0; extra == 'ipython'
+Description-Content-Type: text/markdown
+
+# Lang Model CLI
+
+A command line interface for interacting with large language models.
+
+
+# Quick Start
+
+## Install with pip
+```bash
+pip install lang-model-cli
+```
+
+## Export provider API keys
+```bash
+export OPENAI_API_KEY="sk-..."
+export ANTHROPIC_API_KEY="sk-..."
+...
+```
+
+## Use the CLI
+
+Full usage instructions can be viewed using,
+```bash
+lmc --help
+```
+
+Here are the basics.
+
+
+## user message with  `--prompt` or `-p`
+
+```bash
+lmc -p "briefly describe cosmology"
+```
+
+## stream output with  `--stream` or `-s`
+
+```bash
+lmc -p "briefly describe cosmology" -s
+```
+
+## system message with  `--system` or `-y`
+
+```bash
+lmc -p "briefly describe cosmology" -s -y "speak like a pirate"
+```
+
+## user message with pipe
+
+```bash
+cat <filename> | lmc
+```
+
+If text is piped in and there is no `-p` option then the piped input will become the user message content.
+
+## user message with pipe and `-p`
+
+```bash
+cat <filename> | lmc -p "Summarize the following text: @pipe"
+```
+
+In this case, the `@pipe` string will be replaced with the piped in text.
+This could also be accomplished using [command substitution](https://www.gnu.org/software/bash/manual/html_node/Command-Substitution.html),
+
+```bash
+lmc -p "Summarize the following text: $(cat <filename>)"
+```
