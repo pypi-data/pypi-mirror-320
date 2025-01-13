@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: Athenea
+Version: 0.1.8
+Summary: Athenea: Implementation of Transfusion based on Llama 3 architecture
+Author-email: "Rivera.ai/Fredy Rivera" <riveraaai200678@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.8
+Requires-Dist: einops
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: tqdm
