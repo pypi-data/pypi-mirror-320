@@ -1,0 +1,8 @@
+wooordhunt_parser/__init__.py,sha256=wAs9XHEOkK48zR-glDMP-ddNUjQaj1_8VSXWJY8leN8,37
+wooordhunt_parser/constants.py,sha256=f9x1bX7N_07S9sM0-Ga3rOiy-7lQCEAV_Sqa51Vs_uU,453
+wooordhunt_parser/parsers.py,sha256=g56zeQQ7qda9nO5743jg8wTSoe26b-1jzFkYEhuCLEg,6511
+wooordhunt_parser/validators.py,sha256=1NfAVhsyQkS7doH5YkULTnIqihphF1mAwkKkdZ1Hn3g,404
+wooordhunt_parser/word.py,sha256=-0Df9xi32Xpf8kBIa6XL0XTFsrFv5SWg4wBQlAazjU4,900
+wooordhunt_parser-0.2.0.dist-info/METADATA,sha256=POG6QT3RYna1B1VrjnfITk7Vf1G4Ru3USwh8MCNyG-0,1453
+wooordhunt_parser-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+wooordhunt_parser-0.2.0.dist-info/RECORD,,
