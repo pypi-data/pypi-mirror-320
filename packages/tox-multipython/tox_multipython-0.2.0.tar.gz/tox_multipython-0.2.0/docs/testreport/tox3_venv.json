@@ -1,0 +1,33 @@
+{
+  "desc": "`tox>=3,<4`, `virtualenv>=20`",
+  "target_tags": [
+    "py314t",
+    "py313t",
+    "py314",
+    "py313",
+    "py312",
+    "py311",
+    "py310",
+    "py39",
+    "py38",
+    "py37",
+    "py36",
+    "py35",
+    "py27"
+  ],
+  "host_tag_results": {
+    "py314t": "PPPPPPPPPFFFF",
+    "py313t": "PPPPPPPPPFFFF",
+    "py314": "PPPPPPPPPFFFF",
+    "py313": "PPPPPPPPPPPPP",
+    "py312": "PPPPPPPPPFFFF",
+    "py311": "PPPPPPPPPFFFF",
+    "py310": "PPPPPPPPPFFFF",
+    "py39": "PPPPPPPPPFFFF",
+    "py38": "PPPPPPPPPFFFF",
+    "py37": "PPPPPPPPPPFFF",
+    "py36": "FFFFFPPPPPPPP",
+    "py35": "FFFFFPPPPPPPP",
+    "py27": "FFFFFPPPPPPPP"
+  }
+}
