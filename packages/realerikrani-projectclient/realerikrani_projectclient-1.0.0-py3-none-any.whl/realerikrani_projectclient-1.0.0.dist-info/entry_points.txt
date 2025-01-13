@@ -1,0 +1,2 @@
+[console_scripts]
+cli_project = realerikrani.projectclient.cli:main
