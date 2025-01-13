@@ -1,0 +1,5 @@
+pip
+setuptools
+build
+memray
+pip-tools
