@@ -1,0 +1,17 @@
+telegramify_markdown-0.4.0.dist-info/METADATA,sha256=agsX4d1SvLVcjwnM7bBW6AF8CKzR_mHIM-mq_nnegVs,7939
+telegramify_markdown-0.4.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+telegramify_markdown-0.4.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+telegramify_markdown-0.4.0.dist-info/licenses/LICENSE,sha256=FYpmhg4l_CJwMigemDxkfDG0VaJOeeYUAJbb-P6xVkw,1064
+telegramify_markdown/__init__.py,sha256=4gplYrE-bv04dT0VNmi9-d5jY3zq-9yVEuA3Gh56tBE,8815
+telegramify_markdown/customize.py,sha256=nwScqNVY_H7VYJXY8v9O1yEJAu4eO0W2mnWumg3a9VA,721
+telegramify_markdown/interpreters.py,sha256=YbJSTkuJTkHbo0ujdD7luOEFfkLRraj6_xvKeaecf5c,9495
+telegramify_markdown/latex_escape/__init__.py,sha256=9Qnump_vGFXLsznRfp8ebbl39pcu8m6SLb5RdR1w1NM,112
+telegramify_markdown/latex_escape/const.py,sha256=KKBp4nPPNz9HqC-v_CZA3W4zhMA_acg04MLSYtu--Zk,20480
+telegramify_markdown/latex_escape/helper.py,sha256=77hOVMpY1gyfe2wOQPXRGVSnWvw_hmZsG0YVrbEeebs,10380
+telegramify_markdown/logger.py,sha256=A9Hw6KdA2KNbtUrCQnIpIb4NFzmR1FaGh_a9Ob8pL-I,193
+telegramify_markdown/markdown.py,sha256=K4TiVaF_EdyZSP-7TKvF5oAKFGYigIK5id_wOzJZC1c,402
+telegramify_markdown/mermaid.py,sha256=SCete3SajBtWJ4Uuv--0DlS9wKMa-OoDP_wH0z3v25k,6371
+telegramify_markdown/mime.py,sha256=tmsM5zLJuntJDAu-C3IM4lcyQuBiKQNOlhaPtkvmA_I,3248
+telegramify_markdown/render.py,sha256=1bqC3kfDsPDZdTYxd1gA3jH3IE0o32O0n3vHBBJm7J0,11825
+telegramify_markdown/type.py,sha256=OTfAjXar73ibTXNB1onK7pRSLTCWLZmAYmFPMVOq9ek,1030
+telegramify_markdown-0.4.0.dist-info/RECORD,,
