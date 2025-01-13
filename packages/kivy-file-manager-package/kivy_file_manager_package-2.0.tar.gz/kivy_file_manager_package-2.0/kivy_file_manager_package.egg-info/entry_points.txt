@@ -1,0 +1,3 @@
+[console_scripts]
+kivy_file_manager_package = kivy_file_manager_package.main:main
+

@@ -1,0 +1,1003 @@
+<Label>:
+    font_size: 20
+# main/opening screen
+<MainScreen>
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint: (1, 1)
+        Label:
+            text: 'File Manager'
+            size_hint_y: None
+            font_size: 60
+            size_hint: (1, 0.3)
+            color: 0, 0, 1, 1
+        Label:
+            text: 'Welcome to the file manager'
+            font_size: 30
+            size_hint_y: None
+            size_hint: (1, 0.3)
+        GridLayout:
+            cols: 5
+            size_hint_y: None
+            padding: 20
+            StyledButton:
+                text: 'Find Keywords'
+                on_press: root.find_keywords_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Sort Files'
+                on_press: root.sort_files_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Find Duplicates'
+                on_press: root.find_duplicates_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Order Files'
+                on_press: root.order_files()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Batch Rename'
+                on_press: root.rename_files_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+
+# screen for sorting files
+<File_SortScreen>
+    all_selected_files: []
+    size_bariers: []
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint: (1, 1)
+        Label:
+            text: 'Sort files'
+            size_hint_y: None
+            size_hint: (1,0.2)
+            font_size: 40
+        BoxLayout:
+            orientation: 'vertical'
+            padding: 10
+            spacing: 10
+            GridLayout:
+                cols: 2
+                padding: 10
+                spacing: 10
+                Label:
+                    text: 'Select sorting method'
+                    size_hint_y: None
+                    size_hint: (1, 0.2)
+                StyledSpinner:
+                    id: sort_method
+                    text: 'Select sorting method'
+                    values: ['Sort by types', 'Sort by size', 'Sort by date']
+                    size_hint_y: None
+                    size_hint: (1, 0.2)
+                Label:
+                    text: 'Which directories or files to sort?'
+                    size_hint_y: None
+                    size_hint: (1, 0.2)
+                StyledButton:
+                    text: 'Select directories/files'
+                    on_press: root.select_directories()
+                    size_hint_y: None
+                    size_hint: (1, 0.2)
+                Label:
+                    text: 'Use original files or copies?'
+                    size_hint_y: None
+                    size_hint: (1, 0.2)
+                StyledSpinner:
+                    id: original_files
+                    text: 'Select action'
+                    values: ['Use original files', 'Use copies']
+                    size_hint_y: None
+                    size_hint: (1, 0.2)
+        StyledButton:
+            text: 'Sort'
+            on_press: root.sort()
+            size_hint_y: None
+            size_hint: (1, 0.2)
+
+        ScrollView:
+            GridLayout:
+                id: selected
+                cols: 1
+                size_hint_y: None
+                height: 50
+                padding: 10
+                Label:
+                    id: selected_files_title
+                    text: 'Files selected for sorting will be here'
+                    size_hint_y: None
+                    height: 30
+        GridLayout:
+            cols: 5
+            size_hint_y: None
+            padding: 20
+            StyledButton:
+                text: 'Find Keywords'
+                on_press: root.find_keywords_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Find Duplicates'
+                on_press: root.find_duplicates_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Main Menu'
+                on_press: root.main_menu_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Order Files'
+                on_press: root.order_files()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Batch Rename'
+                on_press: root.rename_files_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+
+# screen for finding keywords
+<Key_Word_SearchScreen>
+    all_selected_files: []
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint: (1, 1)
+        Label:
+            text: 'Find keywords'
+            font_size: 40
+            size_hint_y: None
+            size_hint: (1, 0.2)
+        BoxLayout:
+            orientation: 'vertical'
+            padding: 10
+            spacing: 10
+            size_hint_y: None
+            size_hint: (1, 0.6)
+            GridLayout:
+                cols: 2
+                size_hint_y: None
+                size_hint: (1, 0.6)
+                Label:
+                    text: 'Enter keywords'
+                    size_hint_y: None
+                    size_hint: (1, 0.2)
+                TextInput:
+                    id: keyword
+                    halign: 'right'
+                    size_hint_y: None
+                    size_hint: (1, 0.2)
+                    font_size: 20
+                    multiline: False
+                Label:
+                    text: 'Which directories or files to search?'
+                    size_hint_y: None
+                    size_hint: (1, 0.2)
+                StyledButton:
+                    text: 'Select directories/files'
+                    on_press: root.select_directories()
+                    size_hint_y: None
+                    size_hint: (1, 0.2)
+            StyledButton:
+                text: 'Search'
+                on_press: root.search()
+                size_hint_y: None
+                size_hint: (1, 0.2)
+        ScrollView:
+            GridLayout:
+                id: selected
+                cols: 1
+                size_hint_y: None
+                height: 50
+                padding: 10
+                Label:
+                    id: selected_files_title
+                    text: 'Selected files will be here'
+                    size_hint_y: None
+                    height: 30
+        GridLayout:
+            cols: 5
+            size_hint_y: None
+            padding: 20
+            StyledButton:
+                text: 'Sort Files'
+                on_press: root.sort_files_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Find Duplicates'
+                on_press: root.find_duplicates_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Main Menu'
+                on_press: root.main_menu_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Order Files'
+                on_press: root.order_files()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Batch Rename'
+                on_press: root.rename_files_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+
+# popup for file and directory selection
+<File_selecting_popup>
+    title: 'Selecting Files'
+    size_hint: (0.8, 0.8)
+    auto_dismiss: False
+    caller: None
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 10
+        Label:
+            text: 'Select directories or files'
+            font_size: 25
+            color: (0,0,1,1)
+            bold: True
+            size_hint_y: None
+            size_hint: (1, 0.2)
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint_y: None
+            size_hint: (1, 0.6)
+            id: filechooser_layout
+            FileChooserListView:
+                id: filechooser
+                dirselect: True
+        GridLayout:
+            cols: 2
+            size_hint_y: None
+            size_hint: (1, 0.2)
+            padding: (10,0)
+            spacing: 3
+            Label:
+                text: 'Which file selector to use?'
+            StyledSpinner:
+                id: selector
+                text: 'List'
+                values: ['List', 'Graphic']
+                size_hint_y: None
+                size_hint: (1, 0.5)
+                on_text: root.change_selector()
+            Label:
+                text: 'select all files in apps directory?'
+            StyledButton:
+                text: 'Select'
+                on_press: root.select("current")
+                size_hint_y: None
+                size_hint: (1, 0.5)
+        GridLayout:
+            cols: 2
+            size_hint_y: None
+            size_hint: (1, 0.2)
+            padding: 10
+            spacing: 10
+            StyledButton:
+                text: 'Cancel'
+                on_press: root.cancel()
+                size_hint: (0.5, 0.5)
+            StyledButton:
+                text: 'Select'
+                on_press: root.select("selected")
+                size_hint: (0.5, 0.5)
+
+# popup that contains all the results of the keyword search
+<KeyWordsResults>
+    title: 'Results'
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint: (1 ,1)
+        Label:
+            text: 'Results'
+            size_hint_y: None
+            font_size: 50
+            height: 50
+        GridLayout:
+            cols: 3
+            size_hint_y: None
+            padding: 10
+            Label:
+                text: 'Name of the file'
+            Label:
+                text: 'Number of found keywords'
+            Label:
+                text: 'Show content of the file'
+        ScrollView:
+            GridLayout:
+                id: results_search
+                cols: 1
+                size_hint_y: None
+                height: 0
+                padding: 10
+        StyledButton:
+            size_hint_y: None
+            height: 50
+            text: 'Close'
+            on_press: root.dismiss()
+
+# result popup for the find duplicates screen
+<DuplicatesResults>
+    title: 'Results'
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint: (1, 1)
+        Label:
+            text: 'Results'
+            size_hint_y: None
+            font_size: 50
+            height: 50
+        Label:
+            text: 'Select action for all duplicates'
+            font_size: 30
+            size_hint_y: None
+            height: 50
+        GridLayout:
+            cols: 4
+            size_hint_y: None
+            padding: 10
+            Label:
+                text: 'Name of one duplicate'
+            Label:
+                text: 'Number of duplicates'
+            Label:
+                text: 'Show content'
+            Label:
+                text: 'Decide action'
+        ScrollView:
+            GridLayout:
+                id: results_search
+                cols: 1
+                size_hint_y: None
+                height: 0
+                padding: 10
+        StyledButton:
+            size_hint_y: None
+            height: 50
+            text: 'Close'
+            on_press: root.dismiss()
+
+# widget used in the scroll view of the results popup of the find duplicates screen
+<DuplicateSearchResultWidget>
+    cols: 4
+    spacing: 10
+    padding: 10
+    Label:
+        id: name
+        size_hint_x: 0.5
+    Label:
+        id: numberOfDuplicates
+        size_hint_x: 0.5
+    StyledButton:
+        text: 'Show'
+        on_press: root.show_file()
+        size_hint_x: 0.5
+    StyledSpinner:
+        id: action
+        text: 'Select action'
+        values: ['Delete duplicates', 'Keep duplicates']
+        size_hint_x: 0.5
+        on_text: root.action()
+
+# widget used in the scroll view of the results popup of the find keywords screen
+<ResultWidget>
+    cols: 3
+    spacing: 10
+    padding: 10
+    Label:
+        id: name
+        text: ''
+        size_hint_x: 0.5
+    Label:
+        id: count
+        text: ''
+        size_hint_x: 0.5
+    StyledButton:
+        text: 'Show'
+        on_press: root.show_file()
+        size_hint_x: 0.5
+
+# widget used in the scroll view of selected files inside the find keywords screen, maybe will be used in the other screen as well, dont know yet 
+<FileWidget>
+    cols: 3
+    path: ''
+    caller: None
+    size_hint: (1, None)
+    height: 60
+    Label:
+        id: name
+        text: ''
+        size_hint_x: 0.5
+    Label:
+        id: size
+        text: ''
+        size_hint_x: 0.5
+    StyledButton:
+        text: 'Remove'
+        on_press: root.remove_file()
+        size_hint_x: 0.5
+
+# overflow widget used in the scroll view when too many files are selected
+<OverFlowWidget>
+    cols: 2
+    Label:
+        id: name
+    StyledButton:
+        text: 'Remove all'
+        on_press: root.remove_all()
+        size_hint_x: 0.5
+
+# loading files widget
+<LoadingWidget>
+    cols: 2
+    Label:
+        text: 'Loading files'
+        size_hint_x: 0.5
+    Label:
+        id: loadingSign
+        text: '|'
+        size_hint_x: 0.5
+
+# this popup is used to get the size bariers for the sorting by size option
+<SizeBariersPopup>
+    title: 'Size Bariers'
+    size_hint: (0.9, 0.9)
+    auto_dismiss: False
+    caller: None
+    selected: []
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 10
+        Label:
+            text: 'Create the size bariers'
+            size_hint_y: None
+            size_hint: (1, 0.3)
+        GridLayout:
+            cols: 3
+            size_hint_y: None
+            padding: 10
+            Label:
+                text: 'Enter size barier in bytes'
+                font_size: 20
+                size_hint_y: None
+                height: 45
+            TextInput:
+                id: size_barier
+                halign: 'right'
+                size_hint_y: None
+                height: 45
+                font_size: 20
+                input_filter: 'int'
+                multiline: False
+            StyledButton:
+                text: 'Add'
+                on_press: root.add()
+                size_hint_y: None
+                height: 45
+        ScrollView:
+            GridLayout:
+                id: selected
+                cols: 1
+                size_hint_y: None
+                height: 30
+                Label:
+                    id: selected_files_title
+                    text: 'Size bariers will be displayed here'
+                    font_size: 20
+                    size_hint_y: None
+                    height: 30
+        GridLayout:
+            cols: 2
+            size_hint_y: None
+            padding: 20
+            StyledButton:
+                text: 'Cancel'
+                on_press: root.cancel()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Select'
+                on_press: root.select()
+                size_hint: (0.5, 0.5)
+                padding: 10
+
+<DateBariersPopup>
+    title: 'Date Bariers'
+    size_hint: (0.9, 0.9)
+    auto_dismiss: False
+    caller: None
+    selected: []
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 10
+        Label:
+            text: 'Create the date bariers'
+            size_hint_y: None
+            size_hint: (1, 0.2)
+        Label:
+            text: '*If only part of the date is entered, the rest will be filled with 0 or 1'
+            size_hint_y: None
+            size_hint: (1, 0.2)
+        GridLayout:
+            cols: 3
+            size_hint_y: None
+            size_hint: (1, 0.5)
+            padding: 10
+            Label:
+                text: 'Format YYYY-MM-DD-HH-MM-SS'
+                font_size: 20
+                size_hint_y: None
+                height: 45
+            TextInput:
+                id: time
+                halign: 'right'
+                size_hint_y: None
+                height: 45
+                font_size: 20
+                input_filter: 'int'
+                multiline: False
+                on_text: root.textInput()
+        StyledButton:
+            text: 'Add'
+            on_press: root.add()
+            size_hint_y: None
+            height: 45
+        ScrollView:
+            GridLayout:
+                id: selected
+                cols: 1
+                size_hint_y: None
+                height: 30
+                Label:
+                    id: selected_files_title
+                    text: 'Date bariers will be displayed here'
+                    font_size: 20
+                    size_hint_y: None
+                    height: 30
+        GridLayout:
+            cols: 2
+            size_hint_y: None
+            padding: 20
+            StyledButton:
+                text: 'Cancel'
+                on_press: root.dismiss()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Select'
+                on_press: root.select()
+                size_hint: (0.5, 0.5)
+                padding: 10
+
+<DateWidget>
+    cols: 2
+    Label:
+        id: date
+        text: ''
+        size_hint_x: 0.5
+    StyledButton:
+        text: 'Remove'
+        on_press: root.remove()
+        size_hint_x: 0.5
+
+<ImageContentPopup>
+    title: 'Content of the image'
+    size_hint: (0.9, 0.9)
+    auto_dismiss: False
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 10
+        spacing: 10
+        Label:
+            text: 'Content of the image'
+            font_size: 35
+            color: (0,0,1,1)
+            size_hint_y: None
+            size_hint: (1, 0.1)
+        Image:
+            id: content
+            source: ''
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: None
+            height: 50
+            padding: 10
+            spacing: 10
+            StyledButton:
+                text: 'Close'
+                on_press: root.dismiss()
+                size_hint_y: None
+                height: 50
+
+<FileContentPopup>
+    title: 'File Content'
+    size_hint: (0.9,0.9)
+    auto_dismiss: False
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 10
+        spacing: 10
+        Label:
+            text: 'Content of the file'
+            font_size: 35
+            color: (0,0,1,1)
+            size_hint_y: None
+            size_hint: (1, 0.1)
+        Label:
+            text: 'Click inside the text input and scroll using the arrows'
+            size_hint_y: None
+            size_hint: (1, 0.2)
+        TextInput:
+            multiline: True
+            id: content
+            text: ''
+            font_size: 20
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: None
+            height: 50
+            padding: 10
+            spacing: 10
+            StyledButton:
+                text: 'Close'
+                on_press: root.dismiss()
+                size_hint_y: None
+                height: 50
+            StyledButton:
+                text: 'Save changes'
+                on_press: root.save()
+                size_hint_y: None
+                height: 50
+
+<Find_DuplicatesScreen>
+    all_selected_files: []
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint: (1, 1)
+        Label:
+            text: 'Find duplicates'
+            font_size: 40
+            size_hint_y: None
+            size_hint: (1, 0.2)
+        BoxLayout:
+            orientation: 'vertical'
+            padding: 10
+            spacing: 10
+            size_hint_y: None
+            size_hint: (1, 0.6)
+            GridLayout:
+                cols: 2
+                size_hint_y: None
+                size_hint: (1, 0.3)
+                Label:
+                    text: 'Which directories should be checked?'
+                    size_hint_y: None
+                    size_hint: (1, 0.2)
+                StyledButton:
+                    text: 'Select directories/files'
+                    on_press: root.select_directories()
+                    size_hint_y: None
+                    size_hint: (1, 0.2)
+            StyledButton:
+                text: 'Search'
+                on_press: root.search()
+                size_hint_y: None
+                size_hint: (1, 0.3)
+        ScrollView:
+            GridLayout:
+                id: selected
+                cols: 1
+                size_hint_y: None
+                height: 50
+                padding: 10
+                Label:
+                    id: selected_files_title
+                    text: 'Selected files will be here'
+                    size_hint_y: None
+                    height: 30
+        GridLayout:
+            cols: 5
+            size_hint_y: None
+            padding: 20
+            StyledButton:
+                text: 'Find Keywords'
+                on_press: root.find_keywords_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Sort Files'
+                on_press: root.sort_files_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Main Menu'
+                on_press: root.main_menu_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Order Files'
+                on_press: root.order_files()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Batch Rename'
+                on_press: root.rename_files_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+
+<OrderFilesScreen>
+    all_selected_files: []
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint: (1, 1)
+        Label:
+            text: 'Order files'
+            font_size: 40
+            size_hint_y: None
+            size_hint: (1, 0.2)
+        GridLayout:
+            cols: 2
+            padding: 10
+            spacing: 10
+            size_hint_y: None
+            size_hint: (1, 0.6)
+            Label:
+                text: 'Select files'
+                size_hint_y: None
+                size_hint: (1, 0.2)
+            StyledButton:
+                text: 'Select directories/files'
+                on_press: root.select_directories()
+                size_hint_y: None
+                size_hint: (1, 0.2)
+            Label:
+                text: 'Order by?'
+                size_hint_y: None
+                size_hint: (1, 0.2)
+            StyledSpinner:
+                id: order_by
+                text: 'Select order'
+                values: ['Name', 'Size', 'Date']
+                size_hint_y: None
+                size_hint: (1, 0.2)
+            Label:
+                text: 'Ascending or descending?'
+                size_hint_y: None
+                size_hint: (1, 0.2)
+            StyledSpinner:
+                id: ascending
+                text: 'Select order'
+                values: ['Ascending', 'Descending']
+                size_hint_y: None
+                size_hint: (1, 0.2)
+        StyledButton:
+            text: 'Order'
+            on_press: root.order()
+            size_hint_y: None
+            size_hint: (1, 0.2)
+        ScrollView:
+            GridLayout:
+                id: selected
+                cols: 1
+                size_hint_y: None
+                height: 50
+                padding: 10
+                Label:
+                    id: selected_files_title
+                    text: 'Selected files will be here'
+                    font_size: 25
+                    size_hint_y: None
+                    height: 30
+        GridLayout:
+            cols: 5
+            size_hint_y: None
+            padding: 20
+            StyledButton:
+                text: 'Find Keywords'
+                on_press: root.find_keywords_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Find Duplicates'
+                on_press: root.find_duplicates_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Main Menu'
+                on_press: root.main_menu_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Sort Files'
+                on_press: root.sort_files_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Batch Rename'
+                on_press: root.rename_files_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+
+<SizeWidget>
+    height: 50
+    cols: 2
+    Label:
+        id: size
+        text: ''
+        size_hint_x: 0.5
+    StyledButton:
+        text: 'Remove'
+        on_press: root.remove()
+        size_hint_x: 0.5
+
+<RenamingWidget>
+    cols: 3
+    Label:
+        id: name
+        text: ''
+        size_hint_x: 0.5
+    GridLayout:
+        cols: 2
+        size_hint_x: 0.5
+        StyledButton:
+            text: 'UP'
+            on_press: root.moveUp()
+            size_hint_x: 0.5
+        StyledButton:
+            text: 'DOWN'
+            on_press: root.moveDown()
+            size_hint_x: 0.5
+    StyledButton:
+        text: 'Remove'
+        on_press: root.remove()
+        size_hint_x: 0.5
+
+<BatchRenamingScreen>
+    all_selected_files: []
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint: (1, 1)
+        Label:
+            text: 'Batch renaming'
+            font_size: 40
+            size_hint_y: None
+            size_hint: (1, 0.2)
+        BoxLayout:
+            orientation: 'vertical'
+            padding: 10
+            spacing: 10
+            size_hint_y: None
+            size_hint: (1, 0.8)
+            GridLayout:
+                cols: 2
+                size_hint_y: None
+                size_hint: (1, 0.8)
+                Label:
+                    text: 'Select files'
+                    size_hint_y: None
+                    size_hint: (1, 0.2)
+                StyledButton:
+                    text: 'Select directories/files'
+                    on_press: root.select_directories()
+                    size_hint_y: None
+                    size_hint: (1, 0.2)
+                Label:
+                    text: 'Enter the base name'
+                    size_hint_y: None
+                    size_hint: (1, 0.2)
+                TextInput:
+                    id: baseName
+                    halign: 'right'
+                    size_hint_y: None
+                    size_hint: (1, 0.2)
+                    font_size: 20
+                    multiline: False
+                Label:
+                    text: 'Select the numbering format'
+                    size_hint_y: None
+                    size_hint: (1, 0.2)
+                StyledSpinner:
+                    id: numbering
+                    text: 'Select method'
+                    values: ['Using numbers', 'Using letters']
+                    size_hint_y: None
+                    size_hint: (1, 0.2)
+            StyledButton:
+                text: 'Rename'
+                on_press: root.rename()
+                size_hint_y: None
+                size_hint: (1, 0.3)
+        ScrollView:
+            GridLayout:
+                id: selected
+                cols: 1
+                size_hint_y: None
+                height: 50
+                padding: 10
+                Label:
+                    id: selected_files_title
+                    text: 'Selected files will be here'
+                    size_hint_y: None
+                    height: 30
+        GridLayout:
+            cols: 5
+            size_hint_y: None
+            padding: 20
+            StyledButton:
+                text: 'Find Keywords'
+                on_press: root.find_keywords_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Find Duplicates'
+                on_press: root.find_duplicates_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Main Menu'
+                on_press: root.main_menu_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Sort Files'
+                on_press: root.sort_files_screen()
+                size_hint: (0.5, 0.5)
+                padding: 10
+            StyledButton:
+                text: 'Order Files'
+                on_press: root.order_files()
+                size_hint: (0.5, 0.5)
+                padding: 10
+
+<StyledButton@Button>: # I originaly wanted just simple rounded buttons, but while testing I found this style and I liked it more
+    background_color: (0,0,0,1)
+    canvas.before:
+        Color:
+            rgba: self.color
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+<StyledSpinner@Spinner>:
+    background_color: (0,0,0,1)
+    option_cls: 'StyledOption'
+    canvas.before:
+        Color:
+            rgba: self.color
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    canvas.after:
+        Color:
+            rgba: (1,1,1,1)
+        Line: # this is like a vertical line next to the right side of the spinner, just so its different from styled buttons
+            points: self.right - 50, self.y+3, self.right - 50, self.top-3
+            width: 3
+
+<StyledOption@SpinnerOption>:
+    background_color: (0,0,0,1)
+    canvas.before:
+        Color:
+            rgba: self.color
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    canvas.after:
+        Color:
+            rgba: (1,1,1,1)
+        Line:
+            points: self.right - 50, self.y+3, self.right - 50, self.top-3
+            width: 3
+        Line:
+            points: self.right - 70, self.y+3, self.right - 70, self.top-3
+            width: 3
