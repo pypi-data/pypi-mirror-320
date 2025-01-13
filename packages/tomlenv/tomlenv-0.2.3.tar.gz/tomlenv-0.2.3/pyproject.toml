@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "tomlenv"
+version = "0.2.3"
+description = "Environment Wrapped TOML"
+authors = ["João Santos <joaopns05@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/joaonsantos/tomlenv"
+keywords = ['TOML', 'environment', 'variables', 'config']
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.13.1"
+black = "^24.10.0"
+coverage = "^7.6.10"
+
+[tool.isort]
+profile = "black"
+src_paths = ["isort"]
+known_localfolder = ["tomlenv", "tests"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
