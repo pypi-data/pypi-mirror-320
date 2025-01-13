@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: kokoro
+Version: 0.1.0
+Summary: TTS
+Home-page: https://github.com/hexgrad/kokoro
+Author: hexgrad
+Author-email: hello@hexgrad.com
+License: Apache 2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: phonemizer
+Requires-Dist: scipy
+Requires-Dist: torch
+Requires-Dist: transformers
+
+# Kokoro
+
+This repository is a work in progress. If you know, you know!
+
+If you don't: https://hf.co/hexgrad/Kokoro-82M
