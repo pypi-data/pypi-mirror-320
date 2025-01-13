@@ -1,0 +1,15 @@
+grimoiressg/__main__.py,sha256=yu5MgkbtYRNpU3CUJ1cVPWi5kxz93tB8fcEBsjh2stM,748
+grimoiressg/arguments.py,sha256=v79zNaj-j3zGzeXxACNZ4TSqX2FMWQWWjZqEr3s7Svg,1106
+grimoiressg/config.py,sha256=vsoEFC3tuOE881GaY7hK6IKy8s4jJO8Nxk7NubMSE50,1125
+grimoiressg/content_files.py,sha256=31ynctu3dS0hOMHH9Kxv64KM8xhTjWM7J8-0E2DuLzo,907
+grimoiressg/modules/__init__.py,sha256=6KzzzJsT--wdyFMqEC2PngzpVrnSYiASHu7oRh90YtU,347
+grimoiressg/modules/markdown.py,sha256=hWYAES4e8Fv_4vj7RH3MYuzPxtnJ7A6TpdhSgAzFwW8,311
+grimoiressg/modules/tags.py,sha256=SZ7KMbE1lVKFVlaU5CuQV8cExp_E3K7Q2I4RpHDzeMI,491
+grimoiressg/modules/templating.py,sha256=-unhxFNCtpituFQt8uvwrDy5sw9CeGy2c6duQxqaUBg,1234
+grimoiressg/utils/__init__.py,sha256=6jRERnB-XjXpXVKaau_vfdqtJ7lVwHo6DrURtZ8dvf8,115
+grimoiressg/utils/files.py,sha256=BmKykewTsfCkcSkPbGfRFdt6wRCN9HCuJOW484WAFnI,350
+grimoiressg/utils/logger.py,sha256=ekx0MHENbNO9Bom-evOar8c2OrOaNWCiDbVDe44k0zY,176
+grimoire_ssg-1.0.0.dist-info/LICENSE,sha256=BBdWPCKlLuQezIerS48EM9nwnIhiM5G1AMnfuTyV0-M,1294
+grimoire_ssg-1.0.0.dist-info/METADATA,sha256=6qKmQEj33vfX2zmOrbBvRNdnZ_oXwbTsEIq-o6TlMGk,6665
+grimoire_ssg-1.0.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+grimoire_ssg-1.0.0.dist-info/RECORD,,
