@@ -1,0 +1,16 @@
+ortho_editor/__init__.py,sha256=BfVjfBl2n076BZIOnvCcPbuP06C9iGQgmzIlIVHBOAU,42
+ortho_editor/app_state.py,sha256=Ty3NChbPoGlCkia34lxgU2iobvR8aNbn7HnfrQWHmys,4696
+ortho_editor/custom_graphics_view.py,sha256=eXhZrWLTI_Ay3GSR6K3KsdonJEZy-Q5OGd1OKu_6byc,12530
+ortho_editor/drawing_app.py,sha256=WHPv5tLvTwPrVGEVl55TvxYdHEpIVzvdNInjzsmOcAA,18055
+ortho_editor/editor.py,sha256=yPQvyCdxCr8Gh1DOtkyyY4ENWh8zNafbZK8GvxTCnNQ,1159
+ortho_editor/image_processor.py,sha256=lYmiZ4WuViR9CSJtHBOavdj35E0HplJoTf1EZNOlcmw,5495
+ortho_editor/image_utils.py,sha256=4oh4MTjFLrds9NNkmsT4ruSeIjpf83TwDJEPD1h4_UI,1097
+ortho_editor/ui_components.py,sha256=XmtfMYYJLNvqBW6kDydUqoIAGha0ET7FmV7JxIAzxd8,9111
+ortho_editor/undo_manager.py,sha256=ZY67ZXf9Y9B9tN-zYpDqIRYX-Y6zQ9k_m-yUAZJxBf0,1326
+ortho_editor/fonts/MaterialIcons-Regular.ttf,sha256=-sS1jSuOyPV9SqNM6CGTDb3Ew8VBhBI2IiEfrRyjWO4,378336
+ortho_editor-0.1.13.dist-info/LICENSE,sha256=lPjQmKGmUqoQzTKkDH2zANEGs8cVnC8MOrDRGecNWPw,1069
+ortho_editor-0.1.13.dist-info/METADATA,sha256=XhTS0zqThBJKeNaJCfbNLeJ4SAF0ypQTT8JjEcda9K4,2275
+ortho_editor-0.1.13.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+ortho_editor-0.1.13.dist-info/entry_points.txt,sha256=svvfDWOYVdb-lexH3HfyV6yQKXKM3bKGDGRl5PwEnas,58
+ortho_editor-0.1.13.dist-info/top_level.txt,sha256=BqHXJEMHR0P_cNvFddDLn_4SVSV3dD70M7PRa8Tk4p8,13
+ortho_editor-0.1.13.dist-info/RECORD,,
