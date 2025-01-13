@@ -1,0 +1,8 @@
+click==8.1.8
+transformers==4.48.0
+torch==2.4.0
+numpy==1.26.4
+beautifulsoup4==4.12.3
+requests==2.32.3
+flask==3.1.0
+gradio==5.12.0

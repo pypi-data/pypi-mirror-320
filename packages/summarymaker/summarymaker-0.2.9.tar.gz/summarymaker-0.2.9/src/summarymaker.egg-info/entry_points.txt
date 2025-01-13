@@ -1,0 +1,2 @@
+[console_scripts]
+summarymaker = summarizer.cli:main
