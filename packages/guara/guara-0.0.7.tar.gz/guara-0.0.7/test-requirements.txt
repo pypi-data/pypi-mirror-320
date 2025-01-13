@@ -1,0 +1,11 @@
+pytest
+pytest-xdist
+pytest-asyncio
+flake8
+black
+requests
+caqui
+tox
+pytest-playwright
+browserist
+helium
