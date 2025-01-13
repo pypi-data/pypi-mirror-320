@@ -1,0 +1,35 @@
+[project]
+name = "ember-inspect"
+version = "0.1.0"
+description = "Use Goodfire Ember API with UK-AISI Inspect AI"
+authors = [
+    { name = "Daniel Tan", email = "dtch1997@users.noreply.github.com" },
+]
+dependencies = [
+    "goodfire>=0.3.4",
+    "openai>=1.59.6",
+    "inspect-ai>=0.3.57",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+examples = [
+    "ipykernel>=6.29.5",
+    "python-dotenv>=1.0.1",
+]
+dev = [
+    "pytest>=8.3.4",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
