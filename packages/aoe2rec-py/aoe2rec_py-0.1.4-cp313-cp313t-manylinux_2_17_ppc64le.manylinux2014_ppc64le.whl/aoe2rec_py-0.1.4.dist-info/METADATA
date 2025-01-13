@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: aoe2rec-py
+Version: 0.1.4
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: pip >=24.3.1
+Summary: Python package for the aoe2rec rust crate, which allows to parse Age of Empires II: Definitive Edition recorded games
+License: MIT
+Requires-Python: >=3.9
