@@ -1,0 +1,5 @@
+[console_scripts]
+abc=other_package.abc:func_abc
+fast=poetry102.fast:main
+xyz=poetry102.xyz:func_xyz
+
