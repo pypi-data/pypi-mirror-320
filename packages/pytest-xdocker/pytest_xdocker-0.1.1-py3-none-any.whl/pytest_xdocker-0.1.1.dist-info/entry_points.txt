@@ -1,0 +1,9 @@
+[console_scripts]
+docker-xrun=pytest_xdocker.docker_xrun:main
+
+[pytest11]
+docker-xrun=pytest_xdocker.fixtures
+
+[pytest_unique.unique]
+ip=pytest_xdocker.network:unique_ip
+
