@@ -1,0 +1,5 @@
+setup.py
+DLCmore.egg-info/PKG-INFO
+DLCmore.egg-info/SOURCES.txt
+DLCmore.egg-info/dependency_links.txt
+DLCmore.egg-info/top_level.txt
