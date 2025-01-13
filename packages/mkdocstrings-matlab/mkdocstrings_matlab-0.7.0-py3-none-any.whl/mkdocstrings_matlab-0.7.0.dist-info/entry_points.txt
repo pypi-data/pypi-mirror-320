@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+mkdocs-material-matlab = mkdocs_material_matlab:MkdocsMaterialMatlabPlugin

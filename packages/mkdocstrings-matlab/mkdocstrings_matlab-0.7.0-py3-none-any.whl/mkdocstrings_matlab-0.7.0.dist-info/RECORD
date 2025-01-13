@@ -1,0 +1,15 @@
+mkdocs_material_matlab/__init__.py,sha256=9pmrwWbkIyr0T7qvADbsz3OR5bB3rWb231e6JSnwA7o,106
+mkdocs_material_matlab/mkdocs_material_matlab.py,sha256=s7vI1lv6hD8s7kDHWBfYKgN6EcldyUstGYJ45sA-VWY,850
+mkdocs_material_matlab/css/style.css,sha256=iVTPIKljgvK899jEQylD7yu9yjKfrVE_4GLaITjhk4g,132
+mkdocstrings_handlers/matlab/__init__.py,sha256=w5R9cGtqeJF0GUP_Jc_ad8FnS4FpbutnmHvzVRlohPM,1124
+mkdocstrings_handlers/matlab/collect.py,sha256=WXuRIDYL0T1fKv1MwwOC6uWAB80PxRCs4uYDgOHiQcg,29749
+mkdocstrings_handlers/matlab/enums.py,sha256=lr3wLlhPxyBym3O7Rt0cLUZYqPCz6wQ2PYBibLKLTek,982
+mkdocstrings_handlers/matlab/handler.py,sha256=-KA6kj8L55T9jxgKzNM_k59AXsyTSQJqFd8ltN00LQI,18710
+mkdocstrings_handlers/matlab/models.py,sha256=0qGk6UrGHB4fC49I2cjCgqLFAIozqtmLAxl9PPN6Blc,18461
+mkdocstrings_handlers/matlab/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mkdocstrings_handlers/matlab/treesitter.py,sha256=FkWGuH7EmE_aO2qub5-_NnOVacYeXW353SkB7cNMlRo,21820
+mkdocstrings_matlab-0.7.0.dist-info/METADATA,sha256=5jzSXQm4dSLd9GBaJWSAvJm1JGBcuAGUaLWLpMoiGu0,4736
+mkdocstrings_matlab-0.7.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mkdocstrings_matlab-0.7.0.dist-info/entry_points.txt,sha256=qUZFuB2TKh7KPlg4dR2npfbNgNExw6O6j1vF276PtPw,92
+mkdocstrings_matlab-0.7.0.dist-info/licenses/LICENSE,sha256=TZQpwBuA3KLH56--XDAY2Qwo9gGdxeTITYhMOylmYhg,743
+mkdocstrings_matlab-0.7.0.dist-info/RECORD,,
