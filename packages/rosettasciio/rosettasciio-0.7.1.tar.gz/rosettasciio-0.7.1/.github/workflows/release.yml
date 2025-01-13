@@ -1,0 +1,147 @@
+name: Release
+
+# This workflow builds the wheels "on tag".
+# If run from the hyperspy/rosettasciio repository, the wheels will be uploaded to pypi ;
+# otherwise, the wheels will be available as a github artifact.
+# Can also run on "workflow dispatch" to test building wheels
+on:
+  push:
+    # Sequence of patterns matched against refs/tags
+    tags:
+      - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
+  workflow_dispatch:
+
+jobs:
+  build_wheels:
+    name: Build wheels on ${{ matrix.os }} ${{ matrix.CIBW_ARCHS }}
+    runs-on: ${{ matrix.os }}
+    env:
+      CIBW_ENVIRONMENT: POOCH_BASE_URL=https://github.com/${{ github.repository }}/raw/${{ github.ref_name }}/rsciio/tests/data/
+      CIBW_TEST_COMMAND: "pytest --pyargs rsciio"
+      CIBW_TEST_EXTRAS: "tests"
+      # No need to build wheels for pypy because the pure python wheels can be used
+      # PyPy documentation recommends no to build the C extension
+      # CPython 3.13 not supported yet because of pint
+      CIBW_SKIP: "{pp*,*-musllinux*,*win32,*-manylinux_i686}"
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: "ubuntu-latest"
+            CIBW_ARCHS: "x86_64"
+          - os: "ubuntu-latest"
+            CIBW_ARCHS: "aarch64"
+          - os: "windows-latest"
+            CIBW_ARCHS: "AMD64"
+          - os: "macos-13"
+            CIBW_ARCHS: "x86_64"
+          - os: "macos-14"
+            CIBW_ARCHS: "arm64"
+
+    steps:
+      - name: Set up QEMU
+        if: contains(matrix.CIBW_ARCHS, 'aarch64')
+        uses: docker/setup-qemu-action@v3
+        with:
+          platforms: arm64
+
+      - uses: actions/checkout@v4
+
+      - name: Build wheels for CPython
+        uses: pypa/cibuildwheel@v2.21.3
+        env:
+          CIBW_ARCHS: ${{ matrix.CIBW_ARCHS }}
+
+      - name: List wheels
+        run: |
+          ls ./wheelhouse
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: artifacts-${{ matrix.os }}-${{ matrix.CIBW_ARCHS }}
+          path: ./wheelhouse/*.whl
+          if-no-files-found: error
+
+  make_sdist:
+    name: Make SDist
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build SDist
+        run: pipx run build --sdist
+
+      - name: List SDist
+        run: |
+          ls ./dist
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: artifacts-${{ matrix.os }}-sdist
+          path: dist/*.tar.gz
+
+  pure_python_wheel:
+    # Build pure python without C extention to be used by pyodide
+    name: Make pure python wheel
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build pure python wheel
+        run: DISABLE_C_EXTENTIONS=1 pipx run build --wheel
+
+      - name: List SDist
+        run: |
+          ls ./dist
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: artifacts-${{ matrix.os }}-pure_python
+          path: dist/*.whl
+
+  # Merge all disttribution files into the same directory
+  merge_artifacts:
+    runs-on: ubuntu-latest
+    needs: [ build_wheels, make_sdist, pure_python_wheel ]
+    steps:
+      - name: Merge Artifacts
+        uses: actions/upload-artifact/merge@v4
+        with:
+          name: artifacts
+          pattern:  artifacts-*
+
+  upload_to_pypi:
+    needs: merge_artifacts
+    runs-on: ubuntu-latest
+    permissions:
+      # IMPORTANT: this permission is mandatory for trusted publishing
+      id-token: write
+    steps:
+      - name: Download wheels
+        uses: actions/download-artifact@v4
+        with:
+          name: artifacts
+          path: dist
+
+      - name: Display structure of downloaded files
+        run: ls -R
+        working-directory: dist
+
+      - uses: pypa/gh-action-pypi-publish@release/v1
+        if: ${{ startsWith(github.ref, 'refs/tags/') && github.repository_owner == 'hyperspy' }}
+        # See https://docs.pypi.org/trusted-publishers/using-a-publisher/
+
+  create_release:
+    # TODO: once we are happy with the workflow
+    # setup zenodo to create a DOI automatically
+    needs: upload_to_pypi
+    permissions:
+      contents: write
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Create Release
+        id: create_release
+        uses: softprops/action-gh-release@7b4da11513bf3f43f9999e90eabced41ab8bb048
