@@ -1,0 +1,6 @@
+README.md
+setup.py
+src/js_loader.egg-info/PKG-INFO
+src/js_loader.egg-info/SOURCES.txt
+src/js_loader.egg-info/dependency_links.txt
+src/js_loader.egg-info/top_level.txt
