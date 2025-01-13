@@ -1,0 +1,5 @@
+setup.py
+nisi.egg-info/PKG-INFO
+nisi.egg-info/SOURCES.txt
+nisi.egg-info/dependency_links.txt
+nisi.egg-info/top_level.txt
