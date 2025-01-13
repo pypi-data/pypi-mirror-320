@@ -1,0 +1,16 @@
+file_mate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+file_mate/cli.py,sha256=NvlzARydxlmvWQk9Nj3w7elmop__CEslFHERg3iCIAs,4263
+file_mate/converters.py,sha256=TrCIuJZHhQu3iyYq518hOfMYeqDvcVwY0hx-yNwMf_4,4918
+file_mate/info.py,sha256=ta22VczKz_QrM5MzanNKapvsqYLJL9l6j3cknCp1bXY,1494
+file_mate/manipulators.py,sha256=VroEknU-rKM-9EciZEHG6ScGFSMWC_-JxXOmyiOvOfg,3017
+file_mate/utils.py,sha256=cc_JJ-GqHvn2P8lbfDH5Wf3aMeQ-M7EAaDIs_o_IbV8,1233
+file_mate/tests/test_converters.py,sha256=Mr6RqFoDPIm1fjAeEBMo1Nz6m4QeP6L77W1hRbr3ffk,4284
+file_mate/tests/test_info.py,sha256=3553Ra-H5vZ1W3xVT7xwpfpZQiVsS5bb-9nc9Bj60PY,1375
+file_mate/tests/test_manipulators.py,sha256=RSl1QIB8B3wKLpwKwTnzsbnVSS4HrMnbxdnXVTSPQRI,3434
+file_mate/tests/test_utils.py,sha256=MoSyKW8yRtv7-A49YdLyA_jKLjdvJZ_J7Z_Gt-FZ8sY,1657
+file_mate-0.1.0.dist-info/LICENSE,sha256=CdzODMG47bR0Tq9dzvf0eWwy76tPdWsOKd8nGnS6AeU,1087
+file_mate-0.1.0.dist-info/METADATA,sha256=mScjnEGiPaKS5e4RIgiXE7FnBtKXIKRWGPPDdAJh32A,470
+file_mate-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+file_mate-0.1.0.dist-info/entry_points.txt,sha256=rmOPpmun28D4_8IMsG9OWmux57gVDxwCYG7ZvB7gkrI,48
+file_mate-0.1.0.dist-info/top_level.txt,sha256=iG3p8AasSZBUzebhLcH3l1h9NvEXIUnjF4wj10pOz2U,10
+file_mate-0.1.0.dist-info/RECORD,,
