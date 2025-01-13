@@ -1,0 +1,13 @@
+nmraspecds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nmraspecds/analysis.py,sha256=VPGBub-plnPIoDB_Ct_0MJtFgt42M5pWZaezFMqDm2w,10494
+nmraspecds/dataset.py,sha256=AZ1hfGWDRajyAwYml3PJx42q6l2BnRgNzX-dGD8Usoc,2047
+nmraspecds/io.py,sha256=-mr-pcaF2f5deaPV8S5igbF6akLv_61SCoo2H2DKYX4,12617
+nmraspecds/metadata.py,sha256=sEj4aiLGtFN9s8POkixi4x7j8u1DVYcMXctcUvZu_VM,8225
+nmraspecds/plotting.py,sha256=096Jc_b1VxUhyKJWXQWzZPbgRQ5e9neA2MDk95ah9ek,25080
+nmraspecds/processing.py,sha256=wLDs-_SZGY4cAeGcx6Ek7TEjzyr7-a9Acohw86nhyu8,6505
+nmraspecds/utils.py,sha256=G8_PJgUx4xv3l7XkWyXKk7UKLbEHqvU9s6W4kH7pMmk,1456
+nmraspecds-0.2.0.dist-info/LICENSE,sha256=EsoAyOrTqVWMDhhPeVCaRoT5_cEN8qCCEgjLaDB9vug,1294
+nmraspecds-0.2.0.dist-info/METADATA,sha256=ues1855njqclfYqj_-jc5iAGFRg7SWQ8NOxmcypDXbs,6297
+nmraspecds-0.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+nmraspecds-0.2.0.dist-info/top_level.txt,sha256=goO9_Rh2XtfVWnq63rjJrOuZFs8kUkydFroqckfkQa4,11
+nmraspecds-0.2.0.dist-info/RECORD,,
