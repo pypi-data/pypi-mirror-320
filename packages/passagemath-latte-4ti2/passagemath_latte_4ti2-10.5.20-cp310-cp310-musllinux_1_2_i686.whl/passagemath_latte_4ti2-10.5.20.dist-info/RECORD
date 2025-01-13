@@ -1,0 +1,10 @@
+sage/all__sagemath_latte_4ti2.py,sha256=iLGzjlInkMk-KSrLS4X5m6W-B5ItbBe8MSfigEIKt_M,93
+sage/interfaces/four_ti_2.py,sha256=971kyaZ9uWWdkan8jPzLIjyQnCWJllJixP8dOh19SZo,17517
+sage/interfaces/all__sagemath_latte_4ti2.py,sha256=OeBUMqZ5-7r0RD0OLmzj9QzVftrYLLw5uWgQDO__Tos,49
+sage/interfaces/latte.py,sha256=Hy2vhyMZ22mkh9NO-bTjCQ3D9ZsiU-NOORTpRrNGIQw,16889
+sage/libs/latte_int.cpython-310-i386-linux-gnu.so,sha256=cfwmThvRgg34NmsRKBUOJaT7a7Aub2sJACWdkw9M__A,56920
+sage/libs/all__sagemath_latte_4ti2.py,sha256=OeBUMqZ5-7r0RD0OLmzj9QzVftrYLLw5uWgQDO__Tos,49
+passagemath_latte_4ti2-10.5.20.dist-info/METADATA,sha256=OL9Wt5v0LsDnG6a6AdESbNoXMezS2JSDDCole1IlHMg,5344
+passagemath_latte_4ti2-10.5.20.dist-info/RECORD,,
+passagemath_latte_4ti2-10.5.20.dist-info/top_level.txt,sha256=hibFyzQHiLOMK68qL1OWsNKaXOmSXqZjeLTBem6Yy7I,5
+passagemath_latte_4ti2-10.5.20.dist-info/WHEEL,sha256=s59Ahp8cWRUA5Ovk-CMAn28LPoIpJSf8JKZA-2Q_1eA,110
