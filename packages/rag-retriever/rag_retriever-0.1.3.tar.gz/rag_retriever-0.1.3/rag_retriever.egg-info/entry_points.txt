@@ -1,0 +1,3 @@
+[console_scripts]
+post-install = scripts.install:install_browsers
+rag-retriever = rag_retriever.cli:main
