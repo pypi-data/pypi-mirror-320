@@ -1,0 +1,8 @@
+suicide_text_predictor/__init__.py,sha256=slBt1QFigWXb1Pah0N8pPRWte_VdPSZKdiLaxxkMa3Y,2104
+suicide_text_predictor/text_prediction.pt,sha256=Gu_Zp-rDVLR1QX6M-A7-ufPv9BLh3R8d1rR_JYG3ehI,77237297
+suicide_text_predictor/vocab.pth,sha256=agLxRSLz9QQ5D_s6gAvQd_uRWfzKGEqaTSfHqhMX9vo,1287211
+suicide_text_predictor-0.2.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+suicide_text_predictor-0.2.1.dist-info/METADATA,sha256=1_D4XXBoaf_Qij_UgaV8aByEBUYAnPcDIw7lZn1KoJI,733
+suicide_text_predictor-0.2.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+suicide_text_predictor-0.2.1.dist-info/top_level.txt,sha256=4bJCs1h_s8mI8CbmsKNIWFST4ltfcuBf3Rpcekj_NbA,23
+suicide_text_predictor-0.2.1.dist-info/RECORD,,

@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: suicide-text-predictor
+Version: 0.2.1
+Summary: A package to predict if a text is a suicide post or not.
+Home-page: https://github.com/ng0cduy/applied-AI
+Author: Ngoc Duy Bui
+Author-email: buiduyngoc1@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: torch (==2.0.1)
+Requires-Dist: torchtext (==0.15.2)
+
+# Suicide Text Predictor
+
+This package predicts if a given text is a suicide post or not using a trained PyTorch model.
+
+## Installation
+
+```bash
+pip install suicide_text_predictor
+
+
