@@ -1,0 +1,27 @@
+Metadata-Version: 2.2
+Name: aspis
+Version: 0.3.0
+Summary: A functional programming library for Python
+Author-email: Brian Han <brihan.tech@gmail.com>
+License: MIT
+Project-URL: homepage, https://github.com/brihan/aspis
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: flake8-import-order; extra == "dev"
+Requires-Dist: black; extra == "dev"
+
+# Aspis
+
+My take on a good functional library in Python.
+
+## License
+
+This project is licensed under the MIT License.
