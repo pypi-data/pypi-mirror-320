@@ -1,0 +1,3 @@
+numpy
+matplotlib
+scsv>=0.1.4
