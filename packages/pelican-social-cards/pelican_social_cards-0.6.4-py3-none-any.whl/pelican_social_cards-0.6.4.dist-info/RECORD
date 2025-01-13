@@ -1,0 +1,7 @@
+pelican/plugins/social_cards/__init__.py,sha256=MQejtyDqgiUwwBS1N3a78skAgqq7R9iHYLREKyPpJpM,56
+pelican/plugins/social_cards/cards_generator.py,sha256=Dfcedjfn8jk8-wMTrSrlBSbzRYLwFQF_1Emsj8DrFs8,7247
+pelican/plugins/social_cards/settings.py,sha256=8dsTM7kR9iH3S4JN2oQmlzjyF0HgHTJqpQudN6391Bc,2596
+pelican/plugins/social_cards/social_cards.py,sha256=BR5A_f2O76_fwR8FKiotpveT9Ze46dufT3EbuwX_6qs,3255
+pelican_social_cards-0.6.4.dist-info/METADATA,sha256=TWd9G97YDtsDHYM0B43QgTrkAVZlgf_Pzzx_5KId-OM,25950
+pelican_social_cards-0.6.4.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+pelican_social_cards-0.6.4.dist-info/RECORD,,
