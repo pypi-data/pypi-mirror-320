@@ -1,0 +1,68 @@
+Metadata-Version: 2.2
+Name: RandomPi
+Version: 2.0.2
+Home-page: https://github.com/realendie/RandomPi
+Author: Wyatt Johnson
+Author-email: enderprooffical@gmail.com
+License: Appache 2.0
+Keywords: python,random,pypi,package,random package
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4==4.12.3
+Requires-Dist: bs4==0.0.2
+Requires-Dist: certifi==2024.12.14
+Requires-Dist: charset-normalizer==3.4.1
+Requires-Dist: idna==3.10
+Requires-Dist: requests==2.32.3
+Requires-Dist: setuptools==75.8.0
+Requires-Dist: soupsieve==2.6
+Requires-Dist: urllib3==2.3.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+
+# RandomPi v2.0.2
+
+RandomPi is a simple package that uses the PyPi api to get a random python package.
+
+## Authors
+
+- [**Wyatt Johnson**](https://github.com/realendie)
+
+## Install
+
+```bash
+  pip install RandomPi
+```
+
+## Commands
+
+```bash
+    get_random_pi
+    get_random_info
+    get_project_info
+```
+
+## PyPi Index Api
+
+```http
+   GET /simple/ HTTP/1.1
+   Host: pypi.org
+   Accept: application/vnd.pypi.simple.v1+html
+```
+
+## PyPi Json Api
+
+```http
+    GET /pypi/sampleproject/json HTTP/1.1
+    Host: pypi.org
+    Accept: application/json
+```
+
+## License
+
+[**Apache-2.0**](https://www.apache.org/licenses/LICENSE-2.0)
