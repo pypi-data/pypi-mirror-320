@@ -1,0 +1,7 @@
+pytest
+pytest-cov
+simplejson
+future
+astropy
+matplotlib
+sunpy

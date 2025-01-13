@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pysitools2"
+version = "1.0.2"
+description = "A generic python Sitools2 client with IDOC/MEDOC clients"
+authors = ["Nima Traore <nima.traore@universite-paris-saclay.fr>"]
+readme = "README.md"
+packages = [{include = "sitools2"}]
+
+[tool.poetry.dependencies]
+python = "^3.10.0"
+future = "^1.0.0"
+simplejson = "^3.19.3"
+astropy = "^6.0.0"
+matplotlib = "^3.10.0"
+sunpy = "^6.0.4"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-cov = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
