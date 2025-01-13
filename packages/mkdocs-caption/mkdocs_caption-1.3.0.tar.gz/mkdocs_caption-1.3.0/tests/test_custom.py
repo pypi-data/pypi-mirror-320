@@ -1,0 +1,546 @@
+"""Tests for the custom module."""
+
+from lxml import etree
+
+from mkdocs_caption import custom
+from mkdocs_caption.config import IdentifierCaption
+from mkdocs_caption.logger import get_logger
+from mkdocs_caption.post_processor import PostProcessor
+
+
+def test_preprocess_disabled():
+    config = IdentifierCaption()
+    config.enable = False
+    markdown = """\
+This is a test
+hkjbnk
+
+List: My Caption
+
+hjkhjk
+    """
+    result = custom.preprocess_markdown(markdown, config=config, identifiers=["List"])
+    assert result == markdown
+
+
+def test_preprocess_no_identifier():
+    config = IdentifierCaption()
+    markdown = """\
+This is a test
+hkjbnk
+hjkhjk
+    """
+    result = custom.preprocess_markdown(markdown, config=config, identifiers=["List"])
+    assert result == markdown
+
+
+def test_preprocess_default_identifier_inline():
+    config = IdentifierCaption()
+    markdown = """\
+This is a test
+hkjbnk
+List: My Caption
+hjkhjk
+    """
+    result = custom.preprocess_markdown(markdown, config=config, identifiers=["List"])
+    assert result == markdown
+
+
+def test_preprocess_default_identifier():
+    config = IdentifierCaption()
+    markdown = """\
+This is a test
+hkjbnk
+
+List: My Caption
+
+hjkhjk
+    """
+    result = custom.preprocess_markdown(markdown, config=config, identifiers=["List"])
+    assert '<custom-caption identifier="List">' in result
+    assert "My Caption" in result
+    assert "<custom-caption-end>" in result
+
+
+def test_preprocess_options_ok():
+    config = IdentifierCaption()
+    markdown = """\
+This is a test
+hkjbnk
+
+List: My Caption {#myid .myclass tester="test"}
+
+hjkhjk
+    """
+    result = custom.preprocess_markdown(markdown, config=config, identifiers=["List"])
+    assert "id=myid" in result
+    assert "class=myclass" in result
+    assert 'tester="test"' in result
+
+
+def test_preprocess_custom_identifier():
+    config = IdentifierCaption()
+    config.markdown_identifier = "Custom&"
+    markdown = """\
+This is a test
+hkjbnk
+
+Custom& My Caption
+
+hjkhjk
+    """
+    result = custom.preprocess_markdown(markdown, config=config, identifiers=["List"])
+    assert '<custom-caption identifier="Custom&">' in result
+    assert "My Caption" in result
+    assert "<custom-caption-end>" in result
+
+
+def test_preprocess_custom_ignores_default_identifier():
+    config = IdentifierCaption()
+    config.markdown_identifier = "Custom&"
+    markdown = """\
+This is a test
+hkjbnk
+
+List: My Caption
+
+hjkhjk
+    """
+    assert (
+        custom.preprocess_markdown(markdown, config=config, identifiers=["List"])
+        == markdown
+    )
+
+
+def test_preprocess_multiple():
+    config = IdentifierCaption()
+    markdown = """\
+This is a test
+
+List: First
+
+hkjbnk
+
+List: My Caption
+
+hjkhjk
+    """
+    result = custom.preprocess_markdown(markdown, config=config, identifiers=["List"])
+
+    assert (
+        '<custom-caption identifier="List">\n\nFirst\n\n<custom-caption-end>' in result
+    )
+    assert (
+        '<custom-caption identifier="List">\n\nMy Caption\n\n<custom-caption-end>'
+        in result
+    )
+
+
+def test_preprocess_multiple_indentifier():
+    config = IdentifierCaption()
+    markdown = """\
+This is a test
+
+List: First
+
+hkjbnk
+
+Equation: My Caption
+
+hjkhjk
+    """
+    result = custom.preprocess_markdown(
+        markdown,
+        config=config,
+        identifiers=["List", "Equation"],
+    )
+    assert (
+        '<custom-caption identifier="List">\n\nFirst\n\n<custom-caption-end>' in result
+    )
+    assert (
+        '<custom-caption identifier="Equation">\n\nMy Caption\n\n<custom-caption-end>'
+        in result
+    )
+
+
+def p(*args):
+    return f'<p>{"".join(args)}</p>'
+
+
+def a(*args):
+    return f'<a>{"".join(args)}</a>'
+
+
+DEFAULT_INNER = "<span>Inner</span>"
+DEFAULT_CAPTION = (
+    '<p><custom-caption identifier="List"></p>'
+    "<p>My Caption</p><p><custom-caption-end></p>"
+)
+
+
+def test_postprocess_disabled(dummy_page):
+    config = IdentifierCaption()
+    config.enable = False
+    html = p(DEFAULT_CAPTION, DEFAULT_INNER)
+    parser = etree.HTMLParser()
+    tree = etree.fromstring(html, parser)
+    custom.postprocess_html(
+        tree=tree,
+        config=config,
+        logger=None,
+        page=dummy_page,
+        post_processor=PostProcessor(),
+    )
+    result = etree.tostring(tree, encoding="unicode", method="html")
+    assert DEFAULT_INNER in result
+
+
+def test_postprocess_no_identifier(dummy_page):
+    config = IdentifierCaption()
+    html = p(a("caption"), DEFAULT_INNER)
+    parser = etree.HTMLParser()
+    tree = etree.fromstring(html, parser)
+    custom.postprocess_html(
+        tree=tree,
+        config=config,
+        logger=None,
+        page=dummy_page,
+        post_processor=PostProcessor(),
+    )
+    result = etree.tostring(tree, encoding="unicode", method="html")
+    # HTMLParser adds <html><body> tags, remove them
+    result = result[len("<html><body>") : -len("</body></html>")]
+    assert result == html
+
+
+def test_postprocess_default_identifier(dummy_page):
+    config = IdentifierCaption()
+    html = p(DEFAULT_CAPTION, DEFAULT_INNER)
+    parser = etree.HTMLParser()
+    tree = etree.fromstring(html, parser)
+    custom.postprocess_html(
+        tree=tree,
+        config=config,
+        logger=None,
+        page=dummy_page,
+        post_processor=PostProcessor(),
+    )
+    result = etree.tostring(tree, encoding="unicode", method="html")
+    # HTMLParser adds <html><body> tags, remove them
+    result = result[len("<html><body>") : -len("</body></html>")]
+    assert "</figure>" in result
+    assert "<figcaption>List 1: My Caption</figcaption>" in result
+
+
+def test_postprocess_multiple(dummy_page):
+    config = IdentifierCaption()
+    caption1 = (
+        '<p><custom-caption identifier="List"></p><p>First</p>'
+        "<p><custom-caption-end></p>"
+    )
+    caption2 = (
+        '<p><custom-caption identifier="List"></p><p>Second</p>'
+        "<p><custom-caption-end></p>"
+    )
+
+    html = p(
+        p(caption1, DEFAULT_INNER),
+        p(caption2, '<img id="test2" src="test2.png" alt="Test2">'),
+    )
+    parser = etree.HTMLParser()
+    tree = etree.fromstring(html, parser)
+    custom.postprocess_html(
+        tree=tree,
+        config=config,
+        logger=None,
+        page=dummy_page,
+        post_processor=PostProcessor(),
+    )
+    result = etree.tostring(tree, encoding="unicode", method="html")
+    # HTMLParser adds <html><body> tags, remove them
+    result = result[len("<html><body>") : -len("</body></html>")]
+    assert "<figcaption>List 1: First</figcaption>" in result
+    assert "<figcaption>List 2: Second</figcaption>" in result
+
+
+def test_postprocess_multiple_nested(dummy_page):
+    config = IdentifierCaption()
+    caption1 = (
+        '<p><custom-caption identifier="List"></p><p>First</p>'
+        "<p><custom-caption-end></p>"
+    )
+    caption2 = (
+        '<p><custom-caption identifier="List"></p><p>Second</p>'
+        "<p><custom-caption-end></p>"
+    )
+
+    html = p(
+        p(caption1, a(DEFAULT_INNER)),
+        p(caption2, a(p('<img id="test2" src="test2.png" alt="Test2">'))),
+    )
+    parser = etree.HTMLParser()
+    tree = etree.fromstring(html, parser)
+    custom.postprocess_html(
+        tree=tree,
+        config=config,
+        logger=None,
+        page=dummy_page,
+        post_processor=PostProcessor(),
+    )
+    result = etree.tostring(tree, encoding="unicode", method="html")
+    # HTMLParser adds <html><body> tags, remove them
+    result = result[len("<html><body>") : -len("</body></html>")]
+    assert "<figcaption>List 1: First</figcaption>" in result
+    assert "<figcaption>List 2: Second</figcaption>" in result
+
+
+def test_postprocess_custom_start_index(dummy_page):
+    config = IdentifierCaption()
+    config.start_index = 10
+    html = p(DEFAULT_CAPTION, DEFAULT_INNER)
+    parser = etree.HTMLParser()
+    tree = etree.fromstring(html, parser)
+    custom.postprocess_html(
+        tree=tree,
+        config=config,
+        logger=None,
+        page=dummy_page,
+        post_processor=PostProcessor(),
+    )
+    result = etree.tostring(tree, encoding="unicode", method="html")
+    # HTMLParser adds <html><body> tags, remove them
+    result = result[len("<html><body>") : -len("</body></html>")]
+    assert "<figcaption>List 10: My Caption</figcaption>" in result
+
+
+def test_postprocess_custom_increment(dummy_page):
+    config = IdentifierCaption()
+    config.increment_index = 10
+    caption1 = (
+        '<p><custom-caption identifier="List"></p><p>First</p>'
+        "<p><custom-caption-end></p>"
+    )
+    caption2 = (
+        '<p><custom-caption identifier="List"></p><p>Second</p>'
+        "<p><custom-caption-end></p>"
+    )
+    html = p(p(caption1, DEFAULT_INNER), p(caption2, DEFAULT_INNER))
+    parser = etree.HTMLParser()
+    tree = etree.fromstring(html, parser)
+    custom.postprocess_html(
+        tree=tree,
+        config=config,
+        logger=None,
+        page=dummy_page,
+        post_processor=PostProcessor(),
+    )
+    result = etree.tostring(tree, encoding="unicode", method="html")
+    # HTMLParser adds <html><body> tags, remove them
+    result = result[len("<html><body>") : -len("</body></html>")]
+    assert "<figcaption>List 1: First</figcaption>" in result
+    assert "<figcaption>List 11: Second</figcaption>" in result
+
+
+def test_postprocess_position(dummy_page):
+    config = IdentifierCaption()
+    config.position = "top"
+    html = p(DEFAULT_CAPTION, DEFAULT_INNER)
+    parser = etree.HTMLParser()
+    tree = etree.fromstring(html, parser)
+    custom.postprocess_html(
+        tree=tree,
+        config=config,
+        logger=None,
+        page=dummy_page,
+        post_processor=PostProcessor(),
+    )
+    result = etree.tostring(tree, encoding="unicode", method="html")
+    # HTMLParser adds <html><body> tags, remove them
+    result = result[len("<html><body>") : -len("</body></html>")]
+    assert "</figcaption><span" in result
+
+    config.position = "bottom"
+    parser = etree.HTMLParser()
+    tree = etree.fromstring(html, parser)
+    custom.postprocess_html(
+        tree=tree,
+        config=config,
+        logger=None,
+        page=dummy_page,
+        post_processor=PostProcessor(),
+    )
+    result = etree.tostring(tree, encoding="unicode", method="html")
+    # HTMLParser adds <html><body> tags, remove them
+    result = result[len("<html><body>") : -len("</body></html>")]
+    assert "</span><figcaption>" in result
+
+
+def test_postprocess_default_id(dummy_page):
+    config = IdentifierCaption()
+    html = p(DEFAULT_CAPTION, DEFAULT_INNER)
+    parser = etree.HTMLParser()
+    tree = etree.fromstring(html, parser)
+    custom.postprocess_html(
+        tree=tree,
+        config=config,
+        logger=None,
+        page=dummy_page,
+        post_processor=PostProcessor(),
+    )
+    result = etree.tostring(tree, encoding="unicode", method="html")
+    # HTMLParser adds <html><body> tags, remove them
+    result = result[len("<html><body>") : -len("</body></html>")]
+    assert 'id="_list-1"' in result
+
+
+def test_postprocess_custom_id(dummy_page):
+    config = IdentifierCaption()
+    config.default_id = "custom-{identifier}-{index}"
+    html = p(DEFAULT_CAPTION, DEFAULT_INNER)
+    parser = etree.HTMLParser()
+    tree = etree.fromstring(html, parser)
+    custom.postprocess_html(
+        tree=tree,
+        config=config,
+        logger=None,
+        page=dummy_page,
+        post_processor=PostProcessor(),
+    )
+    result = etree.tostring(tree, encoding="unicode", method="html")
+    # HTMLParser adds <html><body> tags, remove them
+    result = result[len("<html><body>") : -len("</body></html>")]
+    assert 'id="custom-list-1"' in result
+
+    config.default_id = "test-{index}"
+    parser = etree.HTMLParser()
+    tree = etree.fromstring(html, parser)
+    custom.postprocess_html(
+        tree=tree,
+        config=config,
+        logger=None,
+        page=dummy_page,
+        post_processor=PostProcessor(),
+    )
+    result = etree.tostring(tree, encoding="unicode", method="html")
+    # HTMLParser adds <html><body> tags, remove them
+    result = result[len("<html><body>") : -len("</body></html>")]
+    assert 'id="test-1"' in result
+
+
+def test_postprocess_custom_caption_prefix(dummy_page):
+    config = IdentifierCaption()
+    config.caption_prefix = "custom {identifier} {index}:"
+    html = p(DEFAULT_CAPTION, DEFAULT_INNER)
+    parser = etree.HTMLParser()
+    tree = etree.fromstring(html, parser)
+    custom.postprocess_html(
+        tree=tree,
+        config=config,
+        logger=None,
+        page=dummy_page,
+        post_processor=PostProcessor(),
+    )
+    result = etree.tostring(tree, encoding="unicode", method="html")
+    # HTMLParser adds <html><body> tags, remove them
+    result = result[len("<html><body>") : -len("</body></html>")]
+    assert "<figcaption>custom list 1: My Caption</figcaption>" in result
+
+
+def test_postprocess_default_reference(dummy_page):
+    config = IdentifierCaption()
+    reference_element = '<a href="#_list-1"></a>'
+    html = p(DEFAULT_CAPTION, DEFAULT_INNER, p(reference_element))
+    parser = etree.HTMLParser()
+    tree = etree.fromstring(html, parser)
+    post_processor = PostProcessor()
+    page = dummy_page
+    page.file.src_path = "test.md"
+    custom.postprocess_html(
+        tree=tree,
+        config=config,
+        logger=None,
+        page=page,
+        post_processor=post_processor,
+    )
+    assert 'test.html#_list-1"' in post_processor.regex_to_apply
+
+
+def test_postprocess_ignore_reference_with_text(dummy_page):
+    config = IdentifierCaption()
+    reference_element = '<a href="#_list-1">Test</a>'
+    html = p(DEFAULT_CAPTION, DEFAULT_INNER, p(reference_element))
+    parser = etree.HTMLParser()
+    tree = etree.fromstring(html, parser)
+    custom.postprocess_html(
+        tree=tree,
+        config=config,
+        logger=None,
+        page=dummy_page,
+        post_processor=PostProcessor(),
+    )
+    result = etree.tostring(tree, encoding="unicode", method="html")
+    assert '<a href="#_list-1">Test</a>' in result
+
+
+def test_postprocess_custom_reference(dummy_page):
+    config = IdentifierCaption()
+    config.reference_text = "custom {identifier} {index}"
+    reference_element = '<a href="#_list-1"></a>'
+    html = p(DEFAULT_CAPTION, DEFAULT_INNER, p(reference_element))
+    parser = etree.HTMLParser()
+    tree = etree.fromstring(html, parser)
+    post_processor = PostProcessor()
+    page = dummy_page
+    page.file.src_path = "test.md"
+    custom.postprocess_html(
+        tree=tree,
+        config=config,
+        logger=None,
+        page=page,
+        post_processor=post_processor,
+    )
+    assert 'test.html#_list-1"' in post_processor.regex_to_apply
+
+
+def test_custom_caption_no_target(caplog, dummy_page):
+    config = IdentifierCaption()
+    html = p(DEFAULT_CAPTION)
+    parser = etree.HTMLParser()
+    tree = etree.fromstring(html, parser)
+    logger = get_logger("test.md")
+    with caplog.at_level("ERROR"):
+        custom.postprocess_html(
+            tree=tree,
+            config=config,
+            logger=logger,
+            page=dummy_page,
+            post_processor=PostProcessor(),
+        )
+    assert "ERROR" in caplog.text
+    result = etree.tostring(tree, encoding="unicode", method="html")
+    # htmlparser adds <html><body> tags, remove them
+    result = result[len("<html><body>") : -len("</body></html>")]
+    assert result == "<p></p>"
+
+
+def test_custom_caption_with_xml(caplog, dummy_page):
+    config = IdentifierCaption()
+    config.caption_prefix = "<not nice> {index}:"
+    html = p(DEFAULT_CAPTION, DEFAULT_INNER)
+    parser = etree.HTMLParser()
+    tree = etree.fromstring(html, parser)
+    tree = etree.fromstring(html, parser)
+    logger = get_logger("test.md")
+    with caplog.at_level("ERROR"):
+        custom.postprocess_html(
+            tree=tree,
+            config=config,
+            logger=logger,
+            page=dummy_page,
+            post_processor=PostProcessor(),
+        )
+    assert "ERROR" in caplog.text
+    result = etree.tostring(tree, encoding="unicode", method="html")
+    # htmlparser adds <html><body> tags, remove them
+    result = result[len("<html><body>") : -len("</body></html>")]
+    assert result == "<p></p><figure></figure><span>Inner</span>"
