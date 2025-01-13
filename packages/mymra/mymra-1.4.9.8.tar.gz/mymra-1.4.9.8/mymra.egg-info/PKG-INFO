@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: mymra
+Version: 1.4.9.8
+Summary: A tool for embedding and extracting files and strings with AES encryption.
+Home-page: https://github.com/moshiax/mymra
+Author: Oleg Beznogy
+Author-email: olegbeznogy@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+Requires-Dist: pycryptodome
+Requires-Dist: argparse
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
