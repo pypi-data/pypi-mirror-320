@@ -1,0 +1,34 @@
+[package]
+name = "vidyut-kosha"
+version = "0.2.0"
+authors = ["Arun Prasad <ambuda.library@gmail.com>"]
+description = "A Sanskrit key-value store"
+homepage = "https://github.com/ambuda-org/vidyut"
+repository = "https://github.com/ambuda-org/vidyut"
+categories = ["text-processing"]
+keywords = ["sanskrit"]
+license = "MIT"
+edition = "2021"
+rust-version = "1.68"
+readme = "README.md"
+
+[dependencies]
+clap = { version = "4.0.12", features = ["derive"] }
+env_logger = { workspace = true }
+log.workspace = true
+fst = "0.4.7"
+modular-bitfield = "0.11.2"
+rustc-hash = { workspace = true }
+serde = { version = "1.0.152", features = ["derive"] }
+vidyut-prakriya = { path = "../vidyut-prakriya", features = ["serde"] }
+rmp-serde = { workspace = true }
+
+[dev-dependencies]
+bencher = "0.1.5"
+tempfile = "3.3.0"
+rand = "0.8.5"
+multimap = "0.8.3"
+
+[[bench]]
+name = "kosha"
+harness = false
