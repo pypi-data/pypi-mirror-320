@@ -1,0 +1,3 @@
+pymongo>=4.7.3
+neuon>=0.0.1
+neuondb>=0.1.0
