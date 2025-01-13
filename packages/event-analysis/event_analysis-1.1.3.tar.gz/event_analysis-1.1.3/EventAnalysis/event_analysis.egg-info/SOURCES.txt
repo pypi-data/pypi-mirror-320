@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+EventAnalysis/EventAnalysis/__init__.py
+EventAnalysis/EventAnalysis/src/ECAKernel.py
+EventAnalysis/EventAnalysis/src/ECALoop.py
+EventAnalysis/EventAnalysis/src/ESKernel.py
+EventAnalysis/EventAnalysis/src/ESLoop.py
+EventAnalysis/EventAnalysis/src/EventAnalysis.py
+EventAnalysis/EventAnalysis/src/__init__.py
+EventAnalysis/EventAnalysis/src/utils.py
+EventAnalysis/event_analysis.egg-info/PKG-INFO
+EventAnalysis/event_analysis.egg-info/SOURCES.txt
+EventAnalysis/event_analysis.egg-info/dependency_links.txt
+EventAnalysis/event_analysis.egg-info/requires.txt
+EventAnalysis/event_analysis.egg-info/top_level.txt
