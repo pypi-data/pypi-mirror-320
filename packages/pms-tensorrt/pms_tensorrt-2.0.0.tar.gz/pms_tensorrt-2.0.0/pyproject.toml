@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pms-tensorrt"
+version = "2.0.0"
+description = "Package for TensorRT"
+authors = ["HyeongSeok Kim <tiryul@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.12.*"
+loguru = "*"
+numpy = "<2"
+
+[tool.poetry.group.dev.dependencies]
+tensorrt = "10.7.0"
+pycuda = "2024.1"
+tensorrt-cu12-libs = "10.7.0"
+tensorrt-cu12-bindings = "10.7.0"
+pytest = "^8.1.1"
+pytest-order = "^1.2.0"
+pillow = "^10.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
