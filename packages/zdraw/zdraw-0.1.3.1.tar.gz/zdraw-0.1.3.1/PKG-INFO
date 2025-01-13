@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: zdraw
+Version: 0.1.3.1
+Summary: A library for drawing custom bounding boxes with rounded corners and zones.
+Author: Zaid Aslam
+Author-email: zaidmughal46@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+
+# ZDraw
+
+ZDraw is a Python library for drawing custom bounding boxes with rounded corners on images using OpenCV. It supports dynamic adjustment of corner radius and border thickness, along with options for adding labels to the bounding boxes.
+
+## Features
+
+- Draws rounded rectangles on images.
+- Dynamically adjusts corner radius and border thickness based on box dimensions.
+- Add custom labels with solid background and rounded edges.
+- Assign random colors to classes for better visualization.
+
+## Installation
+
+
+```bash
+pip install zdraw
+```
+
+
+### Usage Example
+
+```python
+import cv2
+from zdraw import ZDraw
+# Initialize ZDraw with an optional class color map
+# Initialize ZDraw
+zdraw = ZDraw()
+
+# Load an image
+frame = cv2.imread("image.jpg")
+frame = cv2.resize(frame, (800, 600), interpolation=cv2.INTER_AREA)
+# Define bounding box coordinates and class
+x1, y1, x2, y2 = 100, 150, 400, 300
+class_name = "DynamicObject"
+
+# Line Points
+line_x1, line_y1, line_x2, line_y2 = 50, 50, 200, 50
+line_points = [(line_x1, line_y1), (line_x2, line_y2)]
+
+## Shape Points
+
+# Triangle
+tri_x1, tri_y1, tri_x2, tri_y2 = 250, 100, 350, 200
+triangle_points = [(tri_x1, tri_y1), (tri_x2, tri_y1), (tri_x2, tri_y2)]
+
+# Rectangle / Square
+rect_x1, rect_y1, rect_x2, rect_y2 = 50, 300, 200, 400
+rectangle_points = [(rect_x1, rect_y1), (rect_x2, rect_y1), (rect_x2, rect_y2), (rect_x1, rect_y2)]
+
+# Polygon
+poly_x1, poly_y1, poly_x2, poly_y2 = 250, 300, 350, 400
+polygon_points = [
+    (poly_x1, poly_y1),
+    (poly_x2, poly_y1),
+    (poly_x2, poly_y2),
+    (poly_x1, poly_y2 - 50),
+    (poly_x1, poly_y2 - 100),
+]
+
+frame_l = zdraw.ZDrawShape(frame.copy(), line_points, shape="line")
+frame_t = zdraw.ZDrawShape(frame.copy(), triangle_points, shape="triangle")
+frame_r = zdraw.ZDrawShape(frame.copy(), rectangle_points, shape="rectangle")
+frame_p = zdraw.ZDrawShape(frame.copy(), polygon_points, shape="polygon")
+
+# Draw bounding box with label
+original_frame, modified_frame = zdraw.ZDrawRect(frame.copy(), x1, y1, x2, y2, class_name, return_original_frame=True)
+
+# Display the result
+cv2.imshow("Original Frame", original_frame)
+cv2.imshow("Modified Frame BBox with Label", modified_frame)
+cv2.imshow("Modified Frame  Line", frame_l)
+cv2.imshow("Modified Frame Triangle", frame_t)
+cv2.imshow("Modified Frame Rectangle", frame_r)
+cv2.imshow("Modified Frame Polygon", frame_p)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+
+## API Reference
+
+`ZDraw`
+
+`__init__(class_colors={})`
+
+- Initializes the `ZDraw` object.
+- Parameters:
+
+    - `class_colors` (dict): A dictionary mapping class names to RGB tuples.
+
+`get_color_for_class(class_name)`
+- Returns a random color for a given class if not already assigned.
+
+`__draw_rec__(frame, top_left, bottom_right, border_color, fill_color)`
+- Draws a rounded rectangle on the frame, private.
+
+`ZDrawRect(frame, x1, y1, x2, y2)`
+- Draws a bounding box with rounded corners and a label.
+
+`ZDrawShape(frame, [point1, point2, ...])`
+- Draws a shape for creating zones and lines on the image. 
+
+### Dependencies
+- Python 3.8 or higher
+- OpenCV (opencv-python)
+- NumPy
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
