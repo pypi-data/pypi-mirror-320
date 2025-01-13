@@ -1,0 +1,4 @@
+num2words
+regex
+spacy
+spacy-curated-transformers
