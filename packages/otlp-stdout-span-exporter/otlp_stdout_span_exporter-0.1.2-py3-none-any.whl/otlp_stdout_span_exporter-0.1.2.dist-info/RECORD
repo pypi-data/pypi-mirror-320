@@ -1,0 +1,7 @@
+otlp_stdout_span_exporter/__init__.py,sha256=kY35YUw5R38dmAZ3asoET42qPCDvcjS7KIUlWukIdP8,253
+otlp_stdout_span_exporter/exporter.py,sha256=EZyW3gFWwzX8oXTrI-In54bbfBJza4ZjDEJw4Topi0E,6029
+otlp_stdout_span_exporter/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+otlp_stdout_span_exporter/version.py,sha256=CQIGW0bNCUDM6cq4jgb7e89N2MZEMABC26GSz7C1epg,46
+otlp_stdout_span_exporter-0.1.2.dist-info/METADATA,sha256=_ZUJJuxfOJfH-1kVcNFwD10Nm2PP9OGVvt-w28YqgKk,4432
+otlp_stdout_span_exporter-0.1.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+otlp_stdout_span_exporter-0.1.2.dist-info/RECORD,,
