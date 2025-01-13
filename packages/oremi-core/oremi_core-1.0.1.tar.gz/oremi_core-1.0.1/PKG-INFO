@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: oremi-core
+Version: 1.0.1
+Summary: The cornerstone of the Oremi ecosystem
+Home-page: https://gitlab.com/demsking/oremi-core
+License: Apache-2.0
+Keywords: oremi,core,utils
+Author: Sébastien Demanou
+Author-email: demsking@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Localization
+Requires-Dist: coloredlogs (>=15.0.1,<16.0.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: websockets (>=11.0.3,<12.0.0)
+Project-URL: Documentation, https://gitlab.com/demsking/oremi-core/-/blob/main/README.md
+Project-URL: Repository, https://gitlab.com/demsking/oremi-core
+Project-URL: Say Thanks!, https://www.buymeacoffee.com/demsking
+Project-URL: Source, https://gitlab.com/demsking/oremi-core
+Project-URL: Tracker, https://gitlab.com/demsking/oremi-core/-/issues
+Description-Content-Type: text/markdown
+
+# Oremi Core
+
+[![Buy me a beer](https://img.shields.io/badge/Buy%20me-a%20beer-1f425f.svg)](https://www.buymeacoffee.com/demsking)
+
+The cornerstone of the Oremi ecosystem, unifying shared functionalities across
+multiple Oremi projects. Seamlessly integrate essential components and services,
+streamlining development and ensuring consistency throughout your Oremi-powered
+applications.
+
+## Table of Contents
+
+- [Install](#install)
+- [Contribute](#contribute)
+- [Versioning](#versioning)
+- [License](#license)
+
+## Install
+
+```sh
+pip install oremi-core
+```
+
+## Contribute
+
+Please follow [CONTRIBUTING.md](https://gitlab.com/demsking/oremi-core/blob/main/CONTRIBUTING.md).
+
+## Versioning
+
+Given a version number `MAJOR.MINOR.PATCH`, increment the:
+
+- `MAJOR` version when you make incompatible API changes,
+- `MINOR` version when you add functionality in a backwards-compatible manner,
+  and
+- `PATCH` version when you make backwards-compatible bug fixes.
+
+Additional labels for pre-release and build metadata are available as extensions
+to the `MAJOR.MINOR.PATCH` format.
+
+See [SemVer.org](https://semver.org/) for more details.
+
+## License
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+this file except in compliance with the License.
+You may obtain a copy of the License at [LICENSE](https://gitlab.com/demsking/oremi-core/blob/main/LICENSE).
+
