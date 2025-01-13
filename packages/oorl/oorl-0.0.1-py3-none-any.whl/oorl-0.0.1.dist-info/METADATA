@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: oorl
+Version: 0.0.1
+Summary: Object Oriented Reinforcement Learning Framework
+License: MIT
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: gymnasium (>=0.26.0)
+Requires-Dist: matplotlib (>=3.4.0)
+Requires-Dist: numpy (>=1.21.0)
+Requires-Dist: pandas (>=1.3.0)
+Requires-Dist: torch (>=1.10.0)
+Project-URL: Bug Tracker, https://github.com/yourusername/oorl/issues
+Project-URL: Documentation, https://oorl.readthedocs.io/
+Project-URL: Homepage, https://github.com/yourusername/oorl
+Project-URL: Repository, https://github.com/yourusername/oorl.git
+Description-Content-Type: text/markdown
+
+# OORL - Object Oriented Reinforcement Learning
+
+A Python package implementing reinforcement learning algorithms using object-oriented principles.
+
+## Installation
+
+```bash
+pip install -e .
+```
+
+## Usage
+
+```python
+import oorl
+
+# Example code coming soon
+```
+
+## License
+
+MIT
+
