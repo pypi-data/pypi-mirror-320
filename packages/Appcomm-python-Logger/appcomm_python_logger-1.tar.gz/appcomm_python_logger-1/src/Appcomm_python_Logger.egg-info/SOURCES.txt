@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+readme.md
+src/AppcommPythonLogger/__init__.py
+src/AppcommPythonLogger/main.py
+src/Appcomm_python_Logger.egg-info/PKG-INFO
+src/Appcomm_python_Logger.egg-info/SOURCES.txt
+src/Appcomm_python_Logger.egg-info/dependency_links.txt
+src/Appcomm_python_Logger.egg-info/top_level.txt
