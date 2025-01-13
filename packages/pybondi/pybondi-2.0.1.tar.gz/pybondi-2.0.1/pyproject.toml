@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pybondi"
+version = "2.0.1"
+description = "A lightweight library for creating message driven systems."
+authors = ["Eric Cardozo <eric.m.cardozo@mi.unc.edu.ar>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fast-depends = "^2.4.12"
+
+[tool.poetry.group.tests.dependencies]
+pytest = "^8.3.4"
+
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.6.1"
+mkdocstrings = "^0.27.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
