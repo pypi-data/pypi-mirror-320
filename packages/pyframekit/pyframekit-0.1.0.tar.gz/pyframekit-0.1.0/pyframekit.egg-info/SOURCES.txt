@@ -1,0 +1,6 @@
+setup.py
+pyframekit.egg-info/PKG-INFO
+pyframekit.egg-info/SOURCES.txt
+pyframekit.egg-info/dependency_links.txt
+pyframekit.egg-info/requires.txt
+pyframekit.egg-info/top_level.txt
