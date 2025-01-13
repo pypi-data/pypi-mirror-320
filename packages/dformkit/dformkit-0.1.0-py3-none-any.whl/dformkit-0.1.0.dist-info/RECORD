@@ -1,0 +1,13 @@
+dformkit/__init__.py,sha256=CjXgo937m-PxToCAgTj_qdFTDicI7LetETgpb2L7J-c,232
+dformkit/check_forms_import.py,sha256=lEy0vG48TDf5NC7261Xg8Y1E9Bdvy4bDyIyQaJWzYPI,8018
+dformkit/generate_form.py,sha256=la1aIAdy3mPfusCiDclP22RyHPBtW1lRp6cPW0Lwlbw,1663
+dformkit/template_creator.py,sha256=TIeqTVSb19D-9BDS59RF9-_S7AA3LVy45JkM4362SgI,13317
+dformkit/view_url_manager.py,sha256=f4P2IYtDVJEVFnKakc3oh9rTo7ZyJKzaOjgsM5NWF7k,5483
+dformkit/management/commands/__init__.py,sha256=OkbaLCxMcPIIDqp5uXLoD6_5KB-IsUEpAtNj7UoZypQ,40
+dformkit/management/commands/dformkit.py,sha256=kKY2yu2bTTODo3JDRrOENE6CfaBb6bqwaF-lcsEz3nY,4569
+dformkit-0.1.0.dist-info/LICENSE,sha256=wh1crGwXmzIUgct2chZcAHdp9lT31rkwrI9A-Zqwvrk,1095
+dformkit-0.1.0.dist-info/METADATA,sha256=XW1qXR519sm4B1d0-_JwPqDU1Aat6O3FglUI2sGleVE,8117
+dformkit-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+dformkit-0.1.0.dist-info/entry_points.txt,sha256=HIj40l4wtghLcEzYz9eqMH-Qc_UxeWJ3or-76A--OMo,91
+dformkit-0.1.0.dist-info/top_level.txt,sha256=rQ25QjSNXRhh3xAYtrWSI8fRdyuvBRDp3bif0rxZ0gc,9
+dformkit-0.1.0.dist-info/RECORD,,
