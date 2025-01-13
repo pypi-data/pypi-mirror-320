@@ -1,0 +1,14 @@
+diffpy/__init__.py,sha256=laLEcr5qdMrd8X5MbseMrgimXbKORiIae6gcuuerGok,828
+diffpy/pdffit2/__init__.py,sha256=itqEZf-cYziNdteQUObwCNOtiOa10SwOT7EzI3MRpmE,1447
+diffpy/pdffit2/gsl-25.dll,sha256=gAC4mNPdAyg1i4QLWrHIYBYr_B2Xwx54th88QGXR1OE,3174912
+diffpy/pdffit2/ipy_ext.py,sha256=qtO7wgmTavMAElNKxrfWYe_4Xvs1j2oR-LrJ2x-jfB4,2564
+diffpy/pdffit2/output.py,sha256=fEqb0t2VHHBIpPjah0ed4_xTlQufxJcIzoPT7JGhgKg,1281
+diffpy/pdffit2/pdffit.py,sha256=9dA_cM-6u7C2TE0wqmqDyp4IP231MNMaZoDZ6V6Y4eU,45249
+diffpy/pdffit2/pdffit2.cp312-win_amd64.pyd,sha256=KAqxs4RZjADubMlveU2y0LxTrt82g7kI1XhUIiP6nKE,364032
+diffpy/pdffit2/version.py,sha256=TXPV03PLm0DpZMbk-VmEcvY0ibpmkl04VVZBoJzLIp4,2112
+diffpy.pdffit2-1.5.0rc1.dist-info/AUTHORS.rst,sha256=u4WTGQX9_YfLjQkGCyapU2xydP2YlU_76ZQs8zfj_to,2529
+diffpy.pdffit2-1.5.0rc1.dist-info/LICENSE.rst,sha256=C7t7ZATIh3CHF1KiUzUhqOeLI3lZU7KyoRqiwq26Vlg,2723
+diffpy.pdffit2-1.5.0rc1.dist-info/METADATA,sha256=CmoRr1-bOt6LzSV3UxcvqTGsiyG4flC-GEo90J0cnEg,8768
+diffpy.pdffit2-1.5.0rc1.dist-info/WHEEL,sha256=cRmSBGD-cl98KkuHMNqv9Ac9L9_VqTvcBYwpIvxN0cg,101
+diffpy.pdffit2-1.5.0rc1.dist-info/top_level.txt,sha256=34qLZyi9mxikpHepVDTMHrrNbe8VoOuz3ShYeiWA7KA,7
+diffpy.pdffit2-1.5.0rc1.dist-info/RECORD,,
