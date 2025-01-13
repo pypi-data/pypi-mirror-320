@@ -1,0 +1,11 @@
+lemniscat/plugin/awscli/__init__.py,sha256=zDr350exO14Ii8Pj3TXwPuRxIDrEjrg43CpjYABDqh4,19
+lemniscat/plugin/awscli/awscli.py,sha256=-BWDO_wRNtsBBpfXenY-CtWQ9GCuv_vjBk4_xO-uQSs,3651
+lemniscat/plugin/awscli/filestore.py,sha256=460vBbrD1QTqbAsgBo8XX6E8JEAErr8Ycnak2vHyOaA,1098
+lemniscat/plugin/awscli/main.py,sha256=W_hK0-pODFxAyKQHoVii5vyMKei3R9kM7LJ1pSYCHRU,5848
+lemniscat/plugin/awscli/plugin.yaml,sha256=Zbqmd4FJXEb71Kp4LjYraKvwCSD9BjOokDiwCwktN0k,536
+lemniscat/plugin/awscli/requirements.txt,sha256=2ETL1ihhvd_KAr819IU02q6Vv23hftYZNWG_NVrK3RM,49
+lemniscat.plugin.awscli-0.3.0.dist-info/LICENSE,sha256=kaT-2SVPBQ3kdkynsVMCWUFYpII_xVGdHiZzXMGy-vQ,1073
+lemniscat.plugin.awscli-0.3.0.dist-info/METADATA,sha256=aRsa2QIG6Nf0whUg6GnuZMCkjes_vUQeh-UNpvKxylk,5324
+lemniscat.plugin.awscli-0.3.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+lemniscat.plugin.awscli-0.3.0.dist-info/top_level.txt,sha256=bmoVraF-tb2_14VMpstZFlw0ewylXjllv2bwC8bqw4c,10
+lemniscat.plugin.awscli-0.3.0.dist-info/RECORD,,
