@@ -1,0 +1,14 @@
+PyJWT==2.7.0
+cryptography==37.0.4
+lendsmart-api
+lendsmart-autotest
+python-graphql-client
+ramda
+remoto>=1.1.4
+
+[:python_version < "3.0"]
+configparser
+setuptools<45.0.0
+
+[:python_version >= "3.0"]
+setuptools
