@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: glide_sdk
+Version: 1.0.1
+Summary: Python SDK for Glide Identity API
+Author: Stav Blyman
+Author-email: stavblyman@glideapi.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: aiohttp (>=3.9.0,<4.0.0)
+Requires-Dist: httpx (>=0.26.0,<0.27.0)
+Requires-Dist: pydantic (>=2.5.0,<3.0.0)
+Requires-Dist: pyjwt (>=2.8.0,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+
