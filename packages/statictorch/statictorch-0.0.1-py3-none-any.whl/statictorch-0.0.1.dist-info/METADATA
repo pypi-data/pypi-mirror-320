@@ -1,0 +1,8 @@
+Metadata-Version: 2.2
+Name: statictorch
+Version: 0.0.1
+Summary: Provides type annotations for torch tensors.
+Author-email: yueyinqiu <yueyinqiu@outlook.com>
+License: MIT License
+Project-URL: Repository, https://github.com/yueyinqiu/statictorch.git
+License-File: LICENSE
