@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-12 23:38+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: evictionsplit/auth_hooks.py:16
+msgid "Eviction Activity"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/base.html:5
+msgid "Eviction split"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/base.html:15
+msgid "Management"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/eviction.html:10
+#, python-format
+msgid "Unknown argument received: %(unknown_change)s"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/eviction.html:35
+#: evictionsplit/templates/evictionsplit/index.html:27
+msgid "Currently on standby for pings"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/eviction.html:38
+#: evictionsplit/templates/evictionsplit/index.html:30
+msgid "Currently not on standby for ping"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/eviction.html:42
+#: evictionsplit/templates/evictionsplit/eviction.html:60
+msgid "Eviction is over"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/eviction.html:53
+#: evictionsplit/templates/evictionsplit/index.html:41
+msgid "Currently on doorstop"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/eviction.html:56
+#: evictionsplit/templates/evictionsplit/index.html:44
+msgid "Currently not on doorstop"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/eviction.html:79
+msgid "Eviction applicants:"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/eviction.html:85
+msgid "Applicant"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/eviction.html:110
+msgid "Eviction status:"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/eviction.html:115
+msgid "Export activity logs"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/eviction.html:121
+msgid "Name"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/eviction.html:122
+msgid "On standby"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/eviction.html:123
+msgid "On doorstop"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/eviction.html:162
+msgid "Export clocking data"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/index.html:6
+msgid "Eviction board"
+msgstr ""
+
+#. Translators: Be careful to preserve the <a> tag structure
+#: evictionsplit/templates/evictionsplit/index.html:66
+#, python-format
+msgid ""
+"<p>You are in no active eviction at the moment</p> <p>Go to <a "
+"href=\"%(url)s\">here</a> to join evictions</p>"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/list.html:9
+#: evictionsplit/templates/evictionsplit/management.html:7
+#: evictionsplit/templates/evictionsplit/partial/menu.html:8
+msgid "Active evictions"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/list.html:15
+#: evictionsplit/templates/evictionsplit/management.html:84
+msgid "Eviction name"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/list.html:16
+#: evictionsplit/templates/evictionsplit/management.html:14
+#: evictionsplit/templates/evictionsplit/management.html:85
+msgid "Creator"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/list.html:17
+msgid "Apply to join"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/list.html:46
+msgid "Joined"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/list.html:59
+msgid "No eviction taking applications for now"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/management.html:13
+msgid "Eviction Name"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/management.html:15
+msgid "Stop the eviction"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/management.html:47
+msgid "No active eviction for now"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/management.html:60
+msgid "New eviction"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/management.html:66
+msgid "New eviction name:"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/management.html:69
+msgid "Create eviction"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/management.html:78
+msgid "Archived evictions"
+msgstr ""
+
+#: evictionsplit/templates/evictionsplit/partial/menu.html:4
+msgid "Eviction Board"
+msgstr ""
+
+#: evictionsplit/views.py:109
+msgid "New application to eviction "
+msgstr ""
+
+#: evictionsplit/views.py:111
+#, python-format
+msgid ""
+"%(applicant)s applied to eviction %(eviction)s and needs to be processed"
+msgstr ""
+
+#: evictionsplit/views.py:129
+#, python-format
+msgid "Successfully applied to eviction %s"
+msgstr ""
+
+#: evictionsplit/views.py:138
+msgid "Automatically validated the application."
+msgstr ""
+
+#: evictionsplit/views.py:162
+msgid "Eviction application accepted"
+msgstr ""
+
+#: evictionsplit/views.py:163
+#, python-format
+msgid "Your application to %s was accepted"
+msgstr ""
+
+#: evictionsplit/views.py:169
+#, python-format
+msgid "Successfully added %(user)s to %(eviction)s."
+msgstr ""
+
+#: evictionsplit/views.py:188
+msgid "This eviction is now finished"
+msgstr ""
+
+#: evictionsplit/views.py:257 evictionsplit/views.py:261
+#: evictionsplit/views.py:283
+msgid "Something went wrong"
+msgstr ""
+
+#: evictionsplit/views.py:269
+msgid "Started doorstop"
+msgstr ""
+
+#: evictionsplit/views.py:272
+msgid "Stopped doorstop"
+msgstr ""
+
+#: evictionsplit/views.py:277
+msgid "Started standby for pings"
+msgstr ""
+
+#: evictionsplit/views.py:280
+msgid "Stopped standby for pings"
+msgstr ""
+
+#: evictionsplit/views.py:323
+#, python-format
+msgid "Successfully stopped the eviction %s"
+msgstr ""
