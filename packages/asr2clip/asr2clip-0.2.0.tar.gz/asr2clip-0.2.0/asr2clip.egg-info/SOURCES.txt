@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+asr2clip/__init__.py
+asr2clip/asr2clip.py
+asr2clip.egg-info/PKG-INFO
+asr2clip.egg-info/SOURCES.txt
+asr2clip.egg-info/dependency_links.txt
+asr2clip.egg-info/entry_points.txt
+asr2clip.egg-info/requires.txt
+asr2clip.egg-info/top_level.txt
