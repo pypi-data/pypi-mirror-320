@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/lemniscat.plugin.awscli.egg-info/PKG-INFO
+src/lemniscat.plugin.awscli.egg-info/SOURCES.txt
+src/lemniscat.plugin.awscli.egg-info/dependency_links.txt
+src/lemniscat.plugin.awscli.egg-info/requires.txt
+src/lemniscat.plugin.awscli.egg-info/top_level.txt
+src/lemniscat/plugin/awscli/__init__.py
+src/lemniscat/plugin/awscli/awscli.py
+src/lemniscat/plugin/awscli/filestore.py
+src/lemniscat/plugin/awscli/main.py
+src/lemniscat/plugin/awscli/plugin.yaml
+src/lemniscat/plugin/awscli/requirements.txt
