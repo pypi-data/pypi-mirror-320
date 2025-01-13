@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: jupyno
+Version: 1.0.3
+Summary: Utiliser Arduino dans un notebook Jupyter
+Author: Guillaume Froehlicher
+Author-email: guillaume.froehlicher@ac-rennes.fr
+License: MIT
+License-File: LICENCE
