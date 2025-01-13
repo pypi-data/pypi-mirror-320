@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+harmonicbalance/__init__.py
+harmonicbalance/fourier.py
+harmonicbalance/predictorcorrector.py
+harmonicbalance/solvers.py
+harmonicbalance.egg-info/PKG-INFO
+harmonicbalance.egg-info/SOURCES.txt
+harmonicbalance.egg-info/dependency_links.txt
+harmonicbalance.egg-info/requires.txt
+harmonicbalance.egg-info/top_level.txt
