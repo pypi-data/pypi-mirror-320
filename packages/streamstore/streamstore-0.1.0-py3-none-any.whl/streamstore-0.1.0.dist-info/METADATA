@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: streamstore
+Version: 0.1.0
+Summary: Python SDK for S2, the Stream Store
+License-File: LICENSE
+Requires-Python: >=3.11
+Requires-Dist: betterproto[compiler]>=2.0.0b7
+Requires-Dist: stamina>=24.3.0
+Provides-Extra: docs
+Requires-Dist: enum-tools[sphinx]>=0.12.0; extra == 'docs'
+Requires-Dist: furo>=2024.8.6; extra == 'docs'
+Requires-Dist: myst-parser>=4.0.0; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints>=3.0.0; extra == 'docs'
+Requires-Dist: sphinx>=8.1.3; extra == 'docs'
+Description-Content-Type: text/markdown
+
+# streamstore
+
+`streamstore` is the Python package that provides an async client for interacting with the [gRPC API](https://s2.dev/docs/interface/grpc) of [S2, the Stream Store](https://s2.dev/).
+
+## Installation
+
+You can install the package from the [Python Package Index](https://pypi.org/) using the package manager of your choice. E.g., with `pip`:
+
+```bash
+pip install streamstore
+```
+
+If you are managing the dependencies of your project through [uv](https://docs.astral.sh/uv/concepts/projects/dependencies/#managing-dependencies):
+```bash
+uv add streamstore
+```
+
+## Requirements
+
+Python >= 3.11
