@@ -1,0 +1,2 @@
+[console_scripts]
+imgdiet = imgdiet.cli:main
