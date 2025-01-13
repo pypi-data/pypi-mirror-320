@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+st_soccer/__init__.py
+st_soccer/example.py
+st_soccer/frontend/build/asset-manifest.json
+st_soccer/frontend/build/bootstrap.min.css
+st_soccer/frontend/build/index.html
+st_soccer/frontend/build/static/js/main.f77417c8.js
+st_soccer/frontend/build/static/js/main.f77417c8.js.LICENSE.txt
+st_soccer/frontend/build/static/js/main.f77417c8.js.map
+streamlit_soccer.egg-info/PKG-INFO
+streamlit_soccer.egg-info/SOURCES.txt
+streamlit_soccer.egg-info/dependency_links.txt
+streamlit_soccer.egg-info/requires.txt
+streamlit_soccer.egg-info/top_level.txt
