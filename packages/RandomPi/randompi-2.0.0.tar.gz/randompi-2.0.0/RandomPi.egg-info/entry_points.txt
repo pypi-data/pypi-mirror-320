@@ -1,0 +1,5 @@
+[console_scripts]
+get_project_info = RandomPi:get_project_info
+get_random_info = RandomPi:get_random_info
+get_random_pi = RandomPi:get_random_pi
+get_randompi = RandomPi:get_random_pi
