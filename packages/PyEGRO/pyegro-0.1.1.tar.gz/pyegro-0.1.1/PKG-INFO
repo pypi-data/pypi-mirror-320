@@ -1,0 +1,50 @@
+Metadata-Version: 2.2
+Name: PyEGRO
+Version: 0.1.1
+Summary: A Python library for efficient global robust optimization
+Home-page: https://github.com/twanglom/PyEGRO
+Author: Thanasak Wanglomklang
+Author-email: thanasak.wanglomklang@ec-lyon.fr
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: torch
+Requires-Dist: gpytorch
+Requires-Dist: scikit-learn
+Requires-Dist: pymoo
+Requires-Dist: rich
+Requires-Dist: pyDOE
+Requires-Dist: SALib
+Requires-Dist: Pillow
+Requires-Dist: joblib
+Requires-Dist: optuna
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# PyEGRO
+
+A Python library for efficient global robust optimization.
+
+## Installation
+
+```bash
+pip install PyEGRO
