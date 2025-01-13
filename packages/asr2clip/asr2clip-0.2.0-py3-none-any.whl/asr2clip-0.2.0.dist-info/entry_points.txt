@@ -1,0 +1,2 @@
+[console_scripts]
+asr2clip = asr2clip.asr2clip:main
