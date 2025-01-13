@@ -1,0 +1,6 @@
+twisted>=21.2.0
+autobahn>=0.16.0
+msgpack>=0.6.0
+
+[test]
+psutil
