@@ -1,0 +1,9 @@
+sage_wheels/bin/fullgen,sha256=ELXh2EqQfmfTENmCwsuPJV4uaNeEJmCuG4RAgFrFcvg,147248
+sage_wheels/bin/plantri,sha256=TkPJuHBkiEi8F6lI2qpt1ujGYQqcJeJeqxDg3isauc8,240384
+sage/all__sagemath_plantri.py,sha256=NvnpJxLNRjmWWRzkaFl_Ws3ku-eCAvS_sxImvVZxUMY,87
+sage/libs/plantri.cpython-310-x86_64-linux-gnu.so,sha256=hpyYaOSTkIoluWzCU6mDU4WhKj08s1sM_Ht9T2zahQE,73088
+sage/libs/all__sagemath_plantri.py,sha256=pTgjwsPWGnO4zjvDLWsQDjtD7pbgVgDDsrwcwySBixg,46
+passagemath_plantri-10.5.20.dist-info/METADATA,sha256=kT9tIfZ_RlvPDgFjCR4qhW8UXm6N9T3dO8hA1-yHjfc,3575
+passagemath_plantri-10.5.20.dist-info/RECORD,,
+passagemath_plantri-10.5.20.dist-info/top_level.txt,sha256=hibFyzQHiLOMK68qL1OWsNKaXOmSXqZjeLTBem6Yy7I,5
+passagemath_plantri-10.5.20.dist-info/WHEEL,sha256=yASU5_RWBtrcuOH_G-XQTXE_MTjKTCRppmjd_ZaSYZc,186
