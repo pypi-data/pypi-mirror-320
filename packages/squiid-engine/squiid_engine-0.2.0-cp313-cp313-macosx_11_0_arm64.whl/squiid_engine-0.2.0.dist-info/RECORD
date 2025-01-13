@@ -1,0 +1,8 @@
+squiid_engine/_data_structs.py,sha256=g_LDJU0oxPZmLDLZqe0uwUVQ5p5QJRNxP-oTozBdPvM,4595
+squiid_engine/_backend.py,sha256=ZNB_NXsENxO451adFdg8eMOhgk-hAa5Fo9An6384564,7514
+squiid_engine/__init__.py,sha256=l4-AFVJUcZwAUkwdO9Dm8tjLizCtj7T2n-LOc6UoIy0,419
+squiid_engine/libsquiid_engine.dylib,sha256=pQa1khhx1Z79B8nCppEZUEsopOT1KpUk8bslFpwH454,1860072
+squiid_engine-0.2.0.dist-info/RECORD,,
+squiid_engine-0.2.0.dist-info/LICENSE,sha256=oLg2ThfiY4oyXNI3-g0MQ6Xdo1KGoQBxn_oj0TnzIpQ,35083
+squiid_engine-0.2.0.dist-info/WHEEL,sha256=2nRxETlcpPx0rhQGkYdXcfb-ML6Q3kxI_9DDIsme2lE,106
+squiid_engine-0.2.0.dist-info/METADATA,sha256=YNivB2310Os-ABPSMmh4c5uH39Yoz2DPUjFAOces4Fk,2212
