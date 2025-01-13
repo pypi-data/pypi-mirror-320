@@ -1,0 +1,3 @@
+[console_scripts]
+manish = manish.cli:main
+manish-github = manish.cli:github

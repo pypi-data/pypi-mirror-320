@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+manish/__init__.py
+manish/cli.py
+manishh.egg-info/PKG-INFO
+manishh.egg-info/SOURCES.txt
+manishh.egg-info/dependency_links.txt
+manishh.egg-info/entry_points.txt
+manishh.egg-info/top_level.txt
