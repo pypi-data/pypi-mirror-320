@@ -1,0 +1,11 @@
+Bing/__init__.py,sha256=GFZq0lWO3H6n_YOeUaAHQFxpQRGqxLvN3YFQcimHxFs,166
+Bing/bing.py,sha256=heUBL30yg9vopkJiDCpo1OrC6IMA6JDuyJH42q71lIY,8077
+Bing/cli.py,sha256=hwacsWRzbcSgSGqRQeB8sCkFOE_fMm5kHwxs-bFfXNY,1503
+tests/__init__.py,sha256=VEULidqoxG9_G3BJpX471It7MzoELRS4bWdXyHEVncw,393
+tests/bing_test.py,sha256=iB0uGJmRPG_vWWVgK-lBLjffgcfra8Yn8EJ7j1IyCSk,2888
+gen_bing-0.0.8.dist-info/LICENSE,sha256=9kZ8YpuPAOhbc0bIh-8rhWlTgnwh3pHh8KCSECJDZdM,1064
+gen_bing-0.0.8.dist-info/METADATA,sha256=usm9tN1MvpymY_prH8g-oPYmlmfSElg1R5tBXRAX_Cs,1685
+gen_bing-0.0.8.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+gen_bing-0.0.8.dist-info/entry_points.txt,sha256=7-pjw-0yxaJHXFJVYe-jrMjNHLPTgoI4d9ivGfkP8u4,46
+gen_bing-0.0.8.dist-info/top_level.txt,sha256=F1zKhHX9htD8yB1iQW16H2UGmzJsf4kV_WBuUtAyl9E,11
+gen_bing-0.0.8.dist-info/RECORD,,
