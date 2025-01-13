@@ -1,0 +1,10 @@
+pkgconf-2.3.0.post0.dist-info/METADATA,sha256=yntBf3JtGYmrNJKrtugScpx-Ut8_Qej5unEY203XghI,4546
+pkgconf-2.3.0.post0.dist-info/WHEEL,sha256=B3B4KN1DoTlWtNhRRRGkD-knxtCiXk730NQ8ihkn3eI,85
+pkgconf-2.3.0.post0.dist-info/entry_points.txt,sha256=rqbdxRekoww-gAluYeeJvZ_y1v2Lz4Vn5txhiwhXsUM,100
+pkgconf-2.3.0.post0.dist-info/LICENSE,sha256=ZkgDE-MK5aHoknemDQt1la7dQ91Mw6i5YRVW120ARTg,1102
+pkgconf/.bin/pkgconf.exe,sha256=wDQmroNpU8S3k87Af8wkkqi8W4e7zh5-rTCq5lLQ5f8,90624
+pkgconf/__init__.py,sha256=1sT6r0uS4QIwWRIw7xjnauaShXopMPBUzGhWSkeNPPY,3519
+pkgconf/__main__.py,sha256=_4IvPDHWhdqD-rQnMZhLVoMG6TNgcskkzvuqoIvdh1g,3810
+pkgconf/_import.py,sha256=xQEVGiSqvGKH5qtMxmBJ3mimpfXdVMGMIKgYZCt78qg,3292
+pkgconf/diagnose.py,sha256=dR_rHDXb6A4yJ6Gv1kERlfvpA1o1_a7Cy0OYQRo3v0A,866
+pkgconf-2.3.0.post0.dist-info/RECORD,,
