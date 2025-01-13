@@ -1,0 +1,2 @@
+[console_scripts]
+causalBGM = BayesGM.cli:main
