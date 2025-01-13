@@ -1,0 +1,9 @@
+README.md
+setup.py
+khamster/__init__.py
+khamster/hamster.py
+khamster.egg-info/PKG-INFO
+khamster.egg-info/SOURCES.txt
+khamster.egg-info/dependency_links.txt
+khamster.egg-info/requires.txt
+khamster.egg-info/top_level.txt

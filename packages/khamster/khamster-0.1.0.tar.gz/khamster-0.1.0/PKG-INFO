@@ -1,0 +1,138 @@
+Metadata-Version: 2.2
+Name: khamster
+Version: 0.1.0
+Summary: A Python package called khamster
+Home-page: 
+Author: Andrea
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: roboid>=1.4.0
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Khamster
+
+khamster는 Robomation의 `roboid` 패키지의 `Hamster` 클래스를 한글로 접근할 수 있도록 만든 패키지입니다.
+
+이를 통해 영어가 아닌 한글과 한국어로 햄스터 코딩 로봇을 움직여볼 수 있습니다.
+
+## 설치
+
+```bash
+pip install khamster
+```
+
+## 사용법
+
+기본적인 사용 예시:
+
+```python
+from khamster import 햄스터, 로봇찾기, 대기, 준비될때까지_대기
+
+# 로봇 찾기 및 초기화
+로봇들 = 로봇찾기()
+준비될때까지_대기()
+
+# 로봇 생성
+로봇 = 햄스터()
+
+# 기본 동작
+로봇.앞으로(50)  # 50% 속도로 전진
+대기(2)          # 2초 대기
+로봇.정지()      # 정지
+```
+
+## 주요 기능
+
+### 이동 제어
+```python
+로봇.앞으로(속도=50)      # 앞으로 이동
+로봇.뒤로(속도=50)       # 뒤로 이동
+로봇.왼쪽으로(속도=50)    # 왼쪽으로 회전
+로봇.오른쪽으로(속도=50)   # 오른쪽으로 회전
+로봇.정지()             # 정지
+로봇.바퀴설정(왼쪽속도, 오른쪽속도)  # 개별 바퀴 제어
+```
+
+### LED 제어
+```python
+# LED 색상 상수
+로봇.LED_끄기   # 0
+로봇.LED_빨강   # 1
+로봇.LED_노랑   # 2
+로봇.LED_초록   # 3
+로봇.LED_청록   # 4
+로봇.LED_파랑   # 5
+로봇.LED_보라   # 6
+로봇.LED_하양   # 7
+
+# LED 제어
+로봇.LED_설정(왼쪽=LED_빨강, 오른쪽=LED_파랑)
+로봇.LED_끄기()
+```
+
+### 센서 읽기
+```python
+# 거리 및 바닥 센서
+거리 = 로봇.거리센서()
+왼쪽, 오른쪽 = 로봇.바닥센서()
+
+# 가속도 및 기울기
+x, y, z = 로봇.가속도()
+기울기_x, 기울기_y, 기울기_z = 로봇.기울기()
+
+# 기타 센서
+충격 = 로봇.진동감지()
+배터리 = 로봇.배터리()
+신호 = 로봇.신호세기()
+```
+
+### 음악 및 소리
+```python
+# 음계 상수
+로봇.도      # 4
+로봇.레      # 5
+로봇.미      # 6
+로봇.파      # 7
+로봇.솔      # 8
+로봇.라      # 9
+로봇.시      # 10
+로봇.높은도   # 11
+
+# 소리 내기
+로봇.소리내기(로봇.도, 박자=0.5)  # 도를 0.5초 동안 연주
+
+# 멜로디 연주
+음계들 = [로봇.도, 로봇.레, 로봇.미, 로봇.파, 로봇.솔]
+박자들 = [0.5, 0.5, 0.5, 0.5, 1.0]
+로봇.멜로디(음계들, 박자들)
+
+# 버저 소리
+로봇.삐소리(길이=0.2)
+```
+
+### 외부 포트 제어
+```python
+# 포트 모드 설정 및 입출력
+로봇.IO모드_설정(1, 'INPUT')   # 포트 1을 입력 모드로 설정
+값 = 로봇.포트값_읽기(1)       # 포트 1의 값 읽기
+로봇.포트값_쓰기(2, 1)         # 포트 2에 1 출력
+```
+
+## 라이선스
+
+이 프로젝트는 MIT 라이선스를 따릅니다.
+
+## 참고 자료
+
+- [Robomation](https://www.robomation.co.kr/)
+- [햄스터 스쿨](https://hamster.school/)
