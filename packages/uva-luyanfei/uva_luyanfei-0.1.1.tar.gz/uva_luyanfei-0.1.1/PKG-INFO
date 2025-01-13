@@ -1,0 +1,68 @@
+Metadata-Version: 2.4
+Name: uva-luyanfei
+Version: 0.1.1
+Project-URL: Documentation, https://github.com/luyanfei/uva#readme
+Project-URL: Issues, https://github.com/luyanfei/uva/issues
+Project-URL: Source, https://github.com/luyanfei/uva
+Author-email: luyanfei <luyanfei78@163.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: bs4
+Requires-Dist: click
+Description-Content-Type: text/markdown
+
+# uva-luyanfei
+
+[![PyPI - Version](https://img.shields.io/pypi/v/uva-luyanfei.svg)](https://pypi.org/project/uva-luyanfei)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/uva-luyanfei.svg)](https://pypi.org/project/uva-luyanfei)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install uva-luyanfei
+```
+
+## Usage
+Python urllib does not work for onlinejudge.org, so this tool use curl to post and get. You need to install curl first. 
+This also means this tool will not work for Windows.
+
+### Login
+```console
+uva login -u xxx -p xxx
+```
+
+### Download pdf
+```console
+uva download -p (problem id)
+```
+
+### Show submissions
+```console
+uva status
+```
+
+### Submit problem solution
+```console
+uva submit -p (problem id) -f (source file) -l (language, default to 'C++11')
+```
+
+## License
+
+`uva-luyanfei` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
