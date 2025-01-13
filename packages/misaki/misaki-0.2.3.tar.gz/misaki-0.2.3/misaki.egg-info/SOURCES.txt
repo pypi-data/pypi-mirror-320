@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+misaki/__init__.py
+misaki/en.py
+misaki/espeak.py
+misaki.egg-info/PKG-INFO
+misaki.egg-info/SOURCES.txt
+misaki.egg-info/dependency_links.txt
+misaki.egg-info/requires.txt
+misaki.egg-info/top_level.txt
+misaki/data/gb_gold.json
+misaki/data/gb_silver.json
+misaki/data/us_gold.json
+misaki/data/us_silver.json
