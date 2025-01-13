@@ -1,0 +1,3 @@
+include mymodule.cp313-win_amd64.pyd
+include LICENSE
+include README.md
