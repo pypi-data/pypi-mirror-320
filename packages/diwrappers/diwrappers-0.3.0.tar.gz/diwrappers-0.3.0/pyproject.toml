@@ -1,0 +1,54 @@
+
+[tool.poetry]
+name = "diwrappers"
+description = "A lightweight, intuitive dependency injection library for Python that makes testing and dependency management a breeze."
+version = "0.3.0"
+authors = ["Rui Campos <mail@ruicampos.org>"]
+readme = "README.md"
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+]
+repository = "https://github.com/ruifilipecampos/diwrappers"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+poethepoet = "^0.32.0"
+basedpyright = "^1.23.2"
+pytest-asyncio = "^0.25.2"
+bandit = "^1.8.0"
+ruff = "^0.9.1"
+ruff-lsp = "^0.0.60"
+actionlint-py = "^1.7.6.22"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poe.tasks]
+lint = "ruff check diwrappers/*.py"
+format = "ruff format diwrappers/*.py"
+type = "basedpyright diwrappers/*.py --level warning"
+sec = "bandit -r ./diwrappers --configfile ./bandit.yml"
+gha = "actionlint"
+
+[tool.poe.tasks.test]
+cmd = "pytest diwrappers/*.py -vvvvv"
+env = { DIWRAPPERS_TEST="true" }
+
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ['ALL']
+ignore = [
+    'S311', # pRNG is only used for testing purposes
+    'S101',
+    'ANN202'
+]
+
