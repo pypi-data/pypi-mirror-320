@@ -1,0 +1,15 @@
+[package_info]
+id = "@alerus/stopwords"
+name = "Стоп-словы для беларускай мовы"
+author = "Аляксандр Русакевіч (mr.alexander.rusakevich@gmail.com)"
+homepage = "https://github.com/alex-rusakevich/ramonak-stopwords/"
+maintainer = "author"
+description = """
+Змяшчае спіс стоп-слоў для ramonak.stopwords.
+
+Заснаваны на перакладзеным з дапамогай Skarnik спісе слоў ад праекту NLTK.
+"""
+
+[[versions]]
+id = "20250111_181410"
+url = "https://github.com/alex-rusakevich/ramonak-stopwords/releases/download/20250111_181410/STOPWORDS_20250111_181410.zip"
