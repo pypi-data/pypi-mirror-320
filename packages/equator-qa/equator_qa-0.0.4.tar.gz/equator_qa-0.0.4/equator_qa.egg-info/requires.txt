@@ -1,0 +1,7 @@
+numpy>=1.18.0
+requests>=2.25.0
+jupyter
+
+[dev]
+pytest
+flake8
