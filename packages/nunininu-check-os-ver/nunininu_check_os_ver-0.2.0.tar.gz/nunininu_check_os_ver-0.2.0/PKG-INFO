@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: nunininu-check-os-ver
+Version: 0.2.0
+Summary: Default template for PDM package
+Author-Email: nunininu <sgcho0907@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/nunininu/nunininu-check-os-ver
+Project-URL: Issues, https://github.com/nunininu/nunininu-check-os-ver/issues
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# nunininu-check-os-ver
+ - Detects and outputs the os version. 
+
+### Development environment setting
+```bash
+$ install pdm
+$ git clone
+$ source .venv/bin/activate
+$ pdm install
+$ vi ...(coding)
+$ TEST
+$ pdm install
+$ pdm test
+$ pip install
+$ git add <file_name>
+$ git commit -a
+$ git push
+$ pdm publish
+```
+
+```
+
+### USE
+```python
+$ pip install nunininu-check-os-ver
+$ python
+>>> from nunininu_check_os_ver.hi import hi
+>>> hi()
+```
