@@ -1,0 +1,17 @@
+shmistogram/__init__.py,sha256=L-FQ7NJDLe4cBlYCAYGQkkViFLEIgsqlm11vFiAcueE,303
+shmistogram/names.py,sha256=M45wWDdDXfS1uqEwmQOH0lsVJQXUaG9z3FdX20dTjII,128
+shmistogram/shmistogram.py,sha256=vC8tYJQz5VV_ZprWSf_z6WOs6yBMEV6dMvM5f89cGpE,3689
+shmistogram/utils.py,sha256=hpB1pq_V_VQ8oX4TS0ZDjwzFP1v-sdrKxNr1hfBQa5Y,980
+shmistogram/binners/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shmistogram/binners/agglomerate.py,sha256=Ds-y6n7HdWuU5qoPt15HWzGJCuh1T5ds7EAuiV9yZIA,6143
+shmistogram/binners/bayesblocks.py,sha256=7SythFGRbBw1wOG0sGLcRdZG3S75gQmQaPymM4pM68M,2638
+shmistogram/binners/det.py,sha256=vicaFQXNfYARUrzcmKQevfTygKo8p6H1rhcPO42SkTs,11630
+shmistogram/binners/scalability_testing.py,sha256=EKXBYQVIxRPvPAMQTnVKg87OD8dAwvzZ7Kvrg7QWsnk,2372
+shmistogram/plot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shmistogram/plot/shmistogrammer.py,sha256=ku_jDIKiwWeaqaBXjmJ5vOKCk1FXk_wwiMISadg-4hc,6494
+shmistogram/simulations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shmistogram/simulations/univariate.py,sha256=PM0RnrtGjhvjJ_cclJGWA0E-hF4yCSSyfgLLwwocChI,1321
+shmistogram-1.0.0.dist-info/METADATA,sha256=wWt1dTCdctcWh8pjafEtz7ewO_MR2mu9UCiIE2pu8ME,6771
+shmistogram-1.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+shmistogram-1.0.0.dist-info/licenses/LICENSE,sha256=HPyev1rYb6j6br97mG79mA8xGtG2g3nma6v5zDipn20,1072
+shmistogram-1.0.0.dist-info/RECORD,,
