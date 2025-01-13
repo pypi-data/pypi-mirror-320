@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+examples/test.py
+polars_api/__init__.py
+polars_api/api.py
+polars_api.egg-info/PKG-INFO
+polars_api.egg-info/SOURCES.txt
+polars_api.egg-info/dependency_links.txt
+polars_api.egg-info/requires.txt
+polars_api.egg-info/top_level.txt
+tests/test_api.py

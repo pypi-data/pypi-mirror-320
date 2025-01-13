@@ -1,0 +1,5 @@
+dist
+docs
+examples
+polars_api
+tests
