@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+suicide_text_predictor/__init__.py
+suicide_text_predictor/vocab.pth
+suicide_text_predictor.egg-info/PKG-INFO
+suicide_text_predictor.egg-info/SOURCES.txt
+suicide_text_predictor.egg-info/dependency_links.txt
+suicide_text_predictor.egg-info/requires.txt
+suicide_text_predictor.egg-info/top_level.txt
