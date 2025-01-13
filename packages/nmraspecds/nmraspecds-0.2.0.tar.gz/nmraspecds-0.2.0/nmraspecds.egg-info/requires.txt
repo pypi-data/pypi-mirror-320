@@ -1,0 +1,12 @@
+aspecd>=0.10
+nmrglue
+spindata
+
+[dev]
+prospector
+black
+
+[docs]
+sphinx
+sphinx-rtd-theme
+sphinx_multiversion
