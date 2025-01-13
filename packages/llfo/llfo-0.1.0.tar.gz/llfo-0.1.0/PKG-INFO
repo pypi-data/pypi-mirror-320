@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: llfo
+Version: 0.1.0
+Summary: Lifelong Learning in Flexible Ontologies Framework
+License: MIT
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: gymnasium (>=0.26.0)
+Requires-Dist: matplotlib (>=3.4.0)
+Requires-Dist: numpy (>=1.21.0)
+Requires-Dist: pandas (>=1.3.0)
+Requires-Dist: torch (>=1.10.0)
+Project-URL: Bug Tracker, https://github.com/yourusername/llfo/issues
+Project-URL: Documentation, https://llfo.readthedocs.io/
+Project-URL: Homepage, https://github.com/yourusername/llfo
+Project-URL: Repository, https://github.com/yourusername/llfo.git
+Description-Content-Type: text/markdown
+
+# LLFO - Lifelong Learning in Flexible Ontologies
+
+A Python package implementing lifelong learning algorithms with flexible ontological structures.
+
+## Theory
+
+LLFO combines lifelong learning with flexible ontological structures to enable continuous knowledge acquisition and adaptation. Key concepts include:
+
+### Flexible Ontologies
+- Dynamic knowledge representation through adaptable concept hierarchies
+- Automatic restructuring of relationships between concepts
+- Probabilistic edge weights between ontological nodes
+
+### Lifelong Learning Components
+- Knowledge retention through experience replay
+- Forward transfer to new tasks
+- Backward transfer to improve previous knowledge
+- Catastrophic forgetting prevention
+
+### Learning Mechanisms
+- Ontology structure learning
+- Parameter learning within nodes
+- Relationship weight adaptation
+- Task-specific adaptation
+
+## Installation
+
+```bash
+pip install -e .
+```
+
+## Usage
+
+```python
+import llfo
+
+# Example code coming soon
+```
+
+## License
+
+MIT
+
