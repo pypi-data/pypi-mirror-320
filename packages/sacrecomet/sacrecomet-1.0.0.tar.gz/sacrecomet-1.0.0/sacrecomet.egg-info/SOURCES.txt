@@ -1,0 +1,9 @@
+README.md
+papers.py
+pyproject.toml
+sacrecomet.py
+sacrecomet.egg-info/PKG-INFO
+sacrecomet.egg-info/SOURCES.txt
+sacrecomet.egg-info/dependency_links.txt
+sacrecomet.egg-info/entry_points.txt
+sacrecomet.egg-info/top_level.txt
