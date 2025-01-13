@@ -1,0 +1,39 @@
+README FILE
+
+benutils
+Benoit Dubois
+26 june, 2019
+
+CONTENTS OF THIS FILE
+---------------------
+* Introduction
+* Requirements
+* Installation
+
+INTRODUCTION
+------------
+benutils is a package providing various utilities for my personal use:
+- usb utilities (bus discovering...)
+- modified Julian day utilities
+- Qt 'sdr' (i.e. continous data flow) modules
+- dict like container for timestamped data
+- Qt customized widgets
+
+REQUIREMENTS
+------------
+Preferably a Linux system with a Debian distribution (not tested with others OS
+nor others distributions).
+The program requires the folowing packages:
+ * Python 3 (Normally already installed on a Debian system)
+
+ * Numpy
+
+ * PyUsb version 1.0.0a3
+
+INSTALLATION
+------------
+* PyPi:
+        $ python3 -m pip install --user benutils
+
+* From source:
+        $ python3 -m pip install --user benutils-x.x.tar.gz
