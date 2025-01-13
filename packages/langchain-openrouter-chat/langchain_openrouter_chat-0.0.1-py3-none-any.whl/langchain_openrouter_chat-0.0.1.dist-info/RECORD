@@ -1,0 +1,6 @@
+langchain_openrouter/README.md,sha256=imISEawg5g2YQHCr9TdTLpnHYP-i8kki3hhafSN1Opg,23
+langchain_openrouter/__init__.py,sha256=nAjSy22JBVmToaW1kkV01hMNv-ozltuOmVFSH_W43bY,95
+langchain_openrouter/chat_models/base.py,sha256=i_RyyQ_p3Yt0nTQD0GcCEpk2rgtrqBdKPdfgIhfrNVM,247
+langchain_openrouter_chat-0.0.1.dist-info/METADATA,sha256=ePmBJjShTsArvWmX2wS2jXnhQ9tATN-BtUtxbPqT_Ws,568
+langchain_openrouter_chat-0.0.1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+langchain_openrouter_chat-0.0.1.dist-info/RECORD,,
