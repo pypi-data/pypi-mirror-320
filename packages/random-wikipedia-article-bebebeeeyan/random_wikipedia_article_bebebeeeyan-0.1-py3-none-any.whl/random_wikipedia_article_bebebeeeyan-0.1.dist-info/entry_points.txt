@@ -1,0 +1,2 @@
+[console_scripts]
+random-wikipedia-article-bebebeeeyan = random_wikipedia_article_bebebeeeyan:main
