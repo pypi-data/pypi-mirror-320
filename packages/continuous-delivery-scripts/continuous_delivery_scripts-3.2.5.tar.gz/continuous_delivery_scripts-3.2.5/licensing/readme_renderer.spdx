@@ -1,0 +1,50 @@
+# Document Information
+
+SPDXVersion: SPDX-1.2
+DataLicense: CC0-1.0
+DocumentName: readme_renderer-44.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentNamespace: http://spdx.org/spdxdocs/readme_renderer-44.0-925a1e18-5562-4ec0-de5a-902c33d3f22b
+DocumentComment: <text>This document was created automatically using available information from python packages.</text>
+
+
+# Creation Info
+
+Creator: Tool: mbed-spdx-generator
+Creator: Person: unknown (The Python Packaging Authority <admin@mail.pypi.org>)
+Created: 2025-01-13T09:19:18Z
+
+
+# Package
+
+PackageName: readme_renderer
+SPDXID: SPDXRef-readme_renderer
+PackageVersion: 44.0
+PackageDownloadLocation: NONE
+PackageSummary: <text>readme_renderer is a library for rendering readme descriptions for Warehouse</text>
+PackageFileName: readme_renderer
+PackageOriginator: Person: UNKNOWN (The Python Packaging Authority <admin@mail.pypi.org>)
+PackageChecksum: SHA1: NOASSERTION
+PackageVerificationCode: NOASSERTION
+PackageDescription: <text>NOASSERTION</text>
+PackageLicenseDeclared: Apache-2.0
+PackageLicenseConcluded: Apache-2.0
+PackageLicenseInfoFromFiles: Apache-2.0
+PackageCopyrightText: NOASSERTION
+PackageHomePage: None
+
+
+# File
+
+FileName: UNKNOWN
+SPDXID: SPDXRef-ad921d60-4863-6625-8809-553a3db49a4a
+FileType: SOURCE
+FileChecksum: SHA1: 0
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: Apache-2.0
+FileCopyrightText: NONE
+FileComment: <text>NONE</text>
+
+
+# Extracted Licenses
+

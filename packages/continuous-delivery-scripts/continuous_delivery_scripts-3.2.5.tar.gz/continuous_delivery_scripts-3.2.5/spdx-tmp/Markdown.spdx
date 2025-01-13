@@ -1,0 +1,50 @@
+# Document Information
+
+SPDXVersion: SPDX-1.2
+DataLicense: CC0-1.0
+DocumentName: Markdown-3.7
+SPDXID: SPDXRef-DOCUMENT
+DocumentNamespace: http://spdx.org/spdxdocs/Markdown-3.7-792926eb-8ac3-6241-a580-4bc55f314ed8
+DocumentComment: <text>This document was created automatically using available information from python packages.</text>
+
+
+# Creation Info
+
+Creator: Person: Manfred Stienstra, Yuri Takhteyev (Waylan limberg <python.markdown@gmail.com>)
+Creator: Tool: mbed-spdx-generator
+Created: 2025-01-13T09:18:51Z
+
+
+# Package
+
+PackageName: Markdown
+SPDXID: SPDXRef-Markdown
+PackageVersion: 3.7
+PackageDownloadLocation: NONE
+PackageSummary: <text>Python implementation of John Gruber's Markdown.</text>
+PackageFileName: Markdown
+PackageOriginator: Person: Manfred Stienstra, Yuri Takhteyev (Waylan limberg <python.markdown@gmail.com>)
+PackageChecksum: SHA1: NOASSERTION
+PackageVerificationCode: NOASSERTION
+PackageDescription: <text>NOASSERTION</text>
+PackageLicenseDeclared: BSD-1-Clause
+PackageLicenseConcluded: BSD-1-Clause
+PackageLicenseInfoFromFiles: BSD-1-Clause
+PackageCopyrightText: NOASSERTION
+PackageHomePage: None
+
+
+# File
+
+FileName: UNKNOWN
+SPDXID: SPDXRef-ad921d60-4863-6625-8809-553a3db49a4a
+FileType: SOURCE
+FileChecksum: SHA1: 0
+LicenseConcluded: BSD-1-Clause
+LicenseInfoInFile: BSD-1-Clause
+FileCopyrightText: NONE
+FileComment: <text>NONE</text>
+
+
+# Extracted Licenses
+

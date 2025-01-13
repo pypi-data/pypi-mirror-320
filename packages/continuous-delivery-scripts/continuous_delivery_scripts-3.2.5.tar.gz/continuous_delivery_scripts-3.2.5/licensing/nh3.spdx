@@ -1,0 +1,50 @@
+# Document Information
+
+SPDXVersion: SPDX-1.2
+DataLicense: CC0-1.0
+DocumentName: nh3-0.2.20
+SPDXID: SPDXRef-DOCUMENT
+DocumentNamespace: http://spdx.org/spdxdocs/nh3-0.2.20-5f465da7-b99a-1e45-7f3a-48f66f743228
+DocumentComment: <text>This document was created automatically using available information from python packages.</text>
+
+
+# Creation Info
+
+Creator: Tool: mbed-spdx-generator
+Creator: Person: messense <messense@icloud.com> (messense <messense@icloud.com>)
+Created: 2025-01-13T09:19:18Z
+
+
+# Package
+
+PackageName: nh3
+SPDXID: SPDXRef-nh3
+PackageVersion: 0.2.20
+PackageDownloadLocation: NONE
+PackageSummary: <text>Python binding to Ammonia HTML sanitizer Rust crate</text>
+PackageFileName: nh3
+PackageOriginator: Person: messense <messense@icloud.com> (messense <messense@icloud.com>)
+PackageChecksum: SHA1: NOASSERTION
+PackageVerificationCode: NOASSERTION
+PackageDescription: <text>NOASSERTION</text>
+PackageLicenseDeclared: MIT
+PackageLicenseConcluded: MIT
+PackageLicenseInfoFromFiles: MIT
+PackageCopyrightText: NOASSERTION
+PackageHomePage: None
+
+
+# File
+
+FileName: UNKNOWN
+SPDXID: SPDXRef-ad921d60-4863-6625-8809-553a3db49a4a
+FileType: SOURCE
+FileChecksum: SHA1: 0
+LicenseConcluded: MIT
+LicenseInfoInFile: MIT
+FileCopyrightText: NONE
+FileComment: <text>NONE</text>
+
+
+# Extracted Licenses
+

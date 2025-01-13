@@ -1,0 +1,50 @@
+# Document Information
+
+SPDXVersion: SPDX-1.2
+DataLicense: CC0-1.0
+DocumentName: jaraco.context-6.0.1
+SPDXID: SPDXRef-DOCUMENT
+DocumentNamespace: http://spdx.org/spdxdocs/jaraco.context-6.0.1-736e5f46-8447-f1ff-b4d0-500075bb9dbb
+DocumentComment: <text>This document was created automatically using available information from python packages.</text>
+
+
+# Creation Info
+
+Creator: Tool: mbed-spdx-generator
+Creator: Person: unknown ("Jason R. Coombs" <jaraco@jaraco.com>)
+Created: 2025-01-13T09:18:51Z
+
+
+# Package
+
+PackageName: jaraco.context
+SPDXID: SPDXRef-jaraco.context
+PackageVersion: 6.0.1
+PackageDownloadLocation: NONE
+PackageSummary: <text>Useful decorators and context managers</text>
+PackageFileName: jaraco.context
+PackageOriginator: Person: UNKNOWN ("Jason R. Coombs" <jaraco@jaraco.com>)
+PackageChecksum: SHA1: NOASSERTION
+PackageVerificationCode: NOASSERTION
+PackageDescription: <text>NOASSERTION</text>
+PackageLicenseDeclared: Unknown
+PackageLicenseConcluded: Unknown
+PackageLicenseInfoFromFiles: Unknown
+PackageCopyrightText: NOASSERTION
+PackageHomePage: None
+
+
+# File
+
+FileName: UNKNOWN
+SPDXID: SPDXRef-ad921d60-4863-6625-8809-553a3db49a4a
+FileType: SOURCE
+FileChecksum: SHA1: 0
+LicenseConcluded: Unknown
+LicenseInfoInFile: Unknown
+FileCopyrightText: NONE
+FileComment: <text>NONE</text>
+
+
+# Extracted Licenses
+

@@ -1,0 +1,50 @@
+# Document Information
+
+SPDXVersion: SPDX-1.2
+DataLicense: CC0-1.0
+DocumentName: click-default-group-1.2.4
+SPDXID: SPDXRef-DOCUMENT
+DocumentNamespace: http://spdx.org/spdxdocs/click-default-group-1.2.4-f5db4568-e262-1920-e4c0-537c58b90109
+DocumentComment: <text>This document was created automatically using available information from python packages.</text>
+
+
+# Creation Info
+
+Creator: Tool: mbed-spdx-generator
+Creator: Person: unknown (Heungsub Lee <heungsub@subl.ee>)
+Created: 2025-01-13T09:18:51Z
+
+
+# Package
+
+PackageName: click-default-group
+SPDXID: SPDXRef-click-default-group
+PackageVersion: 1.2.4
+PackageDownloadLocation: NONE
+PackageSummary: <text>click_default_group</text>
+PackageFileName: click-default-group
+PackageOriginator: Person: UNKNOWN (Heungsub Lee <heungsub@subl.ee>)
+PackageChecksum: SHA1: NOASSERTION
+PackageVerificationCode: NOASSERTION
+PackageDescription: <text>NOASSERTION</text>
+PackageLicenseDeclared: Unknown
+PackageLicenseConcluded: Unknown
+PackageLicenseInfoFromFiles: Unknown
+PackageCopyrightText: NOASSERTION
+PackageHomePage: None
+
+
+# File
+
+FileName: UNKNOWN
+SPDXID: SPDXRef-ad921d60-4863-6625-8809-553a3db49a4a
+FileType: SOURCE
+FileChecksum: SHA1: 0
+LicenseConcluded: Unknown
+LicenseInfoInFile: Unknown
+FileCopyrightText: NONE
+FileComment: <text>NONE</text>
+
+
+# Extracted Licenses
+

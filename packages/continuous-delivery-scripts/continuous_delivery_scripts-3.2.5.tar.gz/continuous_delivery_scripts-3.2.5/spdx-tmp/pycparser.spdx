@@ -1,0 +1,50 @@
+# Document Information
+
+SPDXVersion: SPDX-1.2
+DataLicense: CC0-1.0
+DocumentName: pycparser-2.22
+SPDXID: SPDXRef-DOCUMENT
+DocumentNamespace: http://spdx.org/spdxdocs/pycparser-2.22-f63015d7-f8bf-bcc1-883a-4c6552c9ae03
+DocumentComment: <text>This document was created automatically using available information from python packages.</text>
+
+
+# Creation Info
+
+Creator: Person: Eli Bendersky (eliben@gmail.com)
+Creator: Tool: mbed-spdx-generator
+Created: 2025-01-13T09:18:51Z
+
+
+# Package
+
+PackageName: pycparser
+SPDXID: SPDXRef-pycparser
+PackageVersion: 2.22
+PackageDownloadLocation: NONE
+PackageSummary: <text>C parser in Python</text>
+PackageFileName: pycparser
+PackageOriginator: Person: Eli Bendersky (eliben@gmail.com)
+PackageChecksum: SHA1: NOASSERTION
+PackageVerificationCode: NOASSERTION
+PackageDescription: <text>NOASSERTION</text>
+PackageLicenseDeclared: BSD-3-Clause
+PackageLicenseConcluded: BSD-3-Clause
+PackageLicenseInfoFromFiles: BSD-3-Clause
+PackageCopyrightText: NOASSERTION
+PackageHomePage: https://github.com/eliben/pycparser
+
+
+# File
+
+FileName: UNKNOWN
+SPDXID: SPDXRef-ad921d60-4863-6625-8809-553a3db49a4a
+FileType: SOURCE
+FileChecksum: SHA1: 0
+LicenseConcluded: BSD-3-Clause
+LicenseInfoInFile: BSD-3-Clause
+FileCopyrightText: NONE
+FileComment: <text>NONE</text>
+
+
+# Extracted Licenses
+
