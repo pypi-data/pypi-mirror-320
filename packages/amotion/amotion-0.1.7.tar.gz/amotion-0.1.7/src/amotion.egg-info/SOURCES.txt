@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/amotion/__init__.py
+src/amotion/amotion.py
+src/amotion.egg-info/PKG-INFO
+src/amotion.egg-info/SOURCES.txt
+src/amotion.egg-info/dependency_links.txt
+src/amotion.egg-info/requires.txt
+src/amotion.egg-info/top_level.txt
