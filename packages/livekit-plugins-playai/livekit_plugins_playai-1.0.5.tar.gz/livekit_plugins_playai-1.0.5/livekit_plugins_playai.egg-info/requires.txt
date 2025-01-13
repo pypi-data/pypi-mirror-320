@@ -1,0 +1,4 @@
+livekit-agents[codecs]>=0.12.3
+pyht>=0.1.10
+aiohttp
+livekit
