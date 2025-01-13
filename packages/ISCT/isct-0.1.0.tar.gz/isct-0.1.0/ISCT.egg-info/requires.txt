@@ -1,0 +1,5 @@
+numpy<2
+pandas>=2.0.1
+scikit-learn>=1.2.2
+prefixspan>=0.5.2
+graphviz>=0.20.3
