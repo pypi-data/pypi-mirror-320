@@ -1,0 +1,14 @@
+pygdk/__init__.py,sha256=-9qYJOF668aZ1VDWaTe6p8ZrZGck4ldnzu01G-cdA1Y,60
+pygdk/__init__.pyi,sha256=PWd-j_ohu6B9xLl61XqKfYGfDcn1sBRYAcbK4ftBTwo,147
+pygdk/base.py,sha256=Awjy7tFhtCLcsP8Ger9GrAG-1fllAYKtOaamgheVd4c,137
+pygdk/draw.py,sha256=X17eC_0IRli-s13YUhIMAZ_vO70ak6ukpCkLGogqpBU,346
+pygdk/font.py,sha256=sqBv0LhiDupKoxDurfQmUiUY4nKb8pj-OUTYeTdVnmA,249
+pygdk/surface.py,sha256=geQXO3bqklsjEoIfOmhha3INtI936aCMu4omQC502nY,584
+pygdk/surface.pyi,sha256=rTYjbqTbPPYuO6GcQXGo7XKkS5EkEM8rU-tSDKPYezk,136
+pygdk/typing.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygdk/typing.pyi,sha256=_TKdFvC3vCxKes4QzBP_w6MgyYsF933roI97YVkcBxk,101
+pygdk-1.0.0a2.dist-info/LICENSE,sha256=g5L0KxjSDnGjxVZ1_ZO-qxMUfH0dQgwkoo1a2CvsttM,1088
+pygdk-1.0.0a2.dist-info/METADATA,sha256=P1XPqV4mF0MTnaLvA41Kk6OGjix1Mv_SsltsjVqfncc,1646
+pygdk-1.0.0a2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pygdk-1.0.0a2.dist-info/top_level.txt,sha256=0Hu9Ymolsp4c5dHwdwewfSykAYw0zG4M0d9Xox6RcIU,6
+pygdk-1.0.0a2.dist-info/RECORD,,
