@@ -1,0 +1,11 @@
+grapheme/__init__.py,sha256=hxyYHOfH8R3HNRZJwUqXUtH7IaZEb-OrS-u_7Cifofs,498
+grapheme/api.py,sha256=aSjcA0SL5AyjP1vLidQfQGjzEQvUl1CNjo0-KKKwFQI,6938
+grapheme/finder.py,sha256=5MDs6Yz2vOvLfbCgZiux_dM3pLhyZnZT8-pTIw4T0Kk,10417
+grapheme/grapheme_property_group.py,sha256=M7RtUfpU-Ih57rh205lEkY6A02brpi_DkP409Ev1P8M,4345
+grapheme/incb_property_group.py,sha256=7pwVDs8lwOilwIzlfdHfyAMajd4OdnTgZd30_0dJpTY,855
+grapheme/data/derived_core_property.json,sha256=Nh2zqH7_8CEaP-cZnCukPoTbYSV2vXRBKlaq9_pFmxw,15799
+grapheme/data/grapheme_break_property.json,sha256=xfii2h6nLFlEQLDsUv0m3IyVp5T68vHL80QEQKCPa0c,49835
+graphemeu-0.7.1.dist-info/METADATA,sha256=roRiT7HJgmR8X9mj8auhtA9myNWuWNnAxUCPMd9e9tw,7812
+graphemeu-0.7.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+graphemeu-0.7.1.dist-info/licenses/LICENSE,sha256=5C-FGmz88SRAxQ1ane-5rFxJJtWQbN0tGxq7nitAUSI,1191
+graphemeu-0.7.1.dist-info/RECORD,,
