@@ -1,0 +1,12 @@
+donifaranga/__init__.py,sha256=IILge-3HATlXq3BmewTZDL9x-dEOSbaYKzHwhKRFlL0,64
+donifaranga/client.py,sha256=aoXgzUrQOa-JLjRA9DKSZ6k6v1OwfeYC49s0riEqH4I,19229
+donifaranga/config.py,sha256=e2hYTu74CmpD_R8IZ59vMy97VRQZK9Z8DeS25LVGCX4,147
+donifaranga/server.py,sha256=ILmILg7SN-gGQLbPADSui65OJK3K_0iNDhglg0ZT6jc,1149
+donifaranga/utils.py,sha256=xOgVTCmIwQ16b7sjJAg_XbINas3FKVdDh6lfrBwycpM,3529
+donifaranga/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+donifaranga/routes/__init__.py,sha256=AxJQjBX6jrOHM9I959VoPw_ZWGI0IbIfL-lFvswaenY,11025
+donifaranga-0.0.3.dist-info/LICENSE,sha256=1ktdLQi9GZwV40ECAse4zQBYcYms31aV_cQDSh4HGD8,1076
+donifaranga-0.0.3.dist-info/METADATA,sha256=tAgOushT3mv6FdtlLRKDUHasGY6IvtWJuOdJeU6hw54,1279
+donifaranga-0.0.3.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+donifaranga-0.0.3.dist-info/top_level.txt,sha256=teTu0a2bFNL2lb1gJi9RnDFk197H86fVIhEZEHMncck,12
+donifaranga-0.0.3.dist-info/RECORD,,
