@@ -1,0 +1,9 @@
+aisys/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aisys/conversational.py,sha256=e-rHwaNeRNK432ohB2HmVVbAqVlXa_wQ-doqrdWvplc,8678
+aisys/int_tts.py,sha256=JkGD1AG1PxGkVDJBq3HMPr3uL4nEgS_qfrG8fz9dLII,460
+aisys/logs/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aisys/main.py,sha256=Os_xYZco5IeXZr331VZ1YmR2ASEuf4MJQSWuygDUmFM,1982
+aisys-0.1.0.dist-info/METADATA,sha256=L91NI6f7Ex4XDJmeY3kG9GXIUfXP9811JTR_9OLmGLU,2069
+aisys-0.1.0.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+aisys-0.1.0.dist-info/entry_points.txt,sha256=Soib2ceD_o2bqnIpHJljfzbZ0i60QhmFq2in2LrYnME,42
+aisys-0.1.0.dist-info/RECORD,,

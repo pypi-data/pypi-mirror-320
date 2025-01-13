@@ -1,0 +1,3 @@
+[console_scripts]
+aisys=system.main:main
+
