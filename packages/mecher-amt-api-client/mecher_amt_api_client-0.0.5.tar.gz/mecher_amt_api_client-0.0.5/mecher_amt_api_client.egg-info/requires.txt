@@ -1,0 +1,3 @@
+allure-pytest==2.13.5
+requests==2.32.3
+mecher-base-api-client==0.0.21
