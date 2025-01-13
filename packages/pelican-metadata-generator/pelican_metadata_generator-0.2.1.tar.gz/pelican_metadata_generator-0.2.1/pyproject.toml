@@ -1,0 +1,32 @@
+[project]
+name = "pelican-metadata-generator"
+version = "0.2.1"
+description = ""
+authors = [
+    {name = "Mirek Długosz", email = "mirek@mirekdlugosz.com"},
+]
+license = { text = "AGPL-3.0-or-later" }
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "python-slugify (>=8.0.4,<9.0.0)",
+    "PyQt5 (>=5.15.0,<6.0.0)",
+    "PyQt5-Qt5 (>=5.15.2,<6.0.0)",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest (>=8.0.1,<9.0.0)",
+    "flake8 (>=7.0.0,<8.0.0)",
+    "black (>=24.2.0,<25.0.0)",
+]
+
+[project.urls]
+Repository = "https://github.com/mirekdlugosz/pelican-metadata-generator"
+
+[project.scripts]
+pelican-metadata-generator = "pelican_metadata_generator.cli:main"
+
+[build-system]
+requires = ["poetry>=2.0.0"]
+build-backend = "poetry.masonry.api"
