@@ -1,0 +1,22 @@
+#--------------------------------------------------------------------------------
+# 참조 모듈 목록.
+#--------------------------------------------------------------------------------
+from __future__ import annotations
+from typing import Awaitable, Callable, Final, Generic, Iterable, Iterator, Optional, Sequence, Type, TypeVar, Tuple, Union
+from typing import ItemsView, KeysView, ValuesView
+from typing import IO, TextIO, BinaryIO
+from typing import Any, List, Dict, Set
+from typing import cast, overload
+import builtins
+from enum import Enum, auto
+
+
+
+#--------------------------------------------------------------------------------
+# 지원 버전 종류.
+#--------------------------------------------------------------------------------
+class SupportVersionType(Enum):
+	#--------------------------------------------------------------------------------
+	# 멤버 요소 목록.
+	#--------------------------------------------------------------------------------
+	MAX2023 = auto()
