@@ -1,0 +1,82 @@
+import fnmatch
+from copy import copy
+
+from ..src.tcr_console import console as c
+from . import tcrr_nodes as m_nodes
+
+
+def get_nodes_by_name_from_root_nodes(
+	root_nodes: tuple["m_nodes.Node"],
+	name: str,
+	*names: str,
+) -> tuple["m_nodes.Node"]:
+	maching_nodes = []
+
+	for node in root_nodes:
+		if isinstance(node, str):
+			# c.warn("Ignoring isinstance(node, str)==True in get_nodes_by_name_from_root_nodes")
+			continue
+
+		if not fnmatch.fnmatch(node.name, name):
+			continue
+
+		maching_nodes.append(node)
+
+	if not names:
+		return tuple(maching_nodes)
+
+	return get_nodes_by_name_from_root_nodes([child for node in maching_nodes for child in node.children], *names)
+
+
+def parse_and_submit_nodes(
+	input_str: str,
+	nodes: tuple["m_nodes.Node | str", ...],
+	_root_nodes: tuple["m_nodes.Node", ...] = None,
+) -> tuple["m_nodes.Node"]:
+	if _root_nodes is None:
+		_root_nodes = nodes  # No need to copy i tihnk?
+
+	for node in nodes:
+		groups = node.match(input_str)
+
+		if groups is None:
+			continue
+
+		if len(groups) == 2:
+			groups = (*groups, False)
+
+		node_text, rest, incomplete = groups
+
+		node_text = node_text
+
+		node = copy(node)
+
+		node.submit(node_text)
+
+		if rest:
+			node_children = [
+				x
+				for y in (
+					get_nodes_by_name_from_root_nodes(
+						_root_nodes,
+						*x.split("/"),
+					)
+					if isinstance(x, str)
+					else (x,)
+					for x in node.children
+				)
+				for x in y
+			]
+
+			rest = parse_and_submit_nodes(rest, node_children, _root_nodes)
+		else:
+			rest = ()
+
+		if incomplete:
+			incomplete = (m_nodes.IncompleteNode(unknown_text="?"),)
+		else:
+			incomplete = ()
+
+		return (node, *incomplete, *rest)
+
+	return (m_nodes.UnknownNode(unknown_text=input_str),)
