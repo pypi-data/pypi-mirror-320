@@ -1,0 +1,12 @@
+stubgen_pyx/__init__.py,sha256=2Yrhtuu62JbPrXsNyzrEEFdXeGlvyivIQ3tXZSZchlQ,259
+stubgen_pyx/__main__.py,sha256=fxlXz6hbFrbwVA7ERXmSfkteBRAgdsSYeSEld57Q-dA,592
+stubgen_pyx/_version.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+stubgen_pyx/build.py,sha256=v3OHLDNZpxMEHyTJC6h5gDoMAZ66XlmsJt1qMiWl7hk,2696
+stubgen_pyx/convert.py,sha256=Fvoqfz8P1-NT6H2c0X8_vFCGfBxXbx5ppmEQrOyUMKk,11810
+stubgen_pyx/stubgen.py,sha256=Frh5abpGdbPwBgeyq0X2-heTyf5l-Rq3S3-KK6e6l1w,811
+stubgen_pyx-0.1.1.dist-info/LICENSE,sha256=uw31I0f3snCnKfTTz3uU5xy5JfJIDSDJkWHyo2Y5Ab4,1074
+stubgen_pyx-0.1.1.dist-info/METADATA,sha256=7csJfoA6cPPr0wI3IHjHxB0EgqIz1FQaADyeZxN_pv4,2032
+stubgen_pyx-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+stubgen_pyx-0.1.1.dist-info/entry_points.txt,sha256=R-0ERoMH43EY5MzVD5f07cTeoS0ELnWZ1siaMGUfJz4,58
+stubgen_pyx-0.1.1.dist-info/top_level.txt,sha256=Etp2p3BfvBAVgTNFDDdKB_0gldHnyhdWGEJWqjVteEE,12
+stubgen_pyx-0.1.1.dist-info/RECORD,,
