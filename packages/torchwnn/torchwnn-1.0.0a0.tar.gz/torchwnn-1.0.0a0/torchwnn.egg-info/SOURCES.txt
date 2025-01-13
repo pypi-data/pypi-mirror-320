@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+torchwnn.egg-info/PKG-INFO
+torchwnn.egg-info/SOURCES.txt
+torchwnn.egg-info/dependency_links.txt
+torchwnn.egg-info/requires.txt
+torchwnn.egg-info/top_level.txt
