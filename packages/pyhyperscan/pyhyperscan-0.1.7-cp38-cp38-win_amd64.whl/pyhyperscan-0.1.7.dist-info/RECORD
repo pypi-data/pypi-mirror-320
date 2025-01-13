@@ -1,0 +1,11 @@
+pyhyperscan/__init__.py,sha256=F3HFSHjONUpInV2h8fIwb5EZueGG7_i9b77XBf-7nNE,896
+pyhyperscan/hs.dll,sha256=gTH28DbO8G8aqhlJds4Z6SBpZJXHWRc39FqTwOH7x2o,3993088
+pyhyperscan/hs_runtime.dll,sha256=A1BS1zuL8tnC016OhxjfOHX0Ggl4FS3szvKcEcSjQc4,834560
+pyhyperscan/pyhyperscan.c,sha256=E7olB9ILDYlwDzXwtazzwL1LXtaxywDovvvMDMP3jWE,395895
+pyhyperscan/pyhyperscan.cp38-win_amd64.pyd,sha256=8z711PjfM_tRuuKQkAM9VimAHuWl6S7gt132_4QIwlU,65024
+pyhyperscan/lib/win/hs.dll,sha256=gTH28DbO8G8aqhlJds4Z6SBpZJXHWRc39FqTwOH7x2o,3993088
+pyhyperscan/lib/win/hs_runtime.dll,sha256=A1BS1zuL8tnC016OhxjfOHX0Ggl4FS3szvKcEcSjQc4,834560
+pyhyperscan-0.1.7.dist-info/METADATA,sha256=ZphYJ1Il_KTi34NrIuKIUcFZehpG_Ea7RwzUg6pe1qY,5468
+pyhyperscan-0.1.7.dist-info/WHEEL,sha256=M2GQ3lde8oJhlQPj2wbRvnqE3cuovPJasri5X5aCmck,100
+pyhyperscan-0.1.7.dist-info/top_level.txt,sha256=W-Ks2_IRl4loKgcnfGuwzEeQYZ7kEel10coQ1Wloa80,12
+pyhyperscan-0.1.7.dist-info/RECORD,,
