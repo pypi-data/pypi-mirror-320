@@ -1,0 +1,2 @@
+[console_scripts]
+vp_models = main:main
