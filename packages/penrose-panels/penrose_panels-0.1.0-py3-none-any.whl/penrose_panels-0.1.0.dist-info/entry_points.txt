@@ -1,0 +1,2 @@
+[console_scripts]
+penrose-panels = penrose_panels:main
