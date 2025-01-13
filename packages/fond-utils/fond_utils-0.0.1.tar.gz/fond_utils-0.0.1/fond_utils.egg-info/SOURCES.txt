@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+bin/fond-utils
+fond_utils.egg-info/PKG-INFO
+fond_utils.egg-info/SOURCES.txt
+fond_utils.egg-info/dependency_links.txt
+fond_utils.egg-info/not-zip-safe
+fond_utils.egg-info/requires.txt
+fond_utils.egg-info/top_level.txt
+fondutils/__main__.py
+fondutils/determizer.py
+fondutils/normalizer.py
