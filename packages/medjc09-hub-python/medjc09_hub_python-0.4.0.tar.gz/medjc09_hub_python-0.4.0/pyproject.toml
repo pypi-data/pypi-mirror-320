@@ -1,0 +1,75 @@
+[project]
+authors = [
+  {name = "OctSquid", email = "pqvs6k96@s.okayama-u.ac.jp"},
+]
+dependencies = [
+  "cobs>=1.2.1",
+  "pyserial-asyncio>=0.6",
+  "python-dotenv>=1.0.1",
+  "asyncio>=3.4.3",
+]
+description = "Python library for medjc09 hub"
+name = "medjc09-hub-python"
+readme = "README.md"
+requires-python = ">= 3.8, <= 3.12"
+version = "0.4.0"
+license = { text = "MIT" }
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling==1.26.3", "hatch-vcs"]
+
+[tool.rye]
+dev-dependencies = [
+  "ruff>=0.4.5",
+  "mypy>=1.10.0",
+  "pytest>=8.2.1",
+  "pytest-asyncio>=0.25.2",
+  "build>=1.2.1",
+]
+managed = true
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/medjc09"]
+
+[tool.mypy]
+ignore_missing_imports = true
+strict = true
+
+[tool.ruff]
+indent-width = 2
+line-length = 120
+
+[tool.ruff.lint]
+ignore = []
+select = [
+  "F", # pyflakes
+  "E", # pycodestyle
+  "W", # pycodestyle warnings
+  "I", # isort
+  "D", # pydocstyle
+]
+
+extend-ignore = [
+  "D100", # undocumented-public-method
+  "D104", # undocumented-public-package
+  "D105", # undocumented-magic-method
+  "D107", # undocumented-public-init
+  "D205", # blank-line-after-summary
+  "D415", # ends-in-punctuation
+]
+
+[tool.ruff.lint.pydocstyle]
+# docstringはgoogle style
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+# 個別設定
+# __init__.pyは未使用インポートを許容
+"__init__.py" = ["F401"]
+
+[tool.ruff.format]
+indent-style = "space"
