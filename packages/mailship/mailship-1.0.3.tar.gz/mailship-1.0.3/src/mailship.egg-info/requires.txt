@@ -1,0 +1,9 @@
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+beautifulsoup4
+google-auth
+cryptography
+pyvirtualdisplay>=3.0
+chromedriver-autoinstaller>=0.5
+selenium>=4.0.0
