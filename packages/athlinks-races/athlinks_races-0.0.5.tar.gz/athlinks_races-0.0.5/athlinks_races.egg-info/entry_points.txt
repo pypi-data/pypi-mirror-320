@@ -1,0 +1,2 @@
+[console_scripts]
+athlinks_races_cli = athlinks_races.cli:main
