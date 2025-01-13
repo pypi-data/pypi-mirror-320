@@ -1,0 +1,13 @@
+siun/__init__.py,sha256=quxJhE7Abe2_SZtY0FZd-wmXQgMDeCm6iOz4bGljVKk,70
+siun/__main__.py,sha256=d-XdtpK4CPmbQvw7jJqanmSAoJMBzck6gGVWeCoXq08,47
+siun/config.py,sha256=Zn79n0ef11qDjrdFEK9GExWNO_QskCPmCjyJihg9Tas,3428
+siun/criteria.py,sha256=q6S5_KKhgoTFVEWKKQhsRqC6DqFkcsq2vHjbn5IDCPg,1324
+siun/errors.py,sha256=F30xzWl45GJlvfHhExMa88ePi-FdECbV4DweH83EVS0,1196
+siun/formatting.py,sha256=CMhLaX97BET9o36oRX3agFfySPdyNApqhfmQVLKim08,2359
+siun/main.py,sha256=OvaoJqp5vGekVTnwallx2TQDsv021X92bGeez9rcSUo,4972
+siun/state.py,sha256=pxlkgSI60zOKspV0oD3MWieKX5W90Qgl_Lefv7MOrBI,9446
+siun-1.2.0.dist-info/METADATA,sha256=8kzsGSgYJu_Gkc1JZJaQtad-wXLd89V7piWlBsfZ72E,5478
+siun-1.2.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+siun-1.2.0.dist-info/entry_points.txt,sha256=obVRUVRh0fPQHRa0ePizN_7bZ1ZmxqASsHb736LlU0E,39
+siun-1.2.0.dist-info/licenses/LICENSE.txt,sha256=FKo7IWjpfwjmbVRR6vOw7Ng_QMDX_63yRaVBteFIsPc,1104
+siun-1.2.0.dist-info/RECORD,,
