@@ -1,0 +1,12 @@
+pdftokenizer/__about__.py,sha256=hvlBitQ-0DXQ7NciQIh9nDMmvoAsfZxYuPlbnTMGtFw,124
+pdftokenizer/__init__.py,sha256=qRDFaJOd3XDXFu9BFWpV3Pkw0R_nbbZL4ZwOkZImDPc,1406
+pdftokenizer/types.py,sha256=zWaZgQcbROmtilUkUzFzNt1D0B7OEYhoCheYN6-4WUs,259
+pdftokenizer/utils.py,sha256=ehErXcUFlG9NHXN7hSE1lLna1rOWmwoGtjP75IXPyXc,3395
+pdftokenizer/extractors/__init__.py,sha256=FDLlIp_Z76RVGt9BxcP3vIkC4hXETRwYawzCyzZ1XrY,205
+pdftokenizer/extractors/base.py,sha256=XqM49ZMs5YdyE35GQKNIqS6Tu_h735Zt2SorJqUHAlk,415
+pdftokenizer/extractors/pdfplumber.py,sha256=Yh6LsppD2lOIVc28AsA5WjLPCbtaHLT3lboEweBvKf4,1752
+pdftokenizer/extractors/tesseract.py,sha256=8oeSAyybacgybpil03O4Sz45oZvWLWh9795TpMispPM,3126
+pdftokenizer-0.0.3.dist-info/METADATA,sha256=ivYydNFnXJxqwtuq4lP94HE_8G5VQG-vcMdixlVdiLY,2996
+pdftokenizer-0.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pdftokenizer-0.0.3.dist-info/licenses/LICENSE.txt,sha256=wvIPgHGvCpGc3uXMr3bDMY0y90-tewONiM3wYNznULc,1099
+pdftokenizer-0.0.3.dist-info/RECORD,,
