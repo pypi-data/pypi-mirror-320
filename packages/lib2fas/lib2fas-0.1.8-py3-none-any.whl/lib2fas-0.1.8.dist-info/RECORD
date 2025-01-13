@@ -1,0 +1,11 @@
+lib2fas/__about__.py,sha256=aZvcCUtIDJh7HtQaT958aYrYt3XwEpfFToQn8wGBAUY,68
+lib2fas/__init__.py,sha256=9edHIo2kgOTQOk4SCItMFfQgaDxD96_fwBUCxm7pVnI,148
+lib2fas/_security.py,sha256=Fluuos747697KA4fewjIZBS8AHOxq-7mZxagV5F9UNc,8386
+lib2fas/_types.py,sha256=bTD2imVXF_rqKTUryP_TlGunIhpM9OCNAsK7cGWJWr8,2942
+lib2fas/core.py,sha256=Y46Xe0EuBnUToJ08hQ4-15ayXX2Dxb_5mA1YPm-3N64,7035
+lib2fas/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lib2fas/utils.py,sha256=UNKACWLjIpr7gnW5wyysKgp4z1sJwTmTXsWzM3FRmok,480
+lib2fas-0.1.8.dist-info/METADATA,sha256=LOtzYzUty1az9Niml8HvymWvRb0SzZPylzKcvxoi2Dw,3016
+lib2fas-0.1.8.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+lib2fas-0.1.8.dist-info/licenses/LICENSE,sha256=vZFItjo49KYGXUHjBEQCtLtb_ohz0Pw86zCPlqMviMA,1062
+lib2fas-0.1.8.dist-info/RECORD,,
