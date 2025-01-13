@@ -1,0 +1,14 @@
+[project]
+name = "random-wikipedia-article-bebebeeeyan"
+version = "0.1"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+random-wikipedia-article-bebebeeeyan = "random_wikipedia_article_bebebeeeyan:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
