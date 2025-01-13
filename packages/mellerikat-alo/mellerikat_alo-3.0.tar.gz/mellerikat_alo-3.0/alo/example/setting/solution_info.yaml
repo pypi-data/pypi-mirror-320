@@ -1,0 +1,18 @@
+contents_type:
+  labeling_column_name: null
+  support_labeling: true
+detail:
+- content: ''
+  title: ''
+inference:
+  cpu: amd64
+  datatype: table
+  gpu: false
+  only: false
+name: asd
+overview: asd
+train:
+  datatype: table
+  gpu: false
+type: private
+update: false
