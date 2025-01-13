@@ -1,0 +1,9 @@
+# Include all WSDL files from the ressources subdirectory and its subdirectories
+recursive-include enedis/ressources *.wsdl
+
+# Include all XSD files from the ressources subdirectory and its subdirectories
+recursive-include enedis/ressources *.xsd
+
+# Include any README, LICENSE, and other top-level data files
+include README.md
+include LICENSE
