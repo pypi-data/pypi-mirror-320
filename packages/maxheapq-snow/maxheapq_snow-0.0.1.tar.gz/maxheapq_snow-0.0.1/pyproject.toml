@@ -1,0 +1,18 @@
+[project]
+name = "maxheapq_snow"
+version = "0.0.1"
+authors = [
+  { name="snow Avocado", email="nikhilreddymara@gmail.com" },
+]
+description = "Max binary heap module, similar to heapq"
+readme = "README.md"
+requires-python = ">=3.10.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/snowAvocado/maxheapq"
+Issues = "https://github.com/snowAvocado/maxheapq/issues"
