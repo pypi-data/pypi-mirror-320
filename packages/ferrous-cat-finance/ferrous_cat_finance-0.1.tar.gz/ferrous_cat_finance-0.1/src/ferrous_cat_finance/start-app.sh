@@ -1,0 +1,1 @@
+.venv/bin/python3 financial_app.py

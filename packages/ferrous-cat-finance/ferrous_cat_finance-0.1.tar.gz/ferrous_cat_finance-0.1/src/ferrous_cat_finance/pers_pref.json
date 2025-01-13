@@ -1,0 +1,19 @@
+{
+	"main_font":		"verdana",
+	"main_font_size":	14,
+	"head_font":		"tahoma",
+	"head_font_size":	21,
+	"text-highlight-color":	"#7799CC",
+	"display_line_count": 1.65,
+
+	"openquote_character":	"“",
+	"closequote_character":	"”",
+
+	"initial_load_num":	60,
+	"default_min_year": 2024,
+	"do_alt_power_sep":	true,
+	"do_american_date_format":	false,
+
+	"confirm_new_record":		true,
+	"mixed_cashflow_allowed":	false
+}
