@@ -1,0 +1,13 @@
+num2words
+regex
+spacy
+spacy-curated-transformers
+fugashi
+g2pk2
+jaconv
+jieba
+mojimoji
+ordered-set
+pypinyin
+unicodedata2
+unidic-lite
