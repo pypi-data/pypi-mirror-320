@@ -1,0 +1,11 @@
+lddtest/__init__.py,sha256=4l1XgzsDOkfjBRfi0vrIFfWAb5CHwXs8sLrhQhYQZJ4,75
+lddtest/dcdensity.py,sha256=iBaf_9VcOESPJY4kG2E4NGlNCtPoQ4ozEPViNt8QMR4,13164
+lddtest/enums.py,sha256=X1SZmiwgShBoudjrm22FsL6TtvkmNQ4fH0u9e1rOVQQ,882
+lddtest/hartman.py,sha256=FE76rETJc73Um-iN1wxn2LEqhRMNcSThvPkrktUw5Ow,4352
+lddtest/kernel.py,sha256=AjJVGfhaNMUXtYgzAhBsfajLnLPi0gnxxNWCBElCTO4,1000
+lddtest/lddtest.py,sha256=bqbFWPvwEm4yK3fBoulBjFmM14qfGkS9vhEYnKCLWdM,7217
+lddtest/utils.py,sha256=1YmGJNq2Q1r2gI7bVHATwJQqCWhJ2g1fSMj6JnDOMG8,1114
+lddtest-0.1.2.dist-info/LICENSE,sha256=QrUerY6HEACSBu6XjnQzsDDbeGPsQAPSDf59MyfF9IU,1068
+lddtest-0.1.2.dist-info/METADATA,sha256=jOYf-7SNckPacdHkmlmzzBXTd103yG-4vsdUoCT_p1I,1348
+lddtest-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+lddtest-0.1.2.dist-info/RECORD,,
