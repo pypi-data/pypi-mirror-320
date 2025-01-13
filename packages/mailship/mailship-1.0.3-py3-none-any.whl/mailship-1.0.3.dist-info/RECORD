@@ -1,0 +1,13 @@
+mailship/__init__.py,sha256=Zhk98yblZlEY_4ReKX972phBItZhERw6qeNy4KrkD0U,299
+mailship/auth.py,sha256=AdXPpYWK7gjDaDKRd9o3QZpfrXBnPmnnexMgnb0PpwY,7633
+mailship/email_generator.py,sha256=jSTmkFS_De5PhOysvFBMuoDlz-vDaFabWaPBpupKckI,4230
+mailship/email_listener.py,sha256=YqnZAxspVaBHCxG3pDB2vSxScW9p7oKaPV8KF3N_uJ4,8693
+mailship/email_parser.py,sha256=90dqnObD7B6Pz1kyd-4GvXjfOZd7qqpNV8XHZTe8_x0,7486
+mailship/operations.py,sha256=K55Zvjr1T4NWSzk5-dc9AQc0DMHilhui0SXFU18CI2Y,6132
+mailship/setup_auth.py,sha256=W3n8Jy90hY-WrGPBCd1T-BGDcycYArzuBg2l3G0i6qU,11026
+mailship-1.0.3.dist-info/LICENSE,sha256=zRTi8ouh7fosgaK0aC17GcpD5c4sZlSqkmvVyWDiDMM,1301
+mailship-1.0.3.dist-info/METADATA,sha256=kb_rAwfG5iRibNP_f0NDRKqCHLEuu9LVnXelJeqi-Jw,6464
+mailship-1.0.3.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+mailship-1.0.3.dist-info/entry_points.txt,sha256=7yN85sQzanXVqagI09XjDcZXicLqyJNSK7S07oxsPxk,61
+mailship-1.0.3.dist-info/top_level.txt,sha256=PNIEVi0Qgdqkn42JxlRcLJYsG5thqV7BmM5lLwDuyDk,9
+mailship-1.0.3.dist-info/RECORD,,
