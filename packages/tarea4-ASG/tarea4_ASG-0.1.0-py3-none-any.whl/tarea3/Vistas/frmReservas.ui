@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Reservas</class>
+ <widget class="QWidget" name="Reservas">
+  <property name="windowModality">
+   <enum>Qt::WindowModality::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>823</width>
+    <height>367</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Reservas</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #2E2E2E;
+        color: #FFFFFF;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+           border: 1px solid #555555;  
+        border-radius: 5px;
+        padding: 5px;
+</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>760</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="verticalSpacing">
+     <number>3</number>
+    </property>
+    <item row="1" column="1">
+     <widget class="QLabel" name="label_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <kerning>false</kerning>
+        <fontweight>Medium</fontweight>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">;</string>
+      </property>
+      <property name="text">
+       <string>Teléfono</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QDateEdit" name="asg_fecha">
+      <property name="toolTip">
+       <string>Selecciona fecha para Reserva</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">        background-color: #3A3A3A;
+        color: #FFFFFF;
+        border: 1px solid #555555;  /* Borde para los campos */
+        border-radius: 5px;
+        padding: 4px;</string>
+      </property>
+      <property name="dateTime">
+       <datetime>
+        <hour>19</hour>
+        <minute>0</minute>
+        <second>0</second>
+        <year>1999</year>
+        <month>12</month>
+        <day>31</day>
+       </datetime>
+      </property>
+      <property name="currentSection">
+       <enum>QDateTimeEdit::Section::DaySection</enum>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QComboBox" name="asg_tipoReserva">
+      <property name="toolTip">
+       <string>Selecciona el tipo de Reserva</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">        background-color: #3A3A3A;
+        color: #FFFFFF;
+        border: 1px solid #555555;  /* Borde para los campos */
+        border-radius: 5px;
+        padding: 4px;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QLabel" name="label_6">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <kerning>false</kerning>
+        <fontweight>Medium</fontweight>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">;</string>
+      </property>
+      <property name="text">
+       <string>Tipo de Cocina</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLabel" name="label_3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <kerning>false</kerning>
+        <fontweight>Medium</fontweight>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">;</string>
+      </property>
+      <property name="text">
+       <string>Tipo de Reserva</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="4">
+     <widget class="QLabel" name="asg_textoCongreso">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::InputMethodHint::ImhNone</set>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::NoFrame</enum>
+      </property>
+      <property name="text">
+       <string>Número de jornadas del Congreso</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QSpinBox" name="asg_numeroAsis">
+      <property name="toolTip">
+       <string>Selecciona el número de asistentes</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">        background-color: #3A3A3A;
+        color: #FFFFFF;
+        border: 1px solid #555555;  /* Borde para los campos */
+        border-radius: 4px;
+        padding: 2px;
+    
+</string>
+      </property>
+      <property name="buttonSymbols">
+       <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="label">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <kerning>false</kerning>
+        <fontweight>Medium</fontweight>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">;</string>
+      </property>
+      <property name="text">
+       <string>Nombre </string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="5">
+     <widget class="QSpinBox" name="asg_numJorn">
+      <property name="toolTip">
+       <string>Selecciona cuantas jornadas durará el congreso</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">        background-color: #3A3A3A;
+        color: #FFFFFF;
+        border: 1px solid #555555;  /* Borde para los campos */
+        border-radius: 5px;
+        padding: 1px;</string>
+      </property>
+      <property name="buttonSymbols">
+       <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLabel" name="label_4">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <kerning>false</kerning>
+        <fontweight>Medium</fontweight>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">;</string>
+      </property>
+      <property name="text">
+       <string>Fecha</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLineEdit" name="asg_lineaTel">
+      <property name="toolTip">
+       <string>Introduce teléfono para la reserva</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">        background-color: #3A3A3A;
+        color: #FFFFFF;
+        border: 1px solid #555555;  /* Borde para los campos */
+        border-radius: 5px;
+        padding: 4px;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="5">
+     <widget class="QComboBox" name="asg_tipoCocina">
+      <property name="toolTip">
+       <string>Selecciona el tipo de Cocina</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">        background-color: #3A3A3A;
+        color: #FFFFFF;
+        border: 1px solid #555555;  /* Borde para los campos */
+        border-radius: 5px;
+        padding: 1px;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLabel" name="label_5">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <kerning>false</kerning>
+        <fontweight>Medium</fontweight>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="styleSheet">
+       <string>;</string>
+      </property>
+      <property name="text">
+       <string>Número de Asistentes</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLineEdit" name="asg_lineaNombre">
+      <property name="toolTip">
+       <string>Introduce nombre para la reserva</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">        background-color: #3A3A3A;
+        color: #FFFFFF;
+        border: 1px solid #555555;  /* Borde para los campos */
+        border-radius: 5px;
+        padding: 4px;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="5">
+     <widget class="QCheckBox" name="asg_checkBox">
+      <property name="toolTip">
+       <string>Seleccciona solo si los asistentes necesitan habitación</string>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::RightToLeft</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>¿Habitaciones para asistentes?</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>250</y>
+     <width>771</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Orientation::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Policy::MinimumExpanding</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>75</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="asg_volver">
+      <property name="styleSheet">
+       <string notr="true">    QPushButton {
+        background-color: #444444;
+        color: #FFFFFF;
+        border: 1px solid #666666;
+        border-radius: 5px;
+        padding: 5px 10px;
+    }
+    QPushButton:hover {
+        background-color: #555555;
+    }
+    QPushButton:pressed {
+        background-color: #666666;
+    }</string>
+      </property>
+      <property name="text">
+       <string>Volver</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="asg_finalizar">
+      <property name="styleSheet">
+       <string notr="true">    QPushButton {
+        background-color: #444444;
+        color: #FFFFFF;
+        border: 1px solid #666666;
+        border-radius: 5px;
+        padding: 5px 10px;
+    }
+    QPushButton:hover {
+        background-color: #555555;
+    }
+    QPushButton:pressed {
+        background-color: #666666;
+    }</string>
+      </property>
+      <property name="text">
+       <string>Finalizar Reserva</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>asg_lineaNombre</tabstop>
+  <tabstop>asg_lineaTel</tabstop>
+  <tabstop>asg_fecha</tabstop>
+  <tabstop>asg_tipoReserva</tabstop>
+  <tabstop>asg_numeroAsis</tabstop>
+  <tabstop>asg_tipoCocina</tabstop>
+  <tabstop>asg_numJorn</tabstop>
+  <tabstop>asg_checkBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
