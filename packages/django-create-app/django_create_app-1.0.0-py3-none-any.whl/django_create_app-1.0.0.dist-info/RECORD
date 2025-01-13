@@ -1,0 +1,9 @@
+create_app/__init__.py,sha256=tCW9YkR3kBRK0KRhygQMRNaiWmsPodY4-B9VWcHAJyA,131
+create_app/apps.py,sha256=D9ECe3KWLt1P-hs0WKALOfLW98CjcAIXKnYrDOFCI-0,159
+create_app/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+create_app/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+create_app/management/commands/startapp.py,sha256=BuPyZ9rgs-mvJNu975ebThy1sFxVXEytYUjFTHrtiiI,379
+django_create_app-1.0.0.dist-info/METADATA,sha256=wc9PHed2UGCv6H3ejlVWS0IVB_ggbM5ss3uWdRul620,2208
+django_create_app-1.0.0.dist-info/WHEEL,sha256=OVMc5UfuAQiSplgO0_WdW7vXVGAt9Hdd6qtN4HotdyA,91
+django_create_app-1.0.0.dist-info/top_level.txt,sha256=XUj2GSa9b3o0yflSHwMjsAcBcNj0yYWmEirjR_NLDF8,11
+django_create_app-1.0.0.dist-info/RECORD,,
