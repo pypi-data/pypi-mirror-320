@@ -1,0 +1,14 @@
+numpy<2
+pandas
+scikit-learn
+torch
+transformers
+tqdm
+matplotlib
+seaborn
+rdkit
+pytorch-lightning
+raygun
+typer
+hydra-core
+molfeat
