@@ -1,0 +1,101 @@
+[
+  [
+    "aiagentsforce_community.callbacks.tracers.ConsoleCallbackHandler",
+    "aibaba-ai-core.tracers.ConsoleCallbackHandler"
+  ],
+  [
+    "aiagentsforce_community.callbacks.tracers.FunctionCallbackHandler",
+    "aibaba-ai-core.tracers.stdout.FunctionCallbackHandler"
+  ],
+  [
+    "aiagentsforce_community.callbacks.tracers.AI Agents ForceTracer",
+    "aibaba-ai-core.tracers.AI Agents ForceTracer"
+  ],
+  [
+    "aiagentsforce_community.callbacks.tracers.AI Agents ForceTracerV1",
+    "aibaba-ai-core.tracers.langchain_v1.AI Agents ForceTracerV1"
+  ],
+  [
+    "aiagentsforce_community.docstore.document.Document",
+    "aibaba-ai-core.documents.Document"
+  ],
+  [
+    "aiagentsforce_community.document_loaders.Blob",
+    "aibaba-ai-core.document_loaders.Blob"
+  ],
+  [
+    "aiagentsforce_community.document_loaders.BlobLoader",
+    "aibaba-ai-core.document_loaders.BlobLoader"
+  ],
+  [
+    "aiagentsforce_community.document_loaders.base.BaseBlobParser",
+    "aibaba-ai-core.document_loaders.BaseBlobParser"
+  ],
+  [
+    "aiagentsforce_community.document_loaders.base.BaseLoader",
+    "aibaba-ai-core.document_loaders.BaseLoader"
+  ],
+  [
+    "aiagentsforce_community.document_loaders.blob_loaders.Blob",
+    "aibaba-ai-core.document_loaders.Blob"
+  ],
+  [
+    "aiagentsforce_community.document_loaders.blob_loaders.BlobLoader",
+    "aibaba-ai-core.document_loaders.BlobLoader"
+  ],
+  [
+    "aiagentsforce_community.document_loaders.blob_loaders.schema.Blob",
+    "aibaba-ai-core.document_loaders.Blob"
+  ],
+  [
+    "aiagentsforce_community.document_loaders.blob_loaders.schema.BlobLoader",
+    "aibaba-ai-core.document_loaders.BlobLoader"
+  ],
+  ["aiagentsforce_community.tools.BaseTool", "aibaba-ai-core.tools.BaseTool"],
+  [
+    "aiagentsforce_community.tools.StructuredTool",
+    "aibaba-ai-core.tools.StructuredTool"
+  ],
+  ["aiagentsforce_community.tools.Tool", "aibaba-ai-core.tools.Tool"],
+  [
+    "aiagentsforce_community.tools.format_tool_to_openai_function",
+    "aibaba-ai-core.utils.function_calling.format_tool_to_openai_function"
+  ],
+  ["aiagentsforce_community.tools.tool", "aibaba-ai-core.tools.tool"],
+  [
+    "aiagentsforce_community.tools.convert_to_openai.format_tool_to_openai_function",
+    "aibaba-ai-core.utils.function_calling.format_tool_to_openai_function"
+  ],
+  [
+    "aiagentsforce_community.tools.convert_to_openai.format_tool_to_openai_tool",
+    "aibaba-ai-core.utils.function_calling.format_tool_to_openai_tool"
+  ],
+  [
+    "aiagentsforce_community.tools.render.format_tool_to_openai_function",
+    "aibaba-ai-core.utils.function_calling.format_tool_to_openai_function"
+  ],
+  [
+    "aiagentsforce_community.tools.render.format_tool_to_openai_tool",
+    "aibaba-ai-core.utils.function_calling.format_tool_to_openai_tool"
+  ],
+  [
+    "aiagentsforce_community.utils.openai_functions.FunctionDescription",
+    "aibaba-ai-core.utils.function_calling.FunctionDescription"
+  ],
+  [
+    "aiagentsforce_community.utils.openai_functions.ToolDescription",
+    "aibaba-ai-core.utils.function_calling.ToolDescription"
+  ],
+  [
+    "aiagentsforce_community.utils.openai_functions.convert_pydantic_to_openai_function",
+    "aibaba-ai-core.utils.function_calling.convert_pydantic_to_openai_function"
+  ],
+  [
+    "aiagentsforce_community.utils.openai_functions.convert_pydantic_to_openai_tool",
+    "aibaba-ai-core.utils.function_calling.convert_pydantic_to_openai_tool"
+  ],
+  [
+    "aiagentsforce_community.vectorstores.VectorStore",
+    "aibaba-ai-core.vectorstores.VectorStore"
+  ]
+]
