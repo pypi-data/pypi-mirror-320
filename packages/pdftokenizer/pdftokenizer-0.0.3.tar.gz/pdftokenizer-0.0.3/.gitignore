@@ -1,0 +1,14 @@
+venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+
+.ruff_cache
+.mypy_cache
+.pytest_cache
+.coverage
+
+dist/
