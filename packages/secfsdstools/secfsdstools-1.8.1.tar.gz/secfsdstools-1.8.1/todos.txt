@@ -1,0 +1,172 @@
+todos
+------
+
+new release
+- adapt readme
+- adapt notebooks
+- in gitpages branch
+    - adapt release notes
+    - adapt index
+- adapt releases in project.toml
+- merge back into main
+- set tag and push tag (format vx.x.x)
+- on github -> under code releases: draft new release
+
+
+v.1.8.0
+bugfix
+- officialtagsonlyjoinedfilter fixed: did actually filter only inofficial tags
+
+changes
+- check for update is always executed, regardless which feature of the framework is used
+  (previously just the collectors caused a check for updates)
+ -> via __init__.py of special c_update_check module, which is imported from the by the main modules
+- whole data update process implemented with a simple process/task framework
+- interface updater classmethod has changed -> taking config-instance
+- concat methods have new option to dropduplicates in resulting sub_df: default is to false
+  -> usecase concat BS and IS together into a single bag
+
+new
+- new config self.no_parallel_processing -> if set to TRUE, all update steps will be executed in a serial manner
+- post_update_hook definition -> called after updates with configuration as parameter
+- post_update_processes definition -> returns processes that are executed after standard process (dld, transform, index)
+
+- hook for after updated logic
+
+    - aufbereitung der daten für bs, is und cf statement möglichst direkt bei update machen,
+      so, dass diese daten schon vorbereitet und gefiltert zur verfügung stehen.
+      vlt. auch eine art postdownload hook anbieten.
+      einfaches pipeline framework
+    - only if flag is set to true
+    - example notebook
+    - configparser.configparser instance wird übergeben -> section default ist sec settings
+
+- process / task framework sollte unabhängig von update verwendet werden können
+   -> als simple process engine
+
+
+
+todos:
+- process/task execution method in task-framework (ok)
+- standardization processes in own module (ok)
+- document automation classes task_framework (ok)
+- tests for task_framework (ok)
+- adapt to changed framework and tests for modules in g_pipeline
+   - concat (ok)
+   - filter (ok)
+   - standardize (ok)
+
+- document modules in g_pipeline
+  - concat (ok)
+  - filter (ok)
+  - standardize (ok)
+
+- successfull run tests / linting (ok)
+
+- base setting for parallel execution to false for "all" processes in config (ok)
+
+- commented config for example update-process (ok)
+
+
+- new notebook documentation / automation (ok)
+
+- remark notebook bulkloading -> directly in the update process (ok)
+
+- readme -> add automation info (ok)
+  -> how to easily enable "default extended processing"
+
+----------
+
+
+
+
+- overwrite serial execution per task
+- in cf haben wir oft auch zusätzliche 'cash' tags -> benötigen wir diese im bs auch?
+- maxqtr prepivot rule also for bs und is
+
+- standardize oustanding shares, resp. validate
+  (see: https://github.com/hansjoergw/sec-fincancial-statement-data-set/issues/13)
+  "but as i understand, they do not have the same exact meaning. i haven't investigated that, so i am not sure if you
+  can assume that they are the same, resp. close enough to treat them that way. in the cp, the value appears
+  as entitycommonstocksharesoutstanding (if present), in the balance sheet as commonstocksharesoutstanding,
+  and in the incomestatement as weightedaveragenumberofsharesoutstandingbasic."
+
+  -> adding entitycommonstocksharesoutstanding from cp
+  -> adding commonstocksharesoutstanding to bs
+  -> provide default handling of choosing which value for final "outstandingshares"
+
+
+
+- discord channel?
+- evtl. sollte jede regel noch eine "explanation" bekommen. ein text, der die regel spezifisch erklärt,
+  nicht allgemein wie in description.
+
+- usecase/analyzes ausarbeiten und eigenes notebook mit beispielen
+
+- idea: using configuration file as parameter or as option instead of only class:
+  input medium feedback:
+  "what do you think about letting update() and configurationmanager take config_file_name with default value ''?
+  this seems to provide more explicit control. i know this would affect many functions which take config.
+  how about replacing it by config_file_name?"
+
+
+next:
+- vlt switch um parallele verarbeitung komplett auszuschalten?
+- vlt switch maximale parallelität?
+
+- new notebook, examples
+  -> reading primary financial statements for a single report, display bs, is, cf for a report
+  -> analyse changes in one tag for one company
+  -> compare basic data of two companies
+
+- supporting dataset with notes -> v.2
+
+- es wäre gut, wenn der standardstatementpresenter noch eine kolonne "year", noch welcher auch sortiert ist
+  die sortierung über adsh alleine ermöglicht keine sauber sortierung pro jahr
+  man könnte hierfür auch das report year aus sub verwenden
+
+- pipelines: einfaches konzept um standard flows zu kapseln
+  z.b. collector als input bis zur presentation
+  -> z.b. für selektierte ciks daten so aufbereiten, dass sie alle vorhandenen jahre in spalten angezeigt werden
+
+- update des config files
+  fehlende inhalte müssen gesetzt und auf default gesetzt werden, oder?
+  überflüssige inhalte müssen entfernt werden
+  -> im moment noch nicht notwendig -> würde erst notwendig, falls
+     optionen nicht mehr benützt werden
+
+- in company collector -> eine sicht für sämtlich jahre zeigen -> mit jahren als spalten, aber
+   - versuchen die selben tags zu zeigen, notfalls mit null...
+   - reihenfolge könnte ein problem sein
+
+- - warning, falls daten nicht indexiert sind
+    -> hinweis message beim laden der config
+    -> config for autocheck to download / autodownload
+
+
+later
+-build timeline for company
+-correct quarter naming -> was meine ich damit?
+-db-version for updates
+
+
+build, release & docu
+- coverage report padge
+
+checkout für visualisierung
+- https://gist.github.com/mwouts/a2de16feb90d33fd89334fb09f62742f
+- https://www.linkedin.com/pulse/interactive-dataframes-jupyter-google-colab-vs-code-pycharm-wouts/?trk=articles_directory
+- https://pbpython.com/dataframe-gui-overview.html
+
+
+ideen
+-----
+- export excel
+- cli
+- https://streamlit.io/ ui
+
+
+look at
+-------
+- https://pypi.org/project/edgartools/1.6.0/
+

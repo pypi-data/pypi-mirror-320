@@ -1,0 +1,609 @@
+CF
+=====================================
+Final build up
+
+          + NetCashProvidedByUsedInOperatingActivitiesContinuingOperations
+          + CashProvidedByUsedInOperatingActivitiesDiscontinuedOperations <- CashProvidedByUsedInDiscontinuedOperationsOperatingActivities
+          --------
+      + NetCashProvidedByUsedInOperatingActivities
+
+          + NetCashProvidedByUsedInInvestingActivitiesContinuingOperations
+          + CashProvidedByUsedInInvestingActivitiesDiscontinuedOperations <- CashProvidedByUsedInDiscontinuedOperationsInvestingActivities
+          --------
+      + NetCashProvidedByUsedInInvestingActivities
+
+          + NetCashProvidedByUsedInInvestingActivitiesContinuingOperations
+          + CashProvidedByUsedInFinancingActivitiesDiscontinuedOperations <- CashProvidedByUsedInDiscontinuedOperationsFinancingActivities
+          --------
+      + NetCashProvidedByUsedInInvestingActivities
+
+
+                  Prio 1
+                           <- EffectOfExchangeRateOnCash
+                       <- EffectOfExchangeRateOnCashAndCashEquivalents
+                  + EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents
+                  + EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsDisposalGroupIncludingDiscontinuedOperations
+                  --------
+                  EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations
+                 <-
+              EffectOfExchangeRateFinal
+
+
+                  Prio 2
+                  + EffectOfExchangeRateOnCashAndCashEquivalentsContinuingOperations <- EffectOfExchangeRateOnCashContinuingOperations
+                  + EffectOfExchangeRateOnCashAndCashEquivalentsDiscontinuedOperations <- EffectOfExchangeRateOnCashDiscontinuedOperations
+                  --------
+              EffectOfExchangeRateFinal
+
+
+      + EffectOfExchangeRateFinal
+      ---------------------------
+
+                   <- CashPeriodIncreaseDecrease
+             <- CashAndCashEquivalentsPeriodIncreaseDecrease
+        <- CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect
+      CashPeriodIncreaseDecreaseIncludingExRateEffectFinal
+      ==================
+
+                                       <- CashEndOfPeriod
+                                  <- CashAndDueFromBanksEndOfPeriod
+                             <- CashAndCashEquivalentsAtCarryingValueEndOfPeriod
+                        <- CashAndCashEquivalentsAtCarryingValueIncludingDiscontinuedOperationsEndOfPeriod
+                   <- CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsEndOfPeriod
+              <- CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperationsEndOfPeriod
+        <- CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperationsEndOfPeriod
+      CashAndCashEquivalentsEndOfPeriod
+
+
+      Details of Operating Activities
+
+                  + AmortizationOfIntangibleAssets
+                  + AmortizationOfDeferredCharges
+                  + AmortizationOfFinancingCosts
+                  -------------
+                + Amortization
+                + Depreciation
+                --------------
+                + DepreciationAndAmortization
+                + Depletion
+                ----------
+            DepreciationDepletionAndAmortization
+
+            DeferredIncomeTaxExpenseBenefit
+            ShareBasedCompensation
+            IncreaseDecreaseInAccountsPayable
+            IncreaseDecreaseInAccruedLiabilities
+            InterestPaidNet
+            IncomeTaxesPaidNet
+
+
+      Details of Investing activities
+
+                + ProceedsFromSaleOfAvailableForSaleSecurities
+                + ProceedsFromSaleOfTradingSecurities
+                + ProceedsFromSaleOfEquitySecurities
+                + ProceedsFromSaleOfDebtSecurities
+                + ProceedsFromSaleAndMaturityOfOtherInvestments
+                + ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities
+                + ProceedsFromSaleOfInvestmentsInAffiliates
+                + ProceedsFromSaleOfHeldToMaturitySecurities
+                --------------------------------------------
+            ProceedsFromSaleOfInvestments
+
+            PaymentsToAcquirePropertyPlantAndEquipment
+            ProceedsFromSaleOfPropertyPlantAndEquipment
+            PaymentsToAcquireInvestments
+            PaymentsToAcquireBusinessesNetOfCashAcquired
+            ProceedsFromDivestitureOfBusinessesNetOfCashDivested
+            PaymentsToAcquireIntangibleAssets
+            ProceedsFromSaleOfIntangibleAssets
+
+
+      Details of Financing activities
+
+                  + PaymentsOfDividendsCommonStock
+                  + PaymentsOfDividendsPreferredStockAndPreferenceStock
+                  + PaymentsOfDividendsMinorityInterest
+                  -------------
+             PaymentsOfDividends
+
+             ProceedsFromIssuanceOfCommonStock
+             ProceedsFromStockOptionsExercised
+             PaymentsForRepurchaseOfCommonStock
+             ProceedsFromIssuanceOfDebt
+             RepaymentsOfDebt
+
+     Post Rules
+
+        Calculate missing "Operating" tags
+
+        + NetCashProvidedByUsedInOperatingActivities (if present)
+        - NetCashProvidedByUsedInOperatingActivitiesContinuingOperations (if present)
+        -------
+        = CashProvidedByUsedInOperatingActivitiesDiscontinuedOperations (if not present)
+
+
+        + NetCashProvidedByUsedInOperatingActivities (if present)
+        - CashProvidedByUsedInOperatingActivitiesDiscontinuedOperations (if present)
+        -------
+        = NetCashProvidedByUsedInOperatingActivitiesContinuingOperations (if not present)
+
+
+        if only NetCashProvidedByUsedInOperatingActivities is set:
+          NetCashProvidedByUsedInOperatingActivitiesContinuingOperations = NetCashProvidedByUsedInOperatingActivities
+          CashProvidedByUsedInOperatingActivitiesDiscontinuedOperations = 0
+
+
+        Same as above for Financing and Investing triples
+
+        Set to Zero if still not set:
+           NetCashProvidedByUsedInOperatingActivitiesContinuingOperations
+           NetCashProvidedByUsedInInvestingActivitiesContinuingOperations
+           NetCashProvidedByUsedInFinancingActivitiesContinuingOperations
+           NetCashProvidedByUsedInOperatingActivities
+           NetCashProvidedByUsedInInvestingActivities
+           NetCashProvidedByUsedInFinancingActivities
+           CashProvidedByUsedInOperatingActivitiesDiscontinuedOperations
+           CashProvidedByUsedInInvestingActivitiesDiscontinuedOperations
+           CashProvidedByUsedInFinancingActivitiesDiscontinuedOperations
+
+           EffectOfExchangeRateFinal
+
+        Set CashPeriodIncreaseDecreaseIncludingExRateEffectFinal (if not set yet)
+            + NetCashProvidedByUsedInOperatingActivities
+            + NetCashProvidedByUsedInInvestingActivities
+            + NetCashProvidedByUsedInFinancingActivities
+            + EffectOfExchangeRateFinal
+            ------------------
+            = CashPeriodIncreaseDecreaseIncludingExRateEffectFinal
+
+        Fix mixed up usage of NetCashProvidedByUsed...Activities/-ContinuingOperations
+
+
+
+CF Analyzes
+----------------------
+
+CashAtBeginning
+
+    Problem 1:
+    -> cash at beginning and end bestimmen
+       Frage: sind/können die beiden Werte überhaupt vorhanden sein
+       Cash and Cash Equi haben entsprechend andere ddate felder.
+
+       Vor dem Filtern müsste man diese also neu setzen und benennen
+       Bei den FY ist das noch gut möglich, etwas mühsammer vermutlich bei den Quartalen, je nach Periodenlänge...
+
+       Es stellt sich die Frage, ob man Cash Vor und ende Periode nicht am besten in einem komplett eigenem Prozess kalkuliert
+       und bereitstellt und dann dazu mischt.. (bzw. nur Cash vor der Periode, Ende der Periode ist ja mit korrektem ddate.
+
+
+                            also used
+                            CashAndCashEquivalentsAtCarryingValue
+                            CashAndCashEquivalentsAtCarryingValueIncludingDiscontinuedOperations
+
+    0000320193-23-000106	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2023		20200930	0	USD	39789000000.0000
+    0000320193-23-000106	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2023		20210930	0	USD	35929000000.0000
+    0000320193-23-000106	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2023		20220930	0	USD	24977000000.0000
+    0000320193-23-000106	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2023		20230930	0	USD	30737000000.0000
+
+                            CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents
+
+
+
+Main positions
+
+NetCashProvided, EffectOnExRate, CashIncDec
+
+    Counts NetCashProvided
+            NetCashProvidedByUsedInOperatingActivities,                     278874
+            NetCashProvidedByUsedInFinancingActivities,                     271168
+            NetCashProvidedByUsedInInvestingActivities,                     250200
+
+            NetCashProvidedByUsedInOperatingActivitiesContinuingOperations, 64783
+            NetCashProvidedByUsedInInvestingActivitiesContinuingOperations, 56634
+            NetCashProvidedByUsedInFinancingActivitiesContinuingOperations, 56414
+
+            NetCashProvidedByUsedInContinuingOperations,                    13525
+            NetCashProvidedByUsedInDiscontinuedOperations,                  4967
+
+            CashProvidedByUsedInOperatingActivitiesDiscontinuedOperations,  14961
+            CashProvidedByUsedInInvestingActivitiesDiscontinuedOperations,  10128
+            CashProvidedByUsedInFinancingActivitiesDiscontinuedOperations,  6420
+
+            CashProvidedByUsedInDiscontinuedOperationsOperatingActivities,  104
+            CashProvidedByUsedInDiscontinuedOperationsInvestingActivities,   79
+            CashProvidedByUsedInDiscontinuedOperationsFinancingActivities,   70
+
+
+    Counts EffectsOnExRate
+
+            EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations,8477
+            EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsDisposalGroupIncludingDiscontinuedOperations,328
+
+            EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents,23639
+            EffectOfExchangeRateOnCashAndCashEquivalents,69372
+            EffectOfExchangeRateOnCash,1530
+
+            EffectOfExchangeRateOnCashAndCashEquivalentsContinuingOperations,9026
+            EffectOfExchangeRateOnCashContinuingOperations,273
+
+            EffectOfExchangeRateOnCashAndCashEquivalentsDiscontinuedOperations,447
+            EffectOfExchangeRateOnCashDiscontinuedOperations,14
+
+
+    Counts  Cash..PeriodIncreaseDecrease
+            CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect, 82384
+            CashAndCashEquivalentsPeriodIncreaseDecrease,                                                                   197572
+            CashPeriodIncreaseDecrease,                                                                                     16450
+
+            CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect, 19982
+            CashAndCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect,                                        2596
+            CashPeriodIncreaseDecreaseExcludingExchangeRateEffect,                                                          176
+
+
+V2
+  Main Path
+            + NetCashProvidedByUsedInOperatingActivitiesContinuingOperations
+            + CashProvidedByUsedInOperatingActivitiesDiscontinuedOperations
+            ---
+    +       = NetCashProvidedByUsedInOperatingActivities
+
+
+            + NetCashProvidedByUsedInFinancingActivitiesContinuingOperations
+            + CashProvidedByUsedInFinancingActivitiesDiscontinuedOperations
+            ---
+    +       = NetCashProvidedByUsedInFinancingActivities
+
+
+            + NetCashProvidedByUsedInInvestingActivitiesContinuingOperations
+            + CashProvidedByUsedInInvestingActivitiesDiscontinuedOperations
+            ---
+    +       = NetCashProvidedByUsedInInvestingActivities
+          + CashPeriodIncreaseDecreaseExcludingExchangeRateEffect
+               -------
+            +  = CashAndCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect
+            ------------------------------------
+            = CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect
+    =       = CashTotalPeriodIncreaseDecreaseExcludingExRateEffect (Rename)
+
+                   + EffectOfExchangeRateOnCash,1530
+                ----------------
+                +  = EffectOfExchangeRateOnCashAndCashEquivalents,69372
+            -----------------
+            +   = EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents,23639
+            + EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsDisposalGroupIncludingDiscontinuedOperations,328
+            -----------------------------------------------
+            = EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations,8477
+    +       = EffectOfExchangeRateFinal (Rename)
+    ---
+                 +  CashPeriodIncreaseDecrease
+                 ------
+            +    =  CashAndCashEquivalentsPeriodIncreaseDecrease
+            ----------
+            = CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect
+    =       = CashTotalPeriodIncreaseDecreaseIncludingExRateEffect (Rename)
+
+
+IS
+============================================================
+  Main Rules
+    Revenues:
+
+        1. Prio: Revenues
+
+                + SalesRevenueGoodsNet     <- SalesRevenueGoodsGross
+                + SalesRevenueServicesNet  <- SalesRevenueServicesGross
+                + OtherSalesRevenueNet
+                --------------
+                = SalesRevenueNet
+
+        2. Prio: SalesRevenueNet
+
+                RevenueFromContractWithCustomerIncludingAssessedTax
+                - ExciseAndSalesTaxes
+                ---------------------
+                = RevenueFromContractWithCustomerExcludingAssessedTax
+
+        3. Prio: RevenueFromContractWithCustomerExcludingAssessedTax
+        4. Prio: RevenueFromContractWithCustomerIncludingAssessedTax
+        5. Prio: RevenuesExcludingInterestAndDividends
+
+                + RegulatedAndUnregulatedOperatingRevenue
+                + HealthCareOrganizationPatientServiceRevenue
+                + ContractsRevenue
+                + RevenueOilAndGasServices
+                  ...
+                ------------------
+                = RevenuesSum
+
+        6. Prio: RevenuesSum
+        7. Prio: InvestmentIncomeInterest
+        8. Prio: CostOfRevenue + GrossProfit
+
+
+    CostOfRevenue
+
+        1. Prio CostOfRevenue
+
+                + CostOfGoodsSoldExcludingDepreciationDepletionAndAmortization
+                + CostOfGoodsSoldDepreciationDepletionAndAmortization
+                + CostOfGoodsSoldDepletion
+                + CostOfGoodsSoldDepreciation
+                + ...
+                ------------
+                = CostOfGoodsSold (if not set)
+
+
+                + CostOfServicesExcludingDepreciationDepletionAndAmortization
+                + CostOfServicesDepreciation
+                + CostOfServicesDepreciationAndAmortization
+                + CostOfServicesCatering
+                + ...
+                ------------
+                = CostOfServices (if not set)
+
+
+                + CostOfGoodsAndServicesSoldDepreciationAndAmortization
+                + CostOfGoodsAndServicesSoldAmortization
+                + CostOfGoodsAndServicesSoldOverhead
+                + CostOfGoodsAndServicesSoldDepreciation
+                + CostOfGoodsAndServicesEnergyCommoditiesAndServices
+                + CostOfGoodsAndServiceExcludingDepreciationDepletionAndAmortizatio
+                ------------
+                = CostOfGoodsAndServicesSold (if not set)
+
+
+              CostOfGoodsSold
+            + CostOfServices
+            ---------------
+            = CostOfGoodsAndServicesSold (if not set)
+
+        2. Prio CostOfGoodsAndServicesSold
+        3. Prio Revenues - GrossProfit
+
+    GrossProfit
+
+        1. Prio GrossProfit
+        2. Prio Revenues - CostOfRevenue
+        3. Prio GrossInvestmentIncomeOperating
+        4. Prio InterestAndDividendIncomeOperating
+
+    OperatingExpenses
+
+        1. Prio OperatingExpenses
+        2. Prio GrossProfit - OperatingIncomeLoss
+
+            + SellingGeneralAndAdministrativeExpense
+            + GeneralAndAdministrativeExpense
+            + ResearchAndDevelopmentExpense
+            + SellingAndMarketingExpense
+            + ... (96 most expense tags)
+            ----------------------------
+            = OperatingExpensesSum
+
+        3. Prio OperatingExpensesSum
+
+
+    OperatingIncomeLoss
+
+        1. Prio OperatingIncomeLoss
+        2. Prio GrossProfit - OperatingExpenses
+
+
+    IncomeLossFromContinuingOperationsBeforeIncomeTaxExpenseBenefit
+
+        1. Prio IncomeLossFromContinuingOperationsBeforeIncomeTaxExpenseBenefit <- (rename) IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest
+        2. Prio
+            + IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+            + (optional) IncomeLossFromEquityMethodInvestments
+            --------------------
+            = IncomeLossFromContinuingOperationsBeforeIncomeTaxExpenseBenefit
+        3. Prio IncomeLossFromContinuingOperations + AllIncomeTaxExpenseBenefit
+
+    ProfitLoss
+
+        1. Prio ProfitLoss
+        2. Prio
+            IncomeLossFromContinuingOperations
+
+                1. Prio IncomeLossFromContinuingOperations <- (rename) IncomeLossFromContinuingOperationsIncludingPortionAttributableToNoncontrollingInterest
+
+                    + IncomeTaxExpenseBenefit
+                    + DeferredIncomeTaxExpenseBenefit
+                    + (optional) IncomeLossFromEquityMethodInvestments
+                    ---------------------------------
+                    = AllIncomeTaxExpenseBenefit
+
+                2. Prio IncomeLossFromContinuingOperationsBeforeIncomeTaxExpenseBenefit - AllIncomeTaxExpenseBenefit
+
+
+            IncomeLossFromDiscontinuedOperationsNetOfTax
+
+                1. Prio IncomeLossFromDiscontinuedOperationsNetOfTax <- IncomeLossFromDiscontinuedOperationsNetOfTaxAttributableToReportingEntity
+
+
+            ProfitLoss = IncomeLossFromContinuingOperations + IncomeLossFromDiscontinuedOperationsNetOfTax
+
+        3. Prio NetIncomeLoss
+
+
+    NetIncomeLossAttributableToNoncontrollingInterest
+        1. Prio NetIncomeLossAttributableToNoncontrollingInterest
+        2. Prio ProfitLoss - NetIncomeLoss
+
+    NetIncomeLoss
+
+        1. Prio NetIncomeLoss
+        2. Prio NetIncomeLossAvailableToCommonStockholdersBasic
+        3. Prio NetIncomeLossAllocatedToLimitedPartners
+        3. Prio ProfitLoss
+        4. Prio ProfitLossIncludingRedeemableNonControllingInterest
+        5. Prio OtherComprehensiveIncomeLossNetOfTax
+        6. Prio ComprehensiveIncomeNetOfTax
+        7. Prio IncomeLossAttributableToParent
+        8. Prio NetInvestmentIncome
+
+  Post Rule (Cleanup)
+    Fix Sign of AllIncomeTaxExpenseBenefit (should be positive if taxed were paid)
+        expected equation to be true:
+           IncomeLossFromContinuingOperationsBeforeIncomeTaxExpenseBenefit - AllIncomeTaxExpenseBenefit = ProfitLoss
+
+        invert sign of AllIncomeTaxExpenseBenefit if the following equation is true:
+           IncomeLossFromContinuingOperationsBeforeIncomeTaxExpenseBenefit + AllIncomeTaxExpenseBenefit = ProfitLoss
+
+    Fix sign of NetIncomeLossAttributableToNoncontrollingInterest
+        expected equation to be true:
+           ProfitLoss - NetIncomeLossAttributableToNoncontrollingInterest = NetIncomeLoss
+
+        invert sign of NetIncomeLossAttributableToNoncontrollingInterest if the following equation is true:
+           ProfitLoss + NetIncomeLossAttributableToNoncontrollingInterest = NetIncomeLoss
+
+    If Revenues was not set, but there is a GrossProfit, set it to GrossProfit,
+          since was no CostOfRevenue found
+
+    If GrossProfit couldn't be set, but there is Revenues, set it to Revenues
+          since was no CostOfRevenue found
+
+    if CostORevenues couldn't be set, but Revenues and GrossProfit are present, set it to Revenues - Grossprofit
+
+    if OperatingIncomeLoss is not set yet, and GrossProfit (available now) and OperatingExpenses are present,
+         set it to GrossProfit - OperatingExpenses
+
+    If there is no IncomeLossFromContinuingOperations, set it to ProfitLoss
+    if there is no IncomeLossFromContinuingOperationsBeforeIncomeTaxExpenseBenefit, set it to IncomeLossFromContinuingOperations
+    if there is no AllIncomeTaxExpenseBenefit, set it to IncomeLossFromContinuingOperationsBeforeIncomeTaxExpenseBenefit - AllIncomeTaxExpenseBenefit
+
+    set IncomeLossFromDiscontinuedOperationsNetOfTax to 0.0 if not present
+
+    If there is no IncomeLossFromContinuingOperations, set it to IncomeLossFromContinuingOperationsBeforeIncomeTaxExpenseBenefit
+    If there is no ProfitLoss, set it to IncomeLossFromContinuingOperations + IncomeLossFromDiscontinuedOperationsNetOfTax
+    If there is no NetIncomeLoss, set it to ProfitLoss
+    If there is no NetIncomeLossAttributableToNoncontrollingInterest, set it to ProfitLoss - NetIncomeLoss
+
+
+IS Analyzes
+-------------------------------------------
+
+Todos
+- EarningsPerShare
+
+  Es gibt auch WeightedAverageLimitedPartnershipUnitsOutstanding und WeightedAverageLimitedPartnershipUnitsOutstandingDiluted
+  Bsp: 0001552000-19-000064
+
+  0001319161-21-000036
+  -> mit Axis -> diese Daten sind nicht vorhanden
+
+  -> IncomeLossFromContinuingOperationsPerDilutedShare -> Alternative zu EPS !!!!
+
+  EPS -> provide calculated
+
+Revenue
+-------
+us-gaap:Revenues
+  us-gaap:SalesRevenueNet
+    us-gaap:ProductSalesRevenue
+    us-gaap:ServiceRevenue
+
+
+Cost of Revenue
+----------------
+- hint: wenn Revenue und GrossProfit vorhanden
+  standardized_bag.result_df[standardized_bag.result_df.CostOfRevenue.isna() & ~standardized_bag.result_df.GrossProfit.isna() ]
+
+
+Cost of Operating
+----------------
+- standardized_bag.result_df[standardized_bag.result_df.OperatingExpenses.isna() & ~standardized_bag.result_df.OperatingIncomeLoss.isna() ]
+- idee:
+   filter for reports with GrossProfit and OperatingIncomeLoss
+   get all tags with line > GrossProfit.line and line < OperatingIncomeLoss.line
+   -> sollte eine gute Liste ergeben, mit allem was Operating Cost sein kann.
+
+
+Achtung:
+- wir haben oft daten in IS und CI (comprehensive Income)
+- prüfen, ob 10-Q immer Q? Einträge in fp hat und ob 10-K immer ein FY hat
+
+
+
+Banks
+----
+
+
+Todos:
+es gibt negative costOfRevenue Einträge
+
+- 0001558370-23-014929 -> hier ist der Wert für NetIncomeLoss nicht getagged.
+  könnte aus
+
+  IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest und
+  IncomeTaxBenefitExpense berechnet werden:
+   -> https://www.sec.gov/ix?doc=/Archives/edgar/data/1872356/000155837023014929/mkul-20230630x10q.htm
+
+
+
+- Generell muss jeder Tag geprüft und korrigiert werden, für welchen klar ist, ob
+  er einen positiven oder negativen Wert darstellt. Bzw. diese Tags müssen immer gleich behandelt werden
+  auch im BS
+
+
+- das CI müsste man eigentlich auch beachten.
+
+
+     + SalesRevenueGoodsNet
+     + SalesRevenueServicesNet
+     + OtherSalesRevenueNet
+     --------------
+  or SalesRevenueNet
+
+  or RevenuesSum
+        RevenueFromContractWithCustomerExcludingAssessedTax
+        RevenueFromContractWithCustomerIncludingAssessedTax
+        RevenuesExcludingInterestAndDividends
+        RegulatedAndUnregulatedOperatingRevenue
+        ...
+
+  or InterestAndDividendIncomeOperating
+  --------
+  Revenues
+  ========
+
+
+IncomeLossFromDiscontinuedOperationsNetOfTax
+IncomeLossFromDiscontinuedOperationsNetOfTaxAttributableToNoncontrollingInterest
+IncomeLossFromDiscontinuedOperationsNetOfTaxAttributableToReportingEntity
+
+IncomeLossFromDiscontinuedOperationsNetOfTaxPerOutstandingGeneralPartnershipUnit1
+
+IncomeLossFromDiscontinuedOperationsNetOfTaxPerOutstandingLimitedPartnershipAndGeneralPartnershipUnitBasic
+IncomeLossFromDiscontinuedOperationsNetOfTaxPerOutstandingLimitedPartnershipAndGeneralPartnershipUnitBasicAndDiluted'
+IncomeLossFromDiscontinuedOperationsNetOfTaxPerOutstandingLimitedPartnershipUnit
+IncomeLossFromDiscontinuedOperationsNetOfTaxPerOutstandingLimitedPartnershipUnitDiluted
+IncomeLossFromDiscontinuedOperationsNetOfTaxPerOutstandingLimitedPartnershipUnitBasic
+IncomeLossFromDiscontinuedOperationsNetOfTaxPerOutstandingLimitedPartnershipUnitDiluted1
+
+IncomeLossFromDiscontinuedOperationsNetOfTaxPerBasicShare
+IncomeLossFromDiscontinuedOperationsNetOfTaxPerDilutedShare
+IncomeLossFromDiscontinuedOperationsNetOfTaxPerBasicAndDilutedShare
+
+
+NetIncomeLossFromDiscontinuedOperationsAvailableToCommonShareholdersBasic
+NetIncomeLossFromDiscontinuedOperationsAvailableToCommonShareholdersDiluted
+
+
+
+
+
+
+
+Sonstiges
+==========
+
+Falls Firmen nur die Resultate für Q2 und Q3 seit Beginn angeben, könnte man die Differenz für das einzelne Quartal
+nachträglich berechnen. Wenn man beim Standardizer angeben könnte, ob qrtrs ein Bestandteil des Keys ist, könnte man diese auch direkt
+berechnen und dann in einem Post Schritt das ganze cleanen, so, dass nur "einzelne Quarter" als Ergebnisse angezeigt werden.
+
+Dazu müsste man eigentlich nur die adshs für Q2 und Q3 ermitteln, welche nur ein einziges Qrtr angeben. Von allen Q2 und Q3
+werden dann diese abgezogen und es bleiben diejenigen übrig, die für Q2 und Q3 zwei, bzw. drei qrtr angeben.
+dort kann man dann von Q2 Q1 abziehen und von Q3 das Ergebnis von Q2-Q1
