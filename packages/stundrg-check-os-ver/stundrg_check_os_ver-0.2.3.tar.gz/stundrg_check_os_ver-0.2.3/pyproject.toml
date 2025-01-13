@@ -1,0 +1,26 @@
+[project]
+name = "stundrg-check-os-ver"
+version = "0.2.3"
+description = "Utility that checks the name and version of the operating system."
+authors = [
+    { name = "khr0106", email = "kanghr990106@gmail.com" },
+]
+dependencies = []
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/stundrg/stundrg-check-os-ver"
+Issues = "https://github.com/stundrg/stundrg-stundrg-check-os-ver/issues"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
