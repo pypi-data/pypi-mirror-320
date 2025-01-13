@@ -1,0 +1,3 @@
+[console_scripts]
+oai-structured-cli=openai_structured.cli:main
+
