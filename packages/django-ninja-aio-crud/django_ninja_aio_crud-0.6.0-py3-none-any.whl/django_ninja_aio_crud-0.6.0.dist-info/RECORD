@@ -1,0 +1,13 @@
+ninja_aio/__init__.py,sha256=-m_l3-9_2Q1-PvkjWqAfSmu2jt2ILNb490jT2yC4sbk,119
+ninja_aio/api.py,sha256=Fe6l3YCy7MW5TY4-Lbl80CFuK2NT2Y7tHfmqPk6Mqak,1735
+ninja_aio/auth.py,sha256=z9gniLIgT8SjRqhGN7ZI0AGHjsALwgU6eyr2m46fwFY,1389
+ninja_aio/exceptions.py,sha256=JGUvZyYevGnFYFk2JYnNqng1e9ilG8l325wA5YC1RUA,1364
+ninja_aio/models.py,sha256=ddV2QGzWSJzwZ4vt-AJ9rRdiQCVSEtl6Bj3mxroSiQE,15096
+ninja_aio/parsers.py,sha256=e_4lGCPV7zs-HTqtdJTc8yQD2KPAn9njbL8nF_Mmgkc,153
+ninja_aio/renders.py,sha256=mHeKNJtmDhZmgFpS9B6SPn5uZFcyVXrsoMhr149LeW8,1555
+ninja_aio/schemas.py,sha256=EgRkfhnzZqwGvdBmqlZixMtMcoD1ZxV_qzJ3fmaAy20,113
+ninja_aio/types.py,sha256=EHznS-6KWLwSX5hLeXbAi7qHWla09_rGeQraiLpH-aY,491
+ninja_aio/views.py,sha256=b-KLPkNhfMXsTx4egfi-nKeuKqYEUOLXJFNt0fYariE,9027
+django_ninja_aio_crud-0.6.0.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+django_ninja_aio_crud-0.6.0.dist-info/METADATA,sha256=aRvvPaOFsyvqGwg_wCpoQJ0PiQJfo0obaBPlovRlXeA,13078
+django_ninja_aio_crud-0.6.0.dist-info/RECORD,,
