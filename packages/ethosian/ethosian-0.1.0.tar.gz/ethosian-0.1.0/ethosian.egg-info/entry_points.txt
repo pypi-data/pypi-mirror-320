@@ -1,0 +1,2 @@
+[console_scripts]
+ethosian = ethosian.cli.entrypoint:ethosian_cli
