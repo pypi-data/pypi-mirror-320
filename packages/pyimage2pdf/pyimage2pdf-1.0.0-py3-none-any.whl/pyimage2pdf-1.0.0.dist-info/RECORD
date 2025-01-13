@@ -1,0 +1,15 @@
+pyimage2pdf/CommandClass.py,sha256=0xOIX7b-sVQnBwocp1JhGdm6SZfA9H96p3H3hbpb6og,2802
+pyimage2pdf/Preferences.py,sha256=X27E2wlqTotsfe0TW2hCNRV1lnAY9rkfIzmBXpPHYTQ,3296
+pyimage2pdf/PyImage2Pdf.py,sha256=6nRvSF-eGfQTIxfP9lgYR8DqSYPzlMQb9FJn9qJ-YsQ,8937
+pyimage2pdf/__init__.py,sha256=JDJGzXwQTg7K5yeUkpQrFH8PevSzGUEIqExS9VKwAXc,44
+pyimage2pdf/_version.py,sha256=t3PNwa0F18Ne8U8so2MS8fxNRAPTrvTKdDMLqbFduDY,27
+pyimage2pdf/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyimage2pdf/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyimage2pdf/resources/loggingConfiguration.json,sha256=x02VwGw52Qi8nd8lGujWQ5MwR2nXprU7-3ajqIRm758,846
+pyimage2pdf/resources/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyimage2pdf-1.0.0.dist-info/LICENSE,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+pyimage2pdf-1.0.0.dist-info/METADATA,sha256=WZQBRThtw2_vwri2FlJaHOJbhtCpRxHf80A2GGVfEkY,4241
+pyimage2pdf-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pyimage2pdf-1.0.0.dist-info/entry_points.txt,sha256=yYGGdv1IiNmjx--Kieplqv9j1Ap-SgaYOwm7y9HJmYQ,70
+pyimage2pdf-1.0.0.dist-info/top_level.txt,sha256=YbTmXgkDy2VIgdfG1Wa_wwxFtYBsA8tf1ZDIVMrPiLA,12
+pyimage2pdf-1.0.0.dist-info/RECORD,,
