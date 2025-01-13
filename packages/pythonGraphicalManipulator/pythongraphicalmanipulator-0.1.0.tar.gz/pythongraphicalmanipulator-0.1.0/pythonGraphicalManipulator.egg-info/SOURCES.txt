@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+pythonGraphicalManipulator/__init__.py
+pythonGraphicalManipulator.egg-info/PKG-INFO
+pythonGraphicalManipulator.egg-info/SOURCES.txt
+pythonGraphicalManipulator.egg-info/dependency_links.txt
+pythonGraphicalManipulator.egg-info/requires.txt
+pythonGraphicalManipulator.egg-info/top_level.txt
+pythonGraphicalManipulator/__pycache__/__init__.cpython-312.pyc
+tests/tests.py
+tests/__pycache__/tests.cpython-312.pyc
