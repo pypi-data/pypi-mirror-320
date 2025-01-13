@@ -1,0 +1,10 @@
+spatialx_connector/__init__.py,sha256=qEoYz8kxTY1Tl6Ijyk10h1z4uEf5GtSrSj1X8-hi0Ag,604
+spatialx_connector/_analysis.py,sha256=jdmHPHY6-WYc55ligrFl1pdOrvysB-wYuN_Q9I-DzSo,21610
+spatialx_connector/_api.py,sha256=fDKaM2i8udeu-PKz6Fu9d4giVAU1UoIdlhEeOGrYCww,14311
+spatialx_connector/_connector.py,sha256=RMVrAFIleHZb2wVDO1Qp4tL3ombz4-gx2ubVZnGIRxI,25063
+spatialx_connector/_constants.py,sha256=QgdiN5EjdRq-CejOF1uPPGPowNnB5qxIN3zjAhDsUhY,6054
+spatialx_connector/_utils.py,sha256=EUoA9ubLYIDcHR4aQjHGnrqsQmNmSN-GsG0phjAgCSg,2943
+spatialx_connector-0.1.5.dist-info/METADATA,sha256=Qtr8qh5raidT830AEQePax4o_Zntk7rmLAgxm4zFr2g,9912
+spatialx_connector-0.1.5.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+spatialx_connector-0.1.5.dist-info/top_level.txt,sha256=vfOgn7fQbk_pBHH__R0scqogsJ03rOjTDOnlZYHwFkc,19
+spatialx_connector-0.1.5.dist-info/RECORD,,
