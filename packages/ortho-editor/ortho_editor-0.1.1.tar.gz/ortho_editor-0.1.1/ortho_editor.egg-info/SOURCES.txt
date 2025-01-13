@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+fonts/MaterialIcons-Regular.ttf
+ortho_editor.egg-info/PKG-INFO
+ortho_editor.egg-info/SOURCES.txt
+ortho_editor.egg-info/dependency_links.txt
+ortho_editor.egg-info/entry_points.txt
+ortho_editor.egg-info/requires.txt
+ortho_editor.egg-info/top_level.txt
