@@ -1,0 +1,27 @@
+[project]
+name = "czech-simpleqa"
+version = "0.1.0"
+description = "How Well Can Language Models Answer Questions in Czech?"
+readme = "README.md"
+authors = [
+    { name = "Jan Cervenka", email = "jan.cervenka@yahoo.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=0.42.0",
+    "instructor>=1.7.2",
+    "openai>=1.59.4",
+    "pandas>=2.2.3",
+    "pydantic>=2.10.4",
+    "tqdm>=4.67.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+    "ruff>=0.9.1",
+]
