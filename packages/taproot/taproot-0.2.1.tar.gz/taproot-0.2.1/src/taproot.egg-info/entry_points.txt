@@ -1,0 +1,2 @@
+[console_scripts]
+taproot = taproot.__main__:main
