@@ -1,0 +1,2 @@
+[console_scripts]
+jcal = jcal:main
