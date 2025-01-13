@@ -1,0 +1,42 @@
+Metadata-Version: 2.2
+Name: vp_models
+Version: 0.1.0
+Summary: A package for machine learning models and utilities
+Home-page: https://github.com/vishnupriya230604/vp_models.git
+Author: Vishnupriya K
+Author-email: vishnupriyakarthy@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: scikit-learn>=1.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+*Vp_models* is a Python package for machine learning models and utilities. It includes a set of models like linear regression and other machine learning algorithms, along with utility functions for data preprocessing and model evaluation.
+
+##Installation
+
+You can install the package via pip:
+
+pip install vp_models==0.1.0
+
+### Usage
+##Importing Models
+Once installed, you can import the models and utilities from the package.
+
+````python
+#Import the Linear Regression model
+from vp_models.models.linear_regression import LinearRegression
+
+
+```
