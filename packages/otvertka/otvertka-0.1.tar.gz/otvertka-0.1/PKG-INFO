@@ -1,0 +1,55 @@
+Metadata-Version: 2.4
+Name: otvertka
+Version: 0.1
+Summary: Набор простых функций для работы с данными
+Project-URL: Homepage, https://github.com/stasdikansky/otvertka
+Project-URL: Bug Tracker, https://github.com/stasdikansky/otvertka/issues
+Author: Stas Dikansky
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: clickhouse-connect>=0.6.8
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: pendulum>=2.1.2
+Requires-Dist: pingouin>=0.5.3
+Description-Content-Type: text/markdown
+
+# Otvertka
+
+Набор простых функций для работы с данными в ClickHouse.
+
+## Установка
+
+```bash
+pip install otvertka
+```
+
+## Использование
+
+```python
+from otvertka import fetch_data, get_table_info, get_dates_tuples
+
+# Получить информацию о таблице
+get_table_info('my_table')
+
+# Выполнить SQL запрос
+df = fetch_data('SELECT * FROM my_table LIMIT 10')
+
+# Разбить временной интервал на периоды
+dates = get_dates_tuples('2024-01-01', '2024-02-01', days_interval=7)
+```
+
+## Требования
+
+- Python 3.7+
+- Необходимые переменные окружения:
+  - `CH_USER` - пользователь ClickHouse
+  - `CH_PASSWORD` - пароль ClickHouse
+  - `CH_HOST` - хост ClickHouse (по умолчанию: localhost)
+  - `CH_PORT` - порт ClickHouse (по умолчанию: 8123)
+
+## Лицензия
+
+MIT 
