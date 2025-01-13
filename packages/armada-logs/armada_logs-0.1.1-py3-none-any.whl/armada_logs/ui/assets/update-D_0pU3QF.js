@@ -1,0 +1,1 @@
+import{a6 as s,y as d,j as t,a7 as o}from"./index-Be3uPtkT.js";import{a as p}from"./supportedProviders-ByaiBbPk.js";import"./logo_microsoft-CP2bHIYw.js";function v(){const{Id:r,type:a}=s(),i=d(),n=()=>i("..");if(!r||!a)return t.jsx(o,{});const e=p.getProviderByType(a);return e?t.jsx(e.update.component,{id:r,callback:n}):t.jsx(o,{})}export{v as default};
