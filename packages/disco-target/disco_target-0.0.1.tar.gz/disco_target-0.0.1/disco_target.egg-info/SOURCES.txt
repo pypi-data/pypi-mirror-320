@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+disco_target.egg-info/PKG-INFO
+disco_target.egg-info/SOURCES.txt
+disco_target.egg-info/dependency_links.txt
+disco_target.egg-info/top_level.txt
+tests/test_foo.py
