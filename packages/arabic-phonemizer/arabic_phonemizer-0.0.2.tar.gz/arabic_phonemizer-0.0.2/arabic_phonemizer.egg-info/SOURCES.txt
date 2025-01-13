@@ -1,0 +1,12 @@
+LICENCE.txt
+README.md
+pyproject.toml
+setup.py
+arabic_phonemizer/__init__.py
+arabic_phonemizer/constants.py
+arabic_phonemizer/phonemizer.py
+arabic_phonemizer.egg-info/PKG-INFO
+arabic_phonemizer.egg-info/SOURCES.txt
+arabic_phonemizer.egg-info/dependency_links.txt
+arabic_phonemizer.egg-info/top_level.txt
+tests/test_phonemizer.py
