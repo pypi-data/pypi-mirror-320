@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="ye3sld">
+        <meta name='generation-date' content='2025-01-12T06:18:11.086959'>
+        <title>SLD : S3</title>
+        <style>
+
+            body {
+                background-color: #2c3e50;
+                color: #ecf0f1;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+                transition: background-color 0.3s, color 0.3s;
+                word-wrap: break-word;
+            }
+
+            h1 {
+                margin: 0;
+            }
+
+            #caption {
+                display: block;
+                font-size: 0.7em;
+                color: gray;
+                margin-top: 0.2em;
+            }
+
+            #s3output {
+                display: none;
+            }
+
+            .info {
+                display: none;
+                margin-left: 10px;
+                font-size: 0.9em;
+                color: #789;
+            }
+
+            a {
+                color: #ecf0f1;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s, color 0.3s;
+                padding: 2px 5px 2px 5px;
+            }
+
+            a:hover {
+                background-color: #204e8a;
+                color: #fff;
+            }
+
+            ul {
+                list-style-type: none;
+                padding-left: 0px;
+            }
+
+            ul ul {
+                padding-left: 1em;
+            }
+
+            li {
+                border: 1px solid #34495e;
+                border-radius: 5px;
+                padding: 2px 5px 2px 5px;
+                margin: 5px 0;
+                transition: box-shadow 0.3s;
+            }
+
+            li:hover {
+                box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.7);
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 id="title" title="">SLD : S3</h1>
+        <span id="caption">
+            Structure de la liste des dossiers S3
+            <span id="filescount"></span>
+        </span>
+
+        <pre id="s3output">
+Project/?1234?2023-05-15 10:20:30.123456+00:00
+Project/src/?5678?2023-06-18 11:25:45.654321+00:00
+Project/src/main.py?9101?2023-07-22 12:30:50.987654+00:00
+Project/src/utils.py?1121?2023-08-30 13:35:55.456789+00:00
+Project/src/__init__.py?3141?2023-09-10 14:40:00.123456+00:00
+Project/tests/?5161?2023-10-05 15:45:05.654321+00:00
+Project/tests/test_main.py?7181?2023-11-12 16:50:10.987654+00:00
+Project/tests/test_utils.py?9202?2023-12-20 17:55:15.456789+00:00
+Project/data/?2233?2024-01-25 18:00:20.123456+00:00
+Project/data/raw/?4455?2024-02-15 19:05:25.654321+00:00
+Project/data/raw/data1.csv?6677?2024-03-10 20:10:30.987654+00:00
+Project/data/raw/data2.csv?8899?2024-04-05 21:15:35.456789+00:00
+Project/data/processed/?0001?2024-05-01 22:20:40.123456+00:00
+Project/data/processed/data1_processed.csv?2222?2024-06-12 23:25:45.654321+00:00
+Project/data/processed/data2_processed.csv?4444?2024-07-18 00:30:50.987654+00:00
+Project/docs/?6666?2024-08-25 01:35:55.456789+00:00
+Project/docs/README.md?8888?2024-09-30 02:40:00.123456+00:00
+Project/docs/CHANGELOG.md?4800?2024-10-15 03:45:05.654321+00:00
+Project/requirements.txt?1111?2024-11-20 04:50:10.987654+00:00
+        </pre>
+        <div id="folder-structure"></div>
+        <script>
+
+            // Get the content of the hidden <pre>, and split into an array
+            const preContent = document.getElementById('s3output').textContent;
+            const paths = preContent.trim().split('\n');
+
+            // Build the structure
+            function buildFolderStructure(paths) {
+
+                const root = {};
+
+                paths.forEach(path => {
+                    const parts = path.split('/')
+                        .filter(part => part && !part.startsWith('?'));
+                    let current = root;
+
+                    parts.forEach(part => {
+                        if (!current[part]) {
+                            current[part] = {};
+                        }
+                        current = current[part];
+                    });
+                });
+
+                return root;
+            }
+
+            // Create the list
+            function createList(structure, basePath = '') {
+
+                const ul = document.createElement('ul');
+
+                for (const key in structure) {
+
+                    const parts = key.split('?');
+
+                    const a = document.createElement('a');
+                    const fullPath = `${basePath}/${parts[0]}`;
+                    a.textContent = parts[0];
+                    a.href = encodeURIComponent(fullPath);
+                    a.target = "_blank";
+
+                    const li = document.createElement('li');
+                    li.appendChild(a);
+
+                    if (parts[1] !== undefined && parts[2] !== undefined) {
+                        const span = document.createElement('span');
+                        span.className = 'info';
+                        span.textContent = `Size: ${formatBytes(parts[1])} |
+                            Last Modified: ${parts[2]}`;
+                        li.appendChild(span);
+                    }
+
+                    // If the current key has children, create a nested list
+                    if (Object.keys(structure[key]).length > 0) {
+                        li.appendChild(createList(structure[key], fullPath));
+                    }
+
+                    ul.appendChild(li);
+
+                }
+
+                return ul;
+            }
+
+            const folderStructure = buildFolderStructure(paths);
+            const folderList = createList(folderStructure);
+
+            result = document.getElementById('folder-structure')
+            result.appendChild(folderList);
+
+            // The url base to prepend to all href
+            const href_base_url = '';
+
+            // Prepend the base to each link's href
+            document.querySelectorAll('ul a').forEach(link => {
+                link.href = href_base_url + link.getAttribute('href');
+            });
+
+            // Show files count
+            filescount=document.querySelectorAll('li').length - (
+                document.querySelectorAll('ul').length-1
+            );
+            document.getElementById('filescount').innerHTML =
+                ` | Fichiers : ${filescount}`
+            document.getElementById('title').setAttribute(
+                'title',
+                `S3 Directory Listing Structure | Files : ${filescount}`
+            );
+
+            // Converts a size in bytes to a human-readable format
+            function formatBytes(bytes) {
+                if (bytes === 0) return '0 Bytes';
+                const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB'];
+                const i = Math.floor(Math.log(bytes) / Math.log(1024));
+                const formattedSize = (bytes / Math.pow(1024, i)).toFixed(2);
+                return `${formattedSize} ${sizes[i]}`;
+            }
+
+            // Show size and last modified info when click on title
+            document.getElementById('title').onclick = function() {
+                // Find the first <li> element on the page
+                const firstLi = document.querySelector('li');
+                const span = firstLi ? firstLi.querySelector('.info') : null;
+
+                // Determine the current visibility state
+                const shouldShow = span && (span.style.display === 'none' ||
+                    span.style.display === '');
+
+                // Set the display style based on the determined state
+                document.querySelectorAll('li').forEach(li => {
+                    const span = li.querySelector('.info');
+                    if (span) {
+                        span.style.display = shouldShow ? 'inline' : 'none';
+                    }
+                });
+            };
+
+            // Show size and last modified info when click on li
+            result.onclick = function(event) {
+                const li = event.target.closest('li');
+                if (li &&
+                    event.target.tagName !== 'UL' &&
+                    event.target.tagName !== 'A' &&
+                    event.target.tagName !== 'SPAN') {
+
+                    const span = li.querySelector('.info');
+
+                    span.style.display =
+                        (span.style.display === 'none' ||
+                        span.style.display === '') ?
+                        'inline' : 'none';
+                }
+            };
+
+        </script>
+    </body>
+</html>
