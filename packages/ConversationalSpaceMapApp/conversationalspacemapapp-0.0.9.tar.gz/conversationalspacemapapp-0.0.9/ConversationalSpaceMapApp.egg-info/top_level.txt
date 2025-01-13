@@ -1,0 +1,4 @@
+conversationalspacemapapp
+dist
+docs
+tests
