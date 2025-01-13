@@ -1,0 +1,9 @@
+scrapy_camoufox/__init__.py,sha256=-nNlMKS9nph3FR78_ZG9RGKrbxseeNp2K6nMr0pVGaU,23
+scrapy_camoufox/_utils.py,sha256=m5xdvbMrE9vMnFZQjOfO0JhzN4uWW6vKsFKhAUb4HEE,5463
+scrapy_camoufox/handler.py,sha256=ajwZZ9u3e4IS1MHf6arzN8Y2AU7HAAfHk-wgKeSvZCQ,35547
+scrapy_camoufox/memusage.py,sha256=NrQshcl4BhkFrJT8kcpyYnNx1aDh2jOISNeNBovfxHc,2125
+scrapy_camoufox/page.py,sha256=kFA7Ax66WL--XDhDShctC8gPsU7LJGnN-oPBQPp911I,758
+scrapy_camoufox-0.0.10.dist-info/LICENSE,sha256=irgaybyKbgi_FWAP_B5YejcPBH0Amj-mtT0O6bmr0A0,1461
+scrapy_camoufox-0.0.10.dist-info/METADATA,sha256=MRlBUqyVwlqSIqGjtA1kHjyy_jZJWJgu-yTIFj_FmOU,580
+scrapy_camoufox-0.0.10.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+scrapy_camoufox-0.0.10.dist-info/RECORD,,
