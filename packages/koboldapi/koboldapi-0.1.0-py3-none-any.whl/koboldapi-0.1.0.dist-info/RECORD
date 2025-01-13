@@ -1,0 +1,13 @@
+koboldapi/__init__.py,sha256=CmppLKajpRvKMXJcUbN_GfpmtmG6JGgn2UJxZHOuJN8,278
+koboldapi/chunking/chunker_regex.py,sha256=6AQ1sfigmIHPVNF6Of3gBDAGY---C5E_bQklD-MVLks,5775
+koboldapi/chunking/processor.py,sha256=xzsrgY2TPWzSR0xOE0ibSHxw24fMhptbFCNuwAe9vj8,3440
+koboldapi/core/api.py,sha256=pAUhku5rCOqDaTV5Q27RXp0GBt4YlF93Pvppw6q4VBY,11351
+koboldapi/core/config.py,sha256=CEdEH_tFVBoO9IfzvKM7cYTzrLVvGOCa9IWTwelj3y4,912
+koboldapi/core/core.py,sha256=f74VWwS6045yPvxYZQ75rdr7bCMEXDBUoU3kDm0v3PY,1751
+koboldapi/core/templates.py,sha256=XaxZKdW78Y8rLdWYkMI0zTGO7zn8vuWcaoiYSse4r-A,5977
+koboldapi/utils/fix_busted_json.py,sha256=LvCqkMFZN5kLZIfkhAyROJBiFIc-NrwXlylW7AK55fU,25275
+koboldapi-0.1.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+koboldapi-0.1.0.dist-info/METADATA,sha256=8K2f2_4OjJB5dS0pdDPSX8w3xl3WGSsqpMcUCSUqFh4,8146
+koboldapi-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+koboldapi-0.1.0.dist-info/top_level.txt,sha256=z7B1q7mK8PrI9_dRDz7oQ_ezJGc1r4ARIMhtVuWb_dE,10
+koboldapi-0.1.0.dist-info/RECORD,,
