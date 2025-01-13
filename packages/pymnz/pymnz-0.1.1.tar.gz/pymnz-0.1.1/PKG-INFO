@@ -1,0 +1,36 @@
+Metadata-Version: 2.2
+Name: pymnz
+Version: 0.1.1
+Summary: Uma biblioteca para facilitar a criação de scripts com Python
+Home-page: https://github.com/mateusflawer/pymnz
+Author: Mateus Menezes
+Author-email: mateusflawer@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# My Library
+Biblioteca para facilitar a integração com APIs.  
+
+## Instalação
+```bash
+pip install my-library
+
+
+# USO BÁSICO
+from my_library.core import fetch_api_data
+
+data = fetch_api_data("https://api.exemplo.com/data")
+print(data)
+
