@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: tmeasure
+Version: 2.0
+Summary: Time measure tool for python
+Home-page: https://github.com/tboulet/PythonTimeMeasure
+Author: Timothé Boulet
+Author-email: timothe.boulet0@gmail.com
+License: MIT
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
