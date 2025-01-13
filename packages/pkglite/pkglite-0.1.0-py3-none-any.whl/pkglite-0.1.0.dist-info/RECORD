@@ -1,0 +1,15 @@
+pkglite/__init__.py,sha256=CtG9J0ciRlGuOL2N1gcqWq0VBBih8TNbDdpTRCXY6wQ,129
+pkglite/classify.py,sha256=IY4lJlPAfqhSqYEtVzsl1yuMjMXnRD3mqMQV6yernbc,1144
+pkglite/cli.py,sha256=BzTsMN53H_GukM-aGgkw27QkOG2MvehCY8x8sGvsb0g,1971
+pkglite/main.py,sha256=57FlPPVHgsY9KBvFd-Qxr3gy40B23TXOou_bDaWiFgk,1946
+pkglite/pack.py,sha256=LcS15BUJ7xUpT9ZrLJiCdDzQArQePn0SwD_rQtohaT8,6644
+pkglite/unpack.py,sha256=Rqca_svJRoHHyipnjeZWo1jHv9VGuWGPShWA5NVGpB4,6937
+pkglite/use.py,sha256=8Yl9WRiSDCgjdlBKGWBYMU2b7nXYhgbjuDNycxDPY2o,2470
+pkglite/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkglite/templates/pkgliteignore.txt,sha256=hMe2DZfAZ3OLO2rf9OvqpzeWhp0bYOmsLaAr91YLG7I,143
+pkglite-0.1.0.dist-info/METADATA,sha256=bP6arP4nViBK23y4mpOuZIudFIJM5w7fCP5LI9z5Jw4,3113
+pkglite-0.1.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+pkglite-0.1.0.dist-info/entry_points.txt,sha256=V7HlC-hZETl-NsIkS_dFD9vYkhIdsxDnzGZwj47s99Q,45
+pkglite-0.1.0.dist-info/licenses/LICENSE,sha256=WRjJJhrX5owVwYj-1C4qhYnPPJr4A6m3YECQHjELqBk,1119
+pkglite-0.1.0.dist-info/licenses/LICENSES_THIRD_PARTY,sha256=B_LMUP_vETGYSxPKYSGfWLacUSOL9jXmpFRbcElhVJU,923
+pkglite-0.1.0.dist-info/RECORD,,
