@@ -1,0 +1,10 @@
+numpy
+pandas
+pyserial
+tensorflow
+tqdm
+
+[dev]
+pytest
+flake8
+black
