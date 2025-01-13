@@ -1,0 +1,44 @@
+Metadata-Version: 2.4
+Name: currency-converter-wolf-skullcave
+Version: 1.0.0a2
+Project-URL: Documentation, https://github.com/wolf_skullcave-Laptop/currency-converter-wolf-skullcave#readme
+Project-URL: Issues, https://github.com/wolf_skullcave-Laptop/currency-converter-wolf-skullcave/issues
+Project-URL: Source, https://github.com/wolf_skullcave-Laptop/currency-converter-wolf-skullcave
+Author-email: wolf_skullcave-Laptop <7805222+wolfSkullCave@users.noreply.github.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: beautifulsoup4
+Requires-Dist: typer
+Description-Content-Type: text/markdown
+
+# currency_converter_wolf_skullcave
+
+[![PyPI - Version](https://img.shields.io/pypi/v/currency-converter-wolf-skullcave.svg)](https://pypi.org/project/currency-converter-wolf-skullcave)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/currency-converter-wolf-skullcave.svg)](https://pypi.org/project/currency-converter-wolf-skullcave)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install currency-converter-wolf-skullcave
+```
+
+## License
+
+`currency-converter-wolf-skullcave` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
