@@ -1,0 +1,6 @@
+name: pysciidoc
+version: true
+title: pysciidoc
+nav:
+- modules/ROOT/nav.adoc
+- modules/api/nav.adoc
