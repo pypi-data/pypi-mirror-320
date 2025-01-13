@@ -1,0 +1,27 @@
+{% load formify l10n %}
+{% load viewcomponent_tags %}
+
+{% component formify_helper.field_wrapper_component as field_component %}
+  {% call field_component.label %}
+    {% component formify_helper.label_component field=field formify_helper=formify_helper %}{% endcomponent %}
+  {% endcall %}
+
+  {% call field_component.input %}
+    <div class="{{ formify_helper.field_class }}" {% if flat_attrs %} {{ flat_attrs|safe }}{% endif %}>
+      {% for choice in field.field.choices %}
+        <div>
+          <label class="{{ formify_helper.css_container.checkbox_label|default_if_none:'' }}" for="id_{{ field.html_name }}_{{ forloop.counter }}">
+            <input type="checkbox" class="{{ formify_helper.css_container.checkboxselectmultiple }}"{% if choice.0 in field.value or choice.0|stringformat:"s" in field.value or choice.0|stringformat:"s" == field.value|default_if_none:""|stringformat:"s" %} checked="checked"{% endif %} name="{{ field.html_name }}" id="id_{{ field.html_name }}_{{ forloop.counter }}" value="{{ choice.0|unlocalize }}" {{ field.field.widget.attrs|flatatt }}>
+            {% comment %}line break here would cause extra white space around the checkbox{% endcomment %}
+            {{ choice.1|unlocalize }}
+          </label>
+        </div>
+      {% endfor %}
+    </div>
+  {% endcall %}
+
+  {% call field_component.field_helper_text_and_errors %}
+    {% component formify_helper.field_error_help_text_component field=field formify_helper=formify_helper %}{% endcomponent %}
+  {% endcall %}
+
+{% endcomponent %}
