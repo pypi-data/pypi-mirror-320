@@ -1,0 +1,73 @@
+Metadata-Version: 2.2
+Name: python-can-coe
+Version: 0.1.1
+Summary: An interface introducing CAN over Ethernet into python-can
+Author-email: Gerrit Beine <mail@gerritbeine.com>
+Maintainer-email: Gerrit Beine <mail@gerritbeine.com>
+License: Copyright (c) 2016-2025, Gerrit Beine
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        * Redistributions of source code must retain the above copyright notice, this
+          list of conditions and the following disclaimer.
+        
+        * Redistributions in binary form must reproduce the above copyright notice,
+          this list of conditions and the following disclaimer in the documentation
+          and/or other materials provided with the distribution.
+        
+        * Neither the name of fronius2mqtt nor the names of its
+          contributors may be used to endorse or promote products derived from
+          this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Homepage, https://c0d3.sh/smarthome/python-can-coe
+Project-URL: Issues, https://github.com/gbeine/python-can-coe/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Software Development :: Embedded Systems :: Controller Area Network (CAN)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: python-can>=4.5.0
+
+# python-can-coe
+
+This module provides a CAN bus interface allowing to use [CoE (CAN over Ethernet)](https://wiki.ta.co.at/CAN_over_Ethernet_(CoE)) with [python-can](https://pypi.org/project/python-can/).
+
+Its intended use is for communicating with the CMI module from [Technische Alternative](https://help.ta.co.at/DE/CMIHELP/coe____can_over_ethernet_.htm).
+
+The interface allows sending and receiving CAN datagrams over UDP and convert them into easy to use message objects. 
+
+## Using python-can-coe
+
+There are two different versions of CoE from Technische Alternaive.
+
+Examples how to use `python-can-coe` with both versions are in the [`examples`](https://c0d3.sh/smarthome/python-can-coe/src/branch/main/examples) directory,
+
+## Disclaimer
+
+Use with care ond only if you know what you're doing.
+
+## Support
+
+I have not the time (yet) to provide professional support for this project.
+But feel free to submit issues and PRs, I'll check for it and honor your contributions.
+
+## License
+
+The whole project is licensed under BSD-3-Clause license. Stay fair.
