@@ -1,0 +1,22 @@
+Metadata-Version: 2.2
+Name: mecher_amt_api_client
+Version: 0.0.8
+Summary: AMT API client
+Home-page: https://github.com/MaximChernyak98/mecher_amt_api_client
+Maintainer: mecher
+Keywords: testing
+Description-Content-Type: text/plain
+Requires-Dist: allure-pytest==2.13.5
+Requires-Dist: requests==2.32.3
+Requires-Dist: pydantic==1.10.11
+Requires-Dist: starlette==0.27.0
+Requires-Dist: mecher-base-api-client==0.0.21
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: maintainer
+Dynamic: requires-dist
+Dynamic: summary
+
+AMT API client
