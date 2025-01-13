@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+extdict/__init__.py
+extdict/table.py
+extdict.egg-info/PKG-INFO
+extdict.egg-info/SOURCES.txt
+extdict.egg-info/dependency_links.txt
+extdict.egg-info/requires.txt
+extdict.egg-info/top_level.txt
