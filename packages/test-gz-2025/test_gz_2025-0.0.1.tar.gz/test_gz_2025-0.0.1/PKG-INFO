@@ -1,0 +1,42 @@
+Metadata-Version: 2.2
+Name: test_gz_2025
+Version: 0.0.1
+Summary: A python package demo
+Author-email: GZ <zhangganchi@sina.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/batterysnoopy/test_gz_2025
+Keywords: test_gz_2025
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Provides-Extra: all
+Requires-Dist: test_gz_2025[extra]; extra == "all"
+Provides-Extra: extra
+Requires-Dist: pandas; extra == "extra"
+
+# test_gz_2025
+
+
+[![image](https://img.shields.io/pypi/v/test_gz_2025.svg)](https://pypi.python.org/pypi/test_gz_2025)
+[![image](https://img.shields.io/conda/vn/conda-forge/test_gz_2025.svg)](https://anaconda.org/conda-forge/test_gz_2025)
+
+
+**A python package demo**
+
+
+-   Free software: MIT License
+-   Documentation: https://batterysnoopy.github.io/test_gz_2025
+    
+
+## Features
+
+-   TODO

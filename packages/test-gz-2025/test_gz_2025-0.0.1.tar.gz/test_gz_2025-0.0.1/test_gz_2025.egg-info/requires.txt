@@ -1,0 +1,7 @@
+numpy
+
+[all]
+test_gz_2025[extra]
+
+[extra]
+pandas
