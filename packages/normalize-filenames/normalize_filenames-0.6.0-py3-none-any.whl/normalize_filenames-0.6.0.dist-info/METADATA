@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: normalize-filenames
+Version: 0.6.0
+Summary: A small utility to normalize filenames the way that I like
+Author-email: Jeremy Gibson <jeremy.gibson@crusosoft.com>
+Requires-Python: >=3.12
+Requires-Dist: emoji
+Requires-Dist: unidecode
+Description-Content-Type: text/markdown
+
+## Normalize Filenames
+This is a project that is really only for me.
+
+There are no tests. It is how I like to have my files normalized so
+that is it. It is for me only. If you want to use it, go for it.
+
+I have it published because I like to use it with `pipx` or `uvx`
+
+Fin

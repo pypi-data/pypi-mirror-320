@@ -1,0 +1,2 @@
+[console_scripts]
+normf = normalize_filenames.normf:main
