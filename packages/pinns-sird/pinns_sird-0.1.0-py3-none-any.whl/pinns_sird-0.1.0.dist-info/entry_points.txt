@@ -1,0 +1,2 @@
+[console_scripts]
+run-sird = pinns_sird:run_sird
