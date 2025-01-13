@@ -1,0 +1,9 @@
+davinci_rest/__init__.py,sha256=WNKtbPQ9eLcovyJ1ehBt8qcRDil8aM6FDoWPwuxvCgU,76
+davinci_rest/client.py,sha256=viW18bLSboQTp2Cnb6lRuvtVMDC95mAbluv1_jjYZBs,5349
+davinci_rest/launch_davinci_rest.py,sha256=trRjnSOyzbW99HiH5DLUXlPy-rTKf4rm1jGtYGsgGhQ,154
+davinci_rest/server.cp311-win_amd64.pyd,sha256=oTUXcgCK9OXlhB-HaFW7RuFWZfbfbXF38e5UP8p9qCY,131584
+davinci_rest-0.1.0.dist-info/LICENSE,sha256=TbkogUD3SUtQ_2H4h-QoSyVGccfweZSoox4q1AWEx-M,1095
+davinci_rest-0.1.0.dist-info/METADATA,sha256=LlNnQHS2KqNsoY_hWMdYwG7wv_l8Ty-BYMaEk8uWvXg,496
+davinci_rest-0.1.0.dist-info/WHEEL,sha256=y4n9_669c4ZQLyT56MHjc_JUbnwtaZfMVMycweN557o,102
+davinci_rest-0.1.0.dist-info/top_level.txt,sha256=9vhnsdjHmyshpZ0XCw0ICFs973WTRl28MFUhghl_rEs,13
+davinci_rest-0.1.0.dist-info/RECORD,,

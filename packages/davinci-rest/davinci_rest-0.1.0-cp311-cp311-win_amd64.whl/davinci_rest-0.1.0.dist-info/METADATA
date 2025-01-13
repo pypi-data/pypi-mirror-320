@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: davinci-rest
+Version: 0.1.0
+Summary: A REST server for interacting with DaVinci Resolve
+Author: Davinci Rest Team
+Author-email: devluck2000@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: fastapi
+Requires-Dist: pydantic
+Requires-Dist: uvicorn[standard]
+
