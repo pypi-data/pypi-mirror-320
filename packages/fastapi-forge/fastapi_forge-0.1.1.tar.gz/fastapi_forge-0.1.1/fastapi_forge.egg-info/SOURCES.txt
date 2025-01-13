@@ -1,0 +1,17 @@
+README.md
+setup.py
+fastapi_forge/__init__.py
+fastapi_forge/cli.py
+fastapi_forge/config.py
+fastapi_forge/dtos.py
+fastapi_forge/server.py
+fastapi_forge/utils.py
+fastapi_forge.egg-info/PKG-INFO
+fastapi_forge.egg-info/SOURCES.txt
+fastapi_forge.egg-info/dependency_links.txt
+fastapi_forge.egg-info/entry_points.txt
+fastapi_forge.egg-info/requires.txt
+fastapi_forge.egg-info/top_level.txt
+fastapi_forge/static/index.html
+fastapi_forge/static/script.js
+fastapi_forge/static/style.css
