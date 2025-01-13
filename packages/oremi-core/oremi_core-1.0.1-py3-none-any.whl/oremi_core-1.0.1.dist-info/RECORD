@@ -1,0 +1,17 @@
+oremi_core/__init__.py,sha256=46LXyFTx16R0Ga6trc_WmNUG1MkWy7lLF83eb3h0ViM,690
+oremi_core/array.py,sha256=YCo3pHq0BcG0F5Yhn9_r_UmEp_90JvGfs8MKOcOoVCU,1354
+oremi_core/event.py,sha256=dvCpR6j1zeZwtBK8O-Iah0xPpfdCdsnBjy4baQGzEZ8,4624
+oremi_core/json.py,sha256=_xHA-dyWyFDFsJwM4vHtMpo1mmGBMO8LRp-a36hhdgE,1025
+oremi_core/logger.py,sha256=sRmyPFKUQ1GG-HuWNO9QM5tOB2_raUbBcAa25sLhvzg,3464
+oremi_core/network.py,sha256=wOQjd9zegDqcNL2hObgUlowdoaUWSe_hc8zHXbXTovY,1152
+oremi_core/process.py,sha256=LwEe7pwE5b_-JWXYCUtntiopTxDBOxpybfw53HIyl6M,1195
+oremi_core/timer.py,sha256=xspDKmENlJ1ow0laIKzrP8FS4h9x5RnFAMWFjkhylDc,2195
+oremi_core/vars.py,sha256=2ES3nwlMnJPWIbd28JOPBD7VtkTYCaBDwGol9dqdMpo,3044
+oremi_core/wsclient.py,sha256=P2L5uKtlwZ3EyQhnMjhyQuCax5HOEiUMGS2ZpFv6vTA,5992
+oremi_core/wsjsonrpc.py,sha256=NuKARgAlfS8uQhVtK0nbqBWdbmp3Cn_F8tWzCnZsTzs,3328
+oremi_core/wsserver.py,sha256=sbU4wdQTw1fQ4rh2s0sTbQfkRaU-uKOKuCnLz4aq_10,6048
+oremi_core-1.0.1.dist-info/LICENSE,sha256=yUf4IZCREEqsoLm3QK9duDSHBXPV2Hh15bmFzv1F0OI,11370
+oremi_core-1.0.1.dist-info/LICENSE_HEADER.txt,sha256=llEg6I0bBntPljCC6MWEO9L4jlEnwv0YvZpuWq9b9YI,685
+oremi_core-1.0.1.dist-info/METADATA,sha256=FvN3P53W2GO823rnZsO__0Wvv7UIq-usVizLUE6F5Mk,2763
+oremi_core-1.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+oremi_core-1.0.1.dist-info/RECORD,,
