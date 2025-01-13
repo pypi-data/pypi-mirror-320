@@ -1,0 +1,16 @@
+vp_models/__init__.py,sha256=MJYA6ieNtJDnlzZODYju1aNlwIJX48mOPDyALs-jj74,522
+vp_models/models/Decision_tree.py,sha256=_NbqfEA1fCUnBfTrmC3QKi35QwTtE95CVHnPKPKjDnE,5245
+vp_models/models/Knn.py,sha256=weOcnwWht4ij8z7aYy72xIOUdpqi15v0wTRK0_sQcAo,991
+vp_models/models/Linear_regression.py,sha256=PeZgk1kaNIR6h5NW3lFvbI7f42Hl8xHXmNcOjFfVf6Q,2863
+vp_models/models/Logistic_regression.py,sha256=mQOwpNZhJ_kUMoZSHzNg9f-uGz8t-W8lZoFbztlWfRo,2601
+vp_models/models/Multivariate_regression.py,sha256=Pf06rIY9f_k1XCxk57y_Rs3NWgT2wKPxcT18i_kBEJo,2866
+vp_models/models/Random_forest.py,sha256=9BK2u7fFosfS983sZxIpjkVWtuDXG8XCV0ISNvXIOXw,6810
+vp_models/models/__init__.py,sha256=2JzR5liBlusyIONWgLEH6joY8FMZ_Nj241mXqNWm0vc,498
+vp_models/utils/__init__.py,sha256=1elbIp_kUCLackwSKP_teoyljg2BmwfW4ppsSWpG7A4,121
+vp_models/utils/data_processing.py,sha256=e2MbjZQ6xHeAbDuXbmoTC2gPtpAqJ1pEbpczxlJrEcs,796
+vp_models/utils/evaluation.py,sha256=JsS-VioF_rax1KrAfrc_ki6x0pdhrNhM9v1Aa94o8eg,4623
+vp_models-1.0.2.dist-info/METADATA,sha256=4hgI6DD_msET169sDawTvlGCJMjM_TuSLHp-2pjO0NM,1298
+vp_models-1.0.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+vp_models-1.0.2.dist-info/entry_points.txt,sha256=ZTaMGnQDZNfrJ4OJZybMpES89nzb4hxYssL5lAj1foM,40
+vp_models-1.0.2.dist-info/top_level.txt,sha256=xEJI3Yt1THcYSk_qTwnqkCAhs8KlXSahFhXZSTaLZHU,10
+vp_models-1.0.2.dist-info/RECORD,,
