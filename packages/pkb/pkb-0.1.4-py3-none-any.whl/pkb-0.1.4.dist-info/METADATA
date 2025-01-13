@@ -1,0 +1,38 @@
+Metadata-Version: 2.3
+Name: pkb
+Version: 0.1.4
+Summary: Personal Knowledge Base
+Author: hyw208
+Author-email: hyw208@gmail.com
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: cachetools (>=5.5.0,<6.0.0)
+Requires-Dist: fastapi[standard] (>=0.115.6,<0.116.0)
+Requires-Dist: jinja2 (>=3.1.5,<4.0.0)
+Requires-Dist: markdown (>=3.7,<4.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: watchdog (>=6.0.0,<7.0.0)
+Requires-Dist: whoosh-reloaded (>=2.7.5,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Personal Knowledge Base
+
+
+# Prerequisites
+1. Python >=3.12.7
+
+
+# Installation 
+1. git clone https://github.com/hyw208/pkb.git to get the 'content' folder and its md files
+2. cd pkb
+3. python -m venv .venv
+4. source .venv/bin/activate 
+5. pip install pkb 
+   
+
+# To Launch 
+1. python -m pkb.fast
+2. uvicorn pkb.fast:app (not working sometimes... fixing it)
+3. 
