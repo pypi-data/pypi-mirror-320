@@ -1,0 +1,2 @@
+[console_scripts]
+buildify-api-cli = buildify_parser.cli:main
