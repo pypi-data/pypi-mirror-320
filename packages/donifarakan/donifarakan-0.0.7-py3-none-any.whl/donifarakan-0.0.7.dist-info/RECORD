@@ -1,0 +1,12 @@
+donifarakan/__init__.py,sha256=IILge-3HATlXq3BmewTZDL9x-dEOSbaYKzHwhKRFlL0,64
+donifarakan/client.py,sha256=aoXgzUrQOa-JLjRA9DKSZ6k6v1OwfeYC49s0riEqH4I,19229
+donifarakan/config.py,sha256=e2hYTu74CmpD_R8IZ59vMy97VRQZK9Z8DeS25LVGCX4,147
+donifarakan/server.py,sha256=ILmILg7SN-gGQLbPADSui65OJK3K_0iNDhglg0ZT6jc,1149
+donifarakan/utils.py,sha256=xOgVTCmIwQ16b7sjJAg_XbINas3FKVdDh6lfrBwycpM,3529
+donifarakan/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+donifarakan/routes/__init__.py,sha256=AxJQjBX6jrOHM9I959VoPw_ZWGI0IbIfL-lFvswaenY,11025
+donifarakan-0.0.7.dist-info/LICENSE,sha256=1ktdLQi9GZwV40ECAse4zQBYcYms31aV_cQDSh4HGD8,1076
+donifarakan-0.0.7.dist-info/METADATA,sha256=2Cm5s0TCzu6ZSwSYCofYS09Tzwp_JcdnRDrSCrNd8C8,1541
+donifarakan-0.0.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+donifarakan-0.0.7.dist-info/top_level.txt,sha256=deZ112hkfLnp-ttXx8xWbpXekKiYcEBkpaqKA7NKP34,12
+donifarakan-0.0.7.dist-info/RECORD,,
