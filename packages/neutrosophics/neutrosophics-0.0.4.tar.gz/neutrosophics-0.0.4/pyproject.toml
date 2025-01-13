@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "neutrosophics"
+version = "0.0.4"
+authors = [
+  { name="Mariya Sha", email="nozir9407@gmail.com" },
+]
+description = "Working with netrosophic sets"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/NozirTukhtamurodov/netrosophic"
+Issues = "https://github.com/NozirTukhtamurodov/netrosophic"
