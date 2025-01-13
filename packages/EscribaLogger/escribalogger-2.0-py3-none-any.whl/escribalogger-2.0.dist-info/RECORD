@@ -1,0 +1,13 @@
+EscribaLogger/DPSingleton.py,sha256=RKeO8pkEoSPCpQbLROzig2R0rU5CasSozS8akrlM3V4,259
+EscribaLogger/Log.py,sha256=-GsRGbMX67gKBK2m5YEdtExk1VPQ69RVgbTR2RsE8NM,3694
+EscribaLogger/__init__.py,sha256=ml-7bkBuz3_mVJTYYSeXuEc0ZPmGbf815Jjbv-NwFBI,92
+EscribaLogger/drivers/__init__.py,sha256=efmyfNIfsDSoQac3NxNz15TkyYIZvc_1s3iYPtXgNV0,597
+EscribaLogger/drivers/driver_file.py,sha256=z2srYo0IeEok8aFPvE1GzPYwgnVoVwalFfMKMPSwJhM,1064
+EscribaLogger/drivers/driver_graylog.py,sha256=VqQ9xletsjsnnM8qGkgB5CFKVA1Nuv73cW_af0L5OX0,1152
+EscribaLogger/drivers/driver_stdout.py,sha256=ed1J_JCNJniVmLMtG9IhmsByZ-d7JIIyVOrUpxT4F4I,1092
+EscribaLogger/process_extra_context.py,sha256=7fYs8zAZFZ-sohuviiKKFpKPnp32wdyXZK0cO-iyTww,616
+escribalogger-2.0.dist-info/METADATA,sha256=tqxCQAvRcq9PxkJUzkPQTKcaDgb7T40QrR9PKJ6MwY4,4696
+escribalogger-2.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+escribalogger-2.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+escribalogger-2.0.dist-info/licenses/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+escribalogger-2.0.dist-info/RECORD,,
