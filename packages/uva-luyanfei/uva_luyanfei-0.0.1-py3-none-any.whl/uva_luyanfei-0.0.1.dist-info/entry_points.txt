@@ -1,0 +1,2 @@
+[console_scripts]
+uva = uva_luyanfei.cli:main
