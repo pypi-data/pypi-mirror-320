@@ -1,0 +1,22 @@
+Metadata-Version: 2.2
+Name: js-loader
+Version: 0.2.2
+Summary: Load javascript files as python modules
+Author: Hans Then
+Author-email: hans.then@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-python
+Dynamic: summary
+
+This module allows you to import javascript Common JS modules
+as python. Javascript functions are exposed as `JsCode` objects
+which are an abstraction over the javascript source code.
+
+It makes use of the pythonmonkey library, which will not 
+be installed automatically. 
+
