@@ -1,0 +1,79 @@
+LICENSE.txt
+LICENSE_GPL_v3.txt
+README.md
+pyproject.toml
+src/flawful/__init__.py
+src/flawful/german.py
+src/flawful/utils.py
+src/flawful.egg-info/PKG-INFO
+src/flawful.egg-info/SOURCES.txt
+src/flawful.egg-info/dependency_links.txt
+src/flawful.egg-info/requires.txt
+src/flawful.egg-info/top_level.txt
+src/flawful/data/example1/input_notes.txt
+src/flawful/data/example1/known_no_audio.txt
+src/flawful/data/example1/okaylist_LA.txt
+src/flawful/data/example1/okaylist_LB.txt
+src/flawful/data/example1/okaylist_LC.txt
+src/flawful/data/example1/reflist_LA.txt
+src/flawful/data/example1/reflist_LB.txt
+src/flawful/data/example1/reflist_LC.txt
+src/flawful/data/example1/audio/DiB/DiB-D01_Handy.mp3
+src/flawful/data/example1/audio/DiB/DiB-D01_Italien.mp3
+src/flawful/data/example1/audio/DiB/DiB-D01_acht.mp3
+src/flawful/data/example1/audio/DiB/DiB-D01_bleiben.mp3
+src/flawful/data/example1/audio/DiB/DiB-D01_ich bin Student.mp3
+src/flawful/data/example1/audio/DiB/DiB-D01_ich komme aus den USA.mp3
+src/flawful/data/example1/audio/DiB/DiB-D01_kommen aus.mp3
+src/flawful/data/example1/audio/DiB/DiB-D01_rosa.mp3
+src/flawful/data/example1/audio/DiB/DiB-D01_was ist deine Handynummer.mp3
+src/flawful/data/example1/audio/DiB/DiB-D02_Professor.mp3
+src/flawful/data/example1/audio/DiB/DiB-D02_Student.mp3
+src/flawful/data/example1/audio/DiB/DiB-D02_Vorlesungsverzeichnis.mp3
+src/flawful/data/example1/audio/DiB/DiB-D02_sprechen.mp3
+src/flawful/data/example1/audio/DiB/DiB-D02_welcher.mp3
+src/flawful/data/example1/audio/DiB/DiB-D03_Brötchen.mp3
+src/flawful/data/example1/audio/DiB/DiB-D03_Gericht.mp3
+src/flawful/data/example1/audio/DiB/DiB-D03_Joghurt.mp3
+src/flawful/data/example1/audio/DiB/DiB-D03_trinken.mp3
+src/flawful/data/example1/audio/DiB/DiB-D04_Komödie.mp3
+src/flawful/data/example1/audio/DiB/DiB-D04_du bist ja verrückt.mp3
+src/flawful/data/example1/audio/DiB/DiB-D04_teuer.mp3
+src/flawful/data/example1/audio/DiB/DiB-D04_verrückt.mp3
+src/flawful/data/example1/audio/DiB/DiB-D05_Familienmitglied.mp3
+src/flawful/data/example1/audio/DiB/DiB-D05_Geschwister.mp3
+src/flawful/data/example1/audio/DiB/DiB-D05_Verwandte.mp3
+src/flawful/data/example1/audio/DiB/DiB-D05_verrückt.mp3
+src/flawful/data/example1/audio/DiB/DiB-D06_helfen.mp3
+src/flawful/data/example1/audio/DiB/DiB-D06_teuer.mp3
+src/flawful/data/example1/audio/DiB/DiB-D07_Gesicht.mp3
+src/flawful/data/example1/audio/DiB/DiB-D07_Gesichtscreme.mp3
+src/flawful/data/example1/audio/DiB/DiB-D07_bewusstlos.mp3
+src/flawful/data/example1/audio/DiB/DiB-D07_der Esel sagt ihm_ dass er nicht allein zu bleiben braucht.mp3
+src/flawful/data/example1/audio/DiB/DiB-D07_ich freue mich auf.mp3
+src/flawful/data/example1/audio/DiB/DiB-D07_sich das Gesicht waschen.mp3
+src/flawful/data/example1/audio/DiB/DiB-D08_Professor.mp3
+src/flawful/data/example1/audio/DiB/DiB-D08_ein Bier trinken gehen.mp3
+src/flawful/data/example1/audio/DiB/DiB-D08_einen Kaffee trinken gehen.mp3
+src/flawful/data/example1/audio/DiB/DiB-D08_hart.mp3
+src/flawful/data/example1/audio/DiB/DiB-D08_ich hab_ von dir geträumt.mp3
+src/flawful/data/example1/audio/DiB/DiB-D08_sollen wir mal zusammen einen Kaffee trinken.mp3
+src/flawful/data/example1/audio/DiB/DiB-D08_teuer.mp3
+src/flawful/data/example1/audio/DiB/DiB-D08_träumen.mp3
+src/flawful/data/example1/audio/DiB/DiB-D09_Berufsberater.mp3
+src/flawful/data/example1/audio/DiB/DiB-D09_Kinder erziehen.mp3
+src/flawful/data/example1/audio/DiB/DiB-D09_alleinerziehende Mutter.mp3
+src/flawful/data/example1/audio/DiB/DiB-D09_überraschen.mp3
+src/flawful/data/example1/audio/DiB/DiB-D10_gleich.mp3
+src/flawful/data/example1/audio/DiB/DiB-D10_sofort.mp3
+src/flawful/data/example1/audio/DiB/DiB-D10_wahnsinnig.mp3
+src/flawful/data/example1/audio/numbered_ogg/De-Kalorie.ogg
+src/flawful/data/example1/audio/numbered_ogg/De-kalorienarm2.ogg
+src/flawful/data/example1/audio/numbered_ogg/De-kalorienreich3.ogg
+src/flawful/examples/example1.py
+src/flawful/examples/output/example1/de2_problems.txt
+src/flawful/examples/output/example1/example1.stdout
+src/flawful/examples/output/example1/output_notes.txt
+src/flawful/examples/output/example1/output_notes_fields.txt
+src/flawful/examples/output/example1/wordlists_headwords_not_in_notes.txt
+src/flawful/examples/output/example1/words_no_audio.txt
