@@ -1,0 +1,238 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+exclude = [
+    "assets*",
+    "conversationalspacemapapp/IconConverter*"
+]
+include = [
+    "conversationalspacemapapp/App/assets/history.txt"
+]
+
+[project]
+name = "ConversationalSpaceMapApp"
+version = "0.0.10" # RELEASE
+dependencies = [  # RELEASE
+  "toga-chart",
+  "toga",
+  "mockito",
+]
+requires-python = ">= 3.12"
+authors = [
+  {name = "Manuel Bieri", email = "mail@manuelbieri.ch"}
+]
+maintainers = [
+  {name = "Manuel Bieri", email = "mail@manuelbieri.ch"}
+]
+description = "Generate conversational space maps for interview data."
+readme = "README.rst"
+license = {text = "BSD-3-Clause License"}
+classifiers = [
+  # How mature is this project? Common values are
+  #   3 - Alpha
+  #   4 - Beta
+  #   5 - Production/Stable
+  "Development Status :: 4 - Beta",
+  # Specify the Python versions you support here.
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+
+[project.gui-scripts]
+csm-run = "conversationalspacemapapp:run"
+
+[project.urls]
+Homepage = "https://github.com/manuelbieri/ConversationalSpaceMap"
+Documentation = "https://github.com/manuelbieri/ConversationalSpaceMap"
+Repository = "https://github.com/manuelbieri/ConversationalSpaceMapApp.git"
+
+# This project was generated with 0.3.19 using template: https://github.com/beeware/briefcase-template@v0.3.19
+[tool.briefcase]
+project_name = "ConversationalSpaceMapApp"
+bundle = "ch.manuelbieri"
+version = "0.0.10" # RELEASE
+url = "https://manuelbieri.ch/ConversationalSpaceMapApp/"
+license.file = "LICENSE"
+author = "Manuel Bieri"
+author_email = "mail@manuelbieri.ch"
+
+[tool.briefcase.app.conversationalspacemapapp]
+formal_name = "ConversationalSpaceMapApp"
+description = "Generate conversational space maps for interview data."
+long_description = """More details about the app should go here."""
+icon = "conversationalspacemapapp/resources/conversationalspacemapapp"
+
+sources = [
+    "conversationalspacemapapp",
+]
+
+test_sources = [
+    "tests",
+]
+
+requires = [
+   "toga-chart",
+]
+test_requires = [
+    "mockito",
+]
+
+[tool.briefcase.app.conversationalspacemapapp.macOS]
+universal_build = true
+requires = [
+    "toga-cocoa~=0.4.8",
+    "std-nslog~=1.0.0",
+]
+
+[tool.briefcase.app.conversationalspacemapapp.linux]
+requires = [
+    "toga-gtk~=0.4.8",
+]
+
+[tool.briefcase.app.conversationalspacemapapp.linux.system.debian]
+system_requires = [
+    # Needed to compile pycairo wheel
+    "libcairo2-dev",
+    # Needed to compile PyGObject wheel
+    "libgirepository1.0-dev",
+]
+
+system_runtime_requires = [
+    # Needed to provide GTK and its GI bindings
+    "gir1.2-gtk-3.0",
+    "libgirepository-1.0-1",
+    # Dependencies that GTK looks for at runtime
+    "libcanberra-gtk3-module",
+    # Needed to provide WebKit2 at runtime
+    # Note: Debian 11 and Ubuntu 20.04 require gir1.2-webkit2-4.0 instead
+    # "gir1.2-webkit2-4.1",
+]
+
+[tool.briefcase.app.conversationalspacemapapp.linux.system.rhel]
+system_requires = [
+    # Needed to compile pycairo wheel
+    "cairo-gobject-devel",
+    # Needed to compile PyGObject wheel
+    "gobject-introspection-devel",
+]
+
+system_runtime_requires = [
+    # Needed to support Python bindings to GTK
+    "gobject-introspection",
+    # Needed to provide GTK
+    "gtk3",
+    # Dependencies that GTK looks for at runtime
+    "libcanberra-gtk3",
+    # Needed to provide WebKit2 at runtime
+    # "webkit2gtk3",
+]
+
+[tool.briefcase.app.conversationalspacemapapp.linux.system.suse]
+system_requires = [
+    # Needed to compile pycairo wheel
+    "cairo-devel",
+    # Needed to compile PyGObject wheel
+    "gobject-introspection-devel",
+]
+
+system_runtime_requires = [
+    # Needed to provide GTK
+    "gtk3",
+    # Needed to support Python bindings to GTK
+    "gobject-introspection", "typelib(Gtk) = 3.0",
+    # Dependencies that GTK looks for at runtime
+    "libcanberra-gtk3-module",
+    # Needed to provide WebKit2 at runtime
+    # "libwebkit2gtk3", "typelib(WebKit2)",
+]
+
+[tool.briefcase.app.conversationalspacemapapp.linux.system.arch]
+system_requires = [
+    # Needed to compile pycairo wheel
+    "cairo",
+    # Needed to compile PyGObject wheel
+    "gobject-introspection",
+    # Runtime dependencies that need to exist so that the
+    # Arch package passes final validation.
+    # Needed to provide GTK
+    "gtk3",
+    # Dependencies that GTK looks for at runtime
+    "libcanberra",
+    # Needed to provide WebKit2
+    # "webkit2gtk",
+]
+
+system_runtime_requires = [
+    # Needed to provide GTK
+    "gtk3",
+    # Needed to provide PyGObject bindings
+    "gobject-introspection-runtime",
+    # Dependencies that GTK looks for at runtime
+    "libcanberra",
+    # Needed to provide WebKit2 at runtime
+    # "webkit2gtk",
+]
+
+[tool.briefcase.app.conversationalspacemapapp.linux.appimage]
+manylinux = "manylinux_2_28"
+
+system_requires = [
+    # Needed to compile pycairo wheel
+    "cairo-gobject-devel",
+    # Needed to compile PyGObject wheel
+    "gobject-introspection-devel",
+    # Needed to provide GTK
+    "gtk3-devel",
+    # Dependencies that GTK looks for at runtime, that need to be
+    # in the build environment to be picked up by linuxdeploy
+    "libcanberra-gtk3",
+    "PackageKit-gtk3-module",
+    "gvfs-client",
+]
+
+linuxdeploy_plugins = [
+    "DEPLOY_GTK_VERSION=3 gtk",
+]
+
+[tool.briefcase.app.conversationalspacemapapp.linux.flatpak]
+flatpak_runtime = "org.gnome.Platform"
+flatpak_runtime_version = "45"
+flatpak_sdk = "org.gnome.Sdk"
+
+[tool.briefcase.app.conversationalspacemapapp.windows]
+requires = [
+    "toga-winforms~=0.4.8",
+]
+
+# Mobile deployments
+[tool.briefcase.app.conversationalspacemapapp.iOS]
+requires = [
+    "toga-iOS~=0.4.8",
+    "std-nslog~=1.0.0",
+]
+
+[tool.briefcase.app.conversationalspacemapapp.android]
+requires = [
+    "toga-android~=0.4.8",
+]
+
+base_theme = "Theme.MaterialComponents.Light.DarkActionBar"
+
+build_gradle_dependencies = [
+    "com.google.android.material:material:1.11.0",
+    # Needed for DetailedList
+    # "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0",
+    # Needed for MapView
+    # "org.osmdroid:osmdroid-android:6.1.0",
+]
+
+# Web deployments
+[tool.briefcase.app.conversationalspacemapapp.web]
+requires = [
+    "toga-web~=0.4.8",
+]
+style_framework = "Shoelace v2.3"
+
