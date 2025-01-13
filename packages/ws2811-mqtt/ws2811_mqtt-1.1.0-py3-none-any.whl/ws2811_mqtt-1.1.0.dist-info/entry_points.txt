@@ -1,0 +1,3 @@
+[console_scripts]
+ws2811-mqtt=ws2811_mqtt:main
+
