@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+proxyseller/__init__.py
+proxyseller.egg-info/PKG-INFO
+proxyseller.egg-info/SOURCES.txt
+proxyseller.egg-info/dependency_links.txt
+proxyseller.egg-info/not-zip-safe
+proxyseller.egg-info/requires.txt
+proxyseller.egg-info/top_level.txt
