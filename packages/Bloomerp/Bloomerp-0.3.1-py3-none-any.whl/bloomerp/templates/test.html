@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Streaming with Django</title>
+</head>
+<body>
+    <h1>Streaming Example</h1>
+    <div id="stream-content"></div>
+    <script>
+        const contentDiv = document.getElementById('stream-content');
+        fetch('{% url "components_event_stream" %}')
+            .then(response => {
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+
+                function read() {
+                    return reader.read().then(({ done, value }) => {
+                        if (done) {
+                            console.log('Stream finished');
+                            return;
+                        }
+                        contentDiv.innerHTML += decoder.decode(value, { stream: true });
+                        return read();
+                    });
+                }
+
+                return read();
+            })
+            .catch(console.error);
+    </script>
+</body>
+</html>
