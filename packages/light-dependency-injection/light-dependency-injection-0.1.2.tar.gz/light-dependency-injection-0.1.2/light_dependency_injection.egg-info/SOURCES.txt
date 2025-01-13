@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+light_dependency_injection.egg-info/PKG-INFO
+light_dependency_injection.egg-info/SOURCES.txt
+light_dependency_injection.egg-info/dependency_links.txt
+light_dependency_injection.egg-info/top_level.txt
+lightdi/__init__.py
+lightdi/core.py
+tests/__init__.py
+tests/test_core.py
