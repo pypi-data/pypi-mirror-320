@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "nonebot-plugin-fortnite"
+version = "0.1.5"
+description = "堡垒之夜插件"
+authors = ["fllesser <fllessive@gmail.com>"]
+readme = "README.md"
+packages = [{include = "nonebot_plugin_fortnite"}]
+repository = "https://github.com/fllesser/nonebot-plugin-fornite"
+keywords = ["nonebot", "nonebot2"]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+httpx = ">=0.27.0,<1.0.0"
+pillow = "^10.4.0"
+playwright = "^1.4.9.1"
+nonebot2 = "^2.4.0"
+nonebot-plugin-uninfo = ">=0.6.5,<1.0.0"
+nonebot-plugin-alconna = ">=0.54.2,<1.0.0"
+nonebot-plugin-localstore = ">=0.7.3,<1.0.0"
+nonebot-plugin-apscheduler = ">=0.5.0,<1.0.0"
+fortnite-api = {version = "^3.2.1", extras = ["speed"]}
+
+[tool.poetry.group.test.dependencies]
+nb-cli = "^1.4.2"
+nonebot2 = {version = "^2.4.0", extras = ["fastapi"]}
+
+[tool.nonebot]
+adapters = []
+plugins = ["nonebot_plugin_fortnite"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
