@@ -1,0 +1,27 @@
+Metadata-Version: 2.3
+Name: funcnodes-core
+Version: 0.3.9
+Summary: core package for funcnodes
+License: AGPL-3.0
+Author: Julian Kimmig
+Author-email: julian.kimmig@linkdlab.de>
+Requires-Python: >=3.11
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Requires-Dist: dill
+Requires-Dist: exposedfunctionality (>=0.3.11)
+Requires-Dist: python-dotenv
+Requires-Dist: setuptools
+Requires-Dist: tqdm
+Project-URL: Homepage, https://github.com/Linkdlab/funcnodes_core
+Project-URL: download, https://pypi.org/project/funcnodes-core/#files
+Project-URL: source, https://github.com/Linkdlab/funcnodes_core
+Project-URL: tracker, https://github.com/Linkdlab/funcnodes_core/issues
+Description-Content-Type: text/markdown
+
+Core package for funcnodes.
+for detailed instructions go to the funcnodes repo
+
