@@ -1,0 +1,7 @@
+README.md
+setup.py
+du_whisper.egg-info/PKG-INFO
+du_whisper.egg-info/SOURCES.txt
+du_whisper.egg-info/dependency_links.txt
+du_whisper.egg-info/requires.txt
+du_whisper.egg-info/top_level.txt
