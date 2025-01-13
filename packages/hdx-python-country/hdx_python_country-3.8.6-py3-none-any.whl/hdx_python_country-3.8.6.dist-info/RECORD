@@ -1,0 +1,12 @@
+hdx/location/Countries & Territories Taxonomy MVP - C&T Taxonomy with HXL Tags.csv,sha256=MmlPjFeJEMuMPiDqvJNMuTYCjAgcJ7RLA2MnRVpnyFc,76090
+hdx/location/__init__.py,sha256=e8kW6TpCo4e2X3HLqq8cU1nSYQxFPEVWpc19LR_p-ng,419
+hdx/location/_version.py,sha256=NmTY-qonZQdckF7zV1lYR3uHAq5LFIXZ8-9q2tjuo_o,411
+hdx/location/adminlevel.py,sha256=LPDEMA0-dYJojZbZb2077QCSxpO9nufl87u0yQjQeGI,34349
+hdx/location/country.py,sha256=7881y2TVoZ5udgyOvT8STqOmcNPapNkTCfV4d6go2WU,33706
+hdx/location/currency.py,sha256=04qqdEXdEHsMt25ZniGA3a7MucB2FzcrAENIbm2U0Gk,20070
+hdx/location/wfp_api.py,sha256=I_u5NcBqWPnP6W-7efo1R-QCtBr1j35ZOaxk98hehL0,5954
+hdx/location/wfp_exchangerates.py,sha256=eb6HfJavGzc4Q3oZSpF6LZFemxENtuTbhtF0Bp6XpK0,2219
+hdx_python_country-3.8.6.dist-info/METADATA,sha256=ygWBXb6WpuevlVkLEe78VF3smY035Q7iQLiR0Jrk3MI,3806
+hdx_python_country-3.8.6.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+hdx_python_country-3.8.6.dist-info/licenses/LICENSE,sha256=nFnLKrWlg4a8nMeNDVtfSvja93eDZ4i6fw7xwlXB1cA,1307
+hdx_python_country-3.8.6.dist-info/RECORD,,
