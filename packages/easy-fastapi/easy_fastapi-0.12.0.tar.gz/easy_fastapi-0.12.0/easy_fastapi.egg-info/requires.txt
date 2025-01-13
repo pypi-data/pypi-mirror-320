@@ -1,0 +1,9 @@
+easy_pyoc
+fastapi
+tortoise-orm
+pydantic
+aerich
+pyjwt
+pyyaml
+redis
+bcrypt
