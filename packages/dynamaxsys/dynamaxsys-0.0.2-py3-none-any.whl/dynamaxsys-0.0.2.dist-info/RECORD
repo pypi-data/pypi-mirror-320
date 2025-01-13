@@ -1,0 +1,9 @@
+dynamaxsys/base.py,sha256=wB1qqFZp3rIaCN3lSlajz6RBzgI3wekjsnfR8XXDOWQ,1719
+dynamaxsys/integrators.py,sha256=eJqa1qj-OGBv11F6ytteCFWPk6AP-vHEWRElE8jR_M8,1743
+dynamaxsys/simplecar.py,sha256=uNCGYCTndCjAB3XIgoVEnts3a4pmC2TnF_L9J5DkZcE,1336
+dynamaxsys/unicycle.py,sha256=hSRJUHkNuru83Oj496DUrC-S5g5esGvxclwz84Zpas8,3454
+dynamaxsys/utils.py,sha256=HmS1DY-W-PkMdKHMF-zDdh3emjafssB0ZX8wihahbXk,649
+dynamaxsys-0.0.2.dist-info/METADATA,sha256=TUNeRGLOYq-HubTqHXF0H31QCIzcJ-9OYftGfRb3q-4,258
+dynamaxsys-0.0.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+dynamaxsys-0.0.2.dist-info/top_level.txt,sha256=bMTpmmHPrIfaKQL1eFSK5I0ph4bomLQRMd_jFtR84i4,11
+dynamaxsys-0.0.2.dist-info/RECORD,,
