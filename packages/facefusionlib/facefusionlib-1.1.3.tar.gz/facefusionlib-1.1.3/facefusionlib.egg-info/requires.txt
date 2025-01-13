@@ -1,0 +1,10 @@
+filetype==1.2.0
+numpy
+onnx==1.15.0
+onnxruntime
+opencv-python==4.8.1.78
+realesrgan==0.3.0
+tqdm
+
+[gpu]
+onnxruntime-gpu
