@@ -1,0 +1,176 @@
+[project]
+name = "ethosian"
+version = "0.1.1"
+description = "Develop versatile agents integrating recall, expertise, and advanced functionalities."
+requires-python = ">=3.7"
+readme = "README.md"
+authors = []
+
+dependencies = [
+  "docstring-parser",
+  "gitpython",
+  "httpx",
+  "pydantic",
+  "pydantic-settings",
+  "python-dotenv",
+  "pyyaml",
+  "rich",
+  "tomli",
+  "typer",
+  "typing-extensions",
+]
+
+[project.optional-dependencies]
+dev = [
+    "mypy",
+    "pytest",
+    "ruff",
+    "types-pyyaml",
+    "timeout-decorator",
+]
+docker = [
+    "docker"
+]
+aws = [
+    "docker",
+    "boto3"
+]
+k8s = [
+    "docker",
+    "kubernetes"
+]
+server = [
+    "fastapi",
+    "uvicorn",
+]
+all = [
+    "mypy",
+    "pytest",
+    "ruff",
+    "types-pyyaml",
+    "docker",
+    "boto3",
+    "kubernetes",
+    "fastapi",
+    "uvicorn",
+]
+
+[project.scripts]
+ethosian = "ethosian.cli.entrypoint:ethosian_cli"
+
+[project.urls]
+homepage = "https://ethosianhq.com"
+documentation = "https://docs.ethosianhq.com"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["ethosian*"]
+
+[tool.setuptools.package-data]
+ethosian = ["py.typed"]
+
+[tool.pytest.ini_options]
+log_cli = true
+testpaths = "tests"
+
+[tool.ruff]
+line-length = 120
+exclude = ["ethenv*", "aienv*"]
+# Ignore `F401` (import violations) in all `__init__.py` files
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+"ethosian/k8s/app/traefik/crds.py" = ["E501"]
+
+[tool.mypy]
+check_untyped_defs = true
+no_implicit_optional = true
+warn_unused_configs = true
+plugins = ["pydantic.mypy"]
+exclude = ["ethenv*", "aienv*", "scratch*", "wip*", "tmp*", "cookbook/assistants/examples/*", "ethosian/assistant/openai/*"]
+
+[[tool.mypy.overrides]]
+module = [
+  "altair.*",
+  "anthropic.*",
+  "apify_client.*",
+  "arxiv.*",
+  "atlassian.*",
+  "boto3.*",
+  "botocore.*",
+  "bs4.*",
+  "cassio.*",
+  "chonkie.*",
+  "chromadb.*",
+  "clickhouse_connect.*",
+  "clip.*",
+  "cohere.*",
+  "crawl4ai.*",
+  "docker.*",
+  "docx.*",
+  "duckdb.*",
+  "duckduckgo_search.*",
+  "exa_py.*",
+  "fastapi.*",
+  "firecrawl.*",
+  "github.*",
+  "google.*",
+  "googlesearch.*",
+  "groq.*",
+  "huggingface_hub.*",
+  "jira.*",
+  "kubernetes.*",
+  "lancedb.*",
+  "langchain.*",
+  "langchain_core.*",
+  "llama_index.*",
+  "mem0.*",
+  "mistralai.*",
+  "mlx_whisper.*",
+  "nest_asyncio.*",
+  "newspaper.*",
+  "numpy.*",
+  "ollama.*",
+  "openai.*",
+  "openbb.*",
+  "pandas.*",
+  "pgvector.*",
+  "PIL.*",
+  "pinecone.*",
+  "pinecone_text.*",
+  "psycopg.*",
+  "psycopg2.*",
+  "pyarrow.*",
+  "pycountry.*",
+  "pymongo.*",
+  "pypdf.*",
+  "pytz.*",
+  "qdrant_client.*",
+  "rapidocr_onnxruntime.*",
+  "replicate.*",
+  "requests.*",
+  "scrapegraph_py.*",
+  "sentence_transformers.*",
+  "serpapi.*",
+  "setuptools.*",
+  "simplejson.*",
+  "slack_sdk.*",
+  "spider.*",
+  "sqlalchemy.*",
+  "starlette.*",
+  "streamlit.*",
+  "tantivy.*",
+  "tavily.*",
+  "textract.*",
+  "timeout_decorator.*",
+  "torch.*",
+  "uvicorn.*",
+  "vertexai.*",
+  "voyageai.*",
+  "wikipedia.*",
+  "yfinance.*",
+  "youtube_transcript_api.*",
+]
+ignore_missing_imports = true
