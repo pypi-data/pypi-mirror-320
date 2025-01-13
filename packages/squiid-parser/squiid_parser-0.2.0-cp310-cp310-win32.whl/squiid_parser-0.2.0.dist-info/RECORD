@@ -1,0 +1,8 @@
+squiid_parser/__init__.py,sha256=aVLJ9XB6C_7oPJDn0qP8albvShjXN31pmyXyS6wrzwQ,324
+squiid_parser/_backend.py,sha256=wYdb0i4vZBeyRKwSfSobtFDInRHTnfte-Nxu0cKQDNk,3253
+squiid_parser/_data_structs.py,sha256=EyRkcWJRi-myCTzaqOqSNAostBcMCPeYC7GYB95bfmM,632
+squiid_parser/squiid_parser.dll,sha256=Q1ProypSGi2D7tjNGP-RTKaaUB_E1rS-aX2hDgZGadA,184320
+squiid_parser-0.2.0.dist-info/LICENSE,sha256=atfZsrdmvmOnADU38vdp5XEb9BP8JhDIVSA3BHK7hAs,35758
+squiid_parser-0.2.0.dist-info/METADATA,sha256=w_Tw_EIO_q50YuVvugO8INFFMsrfXIRcey-mx6YuD1U,2441
+squiid_parser-0.2.0.dist-info/WHEEL,sha256=1jHvfRwYNMixTpQreg3NxtPyQ7iDZl59dyy47MLxIQY,94
+squiid_parser-0.2.0.dist-info/RECORD,,
