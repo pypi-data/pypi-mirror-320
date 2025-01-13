@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mongodb-excel-operation
+Version: 1.1.2
+Summary: mongo_excel_operations.py is a Python utility module designed to facilitate seamless operations between MongoDB and Excel files. This module provides functions to import data from Excel files into MongoDB collections, export data from MongoDB collections into Excel files, read files (CSV or Excel) into Pandas DataFrames with proper data type handling, and manage MongoDB indexes on collections.
+Home-page: https://github.com/PrasannaJK8/mongo-excel-operation
+Author: Prasanna J
+Author-email: Prasanna24@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+

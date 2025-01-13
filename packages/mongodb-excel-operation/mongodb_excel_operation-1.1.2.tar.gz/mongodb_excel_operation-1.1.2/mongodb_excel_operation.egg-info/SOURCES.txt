@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+mongodb_excel_operation/__init__.py
+mongodb_excel_operation/mongodb_excel_operation.py
+mongodb_excel_operation.egg-info/PKG-INFO
+mongodb_excel_operation.egg-info/SOURCES.txt
+mongodb_excel_operation.egg-info/dependency_links.txt
+mongodb_excel_operation.egg-info/top_level.txt
