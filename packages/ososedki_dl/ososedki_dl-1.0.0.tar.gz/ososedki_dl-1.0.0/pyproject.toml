@@ -1,0 +1,39 @@
+[project]
+name = "ososedki_dl"
+version = "1.0.0"
+description = "Blazing bulk web scraper for leak sites"
+license = "GPL-3.0-only"
+authors = [
+  { name = "Alejandro González Momblán", email = "agelrenorenardo@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.12,<4.0"
+dependencies = [
+  "aiofiles (>=24.1.0,<25.0.0)",
+  "aiohttp (>=3.9.5,<4.0.0)",
+  "beautifulsoup4 (>=4.12.2,<5.0.0)",
+  "core-helpers (>=1.2.0,<2.0.0)",
+  "fake-useragent (>=1.5.1,<2.0.0)",
+  "platformdirs (>=4.2.2,<5.0.0)",
+  "requests (>=2.31.0,<3.0.0)",
+  "requests-pprint (>=1.0.1,<2.0.0)",
+  "rich (>=13.5.3,<14.0.0)",
+  "tldextract (>=5.1.2,<6.0.0)",
+  "validators (>=0.22.0,<0.23.0)",
+]
+
+[project.urls]
+repository = "https://github.com/YisusChrist/ososedki_dl"
+
+[project.scripts]
+ososedki_dl = "ososedki_dl.__main__:main"
+
+[tool.poetry.group.types.dependencies]
+types-aiofiles = "^24.1.0.20241221"
+types-beautifulsoup4 = "^4.12.0.20241020"
+types-pygments = "^2.18.0.20240506"
+types-requests = "^2.32.0.20241016"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
