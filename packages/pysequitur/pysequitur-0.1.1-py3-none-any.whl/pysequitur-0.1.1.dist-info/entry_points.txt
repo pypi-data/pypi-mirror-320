@@ -1,0 +1,3 @@
+[console_scripts]
+pysequitur=pysequitur.main:main
+
