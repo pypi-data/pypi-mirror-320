@@ -1,0 +1,7 @@
+[console_scripts]
+SacreCOMET = sacrecomet:cmd_entry
+SacreComet = sacrecomet:cmd_entry
+sacre-comet = sacrecomet:cmd_entry
+sacreCOMET = sacrecomet:cmd_entry
+sacreComet = sacrecomet:cmd_entry
+sacrecomet = sacrecomet:cmd_entry
