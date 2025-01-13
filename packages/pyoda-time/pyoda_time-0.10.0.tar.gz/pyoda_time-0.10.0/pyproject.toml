@@ -1,0 +1,125 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyoda-time"
+version = "0.10.0"
+description = "An alternative datetime library for Python."
+authors = [
+    {name = "Chris McEvoy", email = "chris@chrismcevoy.net"},
+]
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.12"
+dependencies = [
+    "pyicu>=2.14",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://pyodatime.org/"
+Repository = "https://github.com/chrisimcevoy/pyoda-time"
+Changelog = "https://github.com/chrisimcevoy/pyoda-time/blob/main/CHANGELOG.md"
+
+[dependency-groups]
+dev = [
+    "pytest-xdist>=3.6.1",
+    "pytest>=8.3.4",
+    "pytest-cov>=6.0.0",
+    "furo>=2024.8.6",
+    "sphinx>=8.1.3",
+    "pre-commit<4.0",
+    "coverage>=7.6.9",
+]
+
+[tool.coverage.report]
+exclude_also = [
+    "if TYPE_CHECKING:"
+]
+
+[tool.docformatter]
+black = true
+recursive = true
+in-place = true
+wrap-summaries = 120
+wrap-descriptions = 120
+
+[tool.mypy]
+disallow_untyped_defs = true
+implicit_reexport = false
+pretty = true
+strict = true
+warn_no_return = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_configs = true
+warn_unused_ignores = true
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+fixable = ["ALL"]
+ignore = [
+    "ANN401",   # any-type
+    "D104",     # undocumented-public-package
+    "D203",     # one-blank-line-before-class (conflicts with ruff-format)
+    "D205",     # blank-line-after-summary
+    "D209",     # new-line-after-last-paragraph (conflicts with docformatter)
+    "D212",     # multi-line-summary-first-line
+    "D213",     # multi-line-summary-second-line
+    "D400",     # ends-in-period
+    "D401",     # non-imperative-mood
+    "D404",     # docstring-starts-with-this
+    "D405",     # capitalize-section-name
+    "D410",     # no-blank-line-after-section
+    "D413",     # blank-line-after-last-section
+    "D415",     # ends-in-punctuation
+    "D418",     # overload-with-docstring
+    "PLR0911",  # too-many-return-statements
+    "PLR0912",  # too-many-branches
+    "PLR0913",  # too-many-arguments
+    "PLR0915",  # too-many-statements
+    "PLR2004",  # magic-value-comparison
+    "PLW2901",  # redefined-loop-name
+    "PYI046",   # unused-private-protocol (in the same module as it is declared!)
+]
+select = [
+    "ANN",      # flake8-annotations
+    "C4",       # flake8-comprehensions
+    "D",        # pydocstyle
+    "E",        # pycodestyle (error)
+    "F",        # pyflakes
+    "FA",       # flake8-future-annotations
+    "FURB",     # refurb
+    "I",        # isort
+    "PERF",     # perflint
+    "PIE",      # flake8-pie
+    "PL",       # pylint
+    "PYI",      # flake8-pyi
+    "RUF",      # ruff
+    "T20",      # flake8-print
+    "TC",       # flake8-type-checking
+    "UP",       # pyupgrade
+    "W",        # pycodestyle (warning)
+]
+unfixable = []
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = [
+    "D100",     # undocumented-public-module
+    "D101",     # undocumented-public-class
+    "D102",     # undocumented-public-method
+    "D103",     # undocumented-public-function
+    "D105",     # undocumented-magic-method
+    "D107",     # undocumented-public-init
+]
