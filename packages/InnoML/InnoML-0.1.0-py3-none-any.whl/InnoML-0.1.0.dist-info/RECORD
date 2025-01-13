@@ -1,0 +1,12 @@
+InnoML/__init__.py,sha256=00X4HmgEITZ3xTcP3TayQG19wxrWZXRLB-tvSlNF91s,296
+InnoML/decision_tree.py,sha256=I0-Qz0RaoHjABLR4a20VxnfClbJT_JxyFD_u6RrfEjg,6415
+InnoML/knn.py,sha256=CsJl2FjQzFlZejhL5gqHbClrM-Yb3mjEJU_Ne6-Xo4U,721
+InnoML/linear_regression.py,sha256=p7jZrEPxP7Ykhg44k9tvbCv5C0HMXk4I9I4hZmkP90Y,546
+InnoML/logistic_regression.py,sha256=skRJyYYhArnhAWN8WrX3XdsSQvJ9cPvFLgR4ud3DdGA,1364
+InnoML/multiple_regression.py,sha256=WArZ_6cBWkB0v31MYh6fp9Iz3Uxy4GwCEqycNqszcPk,1606
+InnoML/random_forest.py,sha256=nNGv7y7_NhTykgyTuj9IgxoooYD5M5pOkOh38zt7fN0,1567
+InnoML/utils.py,sha256=yjdQmRG5XXunIBfnt7DxX-RKEJW_BzXYAWP-cMSIXLQ,110
+InnoML-0.1.0.dist-info/METADATA,sha256=o7sIsequOnGVaYqbKJ-dzSfYw5rZls1D_CcOF04L0Yc,3570
+InnoML-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+InnoML-0.1.0.dist-info/top_level.txt,sha256=52dL82b5WWuaQL3aqvDnzornZ9voUmuolGNim6rB3Cs,7
+InnoML-0.1.0.dist-info/RECORD,,
