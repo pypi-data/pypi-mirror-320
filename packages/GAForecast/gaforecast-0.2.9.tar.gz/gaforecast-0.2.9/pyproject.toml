@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "GAForecast"
+version = "0.2.9"
+description = "Prediction library for tabular data powered by neural network."
+authors = ["Vaclav Matejka <matejka.vaclav@gmail.com>"]
+exclude = [
+    "gaforecast/data",
+    "gaforecast/tests"
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9 , <3.11"  # because you need Tensorflow and you need to install it on your own
+numpy = "^1.21"
+scikit-learn = "^1.0"
+pandas="*"
+pyts="*"
+opencv-python="*"
+opentsne = "^1.0.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+jupyterlab = "*"
+matplotlib="*"
+black="*"
+isort="*"
+mypy="*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
