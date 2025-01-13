@@ -1,0 +1,83 @@
+{% extends 'ui/layout.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}Login{% endblock %}
+
+{% block body %}
+    <section class="hero is-success is-fullheight">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+            <header class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <p class="title navbar-item">HRP</p>
+                        <span class="navbar-burger" data-target="navbarMenuHeroC">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+{#                    <div id="navbarMenuHeroC" class="navbar-menu">#}
+{#                        <div class="navbar-end">#}
+{#                            <a class="navbar-item is-active"> Home </a>#}
+{#                            <a class="navbar-item"> Examples </a>#}
+{#                            <a class="navbar-item"> Documentation </a>#}
+{#                            <span class="navbar-item">#}
+{#                                <a class="button is-success is-inverted">#}
+{#                                    <span class="icon">#}
+{#                                        <i class="fab fa-github"></i>#}
+{#                                    </span>#}
+{#                                    <span>Download</span>#}
+{#                                </a>#}
+{#                            </span>#}
+{#                        </div>#}
+{#                    </div>#}
+                </div>
+            </header>
+        </div>
+
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns">
+                    <div class="column box is-8-tablet is-offset-2-tablet is-6-desktop is-offset-3-desktop is-4-fullhd is-offset-4-fullhd p-3" data-theme="light">
+                        <form method="POST" action="" hx-boost="false">
+                            {% csrf_token %}
+                            <span class="has-text-danger is-size-7">{{ form.non_field_errors }}</span>
+                            <label class="label">
+                                <span class="has-text-black">{{ form.username.label_tag }}</span>
+                                {{ form.username }}
+                                <span class="has-text-danger is-size-7">{{ form.username.errors }}</span>
+                            </label>
+                            <label class="label">
+                                <span class="has-text-black">{{ form.password.label_tag }}</span>
+                                {{ form.password }}
+                                <span class="has-text-danger is-size-7">{{ form.password.errors }}</span>
+                            </label>
+                            <input type="submit" class="button is-fullwidth is-success is-medium"
+                                   value="{% translate 'Login' %}">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero footer: will stick at the bottom -->
+        <div class="hero-foot">
+            <nav class="tabs is-boxed is-fullwidth">
+                <div class="container">
+                    <ul>
+{#                        <li class="is-active"><a>Overview</a></li>#}
+{#                        <li><a>Modifiers</a></li>#}
+{#                        <li><a>Grid</a></li>#}
+{#                        <li><a>Elements</a></li>#}
+{#                        <li><a>Components</a></li>#}
+{#                        <li><a>Layout</a></li>#}
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+{% endblock %}
