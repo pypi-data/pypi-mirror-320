@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "gnssmultipath"
+version = "1.5.2"
+authors = [
+  { name="Per Helge Aarnes", email="per.helge.aarnes@gmail.com" },
+]
+maintainers  = [
+  { name="Per Helge Aarnes", email="per.helge.aarnes@gmail.com" },
+]
+description = "A python software that provides comprehensive solutions for GNSS multipath analysis."
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = [
+    "GNSS",
+    "multipath",
+    "analytics",
+    "gps",
+    "glonass",
+    "galileo",
+    "beidou",
+    "rinex",
+    "sp3",
+    "snr",
+    "position-estimation",
+]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+  "matplotlib==3.7.5",
+  "numpy==1.24.4",
+  "pandas==2.0.3",
+  "tqdm==4.66.5",
+  "zstandard==0.23.0",
+  "pytest",
+  "pyproj",
+  ]
+
+[project.urls]
+"Homepage" = "https://github.com/paarnes/GNSS_Multipath_Analysis_Software"
+"Bug Tracker" = "https://github.com/paarnes/GNSS_Multipath_Analysis_Software/issues"
