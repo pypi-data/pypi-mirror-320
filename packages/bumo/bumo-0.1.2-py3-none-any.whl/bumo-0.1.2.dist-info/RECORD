@@ -1,0 +1,10 @@
+bumo/__init__.py,sha256=DMA53Fpd7w3W_hYzT86CwscEjsT94Os1_Etms07xcgM,113
+bumo/builder.py,sha256=VmY8nvIvSnZXcyWMq_tzDsuqC_AJ8lAnJYj5fhErkMw,12983
+bumo/color_palettes.py,sha256=gV2sPXZpxdWBk0jXDMqe7IJjnd5EOClTBpdyDHe0SsM,14605
+bumo/colors.py,sha256=3fVhjZZiy-zPy9VvxryKtVMorzpduAX_2cYroWlI3iA,1731
+bumo/mutation.py,sha256=-K956ijf06Dwi59xR_o7M13UGXJjACOdpz65VfOcTr4,7206
+bumo/shapes.py,sha256=6hSf9dILlyHmNnS3JH6JFJljIs85_fxesYW8FB0F27c,1508
+bumo-0.1.2.dist-info/LICENSE,sha256=dGmdIuqIvANIMPbYKwaz0u-RT5gITsG_rFJ7WxlmWQc,1067
+bumo-0.1.2.dist-info/METADATA,sha256=jq_wi945-Z3uzfID9FQxB8h6oBIqHZzz92CJHPoRohk,5840
+bumo-0.1.2.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+bumo-0.1.2.dist-info/RECORD,,
