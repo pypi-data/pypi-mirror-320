@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: thelittlehackers-core
+Version: 1.0.8
+Summary: Collection of reusable Python components to share with Python projects
+Home-page: https://github.com/the-little-hackers/library_core_python
+License: MIT
+Keywords: library,utils
+Author: Daniel CAUNE
+Author-email: daniel.caune@thelittlehackers.com
+Requires-Python: >=3.12,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: normality (>=2.5.0,<3.0.0)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: python-dateutil (>=2.9.0.post0,<3.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Project-URL: Repository, https://github.com/the-little-hackers/library_core_python
+Description-Content-Type: text/markdown
+
+# The Little Hackers Python Utility Library
+Collection of reusable Python components to share with Python projects.
+
+- `thelittlehackers.utils.nodule_utils`: This Python module provides utilities for navigating your project's directory structure and load modules and classes dynamically without needing direct imports. This can be useful for more flexible code organization and potentially avoiding circular import issues.
+

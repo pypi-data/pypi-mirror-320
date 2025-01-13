@@ -1,0 +1,33 @@
+[tool.poetry]
+authors = ["Daniel CAUNE <daniel.caune@thelittlehackers.com>"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries",
+]
+description = "Collection of reusable Python components to share with Python projects"
+keywords = ["library", "utils"]
+license = "MIT License"
+name = "thelittlehackers-core"
+packages = [{include = "thelittlehackers", from = "src"}]
+readme = "README.md"
+repository = "https://github.com/the-little-hackers/library_core_python"
+version = "1.0.8"
+
+[tool.poetry.dependencies]
+normality = "^2.5.0"
+pydantic = "^2.9.2"
+python = "^3.12"
+python-dateutil = "^2.9.0.post0"
+toml = "^0.10.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+flake8 = "^7.1.1"
+setuptools = "^74.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
