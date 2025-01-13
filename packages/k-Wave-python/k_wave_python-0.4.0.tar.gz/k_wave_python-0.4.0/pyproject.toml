@@ -1,0 +1,112 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "k-Wave-python"
+dynamic = ["version"]
+description = "Acoustics toolbox for time domain acoustic and ultrasound simulations in complex and tissue-realistic media."
+readme = "docs/README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Farid Yagubbayli", email = "farid.yagubbayli@tum.de" },
+    { name = "Walter Simson", email = "walter.simson@tum.de"}
+]
+maintainers = [
+    { name = "Walter Simson", email = "walter.simson@tum.de" },
+    { name = "Farid Yagubbayli", email = "farid.yagubbayli@tum.de" },
+    { name = "David Sinden", email = "david.sinden@mevis.fraunhofer.de" }
+]
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "h5py==3.12.1",
+    "scipy==1.14.1",
+    "opencv-python==4.10.0.84",
+    "deepdiff==8.1.1",
+    "numpy>=1.22.2,<2.3.0",
+    "matplotlib==3.10.0",
+    "beartype==0.19.0",
+    "jaxtyping==0.2.36"
+]
+
+[project.urls]
+Homepage = "http://www.k-wave.org/"
+Documentation = "https://waltersimson.com/k-wave-python/"
+Repository = "https://github.com/waltsims/k-wave-python"
+Bug-tracker = "https://github.com/waltsims/k-wave-python/issues"
+
+[project.optional-dependencies]
+test = ["pytest",
+        "coverage==7.6.9",
+        "phantominator",
+        "testfixtures==8.3.0",
+        "requests==2.32.3"]
+example = ["gdown==5.2.0"]
+docs = [ "sphinx-mdinclude==0.6.2",
+    "sphinx-copybutton==0.5.2",
+    "sphinx-tabs==3.4.7",
+    "sphinx-toolbox==3.8.0",
+    "furo==2024.8.6"]
+dev = ["pre-commit==4.0.1"]
+
+[tool.hatch.version]
+path = "kwave/__init__.py"
+
+[tool.hatch.metadata]
+
+# can be removed as soon as uff is published and no longer a direct reference
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["kwave", "kwave.utils", "kwave.reconstruction", "kwave.kWaveSimulation_helper"]
+
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    "/.github",
+    "/docs",
+    "/examples",
+    "/tests",
+    "/kwave/bin/*",
+    "*.mat",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = [
+    "error::DeprecationWarning",
+    "error::PendingDeprecationWarning",
+    "ignore::DeprecationWarning:kwave",
+]
+
+[tool.coverage.run]
+branch = true
+command_line = "-m pytest"
+include = [
+    "kwave/*",
+    ]
+omit = [
+    # omit anything in a .local directory anywhere
+    "tests/*",
+    ]
+
+[tool.ruff]
+# Allow lines to be as long as 140 characters.
+line-length = 140
+# F821 needed to avoid false-positives in nested functions, F722 due to jaxtyping 
+lint.ignore = ["F821", "F722"]
+lint.select = ["NPY201"]
+[tool.ruff.lint.per-file-ignores]
+# ksource.py contains a lot of non-ported Matlab code that is not usable.
+"kwave/ksource.py" = ["F821"]
+# create_storage_variables.py references a few functions that are not ported yet.
+"kwave/kWaveSimulation_helper/create_storage_variables.py" = ["F821"]
+"kwave/kWaveSimulation_helper/__init__.py" = ["F401"]
+"kwave/options/__init__.py" = ["F401"]
+# Fix in the future => E731: Do not assign a `lambda` expression, use a `def`
+"kwave/utils/mapgen.py" = ["E731"]

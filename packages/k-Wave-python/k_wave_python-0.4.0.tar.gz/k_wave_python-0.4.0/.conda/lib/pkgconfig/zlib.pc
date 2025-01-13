@@ -1,0 +1,13 @@
+prefix=/Users/walters/git/k-wave-python/.conda
+exec_prefix=/Users/walters/git/k-wave-python/.conda
+libdir=/Users/walters/git/k-wave-python/.conda/lib
+sharedlibdir=/Users/walters/git/k-wave-python/.conda/lib
+includedir=/Users/walters/git/k-wave-python/.conda/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
