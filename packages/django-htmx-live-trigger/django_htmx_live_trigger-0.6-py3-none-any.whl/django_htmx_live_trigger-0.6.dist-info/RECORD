@@ -1,0 +1,12 @@
+django_htmx_live_trigger/__init__.py,sha256=TsM1HstasvA6mAjceEwdj6a9wPLa6vN5hl27eJI89Ko,318
+django_htmx_live_trigger/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+django_htmx_live_trigger/apps.py,sha256=3HYq17CV8nBMw5Ehapo4pm05wztMez38neIbRf2Tix8,202
+django_htmx_live_trigger/consumers.py,sha256=8YSJ1v4EchBSwPmWbbdX8ihsHncaqlnFNVqI7wU8n_Q,513
+django_htmx_live_trigger/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+django_htmx_live_trigger/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_htmx_live_trigger/static/django_htmx_live_trigger/js/htmx-ws-events.js,sha256=IOoyHl8He7TeQWY7lm08iCc9ACjcjQSWnumEtUZFYOk,9425
+django_htmx_live_trigger-0.6.dist-info/LICENSE,sha256=O4m4w-OTpBPMhFMNsfphXUb8yi6dhOaF23b4SLRJ2tk,1093
+django_htmx_live_trigger-0.6.dist-info/METADATA,sha256=yg9kSzHFXjrVW4cueIMLCeMEs2XkfBDLwDYdIwO1n4U,3541
+django_htmx_live_trigger-0.6.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+django_htmx_live_trigger-0.6.dist-info/top_level.txt,sha256=LB5bFNysTjktZueFtGoNW3M8rV_7uOQfFXxrHCaNSY4,25
+django_htmx_live_trigger-0.6.dist-info/RECORD,,
