@@ -1,0 +1,12 @@
+shutdown_on_lan/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shutdown_on_lan/Arguments.py,sha256=A042oD7liqpJiG2bQ70YIjzzKiATIuNXaWU7mO2a-jM,595
+shutdown_on_lan/CtkScrollableTextDisabled.py,sha256=w9G00_KtLfDWPIfdc-LWpXBOll-_XPbyOWsB6AcRs80,852
+shutdown_on_lan/Main.py,sha256=GoGuhOCzEB59ZuFFXYmuccteUWI65SlaNsjQ_4GwR0I,970
+shutdown_on_lan/Server.py,sha256=smu6-iYA-xf7b2Tv5t7DtYiuzWg5Gq7U75xk7sYWveM,836
+shutdown_on_lan/Shutdown.py,sha256=iGKWoDhL0NufPXTz9WrxRw8Wht1ZL28iyEoUH_k6RzE,253
+shutdown_on_lan/Tray.py,sha256=cACZesQxLXTYKKfCinlw2XM6fw7N5CrTAX9c8t4Qpv8,1880
+shutdown_on_lan-1.0.2.dist-info/entry_points.txt,sha256=ao4-HazR0sX-ZjN9UZ4JisytEwOgWIOGAqCJjUbmL-U,61
+shutdown_on_lan-1.0.2.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+shutdown_on_lan-1.0.2.dist-info/METADATA,sha256=b-a_BliVq0Iuw5C7eC1a-5OEIaCtBnYg38c-YnZzVWc,3700
+shutdown_on_lan-1.0.2.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+shutdown_on_lan-1.0.2.dist-info/RECORD,,
