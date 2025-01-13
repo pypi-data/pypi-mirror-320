@@ -1,0 +1,5 @@
+allure-pytest==2.13.5
+requests==2.32.3
+pydantic==1.10.11
+starlette==0.27.0
+mecher-base-api-client==0.0.21
