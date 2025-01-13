@@ -1,0 +1,2 @@
+[console_scripts]
+lonelypss = lonelypss.main:main
