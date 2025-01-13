@@ -1,0 +1,17 @@
+bron/__init__.py,sha256=gsT3OPpYFsClxeMMpHokH5onDmnRJX0sOldlzjVZqEE,44
+bron/__main__.py,sha256=T7QY7-6rrfA6eu7QopHaxRHJjsrApbhXFBO81_KN0cM,32
+bron/cli.py,sha256=kPBXS03vV2xH_f6nfqDN-nKK_Gyv08406_YyVicoYrs,247
+bron/config.py,sha256=T0n7ZJSj51yCMEiBEDGPi8Y5Ll42UNMXAMVtlnWZH8w,723
+bron/procedures/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bron/procedures/dependencies.py,sha256=IeDQ4mxapJJDxWgFA4CTeEBuShftNbvahOqFu56fFsw,1625
+bron/procedures/locate.py,sha256=GOaFjVQMPoDxZPfKA7VxB4wI1dWT9P-Gt_JS9E015Bg,359
+bron/procedures/merge.py,sha256=LXk5mCkX01yiVKZrEGIMpaqKjQylZ4nD8aeUlknxqMk,3462
+bron/procedures/sync.py,sha256=NwRC4I9VHm-KOgvKmdZQOju7yrnaM8kb3XwZP2MnLgw,792
+bron/resolvers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bron/resolvers/path.py,sha256=D9de9_aGFTYIbG1tYZNZ-tD6b4SdV2Vwnw8wxTP0tRA,189
+bron/resolvers/url.py,sha256=jvhC8I7N7ji6Y7HymCSFMVnQeLMemQCJQFtF6oTLU_U,186
+bron-0.1.0.dist-info/METADATA,sha256=91dUi4VI_lwXuoIBnJA-O8FOG7yMmcZOQMqZkKZ5UN4,262
+bron-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+bron-0.1.0.dist-info/entry_points.txt,sha256=oIKU8rJtr_Xt8k2-E13UFQ12oR6TG1Hzh3CCikqGcFw,34
+bron-0.1.0.dist-info/top_level.txt,sha256=LC3qASFcnjbgwQTk2-wVn8oPxdc2tOzId_xWqhCrHZI,5
+bron-0.1.0.dist-info/RECORD,,
