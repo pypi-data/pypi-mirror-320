@@ -1,0 +1,14 @@
+typstpy/__init__.py,sha256=ig4WZcjUe8pnaH-WaXtcWYEYlURzOsdcn4uGdsmjz1w,102
+typstpy/document.py,sha256=yTPR1JKIJesguKOK7HDhnwkPgX3RQaOyNjGkh-UjAlw,3222
+typstpy/std/__init__.py,sha256=K8F_UHfK3Cv4BYvf6I2TyjPfIBKsvj4Zxi3CqdQrILA,461
+typstpy/std/layout.py,sha256=XNlZK6_DUQ_VHNN-UJQNM2DfMV6SC_zPTxlaEigGJRw,34533
+typstpy/std/model.py,sha256=yoCMEwlrV2KEYPUz8H0X7ZIbmZj7irIo99Kl4465h-o,38661
+typstpy/std/text.py,sha256=q3EbfkdadyZ_-yRWiTDwG742NakEMWWl2v9gO4hF_WA,25043
+typstpy/std/visualize.py,sha256=TrD0J4vAgikIKk_7RQjgqk1Kri-BS-LbpCPjY6oRdAI,46620
+typstpy/subpar.py,sha256=CYqCPOyejK0IOEzVryg5xu6LqmjOvdb3OWQs4xZegEE,3597
+typstpy/typings.py,sha256=jc_OXcB4QrB4-J0Pfx0Z1e5BmIZv832tISqxLKfzJE0,13583
+typstpy/utils.py,sha256=BDPMAmxX_MpVbMqbf3KVehc_QfSi0Oqt9Hq3GfTr5AA,12258
+typstpy-1.0.4.dist-info/LICENSE.txt,sha256=fNIn9UAyIuqgCgEHHGPcmDoRAZFt5wLULxMvZCv2-rk,1086
+typstpy-1.0.4.dist-info/METADATA,sha256=Ddrtw_tTHdt6TaytIch_axwO_z7FuhBgdK_pOVhFPzI,25010
+typstpy-1.0.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+typstpy-1.0.4.dist-info/RECORD,,
