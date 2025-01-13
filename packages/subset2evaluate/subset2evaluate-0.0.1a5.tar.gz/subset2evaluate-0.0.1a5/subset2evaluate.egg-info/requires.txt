@@ -1,0 +1,8 @@
+numpy
+pandas
+sacrebleu
+datasets
+scikit-learn
+tqdm
+matplotlib
+requests
