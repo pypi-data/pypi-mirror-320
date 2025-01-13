@@ -1,0 +1,2 @@
+[console_scripts]
+orca_plot = blackfish.orca_plot:cli
