@@ -1,0 +1,8 @@
+czech_simpleqa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+czech_simpleqa/czech_simpleqa.csv.gz,sha256=2twCWPYLDWUnezwQIKoo-RYPvkaVQijacGHi0qV58UI,856455
+czech_simpleqa/eval.py,sha256=qTYa0Gc9UzGnED0DL0pWI6e6V5LwreugR3FWRB7oBHo,5916
+czech_simpleqa/grading_template.py,sha256=dsBVrR_YZar6ucMPHTd275F8AolgrQthTdmVYg0a_wM,7362
+czech_simpleqa-0.1.0.dist-info/METADATA,sha256=fufb7N7rpIDh1wIcE0w1RvvcqJDXFYXVBGRzGu_59Aw,4180
+czech_simpleqa-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+czech_simpleqa-0.1.0.dist-info/licenses/LICENSE,sha256=0dU9MPiW2vaZ_hu1PNuuRqPrhHM10ZIzaMTDAryN85I,1070
+czech_simpleqa-0.1.0.dist-info/RECORD,,
