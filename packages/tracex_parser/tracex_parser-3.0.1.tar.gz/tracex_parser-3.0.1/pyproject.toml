@@ -1,0 +1,36 @@
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "tracex_parser"
+version = "3.0.1"
+description = "Parser for ThreadX RTOS's trace buffers (aka TraceX)"
+authors = ["Julianne Swinoga <julianneswinoga@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+exclude = [
+    '*.trx',
+]
+
+[tool.poetry.scripts]
+parse-trx = "tracex_parser.file_parser:main"
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+
+[tool.poetry.dev-dependencies]
+sphinx_mdinclude = "^0.6"
+sphinx-rtd-theme = "^2.0"
+sh = { version = "^2.0", markers = "sys_platform == 'linux'" }
+pytest-cov = "^5.0"
+pytest = "^8.3"
+GitPython = "^3.1"
+pytest-mock = "^3.14"
+# Following are pegged at the latest version that supports Python 3.8
+sphinx = "==7.1.2"
+
+[tool.poetry.urls]
+"Repository" = "https://github.com/julianneswinoga/tracex_parser"
+"Documentation" = "https://tracex_parser.readthedocs.io/en/latest"
+"Bug Tracker" = "https://github.com/julianneswinoga/tracex_parser/issues"
