@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: owll
+Version: 1.1.2
+Summary: OWLL: AndroidManifest.xml Analyzer
+Author: Jina
+Requires-Python: >=3.6
+Requires-Dist: colorama>=0.4.4
+Requires-Dist: lxml>=4.9.1
