@@ -1,0 +1,7 @@
+setup.py
+musically/__init__.py
+musically/musical.py
+musically.egg-info/PKG-INFO
+musically.egg-info/SOURCES.txt
+musically.egg-info/dependency_links.txt
+musically.egg-info/top_level.txt
