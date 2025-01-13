@@ -1,0 +1,15 @@
+st_soccer/__init__.py,sha256=gVZxM65OB66lW5o5fmDqQe7KckmBi4qCBAYEdvC1Nm0,403
+st_soccer/example.py,sha256=ONoYxZWs3dNuP_SMl-DWqm08iSs_0GcMCLD6S49nET4,1560
+st_soccer/frontend/build/asset-manifest.json,sha256=kXDTNyPIr_luakqfIyuXAtVAsUyBqbQxUIK7VsIszWQ,221
+st_soccer/frontend/build/bootstrap.min.css,sha256=hTwg6axJ8dAPmGVJmYTrsQS3JhKWA0skJ-td54UbEOk,197459
+st_soccer/frontend/build/index.html,sha256=UXvwAPQcpee8w1BC7nMrelv_QhX61uiQ2QXSxx9rRv8,492
+st_soccer/frontend/build/static/js/main.9f476ea9.js,sha256=c4DXtOnmI-PJhnKvBs5vyYdfgVH4dmw-JkdGYv6VVAo,439938
+st_soccer/frontend/build/static/js/main.9f476ea9.js.LICENSE.txt,sha256=exOXYutzLwXRW-bBK7BpKHfmRqtlSgP_zSIJF-7epPs,1443
+st_soccer/frontend/build/static/js/main.9f476ea9.js.map,sha256=PhGq82poUe1Fgn9obmUjJcdpNvsZd4xd0tgksrIDM7s,1621026
+st_soccer/frontend/build/static/js/main.f77417c8.js,sha256=ota5oA3aorRzEHOWGZAZIDGTbWPCD4kxqWF1vH8TeAo,440058
+st_soccer/frontend/build/static/js/main.f77417c8.js.LICENSE.txt,sha256=exOXYutzLwXRW-bBK7BpKHfmRqtlSgP_zSIJF-7epPs,1443
+st_soccer/frontend/build/static/js/main.f77417c8.js.map,sha256=Rc91_wOLOZcAqrFDBYtQbjvxjOT3MtLhbEUvy4q8QOM,1621481
+streamlit_soccer-0.0.1.dist-info/METADATA,sha256=Cf4WC5i38GQZDywbLC8J-lkrR78225XyCth6JJQcdeA,626
+streamlit_soccer-0.0.1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+streamlit_soccer-0.0.1.dist-info/top_level.txt,sha256=vJ_39Nh-m18LaYB8AbHo_bx3Qa_VSEPcSgi7Ra74NYU,10
+streamlit_soccer-0.0.1.dist-info/RECORD,,
