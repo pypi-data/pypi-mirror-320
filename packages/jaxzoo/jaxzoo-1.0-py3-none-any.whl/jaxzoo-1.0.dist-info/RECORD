@@ -1,0 +1,17 @@
+examples/example_cnn.py,sha256=rukY7FSEym_w-oUtwwq-Gnp4600PteHPYSjflUp6rvE,2353
+examples/example_input_space.py,sha256=ZwooHQPsrQ_RaYovnTdklbtO5HGtQZSUyybZP-AxXA0,309
+examples/example_mlp.py,sha256=i-Qi6sAEavwbJGQkiye6c7j6hfvRlaIOFH4rw28MtnQ,1983
+examples/example_mnist_mlp.py,sha256=kqIZm17KJLs4ZQle64nKe0smsnEY3V7lEHA7bxtPS58,4868
+jaxzoo/__init__.py,sha256=AsTwyKQsaPwnR9hfVlnPQgs6NHNySBBjfz67QIV6wwQ,291
+jaxzoo/base_model.py,sha256=-I-ihTpEIVDwoPslocdTzMcinpApAMQPMNRBjhe42lI,11701
+jaxzoo/cnn.py,sha256=AzAhMXN9qK4ffnXTQuAa1AKCM_nw2dCQdc4U_MxLFzY,3726
+jaxzoo/mlp.py,sha256=eYRtKatSegqLadHYW7VvvOZWGsSGVGJfXNc6rUzcbt4,2284
+jaxzoo/neural_components.py,sha256=ldGGx1NApsh82-bKcazNObhfD3VnqWrHHsi0e-JmuGo,6358
+jaxzoo/spaces.py,sha256=4xZ-Rc1ADBFYW6dUwUPrQO0lRR486n5G7u6AOlE4Wko,12428
+jaxzoo/utils.py,sha256=zPSP-SuGazBfAlFuU6kbKlokgBAwzrGxvsZl6_bUmeU,330
+tests/test_spaces.py,sha256=aq3X1ZGD7r2wfYhI4NJ_O6prV11nzcI7CUCuDaVz4ZY,2255
+jaxzoo-1.0.dist-info/LICENSE,sha256=WnHwinXAFfxxvcVuJMxiZXLZc6VenW1B9IsxESEbLXg,1072
+jaxzoo-1.0.dist-info/METADATA,sha256=kCDrD7O-TYgQPM_K6fOfC9-84kHhUz7dnoYRfw07AIo,5631
+jaxzoo-1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+jaxzoo-1.0.dist-info/top_level.txt,sha256=WDYwvN5gXvrli8-_IfXnQg3Py5RUwXBOdqP6fSqQGQQ,22
+jaxzoo-1.0.dist-info/RECORD,,
