@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: theUnixManager
+Version: 1.0.0
+Summary: Ultimate package manager and init system handling library made by Archetypum that simplifies interaction with UNIX systems and creation of system-related Python scripts.
+Home-page: https://github.com/Archetypum/theUnixManager-python
+Download-URL: https://github.com/Archetypum/archive/v1.0.0.zip
+Author: Archetypum
+Author-email: archetypum@tutamail.com
+License: GNU Lesser General Public License V3, see LICENSE.md file
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: Unix
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.md
+
+
+Ultimate package manager and init system handling library made by Archetypum that simplifies interaction with UNIX systems and creation of system-related Python scripts.
