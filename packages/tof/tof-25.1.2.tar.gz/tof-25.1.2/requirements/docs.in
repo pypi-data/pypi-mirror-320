@@ -1,0 +1,9 @@
+-r base.in
+gitpython
+ipykernel
+ipywidgets
+nbsphinx
+sphinx
+sphinx-autodoc-typehints
+sphinx-book-theme
+sphinx-copybutton
