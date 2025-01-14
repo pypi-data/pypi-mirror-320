@@ -1,0 +1,59 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ydb-async"
+version = "0.0.1"
+description = ''
+requires-python = "~=3.11"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "bevzd", email = "dbevzpr@mail.ru" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "ydb-sqlalchemy"
+]
+
+[project.urls]
+Documentation = "https://github.com/bevzd/ydb-async#readme"
+Issues = "https://github.com/bevzd/ydb-async/issues"
+Source = "https://github.com/bevzd/ydb-async"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/ydb_async tests}"
+
+[tool.coverage.run]
+source_pkgs = ["ydb_async", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/ydb_async/__about__.py",
+]
+
+[tool.coverage.paths]
+ydb_async = ["src/ydb_async", "*/ydb-async/src/ydb_async"]
+tests = ["tests", "*/ydb-async/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
