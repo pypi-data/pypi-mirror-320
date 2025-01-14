@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: scp-udg-client-rest
+Version: 1.0.0
+Summary: UrbanDatasetGateway - OpenAPI 3.0
+Home-page: 
+Author: Tito Brasolin
+Author-email: tito.brasolin@kerberos.energy
+License: Apache 2.0
+Keywords: OpenAPI,OpenAPI-Generator,UrbanDatasetGateway - OpenAPI 3.0
+Description-Content-Type: text/markdown
+Requires-Dist: urllib3<3.0.0,>=1.25.3
+Requires-Dist: python-dateutil>=2.8.2
+Requires-Dist: pydantic>=2
+Requires-Dist: typing-extensions>=4.7.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+    https://smartcityplatform.enea.it/#/en/specification/communication/2.0/
+    
