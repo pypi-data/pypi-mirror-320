@@ -1,0 +1,13 @@
+morphopretext/Dictionaries_En.py,sha256=4beqscDrLyOhvfXRWndYWKQhZ5rSj_MC5VandMEUMJQ,28123
+morphopretext/Dictionaries_Fa.py,sha256=cfZ5t2gVNkXW-evFrr1V8MoHvFGco2wMK6MV7CJDJX0,29567
+morphopretext/__init__.py,sha256=1KNBvjKVyjDu_G3VavYQuTuWUe2nbgsO6jS0eTxAfl4,329
+morphopretext/character_word_count.py,sha256=WzWzU3NNoqbMJHWM7M7TI21DPuz_52cK4T4DKHCNBuU,3092
+morphopretext/english_text_preprocessor.py,sha256=o6I_Kn9TZveqLyCt953ub_kE2aX_zNm7dg7mf2oZlFU,12392
+morphopretext/main.py,sha256=dvzg4OIpWawTbo7hO52IKixWvGcJf4yb_MxEXGdTq0M,5227
+morphopretext/persian_text_preprocessor.py,sha256=AtOoeYtVSEO-t_gdo4qCcFax0F4k3uJQs0TmjmFIw9E,17649
+morphopretext/separate_train_test_validation.py,sha256=bNhwfe4Z9vBLIpZCCqz-4UwnmT4PwWjhX3VhpQSF9fM,3524
+MorphoPreText-0.1.0.dist-info/LICENSE,sha256=AloofzRrW4Frp1kImO2UjkLe1QLDrwqIzwgIG5NcGgc,1070
+MorphoPreText-0.1.0.dist-info/METADATA,sha256=PCrIwafs99eDjI-HvPJ5AI1MonhSAKVT5COkVnaPWv8,6711
+MorphoPreText-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+MorphoPreText-0.1.0.dist-info/top_level.txt,sha256=jEiD_hLq_trDJD8eaR6J7lH0M5xcsUPuvj7faEhteYg,14
+MorphoPreText-0.1.0.dist-info/RECORD,,
