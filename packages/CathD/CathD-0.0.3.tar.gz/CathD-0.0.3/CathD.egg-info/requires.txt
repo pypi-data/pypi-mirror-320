@@ -1,0 +1,4 @@
+loguru
+requests
+s3fs
+tqdm
