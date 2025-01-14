@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+tkintertools/three/__init__.py
+tkintertools/three/engine.py
+tkintertools/three/geometries.py
+tkintertools_3d.egg-info/PKG-INFO
+tkintertools_3d.egg-info/SOURCES.txt
+tkintertools_3d.egg-info/dependency_links.txt
+tkintertools_3d.egg-info/requires.txt
+tkintertools_3d.egg-info/top_level.txt
