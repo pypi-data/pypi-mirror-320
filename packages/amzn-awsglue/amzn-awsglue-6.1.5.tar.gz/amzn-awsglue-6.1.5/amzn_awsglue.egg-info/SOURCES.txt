@@ -1,0 +1,8 @@
+README.md
+setup.py
+amzn_awsglue/__init__.py
+amzn_awsglue.egg-info/PKG-INFO
+amzn_awsglue.egg-info/SOURCES.txt
+amzn_awsglue.egg-info/dependency_links.txt
+amzn_awsglue.egg-info/requires.txt
+amzn_awsglue.egg-info/top_level.txt
