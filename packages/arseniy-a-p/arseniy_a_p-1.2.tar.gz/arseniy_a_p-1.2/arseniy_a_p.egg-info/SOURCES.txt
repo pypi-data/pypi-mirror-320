@@ -1,0 +1,9 @@
+README.md
+setup.py
+arseniy-a-p/init.py
+arseniy-a-p/module1.py
+arseniy-a-p/module2.py
+arseniy_a_p.egg-info/PKG-INFO
+arseniy_a_p.egg-info/SOURCES.txt
+arseniy_a_p.egg-info/dependency_links.txt
+arseniy_a_p.egg-info/top_level.txt
