@@ -1,0 +1,2 @@
+[console_scripts]
+srst-ordbok = ordbok.ordbok:main
