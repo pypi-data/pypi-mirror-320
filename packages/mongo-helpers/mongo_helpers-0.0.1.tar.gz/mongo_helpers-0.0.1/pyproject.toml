@@ -1,0 +1,96 @@
+[project]
+name = "mongo-helpers"
+version = "0.0.1"
+description = "Helpers for MongoDB Aggregation pipelines & Functions"
+authors = [
+    { name = "Anirudh Dutt", email = "1468519+aneroid@users.noreply.github.com" },
+]
+requires-python = ">=3.8"
+readme = "README-pypi.md"
+dependencies = [
+    "typing-extensions>=4.1.0; python_version < '3.9'",
+]
+packages = [
+    { include = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" },
+]
+package-mode = true
+keywords = [
+    "mongodb",
+    "mongo",
+    "aggregation",
+    "aggregations",
+    "pipeline",
+    "pymongo",
+    "motor",
+    "pymongoarrow",
+    "database",
+    "nosql",
+    "documentdb",
+    "helper",
+]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: NoSQL",
+    "Programming Language :: SQL",
+    "Topic :: Database",
+    "Topic :: Database :: Front-Ends",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://github.com/aneroid/xxxxxxxxxxxxx"
+documentation = "https://readthedocs.org/xxxxxxxxxxxxx"
+repository = "https://github.com/aneroid/xxxxxxxxxxxxx.git"
+changelog = "https://github.com/aneroid/xxxxxxxxxxxxx/ChangeLog.md"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.build]
+package-dir = "mongo_helpers"
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pymongo",
+    "pytest>=8.3.2",
+]
+
+[tool.pdm.options]
+add = [
+    "--no-isolation",
+    "--no-self",
+]
+install = [
+    "--no-self",
+]
+update = [
+    "--no-self",
+]
+sync = [
+    "--no-self",
+]
+init = [
+    "--no-self",
+]

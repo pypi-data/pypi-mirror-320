@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: mongo-helpers
+Version: 0.0.1
+Summary: Helpers for MongoDB Aggregation pipelines & Functions
+Keywords: mongodb,mongo,aggregation,aggregations,pipeline,pymongo,motor,pymongoarrow,database,nosql,documentdb,helper
+Author-Email: Anirudh Dutt <1468519+aneroid@users.noreply.github.com>
+License: MIT
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: SQL
+Classifier: Topic :: Database
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Project-URL: homepage, https://github.com/aneroid/xxxxxxxxxxxxx
+Project-URL: documentation, https://readthedocs.org/xxxxxxxxxxxxx
+Project-URL: repository, https://github.com/aneroid/xxxxxxxxxxxxx.git
+Project-URL: changelog, https://github.com/aneroid/xxxxxxxxxxxxx/ChangeLog.md
+Requires-Python: >=3.8
+Requires-Dist: typing-extensions>=4.1.0; python_version < "3.9"
+Description-Content-Type: text/markdown
+
+# mongo-helpers-python
+
+Aggregation helpers for MongoDB.
+
+## Compatibility with Python versions
+
+Will follow the same compatibility timeline for the PyMongo driver:
+https://www.mongodb.com/docs/languages/python/pymongo-driver/current/compatibility/#compatibility-table-legend
