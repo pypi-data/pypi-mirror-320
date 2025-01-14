@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/pycomgrader/__init__.py
+src/pycomgrader/cli_grader.py
+src/pycomgrader/pycomgrader.py
+src/pycomgrader.egg-info/PKG-INFO
+src/pycomgrader.egg-info/SOURCES.txt
+src/pycomgrader.egg-info/dependency_links.txt
+src/pycomgrader.egg-info/entry_points.txt
+src/pycomgrader.egg-info/requires.txt
+src/pycomgrader.egg-info/top_level.txt

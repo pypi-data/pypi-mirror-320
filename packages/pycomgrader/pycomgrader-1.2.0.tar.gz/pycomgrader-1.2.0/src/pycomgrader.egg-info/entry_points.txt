@@ -1,0 +1,2 @@
+[console_scripts]
+pycomgrader = pycomgrader.cli_grader:run_cli_grader

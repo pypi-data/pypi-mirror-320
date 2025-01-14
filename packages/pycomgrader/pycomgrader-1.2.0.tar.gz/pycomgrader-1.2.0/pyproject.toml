@@ -1,0 +1,25 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pycomgrader"
+version = "1.2.0"
+description = "This module provides a grader for c++ programs."
+readme = "README.md"
+authors = [{ name = "Anibal Hernández"}]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["competitive programming", "educational", "grader", "c++"]
+dependencies = ["psutil", "rich"]
+requires-python = ">=3.10"
+
+[project.urls]
+Homepage = "https://github.com/ajhglez99/PyComGrader"
+
+[project.scripts]
+pycomgrader = "pycomgrader.cli_grader:run_cli_grader"
