@@ -1,0 +1,2 @@
+[console_scripts]
+howto = howto.main:app
