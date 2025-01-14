@@ -1,0 +1,10 @@
+FoxDotChord/__init__.py,sha256=quMhUySC7oUh0hXEgV59Hm0KZcYpmCCwLyLZTkIFnCU,291
+FoxDotChord/_chord.py,sha256=u9VkTpkjA3nURj_N-bFy6lE4-9dMLvY5Dr6Jk3IEn1M,8614
+FoxDotChord/_notes.py,sha256=vaen5Jr9enIK767jtQsJ_HrVqWkaZfO346ovAAKVYFQ,37405
+FoxDotChord/_pattern.py,sha256=t1r0g7MyRKtowHkbdkshvxBPt09iHBlF-XuwQi8h1iw,23582
+FoxDotChord/_require.py,sha256=W2ex0zKbCOUQ_iUayDdkYWQN0YIxXedqTISlOfxf20g,673
+FoxDotChord/_timevar.py,sha256=j8yVkxZRJCKRxULObQZr2g0Oa2_quWMPK_-mlvtjdH8,259
+foxdotchord-0.0.12b1.dist-info/LICENSE,sha256=XAbBHde_TxWRDlO-uTOvxbBAahKxgzYdxi5Em3AuRUM,35075
+foxdotchord-0.0.12b1.dist-info/METADATA,sha256=emxzx2PnfReNh-BumiesIAVpnNDOYFSg2PMcnAB-_yk,4136
+foxdotchord-0.0.12b1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+foxdotchord-0.0.12b1.dist-info/RECORD,,
