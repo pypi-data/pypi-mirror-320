@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snellscore"
+version = "1.0.0"
+description = "An Python implementation for Snell scoring"
+authors = [
+    {name = "Igor", email = "igor.loschinin@gmail.com"}
+]
+license = {text = "GNU"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=2.2.1",
+    "pandas>=2.2.3",
+    "pytest>=8.3.4"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/IgorekLoschinin/snellscore"

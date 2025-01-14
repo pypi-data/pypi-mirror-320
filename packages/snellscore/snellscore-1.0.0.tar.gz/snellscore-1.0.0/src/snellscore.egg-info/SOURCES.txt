@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/snellscore.py
+src/snellscore.egg-info/PKG-INFO
+src/snellscore.egg-info/SOURCES.txt
+src/snellscore.egg-info/dependency_links.txt
+src/snellscore.egg-info/requires.txt
+src/snellscore.egg-info/top_level.txt
+tests/test_snell.py
