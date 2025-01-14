@@ -1,0 +1,114 @@
+/* These styles are generated from project.scss. */
+
+/* Cookie customize model */
+.cookie-customize{
+    background-color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+  }
+  .accordion-button.cookie-customize:not(.collapsed){
+    background-color: #004f3a;
+    color:#FFFFFF
+  }
+  .modal-header{
+    display: flex;
+    justify-content: space-between;
+  }
+  /* Cookie Banner */
+  .cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 330px;
+    /* background-color: #333; */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 142;
+  
+  }
+  .cookie-customize-model-checkbox{
+    width: 20px;
+    color: #007b5e;
+   
+  }
+  [dir='rtl'] .cookie-customize-model-checkbox{
+  
+   margin-left: 5%;
+  }
+  [dir='ltr'] .cookie-customize-model-checkbox{
+  
+    margin-right: 5%;
+   }
+  .accordion .label{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    top: 5%;
+  }
+  .accordion .label > p{
+    position: relative;
+    top: 7px;
+  }
+  .cookie_model_icon{
+    width: 60px;
+    height: 60px;
+  }
+  [dir='ltr'] .cookie-banner{
+    left: 20px
+  }
+  
+  .cookie-banner .cookie-icon img {
+    height: 70px;
+    margin-bottom: 10px;
+  }
+  
+  .cookie-banner .cookie-message {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .cookie-banner .cookie-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .cookie-banner .btn {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+
+  
+  .modal-footer.cookies{
+  display: flex;
+  justify-content: flex-start;
+  }
+  .always-active{
+    color: #c4c4c4;
+  }
+  [dir='rtl'] .always-active{
+  margin-left: 5%;
+  }
+  [dir='ltr'] .always-active{
+    margin-right: 5%;
+  }
+  
+  
+  .hidden{
+    display: none;
+  }
+  
+  
+  .cookie-banner-modal{
+    min-width: 330px;
+    
+  }
