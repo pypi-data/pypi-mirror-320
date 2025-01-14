@@ -1,0 +1,3 @@
+[console_scripts]
+hello = qwertyou1.main:hi
+qwertyou1 = qwertyou1.main:main

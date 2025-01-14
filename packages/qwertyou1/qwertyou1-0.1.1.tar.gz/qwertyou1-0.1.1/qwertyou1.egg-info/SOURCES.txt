@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+qwertyou1/__init__.py
+qwertyou1/main.py
+qwertyou1.egg-info/PKG-INFO
+qwertyou1.egg-info/SOURCES.txt
+qwertyou1.egg-info/dependency_links.txt
+qwertyou1.egg-info/entry_points.txt
+qwertyou1.egg-info/top_level.txt
