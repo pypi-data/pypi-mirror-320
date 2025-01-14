@@ -1,0 +1,54 @@
+Metadata-Version: 2.3
+Name: leveelogic
+Version: 0.8.22
+Summary: 
+Author: Rob van Putten
+Author-email: breinbaasnl@gmail.com
+Requires-Python: >=3.9,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: d-geolib (==2.4.2)
+Requires-Dist: haversine (>=2.8.1,<3.0.0)
+Requires-Dist: matplotlib (>=3.8.3,<4.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: pydantic (>=1.10.7)
+Requires-Dist: pyproj (>=3.6.1,<4.0.0)
+Requires-Dist: pyshp (>=2.3.1,<3.0.0)
+Requires-Dist: pytest (>=8.2.2,<9.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: simplejson (>=3.19.2,<4.0.0)
+Requires-Dist: xmltodict (>=0.13.0,<0.14.0)
+Description-Content-Type: text/markdown
+
+## IDEAS
+
+
+
+## ADVANCED STUFF
+
+Leveelogic combines the geolib code () with its own solutions. To avoid problems with new geolib versions
+specific solutions are simply implemented as classes with the same name as the geolib ones but with added
+functionality or fixed bugs. This way we avoid the need for an updated geolib and we can proceed with 
+the leveelogic code until geolib fixed the bugs internally.
+
+These classes are defined in the external directory and files;
+
+* dgeolib.py (added a lot of extra fields for convinience)
+* internal.py (added a bugfix for allowing reference lines that allow interpolation)
+
+For the developers this means that during updates of geolib these classes have to be checked
+to see if functionality has been added or bugs have been fixed that make leveelogic code
+old or obsolete. 
+
+Sounds like a headache but it is still easier then waiting for geolib to fix the bugs!
+
+## Settings
+
+You will need a leveelogic.env with the following paths:
+
+* DSTABILITY_CONSOLE_EXE, location of the dstability console
+* DSTABILITY_MIGRATION_CONSOLE_PATH, location of the dstability migration console
+* CALCULATIONS_FOLDER, location of the folder to add and remove temporary calculations
