@@ -1,0 +1,1 @@
+## Logger that can be used as a standard logger for various packages in case of further logs parsing
