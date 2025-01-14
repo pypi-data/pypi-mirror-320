@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+settings.ini
+setup.py
+chrome_extension_generator/__init__.py
+chrome_extension_generator/_modidx.py
+chrome_extension_generator/core.py
+chrome_extension_generator.egg-info/PKG-INFO
+chrome_extension_generator.egg-info/SOURCES.txt
+chrome_extension_generator.egg-info/dependency_links.txt
+chrome_extension_generator.egg-info/entry_points.txt
+chrome_extension_generator.egg-info/not-zip-safe
+chrome_extension_generator.egg-info/requires.txt
+chrome_extension_generator.egg-info/top_level.txt
