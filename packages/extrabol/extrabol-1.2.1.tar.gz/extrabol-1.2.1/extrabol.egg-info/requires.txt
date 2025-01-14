@@ -1,0 +1,8 @@
+numpy
+astropy
+matplotlib
+george
+extinction
+emcee
+mkdocs>=1.2.2
+importlib_resources
