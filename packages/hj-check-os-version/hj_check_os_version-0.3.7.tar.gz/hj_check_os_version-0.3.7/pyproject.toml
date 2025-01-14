@@ -1,0 +1,39 @@
+[project]
+name = "hj-check-os-version"
+version = "0.3.7"
+description = "Default template for PDM package"
+authors = [
+    { name = "heejin131", email = "journeyjean131@gmail.com" },
+]
+dependencies = [
+    "stundrg-check-os-ver>=0.2.3",
+    "ppabam-check-os-ver>=0.2.0",
+    "check-os-ver>=0.2.1",
+    "jacob-os-version-check>=0.2.4",
+    "cho-check-os-ver>=0.2.3",
+    "nunininu-check-os-ver>=0.3.0",
+    "seo-check-os-version>=0.2.0",
+    "lucas-check-os-ver>=0.2.1",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/heejin131/hj-check-os-version"
+Issues = "https://github.com/heejin131/hj-check-os-version/issues"
+
+[project.scripts]
+heejin-hi = "hj_check_os_version.hi:hi"
+heejin-random = "hj_check_os_version.hi:random_pic"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
