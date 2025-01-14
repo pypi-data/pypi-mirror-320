@@ -1,0 +1,172 @@
+# dir2aisnap
+
+A Python package that converts a directory structure into a single text file, preserving file contents and directory hierarchy while respecting `.gitignore` rules. Perfect for sharing codebase context with AI language models or creating project snapshots.
+
+## Features
+
+- **Smart Directory Scanning**: Recursively scans directories and outputs contents as a single well-formatted text file
+- **Git-Aware**: 
+  - Fully respects `.gitignore` rules at both root and subdirectory levels
+  - Handles negative patterns (patterns starting with `!`) correctly
+  - Supports multiple `.gitignore` files in subdirectories
+- **Intelligent File Handling**:
+  - Automatically detects and excludes binary files
+  - UTF-8 encoding support
+  - Generates unique delimiters to clearly separate files
+- **Flexible Configuration**:
+  - Custom exclude patterns via command line arguments
+  - Debug mode for troubleshooting pattern matching
+  - Configurable through both CLI and Python API
+- **AI-Ready Output**: Generates output specifically formatted for optimal use with AI language models like Claude, GPT-4, etc.
+
+## Installation
+
+Install from PyPI:
+```bash
+pip install dir2aisnap
+```
+
+Or install from source:
+```bash
+git clone https://github.com/yourusername/dir2aisnap.git
+cd dir2aisnap
+pip install .
+```
+
+## Usage
+
+### Command Line Interface
+
+Basic usage - scan current directory:
+```bash
+dir2aisnap .
+```
+
+Scan specific directory:
+```bash
+dir2aisnap /path/to/directory
+```
+
+Exclude specific patterns:
+```bash
+dir2aisnap . -e "*.log" -e "temp/*"
+```
+
+Enable debug mode to see pattern matching details:
+```bash
+dir2aisnap . --debug
+```
+
+Save output to file:
+```bash
+dir2aisnap . > project_snapshot.txt
+```
+
+### Python API
+
+The package provides a flexible Python API for integration into your tools:
+
+```python
+from dir2aisnap import scan_directory, create_delimiter
+
+# Generate a unique delimiter
+delimiter = create_delimiter()
+
+# Basic usage with default excludes
+scan_directory(
+    directory=".",
+    exclude_patterns=[".git"],  # Default exclude pattern
+    delimiter=delimiter
+)
+
+# With custom exclude patterns
+scan_directory(
+    directory="/path/to/project",
+    exclude_patterns=[
+        ".git",  # Default
+        "*.log",
+        "temp/*"
+    ],
+    delimiter=delimiter,
+    debug=True
+)
+```
+
+### Using with AI Language Models
+
+1. Generate a snapshot of your project:
+```bash
+dir2aisnap . > context.txt
+```
+
+2. Use in your prompts:
+```
+Here's my project structure and contents:
+
+[paste contents of context.txt]
+
+Could you help me understand the code structure and suggest improvements?
+```
+
+The output format is specifically designed to help AI models understand:
+- Project structure and file relationships
+- File contents with clear boundaries
+- Directory hierarchy and organization
+
+## Output Format
+
+The generated output follows this structure:
+
+```
+# Project Directory Contents
+# Format: Files are separated by a delimiter line starting with "### FILE_[uuid]"
+# Each delimiter line is followed by the file path, then the file contents.
+# Note: Binary files and patterns matching any .gitignore are excluded.
+
+# DELIMITER=### FILE_[uuid]
+
+### FILE_[uuid] src/main.py
+[contents of main.py]
+
+### FILE_[uuid] src/utils/helper.py
+[contents of helper.py]
+```
+
+## Default Excludes
+
+By default, dir2aisnap excludes:
+- `.git` directories
+
+You can add additional patterns using the `-e` flag.
+
+## Advanced Features
+
+### GitignoreRule Handling
+
+The GitignoreRule system supports:
+- Base directory-specific patterns
+- Negative patterns with `!`
+- Path matching with `/` prefix
+- Directory-only patterns (ending with `/`)
+- Pattern normalization (e.g., handling `**/` patterns)
+
+### Binary File Detection
+
+- Uses UTF-8 decoding attempt to detect binary files
+- Automatically excludes non-text files to maintain output integrity
+- Files that cannot be decoded as UTF-8 are considered binary
+
+### Gitignore Processing
+
+- Supports multiple `.gitignore` files in different directories
+- Processes patterns in order, with later matches taking precedence
+- Handles scoped rules based on `.gitignore` file location
+- Supports pattern negation for fine-grained control
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit pull requests, report bugs, or suggest features.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

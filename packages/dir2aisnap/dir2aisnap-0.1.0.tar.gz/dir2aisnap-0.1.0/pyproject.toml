@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dir2aisnap"
+version = "0.1.0"
+authors = [
+    { name="Yoshikazu Kawataki", email="kawataki-yoshika@dmm.com" },
+]
+description = "Convert directory structure into a single text file while respecting .gitignore rules"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+
+[project.scripts]
+dir2aisnap = "dir2aisnap.dir2aisnap:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dir2aisnap"]
