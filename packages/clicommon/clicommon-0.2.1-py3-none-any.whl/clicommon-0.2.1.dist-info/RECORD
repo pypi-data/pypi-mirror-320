@@ -1,0 +1,9 @@
+clicommon/__init__.py,sha256=hBBQjW682bHg4DDnNNjqRpLu26wH6sxeTBElJOIl0h8,74
+clicommon/bcheck.py,sha256=IaCRRmYQ6oIrezRXLc3-UrWaWIDvIvXvqq2yQnfelY4,821
+clicommon/mlog.py,sha256=Z-1dJzpPOgaQy6EEbkQ3fZJo989DlcegHKTQWZmHExs,3891
+clicommon/rcmd.py,sha256=Ev4ka0faKl2jIidpPw9adNGJLS-NJqix6aoS0yjSsIo,842
+clicommon-0.2.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+clicommon-0.2.1.dist-info/METADATA,sha256=ii7DnLGv0Pm2uc32qSiIHLMFxxLMisDXGUEhmqCLW-Y,1904
+clicommon-0.2.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+clicommon-0.2.1.dist-info/top_level.txt,sha256=qhvLxMTHCNb_WNQLOMZXqNg6eVP-tzNd3ZCJCKkjBTI,10
+clicommon-0.2.1.dist-info/RECORD,,
