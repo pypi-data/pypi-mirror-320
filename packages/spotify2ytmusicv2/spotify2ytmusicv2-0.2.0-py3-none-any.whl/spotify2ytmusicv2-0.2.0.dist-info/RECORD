@@ -1,0 +1,14 @@
+spotify2ytmusicv2/__init__.py,sha256=2PCA3GdGoHall8CArMBfeyaUQf0enl7BiPxVl9u9Ngc,42
+spotify2ytmusicv2/__main__.py,sha256=Gz1TT_dblWEnTDyNfJ1Oc5xHk_fE_HSaGrEBDnjZvPs,422
+spotify2ytmusicv2/backend.py,sha256=ZQ3nw_aNAz5zeHd6m25yt6AFb_mTDwP4T-syCRcZX8o,19425
+spotify2ytmusicv2/cli.py,sha256=YCFyYhi-_H86OidY68v07fkJ2uZckAW639K5umCOdJw,10025
+spotify2ytmusicv2/gui.py,sha256=JJQHhtOinOLzgLfAFFuYWFEIJu5RBpo-Y-1vYh-5HzA,12624
+spotify2ytmusicv2/reverse_playlist.py,sha256=6XfZNNi9ilchI06boHYIMVMnaXtR2Cb4z-LcBDsfTYI,1816
+spotify2ytmusicv2/settings.json,sha256=Ujw5A6yuWcVtCYMQM300FAUEPVFcpfHiOhI7pM4K0ks,39
+spotify2ytmusicv2/spotify_backup.py,sha256=zqqKX7DW7bFzcp2sopL-coKmTddviNYWuYsMdK3c4SM,7041
+spotify2ytmusicv2/ytmusic_credentials.py,sha256=fa2ADNbXThNXNkFTJ1hkxd624NIcFnOJFtwt8nnGGco,1553
+spotify2ytmusicv2-0.2.0.dist-info/entry_points.txt,sha256=4FjuVWV2d2_mYyYVbQYJDXnwhGOJPiPBZnYw1xIkGXk,550
+spotify2ytmusicv2-0.2.0.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+spotify2ytmusicv2-0.2.0.dist-info/METADATA,sha256=777Kk_M77sSWJCbFIWxiugDulhogJOKCKWyW7UoXO34,12249
+spotify2ytmusicv2-0.2.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+spotify2ytmusicv2-0.2.0.dist-info/RECORD,,
