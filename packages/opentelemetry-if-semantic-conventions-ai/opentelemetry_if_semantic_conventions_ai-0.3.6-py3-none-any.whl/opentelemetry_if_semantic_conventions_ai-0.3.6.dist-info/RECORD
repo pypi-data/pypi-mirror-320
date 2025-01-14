@@ -1,0 +1,6 @@
+opentelemetry/semconv/ai/__init__.py,sha256=4izppxCKGJEQ1XEWS_cgkvS5SknCR8_abX0tDHvyXUQ,12711
+opentelemetry/semconv/ai/utils.py,sha256=nHbVWYXlzZvETznUMJmTI3TSkzdUYXUikRwqANXcUiY,728
+opentelemetry/semconv/ai/version.py,sha256=W_9dCm49nLvZulVAvvsafxLJjVBSKDBHz9K7szFZllo,22
+opentelemetry_if_semantic_conventions_ai-0.3.6.dist-info/METADATA,sha256=NU49FQNzC5Yqaj9dPFifACy1UUYV3rmGZjvdSv8Imqk,1190
+opentelemetry_if_semantic_conventions_ai-0.3.6.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+opentelemetry_if_semantic_conventions_ai-0.3.6.dist-info/RECORD,,
