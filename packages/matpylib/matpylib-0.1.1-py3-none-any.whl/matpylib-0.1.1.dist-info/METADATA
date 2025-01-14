@@ -1,0 +1,10 @@
+Metadata-Version: 2.2
+Name: matpylib
+Version: 0.1.1
+Summary: db
+Author: darkball
+Requires-Dist: pywin32
+Requires-Dist: keyboard
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary
