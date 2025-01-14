@@ -1,0 +1,4 @@
+geojson
+numpy
+matplotlib>=3.8
+xarray
