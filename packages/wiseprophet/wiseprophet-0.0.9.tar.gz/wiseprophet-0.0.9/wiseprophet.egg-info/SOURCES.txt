@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+wiseprophet/__init__.py
+wiseprophet/common.py
+wiseprophet/hdfsService.py
+wiseprophet/wpType.py
+wiseprophet.egg-info/PKG-INFO
+wiseprophet.egg-info/SOURCES.txt
+wiseprophet.egg-info/dependency_links.txt
+wiseprophet.egg-info/not-zip-safe
+wiseprophet.egg-info/requires.txt
+wiseprophet.egg-info/top_level.txt
+wiseprophet/config/__init__.py
+wiseprophet/config/wp.py
