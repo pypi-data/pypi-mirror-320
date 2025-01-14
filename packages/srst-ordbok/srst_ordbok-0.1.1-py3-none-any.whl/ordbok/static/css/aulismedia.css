@@ -1,0 +1,25 @@
+img {
+    height: auto;
+    width: auto;
+    max-width:1200px;
+    max-height:1200px;
+}
+#imgdiv {
+    width: 100%;
+}
+.container {
+}
+.panel {
+    position: absolute;
+}
+.left {
+    width: 20px;
+    background-color: transparent;
+    font-size: 14px;
+}
+.right {
+    width: 20px;
+    background-color: transparent;
+    font-size: 14px;
+    float: right;
+}
