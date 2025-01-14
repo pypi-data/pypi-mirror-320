@@ -1,0 +1,8 @@
+financial_reports/__init__.py,sha256=hSS4oJ4ontg2nXMi70Vu8qUpbcuH8GeBjUwRJNGnzQc,527
+financial_reports/client.py,sha256=m022IGmjVrX1hXiZqZRWQA0tLpzvqxy6oJD_z7TOuY8,26231
+financial_reports/logger.py,sha256=vRWUDa7lcE7luN3Gtzw2sFh_Tnd1eF7dDDsWu-cV1QQ,359
+financial_reports/models.py,sha256=b28qXQBJ5Q1rpeMuxe60U8iMsn1LMpOFZpQK5jGIPQs,2288
+financial_reports-0.1.0.dist-info/METADATA,sha256=YtYwCqPPYi41C-nWAcy4o4druTszJDRQWiGnvDlrjDk,4278
+financial_reports-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+financial_reports-0.1.0.dist-info/licenses/LICENSE,sha256=kQPXMszbraBENq8QspDME_wPvb751x8zGE5W6q6pLkE,1074
+financial_reports-0.1.0.dist-info/RECORD,,
