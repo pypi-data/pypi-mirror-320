@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pyrconcli"
+version = "0.1.1"
+description = ""
+authors = ["Grzegorz Koperwas <admin@grzegorzkoperwas.site>"]
+license = "GPL"
+readme = "README.md"
+
+[project.scripts]
+pyrconcli = "pyrconcli:main"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+prompt-toolkit = "^3.0.48"
+mcrcon = "^0.7.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.9.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
