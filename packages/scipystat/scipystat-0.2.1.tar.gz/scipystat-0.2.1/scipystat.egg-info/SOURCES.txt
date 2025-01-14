@@ -1,0 +1,31 @@
+README.md
+setup.py
+scipystat/__init__.py
+scipystat/see.py
+scipystat/terver.py
+scipystat.egg-info/PKG-INFO
+scipystat.egg-info/SOURCES.txt
+scipystat.egg-info/dependency_links.txt
+scipystat.egg-info/requires.txt
+scipystat.egg-info/top_level.txt
+scipystat/theory/__init__.py
+scipystat/theory/a.png
+scipystat/theory/lec_1.pdf
+scipystat/theory/lec_2.pdf
+scipystat/theory/lec_3.pdf
+scipystat/theory/lec_5.pdf
+scipystat/theory/lec_6.pdf
+scipystat/theory/lec_7.pdf
+scipystat/theory/lec_8.pdf
+scipystat/theory/ms_1.pdf
+scipystat/theory/ms_2.pdf
+scipystat/theory/ms_3.pdf
+scipystat/theory/ms_4.pdf
+scipystat/theory/ms_5.pdf
+scipystat/theory/photo_2025-01-13_17-12-00.png
+scipystat/theory/photo_2025-01-13_17-30-02 (2).png
+scipystat/theory/photo_2025-01-13_17-30-02 (3).png
+scipystat/theory/photo_2025-01-13_17-30-02 (4).png
+scipystat/theory/photo_2025-01-13_17-30-02.png
+scipystat/theory/photo_2025-01-13_19-00-29.png
+scipystat/theory/photo_2025-01-13_19-55-34.png
