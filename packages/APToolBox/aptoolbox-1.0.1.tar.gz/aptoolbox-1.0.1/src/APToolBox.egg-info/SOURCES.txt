@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/APToolBox/DataFrameWrapper.cpython-310-x86_64-linux-gnu.so
+src/APToolBox/InterpolateWrapper.cpython-310-x86_64-linux-gnu.so
+src/APToolBox/__init__.py
+src/APToolBox.egg-info/PKG-INFO
+src/APToolBox.egg-info/SOURCES.txt
+src/APToolBox.egg-info/dependency_links.txt
+src/APToolBox.egg-info/top_level.txt
+src/APToolBox/ToolBox/__init__.py
+tests/test_python.py
