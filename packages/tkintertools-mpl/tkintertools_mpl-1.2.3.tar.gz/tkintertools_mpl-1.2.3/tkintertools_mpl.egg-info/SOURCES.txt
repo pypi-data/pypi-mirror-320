@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+tkintertools/mpl/__init__.py
+tkintertools/mpl/constants.py
+tkintertools/mpl/main.py
+tkintertools_mpl.egg-info/PKG-INFO
+tkintertools_mpl.egg-info/SOURCES.txt
+tkintertools_mpl.egg-info/dependency_links.txt
+tkintertools_mpl.egg-info/requires.txt
+tkintertools_mpl.egg-info/top_level.txt
