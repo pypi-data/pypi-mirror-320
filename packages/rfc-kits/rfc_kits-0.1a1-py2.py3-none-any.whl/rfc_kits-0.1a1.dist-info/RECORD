@@ -1,0 +1,11 @@
+rfc_kits/__init__.py,sha256=KfY39bWAh7mQCuBgV4VtM-hBUfdIyGaBpdOZoKlc93U,15
+rfc_kits/attribute.py,sha256=PWwS8CzPRMg_zf4VS1y6FibaQuMbI-cePxtfn8wbrTU,384
+rfc_kits/command.py,sha256=5lXxX1Oau0Q39-0hvNM24qPMgBFFaI9ZVPpnStMJbIU,1702
+rfc_kits/rfc_editor.py,sha256=fn0Pnb0kr119qYrfyfYux31e68_PuYYGRBEj_5zKi7A,1973
+rfc_kits-0.1a1.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+rfc_kits-0.1a1.dist-info/METADATA,sha256=HjlggQqcwgU31Gcs84B7UXwd_tw_dhBF3xwFH8GXdnM,740
+rfc_kits-0.1a1.dist-info/WHEEL,sha256=pWvVuNuBTVmNV7Lp2jMAgt1NplTICeFdl1SW8U3MWN4,109
+rfc_kits-0.1a1.dist-info/entry_points.txt,sha256=bQHxO04RX-me434790sRGXY0jthHusIS_tfLELnM61o,59
+rfc_kits-0.1a1.dist-info/top_level.txt,sha256=Azv1tESWkJHPF9863FbfXIuvrmRAfadTWrl7cBtAPQU,9
+rfc_kits-0.1a1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+rfc_kits-0.1a1.dist-info/RECORD,,
