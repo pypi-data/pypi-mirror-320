@@ -1,0 +1,7 @@
+factor.cp39-win_amd64.pyd,sha256=i97toamz99TlzTDqXwy71dzTDxciknBLNMgJh4sy6UY,11264
+gcd.cp39-win_amd64.pyd,sha256=jZIEG-BwjNBTfihiWlb_yn69zvPD454ZJGvH7bN5YBA,11264
+prime.cp39-win_amd64.pyd,sha256=iUaR8rwmVfMBb93-R6RDA2KLsAEDr5m36fy50spMjbg,10752
+devkit_math-1.5.2.dist-info/METADATA,sha256=b2d7xVSX2OZKgJSqlAWe7-LzfUngJRFcb1V-lsXK-bI,1036
+devkit_math-1.5.2.dist-info/WHEEL,sha256=agy-BJge3afXwWznUXANATmKFW4eqelqRR0uf608A_0,99
+devkit_math-1.5.2.dist-info/top_level.txt,sha256=vBjZ2fkfqoQNxcYZD4njQDmfPd0jaIs4Oj3fwO7K3dU,17
+devkit_math-1.5.2.dist-info/RECORD,,
