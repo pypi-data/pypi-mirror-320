@@ -1,0 +1,3 @@
+[console_scripts]
+fsp=fspacker.cli:main
+
