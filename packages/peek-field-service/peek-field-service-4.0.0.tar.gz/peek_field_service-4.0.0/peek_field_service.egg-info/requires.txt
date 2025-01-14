@@ -1,0 +1,4 @@
+peek-plugin-base==0.0.*,>=0.0.0
+peek-platform==0.0.*,>=0.0.0
+peek-field-app==0.0.*,>=0.0.0
+peek-field-doc==0.0.*,>=0.0.0
