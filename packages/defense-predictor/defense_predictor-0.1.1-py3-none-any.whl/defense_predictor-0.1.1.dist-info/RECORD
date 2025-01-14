@@ -1,0 +1,9 @@
+defense_predictor/__init__.py,sha256=JLkUu0pczY0Q7UJjX_x3p79uWHCFYBJbFqg4ZjuzBh8,44
+defense_predictor/core.py,sha256=ABz5vIsgF03AbaGFzR8L1KusQGXeZJjtnp7RMG4OPbk,20173
+defense_predictor/downloads.py,sha256=RPTTE2C7ZpruQ_ExfegmGbySjbJtw080_aJ_ZAlyOFw,2244
+defense_predictor/x_columns.csv,sha256=eDukomRo2txZumosOx4CRIUoEPS-Ud88mwuyHuap7K4,28307
+defense_predictor-0.1.1.dist-info/LICENSE,sha256=uTA9Uojr4_LMVKVMnqH926DqUqtgXVg3rF6MadSVIH8,2247
+defense_predictor-0.1.1.dist-info/METADATA,sha256=3AlatgyOkmygLM1GzFdQkkgu3N2SLIpMIn6HcKRtYQ4,3890
+defense_predictor-0.1.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+defense_predictor-0.1.1.dist-info/entry_points.txt,sha256=tDMuAacBnMWlhix5xCmPvl1LqKPs96_jpXJvZZSpETo,137
+defense_predictor-0.1.1.dist-info/RECORD,,
