@@ -1,0 +1,8 @@
+latch_postgres/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+latch_postgres/postgres.py,sha256=tGUhVLq5J4tyNrKt4xiRf-RlkqFNrUZ9Jl7WEHLqIPQ,24845
+latch_postgres/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+latch_postgres/retries.py,sha256=r5yH00fd_6EJNYFXAq3dAljJBphScpoeST-_oMvyj8Q,1308
+latch_postgres-0.1.19.dist-info/LICENSE,sha256=wh3JZu6ITG7ceN-1g404ekupj5JXAw4pnQ_Qr4sJfew,7052
+latch_postgres-0.1.19.dist-info/METADATA,sha256=fFn_TvOGV1kApPUiG9ow5gMgWQrMl3jVI2ZbNpQD_M0,869
+latch_postgres-0.1.19.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+latch_postgres-0.1.19.dist-info/RECORD,,
