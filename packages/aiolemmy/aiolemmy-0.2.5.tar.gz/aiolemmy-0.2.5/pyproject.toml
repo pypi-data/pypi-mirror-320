@@ -1,0 +1,80 @@
+[project]
+name = "aiolemmy"
+dynamic = []
+description = "Async Lemmy API client"
+authors = [
+    { name = "Richard Schwab", email = "pythonaiolemmy-fw4mjeny5w@richardschwab.de" },
+]
+dependencies = [
+    "aiohttp>=3.9.3",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+version = "0.2.5"
+
+[project.license]
+text = "AGPL-3.0-only"
+
+[project.urls]
+"CI: GitHub" = "https://github.com/Nothing4You/aiolemmy/actions"
+"GitHub: repo" = "https://github.com/Nothing4You/aiolemmy"
+"GitHub: issues" = "https://github.com/Nothing4You/aiolemmy/issues"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.version]
+source = "scm"
+write_to = "aiolemmy/_scm_version.py"
+write_template = "__version__ = '{}'"
+
+[tool.pdm.dev-dependencies]
+build = [
+    "build>=1.1.1",
+    "twine>=5.0.0",
+]
+
+[tool.ruff]
+line-length = 88
+indent-width = 4
+target-version = "py39"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.ruff.lint]
+select = [
+    "ALL",
+]
+extend-ignore = [
+    "ANN401",
+    "D",
+    "E501",
+    "EM101",
+    "ERA001",
+    "FIX002",
+    "TRY002",
+    "TRY003",
+    "ANN101",
+    "ANN102",
+    "FBT001",
+    "FBT002",
+    "C901",
+    "PLR0912",
+    "PLR0913",
+    "TD002",
+    "TD003",
+]
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
