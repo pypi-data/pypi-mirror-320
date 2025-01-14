@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: human-eval-windows
+Version: 1.0.4
+Summary: Windows-compatible fork of OpenAI's human-eval
+Home-page: https://github.com/ramkrishna2910/human-eval
+Author: ramkrishna2910
+Author-email: ramkrishna2910@gmail.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: tqdm
+Requires-Dist: fire
+Requires-Dist: numpy
+Requires-Dist: pywin32>=306; platform_system == "Windows"
+
