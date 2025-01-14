@@ -1,0 +1,51 @@
+Metadata-Version: 2.2
+Name: basic-colors
+Version: 0.1.0
+Summary: A module for printing colored text to the terminal
+Home-page: https://github.com/elPytel/my-colors
+Author: elPytel
+Author-email: jaroslav.korner1@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# Basic colors
+
+## Installation
+You can install the module using pip:
+```bash
+pip install basic-colors
+```
+
+## Usage
+Module `basic_colors` provides you with a set of variables that you can use to color your text in terminal.
+
+### Colored text
+```python
+from basic_colors import *
+
+print(Blue + "Ahoj" + Reset)
+```
+
+### Logging like messages
+```python
+from basic_colors import print_warning, print_error, verbose_print
+
+print_warning("This is a warning message.")
+print_error("This is an error message.")
+set_verbose(True)
+verbose_print("This is a verbose message.")
+```
+
+## Sources:
+- [stackoverflow.com](https://stackoverflow.com/questions/287871/how-do-i-print-colored-text-to-the-terminal)
