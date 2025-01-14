@@ -1,0 +1,16 @@
+browsy/__init__.py,sha256=0g2NZuPZH-F0UOVZZix9uTDvjzBhDQgyUv40dIMfLJ4,440
+browsy/__main__.py,sha256=kUY6YX_F6QUjgl908obCANsrYPG_GJTJ9Nd8cPlGBBU,1722
+browsy/_client.py,sha256=yr8ii0wEuYD8B6Iwf1WcZVVUa1F7of8KRHxOeEKQpy8,2822
+browsy/_database.py,sha256=UFpi8c4ZQAZAuNIeTN39x-6uONTRclNrGZD5YyaE6y0,7412
+browsy/_jobs.py,sha256=gT562LPFXojEuz5VweH4hSkf-qR9lFh0rV6-Da1Uj7E,4488
+browsy/_models.py,sha256=J5sctmVb3c-NoZZ2LfqBs61lLmweHGVNPa2ybHURfY0,728
+browsy/_server.py,sha256=AQZCqnEfFfNdWE_H4c8L-SrrDzF0rnzglBcKYuXl4UY,5457
+browsy/_worker.py,sha256=ikrlWeaS7WTtLhGZHFwHTuKoNH-kUwQLBlXUgYkqAcQ,5334
+browsy/templates/base.html,sha256=07uGMb-3D64uw5pw2_FgNXy3Za3icOebkxmTd7NL_Bg,7924
+browsy/templates/jobs.html,sha256=CUBkQ6-RginLZ1g2iYK8m9Ej6RTunJCqDnH0eAcWlZ0,3543
+browsy/templates/workers.html,sha256=2ve-iASVMLdVsOh8XBQd_B4d6Yu6B8dAO65t2k5mmaQ,1291
+browsy-0.0.8.dist-info/METADATA,sha256=y0NjeW-ifUPyC33WuNgfUkQ50tD3Pcc5Om2hsLmUV7c,8151
+browsy-0.0.8.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+browsy-0.0.8.dist-info/entry_points.txt,sha256=mFgM6-QSOJcGgv4HXABZA9QYfXM34cL4phCkLn9euk4,47
+browsy-0.0.8.dist-info/licenses/LICENSE,sha256=IhA9Z_IWG3gvFrEZUIs_trXDdnKDnWrcz5uHAwgFqF8,1072
+browsy-0.0.8.dist-info/RECORD,,
