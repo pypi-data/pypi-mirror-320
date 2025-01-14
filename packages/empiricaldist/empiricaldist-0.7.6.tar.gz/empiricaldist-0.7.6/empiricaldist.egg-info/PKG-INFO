@@ -1,0 +1,29 @@
+Metadata-Version: 2.2
+Name: empiricaldist
+Version: 0.7.6
+Summary: Python library that represents empirical distributions.
+Home-page: https://github.com/AllenDowney/empiricaldist
+Author: Allen B. Downey
+Author-email: downey@allendowney.com
+License: BSD-3-Clause
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+empiricaldist
+=============
+
+Python library that represents empirical distribution functions.
+
+[Documentation](https://allendowney.github.io/empiricaldist/)
