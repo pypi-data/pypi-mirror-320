@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+seqreg/__init__.py
+seqreg/poolboiling.py
+seqreg/seqreg.py
+seqreg.egg-info/PKG-INFO
+seqreg.egg-info/SOURCES.txt
+seqreg.egg-info/dependency_links.txt
+seqreg.egg-info/top_level.txt
+seqreg/Models/Hit2Flux.json
+seqreg/Models/models.json
