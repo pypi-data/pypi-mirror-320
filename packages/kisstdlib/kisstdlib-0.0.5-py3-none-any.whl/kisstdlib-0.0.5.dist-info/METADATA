@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: kisstdlib
+Version: 0.0.5
+Summary: Keep It Simple STandarD LIBraries set for Python
+Author-email: Jan Malakhovski <oxij@oxij.org>
+Project-URL: Homepage, https://oxij.org/software/kisstdlib/
+Project-URL: GitHub, https://github.com/oxij/kisstdlib
+Project-URL: Support Development, https://oxij.org/#support
+Keywords: sys,stdlib
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: sortedcontainers==2.4.*
+
+# What?
+
+Keep It Simple STandarD LIBraries set for Python.
+
+A very alpha Work In Progress kind of thing ATM.
