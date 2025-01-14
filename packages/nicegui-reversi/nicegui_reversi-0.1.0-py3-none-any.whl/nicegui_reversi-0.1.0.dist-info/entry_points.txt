@@ -1,0 +1,2 @@
+[console_scripts]
+reversi = nicegui_reversi:main
