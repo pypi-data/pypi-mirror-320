@@ -1,0 +1,11 @@
+dask[array]
+dask[diagnostics]
+joblib
+loguru
+matplotlib
+munch
+numpy
+openpyxl
+pandas
+scipy
+xarray
