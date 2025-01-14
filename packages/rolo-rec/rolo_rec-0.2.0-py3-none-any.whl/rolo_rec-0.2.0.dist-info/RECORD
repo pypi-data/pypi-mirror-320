@@ -1,0 +1,13 @@
+myfacerec/__init__.py,sha256=gjO3Q5BQ1jj8FNr4UntGl3MX1ix-b-CuI8dnEFPbakI,118
+myfacerec/cli.py,sha256=FCDQbvQ76QAHdr5RI6OTFAxiQxRv8hDwXnPh8Q1XzZQ,1762
+myfacerec/config.py,sha256=IyzEmzzU80HttIj6IGgn0aTy-syMecpNCObpXdvBF-k,1289
+myfacerec/data_store.py,sha256=YzbCV99pk0GcKuyswF0ewUEpSSLaFXn8dYwRTsnb5H0,1123
+myfacerec/detectors.py,sha256=KKlqlwSzjGtoTEBkMKfnXbhQ6wN_GyJQpu4e3nP-E2Y,932
+myfacerec/embedders.py,sha256=KynbRSLJRLubAL-h2pAqZEXAQKdcfUZCdQ_4Kz0-KT4,1347
+myfacerec/facial_recognition.py,sha256=86zRZxiazY3oorBANrp3q7ngco4Vg3_WT3G9vgn63js,5301
+myfacerec/setup.py,sha256=lw-RqHwzgZ-7cZbBOHL76l5AuIC9lwyy1JuXno3FHO0,710
+rolo_rec-0.2.0.dist-info/METADATA,sha256=ePNa-5N7tyqO-cGNzL4LfzBUbnKMYX95se5HrQ0WVAo,390
+rolo_rec-0.2.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+rolo_rec-0.2.0.dist-info/entry_points.txt,sha256=iMonWP7lpR2m49ekiGfgkkbzjpxIzL7EJH975Nn94JE,48
+rolo_rec-0.2.0.dist-info/top_level.txt,sha256=Jiw00JfC8EeI8LR5mqBVGd2kd-OnAGZeFfScBTF8rxs,10
+rolo_rec-0.2.0.dist-info/RECORD,,
