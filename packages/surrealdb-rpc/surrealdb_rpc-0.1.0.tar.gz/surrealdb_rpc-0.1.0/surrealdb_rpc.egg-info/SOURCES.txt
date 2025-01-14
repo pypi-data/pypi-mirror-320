@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+surrealdb_rpc/__init__.py
+surrealdb_rpc/protocol.py
+surrealdb_rpc.egg-info/PKG-INFO
+surrealdb_rpc.egg-info/SOURCES.txt
+surrealdb_rpc.egg-info/dependency_links.txt
+surrealdb_rpc.egg-info/requires.txt
+surrealdb_rpc.egg-info/top_level.txt
+surrealdb_rpc/client/__init__.py
+surrealdb_rpc/client/websocket.py
+surrealdb_rpc/data_model/__init__.py
+surrealdb_rpc/data_model/ext_types.py
+surrealdb_rpc/data_model/thing.py
+surrealdb_rpc/tests/__init__.py
+surrealdb_rpc/tests/test_docker.py
