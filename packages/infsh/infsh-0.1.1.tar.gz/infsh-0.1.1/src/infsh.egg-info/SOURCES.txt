@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/infsh/__init__.py
+src/infsh/__main__.py
+src/infsh/cli.py
+src/infsh/infsh.py
+src/infsh.egg-info/PKG-INFO
+src/infsh.egg-info/SOURCES.txt
+src/infsh.egg-info/dependency_links.txt
+src/infsh.egg-info/entry_points.txt
+src/infsh.egg-info/requires.txt
+src/infsh.egg-info/top_level.txt
+src/infsh/templates/inference.py
