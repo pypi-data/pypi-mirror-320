@@ -1,0 +1,31 @@
+[project]
+name = "praisonaiagent"
+version = "0.0.1"
+description = "Intelligent AI Agent Framework for Autonomous Task Execution"
+authors = [
+    { name = "MervinPraison" }
+]
+dependencies = [
+    "requests>=2.25.1",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = { text = "MIT" }
+keywords = ["ai", "agent", "automation", "intelligent-system", "autonomous-agent"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/praisonaiagent"]
