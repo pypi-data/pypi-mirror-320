@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: probabilistic_piping
+Version: 0.0.4
+Summary: Python package for probabilistic piping calculations
+Project-URL: Documentation, https://hkv-products-services.github.io/probabilistic_piping
+Project-URL: Source, https://github.com/HKV-products-services/probabilistic_piping
+Author: Guy Dupuits, Robin Nicolai, Joost Pol, David Haasnoot
+License: GNU-GPL V3
+Requires-Dist: numpy
+Requires-Dist: openturns>=1.23
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Description-Content-Type: text/markdown
+
+# Probabilistic piping
+
+This package contains core functionality for probabilistic piping calculations, utilizing [OpenTURNS](http://openturns.github.io), [pandas](https://pandas.pydata.org), [numpy](https://numpy.org) and [tqdm](https://tqdm.github.io). Probabilistic piping is developed by HKV and is published under the GNU GPL-3 license.
