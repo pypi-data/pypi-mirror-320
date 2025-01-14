@@ -1,0 +1,2 @@
+include src/pulse_scrapy_selenium_grid/web_driver/proxy/resources/*.json
+include src/pulse_scrapy_selenium_grid/web_driver/proxy/resources/*.js
