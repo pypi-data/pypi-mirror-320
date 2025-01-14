@@ -1,0 +1,12 @@
+# Changes here will be overwritten by Copier
+_commit: e97f4fc
+_src_path: https://gitlab.com/cbenz/python-project-template.git
+author_email: christophe.benz@nomics.world
+author_name: Christophe Benz
+issues_url: https://git.nomics.world/dbnomics/dbnomics-fetcher-ops/-/issues
+package_description: Manage DBnomics fetchers
+package_name: dbnomics_fetcher_ops
+python_line_length: 120
+python_version: '3.13'
+repo_url: https://git.nomics.world/dbnomics/dbnomics-fetcher-ops
+

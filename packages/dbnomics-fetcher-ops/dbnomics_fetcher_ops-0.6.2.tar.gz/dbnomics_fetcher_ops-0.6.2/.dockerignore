@@ -1,0 +1,6 @@
+*
+!/src/dbnomics_fetcher_ops
+!/pyproject.toml
+!/LICENSE
+!/README.md
+!/uv.lock
