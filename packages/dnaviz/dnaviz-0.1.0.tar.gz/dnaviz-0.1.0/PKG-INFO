@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: dnaviz
+Version: 0.1.0
+Summary: A package for DNA/RNA visualization
+Author: SemiQuant
+Author-email: SemiQuant <Jason.Limberis@ucsf.edu>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pygame>=2.5.0
+Requires-Dist: click>=8.0.0
+Requires-Dist: rich>=10.0.0
+Dynamic: author
+Dynamic: requires-python
