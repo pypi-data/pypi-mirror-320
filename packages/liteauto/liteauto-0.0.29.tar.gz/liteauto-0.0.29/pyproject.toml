@@ -1,0 +1,24 @@
+[build-system]
+requires = [ "poetry-core",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "liteauto"
+version = "0.0.29"
+description = "free google results"
+authors = [ "Kammari Santhosh",]
+readme = "README.md"
+license = "MIT License"
+repository = "https://github.com/santhosh/"
+keywords = [ "",]
+include = [ "ai_search_st_app.py",]
+[[tool.poetry.packages]]
+include = "liteauto"
+
+[tool.poetry.scripts]
+googleai-ui = "ai_search_st_app:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyautogui = "^0.9.54"
+certifi = "^2024.12.14"
