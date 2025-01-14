@@ -1,0 +1,3 @@
+IPython
+pyperclip
+pdf2image
