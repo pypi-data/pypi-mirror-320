@@ -1,0 +1,4 @@
+[console_scripts]
+portpy-test = portpy.ai.training.test:test
+portpy-train = portpy.ai.training.train:train
+
