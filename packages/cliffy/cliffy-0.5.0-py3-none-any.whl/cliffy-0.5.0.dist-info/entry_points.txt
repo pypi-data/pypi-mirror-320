@@ -1,0 +1,4 @@
+[console_scripts]
+cli=cliffy.run:run
+cliffy=cliffy.run:run
+
