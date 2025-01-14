@@ -1,0 +1,13 @@
+fonk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fonk/__main__.py,sha256=lKYYcVD6IT9FeR--whUQbdaLXcjH6gUDFIpJZ_IUcJY,64
+fonk/cli.py,sha256=uVZoS23AlrnVRBHsBqanTCeojmDecQ3uF-jZwHwGoLI,2585
+fonk/config.py,sha256=xnKgMEfFwL7d-bQpbV7cVna7QkgGJkFaOzk8N-M3l8Q,5280
+fonk/locator.py,sha256=PzH4ec2UPqJPknnCSpmZAffJlAhIJ1ZY89028o1LE-U,312
+fonk/render.py,sha256=_MKzRROnKnJh7Yr0X6yWwKWM0uQkTZ0UD_BiQw61XWI,5332
+fonk/runner.py,sha256=_65gc0YzhURIxif0sdrc83cUUnTdlMjRSPa4JGDxO7g,3442
+fonk/session.py,sha256=t8LTVV5SJLNUBDhN3bxvqjDxXRGSvQpoDGeXWbaE3VM,2570
+fonk-0.1.1.dist-info/METADATA,sha256=Fj0qL2iVUucQbjfYTwHiBECreNCJ3-2TWpQhgfWc5Rs,1693
+fonk-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+fonk-0.1.1.dist-info/entry_points.txt,sha256=jEzlR4_jinr3_kOpDEiD3bpGYQBwXWVuTpS5mDUCnqE,38
+fonk-0.1.1.dist-info/licenses/LICENSE.md,sha256=az5GsZxI7ZTy-pEVA7kem-dZs25sWnCQgqs-lUtEHKA,1062
+fonk-0.1.1.dist-info/RECORD,,

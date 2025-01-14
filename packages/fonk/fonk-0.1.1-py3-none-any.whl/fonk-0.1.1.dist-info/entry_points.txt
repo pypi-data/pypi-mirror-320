@@ -1,0 +1,2 @@
+[console_scripts]
+fonk = fonk.cli:app
