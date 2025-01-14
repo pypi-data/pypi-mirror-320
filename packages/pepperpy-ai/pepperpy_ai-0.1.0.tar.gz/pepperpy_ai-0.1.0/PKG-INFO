@@ -1,0 +1,204 @@
+Metadata-Version: 2.3
+Name: pepperpy-ai
+Version: 0.1.0
+Summary: A flexible AI library with modular provider support
+License: MIT
+Keywords: ai,llm,nlp,machine-learning
+Author: Felipe Pimentel
+Author-email: felipe@pepperpy.ai
+Requires-Python: >=3.12,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Provides-Extra: all-capabilities
+Provides-Extra: all-providers
+Provides-Extra: anthropic
+Provides-Extra: complete
+Provides-Extra: dev
+Provides-Extra: openai
+Provides-Extra: rag
+Requires-Dist: aiohttp (>=3.11.11,<4.0.0)
+Requires-Dist: anthropic (==0.42.0) ; extra == "anthropic" or extra == "all-providers" or extra == "complete"
+Requires-Dist: click (>=8.1.8,<9.0.0)
+Requires-Dist: numpy (>=2.2.1,<3.0.0) ; extra == "rag" or extra == "all-capabilities" or extra == "complete"
+Requires-Dist: openai (==1.59.6) ; extra == "openai" or extra == "all-providers" or extra == "complete"
+Requires-Dist: pytest (>=7.4.4,<8.0.0)
+Requires-Dist: pytest-asyncio (>=0.23.5,<0.24.0)
+Requires-Dist: pytest-cov (>=4.1.0,<5.0.0)
+Requires-Dist: pytest-mock (>=3.12.0,<4.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: sentence-transformers (==3.3.1) ; extra == "rag" or extra == "all-capabilities" or extra == "complete"
+Project-URL: Documentation, https://docs.pepperpy.ai
+Project-URL: Repository, https://github.com/pimentel/pepperpy-ai
+Description-Content-Type: text/markdown
+
+# PepperPy AI
+
+A flexible AI library with modular provider support.
+
+## Features
+
+- Multiple AI provider support (OpenAI, Anthropic, StackSpot, OpenRouter)
+- Modular capabilities (RAG, Chat, Embeddings)
+- Plug-and-play architecture
+- Async-first design
+- Type-safe with comprehensive type hints
+- Extensive test coverage
+- Well-documented API
+
+## Installation
+
+You can install PepperPy AI with pip:
+
+```bash
+pip install pepperpy-ai
+```
+
+### Optional Dependencies
+
+PepperPy AI uses Poetry's extras feature to manage optional dependencies. You can install specific providers or capabilities:
+
+```bash
+# Install with OpenAI support
+pip install "pepperpy-ai[openai]"
+
+# Install with Anthropic support
+pip install "pepperpy-ai[anthropic]"
+
+# Install with RAG support
+pip install "pepperpy-ai[rag]"
+
+# Install with all capabilities
+pip install "pepperpy-ai[all-capabilities]"
+
+# Install with all providers
+pip install "pepperpy-ai[all-providers]"
+
+# Install complete package with all features
+pip install "pepperpy-ai[complete]"
+```
+
+## Usage
+
+Here's a simple example using the OpenAI provider:
+
+```python
+from pepperpy_ai import AIClient
+from pepperpy_ai.providers import OpenAIProvider
+
+# Initialize the client with OpenAI provider
+client = AIClient(
+    provider=OpenAIProvider(
+        api_key="your-api-key",
+        model="gpt-4-turbo-preview"
+    )
+)
+
+# Use the chat capability
+chat = await client.get_capability("chat")
+response = await chat.send_message("Hello, how are you?")
+print(response.content)
+```
+
+Using RAG capabilities:
+
+```python
+from pepperpy_ai import AIClient
+from pepperpy_ai.providers import OpenAIProvider
+from pepperpy_ai.capabilities.rag import Document
+
+# Initialize the client
+client = AIClient(
+    provider=OpenAIProvider(
+        api_key="your-api-key",
+        model="gpt-4-turbo-preview"
+    )
+)
+
+# Get RAG capability
+rag = await client.get_capability("rag")
+
+# Add documents
+docs = [
+    Document(
+        content="PepperPy is a flexible AI library.",
+        metadata={"source": "readme"}
+    ),
+    Document(
+        content="It supports multiple AI providers.",
+        metadata={"source": "docs"}
+    )
+]
+await rag.add_documents(docs)
+
+# Generate response with context
+response = await rag.generate("What is PepperPy?")
+print(response.content)
+```
+
+## Development
+
+### Setup
+
+1. Clone the repository:
+```bash
+git clone https://github.com/pimentel/pepperpy-ai.git
+cd pepperpy-ai
+```
+
+2. Install development environment:
+```bash
+./scripts/setup.sh
+```
+
+3. Activate virtual environment:
+```bash
+poetry shell
+```
+
+### Quality Checks
+
+Run all quality checks:
+```bash
+./scripts/check.sh
+```
+
+This includes:
+- Code formatting (black, isort)
+- Linting (ruff)
+- Type checking (mypy)
+- Security checks (bandit)
+- Tests (pytest)
+
+### Clean
+
+Remove temporary files and build artifacts:
+```bash
+./scripts/clean.sh
+```
+
+### Publishing
+
+To publish a new version:
+```bash
+./scripts/publish.sh VERSION
+```
+
+Replace `VERSION` with the new version number (e.g., `1.0.0`).
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run quality checks
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
