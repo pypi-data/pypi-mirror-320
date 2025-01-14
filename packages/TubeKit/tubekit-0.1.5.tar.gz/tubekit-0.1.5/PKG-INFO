@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: TubeKit
+Version: 0.1.5
+Summary:  A simple Client API for YouTube
+Author-email: F4k3r22/Fredy Rivera <riveraaai200678@gmail.com>
+Requires-Python: >=3.8
+Requires-Dist: isodate
+Requires-Dist: requests
