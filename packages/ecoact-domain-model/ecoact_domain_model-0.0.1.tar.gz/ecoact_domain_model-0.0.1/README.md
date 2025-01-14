@@ -1,0 +1,1 @@
+# ecoact-domain-model
