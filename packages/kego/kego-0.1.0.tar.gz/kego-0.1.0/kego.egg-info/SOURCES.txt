@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+kego.egg-info/PKG-INFO
+kego.egg-info/SOURCES.txt
+kego.egg-info/dependency_links.txt
+kego.egg-info/requires.txt
+kego.egg-info/top_level.txt
