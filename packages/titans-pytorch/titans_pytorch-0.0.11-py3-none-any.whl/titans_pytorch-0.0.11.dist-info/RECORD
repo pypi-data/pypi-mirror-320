@@ -1,0 +1,7 @@
+titans_pytorch/__init__.py,sha256=QKuJPCOJCdgtaPeKoHEkYkiQe65_LV9_8-cIMbBPU30,55
+titans_pytorch/associative_scan.py,sha256=Y-iYqmFuG-NoCKu6kgql1mhowXTeJfyawi3eUIXamp0,2650
+titans_pytorch/titans.py,sha256=mAdTo55DjAvTrNnXJ_QTgRQeMmh7TS856xxYbDVPPQ4,11031
+titans_pytorch-0.0.11.dist-info/METADATA,sha256=9iAkQAfjha-5AwaidF0FpuGYbGlJqVYE_3Dng6IA5g8,3497
+titans_pytorch-0.0.11.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+titans_pytorch-0.0.11.dist-info/licenses/LICENSE,sha256=1yCiA9b5nhslTavxPjsQAO-wpOnwJR9-l8LTVi7GJuk,1066
+titans_pytorch-0.0.11.dist-info/RECORD,,
