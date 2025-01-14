@@ -1,0 +1,13 @@
+resource_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+resource_generator/cli_factory.py,sha256=tTRvFIMwNYu28GcKbbF96k5byXFql1iD1PmAfBGazY0,2294
+resource_generator/controller_command.py,sha256=d_3V0lo99nH-xz3SwZ96Bfgu-mMwA6lRavSCfyMDmvs,422
+resource_generator/main.py,sha256=L-15Zw2_onhaIsK0eZH59SUMHEJffHUESNsJ1b4Lbgo,714
+resource_generator/model_command.py,sha256=efNFD135hx1SX4_W7gajQUaiYka7MItw6Y-2kzoxSw8,2345
+resource_generator/repository_command.py,sha256=clp5H_a_KklostKODgmUdg9kt3IWLTQRB061kPuZytU,1943
+resource_generator/schema_command.py,sha256=ANf0ONFmvmwhPY0aTw7B98Ng2SCevRQ0EZQLI7lul2g,669
+resource_generator/service_command.py,sha256=RwW0p-9IOxX2U6yU5FHK8XGjeVNT22W8l3zlPzDf2OI,2337
+resource_generator-0.1.7.dist-info/LICENSE,sha256=wNpESUxgK91El7ITNliox_cu0_r9k9YAMmO0IH0Hqrk,1065
+resource_generator-0.1.7.dist-info/METADATA,sha256=y88sUKMgLzTGjdaNKQEfIIo4vfJyEFOl1tfmUBrg_zY,3465
+resource_generator-0.1.7.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+resource_generator-0.1.7.dist-info/entry_points.txt,sha256=_PcwWTcTYHDq6IC_O7qpOKxLUTPSraobSIirMMoB2wM,58
+resource_generator-0.1.7.dist-info/RECORD,,
