@@ -1,0 +1,71 @@
+Metadata-Version: 2.3
+Name: python-practice-algorithm-pack
+Version: 0.1.0
+Summary: A project for practicing python packaging techniques.
+Author: Dimitar Stoyanov
+Author-email: me@dimitars.dev
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# Overview
+A basic algorithm library for practicing Python packaging techniques.
+# Project Journal
+I'm following the [Python packaging flow](https://packaging.python.org/en/latest/flow/) documentation.
+## Installing Poetry
+Poetry is a tool for **dependency management** and **packaging** in Python. The first step is to install and set up Poetry, following their [installation guide](https://python-poetry.org/docs/#installing-with-the-official-installer).
+
+I did the install by executing `curl -sSL https://install.python-poetry.org | py -`
+
+In Windows, the poetry executable was placed inside `%appdata%\Roaming\Python\Scripts`, so I had to add this folder to path for more convenient execution.
+## Project setup
+Because I've created the project from GitLab, I can't use `poetry new project-name`.
+
+Instead I use `poetry init` to populate a preexisting folder.
+
+## Adding pytest
+Pytest won't be required during runtime, so I add it to a test group using `poetry add pytest --group test`
+This will help me with not adding pytest to the built package.
+
+## Folder Structure
+The project needs to have a folder with the same name as the rot, but in snake case and a `tests` folder.
+
+## Pipeline
+The `.gitlab-ci.yaml` file contains the pipeline configurations.
+I added a basic test with a JUnit coverage report that integrates with gitlab.
+Later, I can set up the package building, and maybe even publishing logic here.
+
+## Adding dev dependencies
+I've added black, mypy and pylint with `poetry add --dev black mypy pylint`
+This should exclude them from the build.
+
+## Updating Python version
+As of writing this, I have Python 3.12.5, which has a memory issue that black can't work with.
+I'm on Windows, so I'm using the official installer for 3.12.8
+I chose the upgrade option.
+Everything works fine after the upgrade, without changing anything in poetry.
+
+## Running dev tools
+```commandline
+poetry run black .
+poetry run mypy .
+poetry run pylint python_practice_algorithm_pack
+```
+
+## Disabling mandatory docstrings in pylint
+IMO docstrings are useful if they provide extra context, either when the code is complicated
+or requires extra context. I think the small scope of this project exempts some of its parts
+from this requirement. I'd likely not remove it for a larger project.
+
+To disable mandatory docstrings, add a `.pylintrc` file with the following lines:
+```
+[MAIN]
+disable=C0114, C0115, C0116
+```
+
+## Publishing the package
+Following the [poetry documentation](https://python-poetry.org/docs/libraries/).
+### Packaging
+Before I publish the library, I have to package it using `poetry build`
