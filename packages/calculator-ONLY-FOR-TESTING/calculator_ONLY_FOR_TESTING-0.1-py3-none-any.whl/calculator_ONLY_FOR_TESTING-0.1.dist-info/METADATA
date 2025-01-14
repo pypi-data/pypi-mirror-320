@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: calculator__ONLY__FOR__TESTING
+Version: 0.1
+Summary: Just Testing
+Author: nezar
+Keywords: python,calculator
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENCE.txt
+
