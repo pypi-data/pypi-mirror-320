@@ -1,0 +1,21 @@
+Metadata-Version: 2.2
+Name: aiogram-creator
+Version: 1.0.5
+Summary: Template for generating aiogram bots
+Home-page: https://github.com/What-XD/aiogram-creator
+Author: What-XD
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+Template for generating aiogram bots
+
