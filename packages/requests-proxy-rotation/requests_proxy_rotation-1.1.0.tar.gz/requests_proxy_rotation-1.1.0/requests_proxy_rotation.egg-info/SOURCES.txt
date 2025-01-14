@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+requests_proxy_rotation/__init__.py
+requests_proxy_rotation/requests_proxy_rotation.py
+requests_proxy_rotation.egg-info/PKG-INFO
+requests_proxy_rotation.egg-info/SOURCES.txt
+requests_proxy_rotation.egg-info/dependency_links.txt
+requests_proxy_rotation.egg-info/requires.txt
+requests_proxy_rotation.egg-info/top_level.txt
