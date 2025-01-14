@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+gyros.egg-info/PKG-INFO
+gyros.egg-info/SOURCES.txt
+gyros.egg-info/dependency_links.txt
+gyros.egg-info/top_level.txt

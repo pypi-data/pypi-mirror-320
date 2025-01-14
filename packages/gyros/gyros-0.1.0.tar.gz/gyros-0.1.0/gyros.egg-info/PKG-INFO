@@ -1,0 +1,34 @@
+Metadata-Version: 2.2
+Name: gyros
+Version: 0.1.0
+Summary: A distributed computing framework inspired by ROS
+Home-page: https://github.com/ido-rachbuch/gyros
+Author: Ido Rachbuch
+Author-email: idor777@gmail.com
+License: BSD 3-Clause License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
+
+# gyROS
+
+**gyROS** is a distributed computing framework inspired by ROS (Robot Operating System). It aims to provide key features like communication between nodes and modularity, while simplifying the underlying structure for easy integration into custom applications.
+
+## License
+
+This project is licensed under the BSD 3-Clause License.
+
+Portions of the code are derived from ROS (Robot Operating System), originally copyrighted by Willow Garage, Inc. See the [LICENSE](LICENSE) file for more details.
+
+## Coming Soon...
+
