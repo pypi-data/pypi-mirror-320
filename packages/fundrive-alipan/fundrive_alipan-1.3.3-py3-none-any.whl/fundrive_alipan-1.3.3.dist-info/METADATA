@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: fundrive-alipan
+Version: 1.3.3
+Summary: fundrive-alipan
+Author-email: niuliangtao <farfarfun@qq.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: funutil>=1.0.19
+Requires-Dist: qrcode>=7.4.2
+
+# fundrive-alipan
