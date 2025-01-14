@@ -1,0 +1,7 @@
+setup.py
+NR_GUI/__init__.py
+NR_GUI.egg-info/PKG-INFO
+NR_GUI.egg-info/SOURCES.txt
+NR_GUI.egg-info/dependency_links.txt
+NR_GUI.egg-info/requires.txt
+NR_GUI.egg-info/top_level.txt
