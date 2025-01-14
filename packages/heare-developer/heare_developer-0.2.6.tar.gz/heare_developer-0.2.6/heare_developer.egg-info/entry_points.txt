@@ -1,0 +1,3 @@
+[console_scripts]
+heare-developer = heare.developer.cli:main
+heare-pm = heare.pm.project.cli:main
