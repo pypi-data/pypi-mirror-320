@@ -1,0 +1,16 @@
+{
+"access right": "Access Right",
+"access_right_C": "Create/Register",
+"access_right_D": "Delete/Unregister",
+"access_right_U": "Update",
+"access_right_r": "Read",
+"access_right_x": "No/Revoked",
+"ado": "app documents",
+"app": "app data",
+"cwd": "current working directory",
+"de": "german",
+"doc": "documents",
+"en": "english",
+"es": "spanish",
+"usr": "user data",
+}
