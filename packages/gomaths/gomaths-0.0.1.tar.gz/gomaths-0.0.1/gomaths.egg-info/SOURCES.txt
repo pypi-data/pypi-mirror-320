@@ -1,0 +1,9 @@
+README.md
+setup.py
+gomaths/__init__.py
+gomaths/base.py
+gomaths/gomaths.py
+gomaths.egg-info/PKG-INFO
+gomaths.egg-info/SOURCES.txt
+gomaths.egg-info/dependency_links.txt
+gomaths.egg-info/top_level.txt
