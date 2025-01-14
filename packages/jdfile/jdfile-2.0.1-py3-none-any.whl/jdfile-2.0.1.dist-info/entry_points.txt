@@ -1,0 +1,2 @@
+[console_scripts]
+jdfile = jdfile.jdfile:app
