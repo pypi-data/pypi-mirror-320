@@ -1,0 +1,6 @@
+[console_scripts]
+stundrg-hi = stundrg_check_os_ver.hi:hi
+stundrg-random = stundrg_check_os_ver.hi:random_pic
+
+[gui_scripts]
+
