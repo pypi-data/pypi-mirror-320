@@ -1,0 +1,10 @@
+Metadata-Version: 2.2
+Name: praisonaiagents
+Version: 0.0.35
+Summary: Praison AI agents for completing complex tasks with Self Reflection Agents
+Author: Mervin Praison
+Requires-Dist: pydantic
+Requires-Dist: rich
+Requires-Dist: openai
+Provides-Extra: memory
+Requires-Dist: chromadb>=0.6.0; extra == "memory"
