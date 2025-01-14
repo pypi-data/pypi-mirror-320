@@ -1,0 +1,3 @@
+[console_scripts]
+fapyc = fapyc:fapyc_entrypoint
+unfapyc = fapyc:unfapyc_entrypoint
