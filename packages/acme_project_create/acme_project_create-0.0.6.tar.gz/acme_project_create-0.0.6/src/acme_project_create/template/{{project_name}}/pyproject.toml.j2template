@@ -1,0 +1,36 @@
+[build-system]
+requires = [ "setuptools>=46.4.0", "wheel>=0.36.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "{{package_name}}"
+version = "{{version}}"
+description = "{{description}}"
+readme = "README.md"
+classifiers = [ "Programming Language :: Python :: {{python_version}}", ]
+dependencies = [ "python-dotenv" ]
+
+[[project.authors]]
+email = "{{owner_email}}"
+
+[project.scripts]
+{{command_name}} = "{{package_name}}._main:main"
+
+[project.urls]
+homepage = "{{homepage_url}}"
+repository = "{{repository_url}}"
+
+[project.optional-dependencies]
+dev = [
+    "pytest", # for testing
+    "uv", # for venv
+    "mkdocs", # for documentation
+    "mkdocs-material", # theme for mkdocs
+    "mkdocstrings[python]", # mkdocs plugin to generate API docs from sources
+    "jupyterlab", # for jupyter notebooks
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["{{package_name}}"]
+# [tool.setuptools.package-data]
