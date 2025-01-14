@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: pyopcxmlda
+Version: 0.1.4
+Summary: A Python3 OPC XML-DA library.
+Home-page: https://github.com/NothinRandom/pyopcxmlda
+Author: Tri Quach
+Author-email: nothinrandom@gmail.com
+License: MIT
+Requires-Python: >=3.7.0
+License-File: LICENSE
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
