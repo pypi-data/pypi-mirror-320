@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+aiobookoo/__init__.py
+aiobookoo/bookooscale.py
+aiobookoo/const.py
+aiobookoo/decode.py
+aiobookoo/exceptions.py
+aiobookoo/helpers.py
+aiobookoo/py.typed
+aiobookoo.egg-info/PKG-INFO
+aiobookoo.egg-info/SOURCES.txt
+aiobookoo.egg-info/dependency_links.txt
+aiobookoo.egg-info/requires.txt
+aiobookoo.egg-info/top_level.txt
