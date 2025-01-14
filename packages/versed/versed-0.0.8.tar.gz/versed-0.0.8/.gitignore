@@ -1,0 +1,15 @@
+# Editor configuration
+.vscode
+
+# Virtual environment
+.venv/
+
+# Build artifacts
+dist/
+build/
+
+# Cache
+**/__pycache__
+**/*.pyc
+
+credentials.json
