@@ -1,0 +1,8 @@
+parse_apple_health_data/__init__.py,sha256=saGqXIWCmjRVOCFuIusjjt3akKpagO1PoUZpTmkNUOo,287
+parse_apple_health_data/parser.py,sha256=0fK48_jbGtHVO4psCG_GdEzVNN-rTPp0da_7A5GE8dU,7239
+parse_apple_health_data/utils.py,sha256=MujekOnJAWKMbdqNqVJIWjs8VnibTmSwOEYbnsJQ8l8,597
+parse_apple_health_data-1.0.0.dist-info/LICENSE,sha256=2gMNoyYu61IMLMXV8kDQ_MohOA1HIHp5D40DLhIdXOU,1072
+parse_apple_health_data-1.0.0.dist-info/METADATA,sha256=rC0TWNraLRnKr2I5ALpoEFFofD_YVzNNg3MkdiZfuJM,2840
+parse_apple_health_data-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+parse_apple_health_data-1.0.0.dist-info/top_level.txt,sha256=ADtzKhgENaCAYcuKjSOkXmbaVZlObvusp0rjdCEPNBg,24
+parse_apple_health_data-1.0.0.dist-info/RECORD,,
