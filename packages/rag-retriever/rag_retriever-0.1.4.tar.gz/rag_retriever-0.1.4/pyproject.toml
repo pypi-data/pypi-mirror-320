@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-retriever"
+version = "0.1.4"
+description = "A tool for crawling, indexing, and semantically searching web content"
+readme = "README.md"
+authors = [
+    {name = "Tim Kitchens", email = "codingthefuturewithai@gmail.com"}
+]
+license = {text = "MIT"}
+requires-python = ">=3.10,<3.13"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = ["ai", "rag", "embeddings", "semantic-search", "web-crawler", "vector-store"]
+dependencies = [
+    "beautifulsoup4==4.12.3",
+    "chromadb==0.5.23",
+    "langchain==0.3.14",
+    "langchain-community==0.3.14",
+    "langchain-core==0.3.29",
+    "langchain-chroma==0.1.4",
+    "langchain-openai==0.2.14",
+    "lxml==5.3.0",
+    "openai==1.59.4",
+    "playwright==1.42.0",
+    "pypdf==4.1.0",
+    "python-dotenv==1.0.1",
+    "pyyaml==6.0.2",
+    "importlib-resources>=6.1.1",
+    "unstructured[pdf]>=0.12.0",
+    "pillow>=10.2.0",
+    "pymupdf>=1.23.8",
+    "pytesseract>=0.3.10"
+]
+
+[project.scripts]
+rag-retriever = "rag_retriever.cli:main"
+post-install = "scripts.install:install_browsers"
+
+[tool.setuptools.packages.find]
+include = ["rag_retriever*", "scripts*"]
+namespaces = true
+
+[tool.setuptools.package-data]
+rag_retriever = ["config/*.yaml", "config/.env.example"] 

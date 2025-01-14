@@ -1,0 +1,87 @@
+# Vector store settings
+vector_store:
+  persist_directory: null # Will be set by the application to OS-specific path
+  embedding_model: "text-embedding-3-large"
+  embedding_dimensions: 3072
+  chunk_size: 1000 # Default chunk size for text splitting
+  chunk_overlap: 200 # Default chunk overlap for text splitting
+
+# Local document processing
+document_processing:
+  supported_extensions:
+    - ".md"
+    - ".txt"
+    - ".pdf"
+  excluded_patterns:
+    - ".*"
+    - "node_modules/**"
+    - "__pycache__/**"
+    - "*.pyc"
+    - ".git/**"
+  encoding_fallbacks:
+    - "utf-8"
+    - "latin-1"
+    - "cp1252"
+  pdf_settings:
+    max_file_size_mb: 50 # Maximum PDF file size in megabytes
+    extract_images: false # Whether to extract and process images from PDFs
+    ocr_enabled: false # Whether to use OCR for scanned documents
+    languages: ["eng"] # Languages to use for text extraction and OCR
+    password: null # Default password for encrypted PDFs (null for none)
+    strategy: "fast" # PDF processing strategy: fast or accurate
+    mode: "elements" # PDF processing mode: single_page, paged, or elements
+
+# Content processing
+content:
+  chunk_size: 2000
+  chunk_overlap: 400
+  # Separators for text splitting, in order of preference
+  # Each level represents a stronger boundary, with more context preserved
+  separators:
+    - "\n## " # h2 headers (strongest break)
+    - "\n### " # h3 headers
+    - "\n#### " # h4 headers
+    - "\n- " # bullet points
+    - "\n• " # alternative bullet points
+    - "\n\n" # paragraphs
+    - ". " # sentences (weakest break)
+  # Patterns to clean from UI elements
+  ui_patterns:
+    - "Theme\\s+Auto\\s+Light\\s+Dark"
+    - "Previous\\s+topic|Next\\s+topic"
+    - "Navigation"
+    - "Jump\\s+to"
+    - "Search"
+    - "Skip\\s+to\\s+content"
+
+# Search settings
+search:
+  default_limit: 8
+  default_score_threshold: 0.3
+
+# Browser settings for web crawling
+browser:
+  wait_time: 2 # Base wait time in seconds
+  viewport:
+    width: 1920
+    height: 1080
+  # Random delays to appear more human-like
+  delays:
+    before_request: [1, 3] # Min and max seconds
+    after_load: [2, 4]
+    after_dynamic: [1, 2]
+  # Browser launch options
+  launch_options:
+    headless: true
+    channel: "chrome" # Use system Chrome if available
+  # Context options for stealth
+  context_options:
+    bypass_csp: true # Bypass Content Security Policy
+    java_script_enabled: true
+    user_agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+  # Additional stealth settings
+  stealth:
+    languages: ["en-US", "en"]
+    platform: "MacIntel" # Will be overridden based on OS
+    vendor: "Google Inc."
+    webgl_vendor: "Intel Inc." # Will be overridden based on OS
