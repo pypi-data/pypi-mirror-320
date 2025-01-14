@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: jupyno
+Version: 1.0.4
+Summary: Utiliser Arduino dans un notebook Jupyter
+Author: Guillaume Froehlicher
+Author-email: guillaume.froehlicher@ac-rennes.fr
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# Jupyno
+Module permettant d'écrire et de téléverser des croquis Arduino directement depuis un notebook Jupyter.
+Nécessite le programme arduino-cli (https://github.com/arduino/arduino-cli) présent dans le même dossier.

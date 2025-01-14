@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+jupyno/__init__.py
+jupyno/jupyno.py
+jupyno.egg-info/PKG-INFO
+jupyno.egg-info/SOURCES.txt
+jupyno.egg-info/dependency_links.txt
+jupyno.egg-info/top_level.txt
