@@ -1,0 +1,2 @@
+[console_scripts]
+tablet = flatland.__main__:main
