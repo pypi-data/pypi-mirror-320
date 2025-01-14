@@ -1,0 +1,2 @@
+mkdocs_qr_plugin
+tests

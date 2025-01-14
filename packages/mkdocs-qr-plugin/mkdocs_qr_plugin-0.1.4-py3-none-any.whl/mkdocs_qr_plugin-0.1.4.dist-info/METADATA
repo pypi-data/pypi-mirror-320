@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: mkdocs-qr-plugin
+Version: 0.1.4
+Summary: An MkDocs plugin for generating QR codes
+Home-page: https://github.com/miguelhatricks/mkdocs-qr-plugin
+Author: Miguel Hatrick
+Author-email: miguel@dacosys.com
+License: MIT
+Keywords: mkdocs
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: mkdocs >=1.5
+Requires-Dist: qrcode ==8.0
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
+An MkDocs plugin that automagically generates qr codes
