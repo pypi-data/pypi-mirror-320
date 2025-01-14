@@ -1,0 +1,2 @@
+[console_scripts]
+rfc-download = rfc_kits.command:download
