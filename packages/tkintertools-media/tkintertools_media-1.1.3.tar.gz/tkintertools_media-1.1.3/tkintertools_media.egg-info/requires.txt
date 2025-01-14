@@ -1,0 +1,4 @@
+typing-extensions
+tkintertools>=3.0.0rc6
+pillow>=10.0.0
+ffpyplayer>=4.5.0

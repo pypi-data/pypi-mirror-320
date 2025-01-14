@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+tkintertools/media/__init__.py
+tkintertools/media/icons.py
+tkintertools/media/main.py
+tkintertools_media.egg-info/PKG-INFO
+tkintertools_media.egg-info/SOURCES.txt
+tkintertools_media.egg-info/dependency_links.txt
+tkintertools_media.egg-info/requires.txt
+tkintertools_media.egg-info/top_level.txt
