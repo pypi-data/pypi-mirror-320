@@ -1,0 +1,6 @@
+setup.py
+wtussiw/__init__.py
+wtussiw.egg-info/PKG-INFO
+wtussiw.egg-info/SOURCES.txt
+wtussiw.egg-info/dependency_links.txt
+wtussiw.egg-info/top_level.txt
