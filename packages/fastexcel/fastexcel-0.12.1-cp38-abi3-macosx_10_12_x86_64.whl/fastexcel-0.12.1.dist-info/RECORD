@@ -1,0 +1,8 @@
+fastexcel-0.12.1.dist-info/METADATA,sha256=jAgxIyZxuUEqZoFMeC8mumPQADCPXNij8KltfHTgtPI,3508
+fastexcel-0.12.1.dist-info/WHEEL,sha256=ajTxDRk-ooZz0dnA2NZaw_ASzODvtK_6X8l0woIlBl4,104
+fastexcel-0.12.1.dist-info/licenses/LICENSE,sha256=XI0wWPawEA1QEjNFa47v6q3SYpwPHydWVXqT6grRi4o,1067
+fastexcel/__init__.py,sha256=g7NJE5w59oSwFi31Yrel6NHHZh9PXj9U5_lezmvWcbc,18584
+fastexcel/_fastexcel.pyi,sha256=ZGXUdE3kkaLgsv0QI8vEUVPyPz-ip_PI5x3fPT69Gpo,5910
+fastexcel/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastexcel/_fastexcel.abi3.so,sha256=PTUFnV6x8b54hUYkvoAY1EmDqJI_YCMI10SeIGyxfVY,3013584
+fastexcel-0.12.1.dist-info/RECORD,,
