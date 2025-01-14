@@ -1,0 +1,12 @@
+aiobookoo/__init__.py,sha256=BwVuOO_qXSmACfeLoUxZD6vkJpx7jcKXN-jc7EBCNFA,37
+aiobookoo/bookooscale.py,sha256=s-iy0Vkwu2CcQ2IXdfHuCVatp6IrURE1PbTLtXH8fPY,11972
+aiobookoo/const.py,sha256=g855HhiCqWowuHlz1S4xDI1-rQN9ZIqFyMCSXDdEpgg,564
+aiobookoo/decode.py,sha256=ofrlS4Uqp35pd8cwOwVQxJDzRryeEOnUzLaqRVXdw8M,2972
+aiobookoo/exceptions.py,sha256=ApxsnlLt53pPHBVznOt_HDDOdGdLmQlAT6Nz7TAvd9U,1172
+aiobookoo/helpers.py,sha256=6ANGtna8hFnXx2RB6yguEt4AP1eFyhVFCXCxT1xjPc8,1848
+aiobookoo/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiobookoo-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+aiobookoo-0.1.0.dist-info/METADATA,sha256=ECaQC_tKZr3n4OdrXi2X7tHeK00pHaUja82cZ7nG63o,1382
+aiobookoo-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+aiobookoo-0.1.0.dist-info/top_level.txt,sha256=dZybtG1nYetp3_G-ww9wAxMrnOwL0kVwfAWz9eJYWeg,10
+aiobookoo-0.1.0.dist-info/RECORD,,
