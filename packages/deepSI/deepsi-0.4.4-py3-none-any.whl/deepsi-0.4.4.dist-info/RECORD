@@ -1,0 +1,9 @@
+deepSI/__init__.py,sha256=5NLXKqB3fFvHe7EKIplAiP2tofTCgBVWaK6ZT2130yE,385
+deepSI/fitting.py,sha256=HIL0TdURj4kbSC5nornvGl4xCFNglemXP0wmyiphxz8,10992
+deepSI/models.py,sha256=qmpLjZ5GAc-QWq9ABMcR0eLEbx-smr2TTtoMApG5k1Q,28365
+deepSI/networks.py,sha256=lT_ea2vvphsiYWjvlrHc9mZ6hESzjS1B1QQd6fkIUBk,22108
+deepSI/normalization.py,sha256=wn-hg51aCIwLmx6WY7E978LpJocS7zog-Z6UsJ6Q3hs,3927
+deepsi-0.4.4.dist-info/LICENSE,sha256=6xpOXQGxnIx0DSpRRSqXgZvPRwyliSpj8izwO_KdxpQ,1599
+deepsi-0.4.4.dist-info/METADATA,sha256=T-pCB-NjyOhVQjkQ7WZWy7RcF2yeYW90iyHlmFjhsbU,5540
+deepsi-0.4.4.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+deepsi-0.4.4.dist-info/RECORD,,
