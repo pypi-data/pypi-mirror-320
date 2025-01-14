@@ -1,0 +1,14 @@
+audiosample/__init__.py,sha256=Yj3MzSGVPI9ZZ_oTHqQoPywsiLC1PJYjd97QCjpS3rA,164
+audiosample/audiosample.py,sha256=K_Aca3bwhW4XYBYs3tMz1z1bmqJ-PUig7dBFhM2gJ44,62165
+audiosample/av_plugins.py,sha256=GNJ3JCT6pjgqSWIHPG0A4Sct9MJFCbb54LDJqra3Z-U,3114
+audiosample/notebook.py,sha256=idVJW0aC1lIhhEdVmc1qExuBw3NymiYO12w1BEp8Wlg,7223
+audiosample/np_plugins.py,sha256=FRzbnECX-N9g648m8SI1rB1NICO1kT6KsIzR9isfIWM,17851
+audiosample/play.py,sha256=on1avPG7hQPHd2Nqav22wBsEeDCUMSAMhU-7PozrJeo,2335
+audiosample/play2.py,sha256=iFagj4NphHAVpkm7MIHD1SLP-pGLxGWMPQYdrKvjW60,6319
+audiosample/plugins.py,sha256=9Ax1cjP1kAtta3evC4tkeJdBepMghioQuk0-npevwWM,401
+audiosample/notebook_js/spectrogram-player.js,sha256=noeG2M6SmDP7IsWzkmVyxuLvIzBXsP3WzfeZfzPQJ3E,11250
+audiosample-2.2.4.dist-info/LICENSE,sha256=YOpknQ1ho4cATEr-IrIjxiyZjV7cHqEq7aTrzZsH0eE,1080
+audiosample-2.2.4.dist-info/METADATA,sha256=9zQu-UquKMqqnf7zN51krR7eLU-GcYjjDsyNzFy6DdM,8249
+audiosample-2.2.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+audiosample-2.2.4.dist-info/top_level.txt,sha256=VqKArNgf0dfKgMlLvwlaZem1O31FUAZDXoBGXDCAV6A,12
+audiosample-2.2.4.dist-info/RECORD,,
