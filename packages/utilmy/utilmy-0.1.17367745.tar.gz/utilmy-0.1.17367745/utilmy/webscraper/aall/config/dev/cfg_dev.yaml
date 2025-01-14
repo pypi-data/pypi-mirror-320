@@ -1,0 +1,13 @@
+aws_role: dev
+istest: 0
+
+news:
+  com_tag: test
+
+
+###################################################
+data:
+  dirdata: s3://edge-ml-dev/data
+  diroot:  s3://edge-ml-dev
+
+
