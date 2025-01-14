@@ -1,0 +1,6 @@
+jacobi_driver_fanuc.cpython-312-x86_64-linux-gnu.so,sha256=SDZCmZinMrSF91hcLbgdbTQzB7ddf5OJKtdpmzSfHKU,455152
+libjacobi-fanuc-driver.so,sha256=2ziaQpz1eqIARsgARey-DmtfqcB0nbz39jqi-uy10gk,698296
+jacobi_fanuc_driver-0.0.45.dist-info/METADATA,sha256=cD9LjXGaA0GC-9niI5geiCPAKhtdEeUiXTn0LiwdewM,3968
+jacobi_fanuc_driver-0.0.45.dist-info/RECORD,,
+jacobi_fanuc_driver-0.0.45.dist-info/WHEEL,sha256=mJLU1RQwO1EVB1lOMGMcbPZXCXCQtyFqWQvC-JvhUs0,157
+jacobi_fanuc_driver-0.0.45.dist-info/licenses/LICENSE,sha256=MtziYY1eCbfTdKHNLqIxDSmCEtPshLGUG2qUhbRZ1M8,2502
