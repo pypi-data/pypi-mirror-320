@@ -1,0 +1,10 @@
+rfskiosk2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rfskiosk2/envfiles/base-example.env,sha256=-zr6oZpxf-7P6KCCm2kuULWJX0DPC5begBYuh53XirI,497
+rfskiosk2/envfiles/local-example.env,sha256=tluMMKibI8wgeYArJNtQXxEftK75ADZEw2_mUE7mCjE,543
+rfskiosk2/envfiles/nfcreader-example.ini,sha256=IsUqNEIrNVb19QJWa3MNr1gEC8Skw-RiLaOuC4AwglE,433
+rfskiosk2/kiosk_beeper.py,sha256=kn17yc6iHQeG2m_fSgZBQRSy8pHBMZjW0JsEnjoeZBM,6597
+rfskiosk2/nfcreader3.py,sha256=AznKlnl0b31_-JvLoJaOg1rLUEAMAPvB2gWU0uk83HQ,27182
+rfskiosk2-0.4.21.dist-info/METADATA,sha256=EDYvAmMTZDQ6wI8NAgql502LLsF1fYJh6yKdPsSMIyg,952
+rfskiosk2-0.4.21.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+rfskiosk2-0.4.21.dist-info/entry_points.txt,sha256=-Du-U3PX6aF7jedgJQQA3VMeMK1I8Fe8K0HcdHwHks0,96
+rfskiosk2-0.4.21.dist-info/RECORD,,

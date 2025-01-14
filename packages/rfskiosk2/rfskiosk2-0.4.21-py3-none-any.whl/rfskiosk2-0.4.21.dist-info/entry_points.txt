@@ -1,0 +1,4 @@
+[console_scripts]
+kiosk_beeper=rfskiosk2.kiosk_beeper:main
+nfcreader=rfskiosk2.nfcreader3:main
+
