@@ -1,0 +1,79 @@
+# -*- coding: utf-8 -*-
+#
+# Copyright (C) 2025 TU Wien.
+#
+# Invenio-Config-TUW is free software; you can redistribute it and/or modify
+# it under the terms of the MIT License; see LICENSE file for more details.
+
+"""Miscellaneous tests that don't really belong anywhere else."""
+
+from logging.handlers import SMTPHandler
+
+from flask import g
+from invenio_db import db
+
+import invenio_config_tuw
+from invenio_config_tuw.startup import register_smtp_error_handler
+from invenio_config_tuw.tasks import send_publication_notification_email
+from invenio_config_tuw.users.utils import current_user_as_creator
+
+
+def test_send_publication_notification_email(example_record, mocker):
+    """Test (not really) sending an email about the publication of a record."""
+    mocker.patch("invenio_config_tuw.tasks.send_email")
+
+    send_publication_notification_email(example_record.pid.pid_value)
+
+    invenio_config_tuw.tasks.send_email.assert_called_once()
+
+
+def test_record_metadata_current_user_as_creator(client_with_login):
+    """Test the auto-generation of a "creator" entry for the current user."""
+    user = client_with_login._user
+    user.user_profile = {
+        "tiss_id": 274424,
+        "given_name": "Maximilian",
+        "family_name": "Moser",
+        "full_name": "Maximilian Moser",
+        "affiliations": "tuwien.ac.at",
+    }
+    db.session.commit()
+
+    expected_data = {
+        "affiliations": [{"id": "04d836q62", "name": "TU Wien"}],
+        "person_or_org": {
+            "family_name": user.user_profile["family_name"],
+            "given_name": user.user_profile["given_name"],
+            "identifiers": [],
+            "name": user.user_profile["full_name"],
+            "type": "personal",
+        },
+        "role": "contactperson",
+    }
+
+    # `current_user` requires a little rain dance to work
+    with client_with_login.application.test_request_context():
+        g._login_user = user
+        creator_data = current_user_as_creator()
+
+    assert [expected_data] == creator_data
+
+
+def test_register_smtp_error_handler(app):
+    """Test the registration of the SMTP handler for error logs."""
+    # the SMTP handler registration has a few configuration requirements
+    old_debug, old_testing = app.debug, app.testing
+    app.debug, app.testing = False, False
+    app.config["MAIL_SERVER"] = "smtp.example.com"
+    app.config["MAIL_ADMIN"] = "admin@example.com"
+
+    # check if the log handler registration works
+    old_num_handlers = len(app.logger.handlers)
+    assert not any([isinstance(h, SMTPHandler) for h in app.logger.handlers])
+    register_smtp_error_handler(app)
+    new_num_handlers = len(app.logger.handlers)
+    assert any([isinstance(h, SMTPHandler) for h in app.logger.handlers])
+    assert new_num_handlers == old_num_handlers + 1
+
+    # reset the previous debug/testing flags for the app
+    app.debug, app.testing = old_debug, old_testing
