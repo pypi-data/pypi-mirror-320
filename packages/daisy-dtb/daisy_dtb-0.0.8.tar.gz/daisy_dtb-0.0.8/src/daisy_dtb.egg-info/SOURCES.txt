@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/daisy.py
+src/daisybook.py
+src/domlib.py
+src/dtbsource.py
+src/main.py
+src/daisy_dtb.egg-info/PKG-INFO
+src/daisy_dtb.egg-info/SOURCES.txt
+src/daisy_dtb.egg-info/dependency_links.txt
+src/daisy_dtb.egg-info/requires.txt
+src/daisy_dtb.egg-info/top_level.txt
