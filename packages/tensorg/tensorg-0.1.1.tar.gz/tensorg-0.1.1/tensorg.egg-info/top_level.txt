@@ -1,0 +1,8 @@
+build
+dist
+docs
+media
+output_files
+paper
+tensorgrad
+tests
