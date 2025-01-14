@@ -1,0 +1,10 @@
+MANIFEST.in
+setup.py
+dtlibpc/__init__.py
+dtlibpc/dataset.so
+dtlibpc/utils.so
+dtlibpc.egg-info/PKG-INFO
+dtlibpc.egg-info/SOURCES.txt
+dtlibpc.egg-info/dependency_links.txt
+dtlibpc.egg-info/requires.txt
+dtlibpc.egg-info/top_level.txt
