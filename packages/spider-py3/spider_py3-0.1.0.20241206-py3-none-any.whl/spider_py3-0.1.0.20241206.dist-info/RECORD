@@ -1,0 +1,14 @@
+spiderpy3/__init__.py,sha256=Bd7W1cQROj641ZkWz5gnKlAk_B1lnyd8_LYZzi3V1Og,85
+spiderpy3/mixins/__init__.py,sha256=PLVgbNhcWdA9ae6SkPncdO4PitrlsL4dwYKq8zyTfUU,41
+spiderpy3/mixins/dp.py,sha256=JUc-j53y71wOQxb4ExpqIj_qlBdakxK3NcFcdfhcSTc,1215
+spiderpy3/objects/__init__.py,sha256=Me9zzJFE8x3GydpFGe-9fPBBaMLB-MGl4Vc-BWpzPlg,63
+spiderpy3/objects/object.py,sha256=M0w02PeiF75rU6FU0qNn5tJCvvjGA-P-KKShSENpQYw,375
+spiderpy3/objects/task.py,sha256=guv9wy7t0_6cV61kBXY5yu2T_wKf-nX0gxX6AaxX7Hg,1262
+spiderpy3/utils/__init__.py,sha256=lzGXjLVHAQGfv-Ul49EiyN0FKmhXZxqIR2bJdPZtudQ,81
+spiderpy3/utils/cookies.py,sha256=xi56_oD8BaifCmzAN3iFqPZkpYc5RY6x21GSnK1E9jg,462
+spiderpy3/utils/logger.py,sha256=ZxdBqNKLzMpoacQ_d5989LF3doRyR5VV4W_lYfn19mE,5578
+spiderpy3/utils/url.py,sha256=Tsj-1kgZpD1T7tEPSzxMRozbRETI-Haa9Q_Nk3BldjY,5073
+spider_py3-0.1.0.20241206.dist-info/LICENSE,sha256=_tUgAtg9RVBrtQ6BjyllxdVjZyXGIL1Xp36pM5k649Q,1068
+spider_py3-0.1.0.20241206.dist-info/METADATA,sha256=GaHiJ7tfBOfOwSTV4eN5YIcnHaU7iVhcJKNlQST5R3Q,1693
+spider_py3-0.1.0.20241206.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+spider_py3-0.1.0.20241206.dist-info/RECORD,,
