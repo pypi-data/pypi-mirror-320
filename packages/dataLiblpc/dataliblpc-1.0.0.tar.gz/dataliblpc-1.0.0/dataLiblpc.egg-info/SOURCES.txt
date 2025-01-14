@@ -1,0 +1,6 @@
+setup.py
+dataLiblpc.egg-info/PKG-INFO
+dataLiblpc.egg-info/SOURCES.txt
+dataLiblpc.egg-info/dependency_links.txt
+dataLiblpc.egg-info/requires.txt
+dataLiblpc.egg-info/top_level.txt
