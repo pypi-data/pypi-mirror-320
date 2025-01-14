@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oracle.luau"
+version = "1.0.5"
+description = "An API wrapper for the Oracle Luau decompiler."
+readme = "README.md"
+requires-python = ">=3.6"
+license = { file = "LICENSE" }
+authors = [
+    { name = "ActualMasterOogway", email = "realmasteroogway.contact@gmail.com" }
+]
+
+[tool.setuptools]
+packages = [
+    "oracle_luau",
+]
+include-package-data = true
