@@ -1,0 +1,6 @@
+[mkdocs.plugins]
+mkdocs-material-adr/adr=mkdocs_material_adr.plugins.graph.plugin:AdrPlugin
+
+[mkdocs.themes]
+mkdocs-material-adr=mkdocs_material_adr
+
