@@ -1,0 +1,2 @@
+[console_scripts]
+versed = versed.__main__:cli
