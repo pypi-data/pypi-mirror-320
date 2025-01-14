@@ -1,0 +1,13 @@
+llamarker/.streamlit/config.toml,sha256=dLw1V9SALLAGKcvEnv3z_E8UKZLz4y64MK5F5i9iF14,136
+llamarker/__init__.py,sha256=J5Z6Yk18TyQvx-EEg1DOTPIxppebPQ5DC4Q5urwGzdU,221
+llamarker/assets/Llamarker_logo.png,sha256=y1QXLBQ0Vci73rWG2nvtlQs5k70oMFgyLzu836tBR7w,54043
+llamarker/file_to_pdf_converter.py,sha256=PG7JqyqZx-dnpUIkwMPipWEPo4J_OilJ6ooJFPqAejA,7063
+llamarker/gui_runner.py,sha256=41nOppDqqp32GNTMoC_zAug0IYhdyzTahMrwmfmIqHg,234
+llamarker/img_processor.py,sha256=SQSQ6N4EbjzXp-ii3sXk4DlKRVme3Ngg6xe0-LldXRs,24497
+llamarker/llamarker_gui.py,sha256=oOZA2HNtorC9figz0kl_RFG9sQOsxO8dQnKnUbi_KqA,15854
+llamarker/main.py,sha256=Olw8Tw0t_BprmFNAc-84NuotmTAcAR61Fa9d43CGW84,14224
+llamarker-1.0.1.dist-info/entry_points.txt,sha256=l1OjqCiH_oZe4ikPV_eH94khP_RgAhBXFV3FFIqqVw8,89
+llamarker-1.0.1.dist-info/LICENSE,sha256=pfDBkwIs7APgbTy3gqOLZf2c5OwS4PSW4-uB7lQyFpA,16079
+llamarker-1.0.1.dist-info/METADATA,sha256=lOgZHZxMMuYkakXbI5eftaqVIgKiVASBtj7AlmvmlCg,13526
+llamarker-1.0.1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+llamarker-1.0.1.dist-info/RECORD,,

@@ -1,0 +1,4 @@
+[console_scripts]
+llamarker=llamarker.main:main
+llamarker_gui=llamarker.gui_runner:main
+
