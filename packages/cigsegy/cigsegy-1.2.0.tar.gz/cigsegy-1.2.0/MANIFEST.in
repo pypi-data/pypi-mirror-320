@@ -1,0 +1,5 @@
+recursive-include cigsegy *.h *.hpp
+
+recursive-include cigsegy *.pyi
+
+include VERSION.txt
