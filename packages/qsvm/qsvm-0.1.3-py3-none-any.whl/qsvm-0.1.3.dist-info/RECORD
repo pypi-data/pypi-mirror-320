@@ -1,0 +1,9 @@
+qsvm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qsvm/__main__.py,sha256=kwx5GYPaAzjNlA00QplDQwu5ze_fjoU90SPl3xkl2-Y,64
+qsvm/cli.py,sha256=RYxvX3AqOHX_K9SmtJZNjWNc_d52ePzW1Trh3yleE2M,32515
+qsvm-0.1.3.dist-info/LICENSE,sha256=UKHDLEEMTlDIHN_QK_Hn_6hKX5CWj3rhKqBXZiPCuNo,1068
+qsvm-0.1.3.dist-info/METADATA,sha256=LHcrwFPI8nvalRKOtHKAWacHquflLYsuDMaPvTrNWmc,621
+qsvm-0.1.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+qsvm-0.1.3.dist-info/entry_points.txt,sha256=_W5I1RGvFLxFFLucYKd6RaqbIZeZK9FSB5N7CbAZPeU,39
+qsvm-0.1.3.dist-info/top_level.txt,sha256=PVOhR-l3JlIYr7f_h-cG08Wg-D1rDz2AYT53e0rihJ0,5
+qsvm-0.1.3.dist-info/RECORD,,
