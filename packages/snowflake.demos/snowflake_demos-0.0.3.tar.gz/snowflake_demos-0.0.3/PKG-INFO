@@ -1,0 +1,40 @@
+Metadata-Version: 2.4
+Name: snowflake.demos
+Version: 0.0.3
+Summary: Snowflake Python API for demo/ examples loading
+Author-email: "Snowflake, Inc." <snowflake-python-libraries-dl@snowflake.com>
+License: Apache-2.0
+Keywords: Snowflake,analytics,cloud,database,db,warehouse
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: SQL
+Classifier: Topic :: Database
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Requires-Dist: atpublic>=4
+Requires-Dist: cachetools>=5.5.0
+Requires-Dist: ipython<9.0.0,>=7.0.0
+Requires-Dist: requests>=2.32.3
+Requires-Dist: rich>=13.3.1
+Requires-Dist: snowflake-core>=1.0.0
+Requires-Dist: snowflake-snowpark-python>=1.23.0
+Requires-Dist: sqlparse>=0.5.3
+Description-Content-Type: text/markdown
+
+# snowflake.demos
+
+`snowflake.demos` is the subpackage providing Python access to load Snowfalke demos.
+
+You can use it to load a demo which will simplify the process by creating a snowflake notebook. 
