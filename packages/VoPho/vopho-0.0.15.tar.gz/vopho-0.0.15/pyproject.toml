@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "VoPho"
+version = "0.0.15"
+description = "An easy to use Multilingual phonemization meta-library"
+readme = "README.md"
+authors = [
+    { name = "ShoukanLabs." }
+]
+keywords = ["Phonemization", "TTS", "Multilingual"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+requires-python = ">=3.6"
+
+dependencies = [
+    "ruphon",
+    "ruaccent==1.5.8",
+    "cn2an==0.5.22",
+    "colorama==0.4.6",
+    "termcolor==2.4.0",
+    "openphonemizer==0.1.2",
+    "unidic-lite==1.0.8",
+    "mecab-python3==1.0.9",
+    "cutlet==0.4.0",
+    "jieba==0.42.1",
+    "pypinyin==0.52.0",
+    "pythainlp==5.0.4",
+    "torch>=2.0.0",
+    "langdetect==1.0.9",
+    "lingua-language-detector==2.0.2",
+    "pywsd==1.2.5",
+    "sentence-transformers",
+    "scikit-learn"
+]
+
+[project.urls]
+homepage = "https://github.com/ShoukanLabs/VoPho"
