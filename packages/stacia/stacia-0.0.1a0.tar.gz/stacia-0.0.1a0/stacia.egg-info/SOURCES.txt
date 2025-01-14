@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+stacia/__init__.py
+stacia.egg-info/PKG-INFO
+stacia.egg-info/SOURCES.txt
+stacia.egg-info/dependency_links.txt
+stacia.egg-info/top_level.txt
