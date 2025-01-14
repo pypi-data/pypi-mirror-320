@@ -1,0 +1,10 @@
+dsmq/__init__.py,sha256=YCgbnQAk8YbtHRyMcU0v2O7RdRhPhlT-vS_q40a7Q6g,50
+dsmq/client.py,sha256=sgkz7iabc8hirq0HRfhqlKCPwHVYgvg2C01aoRbvTSo,768
+dsmq/demo_linux.py,sha256=O5B2DH9pAvCCaYSRE5DV1o2fSx_bXU9hcxTis0ier5I,648
+dsmq/example_get_client.py,sha256=PvAsDGEAH1kVBifLVg2rx8ZxnAZmvzVCvZq13VgpLds,301
+dsmq/example_put_client.py,sha256=QxDc3i7KAjjhpwxRRpI0Ke5KTNSPuBf9kkcGyTvUEaw,353
+dsmq/server.py,sha256=fFM8soN4y8CULX5yk3Temir-pl2K1hp38MOEwqzPN5U,4343
+dsmq-1.0.0.dist-info/METADATA,sha256=TaoyVGkRJasSK-D6UQ9vNTeY07gOH9At7j1rZgiFxp0,4069
+dsmq-1.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+dsmq-1.0.0.dist-info/licenses/LICENSE,sha256=3Yu1mAp5VsKmnDtzkiOY7BdmrLeNwwZ3t6iWaLnlL0Y,1071
+dsmq-1.0.0.dist-info/RECORD,,
