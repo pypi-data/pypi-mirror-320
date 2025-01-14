@@ -1,0 +1,10 @@
+codemate_ai/__init__.py,sha256=5N1xB1cOfDrq1ln6kKqoa-hbUqdpfBr7B7T1ivEL3wg,211
+codemate_ai/core.py,sha256=O-SABl5mJBdK7hyhWrTwbvZWiYebbe2mdvS3rWPlWeI,9171
+codemate_ai/magics.py,sha256=GYaw9obW4Ix446YE2Z5cuTLcTr6h50CmvgfLyB3cEBg,8416
+codemate_ai/providers.py,sha256=gjtELU_s5JDBP_WHO7TSy9v9hBg87IKGRf1zqUukGE4,7771
+codemate_ai-0.1.0.dist-info/LICENSE,sha256=iPtSLwyV8PWmHtvI1dafVadkD5IFgOfew3FaqaIqGvE,1100
+codemate_ai-0.1.0.dist-info/METADATA,sha256=Cw3lGztd3BpAmaegCXw_WDXBu9DQ1N1RWrMGd9SBLJc,653
+codemate_ai-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+codemate_ai-0.1.0.dist-info/entry_points.txt,sha256=4rcqx_k3_gFq6O-pNECq50mOkn218GNXk-peywicaN0,54
+codemate_ai-0.1.0.dist-info/top_level.txt,sha256=mZxtU8Zu7NLMn_eFUSAIzR9Pknzzgbgd7TM3hp52KjE,12
+codemate_ai-0.1.0.dist-info/RECORD,,
