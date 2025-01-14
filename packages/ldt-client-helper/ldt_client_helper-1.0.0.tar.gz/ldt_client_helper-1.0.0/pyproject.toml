@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project] 
+name = "ldt_client_helper"
+version = "1.0.0"
+authors = [ { name="Live Data Technologies", email="support@livedatatechnologies.com" }]
+dependencies = ["ldt_identity_client>=1.0.2"]
+description = "LiveDataAuthClient class to help with authentication and authorization for LiveData Technologies APIs"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [ "Programming Language :: Python :: 3"]
