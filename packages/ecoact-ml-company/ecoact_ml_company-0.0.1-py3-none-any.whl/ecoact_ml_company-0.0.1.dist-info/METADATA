@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ecoact-ml-company
+Version: 0.0.1
+Summary: Ecoact internal library for company ml models
+Author: Timothé Guillaume-li Salles
+Author-email: timothe.guillaume-li@se.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: ecodev-core (>=0.0.25,<0.1.0)
+Description-Content-Type: text/markdown
+
+# ecoact-ml-company
