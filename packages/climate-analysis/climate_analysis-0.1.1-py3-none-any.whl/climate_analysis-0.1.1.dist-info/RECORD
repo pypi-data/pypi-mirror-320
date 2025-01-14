@@ -1,0 +1,11 @@
+climate_analysis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+climate_analysis/maps.py,sha256=UIMp4CRGkle32r1VDndtlrSFHo19rQQg-bk_2oPdKYw,8849
+climate_analysis/time_series.py,sha256=OGsK_uXnCtj_zTcB2ppDlEJvBfVzVgUhe7rWUpmqWYw,8511
+tests/test_maps.py,sha256=ubn6FiGDECKijMnsZ5F_dAaNHrHzSIdbt7LA4myG0N8,32
+tests/test_time_series.py,sha256=QbfkmqqU-la4J9WLTdiXG4zmSWzYGRkUpxLcmM-GXpg,39
+climate_analysis-0.1.1.dist-info/LICENSE,sha256=q7KJbcPCqUAvkBuI1QNc8Kg9XPfBfnNkLN9WKwudO8U,11
+climate_analysis-0.1.1.dist-info/METADATA,sha256=CKGV9kf0bVMcaEfOeNSC69xp-Yp8kz0D-ZFSVCFD5hM,6131
+climate_analysis-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+climate_analysis-0.1.1.dist-info/entry_points.txt,sha256=vHcEcOAsVTXHwWSJ2IPPzT6g56GquRQWtu430j8frVE,143
+climate_analysis-0.1.1.dist-info/top_level.txt,sha256=PSreyfUYn-Hwj2UIa5uxfx_wogXh_As7EEqR8JP7wnc,23
+climate_analysis-0.1.1.dist-info/RECORD,,
