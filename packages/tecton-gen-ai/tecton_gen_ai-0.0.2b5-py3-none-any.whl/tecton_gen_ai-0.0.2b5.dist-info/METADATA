@@ -1,0 +1,73 @@
+Metadata-Version: 2.4
+Name: tecton-gen-ai
+Version: 0.0.2b5
+Summary: [private preview] Tecton Gen AI SDK
+Project-URL: Homepage, https://tecton.ai
+Project-URL: Documentation, https://docs.tecton.ai
+Author-email: "Tecton, Inc." <support@tecton.ai>
+License: Tecton Proprietary
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: cloudpickle>=2.0.0
+Requires-Dist: diskcache>=5.6.3
+Requires-Dist: langchain-core>0.3
+Requires-Dist: pandas>=2.2.1
+Requires-Dist: tecton-client>=0.3.0
+Requires-Dist: typing-extensions>=4.5
+Provides-Extra: bedrock
+Requires-Dist: langchain-aws; extra == 'bedrock'
+Provides-Extra: dev
+Requires-Dist: diagrams; extra == 'dev'
+Requires-Dist: ipywidgets; extra == 'dev'
+Requires-Dist: markdown; extra == 'dev'
+Requires-Dist: pygments; extra == 'dev'
+Requires-Dist: rich; extra == 'dev'
+Provides-Extra: gemini
+Requires-Dist: langchain-google-genai; extra == 'gemini'
+Provides-Extra: langchain
+Requires-Dist: langchain-community>0.3; extra == 'langchain'
+Requires-Dist: langchain-core>0.3; extra == 'langchain'
+Requires-Dist: langchain>0.3; extra == 'langchain'
+Provides-Extra: llama-index
+Requires-Dist: llama-index; extra == 'llama-index'
+Provides-Extra: openai
+Requires-Dist: langchain-openai; extra == 'openai'
+Provides-Extra: realtime
+Requires-Dist: aws-secretsmanager-caching; extra == 'realtime'
+Provides-Extra: structured
+Requires-Dist: instructor>=1.5.0; extra == 'structured'
+Provides-Extra: tecton
+Requires-Dist: tecton[rift-materialization]==1.1.0b11; extra == 'tecton'
+Description-Content-Type: text/markdown
+
+![logo](https://s3.us-west-2.amazonaws.com/tecton.ai.public/documentation/pypi/tecton-logo.svg)
+
+Tecton is the fastest way to build operational AI applications.
+
+# Contents of the `tecton-gen-ai` PyPI package
+
+The `tecton-gen-ai` PyPI package is Tecton's programming interface purpose built for Generative AI applications. It is in private preview.
+
+With it, you can:
+- Define and test prompts, enriched with features
+- Use features as Generative AI tools in an LLM Agent
+- Leverage LLM transformations and feature extraction in Batch, Streaming, and Realtime
+
+# License
+
+Copyright (2023) Tecton, Inc. This library (the "Software") may not be used except in connection with the Licensee's use
+of the Tecton Platform Services (defined below) pursuant to an Agreement (defined below) between Licensee (defined
+below) and Tecton, Inc. ("Tecton"). This Software shall be deemed part of the "Services" under the Agreement, or if the
+Agreement does not define Services, then the term in such Agreement that refers to the applicable Tecton Platform
+Services (as defined below) shall be substituted herein for "Services." Licensee's use of the Software must comply at
+all times with any restrictions applicable to the Services, generally, and must be used in accordance with any
+applicable documentation. If you have not agreed to an Agreement or otherwise do not agree to these terms, you may not
+use the Software. This license terminates automatically upon the termination of the Agreement or Licensee's breach of
+these terms. Agreement: the agreement between Tecton and Licensee governing the use of the Tecton Platform Services,
+which shall be, with respect to Tecton, the Tecton Platform-as-a-Service Agreement located
+at https://www.tecton.ai/tecton_online-tos/, unless Licensee has entered into a separate written agreement with Tecton
+governing the use of the Tecton Platform Services. Tecton Platform Services: the Tecton services according to where the
+Software is used. Licensee: the user of the Software, or, if the Software is being used on behalf of a company, the
+company.
