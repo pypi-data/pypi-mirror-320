@@ -1,0 +1,10 @@
+README.md
+setup.py
+matpylib/__init__.py
+matpylib/core.py
+matpylib.egg-info/PKG-INFO
+matpylib.egg-info/SOURCES.txt
+matpylib.egg-info/dependency_links.txt
+matpylib.egg-info/entry_points.txt
+matpylib.egg-info/requires.txt
+matpylib.egg-info/top_level.txt
