@@ -1,0 +1,6 @@
+[console_scripts]
+heejin-hi = hj_check_os_version.hi:hi
+heejin-random = hj_check_os_version.hi:random_pic
+
+[gui_scripts]
+
