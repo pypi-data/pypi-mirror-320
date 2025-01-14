@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "rfskiosk2"
+version = "0.4.21"
+description = "RFS Kiosk"
+authors = ["ian <ibowditch@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+keywords = ["kiosk", "tag", "nfc", "rfs"]
+
+# These end up in
+#~/.local/pipx/venvs/rfskiosk2/lib/python3.11/site-packages/rfskiosk2/envfiles
+include =  ["rfskiosk2/envfiles/*"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8.0.0"
+requests = "2.32.3"
+libusb1 = "^3.1.0"
+py-dateutil="*"
+logging_journald="*"
+systemd-python="*"
+nfcpy="*"
+extended-configparser="*"
+websocket-client="*"
+simpleaudio="*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+kiosk_beeper = "rfskiosk2.kiosk_beeper:main"
+nfcreader = "rfskiosk2.nfcreader3:main"
+
+
+
+

@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: rfskiosk2
+Version: 0.4.21
+Summary: RFS Kiosk
+License: MIT
+Keywords: kiosk,tag,nfc,rfs
+Author: ian
+Author-email: ibowditch@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: click (>=8.0.0,<9.0.0)
+Requires-Dist: extended-configparser
+Requires-Dist: libusb1 (>=3.1.0,<4.0.0)
+Requires-Dist: logging_journald
+Requires-Dist: nfcpy
+Requires-Dist: py-dateutil
+Requires-Dist: requests (==2.32.3)
+Requires-Dist: simpleaudio
+Requires-Dist: systemd-python
+Requires-Dist: websocket-client
+Description-Content-Type: text/markdown
+
+
