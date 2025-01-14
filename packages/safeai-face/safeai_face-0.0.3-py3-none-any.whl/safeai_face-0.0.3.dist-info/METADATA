@@ -1,0 +1,266 @@
+Metadata-Version: 2.1
+Name: safeai-face
+Version: 0.0.3
+Summary: SafeAI face detection and face retrieval library using milvus vector DB
+Home-page: https://github.com/safeai-kr/safeai-face.git
+Author: paradise999
+Author-email: choirock6416@gamil.com
+Keywords: SafeAI,safeai,face,face detection,face retrieval
+Requires-Python: >=3.10.8
+Description-Content-Type: text/markdown
+Requires-Dist: pymilvus>=2.4.2
+Requires-Dist: timm
+Requires-Dist: torch==2.5.1
+Requires-Dist: torchvision==0.20.1
+Requires-Dist: scikit-learn
+Requires-Dist: pillow
+Requires-Dist: numpy==2.0.2
+Requires-Dist: opencv-python==4.10.0.84
+Requires-Dist: ultralytics==8.3.4
+Requires-Dist: onnxruntime==1.19.2
+Requires-Dist: onnxruntime-gpu==1.19.2
+Requires-Dist: opencv-contrib-python
+Requires-Dist: lapx>=0.5.2
+
+## SafeAI Face Detection & Face Retrieval
+SafeAI face detection and face retrieval library
+
+<br>
+
+## Installation
+```python
+pip install safeai-face
+```
+
+<br>
+
+## Functions
+### Face Detection
+The [ face_detection ] function is used to detect faces in an image using a YOLO-based model. It supports both simple face detection and tracking over multiple frames if needed. The function returns a list of detected faces, each containing the bounding box coordinates, tracking ID (if enabled), and confidence score.
+
+**Example Usage**
+
+```python
+import cv2
+from safevision_face import face_detection
+
+image = cv2.imread("image_path")
+detection = face_detection(image, do_track=True)
+
+#output : [{'box': (56, 16, 169, 167), 'track_id': 1, 'score': 0.8751850724220276}]
+```
+
+**Parameters**
+- image_bgr(np.ndarray)
+
+    The input image in BGR format. This is typically read using OpenCV (cv2.imread). 
+
+- conf(float, default: 0.4)
+
+    The confidence threshold for face detection. Detections with confidence scores below this value are ignored.
+    
+- iou(float, default: 0.4)
+
+    The confidence threshold for face detection. Detections with confidence scores below this value are ignored.
+
+- do_track(bool, , default: False)
+
+    A boolean flag indicating whether to enable tracking. If True, the function will use a tracker to assign unique IDs to detected faces across frames.
+    
+- tracker_config(str, default: "bytetrack.yaml")
+
+    The configuration file for the tracker, used when do_track is set to True.
+
+<br>
+
+### Face Extraction
+The [ face_extraction ] function extracts a feature embedding vector from a given face image using the EdgeFace model. This embedding is a numerical representation of the face, which can be used for tasks like face recognition, clustering, or similarity comparison.
+
+**Example Usage**
+
+```python
+from safevision_face import face_extraction
+
+vec = face_extraction(image)
+
+#output : a vector of 512 dimensions
+```
+
+**Parameters**
+- image_bgr(np.ndarray)
+
+    The input image in BGR format. Typically, this is a cropped face image obtained from a face detection model.
+
+<br>
+
+### Database Init
+The [ db_set ] function initializes a connection to a Milvus database and creates a collection for storing vector data if it does not already exist. Milvus is a vector database commonly used for managing embeddings for similarity search and machine learning tasks.
+
+**Example Usage**
+
+```python
+from safevision_face import db_set
+
+client = db_set(
+    db_path="your_db_path/test.db", 
+    collection_name="your_collection_name",
+    dimension=512,
+    metric_type="COSINE",
+    indexing="IVF_FLAT",
+    nlist=128
+)
+
+#output : Milvus client instance
+```
+
+**Parameters**
+- db_path(str)
+
+    The URI of the Milvus database.
+
+- collection_name(str)
+
+    The name of the collection in the Milvus database.
+
+- dimension(int, default: 512)
+
+    The dimensionality of the vectors to be stored in the collection. This should match the dimension of the embeddings being used.
+
+- metric_type(str, default: COSINE)
+
+    The distance metric used for similarity searches in the collection.
+
+- indexing(str, default: IVF_FLAT)
+
+    The index type determines how Milvus organizes and searches for vectors, directly impacting query performance and accuracy.
+
+- nlist(int, defatult: 128)
+
+    Defines the number of clusters into which the vector space is divided for the IVF index types.
+
+- auto_id(bool, default: True)
+
+    Whether to enable automatic ID generation for records in the collection.
+
+- enable_dynamic_field(bool, default: True)
+
+    Whether to allow dynamic fields in the collection. Dynamic fields let you store non-fixed schema attributes.
+
+
+<br>
+
+### Database Insert
+The [ db_insert ] function is used to add a record into a specific collection in a Milvus database. The record contains both a vector (embedding) and associated metadata, enabling vector-based similarity searches while preserving contextual information about the stored data.
+
+```python
+from safevision_face import db_insert
+
+db_insert(
+    client,
+    collection_name="your_collection_name",
+    vector=embedding_vector,
+    orig_path="/some/orig_path.jpg",
+    crop_path="/some/crop_path.jpg",
+    timestamp="20250101_120000",
+    tracking_id=123,
+    cam_id="cam_number"
+)
+
+#output : The function returns True after successfully inserting the record into the collection.
+```
+
+**Parameters**
+- client(MilvusCLient)
+
+    An instance of the MilvusClient connected to the database. 
+
+- collection_name(str)
+
+    The name of the collection in which the data will be inserted.
+
+- vector(np.ndarray)
+
+    A vector (embedding) to be stored in the database. This represents the numerical representation of data, such as facial embeddings for similarity search.
+
+- orig_path(str)
+
+    The file path of the original image associated with the vector.
+
+- crop_path(str)
+
+    The file path of the cropped image associated with the vector.
+
+- timestamp(str)
+
+    A timestamp indicating when the data was generated or captured. 
+
+- tracking_id(int)
+
+    An ID used for tracking individuals or objects across frames or locations.
+
+- cam_id(str)
+
+    The identifier of the camera or device from which the data was captured.
+
+
+
+<br>
+
+
+### Database Search
+The [ db_search ] function performs a similarity search in a Milvus collection by comparing a query image's embedding (vector) against stored vectors. The results include the top matches that meet a specified similarity threshold.
+
+```python
+from safevision_face import db_search
+
+results = db_search(
+    client,
+    collection_name="face_collection",
+    metric_type="COSINE",
+    query_image=image_bgr,
+    top_k=1,
+    threshold=0.45,
+    extractor_func=face_extraction,
+    nprobe=16
+)
+
+#output : [{'score': 0.7510387301445007, 'entity': {'orig_path': '/some/orig_path.jpg', 'crop_path': '/some/crop_path.jpg', 'timestamp': '20250101_120000', 'tracking_id': 123, 'cam_id': 'cam102'}}]
+```
+
+**Parameters**
+- client(MilvusCLient)
+
+    An instance of the MilvusClient connected to the Milvus database, enabling search operations on a specific collection.
+
+ 
+- collection_name(str)
+
+    The name of the collection in the Milvus database where the search will be performed.
+
+- query_image(np.ndarray)
+
+    The image (in numpy array format) for which the similarity search is conducted. This image will be converted into an embedding using the provided extractor_func.
+
+- metric_type(str, default: COSINE)
+
+    The distance metric used for similarity searches in the collection.
+
+- nprobe(int, default: 16)
+
+    It determines how many clusters are searched during a query in an IVF-based index.
+    
+    Higher nprobe searches mor clusters, improving accuracy but increasing query latency.
+
+- top_k(int, default: 5)
+
+    The maximum number of top matches to retrieve from the database.
+
+- threshold(float, default: 0.45)
+
+    The minimum similarity score for a match to be considered valid. Matches with a score below this value will be filtered out.
+
+    0.45 means 
+
+- extractor_func
+
+    A function to extract the vector (embedding) from the query image. The function should take an image (numpy array) as input and return its embedding.
