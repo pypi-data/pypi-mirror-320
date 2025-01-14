@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+UEConfigParser/__init__.py
+UEConfigParser/config_parser.py
+UEConfigParser.egg-info/PKG-INFO
+UEConfigParser.egg-info/SOURCES.txt
+UEConfigParser.egg-info/dependency_links.txt
+UEConfigParser.egg-info/not-zip-safe
+UEConfigParser.egg-info/requires.txt
+UEConfigParser.egg-info/top_level.txt
