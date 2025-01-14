@@ -1,0 +1,18 @@
+mi-configurator
+mi-pyral
+mi-tabletqt
+mls-parser
+numpy
+xcm-parser
+xsm-parser
+
+[:python_version < "3.12"]
+tomli
+
+[build]
+build
+twine
+
+[dev]
+bump2version
+pytest
