@@ -1,0 +1,15 @@
+pyprefab/__init__.py,sha256=sH32_-e6RpZDLP5JQgYD9bffOAnLioCnvRlGaljvNvI,742
+pyprefab/cli.py,sha256=12LWgr4FwzOazHIj7HiepoBywkI93YgTs0JZGe_58zI,3297
+pyprefab/templates/.gitignore.j2,sha256=Zl34Fc-F8B2W9jeKW3PQbSMA8tei7i4fHaBdzzkgEIU,3402
+pyprefab/templates/.pre-commit-config.yaml.j2,sha256=AkIJa7T2qIxE54VpZubRyrle4BWLSg87N9pXW-AdDqE,567
+pyprefab/templates/README.md.j2,sha256=mwKJJTtOOhDXunXZGfMEAaIEQ_fLAzwA7xZdz8HkGyE,41
+pyprefab/templates/pyproject.toml.j2,sha256=j6qYxA6fH0aTK6l_gQk7rAdtbSdbCpLoLfUGNdMR5FA,1017
+pyprefab/templates/src/{{ project_name }}/__init__.py.j2,sha256=17PEa838dXuOdVrGQZFbXIT-B_0_aME_sKiOGcuMceY,753
+pyprefab/templates/src/{{ project_name }}/app.py.j2,sha256=202WGxFuPYVvw1BBM-kDlaAzB1I6r8O0aYq7UZ5HXQU,196
+pyprefab/templates/test/test_app.py,sha256=dAMwKN5nnkPXBCtsMNtrIQUP1uml9ZW8-PcRG44aJ70,91
+pyprefab-0.3.2.dist-info/LICENSE,sha256=Is9RG0xG5jLBaEjfwOYJvkwUYhH7SYdNKaIHtwwk8hk,1068
+pyprefab-0.3.2.dist-info/METADATA,sha256=iseXW0XBr7UKsi2FXYqJRchsDT8T3Wky61yTVb8_BL4,5012
+pyprefab-0.3.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pyprefab-0.3.2.dist-info/entry_points.txt,sha256=hUBqciPnKoFkbyxZGqBG7Y2e5qBorbnuTee4TGW7H1E,46
+pyprefab-0.3.2.dist-info/top_level.txt,sha256=s1byaUMkJxCnAIhGTI7OwNjPo8vLNc-tFSXIiize-F4,9
+pyprefab-0.3.2.dist-info/RECORD,,
