@@ -1,0 +1,2 @@
+[console_scripts]
+cluster_affinity = main:cluster_affinity_script
