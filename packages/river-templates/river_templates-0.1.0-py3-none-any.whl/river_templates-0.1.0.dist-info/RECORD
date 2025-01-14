@@ -1,0 +1,11 @@
+river_templates/__init__.py,sha256=BiFZsHRijyFZiNUNJQ4BADv4GWoF_NFtDbe0rspeHOY,45
+river_templates/cli.py,sha256=RSMyHWR_jcWTaEr8h7OImSDRYl9l8g0hMTbQmY8rY5M,468
+river_templates/path_manager/__init__.py,sha256=Bm6xKKD9Yr9LZ4DvIyDSuX7HQtniCToj3Eff_7-EmiE,77
+river_templates/path_manager/generate.py,sha256=8E4zynduXVnZoRk7Xb6_MYR_W6qwzPoi76ESoIQx1pQ,4453
+river_templates/path_manager/main.py,sha256=0M68rt-1Jnu3GFBwMwUXMVlsq9vszr3_aPb2MFMaHfM,1576
+river_templates/path_manager/structure.py,sha256=zPOtZADzn5dmcYLvmaqHEkaJmzOBC04oCfaLfVUhNJc,2029
+river_templates-0.1.0.dist-info/METADATA,sha256=-Abf7nmaQeVvHoTVR_8XWOQF3QWByTdOWlmMj8Bo5A8,675
+river_templates-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+river_templates-0.1.0.dist-info/entry_points.txt,sha256=PI9q2KcQkQj_N_x9yM4hIcek8ss7VZpbTtE_xVVpxmw,92
+river_templates-0.1.0.dist-info/licenses/LICENSE,sha256=nJriShao3Km-VRUP-iqGeApO15fHSSa90K-acqCXCtQ,583
+river_templates-0.1.0.dist-info/RECORD,,

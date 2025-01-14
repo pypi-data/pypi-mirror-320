@@ -1,0 +1,3 @@
+[console_scripts]
+river_templates = river_templates.cli:main
+rts = river_templates.cli:main
