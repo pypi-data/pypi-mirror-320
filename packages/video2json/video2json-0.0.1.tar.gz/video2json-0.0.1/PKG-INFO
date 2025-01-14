@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: video2json
+Version: 0.0.1
+Summary: Convert any video into structured JSON
+Project-URL: Homepage, https://github.com/torayeff/video2json
+Project-URL: Issues, https://github.com/torayeff/video2json/issues
+Author-email: Agajan Torayev <torayeff@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# video2json
+Convert any video data into JSON
