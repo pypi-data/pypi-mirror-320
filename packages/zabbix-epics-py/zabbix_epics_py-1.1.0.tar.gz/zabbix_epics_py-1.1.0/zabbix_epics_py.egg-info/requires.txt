@@ -1,0 +1,8 @@
+future
+zabbix_utils
+pyepics
+
+[develop]
+pytest
+pytest-cov
+pycodestyle
