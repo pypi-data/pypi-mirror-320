@@ -1,0 +1,16 @@
+flatpack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flatpack/config.py,sha256=UwUPzT7rEbv45t3EzDricMTXphP9lToGoW_IQ4xPBG4,411
+flatpack/database_manager.py,sha256=n2Azieo646oxqWinEJtruMgfNWNuIhBYGgJgRtJUm-k,27017
+flatpack/error_handling.py,sha256=r6rUcvK_W8BgWNPXsphkwKWoGLwDkqZP0VYh2nMbz2A,2447
+flatpack/main.py,sha256=xAmJHRue8afR9-eTxYTnNJMPwrqpQml65qfkpzm5yAk,202063
+flatpack/package_manager.py,sha256=UprLr6lZMp6y9jI-QA-vt5O9flmymBe33l8efH3XVls,9557
+flatpack/parsers.py,sha256=FsJWFvQ3llk_gh4q9xrUZa53PoHqRrA2J_cJuusKZNQ,11623
+flatpack/python_executor.py,sha256=szBXL8A0ogPmhGLxgRb6fweBhavQLVEDNx1noKzNZn8,8249
+flatpack/session_manager.py,sha256=fZL20iXmnN4INt0f04-44Jme9A8waBFCN3RsOJoXkBc,977
+flatpack/vector_manager.py,sha256=2-HLAESYwj7gNf8O611bxnYdPO7YrcmlerG70fGd5og,16602
+flatpack-3.12.58.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+flatpack-3.12.58.dist-info/METADATA,sha256=iUHXPYLZ9UrH_gZYf7dIlR4YxnfmPxo1y5s1zEmPxxA,8675
+flatpack-3.12.58.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+flatpack-3.12.58.dist-info/entry_points.txt,sha256=0asITzYYCS1X7tbrKBLGUUWazB4ujYaDxb67k3Ut9-k,48
+flatpack-3.12.58.dist-info/top_level.txt,sha256=5d_SUkbl0vYf89psXbpjYYe9ip-MRuMlQmsVu77kgBs,9
+flatpack-3.12.58.dist-info/RECORD,,
