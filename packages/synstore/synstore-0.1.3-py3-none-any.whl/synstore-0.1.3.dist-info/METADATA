@@ -1,0 +1,45 @@
+Metadata-Version: 2.3
+Name: synstore
+Version: 0.1.3
+Summary: Consistent storage for net-synergy projects.
+License: MIT
+Author: David Connell
+Author-email: david32@dcon.addy.io
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: platformdirs (>=4.3.6,<5.0.0)
+Project-URL: Repository, https://github.com/net-synergy/synstore
+Description-Content-Type: text/markdown
+
+# Synstore
+
+Consistent storage for net-synergy projects built around [platformdirs](https://pypi.org/project/platformdirs/).
+
+Provides functions for project specific default cache and data directories and for listing and deleting files from those directories.
+
+## Install
+
+``` shell
+pip install synstore
+```
+
+## Usage
+
+Call `set_package_name` somewhere in the project before any `synstore` functions are needed.
+The project's top `__init__.py` is likely a good place.
+
+``` python
+# foo/__init__.py
+
+import synstore
+
+from foo import __name__ as pkg_name
+
+synstore.set_package_name(pkg_name)
+```
+
