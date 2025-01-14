@@ -1,0 +1,8 @@
+alith-0.1.0.dist-info/METADATA,sha256=Jn6fFPKvB214eOsD3qqVhkXM-K0srfloop0lr7xFcZk,1645
+alith-0.1.0.dist-info/WHEEL,sha256=2fdNHxJvS2bAcI00delQ4QrnR7Oujl4cP2y-SRm5elU,96
+alith-0.1.0.dist-info/licenses/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+alith/agent.py,sha256=HYuEkJnq7JoqFJk6fm3UOLgSRiotpf96oi7LhE1DYjY,927
+alith/tool.py,sha256=ZUnbtwkEHePQ6_eMMLRi2a-E3PpLKP8dCec-9ZfsJwI,2018
+alith/__init__.py,sha256=R6L3RX6v7ZWaGt1kW7vDlrLBVj54gSVEbasRlexv0RA,81
+alith/_alith.cp312-win_amd64.pyd,sha256=taphYCDhfV_71Fl4T6uBe2-Dlwi1SgzY8d1xZqU6whE,22495232
+alith-0.1.0.dist-info/RECORD,,
