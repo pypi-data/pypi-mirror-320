@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sa-paginator
+Version: 0.1.0
+Summary: A simple paginator for SqlAlchemy ORM
+Home-page: https://github.com/psymoney/sa-paginator
+Author: Sangyeop Kim
+Author-email: sangykimiv@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/psymoney/sa-paginator
+Description-Content-Type: text/markdown
+
+## SqlAlchemy Paginator
+
+A Simple Paginator for SqlAlchemy
