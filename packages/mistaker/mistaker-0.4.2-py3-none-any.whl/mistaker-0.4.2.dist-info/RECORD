@@ -1,0 +1,17 @@
+mistaker/__init__.py,sha256=5R-DldiBDHQM-jTlrIDFvjORxXilOsvNtQEzNnBjqPw,366
+mistaker/address.py,sha256=Wm_ED36VkZIhj6IcVOEPv9n1uOiTNPMScSsKDKSfK0k,24539
+mistaker/base.py,sha256=Uus0M5xfl1xI-1rW_ff4ChEU8UaIwEwSEPkNRKteH30,782
+mistaker/cli.py,sha256=SEtYJ1mQVvdMJ0EIzyiADxJsZPlfGe1GMle24eNIaB4,3273
+mistaker/constants.py,sha256=2L0FJ3jcSZ13y6UNRtYYvgX_zyQsNAUoyfrCb9h3v10,2625
+mistaker/date.py,sha256=FICaekL_Z3lkAaJNUTeKOrVjXqa4IChZiABv_NrMErc,6249
+mistaker/email.py,sha256=LuynKQXyNJLi7Od-oqw5po-_m1gKce47oOeYEEEw6xo,5561
+mistaker/generator.py,sha256=96b8-GzliUzWRA4g45aTE88KDQAdy1kd6hKnxEWbYJw,6949
+mistaker/license_number.py,sha256=rvNZptX0WD63sVQUuIz231zXV5MuojQY98yMgBbTuX4,2264
+mistaker/name.py,sha256=B5yLlHZIU3FdxBIRQaKZY8QMHDai61FXog3gUOiz53c,7337
+mistaker/number.py,sha256=l3GlB6JnfGrPbwj029uHtr9sx9epjvCYPL0VUhfrYXk,3418
+mistaker/word.py,sha256=6Kvut7EVa32i3_BLDT_lZs1g3_8OduEGD6qPNwKMkLg,3170
+mistaker-0.4.2.dist-info/METADATA,sha256=9aSHCOuCLZBGuVbesV-Y1STBH-ZHJJokULvvCG0s__s,10005
+mistaker-0.4.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mistaker-0.4.2.dist-info/entry_points.txt,sha256=jEqdIHqMeeFHNaPM6i1lmj9M9V89uMU7OIfvWmvInGw,47
+mistaker-0.4.2.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mistaker-0.4.2.dist-info/RECORD,,
