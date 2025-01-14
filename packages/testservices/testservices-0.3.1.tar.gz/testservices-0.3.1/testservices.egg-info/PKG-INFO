@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: testservices
+Version: 0.3.1
+Summary: Orchestrating services for testing and development.
+Home-page: https://github.com/simplistix/testservices
+Author: Chris Withers
+Author-email: chris@withers.org
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+License-File: LICENSE.rst
+Requires-Dist: docker
+Provides-Extra: test
+Requires-Dist: PyMySQL; extra == "test"
+Requires-Dist: clickhouse-driver; extra == "test"
+Requires-Dist: mypy; extra == "test"
+Requires-Dist: psycopg[binary]; extra == "test"
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: sybil; extra == "test"
+Requires-Dist: testfixtures; extra == "test"
+Requires-Dist: psycopg; extra == "test"
+Requires-Dist: sqlalchemy; extra == "test"
+Provides-Extra: build
+Requires-Dist: furo; extra == "build"
+Requires-Dist: setuptools; extra == "build"
+Requires-Dist: setuptools-git; extra == "build"
+Requires-Dist: sphinx; extra == "build"
+Requires-Dist: twine; extra == "build"
+Requires-Dist: wheel; extra == "build"
+
+testservices
+============
+
+|CircleCI|_  |Docs|_
+
+.. |CircleCI| image:: https://circleci.com/gh/simplistix/testservices/tree/master.svg?style=shield
+.. _CircleCI: https://circleci.com/gh/simplistix/testservices/tree/master
+
+.. |Docs| image:: https://readthedocs.org/projects/testservices/badge/?version=latest
+.. _Docs: http://testservices.readthedocs.org/en/latest/
+
+This is a library and command line tool for orchestrating services for testing and development.
+
+The `documentation <https://testservices.readthedocs.io/>`__ is the best place to start.
