@@ -1,0 +1,5 @@
+rjieba-0.1.13.dist-info/METADATA,sha256=W4JVprE7ZKpDoO0DEA-NuxCbzLSrc01L3eC-DoFljn4,1724
+rjieba-0.1.13.dist-info/WHEEL,sha256=Ctm8ISphR1UYb-QMau36gKnq6sMcArS4Eyw5_RDN2To,132
+rjieba/__init__.py,sha256=md0bSbrAIbvJPbRldGgr4_ZRwqJahUUVsbU27saP5vE,347
+rjieba/rjieba.cpython-313t-aarch64-linux-gnu.so,sha256=3VDopk0zTrWNoEWRIHze3rNPM-vFwSgkYR7lykokuUc,7248192
+rjieba-0.1.13.dist-info/RECORD,,
