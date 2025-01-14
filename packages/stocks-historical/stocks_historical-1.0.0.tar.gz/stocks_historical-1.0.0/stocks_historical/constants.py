@@ -1,0 +1,1 @@
+API_BASE_URL = "https://stock-fetcher-api.fly.dev/api/v1/stocks"
