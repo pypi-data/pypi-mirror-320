@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: app-version-updater
+Version: 0.0.3
+Summary: 
+Author: Andrey Linyushin
+Author-email: 89202979894@mail.ru
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: fastapi (>=0.115.6,<0.116.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: standarted-logger (>=0.0.2,<0.0.3)
+Description-Content-Type: text/markdown
+
+# auto-updater
+
