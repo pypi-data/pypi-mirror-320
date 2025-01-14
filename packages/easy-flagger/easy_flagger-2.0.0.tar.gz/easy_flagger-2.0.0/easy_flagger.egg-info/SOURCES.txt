@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+easy_flagger.egg-info/PKG-INFO
+easy_flagger.egg-info/SOURCES.txt
+easy_flagger.egg-info/dependency_links.txt
+easy_flagger.egg-info/top_level.txt
+flagger/__init__.py
+flagger/exceptions.py
+flagger/flagger.py
+flagger/type_parsers.py
+tests/__init__.py
+tests/test_custom_parser.py
+tests/test_flagger.py
