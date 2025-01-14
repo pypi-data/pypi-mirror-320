@@ -1,0 +1,153 @@
+Mon Jan 13 12:02:50 2025
+
+__dict__ : <attribute '__dict__' of 'Parameters' objects>
+__doc__ : 
+    A container class for the run parameters of the program
+    
+__module__ : sunback.science.parameters
+__weakref__ : <attribute '__weakref__' of 'Parameters' objects>
+_batch_name : default
+hours : 3600
+minutes : 60
+n_pool : 10
+seconds : 1
+
+
+Force_init : False
+_allow_muxing : True
+_archive_url : None
+_base_directory : /Users/cgilbert/vscode/sunback/sunback_data/renders/background_server_lingon/rainbow
+_batch_name : background_server_lingon
+_bpm : 70
+_cadence : 10.0 min
+_current_wave : rainbow
+_curve_path : /Users/cgilbert/vscode/sunback/sunback_data/renders/background_server_lingon/rainbow/analysis/rainbow_curves.txt
+_debug_delay : 60
+_delay_seconds : 60
+_delete : True
+_do_171 : False
+_do_304 : False
+_do_HMI : True
+_do_mirror : False
+_do_multishot : True
+_do_one : rainbow
+_do_recent : True
+_download_files : True
+_download_path : None
+_exposure_time : 60
+_fet_rp : [True]
+_fetchers : [<class 'sunback.fetcher.AwsImgFetcher.AwsImgFetcher'>, <class 'sunback.processor.ValidationProcessor.ValidationProcessor'>]
+_fits_directory : /Users/cgilbert/vscode/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits
+_fixed_cadence_keyframes : 2
+_fixed_number_keyframes : None
+_frames_per_second : 30
+_image : None
+_imgs_directory : /Users/cgilbert/vscode/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/mod
+_imgs_top_directory : /Users/cgilbert/vscode/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs
+_local_fits_paths : ['/Users/cgilbert/vscode/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits/AIAsynoptic0304.fits', '/Users/cgilbert/vscode/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits/AIAsynoptic0094.fits', '/Users/cgilbert/vscode/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits/AIAsynoptic1600.fits', '/Users/cgilbert/vscode/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits/AIAsynoptic0335.fits', '/Users/cgilbert/vscode/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits/AIAsynoptic0211.fits', '/Users/cgilbert/vscode/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits/AIAsynoptic0131.fits', '/Users/cgilbert/vscode/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits/AIAsynoptic0193.fits', '/Users/cgilbert/vscode/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits/AIAsynoptic1700.fits', '/Users/cgilbert/vscode/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits/AIAsynoptic0171.fits']
+_local_imgs_paths : []
+_make_compressed : False
+_mode : all
+_movs_directory : /Users/cgilbert/vscode/sunback/sunback_data/renders/background_server_lingon/rainbow/video
+_msgn_targets : []
+_overwrite_pngs : False
+_params_path : /Users/cgilbert/vscode/sunback/sunback_data/renders/background_server_lingon/rainbow/analysis/rainbow_params.txt
+_proc_rp : []
+_processors : []
+_put_rp : [None, None]
+_putters : [<class 'sunback.putter.NullPutter.NullPutter'>, <class 'sunback.putter.DesktopPutter.DesktopPutter'>]
+_qrn_targets : []
+_range_in_days : 4
+_remake_norm_curves : False
+_remove_old_images : False
+_reprocess_mode : None
+_resolution : 4096
+_rhe_targets : []
+_run_type : Client Sunback Daemon
+_shortcut_directory : /Users/cgilbert/vscode/sunback/sunback_data/renders/background_server_lingon/MOVS
+_something_changed : False
+_sonify_images : False
+_sonify_limit : False
+_stop_after_one : True
+_temp_directory : /Users/cgilbert/vscode/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits/temp
+_time_path : /Users/cgilbert/vscode/sunback/sunback_data/renders/background_server_lingon/rainbow/image_times.txt
+_time_period : None
+_use_default_directories : True
+_write_video : False
+aftereffects_in_name : rhe
+all_wavelengths : ['0171', '0193', '0211', '0304', '0131', '0335', '0094']
+analysis_directory : /Users/cgilbert/vscode/sunback/sunback_data/renders/background_server_lingon/rainbow/analysis
+cat_directory : /Users/cgilbert/vscode/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/cat
+cat_path : None
+center : None
+confirm_save : False
+currently_local : True
+debug_mode : False
+did_print : False
+do_archive : False
+do_cat : False
+do_compare : True
+do_orig : True
+do_parallel : False
+do_prep : False
+do_single : False
+do_temp : False
+doing_jpeg : True
+durList : []
+file_basename : None
+file_ending : None
+fits_path : None
+fits_save_path : None
+found_limb_radius : 800
+get_fits : True
+got_JPEG : False
+hdu_name : None
+ii : 0
+index_file : None
+int_tm_tot : 0
+is_first_run : True
+last_wave : None
+list_of_default_hdus : ['t_int', 'lev1p0', 0, 1]
+local_directory : None
+master_frame_list_newest : ['rhef', 'msgn', 'rhe', 'lev1p5', 't_int', 'lev1p0', 'compressed_image', 'primary', '']
+master_frame_list_oldest : ['', 'primary', 'compressed_image', 'lev1p0', 't_int', 'lev1p5', 'rhe', 'msgn', 'rhef']
+mod_path : None
+modified_image : 0
+multi_pool : None
+multiplot_all : False
+n_fits : 9
+n_imgs : 0
+norm_curves_name : None
+orig_directory : /Users/cgilbert/vscode/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/orig
+orig_path : None
+os_use : Darwin
+paper_out : []
+png_frame_name : None
+processors_ran : []
+raw_image : 0
+raw_image2 : 0
+rbg_image : None
+rez : None
+rhe_image : None
+root_directory : sunback_data/renders
+run_time_offset : None
+selection : None
+short_circuit : False
+speak_save : False
+start_time : 1736794970.386793
+tend : 
+time_file : None
+time_multiplier_for_long_display : None
+tstart : 
+upsilon : (0.6, 0.35)
+upsilon_high : None
+upsilon_low : None
+use_cdf : False
+use_drive : G
+use_wavelengths : ['0171', '0193', '0211', '0304', '0131', '0335', '0094']
+waves_to_do : ['rainbow']
+web_image_frame : None
+web_image_location : None
+web_paths : None
+
+
