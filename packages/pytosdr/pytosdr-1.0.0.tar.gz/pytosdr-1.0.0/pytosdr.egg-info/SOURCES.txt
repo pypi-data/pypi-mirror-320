@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/publish-pypi.yaml
+pytosdr/__init__.py
+pytosdr/pytosdr.py
+pytosdr.egg-info/PKG-INFO
+pytosdr.egg-info/SOURCES.txt
+pytosdr.egg-info/dependency_links.txt
+pytosdr.egg-info/requires.txt
+pytosdr.egg-info/top_level.txt

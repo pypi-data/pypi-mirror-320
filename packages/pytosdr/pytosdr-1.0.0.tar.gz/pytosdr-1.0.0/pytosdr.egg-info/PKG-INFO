@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: pytosdr
+Version: 1.0.0
+Summary: PyToS;DR is a Python package that enables the user to operate with documents from the ToS;DR project, drawing directly from their GitHub repository.
+Author-email: José María Cruz Lorite <josemariacruzlorite@gmail.com>
+Project-URL: Homepage, https://github.com/cruzlorite/pytosdr
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm
+Requires-Dist: GitPython
+Requires-Dist: platformdirs
+
+# pytosdr
+PyToS;DR is a Python package that simplifies accessing and interpreting Terms of Service and Privacy Policies, drawing directly from the ToS;DR GitHub repository. p
