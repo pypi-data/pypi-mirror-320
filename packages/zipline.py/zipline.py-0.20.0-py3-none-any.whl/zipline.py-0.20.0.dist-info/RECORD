@@ -1,0 +1,13 @@
+zipline/__init__.py,sha256=L3RfrUdOMQaMfTdlCGXPF9kmyxujnlQOkOThDM8aQZ4,1169
+zipline/client.py,sha256=xzEHBhdHIvk0mUEWZGIHlsvHXPAQthv6ceoz0i2Nl0A,19497
+zipline/enums.py,sha256=ynuh7qRHrA8FoSpQFkt7unnF3HZnR8pFaER2cUShvpY,1295
+zipline/errors.py,sha256=O3-gXw27dZN-3PFS7hP0GKZBvv3VZLdRGEq0uy5gld4,1908
+zipline/http.py,sha256=GcBOTJyhaESferGyoXb63WYPqETUnxFzV_vKkXl7YyU,4583
+zipline/meta.py,sha256=zv2YBMeKYi1cvkwel_q8F-2FfarBFo_SutB55qSDvcE,141
+zipline/models.py,sha256=piY8xo7YAvLqG8FPf9Tn1uz1OXPRnO1zPv0R0zMpvaI,20406
+zipline/utils.py,sha256=xYs2LHA6Qt1NM8J3iDV2WS2cINw12Gq0KkG0qXWTzWM,7157
+zipline.py-0.20.0.dist-info/LICENSE,sha256=FxHHaEAvGBDkpKN1QpfT-pEzhgZTWYO1ZHdRLXkG1uM,1054
+zipline.py-0.20.0.dist-info/METADATA,sha256=mkZa52l-yxt-DwyBmwgsAkUgFzIE9-tG4a5wrFfaZtM,2633
+zipline.py-0.20.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+zipline.py-0.20.0.dist-info/top_level.txt,sha256=swJ2_7idKeu2TNbJD2Ekh2iusPADPb9StU7a6FUNnO8,8
+zipline.py-0.20.0.dist-info/RECORD,,
