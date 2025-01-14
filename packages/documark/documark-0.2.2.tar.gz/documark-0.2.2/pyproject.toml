@@ -1,0 +1,21 @@
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project]
+name = "documark"
+version = "0.2.2"
+description = "Markdown documentation for Python packages"
+readme = "README.md"
+requires-python = " >= 3.12"
+classifiers = [ "Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent",]
+keywords = [ "documentation", "markdown",]
+dependencies = []
+[[project.authors]]
+name = "Jaromir Benes"
+email = "jaromir.benes@gmail.com"
+
+[project.urls]
+Homepage = "https://github.com/iris-solutions-team/documark"
+Documentation = "https://iris-solutions-team.github.io/documark-pages"
+"Bug Tracker" = "https://github.com/iris-solutions-team/documark/issues"
