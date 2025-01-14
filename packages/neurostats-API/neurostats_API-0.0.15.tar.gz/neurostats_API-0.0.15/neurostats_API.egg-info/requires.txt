@@ -1,0 +1,6 @@
+numpy>=2.1.0
+pandas>=2.2.0
+pymongo
+pytz
+python-dotenv
+yfinance
