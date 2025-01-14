@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+MyReproductorHolaMundo.egg-info/PKG-INFO
+MyReproductorHolaMundo.egg-info/SOURCES.txt
+MyReproductorHolaMundo.egg-info/dependency_links.txt
+MyReproductorHolaMundo.egg-info/top_level.txt
+holamundoplayer/__init__.py
+holamundoplayer/player.py
