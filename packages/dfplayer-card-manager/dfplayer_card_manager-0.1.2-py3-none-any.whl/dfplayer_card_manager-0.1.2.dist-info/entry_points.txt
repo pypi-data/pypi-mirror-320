@@ -1,0 +1,3 @@
+[console_scripts]
+dfplayer-card-manager = dfplayer_card_manager.cli.cli:app
+
