@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+metacatalog_client/__init__.py
+metacatalog_client/__version__.py
+metacatalog_client/client.py
+metacatalog_client/output.py
+metacatalog_client.egg-info/PKG-INFO
+metacatalog_client.egg-info/SOURCES.txt
+metacatalog_client.egg-info/dependency_links.txt
+metacatalog_client.egg-info/requires.txt
+metacatalog_client.egg-info/top_level.txt
