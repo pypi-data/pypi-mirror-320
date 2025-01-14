@@ -1,0 +1,10 @@
+pytak>=6.2.0
+aircot>=1.2.0
+aiohttp
+
+[test]
+pytest-asyncio
+pytest-cov
+pylint
+flake8
+black
