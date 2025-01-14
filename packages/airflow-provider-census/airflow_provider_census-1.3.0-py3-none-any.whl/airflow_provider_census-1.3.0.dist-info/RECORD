@@ -1,0 +1,14 @@
+airflow_provider_census/__init__.py,sha256=_yO_tTAv_Gvlwj2R7n07wwe0RMtVMLueDsPbT_LCDwY,305
+airflow_provider_census/example_dags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_provider_census/example_dags/example_census.py,sha256=lFyOvQx7NROKxZZ5BGFgZn0ufnlxc-FXSnFclu53oEg,843
+airflow_provider_census/hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_provider_census/hooks/census.py,sha256=kXoVwGfnXxPkZ-Oqus0keY-Ofsw9sZHbLGG7CdpbOFM,2367
+airflow_provider_census/operators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_provider_census/operators/census.py,sha256=1p8GOevLn-kSySqw3ejHCOAXVn235LHShfYwoW2Y6iU,881
+airflow_provider_census/sensors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_provider_census/sensors/census.py,sha256=LC2ppxikUF_RITySy66or7_bND1YxfUmnGWg2bM_CYk,1633
+airflow_provider_census-1.3.0.dist-info/LICENSE.txt,sha256=Y_J0EI-PSKYUZ3njSqgRHyL8IbCmS7BVxva5MUHwDfA,1056
+airflow_provider_census-1.3.0.dist-info/METADATA,sha256=-3uukceJ1Sl4pu3mThmzFdG43ox2vVYaZzKC6uomeek,4845
+airflow_provider_census-1.3.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+airflow_provider_census-1.3.0.dist-info/entry_points.txt,sha256=_iQK0amgGfYdz_zA_hDwCZyNkkbteuwbfs8fiF5pgHQ,92
+airflow_provider_census-1.3.0.dist-info/RECORD,,
