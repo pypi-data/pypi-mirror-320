@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+senseqnet/__init__.py
+senseqnet/cli.py
+senseqnet/inference.py
+senseqnet/models.py
+senseqnet/senseqnet.pth
+senseqnet.egg-info/PKG-INFO
+senseqnet.egg-info/SOURCES.txt
+senseqnet.egg-info/dependency_links.txt
+senseqnet.egg-info/entry_points.txt
+senseqnet.egg-info/requires.txt
+senseqnet.egg-info/top_level.txt
+tests/test_inference.py
