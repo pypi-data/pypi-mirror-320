@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: ytb-gears
+Version: 0.1.0
+Summary: A Python package to interact with YouTube Data API v3.
+Author-email: Hao Guan <10684225+hguandl@users.noreply.github.com>
+Requires-Python: >=3.9
+Requires-Dist: google-api-python-client>=2.158.0
+Requires-Dist: google-auth-oauthlib>=1.2.1
+Description-Content-Type: text/markdown
+
+# ytb-gears
