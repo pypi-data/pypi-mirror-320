@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+findme_hackbit.org.egg-info/PKG-INFO
+findme_hackbit.org.egg-info/SOURCES.txt
+findme_hackbit.org.egg-info/dependency_links.txt
+findme_hackbit.org.egg-info/entry_points.txt
+findme_hackbit.org.egg-info/requires.txt
+findme_hackbit.org.egg-info/top_level.txt
