@@ -1,0 +1,36 @@
+Metadata-Version: 2.2
+Name: synerty-peek
+Version: 4.0.0
+Summary: Peek Platform - Meta Package to install all services
+Author-email: Synerty <contact@synerty.com>
+Project-URL: Homepage, https://gitlab.synerty.com/peek/peek
+Keywords: Peek,Python,Platform,synerty
+Classifier: Programming Language :: Python :: 3.5
+License-File: LICENSE.rst
+Requires-Dist: peek-admin-doc==0.0.*,>=0.0.0
+Requires-Dist: peek-admin-app==0.0.*,>=0.0.0
+Requires-Dist: peek-agent-service==0.0.*,>=0.0.0
+Requires-Dist: peek-core-device==0.0.*,>=0.0.0
+Requires-Dist: peek-core-docdb==0.0.*,>=0.0.0
+Requires-Dist: peek-core-email==0.0.*,>=0.0.0
+Requires-Dist: peek-core-search==0.0.*,>=0.0.0
+Requires-Dist: peek-core-user==0.0.*,>=0.0.0
+Requires-Dist: peek-core-screen==0.0.*,>=0.0.0
+Requires-Dist: peek-field-doc==0.0.*,>=0.0.0
+Requires-Dist: peek-field-app==0.0.*,>=0.0.0
+Requires-Dist: peek-field-service==0.0.*,>=0.0.0
+Requires-Dist: peek-logic-service==0.0.*,>=0.0.0
+Requires-Dist: peek-office-doc==0.0.*,>=0.0.0
+Requires-Dist: peek-office-app==0.0.*,>=0.0.0
+Requires-Dist: peek-office-service==0.0.*,>=0.0.0
+Requires-Dist: peek-platform==0.0.*,>=0.0.0
+Requires-Dist: peek-plugin-base==0.0.*,>=0.0.0
+Requires-Dist: peek-storage-service==0.0.*,>=0.0.0
+Requires-Dist: peek-worker-service==0.0.*,>=0.0.0
+Requires-Dist: peek-abstract-chunked-index==0.0.*,>=0.0.0
+Requires-Dist: peek-abstract-chunked-data-loader==0.0.*,>=0.0.0
+Requires-Dist: sphinx
+Requires-Dist: sphinx-rtd-theme
+Requires-Dist: sphinx-autobuild
+Requires-Dist: pytmpdir>=1.0.2
+Requires-Dist: py-spy
