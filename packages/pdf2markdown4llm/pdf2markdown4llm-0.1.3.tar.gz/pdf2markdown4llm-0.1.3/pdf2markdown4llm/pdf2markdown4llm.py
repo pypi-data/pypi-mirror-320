@@ -1,0 +1,381 @@
+from dataclasses import dataclass
+from typing import List, Dict, Tuple, Optional, Union, Callable
+from collections import Counter
+from operator import itemgetter
+import re
+import pdfplumber
+from pdfplumber.page import Page
+from pdfplumber.table import Table
+import traceback
+from enum import Enum
+
+class ProcessPhase(Enum):
+    ANALYSIS = "analysis"
+    CONVERSION = "conversion"
+
+@dataclass
+class ProgressInfo:
+    """Progress information for PDF processing."""
+    phase: ProcessPhase
+    current_page: int
+    total_pages: int
+    percentage: float
+    message: str
+
+
+ProgressCallback = Callable[[ProgressInfo], None]
+
+@dataclass
+class TextContent:
+    text: str
+    top: float
+    is_header: bool
+    level: Optional[str] = None
+
+@dataclass
+class TableContent:
+    table: Table
+    top: float
+
+Content = Union[TextContent, TableContent]
+def round_font_size(size: float) -> float:
+    """Round font size to one decimal place."""
+    return round(size, 1)
+
+class FontSizeClassifier:
+    def __init__(self, font_sizes: List[float], font_size_counts: Counter):
+        # Round font sizes when initializing
+        self.font_sizes = [round_font_size(size) for size in font_sizes]
+        # Create new Counter with rounded font sizes
+        rounded_counts = Counter()
+        for size, count in font_size_counts.items():
+            rounded_counts[round_font_size(size)] += count
+        self.font_size_counts = rounded_counts
+        self.size_to_level: Dict[float, str] = {}
+        self.normal_text_size: float = 0
+        self._classify()
+
+    def _calculate_size_ratios(self, larger_sizes: List[float]) -> Tuple[float, float]:
+        """Calculate average ratio and standard deviation between consecutive font sizes."""
+        size_ratios = [larger_sizes[i] / larger_sizes[i + 1] 
+                      for i in range(len(larger_sizes) - 1)]
+        
+        if not size_ratios:
+            return 0, 0
+            
+        avg_ratio = sum(size_ratios) / len(size_ratios)
+        ratio_std = (sum((r - avg_ratio) ** 2 for r in size_ratios) / len(size_ratios)) ** 0.5
+        
+        return avg_ratio, ratio_std
+
+    def _classify(self) -> None:
+        """Classify font sizes into heading levels."""
+        if not self.font_sizes:
+            return
+
+        unique_sizes = sorted(set(self.font_sizes), reverse=True)
+        if len(unique_sizes) <= 1:
+            self.normal_text_size = unique_sizes[0]
+            return
+
+        self.normal_text_size = self.font_size_counts.most_common(1)[0][0]
+        larger_sizes = [size for size in unique_sizes if size > self.normal_text_size]
+        
+        if not larger_sizes:
+            return
+
+        avg_ratio, ratio_std = self._calculate_size_ratios(larger_sizes)
+        if avg_ratio == 0:
+            return
+
+        min_diff_ratio = max(1.02, min(1.15, avg_ratio - ratio_std))
+        
+        # Identify headers
+        heading_sizes = []
+        current_size = max(larger_sizes)
+        heading_sizes.append(current_size)
+        
+        for size in larger_sizes[1:]:
+            ratio = current_size / size
+            if ratio >= min_diff_ratio:
+                heading_sizes.append(size)
+                current_size = size
+                if len(heading_sizes) >= 6:
+                    break
+
+        # Map sizes to markdown header levels
+        levels = ["#", "##", "###", "####", "#####", "######"]
+        self.size_to_level = {
+            size: level for size, level in zip(heading_sizes, levels)
+        }
+
+class PDFContentExtractor:
+    def __init__(self, page: Page, size_to_level: Dict[float, str], normal_text_size: float):
+        self.page = page
+        self.size_to_level = size_to_level
+        self.normal_text_size = normal_text_size
+
+    @staticmethod
+    def sanitize_cell(cell: Optional[str]) -> str:
+        """Clean up table cell content."""
+        if cell is None:
+            return ""
+        return ' '.join(str(cell).split())
+
+    def _process_text_line(self, text: str, size: float, top: float) -> TextContent:
+        """Process a line of text and create appropriate TextContent."""
+        rounded_size = round_font_size(size)
+        if rounded_size == self.normal_text_size:
+            return TextContent(text=text, top=top, is_header=False)
+        
+        level = self.size_to_level.get(rounded_size, "")
+        return TextContent(
+            text=text,
+            top=top,
+            is_header=bool(level),
+            level=level
+        )
+
+    def _is_valid_table(self, table: Table) -> bool:
+        """Check if table bounds are within page bounds."""
+        page_bbox = self.page.bbox
+        table_bbox = table.bbox
+        
+        return (table_bbox[0] >= 0 and table_bbox[1] >= 0 and 
+                table_bbox[2] <= page_bbox[2] and 
+                table_bbox[3] <= page_bbox[3])
+
+    def extract_contents(self) -> List[Content]:
+        """Extract text and table content from a page while preserving order."""
+        contents: List[Content] = []
+        tables = self.page.find_tables()
+        valid_tables = [table for table in tables if self._is_valid_table(table)]
+        
+        # Extract non-table content
+        non_table_content = self.page
+        for table in valid_tables:
+            try:
+                non_table_content = non_table_content.outside_bbox(table.bbox)
+            except ValueError:
+                continue  # Skip tables that cause bounding box errors
+        
+        # Process text content
+        words = non_table_content.extract_words(extra_attrs=["size"])
+        current_line: List[str] = []
+        current_size: Optional[float] = None
+        current_top: Optional[float] = None
+        
+        for word in words:
+            if current_top is None:
+                current_top = word["top"]
+                current_size = round_font_size(word["size"])  # Round size when setting
+                current_line = [word["text"]]
+            elif abs(word["top"] - current_top) <= 3:  # Same line
+                current_line.append(word["text"])
+            else:  # New line
+                if current_size is not None and current_top is not None:
+                    text = " ".join(current_line)
+                    contents.append(self._process_text_line(text, current_size, current_top))
+                
+                current_top = word["top"]
+                current_size = round_font_size(word["size"])  # Round size when setting
+                current_line = [word["text"]]
+        
+        # Process last line if exists
+        if current_line and current_size is not None and current_top is not None:
+            text = " ".join(current_line)
+            contents.append(self._process_text_line(text, current_size, current_top))
+        
+        # Add valid tables
+        for table in valid_tables:
+            contents.append(TableContent(table=table, top=table.bbox[1]))
+        
+        return sorted(contents, key=lambda x: x.top)
+
+class MarkdownConverter:
+    @staticmethod
+    def remove_markdown_headers(text: str) -> str:
+        """Remove existing markdown headers from text."""
+        return re.sub(r'^#+\s*', '', text.strip())
+
+    @staticmethod
+    def table_to_markdown(table: Table, header: str = "###") -> str:
+        """Convert a table to Markdown format."""
+        unsanitized_table = table.extract()
+        sanitized_table = [[PDFContentExtractor.sanitize_cell(cell) for cell in row] 
+                          for row in unsanitized_table]
+        
+        if not sanitized_table:
+            return ""
+        
+        markdown_lines = []
+        
+        if sanitized_table[0] and sanitized_table[0][0].strip():
+            markdown_lines.extend([
+                f"{header}",
+                ""
+            ])
+        
+        # Create table structure
+        markdown_lines.extend([
+            '| ' + ' | '.join(sanitized_table[0]) + ' |',
+            '|' + '|'.join(':---:' for _ in sanitized_table[0]) + '|'
+        ])
+        
+        # Add data rows
+        markdown_lines.extend(
+            '| ' + ' | '.join(row) + ' |'
+            for row in sanitized_table[1:]
+        )
+        
+        return '\n'.join(markdown_lines) + '\n\n'
+
+class PDF2Markdown4LLM:
+    def __init__(self, 
+                 remove_headers: bool = False, 
+                 table_header: str = "###",
+                 progress_callback: Optional[ProgressCallback] = None):
+        self.remove_headers = remove_headers
+        self.table_header = table_header
+        self.markdown_converter = MarkdownConverter()
+        self.progress_callback = progress_callback
+
+    def _create_progress_info(self, 
+                            phase: ProcessPhase, 
+                            current_page: int, 
+                            total_pages: int, 
+                            message: str) -> ProgressInfo:
+        """Create a ProgressInfo object with calculated percentage."""
+        base_percentage = 50 if phase == ProcessPhase.CONVERSION else 0
+        phase_progress = (current_page / total_pages) * 50
+        total_percentage = base_percentage + phase_progress
+        
+        return ProgressInfo(
+            phase=phase,
+            current_page=current_page,
+            total_pages=total_pages,
+            percentage=total_percentage,
+            message=message
+        )
+
+    def _report_progress(self, progress_info: ProgressInfo) -> None:
+        """Report progress through the callback if it exists."""
+        if self.progress_callback:
+            self.progress_callback(progress_info)
+
+    def _collect_font_statistics(self, pdf) -> Tuple[List[float], Counter]:
+        """Collect font statistics from PDF with progress tracking."""
+        font_sizes: List[float] = []
+        font_size_text_count = Counter()
+        total_pages = len(pdf.pages)
+        
+        for i, page in enumerate(pdf.pages):
+            progress_info = self._create_progress_info(
+                phase=ProcessPhase.ANALYSIS,
+                current_page=i + 1,
+                total_pages=total_pages,
+                message=f"Analyzing"
+            )
+            self._report_progress(progress_info)
+            
+            tables = page.find_tables()
+            non_table_content = page
+            
+            for table in tables:
+                try:
+                    if (table.bbox[0] >= 0 and table.bbox[1] >= 0 and 
+                        table.bbox[2] <= page.bbox[2] and 
+                        table.bbox[3] <= page.bbox[3]):
+                        non_table_content = non_table_content.outside_bbox(table.bbox)
+                except ValueError:
+                    continue
+            
+            words = non_table_content.extract_words(extra_attrs=["size"])
+            font_sizes.extend(round_font_size(word["size"]) for word in words)
+            for word in words:
+                font_size_text_count[round_font_size(word["size"])] += len(word["text"])
+        
+        return font_sizes, font_size_text_count
+
+    def convert(self, pdf_path: str) -> str:
+        """Convert PDF to Markdown with detailed progress tracking."""
+        try:
+            with pdfplumber.open(pdf_path) as pdf:
+                # Initial progress report
+                initial_progress = self._create_progress_info(
+                    phase=ProcessPhase.ANALYSIS,
+                    current_page=0,
+                    total_pages=len(pdf.pages),
+                    message="Starting PDF analysis"
+                )
+                self._report_progress(initial_progress)
+                
+                # Analyze font statistics
+                font_sizes, font_size_text_count = self._collect_font_statistics(pdf)
+                
+                if not font_sizes:
+                    raise ValueError("No text found in the PDF.")
+                
+                # Report analysis completion
+                analysis_complete = self._create_progress_info(
+                    phase=ProcessPhase.CONVERSION,
+                    current_page=0,
+                    total_pages=len(pdf.pages),
+                    message="Analysis complete, beginning content extraction"
+                )
+                self._report_progress(analysis_complete)
+                
+                classifier = FontSizeClassifier(font_sizes, font_size_text_count)
+                md_content: List[str] = []
+                total_pages = len(pdf.pages)
+                
+                for i, page in enumerate(pdf.pages, 1):
+                    progress_info = self._create_progress_info(
+                        phase=ProcessPhase.CONVERSION,
+                        current_page=i,
+                        total_pages=total_pages,
+                        message=f"Converting content to Markdown"
+                    )
+                    self._report_progress(progress_info)
+                    
+                    extractor = PDFContentExtractor(
+                        page, 
+                        classifier.size_to_level, 
+                        classifier.normal_text_size
+                    )
+                    contents = extractor.extract_contents()
+                    
+                    for content in contents:
+                        if isinstance(content, TextContent):
+                            text = content.text.strip()
+                            if text:
+                                if self.remove_headers:
+                                    text = self.markdown_converter.remove_markdown_headers(text)
+                                
+                                if content.is_header:
+                                    md_content.append(f"\n{content.level} {text}\n\n")
+                                else:
+                                    md_content.append(f"{text}\n")
+                        elif isinstance(content, TableContent):
+                            md_content.append(
+                                self.markdown_converter.table_to_markdown(
+                                    content.table, 
+                                    self.table_header
+                                )
+                            )
+                
+                # Final progress report
+                completion_progress = self._create_progress_info(
+                    phase=ProcessPhase.CONVERSION,
+                    current_page=total_pages,
+                    total_pages=total_pages,
+                    message="Conversion complete"
+                )
+                self._report_progress(completion_progress)
+                
+                return "".join(md_content)
+                
+        except Exception as e:
+            raise RuntimeError(f"Failed to convert PDF to Markdown: {str(e)} traceback: {traceback.format_exc()}")
+
+
