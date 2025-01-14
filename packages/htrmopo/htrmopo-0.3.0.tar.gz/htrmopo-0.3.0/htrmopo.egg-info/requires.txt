@@ -1,0 +1,14 @@
+click
+rich
+lxml
+flufl.lock
+requests
+pyyaml
+sickle
+markdown
+jsonschema
+python-dateutil
+platformdirs
+
+[test]
+pytest

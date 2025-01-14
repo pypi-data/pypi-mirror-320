@@ -1,0 +1,58 @@
+CHANGES
+=======
+
+0.3
+---
+
+* linting
+* add new requirements
+* Add caching to get\_model() function
+* caching in get\_description()
+* cli changes for new get\_listing API
+* typing and linting
+* Print citation in model description output
+* some error checking in the description rendering code
+* forgot citation field in v1 record
+
+0.2
+---
+
+* print name of license for v0 record as well
+* Pretty-print license information
+* Add validation of controlled vocabularies
+* some fields in schema to allow automatic validation of controlled vocabularies
+* less braindead tooling for external controlled vocabularies
+* get rid of gh releases
+
+0.1
+---
+
+* fix type of long description file
+* fix package name in setup.cfg
+* use oidc for pypi publishing
+* Some more info in README
+* add tests badge to readme
+* slight linting
+* Add testing workflow
+* Make publishing work with model card without ID
+* Add tests
+* make repository urls configurable
+* remove author roles
+* add author roles and citation field
+* forgot platformdirs
+* linting
+* no more need for importlib resources
+* Make listing table a bit more compact
+* always print concept ids in \`list\` output
+* readme wip
+* Support for concept DOI in all methods
+* small changes to publishing
+* Fix model downloading with given path
+* Model publishing/updating
+* Command line drivers for reference implementation
+* grammar
+* Model repository reference implementation
+* New metadata schema
+* base wip schema from HTRUnited
+* Add v0 version of schema in use in current repository
+* Initial commit
