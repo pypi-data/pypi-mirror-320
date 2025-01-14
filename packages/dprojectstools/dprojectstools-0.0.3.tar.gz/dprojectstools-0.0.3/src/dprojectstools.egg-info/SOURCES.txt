@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/dprojectstools/__init__.py
+src/dprojectstools.egg-info/PKG-INFO
+src/dprojectstools.egg-info/SOURCES.txt
+src/dprojectstools.egg-info/dependency_links.txt
+src/dprojectstools.egg-info/top_level.txt
+src/dprojectstools/commands/__init__.py
+src/dprojectstools/commands/commands.py
+src/dprojectstools/crypto/__init__.py
+src/dprojectstools/crypto/aes.py
+src/dprojectstools/secrets/__init__.py
+src/dprojectstools/secrets/secrets.py
