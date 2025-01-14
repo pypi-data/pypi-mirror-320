@@ -1,0 +1,10 @@
+sing_box_service/__init__.py,sha256=o4IinudeS3pC0NU8Jwt5UoBSuBTLHQnPKhalKsKkDUQ,66
+sing_box_service/config.py,sha256=3F5i9C0R3ek9RJU2GzIb4pljQUcUYKvSGLOq5VK2hfU,3705
+sing_box_service/main.py,sha256=SaeJJIQqZnB1YNpjbZ4MT8X2qUaDlsaSzRJDjxUQnkQ,3726
+sing_box_service/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sing_box_service/service.py,sha256=aOzZEwJfH9iP7Kx7qxF6EnRTU6aKgedoF_xhJGE4Krg,6739
+sing_box_cli-0.0.9.dist-info/METADATA,sha256=KjyEBLMMFNrIa7DUnD7wWfehh9ijhGMke9wv_H3Rols,2862
+sing_box_cli-0.0.9.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+sing_box_cli-0.0.9.dist-info/entry_points.txt,sha256=30dsIhKb2r4vXsdW9j6F4qyDZF0YL-5wV74iKYyYhv0,55
+sing_box_cli-0.0.9.dist-info/licenses/LICENSE,sha256=QeGTPA1ps6IxVztxQ62u7-x-oEe1S_fvleYlm5VlBc8,1067
+sing_box_cli-0.0.9.dist-info/RECORD,,
