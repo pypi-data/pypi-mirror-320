@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: aimigrate
+Version: 0.0.1
+Summary: LLMMigrate: AI-based software migration
+Author: Katherine Rosenfeld, Cliff Kerr
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# aimigrate
+Repository for AIMigrate tool
