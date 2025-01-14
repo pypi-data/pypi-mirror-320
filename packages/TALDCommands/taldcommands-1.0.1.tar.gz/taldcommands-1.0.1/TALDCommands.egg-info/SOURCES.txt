@@ -1,0 +1,7 @@
+setup.py
+TALDCommands/TALDCommands.py
+TALDCommands/__init__.py
+TALDCommands.egg-info/PKG-INFO
+TALDCommands.egg-info/SOURCES.txt
+TALDCommands.egg-info/dependency_links.txt
+TALDCommands.egg-info/top_level.txt
