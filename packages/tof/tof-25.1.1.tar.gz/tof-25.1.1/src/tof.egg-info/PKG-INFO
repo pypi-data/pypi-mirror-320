@@ -1,0 +1,41 @@
+Metadata-Version: 2.2
+Name: tof
+Version: 25.1.1
+Summary: A simple tool to create time-of-flight chopper cascade diagrams
+Author: Neil Vaytet
+License: BSD-3-Clause
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: importlib-resources
+Requires-Dist: plopp
+Requires-Dist: scipp
+Requires-Dist: scipy
+
+[![Documentation Status](https://readthedocs.org/projects/tof/badge/?version=latest)](https://tof.readthedocs.io/en/latest/?badge=latest)
+
+# tof
+
+A simple tool to create time-of-flight chopper cascade diagrams
+
+**Scope:**
+
+- ``tof`` is designed to be simple and lightweight, it will never replace [McStas](https://www.mcstas.org/)
+- it assumes all neutrons travel in a straight line
+- it does not simulate absorption or scattering effects
+
+## Installation
+
+```sh
+pip install tof
+```
+
+## Documentation
+
+[https://tof.readthedocs.io/](https://tof.readthedocs.io/)
+
+![example](https://tof.readthedocs.io/en/latest/_images/short-example_13_1.png)
