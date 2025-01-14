@@ -1,0 +1,49 @@
+{% load i18n %}
+{% for group in cookies_group_list %}
+  <div class="modal fade"
+       id="ModalToggle{{ forloop.counter }}"
+       aria-hidden="true"
+       aria-labelledby="#ModalToggleLabel{{ forloop.counter }}"
+       tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered" >
+      <div class="modal-content cookie-customize">
+        {% include "cookies_consent_wagtail/components/model_header.html" %}
+        <div class="modal-body">
+          <div class="accordion" id="accordionToggle">
+            {% for cookie in group.cookie_set.all %}
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-Toggle-{{ forloop.counter }}">
+                  <button class="accordion-button cookie-customize"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapse-Toggle-{{ forloop.counter }}"
+                          aria-expanded="true"
+                          aria-controls="collapse-Toggle-{{ forloop.counter }}">
+                    <div class='label'>
+                      <p>{{ cookie.get_translation_of_description }}</p>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapse-Toggle-{{ forloop.counter }}"
+                     class="accordion-collapse collapse cookie-customize show"
+                     aria-labelledby="heading-Toggle{{ forloop.counter }}"
+                     data-bs-parent="#accordionToggle">
+                  <div class="accordion-body">
+                    {{ cookie.get_translation_of_description }}
+                    <a class='modal-cookies-anchor' href="{{ cookie.path }}" target="_blank">{% trans "Cookies Policy" %}</a>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="modal-footer cookies">
+          <button class="btn accept"
+                  data-bs-target="#exampleModal"
+                  data-bs-toggle="modal"
+                  data-bs-dismiss="modal">{% trans "Back" %}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}

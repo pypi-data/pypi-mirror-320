@@ -1,0 +1,99 @@
+{% load i18n %}
+{% load static compress %}
+{% load cookie_consent_tags %}
+{% CookiesGroup as cookies_group_list %}
+{% get_active_banner as active_banner %}
+{% compress css %}
+  <link rel="stylesheet"
+        href="{% static "cookies_consent_wagtail/css/bootstrap-custom.css" %}" />
+  <link rel="stylesheet"
+        href="{% static "cookies_consent_wagtail/css/cookies_banner.css" %}" />
+{% endcompress css %}
+<style>
+
+  .cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 330px;
+    background-color: {{style.bg_color}};
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 142;
+  
+  }
+
+  .accordion-button.cookie-customize:not(.collapsed){
+    background-color: {{style.accordion_but}} ;
+    color:#FFFFFF
+  }
+  .cookie-customize{
+    background-color: {{style.bg_color}};
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+  }
+  .btn.accept {
+    background-color: {{ style.accept_btn }};
+  }
+  .btn.accept:hover {
+    background-color: {{ style.accept_hover }};
+  }
+  .btn.necessary {
+    background-color: {{style.necessary_btn}};
+    color: white;
+  }
+  .btn.necessary:hover {
+    background-color: {{style.necessary_hover}};
+  }
+  .btn.confirm {
+    background-color: {{style.confirm_btn}};
+    color: white;
+  }
+  
+  .btn.confirm:hover {
+    background-color: {{style.confirm_hover}};
+  }
+  .cookie-banner .btn.customize {
+    background-color: {{style.custom_btn}}; 
+    border: 1px solid white;
+    color: white;
+  }
+  
+  .cookie-banner .btn.customize:hover {
+    background-color: {{style.custom_hover}};
+    color: #333;
+  }
+
+  .modal-cookies-anchor{
+    cursor: pointer;
+    text-decoration: none;
+    color: {{ style.anchor}}
+    
+    }
+  .modal-cookies-anchor:hover{
+      cursor: pointer;
+      text-decoration: none;
+      color: {{ style.anchor_hover}}
+      
+      }
+</style>
+<script src="{% static "cookies_consent_wagtail/js/bootstrap.bundle.js" %}"></script>
+<input id="cookie_consent"
+       type="hidden"
+       value="{{ request.COOKIES.cookie_consent }}" />
+
+{% include "cookies_consent_wagtail/components/cookies_banner.html"%}
+
+
+<input id="csrf_token" type="hidden" value={{ csrf_token }} />
+       
+<!-- cookies groups Modal -->
+{% include 'cookies_consent_wagtail/components/model.html'%}
+<!-- cookies model -->
+{% include 'cookies_consent_wagtail/components/cookies_model.html'%}
+       
+<script src="{% static "cookies_consent_wagtail/js/request_options_builder.js" %}"></script>
+<script src="{% static "cookies_consent_wagtail/js/cookies_model_actions.js"%}"></script>
