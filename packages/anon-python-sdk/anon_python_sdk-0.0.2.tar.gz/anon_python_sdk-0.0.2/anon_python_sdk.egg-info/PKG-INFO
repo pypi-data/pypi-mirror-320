@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: anon-python-sdk
+Version: 0.0.2
+Summary: Python SDK for Anon
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: requests
+Requires-Dist: stem
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
