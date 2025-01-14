@@ -1,0 +1,84 @@
+Metadata-Version: 2.2
+Name: PyQtier
+Version: 0.1.1
+Summary: Make your onw desktop app faster
+Author-email: Korzhak <bohdan.korzhak@gmail.com>
+Project-URL: Homepage, https://github.com/Korzhak/PyQtier
+Project-URL: Issues, https://github.com/Korzhak/PyQtier/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click==8.1.7
+Requires-Dist: colorama==0.4.6
+Requires-Dist: PyQt5==5.15.9
+Requires-Dist: pyqt5-plugins==5.15.9.2.3
+Requires-Dist: PyQt5-Qt5==5.15.2
+Requires-Dist: pyqt5-tools==5.15.9.3.3
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: qt5-applications==5.15.2.2.3
+Requires-Dist: qt5-tools==5.15.2.1.3
+Requires-Dist: pyserial==3.5
+
+# PyQtier (BETA)
+
+Make your onw desktop app faster
+
+## Quick start
+
+### Installing
+
+1. Creating virtual environment
+
+```bash
+virtualenv -p python3 .venv
+```
+
+2. Activating venv
+
+**Linux / MacOS**
+
+```bash
+source .venv/bin/activate
+```
+
+**Windows**
+
+```bash
+.\.venv\Scripts\activate
+```
+
+3. Installing last version of module
+
+```bash
+pip install pyqtier
+```
+
+_If you want, you can install last test version from Test PyPI_
+
+```bash
+pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ pyqtier
+```
+
+### Creating project
+
+For creating project you need to run follow command: 
+```bash
+pyqtier startproject <project_path_and_name>
+```
+
+where `<project_path_and_name>` can be just `.` if you want to create project in current folder.
+
+### Run project
+
+```bash 
+python main.py
+```
+
+## Detailed docs
+
+1. [Plugins](docs/PLUGINS.md)
+
+

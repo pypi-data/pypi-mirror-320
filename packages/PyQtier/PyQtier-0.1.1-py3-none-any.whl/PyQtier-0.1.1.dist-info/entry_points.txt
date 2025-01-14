@@ -1,0 +1,2 @@
+[console_scripts]
+pyqtier = pyqtier.scripts.cli:cli
