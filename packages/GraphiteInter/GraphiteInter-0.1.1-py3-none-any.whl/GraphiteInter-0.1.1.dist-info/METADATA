@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: GraphiteInter
+Version: 0.1.1
+Summary: A simple GUI framework with tkinter for creating interactive interfaces.
+Author: Leonardo
+Author-email: leonardonery616@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow
+
+# GraphiteInter
+
+GraphiteInter Ã© uma estrutura simples para a criaÃ§Ã£o de interfaces grÃ¡ficas interativas usando o tkinter em Python.
+
+## Como Usar
+
+```python
+from graphite import Graphite
+
+Graphite.create_window()
+Graphite.inserttext('hello', 'OlÃ¡ Mundo!', 20, (10, 10), 'black')
+Graphite.run()
