@@ -1,0 +1,6 @@
+cdktf>=0.20.3
+terrajinja-deploy>=0.0.1
+terrajinja-templates>=0.0.1
+PyYAML>=6
+deepmerge>=1.1.1
+Jinja2>=3.1.3
