@@ -1,0 +1,58 @@
+Metadata-Version: 2.2
+Name: nececv
+Version: 0.1.0
+Summary: Advanced edge detection and object recognition using VGG16 and OpenCV.
+Home-page: https://github.com/singhaikshitijjain/nececv
+Author: Singhai Kshitij Jain
+Author-email: singhaikshitij143@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: Pillow
+Requires-Dist: tensorflow
+Requires-Dist: opencv-python
+Requires-Dist: matplotlib
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# nececv
+
+`nececv` is a Python package for advanced edge detection and object recognition using VGG16 and OpenCV.
+
+## Features
+- Sobel and Canny edge detection
+- Enhanced edge detection using epsilon learning
+- Object recognition with VGG16
+
+## Installation
+```bash
+pip install nececv
+```
+
+## USAGE
+
+import nececv
+
+nececvo = nececv()
+image_path = <path\\to\\your\\image>
+predictions = nececvo.detect_object_probability(image_path)
+
+# Display results
+nececvo.display_results(
+    image_path, 
+    predictions=predictions, 
+    edge_image="Sobel", 
+    epsilon=0.2, 
+    iterations=5
+    )

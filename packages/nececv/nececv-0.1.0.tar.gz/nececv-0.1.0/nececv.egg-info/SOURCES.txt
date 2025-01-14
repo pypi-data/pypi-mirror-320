@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+nececv/__init__.py
+nececv/core.py
+nececv.egg-info/PKG-INFO
+nececv.egg-info/SOURCES.txt
+nececv.egg-info/dependency_links.txt
+nececv.egg-info/requires.txt
+nececv.egg-info/top_level.txt
