@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tsc_web_api
+Version: 0.7
+Summary: tsc_web_api
+Home-page: https://github.com/aitsc/tsc_web_api
+Author: aitsc
+License: GPLv3
+Keywords: tools
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE

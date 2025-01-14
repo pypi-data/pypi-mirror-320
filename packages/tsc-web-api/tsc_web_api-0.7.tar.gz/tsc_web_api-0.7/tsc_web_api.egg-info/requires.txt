@@ -1,0 +1,6 @@
+requests
+fastapi
+uvicorn
+pip-tools
+aiohttp
+pydantic

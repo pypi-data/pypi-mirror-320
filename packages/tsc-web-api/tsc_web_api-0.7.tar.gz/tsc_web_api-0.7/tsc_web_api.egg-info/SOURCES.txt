@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+readme.md
+requirements.in
+setup.py
+tsc_web_api/__init__.py
+tsc_web_api/fastapi_utils.py
+tsc_web_api/proxy_pass.py
+tsc_web_api/utils.py
+tsc_web_api/version.txt
+tsc_web_api.egg-info/PKG-INFO
+tsc_web_api.egg-info/SOURCES.txt
+tsc_web_api.egg-info/dependency_links.txt
+tsc_web_api.egg-info/requires.txt
+tsc_web_api.egg-info/top_level.txt

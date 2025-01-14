@@ -1,0 +1,3 @@
+include tsc_web_api/version.txt
+include readme.md
+include requirements.in
