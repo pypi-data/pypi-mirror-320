@@ -1,0 +1,25 @@
+[project]
+name = "solvis-evaluations-api"
+version = "0.1.6"
+description = "This is a package for requesting and processing data from Solvis's evaluations API."
+readme = "README.md"
+authors = [
+    { name = "Paulo Victor", email = "paulo.barbosa@solvis.com.br" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.2.3",
+    "requests>=2.32.3",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/solvis_evaluations_api"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]
