@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "simpleapi_kkr"
+version = "0.1.0"
+description = ""
+authors = ["kalyankr <kalyan.katla@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+parse = "^1.20.2"
+gunicorn = "^23.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+pylint = "^3.3.3"
+pylance = "^0.22.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
