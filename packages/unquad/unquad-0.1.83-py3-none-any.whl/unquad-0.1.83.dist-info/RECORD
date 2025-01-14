@@ -1,0 +1,12 @@
+unquad/data/datasets/breast.parquet.gz,sha256=wBqgZ2V3SZRwz2ZPM_rASv8qxArn-h_JXN64PIlW99w,3740
+unquad/data/datasets/fraud.parquet.gz,sha256=AmjJ67AbyxJ0F4_JaqJgPuRLllhr8Hx21pu0_LaVjjI,34277696
+unquad/data/datasets/ionosphere.parquet.gz,sha256=h1YEHgCWGAY694VmMfN4e2781p41IRRNsmCXciHeMdY,51723
+unquad/data/datasets/mammography.parquet.gz,sha256=E1FHFRlkIiBiNnI43-IkKWyXgeTnDG0oZfZmu0xs8NA,161691
+unquad/data/datasets/musk.parquet.gz,sha256=Cevr3D1aI8GChOuf-cyMiZubVRL7oQXjxVG1FGylP5w,636536
+unquad/data/datasets/shuttle.parquet.gz,sha256=A4yQ4z3kYXIPNd5tGNcHbF-j6rhDq---_XtP9KqxXTI,321743
+unquad/data/datasets/thyroid.parquet.gz,sha256=cSzhLd0pp5OFlV4usvELKob7GUroTa9XUsdHokQd8Ow,30412
+unquad/data/datasets/wbc.parquet.gz,sha256=9C1S-9Mk4W2Dn-IV5BGHDXKzQG2sMwAZO3ZsBqyUt_Y,2194
+unquad-0.1.83.dist-info/METADATA,sha256=CfAuMk5OLfbvcamCirM64plWhfEwp7bcJ7_PzJsjJGM,8998
+unquad-0.1.83.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+unquad-0.1.83.dist-info/licenses/LICENSE,sha256=qMss-gzpDaDiFu-elhCk7k4DP6zATM-aOFTj5PRCQ3M,1530
+unquad-0.1.83.dist-info/RECORD,,
