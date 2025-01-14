@@ -1,0 +1,16 @@
+httpx
+pydantic
+tqdm
+pyyaml
+beautifulsoup4
+fsspec
+rich
+tiktoken
+openai
+langchain
+boto3
+pyarrow
+lancedb
+qdrant-client
+jinja2
+markupsafe
