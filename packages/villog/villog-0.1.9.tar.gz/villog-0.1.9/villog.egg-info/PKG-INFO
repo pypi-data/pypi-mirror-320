@@ -1,0 +1,120 @@
+Metadata-Version: 2.2
+Name: villog
+Version: 0.1.9
+Summary: A simple python utility tool for your everyday projects.
+Author: Krisztián Villers
+Description-Content-Type: text/markdown
+Requires-Dist: backports.tarfile==1.2.0
+Requires-Dist: Brotli==1.1.0
+Requires-Dist: certifi==2024.6.2
+Requires-Dist: cffi==1.17.1
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: cssselect2==0.7.0
+Requires-Dist: docutils==0.21.2
+Requires-Dist: fonttools==4.55.3
+Requires-Dist: idna==3.7
+Requires-Dist: importlib_metadata==7.1.0
+Requires-Dist: jaraco.classes==3.4.0
+Requires-Dist: jaraco.context==5.3.0
+Requires-Dist: jaraco.functools==4.0.1
+Requires-Dist: Jinja2==3.1.5
+Requires-Dist: keyring==25.2.1
+Requires-Dist: markdown-it-py==3.0.0
+Requires-Dist: MarkupSafe==3.0.2
+Requires-Dist: mdurl==0.1.2
+Requires-Dist: more-itertools==10.3.0
+Requires-Dist: nh3==0.2.17
+Requires-Dist: pillow==11.1.0
+Requires-Dist: ping3==4.0.8
+Requires-Dist: pkginfo==1.11.1
+Requires-Dist: pycparser==2.22
+Requires-Dist: pydyf==0.11.0
+Requires-Dist: Pygments==2.18.0
+Requires-Dist: pyodbc==5.2.0
+Requires-Dist: pyphen==0.17.0
+Requires-Dist: readme_renderer==43.0
+Requires-Dist: requests==2.32.3
+Requires-Dist: requests-toolbelt==1.0.0
+Requires-Dist: rfc3986==2.0.0
+Requires-Dist: rich==13.7.1
+Requires-Dist: setuptools==75.8.0
+Requires-Dist: tinycss2==1.4.0
+Requires-Dist: tinyhtml5==2.0.0
+Requires-Dist: twine==5.1.0
+Requires-Dist: urllib3==2.2.2
+Requires-Dist: weasyprint==63.1
+Requires-Dist: webencodings==0.5.1
+Requires-Dist: XlsxWriter==3.2.0
+Requires-Dist: zipp==3.19.2
+Requires-Dist: zopfli==0.2.3.post1
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: summary
+
+# Villog is a simple python utility tool for your everyday projects.
+
+## Modules
+### Logger
+```
+from villog import Logger
+
+l: Logger = Logger(
+    file_path = "test.log",
+    encoding = "utf-8-sig",
+    time_format = "%Y.%m.%d %H:%M:%S",
+    separator = "\t",
+    silent = False,
+    enable_remove = False,
+    strip_content = False
+)
+
+l.log(
+    content = "test"
+)
+```
+
+### Writexcel
+```
+from villog.writexcel import WorkSheet, WorkBook
+
+sheet_1: WorkSheet = WorkSheet(
+    name = "Sheet1",
+    header = ["header_1", "header_2", "header_3"],
+    data = [
+        ["data_1", "data_2", "data_3"],
+        ["data_4", "data_5", "data_6"]
+    ]
+)
+
+sheet_2: WorkSheet = WorkSheet(
+    name = "Sheet2",
+    header = ["header_1", "header_2", "header_3"],
+    data = [
+        ["data_1", "data_2", "data_3"],
+        ["data_4", "data_5", "data_6"]
+    ]
+)
+
+book: WorkBook = WorkBook(
+    name = "Book1",
+    sheets = [sheet_1, sheet_2]
+)
+
+book.xlsx_create(
+    file_path = "test.xlsx"
+)
+```
+
+### MsSQL
+tba
+
+### pdf
+tba
+
+## Install
+With **pip**:
+```
+pip install villog
+```
