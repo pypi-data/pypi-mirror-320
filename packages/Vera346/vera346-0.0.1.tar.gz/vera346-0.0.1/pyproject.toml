@@ -1,0 +1,20 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "Vera346"
+version = "0.0.1"
+authors = [
+    { name = "Kodjo Messie", email = "kodjomessie@gmail.com" },
+]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool]
