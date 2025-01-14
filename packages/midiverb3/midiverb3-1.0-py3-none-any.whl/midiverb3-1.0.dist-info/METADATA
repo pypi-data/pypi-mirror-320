@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: midiverb3
+Version: 1.0
+Summary: MidiVerb III editor
+Author-email: violet-black <violetblackdev@gmail.com>
+Project-URL: Homepage, https://example.com
+Project-URL: Documentation, https://readthedocs.org
+Project-URL: Repository, https://github.com/me/spam.git
+Project-URL: Issues, https://github.com/me/spam/issues
+Project-URL: Changelog, https://github.com/me/spam/blob/master/CHANGELOG.md
+Keywords: reverb,music
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyside6
+Requires-Dist: python-rtmidi<2
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+
+# midiverb3
+Patch editor for the Alesis Midiverb III hardware FX unit
