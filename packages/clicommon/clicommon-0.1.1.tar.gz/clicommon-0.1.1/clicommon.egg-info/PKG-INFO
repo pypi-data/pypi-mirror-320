@@ -1,0 +1,71 @@
+Metadata-Version: 2.2
+Name: clicommon
+Version: 0.1.1
+Summary: Python Common Client Library
+Home-page: https://github.com/franksplace/clicommon
+Author: Frank Stutz
+Author-email: frank@franksplae.net
+License: Apache-2.0 license
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Logging
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
+
+# clicommon
+
+Python Common Client Library
+
+## Common Functions
+
+### bcheck
+
+    Checks variabled passwed defined a true or false, not defined is considered false
+    bcheck(variable) -> bool
+
+### mlog
+
+  General logging function
+  mlog(msg_type, msg_string = None, exit_code = None, datelog = None, colors = None):
+
+  msg_type with corresponding Colors (if colors flat is True)
+    INFO=GREEN
+    SUCCESS=GREEN
+    WARN=YELLOW
+    WARNING=YELLOW
+    FATAL=RED
+    ERROR=RED
+    CRITICAL=RED
+    TEST=GRAY
+    DEBUG=MAGENTA
+    VERBOSE=BRIGHT_CYAN
+    BUILD_DEBUG=BRIGHT_GREEN
+    CODE_DEBUG=BRIGHT_GREEN
+
+  msg_string (anything)
+    NOTE: If msg_string is not defined msg_type is considered the msg_string
+
+  exit_code if boolean is true after output exit
+
+  datelog if boolean is true add ISO8601 datetime to output
+
+  colors if boolean is true add ASCII colors to output bsaed on msg_type color codes
+
+### rcmd
+
+  Small function to run command sub process and return results
+  rcmd (command)
