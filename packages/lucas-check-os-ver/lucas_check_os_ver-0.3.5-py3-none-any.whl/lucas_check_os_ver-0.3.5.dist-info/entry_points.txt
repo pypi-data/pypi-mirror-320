@@ -1,0 +1,6 @@
+[console_scripts]
+lucas-hi = lucas_check_os_ver.hi:hi
+lucas-random = lucas_check_os_ver.hi:random_pick
+
+[gui_scripts]
+
