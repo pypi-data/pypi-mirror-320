@@ -1,0 +1,4 @@
+clipped==0.9.*
+vents==0.5.*
+pluggy<=1.6.0
+docstring_parser<=0.17
