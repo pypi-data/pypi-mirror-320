@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: scumpy
+Version: 1.5
+Requires-Dist: sympy>=1.13.1
+
