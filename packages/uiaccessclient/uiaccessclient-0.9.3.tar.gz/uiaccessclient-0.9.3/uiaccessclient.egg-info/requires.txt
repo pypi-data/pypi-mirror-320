@@ -1,0 +1,5 @@
+aiohttp<4.0.0,>=3.11.11
+urllib3<3.0.0,>=1.25.3
+python_dateutil>=2.8.2
+pydantic>=2
+typing-extensions>=4.7.1
