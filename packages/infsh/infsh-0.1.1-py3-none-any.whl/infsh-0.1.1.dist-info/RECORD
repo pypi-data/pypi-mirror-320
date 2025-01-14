@@ -1,0 +1,11 @@
+infsh/__init__.py,sha256=-urg6ix0Q3wKEz2kVNtaiP66UFdImJGQ_rVZTht0MYM,118
+infsh/__main__.py,sha256=T3Y8Evf7pQG_f98z4-UpjCHR3RYU-FnhBiBHIeenEa0,601
+infsh/cli.py,sha256=_Eegv4jlpz5x4an3P7D_pasjJAAyRYTRb6y9858ckpo,10483
+infsh/infsh.py,sha256=qrss1Ys45R7DlXL066BpjowZ1KjpWu-ccXw3MA8S7aI,2597
+infsh/templates/inference.py,sha256=8fqEBzjiH5O834wNOtQKjXNjzegtG2yAYaanOjNoF20,719
+infsh-0.1.1.dist-info/LICENSE,sha256=5xddXFB_MB79PsCG0ZGqjeQVEIyO2lrV6TkJEkwLIfI,1073
+infsh-0.1.1.dist-info/METADATA,sha256=eCqSg2RESPlQd_pGmrHDD0cyL0gB3sSprR4tjqYmfy8,2387
+infsh-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+infsh-0.1.1.dist-info/entry_points.txt,sha256=6IC-fyozAqW3ljsMLGCXxJ0_ui2Jb-2fLHtoH1RTnEE,45
+infsh-0.1.1.dist-info/top_level.txt,sha256=cUUQ33s4obK7N4PAUCzrsuEXdeWJ8WDCp3BZCG8wF2c,6
+infsh-0.1.1.dist-info/RECORD,,
