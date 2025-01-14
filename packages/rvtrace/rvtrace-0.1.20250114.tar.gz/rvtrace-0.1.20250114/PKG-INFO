@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: rvtrace
+Version: 0.1.20250114
+Summary: User Mode driver for RISC-V Trace
+Home-page: https://github.com/ganboing/riscv-trace-umd
+Author: Bo Gan
+Author-email: ganboing@gmail.com
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: summary

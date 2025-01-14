@@ -1,0 +1,2 @@
+[console_scripts]
+rvtrace = rvtrace.cli:main
