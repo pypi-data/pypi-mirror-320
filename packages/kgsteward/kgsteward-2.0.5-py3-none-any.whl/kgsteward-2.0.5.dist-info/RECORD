@@ -1,0 +1,15 @@
+kgsteward/__init__.py,sha256=g-CoZfLvpMaJiiITB4UWek3L_EOaTw9o0kQ6Q1FATfo,173
+kgsteward/common.py,sha256=144bQitcAg5ugcX_7Z_F_PkM5Oc98a0z6e1XadDsNvk,6047
+kgsteward/fileserver.py,sha256=aYPk3PSeQadPnoxR86argq2YUKWaWYmlxjmAoaqzOaM,2052
+kgsteward/fuseki.py,sha256=n9vC6WVVGeKv9p78BPBHDkOXuyHWXAeIDM6yjdDrOo8,5132
+kgsteward/generic.py,sha256=K9CUEyjI3pjBhmpDpobErz6YVs59sIa5VpPFeAAFHhA,5452
+kgsteward/graphdb.py,sha256=Y7gle_DbWjYlOtk9K4ueGsgAbssiJaLxAklwsuKHo3c,8631
+kgsteward/kgsteward.py,sha256=zZaDrlHSLGgTAPM2CwbmSTLDmj5k22R6jFmlKGwn8A4,30794
+kgsteward/oxigraph.py,sha256=LxfrTgJqlJT6bNHylCZUQDPOZnbFjyGBKMV9FaIJzTY,4028
+kgsteward/rdf4j.py,sha256=fVn_brdPLXohNGjuXLhhCN7jT1nDF-f0peEvNAqIyz4,6466
+kgsteward/yamlconfig.py,sha256=V8FezznAjwTqsIPalo-zVsI7dHOY3pcDCRtNwULC8Xk,14970
+kgsteward-2.0.5.dist-info/METADATA,sha256=nzCvqdMyi_xxG19z_Y5R237iO3tL0SoGcjbuXe1JEzQ,43326
+kgsteward-2.0.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+kgsteward-2.0.5.dist-info/entry_points.txt,sha256=V6SEcgVb56UFUHakrH5w9htAYxVVK31thvQAHIAyVdk,54
+kgsteward-2.0.5.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+kgsteward-2.0.5.dist-info/RECORD,,
