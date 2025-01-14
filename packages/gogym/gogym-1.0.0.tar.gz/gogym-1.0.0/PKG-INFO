@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: gogym
+Version: 1.0.0
+Summary: One click is all you need
+Author: taolar
+Author-email: hujinlong@stu.xmu.edu.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: selenium>=4.24.0
+Requires-Dist: numpy>=2.0.1
+Requires-Dist: pandas>=2.2.3
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

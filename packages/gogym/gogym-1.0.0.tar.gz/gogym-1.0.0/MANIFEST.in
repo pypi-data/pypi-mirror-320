@@ -1,0 +1,18 @@
+# 排除 README-old.md 文件
+exclude README-old.md
+
+# 排除 dist/、build/ 目录中的所有文件
+recursive-exclude dist *
+recursive-exclude build *
+recursive-exclude data/cookies *
+recursive-exclude data/logs *
+recursive-exclude data/users *
+
+# 排除 .env、.DS_Store 等文件
+exclude .json
+exclude .log
+exclude .DS_Store
+
+include README.md
+include LICENSE
+include requirements.txt
