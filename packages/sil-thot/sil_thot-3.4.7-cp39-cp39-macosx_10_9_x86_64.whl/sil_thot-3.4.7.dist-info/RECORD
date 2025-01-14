@@ -1,0 +1,13 @@
+thot.cpython-39-darwin.so,sha256=DQWPJZjsUa2EiWt1fBYQH9xnWD5_U427gxXHpRmHU4A,2510112
+sil_thot-3.4.7.dist-info/RECORD,,
+sil_thot-3.4.7.dist-info/AUTHORS,sha256=cJdWzYIWVnz7lmnGOdO2baVMXQTQ2Qqxf7MXTKjISuw,205
+sil_thot-3.4.7.dist-info/WHEEL,sha256=0WiweP_1WiDsz1Eg0WaDZErWbFKfA6G6v7dDq6Kgtvg,108
+sil_thot-3.4.7.dist-info/COPYING.LESSER,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+sil_thot-3.4.7.dist-info/top_level.txt,sha256=BV9H2vNx3k3-7JvpPnBryrItc6WxgXW1OKVRcUzoHQw,14
+sil_thot-3.4.7.dist-info/METADATA,sha256=-azOboQBYwzQnMkTbS0-6Bwpx1Xfky07NBL6IbYDaP8,2228
+thot/__init__.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thot/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thot/translation/__init__.pyi,sha256=pwofxptSQY_GL0Et9vk6T2_Dnk_kiN53Ttgrp4eGBG0,5128
+thot/common/__init__.pyi,sha256=gaYnw47k5wQHH2Jyrna32nKQoHHJPVucHJJi25ekHB0,2099
+thot/alignment/__init__.pyi,sha256=xXmQYJKGwWWjyCcAp8xsZWfQMbrDkKB-FgWYN-Z__aI,9249
+sil_thot.dylibs/libomp.dylib,sha256=0H92_9YKHt2u0x4psAREtxOs-TScRgoqS5HyH1GbobA,691136
