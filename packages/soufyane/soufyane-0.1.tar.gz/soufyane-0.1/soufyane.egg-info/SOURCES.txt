@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+soufyane/__init__.py
+soufyane/operations.py
+soufyane.egg-info/PKG-INFO
+soufyane.egg-info/SOURCES.txt
+soufyane.egg-info/dependency_links.txt
+soufyane.egg-info/top_level.txt
