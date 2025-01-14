@@ -1,0 +1,20 @@
+
+[tool.poetry]
+name = "fmp"
+version = "1.0.0"
+description = ""
+authors = ["bartnyk <jakub@bartnyk.pl>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.3.0"
+pydantic-settings = "^2.6.1"
+motor = "^3.6.0"
+setuptools = "^75.7.0"
+wheel = "^0.45.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

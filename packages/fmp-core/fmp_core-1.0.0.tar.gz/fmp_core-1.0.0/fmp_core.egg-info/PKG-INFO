@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: fmp-core
+Version: 1.0.0
+Summary: Core package for stock predictor
+Home-page: https://github.com/bartnyk/fmp-core
+Author: bartnyk
+Author-email: jakub@bartnyk.pl
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic
+Requires-Dist: pydantic-settings
+Requires-Dist: motor
+Dynamic: author
+Dynamic: author-email
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
