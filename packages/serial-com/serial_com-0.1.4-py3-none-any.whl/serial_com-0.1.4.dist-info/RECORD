@@ -1,0 +1,6 @@
+serial_com/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+serial_com/ip_port.py,sha256=PwCCsK2_mK3ssN0zFw3Azpc1-nQfnF8-5VaKTHRpdlw,3353
+serial_com/serial_com.py,sha256=LqoufdZVsGh7Pq8c9RsTxdjwraVRNbHLSa55WN6-6OA,20469
+serial_com-0.1.4.dist-info/METADATA,sha256=M8Buz2BF2Z8VfdH1oQ-jZcE5yluybIFAW5F4Y8vTRaQ,451
+serial_com-0.1.4.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+serial_com-0.1.4.dist-info/RECORD,,
