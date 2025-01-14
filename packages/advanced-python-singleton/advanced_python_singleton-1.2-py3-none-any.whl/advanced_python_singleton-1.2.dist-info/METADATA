@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: advanced-python-singleton
+Version: 1.2
+Summary: Singleton & TtlSingleton meta-class
+Home-page: https://https://github.com/jogakdal/advanced-singleton
+Author: jogakdal
+Author-email: jogakdal@gmail.com
+License: UNKNOWN
+Keywords: jogakdal,Singleton,TTL,metaclass
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Requires-Dist: expiringdict
+
+UNKNOWN
+
