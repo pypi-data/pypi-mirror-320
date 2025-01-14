@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "wildcard-openai"
+version = "0.1.5"
+description = "OpenAI integration for the Wildcard ecosystem."
+authors = ["Yagnya Patel <yagnya@wild-card.ai>"]
+license = "Elastic-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+openai = ">=1.40.0"
+wildcard-core =">=0.1.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
