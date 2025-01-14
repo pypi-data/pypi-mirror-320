@@ -1,0 +1,8 @@
+cli.py
+setup.py
+datdeptrai.egg-info/PKG-INFO
+datdeptrai.egg-info/SOURCES.txt
+datdeptrai.egg-info/dependency_links.txt
+datdeptrai.egg-info/entry_points.txt
+datdeptrai.egg-info/requires.txt
+datdeptrai.egg-info/top_level.txt
