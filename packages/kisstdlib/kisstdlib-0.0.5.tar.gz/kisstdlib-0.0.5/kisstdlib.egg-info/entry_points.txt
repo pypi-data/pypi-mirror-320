@@ -1,0 +1,2 @@
+[console_scripts]
+describe-dir = kisstdlib_bin.describe_dir:main
