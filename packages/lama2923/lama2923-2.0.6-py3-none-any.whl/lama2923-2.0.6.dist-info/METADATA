@@ -1,0 +1,715 @@
+Metadata-Version: 2.1
+Name: lama2923
+Version: 2.0.6
+Summary: Sikimsonik bir kütüphane
+Author: lama2923
+Author-email: lama2923.v2@gmail.com
+Project-URL: Author GitHub, https://github.com/lama2923
+Keywords: example project evelopment discord lama2923 api design custom custominput customprint
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+Requires-Dist: requests
+Requires-Dist: keyboard
+
+### The user guide for the lama2923 library.
+
+Below you can find the guide in Turkish/English.
+
+
+[![GitHub lama2923](https://img.shields.io/badge/GitHub-lama2923-181717?style=for-the-badge&logo=github)](https://github.com/lama2923)
+---
+
+#### Turkish
+
+### Kullanım Kılavuzu
+
+Bu Python kütüphanesi, Discord, llinput gibi API ve Terminal tasarım olarak çeşitlilikler sunar.
+
+#### Kurulum
+kütüphaneyi indirin:
+```bash
+pip install lama2923
+```
+
+#### kullanımlar
+
+##### Ekranı Temizleme (clear_screen)
+```python
+from lama2923 import clear_screen
+clear_screen()
+```
+Ekranı temizler.
+
+##### Geçen Süreyi Hesaplama (calculate_elapsed_time)
+```python
+from lama2923 import calculate_elapsed_time, get_time
+start_time = get_time()
+
+# Code
+
+end_time = get_time()
+elapsed_time = calculate_elapsed_time(start_time, end_time)
+print(elapsed_time)
+```
+İki zaman arasındaki geçen süreyi hesaplar ve milisaniye, saniye, dakika, saat, gün cinsinden döndürür.
+
+##### Gökkuşağı Metni (rainbow_text)
+```python
+from lama2923 import rainbow_text
+rainbow_text("Merhaba Dünya", LOOP=3, Speed="Slow", section="Full")
+```
+Bu bölüm eğlence için yapılmıştır denebilir :D Arkadaşlarınızı şaşırtmak adına kullanabilirsiniz.
+
+##### Port Kontrolü (check_port)
+```python
+from lama2923 import check_port
+port_open = check_port("127.0.0.1", 80)
+print(f"Port açık mı? {port_open}")
+```
+Belirtilen IP adresindeki portun açık olup olmadığını kontrol eder.
+
+##### İnternet Bağlantısı Kontrolü (check_internet)
+```python
+from lama2923 import check_internet
+internet_connected = check_internet()
+print(f"İnternet bağlantısı var mı? {internet_connected}")
+```
+İnternet bağlantısını kontrol eder.
+
+##### animasyonlu print (lprint)
+```python
+from lama2923 import lprint
+lprint("Merhaba Dünya")
+```
+print fonksiyonu ile aynıdır fakat soldan sağa doğru yazının boyutuna göre, hızlı/yavaş şekilde, animasyonlu bir çıktı verir.
+
+##### animasyonlu input (linput)
+```python
+from lama2923 import linput
+user_input = linput("İsminiz: ", autocorrect=True)
+```
+linput input ile aynıdır fakat lprint gibi animasyonlu bir şekilde çıktı verir.
+autocorrect özelliği şuna yarar: input'dan önceki yazılan yazıların yazılmasını engeller. Yani Yanlışıkla daha input görünmeden 'Enter' basıldığında geçmemesini sağlayabilirsiniz.
+
+
+##### okunaklı sayı (formatted_number)
+```python
+from lama2923 import formatted_number
+num = formatted_number(100000.1234) # çıktı : 100.000,1234
+print(f"Biçimlendirilmiş sayı: {num}")
+```
+Girilen sayıyı (str kabul edilir)  sayı kurallarına uygun biçimde çıktı verir
+
+##### Okunaklı Sayıyı Geri Çevirme (reverse_formatted_number)
+```python
+from lama2923 import reverse_formatted_number
+num = reverse_formatted_number("12.345,678") # 12345.678
+print(f"Orijinal sayı: {num}")
+```
+Girilen sayıyı (str kabul edilir)  sayı kurallarına uygun biçimde olan sayıyı ters çevirir
+
+
+
+##### Discord Webhook (Discord.Webhook)
+```python
+from lama2923 import Discord
+webhook_url = 'WEBHOOK-URL-HERE'
+webhook = Discord.Webhook(webhook_url=webhook_url)
+
+
+Embed2 = Discord.Embed(title="", description="")
+Embed2.set_image(r"https:\\xxxxxxx") # Image URL
+
+
+Embed = Discord.Embed(title="Merhaba", description="Dünya", color=0x00ff00)
+Embed.add_field(name="B-", value="Ben Yaşıyorum!", inline=False)
+Embed.set_footer(text="Program")
+Embed.set_image("image.png") # Image Path
+
+
+Status = webhook.send_webhook(Content="Sana yeni bir haberim var! eee"  , embeds=[Embed, Embed2])
+
+
+```
+
+Discord Webhook ile mesaj göndermeye yarar
+
+
+##### Discord Author (Discord.Author)
+
+```python
+from lama2923 import Discord
+AUTHOR_TOKEN = "YOUR_TOKEN"
+Author = Discord.Author(AUTHOR_TOKEN)
+
+Channel_ID = "YOUR_CHANNEL"
+
+Author.send_message(Channel_ID, "Merhaba Dünya!", files=["src/image.png", ])
+
+status, Messages = Author.get_channel_messages(Channel_ID, limit=10)
+
+for I, Message in enumerate(Messages):
+    print(f"{I}: {Message['content']}")
+```
+
+Discord Author ile Bir kanala mesaj gönderip o kanalın 10 tane mesajını almaya yarar.
+
+
+##### COLOR MIXER (color_mixer)
+
+```python
+from lama2923 import color_mixer
+
+print(color_mixer(["blue"]) + "Bu Yazının Rengi Mavi") # Tek bir renk.
+print(color_mixer(["blue", "red"]) + "Bu Yazının Rengi Mor") # 2 Rengin Karışımı.
+print(color_mixer({"blue": 15, "green": 35, "red": 100}) + "Bu Yazının Rengi Kahverengi") # 3 Rengin Belirli Oranda Karışımı.
+print(color_mixer((0, 255, 0)) + "Bu Yazının Rengi Yeşil") # R.G.B Formatında Renk
+print(color_mixer(0xFFA500) + "Bu Yazının Rengi Turuncu") # Hexadecimal Kodu
+
+# --------------
+
+print(color_mixer(["blue"], return_type="hex")) # Çıktı: #0000FF
+print(color_mixer(["blue"], return_type="rgb")) # Çıktı: (0, 0, 255)
+
+
+```
+
+color_mixer ile istediğiniz rengi kolaylıkla Ayarlayabilirsiniz.
+
+
+
+##### Basit Hotkey ataması (Hotkey)
+```python
+from lama2923 import Hotkey
+
+Hotkey('ctrl', 'shift', 'a', target=function).start()
+
+def function():
+    print("Hotkey tetiklendi!")
+```
+
+
+
+
+##### input özelleştirilebilir versiyonu (llinput)
+```python
+from lama2923 import llinput
+Password = llinput("Şifreni Gir: ", inputtype="password-lastkey-clearend", promptcolor={"blue": 15, "green": 35, "red": 100}, inputcolor={"yellow": 80, "green": 10}, wendcolor=["blue"], endcolor=["blue"], wend=" <", end="!")
+
+print("Şifre Başarıyla Girildi!", Password)
+```
+llinput çok işlevli özelleştirilebilir linput versiyonudur.
+
+- `sep` ve `end` normal şekilde çalışır.
+- `wend` özelliği, `{prompt} [kullanıcı girdisi] + {wend}` formatındadır. `end`'den farklı olarak, kullanıcı girdisini prompt ve wend arasına yerleştirir.
+- `max_length`, kullanıcının girebileceği maksimum karakter sayısını sınırlar.
+- `min_length`, kullanıcının girebileceği minimum karakter sayısını sınırlar.
+- `forceint`, kullanıcının yalnızca sayı girmesini sağlar. | `forcestr` ile aynı anda kullanılamaz. `negativeint` ile birlikte kullanılabilir.
+- `negativeint`, kullanıcının yalnızca negatif sayı girmesini sağlar. | `forcestr` ile aynı anda kullanılamaz. `forceint` ile birlikte kullanılabilir.
+- `forcestr`, kullanıcının yalnızca harf girmesini sağlar. | `forceint` ve `negativeint` ile aynı anda kullanılamaz.
+- `forceinput`, kullanıcının boş girdi göndermesini engeller.
+- `startswith` özelliği `("", False)` formatındadır. Kullanıcı girdisinin, atanan yazıyla başlamasını sağlar. Eğer `True` ise bu başlangıç değeri silinemez; `False` ise kullanıcı bu değeri silebilir.
+- `forcestartswith`, kullanıcının girdiye başlaması gereken değerlerin listesidir. Örneğin, `["https", "http"]` kullanıcının bir link girmesini zorunlu kılar.
+- `forceendswith`, kullanıcının girdiyi bitirmesi gereken değerlerin listesidir. Temel olarak `forcestartswith`'in başlangıç yerine bitiş versiyonudur.
+- `choices` `([], False)` formatındadır. Liste değeri, kullanıcının seçebileceği değerleri belirler. Boolean değeri, büyük/küçük harf duyarlılığını belirler; `False` ise büyük/küçük harf duyarlıdır.
+- `blockedchars`, kullanıcının giremeyeceği karakterlerin listesidir.
+- `availablechars`, kullanıcının girebileceği karakterlerin listesidir. `blockedchars` ile çakışan karakterler yasaklı kabul edilir.
+- `forceinputlen`, kullanıcıyı belirli bir girdi uzunluğuna zorlar.
+- `inputtype`, input türünü belirler ve `["world", "password", "password-lastkey", "password2", "password2-lastkey"]` türlerinden biri olabilir.
+- `inputcolor`, `promptcolor`, `wendcolor`, ve `endcolor` list/tuple/dict değerleridir ve `["red", "green", "yellow", "blue", "magenta", "cyan", "white", "black"]` renklerinden biri olabilir. Örneğin, `["red"]` veya `["red", "blue"]` kullanarak renkleri karıştırabilir veya `{"blue": 15, "green": 35, "red": 100}` formatında hangi oranlarda renk eklemek istediğinizi belirleyebilirsiniz. Ayrıca, bu renkler RGB tuple formatında `(255, 0, 0)` veya hexadecimal formatında `0xFF0000` olarak da belirtilebilir.
+- `custom_enter_check_func` Bu değere herhangi bir callable obje atayabilirsiniz, eğer True döndürürse input alınır, ancak False döndürülürse input alınmaz. Sadece input_str argümanı vardır.
+- `custom_delete_ch_check_func` Bu değere herhangi bir callable obje atayabilirsiniz, eğer True döndürürse karakter silinmez, ancak False döndürülürse karakter silinir. input_str ve chdata argümanı vardır.
+- `custom_press_key_check_func` Bu değere herhangi bir callable obje atayabilirsiniz, eğer True döndürürse karakter eklenir, ancak False döndürülürse karakter eklenmez. input_str ve chdata argümanı vardır.
+
+
+# custom_enter_check_func, custom_delete_ch_check_func ve custom_press_key_check_func İÇİN ÖRNEK KULLANIM.
+
+### Bazı terminallerde ok tuşları çalışmayabilir.
+
+```python
+def check_enter(input_str):
+    """
+    Eğer input_str "lama2923" ise input alınır.
+    """
+
+    input_str # Girdi olarak verilmek istenen input_str
+
+    if input_str == "lama2923":
+        return True
+    return False
+
+def check_delete(input_str, chdata):
+    """
+    Eğer silinmeye çalışılan karakter "a" ise silinmez.
+    """
+    ch, pos = chdata
+    pos # Karakterin input_str'de hangi konumda silinmeye çalışıldığını verir, Örnek input_str: "Selam", ch: "m", pos: 4, olsun bu durumda m karakterinin silineceği yer 4. pozisyon yani "Sela" yazılmaya çalışılıyor.
+    ch # Silinmeye çalışılan karakter
+    input_str # Daha karakter silinmemiş olan input_str
+    if ch == "a":
+        return False
+    return True
+
+def check_press_key(input_str, chdata):
+    import string
+    """
+    Eğer Basılan karakter bir noktalama işareti ise o karakter input'a eklenmez.
+    """
+    ch, pos = chdata
+    pos # Karakterin input_str'de hangi konuma eklenmeye çalışıldığını verir, Örnek input_str: "Selam", ch: "!", pos: 5, olsun bu durumda ! karakterinin geleceği yer 5. pozisyon yani "Selam!" yazılmaya çalışılıyor.
+    input_str # Daha karakter eklenmemiş olan input_str
+    ch # Basılan karakter
+
+    if ch in list(string.punctuation):
+        return False
+    return True
+
+llinput("Şifreni Gir: ", custom_delete_ch_check_func=check_delete, custom_enter_check_func=check_enter, custom_press_key_check_func=check_press_key)
+```
+
+
+
+
+##### klasör görüntüleyici (get_directory_tree)
+```python
+from lama2923 import get_directory_tree
+
+start_directory = r'data'  # Başlangıç dizini
+depth = 10  # Derinlik
+style = 'normal'  # Stil
+directory_tree = get_directory_tree(start_directory, depth=depth, style=style)
+print(directory_tree)
+```
+
+örnek çıktı
+
+```
+└── data\
+    ├── src\
+    |    └── Images\
+    |        ├── Images2.png
+    |        └── ımage1.png
+    └── x.txt
+
+```
+
+get_directory_tree özelliği belirli bir dizindeki dosyaları/klasörleri tasarıma uygun biçimde döndürmektir.
+
+
+- `startpath`: Başlangıç dizininin yolunu belirtir. Bu, dizin ağacının oluşturulmasına başlanacak kök dizindir. Örneğin `data\src`.
+
+- `depth`: Geçerli derinliği belirtir. Fonksiyonun çağrıldığı sırada dizin ağacının hangi derinlikte olduğunu gösterir. Varsayılan değeri `0` olup, bu da kök dizini temsil eder. Her bir alt dizine geçildiğinde bu değer artırılır.
+
+- `max_depth`: Dizin ağacının oluşturulmasında maksimum derinliği belirtir. Bu, dizin ağacının ne kadar derinlikte gösterileceğini kontrol etmek için kullanılır. Özellikle çok fazla içeriği olan dizinleriniz için bu değeri kullanmanızı performans için öneririm. Varsayılan değeri `float('inf')` olup, bu sonsuz derinlik anlamına gelir. Örneğin, `max_depth=2` sadece kök dizin ve iki alt seviye dizinleri gösterir.
+
+- `prefix`: Geçerli dizin ve dosya adlarının önüne eklenen önek karakterlerdir. Bu önekler, dizin yapısının doğru bir şekilde görselleştirilmesine yardımcı olur ve genellikle boşluk veya dikey çizgiler gibi karakterlerden oluşur. Varsayılan değeri `''`'dır.
+
+- `is_last`: Geçerli dizin veya dosyanın, üst dizindeki son öğe olup olmadığını belirtir. Bu bilgi, doğru biçimlendirme ve önek karakterlerin ayarlanmasında kullanılır. Varsayılan değeri `True`'dır.
+
+- `style`: Dizin ağacının hangi stil ile oluşturulacağını belirtir. Önceden tanımlı stillerden birini seçer. Varsayılan değeri `'normal'`'dir.
+
+- `custom_style`: Kullanıcı tarafından tanımlanan özel bir stil belirtir. Bu, `branch` ve `spacing` gibi öznitelikleri içerir ve fonksiyon, belirtilen bu stili kullanarak dizin ağacını oluşturur. Eğer `custom_style` belirtilmişse, `style` parametresi göz ardı edilir.
+
+örnek `custom_style`
+```json
+custom_style = {
+    'branch': ('>>> ', '<<< ', '|||', '\\'),
+    'spacing': '    '
+}
+```
+
+çıktı
+```
+<<< data\
+    >>> src\
+    |||    <<< Images\
+    |||        >>> Images2.png
+    |||        <<< ımage1.png
+    <<< x.txt
+```
+kullanabileceğiniz bütün stiller
+
+- `normal`
+- `bold`
+- `thin`
+- `compact`
+- `double`
+- `dash`
+- `star`
+- `plus`
+- `wave`
+- `hash`
+- `dot`
+- `pipe`
+- `slash`
+- `backslash`
+- `equal`
+- `colon`
+- `semicolon`
+- `exclamation`
+- `question`
+- `caret`
+- `percent`
+- `at`
+- `tilde`
+- `bracket`
+- `brace`
+- `paren`
+- `angle`
+- `quote`
+- `apos`
+- `underscore`
+- `plusminus`
+- `doubleangle`
+- `box`
+- `arrow`
+
+
+
+
+
+---
+
+#### English
+### User Guide
+
+This Python library offers a variety of APIs and Terminal designs such as Discord and llinput.
+
+#### Installation
+Install the necessary modules to use this library:
+```bash
+pip install lama2923
+```
+
+#### Functions and Their Uses
+
+##### Clear Screen (clear_screen)
+```python
+from lama2923 import clear_screen
+clear_screen()
+```
+Clears the screen.
+
+##### Calculate Elapsed Time (calculate_elapsed_time)
+```python
+from lama2923 import calculate_elapsed_time, get_time
+start_time = get_time()
+
+# Code
+
+end_time = get_time()
+elapsed_time = calculate_elapsed_time(start_time, end_time)
+print(elapsed_time)
+```
+Calculates the elapsed time between two points and returns it in milliseconds, seconds, minutes, hours, and days.
+
+##### Rainbow Text (rainbow_text)
+```python
+from lama2923 import rainbow_text
+rainbow_text("Hello World", LOOP=3, Speed="Slow", section="Full")
+```
+This section is for fun! You can use it to surprise your friends.
+
+##### Port Check (check_port)
+```python
+from lama2923 import check_port
+port_open = check_port("127.0.0.1", 80)
+print(f"Is the port open? {port_open}")
+```
+Checks if the specified port on the given IP address is open.
+
+##### Internet Connection Check (check_internet)
+```python
+from lama2923 import check_internet
+internet_connected = check_internet()
+print(f"Is there an internet connection? {internet_connected}")
+```
+Checks for an internet connection.
+
+##### Animated Print (lprint)
+```python
+from lama2923 import lprint
+lprint("Hello World")
+```
+It works the same as the print function but provides animated output from left to right based on the length of the text.
+
+##### Animated Input (linput)
+```python
+from lama2923 import linput
+user_input = linput("Your name: ", autocorrect=True)
+```
+linput works the same as input but provides animated output like lprint.
+The autocorrect feature prevents writing errors before the input appears. It ensures that pressing 'Enter' mistakenly before the input is shown does not proceed.
+
+##### Formatted Number (formatted_number)
+```python
+from lama2923 import formatted_number
+num = formatted_number(100000.1234) # output: 100.000,1234
+print(f"Formatted number: {num}")
+```
+Takes a number (accepted as a string) and outputs it in a properly formatted manner.
+
+##### Reverse Formatted Number (reverse_formatted_number)
+```python
+from lama2923 import reverse_formatted_number
+num = reverse_formatted_number("12.345,678") # 12345.678
+print(f"Original number: {num}")
+```
+Takes a properly formatted number (accepted as a string) and reverses it.
+
+
+##### Discord Webhook (Discord.Webhook)
+```python
+from lama2923 import Discord
+webhook_url = 'WEBHOOK-URL-HERE'
+webhook = Discord.Webhook(webhook_url=webhook_url)
+
+Embed2 = Discord.Embed(title="", description="")
+Embed2.set_image(r"https:\\xxxxxxx") # Image URL
+
+
+Embed = Discord.Embed(title="Hello", description="World", color=0x00ff00)
+Embed.add_field(name="I-", value="I am alive!", inline=False)
+Embed.set_footer(text="Program")
+Embed.set_image("image.png") # Image Path
+
+
+Status = webhook.send_webhook(Content="I have news for you! uhh"  , embeds=[Embed, Embed2])
+
+```
+
+Sends a message using Discord Webhook.
+
+
+##### Discord Author (Discord.Author)
+
+```python
+from lama2923 import Discord
+AUTHOR_TOKEN = "YOUR_TOKEN"
+Author = Discord.Author(AUTHOR_TOKEN)
+
+Channel_ID = "YOUR_CHANNEL"
+
+Author.send_message(Channel_ID, "Hello World!", files=["src/image.png", ])
+
+status, Messages = Author.get_channel_messages(Channel_ID, limit=10)
+
+for I, Message in enumerate(Messages):
+    print(f"{I}: {Message['content']}")
+```
+
+Allows sending a message to a channel and retrieving the last 10 messages from that channel using Discord Author.
+
+##### COLOR MIXER (color_mixer)
+
+```python
+from lama2923 import color_mixer
+
+print(color_mixer(["blue"]) + "This text is Blue") # Single color.
+print(color_mixer(["blue", "red"]) + "This text is Purple") # Mix of 2 colors.
+print(color_mixer({"blue": 15, "green": 35, "red": 100}) + "This text is Brown") # Mix of 3 colors with specified proportions.
+print(color_mixer((0, 255, 0)) + "This text is Green") # R.G.B format color
+print(color_mixer(0xFFA500) + "This text is Orange") # Hexadecimal code
+
+# --------------
+
+print(color_mixer(["blue"], return_type="hex")) # Output: #0000FF
+print(color_mixer(["blue"], return_type="rgb")) # Output: (0, 0, 255)
+
+
+```
+
+With color_mixer, you can easily adjust the desired color.
+
+
+##### Simple Hotkey Assignment (Hotkey)
+```python
+from lama2923 import Hotkey
+
+Hotkey('ctrl', 'shift', 'a', target=function).start()
+
+def function():
+    print("Hotkey triggered!")
+```
+
+
+##### Enhanced input (llinput)
+```python
+from lama2923 import llinput
+Password = llinput("Enter your Password: ", inputtype="password-lastkey-clearend", promptcolor={"blue": 15, "green": 35, "red": 100}, inputcolor={"yellow": 80, "green": 10}, wendcolor=["blue"], endcolor=["blue"], wend=" <", end="!")
+
+print("Password Entered Successfully!", Password)
+```
+llinput is a highly functional, customizable version of linput.
+
+- `sep` and `end` work as usual.
+- `wend` feature is in the format {prompt} [user input] + {wend}. Unlike `end`, it places the user input between prompt and wend.
+- `max_length` limits the maximum number of characters the user can enter.
+- `min_length` limits the minimum number of characters the user can enter.
+- `forceint` allows the user to enter only numbers. | Cannot be used with `forcestr`. Can be used with `negativeint`.
+- `negativeint` allows the user to enter only negative numbers. | Cannot be used with `forcestr`. Can be used with `forceint`.
+- `forcestr` allows the user to enter only letters. | Cannot be used with `forceint` and `negativeint`.
+- `forceinput` prevents the user from submitting empty input.
+- `startswith` is in the format ("", False). It sets the beginning of the user input to the given string. If True, this prefix cannot be deleted; if False, the user can delete it.
+- `forcestartswith` is a list of values that the user must start their input with, e.g., ["https", "http"] requires the user to enter a link.
+- `forceendswith` is a list of values that the user must end their input with.
+- `choices` is in the format ([], False). It provides a list of acceptable choices. The boolean determines case sensitivity; False means case-sensitive.
+- `blockedchars` is a string of characters that the user cannot enter.
+- `availablechars` is a string of characters that the user can enter. Conflicts with `blockedchars` will result in the character being blocked.
+- `forceinputlen` forces the user to enter input of a specific length.
+- `inputtype` specifies the type of input and can be one of the following types: `["world", "password", "password-lastkey", "password2", "password2-lastkey"]`.
+- `inputcolor`, `promptcolor`, `wendcolor`, and `endcolor` are list/tuple/dict values and can be one of the colors from `["red", "green", "yellow", "blue", "magenta", "cyan", "white", "black"]`. For example, you can use `["red"]` or `["red", "blue"]` to mix colors or specify the ratios of colors you want to add in the format `{"blue": 15, "green": 35, "red": 100}`. Additionally, these colors can also be specified in RGB tuple format as `(255, 0, 0)` or in hexadecimal format as `0xFF0000`.
+- `custom_enter_check_func` You can assign any callable object to this value. If it returns True, the input is accepted, but if it returns False, the input is rejected. It only has the input_str argument.
+- `custom_delete_ch_check_func` You can assign any callable object to this value. If it returns True, the character is not deleted, but if it returns False, the character is deleted. It has the input_str and chdata arguments.
+- `custom_press_key_check_func` You can assign any callable object to this value. If it returns True, the character is added, but if it returns False, the character is not added. It has the input_str and chdata arguments.
+
+
+# EXAMPLE USAGE FOR custom_enter_check_func, custom_delete_ch_check_func, and custom_press_key_check_func.
+
+### Arrow keys may not work in some terminals.
+
+```python
+def check_enter(input_str):
+    """
+    If input_str is "lama2923", input is accepted.
+    """
+
+    input_str # The input_str intended to be provided as input
+
+    if input_str == "lama2923":
+        return True
+    return False
+
+def check_delete(input_str, chdata):
+    """
+    If the character being attempted to delete is "a", it will not be deleted.
+    """
+    ch, pos = chdata
+    pos # Indicates the position in input_str where the character is being attempted to delete. Example: input_str: "Hello", ch: "o", pos: 4, in this case, the "o" character is at position 4 and "Hell" is being attempted to type.
+    ch # The character being attempted to delete
+    input_str # The input_str before the character is deleted
+    if ch == "a":
+        return False
+    return True
+
+def check_press_key(input_str, chdata):
+    import string
+    """
+    If the pressed character is a punctuation mark, it will not be added to the input.
+    """
+    ch, pos = chdata
+    pos # Indicates the position in input_str where the character is being attempted to add. Example: input_str: "Hello", ch: "!", pos: 5, in this case, the "!" character is at position 5 and "Hello!" is being attempted to type.
+    input_str # The input_str before the character is added
+    ch # The pressed character
+
+    if ch in list(string.punctuation):
+        return False
+    return True
+
+llinput("Enter your password: ", custom_delete_ch_check_func=check_delete, custom_enter_check_func=check_enter, custom_press_key_check_func=check_press_key)
+
+```
+
+##### folder viewer (get_directory_tree)
+```python
+from lama2923 import get_directory_tree
+
+start_directory = r'data'  # Starting directory
+depth = 10  # Depth
+style = 'normal'  # Style
+directory_tree = get_directory_tree(start_directory, depth=depth, style=style)
+print(directory_tree)
+```
+
+example output
+
+```
+└── data\
+    ├── src\
+    |    └── Images\
+    |        ├── Images2.png
+    |        └── ımage1.png
+    └── x.txt
+
+```
+
+The get_directory_tree feature returns the files/folders in a specific directory in a design-friendly format.
+
+
+- `startpath`: Specifies the path of the starting directory. This is the root directory where the directory tree creation will start. For example `data\src`.
+
+- `depth`: Indicates the current depth. It shows at what depth the directory tree is during the function call. The default value is `0`, representing the root directory. This value increases as it goes down to each subdirectory.
+
+- `max_depth`: Specifies the maximum depth in the creation of the directory tree. It is used to control how deep the directory tree will be displayed. I recommend using this value for directories with a lot of content for performance. The default value is `float('inf')`, meaning infinite depth. For example, `max_depth=2` will only show the root directory and two levels of subdirectories.
+
+- `prefix`: The prefix characters added before the names of the current directories and files. These prefixes help in visualizing the directory structure correctly and usually consist of characters like spaces or vertical lines. The default value is `''`.
+
+- `is_last`: Indicates whether the current directory or file is the last item in its parent directory. This information is used for proper formatting and setting prefix characters. The default value is `True`.
+
+- `style`: Specifies which style the directory tree will be created in. It selects one of the predefined styles. The default value is `'normal'`.
+
+- `custom_style`: Specifies a user-defined custom style. This includes attributes like `branch` and `spacing`, and the function uses the specified style to create the directory tree. If `custom_style` is specified, the `style` parameter is ignored.
+
+example `custom_style`
+```json
+custom_style = {
+    'branch': ('>>> ', '<<< ', '|||', '\'),
+    'spacing': '    '
+}
+```
+
+output
+```
+<<< data\
+    >>> src\
+    |||    <<< Images\
+    |||        >>> Images2.png
+    |||        <<< ımage1.png
+    <<< x.txt
+```
+all available styles
+
+- `normal`
+- `bold`
+- `thin`
+- `compact`
+- `double`
+- `dash`
+- `star`
+- `plus`
+- `wave`
+- `hash`
+- `dot`
+- `pipe`
+- `slash`
+- `backslash`
+- `equal`
+- `colon`
+- `semicolon`
+- `exclamation`
+- `question`
+- `caret`
+- `percent`
+- `at`
+- `tilde`
+- `bracket`
+- `brace`
+- `paren`
+- `angle`
+- `quote`
+- `apos`
+- `underscore`
+- `plusminus`
+- `doubleangle`
+- `box`
+- `arrow`
