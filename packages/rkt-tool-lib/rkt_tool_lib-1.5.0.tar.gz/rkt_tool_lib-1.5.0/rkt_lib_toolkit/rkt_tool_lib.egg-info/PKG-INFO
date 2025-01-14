@@ -1,0 +1,88 @@
+Metadata-Version: 2.2
+Name: rkt_tool_lib
+Version: 1.5.0
+Summary: RootKit custom tool Lib
+Author: RootKit
+Author-email: rootkit@rootkit-lab.org
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Natural Language :: French
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-python
+Dynamic: summary
+
+# rkt_tool_lib - Python library
+
+![Package Version](https://badgen.net/badge/Package%20Version/latest%20-%201.3.0/green?scale=1.2)
+
+![quality](https://sonarqube.tprc.ovh/api/project_badges/measure?project=python_rkt_lib_toolkit_AXqQ32evGCA0VuRY8SuD&metric=alert_status)
+![reliability_rating](https://sonarqube.tprc.ovh/api/project_badges/measure?project=python_rkt_lib_toolkit_AXqQ32evGCA0VuRY8SuD&metric=reliability_rating)
+![security_rating](https://sonarqube.tprc.ovh/api/project_badges/measure?project=python_rkt_lib_toolkit_AXqQ32evGCA0VuRY8SuD&metric=security_rating)
+![vulnerabilities](https://sonarqube.tprc.ovh/api/project_badges/measure?project=python_rkt_lib_toolkit_AXqQ32evGCA0VuRY8SuD&metric=vulnerabilities)
+![coverage](https://sonarqube.tprc.ovh/api/project_badges/measure?project=python_rkt_lib_toolkit_AXqQ32evGCA0VuRY8SuD&metric=coverage)
+![maintainability](https://sonarqube.tprc.ovh/api/project_badges/measure?project=python_rkt_lib_toolkit_AXqQ32evGCA0VuRY8SuD&metric=sqale_rating)
+
+##### Python minimal Version 3.7
+
+----
+
+## What is Python?
+Python is an interpreted high-level general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.
+
+[source](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+## Libraries
+* Tool: toolbox library with, you can automatically format the path in your code without worrying about the platform hosting your script
+
+## Use it
+### Install
+```bash
+ (venv) my_project> pip install rkt_tool_lib [--index-url https://gitlab.tprc.ovh/api/v4/groups/python/-/packages/pypi]
+```
+
+### Example
+
+```python
+from rkt_tool_lib import Tool
+
+t = Tool()
+
+print(t.get_cwd())
+print(t.get_dir('db'))
+
+
+```
+
+### Output (as file, sdtout or both)
+windows
+```log
+C:\Users\Me\Documents\path\to\my\project\
+C:\Users\Me\Documents\path\to\my\project\db\
+```
+linux:
+```log
+/home/me/path/to/my/project/
+/home/me/path/to/my/project/db/
+```
+
+## Contributing
+
+If you find this library useful here's how you can help:
+
+- Send a merge request with your kickass new features and bug fixes
+- Help new users with [issues](https://gitlab.tprc.ovh/python/rkt_lib_toolkit/-/issues) they may encounter
+- Support the development of this library and star this repo!
