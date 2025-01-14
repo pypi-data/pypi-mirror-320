@@ -1,0 +1,11 @@
+
+# Constants
+from decimal import Decimal
+
+PRECISION_2 = Decimal('100')
+MAX_PROFIT_P = Decimal('900')  # 900% * PRECISION_6
+MAX_STOP_LOSS_P = Decimal('85')
+PRECISION_6 = Decimal('1000000')
+PRECISION_12 = Decimal('1000000000000')
+PRECISION_18 = Decimal('1000000000000000000')
+LIQ_THRESHOLD_P = Decimal('90')  # -90% (of collateral)
