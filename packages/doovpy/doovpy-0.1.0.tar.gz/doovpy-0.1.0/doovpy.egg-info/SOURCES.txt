@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+doovpy/__init__.py
+doovpy/pchat.py
+doovpy.egg-info/PKG-INFO
+doovpy.egg-info/SOURCES.txt
+doovpy.egg-info/dependency_links.txt
+doovpy.egg-info/top_level.txt
+tests/test_pchat.py
