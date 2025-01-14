@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: uids
+Version: 0.0.2
+Summary: 01/12/25: comming soon
+Author-email: "Adrian F. Hoefflin" <srccircumflex-srtj@outlook.com>
+License: MIT License
+Project-URL: Repository, https://github.com/srccircumflex/uids
+Keywords: Universal Identifier,id,uid,uuid,ulid
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Security :: Cryptography
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# uids
+
+\# todo
+
+
+## ULID
+
+\# todo
+
+(spec.: [https://github.com/ulid/spec](https://github.com/ulid/spec))

@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uids"
+authors = [
+    {name = "Adrian F. Hoefflin", email = "srccircumflex-srtj@outlook.com"},
+]
+description = "01/12/25: comming soon"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = [
+    "Universal Identifier", "id", "uid", "uuid", "ulid",
+]
+license = {text = "MIT License"}
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "Topic :: Security :: Cryptography",
+]
+dependencies = [
+]
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "uids.__version__"}
+
+#[project.scripts]
+#uids = "uids.__main__:run"
+
+[project.urls]
+Repository = "https://github.com/srccircumflex/uids"
