@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: PanMCL
+Version: 0.7.1
+Summary: A command-line tool for pan-genome analysis using MCL algorithm.
+Home-page: https://github.com/zijian-yu/PanMCL
+Author: yuzijian
+Author-email: yuzijian1010@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics

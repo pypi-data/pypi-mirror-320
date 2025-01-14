@@ -1,0 +1,17 @@
+README.md
+setup.py
+PanMCL/__init__.py
+PanMCL/cli.py
+PanMCL/core_test_2.py
+PanMCL/core_test_3.py
+PanMCL/gff_cds_pep_deal.py
+PanMCL/orthogroups_identity.py
+PanMCL/orthogroups_identity_V3.py
+PanMCL/run_blast_diamond.py
+PanMCL/run_interproscan_2.py
+PanMCL/run_mcscanx_V4.py
+PanMCL.egg-info/PKG-INFO
+PanMCL.egg-info/SOURCES.txt
+PanMCL.egg-info/dependency_links.txt
+PanMCL.egg-info/entry_points.txt
+PanMCL.egg-info/top_level.txt
