@@ -1,0 +1,66 @@
+Metadata-Version: 2.2
+Name: exordiumx
+Version: 0.1.0
+Summary: A custom VSCode-style logger for Python
+Home-page: https://github.com/ExoticCitron/exordiumx
+Author: Haveen
+Author-email: exo@exodevs.space
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# Exordium
+
+Exordium is a custom VSCode-style logger for Python, providing colorful and informative log messages.
+
+## Installation
+
+You can install Exordium using pip:
+
+```
+pip install exordium
+```
+
+Or directly from the GitHub repository:
+
+```
+pip install git+https://github.com/ExoticCitron/exordium.git
+```
+
+## Usage
+
+Here's a simple example of how to use Exordium:
+
+```python
+from exordium import get_logger
+
+logger = get_logger(__name__)
+
+logger.info("This is an info message")
+logger.debug("This is a debug message")
+logger.warning("This is a warning message")
+logger.success("This is a success message")
+logger.error("This is an error message")
+logger.critical("This is a critical message")
+```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
