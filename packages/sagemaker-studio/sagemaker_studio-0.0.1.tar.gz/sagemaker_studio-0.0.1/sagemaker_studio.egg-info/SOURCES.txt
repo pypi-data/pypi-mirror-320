@@ -1,0 +1,7 @@
+README.md
+setup.py
+sagemaker_studio/__init__.py
+sagemaker_studio.egg-info/PKG-INFO
+sagemaker_studio.egg-info/SOURCES.txt
+sagemaker_studio.egg-info/dependency_links.txt
+sagemaker_studio.egg-info/top_level.txt
