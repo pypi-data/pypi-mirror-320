@@ -1,0 +1,23 @@
+requests
+tblib
+tabulate
+
+[:python_version < "3.8"]
+importlib_metadata
+
+[:python_version < "3.9"]
+importlib_resources
+
+[dev]
+pyslurmutils[test]
+black>=22
+flake8>=4
+
+[doc]
+pyslurmutils[test]
+sphinx>=4.5
+sphinx-autodoc-typehints>=1.16
+pydata-sphinx-theme<0.15
+
+[test]
+pytest>=7
