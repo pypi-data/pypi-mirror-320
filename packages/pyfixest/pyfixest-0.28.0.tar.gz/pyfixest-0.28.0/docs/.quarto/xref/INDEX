@@ -1,0 +1,170 @@
+{
+  "compare-fixest-pyfixest.ipynb": {
+    "compare-fixest-pyfixest.html": "7c4dec16"
+  },
+  "contributing.qmd": {
+    "contributing.html": "db0a2e9c"
+  },
+  "difference-in-differences.ipynb": {
+    "difference-in-differences.html": "a459d2e1"
+  },
+  "marginaleffects.ipynb": {
+    "marginaleffects.html": "373d96c4"
+  },
+  "news.qmd": {
+    "news.html": "545d036b"
+  },
+  "pyfixest.md": {
+    "pyfixest.html": "34970bf6"
+  },
+  "quickstart.ipynb": {
+    "quickstart.html": "efbb46a5"
+  },
+  "reference/did.estimation.did2s.qmd": {
+    "did.estimation.did2s.html": "3574b249"
+  },
+  "reference/did.estimation.event_study.qmd": {
+    "did.estimation.event_study.html": "57921a9c"
+  },
+  "reference/did.estimation.lpdid.qmd": {
+    "did.estimation.lpdid.html": "99679a8b"
+  },
+  "reference/estimation.bonferroni.qmd": {
+    "estimation.bonferroni.html": "c3b40a26"
+  },
+  "reference/estimation.demean.qmd": {
+    "estimation.demean.html": "8a000ed0"
+  },
+  "reference/estimation.detect_singletons.qmd": {
+    "estimation.detect_singletons.html": "9aa7ae6d"
+  },
+  "reference/estimation.Feiv.qmd": {
+    "estimation.Feiv.html": "7da3bc1c"
+  },
+  "reference/estimation.feols.qmd": {
+    "estimation.feols.html": "0d81a662"
+  },
+  "reference/estimation.fepois.qmd": {
+    "estimation.fepois.html": "4957f5f8"
+  },
+  "reference/estimation.model_matrix_fixest.qmd": {
+    "estimation.model_matrix_fixest.html": "f59177f2"
+  },
+  "reference/estimation.rwolf.qmd": {
+    "estimation.rwolf.html": "f24953e9"
+  },
+  "reference/index.qmd": {
+    "index.html": "c5a7003b"
+  },
+  "reference/report.coefplot.qmd": {
+    "report.coefplot.html": "b6c30154"
+  },
+  "reference/report.etable.qmd": {
+    "report.etable.html": "f57b9ecc"
+  },
+  "reference/report.iplot.qmd": {
+    "report.iplot.html": "70d255da"
+  },
+  "reference/report.summary.qmd": {
+    "report.summary.html": "da2aae85"
+  },
+  "replicating-the-effect.ipynb": {
+    "replicating-the-effect.html": "aa4bb18c"
+  },
+  "stargazer.ipynb": {
+    "stargazer.html": "b4f90541"
+  },
+  "quarto_example/QuartoExample.qmd": {
+    "QuartoExample.tex": "ce85294b"
+  },
+  "reference/did.visualize.panelview.qmd": {
+    "did.visualize.panelview.html": "dedd4021"
+  },
+  "regression-tables.ipynb": {
+    "regression-tables.html": "581ca42a"
+  },
+  "table-layout.ipynb": {
+    "table-layout.html": "be5ae2d0"
+  },
+  "quickstart/fixef-effects-intro.qmd": {
+    "fixef-effects-intro.html": "135a2f8a"
+  },
+  "quickstart/first-regression.qmd": {
+    "first-regression.html": "0141a132"
+  },
+  "quickstart/inspecting-results.qmd": {
+    "inspecting-results.html": "dff33d92"
+  },
+  "reference/estimation.estimation.feols.qmd": {
+    "estimation.estimation.feols.html": "7e35196d"
+  },
+  "reference/estimation.estimation.fepois.qmd": {
+    "estimation.estimation.fepois.html": "b2bb4070"
+  },
+  "reference/estimation.feiv_.Feiv.qmd": {
+    "estimation.feiv_.Feiv.html": "f8c25560"
+  },
+  "reference/estimation.feols_.Feols.qmd": {
+    "estimation.feols_.Feols.html": "c6d29f03"
+  },
+  "reference/estimation.fepois_.Fepois.qmd": {
+    "estimation.fepois_.Fepois.html": "a0af9466"
+  },
+  "reference/report.dtable.qmd": {
+    "report.dtable.html": "9c609bab"
+  },
+  "reference/estimation.feols_compressed_.FeolsCompressed.qmd": {
+    "estimation.feols_compressed_.FeolsCompressed.html": "e482a91b"
+  },
+  "quickstart.qmd": {
+    "quickstart.html": "353dc9db"
+  },
+  "table-layout.qmd": {
+    "table-layout.html": "5d33f0e2"
+  },
+  "compare-fixest-pyfixest.qmd": {
+    "compare-fixest-pyfixest.html": "e4c2a659"
+  },
+  "difference-in-differences.md": {
+    "difference-in-differences.html": "722dad51"
+  },
+  "marginaleffects.md": {
+    "marginaleffects.html": "eec7d04f"
+  },
+  "replicating-the-effect.md": {
+    "replicating-the-effect.html": "0ae3a37d"
+  },
+  "difference-in-differences.qmd": {
+    "difference-in-differences.html": "47ed6c22"
+  },
+  "marginaleffects.qmd": {
+    "marginaleffects.html": "d775ce53"
+  },
+  "replicating-the-effect.qmd": {
+    "replicating-the-effect.html": "fe777862"
+  },
+  "changelog.qmd": {
+    "changelog.html": "d7f7f01c"
+  },
+  "multiple_testing.ipynb": {
+    "multiple_testing.html": "b06e885a"
+  },
+  "regression_decomposition.ipynb": {
+    "regression_decomposition.html": "f66f760b"
+  },
+  "reference/estimation.estimation.feglm.qmd": {
+    "estimation.estimation.feglm.html": "be8f867b"
+  },
+  "reference/estimation.fegaussian_.Fegaussian.qmd": {
+    "estimation.fegaussian_.Fegaussian.html": "b6613520"
+  },
+  "reference/estimation.feglm_.Feglm.qmd": {
+    "estimation.feglm_.Feglm.html": "3bf89498"
+  },
+  "reference/estimation.felogit_.Felogit.qmd": {
+    "estimation.felogit_.Felogit.html": "fcdfe929"
+  },
+  "reference/estimation.feprobit_.Feprobit.qmd": {
+    "estimation.feprobit_.Feprobit.html": "b2596b84"
+  }
+}

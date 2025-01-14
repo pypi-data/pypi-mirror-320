@@ -1,0 +1,110 @@
+# estimation.feglm_.Feglm { #pyfixest.estimation.feglm_.Feglm }
+
+```python
+estimation.feglm_.Feglm(
+    self,
+    FixestFormula,
+    data,
+    ssc_dict,
+    drop_singletons,
+    drop_intercept,
+    weights,
+    weights_type,
+    collin_tol,
+    fixef_tol,
+    lookup_demeaned_data,
+    tol,
+    maxiter,
+    solver,
+    store_data=True,
+    copy_data=True,
+    lean=False,
+    sample_split_var=None,
+    sample_split_value=None,
+    separation_check=None,
+    context=0,
+)
+```
+
+Abstract base class for the estimation of a fixed-effects GLM model.
+
+## Methods
+
+| Name | Description |
+| --- | --- |
+| [get_fit](#pyfixest.estimation.feglm_.Feglm.get_fit) | Fit the GLM model via iterated weighted least squares. |
+| [predict](#pyfixest.estimation.feglm_.Feglm.predict) | Return predicted values from regression model. |
+| [prepare_model_matrix](#pyfixest.estimation.feglm_.Feglm.prepare_model_matrix) | Prepare model inputs for estimation. |
+| [residualize](#pyfixest.estimation.feglm_.Feglm.residualize) | Residualize v and X by flist using weights. |
+| [to_array](#pyfixest.estimation.feglm_.Feglm.to_array) | Turn estimation DataFrames to np arrays. |
+
+### get_fit { #pyfixest.estimation.feglm_.Feglm.get_fit }
+
+```python
+estimation.feglm_.Feglm.get_fit()
+```
+
+Fit the GLM model via iterated weighted least squares.
+
+All equations in the code refer to Stammann 'Fast and Feasible
+Estimation of Generalized Linear Models with High-Dimensional
+k-way fixed effects': https://arxiv.org/pdf/1707.01815
+
+### predict { #pyfixest.estimation.feglm_.Feglm.predict }
+
+```python
+estimation.feglm_.Feglm.predict(
+    newdata=None,
+    atol=1e-06,
+    btol=1e-06,
+    type='link',
+)
+```
+
+Return predicted values from regression model.
+
+Return a flat np.array with predicted values of the regression model.
+If new fixed effect levels are introduced in `newdata`, predicted values
+for such observations
+will be set to NaN.
+
+#### Parameters {.doc-section .doc-section-parameters}
+
+| Name    | Type                        | Description                                                                                                                                                                                                                                                                                                        | Default   |
+|---------|-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| newdata | Union\[None, pd.DataFrame\] | A pd.DataFrame with the new data, to be used for prediction. If None (default), uses the data used for fitting the model.                                                                                                                                                                                          | `None`    |
+| atol    | Float                       | Stopping tolerance for scipy.sparse.linalg.lsqr(). See https://docs.scipy.org/doc/     scipy/reference/generated/scipy.sparse.linalg.lsqr.html                                                                                                                                                                     | `1e-6`    |
+| btol    | Float                       | Another stopping tolerance for scipy.sparse.linalg.lsqr(). See https://docs.scipy.org/doc/     scipy/reference/generated/scipy.sparse.linalg.lsqr.html                                                                                                                                                             | `1e-6`    |
+| type    | str                         | The type of prediction to be computed. Can be either "response" (default) or "link". If type="response", the output is at the level of the response variable, i.e., it is the expected predictor E(Y\|X). If "link", the output is at the level of the explanatory variables, i.e., the linear predictor X @ beta. | `'link'`  |
+| atol    | Float                       | Stopping tolerance for scipy.sparse.linalg.lsqr(). See https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.linalg.lsqr.html                                                                                                                                                                          | `1e-6`    |
+| btol    | Float                       | Another stopping tolerance for scipy.sparse.linalg.lsqr(). See https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.linalg.lsqr.html                                                                                                                                                                  | `1e-6`    |
+
+#### Returns {.doc-section .doc-section-returns}
+
+| Name   | Type       | Description                                                     |
+|--------|------------|-----------------------------------------------------------------|
+|        | np.ndarray | A flat array with the predicted values of the regression model. |
+
+### prepare_model_matrix { #pyfixest.estimation.feglm_.Feglm.prepare_model_matrix }
+
+```python
+estimation.feglm_.Feglm.prepare_model_matrix()
+```
+
+Prepare model inputs for estimation.
+
+### residualize { #pyfixest.estimation.feglm_.Feglm.residualize }
+
+```python
+estimation.feglm_.Feglm.residualize(v, X, flist, weights, tol)
+```
+
+Residualize v and X by flist using weights.
+
+### to_array { #pyfixest.estimation.feglm_.Feglm.to_array }
+
+```python
+estimation.feglm_.Feglm.to_array()
+```
+
+Turn estimation DataFrames to np arrays.
