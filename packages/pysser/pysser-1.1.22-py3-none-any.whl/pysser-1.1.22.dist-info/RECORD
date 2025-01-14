@@ -1,0 +1,12 @@
+pysser/__init__.py,sha256=CDR-Fjm1oEtI5HEhx7VUEPe8LSxFEkrxSv-IZbUvAf4,28
+pysser/pysser.py,sha256=KjtldrzqE4C8C8ePWPbyAkPgOdMBkkMnUhautQnTx0g,1170
+pysser/ssermainlinux.py,sha256=0D7pOT-D3TEsQhoEPInwZ9ya7b_kgoWgepLfHbaEym0,67611
+pysser/ssermainwin.py,sha256=g_EndlqaEB6Ru_sPpx8i2UiLQ86ATAC9hfcp32rkLeE,67990
+pysser/runlib/__init__.py,sha256=dfkjNi8hF2AeeEV06SGkhtg5Sz3LfrmYwL8PODxFR0E,40
+pysser/runlib/pyarmor_runtime.pyd,sha256=qLm_53Xd2y5XwOBbOQF0abuKj88AHAjmcvG7RbwxRAQ,4913680
+pysser/runlib/pyarmor_runtime.so,sha256=W7DiNIjGcUPYoP4N43SX-VL22vzNz3OZcnons7rUEno,603768
+pysser-1.1.22.dist-info/LICENSE,sha256=R7bXls3pxJ7hhQTwOLQKX82Atq_s-vDnsNE8BcvSPOc,1084
+pysser-1.1.22.dist-info/METADATA,sha256=MiaaafPAT_kqs1cnBJDC_AzEz_0560uM7Ul7oQmFGYc,594
+pysser-1.1.22.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+pysser-1.1.22.dist-info/top_level.txt,sha256=GqE_hH0ZXJNDF1IctVr2Sfb22csc1SeB3H5xoz4-Sio,7
+pysser-1.1.22.dist-info/RECORD,,
