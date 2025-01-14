@@ -1,0 +1,4 @@
+[console_scripts]
+checked=checked.gui:main
+checked-cli=checked.cli:main
+
