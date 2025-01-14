@@ -1,0 +1,8 @@
+[console_scripts]
+ppabam-hi = ppabam_check_os_ver.hi:hi
+ppabam-random-game = ppabam_check_os_ver.hi:random_game
+ppabam-random-match = ppabam_check_os_ver.hi:random_match
+ppabam-random-pic = ppabam_check_os_ver.hi:random_pic
+
+[gui_scripts]
+
