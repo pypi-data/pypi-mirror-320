@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+xiaomw/AI.py
+xiaomw/__init__.py
+xiaomw.egg-info/PKG-INFO
+xiaomw.egg-info/SOURCES.txt
+xiaomw.egg-info/dependency_links.txt
+xiaomw.egg-info/requires.txt
+xiaomw.egg-info/top_level.txt
