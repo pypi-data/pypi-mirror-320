@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: mcp-server-zoom
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.11
+Requires-Dist: click>=8.1.8
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: mcp[cli]>=1.2.0

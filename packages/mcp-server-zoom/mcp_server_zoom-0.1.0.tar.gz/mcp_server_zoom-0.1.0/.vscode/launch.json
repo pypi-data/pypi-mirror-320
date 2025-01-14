@@ -1,0 +1,15 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Module",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "mcp_server_zoom",
+            "args": ["--user-id", "me", "--access-token", "eyJzdiI6IjAwMDAwOCIsImFsZyI6IkhTNTEyIiwidiI6IjIuMCIsImtpZCI6IjU4OTI5NWZmLTkxMjMtNGQ2YS1iNzlkLTBhNmU5NTIxZTcxMyJ9.eyJ2ZXIiOjEwLCJhdWlkIjoiOGEzYTNiNjg1ZTcwZjA3M2YyMDg2MDg3ZmJiMDg5NjBiMGM5YzBiNjUwNTA3ZTQ3OTFhYmQyMDAwZDViNDk2NSIsImNvZGUiOiJwbzJMWURSNmU1MUVEazl0b2haUUY2YkhiSVpMdi1tVUEiLCJpc3MiOiJ6bTpjaWQ6c2h0aUhJdVFrMnp2M0pkTTBoaTdBIiwiZ25vIjowLCJ0eXBlIjowLCJ0aWQiOjAsImF1ZCI6Imh0dHBzOi8vb2F1dGguem9vbS51cyIsInVpZCI6IktSMmpLc29TVFk2Q0ZjcmRRLXVsNHciLCJuYmYiOjE3MzY0MDI1OTgsImV4cCI6MTczNjQwNjE5OCwiaWF0IjoxNzM2NDAyNTk4LCJhaWQiOiJ2elNpYUFIeVRpdW83RzZZckFFYldRIn0.uCe20o69NU--koU5Weaq117uBCqVicC_u59cmzer7VT9YQz7dy3ffeid3WDh70KuPjzeIaZaOOgmDnnn1eK8sw", "-v"]
+        }
+    ]
+}
