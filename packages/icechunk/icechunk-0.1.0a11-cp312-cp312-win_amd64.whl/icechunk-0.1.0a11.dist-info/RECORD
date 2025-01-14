@@ -1,0 +1,17 @@
+icechunk-0.1.0a11.dist-info/METADATA,sha256=hZAWWt3y2qiZf9b1qULKNxkdGpVmmnUejsdy0MCpa5Y,11994
+icechunk-0.1.0a11.dist-info/WHEEL,sha256=2fdNHxJvS2bAcI00delQ4QrnR7Oujl4cP2y-SRm5elU,96
+icechunk/credentials.py,sha256=-daVy_I6imBVmVCF6Kd_Z6ZQM8wBc1YUMGlaRJxqQGQ,10836
+icechunk/dask.py,sha256=yNc24FuHNP8aHzLYNtvjkmyqe52yrTmSW-YXzMhhp2g,6936
+icechunk/distributed.py,sha256=7BvOhRaFyE4e3bdmFwfkarCPYKn5i8X6pRaxL34qpoI,409
+icechunk/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icechunk/repository.py,sha256=4T2kTcP7VnU2xy-u7EyYraPzKCiOwPDlXcIJcFjfXm8,7737
+icechunk/session.py,sha256=r7Vw-ZDjvn2VV70cQKqgHgBL9FKDB05-LnxxbWNX0-c,6172
+icechunk/storage.py,sha256=s_exemILsbpY4dmwQmldHiU3rpwn41dwTdZcvHgUSYA,6381
+icechunk/store.py,sha256=gCiu9-ryESnr4dJfUg7HyBOSau4pgwqdSSgEJG_P78M,12402
+icechunk/vendor/xarray.py,sha256=6Bql9GV0XumbDwAC-HX5SUD4FOFb9p3Fcxkz0uuHn8o,11952
+icechunk/vendor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icechunk/xarray.py,sha256=Q_XDy5h7yU2upxQghEuSW0CEfjxdb5PdRNPXGlDbiHE,11661
+icechunk/_icechunk_python.pyi,sha256=sTqNi3R5x3_JDJLdA54M6jN-gLV8ZHGfOoAsiSLCds8,20185
+icechunk/__init__.py,sha256=L7cUKA3sRnEkHWrAM050b7-QMh58XB4GavotPRMS8fA,3032
+icechunk/_icechunk_python.cp312-win_amd64.pyd,sha256=8GkFdvkEZpFcGyYTucNxb4qKYN2p0ni_xREjS9-BoNc,25231872
+icechunk-0.1.0a11.dist-info/RECORD,,
