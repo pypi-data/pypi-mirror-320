@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: collectivemind
+Version: 1.0.0
+Summary: This is a dummy package to protect against hijacking attacks. Do not use.
+Author-email: collective mind GmbH <info@collectivemind.de>
+License: UNLICENSED
+Project-URL: homepage, https://collectivemind.de
