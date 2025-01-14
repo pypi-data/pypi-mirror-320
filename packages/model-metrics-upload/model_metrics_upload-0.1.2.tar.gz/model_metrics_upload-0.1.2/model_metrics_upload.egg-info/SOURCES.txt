@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+model_metrics_upload/__init__.py
+model_metrics_upload/upload.py
+model_metrics_upload.egg-info/PKG-INFO
+model_metrics_upload.egg-info/SOURCES.txt
+model_metrics_upload.egg-info/dependency_links.txt
+model_metrics_upload.egg-info/requires.txt
+model_metrics_upload.egg-info/top_level.txt
