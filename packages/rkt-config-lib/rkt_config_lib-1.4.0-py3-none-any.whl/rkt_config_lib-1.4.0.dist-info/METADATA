@@ -1,0 +1,104 @@
+Metadata-Version: 2.2
+Name: rkt_config_lib
+Version: 1.4.0
+Summary: RootKit custom PyYaml Lib
+Author: RootKit
+Author-email: rootkit@rootkit-lab.org
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Natural Language :: French
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYaml
+Requires-Dist: rkt_tool_lib
+Requires-Dist: rkt_logger_lib
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# rkt_config_lib - Python library
+
+![Package Version](https://badgen.net/badge/Package%20Version/latest%20-%201.3.0/green?scale=1.2)
+
+![quality](https://sonarqube.tprc.ovh/api/project_badges/measure?project=python_rkt_lib_toolkit_AXqQ32evGCA0VuRY8SuD&metric=alert_status)
+![reliability_rating](https://sonarqube.tprc.ovh/api/project_badges/measure?project=python_rkt_lib_toolkit_AXqQ32evGCA0VuRY8SuD&metric=reliability_rating)
+![security_rating](https://sonarqube.tprc.ovh/api/project_badges/measure?project=python_rkt_lib_toolkit_AXqQ32evGCA0VuRY8SuD&metric=security_rating)
+![vulnerabilities](https://sonarqube.tprc.ovh/api/project_badges/measure?project=python_rkt_lib_toolkit_AXqQ32evGCA0VuRY8SuD&metric=vulnerabilities)
+![coverage](https://sonarqube.tprc.ovh/api/project_badges/measure?project=python_rkt_lib_toolkit_AXqQ32evGCA0VuRY8SuD&metric=coverage)
+![maintainability](https://sonarqube.tprc.ovh/api/project_badges/measure?project=python_rkt_lib_toolkit_AXqQ32evGCA0VuRY8SuD&metric=sqale_rating)
+
+This Python library is based only on built-in Python libraries and one (1) non-build-in library : [PyYaml](https://pypi.org/project/PyYAML/)
+
+##### Python Version 3.7.2
+##### PyYaml Version 5.4.1 (Released Jan 20, 2021)
+
+----
+
+## What is Python?
+Python is an interpreted high-level general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.
+
+[source](https://en.wikipedia.org/wiki/Python_(programming_language))
+## What is PyYaml?
+YAML is a data serialization format designed for human readability and interaction with scripting languages. PyYAML is a YAML parser and emitter for Python.
+
+PyYAML features a complete YAML 1.1 parser, Unicode support, pickle support, capable extension API, and sensible error messages. PyYAML supports standard YAML tags and provides Python-specific tags that allow to represent an arbitrary Python object.
+
+PyYAML is applicable for a broad range of tasks from complex configuration files to object serialization and persistence.
+
+[source](https://pypi.org/project/PyYAML/)
+## Libraries
+* Config: overlay of PyYaml library (read-only), use Tool and Logger library (rkt_tool_lib, rkt_logger_lib)
+
+## Use it
+### Install
+```bash
+ (venv) my_project> pip install rkt_config_lib [--index-url https://gitlab.tprc.ovh/api/v4/groups/python/-/packages/pypi]
+```
+### Example
+```python
+from rkt_config_lib import Config
+
+c = Config()
+
+# by default search folder named "config" in root project folder
+# for load all yaml files
+c.get_data()
+
+print(f"{c.data}")
+```
+
+### Output (as file, sdtout or both)
+```log
+03/03/2022 16:44:09 :: [Logger] :: INFO :: Create logger for 'Config'
+03/03/2022 16:44:09 :: [Logger] :: INFO :: add 'StreamHandler' in 'Config' logger
+03/03/2022 16:44:09 :: [Logger] :: INFO :: add 'FileHandler' in 'Config' logger
+03/03/2022 16:44:09 :: [Config] :: INFO :: Load 'database' file ...
+```
+```
+{'database': {'connect_id': {'dbms': 'mariadb'}}}
+  ^^^^^^^^    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |                       |
+   |                      data: file content
+ file name without extension
+```
+
+## Contributing
+
+If you find this library useful here's how you can help:
+
+- Send a merge request with your kickass new features and bug fixes
+- Help new users with [issues](https://gitlab.tprc.ovh/python/rkt_lib_toolkit/-/issues) they may encounter
+- Support the development of this library and star this repo!
