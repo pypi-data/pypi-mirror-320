@@ -1,0 +1,16 @@
+code_diff/__init__.py,sha256=jmVJROyUq1RhhSZJXW7TwE5fZPsHrkjLadjGh-MaqUo,9047
+code_diff/ast.py,sha256=6msLImQlxY3jRHR5Yujm4tA2ORqj7jsPoaoXAocL-qk,9651
+code_diff/diff_utils.py,sha256=UqN4MV0tMVbozj0px-YPUs3tVLU_PFTqVw8rY80CGho,3840
+code_diff/sstubs.py,sha256=H5FF8ZhCqKQuzWgaRXlghxA48sBhLo_FQ8rCgB6dQV8,14377
+code_diff/utils.py,sha256=o5P2E7mj4S_r1xcQ7bK8gNgqoIpc30T1I6su2ywZH54,302
+code_diff/gumtree/__init__.py,sha256=gw4G3aepcM-hz9x5cTJ1cqGyi0FHaM3nSCgh5kiCiCo,1271
+code_diff/gumtree/chawathe.py,sha256=7AllGtLvu_9-lawTL2jnFtE3Jkqh3qi_2WKiIEo79M4,9027
+code_diff/gumtree/editmap.py,sha256=Icj59CUEX9iiv-a-Eww0iaFYY1hQAZlHdyjKWD6aj2o,3311
+code_diff/gumtree/isomap.py,sha256=HNCGD2P54pnYUu0mzsmfTCOjVf0hjXwRNvfLmAMSibw,6109
+code_diff/gumtree/ops.py,sha256=3wZJrcwIGHWcjCg-diPRtsylCWQKuvnDS3OUo-WnqAo,11354
+code_diff/gumtree/utils.py,sha256=JOtBLkFAGkSp64Rx232THqu10v9S6zZPWMujsRpRkDU,3153
+code_diff-0.1.3.dist-info/LICENSE,sha256=IRBv3AgJRBOK0RbrBci1Q8w3JMJCR5nn05UaeKg5QxM,1085
+code_diff-0.1.3.dist-info/METADATA,sha256=bCoNN4vU9tQaA3zXYA5MlXKGDrOyEZzlycfg3jgLHXk,5033
+code_diff-0.1.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+code_diff-0.1.3.dist-info/top_level.txt,sha256=mDT8z4Y6mSNW-Co8v95um7vKMIyUwxUi9JJ8h0yzCl8,10
+code_diff-0.1.3.dist-info/RECORD,,
