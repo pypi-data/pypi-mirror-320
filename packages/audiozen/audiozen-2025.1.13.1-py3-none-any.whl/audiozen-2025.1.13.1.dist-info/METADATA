@@ -1,0 +1,81 @@
+Metadata-Version: 2.2
+Name: audiozen
+Version: 2025.1.13.1
+Summary: Audio ZEN is a library for audio/speech signal processing.
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: einops
+Requires-Dist: librosa
+Requires-Dist: simple_parsing
+Requires-Dist: torchinfo
+Requires-Dist: tensorboard
+Requires-Dist: huggingface-hub[hf-transfer]
+Requires-Dist: pyyaml
+Requires-Dist: numpy
+Requires-Dist: numba>=0.60
+Requires-Dist: ipykernel
+Requires-Dist: tqdm
+Requires-Dist: pandas
+Requires-Dist: tabulate
+Requires-Dist: matplotlib
+Requires-Dist: joblib
+Requires-Dist: psutil
+Requires-Dist: torch>=2.5.1
+Requires-Dist: torchvision>=0.20.1
+Requires-Dist: torchaudio>=2.5.1
+Provides-Extra: demo-crf-wp2
+Requires-Dist: plotly>=5.24.1; extra == "demo-crf-wp2"
+Requires-Dist: streamlit>=1.41.1; extra == "demo-crf-wp2"
+Provides-Extra: dev
+Requires-Dist: bump-my-version; extra == "dev"
+
+---
+license: mit
+language:
+- en
+pipeline_tag: audio-to-audio
+---
+# AudioZEN
+
+## Prerequisites
+
+```bash
+# Install uv for speed up virtual environment creation and management
+uv venv -p 3.12 venv/torch251_cu124_py312
+source venv/torch251_cu124_py312/bin/activate
+
+# Install the package
+uv pip install -e .
+
+# cd to the model directory
+uv pip install -r /path/to/requirements.txt
+```
+
+## Features
+
+- [x] Gradient accumulation
+- [x] Multi-node training
+- [x] BF16 support
+- [x] Learning rate warmup
+- [x] Learning rate decay
+  - [x] Linear decay
+
+## Prerequisites
+
+```shell
+rsync -avPxH --no-g --chmod=Dg+ /home/xhao/proj/audiozen xhao@10.21.4.91:/home/xhao/proj/audiozen --exclude="*.git" --exclude="*.egg-info" --exclude="*.egg" --exclude="*.pyc" --exclude="*.log" --exclude="*.npy"
+```
+
+- How to split the repo into read-only standalone repos? Check out [Monorepo-Management](https://github.com/haoxiangsnr/audiozen/wiki/Monorepo-Management)
+
+## Git LFS
+
+If files are too large and/or change frequently, consider using [Git LFS](https://git-lfs.github.com/).
+
+```shell
+git lfs install
+git lfs track "*..."
+git add .gitattributes
+```
+
+For ipynb files, we donnot need to track them as they are not large files and they are not changed frequently.
