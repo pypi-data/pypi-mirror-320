@@ -1,0 +1,10 @@
+pytincture/__init__.py,sha256=hHidD427IaN9XClUp_-a7XXjd0a_jzWVFRDXGFV9-50,1110
+pytincture/dataclass.py,sha256=gTp26gP8z24MgeKNKAOpB1nO_itwk7090LDZ_kSiVJs,5649
+pytincture/backend/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytincture/backend/app.py,sha256=47Bp8cSlLaF211y5v6VOoTyu2TK5AsdcE0RdVZztKGc,7668
+pytincture/frontend/index.html,sha256=ER8Ll2eiPERxwduS6u0Vttf582OKcx_1J7PfOzic9LI,2438
+pytincture/frontend/pytincture.js,sha256=2eUBoGLnmQOKSeW-WDH_17UPOVG1XPWSimLfyrPAMgc,6036
+pytincture-0.7.3.dist-info/METADATA,sha256=XjY6jCCw8Gh5yO7kKHLjNknMuBV9WKfIyrWFAOINCvc,1667
+pytincture-0.7.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pytincture-0.7.3.dist-info/top_level.txt,sha256=syOoFT8iBzU6LbjEMHp6jtmWax9I54bPYvTQAaOIz5I,11
+pytincture-0.7.3.dist-info/RECORD,,
