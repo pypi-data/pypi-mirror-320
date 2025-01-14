@@ -1,0 +1,8 @@
+README.md
+setup.py
+awsglueml/__init__.py
+awsglueml.egg-info/PKG-INFO
+awsglueml.egg-info/SOURCES.txt
+awsglueml.egg-info/dependency_links.txt
+awsglueml.egg-info/requires.txt
+awsglueml.egg-info/top_level.txt
