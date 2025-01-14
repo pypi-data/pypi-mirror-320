@@ -1,0 +1,2 @@
+[console_scripts]
+ezselect = ezselect:main
