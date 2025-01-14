@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ecoact-ef
+Version: 0.0.1
+Summary: Ecoact internal domain model
+Author: Olivier Gabriel
+Author-email: olivier.gabriel@se.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: ecodev-core (>=0.0.25,<0.1.0)
+Description-Content-Type: text/markdown
+
+# ecoact-ef
