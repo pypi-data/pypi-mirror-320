@@ -1,0 +1,4 @@
+[console_scripts]
+download_rx_data = rx_data_scripts.download_rx_data:main
+list_triggers = rx_data_scripts.list_triggers:main
+make_tree_structure = rx_data_scripts.make_tree_structure:main
