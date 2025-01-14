@@ -1,0 +1,2 @@
+[console_scripts]
+codecapsule = codecapsule.__main__:main
