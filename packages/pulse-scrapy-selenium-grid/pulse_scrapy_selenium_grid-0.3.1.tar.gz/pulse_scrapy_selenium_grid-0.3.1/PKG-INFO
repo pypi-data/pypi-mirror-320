@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: pulse-scrapy-selenium-grid
+Version: 0.3.1
+Summary: Scrapy + Selenium Grid integration.
+Author-email: Vlad Tiazhov <vlad.tiazhov@pulseintelligence.com>
+Project-URL: Repository, https://github.com/Pulse-Intelligence-Partners/pulse-scrapy-selenium-grid/
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
