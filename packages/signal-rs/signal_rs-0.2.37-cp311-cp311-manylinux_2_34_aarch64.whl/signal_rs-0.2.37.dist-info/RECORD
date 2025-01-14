@@ -1,0 +1,5 @@
+signal_rs-0.2.37.dist-info/METADATA,sha256=nRyFqsNIg0oDgI8BrMKkvJ7JFBTs4MuAVHz4-t6Gf8A,719
+signal_rs-0.2.37.dist-info/WHEEL,sha256=kXjrmNtplNZnedNGI6_EEK6zMvpkoHMMjUJ3RrlSsKk,109
+signal_rs/__init__.py,sha256=DizyTUYduxTMtgR9qepaLDo2GHss7Nb1umCX82g8kQI,11294
+signal_rs/signal_rs.cpython-311-aarch64-linux-gnu.so,sha256=o4Q389unfZiUbxaIPzCh2TdQyB01NJ_v_Jvekdn6AVU,442040
+signal_rs-0.2.37.dist-info/RECORD,,
