@@ -1,0 +1,36 @@
+Metadata-Version: 2.2
+Name: bbstrading
+Version: 0.1.0
+Summary: Trading strategies development, backtesting and live Execution
+Author: Bertin Balouki SIMYELI
+Author-email: <bertin@bbstrader.com>
+Maintainer: Bertin Balouki SIMYELI
+License: Proprietary, All Rights Reserved
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+Requires-Dist: bbstrader
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: maintainer
+Dynamic: requires-dist
+Dynamic: summary
+
+# BBSTRADING
+
+`bbstrading` is a Python package that provides a wide range of trading strategies for backtesting and live trading. It is built on top of the `bbstrader` package, which provides a simple and flexible API for interacting with financial data and executing trades.
+
+## Installation
+bbstrading depends on the bbstrader wihich requires ta-lib to be installed.
+There is a bit of work to do to install ta-lib on your system. You can follow the instructions [here](https://github.com/TA-Lib/ta-lib-python#windows) to install ta-lib on your system.
+
+You can see this [video]() to help you install and use bbstrading
+
+Once you have installed ta-lib, you can install bbstrading using pip:
+
+```bash
+pip install /path/to/the_wheel_file_you_received_by_email.whl
+```
+You can then Run the Strategies using the scripts you received by email.
