@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<h1>Namespace List</h1>
+<div>
+    <a href="{% url 'django_namespaces:create' %}">Create a new namespace</a>
+</div>
+{% include "django_namespaces/snippets/namespace_list.html" with object_list=object_list %}
+{% endblock content %}
