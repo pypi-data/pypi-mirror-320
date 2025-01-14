@@ -1,0 +1,30 @@
+{% extends 'generic/object_edit.html' %}
+{% load static %}
+{% load form_helpers %}
+{% load helpers %}
+{% load i18n %}
+
+{% block header %}
+<script type="text/javascript">
+  function redirectToLink() {
+      var sys_id = document.getElementById('id_ritm').value;
+      if (sys_id) {
+          var url = 'https://kbcacc.service-now.com/sc_task.do?sys_id=' + sys_id;
+          // window.location.href = url;
+          window.open(url, '_blank');
+      } else {
+          alert('Please select a value for RITM.');
+      }
+  }
+</script>
+{{ block.super }}
+{% endblock %}
+
+{% block form %}
+  <!-- {% include 'htmx/form.html' %} -->
+  {% render_field form.ritm %}
+  <div class="d-flex justify-content-end">
+    <button type="button" class="btn btn-primary" onclick="redirectToLink()">View in SNOW</button>
+  </div>
+  {{ block.super }}
+{% endblock %}
