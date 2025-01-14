@@ -1,0 +1,12 @@
+README.md
+setup.py
+du_whisper.egg-info/PKG-INFO
+du_whisper.egg-info/SOURCES.txt
+du_whisper.egg-info/dependency_links.txt
+du_whisper.egg-info/requires.txt
+du_whisper.egg-info/top_level.txt
+whisper/__init__.py
+whisper/main.py
+whisper/openai_audio.py
+whisper/schemas.py
+whisper/settings.py

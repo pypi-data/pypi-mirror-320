@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: du_whisper
+Version: 0.0.2
+Summary: async whisper
+Author: DYZ
+Author-email: 
+Maintainer: DYZ
+Maintainer-email: 
+License: MIT
+Platform: all
+Description-Content-Type: text/markdown
+Requires-Dist: python-socketio==5.12.1
+Requires-Dist: pydantic==2.10.5
+Requires-Dist: uvicorn==0.34.0
+Requires-Dist: openai==1.59.6
+Requires-Dist: Soundfile==0.13.0
+Requires-Dist: loguru
+
+# du_whisper
+
+> 一个基于 socketio 的openai 语言转录服务
+
+# 安装包
+
+```bash
+pip install du_whisper
+```
+
+
+
