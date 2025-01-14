@@ -1,0 +1,61 @@
+Metadata-Version: 2.2
+Name: django-hookflow
+Version: 0.0.1
+Summary: Trigger GitHub Actions workflows from Django.
+Author-email: Justin Mitchel <justin@codingforentrepreneurs.com>
+Project-URL: Changelog, https://github.com/jmitchel3/django-hookflow
+Project-URL: Documentation, https://github.com/jmitchel3/django-hookflow
+Project-URL: Funding, https://github.com/jmitchel3/django-hookflow
+Project-URL: Repository, https://github.com/jmitchel3/django-hookflow
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 5.0
+Classifier: Framework :: Django :: 5.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: django>=4.2
+Requires-Dist: requests>=2.30
+
+# Django Hookflow 
+Trigger GitHub Actions workflows from Django.
+
+## Installation
+
+```bash
+pip install django-hookflow
+```
+
+Depends on:
+
+- [Python 3.10+](https://www.python.org/)
+- [Django 5+](https://docs.djangoproject.com/)
+
+## Usage
+
+```python
+from django_hookflow import trigger_github_workflow
+
+@trigger_github_workflow(repo="user/repo", workflow_file="workflow.yml")
+def math_add_task(a, b, save_to_file=False):
+    logger.info(f"Adding {a} and {b}")
+    if save_to_file:
+        with open("math-add-result.txt", "w") as f:
+            f.write(f"{a} + {b} = {a + b}")
+    return a + b
+```
+
+```python
+from django_hookflow import dispatch_workflow
+
+dispatch_workflow(repo="user/repo", workflow_file="workflow.yml")
+```
