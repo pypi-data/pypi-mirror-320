@@ -1,0 +1,141 @@
+Metadata-Version: 2.2
+Name: slurm-viewer
+Version: 1.0.3
+Summary: View a SLURM cluster and inspect nodes and jobs.
+Author-email: Patrick de Koning <pjhdekoning@lumc.nl>, Prerak Mody <prerakmody@gmail.com>
+Project-URL: Homepage, https://lkeb.nl
+Project-URL: Repository, https://gitlab.com/lkeb/slurm_viewer
+Project-URL: Issues, https://gitlab.com/lkeb/slurm_viewer/issues
+Project-URL: Changelog, https://gitlab.com/lkeb/slurm_viewer/blob/master/CHANGELOG.md
+Keywords: SLURM,TUI
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Environment :: Console
+Classifier: Framework :: Pydantic
+Classifier: Topic :: Scientific/Engineering
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic>=2.0
+Requires-Dist: python-dateutil
+Requires-Dist: textual>=0.73.0
+Requires-Dist: textual-plotext
+Requires-Dist: tomlkit
+Requires-Dist: asyncssh
+Requires-Dist: importlib-metadata
+Requires-Dist: eval_type_backport; python_version < "3.10"
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pytest-asyncio; extra == "dev"
+Requires-Dist: pytest-textual-snapshot; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
+Requires-Dist: pylint-pydantic; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: textual-dev; extra == "dev"
+Requires-Dist: types-python-dateutil; extra == "dev"
+Requires-Dist: setuptools-git-versioning; extra == "dev"
+
+# Slurm Viewer
+![Python Version from PEP 621 TOML](https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fgitlab.com%2Flkeb%2Fslurm_viewer%2F-%2Fraw%2Fmain%2Fpyproject.toml)
+![Gitlab Pipeline Status](https://img.shields.io/gitlab/pipeline-status/lkeb%2Fslurm_viewer)
+![PyPI - License](https://img.shields.io/pypi/l/slurm-viewer)
+![PyPI - Status](https://img.shields.io/pypi/status/slurm-viewer)
+![PyPI - Version](https://img.shields.io/pypi/v/slurm-viewer)
+![PyPI - Format](https://img.shields.io/pypi/format/slurm-viewer)
+![Pepy Total Downloads](https://img.shields.io/pepy/dt/slurm-viewer)
+
+
+## Introduction
+
+Using a single terminal command, `slurm-viewer` allows you to view the status of your SLURM cluster (i.e., nodes and jobs). This command combines information from SLURM commands like `sinfo`, `scontrol`, `squeue` and `sacct` in a tabular and customizable view. 
+
+This command line application can be run on the cluster itself or any computer that can ssh into the cluster.
+
+## Features
+- **Single command**: The `slurm-viewer` command allows you to view the status of nodes and jobs in your SLURM cluster.
+  - **Multiple Clusters**: View multiple clusters in a single interface.
+  - **SSH Tunneling**: Connect to the cluster using a jumphost/gateway.
+- **Intuitive Interface**: `slurm-viewer` presents all node/job information in a tabular format. 
+- **Customizable Interface**: Filter and sort nodes and jobs based on various criteria like partitions and GPU availability
+- **Resource Utilization Plots**: View the GPU memory/utilization used over the last 4 weeks.
+
+
+![slurm-viewer nodes](https://gitlab.com/lkeb/slurm_viewer/-/raw/main/assets/3__slurm-viewer__nodestatus.png "Nodes")
+
+![Slurmviewer Queue](https://gitlab.com/lkeb/slurm_viewer/-/raw/main/assets/2__slurm-viewer__Jobs.png "Queue")
+
+![Slurmviewer SPU](https://gitlab.com/lkeb/slurm_viewer/-/raw/main/assets/slurmviewer_gpu.svg "GPU USage")
+
+## Installation
+
+```bash
+pip install slurm-viewer
+```
+
+## Usage
+
+ - Run `slurm-viewer` to start the UI. 
+ - Upon the first run, a default settings file will be created in `~/.config/slurm-viewer/settings.toml`. Edit this file to reflect your setup.
+
+## Settings
+
+The `settings.toml` config file allows for definining which clusters you want to connect to and also user preferences on which columns to display.
+The primary tags are `ui` and `clusters`
+
+### UI
+In the `ui` section you can define which columns to display for nodes (`node_columns`), queue (`queue_columns`) and priority (`priority_columns`) views. The columns are defined as a list of strings.
+
+### Clusters
+In the `clusters` section you can define the clusters you want to connect to. Each cluster has the following tags:
+- `name`: A user-defined name of the cluster.
+- `partitions`: A list of partitions you are interested to view in the cluster.
+- `tabs`: A list of tabs to display in the UI. The options are `nodes`, `jobs`, `gpu`, 
+- `node_name_ignore_prefix`: A list of prefixes to ignore in the node names.
+   - For e.g. if the node names are `node-1`, `node-2`, `node-3`, you can ignore the `node-` prefix by setting `node_name_ignore_prefix = ["node"]`
+- `servers`: A list of servers to connect to the cluster itself. 
+   - If you have a jumphost/gateway, use the `~/.ssh/config` to setup the connections and use the `Host` name as the server.
+`status`
+
+```toml
+[ui]
+node_columns = ["node_name", "state", "gpu_tot", "gpu_alloc", "gpu_avail", "gpu_type", "gpu_mem", "cpu_tot", "cpu_alloc", "cpu_avail", "mem_tot", "mem_alloc", "mem_avail", "cpu_gpu", "mem_gpu", "cpuload", "partitions", "active_features"]
+queue_columns = ["user", "job_id", "reason", "exec_host", "start_delay", "run_time", "time_limit", "command"]
+priority_columns = ["user_name", "job_id", "job_priority_n", "age_n", "fair_share_n", "partition_name"]
+
+[[clusters]]
+name = "cluster_1"
+partitions = ["partition-cpu", "partition-gpu"]
+tabs=["nodes", "jobs", "gpu", "status"]
+node_name_ignore_prefix = [""]
+servers = ["cluster_1_logon_node_1", "cluster_1_logon_node_2"]
+
+
+[[clusters]]
+name = "cluster_2"
+partitions = ["cpu-short", "cpu-medium", "cpu-long", "gpu-short", "gpu-medium", "gpu-long"]
+node_name_ignore_prefix = ["node"]
+server = "gateway_1"
+```
+
+If you need to connect using a jumphost/gateway use the `~/.ssh/config` to setup the connections and use the `Host` name as
+the server.
+
+Example of a ssh config:
+
+```
+Host gateway_1
+  User my_user_name
+  HostName gateway.somewhere
+  
+Host cluster_1_logon_node_1
+  User my_user_name
+  HostName logonnode.somewhere
+  ProxyCommand ssh -W %h:%p gateway_1
+```

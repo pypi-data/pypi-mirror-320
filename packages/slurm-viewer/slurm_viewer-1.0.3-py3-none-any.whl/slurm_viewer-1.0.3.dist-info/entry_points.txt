@@ -1,0 +1,4 @@
+[console_scripts]
+slurm-viewer = slurm_viewer.__main__:main
+slurm-viewer-init = slurm_viewer.data.config:create_default_config
+sviewer = slurm_viewer.__main__:main

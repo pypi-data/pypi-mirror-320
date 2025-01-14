@@ -1,0 +1,136 @@
+Horizontal {
+    height: auto;
+}
+
+DetailScreen {
+    align: center middle;
+    width: auto;
+    height: auto;
+    & > DataTable {
+        width: auto;
+        min-width: 50%;
+        height: 100%;
+        background: $panel;
+        border: $accent-lighten-2;
+    }
+}
+
+HelpScreen {
+    align: center middle;
+    width: auto;
+    height: auto;
+    & > VerticalScroll {
+        width: 60%;
+        height: auto;
+        background: $secondary-background;
+    }
+}
+
+HelpScreen VerticalScroll TabbedContent {
+    background: $background-lighten-2;
+    height: auto;
+}
+
+Rule {
+     color: $accent-lighten-2;
+}
+
+SelectColumnsScreen {
+    align: center middle;
+    width: auto;
+    height: auto;
+}
+
+SelectColumnsScreen VerticalScroll {
+    max-height: 80%;
+    height: auto;
+    width: 50;
+}
+
+SelectColumnsScreen SelectionOrderList {
+    align: center middle;
+    height: 100%;
+    width: 100%;
+}
+
+SelectColumnsScreen Horizontal {
+    height: auto;
+    width: auto;
+}
+
+SelectColumnsScreen Button {
+    width: 25;
+    height: auto;
+}
+
+SelectPartitionScreen {
+    align: center middle;
+    width: auto;
+    height: auto;
+}
+
+SelectPartitionScreen VerticalScroll {
+    max-height: 80%;
+    height: auto;
+    width: 50;
+}
+
+SelectPartitionScreen SelectionOrderList {
+    align: center middle;
+    height: 100%;
+    width: 100%;
+}
+
+SelectPartitionScreen Horizontal {
+    width: auto;
+    height: auto;
+}
+
+SelectPartitionScreen Horizontal Button {
+    width: 25;
+    height: auto;
+}
+
+DataTable {
+    border: $accent-lighten-2;
+}
+
+PlotextPlot {
+    border: $accent-lighten-2;
+}
+
+NodesWidget Label {
+    width: auto;
+    padding: 1 1;
+    text-align: right;
+}
+
+QueueWidget Label {
+    width: auto;
+    padding: 1 1;
+    text-align: right;
+}
+
+#horizontal_spacer {
+    width: 1fr;
+    padding: 1 1;
+    text-align: right;
+}
+
+#nodes_show_all {
+    width: auto;
+    padding: 1 1;
+}
+
+#queue_label {
+    width: 1fr;
+    padding: 1 1;
+    text-align: right;
+}
+
+#priority_label {
+    width: 1fr;
+    padding: 1 1;
+    text-align: right;
+}
+
