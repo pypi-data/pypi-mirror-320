@@ -1,0 +1,8 @@
+README.md
+setup.py
+pytc111/__init__.py
+pytc111/tc111.py
+pytc111.egg-info/PKG-INFO
+pytc111.egg-info/SOURCES.txt
+pytc111.egg-info/dependency_links.txt
+pytc111.egg-info/top_level.txt
