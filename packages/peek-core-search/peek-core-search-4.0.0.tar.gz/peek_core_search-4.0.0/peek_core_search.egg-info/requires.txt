@@ -1,0 +1,2 @@
+peek-plugin-base==0.0.*,>=0.0.0
+peek_abstract_chunked_index==0.0.*,>=0.0.0
