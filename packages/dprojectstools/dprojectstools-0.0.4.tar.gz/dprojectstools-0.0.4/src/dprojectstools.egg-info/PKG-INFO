@@ -1,0 +1,16 @@
+Metadata-Version: 2.2
+Name: dprojectstools
+Version: 0.0.4
+Summary: A set of development tools
+Author-email: Marc Delos <marcdp@dprojects.com>
+Project-URL: Homepage, https://github.com/marcdp/dprojectstools
+Project-URL: Issues, https://github.com/marcdp/dprojectstools/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dprojectstools
+A set of development tools
