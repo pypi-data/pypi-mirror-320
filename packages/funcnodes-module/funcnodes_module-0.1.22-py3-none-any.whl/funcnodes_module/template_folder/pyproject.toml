@@ -1,0 +1,37 @@
+[project]
+name = "{{ package-name }}"
+version = "0.1.0"
+description = ""
+authors = []
+readme = "README.md"
+license = "AGPL-3.0"
+classifiers = [
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Programming Language :: Python :: 3",
+    ]
+requires-python = ">=3.11"
+dependencies = [
+    "funcnodes >=0.5.9",
+    ]
+
+[project.urls]
+homepage  = ""
+source  = ""
+tracker  = ""
+documentation = ""
+download = "https://pypi.org/project/{{ package-name }}/#files"
+"release notes" = ""
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pre-commit = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[project.entry-points."funcnodes.module"]
+module = "{{ module_name }}"
+shelf = "{{ module_name }}:NODE_SHELF"
