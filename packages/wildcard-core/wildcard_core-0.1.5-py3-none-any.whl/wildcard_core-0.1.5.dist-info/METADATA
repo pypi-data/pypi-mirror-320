@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: wildcard-core
+Version: 0.1.5
+Summary: Core functionality for the Wildcard ecosystem.
+License: Elastic-2.0
+Author: Kaushik
+Author-email: kaushik@wild-card.ai
+Requires-Python: >=3.9
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: PyYAML (>=6.0.2)
+Requires-Dist: aiohttp (>=3.8.6)
+Requires-Dist: asyncio (>=3.4.3)
+Requires-Dist: azure-storage-blob (>=12.19.0)
+Requires-Dist: docstring_parser (>=0.16)
+Requires-Dist: inflection (>=0.5.1)
+Requires-Dist: parameterized (>=0.9.0)
+Requires-Dist: pydantic (>=2.7.4,<3.0.0)
+Requires-Dist: requests (>=2.32.3)
+Requires-Dist: tenacity (>=8.1.0,<10.0.0)
+Requires-Dist: wildcard-integrations[airtable,gmail] (>=0.1.5)
+Description-Content-Type: text/markdown
+
+# Wilcard Core Package
+
+Build new version of package:
+
+1. Modify `pyproject.toml` with new version number
+2. Generate poetry lock file
+```
+poetry lock
+```
+3. Build and publish package to test PyPI
+```
+poetry publish --build -r test-pypi
+```
+
+Troubleshooting:
+
+- *RuntimeError: Repository test.pypi is not defined*
+
+    - Add repository to poetry config
+    ```
+    poetry config repositories.test-pypi https://test.pypi.org/legacy/
+    ```
+    - Create new token at https://test.pypi.org/manage/account/token/
+    - Add token to poetry config
+    ```
+    poetry config pypi-token.test-pypi <your-token>
+    ```
+
+- *poetry.publishing.uploader.UploadError: HTTP Error 400: File already exists*
+
+    - Check you've updated the version number in `pyproject.toml`
+
+    - Try publishing again
+    ```
+    poetry publish --build -r test-pypi
+    ```
+    
+    - If the error persists, clear the existing package files and try again.
+    ```
+    rm -rf dist/*
+    ```
+
