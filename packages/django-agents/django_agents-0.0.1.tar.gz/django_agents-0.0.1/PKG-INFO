@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: django-agents
+Version: 0.0.1
+Summary: A Django app to manage agents
+Project-URL: Homepage, https://github.com/jmitchel3/django-agents
+Project-URL: Repository, https://github.com/jmitchel3/django-agents
+Author-email: Justin Mitchel <justin@codingforentrepreneurs.com>
+License: MIT
+Keywords: Django
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 5.0
+Classifier: Framework :: Django :: 5.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.10
+Requires-Dist: django>=4.2
+Description-Content-Type: text/markdown
+
+# Django Agents
+
+An app to manage agents in Django. Coming soon.
