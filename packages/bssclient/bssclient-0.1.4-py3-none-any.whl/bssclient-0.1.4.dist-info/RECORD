@@ -1,0 +1,15 @@
+_bssclient_version.py,sha256=tVHHGZCNoOKftKv7v8sDg-78N6kJHq-L6dpD2WYhuH8,18
+bssclient/__init__.py,sha256=SyJxA4ii-WyVMAjIFyAruiMtJSMwIJRLHIF-TAxQYos,288
+bssclient/py.typed,sha256=ZvYa-_QF7Xg7F6Dow8m1zHvSP6kNHuhh3BEBVxjAdUQ,168
+bssclient/client/__init__.py,sha256=xkpkr36rYMvgtAPs8B57cJlQWkxNGq-H0EPH9eUcRUY,61
+bssclient/client/bssclient.py,sha256=JTwUcnNQa4nvO66rfOHqE-WyELA4dulrrfVyUpIoVgI,10021
+bssclient/client/config.py,sha256=vIOObxcl8SYGvPT_exPikPYLMSarXLZvZn8qtM2ChQM,3574
+bssclient/client/oauth.py,sha256=-SF6FeaSkibBnUuRP7GX1X4KyrElK_Tvg0A3HD0cDI0,3787
+bssclient/models/__init__.py,sha256=S-ql3a5zhSEauL_q4XOoL_rITTM4V35_-bEga-YjiFY,96
+bssclient/models/aufgabe.py,sha256=bjxff0r4exO3rH1fccbgGnWetp3w5IEd7iBkxBE4AqU,1192
+bssclient/models/ermittlungsauftrag.py,sha256=Vl5p3_hUoUVQISymSTFCT-G-cOnS5ZCH56JekBRj7MI,2369
+bssclient/models/prozess.py,sha256=63pLgNdLXi-IBk2EDqjM0FdnwT6bclL-6k6RsfuuDrw,1399
+bssclient-0.1.4.dist-info/METADATA,sha256=QfkoeOgviZFZuWd359DhUSE2tKwnpsn4JKJQ4OsSYKk,4244
+bssclient-0.1.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+bssclient-0.1.4.dist-info/licenses/LICENSE,sha256=04B920e2sAO59yFAclMRa8PIsOMJYVRH9L2vWBFyoFc,1095
+bssclient-0.1.4.dist-info/RECORD,,
