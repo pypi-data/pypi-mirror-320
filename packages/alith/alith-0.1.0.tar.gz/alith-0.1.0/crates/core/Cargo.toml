@@ -1,0 +1,18 @@
+[package]
+name = "alith-core"
+version = { workspace = true }
+edition = { workspace = true }
+
+[dependencies]
+llm_client.workspace = true
+anyhow.workspace = true
+async-trait.workspace = true
+schemars.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+uuid = { version = "1.11.1", features = ["serde", "v4"] }
+regex = "1.10"
+futures = { version = "0.3", features = ["alloc", "std", "async-await"] }
+hnsw_rs = "0.3.1"
