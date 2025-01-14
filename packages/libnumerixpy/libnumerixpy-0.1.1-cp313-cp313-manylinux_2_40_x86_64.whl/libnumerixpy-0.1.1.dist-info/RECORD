@@ -1,0 +1,9 @@
+libnumerixpy/__init__.py,sha256=9AIS6kSrg_fsXijyA2cYsm2A2rX-P1Q4ObXRxDgbn-s,74
+libnumerixpy/__main__.py,sha256=bBBO2XtO0oLrUIojkCouAZ3XuZmsBOCRtqkmjH2kSvA,305
+libnumerixpy/math/__init__.py,sha256=IwaM66Sqs2szbGN7HUOSlDFyYykphFeg2gEoS4Aox90,160
+libnumerixpy/base.cpython-313-x86_64-linux-gnu.so,sha256=NKRePsUsb7b7msLd_Wvp0dn6LyRVGNa518DxIIZbJiQ,24976
+libnumerixpy/math/basemath.cpython-313-x86_64-linux-gnu.so,sha256=7sZ9kB6oacoGXB0gjh4wLTiQiWnz_l6HLMdhkqO7wAU,29632
+libnumerixpy-0.1.1.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+libnumerixpy-0.1.1.dist-info/METADATA,sha256=JDNrVOPoL1britWKzDoeuWau0LfkkNo7C7aZ_ZfniFs,4011
+libnumerixpy-0.1.1.dist-info/WHEEL,sha256=kmZsZ14D1F2rjTEYMXbyNReFqbkXEG9Y2rg6YLh62ao,110
+libnumerixpy-0.1.1.dist-info/RECORD,,
