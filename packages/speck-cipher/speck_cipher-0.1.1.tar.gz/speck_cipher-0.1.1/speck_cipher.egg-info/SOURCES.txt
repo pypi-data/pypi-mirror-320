@@ -1,0 +1,7 @@
+setup.py
+cipher_speck/__init__.py
+cipher_speck/speck.py
+speck_cipher.egg-info/PKG-INFO
+speck_cipher.egg-info/SOURCES.txt
+speck_cipher.egg-info/dependency_links.txt
+speck_cipher.egg-info/top_level.txt
