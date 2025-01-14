@@ -1,0 +1,16 @@
+duppla_slack/__init__.py,sha256=jqZT14LtvdvUwJ6IUU_hs1UttFb2l2pValrJvDXRuH0,657
+duppla_slack/constants/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+duppla_slack/constants/channels.py,sha256=YUOz6TAEN4tV24KaQ6ukvxorpphliN223vbhBuTjVu8,145
+duppla_slack/constants/templates.py,sha256=S1JVgNYXAT2LPvhCnodfUNodQfaafyDvobIDeHeNDUA,494
+duppla_slack/models/__init__.py,sha256=-UcKzcgeTvvhtHJY6F5YrZdpDuPr7n3XMBCxEQPwARM,788
+duppla_slack/models/duppla.py,sha256=bDr1DzXZG74NgNPrgkXC6o5gEN8vHg7yHkYUt7ufD6Q,369
+duppla_slack/models/message.py,sha256=JXYW5Ef9bVHjS1FgeqTzA6SRPhVjD8VnMcUEoMt7e6g,5806
+duppla_slack/models/response.py,sha256=uZXsrXsSvDfQ9ixtL2uS1LYUkAEPfQzEtXo0afEBJpo,1747
+duppla_slack/service/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+duppla_slack/service/public.py,sha256=HABHuYCeHjV5dO6I0OGGgl2L3HH952iEcDMbm9xv-SE,26981
+duppla_slack/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+duppla_slack-2025.1.13.18.dist-info/LICENSE,sha256=7AJ-lkyPu7Z5RVsZRQvN2PAkRzgk-bAuIQi7EGkbgec,859
+duppla_slack-2025.1.13.18.dist-info/METADATA,sha256=sqEEOvFj_v1SRbALwqJBMoQQZImLGv88Q1SMq0Vs388,770
+duppla_slack-2025.1.13.18.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+duppla_slack-2025.1.13.18.dist-info/top_level.txt,sha256=uNssNNLxhE28CYhvfasxuXSMbS3TRhncmbS2GMUU9j8,13
+duppla_slack-2025.1.13.18.dist-info/RECORD,,
