@@ -1,0 +1,10 @@
+bespokelang/__init__.py,sha256=zsHmxrBw-_a8uCRFiWUjkCy08U67kNIA1_JnCdoH8mE,75
+bespokelang/__main__.py,sha256=6wvfAajb0Qwna05mjjnxPnl2rLLHaaBqdwU38vK1eUc,44
+bespokelang/cli.py,sha256=zeavj30uRVdlDuKYRZkOHgLXaDVF6zQUm-SR4RnO5No,1365
+bespokelang/exceptions.py,sha256=obOw3-lQeEAPL2m4eunM718UMI6oxxAYhUVL3lDhn-U,2573
+bespokelang/interpreter.py,sha256=_P1qzecWLvz3YL7GgkvUs2DrKB8tPph6pT0eD0fgq8U,28527
+bespokelang-1.0.0.dist-info/METADATA,sha256=Bc-g1noBDUZxA723dTNKWCics67VAFySVrUFyB_9ke0,832
+bespokelang-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+bespokelang-1.0.0.dist-info/entry_points.txt,sha256=k2FJAqCVpQNV40YCqCHcRHqRR0g6IPTaCW9lQ1o90-o,48
+bespokelang-1.0.0.dist-info/top_level.txt,sha256=-Ve8SSgwa913EybGXffeCYWdM-fgnlcU8MgMrT70sUw,12
+bespokelang-1.0.0.dist-info/RECORD,,
