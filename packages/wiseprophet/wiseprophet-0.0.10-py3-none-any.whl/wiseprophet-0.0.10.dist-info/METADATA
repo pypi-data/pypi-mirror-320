@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: wiseprophet
+Version: 0.0.10
+Summary: WiseProphet Platform package creation written by wiseitech
+Home-page: https://wise.co.kr
+Author: wiseitech
+Author-email: jskwon@wise.co.kr
+Keywords: automl,ai,wiseitech,mlops
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Requires-Dist: joblib
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: h5py
+Requires-Dist: dask
+Requires-Dist: hdfs
+Requires-Dist: requests
