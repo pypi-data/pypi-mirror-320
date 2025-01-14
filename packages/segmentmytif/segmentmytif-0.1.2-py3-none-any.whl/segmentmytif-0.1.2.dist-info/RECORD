@@ -1,0 +1,17 @@
+segmentmytif/__init__.py,sha256=NNywPj_C8liQdtKqV0TZ5Cb5Dx7cqS9eiJqdXE7zies,216
+segmentmytif/features.py,sha256=urRdrH7XoaWAoUCow5F9uYgW-WWpwFl5YFTVMhJahDI,3946
+segmentmytif/logging_config.py,sha256=Z8YUjofXOhQBvdMMZQmOMkjlLiV_MtxfFHxR4vuuaHM,1651
+segmentmytif/main.py,sha256=x9Oqdy6RtdB2ErgGKAjlJneJ3W22pD_Mz_Wq3PHrw3A,6836
+segmentmytif/utils/datasets.py,sha256=pxmTaquDvdtv8kchrcfjAPvklqgaWZ7jMtbuLMYqmGs,2081
+segmentmytif/utils/generate_labels.py,sha256=rF6D7-sPiUCaXMUnA2wg0a-NhmmB8Ge5WiGpbReFiiY,643
+segmentmytif/utils/io.py,sha256=0m27EA9DgO1cfag2WnCOrby2TmfeLigAUg3-4-7uETQ,701
+segmentmytif/utils/models.py,sha256=xFDkJHsU-eCjMqfSpkfK_Gu6JfnPttB62NtcMJkei2Y,2658
+segmentmytif/utils/monochromize.py,sha256=MEnDFIBOzHMD3oQSK3F80SBRifLYz1XcP4V8BZAHgIs,1688
+segmentmytif/utils/performance_metrics.py,sha256=Arv_4_-OwyWWVetSa_bGOKDOO94hd2WqeVDIeNErbd4,407
+segmentmytif/utils/train_model.py,sha256=o81LIOWDJdT1JDEdYiX5ZOuyN1I_J8_yzGM0mSonZhQ,6906
+segmentmytif-0.1.2.dist-info/LICENSE,sha256=hwd_aL0GO6MDi3OQx3bQbfn0cLXjLN6aPR5dIwFB9rs,11347
+segmentmytif-0.1.2.dist-info/METADATA,sha256=z2Y-Yct79DORu4LctQT8fI-wBx1pIZFmsnoMg0mgVgU,17493
+segmentmytif-0.1.2.dist-info/NOTICE,sha256=4mvSygiOY-kja649YkxLJCkB-hsADggZa3esd3DtPFM,77
+segmentmytif-0.1.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+segmentmytif-0.1.2.dist-info/top_level.txt,sha256=g1eucSN0ppn6icpowS8C1ICGct1-YlJ4VrIU-NU_vqc,13
+segmentmytif-0.1.2.dist-info/RECORD,,
