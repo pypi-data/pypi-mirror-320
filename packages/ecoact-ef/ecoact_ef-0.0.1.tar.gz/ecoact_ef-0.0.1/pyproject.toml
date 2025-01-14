@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "ecoact-ef"
+version = "0.0.1"
+description = "Ecoact internal domain model"
+authors = ["Olivier Gabriel <olivier.gabriel@se.com>",
+	  "Charles Cuvilliers <charles.cuvillier@se.com>",
+	  "Thomas Epelbaum <thomas.epelbaum@se.com>",
+	  "Amaury Salles <amaury.salles@se.com>",
+	  "Yoann Diep <yoann.diep@se.com>",
+	  "Dorian Kodelja <dorian.kodelja@com.com>"
+]
+readme = "README.md"
+[tool.poetry.dependencies]
+python = "^3.11"
+ecodev-core = "~0.0.25"
+
+[[tool.poetry.source]]
+name = "ecoact_ef"
+url = "https://ecopypi.lcabox.com/"
+priority = "supplemental"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
