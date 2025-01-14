@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spatialrna"
+version = "0.1.2"
+description="A package for spatial RNA graph data processing and analysis."
+readme = {file = "README.md", content-type = "text/markdown"}
+authors = [
+    {name = "Ruqian Lyu", email = "rlyu@svi.edu.au"},
+]
+license = {text = "MIT"}
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+        "torch",
+        "torch_geometric",
+        "pandas",
+        "numpy"
+]
+requires-python = ">=3.10"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = ["data", "tests"]
+include = ["spatialrna"]
+
+
+# BETA-feature "Automatic discovery"
+# Leaving out any information about the package structure to enable automatic discovery. src-layout works out of the box
+# https://setuptools.pypa.io/en/latest/userguide/package_discovery.html#automatic-discovery
+
+[project.urls]
+repository = "https://gitlab.svi.edu.au/biocellgen-private/spatialrna"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "twine>=4.0.2",
+    "build",
+]

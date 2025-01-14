@@ -1,0 +1,9 @@
+torch
+torch_geometric
+pandas
+numpy
+
+[dev]
+pytest>=6.0
+twine>=4.0.2
+build
