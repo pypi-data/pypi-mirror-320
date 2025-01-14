@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: corazaytubos-sim
+Version: 0.0.1
+Summary: Librería para realizar simulaciones de un intercambiador de calor de coraza y tubos.
+Home-page: https://www.linkedin.com/in/isaac-chavez-analisisdedatatos-bigdata-automatizacion/
+Author: Isaac Josué Chávez Martínez & Heber Mercado Martínez
+Author-email: isaacj.ch.m@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pandas==1.5.2
+Requires-Dist: thermo==0.3.0
+
+UNKNOWN
+
+
