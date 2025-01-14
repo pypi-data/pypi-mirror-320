@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: pytest-evals
+Version: 0.1.0
+Summary: A pytest plugin for running and analyzing LLM evaluation tests
+Author-email: Almog Baku <almog.baku@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.9
+Requires-Dist: cloudpickle>=2.0.0
+Requires-Dist: pytest-harvest>=1.0.0
+Requires-Dist: pytest>=7.0.0
