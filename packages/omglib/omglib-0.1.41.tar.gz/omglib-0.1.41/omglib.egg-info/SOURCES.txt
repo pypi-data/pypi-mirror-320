@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+omglib/__init__.py
+omglib.egg-info/PKG-INFO
+omglib.egg-info/SOURCES.txt
+omglib.egg-info/dependency_links.txt
+omglib.egg-info/requires.txt
+omglib.egg-info/top_level.txt
