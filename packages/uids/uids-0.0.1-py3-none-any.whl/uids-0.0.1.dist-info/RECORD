@@ -1,0 +1,13 @@
+uids/__init__.py,sha256=3M32thsg0u_ibTN0LBq6-0S-OsqVshoDX0UbEyGEBIs,53
+uids/ULID/__init__.py,sha256=kBbP1KkNBNJd7rzyrotd8L_5vbtCR_rsRV5NH4UroX4,9780
+uids/ULID/test.py,sha256=uiRDhNNXbF4iZNhPLvLQB7bqf4en6bMNtCNeIORW9n4,3584
+uids/utils/__init__.py,sha256=e1Qs2UrGmbkj-xaJp4ozu1MgacIaCEGi4kGBqrZIz88,94
+uids/utils/base32.py,sha256=Up5bcV6Ab2io4530NhNShePZj16HQ0kqm5jynFBC1Ec,5128
+uids/utils/baseinterface.py,sha256=49SrXZ9ANidDUfrfjkZSfFF8dzCQ89suIagnRs28ETM,6990
+uids/utils/misc.py,sha256=Y6iZxib6GcectyRlXwAa1QlWa-v1Xc4kVXCy8QuZqiA,382
+uids/utils/system_checks.py,sha256=5KT903ajiXcjTNUoUL_FemwPZARoUmdJV8iRzMrmNJc,5401
+uids-0.0.1.dist-info/LICENSE,sha256=uo80ZRhucv54kO7IHeom5NgcXo6f5Mle2Q1D3bykcMs,1090
+uids-0.0.1.dist-info/METADATA,sha256=NkXfcpQyTicawDTBmwhJLO2DNoU91J1JFB165FLiZ_0,610
+uids-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+uids-0.0.1.dist-info/top_level.txt,sha256=IGm_rl6HTQi6VPKnNLTPLMX6dghL7Du1xHWGUMgr_K0,5
+uids-0.0.1.dist-info/RECORD,,
