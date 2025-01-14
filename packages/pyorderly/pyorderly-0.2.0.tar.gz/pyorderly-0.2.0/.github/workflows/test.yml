@@ -1,0 +1,71 @@
+name: Test
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  run:
+
+    runs-on: ${{ matrix.config.os }}
+
+    name: ${{matrix.config.os }} (${{ matrix.config.py }})
+
+    strategy:
+      fail-fast: false
+      matrix:
+        config:
+          - {os: ubuntu-latest,  py: '3.9'}
+          - {os: ubuntu-latest,  py: '3.10'}
+          - {os: ubuntu-latest,  py: '3.11'}
+          - {os: ubuntu-latest,  py: '3.12'}
+          - {os: ubuntu-latest,  py: '3.13'}
+          - {os: macos-latest,   py: '3.13'}
+          - {os: windows-latest, py: '3.13'}
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.config.py }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.config.py }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install hatch
+
+      # Compiling outpack server from source takes a few minutes each time.
+      # This action will cache the result and re-use it on subsequent builds.
+      # The cache is keyed by Git revision, allowing us to pick up new versions
+      # of the server immediately.
+      - name: Install outpack server
+        uses: baptiste0928/cargo-install@v3
+        with:
+          crate: outpack
+          git: https://github.com/mrc-ide/outpack_server
+          features: git2/vendored-libgit2
+
+      - name: Test
+        run: |
+          hatch run cov-ci
+      - name: Lint
+        run: |
+          # https://github.com/python/mypy/issues/10863
+          mkdir -p .mypy_cache
+          hatch run lint:all
+      - name: Test install
+        run: |
+          pip install .
+          python -c "import pyorderly"
+      - name: Upload to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          # This can be useful, but the false positive rate is
+          # annoyingly high.
+          fail_ci_if_error: false
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}

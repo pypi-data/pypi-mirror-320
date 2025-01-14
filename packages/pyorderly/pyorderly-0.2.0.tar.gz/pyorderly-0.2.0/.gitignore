@@ -1,0 +1,9 @@
+*.pyc
+__pycache__
+.coverage*
+example/.outpack/index/outpack.rds
+example/draft/
+.idea
+/dist
+docs/_build
+.mypy_cache
