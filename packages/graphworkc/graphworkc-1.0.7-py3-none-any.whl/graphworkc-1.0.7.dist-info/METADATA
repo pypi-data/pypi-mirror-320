@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: graphworkc
+Version: 1.0.7
+Summary: A Python wrapper for Graphworkc extension.
+Author: ZC
+Author-email: 1263703239@qq.com
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.11
+
