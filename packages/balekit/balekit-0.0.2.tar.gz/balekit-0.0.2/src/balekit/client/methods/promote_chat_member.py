@@ -1,0 +1,4 @@
+class promoteChatMember:
+    def promote_chat_member(self,chat_id,user_id,can_change_info=False,can_post_messages=False,can_edit_messages=False,can_delete_messages=False,can_manage_video_chats=False,can_invite_users=False,can_restrict_members=False):
+        res = self.send_request("promoteChatMember",chat_id=chat_id,user_id=user_id,can_change_info=can_change_info,can_post_messages=can_post_messages,can_edit_messages=can_edit_messages,can_delete_messages=can_delete_messages,can_manage_video_chats=can_manage_video_chats,can_invite_users=can_invite_users,can_restrict_members=can_restrict_members)
+        return res
