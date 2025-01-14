@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: BioNet
+Version: 0.1.0
+Summary: A Python library for integrating biological network data with external service providers.
+Home-page: https://gitlab.com/groups/mitre-bionet
+Author: Brian Doyle
+Author-email: bdoyle@mitre.org
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Requires-Dist: requests
+Requires-Dist: python-dotenv
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
