@@ -1,0 +1,12 @@
+2025-01-14 09:01:07 [err] :error(1,param_error(Invalid user))
+2025-01-14 09:01:07 [err] :http_reply(forbidden(translations_get),[Request-id(3)])
+2025-01-14 09:01:07 [err] :error(4,param_error(Invalid user))
+2025-01-14 09:01:27 [debug] :starting server with log level debug.
+2025-01-14 09:01:27 [debug] :server config printed
+2025-01-14 09:01:27 [debug] :Starting DEBUG server on port 4000 with [allow(ip(_116,_118,_120,_122))] options. 
+2025-01-14 09:01:27 [debug] :Debug server started in port 4000
+2025-01-14 09:01:27 [debug] :Starting REST server on port 8089 with 5 worker threads. 
+2025-01-14 09:01:27 [info] :Serving starting with token database at: /kleio-home/.kleio/conf/token_db
+2025-01-14 09:01:27 [debug] :REST JSON server listening on port 8089 with 5 workers
+2025-01-14 09:01:29 [debug] :QUEUED JOBS:0
+2025-01-14 09:01:29 [debug] :IN PROCESS: 0
