@@ -1,0 +1,9 @@
+# FieldOptions2
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**result** | **OneOfFieldOptions2Result** | This will always be a date or dateTime field config. | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
