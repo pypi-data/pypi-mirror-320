@@ -1,0 +1,55 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "codecapsule"
+dynamic = ["version"]
+authors = [
+    { name="Josh Schmelzle", email="josh@joshschmelzle.com" }
+]
+description = "Transform entire projects into portable JSON capsules for easy sharing and LLM processing"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+
+[project.license]
+name = "BSD-3-Clause"
+file = "LICENSE"
+keywords = ["json", "project", "converter", "llm", "code-sharing"]
+
+[project.urls]
+"Homepage" = "https://github.com/joshschmelzle/codecapsule"
+"Bug Tracker" = "https://github.com/joshschmelzle/codecapsule/issues"
+
+[project.scripts]
+codecapsule = "codecapsule.__main__:main"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.hatch.version]
+path = "codecapsule/version.py"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+testpaths = ["tests"]
