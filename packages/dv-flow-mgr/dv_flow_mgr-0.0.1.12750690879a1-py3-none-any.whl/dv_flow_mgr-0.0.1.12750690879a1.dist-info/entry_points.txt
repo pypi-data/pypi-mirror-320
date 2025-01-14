@@ -1,0 +1,2 @@
+[console_scripts]
+dvfm = dv_flow_mgr.__main__:main
