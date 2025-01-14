@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "suid-core"
+version = "1.2.3"
+description = "Protobuf implementation for SUID packages"
+authors = ["Henrycke Bozza Schenberk <oschenberk@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+opentelemetry-api = "1.27.0"
+opentelemetry-distro = "0.48b0"
+opentelemetry-instrumentation = "0.48b0"
+opentelemetry-sdk = "1.27.0"
+grpcio = "1.62.3"
+grpcio-tools = "1.62.3"
+protobuf = "4.25.4"
+codetiming = ">=1.4.0,<1.5.0"
+
+[tool.poetry.scripts]
+setup = "suid_core.setup:generate_protos"
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
