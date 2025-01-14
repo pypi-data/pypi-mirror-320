@@ -1,0 +1,8 @@
+README.md
+setup.py
+awsgluedq/__init__.py
+awsgluedq.egg-info/PKG-INFO
+awsgluedq.egg-info/SOURCES.txt
+awsgluedq.egg-info/dependency_links.txt
+awsgluedq.egg-info/requires.txt
+awsgluedq.egg-info/top_level.txt
