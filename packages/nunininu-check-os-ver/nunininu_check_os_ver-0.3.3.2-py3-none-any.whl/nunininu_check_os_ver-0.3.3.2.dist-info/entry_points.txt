@@ -1,0 +1,6 @@
+[console_scripts]
+nunininu-hi = nunininu_check_os_ver.hi:hi
+nunininu-random = nunininu_check_os_ver.hi:random_pick
+
+[gui_scripts]
+
