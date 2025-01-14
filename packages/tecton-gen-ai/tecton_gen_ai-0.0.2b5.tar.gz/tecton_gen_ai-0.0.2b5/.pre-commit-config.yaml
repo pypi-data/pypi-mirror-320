@@ -1,0 +1,46 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.1.0
+    hooks:
+      - id: end-of-file-fixer
+        exclude: data/
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+        exclude: data/
+      - id: file-contents-sorter
+        files: .github/CODEOWNERS
+      - id: check-added-large-files
+        args: [--maxkb=10240]
+  - repo: local
+    hooks:
+      - id: ruff-check
+        name: "ruff-check"
+        language: system
+        entry: uv run ruff check --fix --
+        types_or: [python]
+        stages: [push]
+      - id: ruff-format
+        name: "ruff-format"
+        language: system
+        entry: uv run ruff format --fix --
+        types_or: [python]
+        stages: [push]
+      - id: pylint
+        name: "pylint"
+        language: system
+        entry: uv run pylint --
+        types_or: [python]
+        stages: [push]
+      - id: uv-lock
+        name: uv-lock
+        description: "Automatically run 'uv lock' on your project dependencies"
+        entry: uv lock
+        language: system
+        files: ^(uv\.lock|pyproject\.toml|uv\.toml)$
+        pass_filenames: false
+      - id: nbdev-clean
+        name: nbdev-clean
+        description: "Clean notebooks of metadata that are bad for git diffing"
+        types: [jupyter]
+        language: system
+        entry: ./pre-commit-hooks/nbdev_clean.sh
