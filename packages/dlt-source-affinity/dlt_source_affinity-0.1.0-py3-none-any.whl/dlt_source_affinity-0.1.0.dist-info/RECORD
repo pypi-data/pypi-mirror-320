@@ -1,0 +1,17 @@
+dlt_source_affinity/__init__.py,sha256=a0PhNI5xqJAX-ThwjAqo1RaQg3-1zgirrU4WgxnAEpM,15941
+dlt_source_affinity/errors.py,sha256=QY-fMUJIxySx-f5pm28wN00pcR7WqvVO8LRLwqY8MwU,750
+dlt_source_affinity/helpers.py,sha256=zev2rT-D-nNoiIAW1GmD_HNMaNcHixAU0akskmbrSvs,808
+dlt_source_affinity/rest_client.py,sha256=R8vyrA0orIhN7VUQtgh7ul-8bSQKikmLnxRG8Ux_I-w,1806
+dlt_source_affinity/settings.py,sha256=ckQ-I6lnYSNmMA8JoptVZTj_GJYd7v0XUcrhu0JHUyc,101
+dlt_source_affinity/type_adapters.py,sha256=Qujc6-YStQ1yDmEAgo9H3uKcuwL9bDMup6IPSm-kVR8,467
+dlt_source_affinity/model/__init__.py,sha256=XLxxMGUQIiJjq3N8qEOo0sQSjCFdYmvX0VlkrAhKIa8,272
+dlt_source_affinity/model/current_python_major_minor.py,sha256=9KlTIziR4xALtCS9ekzdHlwkoVgKOqw17Fg5isyO_-M,95
+dlt_source_affinity/model/v1.py,sha256=7IqTqGetpUyPjPEPFrzypX6dYRnvxESle7fg2MOVxuk,4579
+dlt_source_affinity/model/v2.py,sha256=XQE7-X89sJeOOCsEOuLbXtp2yeG8jOdYi6naGXPQxBA,27909
+dlt_source_affinity/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dlt_source_affinity/tests/test_pipe.py,sha256=krhbtYJ0mNiXPJvJtpZ3tBCueHLP70q7_O1dV7EUxEY,271
+dlt_source_affinity-0.1.0.dist-info/LICENSE,sha256=pZBokSdZx3kmBq1LkEQYMghmTaZ-9h7AwNfKI1FLv98,1065
+dlt_source_affinity-0.1.0.dist-info/METADATA,sha256=77Wb8v7xvBnZbRvV2lf-YBTpCCo_BtjDjTIsRGLbPks,4913
+dlt_source_affinity-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+dlt_source_affinity-0.1.0.dist-info/top_level.txt,sha256=17D3tWEgAt_Z-qProlI-y6D-_AfEtjoIQ52XDQuYyr8,20
+dlt_source_affinity-0.1.0.dist-info/RECORD,,
