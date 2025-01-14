@@ -1,0 +1,12 @@
+flagger/__init__.py,sha256=xirdpSusqpJXFJTalnU058QIaSmMHCKSnP3a3PyAdJk,354
+flagger/exceptions.py,sha256=ty0XHwKFH6OewIOrArIy9Z4SkXFtCGaEdRQl5MV27c4,966
+flagger/flagger.py,sha256=EzpHOPaiSHWi6oDSXLkdUuSb0QOeHXf9YGdSpoF3gzY,2768
+flagger/type_parsers.py,sha256=MW6pmBrYthxFd3k3gXrX7SYy3fK4JMxxKnk0zxnt4-w,1341
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_custom_parser.py,sha256=LxzxAskR812oNnoGBydCNaz9WoSmUI-QD3IxKzLCl4g,1411
+tests/test_flagger.py,sha256=c9--YvWZ-ntrElz-6LJ_GPlBIXOXv2qsJQ9e6EZYBkU,5157
+easy_flagger-2.0.0.dist-info/LICENSE,sha256=j1piXCB2QCp4atEoYPZTH_TJjOONJgerc720ecuoDic,1070
+easy_flagger-2.0.0.dist-info/METADATA,sha256=ZzjjTFfy1mbLwdfcpTNdSU6jGwjYFr_grMBxJrFA5SI,2291
+easy_flagger-2.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+easy_flagger-2.0.0.dist-info/top_level.txt,sha256=6HJrQfcBO2kvRyAjmYNOh8yfw6Ke4XgXoPle4NeLF9E,14
+easy_flagger-2.0.0.dist-info/RECORD,,
