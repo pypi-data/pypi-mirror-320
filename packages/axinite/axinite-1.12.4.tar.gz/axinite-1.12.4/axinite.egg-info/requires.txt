@@ -1,0 +1,6 @@
+astropy
+numpy
+numba
+vpython
+plotly
+colorama
