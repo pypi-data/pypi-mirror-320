@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+nombre_en_lettres_mg/__init__.py
+nombre_en_lettres_mg/nombre_en_lettres.py
+nombre_en_lettres_mg.egg-info/PKG-INFO
+nombre_en_lettres_mg.egg-info/SOURCES.txt
+nombre_en_lettres_mg.egg-info/dependency_links.txt
+nombre_en_lettres_mg.egg-info/top_level.txt
