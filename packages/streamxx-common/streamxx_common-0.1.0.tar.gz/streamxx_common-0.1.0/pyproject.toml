@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "streamxx-common"
+version = "0.1.0"
+description = ""
+authors = ["Rinat Kurbanov <frendjoy55@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11.9"
+fastapi = "^0.115.6"
+jwcrypto = "^1.5.6"
+python-keycloak = "^5.1.1"
+redis = "^5.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
