@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+whisper-speaker-id/__init__.py
+whisper-speaker-id/wsi.py
+whisper_speaker_id.egg-info/PKG-INFO
+whisper_speaker_id.egg-info/SOURCES.txt
+whisper_speaker_id.egg-info/dependency_links.txt
+whisper_speaker_id.egg-info/requires.txt
+whisper_speaker_id.egg-info/top_level.txt
