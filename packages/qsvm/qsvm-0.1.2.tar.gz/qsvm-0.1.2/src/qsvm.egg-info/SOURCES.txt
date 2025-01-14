@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/qsvm/__init__.py
+src/qsvm/__main__.py
+src/qsvm/cli.py
+src/qsvm.egg-info/PKG-INFO
+src/qsvm.egg-info/SOURCES.txt
+src/qsvm.egg-info/dependency_links.txt
+src/qsvm.egg-info/entry_points.txt
+src/qsvm.egg-info/requires.txt
+src/qsvm.egg-info/top_level.txt
