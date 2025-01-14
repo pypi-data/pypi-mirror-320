@@ -1,0 +1,62 @@
+Metadata-Version: 2.2
+Name: real_useragent
+Version: 1.0.9
+Summary: Get Real user agent from auto update
+Home-page: https://github.com/useragenter/real-useragent
+Author: Mohammadreza (MMDRZA)
+Author-email: Pymmdrza@gmail.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/useragenter/real-useragent/issues
+Project-URL: Source, https://github.com/useragenter/real-useragent
+Keywords: user-agent,useragenter,useragent,user agent,useragent,real user agent,real-useragent
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: project-url
+Dynamic: summary
+
+# Real User Agent Generator
+
+
+Real User Agent With Auto Sync in Requests Module.
+
+
+# Installation
+
+```bash
+pip install real-useragent
+```
+
+# Usage
+
+```python
+import requests
+import real_useragent
+
+s = requests.Session()
+print(s.headers['User-Agent'])
+
+# Without a session
+resp = requests.get('https://httpbin.org/user-agent')
+print(resp.json()['user-agent'])
+```
+
+User Agents are Randomized Per-Session or Per-Request. Individual HTTP requests without a session will each have a random User-Agent selected from the list in [desktop_useragent.txt](https://github.com/UserAgenter/real-useragent/blob/main/real-useragent/desktop_useragent.txt) or [mobile_useragent.txt](https://github.com/UserAgenter/real-useragent/blob/main/real-useragent/mobile_useragent.txt) all files automatically updated every 8 hours.
+
+
+Programmer : [@Pymmdrza](https://github.com/Pymmdrza)
+
+Credit : [Mmdrza.Com](https://mmdrza.com)
+
+# Donate
+
+Donate with Bitcoin: `1MMDRZA12xdBLD1P5AfEfvEMErp588vmF9`
