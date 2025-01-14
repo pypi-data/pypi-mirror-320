@@ -1,0 +1,3 @@
+[console_scripts]
+logfire-ui=stapp_run:run_app
+
