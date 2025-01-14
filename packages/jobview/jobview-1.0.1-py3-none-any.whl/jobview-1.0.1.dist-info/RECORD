@@ -1,0 +1,11 @@
+jobview/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jobview/main.py,sha256=BYhz2aDWJnrrXsNT7fgW7xzkstZt2ka-BUiXNdAPJqk,2104
+jobview/record_resource.py,sha256=n7rroxZznyy2CjaW6WEpCRv-XzhxGhAPt_YmVAZ8pas,17925
+jobview/show_nodes.py,sha256=ohT4eQWe1j2EM4uV2I9diNNaN0LpyPNapEX44GDmPn4,10068
+jobview/show_status.py,sha256=MhBr2mpD1fXYEwv2Y7tA7RouuUnPkDU5xreIDuj4aBQ,12480
+jobview/version/version.json,sha256=6V8eVft6CfQS89OYFwy_g5cLiCk8qRBy1jDPtsA0doo,218
+jobview-1.0.1.dist-info/METADATA,sha256=60olWESdjRKwc_ttNey6TA_JJORaZDMIQyPdTYN7KuQ,1575
+jobview-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+jobview-1.0.1.dist-info/entry_points.txt,sha256=55fnbm4pXatPYUS_1GpL2OES-6KYb0xCXd_FKM2OTt8,45
+jobview-1.0.1.dist-info/top_level.txt,sha256=IjGVy8aYOwkQV6P6BNCSmaZ90neJFVTD1TiPlnHMJw8,8
+jobview-1.0.1.dist-info/RECORD,,
