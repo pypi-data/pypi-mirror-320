@@ -1,0 +1,60 @@
+# Simple Star Patterns
+
+Simple Star Patterns is a Python library for printing various star (or any character) patterns. It's designed to be easy to use and understand, making it perfect for beginners learning about loops and pattern printing in Python.
+
+## Installation
+
+You can install the Simple Star Patterns library using pip:
+
+```
+pip install simple-star-patterns
+```
+
+## Usage
+
+Here's a quick example of how to use the Simple Star Patterns library:
+
+```python
+from simple_star_patterns import print_pattern
+
+# Print a triangle
+print_pattern('triangle', 4)
+
+# Print an inverted triangle with '+' symbol
+print_pattern('inverted_triangle', 5, '+')
+
+# Print a pyramid with '#' symbol
+print_pattern('pyramid', 3, '#')
+```
+
+This will output:
+
+```
+*
+**
+***
+****
+
++++++
+++++
++++
+++
++
+
+  #
+ ###
+#####
+```
+
+### Available Patterns
+
+1. `triangle`: A right-angled triangle
+2. `inverted_triangle`: An inverted right-angled triangle
+3. `pyramid`: A symmetrical pyramid
+
+### Function Parameters
+
+- `pattern`: The type of pattern to print ('triangle', 'inverted_triangle', or 'pyramid')
+- `size`: The number of rows in the pattern (must be a positive integer)
+- `symbol`: The character to use for the pattern (default is '*')
+
