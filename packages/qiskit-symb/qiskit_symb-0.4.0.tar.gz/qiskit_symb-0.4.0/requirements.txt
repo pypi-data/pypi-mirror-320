@@ -1,0 +1,15 @@
+numpy
+sympy
+qiskit
+opt_einsum
+
+# Lint
+pylint
+
+# Test
+pytest
+hypothesis
+
+# Coverage
+pytest-cov
+coveralls

@@ -1,0 +1,9 @@
+numpy
+sympy
+qiskit
+opt_einsum
+pylint
+pytest
+hypothesis
+pytest-cov
+coveralls
