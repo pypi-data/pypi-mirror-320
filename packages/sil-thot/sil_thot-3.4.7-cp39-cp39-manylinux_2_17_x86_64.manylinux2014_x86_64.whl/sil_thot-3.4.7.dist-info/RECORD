@@ -1,0 +1,13 @@
+thot.cpython-39-x86_64-linux-gnu.so,sha256=cfTP2uCVBqJpK9CX9RhkPYGY6NanOJcQqd51yuKDnNI,3700089
+sil_thot.libs/libgomp-a34b3233.so.1.0.0,sha256=On6uznIxkRvi-7Gz58tMtcLg-E4MK7c3OUcrWh_uyME,168193
+thot/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thot/__init__.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thot/common/__init__.pyi,sha256=gaYnw47k5wQHH2Jyrna32nKQoHHJPVucHJJi25ekHB0,2099
+thot/alignment/__init__.pyi,sha256=xXmQYJKGwWWjyCcAp8xsZWfQMbrDkKB-FgWYN-Z__aI,9249
+thot/translation/__init__.pyi,sha256=pwofxptSQY_GL0Et9vk6T2_Dnk_kiN53Ttgrp4eGBG0,5128
+sil_thot-3.4.7.dist-info/METADATA,sha256=-azOboQBYwzQnMkTbS0-6Bwpx1Xfky07NBL6IbYDaP8,2228
+sil_thot-3.4.7.dist-info/RECORD,,
+sil_thot-3.4.7.dist-info/top_level.txt,sha256=BV9H2vNx3k3-7JvpPnBryrItc6WxgXW1OKVRcUzoHQw,14
+sil_thot-3.4.7.dist-info/WHEEL,sha256=hP2N_hS4PKw-M4krXQgMGtCEsQMkokQDIc5uU4EZO1Y,147
+sil_thot-3.4.7.dist-info/AUTHORS,sha256=cJdWzYIWVnz7lmnGOdO2baVMXQTQ2Qqxf7MXTKjISuw,205
+sil_thot-3.4.7.dist-info/COPYING.LESSER,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
