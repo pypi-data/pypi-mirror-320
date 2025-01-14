@@ -1,0 +1,5 @@
+download:  
+  - version: 1.9.2  
+    url: https://oss.mthreads.com/product-release/release-kuae-1.2.0/External/mtml_xxx.deb
+    sha256: 32568
+
