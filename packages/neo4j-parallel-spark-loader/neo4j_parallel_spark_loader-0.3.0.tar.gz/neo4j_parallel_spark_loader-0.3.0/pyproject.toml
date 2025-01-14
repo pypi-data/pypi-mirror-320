@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "neo4j-parallel-spark-loader"
+version = "0.3.0"
+description = "Load relationships in parallel into Neo4j using Spark"
+authors = ["Alex Gilmore", "Nathan Smith"]
+readme = "README.md"
+
+exclude = ["tests/*", "benchmarking/*", "docs/*", "examples/*", "Makefile"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyspark = "^3.4.0"
+numpy = "^1.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.4.3"
+neo4j = "^5.27.0"
+pytest = "^8.3.4"
+pytest-mock = "^3.12.0"
+python-dotenv = "^1.0.1"
+ruff = "^0.3.0"
+seaborn = "^0.13.2"
+requests = "^2.32.3"
+
+[tool.ruff]
+target-version = "py312"
+show-fixes = true
+
+[tool.coverage.paths]
+source = ["neo4j_parallel_spark_loader"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
