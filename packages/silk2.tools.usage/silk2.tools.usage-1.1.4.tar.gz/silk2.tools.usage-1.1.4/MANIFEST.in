@@ -1,0 +1,3 @@
+include SILK2/Tools/usage/*.py
+include SILK2/Tools/usage/get_info.sh
+
