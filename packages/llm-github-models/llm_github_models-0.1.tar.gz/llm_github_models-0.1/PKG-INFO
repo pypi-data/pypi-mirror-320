@@ -1,0 +1,25 @@
+Metadata-Version: 2.3
+Name: llm-github-models
+Version: 0.1
+Summary: LLM plugin to access GitHub Models API
+Author: Anthony Shaw
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: llm>=0.19
+Requires-Dist: azure-ai-inference>=1.0.0b6
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-recording ; extra == "test"
+Project-URL: CI, https://github.com/tonybaloney/llm-github-models/actions
+Project-URL: Changelog, https://github.com/tonybaloney/llm-github-models/releases
+Project-URL: Homepage, https://github.com/tonybaloney/llm-github-models
+Project-URL: Issues, https://github.com/tonybaloney/llm-github-models/issues
+Provides-Extra: test
+
+# GitHub Models Plugin for LLM
+
+This is a plugin for [llm](llm.datasette.io) that uses GitHub Models via the Azure AI Inference SDK.
+
+To set the API key, use the `llm keys set` command or use the `GITHUB_MODELS_KEY` environment variable.
+
+To get an API key, create a PAT inside GitHub.
+
