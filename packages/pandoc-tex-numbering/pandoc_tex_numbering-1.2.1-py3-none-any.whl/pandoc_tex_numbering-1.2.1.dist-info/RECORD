@@ -1,0 +1,11 @@
+pandoc_tex_numbering/__init__.py,sha256=d_ddq363qTRl5gIQIyIyQsYzn893KZfj71n5FOsn9V8,35
+pandoc_tex_numbering/docx_list.py,sha256=Dmu1tXXqZKfFnUXUVd6DIhxK1z7cD5QycMu2mVszQ2o,1916
+pandoc_tex_numbering/lang_num.py,sha256=yW7fTxa0K1YetGiHFvHzhjzeq0mwddYiYddZWZS5w7A,762
+pandoc_tex_numbering/numbering.py,sha256=-T7Qb5YsdSRIqioN8R1BWk_2F6aEQRZTtL1kyuVPzu8,8422
+pandoc_tex_numbering/oxml.py,sha256=gODPZyc1MrgJRvfnuENtbCf0RUQRi8ggDnd7G5TXMJk,7062
+pandoc_tex_numbering/pandoc_tex_numbering.py,sha256=T1-2iTflaoBs-My_vxKOted4dC2YY6BpJ_bgn3oe43M,18963
+pandoc_tex_numbering-1.2.1.dist-info/METADATA,sha256=IG6EW_P2jU0l_676y63xeY1bOlhAUyU2JoC9uuJrJ-A,61793
+pandoc_tex_numbering-1.2.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pandoc_tex_numbering-1.2.1.dist-info/entry_points.txt,sha256=kFcmwgdW-Eo5PWcGi6S28y_VPCYgOUw_JKXDJ4rR_h4,67
+pandoc_tex_numbering-1.2.1.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+pandoc_tex_numbering-1.2.1.dist-info/RECORD,,
