@@ -1,0 +1,3 @@
+[console_scripts]
+googleai-ui=search_ai_app_run:run_app
+
