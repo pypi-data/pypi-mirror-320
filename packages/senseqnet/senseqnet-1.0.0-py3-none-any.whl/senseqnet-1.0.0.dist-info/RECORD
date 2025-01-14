@@ -1,0 +1,11 @@
+senseqnet/__init__.py,sha256=ISpKXXC4-o2r3nE5jLEP1qyk0FFXHieldgc-niG-73w,48
+senseqnet/cli.py,sha256=kP4lPaiY7ZJsT-X9x0l6LyQSFxSTptLmNhO6cEV4dl8,834
+senseqnet/inference.py,sha256=FPRo3cJh4Bhl0lNVurcfHBcheZykgB9KcuD4wXR9Nss,2869
+senseqnet/models.py,sha256=lUcwSPVMHE3y5mA44leBx4y8VS3Ov2y2bCeoykGOib4,4308
+senseqnet/senseqnet.pth,sha256=c48misEj5o8_BvLRDZEMDHgfN-kLpR1hiXbUK9nLAgE,14728343
+senseqnet-1.0.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+senseqnet-1.0.0.dist-info/METADATA,sha256=oB8mgD75_aCRE_XJOvd2e-KYT2DEIT3MYbH9m_8e0l4,1003
+senseqnet-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+senseqnet-1.0.0.dist-info/entry_points.txt,sha256=dEMOQnnbwYADvnJD8VJH3r16fJROgg8qK1YASTjOYd4,57
+senseqnet-1.0.0.dist-info/top_level.txt,sha256=FTeAdM4f75QIwP_C6EnSCKGPsa_St-jpfuLsKf118bI,10
+senseqnet-1.0.0.dist-info/RECORD,,
