@@ -1,0 +1,2 @@
+include safevision_face/model/*
+include safevision_face/feature_extraction/models/*
