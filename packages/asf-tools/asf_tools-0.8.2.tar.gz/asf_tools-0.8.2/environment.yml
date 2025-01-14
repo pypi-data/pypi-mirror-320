@@ -1,0 +1,37 @@
+name: asf-tools
+channels:
+  - conda-forge
+  # - esri  # windows only
+  - nodefaults
+dependencies:
+  - python>=3.10, <3.12
+  - pip
+  # For packaging, and testing
+  # - arcpy  # windows only
+  - python-build
+  - ruff
+  - mypy
+  - setuptools>=61
+  - setuptools_scm>=6.2
+  - pytest
+  - pytest-console-scripts
+  - pytest-cov
+  # For running
+  - astropy
+  - boto3
+  - fiona
+  - gdal>=3.7
+  - geopandas
+  - numpy
+  - osmium-tool
+  - pyogrio
+  - pysheds>=0.3
+  - rasterio
+  - scikit-fuzzy
+  - scikit-image
+  - scipy
+  - shapely
+  - tqdm
+  - pip:
+    # for testing
+    - gdal-utils
