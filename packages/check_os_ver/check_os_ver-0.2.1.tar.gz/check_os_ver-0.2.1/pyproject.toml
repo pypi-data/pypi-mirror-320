@@ -1,0 +1,27 @@
+[project]
+name = "check_os_ver"
+version = "0.2.1"
+description = "Default template for PDM package"
+authors = [
+    { name = "vhzkclq0705", email = "vhzkclq0705@naver.com" },
+    { name = "vhzkclq0705", email = "dhwns1513@gmail.com" },
+]
+dependencies = []
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/vhzkclq0705/check_os_ver"
+Issues = "https://github.com/vhzkclq0705/check_os_ver/issues"
+
+[tool.pdm]
+distribution = true
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"

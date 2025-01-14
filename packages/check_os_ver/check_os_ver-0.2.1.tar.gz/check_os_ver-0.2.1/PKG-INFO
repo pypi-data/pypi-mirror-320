@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: check_os_ver
+Version: 0.2.1
+Summary: Default template for PDM package
+Author-Email: vhzkclq0705 <vhzkclq0705@naver.com>, vhzkclq0705 <dhwns1513@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/vhzkclq0705/check_os_ver
+Project-URL: Issues, https://github.com/vhzkclq0705/check_os_ver/issues
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# check_os_ver
+
+```
+
+
+                                                    #*###*#
+                                                    **#***#
+                                                  *=**#+#*
+                                          *@##**#**%%%***#
+                                  @@@@@@#++++++*%#*+%%+*++%
+                                 @@@@@@@%+++++++++++++++++*
+                                 @@@@@@@@+++++++++++++++++#
+                                 @@@@@@@@*++++++++++++++++#
+                                  @@@@@@%++++++++++++*+**+*
+                                   @@@@#+++++++++++*#***++*
+                                      %%#***++++*******+++*
+                                           *#**+++*****###**
+                                           *++*##*####+=====#
+                                          +*++++++======+++=++
+                                          *#============+*++=+
+                                          ++#+++==+=====*+==+*
+                                           *#*#%%%###%%%#+=+*
+                                            *++**%#*+++=++++%
+                                            %+===+++++====++*
+                                             *=+==+*======++@
+                                             *+=+==*+=++==+*#
+                                              =+***+#**++++##
+                                              +++======----=+
+                                           %----*####@%#%#%*#
+                                            =----###--=-+####
+                                             @##%@#++=====+*
+
+
+```
+
+### Use
+```python
+$ pip install check_os_ver
+$ python
+>>> from check_os_ver.hi import hi
+>>> hi()
+```
+
+### Development environment settings
+```bash
+# install PDM
+# git clone ...
+$ source .venv/bin/activate
+$ pdm install
+# $ vi ...
+
+# TEST
+$ pip install
+$ pdm test
+$ pip install .
+
+$ git add <FILE_NAME>
+$ git commit -a
+$ git push
+$ pdm publish
+```
