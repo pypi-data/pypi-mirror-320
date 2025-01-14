@@ -1,0 +1,2 @@
+[console_scripts]
+PanMCL = PanMCL.cli:main
