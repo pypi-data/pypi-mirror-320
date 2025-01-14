@@ -1,0 +1,11 @@
+setup.py
+cvmltools/__init__.py
+cvmltools/cluster.cp38-win_amd64.pyd
+cvmltools.egg-info/PKG-INFO
+cvmltools.egg-info/SOURCES.txt
+cvmltools.egg-info/dependency_links.txt
+cvmltools.egg-info/not-zip-safe
+cvmltools.egg-info/requires.txt
+cvmltools.egg-info/top_level.txt
+test/__init__.py
+test/test.py
