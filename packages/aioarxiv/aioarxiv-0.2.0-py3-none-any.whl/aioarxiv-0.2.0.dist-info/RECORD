@@ -1,0 +1,17 @@
+aioarxiv-0.2.0.dist-info/METADATA,sha256=_NZeCkYmGh2IcvhG4O1R7U-401oPeFVDHruXdJ0oROY,1201
+aioarxiv-0.2.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+aioarxiv-0.2.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+aioarxiv-0.2.0.dist-info/licenses/LICENSE,sha256=S_7IcxktyrLB2zh243r2W0MLWcOkbpwDdy7RVM8ADpw,1066
+aioarxiv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aioarxiv/client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aioarxiv/client/arxiv_client.py,sha256=fJistXEBm0ktyIaCXl7fiVu6KbGdR5IgspoDPPWwGJg,20027
+aioarxiv/client/downloader.py,sha256=hTlWm7PJKJrPbiTZODPRmZmlgjlvCt5XaAkjPBFv6a0,10327
+aioarxiv/config.py,sha256=qmZPskpHJOnGNj4j4T7mdGrIMOhZEMuSYHo9Omvs_Eo,1446
+aioarxiv/exception.py,sha256=K1yjLmVUWNyxQL7S2MubnCEDbq0xHBOhY52rTdVBQpI,7344
+aioarxiv/models/__init__.py,sha256=4prRUskslnNbfeRHeDPtdBXlnY4OrUbwTsQ3OIyrdUo,5564
+aioarxiv/utils/__init__.py,sha256=CpKb-hbv_h6T0pdeS450WhFKMky1-7mtCfHJ68CLL08,5852
+aioarxiv/utils/log.py,sha256=DKvv6Y4KnaZGBXcdUBGcNO8qAx0Pp_gsx9fNpyKpNdk,2530
+aioarxiv/utils/parser.py,sha256=EDLaxUC369JdPj0JaeOu4_9IVMJKKTKavbexPV-CCMs,9398
+aioarxiv/utils/rate_limiter.py,sha256=fDYQ5zJ9NUG-JhLLr4LcI4Gt70Y5cXK_dF3IlKU3fNw,5924
+aioarxiv/utils/session.py,sha256=PvXGeI3kiosCA4zUT-VUSyWSynDPWz1LE1qGeVvzqgI,5990
+aioarxiv-0.2.0.dist-info/RECORD,,

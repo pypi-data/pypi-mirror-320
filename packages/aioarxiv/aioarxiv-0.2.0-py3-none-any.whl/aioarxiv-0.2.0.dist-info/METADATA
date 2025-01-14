@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: aioarxiv
+Version: 0.2.0
+Summary: arxiv Parse library
+Author-Email: BalconyJH <balconyjh@gmail.com>
+License: MIT
+Requires-Python: >=3.9
+Requires-Dist: loguru~=0.7
+Requires-Dist: pydantic>=2.9.2
+Requires-Dist: aiohttp>=3.10.10
+Requires-Dist: tenacity>=9.0.0
+Requires-Dist: aiofiles>=24.1.0
+Requires-Dist: platformdirs>=4.3.6
+Requires-Dist: tzdata>=2024.2
+Requires-Dist: pydantic-settings>=2.7.1
+Description-Content-Type: text/markdown
+
+# Aioarxiv
+
+An async Python client for the arXiv API with enhanced performance and flexible configuration options.
+
+> ⚠️ Warning: This project is currently in beta. Not recommended for production use.
+
+## Features
+
+- Asynchronous API calls for better performance
+- Flexible search and download capabilities
+- Customizable rate limiting and concurrent requests
+- Simple error handling
+
+## Installation
+
+```bash
+pip install aioarxiv
+```
+
+## Quick Start
+
+```python
+```
+
+## Configuration
+
+```python
+```
+
+## Error Handling
+    
+```python
+```
+
+## Requirements
+* Python 3.9 or higher
+
+## License
+[MIT License (c) 2025 BalconyJH ](LICENSE)
+
+## Links
+* Documentation for aioarxiv is WIP
+* [ArXiv API](https://info.arxiv.org/help/api/index.html)
