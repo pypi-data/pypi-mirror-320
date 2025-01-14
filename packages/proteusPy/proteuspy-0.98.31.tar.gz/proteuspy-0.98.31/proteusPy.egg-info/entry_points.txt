@@ -1,0 +1,3 @@
+[console_scripts]
+proteusPy.DisulfideExtractor = proteusPy.DisulfideExtractor_mp:main
+proteusPy.qt5viewer = proteusPy.qt5viewer:main
