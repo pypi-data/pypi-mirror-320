@@ -1,0 +1,67 @@
+Metadata-Version: 2.2
+Name: nyc_records_common
+Version: 0.1.24
+Summary: Common utilities for NYC Records Scraper
+Author: Stuart Shay
+Project-URL: Source, https://github.com/stuartshay/nyc_records_scraper
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: google-cloud-secret-manager>=2.22.0
+Requires-Dist: google-api-core>=2.24.0
+Requires-Dist: google-auth>=2.37.0
+Requires-Dist: humanize>=4.9.0
+Requires-Dist: protobuf>=4.25.3
+Requires-Dist: grpcio>=1.62.1
+
+# NYC Records Packages
+
+[![PyPI version](https://badge.fury.io/py/nyc-records-common.svg)](https://pypi.org/project/nyc-records-common/)
+
+Common utilities for NYC Records projects.
+
+## Prerequisites
+- Python 3.11+
+- pip
+- virtualenv
+
+## Installation
+
+1. Create and activate virtual environment:
+```bash
+cd packages
+python -m venv .venv
+source .venv/bin/activate  # Linux/Mac
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements/dev.txt
+pip install -r requirements/prod.txt
+pip install -e .
+```
+
+3. Install pre-commit hooks:
+```bash
+pre-commit install
+```
+
+### Testing
+```
+pytest tests/ -v                  # Command line
+pytest tests/ --cov=src          # With coverage
+```
+
+### Code Formating
+```bash
+black src/ tests/                # Format code
+isort src/ tests/                # Sort imports
+flake8 src/ tests/              # Check style
+mypy src/                       # Type checking
+pytest tests/                   # Run tests
+pylint --rcfile=.pylintrc src/nyc_records_common
+pylint --rcfile=.pylintrc src/nyc_records_db
+```

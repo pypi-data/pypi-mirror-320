@@ -1,0 +1,6 @@
+google-cloud-secret-manager>=2.22.0
+google-api-core>=2.24.0
+google-auth>=2.37.0
+humanize>=4.9.0
+protobuf>=4.25.3
+grpcio>=1.62.1
