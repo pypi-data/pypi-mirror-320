@@ -1,0 +1,43 @@
+Metadata-Version: 2.3
+Name: proboundsviz
+Version: 0.1.0
+Summary: Visualizations of probounds.py outputs
+License: MIT
+Author: Uriah Finkel
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: probounds (>=0.3.1,<0.4.0)
+Description-Content-Type: text/markdown
+
+# proboundsviz
+
+Visualizations of probounds.py outputs
+
+## Installation
+
+```bash
+$ pip install proboundsviz
+```
+
+## Usage
+
+- TODO
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`proboundsviz` was created by Uriah Finkel. It is licensed under the terms of the MIT license.
+
+## Credits
+
+`proboundsviz` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
