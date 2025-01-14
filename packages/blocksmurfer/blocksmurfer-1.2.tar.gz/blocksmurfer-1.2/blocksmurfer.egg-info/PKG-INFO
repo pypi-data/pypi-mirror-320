@@ -1,0 +1,77 @@
+Metadata-Version: 2.2
+Name: blocksmurfer
+Version: 1.2
+Summary: Bitcoin blockchain explorer
+Home-page: http://github.com/1200wd/blocksmurfer
+Author: 1200wd
+Author-email: info@1200wd.com
+License: GNU3
+Keywords: bitcoin blockchain explorer transactions keys blocks utxos inputs outputs scripts
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Information Technology
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Office/Business :: Financial :: Accounting
+Requires-Dist: bitcoinlib>=0.6.10
+Requires-Dist: Flask==2.3.2
+Requires-Dist: flask_babel==3.1.0
+Requires-Dist: flask_qrcode==3.1.0
+Requires-Dist: flask_restful==0.3.10
+Requires-Dist: flask_wtf==1.1.0
+Requires-Dist: Werkzeug==2.3.6
+Requires-Dist: WTForms==3.0.1
+Requires-Dist: gunicorn==20.1.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+Blocksmurfer
+============
+
+.. image:: https://github.com/1200wd/blocksmurfer/actions/workflows/test.yaml/badge.svg
+    :target: https://github.com/1200wd/blocksmurfer/actions/workflows/test.yaml
+    :alt: Blocksmurfer Unittests
+.. image:: https://img.shields.io/pypi/v/blocksmurfer.svg
+    :target: https://pypi.org/pypi/blocksmurfer/
+    :alt: PyPi
+.. image:: https://coveralls.io/repos/github/1200wd/blocksmurfer/badge.svg?branch=master
+    :target: https://coveralls.io/github/1200wd/blocksmurfer?branch=master    
+
+Install and run a local Bitcoin block explorer.
+
+Bitcoin blockchain explorer based on Python Bitcoinlib (https://github.com/1200wd/bitcoinlib).
+Search the blockchain for addresses, transactions, blocks, unspent outputs, etc.
+
+Decompose and analyse complex Bitcoin transactions, scripts, signatures and keys.
+
+This software currently runs on https://blocksmurfer.io
+
+Data will be retrieved from various service providers such as Blockchair, Blockchain.info or Blockstream.
+Blocksmurfer can also receive data from a local bcoin or bitcoind server.
+
+.. image:: https://blocksmurfer.io/static/images/blocksmurfer_transaction.png
+    :alt: Look into transaction details, transaction inputs and outputs
+
+.. image:: https://blocksmurfer.io/static/images/blocksmurfer_block.png
+    :alt: Analyse blocks - Run a bitcoin block explorer locally
+
+.. image:: https://blocksmurfer.io/static/images/blocksmurfer_script.png
+    :alt: Decompose complex bitcoin scripts, analyse keys, signatures and witness data
+
+
+Installation
+------------
+
+See INSTALL.rst
