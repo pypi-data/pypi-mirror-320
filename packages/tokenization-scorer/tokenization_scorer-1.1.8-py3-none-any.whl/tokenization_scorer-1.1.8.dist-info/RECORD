@@ -1,0 +1,9 @@
+tokenization_scorer/__init__.py,sha256=Bu5dgz6vGnJz46zoEd6Us1fXpydqaOQg-xDqnUdgdFQ,2884
+tokenization_scorer/metrics.py,sha256=6erfnU49TYh7lqyccSpNIeWeAgMiz8xzTQQHG4T31oM,4162
+tokenization_scorer/test.py,sha256=_wmRqvlCH6qmmw3bXb4dJR_V02CTc2S36KzH8uFOrSA,2147
+tokenization_scorer-1.1.8.dist-info/LICENSE,sha256=UWg276fci9u1LJ72F0n99z9BTlPoHx98R6TU8IFM3vI,1070
+tokenization_scorer-1.1.8.dist-info/METADATA,sha256=x9KnkapMMniKr24fx_7YvEG59k3LIaRiWC3rDwilOuY,2319
+tokenization_scorer-1.1.8.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+tokenization_scorer-1.1.8.dist-info/entry_points.txt,sha256=g6e5USKryg0-FIegLSS0Ny7lhZqdqhNe9CwwmcOynfo,114
+tokenization_scorer-1.1.8.dist-info/top_level.txt,sha256=a9pvhIjlBSJKM_sQk9MJoLB6vapAimVYb6z99LPZWTY,20
+tokenization_scorer-1.1.8.dist-info/RECORD,,
