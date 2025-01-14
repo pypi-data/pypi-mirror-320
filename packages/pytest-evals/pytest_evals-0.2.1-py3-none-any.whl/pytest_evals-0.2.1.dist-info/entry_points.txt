@@ -1,0 +1,2 @@
+[pytest11]
+eval = pytest_evals.plugin
