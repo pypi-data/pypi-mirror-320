@@ -1,0 +1,15 @@
+[package]
+name = "unibreak"
+version = "0.2.0"
+edition = "2021"
+description = "Python bindings for unicode-segmentation Rust crate"
+authors = ["Cline"]
+license = "MIT"
+
+[lib]
+name = "unibreak"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.19.0", features = ["extension-module"] }
+unicode-segmentation = "1.10.1"
