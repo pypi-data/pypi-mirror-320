@@ -1,0 +1,10 @@
+spaed/__init__.py,sha256=D6ZQLgQpFkp2Rd7UvHCSRfN_ItQEWDalU4Rp1RESDq8,135
+spaed/get_domain_seqs.py,sha256=Q2WCZYpZ7PTn8sIIGbkMU_HjPftVdEQ49co77rivzx8,4281
+spaed/pymol_vis.py,sha256=W3HX_JopAThA55SRdGdJIITeRkDyZ2LGY2LF1upq0Jg,3732
+spaed/spaed.py,sha256=DXftkCxA_N50Ix9FlgWN8FfvgGKtEbhhQwqxOO_w4so,31311
+spaed/.ipynb_checkpoints/get_domain_seqs-checkpoint.py,sha256=SAhhPnLIDDI6Wim-79dPcjxgk49D_xfOh19iEodj9P0,4057
+spaed/.ipynb_checkpoints/spaed-checkpoint.py,sha256=hivDbeEmX7v9PJ_RGdF7owJCbdeSTVPugs2kXDc4iQw,30569
+spaed-1.0.0.dist-info/METADATA,sha256=li-Q7SMawAeFUoJFYE6XnoD5k-O30EFjRx8Cl9Q0EtE,5090
+spaed-1.0.0.dist-info/WHEEL,sha256=tkmg4JIqwd9H8mL30xA7crRmoStyCtGp0VWshokd1Jc,105
+spaed-1.0.0.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+spaed-1.0.0.dist-info/RECORD,,
