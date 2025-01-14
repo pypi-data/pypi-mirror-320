@@ -1,0 +1,12 @@
+aiohttp
+aiolimiter
+pandas
+pytz
+traveltimepy
+
+[test]
+pytest
+flake8
+flake8-pyproject
+mypy
+black
