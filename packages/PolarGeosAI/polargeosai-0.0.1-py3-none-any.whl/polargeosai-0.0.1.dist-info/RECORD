@@ -1,0 +1,11 @@
+PolarGeosAI/MultiInputModel.py,sha256=0fcn9VGYePgz25_Fxfulu7IWdE1U-n6B1EgT6y4cLbI,3645
+PolarGeosAI/__init__.py,sha256=wmE9YoXL9hB9MLXcXIZ7sm84Mqv15cdgfs-tbfhZ340,157
+PolarGeosAI/func.py,sha256=mhgfJXFKYXUJkTekDSUJEZkgxCj8O3vyHXP9gY4qBEY,31388
+PolarGeosAI/func_ml.py,sha256=kMFm9ao-qphHEayXZeYsJOXjC4yq1ZUQI3evkal66Bc,11528
+PolarGeosAI/impl.py,sha256=Qi2Z2Yh51eVA4qcn4DWWFmVYdRgcjmvwtZ-byxbRUeE,7186
+PolarGeosAI/run_function.py,sha256=VODRCj_9spuvTo5-JR2lx2pvZHN9nChI5y1sbA15njk,4642
+PolarGeosAI/test_function.py,sha256=1XHIklIL6DePvAesa0hdYFq0tohRP7Q4UBmXZBCR30A,5285
+polargeosai-0.0.1.dist-info/METADATA,sha256=vGVo0v0T0hT0TEjvwucr6aQMCc3-Fze8PY-MrkMZ1zE,2094
+polargeosai-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+polargeosai-0.0.1.dist-info/licenses/LICENSE.txt,sha256=0UtSoyp2JysFVz15yXvlLJsu47sKu0Jtlr1FQAGC3c4,1090
+polargeosai-0.0.1.dist-info/RECORD,,
