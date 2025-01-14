@@ -1,0 +1,13 @@
+pyproject.toml
+setup.py
+sportsvision/__init__.py
+sportsvision.egg-info/PKG-INFO
+sportsvision.egg-info/SOURCES.txt
+sportsvision.egg-info/dependency_links.txt
+sportsvision.egg-info/not-zip-safe
+sportsvision.egg-info/requires.txt
+sportsvision.egg-info/top_level.txt
+sportsvision/research/__init__.py
+sportsvision/research/configs.py
+sportsvision/research/models.py
+sportsvision/research/utils.py
