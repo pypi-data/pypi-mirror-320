@@ -1,0 +1,8 @@
+README.md
+setup.py
+aws-glue/__init__.py
+aws_glue.egg-info/PKG-INFO
+aws_glue.egg-info/SOURCES.txt
+aws_glue.egg-info/dependency_links.txt
+aws_glue.egg-info/requires.txt
+aws_glue.egg-info/top_level.txt
