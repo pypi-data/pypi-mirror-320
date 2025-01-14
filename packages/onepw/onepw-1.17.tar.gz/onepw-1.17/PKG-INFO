@@ -1,0 +1,315 @@
+Metadata-Version: 2.2
+Name: onepw
+Version: 1.17
+Summary: A Python module for 1Password integration
+Home-page: https://www.pg12.org/software
+Author: A Andersen
+Author-email: a.andersen@pg12.org
+License: Modified BSD License
+Project-URL: Download, https://www.pg12.org/dist/py/lib/onepw/
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: project-url
+Dynamic: summary
+
+### <a id="onepw"></a>The `onepw` Python module for 1Password integration
+
+Documentation on how [to install and use the module](https://pypi.org/project/onepw/#install) is available at [PyPi](https://pypi.org/project/onepw/).
+
+[1Password](https://1password.com) is a popular password manager used by individuals and organisations. It has a [desktop app](https://1password.com/downloads) for many platforms and a [support community](https://1password.community) where ideas are shared and questions are asked and answered.
+
+For developers, it also provides [SDKs, tools and support](https://developer.1password.com). The `onepw` module uses [1Password CLI](https://developer.1password.com/docs/cli) command line tool to implement its features. For more advanced 1Password integration the [SDKs from 1Password](https://developer.1password.com/docs/sdks/) should be considered.
+
+**Table of contents**
+
+ - <a href="#install">To install and use the module</a>
+
+     - <a href="#class-OnePW">Class `OnePW`</a>
+
+     - <a href="#get">Method `OnePW.get`</a>
+
+     - <a href="#add">Method `OnePW.add`</a>
+
+     - <a href="#delete">Method `OnePW.delete`</a>
+
+ - <a href="#cli">To use the module as a console script</a>
+
+     - <a href="#cli-onepw">Command `onepw`</a>
+
+     - <a href="#cli-onepw-get">Command `onepw get`</a>
+
+     - <a href="#cli-onepw-add">Command `onepw add`</a>
+
+     - <a href="#cli-onepw-delete">Command `onepw delete`</a>
+
+### <a id="install"></a>To install and use the module
+
+The `onepw` Python module implements a limited *1Password* integration
+using *1Password CLI*:
+
+ - https://developer.1password.com/docs/cli
+
+To use the module, install the *1Password CLI* tool `op`:
+
+ - https://1password.com/downloads/command-line/
+
+(or install it with a package tool, e.g., *HomeBrew* on a Mac).
+
+The `onepw` module is available from my software repository and from
+PyPi:
+
+ - https://www.pg12.org/software
+
+ - https://pypi.org/project/onepw/
+
+It is best to install the module and the companion console script
+`onepw` with `pip`:
+
+```bash
+pip install onepw
+```
+
+It is recommended to integrated the *1Password CLI* tool with the
+*1Password* desktop app (to use the desktop app to sign in to
+*1Password*).  See Step 2 here for details:
+
+ - https://developer.1password.com/docs/cli/get-started/
+
+Other similar Python modules, with more or different functionality,
+are available. The obvious first choice is the SDKs from *1Password*:
+
+ - https://developer.1password.com/docs/sdks/
+
+Their Python SDK is in active development and should be considered
+when integratiing *1Password* with Python:
+
+ - https://github.com/1Password/onepassword-sdk-python
+
+Another option is to use the `keyring` module with the third-party
+backend *OnePassword Keyring*:
+
+ - https://pypi.org/project/keyring/
+
+ - https://pypi.org/project/onepassword-keyring/
+
+One downside of this approach is that when *OnePassword Keyring* is
+installed, it replaces the default backend of the `keyring` module.  I
+prefer that the default behavior of `keyring` is unchanged (using the
+system keychain/keyring) and use a specific module (like `onepw`) for
+*1Password* integration in Python.
+
+#### Class <a id="class-OnePW"></a>`OnePW`
+
+OnePW(account: str | None = None, pw: str | None = None)
+
+*A Python class for 1Password sessions*
+
+When an instance of this class is created, a *1Password* session
+is started.  With this session you can perform *1Password CLI*
+commands. The following methods for such commands are available:
+
+ - `get`: get a field from a 1Password entry
+
+ - `add`: add an entry to 1Password
+
+ - `delete`: delete an entry from 1Password
+
+In the following example, a *1Password* session is created and the
+password from the `"Google"` entry in 1Password is fetched:
+
+```python
+op = OnePW()
+pw = op.get("Google", field="password")
+```
+
+When a *1Password* session is instantiated you are signed in
+to *1Password*. If the *1Password CLI* tool is integrated with
+the *1Password* desktop app, the desktop app is used to sign
+in to *1Password*. Otherwise, the password has to be provided,
+either as the argument `pw` (usually not recommended) or
+prompted for.
+
+**Arguments:**
+
+ - `account`: The account to sign in to (usually, not needed;
+default `None`)
+
+ - `pw`: The password used to sign in (usually, not needed;
+default `None`)
+
+#### Method <a id="get"></a>`OnePW.get`
+
+```python
+get(title: str, field: str = 'password', return_format: str = 'json') -> str | dict
+```
+
+*Get a field from a 1Password entry*
+
+Get the value of a field from the 1Password entry with the
+title `title`. The default field is `"password"`, but any
+other fields like `"username"`, `"email"` or `"url"` are
+possible.  `"all"` will return a JSON string with all fields.
+The method raises a `OnePWError` exception if an entry with
+the given title and/or field is not found.
+
+The argument `return_format` is only relevant if the value of
+argument `field` is `"all"`.  It can have four different
+values: `"json"` (default), `"dict"`, `"raw-json"`,
+`"raw-dict"`. `"json"` returns a JSON string with all fields
+and their values, `"dict"` returns a dictionary with all
+fields and their values, `"raw-json"` returns the raw JSON
+string returned by the 1Password CLI command, and `"raw-dict"`
+returns a dictionary based on the raw JSON string.
+
+**Arguments/return value:**
+
+ - `title`: The title of the entry
+
+ - `field`: The field to get from the entry, where `"all"` will
+return all fields as a JSON string (default `"password"`)
+
+ - `return_format`: If field is `"all"`, this argument
+specifies the format to return the fields/data in the entry
+(default `"json"`)
+
+ - `return`: The value of the field in the entry
+
+#### Method <a id="add"></a>`OnePW.add`
+
+```python
+add(title: str, username: str, password: str, email: str | None = None, url: str | None = None)
+```
+
+*Add a new entry to 1Password*
+
+Add a new entry to 1Password with the provided values. A
+title, username and password are required. The method raises a
+`OnePWError` exception if adding the entry fails.
+
+**Arguments:**
+
+ - `title`: The title of the entry
+
+ - `username`: The username added to the entry
+
+ - `password`: The password added to the entry
+
+ - `email`: The email address added to the entry (default `None`)
+
+ - `url`: The URL added to the entry (default `None`)
+
+#### Method <a id="delete"></a>`OnePW.delete`
+
+```python
+delete(title: str, no_archive: bool = False)
+```
+
+*Delete an entry from 1Password*
+
+Delete an entry from 1Password with the given title. 
+
+**Arguments:**
+
+ - `title`: The title of the entry to delete
+
+ - `no_archive`: Do not archive entry when deleted (default
+`False`)
+
+### <a id="cli"></a>To use the module as a console script
+
+#### Command <a id="cli-onepw"></a>`onepw`
+
+*Perform 1Password CLI commands*
+
+**Usage:**
+
+```bash
+onepw [-h] [-V] [--doc [{get,add,delete}]] [--account ACCOUNT] [--pw PASSWORD] {get,add,delete} ...
+```
+
+**Positional arguments:**
+
+Name | Description
+---- | -----------
+`{get,add,delete}` | the command to perform
+
+**Options:**
+
+Name | Description
+---- | -----------
+`-h, --help` | show this help message and exit
+`-V, --version` | show program's version number and exit
+`--doc [{get,add,delete}]` | print documentation of module or specific method
+`--account ACCOUNT` | the 1Password account (usually, not necessary)
+`--pw PASSWORD` | the 1Password secret password (be careful using this)
+
+Use `onepw {get,add,delete} -h` to show help message for a specific command
+
+#### Command <a id="cli-onepw-get"></a>`onepw get`
+
+*Get the value of a field from an entry in 1Password*
+
+**Usage:**
+
+```bash
+onepw get [-h] --title TITLE [--field FIELD]
+```
+
+**Options:**
+
+Name | Description
+---- | -----------
+`-h, --help` | show this help message and exit
+`--title TITLE` | the title of the entry to get the value from
+`--field FIELD` | the field of the entry to get the value from (default `password`)
+
+#### Command <a id="cli-onepw-add"></a>`onepw add`
+
+*Add an entry to 1Password*
+
+**Usage:**
+
+```bash
+onepw add [-h] --title TITLE --username USERNAME [--password PASSWORD] [--email EMAIL] [--url URL]
+```
+
+**Options:**
+
+Name | Description
+---- | -----------
+`-h, --help` | show this help message and exit
+`--title TITLE` | the title of the new entry
+`--username USERNAME` | the user name in the new entry
+`--password PASSWORD` | the password in the new entry (`onepw add` will ask for the password if it is not provided)
+`--email EMAIL` | the email address in the new entry (optional)
+`--url URL` | the URL in the new entry (optional)
+
+#### Command <a id="cli-onepw-delete"></a>`onepw delete`
+
+*Delete an entry from 1Password*
+
+**Usage:**
+
+```bash
+onepw delete [-h] --title TITLE [--no-confirm] [--no-archive]
+```
+
+**Options:**
+
+Name | Description
+---- | -----------
+`-h, --help` | show this help message and exit
+`--title TITLE` | the title of the entry to delete
+`--no-confirm` | do not confirm before deleting entry (default `False`)
+`--no-archive` | do not archive deleted entry (default `False`)
+
