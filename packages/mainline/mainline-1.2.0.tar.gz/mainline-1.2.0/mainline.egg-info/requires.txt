@@ -1,0 +1,9 @@
+wrapt
+six
+
+[docs]
+sphinx
+
+[tests]
+pytest
+coveralls
