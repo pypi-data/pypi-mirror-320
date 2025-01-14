@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dependency-track-client"
+version = "4.0.1"
+dependencies = [
+  "requests>=2.31.0",
+]
+authors = [
+  { name="Alvin Chen", email="sonoma001@gmail.com" },
+  { name="Lumir Jasiok", email="lumir.jasiok@alfawolf.eu" },
+  { name="Louis Marie", email="louis.marie@orange.com" }
+]
+description = "A simple wrapper for the Dependency Track REST API. This is fork based on original work of Alvin Chen and his dependency-track library."
+readme = "README.rst"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Orange-OpenSource/dependency-track-python"
+Issues = "https://github.com/Orange-OpenSource/dependency-track-python/issues"
