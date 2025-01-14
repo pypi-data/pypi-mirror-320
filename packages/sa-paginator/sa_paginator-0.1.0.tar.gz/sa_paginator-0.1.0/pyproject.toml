@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "sa-paginator"
+version = "0.1.0"
+description = "A simple paginator for SqlAlchemy ORM"
+authors = ["Sangyeop Kim <sangykimiv@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/psymoney/sa-paginator"
+packages = [
+    { include = "src/**/*.py" }
+]
+
+[project.urls]
+Homepage = "https://github.com/psymoney/sa-paginator"
+Issues = "https://github.com/psymoney/sa-paginator/issues"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.4"
+sqlalchemy = "^2.0.37"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "-s"
