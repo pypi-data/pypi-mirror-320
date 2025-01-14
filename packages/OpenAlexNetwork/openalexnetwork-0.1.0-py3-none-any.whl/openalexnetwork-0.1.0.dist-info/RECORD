@@ -1,0 +1,13 @@
+openalexnetwork/__init__.py,sha256=BsxMmVZafpmE0gZnIpeUAAtCiGZyjvVNBbxH4eR-AQE,460
+openalexnetwork/crawler.py,sha256=T_GDd1GyeYhSs3JX5rhcV_qSudgi34dzUUnc8ygxLIs,4842
+openalexnetwork/logging_setup.py,sha256=r8TiDBJ8wm0iWIuNUiZqcceC6vSgsINn_uR1Tu-SPw4,1642
+openalexnetwork/network.py,sha256=XPYw8xZqmFcDJYyPstnwUem8WIGmSIio6J5DPJYjVzU,2446
+openalexnetwork/utils/__init__.py,sha256=EK2PN71uYRjQNX7Bo6NPK4PMQjpNBr8z-7NlF74ODME,382
+openalexnetwork/utils/__pycache__/__init__.cpython-313.pyc,sha256=ZVipZEajEK9FpiG97vQtu9B03Jlsga7m6bYQyeUnd5s,502
+openalexnetwork/utils/__pycache__/iterators.cpython-313.pyc,sha256=IyH4iBWmBJS-ZF9wG0HfHx0y3kzEfLyMinmxiOmYpn0,3885
+openalexnetwork/utils/__pycache__/utils.cpython-313.pyc,sha256=l2FXpKUBJBAhyAo-BzKQBWjeW9QeP9NRQ9HhoHTmXt8,11961
+openalexnetwork/utils/iterators.py,sha256=AxCCJ7NESs7unFRSy3H5rdNLpWP0tBInIk4Y7UZQieA,2905
+openalexnetwork/utils/utils.py,sha256=QyV0MWcA3OQvUwLgBJ4uI5_rQP0WbLGBApC7lzwaY2o,8528
+openalexnetwork-0.1.0.dist-info/METADATA,sha256=hUvufbPn2JiIR_Y0LSq9DXxAVoB3NTL3rZm9u5eF14o,4657
+openalexnetwork-0.1.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+openalexnetwork-0.1.0.dist-info/RECORD,,
