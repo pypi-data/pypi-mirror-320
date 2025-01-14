@@ -1,0 +1,29 @@
+name: main
+
+on:
+  push:
+    branches:
+      - main
+      - development
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - uses: actions/setup-python@v5
+        id: setup-python
+        with:
+          python-version-file: .python-version
+
+      - run: echo "UV_PYTHON=${{ steps.setup-python.outputs.python-path }}" >> "$GITHUB_ENV"
+      - run: uv sync --all-extras --locked
+      - run: uv run ruff check .
+      - run: uv run pyright --warnings
+      - run: uv run pytest
+      - run: uv run sphinx-build --fail-on-warning docs docs/dist
