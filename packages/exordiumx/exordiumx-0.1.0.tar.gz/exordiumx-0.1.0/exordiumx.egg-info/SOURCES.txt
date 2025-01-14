@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+exordiumx/__init__.py
+exordiumx/vslogger.py
+exordiumx.egg-info/PKG-INFO
+exordiumx.egg-info/SOURCES.txt
+exordiumx.egg-info/dependency_links.txt
+exordiumx.egg-info/top_level.txt
+tests/test_vslogger.py
