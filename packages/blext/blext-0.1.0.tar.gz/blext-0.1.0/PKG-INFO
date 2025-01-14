@@ -1,0 +1,65 @@
+Metadata-Version: 2.4
+Name: blext
+Version: 0.1.0
+Summary: A fast, convenient project manager for Blender extensions.
+Project-URL: Homepage, https://git.sofus.io/so-rose/blext
+Author-email: Sofus Albert Høgsbro Rose <blext@sofusrose.com>
+Maintainer-email: Sofus Albert Høgsbro Rose <blext@sofusrose.com>
+License: AGPL-3.0-or-later
+License-File: LICENSE
+License-File: LICENSE_header.txt
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.11
+Requires-Dist: cyclopts>=3.1.5
+Requires-Dist: pip>=24.3.1
+Requires-Dist: pydantic>=2.10.5
+Requires-Dist: pypdl>=1.5.1
+Requires-Dist: rich>=13.9.4
+Requires-Dist: tomli-w>=1.1.0
+Description-Content-Type: text/markdown
+
+# `blext`
+A fast, convenient project manager for Blender extensions.
+
+Quite experimental for the moment.
+**Documentation TBD.**
+
+For now, install the `uv` package manager and run
+```bash
+uvx blext
+```
+to try out `blext`.
+A barebones help text should be available even now.
+
+# Contributing
+## Tooling
+- `uv`: Package and project manager.
+- `ruff lint`: Linter. Currently not enforced.
+- `ruff fmt`: Linter. Currently enforced.
+- `mypy`: Static type analysis. Currently not enforced.
+- `commitizen`: Commit and release conventions. Currently not enforced.
+- `pre-commit`: Guarantees
+
+## Making Commits
+Commits are subject to `pre-commit` hooks.
+To set this up, run:
+```bash
+uvx pre-commit install
+```
+
+Thereafter, it will run after each commit.
+
+Sometimes it's nice to run all of the `pre-commit` hooks manually:
+
+```bash
+uvx pre-commit run --all-files
+```
+
