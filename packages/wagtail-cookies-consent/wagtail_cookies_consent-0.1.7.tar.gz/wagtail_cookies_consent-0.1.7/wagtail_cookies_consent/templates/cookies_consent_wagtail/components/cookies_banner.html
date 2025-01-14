@@ -1,0 +1,20 @@
+{% load i18n %}
+
+<div class="cookie-banner">
+    <div class="cookie-icon">
+      <img src="{{active_banner.logo.url}}" alt="Cookie Icon" />
+    </div>
+    <div class="cookie-message">
+      <p>
+        {{ active_banner.get_translation_of_description }}
+      </p>
+    </div>
+    <div class="cookie-buttons">
+      <button class="btn accept">{% trans "Accept all cookies" %}</button>
+      <button class="btn necessary">{% trans "Necessary cookies only" %}</button>
+      <button type="button"
+              class=""
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal">{% trans "Cookies Customize" %}</button>
+    </div>
+  </div>
