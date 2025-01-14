@@ -1,0 +1,12 @@
+backpack_exchange_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backpack_exchange_sdk/authenticated.py,sha256=YjC27AuOZkW6iyMUapjdRD9odqDptXp1qwrIqBOUcDc,18940
+backpack_exchange_sdk/models.py,sha256=D0Kam5pHBv45vWYt0UCuYAS0k7kX41IOfwWKcd-CCu4,6025
+backpack_exchange_sdk/public.py,sha256=MsIAk7SaHz2f0gpYXr4EWeHPLYLmV76tQbrVwnGDCQY,6512
+enums/RequestEnums.py,sha256=AYpYxPcYdFT8XyEKuMP30Gf8sguDSk6avrIG5B1drA8,1165
+enums/ResponseEnums.py,sha256=5L5tUjhOjKdWfFbk7XUvj4WcNuLurBI16XpdGHGZDMc,248
+enums/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backpack_exchange_sdk-1.0.11.dist-info/LICENSE,sha256=oaS-cHs8HxXCLnSiqx6HT4GvDeohpvPZbFGxY8zdBFg,1066
+backpack_exchange_sdk-1.0.11.dist-info/METADATA,sha256=GPoLEuRIz8DYypoYxLExF-DYtTDUYVfD1IpD4Yr5EME,2699
+backpack_exchange_sdk-1.0.11.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+backpack_exchange_sdk-1.0.11.dist-info/top_level.txt,sha256=khs1Evfs72GAP_7jBPTGqOj-zfYs-50s6q1IDCCo_Io,28
+backpack_exchange_sdk-1.0.11.dist-info/RECORD,,
