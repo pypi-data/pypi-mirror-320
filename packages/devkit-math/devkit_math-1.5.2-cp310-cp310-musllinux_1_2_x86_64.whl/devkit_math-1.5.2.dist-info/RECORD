@@ -1,0 +1,7 @@
+factor.cpython-310-x86_64-linux-gnu.so,sha256=96_4L7wIsNHnYckcAik7T16CqcDM1KI-DSnKMdfj4Sk,36496
+gcd.cpython-310-x86_64-linux-gnu.so,sha256=Jn-kOqIbcOh2O36rFwHrIXHtAp3KRqDI3bc9XDnEE2o,36256
+prime.cpython-310-x86_64-linux-gnu.so,sha256=hUJ_YrjO_8rKq4NfW7XKRnLJY7Ks5dZXlvZfH2BNAQg,36064
+devkit_math-1.5.2.dist-info/top_level.txt,sha256=vBjZ2fkfqoQNxcYZD4njQDmfPd0jaIs4Oj3fwO7K3dU,17
+devkit_math-1.5.2.dist-info/METADATA,sha256=ICjhF8tJhWrHgDQBDI_vyZQNRrLZ4yN3soD1ruX-ZAQ,910
+devkit_math-1.5.2.dist-info/RECORD,,
+devkit_math-1.5.2.dist-info/WHEEL,sha256=C_u37Gjsvm-axxahYbHrVJK_acyekKqTTso2RCL4LvU,112
