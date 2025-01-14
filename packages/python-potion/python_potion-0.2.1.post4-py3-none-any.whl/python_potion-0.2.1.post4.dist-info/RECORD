@@ -1,0 +1,11 @@
+python_potion/__main__.py,sha256=tAvzMcX_kYU-kyhiefXjlO9IYfJ4KeL4Nt9m0da5SSE,1916
+python_potion/buffering.py,sha256=AECU9R3KlC0IIsbrBMFAICYRt2_7rrIWdNUloy_0itM,9187
+python_potion/client.py,sha256=HmihhiN8wPDNwlDd_FVqcqgcqU5dbmJFoJTx9BLBhsY,12357
+python_potion/common.py,sha256=rDH0upyckNYcJ-KKSwi2Q48_KhLlMCM-MupwQ3LHiTg,2770
+python_potion/converter.py,sha256=ykVSZafCKjLREqLHB9G4NKhFtHgBpIxX7Cwzg_q_caI,4604
+python_potion/decoder.py,sha256=RIC4vV2G090lATw9QnNPToF0NMKdiHEdtnAr7KI839s,4464
+python_potion-0.2.1.post4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+python_potion-0.2.1.post4.dist-info/METADATA,sha256=ghFB5CdRcmwU5241OSagRJGWZzjc1-YWQx5Qy5c_xO4,1750
+python_potion-0.2.1.post4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+python_potion-0.2.1.post4.dist-info/top_level.txt,sha256=hH3Y4T8Dr6mTY3Wzfz4EQNhCQMUE6bf06m2LePfhPrU,14
+python_potion-0.2.1.post4.dist-info/RECORD,,
