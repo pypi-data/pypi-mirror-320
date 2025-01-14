@@ -1,0 +1,32 @@
+Metadata-Version: 2.2
+Name: topaz-em
+Version: 0.3.7
+Summary: Particle picking with positive-unlabeled CNNs
+Home-page: https://github.com/tbepler/topaz
+Author: Tristan Bepler
+Author-email: tbepler@mit.edu
+License: GPLv3
+Keywords: cryoEM particle-picking CNN positive-unlabeled denoise topaz
+Requires-Python: >=3.8,<=3.12
+License-File: LICENSE
+Requires-Dist: torch<=2.3.1,>=1.0.0
+Requires-Dist: torchvision
+Requires-Dist: tqdm>=4.65.0
+Requires-Dist: h5py>=3.7.0
+Requires-Dist: numpy>=1.11
+Requires-Dist: pandas>=0.20.3
+Requires-Dist: scikit-learn>=0.19.0
+Requires-Dist: scipy>=0.17.0
+Requires-Dist: pillow>=6.2.0
+Requires-Dist: future
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+Particle picking software for single particle cryo-electron microscopy using convolutional neural networks and positive-unlabeled learning. Includes methods for micrograph denoising.
