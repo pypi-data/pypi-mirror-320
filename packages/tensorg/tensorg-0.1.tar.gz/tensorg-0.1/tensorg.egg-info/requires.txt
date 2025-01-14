@@ -1,0 +1,7 @@
+networkx==3.2.1
+torch
+nbval
+pytest
+einops
+pdf2image
+sympy
