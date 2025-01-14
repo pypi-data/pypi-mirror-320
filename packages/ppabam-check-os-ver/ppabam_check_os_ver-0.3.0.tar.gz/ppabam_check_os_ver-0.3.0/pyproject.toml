@@ -1,0 +1,41 @@
+[project]
+name = "ppabam-check-os-ver"
+version = "0.3.0"
+description = "Detects and outputs the os version."
+authors = [
+    { name = "ppabam", email = "tom@diginori.com" },
+]
+dependencies = [
+    "stundrg-check-os-ver>=0.2.3",
+    "check-os-ver>=0.2.1",
+    "jacob-os-version-check>=0.2.4",
+    "lucas-check-os-ver>=0.2.1",
+    "cho-check-os-ver>=0.2.3",
+    "nunininu-check-os-ver>=0.3.0",
+    "seo-check-os-version>=0.2.0",
+    "hj-check-os-version>=0.3.1",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/ppabam/ppabam-check-os-ver"
+Issues = "https://github.com/ppabam/ppabam-check-os-ver/issues"
+
+[project.scripts]
+ppabam-hi = "ppabam_check_os_ver.hi:hi"
+ppabam-random-pic = "ppabam_check_os_ver.hi:random_pic"
+ppabam-random-game = "ppabam_check_os_ver.hi:random_game"
+ppabam-random-match = "ppabam_check_os_ver.hi:random_match"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
