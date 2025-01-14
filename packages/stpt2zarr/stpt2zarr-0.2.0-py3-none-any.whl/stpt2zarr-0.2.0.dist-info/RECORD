@@ -1,0 +1,11 @@
+stpt2zarr/__init__.py,sha256=vMc6GyyVpoEONwh3eX_q5lMHWUMLEScb2B7uRZlftqw,7580
+stpt2zarr/stptlib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stpt2zarr/stptlib/mosaicdict.py,sha256=_aDJnvfVwI_yYW9EPKVpglU8hhzo67eiUq3jSw2mycc,1731
+stpt2zarr/stptlib/stptraw.py,sha256=TDF4fPetV8CQP3Qo4tmiPsNTGCUAMSH7T1NaItPWK_U,4545
+stpt2zarr/stptlib/stptsectionraw.py,sha256=aPvfFYy6XlxHg9vxQRS2yHHNNj-XyVr13YHwW_yktUY,5720
+stpt2zarr/stptlib/stpttileraw.py,sha256=6L7pJ_RZcNDFqUe0UBKWNuGruhgGLvpfStIl4NEZXnc,221
+stpt2zarr-0.2.0.dist-info/METADATA,sha256=T8XZ9ME2sFvdy2briRKC2pMvRyUGsdRGLcAJab18ifI,1300
+stpt2zarr-0.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+stpt2zarr-0.2.0.dist-info/entry_points.txt,sha256=avkH2vjGNy5F_bWxjvgeP1uLa2YcLbWpUnayUZ3Q0kM,45
+stpt2zarr-0.2.0.dist-info/top_level.txt,sha256=E7jhytDFc8rlJxnHPoFdEAVHn7Vr8TToQZ9gI0ykVd0,10
+stpt2zarr-0.2.0.dist-info/RECORD,,
