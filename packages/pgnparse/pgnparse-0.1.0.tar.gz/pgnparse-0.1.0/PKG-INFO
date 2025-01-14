@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: pgnparse
+Version: 0.1.0
+Summary: A library for parsing PGN chess notations
+Project-URL: Documentatino, https://github.com/ItsDrike/pgnparse
+Project-URL: Source code, https://github.com/ItsDrike/pgnparse
+Author-email: ItsDrike <itsdrike@protonmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Keywords: Chess,PGN,Parsing
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Games/Entertainment :: Board Games
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing
+Classifier: Typing :: Typed
+Requires-Python: >=3.12
+Requires-Dist: lark>=1.2.2
+Description-Content-Type: text/markdown
+
+# PyPGN
+
+This is a simple library capable of parsing chess PGNs, following the standard
+definition. It includes classes that form an Abstract Syntax Tree, fully
+representing the parsed PGN with code. These classes also include `__str__`
+implementations that allow seamless conversion back to regular (normalized) PGN
+strings.
+
+A unique feature of this library is the `flatten` function for a list of moves.
+This function allows for the flattening of a list of moves, recursively
+stripping away all of the variations in a chess game and returning full
+standalone lists for each variation.
+
+The parsing is handled using the
+[`Lark`](https://lark-parser.readthedocs.io/en/stable/index.html) library,
+which is therefore a dependecy of this library. Lark allows specifying a formal
+EBNF-like grammar definition, which it then uses to tokenize the given input.
+This token tree is then used to produce the AST.
