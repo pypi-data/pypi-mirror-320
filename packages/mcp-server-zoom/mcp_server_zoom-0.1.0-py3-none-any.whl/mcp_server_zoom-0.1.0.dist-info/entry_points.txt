@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-server-zoom = mcp_server_zoom:main
