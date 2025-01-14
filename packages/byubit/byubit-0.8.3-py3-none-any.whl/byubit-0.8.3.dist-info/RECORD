@@ -1,0 +1,11 @@
+byubit/__init__.py,sha256=1dpki6o5ftojEcp591ImKxtKmenuy8fBIdOQQKdP3dY,23
+byubit/bit.py,sha256=gFcilyx895ZOkUIXXJ6OGW3pFTKN5bKK8tUIzEnCvOM,17548
+byubit/renderers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+byubit/renderers/html/render_bit.html,sha256=w8eZiDpjvwPh-aU-tW69ayEOSqcbPnqqLvSrSm8817I,17547
+byubit/renderers/html/render_bit.js,sha256=pPCwtu3kves0Xr8T03ekYzMkSSadI29rgtcOLHMdWos,4948
+byubit/renderers/html_renderer.py,sha256=i4ZTTUI1w5pF-oZNYk7TnmGAUfiFgOn_jLkOIF6iBmE,1278
+byubit/rendering.py,sha256=WryjA06faEcjkyQNzsgxTht0sADtTiG-7LlK7TFUlvE,556
+byubit-0.8.3.dist-info/LICENSE,sha256=QJ4HrENHEtOLsciHt8Hc_3DMNap-kThu89YSxCdFSxk,1064
+byubit-0.8.3.dist-info/METADATA,sha256=waTxYbK-Y73KJgJomGdmubt_I8jQQElqtkyAvNQZPbM,638
+byubit-0.8.3.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+byubit-0.8.3.dist-info/RECORD,,
