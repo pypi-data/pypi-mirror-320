@@ -1,0 +1,26 @@
+[project]
+name = "jacob-os-version-check"
+version = "0.2.2"
+description = "Detects and outputs the os vesion."
+authors = [
+    { name = "jacob53", email = "jacob8753@gmail.com" },
+]
+dependencies = []
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/Jacob-53/jacob-os-version-check"
+Issues = "https://github.com/Jacob-53/jacob-os-version-check/issues"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
