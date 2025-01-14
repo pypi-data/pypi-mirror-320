@@ -1,0 +1,15 @@
+numpy
+scipy
+pandas
+geopandas
+matplotlib
+shapely
+xarray
+fiona
+toml
+boto3
+python-dateutil
+cht_utils
+
+[tests]
+pytest

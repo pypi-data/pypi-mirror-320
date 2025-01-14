@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: cht_cyclones
+Version: 1.0.2
+Author-email: Maarten van Ormondt <maarten.vanormondt@deltares.nl>, Julian Hofer <Julian.Hofer@deltares.nl>, Sarwan Peiter <Sarwan.Peiter@deltares.nl>
+License: MIT
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Hydrology
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: geopandas
+Requires-Dist: matplotlib
+Requires-Dist: shapely
+Requires-Dist: xarray
+Requires-Dist: fiona
+Requires-Dist: toml
+Requires-Dist: boto3
+Requires-Dist: python-dateutil
+Requires-Dist: cht_utils
+Provides-Extra: tests
+Requires-Dist: pytest; extra == "tests"
+
+# Coastal Hazards Toolkit -Tropical cyclones
