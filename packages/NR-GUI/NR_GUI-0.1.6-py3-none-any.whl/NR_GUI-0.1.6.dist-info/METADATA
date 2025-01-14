@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: NR_GUI
+Version: 0.1.6
+Summary: Simple gui package, you can use it for easy gui
+Author: NR_5tudio
+Keywords: python,tkinter,EZ_GUI,GUI,NR,NR_5tudio
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: gdown
+
