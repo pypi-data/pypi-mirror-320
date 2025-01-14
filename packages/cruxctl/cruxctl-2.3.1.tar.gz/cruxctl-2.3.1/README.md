@@ -1,0 +1,354 @@
+# Crux command line tool - cruxctl
+
+Herein contains the source code for the cruxctl command line tool. Currently it only supports managing delivery 
+deadlines, but new subcommands can be added to it as it grows.
+
+# Public Distribution
+Crux user with private registry access: 
+Zip private upstream dependency [crux-odin](https://github.com/cruxinformatics/crux-odin/releases) and [cruxctl](https://github.com/cruxinformatics/cruxctl/releases) dependency
+
+# Recommended Install
+## MacOS (Internal user w/ artifact registry access)
+```
+source scripts/setup.sh
+```
+
+## Linux (w/o artifact registry access)
+Given a zipped public distribution with python whl.
+
+Setup steps:
+- Unzip distribution
+- Ensure python 3.10 installed
+- Create virtual environment
+```
+python -m venv venv
+source venv/bin/activate
+```
+- Install private upstreams and cruxctl (Replace with the versions in the zipped distribution)
+```
+venv/bin/pip install crux_odin-1.8.0-py3-none-any.whl cruxctl-2.3.1-py3-none-any.whl
+```
+- Verify install
+```
+cruxctl version
+```
+
+## Windows Powershell (w/o artifact registry access)
+Given a zipped public distribution with python whl.
+
+Setup steps:
+- Unzip distribution
+- Ensure python 3.10 installed
+```
+winget install --id "Python.Python.3.10"
+```
+- Install private upstreams and cruxctl (Replace with the versions in the zipped distribution)
+```
+pip install crux_odin-1.8.0-py3-none-any.whl cruxctl-2.3.1-py3-none-any.whl
+```
+- Verify install
+```
+cruxctl version
+```
+
+
+
+# Prerequisites
+
+- Assumes install of:
+    - Homebrew ([Install](https://brew.sh/))
+    - pyenv ([Install](https://github.com/pyenv/pyenv?tab=readme-ov-file#installation))
+    - (Temporary) gcloud auth config
+    - postgres (brew install postgres)
+- Google Cloud default app credentials setup (instructions [here](https://cloud.google.com/docs/authentication/application-default-credentials#personal))
+
+# Installing cruxctl
+Use compatible python version in downstream project:
+Switch to python 3.10
+```commandline
+pyenv install 3.10.13
+pyenv local 3.10.13
+```
+
+#### Method 1: Pip install the wheel file
+Install GCP keyring to consume Crux's Private packages:
+```shell
+pip install keyring keyrings.google-artifactregistry-auth
+```
+Select the latest version (Ex: 1.11.1), and install via pip:
+```shell
+pip install -e git+ssh://git@github.com/cruxinformatics/cruxctl.git@1.11.1#egg=cruxctl --extra-index-url https://us-python.pkg.dev/crux-ci/crux-python/simple
+```
+
+Or if provided a wheel distribution:
+```shell
+pip install <Path to wheel file> --extra-index-url https://us-python.pkg.dev/crux-ci/crux-python/simple
+```
+
+Reference: https://cloud.google.com/artifact-registry/docs/python/authentication#keyring
+
+# Development 
+
+Assumes [install of poetry](https://python-poetry.org/docs/#installation)
+
+## Installing Pre-commit hooks
+
+```commandline
+pre-commit install
+```
+
+## Installing the task runner
+[Poe the Poet](https://poethepoet.natn.io/index.html) is a task runner for poetry allowing the execution of `[tool.poe.tasks]` by running `poetry {{task_name}}`
+
+Configure the task runner:
+```
+poetry self add 'poethepoet[poetry_plugin]'
+```
+
+## Updating Dependencies
+
+* Add new dependencies to `pyproject.toml` under the [tool.poetry.dependencies] section
+
+### Installing dependencies and generating poetry lock file:
+```commandline
+poetry config http-basic.google oauth2accesstoken $(gcloud auth print-access-token)
+poetry install
+```
+
+### Accessing poetry env
+```commandline
+poetry shell
+```
+
+## Releasing cruxctl
+It is important that commits to master use conventional commits. The convention is to use a seperate `release/*` branch for cutting releases — prodiving a separate approval process for versioning.
+
+This process does the following:
+1. Updates CHANGELOG.md
+2. Updates version files in source code (pyproject.toml & main.py)
+3. Tags the branch
+4. On Tag Push
+    - Builds whl
+    - Attaches whl and changelog to release
+
+Step 1: Identify next release
+```
+poe version_check
+...
+tag to create: X.Y.Z
+...
+```
+
+Step 2: Cut branch for release
+```
+git checkout -b release/X.Y.Z
+```
+
+Step 3: Version code base — updating changelog, version files, commiting and cutting tag
+```
+poetry version
+```
+Bump the version:
+```
+poe version_bump
+```
+
+Step 4: Publish PR
+Publish a PR before pushing the tag
+
+Step 5: Merge PR and Push tag
+```
+git push origin X.Y.Z
+```
+
+# Examples for AI Schedule
+
+Get calculated delivery deadline:
+```
+cruxctl ai-schedule get-delivery-deadline -d AQKwpurp8B-G848Qqs7JthWOog -bm 60
+```
+
+# Example for AI curation
+
+Onboard data through Crux - run through profiler, upload vendor doc. These would trigger curation to run on event based. After profiling is done, you are now able to download odin yaml. You can check the odin file against curation output using cruxctl command. 
+
+```
+cruxctl dataset update -f [ODIN_YAML_FILE]
+  --profile [ENVIRONMENT] --from-docs
+```
+
+# Examples for Deadline Management
+
+See available commands and help:
+```shell
+cruxctl deadlines --help
+```
+
+Get all deadlines:
+```shell
+cruxctl deadlines get-all
+```
+
+Get a specific deadline:
+```shell
+cruxctl deadlines get dataset-id-abc
+```
+
+Insert a deadline:
+```shell
+cruxctl deadlines insert dataset-id-abc  0 23 '3W' '*' '*' '*'
+```
+
+Delete deadlines matching dataset ID:
+```shell
+cruxctl deadlines delete dataset-id-abc
+```
+
+Delete all deadlines:
+```shell
+cruxctl deadlines delete-all dataset-id-abc
+```
+
+Import deadlines from CSV:
+```shell
+cruxctl deadlines import /path/to/file/deadlines.csv
+```
+
+Export deadlines to GCS bucket as CSV file:
+```shell
+cruxctl deadlines export gs://my-bucket/deadlines.csv
+```
+
+Get all notification snoozes:
+```shell
+cruxctl deadlines get-all-notification-snooze
+```
+
+Get a specific notification snooze:
+```shell
+cruxctl deadlines get-notification-snooze dataset-id-abc
+```
+
+Create a notification snooze:
+```shell
+cruxctl deadlines create-notification-snooze dataset-id-abc 72 hours
+```
+
+Delete a notification snooze:
+```shell
+cruxctl deadlines delete-notification-snooze dataset-id-abc
+```
+
+Delete expired notification snooze(s):
+```shell
+cruxctl deadlines delete-expired-notification-snooze
+```
+
+# Example for YAML Validation
+
+Validate YAML files which possibly point to a parent YAML file. 
+There are two forms: one where you just give the YAML file names and the other
+where you give a start directory and the YAML file names. The second form exists
+because normally the data engineers stick the YAML files below a directory named
+after the company. They also often put a parent YAML file there too and a bunch
+of child YAML files refer to it. Therefore, we allow the user to pass this directory
+as the first argument and the child or parent files as the subsequent arguments.
+If you modify the child file and there is a parent, the combined parent/child
+YAML is validated. If you pass a parent file, ALL THE CHILDREN of that parent
+file are validated.
+
+You can also pass a parent file and a child file with the first form where you
+just give YAML paths. In this case, pass the parent and the child YAML file
+as the same argument separated by a comma. For example
+
+```shell
+cruxctl dataset validate a.yaml b.yaml,c.yaml
+```
+validates `a.yaml` by itself and the combined `b.yaml/c.yaml`. This supposes
+that `b.yaml` is the "parent" of `c.yaml`.
+
+The full usage syntax is:
+```shell
+cruxctl dataset validate [--profile local|dev|staging|prod] [--quiet] file_or_dir yaml_file...
+```
+Normally `cruxctl dataset validate` prints out the progress as it goes. `--quiet` turns this off.
+
+# Example for creating a new YAML file and dataset
+
+When we create a new YAML file, we create a new dataset and data product based
+on the file name of the YAML output file. These dataset and data product are
+written to the catalog through our Crux API. The usage of the command is as follows:
+```shell
+cruxctl dataset init [--dataset-name dataset_name] [--data-product-name data_product_name] [--environment local|dev|staging|prod] yaml_output_file
+```
+By default the `dataset_name` and `data_product_name` are the same as the output
+file name (minus the `.yaml` extension). The `environment` is `prod` by default.
+When the command runs, it prints out what it is doing like this:
+```chatinput
+CRUX_API_TOKEN loaded.
+Using org ID "OrEC0NbO"
+Checking if data product "sample10" exists
+It doesn't. Creating it.
+Created data product "sample10" with ID "Prb8CPw0FAkt"
+Created dataset "sample10" with ID "Dspmm40k"
+Mapped dataset ID "Dspmm40k" to data product ID "Prb8CPw0FAkt"
+Created /tmp/sample10.yaml
+```
+The org ID is looked up via the access token you stored with `cruxctl auth login`.
+
+If you don't like the `dataset_name` or `data_product_name` to match the file name,
+give the `--dataset-name` or `--data-product-name` options. For the data product ID, you
+can give an existing one too and it will use that data product ID rather than creating
+one. It _always_ creates a new dataset ID.
+
+To verify your dataset ID was created, go 
+[here](https://api.cruxinformatics.com/v2/ops/swagger#/datasets/getV2OpsDatasets) 
+and give the filter `name.EQ.yourname`. To see if the data product was created, go
+[here](https://api.cruxinformatics.com/v2/ops/swagger#/data-products-v4/getV4OpsDataproducts) 
+and give the filter `name.EQ.yourname`.
+
+# Example for deploying an Odin dataset to the control plane
+
+To deploy an Odin dataset YAML file to the control plane, give one or more arguments to
+the `dataset apply` command. This command can deploy multiple YAML files from one command
+line invocation if you give multiple YAML files to apply. Like the `dataset validate` command,
+you can give a directory as the first argument and YAML files to apply after that or you can
+just give the YAML files to apply (or combined YAML files separated by commas. See the
+`dataset validate` command for syntax).
+
+Usage:
+```shell
+cruxctl dataset apply [--profile local|dev|staging|prod] [--quiet] file_or_dir yaml_file...
+```
+Applying starts the processing runs for the YAML files. Normally it prints out as it
+is applying the YAML files. Use `--quiet` to turn this off.
+
+# Example for deleting a dataset in the control plane
+
+If you'd like to delete an existing dataset(s) in the control plane, give the following command:
+
+```shell
+cruxctl dataset delete [--profile local|dev|staging|prod] [--quiet] dataset_id...
+```
+
+# Example for getting the events from a deployed dataset
+
+To see the events from a deployed dataset, give the following command:
+```shell
+cruxctl dataset events [--watch] [--environment local|dev|staging|prod] dataset_id
+```
+This prints out the events for that dataset ID. If you give the `--watch` option,
+then every three second more output is checked for an output. The output looks like
+this:
+```json
+{'specversion': '1.0', 'type': 'com.crux.cp.dataset.ingest.apply.v1', 'source': '/apilayer', 'subject': '', 'id': 'e0e1936d-e70b-4351-95e4-66fbefbbdf8b', 'time': '2024-09-10T22:39:57.077029Z', 'data': {'id': 0, 'datasetId': 'DssgxkJB', 'orgId': 'test', 'eventId': 'e0e1936d-e70b-4351-95e4-66fbefbbdf8b', 'eventSource': '/apilayer', 'eventType': 'com.crux.cp.dataset.ingest.apply.v1', 'message': 'validation pass', 'statusType': 'Apply'}}
+{'specversion': '1.0', 'type': 'com.crux.cp.dataset.ingest.apply.v1', 'source': '/apilayer', 'subject': '', 'id': 'e69b7204-2cff-4702-a65e-885bb7f77d7d', 'time': '2024-09-10T21:31:01.843591Z', 'data': {'id': 0, 'datasetId': 'DssgxkJB', 'orgId': 'test', 'eventId': 'e69b7204-2cff-4702-a65e-885bb7f77d7d', 'eventSource': '/apilayer', 'eventType': 'com.crux.cp.dataset.ingest.apply.v1', 'message': 'validation pass', 'statusType': 'Apply'}}
+{'specversion': '1.0', 'type': 'com.crux.cp.dataset.ingest.apply.v1', 'source': '/apilayer', 'subject': '', 'id': 'f41f54e3-b9d2-4638-a766-69662c75fbc4', 'time': '2024-09-10T21:59:00.67005Z', 'data': {'id': 0, 'datasetId': 'DssgxkJB', 'orgId': 'test', 'eventId': 'f41f54e3-b9d2-4638-a766-69662c75fbc4', 'eventSource': '/apilayer', 'eventType': 'com.crux.cp.dataset.ingest.apply.v1', 'message': 'validation pass', 'statusType': 'Apply'}}
+```
+# Example for retrieving dataset logs
+
+If you'd like to retrieve logs of an existing dataset in the control plane, run the following command:
+
+```shell
+cruxctl dataset logs dataset_id [--profile local|dev|staging|prod] -s dispatch
+```
