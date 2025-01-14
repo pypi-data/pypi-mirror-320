@@ -1,0 +1,9 @@
+dbTelematelAPI/__init__.py,sha256=rNhrP6BVqqhOata2jtRKJ6G-vQTuITJ1Zgcq6V1nB3Y,139
+dbTelematelAPI/__main__.py,sha256=10rYdEBIT-chEo1NRSnQGypMQkJYczoSeqwjVGwp1JE,189
+dbTelematelAPI/query_pasarela.py,sha256=uDu9Pk4f2MN10RThelUU8aCS5eShpKa-fiWv_knqsZE,1176
+dbTelematelAPI/telematel_wrapper.py,sha256=bM4MKf6dRDnFzOcuBtKo9WKwGdRKRt84uJY9kYpRk_s,3129
+dbTelematelAPI-0.0.8.dist-info/METADATA,sha256=-RPENhuOziqjxk56IHP4GasVyOCxOTDrpSVboDSoLU0,1016
+dbTelematelAPI-0.0.8.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+dbTelematelAPI-0.0.8.dist-info/license.txt,sha256=Z_R0qA8dBa_UBMGgM1fEedm0wV7CBqwIBaBEOu4iT5w,1077
+dbTelematelAPI-0.0.8.dist-info/top_level.txt,sha256=Jm3Ect0Pjcq46SQSfqt0OaDFDo0vEtlQe-1msTSpWXE,15
+dbTelematelAPI-0.0.8.dist-info/RECORD,,
