@@ -1,0 +1,239 @@
+{
+  "name": "table_html",
+  "description": "JS table",
+  "path": "ui/static/answers/funding_html",
+  "css": "static/css_global.css",
+  "question_list": [
+    "What are the partnerships of Microsoft in Generative ai 2024?"
+  ],
+  "html": "ui/static/answers/funding_html/html.html",
+  "html_tags": {
+    "chart_html": [
+      {
+        "format_output": "highcharts",
+        "css_name": null,
+        "options": null,
+        "data_highcharts": {
+          "chart": {
+            "type": "column"
+          },
+          "title": {
+            "text": "Quarterly Funding (USD millions)"
+          },
+          "subtitle": {
+            "text": "Edge (source)"
+          },
+          "xAxis": {
+            "categories": [
+              "Q1 2021",
+              "Q2 2021",
+              "Q3 2021",
+              "Q4 2021",
+              "Q1 2022",
+              "Q2 2022",
+              "Q3 2022",
+              "Q4 2022",
+              "Q1 2023",
+              "Q2 2023",
+              "Q3 2023",
+              "Q4 2023",
+              "Q1 2024",
+              "Q2 2024",
+              "Q3 2024"
+            ],
+            "crosshair": true
+          },
+          "yAxis": {
+            "min": 0,
+            "title": {
+              "text": "Funding (USD millions)"
+            }
+          },
+          "tooltip": {
+            "headerFormat": "<span style=\"font-size:10px\">{point.key}</span><table>",
+            "pointFormat": "<tr><td style=\"color:{series.color};padding:0\">{series.name}: </td><td style=\"padding:0\"><b>{point.y:.1f} USD million</b></td></tr>",
+            "footerFormat": "</table>",
+            "shared": true,
+            "useHTML": true
+          },
+          "plotOptions": {
+            "column": {
+              "pointPadding": 0.2,
+              "borderWidth": 0
+            }
+          },
+          "series": [
+            {
+              "name": "Revenue",
+              "data": [
+                1283,
+                972,
+                924,
+                2349,
+                646,
+                1583,
+                587,
+                558,
+                195,
+                1173,
+                248,
+                385,
+                227,
+                1110,
+                615
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "format_output": "highcharts",
+        "css_name": null,
+        "options": null,
+        "data_highcharts": {
+          "title": {
+            "text": ""
+          },
+          "subtitle": {
+            "text": "Source SP Edge"
+          },
+          "accessibility": {
+            "point": {
+              "valueDescriptionFormat": "{index}. {point.from} to {point.to}, {point.weight}."
+            }
+          },
+          "tooltip": {
+            "headerFormat": "",
+            "pointFormat": "{point.fromNode.name} → {point.toNode.name}: {point.weight:.2f} events",
+            "nodeFormat": "{point.name}: {point.sum:.2f} events"
+          },
+          "series": [
+            {
+              "keys": [
+                "from",
+                "to",
+                "weight"
+              ],
+              "nodes": [
+                {
+                  "id": "OpenAI",
+                  "color": "#FFA500",
+                  "column": 1
+                },
+                {
+                  "id": "nvidia",
+                  "color": "#74FFE7",
+                  "column": 2
+                },
+                {
+                  "id": "Microsoft",
+                  "color": "#8CFF74",
+                  "column": 2
+                },
+                {
+                  "id": "Google",
+                  "color": "#FF8DA1",
+                  "column": 2
+                }
+              ],
+              "data": [
+                [
+                  "Generative AI",
+                  "openAI",
+                  1.0
+                ],
+                [
+                  "openAI",
+                  "nvidia",
+                  1.0
+                ],
+                [
+                  "openAI",
+                  "google",
+                  1.0
+                ],
+                [
+                  "openAI",
+                  "Microsoft",
+                  1.0
+                ]
+              ],
+              "type": "sankey",
+              "name": "Sankey demo series"
+            }
+          ]
+        }
+      }
+
+
+
+
+    ],
+    "table_list": [
+      {
+        "css_name": null,
+        "options": null,
+        "title": "Company List",
+        "summary": "my summary",
+        "columns": [
+          "url",
+          "com_id",
+          "name",
+          "text"
+        ],
+        "values": [
+          [
+            "Google",
+            1756184,
+            "Google",
+            "Google isnline."
+          ],
+          [
+            "Meta",
+            1756184,
+            "Meta",
+            "Meta is a wholesale food products online."
+          ],
+          [
+            "Telsa",
+            1756184,
+            "Telsa",
+            "Telsa e of e."
+          ]
+        ]
+      },
+      {
+        "css_name": null,
+        "options": null,
+        "title": "Company List",
+        "summary": "my summary",
+        "columns": [
+          "url",
+          "com_id",
+          "name",
+          "text"
+        ],
+        "values": [
+          [
+            "Google",
+            1756184,
+            "Google",
+            "Google isnline."
+          ],
+          [
+            "Meta",
+            1756184,
+            "Meta",
+            "Meta is a wde range of food products online."
+          ],
+          [
+            "Telsa",
+            1756184,
+            "Telsa",
+            "Telsa ise ra products online."
+          ]
+        ]
+      }
+    ]
+  }
+}

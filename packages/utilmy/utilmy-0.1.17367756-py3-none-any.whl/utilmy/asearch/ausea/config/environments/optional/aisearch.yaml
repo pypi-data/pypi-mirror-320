@@ -1,0 +1,337 @@
+Parameters:
+  cpu:
+    Type: Number
+  image:
+    Type: String
+  auth0DomainParameter:
+    Type: AWS::SSM::Parameter::Value<String>
+    Default: auth0Domain
+  memoryLimitMiB:
+    Type: Number
+  entryPoint:
+    Type: CommaDelimitedList
+  command:
+    Type: CommaDelimitedList
+  ephemeralStorageGiB:
+    Type: Number
+  startTimeout:
+    Type: Number
+  aigensearchdatadogapikeylogdriverParameter:
+    Type: AWS::SSM::Parameter::Value<String>
+    Default: datadogApiKey
+  aigensearchdatadogapikeyagentParameter:
+    Type: AWS::SSM::Parameter::Value<String>
+    Default: datadogApiKey
+  BootstrapVersion:
+    Type: AWS::SSM::Parameter::Value<String>
+    Default: /cdk-bootstrap/hnb659fds/version
+    Description: Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
+Resources:
+  aigensearchF4C678E3:
+    Type: AWS::ECS::TaskDefinition
+    Properties:
+      ContainerDefinitions:
+        - Command:
+            Ref: command
+          EntryPoint:
+            Ref: entryPoint
+          Environment:
+            - Name: JOB_NAME
+              Value: ai-gen-search
+            - Name: AUTH0_CLIENT_ID
+              Value: oC2rfnVdKmMyWqseUTmPoBs2Kk3C60Gg
+            - Name: AUTH0_CLIENT_SECRET
+              Value: jtKn0RYStUOjoJR2YTcnzgSCY0dB2TZbrMuccOpT8XOoKSiSFiEwfOashFlIWB4q
+            - Name: APP_SECRET_KEY
+              Value: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+            - Name: ALLOWED_ORIGINS
+              Value: https://yqqqphhcg2hvaaua-test001-api.pj-initial.net
+            - Name: BASE_URL
+              Value: https://aisearch.yqqqphhcg2hvaaua-test001.pj-initial.net
+            - Name: AUTH
+              Value: AUTH0
+            - Name: AUTH0_DOMAIN
+              Value:
+                Ref: auth0DomainParameter
+          Essential: true
+          Image:
+            Ref: image
+          LogConfiguration:
+            LogDriver: awsfirelens
+            Options:
+              apiKey:
+                Ref: aigensearchdatadogapikeylogdriverParameter
+              Name: datadog
+              Host: http-intake.logs.datadoghq.com
+              TLS: "on"
+              dd_service: ai-gen-search
+              dd_source: test
+              provider: ecs
+          MountPoints:
+            - ContainerPath: /mnt/efs
+              ReadOnly: false
+              SourceVolume: EdgeVolume
+          Name: ai-gen-search
+          PortMappings:
+            - ContainerPort: 8050
+              Protocol: tcp
+          StartTimeout:
+            Ref: startTimeout
+        - Essential: true
+          FirelensConfiguration:
+            Type: fluentbit
+          Image:
+            Fn::Join:
+              - ""
+              - - Fn::Select:
+                    - 4
+                    - Fn::Split:
+                        - ":"
+                        - Fn::ImportValue: EcrStack:ExportsOutputFnGetAttawsforfluentbitC87F9401Arn85E858FF
+                - .dkr.ecr.
+                - Fn::Select:
+                    - 3
+                    - Fn::Split:
+                        - ":"
+                        - Fn::ImportValue: EcrStack:ExportsOutputFnGetAttawsforfluentbitC87F9401Arn85E858FF
+                - "."
+                - Ref: AWS::URLSuffix
+                - /
+                - Fn::ImportValue: EcrStack:ExportsOutputRefawsforfluentbitC87F9401749F1E85
+                - :latest
+          MemoryReservation: 50
+          Name: log-router
+        - Environment:
+            - Name: ECS_FARGATE
+              Value: "true"
+            - Name: DD_API_KEY
+              Value:
+                Ref: aigensearchdatadogapikeyagentParameter
+          Essential: true
+          Image:
+            Fn::Join:
+              - ""
+              - - Fn::Select:
+                    - 4
+                    - Fn::Split:
+                        - ":"
+                        - Fn::ImportValue: EcrStack:ExportsOutputFnGetAttdatadogagent91B2A7F2Arn484D0DCF
+                - .dkr.ecr.
+                - Fn::Select:
+                    - 3
+                    - Fn::Split:
+                        - ":"
+                        - Fn::ImportValue: EcrStack:ExportsOutputFnGetAttdatadogagent91B2A7F2Arn484D0DCF
+                - "."
+                - Ref: AWS::URLSuffix
+                - /
+                - Fn::ImportValue: EcrStack:ExportsOutputRefdatadogagent91B2A7F22288E141
+                - :latest
+          Name: datadog-agent
+      Cpu:
+        Ref: cpu
+      EphemeralStorage:
+        SizeInGiB:
+          Ref: ephemeralStorageGiB
+      ExecutionRoleArn:
+        Fn::ImportValue: RoleStack:ExportsOutputFnGetAttEcsTaskExecutionRoleC0B6A84DArnF61B3BFD
+      Family: ai-gen-search
+      Memory:
+        Ref: memoryLimitMiB
+      NetworkMode: awsvpc
+      RequiresCompatibilities:
+        - FARGATE
+      TaskRoleArn:
+        Fn::ImportValue: AIGenRoleStack:ExportsOutputFnGetAttaiGenTaskRole5FC9C3F1Arn3D758B24
+      Volumes:
+        - EFSVolumeConfiguration:
+            AuthorizationConfig:
+              AccessPointId:
+                Fn::ImportValue: AIGenEfsStack:ExportsOutputRefAIGenEfsFileSystemAIGENEfsAccessPointBB094DB812935AE2
+              IAM: ENABLED
+            FilesystemId:
+              Fn::ImportValue: AIGenEfsStack:ExportsOutputRefAIGenEfsFileSystem86302DBA5CAF1EE3
+            TransitEncryption: ENABLED
+          Name: EdgeVolume
+    Metadata:
+      aws:cdk:path: AiSearchStack/ai-gen-search/Resource
+  aigensearchsg25F48CC7:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: AiSearchStack/ai-gen-search-sg
+      GroupName: ai-gen-search-sg
+      SecurityGroupEgress:
+        - CidrIp: 0.0.0.0/0
+          Description: Allow all outbound traffic by default
+          IpProtocol: "-1"
+      SecurityGroupIngress:
+        - CidrIp: 0.0.0.0/0
+          Description: from 0.0.0.0/0:8050
+          FromPort: 8050
+          IpProtocol: tcp
+          ToPort: 8050
+      VpcId:
+        Fn::ImportValue: NetworkStack:ExportsOutputRefVpc8378EB38272D6E3A
+    Metadata:
+      aws:cdk:path: AiSearchStack/ai-gen-search-sg/Resource
+  aigensearchsgfromAiSearchStackaigensearchlbSecurityGroup675CA2DE8050BADA514C:
+    Type: AWS::EC2::SecurityGroupIngress
+    Properties:
+      Description: Load balancer to target
+      FromPort: 8050
+      GroupId:
+        Fn::GetAtt:
+          - aigensearchsg25F48CC7
+          - GroupId
+      IpProtocol: tcp
+      SourceSecurityGroupId:
+        Fn::GetAtt:
+          - aigensearchlbSecurityGroup5A63B7B7
+          - GroupId
+      ToPort: 8050
+    Metadata:
+      aws:cdk:path: AiSearchStack/ai-gen-search-sg/from AiSearchStackaigensearchlbSecurityGroup675CA2DE:8050
+  aiGensearchService88CD39BC:
+    Type: AWS::ECS::Service
+    Properties:
+      Cluster:
+        Fn::ImportValue: EdgeClusterStack:ExportsOutputRefEdgeCluster938D75F54C395F7D
+      DeploymentConfiguration:
+        Alarms:
+          AlarmNames: []
+          Enable: false
+          Rollback: false
+        MaximumPercent: 200
+        MinimumHealthyPercent: 50
+      DeploymentController:
+        Type: ECS
+      DesiredCount: 1
+      EnableECSManagedTags: true
+      EnableExecuteCommand: true
+      HealthCheckGracePeriodSeconds: 180
+      LaunchType: FARGATE
+      LoadBalancers:
+        - ContainerName: ai-gen-search
+          ContainerPort: 8050
+          TargetGroupArn:
+            Ref: aigensearchtg7BE5B3CB
+      NetworkConfiguration:
+        AwsvpcConfiguration:
+          AssignPublicIp: DISABLED
+          SecurityGroups:
+            - Fn::GetAtt:
+                - aigensearchsg25F48CC7
+                - GroupId
+          Subnets:
+            - Fn::ImportValue: NetworkStack:ExportsOutputRefVpcprivateSubnet1SubnetCEAD37168693D373
+            - Fn::ImportValue: NetworkStack:ExportsOutputRefVpcprivateSubnet2Subnet2DE7549CDF5ACE3D
+      PropagateTags: SERVICE
+      ServiceName: ai-gen-search
+      TaskDefinition:
+        Ref: aigensearchF4C678E3
+    DependsOn:
+      - aigensearchlbaigensearchlistener9379E82D
+    Metadata:
+      aws:cdk:path: AiSearchStack/aiGensearchService/Service
+  aigensearchlb73BB9AF9:
+    Type: AWS::ElasticLoadBalancingV2::LoadBalancer
+    Properties:
+      LoadBalancerAttributes:
+        - Key: deletion_protection.enabled
+          Value: "false"
+        - Key: idle_timeout.timeout_seconds
+          Value: "600"
+      Name: ai-gen-search-lb
+      Scheme: internet-facing
+      SecurityGroups:
+        - Fn::GetAtt:
+            - aigensearchlbSecurityGroup5A63B7B7
+            - GroupId
+      Subnets:
+        - Fn::ImportValue: NetworkStack:ExportsOutputRefVpcpublicSubnet1Subnet2BB74ED74EB42ADC
+        - Fn::ImportValue: NetworkStack:ExportsOutputRefVpcpublicSubnet2SubnetE34B022AC8BB6627
+      Type: application
+    Metadata:
+      aws:cdk:path: AiSearchStack/ai-gen-search-lb/Resource
+  aigensearchlbSecurityGroup5A63B7B7:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Automatically created Security Group for ELB AiSearchStackaigensearchlb834C5B7E
+      SecurityGroupIngress:
+        - CidrIp: 0.0.0.0/0
+          Description: Allow from anyone on port 443
+          FromPort: 443
+          IpProtocol: tcp
+          ToPort: 443
+      VpcId:
+        Fn::ImportValue: NetworkStack:ExportsOutputRefVpc8378EB38272D6E3A
+    Metadata:
+      aws:cdk:path: AiSearchStack/ai-gen-search-lb/SecurityGroup/Resource
+  aigensearchlbSecurityGrouptoAiSearchStackaigensearchsgAAD227B18050DAE05659:
+    Type: AWS::EC2::SecurityGroupEgress
+    Properties:
+      Description: Load balancer to target
+      DestinationSecurityGroupId:
+        Fn::GetAtt:
+          - aigensearchsg25F48CC7
+          - GroupId
+      FromPort: 8050
+      GroupId:
+        Fn::GetAtt:
+          - aigensearchlbSecurityGroup5A63B7B7
+          - GroupId
+      IpProtocol: tcp
+      ToPort: 8050
+    Metadata:
+      aws:cdk:path: AiSearchStack/ai-gen-search-lb/SecurityGroup/to AiSearchStackaigensearchsgAAD227B1:8050
+  aigensearchlbaigensearchlistener9379E82D:
+    Type: AWS::ElasticLoadBalancingV2::Listener
+    Properties:
+      Certificates:
+        - CertificateArn:
+            Fn::ImportValue: RoutingStack:ExportsOutputRefCertificate4E7ABB08F7C8AF50
+      DefaultActions:
+        - TargetGroupArn:
+            Ref: aigensearchtg7BE5B3CB
+          Type: forward
+      LoadBalancerArn:
+        Ref: aigensearchlb73BB9AF9
+      Port: 443
+      Protocol: HTTPS
+    Metadata:
+      aws:cdk:path: AiSearchStack/ai-gen-search-lb/ai-gen-search-listener/Resource
+  aigensearchtg7BE5B3CB:
+    Type: AWS::ElasticLoadBalancingV2::TargetGroup
+    Properties:
+      HealthCheckPath: /health
+      Name: ai-gen-search-tg
+      Port: 80
+      Protocol: HTTP
+      TargetGroupAttributes:
+        - Key: stickiness.enabled
+          Value: "false"
+      TargetType: ip
+      VpcId:
+        Fn::ImportValue: NetworkStack:ExportsOutputRefVpc8378EB38272D6E3A
+    Metadata:
+      aws:cdk:path: AiSearchStack/ai-gen-search-tg/Resource
+  CDKMetadata:
+    Type: AWS::CDK::Metadata
+    Properties:
+      Analytics: v2:deflate64:H4sIAAAAAAAA/31RXU/DMAz8Lby3YfQf8DWEtAfU7R15qVd5zZzKTotQ1f+Ou3WogMRT7Dvn7hIX7m5VuNUNfGjuqyYPtHfDNoFvsscDv4HACRNKVqLGTjxmNvg+oFc3rEFqSLgDbZ7wQEyJIk+3fiORExCjLLA1CQZk3cS6jN1kMKttUXoyG5OZyzFDX1gm9J1Q+nyR2LUX+j/glWtB1T/48xk2zQCayIcI1R4CsCeue7O5b9tAHqaQG+MezpzFM50f/XKONCHPM9d6we/sZZi+Yy7acZyA69eOGccK3VFv+6KwtdhWjkqUS8eJTujKy/kFYp8C17IBAAA=
+    Metadata:
+      aws:cdk:path: AiSearchStack/CDKMetadata/Default
+Rules:
+  CheckBootstrapVersion:
+    Assertions:
+      - Assert:
+          Fn::Not:
+            - Fn::Contains:
+                - - "1"
+                  - "2"
+                  - "3"
+                  - "4"
+                  - "5"
+                - Ref: BootstrapVersion
+        AssertDescription: CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI.
+

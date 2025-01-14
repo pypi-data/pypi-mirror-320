@@ -1,0 +1,27 @@
+##### pip for Testing
+mypy
+data-science-types
+types-PyYAML
+pytest==6.2.4 
+pytest-html==3.1.1 
+pytest-cov
+pytest-clarity
+pytest-parallel
+pytest_localstack
+pytest-docker-tools
+pytest-check
+pytest-sugar
+black
+pylint
+flake8
+pyinstrument
+ruff
+vulture  ##  find dead code
+invectio ### code analyzer
+whatstyle      ####  read code source to generate formatting style format !
+yapf           ## google formatter 
+clang-format   ## more advanced formatter
+pytype         ## auto type inference https://github.com/google/pytype
+MonkeyType     ## https://pypi.org/project/MonkeyType/ auto type at runtime
+pretty_errors  ### beautiful error
+

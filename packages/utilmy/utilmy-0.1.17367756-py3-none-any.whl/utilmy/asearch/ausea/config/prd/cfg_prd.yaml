@@ -1,0 +1,23 @@
+aws_role: prd
+istest: 0
+
+news:
+  com_tag: prd
+
+
+###################################################
+data:
+  dirdata: s3://edge-ml-prd/data
+  diroot:  s3://edge-ml-prd
+
+
+mysql:
+  user: "initial"
+  pass: "initial"
+  ### prd
+  host: "edge-rds-instance-2.cxvyv72kn9zy.us-east-1.rds.amazonaws.com" 
+  # host: "localhost"
+  # host : news-rds-instance-2.cdevrzfcxriy.us-east-1.rds.amazonaws.com ## news prd
+  port: 3306
+  #dbname: "news"
+  dbname: "initial"

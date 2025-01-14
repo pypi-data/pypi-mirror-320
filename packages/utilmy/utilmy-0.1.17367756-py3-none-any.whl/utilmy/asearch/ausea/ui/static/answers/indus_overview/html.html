@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="static/answers/indus_overview/overview.css"/>
+<div class="answerContainer">
+    <div>
+        <h3>Overview</h3>
+        {% for item in overview_list %}
+        <div class="divider"></div>
+        <div class="answerArea">
+            <span class="title">{{ item.title }}</span>
+            <div class="text">
+                <div class="paragraph">
+                    {% set sentences = split_text(item.text) %}
+                    {% for i in range(0, sentences | length, 5) %}
+                    <p>
+                        {{ sentences[i:i+5] | join(' ') }}
+                    </p>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="footer">
+                <div><a href="{{ item.url }}" target="_blank">Source</a></div>
+                <div class="date">{{ item.date }}</div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="divider"></div>
+
+    <div>
+        <h3>Insight</h3>
+        {% for item in insight_list %}
+        <div class="divider"></div>
+        <div class="answerArea">
+            <span class="title">{{ item.title }}</span>
+            <div class="paragraph">
+                {% set sentences = split_text(item.text) %}
+                {% for i in range(0, sentences | length, 5) %}
+                <p>
+                    {{ sentences[i:i+5] | join(' ') }}
+                </p>
+                {% endfor %}
+            </div>
+            <div class="footer">
+                <div><a href="{{ item.url }}" target="_blank">Source</a></div>
+                <div class="date">{{ item.date }}</div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+
+    <div class="divider"></div>
+    <div>
+        <h3>Activity</h3>
+        {% for item in activity_list %}
+        <div class="divider"></div>
+        <div class="answerArea">
+            <span class="title">{{ item.title }}</span>
+            <div class="paragraph">
+                {% set sentences = split_text(item.text) %}
+                {% for i in range(0, sentences | length, 5) %}
+                <p>
+                    {{ sentences[i:i+5] | join(' ') }}
+                </p>
+                {% endfor %}
+            </div>
+            <div class="footer">
+                <div><a href="{{ item.url }}" target="_blank">Source</a></div>
+                <div class="date">{{ item.date }}</div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+
+</div>

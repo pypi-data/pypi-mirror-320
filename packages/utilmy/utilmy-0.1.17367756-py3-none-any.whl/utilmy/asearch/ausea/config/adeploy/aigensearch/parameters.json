@@ -1,0 +1,30 @@
+[
+  {
+    "ParameterKey": "cpu",
+    "ParameterValue": "1024"
+  },
+  {
+    "ParameterKey": "memoryLimitMiB",
+    "ParameterValue": "4096"
+  },
+  {
+    "ParameterKey": "image",
+    "ParameterValue": "536922267020.dkr.ecr.us-east-1.amazonaws.com/ml:ui_zdev_app_240927_02cd7ac"
+  },
+  {
+    "ParameterKey": "entryPoint",
+    "ParameterValue": "/bin/bash"
+  },
+  {
+    "ParameterKey": "command",
+    "ParameterValue": "-c,echo 'start_job'; scripts/dev/run_ui.sh 'config/dev/cfg_dev.yaml' 'logging_debug' ; echo 'end_job'\n"
+  },
+  {
+    "ParameterKey": "ephemeralStorageGiB",
+    "ParameterValue": "60"
+  },
+  {
+    "ParameterKey": "startTimeout",
+    "ParameterValue": "3000"
+  }
+]

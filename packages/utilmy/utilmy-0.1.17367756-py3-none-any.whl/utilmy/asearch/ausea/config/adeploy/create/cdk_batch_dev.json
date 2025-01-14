@@ -1,0 +1,36 @@
+[
+  {
+    "ParameterKey": "entryPoint",
+    "ParameterValue": "/bin/bash"
+  },
+
+  {
+    "ParameterKey": "cpu",
+    "ParameterValue": "4096"
+  },
+  {
+    "ParameterKey": "memoryLimitMiB",
+    "ParameterValue": "8192"
+  },
+
+  {
+    "ParameterKey": "ephemeralStorageGiB",
+    "ParameterValue": "60"
+  },
+  {
+    "ParameterKey": "startTimeout",
+    "ParameterValue": "3000"
+  },
+
+  {
+    "ParameterKey": "image",
+    "ParameterValue": "536922267020.dkr.ecr.us-east-1.amazonaws.com/mldock:zdev_app_240711_34b30cf"
+  },
+  {
+    "ParameterKey": "command",
+    "ParameterValue": "-c,echo 'start_job'; scripts/dev/run_batch.sh  'config/dev/cfg_dev.yaml'  'logging_debug' ;  echo 'end_job' "
+  }
+]
+
+
+

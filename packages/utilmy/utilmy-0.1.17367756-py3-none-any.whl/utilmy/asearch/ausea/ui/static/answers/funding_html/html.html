@@ -1,0 +1,51 @@
+<div class="answerContainer">
+
+
+{% for chart in chart_html %}
+<div id="{{ generate_random_id() }}" class="chart-container">Loading...
+    <div id="chart-data" style="display: none;">
+        {{ chart.data_highcharts }}
+    </div>
+</div>
+{% endfor %}
+
+
+
+
+
+   {% for table1 in table_list %}
+
+        {% if 'title' in table1 %}
+            <h2>{{ table1['title'] }}</h2>
+        {% endif %}
+
+
+        {% if 'summary' in table1 %}
+            <p> {{ table1['summary'] }} </p>
+        {% endif %}
+
+
+    <table id="{{ generate_random_id() }}" class="data-table display">
+        <thead>
+        <tr>
+            {% for coli in table1['columns'] %}
+            <th>{{ coli }}</th>
+            {% endfor %}
+        </tr>
+        </thead>
+        <tbody>
+        {% for value in table1['values'] %}
+        <tr>
+            {% for cell in value %}
+            <td>{{ cell }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <hr>
+
+    {% endfor %}
+
+</div>

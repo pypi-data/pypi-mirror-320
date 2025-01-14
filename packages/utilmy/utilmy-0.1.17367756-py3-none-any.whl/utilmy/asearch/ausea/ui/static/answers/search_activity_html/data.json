@@ -1,0 +1,57 @@
+{
+
+  "name": "table_html",
+  "description": "JS table",
+  "path": "ui/static/answers/search_activity_html",
+  "css": "static/css_global.css",
+  "question_list": [
+    "What are the partnerships of Microsoft in Generative ai 2024?"
+  ],
+  "html": "ui/static/answers/search_activity_html/html.html",
+
+
+
+  "html_tags": {
+
+    "summary" : ""
+
+
+
+    ,"table_list" : [
+            {
+                "css_name": null,
+                "options":  null,
+
+                "title":   "Company List",
+                "summary": "my summary",
+                "columns": ["url", "com_id", "name", "text"],
+                "values": [
+                  ["Google", 1756184, "Google", "Google isnline."],
+                  ["Meta", 1756184, "Meta", "Meta is a wholesale food products online."],
+                  ["Telsa", 1756184, "Telsa", "Telsa e of e."]
+                ]
+            },
+
+            {
+                "css_name": null,
+                "options":  null,
+
+                "title":   "Company List",
+                "summary": "my summary",
+                "columns": ["url", "com_id", "name", "text"],
+                "values": [
+                  ["Google", 1756184, "Google", "Google isnline."],
+                  ["Meta", 1756184, "Meta", "Meta is a wde range of food products online."],
+                  ["Telsa", 1756184, "Telsa", "Telsa ise ra products online."]
+                ]
+            }
+      ]
+
+
+
+
+
+  }
+
+
+}

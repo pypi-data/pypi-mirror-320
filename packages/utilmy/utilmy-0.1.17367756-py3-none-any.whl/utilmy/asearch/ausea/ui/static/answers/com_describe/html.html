@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="static/answers/com_describe/company.css"/>
+<div class="com_describe_container">
+    <!-- <h2>Company</h2> -->
+    <div class="com_describe_answer_container">
+        {% for item in com_list %}
+        <div class="com_describe_answer_area">
+            <div class="com_describe_logo_container">
+                <img class="com_describe_logo"
+                     src="https://zuu-edge.imgix.net/companies/{{ item.com_id }}/logo?auto=compress&mask=ellipse&fm=png&h=60&w=60&fit=clamp&quot"
+                     alt="company img"
+                />
+            </div>
+            <div class="com_describe_content">
+                <div>
+                    <a href="{{ item.url }}" target="_blank" class="com_describe_title_link">
+                        <div data-wovn-ignore class="com_describe_title">
+                            {{ item.name }}
+                        </div>
+                    </a>
+                    <div class="com_describe_text">
+                        <div class="com_describe_description_Area">
+                            {% set sentences = split_text(item.text) %}
+                            {% for i in range(0, sentences | length, 5) %}
+                            <div>
+                                {{ sentences[i:i+5] | join(' ') }}
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="com_describe_footer">
+                    <div><a href="{{ item.url }}" target="_blank">Source</a></div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

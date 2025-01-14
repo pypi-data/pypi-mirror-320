@@ -1,0 +1,6 @@
+pytest
+moto
+
+#### Debug
+pyinstrument
+

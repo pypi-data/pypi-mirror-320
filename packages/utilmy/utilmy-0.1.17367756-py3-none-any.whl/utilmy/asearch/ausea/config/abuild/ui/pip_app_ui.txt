@@ -1,0 +1,48 @@
+# datasets
+# evaluate
+# seqeval
+# accelerate
+# pyarrow==14.0.1  ### Not good, conflict
+# pyarrow==10.0.1 
+utilmy 
+markdown
+css-inline
+#s3fs
+#newsapi-python
+#playwright-stealth
+#htmldate
+
+### issue with llama index, same than llama
+pydantic==2.8.2
+# dspy==0.1.5 ###min version
+
+dash==2.17.1
+dash-bootstrap-components==1.6.0
+dash-core-components==2.0.0
+dash-html-components==2.0.0
+dash-table==5.0.0
+dash-auth==2.3.0
+dashing==0.1.0
+utilmy
+fire
+python-box
+markdown
+css-inline
+diskcache
+Jinja2
+dash-dangerously-set-inner-html
+flask>=2.0.3
+python-dotenv>=0.19.2
+authlib>=1.0
+requests>=2.27.1
+flask-cors
+pyjwt
+datasets
+evaluate
+seqeval
+accelerate
+pyarrow==10.0.1
+pydantic==2.8.2
+python-jose
+dash-loading-spinners
+flask-cors

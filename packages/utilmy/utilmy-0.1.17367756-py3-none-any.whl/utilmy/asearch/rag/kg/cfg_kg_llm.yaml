@@ -1,0 +1,46 @@
+
+
+
+#### Copy paste manually from experiments
+
+test1:
+  entities: [ "COMPANY", "PERSON", "PRODUCT", "EVENT", "JOB_TITLE"]
+  edges:     ["PARTNER","ACQUIRE","INVEST","PRODUCE","ORGANIZE","FUND","HAS_JOB_TITLE","WORK_FOR"]
+
+
+
+
+
+
+
+test2:
+  entities: ["COMPANY", "PERSON", "PRODUCT", ]
+  edges: ["PARTNER","ACQUIRE","INVEST","PRODUCE" ]
+
+
+
+
+test25:
+  entities: ["COMPANY", "PERSON", "PRODUCT", ]
+  edges: ["PARTNER","ACQUIRE","INVEST","PRODUCE" ]
+
+
+
+test29:
+  entities: ["COMPANY", "PERSON", "PRODUCT", ]
+  edges: ["PARTNER","ACQUIRE","INVEST","PRODUCE" ]
+
+
+
+test31:
+  entities: ["COMPANY", "PERSON", "PRODUCT", ]
+  edges: ["PARTNER","ACQUIRE","INVEST","PRODUCE" ]
+
+
+
+test37:
+  entities: ["COMPANY", "PERSON", "PRODUCT", ]
+  edges: ["PARTNER","ACQUIRE","INVEST","PRODUCE" ]
+
+
+

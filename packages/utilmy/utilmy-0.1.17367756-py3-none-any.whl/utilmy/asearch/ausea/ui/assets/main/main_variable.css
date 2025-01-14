@@ -1,0 +1,28 @@
+:root {
+    /* Font Ratio */
+    --mobile-ratio: 3;
+    --tablet-ratio: 1.5;
+
+    /* Shadow */
+    --base-shadow: 0.2rem 0.2rem 1.8rem 1.8rem rgba(0, 0, 0, 0.05);
+    --dimmed-shadow: 0.2rem 0.2rem 1.8rem 1.8rem rgba(0, 0, 0, 0.02);
+    --mini-base-shadow: 0.12rem 0.12rem 1rem 1rem rgba(0, 0, 0, 0.03);
+    --mini-dimmed-shadow: 0.12rem 0.12rem 1rem 1rem rgba(0, 0, 0, 0.015);
+    --new-min-base-shadow: 0.08rem 0.08rem 0.4rem 0.4rem rgba(0, 0, 0, 0.03);
+
+    /* Hover */
+    --button-hover-shadow: 0.12rem 0.12rem 1rem 1rem rgba(0, 0, 0, 0.03);
+
+    /* Colors */
+    --light-green: #1dbdcb;
+    --blue: #1187d4;
+    --light-gray: rgba(196, 198, 209, 0.2);
+    --disabled-text: #c4c6d1;
+
+    /* Lines */
+    --border-line: 1px solid rgba(196, 198, 209, 0.5);
+    --red: #e03157;
+
+    /* Topbar */
+    --top-bar-height: 72px;
+}

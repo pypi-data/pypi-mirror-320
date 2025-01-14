@@ -1,0 +1,8 @@
+
+warning:   " filter @logStream like '{logstream}' | fields time,log  | filter log like /(?i)warning/ | limit {nmax}"
+
+error:     " filter @logStream like '{logstream}' | fields time,log  | filter log like /(?i)error/ | limit {nmax} "
+
+
+query2:    "  filter @logStream like '{logstream}' | fields time,log # , tomillis(@timestamp) as millis | filter log like 'CKS;' | limit {nmax}  "
+

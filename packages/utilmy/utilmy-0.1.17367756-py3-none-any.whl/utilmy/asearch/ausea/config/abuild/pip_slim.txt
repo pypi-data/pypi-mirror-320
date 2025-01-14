@@ -1,0 +1,165 @@
+python-box
+fire
+
+
+### Match Colab version ###########################################
+transformers==4.41.2
+accelerate
+datasets
+#accelerate==0.32.1
+#datasets==2.20.0
+#fastembed==0.2.7. ##issue with tokenzier
+fastembed
+
+
+
+###################################################################
+# pycaret==2.3.10
+scikit-learn==0.23.2
+#scipy==1.7.1
+scipy<=1.5.4
+
+
+
+###################################################################
+pandas==1.5.1
+numpy==1.23.3
+utilmy
+polars==0.16.13
+#datasets
+evaluate
+seqeval
+# accelerate
+
+
+
+
+
+
+
+#########################################################
+xxhash==3.2.0
+wget
+psutil
+mmh3
+orjson
+cloudpickle
+pyyaml
+msgpack==1.0.4
+dateparser
+
+
+
+### DB ##################################################
+#hiredis==2.1.0
+#redis==4.4.0
+SQLAlchemy==1.4.45
+PyMySQL==1.0.2
+#redshift-connector==2.0.909
+#sqlitedict==2.1.0
+diskcache
+duckdb
+neo4j
+networkx
+
+
+#########################################################
+openai
+
+
+#########################################################
+newspaper3k
+# llama-index 
+# langchain   ### issues  
+playwright==1.44.0
+goose3==3.1.19
+newsapi-python
+playwright-stealth
+
+portalocker
+pretty-errors
+
+
+### AWS  ################################################
+awscli
+boto3
+awswrangler
+#awswrangler==2.20.0  #### Issue with datasets
+pyarrow  
+
+#pyarrow==10.0.1  ### issue with datasets 
+#pyarrow==14.0.1   ### awsrangler dep issues
+smart-open==6.3.0
+s3transfer
+s3fs
+
+
+
+### API ################################################
+fastapi
+
+
+###### Updates #########################################
+selenium
+sentencepiece
+seqeval  
+beautifulsoup4
+Faker
+bs4
+htmldate
+
+
+########################################################
+######## Extra   #######################################
+
+#### ML  ##############################################
+#-f https://download.pytorch.org/whl/torch_stable.html 
+#torch==1.13.1+cpu 
+# scikit-learn==1.1.3
+#Boruta==0.3
+#lightgbm==3.2.1
+#umap-learn==0.5.3
+#pacmap==0.7
+
+
+#### ML  ##############################################
+-f https://download.pytorch.org/whl/torch_stable.html 
+torch==2.3.0+cpu 
+openai
+
+
+
+
+#### viz.html #########################################
+tqdm
+matplotlib
+sentence-transformers
+transformer-smaller-training-vocab
+# transformers==4.37.2
+spacy==3.7.4
+qdrant-client==1.9.1
+ranx
+rapidfuzz==3.9.3
+regex      
+onnxruntime==1.18.0
+tantivy 
+# accelerate 
+rapidfuzz
+gensim
+nltk
+
+
+#### Debug
+pyinstrument
+gliner 
+
+
+
+    
+##### AS AMI GPU:  requires Cuda 12.0 
+### pip3 install --pre torch  --index-url https://download.pytorch.org/whl/nightly/cu121
+### python -c "import torch ; print(torch.cuda.is_available()) "
+
+
+
+

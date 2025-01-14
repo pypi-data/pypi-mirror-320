@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="static/answers/answer_v1/answer_v1.css"/>
+<div class="answerContainer">
+   <!--  <h2>Summary</h2> --->
+    <span class="summary">
+        {% set sentences = split_text(summary) %}
+        {% for i in range(0, sentences | length, 5) %}
+        <div>
+            {{ sentences[i:i+5] | join(' ') }}
+        </div>
+        {% endfor %}
+    </span>
+    {% if source_list %}
+       <div class="summary">
+           <br>
+           <u></u><b>Sources:</b></u>
+           <div class="sourceList">
+               <ul>
+                    {% for source in source_list %}
+                        <li >{{ loop.index }}. <a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.title }}</a>
+                        </li>
+
+                       <!--  <div class="date">{{ source.date }}</div> -->
+                       <!-- <div class="category">{{ source.text }}</div> -->
+                    {% endfor %}
+               </ul>
+          </div>
+    {% endif %}
+    </div>
+</div>
+
+

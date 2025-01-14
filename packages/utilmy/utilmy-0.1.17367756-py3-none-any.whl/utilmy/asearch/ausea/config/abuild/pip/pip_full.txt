@@ -1,0 +1,59 @@
+python-box
+fire
+pyarrow
+pyyaml
+pandas
+numpy
+scipy
+utilmy
+polars
+wget
+psutil
+mmh3
+orjson
+cloudpickle
+dateparser
+
+### DB ##################################################
+hiredis==2.1.0
+redis==4.4.0
+SQLAlchemy==1.4.45
+PyMySQL==1.0.2
+pyquadkey2==0.2.2
+redshift-connector==2.0.909
+
+
+### AWS  ################################################
+awscli
+boto3
+awswrangler
+smart_open
+
+
+########################################################
+######## Extra   #######################################
+
+#### ML
+-f https://download.pytorch.org/whl/torch_stable.html 
+torch==1.13.1+cpu 
+scikit-learn==1.1.3
+
+#### viz.html
+tqdm
+matplotlib
+#python-highcharts
+#pandas-highcharts
+mpld3
+pretty-html-table
+#networkx
+#pyvis
+#dateparser
+#dash
+#dash_bootstrap_components
+#dash_treeview_antd
+#json-with-comments
+
+
+#### Debug
+pyinstrument
+

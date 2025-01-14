@@ -1,0 +1,141 @@
+Parameters:
+  cpu:
+    Type: Number
+  image:
+    Type: String
+  memoryLimitMiB:
+    Type: Number
+  entryPoint:
+    Type: CommaDelimitedList
+  command:
+    Type: CommaDelimitedList
+  ephemeralStorageGiB:
+    Type: Number
+  startTimeout:
+    Type: Number
+  aigenbatchdatadogapikeylogdriverParameter:
+    Type: AWS::SSM::Parameter::Value<String>
+    Default: datadogApiKey
+  aigenbatchdatadogapikeyagentParameter:
+    Type: AWS::SSM::Parameter::Value<String>
+    Default: datadogApiKey
+  BootstrapVersion:
+    Type: AWS::SSM::Parameter::Value<String>
+    Default: /cdk-bootstrap/hnb659fds/version
+    Description: Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
+Resources:
+  aigenbatchCFEF79B6:
+    Type: AWS::ECS::TaskDefinition
+    Properties:
+      ContainerDefinitions:
+        - Command:
+            Ref: command
+          EntryPoint:
+            Ref: entryPoint
+          Environment:
+            - Name: JOB_NAME
+              Value: aiGenBatch
+          Essential: true
+          Image:
+            Ref: image
+          LogConfiguration:
+            LogDriver: awsfirelens
+            Options:
+              apiKey:
+                Ref: aigenbatchdatadogapikeylogdriverParameter
+              Name: datadog
+              Host: http-intake.logs.datadoghq.com
+              TLS: "on"
+              dd_service: ai-gen-batch
+              dd_source: test
+              provider: ecs
+          Name: ai-gen-batch
+          StartTimeout:
+            Ref: startTimeout
+        - Essential: true
+          FirelensConfiguration:
+            Type: fluentbit
+          Image:
+            Fn::Join:
+              - ""
+              - - Fn::Select:
+                    - 4
+                    - Fn::Split:
+                        - ":"
+                        - Fn::ImportValue: EcrStack:ExportsOutputFnGetAttawsforfluentbitC87F9401Arn85E858FF
+                - .dkr.ecr.
+                - Fn::Select:
+                    - 3
+                    - Fn::Split:
+                        - ":"
+                        - Fn::ImportValue: EcrStack:ExportsOutputFnGetAttawsforfluentbitC87F9401Arn85E858FF
+                - "."
+                - Ref: AWS::URLSuffix
+                - /
+                - Fn::ImportValue: EcrStack:ExportsOutputRefawsforfluentbitC87F9401749F1E85
+                - :latest
+          MemoryReservation: 50
+          Name: log-router
+        - Environment:
+            - Name: ECS_FARGATE
+              Value: "true"
+            - Name: DD_API_KEY
+              Value:
+                Ref: aigenbatchdatadogapikeyagentParameter
+          Essential: true
+          Image:
+            Fn::Join:
+              - ""
+              - - Fn::Select:
+                    - 4
+                    - Fn::Split:
+                        - ":"
+                        - Fn::ImportValue: EcrStack:ExportsOutputFnGetAttdatadogagent91B2A7F2Arn484D0DCF
+                - .dkr.ecr.
+                - Fn::Select:
+                    - 3
+                    - Fn::Split:
+                        - ":"
+                        - Fn::ImportValue: EcrStack:ExportsOutputFnGetAttdatadogagent91B2A7F2Arn484D0DCF
+                - "."
+                - Ref: AWS::URLSuffix
+                - /
+                - Fn::ImportValue: EcrStack:ExportsOutputRefdatadogagent91B2A7F22288E141
+                - :latest
+          Name: datadog-agent
+      Cpu:
+        Ref: cpu
+      EphemeralStorage:
+        SizeInGiB:
+          Ref: ephemeralStorageGiB
+      ExecutionRoleArn:
+        Fn::ImportValue: RoleStack:ExportsOutputFnGetAttEcsTaskExecutionRoleC0B6A84DArnF61B3BFD
+      Family: ai-gen-batch
+      Memory:
+        Ref: memoryLimitMiB
+      NetworkMode: awsvpc
+      RequiresCompatibilities:
+        - FARGATE
+      TaskRoleArn:
+        Fn::ImportValue: RoleStack:ExportsOutputFnGetAttEcsTaskExecutionRoleC0B6A84DArnF61B3BFD
+    Metadata:
+      aws:cdk:path: AiGenBatchStack/ai-gen-batch/Resource
+  CDKMetadata:
+    Type: AWS::CDK::Metadata
+    Properties:
+      Analytics: v2:deflate64:H4sIAAAAAAAA/12OvQrCQBCEn8X+sspZWSupLCTay3rZhM3PHuzeaRHy7iaIIFYzzAwf4+Gwh90GX1aEui8GfsB0TRh6d2zkgoojJVK39HcKBlOJ2mKiG1p/ooaFE0dZt/9JlIQspD9ZyUoDiZ1jW8W8YGdXkcWsgVbC189OYk3Q2fbpPazvOmMuNEvikaD66BvSzB6fuQAAAA==
+    Metadata:
+      aws:cdk:path: AiGenBatchStack/CDKMetadata/Default
+Rules:
+  CheckBootstrapVersion:
+    Assertions:
+      - Assert:
+          Fn::Not:
+            - Fn::Contains:
+                - - "1"
+                  - "2"
+                  - "3"
+                  - "4"
+                  - "5"
+                - Ref: BootstrapVersion
+        AssertDescription: CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI.

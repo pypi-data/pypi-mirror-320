@@ -1,0 +1,11 @@
+{
+  "name": "zfallack_error",
+  "description": "Fallback answer",
+  "path": "ui/static/answers/gpt_answer",
+  "css": "static/css_global.css",
+  "html": "ui/static/answers/gpt_answer/html.html",
+  "html_tags": {
+    "summary": "Error, not enough data",
+    "source_list": []
+  }
+}

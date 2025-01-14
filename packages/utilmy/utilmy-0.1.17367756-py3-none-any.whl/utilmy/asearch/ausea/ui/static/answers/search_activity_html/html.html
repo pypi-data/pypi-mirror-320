@@ -1,0 +1,49 @@
+<div class="answerContainer">
+
+    <h3>Summary recent activities</h3>
+    <span class="summary">
+        {% set sentences = split_text(summary) %}
+        {% for i in range(0, sentences | length, 5) %}
+        <p>
+            {{ sentences[i:i+5] | join(' ') }}
+        </p>
+        {% endfor %}
+    </span>
+
+
+    {% for table1 in table_list %}
+    <div>
+
+        {% if table1.get('title') and table1['title'].strip() != '' %}
+        <h2>{{ table1['title'].strip() }}</h2>
+        {% endif %}
+
+        {% if table1.get('summary') and table1['summary'].strip() != '' %}
+        <p>{{ table1['summary'].strip() }}</p>
+        {% endif %}
+
+
+        <table id="{{ generate_random_id() }}" class="data-table display">
+            <thead>
+            <tr>
+                {% for coli in table1['columns'] %}
+                <th>{{ coli }}</th>
+                {% endfor %}
+            </tr>
+            </thead>
+            <tbody>
+            {% for value in table1['values'] %}
+            <tr>
+                {% for cell in value %}
+                <td>{{ cell }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <hr>
+    </div>
+    {% endfor %}
+
+</div>

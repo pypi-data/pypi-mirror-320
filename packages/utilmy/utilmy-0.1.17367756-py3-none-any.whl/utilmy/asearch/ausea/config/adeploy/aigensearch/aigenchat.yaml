@@ -1,0 +1,318 @@
+Parameters:
+  cpu:
+    Type: Number
+  image:
+    Type: String
+  memoryLimitMiB:
+    Type: Number
+  entryPoint:
+    Type: CommaDelimitedList
+  command:
+    Type: CommaDelimitedList
+  ephemeralStorageGiB:
+    Type: Number
+  startTimeout:
+    Type: Number
+  aigenchatdatadogapikeylogdriverParameter:
+    Type: AWS::SSM::Parameter::Value<String>
+    Default: datadogApiKey
+  aigenchatdatadogapikeyagentParameter:
+    Type: AWS::SSM::Parameter::Value<String>
+    Default: datadogApiKey
+  BootstrapVersion:
+    Type: AWS::SSM::Parameter::Value<String>
+    Default: /cdk-bootstrap/hnb659fds/version
+    Description: Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
+Resources:
+  aigenchat6B994918:
+    Type: AWS::ECS::TaskDefinition
+    Properties:
+      ContainerDefinitions:
+        - Command:
+            Ref: command
+          EntryPoint:
+            Ref: entryPoint
+          Environment:
+            - Name: JOB_NAME
+              Value: aiGenBatch
+          Essential: true
+          Image:
+            Ref: image
+          LogConfiguration:
+            LogDriver: awsfirelens
+            Options:
+              apiKey:
+                Ref: aigenchatdatadogapikeylogdriverParameter
+              Name: datadog
+              Host: http-intake.logs.datadoghq.com
+              TLS: "on"
+              dd_service: ai-gen-chat
+              dd_source: test
+              provider: ecs
+          MountPoints:
+            - ContainerPath: /mnt/efs
+              ReadOnly: false
+              SourceVolume: EdgeVolume
+          Name: ai-gen-chat
+          PortMappings:
+            - ContainerPort: 8050
+              Protocol: tcp
+          StartTimeout:
+            Ref: startTimeout
+        - Essential: true
+          FirelensConfiguration:
+            Type: fluentbit
+          Image:
+            Fn::Join:
+              - ""
+              - - Fn::Select:
+                    - 4
+                    - Fn::Split:
+                        - ":"
+                        - Fn::ImportValue: EcrStack:ExportsOutputFnGetAttawsforfluentbitC87F9401Arn85E858FF
+                - .dkr.ecr.
+                - Fn::Select:
+                    - 3
+                    - Fn::Split:
+                        - ":"
+                        - Fn::ImportValue: EcrStack:ExportsOutputFnGetAttawsforfluentbitC87F9401Arn85E858FF
+                - "."
+                - Ref: AWS::URLSuffix
+                - /
+                - Fn::ImportValue: EcrStack:ExportsOutputRefawsforfluentbitC87F9401749F1E85
+                - :latest
+          MemoryReservation: 50
+          Name: log-router
+        - Environment:
+            - Name: ECS_FARGATE
+              Value: "true"
+            - Name: DD_API_KEY
+              Value:
+                Ref: aigenchatdatadogapikeyagentParameter
+          Essential: true
+          Image:
+            Fn::Join:
+              - ""
+              - - Fn::Select:
+                    - 4
+                    - Fn::Split:
+                        - ":"
+                        - Fn::ImportValue: EcrStack:ExportsOutputFnGetAttdatadogagent91B2A7F2Arn484D0DCF
+                - .dkr.ecr.
+                - Fn::Select:
+                    - 3
+                    - Fn::Split:
+                        - ":"
+                        - Fn::ImportValue: EcrStack:ExportsOutputFnGetAttdatadogagent91B2A7F2Arn484D0DCF
+                - "."
+                - Ref: AWS::URLSuffix
+                - /
+                - Fn::ImportValue: EcrStack:ExportsOutputRefdatadogagent91B2A7F22288E141
+                - :latest
+          Name: datadog-agent
+      Cpu:
+        Ref: cpu
+      EphemeralStorage:
+        SizeInGiB:
+          Ref: ephemeralStorageGiB
+      ExecutionRoleArn:
+        Fn::ImportValue: RoleStack:ExportsOutputFnGetAttEcsTaskExecutionRoleC0B6A84DArnF61B3BFD
+      Family: ai-gen-chat
+      Memory:
+        Ref: memoryLimitMiB
+      NetworkMode: awsvpc
+      RequiresCompatibilities:
+        - FARGATE
+      TaskRoleArn:
+        Fn::ImportValue: AIGenRoleStack:ExportsOutputFnGetAttaiGenTaskRole5FC9C3F1Arn3D758B24
+      Volumes:
+        - EFSVolumeConfiguration:
+            AuthorizationConfig:
+              AccessPointId:
+                Fn::ImportValue: AIGenEfsStack:ExportsOutputRefAIGenEfsFileSystemAIGENEfsAccessPointBB094DB812935AE2
+              IAM: ENABLED
+            FilesystemId:
+              Fn::ImportValue: AIGenEfsStack:ExportsOutputRefAIGenEfsFileSystem86302DBA5CAF1EE3
+            TransitEncryption: ENABLED
+          Name: EdgeVolume
+    Metadata:
+      aws:cdk:path: AiGenChatStack/ai-gen-chat/Resource
+  aigenchatsgA883CCCA:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: AiGenChatStack/ai-gen-chat-sg
+      GroupName: ai-gen-chat-sg
+      SecurityGroupEgress:
+        - CidrIp: 0.0.0.0/0
+          Description: Allow all outbound traffic by default
+          IpProtocol: "-1"
+      SecurityGroupIngress:
+        - CidrIp: 0.0.0.0/0
+          Description: from 0.0.0.0/0:8050
+          FromPort: 8050
+          IpProtocol: tcp
+          ToPort: 8050
+      VpcId:
+        Fn::ImportValue: NetworkStack:ExportsOutputRefVpc8378EB38272D6E3A
+    Metadata:
+      aws:cdk:path: AiGenChatStack/ai-gen-chat-sg/Resource
+  aigenchatsgfromAiGenChatStackaigenchatlbSecurityGroup7C67856B80500AA74EC6:
+    Type: AWS::EC2::SecurityGroupIngress
+    Properties:
+      Description: Load balancer to target
+      FromPort: 8050
+      GroupId:
+        Fn::GetAtt:
+          - aigenchatsgA883CCCA
+          - GroupId
+      IpProtocol: tcp
+      SourceSecurityGroupId:
+        Fn::GetAtt:
+          - aigenchatlbSecurityGroupE3606E3B
+          - GroupId
+      ToPort: 8050
+    Metadata:
+      aws:cdk:path: AiGenChatStack/ai-gen-chat-sg/from AiGenChatStackaigenchatlbSecurityGroup7C67856B:8050
+  aiGenChatServiceC7B5AC5F:
+    Type: AWS::ECS::Service
+    Properties:
+      Cluster:
+        Fn::ImportValue: EdgeClusterStack:ExportsOutputRefEdgeCluster938D75F54C395F7D
+      DeploymentConfiguration:
+        Alarms:
+          AlarmNames: []
+          Enable: false
+          Rollback: false
+        MaximumPercent: 200
+        MinimumHealthyPercent: 50
+      DeploymentController:
+        Type: ECS
+      DesiredCount: 1
+      EnableECSManagedTags: true
+      EnableExecuteCommand: true
+      HealthCheckGracePeriodSeconds: 180
+      LaunchType: FARGATE
+      LoadBalancers:
+        - ContainerName: ai-gen-chat
+          ContainerPort: 8050
+          TargetGroupArn:
+            Ref: aigenchattg37B4F7E4
+      NetworkConfiguration:
+        AwsvpcConfiguration:
+          AssignPublicIp: DISABLED
+          SecurityGroups:
+            - Fn::GetAtt:
+                - aigenchatsgA883CCCA
+                - GroupId
+          Subnets:
+            - Fn::ImportValue: NetworkStack:ExportsOutputRefVpcprivateSubnet1SubnetCEAD37168693D373
+            - Fn::ImportValue: NetworkStack:ExportsOutputRefVpcprivateSubnet2Subnet2DE7549CDF5ACE3D
+      PropagateTags: SERVICE
+      ServiceName: ai-gen-chat
+      TaskDefinition:
+        Ref: aigenchat6B994918
+    DependsOn:
+      - aigenchatlbaigenchatlistenerB6227D65
+    Metadata:
+      aws:cdk:path: AiGenChatStack/aiGenChatService/Service
+  aigenchatlb48FC441A:
+    Type: AWS::ElasticLoadBalancingV2::LoadBalancer
+    Properties:
+      LoadBalancerAttributes:
+        - Key: deletion_protection.enabled
+          Value: "false"
+        - Key: idle_timeout.timeout_seconds
+          Value: "600"
+      Name: ai-gen-chat-lb
+      Scheme: internet-facing
+      SecurityGroups:
+        - Fn::GetAtt:
+            - aigenchatlbSecurityGroupE3606E3B
+            - GroupId
+      Subnets:
+        - Fn::ImportValue: NetworkStack:ExportsOutputRefVpcpublicSubnet1Subnet2BB74ED74EB42ADC
+        - Fn::ImportValue: NetworkStack:ExportsOutputRefVpcpublicSubnet2SubnetE34B022AC8BB6627
+      Type: application
+    Metadata:
+      aws:cdk:path: AiGenChatStack/ai-gen-chat-lb/Resource
+  aigenchatlbSecurityGroupE3606E3B:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Automatically created Security Group for ELB AiGenChatStackaigenchatlbC898FDDC
+      SecurityGroupIngress:
+        - CidrIp: 0.0.0.0/0
+          Description: Allow from anyone on port 443
+          FromPort: 443
+          IpProtocol: tcp
+          ToPort: 443
+      VpcId:
+        Fn::ImportValue: NetworkStack:ExportsOutputRefVpc8378EB38272D6E3A
+    Metadata:
+      aws:cdk:path: AiGenChatStack/ai-gen-chat-lb/SecurityGroup/Resource
+  aigenchatlbSecurityGrouptoAiGenChatStackaigenchatsg27A4DD658050BA1F9F03:
+    Type: AWS::EC2::SecurityGroupEgress
+    Properties:
+      Description: Load balancer to target
+      DestinationSecurityGroupId:
+        Fn::GetAtt:
+          - aigenchatsgA883CCCA
+          - GroupId
+      FromPort: 8050
+      GroupId:
+        Fn::GetAtt:
+          - aigenchatlbSecurityGroupE3606E3B
+          - GroupId
+      IpProtocol: tcp
+      ToPort: 8050
+    Metadata:
+      aws:cdk:path: AiGenChatStack/ai-gen-chat-lb/SecurityGroup/to AiGenChatStackaigenchatsg27A4DD65:8050
+  aigenchatlbaigenchatlistenerB6227D65:
+    Type: AWS::ElasticLoadBalancingV2::Listener
+    Properties:
+      Certificates:
+        - CertificateArn:
+            Fn::ImportValue: RoutingStack:ExportsOutputRefCertificate4E7ABB08F7C8AF50
+      DefaultActions:
+        - TargetGroupArn:
+            Ref: aigenchattg37B4F7E4
+          Type: forward
+      LoadBalancerArn:
+        Ref: aigenchatlb48FC441A
+      Port: 443
+      Protocol: HTTPS
+    Metadata:
+      aws:cdk:path: AiGenChatStack/ai-gen-chat-lb/ai-gen-chat-listener/Resource
+  aigenchattg37B4F7E4:
+    Type: AWS::ElasticLoadBalancingV2::TargetGroup
+    Properties:
+      HealthCheckPath: /health
+      Name: ai-gen-chat-tg
+      Port: 80
+      Protocol: HTTP
+      TargetGroupAttributes:
+        - Key: stickiness.enabled
+          Value: "false"
+      TargetType: ip
+      VpcId:
+        Fn::ImportValue: NetworkStack:ExportsOutputRefVpc8378EB38272D6E3A
+    Metadata:
+      aws:cdk:path: AiGenChatStack/ai-gen-chat-tg/Resource
+  CDKMetadata:
+    Type: AWS::CDK::Metadata
+    Properties:
+      Analytics: v2:deflate64:H4sIAAAAAAAA/31Py26DQAz8ltxhmyDlA9JHoko5VCT3ylkc5LDxInuhqhD/3iWQirZSTx7PjMbjzKyWmVku4ENTW1Spo5PpDgFslTyd+Q0ErhhQkqi/d2jVdFuQEgIeQatnPBNTIM+D+TfjOQAxyozbkqBD1r0vc98MuVPaAaUli0PMBPsEbRaroG2EwudOfFOP8n/EK5eCqn/4lxsdMx1oIOs8FCdwwJa4bOOZTV07sjCU3Eft8abFejHnxz73kQbkyXPHM/0YP8PwXXO29n2So/pGxofvuE/YF2gu+tBmmVmb1eKiRKk0HOiKJh/nFxr+eBGxAQAA
+    Metadata:
+      aws:cdk:path: AiGenChatStack/CDKMetadata/Default
+Rules:
+  CheckBootstrapVersion:
+    Assertions:
+      - Assert:
+          Fn::Not:
+            - Fn::Contains:
+                - - "1"
+                  - "2"
+                  - "3"
+                  - "4"
+                  - "5"
+                - Ref: BootstrapVersion
+        AssertDescription: CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI.

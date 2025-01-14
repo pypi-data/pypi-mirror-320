@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="static/answers/compare_activity/compare_activity.css"/>
+<div class="answerContainer">
+    <!-- <h2>Comparison Summary</h2>
+    <div class="titleDivider"></div> -->
+    <span class="summary">
+        {% set sentences = split_text(summary) %}
+        {% for i in range(0, sentences | length, 5) %}
+        <p>
+            {{ sentences[i:i+5] | join(' ') }}
+        </p>
+        {% endfor %}
+    </span>
+    <div class="divider"></div>
+
+
+
+    <h3>{{ company1  }} activities: </h3>
+    <div class="searchActivity">
+        {% for activity in activity_list1 %}
+        <div class="answerArea">
+            <span class="title">{{ activity.title }}</span>
+            <div class="text">
+                <div class="paragraph">
+                    {% set sentences = split_text(activity.text) %}
+                    {% for i in range(0, sentences | length, 5) %}
+                    <p>
+                        {{ sentences[i:i+5] | join(' ') }}
+                    </p>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="footer">
+                <div><a href="{{ activity.url }} " target="_blank" rel="noopener noreferrer">Source</a></div>
+                <div class="date">{{ activity.date }}</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        {% endfor %}
+    </div>
+
+    <div class="divider"></div>
+
+    <h3>{{ company2  }} activities:</h3>
+    <div class="searchActivity">
+        {% for activity in activity_list2 %}
+        <div class="answerArea">
+            <span class="title">{{ activity.title }}</span>
+            <div class="text">
+                <div class="paragraph">
+                    {% set sentences = split_text(activity.text) %}
+                    {% for i in range(0, sentences | length, 5) %}
+                    <p>
+                        {{ sentences[i:i+5] | join(' ') }}
+                    </p>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="footer">
+                <div><a href="{{ activity.url }} " target="_blank" rel="noopener noreferrer">Source</a></div>
+                <div class="date">{{ activity.date }}</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        {% endfor %}
+    </div>
+
+
+
+
+
+</div>

@@ -1,0 +1,27 @@
+
+.toggle-content {
+    display: none;
+}
+
+.toggle-label {
+    cursor: pointer;
+}
+
+.toggle-label::before {
+    content: "+ ";
+}
+
+#toggle:checked ~ .toggle-content {
+    display: block;
+}
+
+#toggle:checked + .toggle-label::before {
+    content: "- ";
+}
+
+#toggle {
+    display: none;
+}
+
+
+

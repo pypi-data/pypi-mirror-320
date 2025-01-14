@@ -1,0 +1,89 @@
+{
+  "name": "company_describe",
+  "description": "answer related to company description question",
+  "path": "ui/static/answers/com_describe",
+  "css": "static/css_global.css",
+  "question_list": [
+    "What are the demand drivers of Carbon Capture?"
+  ],
+  "html": "ui/static/answers/com_describe/html.html",
+  "html_tags": {
+    "com_list": [
+      {
+        "url": "https://eeddge.com/companies/1756184",
+        "com_id": 1756184,
+        "name": "Mistral",
+        "text": "Mistral is a wholesale and retail company that distributes, markets, and produces a wide range of food products online."
+      },
+      {
+        "url": "https://eeddge.com/companies/3363132",
+        "com_id": 3363132,
+        "name": "Mistral",
+        "text": "Mistral is a technology design and integration company that provides end-to-end services for product development and deployment."
+      },
+      {
+        "url": "https://eeddge.com/companies/2135356",
+        "com_id": 2135356,
+        "name": "MISTRAL",
+        "text": "Mistral helps their clients with automated and elevator renovation, construction, and maintenance projects. Their teams are there to provide clients with service offerings that are tailored to their property and way of life. They provide automatization. Building closures and access controls also include the placement of doors in homes and offices, parking doors, barriers, and wireless routers."
+      },
+      {
+        "url": "https://eeddge.com/companies/3591539",
+        "com_id": 3591539,
+        "name": "Mistral",
+        "text": "Mistral offers ERP software solutions for equipment and machinery dealers, distributors, renters, and repairers."
+      },
+      {
+        "url": "https://eeddge.com/companies/1003780",
+        "com_id": 1003780,
+        "name": "Mistral",
+        "text": "Mistral Pubblicita' is communications agency that offers services for public relations, visual identity, web design and digital marketing."
+      },
+      {
+        "url": "https://eeddge.com/companies/1068978",
+        "com_id": 1068978,
+        "name": "Mistral",
+        "text": "Mistral specializes in advertising, printing, photography, videos, and web services."
+      },
+      {
+        "url": "https://eeddge.com/companies/1847389",
+        "com_id": 1847389,
+        "name": "Mistra",
+        "text": "Mistra is a training organization specializing in software engineering and system administration. We mainly target IT professionals: developers, project managers, administrators, etc. In addition to training, we offer many tutorials available free of charge on our website."
+      },
+      {
+        "url": "https://eeddge.com/companies/2472796",
+        "com_id": 2472796,
+        "name": "Mistral",
+        "text": "Mistral provides blast management, communication shelter, contract manufacturing, counter UAV, c4isr sensors, indirect fires, survivability, trace detection and identification field test kits, tactical tools, underwater communications and navigation, robotics and artificial intelligence, and UAV solutions."
+      },
+      {
+        "url": "https://eeddge.com/companies/2904449",
+        "com_id": 2904449,
+        "name": "Mistral",
+        "text": "Mistral is a biscuit factory that produces and sells cakes, biscuits, and chocolates."
+      },
+      {
+        "url": "https://eeddge.com/companies/1469652",
+        "com_id": 1469652,
+        "name": "Mistral",
+        "text": "Mistral is an real estate investment trusts. They also provide commercial property, residential property, and real estate property investment services. Additionally, they also provide green building and energy-saving applications."
+      },
+      {
+        "url": "https://eeddge.com/companies/1425087",
+        "com_id": 1425087,
+        "name": "Mistral",
+        "text": "Mistral invests in real estate market with focus on acquisition & promotion of real estate to lease for residential & commercial purpose."
+      },
+      {
+        "url": "https://eeddge.com/companies/3114196",
+        "com_id": 3114196,
+        "name": "Mistral",
+        "text": "Mistral is a hospitality company that offers hotels and holiday homes along with restaurants, ports, spas, pools, and bike rental options."
+      }
+    ]
+  },
+  "query_id": "241120-103913_76921_3947",
+  "session_id": "",
+  "userid_id": ""
+}

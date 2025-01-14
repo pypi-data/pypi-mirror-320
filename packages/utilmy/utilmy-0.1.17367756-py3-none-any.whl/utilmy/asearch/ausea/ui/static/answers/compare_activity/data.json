@@ -1,0 +1,54 @@
+{
+  "name": "compare_activity",
+  "description": "answer related to activity news comparison",
+  "path": "ui/static/answers/compare_activity",
+  "css": "static/css_global.css",
+  "question_list": [
+  ],
+  "html": "ui/static/answers/compare_activity/html.html",
+  "html_tags": {
+    "summary": "\nSynergist Technology partnered with Microsoft to enhance AI compliance solutions, integrating its AFFIRM platform into Microsoft's Marketplace. Tech Mahindra is collaborating with Microsoft to implement Copilot for Microsoft 365 and GitHub Copilot, aiming for a productivity increase of 35%-40% across 1,200 customers and 10,000 employees. KPMG is enhancing its internal GenAI tool and deploying Microsoft 365 Copilot to all US partners and professionals. Hitachi and Microsoft are working together to combine GenAI with cloud solutions, training 50,000 professionals in advanced AI skills. Microsoft has launched a Copilot chatbot for Telegram, allowing users to engage in conversational AI.\n\n\nThe trend indicates a growing collaboration between technology firms and Microsoft to integrate AI solutions across various sectors, emphasizing workforce efficiency and compliance. Additionally, there is a significant focus on upskilling professionals to leverage advanced AI technologies effectively."
+
+
+    ,"company1": "Microsoft"
+
+    ,"activity_list1": [
+      {
+        "title": "Synergist Technology partners with Microsoft to advance ethical AI solutions",
+        "url": "https://eeddge.com/updates/33088",
+        "date": "2024-08-29",
+        "text": "\n  \n    \n      \n        Synergist Technology, an AI governance and compliance solutions provider, partnered with Microsoft to develop and deploy compliant AI solutions.\n      \n    \n    \n      \n        As part of the partnership, Synergist plans to integrate its AFFIRM platform into Microsoft's Marketplace, making it more accessible to businesses worldwide. The initiative also involves key partners like Pliant Consulting and Maureen Data Systems to enhance clients' AI solutions.\n      \n    \n    \n      \n        This partnership is expected to help businesses navigate complex AI regulations while maximizing the potential of Microsoft's AI offerings.\n      \n    \n  \n  \n  \n\n"
+      },
+      {
+        "title": "Tech Mahindra collaborates with Microsoft to modernize workplace experiences with GenAI",
+        "url": "https://eeddge.com/updates/31319",
+        "date": "2024-07-09",
+        "text": "\n  \n    \n      \n        Tech Mahindra, a technology consulting and digital solutions provider, partnered with Microsoft to integrate Copilot for their customers and employees for Microsoft 365 and GitHub Copilot.\n      \n    \n    \n      \n        The collaboration aims to enhance workforce efficiency and streamline processes by leveraging Microsoft's cloud platform and GenAI capabilities. Tech Mahindra will deploy Copilot for Microsoft 365 to over 1,200 customers and 10,000 employees across 15 locations, while GitHub Copilot will be rolled out to 5,000 developers, which is expected to increase productivity by 35%&ndash;40%.\n      \n    \n  \n  \n  \n\n"
+      }
+    ]
+
+      
+    ,"company2": "Google"
+    ,"activity_list2": [
+      {
+        "title": "Synergist Technology partners with Microsoft to advance ethical AI solutions",
+        "url": "https://eeddge.com/updates/33088",
+        "date": "2024-08-29",
+        "text": "\n  \n    \n      \n        Synergist Technology, an AI governance and compliance solutions provider, partnered with Microsoft to develop and deploy compliant AI solutions.\n      \n    \n    \n      \n        As part of the partnership, Synergist plans to integrate its AFFIRM platform into Microsoft's Marketplace, making it more accessible to businesses worldwide. The initiative also involves key partners like Pliant Consulting and Maureen Data Systems to enhance clients' AI solutions.\n      \n    \n    \n      \n        This partnership is expected to help businesses navigate complex AI regulations while maximizing the potential of Microsoft's AI offerings.\n      \n    \n  \n  \n  \n\n"
+      },
+      {
+        "title": "Tech Mahindra collaborates with Microsoft to modernize workplace experiences with GenAI",
+        "url": "https://eeddge.com/updates/31319",
+        "date": "2024-07-09",
+        "text": "\n  \n    \n      \n        Tech Mahindra, a technology consulting and digital solutions provider, partnered with Microsoft to integrate Copilot for their customers and employees for Microsoft 365 and GitHub Copilot.\n      \n    \n    \n      \n        The collaboration aims to enhance workforce efficiency and streamline processes by leveraging Microsoft's cloud platform and GenAI capabilities. Tech Mahindra will deploy Copilot for Microsoft 365 to over 1,200 customers and 10,000 employees across 15 locations, while GitHub Copilot will be rolled out to 5,000 developers, which is expected to increase productivity by 35%&ndash;40%.\n      \n    \n  \n  \n  \n\n"
+      }
+    ]
+
+
+
+
+  },
+  "query_id":   "241120-103152_76921_7865",
+  "session_id": "12234",
+  "userid_id":  "56678"
+}

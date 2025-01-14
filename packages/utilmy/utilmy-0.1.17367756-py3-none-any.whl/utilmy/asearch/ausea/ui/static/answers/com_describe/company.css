@@ -1,0 +1,110 @@
+.com_describe_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.com_describe_answer_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.com_describe_answer_area {
+    background-color: #ffffff;
+    border: 1px solid #eaebef;
+    border-radius: .5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+
+.com_describe_answer_area:hover {
+    background-color: #f3f4f6;
+    border-radius: .75rem;
+}
+
+.com_describe_content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.com_describe_description_Area {
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+.com_describe_description_Area {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.com_describe_logo_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.com_describe_logo {
+    border-radius: 50%;
+    background-color: #c4c6d1;
+    border: 1px solid #dddddd;
+    width: 32px;
+    height: 32px;
+}
+
+.com_describe_title {
+    font-weight: 700;
+    font-family: Gilroy, sans-serif !important;
+    color: black;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.com_describe_title_link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.com_describe_title_link:hover {
+    text-decoration: underline;
+}
+
+.com_describe_text {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: 500;
+    color: #5a5f72;
+    margin: 10px 0;
+}
+
+.com_describe_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    font-weight: 400;
+    color: #5a5f72;
+    width: 100%;
+    margin-top: 15px;
+}

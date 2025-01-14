@@ -1,0 +1,11 @@
+# datasets
+# evaluate
+# seqeval
+# accelerate
+# pyarrow==14.0.1  ### Not good, conflict
+# pyarrow==10.0.1 
+utilmy 
+#s3fs
+#newsapi-python
+#playwright-stealth
+#htmldate

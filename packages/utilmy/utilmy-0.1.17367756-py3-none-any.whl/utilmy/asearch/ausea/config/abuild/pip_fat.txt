@@ -1,0 +1,91 @@
+python-box
+fire
+
+##########################################################
+pycaret==2.3.10
+scikit-learn==0.23.2
+#scipy==1.7.1
+scipy<=1.5.4
+
+
+##########################################################
+pyarrow
+pandas==1.5.1
+numpy
+utilmy
+polars
+
+
+#########################################################
+xxhash==3.2.0
+wget
+psutil
+mmh3
+orjson
+cloudpickle
+pyyaml
+msgpack==1.0.4
+dateparser
+
+
+
+### GEO #################################################
+mercantile==1.2.1
+pyquadkey2==0.2.2
+git+https://github.com/CartoDB/python-quadkey.git
+jusho
+
+
+### DB ##################################################
+hiredis==2.1.0
+redis==4.4.0
+SQLAlchemy==1.4.45
+PyMySQL==1.0.2
+redshift-connector==2.0.909
+sqlitedict==2.1.0
+diskcache
+
+### AWS  ################################################
+awscli
+boto3
+awswrangler
+smart_open
+
+
+########################################################
+######## Extra   #######################################
+
+#### ML  ##############################################
+-f https://download.pytorch.org/whl/torch_stable.html 
+torch==1.13.1+cpu 
+# scikit-learn==1.1.3
+Boruta==0.3
+lightgbm==3.2.1
+umap-learn==0.5.3
+pacmap==0.7
+deepctr-torch
+
+
+#### viz.html
+tqdm
+#matplotlib
+matplotlib==3.6.3  ###  deprecater Pycaret and matplotlib>3.7 https://github.com/matplotlib/matplotlib/issues/25267
+
+
+#### Debug
+pyinstrument
+vulture
+pytype
+ruff
+
+##### Extra
+xgboost==2.0.0
+catboost==1.2.2
+category-encoders==2.6.2
+dirty-cat==0.4.1
+##cinnamon==0.2.1 conflict with sklearn
+adapt==0.4.3
+
+## BorutaShap==1.0.16
+
+

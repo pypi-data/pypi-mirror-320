@@ -1,0 +1,89 @@
+.answerContainer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding-right: 20px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.summaryTitle {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  font-size: 1.05rem;
+  line-height: 1.35rem;
+  font-weight: 400;
+}
+.summary{
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  font-size: 1.05rem;
+  line-height: 1.35rem;
+  font-weight: 400;
+}
+.titleDivider{
+  height: 1px;
+  border-bottom: 1px solid rgba(196, 198, 209, .5);
+  width: 100%;
+  margin-bottom: 20px;
+}
+.divider {
+  height: 1px;
+  border-bottom: 1px solid rgba(196, 198, 209, .5);
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.activity {
+  display: grid;
+  grid-template-columns: 0.2fr 2fr auto 1fr;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 1.05rem;
+  line-height: 1.35rem;
+}
+
+.activity-item {
+  display: contents;
+}
+
+.index {
+  font-weight: bold;
+}
+
+.name a {
+  text-decoration: underline;
+  font-size: 1.05rem;
+  line-height: 1.35rem;
+}
+
+.date,
+.category {
+  color: black;
+}
+
+.date {
+  text-align: left;
+
+}
+
+.category {
+  text-align: left;
+}
+
+.sourceList ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+  font-size: 0.9rem;
+}

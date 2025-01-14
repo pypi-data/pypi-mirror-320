@@ -1,0 +1,193 @@
+python-box
+fire
+
+#### Front UI
+dash-bootstrap-components==1.6.0
+dash-core-components==2.0.0
+dash-html-components==2.0.0
+dash-table==5.0.0
+dash_auth==2.3.0
+dashing==0.1.0
+Flask==3.0.3
+Flask-Login==0.6.3
+
+
+llama-cloud==0.0.15
+llama-index==0.11.1
+llama-parse==0.5.0
+
+### issue with llama index, same than llama
+pydantic==2.8.2
+
+
+dspy
+#dspy==0.1.5
+#dspy-ai ##issues 
+
+
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl#sha256=86cc141f63942d4b2c5fcee06630fd6f904788d2f0ab005cce45aadb8fb73889
+
+
+spacy==3.7.4
+spacy-legacy==3.0.12
+spacy-loggers==1.0.5
+
+
+#### DB 
+neo4j==5.20.0
+qdrant-client==1.9.1
+ranx==0.3.19
+rapidfuzz==3.9.3
+tantivy==0.22.0
+
+sentence-transformers
+transformer-smaller-training-vocab
+transformers
+spacy==3.7.4
+ranx
+rapidfuzz==3.9.3
+regex      
+onnxruntime==1.18.0 
+rapidfuzz
+gensim
+nltk
+
+
+#### Debug
+pyinstrument
+
+
+
+
+### Match Colab version ###########################################
+transformers==4.41.2
+accelerate
+datasets
+fastembed
+
+
+
+###################################################################
+scikit-learn
+scipy
+
+
+
+###################################################################
+pandas==1.5.1
+numpy==1.23.3
+utilmy
+polars==0.16.13
+#datasets
+evaluate
+seqeval
+
+
+
+#########################################################
+xxhash==3.2.0
+wget
+psutil
+mmh3
+orjson
+cloudpickle
+pyyaml
+msgpack==1.0.4
+dateparser
+
+
+
+### DB ##################################################
+#hiredis==2.1.0
+#redis==4.4.0
+SQLAlchemy
+PyMySQL==1.0.2
+#sqlitedict==2.1.0
+diskcache
+duckdb
+neo4j
+networkx
+
+
+#########################################################
+openai
+
+
+#########################################################
+newspaper3k
+# llama-index 
+# langchain   ### issues  
+#playwright==1.44.0
+goose3==3.1.19
+newsapi-python
+#playwright-stealth
+
+portalocker
+pretty-errors
+
+
+### AWS  ################################################
+awscli
+boto3
+awswrangler
+#awswrangler==2.20.0  #### Issue with datasets
+pyarrow  
+
+#pyarrow==10.0.1  ### issue with datasets 
+#pyarrow==14.0.1   ### awsrangler dep issues
+smart-open==6.3.0
+s3transfer
+s3fs
+
+
+
+### API ################################################
+fastapi
+
+
+###### Updates #########################################
+selenium
+sentencepiece
+seqeval  
+beautifulsoup4
+Faker
+bs4
+htmldate
+
+
+########################################################
+######## Extra   #######################################
+
+#### ML  ##############################################
+#-f https://download.pytorch.org/whl/torch_stable.html 
+#torch==1.13.1+cpu 
+# scikit-learn==1.1.3
+#Boruta==0.3
+#lightgbm==3.2.1
+#umap-learn==0.5.3
+#pacmap==0.7
+
+
+#### ML  ##############################################
+-f https://download.pytorch.org/whl/torch_stable.html 
+torch==2.3.0+cpu 
+openai
+groq
+
+
+
+
+#### viz.html #########################################
+tqdm
+matplotlib
+
+
+
+    
+##### AS AMI GPU:  requires Cuda 12.0 
+### pip3 install --pre torch  --index-url https://download.pytorch.org/whl/nightly/cu121
+### python -c "import torch ; print(torch.cuda.is_available()) "
+
+
+
+

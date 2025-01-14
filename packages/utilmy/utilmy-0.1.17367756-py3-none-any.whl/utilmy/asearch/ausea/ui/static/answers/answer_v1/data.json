@@ -1,0 +1,36 @@
+{
+  "name": "answer_v1",
+  "description": "answer related to market size, report style answers",
+  "path": "ui/static/answers/answer_v1",
+  "css": "static/css_global.css",
+  "question_list": [
+    "What are the demand drivers of Carbon Capture?"
+  ],
+  "html": "ui/static/answers/answer_v1/html.html",
+  "html_tags": {
+    "summary": "The Total Addressable Market (TAM) for Image Generation in Generative AI Applications is estimated at approximately USD 3.11 billion (~17.8% of the overall TAM of USD 17.5 billion).",
+    "source_list": [
+      {
+        "name": "Generative AI Applications: Market sizing",
+        "title": "In generative AI Application",
+        "url": "https://eeddge.com/industry/163/market-sizing",
+        "date": "2024-09-12",
+        "text": "In generative AI Application"
+      },
+      {
+        "name": "Generative AI Infra: Market sizing",
+        "title": "In generative AI Application",
+        "url": "https://eeddge.com/industry/163/market-sizing",
+        "date": "2024-10-22",
+        "text": "In generative AI Application"
+      },
+      {
+        "name": "AI Applications: Market sizing",
+        "title": "In generative AI Application",
+        "url": "https://eeddge.com/industry/163/market-sizing",
+        "date": "2023-05-21",
+        "text": "In generative AI Application"
+      }
+    ]
+  }
+}
