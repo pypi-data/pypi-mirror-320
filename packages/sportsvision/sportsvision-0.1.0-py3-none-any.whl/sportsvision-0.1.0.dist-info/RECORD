@@ -1,0 +1,9 @@
+sportsvision/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sportsvision/research/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sportsvision/research/configs.py,sha256=4cFUXgxrVwsbOkYQ7_IkBko-R_TKm8qXSTMTomX4AWs,619
+sportsvision/research/models.py,sha256=Oechw36Xnd07qcA-smAAtUuTO9VDImIBEKsZqS6sRaU,7374
+sportsvision/research/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sportsvision-0.1.0.dist-info/METADATA,sha256=_ZmWVTSCNuE3liw5SDULC5c9-aeOosVoZf-koQGODzI,6120
+sportsvision-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+sportsvision-0.1.0.dist-info/top_level.txt,sha256=OJN520lzNQnEr9xP7IdGaKG9uBqwl4_xlY7_BqQAJWg,13
+sportsvision-0.1.0.dist-info/RECORD,,
