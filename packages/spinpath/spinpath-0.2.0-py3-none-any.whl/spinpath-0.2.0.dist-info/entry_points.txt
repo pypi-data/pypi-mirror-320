@@ -1,0 +1,2 @@
+[console_scripts]
+spinpath = spinpath.cli:cli
