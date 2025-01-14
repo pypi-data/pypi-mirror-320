@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: WJMDataScience
+Version: 0.0.1
+Summary: A very basic data cleaning and preprocessing library
+Home-page: 
+Author: Will McCarter
+Author-email: wjmmccart@gmail.com
+License: MIT
+Keywords: data analysis cleaning preprocessing
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.13
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+
+# Data Analysis Library in Python
+
+This Python library provides a collection of functions to simplify common data analysis tasks, including data loading, cleaning, preprocessing, and splitting.
+
+
+Change Log 
+==========
+0.0.1 (1/1/2025)
+----------------
+- First Release
