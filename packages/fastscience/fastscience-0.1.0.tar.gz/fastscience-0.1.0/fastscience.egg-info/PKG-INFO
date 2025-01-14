@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fastscience
+Version: 0.1.0
+Summary: An AI4S model toolkit
+Home-page: https://github.com/lzxdn/fastscience
+Author: sugon-ai4s
+Author-email: lidong6@sugon.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+# fastscience
+
+### An AI4S model toolkit
