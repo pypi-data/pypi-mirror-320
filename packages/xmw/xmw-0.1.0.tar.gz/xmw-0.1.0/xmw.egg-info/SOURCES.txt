@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+AI/AI.py
+AI/__init__.py
+xmw.egg-info/PKG-INFO
+xmw.egg-info/SOURCES.txt
+xmw.egg-info/dependency_links.txt
+xmw.egg-info/requires.txt
+xmw.egg-info/top_level.txt
