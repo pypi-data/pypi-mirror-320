@@ -1,0 +1,31 @@
+Metadata-Version: 2.3
+Name: cura
+Version: 0.0.2
+Summary: Cura is a tool to manage and grow Communities.
+Keywords: web3,social
+Author-email: Eugene Kim <ek@karma3labs.com>
+Requires-Python: >= 3.12
+Description-Content-Type: text/x-rst
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: typer~=0.15
+Requires-Dist: web3~=7.6
+Requires-Dist: structlog~=24.4
+Requires-Dist: rich~=13.9
+Requires-Dist: flit~=3.10 ; extra == "dev"
+Requires-Dist: pipdeptree~=2.24 ; extra == "dev"
+Project-URL: documentation, https://cura-docs.openrank.com
+Project-URL: homepage, https://cura.openrank.com
+Project-URL: issues, https://github.com/Karma3Labs/issues
+Project-URL: source, https://github.com/Karma3Labs/cura.git
+Provides-Extra: dev
+
+`Cura <https://cura.openrank.com>`_ is a tool to manage and grow Communities.
+
+It gives Farcaster channels their own AI agent.
+This agent helps community owners and moderators curate people and content,
+manage the community wallet, distribute rewards for positive participation.
+If the community wants, they can launch their own currency or token.
+It's simple, intuitive and gives valuable insights to a channel moderator,
+using OpenRank under the hood.
+
