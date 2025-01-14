@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pratix_nelog
+Version: 0.2.1
+Summary: A library to analyze network logs in multiple formats and consolidate them into JSON.
+Home-page: https://github.com/pratiklahudkar/pratix-nelog
+Author: Pratik
+Author-email: your_email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# pratix-nelog
+
+`pratix-nelog` is a Python library to analyze network logs in multiple formats (CSV, JSON, TXT) and consolidate them into a standardized JSON format.
+
+## Features
+- Parse logs in various formats.
+- Extract key information like timestamps, IP addresses, and actions.
+- Consolidate logs into JSON.
+
+## Installation
+```bash
+pip install pratix-nelog
