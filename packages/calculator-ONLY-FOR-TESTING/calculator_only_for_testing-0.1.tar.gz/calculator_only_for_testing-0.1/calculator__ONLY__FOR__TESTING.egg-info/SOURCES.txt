@@ -1,0 +1,8 @@
+LICENCE.txt
+README.txt
+setup.py
+NR_GUI/__init__.py
+calculator__ONLY__FOR__TESTING.egg-info/PKG-INFO
+calculator__ONLY__FOR__TESTING.egg-info/SOURCES.txt
+calculator__ONLY__FOR__TESTING.egg-info/dependency_links.txt
+calculator__ONLY__FOR__TESTING.egg-info/top_level.txt
