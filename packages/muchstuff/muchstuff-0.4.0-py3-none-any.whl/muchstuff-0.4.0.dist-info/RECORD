@@ -1,0 +1,12 @@
+muchstuff/__init__.py,sha256=by6keI9Gk6X9-0KCMylWqnEy1vtFRIutbYh98DJonqg,58
+muchstuff/__main__.py,sha256=A4wcoURNsqA684J9kMU6qQQ_ZXgZxX5ZKJaqrbr7S1c,917
+muchstuff/_debug.py,sha256=K6AIN9-mVtkgiFaSIg-ccTM45Vc0xN-ojEHMovsbNMs,4074
+muchstuff/manager.py,sha256=xs2scB2biFPIDicZzlTvWVApP1swVFys8uv4MwCiVuU,5768
+muchstuff/tui.py,sha256=7NiyKIGpjc48m4aZ9g4fCeY1MH1ugC5IDMZaiC9silg,24544
+muchstuff/tui.tcss,sha256=htzMecfwLBfpzd9NMVmia85jwcHicyGtvQY14F_3A8w,2769
+muchstuff/vcs.py,sha256=XWhabP3bOBgONe7AMgwnEFbKgt9_xVgPecMNSC0xSmQ,6984
+muchstuff-0.4.0.dist-info/METADATA,sha256=4ARofuWw3mYLsPYa_eCN5YSac-1qSTFsE4p8SyIvMD0,4072
+muchstuff-0.4.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+muchstuff-0.4.0.dist-info/entry_points.txt,sha256=KfN3dYscS9lR1yOb32xhmkr3yVuox_s8Q6t9_H-Wx-4,45
+muchstuff-0.4.0.dist-info/licenses/LICENSE,sha256=RRgok63ysnDUkWx5wntEx5llAoZLmw4hEhaAyNfmrU4,747
+muchstuff-0.4.0.dist-info/RECORD,,
