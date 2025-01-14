@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "qingping_iot_cloud"
+version = "0.2.1"
+authors = [
+  { name="Daniel Skowronski" },
+]
+description = "Library for accessing cloud service of Qingping IoT ."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "requests~=2.32.3",
+    "requests-oauth2client~=1.6.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/danielskowronski/qingping-iot-cloud"
+Issues = "https://github.com/danielskowronski/qingping-iot-cloud/issues"
+
+[project.scripts]
+qingping-iot-cloud = "qingping_iot_cloud:main"
