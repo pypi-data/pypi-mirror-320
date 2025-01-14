@@ -1,0 +1,2 @@
+# development
+black>=24.0.0
