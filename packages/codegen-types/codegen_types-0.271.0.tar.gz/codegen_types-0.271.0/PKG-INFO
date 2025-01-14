@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: codegen-types
+Version: 0.271.0
+Summary: Types for the codegen SDK
+Requires-Python: <3.14,>=3.12
+Requires-Dist: graph-sitter-types>=6.2.1
