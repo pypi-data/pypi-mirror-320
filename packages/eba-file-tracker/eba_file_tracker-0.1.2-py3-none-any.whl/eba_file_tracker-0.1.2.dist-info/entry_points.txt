@@ -1,0 +1,3 @@
+[console_scripts]
+file-tracker=eba_file_tracker.client:main
+
