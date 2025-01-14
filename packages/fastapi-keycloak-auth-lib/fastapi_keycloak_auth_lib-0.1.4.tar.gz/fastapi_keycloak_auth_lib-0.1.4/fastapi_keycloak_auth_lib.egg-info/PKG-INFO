@@ -1,0 +1,44 @@
+Metadata-Version: 2.2
+Name: fastapi-keycloak-auth-lib
+Version: 0.1.4
+Summary: FastAPI integration with Keycloak for authentication and role-based access control
+Home-page: https://github.com/your-username/fastapi-keycloak-auth
+Author: shareef
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: fastapi
+Requires-Dist: cryptography
+Requires-Dist: authlib
+Requires-Dist: python-dotenv
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# fastapi-keycloak-auth
+
+`fastapi-keycloak-auth` is a Python package that provides an easy integration of Keycloak authentication and role-based authorization into FastAPI applications. The package supports JWT token validation, role checks, and automatic token retrieval, making it simple to implement secure API access.
+
+## Features:
+- **Keycloak Integration**: Authenticate and retrieve JWT tokens from Keycloak using the `password` grant type.
+- **Token Verification**: Easily verify the JWT token with Keycloak's public key.
+- **Role-based Access Control**: Enforce role-based access with custom decorators.
+- **Flexible Configuration**: Easily configure Keycloak settings (URL, realm, client ID, username, and password) via environment variables or direct updates.
+
+## Installation:
+
+You can install the package via pip:
+
+```bash
+pip install fastapi-keycloak-auth
