@@ -1,0 +1,87 @@
+Metadata-Version: 2.2
+Name: send2airgap
+Version: 0.0.2
+Summary: A Python package enabling the secure transfer of data from an insecure sender to an air-gapped computer equipped with a camera.
+Home-page: https://github.com/poing/Send2AirGap/
+Author: Brian LaVallee
+Author-email: brian.lavallee@invite-comm.jp
+Project-URL: Documentation, https://poing.github.io/Send2AirGap
+Project-URL: Source, https://github.com/poing/Send2AirGap
+Project-URL: Bug Tracker, https://github.com/poing/Send2AirGap/issues/
+Keywords: air gap,air gapped,air gapping,air wall,air-gap,air-gapping,air-wall,airgap,airgapped,airgapping,airwall,camera,communication security,communicationsecurity,cybersecurity,data transmission,datatransfer,disconnected network,hardwaresecurity,isolatednetwork,network security,networking,networksecurity,physically isolated,qr-code,qrcode,receive data,recvdata,secure computer network,securecomputing,send data,senddata
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Topic :: Communications :: File Sharing
+Classifier: Topic :: Communications
+Classifier: Topic :: Security
+Classifier: Topic :: Utilities
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: coverage; extra == "test"
+Requires-Dist: flake8; extra == "test"
+Requires-Dist: black; extra == "test"
+Requires-Dist: isort; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: mypy; extra == "test"
+Requires-Dist: gitchangelog; extra == "test"
+Requires-Dist: mkdocs; extra == "test"
+Requires-Dist: mkdocs-material; extra == "test"
+Requires-Dist: faker; extra == "test"
+Requires-Dist: pymdown-extensions; extra == "test"
+Requires-Dist: mkdocs-material[imaging]; extra == "test"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: project-url
+Dynamic: provides-extra
+Dynamic: requires-python
+Dynamic: summary
+
+# send2airgap
+
+[![codecov](https://codecov.io/gh/poing/Send2AirGap/branch/0.1.0/graph/badge.svg?token=LTQYLRKJ6M)](https://codecov.io/gh/poing/Send2AirGap)
+
+[![CI](https://github.com/poing/Send2AirGap/actions/workflows/main.yml/badge.svg)](https://github.com/poing/Send2AirGap/actions/workflows/main.yml)
+
+Awesome send2airgap created by poing
+
+## Install it from PyPI
+
+```bash
+pip install send2airgap
+```
+
+## Usage
+
+```py
+from send2airgap import BaseClass
+from send2airgap import base_function
+
+BaseClass().base_method()
+base_function()
+```
+
+```bash
+$ python -m send2airgap
+#or
+$ send2airgap
+```
+
+## Development
+
+Read the [CONTRIBUTING.md](CONTRIBUTING.md) file.

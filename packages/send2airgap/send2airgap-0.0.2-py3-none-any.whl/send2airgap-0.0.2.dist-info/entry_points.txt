@@ -1,0 +1,2 @@
+[console_scripts]
+send2airgap = send2airgap.__main__:main
