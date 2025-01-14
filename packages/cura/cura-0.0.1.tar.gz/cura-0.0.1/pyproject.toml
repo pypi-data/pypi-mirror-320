@@ -1,0 +1,39 @@
+[build-system]
+requires = ["flit-core>=3.10"]
+build-backend = "flit_core.buildapi"
+
+[project]
+dynamic = ["version", "description"]
+name = "cura"
+readme = "README.rst"
+requires-python = ">= 3.12"
+authors = [{ name = "Eugene Kim", email = "ek@karma3labs.com" }]
+keywords = ["web3", "social"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "typer~=0.15",
+    "web3~=7.6",
+    "structlog~=24.4",
+    "rich~=13.9",
+]
+
+[project.optional-dependencies]
+dev = [
+    "flit~=3.10",
+    "pipdeptree~=2.24",
+]
+
+[project.urls]
+homepage = "https://cura.openrank.com"
+source = "https://github.com/Karma3Labs/cura.git"
+documentation = "https://cura-docs.openrank.com"
+issues = "https://github.com/Karma3Labs/issues"
+
+[project.scripts]
+cura = "cura.core.cli:main"
+
+[tool.flit.module]
+name = "cura.core"
