@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytosdr"
+version = "1.0.2"
+authors = [
+  { name="José María Cruz Lorite", email="josemariacruzlorite@gmail.com" },
+]
+description = "PyToS;DR is a Python package that enables the user to operate with documents from the ToS;DR project, drawing directly from their GitHub repository."
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "tqdm",
+    "GitPython",
+    "platformdirs"
+]
+
+[project.urls]
+Homepage = "https://github.com/cruzlorite/pytosdr"
+
