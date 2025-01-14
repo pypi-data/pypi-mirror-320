@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: xtn-fun-task-pro
+Version: 1.0.0.0.1
+Summary: xtn
+Author: xtn
+Author-email: xtnkking@hotmail.com
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+xtn-fun-task-pro
