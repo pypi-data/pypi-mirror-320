@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+src/autodpd/__init__.py
+src/autodpd/autodpd.py
+src/autodpd/version.py
+src/autodpd.egg-info/PKG-INFO
+src/autodpd.egg-info/SOURCES.txt
+src/autodpd.egg-info/dependency_links.txt
+src/autodpd.egg-info/entry_points.txt
+src/autodpd.egg-info/requires.txt
+src/autodpd.egg-info/top_level.txt

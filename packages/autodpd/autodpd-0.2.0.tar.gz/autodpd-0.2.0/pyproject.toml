@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "autodpd"
+version = "0.2.0"
+authors = [
+  { name="Dan Peng", email="dan.peng.1202@gmail.com" },
+]
+description = "A Python package for automatically detecting project dependencies"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests",
+    "packaging",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/greatdanpeng/autodpd"
+"Bug Tracker" = "https://github.com/greatdanpeng/autodpd/issues"
+
+[project.scripts]
+autodpd = "autodpd.autodpd:main"
