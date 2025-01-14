@@ -1,0 +1,8 @@
+mcp_server_fetch/__init__.py,sha256=6mqCwMSe8NtUcwXsmZTGjln83bc1vE31CL5yInKZd0s,614
+mcp_server_fetch/__main__.py,sha256=P5j_W1F3QvOrY7x2YIQ0KlY1Y9eO_vS6rrOo1mL1fvk,57
+mcp_server_fetch/server.py,sha256=um0KbhDBWcjgKTMxP_mSQvwaPbilH3-hFXMlRSD0ClE,10195
+mcp_server_fetch-2025.1.14.dist-info/METADATA,sha256=rBTeptl2ITtR2-icAku7mRYlW9Se2S1oxRoBqnFBlNQ,4845
+mcp_server_fetch-2025.1.14.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcp_server_fetch-2025.1.14.dist-info/entry_points.txt,sha256=tYA4AQfADMVk6YWCfuPe7TjGGmPmk7gLosHt_ewL48c,59
+mcp_server_fetch-2025.1.14.dist-info/licenses/LICENSE,sha256=jMfG4zsk7U7o_MzDPszxAlSdBPpMuXN87Ml3Da0QgP8,1059
+mcp_server_fetch-2025.1.14.dist-info/RECORD,,
