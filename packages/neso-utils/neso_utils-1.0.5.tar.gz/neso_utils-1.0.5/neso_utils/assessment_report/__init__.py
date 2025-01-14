@@ -1,0 +1,1 @@
+from neso_utils.assessment_report.generator import AssessmentReport
