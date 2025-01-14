@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: first_project_maghje13
+Version: 1.0.0
+Summary: My first package
+Project-URL: Github, https://github.com/maghje13
+Author-email: maghje13 <13maghje@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
