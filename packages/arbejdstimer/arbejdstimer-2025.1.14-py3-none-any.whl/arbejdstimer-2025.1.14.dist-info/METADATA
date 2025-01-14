@@ -1,0 +1,105 @@
+Metadata-Version: 2.2
+Name: arbejdstimer
+Version: 2025.1.14
+Summary: Working hours (Danish arbejdstimer) or not?
+Author-email: Stefan Hagen <stefan@hagen.link>
+Maintainer-email: Stefan Hagen <stefan@hagen.link>
+License: MIT License
+        
+        Copyright (c) 2025 Stefan Hagen
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://git.sr.ht/~sthagen/arbejdstimer
+Project-URL: Bug-Tracker, https://todo.sr.ht/~sthagen/arbejdstimer
+Project-URL: Documentation, https://codes.dilettant.life/docs/arbejdstimer
+Project-URL: Source-Code, https://git.sr.ht/~sthagen/arbejdstimer
+Project-URL: Test-Coverage, https://codes.dilettant.life/coverage/arbejdstimer
+Keywords: developer-tools,documentation-tools,html,markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic>=2.10.5
+Requires-Dist: typer>=0.15.1
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: hypothesis; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pytest-flake8; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+
+# Arbejdstimer
+
+Working hours (Danish arbejdstimer) or not?
+
+[![License](https://git.sr.ht/~sthagen/arbejdstimer/blob/default/docs/badges/license-spdx-mit.svg)](https://git.sr.ht/~sthagen/arbejdstimer/tree/default/item/LICENSE)
+[![Country of Origin](https://git.sr.ht/~sthagen/arbejdstimer/blob/default/docs/badges/country-of-origin-name-switzerland-neutral.svg)](https://git.sr.ht/~sthagen/arbejdstimer/tree/default/item/COUNTRY-OF-ORIGIN)
+[![Export Classification Control Number (ECCN)](https://git.sr.ht/~sthagen/arbejdstimer/blob/default/docs/badges/export-control-classification-number_eccn-ear99-neutral.svg)](https://git.sr.ht/~sthagen/arbejdstimer/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
+[![Configuration](https://git.sr.ht/~sthagen/arbejdstimer/blob/default/docs/badges/configuration-sbom.svg)](https://git.sr.ht/~sthagen/arbejdstimer/tree/default/item/docs/third-party/README.md)
+
+[![Version](https://git.sr.ht/~sthagen/arbejdstimer/blob/default/docs/badges/latest-release.svg)](https://pypi.python.org/pypi/arbejdstimer/)
+[![Downloads](https://git.sr.ht/~sthagen/arbejdstimer/blob/default/docs/badges/downloads-per-month.svg)](https://pepy.tech/project/arbejdstimer)
+[![Python](https://git.sr.ht/~sthagen/arbejdstimer/blob/default/docs/badges/python-versions.svg)](https://pypi.python.org/pypi/arbejdstimer/)
+[![Maintenance Status](https://git.sr.ht/~sthagen/arbejdstimer/blob/default/docs/badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/arbejdstimer/log)
+
+## Documentation
+
+User and developer [documentation of arbejdstimer](https://codes.dilettant.life/docs/arbejdstimer).
+
+## Bug Tracker
+
+Any feature requests or bug reports shall go to the [todos of arbejdstimer](https://todo.sr.ht/~sthagen/arbejdstimer).
+
+## Primary Source repository
+
+The main source of `arbejdstimer` is on a mountain in central Switzerland.
+We use distributed version control (git).
+There is no central hub.
+Every clone can become a new source for the benefit of all.
+The preferred public clone of `arbejdstimer` is:
+
+* [at sourcehut](https://git.sr.ht/~sthagen/arbejdstimer) - a collection of tools useful for software development.
+
+## Contributions
+
+Please do not submit "pull requests" (I found no way to disable that "feature" on GitHub).
+If you like to share small changes under the repositories license please kindly do so by sending a patchset.
+You can either send such a patchset per email using [git send-email](https://git-send-email.io) or 
+if you are a sourcehut user by selecting "Prepare a patchset" on the summary page of your fork at [sourcehut](https://git.sr.ht/).
+
+## Support
+
+Please kindly submit issues at https://todo.sr.ht/~sthagen/arbejdstimer or write plain text email to ~sthagen/arbejdstimer@lists.sr.ht to submit patches and request support. Thanks.
+
+## Status
+
+Experimental.
+
+**Note**: The default branch is `default`.
