@@ -1,0 +1,52 @@
+Metadata-Version: 2.2
+Name: spatialrna
+Version: 0.1.2
+Summary: A package for spatial RNA graph data processing and analysis.
+Author-email: Ruqian Lyu <rlyu@svi.edu.au>
+License: MIT
+Project-URL: repository, https://gitlab.svi.edu.au/biocellgen-private/spatialrna
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: torch_geometric
+Requires-Dist: pandas
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0; extra == "dev"
+Requires-Dist: twine>=4.0.2; extra == "dev"
+Requires-Dist: build; extra == "dev"
+
+## A package that provides easier inferface to GNN models for single-molecule ST data
+
+
+
+## Pre-requisite packages installation
+
+```
+## Using Conda and pip
+
+conda create -n dev-spatialrna
+conda activate dev-spatialrna
+conda install python=3.10.0
+
+## torch 2.4.0 cuda version 12.4
+pip install torch==2.4.0 --index-url https://download.pytorch.org/whl/cu124
+
+## torch_geometric=2.6.1 https://pytorch-geometric.readthedocs.io/en/stable/install/installation.html#installation-via-pypi
+
+pip install torch_geometric==2.6.1
+
+## Additional useful libraries https://pytorch-geometric.readthedocs.io/en/stable/install/installation.html#additional-libraries
+
+pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.4.0+cu124.html
+
+```
+
+## Install spatialrna
+
+```
+pip install spatialrna
+```
