@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "davidkhala.gcp"
+version = "0.0.3"
+description = "@davidkhala/gcp: core gcp components"
+authors = ["David Liu <david-khala@hotmail.com>"]
+readme = "README.md"
+packages = [{ include = "davidkhala" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+google-auth = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
