@@ -1,0 +1,44 @@
+Metadata-Version: 2.4
+Name: ytb-gears
+Version: 0.1.1
+Summary: A Python package to interact with YouTube Data API v3.
+Author-email: Hao Guan <10684225+hguandl@users.noreply.github.com>
+Requires-Python: >=3.9
+Requires-Dist: google-api-python-client>=2.158.0
+Requires-Dist: google-auth-oauthlib>=1.2.1
+Description-Content-Type: text/markdown
+
+# YouTube Gears
+
+# Example
+
+```python
+import logging
+
+import ytb_gears
+
+
+def main():
+    logging.basicConfig(level=logging.INFO)
+
+    client_secret_file = "client_secret.json"
+    video_path = "test.mp4"
+
+    if ytb_gears.today_already_uploaded(client_secret_file):
+        return
+
+    print(f"即将上传视频: {video_path}")
+
+    ytb_gears.upload(
+        video_path,
+        client_secret_file,
+        "YouTube Gears Test Video",
+        "Uploaded by YouTube Gears",
+        "ytb-gears",
+        "22",
+        "unlisted",
+    )
+
+
+main()
+```
