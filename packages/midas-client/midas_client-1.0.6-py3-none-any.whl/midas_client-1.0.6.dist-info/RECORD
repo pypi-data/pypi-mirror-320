@@ -1,0 +1,10 @@
+midas_client/__init__.py,sha256=iJdMlmr-Yb56fowqs1s9JK3br3qpvJc21RMYEH6TBg8,35
+midas_client/client.py,sha256=wSE1-JfYjIxiuA9eAXl-5gfNa9WM9FRO3LEjlOexbPw,295
+midas_client/historical.py,sha256=vAHPg49aTow_YA-ApIJ0-sSxMv3r_zqRtx3ZRvINCkY,2850
+midas_client/trading.py,sha256=SKTP334qLUozd372pKSafM6htjs8Zfo3ZSF1gS9My94,3155
+midas_client/utils.py,sha256=Vf5j59ja14CKq0g5j61O6vU7MFv9g3qPmT8jZpDahFU,1465
+midas_client-1.0.6.dist-info/LICENSE,sha256=aCz0m3wdvDaBiBaMLZ89yNpRAgLe9QniTbdH-mnXHoQ,10759
+midas_client-1.0.6.dist-info/METADATA,sha256=AmVWSrDSa9fhHToHYOXGAqA4m-l7jNwBT-2aM8l2jm0,2803
+midas_client-1.0.6.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+midas_client-1.0.6.dist-info/top_level.txt,sha256=xkiuvkCIVvYCPv1CVQXdnFokUxZLzzniuTU_-xcbtP4,13
+midas_client-1.0.6.dist-info/RECORD,,
