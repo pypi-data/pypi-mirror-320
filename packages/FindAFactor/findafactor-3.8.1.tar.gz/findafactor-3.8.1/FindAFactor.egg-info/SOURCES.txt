@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+FindAFactor/__init__.py
+FindAFactor/_find_a_factor.cpp
+FindAFactor/dispatchqueue.cpp
+FindAFactor/find_a_factor.py
+FindAFactor/oclengine.cpp
+FindAFactor.egg-info/PKG-INFO
+FindAFactor.egg-info/SOURCES.txt
+FindAFactor.egg-info/dependency_links.txt
+FindAFactor.egg-info/not-zip-safe
+FindAFactor.egg-info/top_level.txt
