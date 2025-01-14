@@ -1,0 +1,116 @@
+[build-system]
+requires = ["setuptools >= 64", "setuptools_scm[toml] >= 8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "constify"
+dynamic = ["version"]
+authors = [{ name="YARO Ali", email="ali.yaro@hotmail.com" }]
+description = "Makes functions parameters immutable"
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = [
+    "mutable",
+    "immutable",
+    "decorator",
+    "default values",
+    "mutable arguments",
+]
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13"
+]
+
+[project.urls]
+Repository = "https://github.com/yazernin10x/constify"
+"Issue tracker" = "https://github.com/yazernin10x/constify/issues"
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "mypy"
+]
+
+test = [
+    "tox",
+    "coverage"
+]
+
+[tool.setuptools.package-data]
+"src.constify" = ["py.typed"]
+
+[tool.setuptools_scm]
+local_scheme = "dirty-tag"
+tag_regex = "^v(?P<version>.*)$"
+
+[tool.mypy]
+cache_dir = ".mypy_cache"
+strict = true
+pretty = true
+
+[tool.coverage.run]
+omit = ["tests/*"]
+
+[tool.coverage.html]
+directory = ".htmlcov"
+
+[tool.tox]
+requires = ["tox"]
+env_list = [
+    "3.9",
+    "3.10",
+    "3.11",
+    "3.12",
+    "3.13",
+    "report",
+    "doctest",
+    "type",
+    "linter",
+]
+skip_missing_interpreters = true
+
+[tool.tox.env_run_base]
+description = "Run tests with unittest and coverage"
+package = "editable"
+deps = ["coverage[toml] >= 7.6.10"]
+commands = [["coverage", "run", "-p", "-m", "unittest"]]
+
+[tool.tox.env.report]
+description = "Combine files and generate a report"
+package = "editable"
+deps = ["coverage[toml]"]
+commands = [
+    ["coverage", "combine"], 
+    ["coverage", "html"], 
+    ["coverage", "erase"]
+]
+
+[tool.tox.env.doctest]
+description = "Run tests with doctest"
+package = "editable"
+commands = [["python", "-m", "doctest", "src/constify/_freezeparams.py"]]
+
+[tool.tox.env.type]
+description = "Run type annotation checking"
+package = "editable"
+deps = ["mypy"]
+commands = [["mypy", "src/", "tests/"]]
+
+[tool.tox.env.linter]
+description = "Run linter et formater"
+package = "editable"
+deps = [ "ruff"]
+commands = [
+    ["ruff", "check", "src/", "tests/"],
+    ["ruff", "format", "src/", "tests/"]
+]

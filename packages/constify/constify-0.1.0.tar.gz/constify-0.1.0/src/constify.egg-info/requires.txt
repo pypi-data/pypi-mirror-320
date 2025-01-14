@@ -1,0 +1,8 @@
+
+[dev]
+ruff
+mypy
+
+[test]
+tox
+coverage

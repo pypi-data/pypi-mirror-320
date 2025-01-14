@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/test.yml
+src/constify/__init__.py
+src/constify/_freezeparams.py
+src/constify/py.typed
+src/constify.egg-info/PKG-INFO
+src/constify.egg-info/SOURCES.txt
+src/constify.egg-info/dependency_links.txt
+src/constify.egg-info/requires.txt
+src/constify.egg-info/top_level.txt
+tests/__init__.py
+tests/src/__init__.py
+tests/src/constify/__init__.py
+tests/src/constify/test_freezeparams.py
