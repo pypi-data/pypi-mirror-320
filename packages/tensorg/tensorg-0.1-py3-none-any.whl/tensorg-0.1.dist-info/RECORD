@@ -1,0 +1,11 @@
+tensorgrad/__init__.py,sha256=nE1B1-ehS0c5Z493p3O5lDVexYA1l8bqahiPWgbrL90,287
+tensorgrad/functions.py,sha256=TIPvtOEZuPIg0HZcL23wCmavK6LwmvHqmpMR2aA8sWo,39110
+tensorgrad/imgtools.py,sha256=LCsbUlA9IcdZ6qE3dz8aAdvWgZrOgz_a_nZfmlmetHE,5142
+tensorgrad/tensor.py,sha256=45lY0nUrsdFsy2OEghvp0dV8rPyGEMuY0P8TKrn4EXc,71871
+tensorgrad/testutils.py,sha256=qDFaEud16vrADp8nhE8vTPdoEbVVVBpgcnlz10VINOQ,11109
+tensorgrad/utils.py,sha256=EfJxNQV8Y6t1zNzGcMto3rtPKinDsxbxzL7kKyIpcTU,2011
+tensorg-0.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+tensorg-0.1.dist-info/METADATA,sha256=BtzgTKqM051qxxI_FjzZQXiNOuCaOcAGKCKKvVCM_No,49301
+tensorg-0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+tensorg-0.1.dist-info/top_level.txt,sha256=fY8gNmqWox3gLn__DGM_DGaXVR5XbKS5LxGqRUG0D78,11
+tensorg-0.1.dist-info/RECORD,,
