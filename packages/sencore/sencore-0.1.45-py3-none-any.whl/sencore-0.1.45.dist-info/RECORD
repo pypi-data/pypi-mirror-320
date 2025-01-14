@@ -1,0 +1,16 @@
+sencore/__init__.py,sha256=EyuFPVVt3k1X7Jjz_Zc-naGYd8Z7EzFfWT7QCKsIMy4,735
+sencore/_usage.py,sha256=xzA-fDkFge3YqhslcLaKOzJQFVIC_kDQz3rNBDvbDSA,5752
+sencore/deeplapi.py,sha256=oYzHATZ07AUPnD_xdEwS7JrRZfbPd9hI8Vu-P5tg8Wo,667
+sencore/entry.py,sha256=sqJgKPhYI2kI4p96dh71H17KGelgYCPUrnC50v4az_8,4215
+sencore/kg_parser.py,sha256=ocJRs0tFNIDMeThbALpuHuLeOS1NhQ0-0TxpJNmxw5w,1350
+sencore/lib.py,sha256=hBvmePtwrEPLqWDJ0KDtTJ73I20QztYHO678bGAVj9E,914
+sencore/parser.py,sha256=yrt-SKEDcmnpjrOkvHSqKFYlUHOxgpvFkDSCCyB1fm4,448
+sencore/phrase_model_parser.py,sha256=N9yBaJw3OVB43xnPvZZ7AV8vB7SGvIByD9Kjk0oYjG8,4253
+sencore/phrase_parser.py,sha256=sC_hpOXJ5O8rxkmTU9YSGcNwUHGfcOyXmhqEPcrA-38,2507
+sencore/structure_parser.py,sha256=VzaZYgN-8GdwKy8QZyg8ghqnGsJGSCT0JMUmz2PdEqE,1233
+sencore/train.py,sha256=FYXUIahU_nClF3D1z4JUyIPLBKw-SOh6ocXAkAke0Gs,2559
+sencore/vocab_parser.py,sha256=c45o1bYqbatycGQRl8uOlIjRMyMvhiWC7ehC0IZ7enQ,1187
+sencore-0.1.45.dist-info/METADATA,sha256=Gecn0GFLKcdFuypKyBNgD0tcyzcLd5oV0-XaTWAjkk4,3924
+sencore-0.1.45.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+sencore-0.1.45.dist-info/entry_points.txt,sha256=6baCVKeX2M-QryrvIyjw59Pd0IpmsPxx9ux4a_M6Q0k,492
+sencore-0.1.45.dist-info/RECORD,,
