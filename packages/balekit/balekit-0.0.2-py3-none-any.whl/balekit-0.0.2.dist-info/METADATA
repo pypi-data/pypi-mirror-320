@@ -1,0 +1,34 @@
+Metadata-Version: 2.2
+Name: balekit
+Version: 0.0.2
+Summary: A tool for developing bots in Bale messenger!
+Author-email: Mohammad Parsa Mortazavi <mohammadparsa9053@gmail.com>
+Project-URL: Homepage, https://github.com/mpmms/balekit
+Project-URL: Issues, https://github.com/mpmms/balekit/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## BaleKit
+A tool for developing bots in Bale messenger!
+## Quick Example
+```python
+from balekit import Bot
+app = Bot("TOKEN")
+msg = app.send_message("Hello World!")
+c = msg["result"]["message_id"]
+app.edit_message_text(1234567890,c, "Hello World!")
+```
+## Contact Us
+- [Bale](https://ble.ir/mpmms)
+- [Telegram](https://t.me/mpm_ms)
+- [GitHub Issues](https://github.com/mpmms/balekit/issues)
+
+## Installing
+
+```bash
+pip install balekit==
+```
