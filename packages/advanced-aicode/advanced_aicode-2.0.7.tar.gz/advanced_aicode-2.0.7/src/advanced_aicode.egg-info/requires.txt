@@ -1,0 +1,5 @@
+appdirs
+uv
+setuptools
+ruff
+semi-secret>=1.0.4
