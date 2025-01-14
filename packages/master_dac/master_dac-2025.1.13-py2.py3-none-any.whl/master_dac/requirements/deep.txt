@@ -1,0 +1,30 @@
+# misc
+future
+
+# Scientific
+matplotlib
+seaborn
+scikit-learn
+pandas
+
+# Jupyter and co
+ipython
+jupyter
+jupyterlab
+jupyterlab-widgets
+ipywidgets
+
+# Deep learning libraries
+torch >= 2
+torchvision
+tensorboard >= 2.10
+tensorflow >= 2.10;  platform_machine != "arm64" or sys_platform != "darwin"
+tensorflow-macos >= 2.10; platform_machine == "arm64" and sys_platform == "darwin"
+
+# Experimaestro
+
+experimaestro >= 1.5.12
+datamaestro >= 0.8
+datamaestro_image >= 2024.11.24
+datamaestro_ml >= 2021.10.5
+datamaestro_text >= 2024.5.31
