@@ -1,0 +1,2 @@
+[console_scripts]
+qingping-iot-cloud = qingping_iot_cloud:main
