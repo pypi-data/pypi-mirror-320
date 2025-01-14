@@ -1,0 +1,235 @@
+,
+{
+    "patentCaseMetadata": {
+        "applicationNumberText": {
+            "value": "18401662",
+            "electronicText": "18401662"
+        },
+        "filingDate": "2024-01-01",
+        "applicationTypeCategory": "Utility",
+        "partyBag": {
+            "applicantBagOrInventorBagOrOwnerBag": [
+                {
+                    "primaryExaminerOrAssistantExaminerOrAuthorizedOfficer": [
+                        {
+                            "name": {
+                                "personNameOrOrganizationNameOrEntityName": [
+                                    {
+                                        "personFullName": "CENTRAL, DOCKET"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "applicant": [
+                        {
+                            "contactOrPublicationContact": [
+                                {
+                                    "name": {
+                                        "personNameOrOrganizationNameOrEntityName": [
+                                            {
+                                                "organizationStandardName": {
+                                                    "content": [
+                                                        "TELADOC HEALTH, INC."
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "cityName": "Purchase",
+                                    "geographicRegionName": {
+                                        "value": "NY",
+                                        "geographicRegionCategory": "STATE"
+                                    },
+                                    "countryCode": "US"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "partyIdentifierOrContact": [
+                        {
+                            "name": {
+                                "personNameOrOrganizationNameOrEntityName": [
+                                    {
+                                        "personStructuredName": {
+                                            "lastName": "Teladoc Health C/O Clarivate"
+                                        }
+                                    }
+                                ]
+                            },
+                            "postalAddressBag": {
+                                "postalAddress": [
+                                    {
+                                        "postalStructuredAddress": {
+                                            "addressLineText": [
+                                                {
+                                                    "value": "3133 W Frye Road"
+                                                },
+                                                {
+                                                    "value": "Suite 400"
+                                                }
+                                            ],
+                                            "cityName": "Chandler",
+                                            "geographicRegionName": [
+                                                {
+                                                    "value": "AZ"
+                                                }
+                                            ],
+                                            "countryCode": "US",
+                                            "postalCode": "85226"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "value": "98471"
+                        }
+                    ]
+                }
+            ]
+        },
+        "groupArtUnitNumber": {
+            "value": "OPAP",
+            "electronicText": "OPAP"
+        },
+        "applicationConfirmationNumber": "1334",
+        "applicantFileReference": "P055C",
+        "patentClassificationBag": {
+            "cpcClassificationBagOrIPCClassificationOrECLAClassificationBag": [
+                {
+                    "ipOfficeCode": "US",
+                    "mainNationalClassification": {
+                        "nationalClass": "705",
+                        "nationalSubclass": "003000"
+                    }
+                }
+            ]
+        },
+        "businessEntityStatusCategory": "UNDISCOUNTED",
+        "firstInventorToFileIndicator": "true",
+        "inventionTitle": {
+            "content": [
+                "AUTOMATED TRANSCRIPTION AND DOCUMENTATION OF TELE-HEALTH ENCOUNTERS"
+            ]
+        },
+        "applicationStatusCategory": "Docketed New Case - Ready for Examination",
+        "applicationStatusDate": "2024-01-17",
+        "officialFileLocationCategory": "ELECTRONIC",
+        "patentPublicationIdentification": {
+            "publicationNumber": "US20240136033A1",
+            "publicationDate": "2024-04-25"
+        },
+        "relatedDocumentData": {
+            "parentDocumentDataOrChildDocumentData": [
+                {
+                    "descriptionText": "This application is a Continuation of",
+                    "applicationNumberText": "15961705",
+                    "filingDate": "2018-04-24",
+                    "aiaIndicator": true,
+                    "parentDocumentStatusCode": "Patented",
+                    "patentNumber": "11862302"
+                },
+                {
+                    "descriptionText": "This application Claims Priority from Provisional Application",
+                    "applicationNumberText": "62489380",
+                    "filingDate": "2017-04-24",
+                    "parentDocumentStatusCode": "Expired",
+                    "patentNumber": ""
+                },
+                {
+                    "descriptionText": "This application Claims Priority from Provisional Application",
+                    "applicationNumberText": "62536907",
+                    "filingDate": "2017-07-25",
+                    "parentDocumentStatusCode": "Expired",
+                    "patentNumber": ""
+                }
+            ]
+        }
+    },
+    "prosecutionHistoryDataBag": {
+        "prosecutionHistoryData": [
+            {
+                "eventDate": "2024-04-26",
+                "eventCode": "EML_NTR",
+                "eventDescriptionText": "Email Notification"
+            },
+            {
+                "eventDate": "2024-04-26",
+                "eventCode": "PG-ISSUE",
+                "eventDescriptionText": "PG-Pub Issue Notification"
+            },
+            {
+                "eventDate": "2024-01-17",
+                "eventCode": "DOCK",
+                "eventDescriptionText": "Case Docketed to Examiner in GAU"
+            },
+            {
+                "eventDate": "2024-01-17",
+                "eventCode": "EML_NTR",
+                "eventDescriptionText": "Email Notification"
+            },
+            {
+                "eventDate": "2024-01-17",
+                "eventCode": "OIPE",
+                "eventDescriptionText": "Application Dispatched from OIPE"
+            },
+            {
+                "eventDate": "2024-01-16",
+                "eventCode": "PGPC",
+                "eventDescriptionText": "Sent to Classification Contractor"
+            },
+            {
+                "eventDate": "2024-01-16",
+                "eventCode": "FTFS",
+                "eventDescriptionText": "FITF set to YES - revise initial setting"
+            },
+            {
+                "eventDate": "2024-01-16",
+                "eventCode": "PTA.RFE",
+                "eventDescriptionText": "Patent Term Adjustment - Ready for Examination"
+            },
+            {
+                "eventDate": "2024-01-17",
+                "eventCode": "MPEN",
+                "eventDescriptionText": "Mail Pre-Exam Notice"
+            },
+            {
+                "eventDate": "2024-01-17",
+                "eventCode": "COMP",
+                "eventDescriptionText": "Application Is Now Complete"
+            },
+            {
+                "eventDate": "2024-01-17",
+                "eventCode": "FLRCPT.O",
+                "eventDescriptionText": "Filing Receipt"
+            },
+            {
+                "eventDate": "2024-01-01",
+                "eventCode": "SREXR141",
+                "eventDescriptionText": "PTO/SB/69-Authorize EPO Access to Search Results"
+            },
+            {
+                "eventDate": "2024-01-01",
+                "eventCode": "APPERMS",
+                "eventDescriptionText": "Applicants have given acceptable permission for participating foreign "
+            },
+            {
+                "eventDate": "2024-01-01",
+                "eventCode": "BIG.",
+                "eventDescriptionText": "Entity Status Set To Undiscounted (Initial Default Setting or Status Change)"
+            },
+            {
+                "eventDate": "2024-01-01",
+                "eventCode": "IEXX",
+                "eventDescriptionText": "Initial Exam Team nn"
+            }
+        ]
+    },
+    "st96Version": "V4_0",
+    "ipoVersion": "US_V9_0"
+}
