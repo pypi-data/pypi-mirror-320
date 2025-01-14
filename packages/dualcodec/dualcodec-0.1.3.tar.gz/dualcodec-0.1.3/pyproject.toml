@@ -1,0 +1,34 @@
+[project]
+name = "dualcodec"
+version = "0.1.3"
+description = "The DualCodec neural audio codec."
+authors = [
+    {name = "Jiaqi Li", email = "jiaqili3@link.cuhk.edu.cn"},
+]
+dependencies = [
+    "transformers>=4.30.0",
+    "descript-audio-codec",
+    "huggingface_hub[cli]",
+    "easydict",
+    "torch",
+    "hydra-core",
+    "einops",
+    "safetensors",
+]
+packages = "dualcodec"
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[project.optional-dependencies]
+train = [
+    "accelerate>=1.0",
+]
+
