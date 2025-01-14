@@ -1,0 +1,7 @@
+include test/la.*
+include test/*.py
+include src/wrapper/common.hpp
+include test/tagrename
+include LICENSE
+
+include README.md
