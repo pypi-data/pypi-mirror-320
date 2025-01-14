@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: uniteam-backend-package
+Version: 0.1.24
+Summary: 
+Author: Fayaz Rafeek
+Author-email: fayaz@martiandays.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: black (>=24.10.0,<25.0.0)
+Requires-Dist: flask (>=3.0.3,<4.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: psycopg2-binary (>=2.9.9,<3.0.0)
+Requires-Dist: pydantic (>=2.10.4,<3.0.0)
+Requires-Dist: pytest (>=8.3.4,<9.0.0)
+Requires-Dist: python-json-logger (>=2.0.7,<3.0.0)
+Description-Content-Type: text/markdown
+
+
