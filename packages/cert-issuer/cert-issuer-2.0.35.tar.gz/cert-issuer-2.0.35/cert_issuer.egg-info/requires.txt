@@ -1,0 +1,13 @@
+blockcerts-merkletools==1.0.3
+cert-core==2.1.10
+cert-schema==3.0.0a9
+configargparse==0.12.0
+glob2==0.6
+jsonschema==4.23.0
+mock==2.0.0
+pycoin==0.92.20241201
+pyld>=1.0.3
+python-bitcoinlib>=0.10.1
+requests[security]>=2.18.4
+tox>=3.0.0
+urllib3==1.26.19
