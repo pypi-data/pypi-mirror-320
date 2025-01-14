@@ -1,0 +1,7 @@
+asynctasklib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asynctasklib/async_tasks.c,sha256=6L_jCB7wBcL6woFF6CFJMxxlI9hypCVbODrq9QWcLVM,456736
+asynctasklib/async_tasks.cp311-win_amd64.pyd,sha256=ynZFyIc_lEDklM4zxBIOMyR-4PToVkGEqAgs0wWpMXI,71168
+async_task_library-0.2.44.dist-info/METADATA,sha256=2pxtXl0tSrCikVs6USA9ppibUePFa9r6GlXV1dkqW8I,645
+async_task_library-0.2.44.dist-info/WHEEL,sha256=yNnHoQL2GZYIUXm9YvoaBpFjGlUoK9qq9oqYeudrWlE,101
+async_task_library-0.2.44.dist-info/top_level.txt,sha256=qW2hYcKG6NfTeTeljcU7eoyDryXOh0K-ZNIxXo2swOA,13
+async_task_library-0.2.44.dist-info/RECORD,,
