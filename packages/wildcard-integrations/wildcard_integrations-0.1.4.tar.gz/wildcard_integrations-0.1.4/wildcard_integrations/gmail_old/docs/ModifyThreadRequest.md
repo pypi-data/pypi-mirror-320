@@ -1,0 +1,10 @@
+# ModifyThreadRequest
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**add_label_ids** | **list[str]** | A list of IDs of labels to add to this thread. You can add up to 100 labels with each update. | [optional] 
+**remove_label_ids** | **list[str]** | A list of IDs of labels to remove from this thread. You can remove up to 100 labels with each update. | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
