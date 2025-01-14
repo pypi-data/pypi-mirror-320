@@ -1,0 +1,11 @@
+atsphinx/goto_top/__init__.py,sha256=A9Q1P1NCNumB9r7LhrU_O4rbVICpUPK1zF3tKebyf9Y,2087
+atsphinx/goto_top/static/goto-top/arrow-up-to-line.svg,sha256=2yHqzjdSSIXRT5kBUwZ6SXq9ujhN4BpzY6KPrfq8Ws4,335
+atsphinx/goto_top/static/goto-top/main.js_t,sha256=xlgYCxkrhVyFvG9T0d5VvTbaQQh5GG0XEWCBRED-Yc4,372
+atsphinx/goto_top/static/goto-top/style.css_t,sha256=1E1bOxCpCbiUQs5pUoNESysIj_yjLQlAXv2vwj8qlw8,156
+atsphinx/goto_top/templates/goto-top/navigation-image.html,sha256=V9n8Tz51E4C7hTfL4NqZfNEo_R-bf0voWjZ5Yr7FT6o,239
+atsphinx/goto_top/templates/goto-top/navigation-text.html,sha256=vfIHQFNi2yH65k12SUORhfC9WZAOlQS1f_FAEr-OUPs,75
+atsphinx/goto_top/templates/goto-top/navigation.html,sha256=GwUERi4JvHvqf20jgqMRgW2bdEx7rwwhVwTuqC108_E,77
+atsphinx_goto_top-0.1.3.dist-info/METADATA,sha256=3-xf7phwBs1ZJksbVUarqRkKNj_GZmE7dUmJqIf2pDQ,1854
+atsphinx_goto_top-0.1.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+atsphinx_goto_top-0.1.3.dist-info/licenses/LICENSE,sha256=ieEKJ-VczfHpbzAARBk5cBwN-Qfu4_jjKLNpnH1JyAg,9161
+atsphinx_goto_top-0.1.3.dist-info/RECORD,,

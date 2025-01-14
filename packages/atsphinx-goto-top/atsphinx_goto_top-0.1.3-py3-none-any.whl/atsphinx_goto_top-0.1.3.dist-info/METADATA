@@ -1,0 +1,54 @@
+Metadata-Version: 2.4
+Name: atsphinx-goto-top
+Version: 0.1.3
+Summary: Sphinx extension to add navigation buttion that scroll to top of page.
+Project-URL: Home, https://github.com/atsphinx/goto-top
+Project-URL: Documentation, https://atsphinx.github.io/goto-top
+Author-email: Kazuya Takei <myself@attakei.net>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Documentation
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Topic :: Text Processing :: Markup :: reStructuredText
+Requires-Python: >=3.9
+Requires-Dist: sphinx
+Description-Content-Type: text/x-rst
+
+=================
+atsphinx-goto-top
+=================
+
+This is Sphinx extension to add navigation buttion that scroll to top of page.
+
+Getting started
+===============
+
+.. code:: console
+
+   pip install atsphinx-goto-top
+
+.. code:: python
+
+   extensions = [
+       ...,  # Your extensions
+       "atsphinx.goto_top",
+   ]
