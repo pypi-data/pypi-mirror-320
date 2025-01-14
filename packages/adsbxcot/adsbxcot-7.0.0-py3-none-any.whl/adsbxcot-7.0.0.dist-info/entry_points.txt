@@ -1,0 +1,2 @@
+[console_scripts]
+adsbxcot = adsbxcot.commands:main
