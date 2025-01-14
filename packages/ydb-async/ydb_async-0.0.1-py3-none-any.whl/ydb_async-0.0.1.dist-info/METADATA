@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: ydb-async
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/bevzd/ydb-async#readme
+Project-URL: Issues, https://github.com/bevzd/ydb-async/issues
+Project-URL: Source, https://github.com/bevzd/ydb-async
+Author-email: bevzd <dbevzpr@mail.ru>
+License-Expression: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: ~=3.11
+Requires-Dist: ydb-sqlalchemy
