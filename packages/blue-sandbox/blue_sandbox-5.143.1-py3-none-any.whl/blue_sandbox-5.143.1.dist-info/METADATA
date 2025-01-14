@@ -1,0 +1,66 @@
+Metadata-Version: 2.2
+Name: blue_sandbox
+Version: 5.143.1
+Summary: 🌀 A sandbox for ideas and experiments.
+Home-page: https://github.com/kamangir/blue-sandbox
+Author: Arash Abadpour (Kamangir)
+Author-email: arash@kamangir.net
+License: Public Domain
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Unix Shell
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: blueness
+Requires-Dist: abcli
+Requires-Dist: blue-options
+Requires-Dist: blue_objects
+Requires-Dist: blue_geo
+Requires-Dist: blueflow
+Requires-Dist: blue_plugin
+Requires-Dist: roofAI
+Requires-Dist: boto3
+Requires-Dist: geojson
+Requires-Dist: geopandas
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: pymysql
+Requires-Dist: pyyaml
+Requires-Dist: pylint
+Requires-Dist: pytest
+Requires-Dist: python-dotenv[cli]
+Requires-Dist: tqdm
+Requires-Dist: azure-storage-blob
+Requires-Dist: fiona
+Requires-Dist: tensorboard
+Requires-Dist: sagemaker<3,>=2
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+# 🌀 blue-sandbox
+
+🌀 A sandbox for ideas and experiments.
+
+```bash
+pip install blue-sandbox
+```
+
+|   |   |   |
+| --- | --- | --- |
+| 🌀[`sagesemseg`](https://github.com/kamangir/blue-sandbox/blob/main/blue_sandbox/sagesemseg/README.md) ⏸️ [![image](https://github.com/kamangir/assets/blob/main/blue-sandbox/sagesemseg-predict.png?raw=true)](https://github.com/kamangir/blue-sandbox/blob/main/blue_sandbox/sagesemseg/README.md) A SemSeg (Semantic Segmenter) trained and deployed on AWS Sagemaker. | 🌐[``@damages``](https://github.com/kamangir/blue-sandbox/blob/main/blue_sandbox/microsoft_building_damage_assessment/README.md) ⏸️ [![image](https://github.com/kamangir/assets/raw/main/blue-sandbox/Maui-Hawaii-fires-Aug-23-ingest-2025-01-10-qqJqhm.png?raw=true)](https://github.com/kamangir/blue-sandbox/blob/main/blue_sandbox/microsoft_building_damage_assessment/README.md) Satellite imagery damage assessment workflow | 🪦[`cemetery`](https://github.com/kamangir/blue-sandbox/blob/main/blue_sandbox/cemetery/README.md) 🪦 [![image](https://github.com/kamangir/assets/raw/main/blue-plugin/marquee.png?raw=true)](https://github.com/kamangir/blue-sandbox/blob/main/blue_sandbox/cemetery/README.md) An AI cemetery. |
+
+---
+
+
+[![pylint](https://github.com/kamangir/blue-sandbox/actions/workflows/pylint.yml/badge.svg)](https://github.com/kamangir/blue-sandbox/actions/workflows/pylint.yml) [![pytest](https://github.com/kamangir/blue-sandbox/actions/workflows/pytest.yml/badge.svg)](https://github.com/kamangir/blue-sandbox/actions/workflows/pytest.yml) [![bashtest](https://github.com/kamangir/blue-sandbox/actions/workflows/bashtest.yml/badge.svg)](https://github.com/kamangir/blue-sandbox/actions/workflows/bashtest.yml) [![PyPI version](https://img.shields.io/pypi/v/blue-sandbox.svg)](https://pypi.org/project/blue-sandbox/) [![PyPI - Downloads](https://img.shields.io/pypi/dd/blue-sandbox)](https://pypistats.org/packages/blue-sandbox)
+
+built by 🌀 [`blue_options-4.185.1`](https://github.com/kamangir/awesome-bash-cli), based on 🌀 [`blue_sandbox-5.143.1`](https://github.com/kamangir/blue-sandbox).
