@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/lgtv_rs232/__init__.py
+src/lgtv_rs232/lgtv.py
+src/lgtv_rs232_zcline91.egg-info/PKG-INFO
+src/lgtv_rs232_zcline91.egg-info/SOURCES.txt
+src/lgtv_rs232_zcline91.egg-info/dependency_links.txt
+src/lgtv_rs232_zcline91.egg-info/requires.txt
+src/lgtv_rs232_zcline91.egg-info/top_level.txt
