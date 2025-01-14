@@ -1,0 +1,8 @@
+cvmltools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cvmltools/cluster.py,sha256=yRbC5B4_8-jNmXFXLD4te5lXV2AttEzd41KRmY1hl4I,2153
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test.py,sha256=jX0wVusULi2vUP9xNbSBc_ZyLmhzksJ6TsKAZHGaeNo,4454
+cvmltools-0.2.0.dist-info/METADATA,sha256=7RkBoRzPauQeDhlecutepv87173vr86sTOA5ybz3pMc,354
+cvmltools-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cvmltools-0.2.0.dist-info/top_level.txt,sha256=1TCUe1AD-hLZZQ8Lxbpw6VK7FL19yAGnSfl7d4XoNZo,15
+cvmltools-0.2.0.dist-info/RECORD,,
