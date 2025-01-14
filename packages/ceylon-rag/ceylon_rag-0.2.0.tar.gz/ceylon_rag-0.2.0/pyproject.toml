@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "ceylon-rag"
+version = "0.2.0"
+description = ""
+authors = ["dewma <dewmal@syigen.com>"]
+readme = "README.md"
+packages = [{ include = "*", from = "app" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.10.5"
+tenacity = "^9.0.0"
+pytest = "^8.3.4"
+pytest-asyncio = "^0.25.2"
+pypdf = "^5.1.0"
+reportlab = "^4.2.5"
+pillow = "^11.1.0"
+pytesseract = "^0.3.13"
+numpy = "^2.2.1"
+aiohttp = "^3.11.11"
+aioresponses = "^0.7.7"
+asyncio = "^3.4.3"
+lancedb = {version = "^0.17.1", allow-prereleases = true}
+tantivy = "^0.22.0"
+ollama = "^0.4.5"
+pandas = "^2.2.3"
+python-magic = "^0.4.27"
+openai = "^1.59.6"
+python-dotenv = "^1.0.1"
+
+[[tool.poetry.source]]
+name = "fury"
+url = "https://pypi.fury.io/lancedb/"
+priority = "supplemental"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
