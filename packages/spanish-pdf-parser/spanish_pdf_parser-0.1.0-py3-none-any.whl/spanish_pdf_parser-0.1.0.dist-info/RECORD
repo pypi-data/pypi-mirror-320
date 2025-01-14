@@ -1,0 +1,13 @@
+pdf_section_parser/__init__.py,sha256=3wAwM8880i4xhT4ZmczKI_7Im66Qy6m9xU5pUABpuUM,189
+pdf_section_parser/config.py,sha256=tlQu-CfMbuKhW7plVoSZru-L3xpFevFAh9H4amJg1Qg,508
+pdf_section_parser/parser.py,sha256=x8loDT2Db5hnY6R7Nyp7AXZ103EVwF0XhqaYRsrymaA,5498
+pdf_section_parser/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdf_section_parser/utils/boundaries.py,sha256=RsiONdm9F3UuBROZe-MJN-NBVrMdIdOifgOzCZOcmKg,8133
+pdf_section_parser/utils/pdf.py,sha256=KVbTnZTmqD78HYwOM8ndgA1X2FHqWbrtUmV0U1C6Ga0,13166
+pdf_section_parser/utils/text.py,sha256=j8rzH7GzZ4ESadJlqFkQBvQEjdjC6BTDw_4RsjbhfBQ,4687
+pdf_section_parser/utils/visualization.py,sha256=hnQHpQO138NaJeSqBOFc0QsfGsBAroQ3AMa8yUmeCEQ,15631
+spanish_pdf_parser-0.1.0.dist-info/LICENSE,sha256=K0jjntQ_SZ52QZ0sgKH38TYmkQ-RnTBUR5qkWz959Wo,35050
+spanish_pdf_parser-0.1.0.dist-info/METADATA,sha256=6yyHUp48cBIw4nGjQChpB5Isl-WB9a5Pc0AsXIcsrFs,44780
+spanish_pdf_parser-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+spanish_pdf_parser-0.1.0.dist-info/top_level.txt,sha256=c1QQwx0AZrN37Y7Hz-kiZG-t9e6inKyY9xB2DsXIw5U,19
+spanish_pdf_parser-0.1.0.dist-info/RECORD,,
