@@ -1,0 +1,11 @@
+stacrs-0.4.0.dist-info/METADATA,sha256=hAtFiDfIJb-38_pxBA2uz3RCEzFtb87uLMmSaXraPV0,4493
+stacrs-0.4.0.dist-info/WHEEL,sha256=ZpVFxu0p_HmuO1LnhwVR1IZeNyd7_l7MNT8RKZkkpkk,107
+stacrs-0.4.0.dist-info/licenses/LICENSE-APACHE,sha256=Yseh419WQGiW16p8pS0MwNJyrAIrXSeW59aQXbijY2o,9723
+stacrs-0.4.0.dist-info/licenses/LICENSE-MIT,sha256=I_GOA9xJ35FiL-KnYXZJdATkbO2KcV2dK2enRGVxzKM,1023
+stacrs.libs/libgcc_s-5b5488a6.so.1,sha256=HGKUsVmTeNAxEdSy7Ua5Vh_I9FN3RCbPWzvZ7H_TrwE,2749061
+stacrs.libs/libstdc++-59b7fbaf.so.6,sha256=9Gum4fDEEfdT3VSZlwyKeaDD5McS9t5awHAAnvKXlcI,16387357
+stacrs/__init__.py,sha256=IyUb2mWn-7hPYul-ib5sTxAwOCW_awwz4mwNudJ5a0Y,107
+stacrs/__init__.pyi,sha256=K0GYBiABeyiZSPl0F9hTayfREcJyAdcJ6Gxb25Bu6lc,14145
+stacrs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stacrs/stacrs.cpython-312-arm-linux-musleabihf.so,sha256=1GaDH4LWGbkyQ1gNMDEHW2nbK9K3Vfkxna_HgSjScSo,58945953
+stacrs-0.4.0.dist-info/RECORD,,
