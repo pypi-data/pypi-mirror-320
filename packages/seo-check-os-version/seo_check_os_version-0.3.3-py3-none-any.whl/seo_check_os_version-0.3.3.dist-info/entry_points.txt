@@ -1,0 +1,6 @@
+[console_scripts]
+seo-hi = seo_check_os_version.hi:hi
+seo-random = seo_check_os_version.hi:random_match
+
+[gui_scripts]
+
