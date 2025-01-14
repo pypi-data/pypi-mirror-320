@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Flow2Spatial/__init__.py
+Flow2Spatial/main.py
+Flow2Spatial.egg-info/PKG-INFO
+Flow2Spatial.egg-info/SOURCES.txt
+Flow2Spatial.egg-info/dependency_links.txt
+Flow2Spatial.egg-info/entry_points.txt
+Flow2Spatial.egg-info/requires.txt
+Flow2Spatial.egg-info/top_level.txt
+docs/Flow2Spatial.png

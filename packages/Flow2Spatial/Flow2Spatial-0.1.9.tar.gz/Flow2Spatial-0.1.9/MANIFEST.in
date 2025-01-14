@@ -1,0 +1,4 @@
+include README.md
+include docs/Flow2Spatial.png
+include Flow2Spatial/*
+include LICENSE
