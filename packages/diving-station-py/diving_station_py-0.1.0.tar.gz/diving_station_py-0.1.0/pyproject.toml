@@ -1,0 +1,79 @@
+[project]
+name = "diving-station-py"
+version = "0.1.0"
+description = "A Python library for diving station"
+authors = [
+    { name = "OctSquid", email = "pqvs6k96@s.okayama-u.ac.jp" }
+]
+dependencies = [
+    "python-osc>=1.9.3",
+    "asyncio>=3.4.3",
+]
+readme = "README.md"
+requires-python = ">= 3.9"
+license = { text = "MIT" }
+
+[build-system]
+requires = ["hatchling==1.26.3", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "ruff>=0.9.1",
+    "pyright>=1.1.391",
+    "pytest>=8.3.4",
+    "pytest-asyncio>=0.25.2",
+]
+
+[tool.rye.scripts]
+typecheck="pyright src/diving_station_py"
+generate_stubs = "pyright --createstub src/diving_station_py"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/diving_station_py"]
+include = ["typing", "**/*.pyi"]
+
+[tool.pyright]
+typeCheckingMode = "standard"
+venvPath = "."
+venv = ".venv"
+
+[tool.ruff]
+indent-width = 2
+line-length = 140
+exclude = ["typings"]
+
+[tool.ruff.lint]
+ignore = []
+select = [
+  "F", # pyflakes
+  "E", # pycodestyle
+  "W", # pycodestyle warnings
+  "I", # isort
+  "D", # pydocstyle
+]
+
+extend-ignore = [
+  "D100", # undocumented-public-method
+  "D104", # undocumented-public-package
+  "D105", # undocumented-magic-method
+  "D107", # undocumented-public-init
+  "D205", # blank-line-after-summary
+  "D415", # ends-in-punctuation
+]
+
+[tool.ruff.lint.pydocstyle]
+# docstringはgoogle style
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+# 個別設定
+# __init__.pyは未使用インポートを許容
+"__init__.py" = ["F401"]
+
+[tool.ruff.format]
+indent-style = "space"
