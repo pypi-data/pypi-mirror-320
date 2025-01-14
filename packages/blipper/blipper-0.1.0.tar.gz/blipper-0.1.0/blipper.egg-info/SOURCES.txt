@@ -1,0 +1,8 @@
+README.md
+blipper.py
+pyproject.toml
+blipper.egg-info/PKG-INFO
+blipper.egg-info/SOURCES.txt
+blipper.egg-info/dependency_links.txt
+blipper.egg-info/requires.txt
+blipper.egg-info/top_level.txt
