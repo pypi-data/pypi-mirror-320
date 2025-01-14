@@ -1,0 +1,7 @@
+setup.py
+brynq_sdk_vplan.egg-info/PKG-INFO
+brynq_sdk_vplan.egg-info/SOURCES.txt
+brynq_sdk_vplan.egg-info/dependency_links.txt
+brynq_sdk_vplan.egg-info/not-zip-safe
+brynq_sdk_vplan.egg-info/requires.txt
+brynq_sdk_vplan.egg-info/top_level.txt
