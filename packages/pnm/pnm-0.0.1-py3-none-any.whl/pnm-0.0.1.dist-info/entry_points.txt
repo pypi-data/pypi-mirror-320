@@ -1,0 +1,2 @@
+[console_scripts]
+pnm = pnm.cli:main
