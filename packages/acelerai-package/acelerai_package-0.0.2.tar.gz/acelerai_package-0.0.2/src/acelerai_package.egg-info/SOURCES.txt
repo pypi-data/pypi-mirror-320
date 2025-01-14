@@ -1,0 +1,10 @@
+setup.py
+src/acelerai_inputstream/__init__.py
+src/acelerai_inputstream/inputstream.py
+src/acelerai_inputstream/inputstream_client.py
+src/acelerai_package.egg-info/PKG-INFO
+src/acelerai_package.egg-info/SOURCES.txt
+src/acelerai_package.egg-info/dependency_links.txt
+src/acelerai_package.egg-info/top_level.txt
+test/test.py
+test/test_app.py
