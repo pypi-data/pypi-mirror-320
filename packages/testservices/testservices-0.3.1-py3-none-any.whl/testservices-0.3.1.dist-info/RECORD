@@ -1,0 +1,16 @@
+testservices/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testservices/collection.py,sha256=ePB70Op_dQfNWvWgwRghMYmFTpo8KpXlq-gbR3oM-ow,4306
+testservices/provider.py,sha256=OTSre2H6CcR5Badd6_4zFSYWIW9EIWtI3HpA2ay3ibo,1370
+testservices/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testservices/service.py,sha256=GE9adRQzcMoY901Ds17cvuY1lLq28Qk-Ap3i3PZnn7g,1757
+testservices/supplier.py,sha256=cJnwZssqBjvt5YiCUjWBhZGeNacqPAVdlONp39Vd_8w,25
+testservices/tcp.py,sha256=RxldZbqkmJBZRcwApeogXMdkEMQv5VOkT1ZrmfxZPuc,698
+testservices/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testservices/services/containers.py,sha256=pCWSo2DApWNvCb9xWEXyh1tUyOA-lG7VdXW3sb0upiA,9929
+testservices/services/databases.py,sha256=ZTBRXsmnxCPSCRAjZePlDHkyP2OJEbQ3Pv1OcZHja1s,7025
+testservices/services/config/clickhouse/docker_related_config.xml,sha256=-uZDLeqfazQoN1wldzNr3q2duOCMspPIzWAGXA7bo0o,404
+testservices-0.3.1.dist-info/LICENSE.rst,sha256=uDcC-C395YBb8uhrdnE7eb1zuv_CIOcZUERMf-ITx_8,1080
+testservices-0.3.1.dist-info/METADATA,sha256=5Ki_yzzAPKFqEQ2L-phqtmNWJptzClwVfnyk_CEI7-s,1677
+testservices-0.3.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+testservices-0.3.1.dist-info/top_level.txt,sha256=Zqpj9apkSfw79eShNkF9pMcSvmyahfRHFH4ZEBtpK-c,13
+testservices-0.3.1.dist-info/RECORD,,
