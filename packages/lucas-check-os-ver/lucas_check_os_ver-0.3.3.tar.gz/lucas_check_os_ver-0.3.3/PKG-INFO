@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: lucas-check-os-ver
+Version: 0.3.3
+Summary: Detects and outputs the os version
+Author-Email: lucas_hub12 <hyeonggyunbae@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/lucas-hub12/lucas-check-os-ver
+Project-URL: Issues, https://github.com/lucas-hub12/lucas-check-os-ver/issues
+Requires-Python: >=3.10
+Requires-Dist: stundrg-check-os-ver>=0.2.3
+Requires-Dist: check-os-ver>=0.2.1
+Requires-Dist: hj-check-os-version>=0.2.1
+Requires-Dist: jacob-os-version-check>=0.2.4
+Requires-Dist: cho-check-os-ver>=0.2.3
+Requires-Dist: nunininu-check-os-ver>=0.3.0
+Requires-Dist: seo-check-os-version>=0.2.0
+Requires-Dist: ppabam-check-os-ver>=0.2.0
+Description-Content-Type: text/markdown
+
+# lucas-check-os-ver- 
+
+### Development environment setting
+```bash
+# install PDM
+# git clone ...
+$ pdm venv create
+$ source .venv/bin/activate
+$ pdm install
+# $ vi ...
+
+# TEST
+$ pdm install
+$ pdm test
+$ pip install . 
+
+$ git add <file-name>
+$ git commit -a
+$ git push
+$ pdm publish
+
+```
+
+### USE 
+```python
+$ pip install lucas-check-os-ver
+$ python 
+>>> from lucas_check_os_ver.hi import hi
+>>> hi()
+```
+
+
