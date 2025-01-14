@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: sagemaker_studio
+Version: 0.0.1
+Summary: Python library to interact with Amazon SageMaker Unified Studio
+Home-page: https://aws.amazon.com/sagemaker/
+Author: Amazon Web Services
+License: Apache License 2.0
+Keywords: AWS,Amazon,SageMaker,SageMaker Unified Studio,SDK
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: platform
+Dynamic: requires-python
+Dynamic: summary
