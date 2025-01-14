@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -std=c++11 -g -shared -Wl,-soname,libtest_native_library.so -o libtest_native_library.so CMakeFiles/test_native_library.dir/test_native_library.cpp.o CMakeFiles/test_native_library.dir/test_structs.cpp.o 

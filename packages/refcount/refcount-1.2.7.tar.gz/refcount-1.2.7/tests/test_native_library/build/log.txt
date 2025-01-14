@@ -1,0 +1,21 @@
+/usr/bin/cmake -S/home/per202/src/pyrefcount/tests/test_native_library -B/home/per202/src/pyrefcount/tests/test_native_library/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/per202/src/pyrefcount/tests/test_native_library/build/CMakeFiles /home/per202/src/pyrefcount/tests/test_native_library/build//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/home/per202/src/pyrefcount/tests/test_native_library/build'
+make  -f CMakeFiles/test_native_library.dir/build.make CMakeFiles/test_native_library.dir/depend
+make[2]: Entering directory '/home/per202/src/pyrefcount/tests/test_native_library/build'
+cd /home/per202/src/pyrefcount/tests/test_native_library/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/per202/src/pyrefcount/tests/test_native_library /home/per202/src/pyrefcount/tests/test_native_library /home/per202/src/pyrefcount/tests/test_native_library/build /home/per202/src/pyrefcount/tests/test_native_library/build /home/per202/src/pyrefcount/tests/test_native_library/build/CMakeFiles/test_native_library.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/home/per202/src/pyrefcount/tests/test_native_library/build'
+make  -f CMakeFiles/test_native_library.dir/build.make CMakeFiles/test_native_library.dir/build
+make[2]: Entering directory '/home/per202/src/pyrefcount/tests/test_native_library/build'
+[ 33%] Building CXX object CMakeFiles/test_native_library.dir/test_native_library.cpp.o
+/usr/bin/c++ -DTEST_NATIVE_LIBRARY_EXPORTS -DUNICODE -D_DEBUG -D_UNICODE -D_USRDLL -D_WINDOWS -Dtest_native_library_EXPORTS  -std=c++11 -g -fPIC -MD -MT CMakeFiles/test_native_library.dir/test_native_library.cpp.o -MF CMakeFiles/test_native_library.dir/test_native_library.cpp.o.d -o CMakeFiles/test_native_library.dir/test_native_library.cpp.o -c /home/per202/src/pyrefcount/tests/test_native_library/test_native_library.cpp
+[ 66%] Building CXX object CMakeFiles/test_native_library.dir/test_structs.cpp.o
+/usr/bin/c++ -DTEST_NATIVE_LIBRARY_EXPORTS -DUNICODE -D_DEBUG -D_UNICODE -D_USRDLL -D_WINDOWS -Dtest_native_library_EXPORTS  -std=c++11 -g -fPIC -MD -MT CMakeFiles/test_native_library.dir/test_structs.cpp.o -MF CMakeFiles/test_native_library.dir/test_structs.cpp.o.d -o CMakeFiles/test_native_library.dir/test_structs.cpp.o -c /home/per202/src/pyrefcount/tests/test_native_library/test_structs.cpp
+[100%] Linking CXX shared library libtest_native_library.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/test_native_library.dir/link.txt --verbose=1
+/usr/bin/c++ -fPIC  -std=c++11 -g -shared -Wl,-soname,libtest_native_library.so -o libtest_native_library.so CMakeFiles/test_native_library.dir/test_native_library.cpp.o CMakeFiles/test_native_library.dir/test_structs.cpp.o 
+make[2]: Leaving directory '/home/per202/src/pyrefcount/tests/test_native_library/build'
+[100%] Built target test_native_library
+make[1]: Leaving directory '/home/per202/src/pyrefcount/tests/test_native_library/build'
+/usr/bin/cmake -E cmake_progress_start /home/per202/src/pyrefcount/tests/test_native_library/build/CMakeFiles 0
