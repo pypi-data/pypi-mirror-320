@@ -1,0 +1,4 @@
+scipy
+ipp-devel
+ipp
+ipp-include
