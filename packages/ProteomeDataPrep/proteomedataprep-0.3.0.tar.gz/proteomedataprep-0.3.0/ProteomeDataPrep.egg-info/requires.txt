@@ -1,0 +1,9 @@
+numpy
+pandas
+boto3
+fsspec
+s3fs
+dataclasses
+polars
+tqdm
+pyarrow
