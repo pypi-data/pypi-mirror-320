@@ -1,0 +1,10 @@
+lxml
+
+[dev]
+coverage
+pip-tools
+pytest-cov
+pytest
+ruff
+sphinx-rtd-theme
+sphinx
