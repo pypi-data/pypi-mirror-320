@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+maliang/media/__init__.py
+maliang/media/icons.py
+maliang/media/main.py
+maliang_media.egg-info/PKG-INFO
+maliang_media.egg-info/SOURCES.txt
+maliang_media.egg-info/dependency_links.txt
+maliang_media.egg-info/requires.txt
+maliang_media.egg-info/top_level.txt
