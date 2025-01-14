@@ -1,0 +1,6 @@
+setup.py
+dtlibpc.egg-info/PKG-INFO
+dtlibpc.egg-info/SOURCES.txt
+dtlibpc.egg-info/dependency_links.txt
+dtlibpc.egg-info/requires.txt
+dtlibpc.egg-info/top_level.txt
