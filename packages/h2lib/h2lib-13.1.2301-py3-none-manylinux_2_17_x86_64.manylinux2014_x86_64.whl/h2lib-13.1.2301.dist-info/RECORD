@@ -1,0 +1,10 @@
+h2lib/HAWC2Lib.so,sha256=KFQ3L_DC-GzXm3VCQ_MUkrpL9J5Q3oCFyCPyBj-Wmp8,39055176
+h2lib/__init__.py,sha256=YyJWPF22nu9ZoxkrE3ghngT9n_hl-HiAEflnZ_Ay8Q4,513
+h2lib/_h2lib.py,sha256=sohkZvgVPxyLnNXUV9RcQNijY7y5__8G9jZyOPmEnV8,34122
+h2lib/_version.py,sha256=j91SSOZwjifCNDBJbR_2e_GMARpSr_u0o9rJAj389B4,156
+h2lib/dll_wrapper.py,sha256=kDCBtEe8nZBS4HWhF3EXCmToP1aTzjiGaiB8FyOIMYc,12412
+h2lib/h2lib_signatures.py,sha256=_59rsiHGEVCz3GbYGuC3NXT3SnUiRL0xAZNhjd4QFJ4,23801
+h2lib-13.1.2301.dist-info/METADATA,sha256=1f3HTOCX1zP3btkXVzoQZm_jwt8qM1n8cJm1wBIr4Mc,836
+h2lib-13.1.2301.dist-info/WHEEL,sha256=aDUArjEbIuDQzblE24IvdIsBzRhJEjiXmuNUYQ-gpaA,104
+h2lib-13.1.2301.dist-info/top_level.txt,sha256=y_a-tUqphEZQ_0nsWSMaSb21P8Lsd8hUxUdE9g2Dcbk,6
+h2lib-13.1.2301.dist-info/RECORD,,
