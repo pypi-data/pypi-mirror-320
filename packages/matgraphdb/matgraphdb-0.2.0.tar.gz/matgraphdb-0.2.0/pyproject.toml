@@ -1,0 +1,105 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.setuptools_scm]
+local_scheme="no-local-version"
+version_file = "matgraphdb/_version.py"
+
+
+[project]
+name = "matgraphdb"
+authors = [
+    {name = "Logan Lang", email = "lllang@mix.wvu.edu"}
+]
+description = "Welcome to MatGraphDB, a powerful Python package designed to interface with primary and graph databases for advanced material analysis."
+readme = {file = "README.md", content-type = "text/markdown"}  # Ensure this matches the file used
+requires-python = ">=3.8"
+keywords = ["materials", "science", "graph", "database", "python"]
+license = {file = "LICENSE"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+dynamic = ["version"]
+
+dependencies = [
+    "pytest",
+    "setuptools",
+    "setuptools_scm",
+    "python-dotenv",
+    "numpy",
+    "pandas",
+    "scipy",
+    "matplotlib",
+    "seaborn",
+    "pyyaml",
+    "jupyterlab",
+    "nglview",
+    "ipywidgets",
+    "pylint",
+    "autopep8",
+    "pymatgen",
+    "parquetdb",
+    "variconfig",
+]
+
+[project.optional-dependencies]
+
+torch = [
+    "torch",
+    "torchvision",
+    "torchaudio",
+    "pyg_lib ; platform_system == 'Linux'" ,
+    "torch_geometric",
+    "torch_scatter",
+    "torch_sparse",
+    "torch_cluster",
+    "torch_spline_conv"
+]
+
+graph-tool = [
+    "graph-tool; platform_system == 'Linux'"
+]
+
+llm = [
+    "openai",
+    "tiktoken",
+]
+
+neo4j = [
+    "neo4j",
+]
+
+materials=[
+    "ase",
+    "mendeleev",
+    "matminer",
+    "coxeter",
+    "crystals",
+]
+
+dev = ["sphinx", 
+"sphinx_rtd_theme"]
+
+
+[project.urls]
+Repository = "https://github.com/romerogroup/MatGraphDB"
+Issues = "https://github.com/romerogroup/MatGraphDB/issues"
+Changelog = "https://github.com/romerogroup/MatGraphDB/CHANGELOG.md"
+
+
+
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["matgraphdb*"]
+exclude = ["matgraphdb.tests*"]
+
+
+[tool.setuptools.package-data]
+matgraphdb = ["**/*.json", "**/*.csv", "**/*.yml", "**/*.parquet"]
+# include = ["matgraphdb"]
+# exclude = ["matgraphdb.tests"]
+

@@ -1,0 +1,245 @@
+Metadata-Version: 2.2
+Name: matgraphdb
+Version: 0.2.0
+Summary: Welcome to MatGraphDB, a powerful Python package designed to interface with primary and graph databases for advanced material analysis.
+Author-email: Logan Lang <lllang@mix.wvu.edu>
+License: MIT License
+        
+        Copyright (c) 2023 lllangWV
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Repository, https://github.com/romerogroup/MatGraphDB
+Project-URL: Issues, https://github.com/romerogroup/MatGraphDB/issues
+Project-URL: Changelog, https://github.com/romerogroup/MatGraphDB/CHANGELOG.md
+Keywords: materials,science,graph,database,python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytest
+Requires-Dist: setuptools
+Requires-Dist: setuptools_scm
+Requires-Dist: python-dotenv
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: pyyaml
+Requires-Dist: jupyterlab
+Requires-Dist: nglview
+Requires-Dist: ipywidgets
+Requires-Dist: pylint
+Requires-Dist: autopep8
+Requires-Dist: pymatgen
+Requires-Dist: parquetdb
+Requires-Dist: variconfig
+Provides-Extra: torch
+Requires-Dist: torch; extra == "torch"
+Requires-Dist: torchvision; extra == "torch"
+Requires-Dist: torchaudio; extra == "torch"
+Requires-Dist: pyg_lib; platform_system == "Linux" and extra == "torch"
+Requires-Dist: torch_geometric; extra == "torch"
+Requires-Dist: torch_scatter; extra == "torch"
+Requires-Dist: torch_sparse; extra == "torch"
+Requires-Dist: torch_cluster; extra == "torch"
+Requires-Dist: torch_spline_conv; extra == "torch"
+Provides-Extra: graph-tool
+Requires-Dist: graph-tool; platform_system == "Linux" and extra == "graph-tool"
+Provides-Extra: llm
+Requires-Dist: openai; extra == "llm"
+Requires-Dist: tiktoken; extra == "llm"
+Provides-Extra: neo4j
+Requires-Dist: neo4j; extra == "neo4j"
+Provides-Extra: materials
+Requires-Dist: ase; extra == "materials"
+Requires-Dist: mendeleev; extra == "materials"
+Requires-Dist: matminer; extra == "materials"
+Requires-Dist: coxeter; extra == "materials"
+Requires-Dist: crystals; extra == "materials"
+Provides-Extra: dev
+Requires-Dist: sphinx; extra == "dev"
+Requires-Dist: sphinx_rtd_theme; extra == "dev"
+
+# MatGraphDB
+
+
+
+## Table of Contents
+
+- [Introduction to MatGraphDB](#introduction-to-matgraphdb)
+- [Installing](#installing)
+- [Usage](#usage)
+  - [Interacting with the materials database](#interacting-with-the-materials-database)
+  - [Interacting with the graph database](#interacting-with-the-graph-database)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction to MatGraphDB
+To be written..
+
+## Installing
+
+### Installing via pip
+```bash
+pip install matgraphdb
+```
+
+### Installing from github
+```bash
+git clone https://github.com/lllangWV/MatGraphDB.git
+cd MatGraphDB
+pip install -e .
+```
+
+
+
+## Usage
+
+### Interacting with the materials database.
+
+#### Initialize MatGraphDB
+```python
+from matgraphdb import MatGraphDB
+
+# Initialize MatGraphDB
+mgdb = MatGraphDB(storage_path="MatGraphDB")
+print(mgdb.summary())
+```
+
+#### Adding material properties
+
+You can add any material to the database by either providing a `structure` or `coords`, `species`, and `lattice`, then using the `create_material` or `create_materials` function. 
+
+Any material add to the database gets indexed. This is stored in the `id` column.
+
+```python
+from pymatgen.core import Structure
+
+# Add material to the database
+material_data_1 = {
+    "structure": structure,
+    "properties": {
+        "material_id": "mp-1",
+        "source": "example",
+        "thermal_conductivity": {"value": 2.5, "unit": "W/mK"},
+    },
+}
+
+# or by coords, species, lattice
+material_data_2 = {
+    "coords":  [[0, 0, 0], [0.5, 0.5, 0.5]],
+    "species": ["Mg", "O"],
+    "lattice": [[0, 2.13, 2.13], [2.13, 0, 2.13], [2.13, 2.13, 0]],
+    "properties": {
+        "material_id": "mp-2",
+        "source": "example_manual",
+        "band_gap": {"value": 1.2, "unit": "eV"},
+    },
+}
+
+result = mgdb.create_material(
+    coords=material_data_2["coords"],
+    species=material_data_2["species"],
+    lattice=material_data_2["lattice"],
+    properties=material_data_2["properties"],
+)
+# Add material by structure
+db.create_material(
+                structure=material_data_1["structure"],
+                properties=material_data_1["properties"])
+
+
+materials=[material_data_1,material_data_2]
+
+# Add multiple materials
+mgdb.create_materials(materials)
+
+```
+
+####  Reading Materials
+ 
+To read materials from the database, you can use the `read_materials` function. This function takes in a `columns` parameter, which specifies the columns to read from the database. The `filters` parameter specifies the filters to apply to the database. This will only read the matched materials to memory.
+
+```python
+materials = mgdb.read_materials( 
+    columns=["material_id", "elements", "band_gap.value"],
+    filters=[pc.field("band_gap.value") == 1.2]
+    )
+```
+
+####  Updating Materials
+
+To update materials in the database, you can use the `update_materials` function. For updates you must provide the `id` of the material you want to update. You can also provide the `update_keys` parameter to specify the columns to update on as well, this is usefull if you import an existing dataset from another database.
+
+```python
+update_data = [
+    {
+        "id": 0,
+        "band_gap": {"value": 3.6, "unit": "eV"},
+    },
+]
+
+materials = mgdb.update_materials(update_data)
+
+
+update_data = [
+    {
+        "material_id": "mp-1",
+        "band_gap": {"value": 3.6, "unit": "eV"},
+    },
+]
+materials = mgdb.update_materials(update_data, update_keys=["material_id"])
+```
+
+#### Deleting Materials
+
+To delete materials from the database, you can use the `delete_materials` function. You can provide a list of `ids` to delete.
+
+```python
+materials = mgdb.delete_materials(ids=[0])
+```
+
+### Interacting with the graph database
+
+
+
+
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request on GitHub.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+
+## Authors
+Logan Lang,
+Aldo Romero,
+Eduardo Hernandez,
+
+
+---
+
+*Note: This project is in its initial stages. Features and APIs are subject to change. Please refer to the latest documentation and release notes for updates.*
+
+
+
