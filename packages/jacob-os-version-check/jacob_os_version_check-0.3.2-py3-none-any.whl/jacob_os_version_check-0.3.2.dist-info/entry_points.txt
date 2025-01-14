@@ -1,0 +1,6 @@
+[console_scripts]
+jacob-hi = jacob_os_version_check.hi:hi
+jacob-random = jacob_os_version_check.hi:random_pic
+
+[gui_scripts]
+
