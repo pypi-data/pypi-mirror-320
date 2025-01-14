@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "aporacle"
+version = "0.0.195"
+description = ""
+authors = ["Makhosonke Morafo <makhosonke@komokun.org>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+cachetools = "^5.3.3"
+pandas = "^2.2.1"
+websockets = "^13.0.1"
+mysqlclient = "^2.2.4"
+aiomysql = "^0.2.0"
+sqlalchemy = "^2.0.34"
+komoutils = "^0.0.235"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
