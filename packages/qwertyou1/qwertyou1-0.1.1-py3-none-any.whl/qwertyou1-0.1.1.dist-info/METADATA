@@ -1,0 +1,30 @@
+Metadata-Version: 2.2
+Name: qwertyou1
+Version: 0.1.1
+Summary: A sample package named qwertyou11
+Home-page: https://github.com/qw3rtyou
+Author: qwertyou1
+Author-email: chjw1346@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# qwertyou1
+
+`qwertyou1` is a sample Python package for demonstration purposes.
+
+## Installation
+
+```bash
+pip install qwertyou1
