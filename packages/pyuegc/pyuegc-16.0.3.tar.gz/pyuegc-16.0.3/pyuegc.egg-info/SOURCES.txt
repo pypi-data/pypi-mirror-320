@@ -1,0 +1,15 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+UNICODE-LICENSE
+setup.py
+pyuegc/__init__.py
+pyuegc/_unicode.py
+pyuegc/_version.py
+pyuegc/egc.py
+pyuegc.egg-info/PKG-INFO
+pyuegc.egg-info/SOURCES.txt
+pyuegc.egg-info/dependency_links.txt
+pyuegc.egg-info/not-zip-safe
+pyuegc.egg-info/top_level.txt

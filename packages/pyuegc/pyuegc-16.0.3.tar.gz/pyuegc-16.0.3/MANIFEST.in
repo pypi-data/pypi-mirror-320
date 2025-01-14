@@ -1,0 +1,5 @@
+prune pyuegc/tests
+global-exclude __pycache__ *.py[cod]
+include CHANGELOG.md
+include LICENSE
+include UNICODE-LICENSE
