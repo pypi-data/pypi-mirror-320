@@ -1,0 +1,5 @@
+zabbix-utils
+ruamel.yaml
+regex
+pygit2
+aiohttp
