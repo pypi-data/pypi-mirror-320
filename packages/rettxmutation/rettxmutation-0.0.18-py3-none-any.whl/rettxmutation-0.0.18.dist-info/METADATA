@@ -1,0 +1,29 @@
+Metadata-Version: 2.2
+Name: rettxmutation
+Version: 0.0.18
+Summary: Extract Rett Syndrome mutations from genetic diagnosis report
+Author-email: Pedro Rocha <procha@rettsyndrome.eu>
+License: MIT License
+Project-URL: Homepage, https://github.com/rett-europe/rettxmutation
+Project-URL: Issues, https://github.com/rett-europe/rettxmutation/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dotenv
+Requires-Dist: azure-ai-formrecognizer
+Requires-Dist: azure-core
+Requires-Dist: azure-ai-textanalytics
+Requires-Dist: azure.ai.documentintelligence
+Requires-Dist: mutalyzer_hgvs_parser
+Requires-Dist: ftfy
+Requires-Dist: pydantic
+Requires-Dist: pydantic_settings
+Requires-Dist: openai
+Requires-Dist: opencv-python-headless
+Requires-Dist: backoff
+
+# rettxmutation
+Mutation extraction from genetic report documents
