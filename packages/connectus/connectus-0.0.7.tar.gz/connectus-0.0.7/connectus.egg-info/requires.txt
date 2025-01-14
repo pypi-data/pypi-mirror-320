@@ -1,0 +1,10 @@
+pyserial
+asyncua
+cryptography
+influxdb-client
+aiohttp
+aiocsv
+pandas
+numpy
+matplotlib
+asyncpg
