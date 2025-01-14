@@ -1,0 +1,2 @@
+[console_scripts]
+reads-quality-stats-cli = gseda.ppl.reads_quality_stats_v2:main_cli
