@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ipcserver
+Version: 0.2.4
+Summary: A fastapi-like but a sock server
+Author: class-undefined
+Author-email: luyukai@tsinghua.edu.cn
+Requires-Python: >=3.6
+Requires-Dist: colorama >=0.4.6
+Requires-Dist: msgpack >=1.0.8
+Requires-Dist: pytest-asyncio
+Requires-Dist: pytest
+
