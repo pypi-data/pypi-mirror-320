@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+LinearRegressionMeriem/__init__.py
+LinearRegressionMeriem/linear_regression.py
+LinearRegressionMeriem.egg-info/PKG-INFO
+LinearRegressionMeriem.egg-info/SOURCES.txt
+LinearRegressionMeriem.egg-info/dependency_links.txt
+LinearRegressionMeriem.egg-info/requires.txt
+LinearRegressionMeriem.egg-info/top_level.txt
