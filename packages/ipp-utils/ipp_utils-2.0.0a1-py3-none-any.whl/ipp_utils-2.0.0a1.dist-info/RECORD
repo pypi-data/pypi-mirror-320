@@ -1,0 +1,8 @@
+ipp_utils/__init__.py,sha256=7eh7N94ggMorV5qZ0ioLCAtnysnZ-zCpIw4fCrrE_G4,372
+ipp_utils/_ipp_utils.py,sha256=JEB4gxAERh5Jdb6MYLjAv3ULJwyOHzdEDLb7bOMGZJ4,13134
+ipp_utils/normalize_rfft.dll,sha256=3leOovTdz1aQ1jpgOtSMReIbOLwhC9fUxjGeAfw5Yac,5314519
+ipp_utils/normalize_rfft.so,sha256=JrDybYVhEJ-keWqaG0KlKdF7hZHOiMYPS_LXEwCzsOE,46440
+ipp_utils-2.0.0a1.dist-info/METADATA,sha256=aJt-RUaed8Q4JS7w-VpWVXWDIM7Yx-rdGQ1uIW_NKz4,1000
+ipp_utils-2.0.0a1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+ipp_utils-2.0.0a1.dist-info/top_level.txt,sha256=gbBY8XgFYo-nO6DV1rzfKOmegKWlpdCMctCOCpehoME,10
+ipp_utils-2.0.0a1.dist-info/RECORD,,
