@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: seo-check-os-version
+Version: 0.3.3
+Summary: Default template for PDM package
+Author-Email: "<wminhyuk>" <<seoseo1998@gmail.com>>
+License: MIT
+Project-URL: Homepage, https://github.com/wminhyuk/seo-check-os-version
+Project-URL: Issues, https://github.com/wminhyuk/seo-check-os-version/issues
+Requires-Python: >=3.10
+Requires-Dist: stundrg-check-os-ver==0.2.3
+Requires-Dist: check-os-ver>=0.2.1
+Requires-Dist: hj-check-os-version==0.2.1
+Requires-Dist: jacob-os-version-check==0.2.4
+Requires-Dist: lucas-check-os-ver==0.2.0
+Requires-Dist: cho-check-os-ver==0.2.3
+Requires-Dist: nunininu-check-os-ver>=0.3.0
+Description-Content-Type: text/markdown
+
+# seo-check-os-version
+
+### hi()
+```bash
+"""
+                      /^--^\     /^--^\     /^--^\
+                      \____/     \____/     \____/
+                     /      \   /      \   /      \
+KAT                 |        | |        | |        |
+                     \__  __/   \__  __/   \__  __/
+|^|^|^|^|^|^|^|^|^|^|^|^\ \^|^|^|^/ /^|^|^|^|^\ \^|^|^|^|^|^|^|^|^|^|^|^|
+| | | | | | | | | | | | |\ \| | |/ /| | | | | | \ \ | | | | | | | | | | |
+########################/ /######\ \###########/ /#######################
+| | | | | | | | | | | | \/| | | | \/| | | | | |\/ | | | | | | | | | | | |
+|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|
+
+"""
+```
+
+### Development environment setting
+```bash
+# install PDM
+# git clone ...
+$ source .venv/bin/activate
+$ pdm install
+# $ vi ...
+# TEST
+$ pdm install
+$ pdm test
+$ pip install .
+
+$ git add <FILE_NAME>
+$ git commit -a
+$ git push
+$ git publish
+```
+
+### USE
+```bash
+$ pip install cho-check-os-ver
+$ python
+>>> from cho_check_os_ver.hi  import hi
+>>> hi()
+```
