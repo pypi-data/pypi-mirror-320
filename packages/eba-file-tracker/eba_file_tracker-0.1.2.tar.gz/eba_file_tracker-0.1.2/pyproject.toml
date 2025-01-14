@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "eba-file-tracker"
+version = "0.1.2"
+description = "client for tracking files"
+authors = ["dimastarsis <kurilin.dmitriy@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.8"
+watchdog = "^6.0.0"
+asyncio = "^3.4.3"
+argparse = "^1.4.0"
+pathlib = "^1.0.1"
+
+[tool.poetry.scripts]
+file-tracker = "eba_file_tracker.client:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

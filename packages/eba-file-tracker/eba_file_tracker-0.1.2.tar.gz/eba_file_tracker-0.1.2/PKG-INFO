@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: eba-file-tracker
+Version: 0.1.2
+Summary: client for tracking files
+Author: dimastarsis
+Author-email: kurilin.dmitriy@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: argparse (>=1.4.0,<2.0.0)
+Requires-Dist: asyncio (>=3.4.3,<4.0.0)
+Requires-Dist: click (>=8.1.8,<9.0.0)
+Requires-Dist: pathlib (>=1.0.1,<2.0.0)
+Requires-Dist: watchdog (>=6.0.0,<7.0.0)
+Description-Content-Type: text/markdown
+
+
