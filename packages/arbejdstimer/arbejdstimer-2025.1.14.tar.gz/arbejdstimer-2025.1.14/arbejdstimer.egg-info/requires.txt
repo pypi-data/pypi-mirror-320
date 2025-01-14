@@ -1,0 +1,12 @@
+pydantic>=2.10.5
+typer>=0.15.1
+
+[dev]
+black
+coverage
+hypothesis
+mypy
+pytest
+pytest-cov
+pytest-flake8
+ruff
