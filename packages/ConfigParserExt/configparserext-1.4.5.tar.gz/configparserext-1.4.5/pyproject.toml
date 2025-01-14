@@ -1,0 +1,93 @@
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = 'ConfigParserExt'
+version = '1.4.5'
+description = 'Expansion of python configparser module.  There are much better tools than this like JSON, TOML & YAML.  Do not use this tool.'
+
+authors = [
+    { name = "Hendrik du Toit", email = "hendrik@brightedge.co.za" }
+]
+license = "MIT"
+readme = "README.rst"
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'Intended Audience :: Developers',
+    'Intended Audience :: Information Technology',
+    'Topic :: Software Development',
+    'Topic :: System :: Archiving :: Packaging',
+    'License :: OSI Approved :: MIT License',
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    'Programming Language :: Python :: 3.12',
+]
+# documentation = "https://readthedocs.org"
+
+dependencies = ["beetools (>=5.2.4,<6.0.0)"]
+requires-python = ">=3.10"
+
+[project.urls]
+issues = "https://github.com/BrightEdgeeServices/ConfigParserExt/issues"
+changelog = 'https://github.com/BrightEdgeeServices/ConfigParserExt/blob/enhancement/master/ReleaseNotes.md'
+homepage = 'https://github.com/BrightEdgeeServices/ConfigParserExt'
+repository = "https://github.com/BrightEdgeeServices/ConfigParserExt.git"
+
+[tool.black]
+line-length = 120
+#skip-string-normalization = true
+target-version = [
+    "py312",
+]
+
+[tool.codespell]
+count = ''
+quiet-level = 2
+skip = 'documentation/Archive/*'
+ignore-words-list = 'space-holder'
+
+[tool.coverage.run]
+source = [
+    'src',
+    'tests',
+]
+
+[tool.isort]
+profile = "black"
+
+[tool.poetry.dependencies]
+
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+mdformat-gfm = "^0.4.1"
+mdformat-frontmatter = "^2.0.8"
+mdformat-footnote = "^0.1.1"
+black = "^24.10.0"
+flake8 = "^7.1.1"
+pre-commit = "^4.0.1"
+pytest = "^8.3.4"
+codecov = "^2.1.13"
+pytest-cov = "^6.0.0"
+rstcheck = "^6.2.4"
+
+[tool.pytest.ini_options]
+addopts = [
+    '-vv',
+    '--ignore-glob=*\\Archive',
+]
+#addopts = ['--import-mode=importlib', "-v", "--cov=./", "--ignore-glob=*\\Archive", "--cov-report=html"]
+markers = [
+    "select: Run a selection of tests",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]
+pythonpath = [
+    'src',
+    'tests',
+]
+testpaths = 'tests'
