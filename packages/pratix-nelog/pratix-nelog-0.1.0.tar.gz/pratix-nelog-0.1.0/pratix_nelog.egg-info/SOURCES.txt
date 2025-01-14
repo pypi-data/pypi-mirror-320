@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.py
+pratix_nelog.egg-info/PKG-INFO
+pratix_nelog.egg-info/SOURCES.txt
+pratix_nelog.egg-info/dependency_links.txt
+pratix_nelog.egg-info/top_level.txt
