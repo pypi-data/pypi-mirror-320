@@ -1,0 +1,4 @@
+[console_scripts]
+pyturbo = pyturbo.cli:main
+pyturbo-benchmark = pyturbo.cli:benchmark
+pyturbo-profile = pyturbo.cli:profile

@@ -1,0 +1,149 @@
+Metadata-Version: 2.2
+Name: pyturbo-analytics
+Version: 0.1.2
+Summary: A high-performance Python library for blazing-fast data analysis
+Home-page: https://github.com/pyturbo/pyturbo
+Author: ghassenTn
+Author-email: ghassen.xr@gmail.com
+Project-URL: Bug Tracker, https://github.com/pyturbo/pyturbo/issues
+Project-URL: Documentation, https://pyturbo.readthedocs.io/
+Project-URL: Source Code, https://github.com/pyturbo/pyturbo
+Keywords: data analysis,performance optimization,GPU acceleration,parallel processing,pandas,numpy,data science,high performance computing,machine learning
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9,<3.14
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: pandas>=1.3.0
+Requires-Dist: dask>=2021.6.0
+Requires-Dist: numba>=0.53.0
+Requires-Dist: plotly>=5.1.0
+Requires-Dist: pytest>=6.2.5
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: sphinx; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Provides-Extra: gpu
+Requires-Dist: cupy-cuda11x>=10.0.0; extra == "gpu"
+Requires-Dist: cudf-cuda11x>=22.12.0; extra == "gpu"
+Provides-Extra: viz
+Requires-Dist: plotly>=5.1.0; extra == "viz"
+Requires-Dist: datashader>=0.13.0; extra == "viz"
+Provides-Extra: all
+Requires-Dist: cupy-cuda11x>=10.0.0; extra == "all"
+Requires-Dist: cudf-cuda11x>=22.12.0; extra == "all"
+Requires-Dist: plotly>=5.1.0; extra == "all"
+Requires-Dist: datashader>=0.13.0; extra == "all"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: project-url
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+<<<<<<< HEAD
+# pyturbo-analytics
+=======
+# PyTurbo: Unleashing the Speed of Data Analysis 🚀
+
+PyTurbo is a high-performance Python library designed to dramatically accelerate data analysis tasks by leveraging multiple computing paradigms including multithreading, multiprocessing, GPU acceleration, and compiled code optimization.
+
+## Features
+
+- **Fast DataFrame Operations**: Parallelized Pandas-style operations with GPU acceleration
+- **Smart Task Optimization**: Automatic workload distribution across CPU cores and GPUs
+- **Performance Profiling**: Built-in analysis tools for code optimization
+- **High-Speed Data Loading**: Optimized I/O for CSV, JSON, SQL, and Parquet formats
+- **GPU-Accelerated Visualizations**: Real-time plotting of massive datasets
+- **Customizable Accelerators**: Easy-to-use APIs for custom optimized operations
+- **Distributed Processing**: Seamless scaling with Dask and Ray integration
+
+## Installation
+
+```bash
+pip install pyturbo
+```
+
+For development installation:
+```bash
+git clone https://github.com/pyturbo/pyturbo.git
+cd pyturbo
+pip install -e ".[dev]"
+```
+
+## Quick Start
+
+```python
+import pyturbo as pt
+
+# Create a TurboFrame (high-performance DataFrame)
+tf = pt.TurboFrame.from_csv("large_dataset.csv")
+
+# Perform accelerated operations
+result = tf.groupby("category").agg({
+    "value": ["mean", "sum", "count"]
+}).compute()
+
+# Use GPU acceleration
+with pt.use_gpu():
+    result = tf.merge(other_tf, on="key")
+```
+
+## Requirements
+
+- Python 3.8+
+- CUDA-capable GPU (optional, for GPU acceleration)
+- CUDA Toolkit 11.x (for GPU features)
+
+## Documentation
+
+Visit our [documentation](https://pyturbo.readthedocs.io/) for:
+- Detailed API reference
+- Performance optimization guides
+- Examples and tutorials
+- Best practices
+
+## Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+
+## License
+
+MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Citation
+
+If you use PyTurbo in your research, please cite:
+
+```bibtex
+@software{pyturbo2025,
+  author = {PyTurbo Team},
+  title = {PyTurbo: High-Performance Data Analysis Library},
+  year = {2025},
+  url = {https://github.com/pyturbo/pyturbo}
+}
+```
+>>>>>>> 373cfb017 (Initial commit)
