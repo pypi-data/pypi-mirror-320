@@ -1,0 +1,17 @@
+glide_sdk/__init__.py,sha256=5ln-DI-QDG_fdjwJTqquQCkDiH3Lm8vJ0SSrIBHrGic,106
+glide_sdk/examples/magic_auth_example.py,sha256=HVSGf5F37bmJoMTGiedIgZUcL45zjdRsIwo7draa9GA,1026
+glide_sdk/examples/number_verify_example.py,sha256=Q6-zQV28nhEpDCl-UpYn4sx4wZD5QXhONAejT1L6tAg,1065
+glide_sdk/examples/sim_swap_example.py,sha256=xA-uRPqTNcKjQVRwJOkCelMxyFBUTAtuSrPA-cQKjNA,615
+glide_sdk/pyproject.toml,sha256=4LV2MC70TwBjADNdgz8whuAmnX3fyPeNzbsZoU4sOvw,352
+glide_sdk/src/glide_sdk/__init__.py,sha256=h8VDqFitFage7eEK4K1zev6KkRseplOp5bXTgwqX2o0,76
+glide_sdk/src/glide_sdk/glide.py,sha256=9t6rutD159ol11SE00R95Bo1BlPV8_KF4rSX3LzoOA4,2074
+glide_sdk/src/glide_sdk/services/magic_auth.py,sha256=68rp5dgVpRM6Sj9pVG3NW6OXi38TWeqBDwS9OLcm2QM,8859
+glide_sdk/src/glide_sdk/services/number_verify.py,sha256=rUsiI_baTD8j7p0BR9Okxdmx76j_mUrV1VSrqXFQVKY,7227
+glide_sdk/src/glide_sdk/services/sim_swap.py,sha256=kNH5kFFkLUJhzecMuRMbqQjlO6_KQ366TII0cz2JM6A,10731
+glide_sdk/src/glide_sdk/services/telco_finder.py,sha256=yfNT-lG4vyjNwv58sCGauMf3HaKPxZxVI-74vTWSPs0,6182
+glide_sdk/src/glide_sdk/types.py,sha256=M05c3_gN83bxDrExX9dqG8XMtSHSRFTcqV7F6-NOLsE,1429
+glide_sdk/src/glide_sdk/utils.py,sha256=ICu5-RP33jvAkAOgAyWB3PLawQ0osMh1jiyiopEA6ow,1480
+glide_sdk/tests/test_no_mocks.py,sha256=NraV6oEpAXJH1QnVeUBE-UZrGAHuss3HAmPJdwGGLL0,697
+glide_sdk-1.0.3.dist-info/METADATA,sha256=rWqqcmUqzx6bYqf25klfd2RzkR1ty3WZsLcpqH0N5Gw,3113
+glide_sdk-1.0.3.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+glide_sdk-1.0.3.dist-info/RECORD,,
