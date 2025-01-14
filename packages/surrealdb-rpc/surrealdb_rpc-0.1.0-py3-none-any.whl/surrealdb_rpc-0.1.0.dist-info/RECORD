@@ -1,0 +1,14 @@
+surrealdb_rpc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+surrealdb_rpc/protocol.py,sha256=TGrgaccCDdsVXQMLttNRSbx--nXHmMP-AaXilVk3XJk,2195
+surrealdb_rpc/client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+surrealdb_rpc/client/websocket.py,sha256=JyS-wihGzIC9UkW3CoEW9RwUzwXTJmSlNesbKrlD6Dg,12646
+surrealdb_rpc/data_model/__init__.py,sha256=dVt3xzY-Ook-6KMKibcvnXWjEyp8lxgO5VMaNPMdSNM,572
+surrealdb_rpc/data_model/ext_types.py,sha256=UgiL3D7KLAxSKO4OIjxhFQsoA5TS0BgCMdh8X6sd1U8,3401
+surrealdb_rpc/data_model/thing.py,sha256=ck_1e2vIvvqDbfgm47v2Iq7-_DEaMnTWxDbcAPlt3XM,8764
+surrealdb_rpc/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+surrealdb_rpc/tests/test_docker.py,sha256=DibgzIWZL5dM73bvnRobo2i7tZiFY9xRR4-6alTE0eM,4444
+surrealdb_rpc-0.1.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+surrealdb_rpc-0.1.0.dist-info/METADATA,sha256=TkluNafVtzy9SaZ3ENjptyXvveLzCwVkSIgGGEzLi5w,1286
+surrealdb_rpc-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+surrealdb_rpc-0.1.0.dist-info/top_level.txt,sha256=JWGKPm6vqPAqY-qr3TbSgo5ErrNXOFFqCsUjvrPCa5s,14
+surrealdb_rpc-0.1.0.dist-info/RECORD,,
