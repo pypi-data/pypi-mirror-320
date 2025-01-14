@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: autopocket
+Version: 0.8.0
+Summary: Automated Machine Learning project for financial data analysis.
+Home-page: https://github.com/UserKrzysztof/AutoML-projekt-2
+Author: NC, FL, MM, MR, KT
+Author-email: flangiewicz@gmail.com
+License: MIT
+Keywords: automated machine learning,automl,machine learning,data science,data mining,autopocket,random forest,decision tree,linear model,features selection,features engineering,economic data
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy>=1.26
+Requires-Dist: pandas>=2.2
+Requires-Dist: scikit-learn>=1.5
+Requires-Dist: matplotlib>=3.10
+Requires-Dist: joblib>=1.4
+Requires-Dist: lime>=0.2
+Requires-Dist: shap>=0.46
+Requires-Dist: openml>=0.15
+Requires-Dist: requests>=2.32
+Requires-Dist: xmltodict>=0.14
+
+# AutoML Finance Package
+
+An AutoML Python package for financial data with a focus on explainability (XAI).
