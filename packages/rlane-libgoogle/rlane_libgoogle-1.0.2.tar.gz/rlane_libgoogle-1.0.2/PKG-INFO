@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: rlane-libgoogle
+Version: 1.0.2
+Summary: Connect to Google Service API's
+Keywords: api,client,connect,google,google-api-python-client,google-auth-httplib2,google-auth-oauthlib,httplib2,oauthlib,python,services,xdg
+Author-Email: Russel Lane <russel@rlane.com>
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Homepage, https://github.com/russellane/libgoogle
+Requires-Python: >=3.10
+Requires-Dist: google-api-python-client>=2.158.0
+Requires-Dist: google-auth-httplib2>=0.2.0
+Requires-Dist: google-auth-oauthlib>=1.2.1
+Requires-Dist: loguru>=0.7.3
+Requires-Dist: xdg>=6.0.0
+Description-Content-Type: text/markdown
+
+## libgoogle
+
+Connect to Google Service API's.
+
+The `libgoogle` package provides a function to connect to a google
+service (such as Calendar, Drive and Mail), and manage credentials
+and access tokens under the `XDG` schema.
+
+
+### function connect
+
+    Connect to Google service identified by `scope` and `version`.
+
+    Args:
+        scope:          (valid examples):
+                        "https://www.googleapis.com/auth/gmail"
+                        "https://www.googleapis.com/auth/gmail.readonly"
+                        "gmail"
+                        "gmail.readonly"
+                        "drive.metadata.readonly"
+                        "photoslibrary.readonly"
+
+        version:        "v1", "v3", etc.
+
+    Files:
+        credentials:    XDG_CONFIG_HOME / libgoogle / credentials.json
+                        Must exist, or raises FileNotFoundError.
+
+        token:          XDG_CACHE_HOME / libgoogle / {scope}-token.json
+
+
+### function set_debug
+
+    Turn on/off low-level `httplib2` debugging.
+
+    Args:
+        flag:   True to turn on debugging, False to turn off.
+
+
+### function use_cache
+
+    Use cache or not.
+
+    Args:
+        flag:   True to use cache, False to not.
+
+
