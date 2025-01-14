@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: hdfs_docling_analyze
+Version: 0.3.0
+Summary: A library for analyzing files from HDFS and saving results to MongoDB
+Home-page: https://github.com/vonhuy1
+Author: Vo Nhu Y
+Author-email: vonhuy5112002@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: obsei[all]
+Requires-Dist: docling==2.14.0
+Requires-Dist: hdfs==2.7.3
+Requires-Dist: pymongo==4.10.1
+Requires-Dist: pylatexenc==2.10
+Requires-Dist: Spire.Doc==12.12.0
+Requires-Dist: asyncio
+Requires-Dist: pytesseract==0.3.13
+Requires-Dist: odfpy==1.4.1
+Requires-Dist: python-docx==1.1.2
+Requires-Dist: unstructured
+Requires-Dist: langchain
+Requires-Dist: langchain-community
+Requires-Dist: pyexcel-ods3==0.6.1
+Requires-Dist: docx2txt==0.8
+Requires-Dist: pypandoc==1.14
+Requires-Dist: striprtf==0.0.28
+Requires-Dist: xlrd==2.0.1
+Requires-Dist: llama-extract
+Requires-Dist: llama-parse
+Requires-Dist: llama-index
+Requires-Dist: llama-index-llms-openai
+Requires-Dist: llama-index-embeddings-openai
+Requires-Dist: transformers
+Requires-Dist: torch
+Requires-Dist: keras
+Requires-Dist: pypdfium2
+Requires-Dist: pypdf2
+Requires-Dist: pi_heif
+Requires-Dist: pdfminer
+Requires-Dist: pdfminer.six
+Requires-Dist: unstructured_inference
+
+# HDFS Analyze Library
+
+A Python library to process files from HDFS, analyze them, and store results in MongoDB.
+
+## Steps to Set Up and Use
+
+### 1. Create a Virtual Environment
+Run the following command to create a virtual environment:
+```bash
+python -m venv venv
+
+pip install -r requirements.txt
+pip install tesserocr-2.7.1-cp311-cp311-win_amd64.whl
