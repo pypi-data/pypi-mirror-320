@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "ecoact-ml-company"
+version = "0.0.1"
+description = "Ecoact internal library for company ml models"
+authors = [	"Timothé Guillaume-li Salles <timothe.guillaume-li@se.com>",
+"Dorian Kodelja <dorian.kodelja@com.com>",
+"Yoann Diep <yoann.diep@se.com>",
+		"Thomas Epelbaum <thomas.epelbaum@se.com>",
+		"Charles Cuvilliers <charles.cuvillier@se.com>",
+		"Olivier Gabriel <olivier.gabriel@se.com>",
+		"Amaury Salles <amaury.salles@se.com>",
+]
+readme = "README.md"
+[tool.poetry.dependencies]
+python = "^3.11"
+ecodev-core = "~0.0.25"
+
+[[tool.poetry.source]]
+name = "ecoact_ml_company"
+url = "https://ecopypi.lcabox.com/"
+priority = "supplemental"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
