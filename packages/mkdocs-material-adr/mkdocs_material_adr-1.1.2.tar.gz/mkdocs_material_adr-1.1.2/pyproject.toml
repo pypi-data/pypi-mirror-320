@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "mkdocs-material-adr"
+version = "1.1.2"
+description = ""
+authors = ["jeanloup.monnier <jean-loup.monnier@spikeelabs.fr>"]
+readme = "README.md"
+packages = [{ include = "mkdocs_material_adr" }]
+license = "Apache-2.0"
+repository = "https://github.com/Kl0ven/mkdocs-material-adr"
+
+[tool.poetry.plugins] # Optional super table
+
+[tool.poetry.plugins."mkdocs.themes"]
+"mkdocs-material-adr" = "mkdocs_material_adr"
+
+
+[tool.poetry.plugins."mkdocs.plugins"]
+"mkdocs-material-adr/adr" = "mkdocs_material_adr.plugins.graph.plugin:AdrPlugin"
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "^2.1.1"
+
+
+[tool.poetry.group.dev.dependencies]
+mkdocs = "^1.5.1"
+pre-commit = "^3.3.3"
+
+
+[tool.poetry.group.demo.dependencies]
+mkdocs = "^1.5.1"
+mkdocs-material = "^9.1.21"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
