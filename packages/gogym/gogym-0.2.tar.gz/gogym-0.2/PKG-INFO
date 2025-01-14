@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: GoGym
+Version: 0.2
+Summary: One click is all you need
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: selenium>=4.24.0
+Requires-Dist: numpy>=2.0.1
+Requires-Dist: pandas>=2.2.3
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
