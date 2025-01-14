@@ -1,0 +1,13 @@
+bc_proto_sdk-0.2.5.dist-info/METADATA,sha256=hGFPF7iERYytEIAu-fc0BV1tqe6qlOS1Tawz0Y_m18U,290
+bc_proto_sdk-0.2.5.dist-info/WHEEL,sha256=kY0y1U5JpVNhlnQVdS1Nxxa3RDPuVPPAuTi9v3_3exk,106
+bc_proto_sdk.libs/libcap-1f829b24.so.2,sha256=tKqq1pjUGyiNSZTVKn2CdMH-7pknn1P6aJ8xMmHir9w,55585
+bc_proto_sdk.libs/libdbus-1-a6ae7b4e.so.3,sha256=4gTxwUef7TPHNbulHZgzWC1rXdmkWTjduX9SOLQDfl4,360385
+bc_proto_sdk.libs/libgcrypt-f207cbaa.so.20,sha256=igWdRmZmv37RF2eirZ0NEISQV4oqEghjTHx7yymZIOk,1356657
+bc_proto_sdk.libs/libgpg-error-546865ab.so.0,sha256=g1TdwHVt3MqqxKx0Ba9zqf-d82Gs6EySnaE5ReQnM94,156417
+bc_proto_sdk.libs/liblz4-40bffd0a.so.1,sha256=Lc9lNRArEobrX2cqCQxJuPCFEEl2WqdURxVRlsQXfdE,143009
+bc_proto_sdk.libs/liblzma-5f41e9df.so.5,sha256=u7U3jN9ycMHgpclqhTkyVZ6ePfikv7ucRuuJNkC8j7o,208873
+bc_proto_sdk.libs/libsystemd-2d2f97c4.so.0,sha256=yfjQXxkE33XR-TBSFW8uKjUg9NxaYM8f6LFoMhJ6VJM,958705
+bc_proto_sdk.libs/libzstd-0a2128bc.so.1,sha256=dqoxXFe83QJ7WxJ2HWjZbh96rwlqBHm1gtUo-TupXAo,762969
+bc_proto_sdk/__init__.py,sha256=J70sxsDI3u-TXOeaAU_9rGt77L1Td_5ebgFp33pr-cU,131
+bc_proto_sdk/bc_proto_sdk.cpython-39-x86_64-linux-gnu.so,sha256=eT31f5rjGd7M5owCFEYR5AuWzgUxV3c3kgw4-8o-OTQ,4584345
+bc_proto_sdk-0.2.5.dist-info/RECORD,,
