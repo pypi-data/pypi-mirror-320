@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lu77U-SHA256
+Version: 1.1.4
+Summary: An Fully Manual SHA-256 Hasher
+Home-page: UNKNOWN
+Author: Sam MG Harish
+License: Apache Software License 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: click
+
+UNKNOWN
+

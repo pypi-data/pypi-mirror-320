@@ -1,0 +1,3 @@
+[console_scripts]
+lu77U-SHA256 = lu77U_SHA256.Main:main
+
