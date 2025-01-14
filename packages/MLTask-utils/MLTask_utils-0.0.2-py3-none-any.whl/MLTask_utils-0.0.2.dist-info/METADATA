@@ -1,0 +1,44 @@
+Metadata-Version: 2.2
+Name: MLTask_utils
+Version: 0.0.2
+Summary: a collection of commonly used tools by MLTask
+Author: Mister Joessef
+Author-email: <misterjoessef@gmail.com>
+Keywords: mltask
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: torch
+Requires-Dist: openai-whisper
+Requires-Dist: whisperx
+Requires-Dist: openai
+Requires-Dist: pillow
+Requires-Dist: boto3
+Requires-Dist: instagrapi
+Requires-Dist: pinterest-api-sdk
+Requires-Dist: stability-sdk
+Requires-Dist: twitchio
+Requires-Dist: requests_oauthlib
+Requires-Dist: google_auth_oauthlib
+Requires-Dist: google-api-python-client
+Requires-Dist: pytube
+Requires-Dist: youtube_transcript_api
+Requires-Dist: qrcode
+Requires-Dist: gql
+Requires-Dist: numpy
+Requires-Dist: pydub
+Requires-Dist: scipy
+Requires-Dist: opencv-python
+Requires-Dist: moviepy
+Requires-Dist: imageio
+Requires-Dist: librosa
+Requires-Dist: yt-dlp[default]
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: summary
+
+TBD
