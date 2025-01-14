@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: wildcard-openai
+Version: 0.1.5
+Summary: OpenAI integration for the Wildcard ecosystem.
+License: Elastic-2.0
+Author: Yagnya Patel
+Author-email: yagnya@wild-card.ai
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: openai (>=1.40.0)
+Requires-Dist: wildcard-core (>=0.1.5)
+Description-Content-Type: text/markdown
+
+
