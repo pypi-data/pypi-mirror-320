@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: retry7
+Version: 0.0.2
+Summary: small retry package that bucks dependencies
+Author-email: Tony O'Dell <tony.odell@live.com>
+Project-URL: Homepage, https://github.com/tony-o/py-retry7
+Project-URL: Issues, https://github.com/tony-o/py-retry7/issues
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
