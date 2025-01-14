@@ -1,0 +1,10 @@
+oidc_provider_mock/__init__.py,sha256=3Q9ruEbJlhOC9zvhu4dkxWsPIVuPKPc93FEAD8tUsAQ,326
+oidc_provider_mock/__main__.py,sha256=sPmeTwkbXQEycaUvr-4DQ9oqqbW5F3Z-oKpuC7m02ds,697
+oidc_provider_mock/_internal.py,sha256=tjAvRw6trF6h85VfcAx5pBdaIyIrMKXPuKzKC18y0NM,10140
+oidc_provider_mock/templates/authorization_form.html,sha256=VWckZNXEaU5aZpDqFFlGu9Yf93WVe4DTZxSjG8iSYbc,423
+oidc_provider_mock/templates/error.html,sha256=U38_hHdrHyBhtFAOIivbH62AMBKjjiXvWmGeHMuzQUg,147
+oidc_provider_mock/templates/index.html,sha256=Un-Z9heigx93f7PhG3hxHdRSRdcwrGTLtQB9BoV1Luk,506
+oidc_provider_mock-0.0.1a1.dist-info/METADATA,sha256=H4RJz4sFKWJhkgKyxM5El8yafwHR7herPLlE4h0k86U,2737
+oidc_provider_mock-0.0.1a1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+oidc_provider_mock-0.0.1a1.dist-info/entry_points.txt,sha256=yBUSVz1BlE0MEa9-cPUC6aSVDyvylSeT3mtoLYWutZ8,71
+oidc_provider_mock-0.0.1a1.dist-info/RECORD,,
