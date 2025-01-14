@@ -1,0 +1,4 @@
+xarg-python>=1.6
+beautifulsoup4
+markdown
+flask

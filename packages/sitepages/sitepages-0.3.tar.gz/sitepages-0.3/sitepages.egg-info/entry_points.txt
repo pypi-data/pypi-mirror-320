@@ -1,0 +1,2 @@
+[console_scripts]
+sitepage = sitepages.command:main
