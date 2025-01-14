@@ -1,0 +1,32 @@
+Metadata-Version: 2.2
+Name: quectel_at
+Version: 1.1.0
+Summary: This is a library for Quectel Modules.
+Home-page: https://github.com/burakcanturk/Quectel-5G-LTE-Module-Library.git
+Author: Burak Cantürk
+Author-email: burakcanturk12@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pyserial
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
+
+# Quectel-5G-LTE-Module-Library
+This is a library for Quectel Modules.
+
+<img src="https://market.samm.com/Data/EditorFiles/RM520N-GL-details-size.jpg" alt="Connections tab" width="300"/>
+
+## Installation
+```
+pip install quectel_at
+```
+
+Thanks to[![GitHub](https://img.shields.io/badge/GitHub-black?style=flat&logo=GitHub)](https://github.com/iXenonN) @iXenonN
