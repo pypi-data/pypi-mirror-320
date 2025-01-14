@@ -1,0 +1,2 @@
+[console_scripts]
+aiogram-creator = aiogram_creator.main:main
