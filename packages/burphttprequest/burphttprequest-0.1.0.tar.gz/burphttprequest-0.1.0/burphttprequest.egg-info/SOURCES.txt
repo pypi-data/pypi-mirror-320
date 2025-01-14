@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+burphttprequest.egg-info/PKG-INFO
+burphttprequest.egg-info/SOURCES.txt
+burphttprequest.egg-info/dependency_links.txt
+burphttprequest.egg-info/requires.txt
+burphttprequest.egg-info/top_level.txt
+test/__init__.py
+test/main.py
