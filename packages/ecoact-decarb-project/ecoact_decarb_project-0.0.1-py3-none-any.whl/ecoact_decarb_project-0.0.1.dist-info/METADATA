@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ecoact-decarb-project
+Version: 0.0.1
+Summary: Ecoact internal library for decarbonization projects
+Author: Dorian Kodelja
+Author-email: dorian.kodelja@com.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: ecodev-core (>=0.0.25,<0.1.0)
+Description-Content-Type: text/markdown
+
+# ecoact-decarb-project
