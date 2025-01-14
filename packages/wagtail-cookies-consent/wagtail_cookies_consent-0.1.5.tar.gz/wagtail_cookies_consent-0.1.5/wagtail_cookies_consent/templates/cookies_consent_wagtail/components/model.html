@@ -1,0 +1,67 @@
+{% load i18n %}
+
+<div class="modal fade  "
+     id="exampleModal"
+     tabindex="-1"
+     aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content cookie-customize">
+      {% include "cookies_consent_wagtail/components/model_header.html" %}
+      <div class="modal-body">
+        <div class="accordion" id="accordionExample">
+          {% for group in cookies_group_list %}
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading{{ forloop.counter }}">
+                <button class="accordion-button cookie-customize"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse{{ forloop.counter }}"
+                        aria-expanded="true"
+                        aria-controls="collapse{{ forloop.counter }}">
+                  <div class='label'>
+                    <p>{{ group.get_translation_of_name }}</p>
+                    {% if group.is_required %}
+                      <p class='always-active'>{% trans "Always Active" %}</p>
+                    {% else %}
+                      <input class='cookie-customize-model-checkbox'
+                             type="checkbox"
+                             name="{{ group.varname }}" />
+                    {% endif %}
+                  </div>
+                </button>
+              </h2>
+              <div id="collapse{{ forloop.counter }}"
+                   class="accordion-collapse collapse cookie-customize show"
+                   aria-labelledby="heading{{ forloop.counter }}"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  {{ group.get_translation_of_description }}
+                  {% comment %} {% if group.is_required == False %} {% endcomment %}
+                    <a class="modal-cookies-anchor"
+                       data-bs-target="#ModalToggle{{ forloop.counter }}"
+                       data-bs-toggle="modal"
+                       data-bs-dismiss="modal">{% trans "Cookies Details" %}</a>
+                  {% comment %} {% endif %} {% endcomment %}
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="modal-footer cookies">
+        <button id='confirm_choices'
+                type="button"
+                class="btn confirm"
+                data-bs-dismiss="modal">{% trans "Confirm my choices " %}</button>
+        <button id='accept_all_cookies'
+                type="button"
+                class="btn accept"
+                data-bs-dismiss="modal">{% trans "Accept all cookies" %}</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

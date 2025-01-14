@@ -1,0 +1,108 @@
+============
+wagtail_cookies_consent
+============
+
+wagtail_cookies_consent is ...
+Detailed documentation is in the "docs" directory.
+
+Quick start
+-----------
+
+1. Add "wagtail_cookies_consent" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...,
+        "wagtail_cookies_consent",
+    ]
+
+2. Include the polls URLconf in your project urls.py like this::
+
+    from wagtail_cookies_consent import urls as cookies_consent_urls
+    path('',include(cookies_consent_urls))
+   
+
+3. Run ``python manage.py migrate`` to create the models.
+
+4. In base.html template import cookies_banner
+   - {% load cookie_consent_tags %}
+
+   -  {% cookies_banner bg_color='#fff' accordion_but='#004f3a' accept_btn='#005f47' accept_hover="#005f47" necessary_btn='#005f47' necessary_hover='#004f3a' custom_btn='#fff' custom_hover='#fff' confirm_btn='#005f47' confirm_hover='#005f47' anchor='#308282' anchor_hover='#fff' %}
+  
+4. Start the development server and visit the wagtail admin to create a cookies groups , cookies and cookies banner.
+
+
+
+
+cookies_banner Parameters
+
+    bg_color:
+       
+        Description: Sets the background color of the banner.
+        Type: Hex color code (e.g., #fff for white).
+        Example: bg_color='#fff'
+
+    accordion_but:
+
+        Description: Sets the background color of the accordion button.
+        Type: Hex color code (e.g., #004f3a for dark green).
+        Example: accordion_but='#004f3a'
+
+    accept_btn:
+
+        Description: Sets the color of the "Accept All" button.
+        Type: Hex color code (e.g., #005f47 for dark teal).
+        Example: accept_btn='#005f47'
+
+    accept_hover:
+
+        Description: Sets the hover color of the "Accept All" button.
+        Type: Hex color code (e.g., #005f47 for dark teal).
+        Example: accept_hover='#005f47'
+
+    necessary_btn:
+
+        Description: Sets the color of the "Necessary Only" button.
+        Type: Hex color code (e.g., #005f47 for dark teal).
+        Example: necessary_btn='#005f47'
+
+    necessary_hover:
+
+        Description: Sets the hover color of the "Necessary Only" button.
+        Type: Hex color code (e.g., #004f3a for dark green).
+        Example: necessary_hover='#004f3a'
+
+    custom_btn:
+
+        Description: Sets the color of the "Customize" button.
+        Type: Hex color code (e.g., #fff for white).
+        Example: custom_btn='#fff'
+
+    custom_hover:
+
+        Description: Sets the hover color of the "Customize" button.
+        Type: Hex color code (e.g., #fff for white).
+        Example: custom_hover='#fff'
+
+    confirm_btn:
+
+        Description: Sets the color of the "Confirm" button.
+        Type: Hex color code (e.g., #005f47 for dark teal).
+        Example: confirm_btn='#005f47'
+
+    confirm_hover:
+
+        Description: Sets the hover color of the "Confirm" button.
+        Type: Hex color code (e.g., #005f47 for dark teal).
+        Example: confirm_hover='#005f47'
+
+    anchor:
+
+        Description: Sets the color of anchor links (e.g., "Learn more" links).
+        Type: Hex color code (e.g., #308282 for teal).
+        Example: anchor='#308282'
+
+    anchor_hover:
+
+        Description: Sets the hover color of anchor links.
+        Type: Hex color code (e.g., #fff for white).
+        Example: anchor_hover='#fff'

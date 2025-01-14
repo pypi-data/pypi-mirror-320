@@ -1,0 +1,2 @@
+django>=5
+wagtail>=6.1.3

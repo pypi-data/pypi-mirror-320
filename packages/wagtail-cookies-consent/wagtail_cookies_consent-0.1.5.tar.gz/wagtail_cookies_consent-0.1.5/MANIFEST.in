@@ -1,0 +1,2 @@
+recursive-include wagtail_cookies_consent/static *
+recursive-include wagtail_cookies_consent/templates *

@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wagtail_cookies_consent"
+version = "0.1.5"
+dependencies = [
+    "django>=5",  # Replace "X.Y" as appropriate
+    "wagtail>=6.1.3"
+]
+description = """
+
+'A Wagtail package for seamless cookies consent integration and management.'
+
+This package enables you to integrate cookies consent functionality into your Wagtail project effortlessly. With it, you can create and manage a customizable cookies banner directly from the Wagtail admin interface.
+
+Key features include:
+
+Cookies Banner Management: Design and modify a cookies consent banner easily via Wagtail admin.
+Cookies Details and Grouping: Add detailed descriptions of cookies used on your website and organize them into customizable groups (e.g., Essential, Analytics, Marketing).
+User Consent Control: Allow your website visitors to accept or reject cookies based on their preferences.
+This package provides a user-friendly solution for cookies consent while ensuring compliance and giving you full control over your website's cookies policy.
+
+"""
+readme = "README.md"
+requires-python = ">= 3.10"
+authors = [
+    {name = "Mohammed Alsubaie", email = "mohammed.alsubaie@innosoft.sa"},
+]
+classifiers = [
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Django :: 5",  # Replace "X.Y" as appropriate
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+]
+
