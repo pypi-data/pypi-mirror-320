@@ -1,0 +1,20 @@
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+Starting Batch: Single
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_ 
+
+Wavelength = True
+                                         
+
+>>>>>>>>>> Fetching Images <<<<<<<<<<
+
+ v Loading Local File...
+   Looking in: 
+     /srv/data/shared/notebooks/cgilly/sunback/src/sunback_images/Single
+     for AIA20210923_172100-Copy1.nc  at  20210923_172100-Copy1
+                                          
+
+>>>>>>>>>> Processing Images <<<<<<<<<<
+ v  Processing Image...
+No Curves to Load!
+Please place the curves file at:
+/srv/data/shared/notebooks/cgilly/sunback/src/sunback_images/Single/D:/sunback_images/Single/analysis/True_curves.txt

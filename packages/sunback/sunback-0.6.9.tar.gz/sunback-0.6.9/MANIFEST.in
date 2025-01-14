@@ -1,0 +1,24 @@
+# Include necessary files
+include LICENSE
+include README.md
+include setup.py
+include pyproject.toml
+
+# Explicitly include modules
+graft sunback
+graft data
+graft devtools
+graft docs
+graft resources
+
+# Exclude specific directories and files
+prune sunback_images
+prune sunback_data/renders
+prune */renders
+prune *.log
+exclude *.log
+exclude *.pyc
+exclude *.pyo
+exclude .DS_Store
+exclude **/__pycache__
+exclude **/*.pyc
