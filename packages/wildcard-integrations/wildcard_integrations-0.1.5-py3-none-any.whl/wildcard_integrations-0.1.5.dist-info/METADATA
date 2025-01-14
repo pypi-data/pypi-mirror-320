@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: wildcard-integrations
+Version: 0.1.5
+Summary: API client integrations for the Wildcard ecosystem
+License: Elastic-2.0
+Author: Kaushik
+Author-email: kaushik@wild-card.ai
+Requires-Python: >=3.9
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Provides-Extra: airtable
+Provides-Extra: gmail
+Requires-Dist: certifi (>=2017.4.17) ; extra == "airtable"
+Requires-Dist: python-dateutil (>=2.1) ; extra == "airtable"
+Requires-Dist: six (>=1.10) ; extra == "airtable"
+Requires-Dist: urllib3 (>=1.25.3) ; extra == "airtable"
+Description-Content-Type: text/markdown
+
+# Wildcard Integrations
+
+API client integrations for the Wildcard ecosystem.
+
+## Installation
+
+Install all clients:
+```bash
+pip install wildcard-integrations
+```
+
+Or install specific clients:
+```bash
+# Just Gmail
+pip install "wildcard-integrations[gmail]"
+
+# Just Airtable
+pip install "wildcard-integrations[airtable]"
+
+# Multiple specific clients
+pip install "wildcard-integrations[gmail,airtable]"
+```
+
+## Usage
+
+### Gmail API
+```python
+from wildcard_gmail import UsersApi
+```
+
+### Airtable API
+```python
+from wildcard_airtable import BasesApi, TablesApi, RecordsApi
+``` 
