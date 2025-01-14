@@ -1,0 +1,12 @@
+torch
+transformers
+huggingface_hub
+google-generativeai
+requests
+IPython
+nbformat
+pytest
+pytorch-lightning
+jupyter_server
+astor
+pygments

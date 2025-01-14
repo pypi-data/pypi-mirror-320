@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+codemate_ai/__init__.py
+codemate_ai/core.py
+codemate_ai/magics.py
+codemate_ai/providers.py
+codemate_ai.egg-info/PKG-INFO
+codemate_ai.egg-info/SOURCES.txt
+codemate_ai.egg-info/dependency_links.txt
+codemate_ai.egg-info/entry_points.txt
+codemate_ai.egg-info/requires.txt
+codemate_ai.egg-info/top_level.txt
+tests/test_ML.py
+tests/test_setup.py

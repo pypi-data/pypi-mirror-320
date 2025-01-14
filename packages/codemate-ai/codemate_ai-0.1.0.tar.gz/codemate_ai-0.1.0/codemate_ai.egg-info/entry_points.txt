@@ -1,0 +1,2 @@
+[console_scripts]
+codemate_ai = codemate_ai.main:main
