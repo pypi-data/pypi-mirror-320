@@ -1,0 +1,21 @@
+[project]
+name = "telegram-python"
+version = "0.3.0"
+description = "A Python package for sending Telegram messages"
+authors = [
+    {name = "Tatiana", email = "durachevska@ukr.net"}
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.32.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+packages = [{include = "telegram_send"}]
+
+[tool.setuptools.packages]
+find = {exclude = ["demo", "demo.*"]}

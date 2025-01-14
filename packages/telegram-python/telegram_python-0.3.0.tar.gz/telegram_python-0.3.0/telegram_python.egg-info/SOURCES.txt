@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+telegram_python.egg-info/PKG-INFO
+telegram_python.egg-info/SOURCES.txt
+telegram_python.egg-info/dependency_links.txt
+telegram_python.egg-info/top_level.txt
+telegram_send/__init__.py
+telegram_send/telegram_send.py

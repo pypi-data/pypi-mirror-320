@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: telegram-python
+Version: 0.3.0
+Summary: A Python package for sending Telegram messages
+Author: Tetiana
+Author-email: Tatiana <durachevska@ukr.net>
+Description-Content-Type: text/markdown
+
+poetry add telegram_send
+
+poetry run python demo/demo.py
