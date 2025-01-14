@@ -1,0 +1,6 @@
+[build-system]
+requires = ["setuptools>=61", "wheel>=0.37.1", "setuptools_scm[toml]<=7.0"]
+
+[[tool.mypy.overrides]]
+module = "diskcache"
+ignore_missing_imports = true

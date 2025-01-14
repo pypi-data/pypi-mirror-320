@@ -1,0 +1,6 @@
+asphodel
+numpy
+packaging
+PySide6-Essentials
+requests
+setproctitle
