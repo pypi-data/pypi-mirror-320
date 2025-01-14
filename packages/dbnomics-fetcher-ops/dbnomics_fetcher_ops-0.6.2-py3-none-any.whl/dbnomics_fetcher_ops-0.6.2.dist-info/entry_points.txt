@@ -1,0 +1,2 @@
+[console_scripts]
+dbnomics-fetchers = dbnomics_fetcher_ops.cli:app
