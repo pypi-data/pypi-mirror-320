@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+clicommon/__init__.py
+clicommon/clicommon.py
+clicommon.egg-info/PKG-INFO
+clicommon.egg-info/SOURCES.txt
+clicommon.egg-info/dependency_links.txt
+clicommon.egg-info/top_level.txt
