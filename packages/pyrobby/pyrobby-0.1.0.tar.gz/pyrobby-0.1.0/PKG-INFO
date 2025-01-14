@@ -1,0 +1,60 @@
+Metadata-Version: 2.2
+Name: pyrobby
+Version: 0.1.0
+Summary: A library for controlling a robot in a grid environment
+Home-page: https://github.com/yourusername/pyrobby
+Author: Aliaksei Ivanko
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pillow
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# RobotLib
+
+RobotLib - это библиотека для управления роботом в сеточном окружении. Она предоставляет графический интерфейс и набор команд для программирования движений робота.
+
+## Установка
+
+Для установки библиотеки выполните следующую команду:
+
+```bash
+pip install robotlib
+```
+
+## Использование
+
+Пример использования библиотеки: 
+python
+import tkinter as tk
+from robotlib import RobotApp
+root = tk.Tk()
+app = RobotApp(root)
+root.mainloop()
+```
+
+## Основные команды
+
+- `up()` - движение вверх
+- `down()` - движение вниз
+- `left()` - движение влево
+- `right()` - движение вправо
+- `fillcell()` - закрасить текущую клетку
+- `pos()` - получить текущую позицию
+- `goto(x, y)` - переместиться в указанную позицию
+
+## Лицензия
+
+MIT License
