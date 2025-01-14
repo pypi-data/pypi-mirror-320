@@ -1,0 +1,9 @@
+# Env
+.env.develop
+.env.local
+
+# Run
+.codegen
+
+# DB/Alembic
+app/__init__.py
