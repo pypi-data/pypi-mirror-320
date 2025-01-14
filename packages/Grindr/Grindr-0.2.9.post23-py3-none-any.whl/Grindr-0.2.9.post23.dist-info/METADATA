@@ -1,0 +1,112 @@
+Metadata-Version: 2.2
+Name: Grindr
+Version: 0.2.9.post23
+Summary: Grindr Python Client
+Home-page: https://github.com/isaackogan/Grindr
+Author: Tricorder
+Author-email: tricorder@isaackogan.com
+License: MIT
+Keywords: Grindr,Grindr API,python3,api,unofficial
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Framework :: Pydantic :: 2
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyee==12.1.1
+Requires-Dist: pygeohash==1.2.0
+Requires-Dist: pydantic
+Requires-Dist: curl_cffi==0.8.1b8
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+Grindr
+==================
+A silly little library to connect to Grindr's mobile services.
+
+![Stars](https://img.shields.io/github/stars/isaackogan/Grindr?style=flat&color=0274b5)
+![Forks](https://img.shields.io/github/forks/isaackogan/Grindr?style=flat&color=0274b5)
+![Issues](https://img.shields.io/github/issues/isaackogan/Grindr)
+
+## If You Work at Grindr
+
+- Send me a message `info@isaackogan.com` for any questions/concerns.
+- If you are hiring, send an e-mail. Let's chat :)!
+
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Licensing](#license)
+- [Contributors](#contributors)
+
+## Getting Started
+
+1. Install the module via pip from the [PyPi](https://pypi.org/project/Grindr/) repository
+
+```shell script
+pip install Grindr
+```
+
+2. Create your first chat connection
+
+```python
+from Grindr import GrindrClient
+from Grindr.events import ConnectEvent, MessageEvent
+
+# Create the client
+client: GrindrClient = GrindrClient()
+
+# Listen to an event with a decorator!
+@client.on(ConnectEvent)
+async def on_connect(_: ConnectEvent):
+    print(f"Connected to Grindr!")
+
+
+# Or, add it manually via "client.add_listener()"
+async def on_message(event: MessageEvent) -> None:
+    
+    if not event.type == "Text":
+        return
+    
+    print(f"{event.senderId} -> {event.body.text}")
+
+
+client.add_listener(MessageEvent, on_message)
+
+if __name__ == '__main__':
+    # Run the client and block the main thread
+    # await client.start() to run non-blocking
+    client.run(
+        email="your@email.com",
+        password="your_secure_password"
+    )
+```
+
+### Helpful Tips
+
+- Access all web-scraping methods with `client.web`
+- Send messages with `await client.send(...)`
+- Use proxies. Cloudflare WAF likes to ban IPs.
+
+## Contributors
+
+* **Isaac Kogan** - *Creator, Primary Maintainer, and Reverse-Engineering* - [isaackogan](https://github.com/isaackogan)
+
+See also the full list of [contributors](https://github.com/isaackogan/Grindr/contributors) who have participated in
+this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
