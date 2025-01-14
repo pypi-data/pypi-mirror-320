@@ -1,0 +1,15 @@
+[project]
+name = "skloess"
+version = "0.1.3"
+description = "Sklearn compatible implementation of the Locally Estimated Scatterplot Smoothing (LOESS) algorithm"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.10.0",
+    "numpy>=2.2.1",
+    "pytest>=8.3.4",
+    "scikit-learn>=1.6.1",
+]
+[tool.setuptools]
+license-files = []
+

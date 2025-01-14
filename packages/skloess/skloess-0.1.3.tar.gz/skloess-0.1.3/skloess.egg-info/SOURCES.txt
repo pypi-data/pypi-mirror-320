@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+skloess/__init__.py
+skloess/_version.py
+skloess/skloess.py
+skloess.egg-info/PKG-INFO
+skloess.egg-info/SOURCES.txt
+skloess.egg-info/dependency_links.txt
+skloess.egg-info/requires.txt
+skloess.egg-info/top_level.txt
+skloess/tests/__init__.py
+skloess/tests/test_LOESS.py
+skloess/tests/test_common.py
