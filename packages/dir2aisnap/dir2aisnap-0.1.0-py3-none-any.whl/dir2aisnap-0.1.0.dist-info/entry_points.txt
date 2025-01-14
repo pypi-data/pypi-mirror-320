@@ -1,0 +1,2 @@
+[console_scripts]
+dir2aisnap = dir2aisnap.dir2aisnap:main
