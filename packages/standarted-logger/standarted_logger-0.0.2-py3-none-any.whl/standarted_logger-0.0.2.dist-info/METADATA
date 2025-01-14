@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: standarted-logger
+Version: 0.0.2
+Summary: 
+Author: Andrey Linyushin
+Author-email: 89202979894@mail.ru
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+## Logger that can be used as a standard logger for various packages in case of further logs parsing
