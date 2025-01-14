@@ -1,0 +1,12 @@
+thot.cp38-win32.pyd,sha256=t7DAyCoRzSxxGsVmRgC53JU5wrdihHM9qSVPxpfotKo,1349120
+thot/__init__.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thot/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thot/alignment/__init__.pyi,sha256=uS-sXjduPRP6771AAZTGVn0EzM3pDv5-ZMocpNpJreg,9475
+thot/common/__init__.pyi,sha256=ESzFv9QpZzuqudqYCNYO_2nJD-NbYg_G46QzBA18jVo,2142
+thot/translation/__init__.pyi,sha256=_TZk2pCBwCs3PUZkGVbyDUPMNiL5okKVLJpL33Q5gy0,5278
+sil_thot-3.4.7.dist-info/AUTHORS,sha256=0hCsqroSsvA4vXgj1q-5lZ1Q0S9D1_EBJB9MWGUSwl0,214
+sil_thot-3.4.7.dist-info/COPYING.LESSER,sha256=6n0EnHcF3BOvwgLdGOGCfzSE-CEv0_p7gvxKDDY0Msk,7816
+sil_thot-3.4.7.dist-info/METADATA,sha256=WZIysZSEk8AY-LAiTuTQIiy3K7XopKEriMOOlubdN6o,1971
+sil_thot-3.4.7.dist-info/WHEEL,sha256=vBXc8Yz61rk4PXr558q4bsp34y-RMVJ3b9QU_ECAK-o,95
+sil_thot-3.4.7.dist-info/top_level.txt,sha256=BV9H2vNx3k3-7JvpPnBryrItc6WxgXW1OKVRcUzoHQw,14
+sil_thot-3.4.7.dist-info/RECORD,,
