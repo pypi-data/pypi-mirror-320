@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: blipper
+Version: 0.1.1
+Summary: Blipper is an AI application that empowers you to access large language model capabilities through a high-level interface. Blipper provides a lot of functions each with a task of their own. We call them Blips.
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.32.3
