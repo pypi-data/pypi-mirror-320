@@ -1,0 +1,65 @@
+Metadata-Version: 2.4
+Name: ytb-gears
+Version: 0.2.1
+Summary: A Python package to interact with YouTube Data API v3.
+Author-email: Hao Guan <10684225+hguandl@users.noreply.github.com>
+Requires-Python: >=3.9
+Requires-Dist: google-api-python-client>=2.158.0
+Requires-Dist: google-auth-oauthlib>=1.2.1
+Provides-Extra: test
+Requires-Dist: tqdm>=4.67.1; extra == 'test'
+Description-Content-Type: text/markdown
+
+# YouTube Gears
+
+A Python package for uploading videos to YouTube.
+
+# Example
+
+```python
+import logging
+
+import tqdm
+
+import ytb_gears
+
+
+def main():
+    logging.basicConfig(level=logging.INFO)
+
+    client_secret_file = "client_secret.json"
+    video_path = "test.mp4"
+
+    if ytb_gears.today_already_uploaded(client_secret_file):
+        return
+
+    print(f"即将上传视频: {video_path}")
+
+    with tqdm.tqdm(total=100) as pbar:
+
+        def update_progress(progress: float):
+            pbar.update(int(progress * 100) - pbar.n)
+
+        ytb_gears.upload(
+            video_path,
+            client_secret_file,
+            "YouTube Gears Test Video",
+            "Uploaded by YouTube Gears",
+            "ytb-gears",
+            "22",
+            "unlisted",
+            progress_callback=update_progress,
+        )
+
+
+main()
+```
+
+# Proxy
+
+```python
+import os
+
+os.environ["HTTP_PROXY"] = "http://127.0.0.1:7890"
+os.environ["HTTPS_PROXY"] = "http://127.0.0.1:7890"
+```
