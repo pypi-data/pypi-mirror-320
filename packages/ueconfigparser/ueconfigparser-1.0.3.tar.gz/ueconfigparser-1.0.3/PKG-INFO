@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: ueconfigparser
+Version: 1.0.3
+Summary: ConfigParser (in text) created for read/edit/write Unreal Engine Config files
+Home-page: https://github.com/xwoojin/UEConfigParser
+Author: WooJin Kim
+Author-email: woojinian@gmail.com
+Keywords: ueconfig,xwoojin,config,parser,config parser,configparser,unreal engine,unreal config,unreal parser
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7, <4
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: requires-python
+Dynamic: summary
