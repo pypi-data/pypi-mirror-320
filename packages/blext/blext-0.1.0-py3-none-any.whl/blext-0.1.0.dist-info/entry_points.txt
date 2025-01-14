@@ -1,0 +1,2 @@
+[console_scripts]
+blext = blext.cli:app
