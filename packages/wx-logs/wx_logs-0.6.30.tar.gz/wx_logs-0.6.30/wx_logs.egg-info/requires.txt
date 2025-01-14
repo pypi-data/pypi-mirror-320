@@ -1,0 +1,10 @@
+dateparser
+numpy
+pytz
+gdal
+pyproj
+gstools
+windrose
+matplotlib
+shapely
+joblib

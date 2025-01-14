@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: wx_logs
+Version: 0.6.30
+Author: Tom Hayden
+Author-email: thayden@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Requires-Dist: dateparser
+Requires-Dist: numpy
+Requires-Dist: pytz
+Requires-Dist: gdal
+Requires-Dist: pyproj
+Requires-Dist: gstools
+Requires-Dist: windrose
+Requires-Dist: matplotlib
+Requires-Dist: shapely
+Requires-Dist: joblib
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: requires-dist
+Dynamic: requires-python
+
+A weather logging library, useful for processing and analyzing weather data.
