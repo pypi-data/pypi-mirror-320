@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+alabEBM/__init__.py
+alabEBM/conjugate_priors_algo.py
+alabEBM/generate_data.py
+alabEBM/hard_kmeans_algo.py
+alabEBM/run_conjugate_priors.py
+alabEBM/run_hard_kmeans.py
+alabEBM/run_soft_kmeans.py
+alabEBM/soft_kmeans_algo.py
+alabEBM/utils.py
+alabEBM.egg-info/PKG-INFO
+alabEBM.egg-info/SOURCES.txt
+alabEBM.egg-info/dependency_links.txt
+alabEBM.egg-info/requires.txt
+alabEBM.egg-info/top_level.txt
