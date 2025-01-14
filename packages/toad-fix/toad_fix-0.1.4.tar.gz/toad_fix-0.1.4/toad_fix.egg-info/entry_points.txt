@@ -1,0 +1,2 @@
+[console_scripts]
+toad_fix = toad_fix.cli:main

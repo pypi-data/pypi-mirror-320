@@ -1,0 +1,51 @@
+[project]
+name = "toad_fix"
+description = "toad_fix is dedicated to facilitating model development process, especially for a scorecard."
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+authors = [{name = "Secbone", email = "secbone@gmail.com"}]
+classifiers = [
+    'Operating System :: POSIX',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: MacOS :: MacOS X',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+]
+dynamic = [
+    "version",
+    "readme",
+    "dependencies",
+    "optional-dependencies",
+    "entry-points",
+]
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"], content-type = "text/markdown"}
+dependencies = {file = ["requirements.txt"]}
+optional-dependencies = {nn = {file = ["requirements-nn.txt"]}, tools = {file = ["requirements-tools.txt"]}, all = {file = ["requirements-nn.txt", "requirements-tools.txt"]} }
+
+[build-system]
+requires = [
+    "setuptools==75.1.0",
+    "Cython >= 0.29.15",
+    "numpy >= 1.20",
+    "wheel",
+    "twine",
+]
+build-backend = "setuptools.build_meta"
+
+[console_scripts]
+toad_fix = "toad_fix.cli:main"
+
+[tool.setuptools.packages.find]
+exclude = ["tests"]
+
+[project.urls]
+Homepage = "https://github.com/amphibian-dev/toad_fix"
+Documentation = "https://toad_fix.readthedocs.io/en/stable/"
+Repository = "https://github.com/amphibian-dev/toad_fix.git"
+Issues = "https://github.com/amphibian-dev/toad_fix/issues"
+Changelog = "https://github.com/amphibian-dev/toad_fix/blob/master/CHANGELOG.md"
