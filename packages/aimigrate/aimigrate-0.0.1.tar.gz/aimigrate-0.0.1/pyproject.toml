@@ -1,0 +1,15 @@
+[project]
+name = "aimigrate"
+version = "0.0.1"
+description = "LLMMigrate: AI-based software migration"
+authors = [
+  { name="Katherine Rosenfeld"},
+  { name="Cliff Kerr"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["aimigrate*"]
