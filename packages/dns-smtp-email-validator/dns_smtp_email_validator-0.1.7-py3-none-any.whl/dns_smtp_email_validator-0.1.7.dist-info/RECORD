@@ -1,0 +1,10 @@
+dns_smtp_email_validator/__init__.py,sha256=7R1P9zJ0ZirlAyb3jgLr-Lp0MV416WzOA11YrFScQQI,136
+dns_smtp_email_validator/main.py,sha256=ah5UaTnz53yYcTmcK8OYjFXlcb860yviCAJ_G5hm3QE,8988
+dns_smtp_email_validator/main_types.py,sha256=W6NJTiJq0LVRwUhC-KnglsCsfEA-1cVgSAXQ2gT9fnw,251
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test.py,sha256=hkOIgJ1_d_EXHSA6RPmfHZeCynYhiDgrjISxouQXDHc,1723
+dns_smtp_email_validator-0.1.7.dist-info/LICENSE,sha256=IzJlZM5Tn3MUpfOC7USoA6JgClsExWNQ8TpFbPX8BC4,1065
+dns_smtp_email_validator-0.1.7.dist-info/METADATA,sha256=VL4nathyoF5c6_Af8DZeqgwKpFFMtrhUmj9lmMAw1aA,4043
+dns_smtp_email_validator-0.1.7.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+dns_smtp_email_validator-0.1.7.dist-info/top_level.txt,sha256=bui9lnSejaJM3rkfQ3TE_urLQZxcGC_YbTZL9kX24uQ,31
+dns_smtp_email_validator-0.1.7.dist-info/RECORD,,
