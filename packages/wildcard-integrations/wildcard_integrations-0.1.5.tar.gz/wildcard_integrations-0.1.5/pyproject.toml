@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "wildcard-integrations"
+version = "0.1.5"
+description = "API client integrations for the Wildcard ecosystem"
+authors = ["Kaushik <kaushik@wild-card.ai>"]
+license = "Elastic License 2.0"
+readme = "README.md"
+packages = [
+    { include = "wildcard_integrations" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+urllib3 = ">=1.25.3"
+certifi = ">=2017.4.17"
+python-dateutil = ">=2.1"
+six = ">=1.10"
+
+[tool.poetry.extras]
+gmail = []
+airtable = ["urllib3", "six", "certifi", "python-dateutil"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
