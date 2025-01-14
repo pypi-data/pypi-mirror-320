@@ -1,0 +1,9 @@
+opentelemetry/instrumentation/chromadb/__init__.py,sha256=9PC66ILsIrbsM9Y9XaJvUztEsBC2Ov2n8JQTnkflL-Y,3212
+opentelemetry/instrumentation/chromadb/config.py,sha256=CtypZov_ytI9nSrfN9lWnjcufbAR9sfkXRA0OstDEUw,42
+opentelemetry/instrumentation/chromadb/utils.py,sha256=TS5l7yRkhOAOv8SotZDhLG5q-krYH53U_t4DtCToTgI,808
+opentelemetry/instrumentation/chromadb/version.py,sha256=mgi0NAwnQWP7UdrUf2L9Xln12B8NoCQbqDnalCRZMpE,23
+opentelemetry/instrumentation/chromadb/wrapper.py,sha256=KPpcgTkpe9elsrVa6LcaKnuN5rOYrxj04i-x5wgVEHk,10488
+opentelemetry_if_instrumentation_chromadb-0.25.6.dist-info/METADATA,sha256=pXx_G_V8YAvLSo0pVjPsM4mjZGPNV1kTqJvndPnfrTQ,1720
+opentelemetry_if_instrumentation_chromadb-0.25.6.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+opentelemetry_if_instrumentation_chromadb-0.25.6.dist-info/entry_points.txt,sha256=C53KQwX9kOhvmrQA89AssvWVEGKGifFI3mM81OxB7LM,97
+opentelemetry_if_instrumentation_chromadb-0.25.6.dist-info/RECORD,,
