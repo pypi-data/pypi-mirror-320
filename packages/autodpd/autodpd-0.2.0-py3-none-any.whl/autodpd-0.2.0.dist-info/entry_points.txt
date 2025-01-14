@@ -1,0 +1,2 @@
+[console_scripts]
+autodpd = autodpd.autodpd:main
