@@ -1,0 +1,13 @@
+networkx
+numpy
+pandas
+emoji
+pytest
+pytest-cov
+openpyxl
+scipy
+matplotlib
+gaft
+seaborn
+joblib
+scikit-learn
