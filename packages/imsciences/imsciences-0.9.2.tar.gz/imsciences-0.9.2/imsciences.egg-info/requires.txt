@@ -1,0 +1,11 @@
+pandas
+plotly
+numpy
+fredapi
+requests_cache
+geopy
+plotly
+bs4
+yfinance
+holidays
+google-analytics-data

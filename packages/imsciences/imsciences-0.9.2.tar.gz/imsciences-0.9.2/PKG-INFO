@@ -1,0 +1,440 @@
+Metadata-Version: 2.1
+Name: imsciences
+Version: 0.9.2
+Summary: IMS Data Processing Package
+Author: IMS
+Author-email: cam@im-sciences.com
+Keywords: python,data processing,apis
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: numpy
+Requires-Dist: fredapi
+Requires-Dist: requests_cache
+Requires-Dist: geopy
+Requires-Dist: plotly
+Requires-Dist: bs4
+Requires-Dist: yfinance
+Requires-Dist: holidays
+Requires-Dist: google-analytics-data
+
+# IMS Package Documentation
+
+The **IMSciences package** is a Python library designed to process incoming data into a format tailored for econometrics projects, particularly those utilising weekly time series data. This package offers a suite of functions for efficient data manipulation and analysis.
+
+---
+
+## Key Features
+- Seamless data processing for econometrics workflows.
+- Aggregation, filtering, and transformation of time series data.
+- Integration with external data sources like FRED, Bank of England, ONS and OECD.
+
+---
+
+Table of Contents
+=================
+
+1. [Data Processing](#Data-Processing)
+2. [Data Pulling](#Data-Pulling)
+3. [Installation](#Installation)
+4. [Useage](#Useage)
+5. [License](#License)
+
+---
+
+## Data Processing
+
+## 1. get_wd_levels
+- **Description**: Get the working directory with the option of moving up parents.
+- **Usage**: `get_wd_levels(levels)`
+- **Example**: `get_wd_levels(0)`
+
+---
+
+## 2. remove_rows
+- **Description**: Removes a specified number of rows from a pandas DataFrame.
+- **Usage**: `remove_rows(data_frame, num_rows_to_remove)`
+- **Example**: `remove_rows(df, 2)`
+
+---
+
+## 3. aggregate_daily_to_wc_long
+- **Description**: Aggregates daily data into weekly data, grouping and summing specified columns, starting on a specified day of the week.
+- **Usage**: `aggregate_daily_to_wc_long(df, date_column, group_columns, sum_columns, wc, aggregation='sum')`
+- **Example**: `aggregate_daily_to_wc_long(df, 'date', ['platform'], ['cost', 'impressions', 'clicks'], 'mon', 'average')`
+
+---
+
+## 4. convert_monthly_to_daily
+- **Description**: Converts monthly data in a DataFrame to daily data by expanding and dividing the numeric values.
+- **Usage**: `convert_monthly_to_daily(df, date_column, divide)`
+- **Example**: `convert_monthly_to_daily(df, 'date')`
+
+---
+
+## 5. plot_two
+- **Description**: Plots specified columns from two different DataFrames using a shared date column. Useful for comparing data.
+- **Usage**: `plot_two(df1, col1, df2, col2, date_column, same_axis=True)`
+- **Example**: `plot_two(df1, 'cost', df2, 'cost', 'obs', True)`
+
+---
+
+## 6. remove_nan_rows
+- **Description**: Removes rows from a DataFrame where the specified column has NaN values.
+- **Usage**: `remove_nan_rows(df, col_to_remove_rows)`
+- **Example**: `remove_nan_rows(df, 'date')`
+
+---
+
+## 7. filter_rows
+- **Description**: Filters the DataFrame based on whether the values in a specified column are in a provided list.
+- **Usage**: `filter_rows(df, col_to_filter, list_of_filters)`
+- **Example**: `filter_rows(df, 'country', ['UK', 'IE'])`
+
+---
+
+## 8. plot_one
+- **Description**: Plots a specified column from a DataFrame.
+- **Usage**: `plot_one(df1, col1, date_column)`
+- **Example**: `plot_one(df, 'Spend', 'OBS')`
+
+---
+
+## 9. week_of_year_mapping
+- **Description**: Converts a week column in `yyyy-Www` or `yyyy-ww` format to week commencing date.
+- **Usage**: `week_of_year_mapping(df, week_col, start_day_str)`
+- **Example**: `week_of_year_mapping(df, 'week', 'mon')`
+
+---
+
+## 10. exclude_rows
+- **Description**: Removes rows from a DataFrame based on whether the values in a specified column are not in a provided list.
+- **Usage**: `exclude_rows(df, col_to_filter, list_of_filters)`
+- **Example**: `exclude_rows(df, 'week', ['2022-W20', '2022-W21'])`
+
+---
+
+## 11. rename_cols
+- **Description**: Renames columns in a pandas DataFrame.
+- **Usage**: `rename_cols(df, name)`
+- **Example**: `rename_cols(df, 'ame_facebook')`
+
+---
+
+## 12. merge_new_and_old
+- **Description**: Creates a new DataFrame with two columns: one for dates and one for merged numeric values.
+  - Merges numeric values from specified columns in the old and new DataFrames based on a given cutoff date.
+- **Usage**: `merge_new_and_old(old_df, old_col, new_df, new_col, cutoff_date, date_col_name='OBS')`
+- **Example**: `merge_new_and_old(df1, 'old_col', df2, 'new_col', '2023-01-15')`
+
+---
+
+## 13. merge_dataframes_on_date
+- **Description**: Merge a list of DataFrames on a common column.
+- **Usage**: `merge_dataframes_on_date(dataframes, common_column='OBS', merge_how='outer')`
+- **Example**: `merge_dataframes_on_date([df1, df2, df3], common_column='OBS', merge_how='outer')`
+
+---
+
+## 14. merge_and_update_dfs
+- **Description**: Merges two dataframes on a key column, updates the first dataframe's columns with the second's where available, and returns a dataframe sorted by the key column.
+- **Usage**: `merge_and_update_dfs(df1, df2, key_column)`
+- **Example**: `merge_and_update_dfs(processed_facebook, finalised_meta, 'OBS')`
+
+---
+
+## 15. convert_us_to_uk_dates
+- **Description**: Convert a DataFrame column with mixed date formats to datetime.
+- **Usage**: `convert_us_to_uk_dates(df, date_col)`
+- **Example**: `convert_us_to_uk_dates(df, 'date')`
+
+---
+
+### 16. combine_sheets
+- **Description**: Combines multiple DataFrames from a dictionary into a single DataFrame.
+- **Usage**: `combine_sheets(all_sheets)`
+- **Example**: `combine_sheets({'Sheet1': df1, 'Sheet2': df2})`
+
+---
+
+## 17. pivot_table
+- **Description**: Dynamically pivots a DataFrame based on specified columns.
+- **Usage**: `pivot_table(df, index_col, columns, values_col, filters_dict=None, fill_value=0, aggfunc='sum', margins=False, margins_name='Total', datetime_trans_needed=True, reverse_header_order=False, fill_missing_weekly_dates=False, week_commencing='W-MON')`
+- **Example**: `pivot_table(df, 'OBS', 'Channel Short Names', 'Value', filters_dict={'Master Include': ' == 1', 'OBS': ' >= datetime(2019,9,9)', 'Metric Short Names': ' == spd'}, fill_value=0, aggfunc='sum', margins=False, margins_name='Total', datetime_trans_needed=True, reverse_header_order=True, fill_missing_weekly_dates=True, week_commencing='W-MON')`
+
+---
+
+## 18. apply_lookup_table_for_columns
+- **Description**: Equivalent of XLOOKUP in Excel. Allows mapping of a dictionary of substrings within a column.
+- **Usage**: `apply_lookup_table_for_columns(df, col_names, to_find_dict, if_not_in_dict='Other', new_column_name='Mapping')`
+- **Example**: `apply_lookup_table_for_columns(df, col_names, {'spend': 'spd', 'clicks': 'clk'}, if_not_in_dict='Other', new_column_name='Metrics Short')`
+
+---
+
+## 19. aggregate_daily_to_wc_wide
+- **Description**: Aggregates daily data into weekly data, grouping and summing specified columns, starting on a specified day of the week.
+- **Usage**: `aggregate_daily_to_wc_wide(df, date_column, group_columns, sum_columns, wc, aggregation='sum', include_totals=False)`
+- **Example**: `aggregate_daily_to_wc_wide(df, 'date', ['platform'], ['cost', 'impressions', 'clicks'], 'mon', 'average', True)`
+
+---
+
+## 20. merge_cols_with_seperator
+- **Description**: Merges multiple columns in a DataFrame into one column with a separator `_`. Useful for lookup tables.
+- **Usage**: `merge_cols_with_seperator(df, col_names, seperator='_', output_column_name='Merged', starting_prefix_str=None, ending_prefix_str=None)`
+- **Example**: `merge_cols_with_seperator(df, ['Campaign', 'Product'], seperator='|', output_column_name='Merged Columns', starting_prefix_str='start_', ending_prefix_str='_end')`
+
+---
+
+## 21. check_sum_of_df_cols_are_equal
+- **Description**: Checks if the sum of two columns in two DataFrames are the same, and provides the sums and differences.
+- **Usage**: `check_sum_of_df_cols_are_equal(df_1, df_2, cols_1, cols_2)`
+- **Example**: `check_sum_of_df_cols_are_equal(df_1, df_2, 'Media Cost', 'Spend')`
+
+---
+
+## 22. convert_2_df_cols_to_dict
+- **Description**: Creates a dictionary using two columns in a DataFrame.
+- **Usage**: `convert_2_df_cols_to_dict(df, key_col, value_col)`
+- **Example**: `convert_2_df_cols_to_dict(df, 'Campaign', 'Channel')`
+
+---
+
+## 23. create_FY_and_H_columns
+- **Description**: Creates financial year, half-year, and financial half-year columns.
+- **Usage**: `create_FY_and_H_columns(df, index_col, start_date, starting_FY, short_format='No', half_years='No', combined_FY_and_H='No')`
+- **Example**: `create_FY_and_H_columns(df, 'Week (M-S)', '2022-10-03', 'FY2023', short_format='Yes', half_years='Yes', combined_FY_and_H='Yes')`
+
+---
+
+## 24. keyword_lookup_replacement
+- **Description**: Updates chosen values in a specified column of the DataFrame based on a lookup dictionary.
+- **Usage**: `keyword_lookup_replacement(df, col, replacement_rows, cols_to_merge, replacement_lookup_dict, output_column_name='Updated Column')`
+- **Example**: `keyword_lookup_replacement(df, 'channel', 'Paid Search Generic', ['channel', 'segment', 'product'], qlik_dict_for_channel, output_column_name='Channel New')`
+
+---
+
+## 25. create_new_version_of_col_using_LUT
+- **Description**: Creates a new column in a DataFrame by mapping values from an old column using a lookup table.
+- **Usage**: `create_new_version_of_col_using_LUT(df, keys_col, value_col, dict_for_specific_changes, new_col_name='New Version of Old Col')`
+- **Example**: `create_new_version_of_col_using_LUT(df, 'Campaign Name', 'Campaign Type', search_campaign_name_retag_lut, 'Campaign Name New')`
+
+---
+
+## 26. convert_df_wide_2_long
+- **Description**: Converts a DataFrame from wide to long format.
+- **Usage**: `convert_df_wide_2_long(df, value_cols, variable_col_name='Stacked', value_col_name='Value')`
+- **Example**: `convert_df_wide_2_long(df, ['Media Cost', 'Impressions', 'Clicks'], variable_col_name='Metric')`
+
+---
+
+## 27. manually_edit_data
+- **Description**: Enables manual updates to DataFrame cells by applying filters and editing a column.
+- **Usage**: `manually_edit_data(df, filters_dict, col_to_change, new_value, change_in_existing_df_col='No', new_col_to_change_name='New', manual_edit_col_name=None, add_notes='No', existing_note_col_name=None, note=None)`
+- **Example**: `manually_edit_data(df, {'OBS': ' <= datetime(2023,1,23)', 'File_Name': ' == France media'}, 'Master Include', 1, change_in_existing_df_col='Yes', new_col_to_change_name='Master Include', manual_edit_col_name='Manual Changes')`
+
+---
+
+## 28. format_numbers_with_commas
+- **Description**: Formats numeric data into numbers with commas and specified decimal places.
+- **Usage**: `format_numbers_with_commas(df, decimal_length_chosen=2)`
+- **Example**: `format_numbers_with_commas(df, 1)`
+
+---
+
+## 29. filter_df_on_multiple_conditions
+- **Description**: Filters a DataFrame based on multiple conditions from a dictionary.
+- **Usage**: `filter_df_on_multiple_conditions(df, filters_dict)`
+- **Example**: `filter_df_on_multiple_conditions(df, {'OBS': ' <= datetime(2023,1,23)', 'File_Name': ' == France media'})`
+
+---
+
+## 30. read_and_concatenate_files
+- **Description**: Reads and concatenates all files of a specified type in a folder.
+- **Usage**: `read_and_concatenate_files(folder_path, file_type='csv')`
+- **Example**: `read_and_concatenate_files(folder_path, file_type='csv')`
+
+---
+
+## 31. remove_zero_values
+- **Description**: Removes rows with zero values in a specified column.
+- **Usage**: `remove_zero_values(data_frame, column_to_filter)`
+- **Example**: `remove_zero_values(df, 'Funeral_Delivery')`
+
+---
+
+## 32. upgrade_outdated_packages
+- **Description**: Upgrades all outdated packages in the environment.
+- **Usage**: `upgrade_outdated_packages()`
+- **Example**: `upgrade_outdated_packages()`
+
+---
+
+## 33. convert_mixed_formats_dates
+- **Description**: Converts a mix of US and UK date formats to datetime.
+- **Usage**: `convert_mixed_formats_dates(df, date_col)`
+- **Example**: `convert_mixed_formats_dates(df, 'OBS')`
+
+---
+
+## 34. fill_weekly_date_range
+- **Description**: Fills in missing weeks with zero values.
+- **Usage**: `fill_weekly_date_range(df, date_column, freq)`
+- **Example**: `fill_weekly_date_range(df, 'OBS', 'W-MON')`
+
+---
+
+## 35. add_prefix_and_suffix
+- **Description**: Adds prefixes and/or suffixes to column headers.
+- **Usage**: `add_prefix_and_suffix(df, prefix='', suffix='', date_col=None)`
+- **Example**: `add_prefix_and_suffix(df, prefix='media_', suffix='_spd', date_col='obs')`
+
+---
+
+## 36. create_dummies
+- **Description**: Converts time series into binary indicators based on a threshold.
+- **Usage**: `create_dummies(df, date_col=None, dummy_threshold=0, add_total_dummy_col='No', total_col_name='total')`
+- **Example**: `create_dummies(df, date_col='obs', dummy_threshold=100, add_total_dummy_col='Yes', total_col_name='med_total_dum')`
+
+---
+
+## 37. replace_substrings
+- **Description**: Replaces substrings in a column of strings using a dictionary and can change column values to lowercase.
+- **Usage**: `replace_substrings(df, column, replacements, to_lower=False, new_column=None)`
+- **Example**: `replace_substrings(df, 'Influencer Handle', replacement_dict, to_lower=True, new_column='Short Version')`
+
+---
+
+## 38. `add_total_column
+- **Description**: Sums all columns (excluding a specified column) to create a total column.
+- **Usage**: `add_total_column(df, exclude_col=None, total_col_name='Total')`
+- **Example**: `add_total_column(df, exclude_col='obs', total_col_name='total_media_spd')`
+
+---
+
+## 39. apply_lookup_table_based_on_substring
+- **Description**: Maps substrings in a column to values using a lookup dictionary.
+- **Usage**: `apply_lookup_table_based_on_substring(df, column_name, category_dict, new_col_name='Category', other_label='Other')`
+- **Example**: `apply_lookup_table_based_on_substring(df, 'Campaign Name', campaign_dict, new_col_name='Campaign Name Short', other_label='Full Funnel')`
+
+---
+
+## 40. compare_overlap
+- **Description**: Compares matching rows and columns in two DataFrames and outputs the differences.
+- **Usage**: `compare_overlap(df1, df2, date_col)`
+- **Example**: `compare_overlap(df_1, df_2, 'obs')`
+
+---
+
+## 41. week_commencing_2_week_commencing_conversion
+- **Description**: Converts a week commencing column to a different start day.
+- **Usage**: `week_commencing_2_week_commencing_conversion(df, date_col, week_commencing='sun')`
+- **Example**: `week_commencing_2_week_commencing_conversion(df, 'obs', week_commencing='mon')`
+
+---
+
+## 42. plot_chart
+- **Description**: Plots various chart types including line, area, scatter, and bar.
+- **Usage**: `plot_chart(df, date_col, value_cols, chart_type='line', title='Chart', x_title='Date', y_title='Values', **kwargs)`
+- **Example**: `plot_chart(df, 'obs', df.cols, chart_type='line', title='Spend Over Time', x_title='Date', y_title='Spend')`
+
+---
+
+## 43. plot_two_with_common_cols
+- **Description**: Plots charts for two DataFrames based on common column names.
+- **Usage**: `plot_two_with_common_cols(df1, df2, date_column, same_axis=True)`
+- **Example**: `plot_two_with_common_cols(df_1, df_2, date_column='obs')`
+
+---
+
+## Data Pulling
+
+## 1. pull_fred_data
+- **Description**: Fetch data from FRED using series ID tokens.
+- **Usage**: pull_fred_data(week_commencing, series_id_list)
+- **Example**: pull_fred_data('mon', ['GPDIC1', 'Y057RX1Q020SBEA', 'GCEC1', 'ND000333Q', 'Y006RX1Q020SBEA'])
+
+---
+
+## 2. pull_boe_data
+- **Description**: Fetch and process Bank of England interest rate data.
+- **Usage**: pull_boe_data(week_commencing)
+- **Example**: pull_boe_data('mon')
+
+---
+
+## 3. pull_oecd
+- **Description**: Fetch macroeconomic data from OECD for a specified country.
+- **Usage**: pull_oecd(country='GBR', week_commencing='mon', start_date='2020-01-01')
+- **Example**: pull_oecd('GBR', 'mon', '2000-01-01')
+
+---
+
+## 4. get_google_mobility_data
+- **Description**: Fetch Google Mobility data for the specified country.
+- **Usage**: get_google_mobility_data(country, wc)
+- **Example**: get_google_mobility_data('United Kingdom', 'mon')
+
+---
+
+## 5. pull_seasonality
+- **Description**: Generate combined dummy variables for seasonality, trends, and COVID lockdowns.
+- **Usage**: pull_seasonality(week_commencing, start_date, countries)
+- **Example**: pull_seasonality('mon', '2020-01-01', ['US', 'GB'])
+
+---
+
+## 6. pull_weather
+- **Description**: Fetch and process historical weather data for the specified country.
+- **Usage**: pull_weather(week_commencing, country)
+- **Example**: pull_weather('mon', 'GBR')
+
+---
+
+## 7. pull_macro_ons_uk
+- **Description**: Fetch and process time series data from the Beta ONS API.
+- **Usage**: pull_macro_ons_uk(additional_list, week_commencing, sector)
+- **Example**: pull_macro_ons_uk(['HBOI'], 'mon', 'fast_food')
+
+---
+
+## 8. pull_yfinance
+- **Description**: Fetch and process time series data from Yahoo Finance.
+- **Usage**: pull_yfinance(tickers, week_start_day)
+- **Example**: pull_yfinance(['^FTMC', '^IXIC'], 'mon')
+
+## 9. pull_ga
+- **Description**: Fetch and process time series data from Yahoo Finance.
+- **Usage**: pull_ga(credentials_file, property_id, start_date, country, metrics)
+- **Example**: pull_ga('GeoExperiment-31c5f5db2c39.json', '111111111', '2023-10-15', 'United Kingdom', ['totalUsers', 'newUsers'])
+
+## Installation
+
+Install the IMS package via pip:
+
+```bash
+pip install imsciences
+```
+
+---
+
+## Useage 
+
+```bash
+from imsciences import * 
+ims = dataprocessing()
+ims_pull = datapull()
+```
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
