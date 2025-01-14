@@ -1,0 +1,38 @@
+[project]
+name = "pyvgrid"
+dynamic = ["version"]
+description = "Vertical hybrid-pressure grids"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies=[
+    "bronx",
+    "ctypesForFortran < 2.0.0",
+]
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Science/Research',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Operating System :: Unix',
+]
+
+[project.scripts]
+mkvgrid = "pyvgrid.cli.mkvgrid:main"
+
+[project.urls]
+source = "https://github.com/ACCORD-NWP/vgrid.git"
+tracker = "https://github.com/ACCORD-NWP/vgrid/issues"
+
+[build-system]
+requires = ["setuptools", "wheel", "scikit-build"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = {attr = "pyvgrid.__version__"}
+
+[project.optional-dependencies]
+graphics = [
+    "bokeh",
+            ]
