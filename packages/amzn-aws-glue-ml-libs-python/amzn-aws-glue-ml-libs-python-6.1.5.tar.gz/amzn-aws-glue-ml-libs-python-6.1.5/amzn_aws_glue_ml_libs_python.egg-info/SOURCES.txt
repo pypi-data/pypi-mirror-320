@@ -1,0 +1,8 @@
+README.md
+setup.py
+amzn_aws_glue_ml_libs_python/__init__.py
+amzn_aws_glue_ml_libs_python.egg-info/PKG-INFO
+amzn_aws_glue_ml_libs_python.egg-info/SOURCES.txt
+amzn_aws_glue_ml_libs_python.egg-info/dependency_links.txt
+amzn_aws_glue_ml_libs_python.egg-info/requires.txt
+amzn_aws_glue_ml_libs_python.egg-info/top_level.txt
