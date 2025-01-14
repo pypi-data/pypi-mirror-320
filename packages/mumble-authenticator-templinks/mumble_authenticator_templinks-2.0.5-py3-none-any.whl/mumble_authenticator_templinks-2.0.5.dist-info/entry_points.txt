@@ -1,0 +1,3 @@
+[console_scripts]
+authenticator=mumble_authenticator_templinks.main:main
+
