@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+tinyGraphs/__init__.py
+tinyGraphs/plot.py
+tinyGraphs.egg-info/PKG-INFO
+tinyGraphs.egg-info/SOURCES.txt
+tinyGraphs.egg-info/dependency_links.txt
+tinyGraphs.egg-info/requires.txt
+tinyGraphs.egg-info/top_level.txt
+tinygraphs.egg-info/PKG-INFO
+tinygraphs.egg-info/SOURCES.txt
+tinygraphs.egg-info/dependency_links.txt
+tinygraphs.egg-info/requires.txt
+tinygraphs.egg-info/top_level.txt
