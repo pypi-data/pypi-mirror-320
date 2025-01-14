@@ -1,0 +1,2 @@
+[console_scripts]
+esxi-testing-toolkit = esxi_testing_toolkit.__main__:main
