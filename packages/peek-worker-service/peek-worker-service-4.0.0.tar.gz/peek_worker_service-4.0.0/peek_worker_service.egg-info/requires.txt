@@ -1,0 +1,2 @@
+peek-plugin-base==0.0.*,>=0.0.0
+peek-platform==0.0.*,>=0.0.0
