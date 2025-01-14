@@ -1,0 +1,21 @@
+Metadata-Version: 2.2
+Name: stacia
+Version: 0.0.1a0
+Summary: A library for STACiA
+Author-email: STACiA <stacia.dev@gmail.com>
+Project-URL: homepage, https://github.com/staciax/stacia-library
+Project-URL: repository, https://github.com/staciax/stacia-library
+Project-URL: issues, https://github.com/staciax/stacia-library/issues
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
