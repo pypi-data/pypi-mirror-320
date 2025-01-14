@@ -1,0 +1,12 @@
+fractal_converters_tools/__init__.py,sha256=1s9aW8_MUizDDYp9UG01U2oM94HB2cv35tm9RcpykJA,491
+fractal_converters_tools/grid_utils.py,sha256=I96DPllyf1eaQTJ4UDxm4m1IGR3yBEL20rZmDpQXm6s,4293
+fractal_converters_tools/image.py,sha256=labSWTiJu4ga465tUJ16mcTM0DuaFkLho853QVbEFlU,2101
+fractal_converters_tools/microplate_utils.py,sha256=rpJikpsobekEEH4Rm3g4rOlPBQoZdQ-w2K-IZ4YruNw,966
+fractal_converters_tools/ome_meta_utils.py,sha256=ySHNnEpyuIkjM8UmatER1cUkek8WRua85SZiadDzeIs,3751
+fractal_converters_tools/py.typed,sha256=esB4cHc6c07uVkGtqf8at7ttEnprwRxwk8obY8Qumq4,187
+fractal_converters_tools/tiles.py,sha256=-4qjCTXAl7A5GKtJBGFAXt2C7YpnB11pxS6w2T9mdrA,15304
+fractal_converters_tools/tiles_utils.py,sha256=sgMh79V0xFEPtk8qLcevRhSea32DsxIc8QxNjH78lXg,6968
+fractal_converters_tools-0.1.1.dist-info/METADATA,sha256=dv0ZpneP9bQR01L45MyY6Nh0YrDd9PNhzZqHfvmK33M,2314
+fractal_converters_tools-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+fractal_converters_tools-0.1.1.dist-info/licenses/LICENSE,sha256=UgN_a1QCeNh9rZWfz-wORQFxE3elQzLWPQaoK6N6fxQ,1502
+fractal_converters_tools-0.1.1.dist-info/RECORD,,
