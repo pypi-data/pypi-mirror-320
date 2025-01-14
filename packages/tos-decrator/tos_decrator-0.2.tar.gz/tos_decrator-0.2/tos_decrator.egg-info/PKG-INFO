@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: tos-decrator
+Version: 0.2
+Summary: A simple tos decrator to download file,process and upload
+Author: Yukun Li
+Author-email: liyukun@mathmagical.com
+Description-Content-Type: text/markdown
+
+## Simple decrator of tos download,process and upload
+### Usage:
+```
+    from PIL import Image
+    @tos_process_decorator()
+    def process_data(local_file_path, *args, **kwargs):
+        # 这里进行数据处理
+        # 假设处理后的数据保存在临时文件中
+        test_png = Image.open(local_file_path)
+        return test_png
+
+    # 调用装饰过的函数
+    object_key = 'rendering/cam15/02a5ac47db6e09d5235bea600068dd0cdad7682dfa265d7052c247e3d21abf88/View5_SceneDepth.png'
+    tos_prefix = 'rendering/cam15/02a5ac47db6e09d5235bea600068dd0cdad7682dfa265d7052c247e3d21abf88/'
+    output_key = 'View5_SceneDepth_test.png'
+    suffix = '.png'
+    process_data(object_key=object_key,suffix=suffix, tos_prefix=tos_prefix, output_key=output_key)
+
+    #如果不需要上传操作，仅需要返回处理后的文件（是一个路径），传入upload=False,此时最简单的应用方式：
+    process_data(object_key=object_key,upload=False)
+```

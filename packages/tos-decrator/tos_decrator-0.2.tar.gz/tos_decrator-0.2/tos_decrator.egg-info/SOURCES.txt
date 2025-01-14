@@ -1,0 +1,9 @@
+README.md
+setup.py
+tos_decrator/__init__.py
+tos_decrator/tos_decrator.py
+tos_decrator.egg-info/PKG-INFO
+tos_decrator.egg-info/SOURCES.txt
+tos_decrator.egg-info/dependency_links.txt
+tos_decrator.egg-info/requires.txt
+tos_decrator.egg-info/top_level.txt
