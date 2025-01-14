@@ -1,0 +1,11 @@
+
+exclude tests
+exclude tests/*
+exclude .env
+exclude *.log
+exclude config/*.yml
+recursive-exclude tests *
+
+include *.pye
+recursive-include your_package_name *.pye
+exclude *.py

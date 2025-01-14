@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: QCo
+Version: 0.10.1
+Home-page: https://pypi.org/manage/account/token/
+Author: FF
+Author-email: 
+Requires-Dist: protobuf
+Requires-Dist: cryptography
+Requires-Dist: bs4
+Requires-Dist: urllib3==1.26.16
+Requires-Dist: pydantic
+Requires-Dist: requests
+Requires-Dist: python-box
+Requires-Dist: PySocks
+Requires-Dist: loguru
