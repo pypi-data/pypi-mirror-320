@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: bovaqulov
+Version: 0.1.0
+Summary: 
+Author: Muhammadali
+Author-email: 77142265+bovaqulov@users.noreply.github.com
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pytest (>=8.3.4,<9.0.0)
+Description-Content-Type: text/markdown
+
+
