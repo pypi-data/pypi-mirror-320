@@ -1,0 +1,8 @@
+caddysnake/caddysnake-cli,sha256=i50dT0U0q_AJtdYOx49jQv5DTECbv51Peg_5BOTd0aI,47617200
+caddysnake/cli.py,sha256=O27ZDOABz3lRkXccoZlM6aGUxrMA1N_cukA6ZgyABJs,301
+caddysnake/dummy.cpython-313-x86_64-linux-gnu.so,sha256=vH4L2T73kfINVT2IOWVbq9cWUcT2xVPLbWJ61YpdXPk,15824
+caddysnake-0.1.5.dist-info/entry_points.txt,sha256=x8Zh_dSfqug8ky6ec8WLp3Meicayr0rSzfRy-p_NKJM,51
+caddysnake-0.1.5.dist-info/RECORD,,
+caddysnake-0.1.5.dist-info/METADATA,sha256=55PzrmFhmfdNUYZePrMtAISHmqJ47RUO1r2kShdzZyo,813
+caddysnake-0.1.5.dist-info/WHEEL,sha256=aY0Wh7Yr1AtPNUbBLmb6eNBX5mR_Lo1wDY5UuFMnjSo,151
+caddysnake-0.1.5.dist-info/top_level.txt,sha256=BltHImwsQ_EqumiuaWvl2gdmY2G9iiVtx3PNiexzsDY,11
