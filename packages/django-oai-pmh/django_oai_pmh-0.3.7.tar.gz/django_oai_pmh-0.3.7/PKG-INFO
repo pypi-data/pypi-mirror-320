@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: django_oai_pmh
+Version: 0.3.7
+Summary: Add OAI-PMH endpoint to Django.
+Author-email: "J. Nathanael Philipp" <nathanael@philipp.land>
+License: GPLv3+
+Project-URL: Homepage, http://github.com/jnphilipp/django_oai_pmh
+Project-URL: Bug Tracker, http://github.com/jnphilipp/django_oai_pmh/issues
+Keywords: django,OAI-PMH
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 5.0
+Classifier: Framework :: Django :: 5.1
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: lxml~=5.3.0
+Requires-Dist: psycopg[binary]~=3.2.3
+
+# django oai_pmh app
+
+![Tests](https://github.com/jnphilipp/django_oai_pmh/actions/workflows/django.yml/badge.svg)
+[![pypi Version](https://img.shields.io/pypi/v/django-oai-pmh.svg?logo=pypi&logoColor=white)](https://pypi.org/project/django-oai-pmh/)
+
+* Open Archives Initiative Protocol for Metadata Harvesting
+* https://www.openarchives.org/pmh/
