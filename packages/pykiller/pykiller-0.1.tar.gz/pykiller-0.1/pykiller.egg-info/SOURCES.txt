@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pykiller.egg-info/PKG-INFO
+pykiller.egg-info/SOURCES.txt
+pykiller.egg-info/dependency_links.txt
+pykiller.egg-info/requires.txt
+pykiller.egg-info/top_level.txt

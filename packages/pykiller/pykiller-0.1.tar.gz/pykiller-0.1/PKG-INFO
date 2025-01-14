@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: pykiller
+Version: 0.1
+License-File: LICENSE
+Requires-Dist: psutil
+Requires-Dist: pygame
+Dynamic: requires-dist
