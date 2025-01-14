@@ -1,0 +1,2 @@
+peek-plugin-base==0.0.*,>=0.0.0
+python-ldap
