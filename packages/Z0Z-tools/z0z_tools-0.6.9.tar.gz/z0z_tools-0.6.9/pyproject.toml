@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Z0Z_tools"
+description = "Solve some common Python development frustrations"
+readme = "README.md"
+requires-python = ">=3.10, <3.13" # numba is part of numpy
+version = "0.6.9"
+authors = [{ name = "Hunter Hogan", email = "HunterHogan@pm.me" }]
+classifiers = [
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = ["numpy", "resampy", "soundfile", "packaging", "pytest>=7.0"]
+
+[project.optional-dependencies]
+testing = ["pytest>=7.0", "pytest-cov", "pytest-mock", "pytest-xdist", "pandas"]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["*"]
+
+[project.urls]
+homepage = "https://github.com/hunterhogan/Z0Z_tools"
+repository = "https://github.com/hunterhogan/Z0Z_tools.git"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["--color=yes", "-n 8"]
+
+[tool.coverage.run]
+data_file = "tests/coverage/.coverage"
+omit = ["Z0Z_tools/__init__.py", "tests/*"]
+
+[tool.coverage.paths]
+source = ["Z0Z_tools"]
