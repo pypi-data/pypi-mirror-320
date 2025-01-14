@@ -1,0 +1,8 @@
+doc2dict/__init__.py,sha256=caO2SLD2F2hY9nfBtp6EjUkCK2sFpwbhCfkv_31Ju2Y,115
+doc2dict/html_parser.py,sha256=F0JChh0JHRiyM-qYmjODsHVAGSwyghXSMBkfmvMJVrM,11419
+doc2dict/visualizer.py,sha256=sHpZZBH_SdPZvzmotkWMJCQo0-nUnqrQEHNdJQwlHTk,4404
+doc2dict/xml_parser.py,sha256=JRJB2jL3YjoTibWpR2tVviUI7gKx_4cLNBbudiOwc8s,120
+doc2dict-0.1.5.dist-info/METADATA,sha256=dAHza70Dv4G6qPXViblI4Vzq2sWMRbDA4wgU0fFG20I,127
+doc2dict-0.1.5.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+doc2dict-0.1.5.dist-info/top_level.txt,sha256=H-YBz0NjWBgp9juTWN1dJ8jUDewYjAt8-EqhGuGVwVY,9
+doc2dict-0.1.5.dist-info/RECORD,,
