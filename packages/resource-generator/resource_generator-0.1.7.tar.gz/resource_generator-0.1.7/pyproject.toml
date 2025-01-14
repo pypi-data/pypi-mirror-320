@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "resource-generator"
+version = "0.1.7"
+description = "Python CLI for generate resource such as model, controller, service, schema and repository"
+authors = ["Ratana Khun <khunratana168.edu@gmail.com>"]
+readme = "README.md"
+packages = [
+    {include = "resource_generator"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.15.1"
+rich = "^13.9.4"
+pydantic = "^2.10.4"
+
+[tool.poetry.scripts]
+ratana-pls = "resource_generator.main:app"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+isort = "^5.13.2"
+pytest = "^8.3.4"
+setuptools = "^75.6.0"
+build = "^1.2.2.post1"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
