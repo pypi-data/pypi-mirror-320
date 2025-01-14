@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: clipreplace
+Version: 0.1.5
+Summary: Replace a section of text in a file with clipboard content.
+Project-URL: Homepage, https://github.com/l-lumin/clipreplace
+Project-URL: Issues, https://github.com/l-lumin/clipreplace/issues
+Author: Vu Bao Long
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: pyperclip>=1.9.0
+Description-Content-Type: text/markdown
+
+# ClipReplace
+[![Test](https://github.com/l-lumin/clipreplace/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/l-lumin/clipreplace/actions/workflows/test.yml)
+
+**ClipReplace** is a simple command-line tool to replace a section of text in a file with clipboard content.
+
+## Installation
+
+Install `clipreplace` using `pipx`:
+
+```sh
+pipx install clipreplace
+```
+
+## Usage
+
+1. Copy text to your clipboard
+2. Run the command:
+
+```sh
+clipreplace --file <file_path>
+```
+
+3. If the first line of the clipboard matches a line in the file, the match section will be replaced with the clipboard content.
+
+## License
+
+This project is licensed under the MIT License.
