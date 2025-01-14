@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+xtn_fun_task_pro.egg-info/PKG-INFO
+xtn_fun_task_pro.egg-info/SOURCES.txt
+xtn_fun_task_pro.egg-info/dependency_links.txt
+xtn_fun_task_pro.egg-info/requires.txt
+xtn_fun_task_pro.egg-info/top_level.txt
