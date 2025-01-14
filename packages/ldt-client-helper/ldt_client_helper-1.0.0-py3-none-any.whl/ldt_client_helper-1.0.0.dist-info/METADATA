@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ldt_client_helper
+Version: 1.0.0
+Summary: LiveDataAuthClient class to help with authentication and authorization for LiveData Technologies APIs
+Author-email: Live Data Technologies <support@livedatatechnologies.com>
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: ldt-identity-client >=1.0.2
+
