@@ -1,0 +1,195 @@
+# bq_nb_lib
+
+`bq_nb_lib` is a Python library designed to streamline cloud operations, notifications, and integrations. It provides utility classes for managing AWS S3 interactions, secrets retrieval, logging, and notifications via Slack and AlertOps. The library also includes a Mixpanel API handler for seamless data fetching and updates.
+
+---
+
+## Features
+
+### 1. AWS S3 Management (`S3Handler`)
+
+- Upload files to AWS S3.
+- Automatically retrieves AWS credentials via Google Secret Manager.
+- Notifies users on upload success or failure.
+
+### 2. Secrets Management (`SecretManager`)
+
+- Securely retrieves secrets from Google Cloud Secret Manager.
+- Supports fallback to environment variables if secrets are unavailable.
+- Flexible authentication using service account JSON or application default credentials.
+
+### 3. Logging (`Logger`)
+
+- A singleton logger for centralized, structured logging.
+- Configurable log file prefix with rotating file handlers.
+- Logs to both files and console.
+
+### 4. Slack Notifications (`SlackNotifier`)
+
+- Sends success, error, and warning messages to Slack channels.
+- Supports direct webhook URLs or secrets stored in Google Cloud Secret Manager.
+- Test mode for validating messages without real notifications.
+
+### 5. Critical Alerts (`AlertOpsNotifier`)
+
+- Sends critical alerts to AlertOps and manages their lifecycle.
+- Configurable alert closure time to automatically close alerts after a specified interval.
+- Detailed notifications with customizable severity, priority, and source details.
+
+### 6. Mixpanel Integration (`MixpanelHandler`) _(In Progress)_
+
+- Fetches data from Mixpanel and saves it as structured JSON or CSV files.
+- Processes JSON data for reporting and analysis.
+- Uploads data to BigQuery with deduplication.
+- Supports batch updates and property deletions for Mixpanel users.
+
+---
+
+## Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/your-repository/bq_nb_lib.git
+cd bq_nb_lib
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Usage
+
+### Initialize Components
+
+Use the `initialize_components` function to set up the library's components.
+
+```python
+from bq_nb_lib import initialize_components
+
+components = initialize_components(
+    secret_project_name="my_project",
+    bucket_name="my_logs_bucket",
+    s3_bucket_name="my_data_bucket",
+    s3_region="us-east-1",
+    access_key_id_secret_name="aws_access_key",
+    secret_key_secret_name="aws_secret_key",
+    slack_channel_secret_list=["slack_channel_1"],
+    alert_ops_api_key_secret_name="alert_ops_api_key",
+    log_file_prefix="my_logs"
+)
+
+logger = components["logger"]
+logger.info("Library initialized successfully!")
+```
+
+### Upload a File to S3
+
+```python
+s3_handler = components["s3_handler"]
+s3_handler.upload_to_s3(file_path="path/to/file.csv")
+```
+
+### Send Notifications
+
+#### Slack Notification
+
+```python
+slack_notifier = components["slack_notifier"]
+slack_notifier.success("File uploaded successfully to S3.")
+```
+
+#### AlertOps Notification
+
+```python
+alert_ops_notifier = components["alert_ops_notifier"]
+alert_ops_notifier.send_notification(
+    source="Data Pipeline",
+    severity="Critical",
+    details="Data pipeline failed due to missing input file.",
+    priority="High"
+)
+```
+
+### Work with Secrets
+
+```python
+secret_manager = components["secret_manager"]
+secret_value = secret_manager.get_secret("my_secret_name", fallback_env_var="MY_SECRET_ENV_VAR")
+```
+
+### Process Mixpanel Data _(In Progress)_
+
+#### Fetch Data from Mixpanel
+
+```python
+mixpanel_handler = MixpanelHandler(
+    mixpanel_token_secret_name="mixpanel_token",
+    logger=components["logger"],
+    slack_notifier=components["slack_notifier"],
+    alert_ops_notifier=components["alert_ops_notifier"],
+    secret_manager=components["secret_manager"]
+)
+mixpanel_handler.fetch_mixpanel_data(
+    mp_project_id="project_id",
+    mp_workspace="workspace_id",
+    mp_region="us",
+    mp_bookmark="bookmark_id",
+    output_json="data.json"
+)
+```
+
+#### Process JSON to CSV
+
+```python
+mixpanel_handler.process_mixpanel_json(json_file="data.json", csv_file="data.csv")
+```
+
+---
+
+## Configuration
+
+### Required Secrets
+
+Ensure the following secrets are set in Google Secret Manager or environment variables:
+
+- `aws_access_key`
+- `aws_secret_key`
+- `alert_ops_api_key`
+- `mixpanel_token` (for Mixpanel functionality)
+
+### Environment
+
+- Python >= 3.7
+- Google Cloud SDK with Secret Manager API enabled
+- AWS S3 setup
+
+---
+
+## Roadmap
+
+- **Complete MixpanelHandler**:
+  - Add more robust API handling and error management.
+  - Include support for Mixpanel Engage operations.
+- **Add Apple Server and Apple Connect Handlers**:
+  - Support Apple APIs for server-side interactions.
+- **Enhance Logging**:
+  - Add structured JSON logging for better integration with cloud logging tools.
+
+---
+
+## Contributing
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes and open a pull request.
+
+---
+
+## License
+
+This library is licensed under the MIT License. See the LICENSE file for details.
