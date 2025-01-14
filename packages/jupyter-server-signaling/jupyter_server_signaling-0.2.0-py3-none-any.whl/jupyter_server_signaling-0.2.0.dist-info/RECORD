@@ -1,0 +1,8 @@
+jupyter_server_signaling/__init__.py,sha256=clo9P3I8yUb2WzJdWA98l47MjGvZYFFaPscZ6r2Yrq4,529
+jupyter_server_signaling/app.py,sha256=h48mjG55bYWsvT4sN79Jo4bUKtALgQ9FIzBy-8a5_Gk,1666
+jupyter_server_signaling/handlers.py,sha256=-jaZyG6qINLKzEDOXcpWz_KgmRHJoBEXqf3ddHZOzMs,3029
+jupyter_server_signaling-0.2.0.data/data/etc/jupyter/jupyter_server_config.d/jupyter_shared_drive.json,sha256=l67JTdvIxbz2x6rr5ucMOvUz_du7RABTeSp6N1nihmE,99
+jupyter_server_signaling-0.2.0.dist-info/METADATA,sha256=T8fQLHM_Uw5b9--c2-xiogwE4UccpOjAoIB8D2rdkhU,4257
+jupyter_server_signaling-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+jupyter_server_signaling-0.2.0.dist-info/licenses/LICENSE,sha256=mhO0ZW9EiWOPg0dUgB-lNbJ0CGwRmTdbeAg_se1SOnY,2833
+jupyter_server_signaling-0.2.0.dist-info/RECORD,,
