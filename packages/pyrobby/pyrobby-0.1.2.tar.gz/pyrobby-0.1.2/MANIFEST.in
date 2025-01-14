@@ -1,0 +1,2 @@
+recursive-include robotlib/icons *.png
+include robotlib/icons/*.png 
