@@ -1,0 +1,9 @@
+certbot_dns_spaceship/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+certbot_dns_spaceship/authenticator.py,sha256=m8BjDxr_gaCMJXWeYTvFdVraBcIDcgJp2XROBfRT7P8,1526
+certbot_dns_spaceship/client.py,sha256=FT1HnN05IUJqkNwMDEDVWDaXl26y11je5ES-uNWLW3A,3106
+certbot_dns_spaceship-1.0.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+certbot_dns_spaceship-1.0.1.dist-info/METADATA,sha256=rwPQ4V-DaM_DFC-HB5aEsgS6ESZc87DoKb0mKHQwG2A,4467
+certbot_dns_spaceship-1.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+certbot_dns_spaceship-1.0.1.dist-info/entry_points.txt,sha256=v_oy1Xue5NKXnBXoVmZ2uUs_mZas2DdyA_jO3P3MEtE,96
+certbot_dns_spaceship-1.0.1.dist-info/top_level.txt,sha256=8lQsVECpa_3bH4hstFQ3F-b77ccLgAQBgroQvygM93E,22
+certbot_dns_spaceship-1.0.1.dist-info/RECORD,,
