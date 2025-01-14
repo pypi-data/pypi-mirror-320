@@ -1,0 +1,10 @@
+__pycache__
+.*_cache
+.pytype
+.venv
+session
+.DS_Store
+.idea
+.vscode
+dist
+.ipynb*
