@@ -1,0 +1,10 @@
+lambda_otel_lite/__init__.py,sha256=fnCxBITYyWme38xTv86ZwpdEWglm8EJIkT2QXj4kcOk,1843
+lambda_otel_lite/extension.py,sha256=2Eqd6eqBIBvRKduDcjg-qGntaB7IE9CrLqB2zosP78o,4834
+lambda_otel_lite/handler.py,sha256=-PLhNql6r_Y9lC9d-17-QvjY3zgG_oVdVtc2GlyXB8o,8292
+lambda_otel_lite/processor.py,sha256=iZHjFEj_V2VvUvjF4aWkJAHOWdi5m1OXQBbBR7nsR90,3257
+lambda_otel_lite/py.typed,sha256=Nqnn8clbgv-5l0PgxcTOldg8mkMKrFn4TvPL-rYUUGg,1
+lambda_otel_lite/telemetry.py,sha256=e59rpthUMpN3mWQKyldWYjDG91JY9D5oqqzDvgqz7p4,4267
+lambda_otel_lite-0.3.0.dist-info/METADATA,sha256=eCFJNJFijf5auecJpzGQe1dJPojQUIikx7CTQo6K0nc,11746
+lambda_otel_lite-0.3.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+lambda_otel_lite-0.3.0.dist-info/licenses/LICENSE,sha256=ba95ID8fTIM1EDGxoGGMnrmOChQTnn_MZXdsIISkvis,1075
+lambda_otel_lite-0.3.0.dist-info/RECORD,,
