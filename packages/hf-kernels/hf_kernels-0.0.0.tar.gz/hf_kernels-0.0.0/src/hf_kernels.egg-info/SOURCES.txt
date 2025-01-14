@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/hf-kernels/__init__.py
+src/hf-kernels/utils.py
+src/hf_kernels.egg-info/PKG-INFO
+src/hf_kernels.egg-info/SOURCES.txt
+src/hf_kernels.egg-info/dependency_links.txt
+src/hf_kernels.egg-info/top_level.txt
