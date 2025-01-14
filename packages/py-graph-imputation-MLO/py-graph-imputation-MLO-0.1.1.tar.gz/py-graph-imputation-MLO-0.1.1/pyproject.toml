@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-graph-imputation-MLO"
+version = "0.1.1"
+description = ""
+authors = [
+  { name = "Regev Yehezkel Imra", email = "regevel2006@gmail.com" }
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "py-graph-imputation",
+    "cython == 0.29.32",
+    "numpy >= 1.20.2",
+    "pandas",
+    "tqdm"
+]
+requires-python = ">=3.8"

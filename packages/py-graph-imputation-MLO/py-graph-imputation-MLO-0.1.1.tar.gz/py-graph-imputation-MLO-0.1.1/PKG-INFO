@@ -1,0 +1,118 @@
+Metadata-Version: 2.1
+Name: py-graph-imputation-MLO
+Version: 0.1.1
+Author: Regev Yehezkel Imra
+Author-email: Regev Yehezkel Imra <regevel2006@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Regev32
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: py-graph-imputation
+Requires-Dist: cython==0.29.32
+Requires-Dist: numpy>=1.20.2
+Requires-Dist: pandas
+Requires-Dist: tqdm
+
+# Py-Graph-Imputation-MLO
+
+## Overview
+
+`py-graph-imputation-MLO` is a Python package for graph-based imputation of missing data in genetic datasets. It leverages the `py-graph-imputation` library and provides additional functionality for filtering and processing imputed results.
+
+## Installation
+
+To install the package, use the following command:
+
+```bash
+pip install py-graph-imputation-MLO
+```
+
+## Dependencies
+
+The package requires the following dependencies:
+
+- `py-graph-imputation`
+- `cython == 0.29.32`
+- `numpy >= 1.20.2`
+- `pandas`
+- `tqdm`
+
+These dependencies will be installed automatically when you install the package.
+
+## Usage
+
+### Running the Imputation
+
+To run the imputation process, use the `RunGrim.py` script. You can configure the process using a JSON configuration file. Here is an example of how to run the script:
+
+```bash
+python src/py-graph-imputation-MLO/RunGrim.py
+```
+
+### Configuration
+
+The configuration file should be in JSON format and include the following fields:
+
+- `freq_file`: Path to the frequency file.
+- `imputation_in_file`: Path to the input file for imputation.
+- `imputation_out_path`: Path to the output directory for imputation results.
+- `imputation_out_hap_freq_filename`: Filename for the haplotype frequency output.
+- `imputation_out_umug_freq_filename`: Filename for the UMUG frequency output.
+- `imputation_out_umug_pops_filename`: Filename for the UMUG populations output.
+- `imputation_out_hap_pops_filename`: Filename for the haplotype populations output.
+- `imputation_out_miss_filename`: Filename for the missing data output.
+- `output_MUUG`: Boolean flag to enable/disable MUUG output.
+- `output_haplotypes`: Boolean flag to enable/disable haplotype output.
+- `number_of_results`: Number of results to output.
+- `number_of_pop_results`: Number of population results to output.
+
+### Example Configuration
+
+Here is an example of a minimal configuration file:
+
+```json
+{
+  "freq_file": "path/to/frequency/file",
+  "imputation_in_file": "path/to/input/file",
+  "imputation_out_path": "path/to/output/directory",
+  "imputation_out_hap_freq_filename": "hap_freq.csv",
+  "imputation_out_umug_freq_filename": "umug_freq.csv",
+  "imputation_out_umug_pops_filename": "umug_pops.csv",
+  "imputation_out_hap_pops_filename": "hap_pops.csv",
+  "imputation_out_miss_filename": "miss.csv",
+  "output_MUUG": true,
+  "output_haplotypes": true,
+  "number_of_results": 10,
+  "number_of_pop_results": 5
+}
+```
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
+## Contact
+
+For any questions or inquiries, please contact Regev Yehezkel Imra at regevel2006@gmail.com.
