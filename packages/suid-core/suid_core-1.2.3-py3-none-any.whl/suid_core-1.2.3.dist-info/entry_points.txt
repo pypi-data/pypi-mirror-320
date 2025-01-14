@@ -1,0 +1,3 @@
+[console_scripts]
+setup=suid_core.setup:generate_protos
+

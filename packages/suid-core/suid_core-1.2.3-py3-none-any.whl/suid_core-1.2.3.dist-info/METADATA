@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: suid-core
+Version: 1.2.3
+Summary: Protobuf implementation for SUID packages
+Author: Henrycke Bozza Schenberk
+Author-email: oschenberk@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: codetiming (>=1.4.0,<1.5.0)
+Requires-Dist: grpcio (==1.62.3)
+Requires-Dist: grpcio-tools (==1.62.3)
+Requires-Dist: opentelemetry-api (==1.27.0)
+Requires-Dist: opentelemetry-distro (==0.48b0)
+Requires-Dist: opentelemetry-instrumentation (==0.48b0)
+Requires-Dist: opentelemetry-sdk (==1.27.0)
+Requires-Dist: protobuf (==4.25.4)
+Description-Content-Type: text/markdown
+
+
