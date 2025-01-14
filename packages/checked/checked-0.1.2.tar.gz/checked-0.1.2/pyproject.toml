@@ -1,0 +1,23 @@
+[project]
+name = "checked"
+version = "0.1.2"
+description = "A simple app to convert HTML files to Spreadsheets, for Fact-Checking"
+authors = [
+    {name = "António Assunção",email = "larus-argentatus@riseup.net"}
+]
+readme = "README.md"
+requires-python = ">=3.13, <3.14"
+dependencies = [
+    "beautifulsoup4 (==4.12.3)",
+    "pandas (==2.2.3)",
+    "odfpy (==1.4.1)",
+]
+
+[tool.poetry.scripts]
+checked-cli = "checked.cli:main"
+checked = "checked.gui:main"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
