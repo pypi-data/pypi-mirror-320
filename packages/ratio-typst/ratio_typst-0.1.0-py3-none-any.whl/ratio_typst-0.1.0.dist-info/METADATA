@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: ratio-typst
+Version: 0.1.0
+Summary: Generate Typst documents from Python using the Ratio theme.
+License: MIT
+Author: Ratio Innovations B.V.
+Author-email: info@ratio-case.nl
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pypst (>=0.6.1,<0.7.0)
+Requires-Dist: typst (>=0.12.2,<0.13.0)
+Project-URL: Repository, https://gitlab.com/ratio-case-os/python/ratio-theme
+Description-Content-Type: text/markdown
+
+# Ratio theme for Typst
+
+Generate Typst documents from Python using the Ratio theme.
+
