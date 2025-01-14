@@ -1,0 +1,22 @@
+[project]
+name = "ytb-gears"
+version = "0.4.2"
+description = "A Python package to interact with YouTube Data API v3."
+readme = "README.md"
+authors = [
+    { name = "Hao Guan", email = "10684225+hguandl@users.noreply.github.com" },
+]
+requires-python = ">=3.9"
+dependencies = [
+    "google-api-python-client>=2.158.0",
+    "google-auth-oauthlib>=1.2.1",
+]
+
+[project.optional-dependencies]
+test = [
+    "tqdm>=4.67.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
