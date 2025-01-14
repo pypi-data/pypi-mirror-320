@@ -1,0 +1,228 @@
+Metadata-Version: 2.1
+Name: cwstorm
+Version: 2.1.0
+Summary: DSL for Storm authoring
+Home-page: https://github.com/ConductorTechnologies/cwstorm
+Author: conductor
+Author-email: info@conductortech.com
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Multimedia :: Graphics :: 3D Rendering
+Description-Content-Type: text/markdown
+Requires-Dist: Click
+Requires-Dist: pyyaml
+Requires-Dist: markdown<4.0.0,>=3.5.2
+
+# Install the job scripting DSL
+
+Storm is a Python DSL to generate a graph of task dependencies. It consists of an API and a command-line interface. The API can be used by other tools to build a graphs of tasks. The command-line interface is convenient for validation, serialization, and more.
+
+`pip install cwstorm`
+
+Now run `storm --version` to test that it works.
+
+## Install for development
+
+If you would like to contribute to the project, it's best to install in *editable* mode in a virtual environment. 
+
+```
+> git clone git@github.com/ConductorTechnologies/cwstorm.git
+> cd cwstorm
+
+# Create a virtual environment
+> python3 -m venv cwstorm.venv
+> . cwstorm.venv/bin/activate
+
+# Install in editable mode
+> pip install -e .
+
+> storm --version
+```
+
+## Quick Start API
+
+Create nodes link them together to create a graph of tasks.
+
+You can add tasks to the job or to other tasks. The job is the root node of the graph.
+
+```python
+from cwstorm.dsl.job import Job
+from cwstorm.dsl.cmd import Cmd
+from cwstorm.dsl.task import Task
+from cwstorm.serializers import default
+
+# Create a job node to hold data about the job
+j = Job("Pitch Black")
+j.metadata({"shot": "0130-28", "code": "PB", "producer": "Matthew Plumber"})
+j.project("Pitch Black")
+j.location("4A:1C:3F:7B:2E:9D")
+j.comment('This is a comment about the job.')
+
+# Add a task as a dependency of the job.
+t = Task("Make Quicktime")
+t.commands(Cmd( "ffmpeg", "-i", "foo.*.exr", "-c:v", "libx264", "-pix_fmt", "yuv420p", "./media/robots.mp4"))
+t.hardware("cw-instance-1")
+t.env({ "PATH": "/usr/local/sbin/ffmpeg" })
+t.output_path("/media/")
+
+serialized = default.serialize(self.job)
+print(serialized)
+```
+
+## Quick Start CLI
+
+### Serialize
+
+Use the `storm` CLI command to serialize one of the example jobs. The pretty option generates human readable JSON output. The filename will be the same as the example but with a `.json` extension, and will be placed in the folder you specify.
+
+```
+> storm serialize -x simple_qt -f pretty ~/Desktop/graphs/
+> cat ~/Desktop//graphs/simple_qt.json
+```
+
+### Validate
+
+Several properties of nodes have validators. The `validate` subcommand Validates a JSON file. 
+
+```bash
+> storm validate /path/to/my_graph.json
+```
+
+You'll see a report in a browser window.
+
+You can output the report to markdown if you prefer. Here's an example [validation report](./VALIDATION_EXAMPLE.md)
+
+In order to validate a graph, the `storm` command uses the DSL to reconstruct the graph from JSON. See `deserializer.py`. 
+
+```python
+from cwstorm.deserializer import deserialize
+
+with open("my_job.json", "r", encoding="utf-8") as fh:
+    data = json.load(fh)
+  
+job = deserialize(data)
+
+print("name", job.name())
+print("comment", job.comment())
+print("num_tasks", job.count_descendents())
+```
+
+### Command-line interface
+
+To see the full list of options, run:
+```bash
+storm serialize --help
+```
+
+### Examples
+
+Look through the examples folder to familiarize yourself with the API. All classes derive from Node.
+## For inherited nodes, see the [current classes documentation](./CLASSES.md)
+
+## Changelog
+
+## Version:2.1.0 -- 13 Jan 2025
+
+* Changed schema_version to dsl_version since it is now only used clientside. Also, we no longer strip off prerelease parts from the version for the dsl_version.
+* Removed default author from job node.
+
+## Version:2.0.4 -- 30 Nov 2024
+
+* remove all traces of slack and shotgrid (#10)
+* Change initial state to status (#9)
+* Change the name of the class doc file from schema.md to classes.md
+* build script uses basecamp api
+
+## Version:1.0.0 -- 26 Oct 2024
+
+* Flatten the structure by removing the data property. The schema now serves our purposes rather than any specific layout tool such as Cytoscape.
+* Conform initial state names to open and holding.
+* Put the step and order properties as children of the coords property.
+
+## Version:0.6.3 -- 25 Jul 2024
+
+* We now coerce initial_state to lowercase so that the status is set correctly on the backend
+
+## Version:0.6.1 -- 10 Jul 2024
+
+* Adds consistent docinfo options for cli and schema docs in JSON
+
+## Version:0.6.0 -- 09 Jul 2024
+
+* Cli can now output schema and docinfo as json - descriptions field added to facilitate this
+* Fix __iter__ and __dict__ so that defaulted attrs return default - with tests
+
+## Version:0.5.2 -- 03 Jul 2024
+
+* Remove integration ID from shotgrid
+
+
+## Version:0.5.0 -- 02 Jul 2024
+
+Adds a shotgrid node.
+
+## Version:0.4.1 -- 30 Jun 2024
+
+* Remove validation for Cmd since it is too restrictive and just gets in the way for now
+* Adds a skulk pre_push script to update version strings, build examples, and generate schema doc
+* Improves the schema doc generation. Now includes base class info.
+* 
+## Version:0.4.0 -- 24 Jun 2024
+
+* Adds semanic coordinates (layout hints)
+
+## Version:0.3.0 -- 22 Jun 2024
+
+* Introduce work_node base_class for better inheritance.
+* Refactor to allow custom types to be more easily added.
+* Updates examples
+* Adds Slack and email nodes
+* Made the Cmd regex more permissive 
+
+## Version:0.2.4 -- 15 Jun 2024
+
+* Fixes a bug where nodes with non-unique names could be created.
+
+## Version:0.2.3 -- 02 Jun 2024
+
+* Adds a script to automatically update the Basecamp Releases thread for this tool.
+* Auto populate the version and schema version as a temporary measure until we managew to lock down a versioning scheme.
+* Fix a regression where a conditional relied on the presence of the position property, which was removed as an optimization.
+
+## Version:0.2.2 -- 30 May 2024
+
+* Adds bool type to ensure preemptible has a valid value in the workflow API
+* Regenerate schema and validation examples.
+* Change the int validation mechanism to be more consistent with other types
+
+## Version:0.2.1 -- 29 May 2024
+
+* Remove unnecessary submission attrs.
+* Adds required field to  the schema.
+* Regenerated validation example and schema html.
+
+## Version:0.2.0 -- 24 May 2024
+
+* Auto document validation and schema
+* Adds output_path, packages, and preemptible to Tasks
+* allow MD5s in the files dict for Uploads
+* Removes relative counts, since this should happen in the composer
+* CLI has a shortcut to output all examples to a folder
+* Remove unused serializers and commandline flag
+
+## Version:0.1.1 -- 23 Jan 2024
+
+* Schema tweaks
+* * Remove environment from job
+* * Remove cleanup from all nodes
+* * Add `upload` node type
+* * Add `lifecycle` property to tasks
+
+## Unreleased:
+
+* 0.0.1-beta.1
+  * Initial CICD setup
+
+
+
+--
