@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+semantipy.egg-info/PKG-INFO
+semantipy.egg-info/SOURCES.txt
+semantipy.egg-info/dependency_links.txt
+semantipy.egg-info/requires.txt
+semantipy.egg-info/top_level.txt
+tests/test_lm_backend.py
+tests/test_lm_prompts.py
+tests/test_ops.py
+tests/test_ops_base.py

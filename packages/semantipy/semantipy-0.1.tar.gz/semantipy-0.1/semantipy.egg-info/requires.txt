@@ -1,0 +1,17 @@
+networkx
+astunparse
+typing-extensions
+langchain
+langchain-openai
+python-dotenv
+numpy
+pandas
+jinja2
+colorlog
+
+[dev]
+pytest
+black
+flake8
+sphinx
+sphinx-markdown-builder
