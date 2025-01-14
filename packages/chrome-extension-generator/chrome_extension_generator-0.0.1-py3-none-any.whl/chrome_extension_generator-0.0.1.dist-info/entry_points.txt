@@ -1,0 +1,5 @@
+[console_scripts]
+chrome-extension-generate = chrome_extension_generator.core:main
+
+[nbdev]
+chrome_extension_generator = chrome_extension_generator._modidx:d
