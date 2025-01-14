@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: acelerai
+Version: 0.0.2
+Summary: short package description
+Author: DaniloAraneda
+Author-email: danilo@alert2gain.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10.7
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-python
+Dynamic: summary
