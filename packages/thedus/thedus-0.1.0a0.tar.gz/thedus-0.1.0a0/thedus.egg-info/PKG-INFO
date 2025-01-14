@@ -1,0 +1,29 @@
+Metadata-Version: 2.2
+Name: thedus
+Version: 0.1.0a0
+Summary: Add your description here
+Author-email: Danila Ganchar <danila.ganchar@gmail.com>
+Maintainer-email: Danila Ganchar <danila.ganchar@gmail.com>
+License: MIT license
+Project-URL: Homepage, https://github.com/d-ganchar/thedus
+Project-URL: Changelog, https://github.com/d-ganchar/thedus/releases
+Project-URL: Issues, https://github.com/d-ganchar/thedus/issues
+Project-URL: CI, https://github.com/d-ganchar/thedus/actions
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Database
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: <3.14,>=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich<14,>=13.9
+Requires-Dist: typer<0.16,>=0.15
+Requires-Dist: clickhouse-driver<0.3,>=0.2.9
+Requires-Dist: ripley==0.2.0a0
+
+# thedus
