@@ -1,0 +1,58 @@
+[tool.poetry]
+name = "ratio-typst"
+version = "0.1.0"
+description = "Generate Typst documents from Python using the Ratio theme."
+authors = ["Ratio Innovations B.V. <info@ratio-case.nl>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://gitlab.com/ratio-case-os/python/ratio-theme"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pypst = "^0.6.1"
+typst = "^0.12.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-doctestplus = "*"
+pytest-watcher = "*"
+raver = "*"
+# pypst = { path = "../pypst", develop = true }
+
+[tool.poetry.group.ci]
+optional = true
+
+[tool.poetry.group.ci.dependencies]
+id = "*" # For OIDC token script. See `publish-oidc` in justfile.
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 100
+select = [
+    "E", # pycodestyle
+    "F", # pyflakes
+]
+target-version = "py311"
+
+[tool.pytest.ini_options]
+addopts = "-s --cov=ratio_typst --cov-report xml:./.pytest_cache/coverage.xml --cov-report term-missing --basetemp ./tests/.temp"
+testpaths = ["tests"]
+markers = ["slow", "format"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+
+[tool.raver]
+module = "ratio_typst"
+ref = "origin/main"
+changelog = "./CHANGELOG.md"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
