@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: gateway_api
+Version: 4.1
+Summary: Gateway API Pulls and Requests
+Author: Nicholas Ramdin
+Author-email: nicholas.ramdin@torch.ai
+Requires-Dist: requests
+
