@@ -1,0 +1,20 @@
+from enum import Enum
+
+class APIService(str, Enum):
+    WILDCARD_INTERNAL_TEST = 'wildcard_internal_test'
+    GITHUB = 'github'
+    STRIPE = 'stripe'
+    SLACK = 'slack'
+    ZOOM = 'zoom'
+    GOOGLE_CALENDAR = 'calendar'
+    SPOTIFY = 'spotify_sonallux'
+    GMAIL = 'gmail'
+    YOUTUBE = 'youtube'
+    NOTION = 'notion'
+    DISCORD = 'discord'
+    TWILIO = 'twilio_messaging'
+    NEW_YORK_TIMES = 'new_york_times'
+    BRAVE_SEARCH = 'brave_search'
+    GOOGLE_SHEETS = 'google_sheets'
+    AIRTABLE = 'airtable'
+    SHOPIFY = 'shopify'

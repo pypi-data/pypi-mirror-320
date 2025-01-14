@@ -1,0 +1,50 @@
+# Environment configurations
+api_version: "v1"
+env: "prod"
+
+# Default search configuration
+# default_search_collection: 
+
+# API endpoint URLs
+endpoints:
+  dev:
+    base_url: "http://localhost:8000"
+    agentauth_url: "http://localhost:8000/auth/"
+    ingest_url: "http://localhost:8001/ingest/"
+    search_url: "http://localhost:8002/query/v4/"
+    endpoint_details_url: "http://localhost:8002/query/endpoints/"
+    endpoint_count_url: "http://localhost:8002/query/endpoints/size/"
+    endpoint_all_url: "http://localhost:8002/query/endpoints/all/"
+  container:
+    agentauth_url: "http://agentauth_service:8000/auth/"
+    ingest_url: "http://ingestion_service:8000/ingest/"
+    search_url: "http://query_service:8000/query/v4/"
+    endpoint_details_url: "http://query_service:8000/query/endpoints/"
+    endpoint_count_url: "http://query_service:8000/query/endpoints/size/"
+    endpoint_all_url: "http://query_service:8000/query/endpoints/all/"
+  prod_dev:
+    base_url: "https://api.wild-card.dev"
+    agentauth_url: "https://api.wild-card.dev/auth/"
+    ingest_url: "https://api.wild-card.dev/ingest/"
+    search_url: "https://api.wild-card.dev/query/v4/"
+    endpoint_details_url: "https://api.wild-card.dev/query/endpoints/"
+    endpoint_count_url: "https://api.wild-card.dev/query/endpoints/size/"
+    endpoint_all_url: "https://api.wild-card.dev/query/endpoints/all/"
+  prod:
+    base_url: "https://api.wild-card.ai"
+    agentauth_url: "https://api.wild-card.ai/auth/"
+    ingest_url: "https://api.wild-card.ai/ingest/"
+    search_url: "https://api.wild-card.ai/query/v4/"
+    public_tools_url: "https://api.wild-card.ai/query/tools"
+    endpoint_details_url: "https://api.wild-card.ai/query/endpoints/"
+    endpoint_count_url: "https://api.wild-card.ai/query/endpoints/size/"
+    endpoint_all_url: "https://api.wild-card.ai/query/endpoints/all/"
+  demo_voker:
+    base_url: "https://wildcard-voker.onrender.com"
+    agentauth_url: "https://wildcard-voker.onrender.com/auth/"
+    ingest_url: "https://api.wild-card.ai/ingest/"
+    search_url: "https://api.wild-card.ai/query/v4/"
+    public_tools_url: "https://api.wild-card.ai/query/tools"
+    endpoint_details_url: "https://api.wild-card.ai/query/endpoints/"
+    endpoint_count_url: "https://api.wild-card.ai/query/endpoints/size/"
+    endpoint_all_url: "https://api.wild-card.ai/query/endpoints/all/"
