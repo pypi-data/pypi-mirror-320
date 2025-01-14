@@ -1,0 +1,28 @@
+Metadata-Version: 2.2
+Name: FLightcase
+Version: 0.1.1
+Summary: FLightcase toolbox for Federated Learning
+Home-page: https://github.com/AIMS-VUB/FLightcase/
+Author: Stijn Denissen
+Author-email: stijn.denissen@vub.be
+License: CC BY-NC-ND 4.0
+License-File: LICENSE
+Requires-Dist: torch==2.5.1
+Requires-Dist: pandas==2.2.3
+Requires-Dist: monai==1.4.0
+Requires-Dist: scikit-learn==1.6.0
+Requires-Dist: tqdm==4.67.1
+Requires-Dist: nibabel==5.3.2
+Requires-Dist: paramiko==3.5.0
+Requires-Dist: scp==0.15.0
+Requires-Dist: matplotlib==3.10.0
+Requires-Dist: scipy==1.14.1
+Requires-Dist: numpy==1.26.4
+Requires-Dist: click==8.1.8
+Requires-Dist: twine==6.0.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
