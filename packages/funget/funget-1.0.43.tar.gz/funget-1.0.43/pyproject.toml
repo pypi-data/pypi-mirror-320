@@ -1,0 +1,16 @@
+[project]
+name = "funget"
+version = "1.0.43"
+description = "funget"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [ "funfile>=1.0.15",]
+[[project.authors]]
+name = "niuliangtao"
+email = "farfarfun@qq.com"
+
+[project.scripts]
+funget = "funget.script:funget"
+
+[tool.setuptools]
+license-files = []
