@@ -1,0 +1,5 @@
+[console_scripts]
+cho-hi = cho-check-os-ver.hi:hi
+
+[gui_scripts]
+
