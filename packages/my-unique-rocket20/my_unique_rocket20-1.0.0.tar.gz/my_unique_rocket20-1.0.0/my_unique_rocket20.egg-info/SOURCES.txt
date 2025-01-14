@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+setup.py
+my_unique_rocket20.egg-info/PKG-INFO
+my_unique_rocket20.egg-info/SOURCES.txt
+my_unique_rocket20.egg-info/dependency_links.txt
+my_unique_rocket20.egg-info/top_level.txt
