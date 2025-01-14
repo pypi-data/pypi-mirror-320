@@ -1,0 +1,3 @@
+[console_scripts]
+generate-maps = climate_analysis.maps:generate_maps
+generate-time-series = climate_analysis.time_series:generate_time_series
