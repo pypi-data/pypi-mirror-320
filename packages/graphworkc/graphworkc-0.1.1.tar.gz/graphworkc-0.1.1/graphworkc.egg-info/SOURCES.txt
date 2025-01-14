@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.py
+graphworkc/__init__.py
+graphworkc/graphworkc.cp311-win_amd64.pyd
+graphworkc.egg-info/PKG-INFO
+graphworkc.egg-info/SOURCES.txt
+graphworkc.egg-info/dependency_links.txt
+graphworkc.egg-info/top_level.txt
