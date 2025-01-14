@@ -1,0 +1,9 @@
+README.md
+setup.py
+aiogram_creator/__init__.py
+aiogram_creator/main.py
+aiogram_creator.egg-info/PKG-INFO
+aiogram_creator.egg-info/SOURCES.txt
+aiogram_creator.egg-info/dependency_links.txt
+aiogram_creator.egg-info/entry_points.txt
+aiogram_creator.egg-info/top_level.txt
