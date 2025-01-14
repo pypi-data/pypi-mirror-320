@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: cadquery-ocp
+Version: 7.8.1.0
+Summary: Unchanged OCP package, just pypi packaged
+Author-email: Bernhard Walter <b_walter@arcor.de>
+Requires-Python: >=3.10
+Requires-Dist: cadquery_vtk==9.3.1
