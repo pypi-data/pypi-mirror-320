@@ -1,0 +1,93 @@
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = 'beetools'
+version = '5.2.4'
+description = 'Tools for batch scripts, virtual environments and utilities.'
+
+authors = [
+    { name = "Hendrik du Toit", email = "hendrik@brightedge.co.za" }
+]
+license = "MIT"
+readme = "README.rst"
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+	'Intended Audience :: Developers',
+	'Topic :: Software Development',
+	'Topic :: Software Development :: Version Control',
+	'Topic :: Software Development :: Version Control :: Git',
+	'License :: OSI Approved :: MIT License',
+	'Programming Language :: Python :: 3.10',
+	'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+]
+# documentation = "https://readthedocs.org"
+dependencies = []
+requires-python = ">=3.10"
+
+[project.urls]
+issues = "https://github.com/BrightEdgeeServices/beetools/issues"
+changelog = 'https://github.com/BrightEdgeeServices/beetools/blob/enhancement/master/ReleaseNotes.md'
+homepage = 'https://github.com/BrightEdgeeServices/beetools'
+repository = "https://github.com/BrightEdgeeServices/beetools.git"
+
+[tool.black]
+line-length = 120
+#skip-string-normalization = true
+target-version = [
+    "py312",
+]
+
+[tool.codespell]
+count = ''
+quiet-level = 2
+skip = 'documentation/Archive/*'
+ignore-words-list = 'space-holder'
+
+[tool.coverage.run]
+source = [
+    'src',
+    'tests',
+]
+
+[tool.isort]
+profile = "black"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+termcolor = "^2.5.0"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+mdformat-gfm = "^0.3.6"
+mdformat-frontmatter = "^2.0.8"
+mdformat-footnote = "^0.1.1"
+black = "^24.8.0"
+flake8 = "^7.1.1"
+pre-commit = "^3.8.0"
+pytest = "^8.3.4"
+codecov = "^2.1.13"
+pytest-cov = "^6.0.0"
+rstcheck = "^6.2.4"
+
+[tool.pytest.ini_options]
+addopts = [
+    '-vv',
+    '--ignore-glob=*\\Archive',
+]
+#addopts = ['--import-mode=importlib', "-v", "--cov=./", "--ignore-glob=*\\Archive", "--cov-report=html"]
+markers = [
+    "select: Run a selection of tests",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]
+pythonpath = [
+    'src',
+    'tests',
+]
+testpaths = 'tests'
