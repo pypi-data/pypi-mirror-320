@@ -1,0 +1,38 @@
+[tool.dev_tool]
+port = 5745
+
+[tool.docker]
+container-size = "8g"
+postgres-version = 14
+
+[tool.coverage]
+apps = ["."]
+exclude = [
+    # Directories
+    "*/.venv/*",
+    "*/migrations/*",
+    "*/static/*",
+    "*/system/*",
+    "*/tests/*",
+    "*/venv/*",
+
+    # Files
+    "__init__.py",
+    "apps.py",
+    "automation.py",
+    "manage.py",
+    "run_coverage.py"
+]
+failfast = false
+nobrowser = false
+noerase = false
+nohtml = false
+settings = "system.testing.settings"
+verbosity = 1
+
+[tool.unittest]
+apps = ["."]
+failfast = false
+keepdb = true
+settings = "system.testing.settings"
+verbosity = 1
