@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: pyndoc
+Version: 0.1.5
+Summary: A standalone Pandoc filter and optional preprocessor to include arbitrary Python code in Markdown documents, ran at build time.
+Author: Peter Brookes Chambers
+Project-URL: Homepage, https://github.com/ech0-chambers/pyndoc
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: panflute
+Requires-Dist: pyyaml
+Requires-Dist: pint
+
+# Pyndoc
+
+A standalone Pandoc filter and optional preprocessor to include arbitrary Python code in Markdown documents, ran at build time.
+
+**Note:** Please note that this package is in active development, and as such may not be stable. Additionally, the documentation is incomplete and may be partially out of date.
+
+---
+
+Check out the [documentation](docs/docs.md) for more information on how to use Pyndoc.

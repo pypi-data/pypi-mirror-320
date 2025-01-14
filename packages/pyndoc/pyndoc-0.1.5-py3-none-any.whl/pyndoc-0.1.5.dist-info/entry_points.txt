@@ -1,0 +1,2 @@
+[console_scripts]
+pyndoc = pyndoc.__main__:main

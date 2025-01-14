@@ -1,0 +1,16 @@
+pyndoc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyndoc/__main__.py,sha256=2z2aWrImJQNK40_WxWkW8sBiZfomOJSJVs5PfrpS8_s,10420
+pyndoc/_latex.py,sha256=8iGocn9FZZPP9bjd580R8FMi1U4GvxCivFO53QCW1lU,40272
+pyndoc/filter.py,sha256=LqOjOqxya5g5oGAJREu7VPN4ZcDDoM96BhEs5HXQH5U,11526
+pyndoc/formats.py,sha256=N275egqeSXMRVg-kig1b56QkuNKJf3RdF5fKrfhEFB0,1342
+pyndoc/latex.py,sha256=bcah5KoH8UGVS-Ms70LEbCBpySSaqzD011TzXnR9Yag,133637
+pyndoc/markdown.py,sha256=CS1JrYZxOXT5iu8P5V8OhY8_zArrJiNMukKi3y0ol1c,15387
+pyndoc/preprocess.py,sha256=AfF7PMfONQDOLqkOVQ55AqtqSn1eSUV4EW5p8kCtRg0,27966
+pyndoc/server.py,sha256=uErZ8qsbEjgWJsimcW8vWHcJHiHF0XKym3Q4PBK8-AI,10779
+pyndoc/server_utils.py,sha256=1MZwFhU8LtUHel3VIO45-5c6xekrKLUhqRNp8RGGrYs,3552
+pyndoc-0.1.5.dist-info/LICENSE,sha256=0R2QbX4pr5XSiwUc2JoGS7Ja4npcQHyZlGJsR-E73I8,32386
+pyndoc-0.1.5.dist-info/METADATA,sha256=Tq4KyziQE8jeZmwKJEytVQKFgWMJQQWmpcfy1VDD6cE,1013
+pyndoc-0.1.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pyndoc-0.1.5.dist-info/entry_points.txt,sha256=TmQxdrKbAUBqKtDBtg8bG28nCJ7NEHO-OwqpEcZ-LfU,48
+pyndoc-0.1.5.dist-info/top_level.txt,sha256=JyJJ_wbxoph79StlgoTvMPO_40rV5_dEA2MSiNzN6aE,7
+pyndoc-0.1.5.dist-info/RECORD,,
