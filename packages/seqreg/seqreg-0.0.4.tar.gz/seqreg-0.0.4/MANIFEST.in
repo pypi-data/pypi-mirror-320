@@ -1,0 +1,2 @@
+include seqreg/Models/*.json
+include README.md
