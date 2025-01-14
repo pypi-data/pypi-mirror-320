@@ -1,0 +1,17 @@
+Z0Z_tools/Z0Z_io.py,sha256=H-OmXKt_OLlVdbgLdG1WSxHgCKduNby-tbUGWJe6zMk,3032
+Z0Z_tools/__init__.py,sha256=2MSTP3LmMyEhzIocg82cRaOGtVCsXeBy9hbnTbGHqhs,761
+Z0Z_tools/dataStructures.py,sha256=_JAMowiDupWVTbRgonau8O8UTvZDHuNTk61EbX-a3R4,4098
+Z0Z_tools/ioAudio.py,sha256=qFYXI6m8hugE6y_EK0xKMfBjmC2ECSgRdKgb2SqQi1I,6137
+Z0Z_tools/parseParameters.py,sha256=aHsOKs-XQv5ky3RNCZ5HrtxIHk5uo1mlulbWEB-OImU,7998
+Z0Z_tools/pipAnything.py,sha256=89OuDqsSOZaGsGwXezFZqDViMDUes9-AwPwx0aQFccE,6362
+Z0Z_tools/pytest_parseParameters.py,sha256=OsJYleUEk4IJYsc6t5nObKmNcltak3jbyeFdaAWwYUA,6048
+tests/conftest.py,sha256=HsCsnjKclnsBrnxhbP0GYvQ8Z9p8xvEFRDHxZ8oGSQY,2215
+tests/test_Z0Z_io.py,sha256=RNLJVhxSJ8bvrqtzprGNCQu9Egxbi0dEv7nR4oViOVo,5115
+tests/test_dataStructures.py,sha256=PmomfLDCRHYb4x7tQ7HqMjxJjy34WNIorUcRAPKijMI,9928
+tests/test_ioAudio.py,sha256=cBHO23xqfqmZdWOyeLS0bX4-wzaCoCrZ7Hyz3K3rG6g,7264
+tests/test_parseParameters.py,sha256=dYVqbDgm-VtcB0muKHpvUtnsALqBsaoumfjjldhvSuA,2955
+tests/test_pipAnything.py,sha256=P6673OG6G7-17ntR3oB6LqbPJRRbgj0MXc9wocmZQ1A,4921
+Z0Z_tools-0.6.9.dist-info/METADATA,sha256=nZvDyeJ1h6FhKuulClRPiU8Fr4T37rmRfzTguEud8jU,3684
+Z0Z_tools-0.6.9.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+Z0Z_tools-0.6.9.dist-info/top_level.txt,sha256=zNp89aQ-k-yML9Jl19Dl3ibKYBXPRY_GpqTpIca042U,16
+Z0Z_tools-0.6.9.dist-info/RECORD,,
