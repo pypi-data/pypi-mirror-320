@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "ecoact-access"
+version = "0.0.1"
+description = "Ecoact internal library for handling access"
+authors = [	"Amaury Salles <amaury.salles@se.com>",
+"Dorian Kodelja <dorian.kodelja@com.com>",
+"Yoann Diep <yoann.diep@se.com>",
+		"Thomas Epelbaum <thomas.epelbaum@se.com>",
+		"Charles Cuvilliers <charles.cuvillier@se.com>",
+		"Olivier Gabriel <olivier.gabriel@se.com>"
+]
+readme = "README.md"
+[tool.poetry.dependencies]
+python = "^3.11"
+ecodev-core = "~0.0.25"
+
+[[tool.poetry.source]]
+name = "ecoact_access"
+url = "https://ecopypi.lcabox.com/"
+priority = "supplemental"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
