@@ -1,0 +1,3 @@
+[console_scripts]
+audiblez=audiblez.cli:main
+
