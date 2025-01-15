@@ -1,0 +1,2 @@
+[conda]
+conda-spawn = conda_spawn.plugin

@@ -1,0 +1,63 @@
+Metadata-Version: 2.4
+Name: conda-spawn
+Version: 0.0.1
+Summary: Activate conda environments in new shell processes.
+Project-URL: homepage, https://github.com/conda-incubator/conda-spawn
+Author-email: Jaime Rodríguez-Guerra <jrodriguez@quansight.com>
+License: MIT License
+        
+        Copyright (c) 2025 Jaime Rodríguez-Guerra
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9
+Requires-Dist: pexpect
+Requires-Dist: shellingham
+Description-Content-Type: text/markdown
+
+# conda-spawn
+
+Activate conda environments in new shell processes.
+
+> [!IMPORTANT]
+> This project is still in early stages of development. Don't use it in production (yet).
+> We do welcome feedback on what the expected behaviour should have been if something doesn't work!
+
+## What is this?
+
+This is a replacement subcommand for `conda activate` and `conda deactivate`.
+
+Instead of writing state to your current shell session, `conda spawn -n ENV-NAME` will spawn a new shell with your activated environment. To deactivate, exit the process with <kbd>Ctrl</kbd>+<kbd>C</kbd> or <kbd>Ctrl</kbd>+<kbd>D</kbd>.
+
+## Why?
+
+In a nutshell, this provides a cleaner activation experience without state leakage. See the Rationale section in our documentation for more details.
+
+## Contributing
+
+Please refer to [`CONTRIBUTING.md`](/CONTRIBUTING.md).
