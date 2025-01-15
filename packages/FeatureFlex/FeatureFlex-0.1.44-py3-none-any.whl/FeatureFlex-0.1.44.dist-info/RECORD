@@ -1,0 +1,15 @@
+FeatureFlex/__init__.py,sha256=X6NEHmEwzFSKt8KB4Xz6vpNtr0bByRi126CGT7fPPQ4,400
+FeatureFlex/comparison.py,sha256=QTlXQP2cLTweJ-o4oJm1d36G6ISz1MfVmqhYGvMEhls,8356
+FeatureFlex/evaluation.py,sha256=OR6N40NQW8ADYmL3LE2kVevstoZF0tqku8lwbWR81Vc,10955
+FeatureFlex/feature_selector.py,sha256=8evENBFk0P4tYTnaLmjYY_v43QfpXCUZHr0LF0hyhCQ,3821
+FeatureFlex/main.py,sha256=yKO5R2lhQtGeBP7Yz6Fx9_Hmn8vwgKrHxU_zaSQUH1s,417
+FeatureFlex/model.py,sha256=AGWBAa08X3BbJpL78ipPvv98xV2q1S5IUMuIvyOjc_w,796
+FeatureFlex/model_optimizer.py,sha256=WCVq1gL6xRBsKJvQ2ot4sXeoPG-Ej7Ws49lofReq-Uw,7109
+FeatureFlex/preprocessing.py,sha256=_mV_VoTbW29beaTCiPWzpcgSPfOjgbptewQDOj1zvwU,4172
+FeatureFlex/test.py,sha256=HXhEtGJQruyfTZft6jLr8nuydOxebHJX8_7gq4fjbqg,4022
+FeatureFlex-0.1.44.dist-info/LICENSE.md,sha256=x13HwN32SGyOD6NoKsLzD9tI9DrN33f6ylfolZyJQ5I,1077
+FeatureFlex-0.1.44.dist-info/METADATA,sha256=pw733CbXefOOai-wLGTHjoXS1B3kMD3VEyHyFSGDkEM,8425
+FeatureFlex-0.1.44.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+FeatureFlex-0.1.44.dist-info/entry_points.txt,sha256=YwMKXyTxtv9NuW0XHhWHAopL6KlmJ5GN4NYpo7v4K0o,54
+FeatureFlex-0.1.44.dist-info/top_level.txt,sha256=FlK_fDSPXoeIeMO9f7Zxdtm7BbvAxrs5sJSe-DC0ktE,12
+FeatureFlex-0.1.44.dist-info/RECORD,,
