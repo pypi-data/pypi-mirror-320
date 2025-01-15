@@ -1,0 +1,103 @@
+{% extends "timelockrecovery/components/timelockrecovery_tab.jinja" %}
+{% block title %}Settings{% endblock %}
+{% set tab = 'settings_get' %}
+{% block content %}
+    <br/>
+    <style>
+        .big_option {
+            display: inline-block;
+            width: 14em;
+            padding: 1em;
+            vertical-align: middle;
+            height: 3.5em;
+            border: 4px solid var(--cmap-border);
+            border-radius: 0.5em;
+            background-color: var(--cmap-bg-lighter);
+            font-size: 1.5em;
+            margin: 1em;
+            position: relative;
+        }
+        .big_option:hover {
+            background-color: var(--cmap-bg-lightest);
+            border: 4px solid var(--main-color);
+            cursor: pointer;
+        }
+
+        .big_option_text {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .instructions {
+            color: #999;
+            font-style: italic;
+        }
+        {# TODO: End Remove #}
+
+        .css-1rbd7t8 {
+            box-sizing: border-box;
+            margin: 60px 0px 24px;
+            min-width: 0px;
+        }
+        .css-yn7azs {
+            box-sizing: border-box;
+            margin: 0px;
+            min-width: 0px;
+            -moz-box-pack: justify;
+            justify-content: space-between;
+            position: relative;
+            font-family: "Source Serif Pro", serif;
+            font-weight: 600;
+            line-height: 1.5;
+            letter-spacing: -0.02em;
+            font-variant: common-ligatures;
+            text-rendering: optimizelegibility;
+            font-size: 16px;
+            display: flex;
+        }
+    </style>
+
+    <div class="card">
+        <h2>{{ _("Configure your extension") }}</h2>
+
+        <div class="mt-5">
+            <form id="show-menu-form" action="{{ url_for(service.get_blueprint_name() + '.settings_post') }}" method="POST" role="form">
+                <input type="hidden" class="csrf-token" name="csrf_token" value="{{ csrf_token() }}"/>
+
+                <div>Show Menu Item:</div>
+                <select id="show-menu" name="show_menu">
+                    <option value="yes"   {% if show_menu == 'yes' %}selected{% endif %}>Yes</option>
+                    <option value="no"    {% if show_menu == 'no'  %}selected{% endif %}>No</option>
+                </select>
+            </form>
+        </div>
+
+        <div class="mt-8">
+            <form id="show-menu-form" action="{{ url_for(service.get_blueprint_name() + '.remove_extension_post') }}" method="POST" role="form">
+                <input type="hidden" class="csrf-token" name="csrf_token" value="{{ csrf_token() }}"/>
+                <input class="btn alert-button" type="submit" value="Remove Extension" {% if has_recovery_plans %}disabled{% endif %} />
+                {% if has_recovery_plans %}
+                <div class="warning">
+                    Extension can be uninstalled only after deleting all Recovery Plans.
+                </div>
+                {% endif %}
+            </form>
+        </div>
+    </div>
+
+
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById('show-menu').addEventListener('change', () => {
+                document.getElementById('show-menu-form').submit();
+            });
+        });
+    </script>
+{% endblock %}
