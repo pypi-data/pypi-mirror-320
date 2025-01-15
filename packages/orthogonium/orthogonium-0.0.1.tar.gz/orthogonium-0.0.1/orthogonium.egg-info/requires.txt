@@ -1,0 +1,16 @@
+numpy
+torch
+
+[dev]
+setuptools
+pre-commit
+tox
+black
+pytest
+pytest-cov
+pylint
+mkdocs
+mkdocs-material
+mkdocstrings[python]
+mknotebooks
+bump2version
