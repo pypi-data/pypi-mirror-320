@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: EmojiConvert
+Version: 0.0.1
+Summary: A program that converts emoji to text
+Author-Email: kodjomessie@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+
+**A program that converts emoji to text**
+
+
+Emoji >> 😂
+Emoji text >> :face_with_tears_of_joy:
