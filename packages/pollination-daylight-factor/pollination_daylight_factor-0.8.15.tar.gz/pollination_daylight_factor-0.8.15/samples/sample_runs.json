@@ -1,0 +1,8 @@
+[
+    {
+        "artifacts": {
+            "model": "artifacts/sample_model_grid.hbjson"
+        },
+        "inputs": {}
+    }
+]
