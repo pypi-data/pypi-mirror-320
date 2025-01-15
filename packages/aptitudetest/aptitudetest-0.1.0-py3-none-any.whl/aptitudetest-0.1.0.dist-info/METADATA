@@ -1,0 +1,39 @@
+Metadata-Version: 2.2
+Name: aptitudetest
+Version: 0.1.0
+Summary: A Python package for conducting aptitude tests with timed questions.
+Home-page: https://github.com/Abishake01/aptitude_quiz
+Author: Abishake
+Author-email: abishake381@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# AptitudeTest
+
+A Python package for conducting aptitude tests with randomly generated questions and a timed interface.
+
+## Features
+
+- Random question selection from a pool.
+- 1-minute timer for each question.
+- Dynamic quiz length based on user input.
+- Scoring and result display at the end of the quiz.
+
+## Installation
+
+To install the package, run:
+
+```bash
+pip install aptitudetest
