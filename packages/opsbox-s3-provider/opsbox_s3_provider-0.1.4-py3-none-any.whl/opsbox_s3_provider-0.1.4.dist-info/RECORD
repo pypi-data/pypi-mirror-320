@@ -1,0 +1,9 @@
+s3_provider/manifest.toml,sha256=oeOACsCIa3qexc42wpB-BHR4MlsRw1ZVqaL7x2ipwZ8,107
+s3_provider/s3_provider.py,sha256=eOEQMO7v27arumyInXA9kXCvW7pUZx0cuvjbYQ6Si-s,9062
+s3_provider/test_s3_provider.py,sha256=8oZqxz3l7dyduHLDmpBtAx6cKI4wPFy9o0BgMGa3zuQ,3256
+opsbox_s3_provider-0.1.4.dist-info/LICENCE.txt,sha256=-YEY41LAwXsb0Er-5vJY1cKRFr9ea3T6CigUirNyUZo,17097
+opsbox_s3_provider-0.1.4.dist-info/METADATA,sha256=q0s93nF0smVEJjnv7jOK75PA5Z4QKtTw5mesGYkHa0M,337
+opsbox_s3_provider-0.1.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+opsbox_s3_provider-0.1.4.dist-info/entry_points.txt,sha256=cKjA6hf8IJm_ROhBwJ-7czxNDHQcM0A4wvg0m6H7RRA,73
+opsbox_s3_provider-0.1.4.dist-info/top_level.txt,sha256=OAuv0bzroDrmucltEWCJ6M9YTrYQRrGHmWn4WxE3M0Y,12
+opsbox_s3_provider-0.1.4.dist-info/RECORD,,
