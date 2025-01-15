@@ -1,0 +1,32 @@
+[package]
+name = "novi-query"
+version = "0.1.2"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = []
+wasm = ["dep:wasm-bindgen", "dep:js-sys", "dep:serde-wasm-bindgen", "dep:serde_json", "serde"]
+python = ["dep:pyo3"]
+serde = ["dep:serde"]
+
+[dependencies]
+im = "15.1.0"
+js-sys = { version = "0.3.77", optional = true }
+pyo3 = { version = "0.23.4", features = ["abi3-py38"], optional = true }
+serde = { version = "1.0.217", features = ["derive"], optional = true }
+serde-wasm-bindgen = { version = "0.6.5", optional = true }
+serde_json = { version = "1.0.135", optional = true }
+wasm-bindgen = { version = "0.2.100", optional = true }
+winnow = "0.6.24"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+opt-level = 3
+lto = true
+panic = "abort"
+strip = "debuginfo"
