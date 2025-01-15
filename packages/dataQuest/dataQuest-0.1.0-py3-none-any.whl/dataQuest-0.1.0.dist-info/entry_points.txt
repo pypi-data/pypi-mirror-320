@@ -1,0 +1,3 @@
+[console_scripts]
+filter-articles = dataQuest.filter_articles:cli
+generate-output = dataQuest.generate_output:cli
