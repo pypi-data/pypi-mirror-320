@@ -1,0 +1,21 @@
+{
+    "package": {
+        "name": "simple_ans",
+        "version": "0.2.0"
+    },
+    "source": {
+        "path": "."
+    },
+    "build": {
+        "cflags": ["-fPIC", "-O3"],
+        "cxxflags": ["-fPIC", "-O3", "-std=c++17"],
+        "ldflags": [],
+        "exports": ["_simple_ans"],
+        "environment": {
+            "PYODIDE": "1"
+        }
+    },
+    "dependencies": {
+        "packages": ["numpy"]
+    }
+}
