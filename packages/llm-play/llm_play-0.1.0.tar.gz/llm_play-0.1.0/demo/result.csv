@@ -1,0 +1,13 @@
+Model,Temperature,Prompt Label,Prompt Hash,Sample ID,Sample Equivalence Class,Sample Content
+qwen2.5-14b-instruct,1.5,cot,365c2b0935c93f07,0,0,Immanuel Kant
+qwen2.5-14b-instruct,1.5,cot,365c2b0935c93f07,1,1,Socrates
+qwen2.5-14b-instruct,1.5,cot,365c2b0935c93f07,2,0,Immanuel Kant
+qwen2.5-14b-instruct,1.5,vanilla,79f4bcf6477829d3,0,0,Immanuel Kant
+qwen2.5-14b-instruct,1.5,vanilla,79f4bcf6477829d3,1,1,Plato
+qwen2.5-14b-instruct,1.5,vanilla,79f4bcf6477829d3,2,0,Immanuel Kant
+qwen2.5-7b-instruct,1.5,cot,365c2b0935c93f07,0,1,Plato
+qwen2.5-7b-instruct,1.5,cot,365c2b0935c93f07,1,1,Socrates
+qwen2.5-7b-instruct,1.5,cot,365c2b0935c93f07,2,1,Aristotle
+qwen2.5-7b-instruct,1.5,vanilla,79f4bcf6477829d3,0,1,Aristotle
+qwen2.5-7b-instruct,1.5,vanilla,79f4bcf6477829d3,1,1,Plato
+qwen2.5-7b-instruct,1.5,vanilla,79f4bcf6477829d3,2,1,Plato
