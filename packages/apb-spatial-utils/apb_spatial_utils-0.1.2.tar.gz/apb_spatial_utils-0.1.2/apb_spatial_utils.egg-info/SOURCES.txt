@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+apb_spatial_utils/__init__.py
+apb_spatial_utils/shapely_utils.py
+apb_spatial_utils/topojson_utils.py
+apb_spatial_utils.egg-info/PKG-INFO
+apb_spatial_utils.egg-info/SOURCES.txt
+apb_spatial_utils.egg-info/dependency_links.txt
+apb_spatial_utils.egg-info/requires.txt
+apb_spatial_utils.egg-info/top_level.txt

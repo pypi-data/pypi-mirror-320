@@ -1,0 +1,3 @@
+shapely
+pyproj
+apb_extra_utils<1.1
