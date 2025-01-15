@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fineweb_tools.egg-info/PKG-INFO
+fineweb_tools.egg-info/SOURCES.txt
+fineweb_tools.egg-info/dependency_links.txt
+fineweb_tools.egg-info/requires.txt
+fineweb_tools.egg-info/top_level.txt
