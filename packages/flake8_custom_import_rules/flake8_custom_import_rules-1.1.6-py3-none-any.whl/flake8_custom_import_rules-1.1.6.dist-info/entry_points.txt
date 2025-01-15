@@ -1,0 +1,6 @@
+[console_scripts]
+import-rules=flake8_custom_import_rules.__main__:main
+
+[flake8.extension]
+CIR=flake8_custom_import_rules.flake8_plugin:Plugin
+
