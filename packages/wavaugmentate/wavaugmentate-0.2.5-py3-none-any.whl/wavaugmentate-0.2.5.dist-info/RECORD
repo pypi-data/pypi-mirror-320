@@ -1,0 +1,10 @@
+wavaugmentate/__init__.py,sha256=6z1zAJ_lP603fRruKQbW5W_pSYLwzCVrHUkK1bmcim8,88
+wavaugmentate/aug.py,sha256=Gmzb3X1AouPEz1rS9FwaRR7zIRp9hJAFXXPV94xgLMA,19130
+wavaugmentate/mcs.py,sha256=u72NbkhIqwa9RSPeTnI2WpIINQ2DjuJJbjdWa4zb3Fs,18065
+wavaugmentate/wavaug.py,sha256=7oemQRhT9P8i3Uh29bXolEwb9s9qLAQ9ZpMtR74p6vw,17426
+wavaugmentate-0.2.5.dist-info/LICENSE,sha256=oYnPyRI4DIIkHZVmsBrr4FJZJUzyIjRHVEl0lz_A_3s,1068
+wavaugmentate-0.2.5.dist-info/METADATA,sha256=3wDmwW9RLysh_IXSaQ4OZsT3uoWo18tPXnX8D8OfXzU,9273
+wavaugmentate-0.2.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+wavaugmentate-0.2.5.dist-info/entry_points.txt,sha256=cooJrRL7a4qfxJ_H2--ZvjuTOGXhF99UvxIWIDBZytU,57
+wavaugmentate-0.2.5.dist-info/top_level.txt,sha256=4O6tQCYITrEq8uX6UHFRSmVYM3-l08qrhDNckgyJD18,14
+wavaugmentate-0.2.5.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[console_scripts]
+wavaug-cli = wavaugmentate.wavaug:main
