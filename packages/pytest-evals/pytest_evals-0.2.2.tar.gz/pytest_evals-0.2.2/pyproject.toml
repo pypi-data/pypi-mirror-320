@@ -1,0 +1,42 @@
+[project]
+name = "pytest-evals"
+version = "0.2.2"
+description = "A pytest plugin for running and analyzing LLM evaluation tests"
+authors = [
+    { name = "Almog Baku", email = "almog.baku@gmail.com" },
+]
+dependencies = [
+    "pytest>=7.0.0",
+    "pytest-harvest>=1.0.0",
+    "cloudpickle>=2.0.0",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+license = "MIT"
+keywords = ["pytest", "evaluations", "llm", "eval", "openai", "anthropic", "gpt", "pytest-evals"]
+
+[project.urls]
+Homepage = "https://github.com/AlmogBaku/pytest-evals"
+Repository = "https://github.com/AlmogBaku/pytest-evals"
+Issues = "https://github.com/AlmogBaku/pytest-evals/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.entry-points.pytest11]
+eval = "pytest_evals.plugin"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pytest_evals"]
+
+[tool.pytest.ini_options]
+addopts = "-ra -q"
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "ipytest>=0.14.2",
+    "notebook>=7.3.2",
+    "openai>=1.59.6",
+]
