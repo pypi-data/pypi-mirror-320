@@ -1,0 +1,7 @@
+attrdict==2.0.1
+loguru==0.7.3
+pyyaml==6.0.2
+prometheus_client==0.21.1
+deluge-client==1.10.2
+qbittorrent-api==2024.12.71
+transmission-rpc==7.0.11
