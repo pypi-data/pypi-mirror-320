@@ -1,0 +1,12 @@
+xlsxlite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xlsxlite/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xlsxlite/test/base.py,sha256=eLVJSX2Y6hdSMhV6HTOe8rGXa6QGzQ-FKUOkNRkk9F4,1708
+xlsxlite/test/test_perf.py,sha256=T7n7CYzISpictXCj5euSA7A1RnuZu60F2-j6wQ71yq0,1965
+xlsxlite/test/test_utils.py,sha256=0dTObD-BXcfOM8-eUjFDayQBLXgplg8jo6237dvu6Xs,447
+xlsxlite/test/test_writer.py,sha256=L4SWbnNkarIL4dV3Prs7VgN3u983E5htaNIh7ZXv46Q,2857
+xlsxlite/utils.py,sha256=5S36PdU-FnCQ3lY9BkCE4whMMxonYrRweuEflxHacC0,378
+xlsxlite/writer.py,sha256=1TjFfBBH-DB3TknNWwVmGdWfUGChIleIEF3UNKBwHik,9345
+xlsxlite-1.0.0.dist-info/LICENSE,sha256=noCRz7EAyVA_li4teSPmicKInOy2mgCDR6u4ftxfVgo,1078
+xlsxlite-1.0.0.dist-info/METADATA,sha256=DitW6Fht2VeVkmO7ECH2hUcpMsbzl8dYCCAQ0g2EaEQ,454
+xlsxlite-1.0.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+xlsxlite-1.0.0.dist-info/RECORD,,
