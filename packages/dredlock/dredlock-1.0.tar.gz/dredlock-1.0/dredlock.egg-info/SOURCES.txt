@@ -1,0 +1,7 @@
+setup.py
+dredlock.egg-info/PKG-INFO
+dredlock.egg-info/SOURCES.txt
+dredlock.egg-info/dependency_links.txt
+dredlock.egg-info/not-zip-safe
+dredlock.egg-info/requires.txt
+dredlock.egg-info/top_level.txt
