@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: vital-llm-reasoner
+Version: 0.0.1
+Summary: Vital LLM Reasoner
+Home-page: https://github.com/vital-ai/vital-llm-reasoner
+Author: Marc Hadfield
+Author-email: marc@vital.ai
+License: Apache License 2.0
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: llama-cpp-python>=0.2.20
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: torch
+Requires-Dist: transformers
+Requires-Dist: sentencepiece
+Requires-Dist: tqdm
+Requires-Dist: nltk
+Requires-Dist: bs4
+Requires-Dist: pdfplumber
+Requires-Dist: pyppeteer
+Requires-Dist: vital-logic>=0.1.0
+Requires-Dist: vital-ai-vitalsigns>=0.1.27
+Requires-Dist: vital-ai-domain>=0.1.4
+Requires-Dist: pyyaml
+Requires-Dist: vital-ai-haley-kg>=0.1.24
+Requires-Dist: kgraphservice>=0.0.6
+Requires-Dist: sentence_transformers>=3.3.1
+
+# vital-llm-reasoner

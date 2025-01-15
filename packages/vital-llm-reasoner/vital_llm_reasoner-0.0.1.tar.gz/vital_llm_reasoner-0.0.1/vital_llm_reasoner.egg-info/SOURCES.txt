@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+test/test_pyodide.py
+test/test_qwen.py
+test/test_script.py
+vital_llm_reasoner/__init__.py
+vital_llm_reasoner.egg-info/PKG-INFO
+vital_llm_reasoner.egg-info/SOURCES.txt
+vital_llm_reasoner.egg-info/dependency_links.txt
+vital_llm_reasoner.egg-info/requires.txt
+vital_llm_reasoner.egg-info/top_level.txt
+vital_llm_reasoner/config/__init__.py
+vital_llm_reasoner/config/reasoner_config.py

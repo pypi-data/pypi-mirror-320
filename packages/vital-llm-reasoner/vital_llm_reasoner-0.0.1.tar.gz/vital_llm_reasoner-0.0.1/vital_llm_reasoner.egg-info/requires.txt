@@ -1,0 +1,17 @@
+llama-cpp-python>=0.2.20
+numpy>=1.21.0
+torch
+transformers
+sentencepiece
+tqdm
+nltk
+bs4
+pdfplumber
+pyppeteer
+vital-logic>=0.1.0
+vital-ai-vitalsigns>=0.1.27
+vital-ai-domain>=0.1.4
+pyyaml
+vital-ai-haley-kg>=0.1.24
+kgraphservice>=0.0.6
+sentence_transformers>=3.3.1
