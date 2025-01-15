@@ -1,0 +1,9 @@
+pollination/honeybee_display/__init__.py,sha256=qJ4woMyi1CrSI4u0UFEkmlOfLyneV2Nw7WriP6sr5YQ,484
+pollination/honeybee_display/abnt.py,sha256=V8iLOU3-uqKQnZVAi8juakzn6RuZF03Tzn_XvEJi_VI,2723
+pollination/honeybee_display/translate.py,sha256=jJFX9WuT060o2SsdAXVi6Ron6CkV1kxSCwVOre-DtEU,6923
+pollination/honeybee_display/scripts/abnt_nbr_15575_visualization.py,sha256=XM5JcZezekFmd6zfXHkY6R5sNlfgjT5v2C8ittAr4mU,3371
+pollination_honeybee_display-0.1.19.dist-info/LICENSE,sha256=Z1MPjprfzF0unXK4BFAM67dHL_hMNKZymoCiqb6QHuY,5748
+pollination_honeybee_display-0.1.19.dist-info/METADATA,sha256=aZ4tPerYFryy5wswpo1sZN6pnoujuhRp_RSDbU4sCMk,1317
+pollination_honeybee_display-0.1.19.dist-info/WHEEL,sha256=AHX6tWk3qWuce7vKLrj7lnulVHEdWoltgauo8bgCXgU,109
+pollination_honeybee_display-0.1.19.dist-info/top_level.txt,sha256=XqhRsBTtFfrCqv7O3outMqm3JZeMavDRExrfL0uUs74,12
+pollination_honeybee_display-0.1.19.dist-info/RECORD,,
