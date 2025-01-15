@@ -1,0 +1,4 @@
+exclude src/main.py
+prune tests
+prune examples
+prune data
