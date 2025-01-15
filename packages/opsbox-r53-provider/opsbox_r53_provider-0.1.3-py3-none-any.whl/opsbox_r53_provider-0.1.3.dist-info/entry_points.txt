@@ -1,0 +1,2 @@
+[opsbox.plugins]
+opsbox_r53_provider = r53_provider.r53_provider:Route53Provider
