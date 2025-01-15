@@ -1,0 +1,7 @@
+README.md
+hello.py
+pyproject.toml
+wisq.egg-info/PKG-INFO
+wisq.egg-info/SOURCES.txt
+wisq.egg-info/dependency_links.txt
+wisq.egg-info/top_level.txt
