@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: uiform
+Version: 0.0.2
+Summary: UiForm official python library
+Home-page: https://github.com/UiForm/uiform
+Author: UiForm
+Author-email: contact@uiform.com
+Project-URL: Team website, https://uiform.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: httpx
+Requires-Dist: pydantic
+Requires-Dist: pydantic_core
+Requires-Dist: requests
+Requires-Dist: openai
+Requires-Dist: tqdm
+Requires-Dist: tiktoken
+Requires-Dist: pycountry
+Requires-Dist: phonenumbers
+Requires-Dist: email_validator
+Requires-Dist: python-stdnum
+
+# Cubeblocks
+
+# Current spirit: 
+We have two classes for each object, the class and its data surrogate: 
+Classes are more pythonic, and the data is a pydantic class just for data validation purposes. 
+
+# URGENT: 
+Make the mail index match when you save then, otherwise you will loose them (test_io.py)
+
+
+# Todo: 
+Allow to select more finely where are going the attachments saved
+
+
+# Todo: 
+Write parsing connectors that allow to input/output data from pydantic classes to their related objects
+- goods Done
+
+# Todo: 
+Write the pydantic class for the road class, for the trucks
+
+# Todo: 
+Write a more thorough suite of validation tests for dataprocess. You can use standard libraries like stdnum, phonenumbers, etc.. for that, or the csv files in the library
+
+# Todo: Integrate the ISO 3166-2/1998 for the administrative subdivisions
