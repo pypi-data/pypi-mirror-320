@@ -1,0 +1,11 @@
+funpaper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+funpaper/podcast/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+funpaper/podcast/script.py,sha256=MCxjB0eIJMZyDwFKg2rwxmArAIfuAatPnjVZqZG-meI,1375
+funpaper/podcast/templates.py,sha256=XV2w_G0i98wGueg8VNCYVVwmxEmoSqGsJwsRFFeb6R0,5404
+funpaper/podcast/utils/audio_gen.py,sha256=D85tb7-tdG0efylboLzJ2fONAVlUBHdEaZ3ht_VrJLs,2620
+funpaper/podcast/utils/script.py,sha256=zPEs1Uo1_ww6TeAi3EXLZG_7QtKGU-3G5GdzqiRByao,5851
+funpaper-1.0.4.dist-info/METADATA,sha256=uCL7jxwUMixp0b2PLZ_E0MxN6jgLUFH2M_XnaH5mzT4,639
+funpaper-1.0.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+funpaper-1.0.4.dist-info/entry_points.txt,sha256=jFRKttPmoqUbkjODflaTcZsYaQCkAeWX2cRvPSqmuKI,62
+funpaper-1.0.4.dist-info/top_level.txt,sha256=jLmRK7BN-eJiTD5G5vGj9E0REBVgzNB00K2yxvzTUeU,9
+funpaper-1.0.4.dist-info/RECORD,,
