@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+climate_analysis/__init__.py
+climate_analysis/maps.py
+climate_analysis/time_series.py
+climate_analysis.egg-info/PKG-INFO
+climate_analysis.egg-info/SOURCES.txt
+climate_analysis.egg-info/dependency_links.txt
+climate_analysis.egg-info/entry_points.txt
+climate_analysis.egg-info/requires.txt
+climate_analysis.egg-info/top_level.txt
+tests/test_maps.py
+tests/test_time_series.py
