@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: rolo-rec
+Version: 0.4.1
+Summary: Future-proof Facial Recognition with YOLO + Facenet, modular detectors/embedders, hooks, CLI, etc.
+Author: wuhp
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Requires-Dist: requests
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: Pillow
+Requires-Dist: scikit-learn
+Requires-Dist: ultralytics
+Requires-Dist: facenet-pytorch
+Requires-Dist: torchvision<0.18.0,>=0.17.0
+Requires-Dist: tqdm<5.0.0,>=4.0.0
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pluggy<2,>=1.5; extra == "dev"
+Requires-Dist: iniconfig; extra == "dev"
+

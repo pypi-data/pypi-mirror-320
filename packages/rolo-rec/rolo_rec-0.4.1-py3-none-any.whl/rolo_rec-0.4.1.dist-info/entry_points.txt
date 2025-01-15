@@ -1,0 +1,2 @@
+[console_scripts]
+rolo-rec = myfacerec.cli:main
