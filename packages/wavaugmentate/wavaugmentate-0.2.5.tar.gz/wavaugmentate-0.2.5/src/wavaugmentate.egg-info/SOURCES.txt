@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/wavaugmentate/__init__.py
+src/wavaugmentate/aug.py
+src/wavaugmentate/mcs.py
+src/wavaugmentate/wavaug.py
+src/wavaugmentate.egg-info/PKG-INFO
+src/wavaugmentate.egg-info/SOURCES.txt
+src/wavaugmentate.egg-info/dependency_links.txt
+src/wavaugmentate.egg-info/entry_points.txt
+src/wavaugmentate.egg-info/top_level.txt
