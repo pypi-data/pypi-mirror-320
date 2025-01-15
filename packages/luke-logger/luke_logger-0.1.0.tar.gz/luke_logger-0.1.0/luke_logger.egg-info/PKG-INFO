@@ -1,0 +1,28 @@
+Metadata-Version: 2.2
+Name: luke-logger
+Version: 0.1.0
+Summary: A logger setup module for Python projects
+Home-page: https://github.com/prakhar-luke-dev/my_logger.git
+Author: Prakhar Bhandari
+Author-email: prakhar.luke.dev@gmail.com
+License: Apache License 2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# my_logger
+
+## how to use :
+```python
+from logs_operations.logger_setup import setup_logger
+
+logger1 = setup_logger(log_file="logs/logfile_name", log_handler='logger1', backup=15)
+
+logger2 = setup_logger(log_file="logs/logfile2_name", log_handler='logger2', backup=15)
+
+logger1.info("this is written to logfile_name")
+logger2.info("this is in logfile2_name")
+```
