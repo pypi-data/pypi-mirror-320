@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+src/sloteq/__init__.py
+src/sloteq/__main__.py
+src/sloteq.egg-info/PKG-INFO
+src/sloteq.egg-info/SOURCES.txt
+src/sloteq.egg-info/dependency_links.txt
+src/sloteq.egg-info/top_level.txt
+src/sloteq/tests/__init__.py
+src/sloteq/tests/test_1984.py
