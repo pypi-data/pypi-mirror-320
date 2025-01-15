@@ -1,0 +1,23 @@
+[project]
+name = "compare_variance_residual"
+version = "0.0.1"
+authors = [
+    { name = "Leo Schultheiss", email = "leo.schultheiss@tum.de" },
+]
+description = "Code for the bachelor thesis of Leo Schultheiss"
+readme = "Readme.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+]
+license = { file = "LICENSE" }
+#license-files = ["LICEN[CS]E*"]
+keywords = ["fMRI", "neuroimaging", "statistics", "variance partitioning"]
+
+[project.urls]
+Homepage = "https://github.com/leo-schultheiss/compare_variance_residual/tree/master"
+Issues = "https://github.com/leo-schultheiss/compare_variance_residual/issues"
+
+[tool.setuptools]
+packages = ["compare_variance_residual"]

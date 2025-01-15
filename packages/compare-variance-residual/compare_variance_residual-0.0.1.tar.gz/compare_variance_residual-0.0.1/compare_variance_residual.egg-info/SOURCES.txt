@@ -1,0 +1,8 @@
+LICENSE
+Readme.md
+pyproject.toml
+compare_variance_residual/__init__.py
+compare_variance_residual.egg-info/PKG-INFO
+compare_variance_residual.egg-info/SOURCES.txt
+compare_variance_residual.egg-info/dependency_links.txt
+compare_variance_residual.egg-info/top_level.txt
