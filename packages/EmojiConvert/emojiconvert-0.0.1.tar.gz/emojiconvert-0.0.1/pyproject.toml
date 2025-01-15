@@ -1,0 +1,21 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "EmojiConvert"
+version = "0.0.1"
+authors = [
+    { name = "", email = "kodjomessie@gmail.com" },
+]
+description = "A program that converts emoji to text"
+readme = "README.md"
+requires-python = ">=3.13"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[tool]
