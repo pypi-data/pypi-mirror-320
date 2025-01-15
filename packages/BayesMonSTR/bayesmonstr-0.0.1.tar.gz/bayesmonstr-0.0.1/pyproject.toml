@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "BayesMonSTR"
+version = "0.0.1"
+dependencies = ["numpy>=1.8"]
+authors = [{ name = "Wenxuan Fan", email = "fanwenxuan@westlake.edu.cn" }]
+description = "A small package"
+readme = "../README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Operating System :: OS Independent",
+]
+keywords = ["life-science"]
+
+
+[project.urls]
+Homepage = "https://wenx00.github.io/BayesMonSTR"
+Repository = "https://github.com/wenx00/BayesMonSTR.git"
+
+[project.scripts]
+BayesMonSTR = "BayesMonSTR.BayesMonSTR:main"
