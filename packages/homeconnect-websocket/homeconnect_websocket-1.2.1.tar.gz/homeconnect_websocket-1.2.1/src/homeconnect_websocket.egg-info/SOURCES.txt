@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+src/homeconnect_websocket/__init__.py
+src/homeconnect_websocket/appliance.py
+src/homeconnect_websocket/const.py
+src/homeconnect_websocket/description_parser.py
+src/homeconnect_websocket/entities.py
+src/homeconnect_websocket/errors.py
+src/homeconnect_websocket/message.py
+src/homeconnect_websocket/session.py
+src/homeconnect_websocket/socket.py
+src/homeconnect_websocket.egg-info/PKG-INFO
+src/homeconnect_websocket.egg-info/SOURCES.txt
+src/homeconnect_websocket.egg-info/dependency_links.txt
+src/homeconnect_websocket.egg-info/requires.txt
+src/homeconnect_websocket.egg-info/top_level.txt
