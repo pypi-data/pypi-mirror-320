@@ -1,0 +1,26 @@
+name: ect
+channels:
+  - conda-forge
+dependencies:
+  # Python
+  - python >=3.10
+  # Required
+  - cartopy
+  - cftime
+  - dask
+  - geopandas
+  - matplotlib-base
+  - numcodecs
+  - numpy
+  - pandas
+  - pyproj
+  - python-dateutil
+  - shapely
+  - six
+  - xarray
+  - xcube >= 1.4.0
+  - xcube-cci >= 0.11.1
+  - zarr <3  # until we can ensure zarr 3 compatibility
+  # Test libs
+  - pytest
+  - pytest-cov
