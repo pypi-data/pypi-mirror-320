@@ -1,0 +1,4 @@
+[console_scripts]
+cosine-similarity = split_cosine_utils.scripts:cosine_similarity_main
+split-data = split_cosine_utils.scripts:split_data_main
+top-5-matches = split_cosine_utils.scripts:top_5_matches_main
