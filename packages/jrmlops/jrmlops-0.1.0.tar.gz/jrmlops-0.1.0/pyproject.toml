@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "jrmlops"
+version = "0.1.0"
+description = "Jumping Rivers: Deploying Models into Production with Vetiver"
+authors = ["Jumping Rivers <info@jumpingrivers.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+jrpybestprac = ">=0.1.2"
+scikit-learn = ">=1.1.1"
+vetiver = "^0.2.5"
+pins = "^0.8.6"
+plotly = "^5.24.1"
+requests = "^2.32.3"
+aiohttp = "^3.11.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
