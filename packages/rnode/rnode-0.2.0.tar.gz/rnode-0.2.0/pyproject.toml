@@ -1,0 +1,38 @@
+[project]
+name = "rnode"
+version = "0.2.0"
+description = "Market data service Python bindings"
+authors = [
+    { name = "stark", email = "ywiscat@gmail.com" }
+]
+requires-python = ">=3.11"
+include = [
+    "rnode/py.typed",
+    "Cargo.toml",
+    "src/**/*",
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+patchelf = "^0.17.2.1"
+
+[tool.poetry.group.dev.dependencies]
+maturin = "^1.4.0"
+
+
+
+[project.optional-dependencies]
+dev = [
+    "maturin>=1.0.0",
+]
+
+[build-system]
+requires = ["maturin>=1.4.0"]
+build-backend = "maturin"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+module-name = "rnode.rnode"
+bindings = "pyo3"
+strip = true
+

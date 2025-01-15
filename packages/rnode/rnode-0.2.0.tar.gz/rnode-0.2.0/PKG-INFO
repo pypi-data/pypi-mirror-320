@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: rnode
+Version: 0.2.0
+Requires-Dist: maturin >=1.0.0 ; extra == 'dev'
+Provides-Extra: dev
+Summary: Market data service Python bindings
+Author-email: stark <ywiscat@gmail.com>
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# rnode
+rust data node 提升data处理性能表现
