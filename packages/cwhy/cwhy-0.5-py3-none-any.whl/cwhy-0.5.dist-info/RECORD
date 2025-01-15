@@ -1,0 +1,13 @@
+cwhy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cwhy/__main__.py,sha256=efUDKEFozTvEr-gr3ScL-C4X9i4rtTfiJ6owS1JuRWc,5845
+cwhy/cwhy.py,sha256=z1QNe4DmiCV0_WOIbcnmW6aezvC026Esx-AtaPN1U9U,3638
+cwhy/prompts.py,sha256=mcA5HXW8BrUCNs7bseIgxxav9li9y7kq35yZLoCBqQc,6740
+cwhy/conversation/__init__.py,sha256=Faix-fcMQhHwvHIIRjlNbv5uM2LNGL4EFSlACnXk9kY,3408
+cwhy/conversation/diff_functions.py,sha256=zUCRBvwG1SrZLTq8tkd8l1PNzZJpkCIrq4NXP5c-fqc,4974
+cwhy/conversation/explain_functions.py,sha256=7FIHyWypQFKXNj8M2rdpZMNbjt6iFyY95_KOJrgwKIA,3494
+cwhy/conversation/utils.py,sha256=eWil6WhEC5-pMLZz9PRBCyZRc4oslOFwVSyVhrttxWY,984
+cwhy-0.5.dist-info/METADATA,sha256=FsW_LlSrhQbQuiqJGUgtUhjgesOwcIn7P_2_Zm2_q64,14906
+cwhy-0.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+cwhy-0.5.dist-info/entry_points.txt,sha256=zAhRzfO1D5fhqwOCgXX7RwubcK3UnZLJpuINyrKe7qY,44
+cwhy-0.5.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cwhy-0.5.dist-info/RECORD,,
