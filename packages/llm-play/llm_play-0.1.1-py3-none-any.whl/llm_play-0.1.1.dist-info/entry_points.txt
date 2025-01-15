@@ -1,0 +1,2 @@
+[console_scripts]
+llm-play = llm_play:main
