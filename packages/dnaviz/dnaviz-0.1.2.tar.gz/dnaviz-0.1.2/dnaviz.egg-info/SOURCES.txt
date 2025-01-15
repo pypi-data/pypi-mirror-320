@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+dnaviz/__init__.py
+dnaviz/cli.py
+dnaviz/visualizer.py
+dnaviz.egg-info/PKG-INFO
+dnaviz.egg-info/SOURCES.txt
+dnaviz.egg-info/dependency_links.txt
+dnaviz.egg-info/entry_points.txt
+dnaviz.egg-info/requires.txt
+dnaviz.egg-info/top_level.txt
+tests/test_installation.py

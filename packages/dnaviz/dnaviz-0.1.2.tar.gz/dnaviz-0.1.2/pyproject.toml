@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "click>=8.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dnaviz"
+version = "0.1.2"
+description = "A package for DNA/RNA visualization"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT"}
+authors = [
+    {name = "SemiQuant", email = "Jason.Limberis@ucsf.edu"},
+]
+dependencies = [
+    "pygame>=2.5.0",
+    "click>=8.0.0",
+    "rich>=10.0.0",
+]
+
+[tool.setuptools]
+packages = ["dnaviz"]
+
+[project.scripts]
+dnaviz = "dnaviz.cli:main" 
