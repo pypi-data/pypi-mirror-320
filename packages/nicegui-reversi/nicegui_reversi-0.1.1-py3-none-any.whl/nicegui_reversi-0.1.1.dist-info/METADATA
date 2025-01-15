@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: nicegui-reversi
+Version: 0.1.1
+Summary: Reversi on NiceGUI
+Project-URL: homepage, https://github.com/SaitoTsutomu/nicegui-reversi
+Author-email: Saito Tsutomu <tsutomu7@hotmail.co.jp>
+License: Apache-2.0
+License-File: LICENSE
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Requires-Python: >=3.12
+Requires-Dist: nicegui>=2.9.1
+Requires-Dist: numpy>=2.2.1
+Requires-Dist: pytest>=8.3.4
+Description-Content-Type: text/markdown
+
+# NiceGUI Reversi
+
+NiceGUI Reversi is a Reversi that runs on NiceGUI.
+
+## Usage
+
+```
+% reversi
+```
+
+## Ref.
+
+See: https://qiita.com/SaitoTsutomu/items/6f45110c614730793779
