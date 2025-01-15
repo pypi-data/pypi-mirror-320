@@ -1,0 +1,885 @@
+########################################
+# Evergreen Template for MongoDB Drivers
+########################################
+
+# When a task that used to pass starts to fail
+# Go through all versions that may have been skipped to detect
+# when the task started failing
+stepback: true
+
+# Mark a failure as a system/bootstrap failure (purple box) rather then a task
+# failure by default.
+# Actual testing tasks are marked with `type: test`
+command_type: system
+
+# Protect ourself against rogue test case, or curl gone wild, that runs forever
+# Good rule of thumb: the averageish length a task takes, times 5
+# That roughly accounts for variable system performance for various buildvariants
+exec_timeout_secs: 1800 # 6 minutes is the longest we'll ever run
+
+# What to do when evergreen hits the timeout (`post:` tasks are run automatically)
+timeout:
+  - command: shell.exec
+    params:
+      script: |
+        ls -la
+
+functions:
+  "fetch source":
+    # Executes git clone and applies the submitted patch, if any
+    - command: git.get_project
+      params:
+        directory: "src"
+    # Make an evergreen exapanstion file with dynamic values
+    - command: shell.exec
+      params:
+        working_dir: "src"
+        script: |
+           set -o xtrace
+           # Get the current unique version of this checkout
+           if [ "${is_patch}" = "true" ]; then
+              CURRENT_VERSION=$(git describe)-patch-${version_id}
+           else
+              CURRENT_VERSION=latest
+           fi
+
+           export DRIVERS_TOOLS="$(pwd)/../drivers-tools"
+           export PROJECT_DIRECTORY="$(pwd)"
+
+           # Python has cygwin path problems on Windows. Detect prospective mongo-orchestration home directory
+           if [ "Windows_NT" = "$OS" ]; then # Magic variable in cygwin
+              export DRIVERS_TOOLS=$(cygpath -m $DRIVERS_TOOLS)
+              export PROJECT_DIRECTORY=$(cygpath -m $PROJECT_DIRECTORY)
+           fi
+
+           export MONGO_ORCHESTRATION_HOME="$DRIVERS_TOOLS/.evergreen/orchestration"
+           export MONGODB_BINARIES="$DRIVERS_TOOLS/mongodb/bin"
+
+           cat <<EOT > expansion.yml
+           CURRENT_VERSION: "$CURRENT_VERSION"
+           DRIVERS_TOOLS: "$DRIVERS_TOOLS"
+           MONGO_ORCHESTRATION_HOME: "$MONGO_ORCHESTRATION_HOME"
+           MONGODB_BINARIES: "$MONGODB_BINARIES"
+           PROJECT_DIRECTORY: "$PROJECT_DIRECTORY"
+           PREPARE_SHELL: |
+              set -o errexit
+              export DRIVERS_TOOLS="$DRIVERS_TOOLS"
+              export MONGO_ORCHESTRATION_HOME="$MONGO_ORCHESTRATION_HOME"
+              export MONGODB_BINARIES="$MONGODB_BINARIES"
+              export PROJECT_DIRECTORY="$PROJECT_DIRECTORY"
+              export TMPDIR="$MONGO_ORCHESTRATION_HOME/db"
+              export PATH="$MONGODB_BINARIES:$PATH"
+              export PROJECT="${project}"
+              export ASYNC_TEST_TIMEOUT=30
+              export PIP_QUIET=1
+           EOT
+           # See what we've done.
+           cat expansion.yml
+
+    # Load the expansion file to make an evergreen variable with the current unique version
+    - command: expansions.update
+      params:
+        file: src/expansion.yml
+
+  "prepare resources":
+    - command: shell.exec
+      params:
+        working_dir: "src"
+        script: |
+          ${PREPARE_SHELL}
+          rm -rf $DRIVERS_TOOLS
+          if [ "${project}" = "drivers-tools" ]; then
+            # If this was a patch build, doing a fresh clone would not actually test the patch
+            cp -R ${PROJECT_DIRECTORY}/ $DRIVERS_TOOLS
+          else
+            git clone https://github.com/mongodb-labs/drivers-evergreen-tools.git $DRIVERS_TOOLS
+          fi
+          echo "{ \"releases\": { \"default\": \"$MONGODB_BINARIES\" }}" > $MONGO_ORCHESTRATION_HOME/orchestration.config
+
+  "exec compile script" :
+    - command: shell.exec
+      type: test
+      params:
+        working_dir: "src"
+        script: |
+          ${PREPARE_SHELL}
+          [ -f ${PROJECT_DIRECTORY}/${file} ] && BUILDTOOL="${buildtool}" sh ${PROJECT_DIRECTORY}/${file} || echo "${PROJECT_DIRECTORY}/${file} not available, skipping"
+
+  "exec script" :
+    - command: shell.exec
+      type: test
+      params:
+        working_dir: "src"
+        script: |
+          ${PREPARE_SHELL}
+          [ -f ${PROJECT_DIRECTORY}/${file} ] && sh ${PROJECT_DIRECTORY}/${file} || echo "${PROJECT_DIRECTORY}/${file} not available, skipping"
+
+  "upload mo artifacts":
+    - command: ec2.assume_role
+      params:
+        role_arn: ${assume_role_arn}
+    - command: shell.exec
+      params:
+        script: |
+          ${PREPARE_SHELL}
+          find $MONGO_ORCHESTRATION_HOME -name \*.log | xargs tar czf mongodb-logs.tar.gz
+    - command: s3.put
+      params:
+        aws_key: ${AWS_ACCESS_KEY_ID}
+        aws_secret: ${AWS_SECRET_ACCESS_KEY}
+        aws_session_token: ${AWS_SESSION_TOKEN}
+        local_file: mongodb-logs.tar.gz
+        remote_file: ${build_variant}/${revision}/${version_id}/${build_id}/logs/${task_id}-${execution}-mongodb-logs.tar.gz
+        bucket: ${aws_bucket}
+        permissions: public-read
+        content_type: ${content_type|application/x-gzip}
+        display_name: "mongodb-logs.tar.gz"
+    - command: s3.put
+      params:
+        aws_key: ${AWS_ACCESS_KEY_ID}
+        aws_secret: ${AWS_SECRET_ACCESS_KEY}
+        aws_session_token: ${AWS_SESSION_TOKEN}
+        local_file: ${DRIVERS_TOOLS}/.evergreen/orchestration/server.log
+        remote_file: ${build_variant}/${revision}/${version_id}/${build_id}/logs/${task_id}-${execution}-orchestration.log
+        bucket: ${aws_bucket}
+        permissions: public-read
+        content_type: ${content_type|text/plain}
+        display_name: "orchestration.log"
+
+  "upload test results":
+    - command: attach.results
+      params:
+        file_location: "${DRIVERS_TOOLS}/results.json"
+    - command: attach.xunit_results
+      params:
+        files:
+          - "src/xunit-results/TEST-*.xml"
+          - "src/xunit-synchro-results"
+
+  "bootstrap mongo-orchestration":
+    - command: shell.exec
+      params:
+        script: |
+          ${PREPARE_SHELL}
+          MONGODB_VERSION=${VERSION} \
+            TOPOLOGY=${TOPOLOGY} \
+            AUTH=${AUTH} \
+            SSL=${SSL} \
+            STORAGE_ENGINE=${STORAGE_ENGINE} \
+            bash ${DRIVERS_TOOLS}/.evergreen/run-orchestration.sh
+    # run-orchestration generates expansion file with the MONGODB_URI for the cluster
+    - command: expansions.update
+      params:
+        file: mo-expansion.yml
+
+  "stop mongo-orchestration":
+    - command: shell.exec
+      params:
+        script: |
+          ${PREPARE_SHELL}
+          bash ${DRIVERS_TOOLS}/.evergreen/stop-orchestration.sh
+
+  "run tox":
+    - command: ec2.assume_role
+      params:
+        role_arn: ${aws_test_secrets_role}
+    - command: subprocess.exec
+      params:
+        working_dir: "src"
+        binary: bash
+        include_expansions_in_env: ["AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY", "AWS_SESSION_TOKEN"]
+        args:
+          - ${DRIVERS_TOOLS}/.evergreen/csfle/setup-secrets.sh
+    - command: subprocess.exec
+      params:
+        working_dir: "src"
+        binary: bash
+        background: true
+        args:
+          - ${DRIVERS_TOOLS}/.evergreen/csfle/start-servers.sh
+    - command: subprocess.exec
+      params:
+        working_dir: "src"
+        binary: bash
+        args:
+          - ${DRIVERS_TOOLS}/.evergreen/csfle/await-servers.sh
+    - command: shell.exec
+      type: test
+      params:
+        working_dir: "src"
+        script: |
+          ${PREPARE_SHELL}
+          LIBMONGOCRYPT_URL="${libmongocrypt_url}" \
+            TEST_ENCRYPTION=1 \
+            PYTHON_BINARY="${PYTHON_BINARY}" \
+            TOX_ENV="${TOX_ENV}" \
+            VIRTUALENV="${VIRTUALENV}" \
+            CHECK_EXCLUDE_PATTERNS=1 \
+            AUTH="${AUTH}" \
+            SSL="${SSL}" \
+            CERT_DIR="${DRIVERS_TOOLS}/.evergreen/x509gen" \
+            bash ${PROJECT_DIRECTORY}/.evergreen/run-tox.sh
+
+  "run enterprise auth tests":
+    - command: ec2.assume_role
+      params:
+        role_arn: ${aws_test_secrets_role}
+    - command: shell.exec
+      type: test
+      params:
+        working_dir: "src"
+        include_expansions_in_env: ["AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY", "AWS_SESSION_TOKEN"]
+        script: |
+          bash ${DRIVERS_TOOLS}/.evergreen/secrets_handling/setup-secrets.sh drivers/enterprise_auth
+    - command: shell.exec
+      type: test
+      params:
+        working_dir: "src"
+        script: |
+          set +x  # disable xtrace
+          CLIENT_PEM=${DRIVERS_TOOLS}/.evergreen/x509gen/client.pem \
+            CA_PEM=${DRIVERS_TOOLS}/.evergreen/x509gen/ca.pem \
+            PYTHON_BINARY=${PYTHON_BINARY} \
+            TOX_ENV=${TOX_ENV} \
+            PROJECT_DIRECTORY=${PROJECT_DIRECTORY} \
+            bash ${PROJECT_DIRECTORY}/.evergreen/run-enterprise-auth-tests.sh
+
+  "cleanup":
+    - command: shell.exec
+      params:
+        script: |
+          ${PREPARE_SHELL}
+          rm -rf $DRIVERS_TOOLS || true
+
+  "fix absolute paths":
+    - command: shell.exec
+      params:
+        script: |
+          ${PREPARE_SHELL}
+          for filename in $(find ${DRIVERS_TOOLS} -name \*.json); do
+            perl -p -i -e "s|ABSOLUTE_PATH_REPLACEMENT_TOKEN|${DRIVERS_TOOLS}|g" $filename
+          done
+
+  "windows fix":
+    - command: shell.exec
+      params:
+        script: |
+          ${PREPARE_SHELL}
+          for i in $(find ${DRIVERS_TOOLS}/.evergreen ${PROJECT_DIRECTORY}/.evergreen -name \*.sh); do
+            cat $i | tr -d '\r' > $i.new
+            mv $i.new $i
+          done
+          # Copy client certificate because symlinks do not work on Windows.
+          cp ${DRIVERS_TOOLS}/.evergreen/x509gen/client.pem ${MONGO_ORCHESTRATION_HOME}/lib/client.pem
+
+  "make files executable":
+    - command: shell.exec
+      params:
+        script: |
+          ${PREPARE_SHELL}
+          for i in $(find ${DRIVERS_TOOLS}/.evergreen ${PROJECT_DIRECTORY}/.evergreen -name \*.sh); do
+            chmod +x $i
+          done
+
+  "init test-results":
+    - command: shell.exec
+      params:
+        script: |
+          ${PREPARE_SHELL}
+          echo '{"results": [{ "status": "FAIL", "test_file": "Build", "log_raw": "No test-results.json found was created"  } ]}' > ${PROJECT_DIRECTORY}/test-results.json
+
+  "install dependencies":
+    - command: shell.exec
+      params:
+        working_dir: "src"
+        script: |
+          ${PREPARE_SHELL}
+          file="${PROJECT_DIRECTORY}/.evergreen/install-dependencies.sh"
+          # Don't use ${file} syntax here because evergreen treats it as an empty expansion.
+          [ -f "$file" ] && sh $file || echo "$file not available, skipping"
+
+pre:
+  - func: "fetch source"
+  - func: "prepare resources"
+  - func: "windows fix"
+  - func: "fix absolute paths"
+  - func: "init test-results"
+  - func: "make files executable"
+  - func: "install dependencies"
+
+post:
+  - func: "upload mo artifacts"
+  - func: "upload test results"
+  - func: "stop mongo-orchestration"
+  - func: "cleanup"
+
+tasks:
+
+    # Wildcard task. Do you need to find out what tools are available and where?
+    # Throw it here, and execute this task on all buildvariants
+    - name: getdata
+      commands:
+        - command: shell.exec
+          type: test
+          params:
+            script: |
+               set -o xtrace
+               . ${DRIVERS_TOOLS}/.evergreen/download-mongodb.sh || true
+               get_distro || true
+               echo $DISTRO
+               echo $MARCH
+               echo $OS
+               uname -a || true
+               ls /etc/*release* || true
+               cc --version || true
+               gcc --version || true
+               clang --version || true
+               gcov --version || true
+               lcov --version || true
+               llvm-cov --version || true
+               echo $PATH
+               ls -la /usr/local/Cellar/llvm/*/bin/ || true
+               ls -la /usr/local/Cellar/ || true
+               scan-build --version || true
+               genhtml --version || true
+               valgrind --version || true
+
+# Test tasks {{{
+
+    - name: "test-3.6-standalone"
+      tags: ["3.6", "standalone"]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "3.6"
+            TOPOLOGY: "server"
+        - func: "run tox"
+
+    - name: "test-3.6-replica_set"
+      tags: ["3.6", "replica_set"]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "3.6"
+            TOPOLOGY: "replica_set"
+        - func: "run tox"
+
+    - name: "test-3.6-sharded_cluster"
+      tags: ["3.6", "sharded_cluster"]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "3.6"
+            TOPOLOGY: "sharded_cluster"
+        - func: "run tox"
+
+    - name: "test-4.0-standalone"
+      tags: ["4.0", "standalone"]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "4.0"
+            TOPOLOGY: "server"
+        - func: "run tox"
+
+    - name: "test-4.0-replica_set"
+      tags: ["4.0", "replica_set"]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "4.0"
+            TOPOLOGY: "replica_set"
+        - func: "run tox"
+
+    - name: "test-4.0-sharded_cluster"
+      tags: ["4.0", "sharded_cluster"]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "4.0"
+            TOPOLOGY: "sharded_cluster"
+        - func: "run tox"
+
+    - name: "test-4.2-standalone"
+      tags: ["4.2", "standalone"]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "4.2"
+            TOPOLOGY: "server"
+        - func: "run tox"
+
+    - name: "test-4.2-replica_set"
+      tags: ["4.2", "replica_set"]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "4.2"
+            TOPOLOGY: "replica_set"
+        - func: "run tox"
+
+    - name: "test-4.2-sharded_cluster"
+      tags: ["4.2", "sharded_cluster"]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "4.2"
+            TOPOLOGY: "sharded_cluster"
+        - func: "run tox"
+
+    - name: "test-4.4-standalone"
+      tags: ["4.4", "standalone"]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "4.4"
+            TOPOLOGY: "server"
+        - func: "run tox"
+
+    - name: "test-4.4-replica_set"
+      tags: ["4.4", "replica_set"]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "4.4"
+            TOPOLOGY: "replica_set"
+        - func: "run tox"
+
+    - name: "test-4.4-sharded_cluster"
+      tags: ["4.4", "sharded_cluster"]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "4.4"
+            TOPOLOGY: "sharded_cluster"
+        - func: "run tox"
+
+    - name: "test-5.0-standalone"
+      tags: ["5.0", "standalone"]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "5.0"
+            TOPOLOGY: "server"
+        - func: "run tox"
+
+    - name: "test-5.0-replica_set"
+      tags: ["5.0", "replica_set"]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "5.0"
+            TOPOLOGY: "replica_set"
+        - func: "run tox"
+
+    - name: "test-5.0-sharded_cluster"
+      tags: ["5.0", "sharded_cluster"]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "5.0"
+            TOPOLOGY: "sharded_cluster"
+        - func: "run tox"
+
+    - name: "test-6.0-standalone"
+      tags: [ "6.0", "standalone" ]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "6.0"
+            TOPOLOGY: "server"
+        - func: "run tox"
+
+    - name: "test-6.0-replica_set"
+      tags: [ "6.0", "replica_set" ]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "6.0"
+            TOPOLOGY: "replica_set"
+        - func: "run tox"
+
+    - name: "test-6.0-sharded_cluster"
+      tags: [ "6.0", "sharded_cluster" ]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "6.0"
+            TOPOLOGY: "sharded_cluster"
+        - func: "run tox"
+
+    - name: "test-7.0-standalone"
+      tags: [ "7.0", "standalone" ]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "7.0"
+            TOPOLOGY: "server"
+        - func: "run tox"
+
+    - name: "test-7.0-replica_set"
+      tags: [ "7.0", "replica_set" ]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "7.0"
+            TOPOLOGY: "replica_set"
+        - func: "run tox"
+
+    - name: "test-7.0-sharded_cluster"
+      tags: [ "7.0", "sharded_cluster" ]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "7.0"
+            TOPOLOGY: "sharded_cluster"
+        - func: "run tox"
+
+    - name: "test-8.0-standalone"
+      tags: [ "8.0", "standalone" ]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "8.0"
+            TOPOLOGY: "server"
+        - func: "run tox"
+
+    - name: "test-8.0-replica_set"
+      tags: [ "8.0", "replica_set" ]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "8.0"
+            TOPOLOGY: "replica_set"
+        - func: "run tox"
+
+    - name: "test-8.0-sharded_cluster"
+      tags: [ "8.0", "sharded_cluster" ]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "8.0"
+            TOPOLOGY: "sharded_cluster"
+        - func: "run tox"
+
+    - name: "test-latest-standalone"
+      tags: ["latest", "standalone"]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "latest"
+            TOPOLOGY: "server"
+        - func: "run tox"
+
+    - name: "test-latest-replica_set"
+      tags: ["latest", "replica_set"]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "latest"
+            TOPOLOGY: "replica_set"
+        - func: "run tox"
+
+    - name: "test-latest-sharded_cluster"
+      tags: ["latest", "sharded_cluster"]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "latest"
+            TOPOLOGY: "sharded_cluster"
+        - func: "run tox"
+
+    - name: "test-rapid-standalone"
+      tags: ["rapid", "standalone"]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "rapid"
+            TOPOLOGY: "server"
+        - func: "run tox"
+
+    - name: "test-rapid-replica_set"
+      tags: ["rapid", "replica_set"]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "rapid"
+            TOPOLOGY: "replica_set"
+        - func: "run tox"
+
+    - name: "test-rapid-sharded_cluster"
+      tags: ["rapid", "sharded_cluster"]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "rapid"
+            TOPOLOGY: "sharded_cluster"
+        - func: "run tox"
+
+    - name: "test-enterprise-auth"
+      tags: ["pr"]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "latest"
+            TOPOLOGY: "server"
+        - func: "run enterprise auth tests"
+
+    - name: "docs"
+      tags: ["pr"]
+      commands:
+        - func: "run tox"
+          vars:
+             TOX_ENV: docs
+
+    - name: "doctest"
+      tags: ["pr"]
+      commands:
+        - func: "bootstrap mongo-orchestration"
+          vars:
+            VERSION: "5.0"
+            TOPOLOGY: "server"
+        - func: "run tox"
+          vars:
+             TOX_ENV: doctest
+
+    - name: "assign-pr-reviewer"
+      tags: ["pr"]
+      allowed_requesters: ["patch", "github_pr"]
+      commands:
+        - command: shell.exec
+          type: test
+          params:
+            shell: "bash"
+            working_dir: src
+            script: |
+              ${PREPARE_SHELL}
+              set -x
+              export CONFIG=$PROJECT_DIRECTORY/.github/reviewers.txt
+              export SCRIPT="$DRIVERS_TOOLS/.evergreen/github_app/assign-reviewer.sh"
+              bash $SCRIPT -p $CONFIG -h ${github_commit} -o "mongodb" -n "motor"
+              echo '{"results": [{ "status": "PASS", "test_file": "Build", "log_raw": "Test completed"  } ]}' > ${PROJECT_DIRECTORY}/test-results.json
+
+# }}}
+
+axes:
+  - id: ssl
+    display_name: SSL
+    values:
+      - id: ssl
+        display_name: SSL
+        variables:
+           SSL: "ssl"
+           AUTH: "auth"
+      - id: nossl
+        display_name: NoSSL
+        variables:
+           SSL: "nossl"
+           AUTH: "noauth"
+
+  - id: tox-env
+    display_name: "Tox Env RHEL8"
+    values:
+      - id: "test-pypy39"
+        variables:
+           TOX_ENV: "test"
+           PYTHON_BINARY: "/opt/python/pypy3.9/bin/python3"
+      - id: "test-py38"
+        variables:
+           TOX_ENV: "test"
+           PYTHON_BINARY: "/opt/python/3.8/bin/python3"
+      - id: "test-py39"
+        variables:
+           TOX_ENV: "test"
+           PYTHON_BINARY: "/opt/python/3.9/bin/python3"
+      - id: "test-py310"
+        variables:
+           TOX_ENV: "test"
+           PYTHON_BINARY: "/opt/python/3.10/bin/python3"
+      - id: "test-py311"
+        variables:
+           TOX_ENV: "test"
+           PYTHON_BINARY: "/opt/python/3.11/bin/python3"
+      - id: "test-py312"
+        variables:
+           TOX_ENV: "test"
+           PYTHON_BINARY: "/opt/python/3.12/bin/python3"
+      - id: "test-py313"
+        variables:
+           TOX_ENV: "test"
+           PYTHON_BINARY: "/opt/python/3.13/bin/python3"
+      - id: "test-pymongo-latest"
+        variables:
+           TOX_ENV: "test-pymongo-latest"
+           PYTHON_BINARY: "/opt/python/3.8/bin/python3"
+      - id: "synchro-py38"
+        variables:
+          TOX_ENV: "synchro"
+          PYTHON_BINARY: "/opt/python/3.8/bin/python3"
+      - id: "synchro-py312"
+        variables:
+          TOX_ENV: "synchro"
+          PYTHON_BINARY: "/opt/python/3.12/bin/python3"
+
+  - id: tox-env-rhel7
+    display_name: "Tox Env RHEL7"
+    values:
+      - id: "test"
+        variables:
+           TOX_ENV: "test"
+           PYTHON_BINARY: "/opt/python/3.9/bin/python3"
+
+  # Test Python 3.8 only on Mac.
+  - id: tox-env-osx
+    display_name: "Tox Env OSX"
+    values:
+      - id: "test"
+        variables:
+           TOX_ENV: "test"
+           PYTHON_BINARY: "/Library/Frameworks/Python.framework/Versions/3.8/bin/python3"
+
+  - id: tox-env-win
+    display_name: "Tox Env Windows"
+    values:
+      - id: "test-py38"
+        variables:
+           TOX_ENV: "test"
+           PYTHON_BINARY: "c:/python/Python39/python.exe"
+      - id: "test-py39"
+        variables:
+           TOX_ENV: "test"
+           PYTHON_BINARY: "c:/python/Python39/python.exe"
+      - id: "test-py310"
+        variables:
+           TOX_ENV: "test"
+           PYTHON_BINARY: "c:/python/Python310/python.exe"
+      - id: "test-py311"
+        variables:
+           TOX_ENV: "test"
+           PYTHON_BINARY: "c:/python/Python311/python.exe"
+      - id: "test-py312"
+        variables:
+           TOX_ENV: "test"
+           PYTHON_BINARY: "c:/python/Python312/python.exe"
+
+  - id: os
+    display_name: "Operating System"
+    values:
+      - id: "rhel8"
+        display_name: "RHEL 8.x"
+        run_on: "rhel84-small"
+      - id: "rhel7"
+        display_name: "RHEL 7.x"
+        run_on: "rhel79-small"
+      - id: "win"
+        display_name: "Windows"
+        run_on: "windows-64-vsMulti-small"
+      - id: "macos-1100"
+        display_name: "macOS 11.00"
+        run_on: "macos-1100"
+
+buildvariants:
+
+# Main test matrix.
+- matrix_name: "main"
+  display_name: "${os}-${tox-env}-${ssl}"
+  matrix_spec:
+    os: "rhel8"
+    tox-env: "*"
+    ssl: "*"
+  exclude_spec:
+    # TODO: synchro needs PyMongo's updated SSL test certs,
+    # which may require Motor test suite changes.
+    - os: "*"
+      tox-env: ["synchro-py38", "synchro-py312"]
+      ssl: "ssl"
+  tasks:
+     - ".rapid"
+     - ".latest"
+     - ".8.0"
+     - ".7.0"
+     - ".6.0"
+     - ".5.0"
+     - ".4.4"
+     - ".4.2"
+     - ".4.0"
+     - ".3.6"
+
+- matrix_name: "test-rhel7"
+  display_name: "${os}-${tox-env-rhel7}-${ssl}"
+  matrix_spec:
+    os: "rhel7"
+    tox-env-rhel7: "*"
+    ssl: "*"
+  tasks:
+     - ".rapid"
+     - ".latest"
+     - ".7.0"
+     - ".6.0"
+     - ".5.0"
+     - ".4.4"
+
+- matrix_name: "test-win"
+  display_name: "${os}-${tox-env-win}-${ssl}"
+  matrix_spec:
+    os: "win"
+    tox-env-win: "*"
+    ssl: "*"
+  tasks:
+     - ".rapid"
+     - ".latest"
+     - ".8.0"
+     - ".7.0"
+     - ".6.0"
+     - ".5.0"
+     - ".4.4"
+     - ".4.2"
+     - ".4.0"
+     - ".3.6"
+
+- matrix_name: "test-macos"
+  display_name: "${os}-${tox-env-osx}-${ssl}"
+  matrix_spec:
+    os: "macos-1100"
+    tox-env-osx: "*"
+    ssl: "*"
+  tasks:
+     - ".rapid"
+     - ".latest"
+     - ".8.0"
+     - ".7.0"
+     - ".6.0"
+
+- matrix_name: "enterprise-auth"
+  display_name: "Enterprise Auth-${tox-env}"
+  matrix_spec: {"tox-env": ["synchro-py38", "synchro-py312"], ssl: "ssl"}
+  run_on:
+     - "rhel84-small"
+  tasks:
+     - name: "test-enterprise-auth"
+
+- name: "docs"
+  display_name: "Docs - Build"
+  run_on:
+     - "rhel84-small"
+  expansions:
+     TOX_ENV: "docs"
+     PYTHON_BINARY: "/opt/python/3.8/bin/python3"
+  tasks:
+     - name: "docs"
+
+- name: "doctests"
+  display_name: "Docs - Test"
+  run_on:
+     - "rhel84-small"
+  expansions:
+     TOX_ENV: "doctest"
+     PYTHON_BINARY: "/opt/python/3.8/bin/python3"
+  tasks:
+     - name: "doctest"
+
+- name: rhel8-pr-assign-reviewer
+  display_name: Assign PR Reviewer
+  run_on: rhel87-small
+  tasks:
+    - name: "assign-pr-reviewer"

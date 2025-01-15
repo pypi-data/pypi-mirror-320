@@ -1,0 +1,16 @@
+*~
+*#*
+.DS*
+*.pyc
+*.pyd
+build/
+dist/
+motor.egg-info/
+setup.cfg
+*.egg
+.tox
+doc/_build/
+.idea/
+xunit-results
+xunit-synchro-results
+.eggs
