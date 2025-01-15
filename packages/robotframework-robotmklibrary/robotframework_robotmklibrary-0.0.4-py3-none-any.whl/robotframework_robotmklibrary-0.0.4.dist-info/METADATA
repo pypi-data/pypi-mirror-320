@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: robotframework-robotmklibrary
+Version: 0.0.4
+Summary: A Robot Framework keyword library intended to be used with Robotmk.
+Author-email: Jörg Herbel <joerg.herbel@checkmk.com>
+License-File: LICENSE
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+A keyword library for Robot Framework intended to be used in combination with Robotmk.
