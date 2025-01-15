@@ -1,0 +1,164 @@
+Metadata-Version: 2.4
+Name: scidats
+Version: 0.0.10
+Summary: SciDatS is a python package for storing and retrieving scientific data stored in JSON-LD (semantically annotated JSON - Linked Data).
+Project-URL: Homepage, https://gitlab.com/opensourcelab/scientificdata/scidats
+Author-email: mark doerr <mark@uni-greifswald.de>
+License: MIT
+License-File: AUTHORS.md
+License-File: LICENSE
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Dist: fastparquet
+Requires-Dist: pandas
+Requires-Dist: parquet
+Requires-Dist: pyarrow
+Requires-Dist: pydantic
+Requires-Dist: pyld>=2.0.4
+Requires-Dist: rdflib
+Provides-Extra: dev
+Requires-Dist: bandit>=1.0; extra == 'dev'
+Requires-Dist: black>=20.0; extra == 'dev'
+Requires-Dist: bumpversion>=0.6; extra == 'dev'
+Requires-Dist: coverage>=7.2; extra == 'dev'
+Requires-Dist: invoke>=2.1; extra == 'dev'
+Requires-Dist: isort>=5.0; extra == 'dev'
+Requires-Dist: mypy>=0.0; extra == 'dev'
+Requires-Dist: pylint>=2.0; extra == 'dev'
+Requires-Dist: pyproject-flake8; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: pytest-cov>=2.12; extra == 'dev'
+Requires-Dist: pytest-xdist>=2.0; extra == 'dev'
+Requires-Dist: pytest>=7.3; extra == 'dev'
+Requires-Dist: safety>=1.0; extra == 'dev'
+Requires-Dist: tox>=4.5; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: linkml>=1.8.2; extra == 'docs'
+Requires-Dist: myst-parser>=1.0; extra == 'docs'
+Requires-Dist: python-docs-theme>=2023.3; extra == 'docs'
+Requires-Dist: sphinx>=7.0; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: bandit>=1.0; extra == 'test'
+Requires-Dist: black>=20.0; extra == 'test'
+Requires-Dist: coverage>=7.2; extra == 'test'
+Requires-Dist: flake8>=3.0; extra == 'test'
+Requires-Dist: isort>=5.0; extra == 'test'
+Requires-Dist: mypy>=0.0; extra == 'test'
+Requires-Dist: pylint>=2.0; extra == 'test'
+Requires-Dist: pytest-cov>=2.12; extra == 'test'
+Requires-Dist: pytest-xdist>=2.0; extra == 'test'
+Requires-Dist: pytest>=7.3; extra == 'test'
+Requires-Dist: safety>=1.0; extra == 'test'
+Requires-Dist: tox>=4.5; extra == 'test'
+Description-Content-Type: text/markdown
+
+# SciDatS
+
+SciDatS is a python package for storing and retrieving scientific data stored in JSON-LD (semantically annotated JSON - Linked Data).
+
+This *Scientific Data Standard*  is designed as a data exchange standard to enable exchange/synchronisation of Scientific Data, maintaining all metadata between 
+different laboratories.
+
+
+This project is very much inspired by Stuart Chalk's [SciDatSa](https://github.com/stuchalk/scidata/tree/main) and 
+the tools of his lab [https://github.com/chalklab](https://github.com/chalklab).
+
+
+## Features
+
+Compared to SciDatSa it is aiming at
+
+* a wide community support, independent of a certain lab 
+* a simpler JSON-LD structure
+* convenient functions for retrieving data and metadata
+* improved tooling based on pydantic and rdflib
+* **reading and writing** for *SciDatS* files
+* coupling to the [LabDataReader framework](https://gitlab/opensourcelab/ScientificData/LabDataReader) - for transforming proppriatory lab data into a semantically annotated SciDatSa format.
+
+## Design criteria
+
+
+Here are some of the criteria the data / metadata standard has to fulfil (and in brackets the selected technology) :
+
+
+- data and metadata storage for scientific / machine learning needs (semantic annotation, based on ontologies, derivatives of owlready2)
+
+  - proper nullable data / missing data handling (pyarrow / parquet)
+
+  - data modalities, like range / limits, type / continuos / categorial / variable treatment in case of range violation (parquet metadta)
+
+  - cardinality (parquet metadata)
+
+- efficient storage (parquet)
+
+- metadata and data stored at one place (parquet)
+
+- metadata conservation when saving / loading / processing (parquet -> arrow)
+
+- fast data exchange (arrow flight, MinIO active replication)
+
+- fast loading (fastparquet, pyarrow)
+
+- fast data processing without in-memory re-writing after loading ( pandas with pyarrow backend, arrow flight, polars)
+
+- "modalities" for the machine learning models
+
+- semantic annotations / metadata in RDF compliant format - for creating instances of ontology classes and SPARQL reasoning (JSON-LD, rdflib, owlready2)
+
+- fast data processing (direct loading into pyarrow driven dataframe )
+
+- programming language agnostic / independent (parquet)
+
+- easy to use (SciDatS / labDataReader framework, currently in implementation by me)
+
+- commonly used in ETL pipelines (Apache Spark, prefect, ... )
+
+- suitable for S3 file storage systems (MinIO)
+
+
+## Installation
+
+    pip install scidats --index-url https://gitlab.com/api/v4/projects/<gitlab-project-id>/packages/pypi/simple
+
+## Usage
+
+    scidats --help 
+
+## Development
+
+    git clone gitlab.com/opensourcelab/scidats
+
+    # create a virtual environment and activate it then run
+
+    pip install -e .[dev]
+
+    # run unittests
+
+    invoke test   # use the invoke environment to manage development
+    
+
+## Documentation
+
+The Documentation can be found here: [https://opensourcelab.gitlab.io/scidats](https://opensourcelab.gitlab.io/scidats) or [scidats.gitlab.io](scidats.gitlab.io/)
+
+
+## Credits
+
+This package was created with [Cookiecutter](https://github.com/audreyr/cookiecutter)
+ and the [gitlab.com/opensourcelab/software-dev/cookiecutter-pypackage](https://gitlab.com/opensourcelab/software-dev/cookiecutter-pypackage) project template.
+
+
+
