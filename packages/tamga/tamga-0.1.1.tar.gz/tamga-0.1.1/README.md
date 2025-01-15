@@ -1,0 +1,193 @@
+# 🌈 Tamga
+
+A beautiful and customizable logger for Python web applications. Tamga provides colorful console output and organized log files for different types of logs.
+
+![Python](https://img.shields.io/badge/python-v3.10+-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)
+
+## ✨ Features
+
+- 🎨 Beautiful colored console output
+- 📁 Separate log files for different types of logs (danger, success, warning, info, app, SQL)
+- 🕒 Timestamp and timezone information for each log
+- 🔄 Automatic log rotation with backup files
+- 🔒 Thread-safe logging for concurrent applications
+- 🚀 High-performance buffered writing
+- ⚙️ Highly customizable configuration
+- 🎯 Easy to use API
+
+## 📦 Installation
+
+```bash
+pip install tamga
+```
+
+## 🚀 Quick Start
+
+```python
+from tamga import Log
+
+# Initialize logger with default configuration
+logger = Log()
+
+# Log different types of messages
+logger.info("Server started on port 8000")
+logger.success("Database connection established")
+logger.warning("High memory usage detected")
+logger.danger("Failed to connect to database")
+logger.app("Application initialized")
+logger.sql("SELECT * FROM users")
+
+# Print a breaker line
+logger.breaker()
+```
+
+## 🛠️ Custom Configuration
+
+```python
+from tamga import Log
+from tamga.config import Config
+
+# Create custom configuration
+config = Config(
+    app_name="MyApp",
+    app_version="1.0.0",
+    log_dir="logs",
+    max_file_size=10 * 1024 * 1024,  # 10MB
+    backup_count=5,
+    date_format="%Y-%m-%d",
+    time_format="%H:%M:%S",
+    enable_colors=True
+)
+
+# Initialize logger with custom config
+logger = Log(config)
+```
+
+## 🌟 Log Types
+
+- `info()`: For general information messages
+- `success()`: For successful operations
+- `warning()`: For warning messages
+- `danger()`: For error messages
+- `app()`: For application-specific messages
+- `sql()`: For SQL queries
+- `breaker()`: Prints a separator line
+
+## 🔥 Advanced Features
+
+### Context Manager Support
+```python
+with Log() as logger:
+    logger.info("Using logger in a with statement")
+    logger.success("This will auto-close when done")
+```
+
+### Thread Safety
+```python
+# Safe to use in multi-threaded applications
+from threading import Thread
+
+def worker():
+    logger.info("Worker thread started")
+    
+threads = [Thread(target=worker) for _ in range(5)]
+for t in threads:
+    t.start()
+```
+
+### Log Rotation
+```python
+config = Config(
+    max_file_size=5 * 1024 * 1024,  # 5MB
+    backup_count=3  # Keep 3 backup files
+)
+logger = Log(config)
+```
+
+## 🌐 Web Framework Integration
+
+### Flask Example
+```python
+from flask import Flask
+from tamga import Log
+
+app = Flask(__name__)
+logger = Log()
+
+@app.route('/')
+def home():
+    logger.info("Home endpoint accessed")
+    return "Hello, World!"
+
+@app.errorhandler(Exception)
+def handle_error(error):
+    logger.danger(f"Error occurred: {str(error)}")
+    return "Internal Server Error", 500
+```
+
+### FastAPI Example
+```python
+from fastapi import FastAPI
+from tamga import Log
+
+app = FastAPI()
+logger = Log()
+
+@app.get('/')
+async def home():
+    logger.info("Home endpoint accessed")
+    return {"message": "Hello, World!"}
+
+@app.exception_handler(Exception)
+async def exception_handler(request, exc):
+    logger.danger(f"Error occurred: {str(exc)}")
+    return {"error": "Internal Server Error"}
+```
+
+## 📝 Example Output
+
+Console output will look like this (with colors):
+```
+MyApp@1.0.0 [2024-01-14 | 15:30:45.123 | UTC] INFO Server started on port 8000
+MyApp@1.0.0 [2024-01-14 | 15:30:45.124 | UTC] SUCCESS Database connection established
+MyApp@1.0.0 [2024-01-14 | 15:30:45.125 | UTC] WARNING High memory usage detected
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Here's how you can help:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add amazing feature'`)
+5. Push to the branch (`git push origin feature/amazing-feature`)
+6. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Credits
+
+Created and maintained by [Dogukan Urker](https://github.com/dogukanurker) 
+
+## 📂 Examples
+
+Complete example applications can be found in the `examples` directory:
+
+- `basic_usage.py`: Demonstrates all logger features and configurations
+- `flask_app.py`: Shows how to integrate the logger with a Flask application
+
+To run the examples:
+
+```bash
+# Basic usage example
+python examples/basic_usage.py
+
+# Flask application example
+pip install flask  # Install Flask first
+python examples/flask_app.py
+``` 
