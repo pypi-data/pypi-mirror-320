@@ -1,0 +1,10 @@
+openalexnetwork/__init__.py,sha256=2msAT1gavmzStwhEL6nK6Wja8NMZz6-9ZSHRfPJUGIw,444
+openalexnetwork/crawler.py,sha256=HN0f843QVC3IwCUSxd0-XXWw1S9L61mzl5CAQpbAW0s,4811
+openalexnetwork/logging_setup.py,sha256=r8TiDBJ8wm0iWIuNUiZqcceC6vSgsINn_uR1Tu-SPw4,1642
+openalexnetwork/network.py,sha256=YWnCq91wDx-ywlDk_BimOtzhgfQHpPoiag5xRk-qPOM,2430
+openalexnetwork/utils/__init__.py,sha256=6N9gtDq6vv0oj0Q7golTcsw1PoZXqwpdKO73SCMZokY,338
+openalexnetwork/utils/iterators.py,sha256=QEaIzQu86Kx_pc_ECgzL09TZ57HTQeBFxY-4S5IIRpQ,2883
+openalexnetwork/utils/utils.py,sha256=QyV0MWcA3OQvUwLgBJ4uI5_rQP0WbLGBApC7lzwaY2o,8528
+openalexnetwork-0.1.6.dist-info/METADATA,sha256=Tzy2gZ9ok01xVFNDJON2ue4_CWFdlO2bpZjiIS4Xt7k,4861
+openalexnetwork-0.1.6.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+openalexnetwork-0.1.6.dist-info/RECORD,,
