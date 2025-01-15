@@ -1,0 +1,9 @@
+pytest_evals/__init__.py,sha256=Wz1NlifoGWbNylJh3vIrMyPHBYaYKsIgCaaMNiXrWEA,123
+pytest_evals/json_encoder.py,sha256=Xnz_kfGe_NoJ_QLLE0ZLDMh92PI76BFeRMJd6egcyY4,716
+pytest_evals/models.py,sha256=Z1uQzQFLfv4P0Z-dhjvh5clyVQpXAOipJFkBR5SEq_Y,853
+pytest_evals/plugin.py,sha256=_lCz0hZSqipQGnDhvaUkl3KhP5H3i7REM2Pg4lOFYO4,7868
+pytest_evals-0.2.2.dist-info/METADATA,sha256=x6MSsEqJom5IUTRiBsQAYQUbnz5o9YB68RuE5kIDz7U,6698
+pytest_evals-0.2.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pytest_evals-0.2.2.dist-info/entry_points.txt,sha256=_a1CQL2pdYSClXPjFMUFjPZQ5hM5r-N3imGzBMBIF74,38
+pytest_evals-0.2.2.dist-info/licenses/LICENSE,sha256=ec7cXuJ72rz2wRsefvKpiuHIlbN3oMXpiEXW0HYCoyk,1066
+pytest_evals-0.2.2.dist-info/RECORD,,
