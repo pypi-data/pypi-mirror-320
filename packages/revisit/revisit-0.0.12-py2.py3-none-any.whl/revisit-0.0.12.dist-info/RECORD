@@ -1,0 +1,10 @@
+revisit/StudyConfigSchema.json,sha256=xtzwZifuPJoiHASx0o8PHqBuh5L30mjBlhQ5eqsYm10,132168
+revisit/__init__.py,sha256=QCvYt8m9QwpjcK4dv6GlLMUDCzRXGy16cua1r2biNCg,255
+revisit/models.py,sha256=FRy8IlUAtDS3gdmZwwvqR935lbViTPnnr7k0CAkDkzI,134084
+revisit/revisit.py,sha256=MnXxWXi2k-hT8BzvFNcigURw5ZCJFJvxBq0fJoK865I,26505
+revisit/widget.py,sha256=VvFqRvvvn86fW8ASe1pxaAvh5ZLvvSRThI5XtlCdgcg,915
+revisit/static/widget.css,sha256=TLu5F6k0CvowQtmApPswG-JZUXYszo7a10dVWKnZsIg,647
+revisit/static/widget.js,sha256=G5J9A5HvuMEEPKz2hAUGG25jFz4KHemocGLnJgwF_b8,186472
+revisit-0.0.12.dist-info/METADATA,sha256=Qgm7xz677b8fAyNNYrRKpGyR612mbpPH1TVrzAlc5vQ,8914
+revisit-0.0.12.dist-info/WHEEL,sha256=tkmg4JIqwd9H8mL30xA7crRmoStyCtGp0VWshokd1Jc,105
+revisit-0.0.12.dist-info/RECORD,,
