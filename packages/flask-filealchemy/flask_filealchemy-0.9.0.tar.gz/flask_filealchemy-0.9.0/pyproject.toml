@@ -1,0 +1,48 @@
+[project]
+name = "flask-filealchemy"
+version = "0.9.0"
+description = "YAML-formatted plain-text file based models for Flask backed by Flask-SQLAlchemy"
+readme = "README.md"
+authors = [
+    { name = "Siddhant Goel", email = "me@sgoel.dev" }
+]
+requires-python = ">=3.9"
+license = "MIT"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Environment :: Web Environment",
+    "Framework :: Flask",
+    "Topic :: Database",
+    "Topic :: Database :: Front-Ends",
+    "Topic :: Text Processing :: Markup",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3 :: Only",
+]
+keywords = ["flask", "sqlalchemy", "yaml", "plaintext", "web"]
+dependencies = [
+    "flask>=3.1.0",
+    "flask-sqlalchemy>=3.1.1",
+    "python-frontmatter>=1.1.0",
+    "ruamel-yaml>=0.18.10",
+]
+
+[project.urls]
+Repository = "https://github.com/siddhantgoel/flask-filealchemy"
+Documentation = "https://github.com/siddhantgoel/flask-filealchemy"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+    "ruff>=0.9.1",
+    "sqlalchemy-stubs>=0.4",
+]
