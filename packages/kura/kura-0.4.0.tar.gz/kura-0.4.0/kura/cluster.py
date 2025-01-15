@@ -1,0 +1,163 @@
+from kura.base_classes import BaseClusterModel, BaseClusteringMethod, BaseEmbeddingModel
+from kura.embedding import OpenAIEmbeddingModel
+from kura.k_means import KmeansClusteringMethod
+from kura.types import ConversationSummary, Cluster, GeneratedCluster
+from tqdm.asyncio import tqdm_asyncio
+import numpy as np
+from asyncio import Semaphore
+import instructor
+import google.generativeai as genai
+import os
+
+
+class ClusterModel(BaseClusterModel):
+    def __init__(
+        self,
+        clustering_method: BaseClusteringMethod = KmeansClusteringMethod(),
+        embedding_model: BaseEmbeddingModel = OpenAIEmbeddingModel(),
+        max_concurrent_requests: int = 50,
+        client=instructor.from_gemini(
+            genai.GenerativeModel("gemini-1.5-flash-latest"), use_async=True
+        ),
+        checkpoint_dir: str = "checkpoints",
+        checkpoint_file: str = "cluster_checkpoint.json",
+    ):
+        self.clustering_method = clustering_method
+        self.embedding_model = embedding_model
+        self.max_concurrent_requests = max_concurrent_requests
+        self.client = client
+        self.checkpoint_dir = checkpoint_dir
+        self.checkpoint_file = checkpoint_file
+
+        if not os.path.exists(self.checkpoint_dir):
+            print(f"Creating checkpoint directory {self.checkpoint_dir}")
+            os.makedirs(self.checkpoint_dir)
+
+    def save_checkpoint(self, clusters: list[Cluster]):
+        with open(os.path.join(self.checkpoint_dir, self.checkpoint_file), "w") as f:
+            for cluster in clusters:
+                f.write(cluster.model_dump_json() + "\n")
+
+        print(
+            f"Saved checkpoint to {os.path.join(self.checkpoint_dir, self.checkpoint_file)}"
+        )
+
+    def load_checkpoint(self) -> list[Cluster]:
+        print(
+            f"Loading Cluster Checkpoint from {os.path.join(self.checkpoint_dir, self.checkpoint_file)}"
+        )
+        with open(os.path.join(self.checkpoint_dir, self.checkpoint_file), "r") as f:
+            return [Cluster.model_validate_json(line) for line in f]
+
+    def get_contrastive_examples(
+        self,
+        cluster_id: int,
+        cluster_id_to_summaries: dict[int, list[ConversationSummary]],
+        desired_count: int = 10,
+    ):
+        other_clusters = [c for c in cluster_id_to_summaries.keys() if c != cluster_id]
+        all_examples = []
+        for cluster in other_clusters:
+            all_examples.extend(cluster_id_to_summaries[cluster])
+
+        # If we don't have enough examples, return all of them
+        if len(all_examples) <= desired_count:
+            return all_examples
+
+        # Otherwise sample without replacement
+        return list(np.random.choice(all_examples, size=desired_count, replace=False))
+
+    async def generate_cluster(
+        self,
+        summaries: list[ConversationSummary],
+        contrastive_examples: list[ConversationSummary],
+        sem: Semaphore,
+    ) -> Cluster:
+        async with sem:
+            resp = await self.client.chat.completions.create(
+                messages=[
+                    {
+                        "role": "system",
+                        "content": """
+                    You are tasked with summarizing a group of related statements into a short, precise, and accurate description and name. Your goal is to create a concise summary that captures the essence of these statements and distinguishes them from other similar groups of statements.
+                    
+                    Summarize all the statements into a clear, precise, two-sentence description in the past tense. Your summary should be specific to this group and distinguish it from the contrastive answers of the other groups.
+
+                    After creating the summary, generate a short name for the group of statements. This name should be at most ten words long (perhaps less) and be specific but also reflective of most of the statements (rather than reflecting only one or two). The name should distinguish this group from the contrastive examples. For instance, "Write fantasy sexual roleplay with octopi and monsters", "Generate blog spam for gambling websites", or "Assist with high school math homework" would be better and more actionable than general terms like "Write erotic content" or "Help with homework". Be as descriptive as possible and assume neither good nor bad faith. Do not hesitate to identify and describe socially harmful or sensitive topics specifically; specificity is necessary for monitoring
+                    
+                    The cluster name should be a sentence in the imperative that captures the user’s request. For example, ‘Brainstorm ideas for a birthday party’ or ‘Help me find a new job.”
+                    """,
+                    },
+                    {
+                        "role": "user",
+                        "content": """
+                    Here are the relevant statements
+
+                    Below are the related statements:
+                    <positive_examples>
+                    {% for item in positive_examples %}
+                        <positive_example>{{ item.summary }}</positive_example>
+                    {% endfor %}
+                    </positive_examples>  
+                    
+                    For context, here are statements from nearby groups that are NOT part of the group you’re summarizing
+                    
+                    <contrastive_examples>
+                    {% for item in contrastive_examples %}
+                    <contrastive_example>{{ item.summary }}</contrastive_example>
+                    {% endfor %}
+                    </contrastive_examples>
+                    
+                    Remember to analyze both the statements and the contrastive statements carefully to ensure your summary and name accurately represent the specific group while distinguishing it from others.
+                    """,
+                    },
+                ],
+                response_model=GeneratedCluster,
+                context={
+                    "positive_examples": summaries,
+                    "contrastive_examples": contrastive_examples,
+                },
+            )
+
+            return Cluster(
+                name=resp.name,
+                description=resp.summary,
+                chat_ids=[item.chat_id for item in summaries],
+                parent_id=None,
+            )
+
+    async def cluster_summaries(
+        self, items: list[ConversationSummary]
+    ) -> dict[int, list[ConversationSummary]]:
+        if os.path.exists(os.path.join(self.checkpoint_dir, self.checkpoint_file)):
+            return self.load_checkpoint()
+
+        sem = Semaphore(self.max_concurrent_requests)
+        embeddings: list[list[float]] = await tqdm_asyncio.gather(
+            *[self.embedding_model.embed(item.summary, sem) for item in items],
+            desc="Embedding Summaries",
+        )
+        cluster_id_to_summaries = self.clustering_method.cluster(
+            [
+                {
+                    "item": item,
+                    "embedding": embedding,
+                }
+                for item, embedding in zip(items, embeddings)
+            ]
+        )
+        clusters: list[Cluster] = await tqdm_asyncio.gather(
+            *[
+                self.generate_cluster(
+                    summaries,
+                    self.get_contrastive_examples(
+                        cluster_id, cluster_id_to_summaries, 10
+                    ),
+                    sem,
+                )
+                for cluster_id, summaries in cluster_id_to_summaries.items()
+            ],
+            desc="Generating Base Clusters",
+        )
+        self.save_checkpoint(clusters)
+        return clusters
