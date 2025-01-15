@@ -1,0 +1,80 @@
+#!/bin/sh
+CONFIG_LIBS="-L/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/gdal-3.10.0-vt4hgbjuxxfdes6ilch7etda3gxqzkd6/lib -lgdal"
+CONFIG_DEP_LIBS="-L/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/zlib-1.3.1-flrk3ecpvdwc36ebmjgumqrasn7rzk7k/lib -L/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/json-c-0.16-ncwvcnhop46xegwp5dvkvg7xz5akryll/lib -L/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/curl-8.8.0-lvlyjb36qcf6xqu23jiadjdobe4ijwig/lib -L/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/geos-3.13.0-w5xhb32worooxkstw525bqgukow2chyd/lib -L/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/proj-9.4.1-me3rwqofcf4qgg3q7mswbgcdgu2fz5wv/lib -L/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/expat-2.6.3-yxlsx7c6zojtmqqaesivwufpuu5alb7o/lib -L/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/libjpeg-turbo-3.0.3-6abbehocadkxakofc3k36avxnu6o4dia/lib -L/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/libtiff-4.6.0-niwloah77sjzyb5w4idicvr2t533rywd/lib -L/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/libgeotiff-1.7.1-5iumtuilq472enenlteozep4ag7o3k4s/lib -lgeotiff -ltiff.6.0.2 -L/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/libpng-1.6.39-hs63g25o4d77oqc6lshsmnolgc5gxqkd/lib -ljpeg -lpng -L/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/netcdf-c-4.9.2-qipsnnpxgtaecfesczotuy4kqzoawcw3/lib -lnetcdf.19 -L/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/openmpi-5.0.5-isbiidxt46wqmcsb7webo3tyhkvoz3ce/lib -L/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/hdf5-1.14.5-vojivwer6quybmyvsp3rayxem7kkk2tx/lib -lhdf5_hl.310.0.5 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib/libm.tbd -L/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/c-blosc-1.21.5-xmhdy6vhu5jdnpteykvzdeyu2n5igcfr/lib -lblosc -L/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/zstd-1.5.6-4p7xch75azmojgpodgkxdktlkrt2jrqy/lib -lzstd -L/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/bzip2-1.0.8-4cq5pkjmx7z6ei3yhkmu25h2cj5ti5py/lib -lbz2 -L/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/parallel-netcdf-1.12.3-m5oozhybu3pwfwdgshh3rcpc2tlpbhd4/lib -lpnetcdf -L/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/libxml2-2.10.3-kqgaqfgc5k2dv4xbil5gtzccpuhpvajq/lib -lxml2 -lhdf5.310.5.0 -lmpi -L/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/sqlite-3.46.0-2ory6xk6e2abfkijljpvaiauldi7ppm7/lib -lz -lsqlite3 -lexpat.1.9.3 -lm -lgeos_c.1.19.0 -lcurl -lproj.25.9.4.1 -ljson-c.5.2.0 -lc++"
+CONFIG_PREFIX="/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/gdal-3.10.0-vt4hgbjuxxfdes6ilch7etda3gxqzkd6"
+CONFIG_CFLAGS="-I/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/gdal-3.10.0-vt4hgbjuxxfdes6ilch7etda3gxqzkd6/include"
+CONFIG_DATA="/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/gdal-3.10.0-vt4hgbjuxxfdes6ilch7etda3gxqzkd6/share/gdal"
+CONFIG_VERSION="3.10.0"
+CONFIG_GNM_ENABLED=yes
+CONFIG_FORMATS="JPEG raw GTIFF MEM vrt Derived GTI HFA SDTS NITF GXF AAIGrid CEOS SAR_CEOS XPM DTED JDEM Envisat ELAS FIT L1B RS2 ILWIS RMF Leveller SGI SRTMHGT IDRISI GSG ERS PALSARJaxa DIMAP GFF COSAR PDS ADRG COASP TSX Terragen BLX MSGN TIL R northwood SAGA XYZ ESRIC HF2 KMLSUPEROVERLAY CTG ZMap NGSGEOID IRIS MAP CALS SAFE SENTINEL2 PRF MRF WMTS GRIB BMP TGA STACTA SNAP_TIFF BSB AIGrid USGSDEM AirSAR OZI PCIDSK SIGDEM RIK STACIT PDF PNG WCS HTTP netCDF Zarr DAAS EEDA HDF5 PLMOSAIC WMS OGCAPI Rasterlite MBTiles PCRaster MEM GeoJSON TAB Shape KML VRT AVC GML CSV DGN GMT NTF S57 Tiger Geoconcept GeoRSS DXF PGDump GPSBabel EDIGEO SXF OpenFileGDB WAsP Selafin JML VDV FlatGeobuf MapML MiraMon JSONFG SDTS GPX SVG CSW PLSCENES WFS OAPIF NGW Elastic Idrisi PDS SQLite GeoPackage OSM VFK MVT PMTiles AmigoCloud Carto XLSX GTFS ODS LVBAG"
+CONFIG_PLUGINDIR="/Users/cbm038/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/gdal-3.10.0-vt4hgbjuxxfdes6ilch7etda3gxqzkd6/lib/gdalplugins"
+usage()
+
+{
+	cat <<EOF
+Usage: gdal-config [OPTIONS]
+Options:
+	[--prefix[=DIR]]
+	[--libs]
+	[--dep-libs]
+	[--cflags]
+	[--datadir]
+	[--version]
+	[--ogr-enabled]
+	[--gnm-enabled]
+	[--formats]
+	[--plugindir]
+EOF
+	exit $1
+}
+
+if test $# -eq 0; then
+	usage 1 1>&2
+fi
+
+case $1 in
+  --libs)
+    echo $CONFIG_LIBS
+    ;;
+
+  --dep-libs)
+    echo $CONFIG_DEP_LIBS
+    ;;
+
+  --cflags)
+    echo $CONFIG_CFLAGS
+    ;;
+
+  --datadir)
+    echo $CONFIG_DATA
+    ;;
+
+  --prefix)
+    echo $CONFIG_PREFIX
+    ;;
+
+  --version)
+    echo $CONFIG_VERSION
+    ;;
+
+  --ogr-enabled)
+    echo yes
+    ;;
+
+  --gnm-enabled)
+    echo $CONFIG_GNM_ENABLED
+    ;;
+
+  --formats)
+    echo $CONFIG_FORMATS
+    ;;
+
+  --plugindir)
+    echo $CONFIG_PLUGINDIR
+    ;;
+
+  *)
+    usage 1 1>&2
+    ;;
+
+esac
