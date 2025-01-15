@@ -1,0 +1,10 @@
+django_orgs/__init__.py,sha256=8rXDnsobUCJ--1S7t1y_3vhK4ANtt4yifkHD5k7cMHU,58
+django_orgs/apps.py,sha256=OHvC2kvt2yW6rX4jqov25V5Z3ZcrglzZWniCr02cKwo,322
+django_orgs/conf.py,sha256=Da2lCg4LqswhDZWV-iJUBaqxlC2O27O73aw1-DZruMU,1324
+django_orgs/models.py,sha256=19GYiD-L0kWOhvLW9tD19Hb3KDBVvRR36HS4OxGs-xM,4252
+django_orgs/services.py,sha256=v2f4qTpGDMr1JmFRCkoDl8N8SNvXKRlkaePYyDIafqM,3125
+django_orgs/migrations/0001_initial.py,sha256=ZyABVHkCjhHlndW0SNiaSGzDTICvyh2NhrneU3ulb4c,7294
+django_orgs/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_orgs-0.0.2.dist-info/METADATA,sha256=50lTIe6snkYl19Xf7KvtdiyleBYfg_LK6gwK2UCCVO8,1144
+django_orgs-0.0.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+django_orgs-0.0.2.dist-info/RECORD,,
