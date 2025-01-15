@@ -1,0 +1,62 @@
+setuptools
+h5py>=3.0
+silx>=2.0
+lxml
+dicttoxml
+packaging
+psutil
+nxtomo>=1.3.0dev8
+pyunitsystem>=2.0.0a
+numpy
+packaging>=22.0
+
+[doc]
+Sphinx<5.2.0,>=4.0.0
+nbsphinx
+pandoc
+ipykernel
+jupyter_client
+nbconvert
+h5glance
+pydata_sphinx_theme
+sphinx-design
+sphinx-autodoc-typehints
+glymur
+imageio
+tqdm
+
+[doc:python_version < "3.10"]
+tifffile
+zarr
+fsspec
+
+[doc:python_version >= "3.10"]
+tifffile[zarr]>=2023.7.4
+
+[full]
+glymur
+imageio
+tqdm
+
+[full:python_version < "3.10"]
+tifffile
+zarr
+fsspec
+
+[full:python_version >= "3.10"]
+tifffile[zarr]>=2023.7.4
+
+[test]
+pytest
+python-gitlab
+glymur
+imageio
+tqdm
+
+[test:python_version < "3.10"]
+tifffile
+zarr
+fsspec
+
+[test:python_version >= "3.10"]
+tifffile[zarr]>=2023.7.4
