@@ -1,0 +1,80 @@
+Metadata-Version: 2.4
+Name: slycache
+Version: 0.3.1
+Summary: Service caching API
+Author-email: Simon Kelly <simongdkelly@gmail.com>
+License-Expression: BSD-3-Clause
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.11
+Provides-Extra: django
+Requires-Dist: django>=5.1.4; extra == 'django'
+Provides-Extra: flask
+Requires-Dist: flask-caching>=2.3.0; extra == 'flask'
+Description-Content-Type: text/markdown
+
+# slycache
+
+[![PyPi version](https://img.shields.io/pypi/v/slycache.svg)](https://pypi.python.org/pypi/slycache)
+
+[![Python versions](https://img.shields.io/pypi/pyversions/slycache)](https://pypi.python.org/pypi/slycache)
+
+[![Build status](https://github.com/snopoke/slycache/actions/workflows/ci.yml/badge.svg)](https://github.com/snopoke/slycache/actions/workflows/ci.yml)
+
+A caching API for python loosely modeled after the Java Caching API
+([JSR107](https://docs.google.com/document/d/1YZ-lrH6nW871Vd9Z34Og_EqbX_kxxJi55UrSn4yL2Ak/edit)).
+
+-   Documentation: <https://snopoke.github.io/slycache/>.
+
+
+## Basic Usage
+
+Start by registering a cache backend:
+
+``` python
+slycache.register_backend("default", my_cache_backend)
+```
+
+Define a key namespace:
+
+``` python
+# define a key namespace
+user_cache = slycache.with_defaults(namespace="user")
+```
+
+Use the cache on methods and functions:
+
+``` python
+@user_cache.cache_result("{username}")
+def get_user_by_username(username):
+    ...
+
+@user_cache.cache_result("{user_id}")
+def get_user_by_id(user_id):
+    ...
+
+@user_cache.cache_put([
+    "{user.username}", "{user.user_id}"
+])
+def save_user(user):
+    ...
+
+@user_cache.cache_remove([
+    "{user.username}", "{user.user_id}"
+])
+def delete_user(user):
+    ...
+```
+
+For more advanced usage see the documentation:
+<https://snopoke.github.io/slycache/>
