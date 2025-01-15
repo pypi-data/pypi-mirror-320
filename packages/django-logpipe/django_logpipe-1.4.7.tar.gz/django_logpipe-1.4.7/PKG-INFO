@@ -1,0 +1,51 @@
+Metadata-Version: 2.3
+Name: django-logpipe
+Version: 1.4.7
+Summary: Move data around between Python services using Kafka and/or AWS Kinesis and Django Rest Framework serializers.
+License: ISC
+Author: thelab
+Author-email: thelabdev@thelab.co
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Provides-Extra: kafka
+Provides-Extra: kinesis
+Provides-Extra: msgpack
+Requires-Dist: Django (>=4.2)
+Requires-Dist: boto3 (>=1.35.96,<2.0.0) ; extra == "kinesis"
+Requires-Dist: boto3-stubs[kinesis] (>=1.35.96,<2.0.0) ; extra == "kinesis"
+Requires-Dist: botocore-stubs (>=1.35.96,<2.0.0) ; extra == "kinesis"
+Requires-Dist: djangorestframework (>=3.15.2)
+Requires-Dist: kafka-python ; extra == "kafka"
+Requires-Dist: lru-dict (>=1.3.0)
+Requires-Dist: msgpack (>=1.1.0,<2.0.0) ; extra == "msgpack"
+Requires-Dist: pydantic (>=2.10.5,<3.0.0)
+Project-URL: Homepage, https://gitlab.com/thelabnyc/django-logpipe
+Project-URL: Repository, https://gitlab.com/thelabnyc/django-logpipe
+Description-Content-Type: text/markdown
+
+# django-logpipe
+
+[![](https://gitlab.com/thelabnyc/django-logpipe/badges/master/build.svg)](https://gitlab.com/thelabnyc/django-logpipe/commits/master)
+[![](https://img.shields.io/pypi/l/django-logpipe.svg)](https://pypi.python.org/pypi/)
+[![](https://badge.fury.io/py/django-logpipe.svg)](https://pypi.python.org/pypi/django-logpipe)
+[![](https://img.shields.io/pypi/format/django-logpipe.svg)](https://pypi.python.org/pypi/django-logpipe)
+
+Django-logpipe is a library that serves as a universal pipe for moving data around between Django applications and services. It supports serialization by means of [Django REST Framework][drf] and/or [Pydantic][pydantic], and supports using either [Apache Kafka][kafka]] or [Amazon Kinesis][kinesis] as the underlying data stream.
+
+[drf]: http://www.django-rest-framework.org/
+[pydantic]: https://docs.pydantic.dev/
+[kafka]: https://kafka.apache.org/
+[kinesis]: https://aws.amazon.com/kinesis/
+
+## Documentation
+
+See [https://thelabnyc.gitlab.io/django-logpipe/](https://thelabnyc.gitlab.io/django-logpipe/)
+
+## Change log
+
+See [Release Notes](./docs/releases.md)
+
