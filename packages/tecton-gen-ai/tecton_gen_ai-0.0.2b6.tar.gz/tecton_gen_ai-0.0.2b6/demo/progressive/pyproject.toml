@@ -1,0 +1,29 @@
+[project]
+name = "progressive"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "cloudpickle>=2.2.1",
+    "lancedb>=0.13.0",
+    "langchain-openai>=0.1.14",
+    "python-dotenv>=1.0.1",
+    "tecton-client>=0.3.0",
+    "tecton-runtime>=1.0.0",
+    "tecton[rift-materialization]~=1.1.0b0",
+    "tecton-gen-ai[dev,langchain,llama-index,tecton]",
+    "diskcache>=5.6.3",
+    "instructor>=1.5.2",
+    "jsonschema>=4.23.0",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "ipykernel>=6.29.5",
+    "jupyterlab>=4.3.2",
+    "nbdev>=2.3.31",
+]
+
+[tool.uv.sources]
+tecton-gen-ai = { path = "../../", editable = true }

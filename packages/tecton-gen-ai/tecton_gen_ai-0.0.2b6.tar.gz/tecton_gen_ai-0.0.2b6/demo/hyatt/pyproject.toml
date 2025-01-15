@@ -1,0 +1,26 @@
+[project]
+name = "hyatt-example"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "lancedb>=0.13.0",
+    "langchain-google-genai>=1.0.6",
+    "langchain-openai>=0.1.14",
+    "langchain-postgres>=0.0.9",
+    "python-dotenv>=1.0.1",
+    "tecton-client>=0.3.0",
+    "tecton-gen-ai[dev,langchain,llama-index,tecton]==0.0.2b0",
+    "tecton-runtime>=1.0.0",
+    "tecton[rift-materialization]==1.0.3",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "ipykernel>=6.29.5",
+    "nbdev>=2.3.31",
+]
+
+[tool.uv.sources]
+tecton-gen-ai = { path = "../../", editable = true }

@@ -1,0 +1,49 @@
+name: pre-submit
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  pre-commit-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: aquaproj/aqua-installer@v3.0.1
+        with:
+          aqua_version: v2.28.0
+      - run: aqua install
+
+      - name: Install the project
+        run: uv sync --all-extras --dev --frozen
+
+      - name: Run tests
+        run: uv run pre-commit run --all-files
+
+  linter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: aquaproj/aqua-installer@v3.0.1
+        with:
+          aqua_version: v2.28.0
+      - run: aqua install
+
+        # TODO: fix pylint checks and enable `just lint`
+      - run: just ruff-check format
+
+  test:
+    runs-on: ubuntu-latest
+    environment: tecton-community
+    steps:
+      - uses: actions/checkout@v4
+      - uses: aquaproj/aqua-installer@v3.0.1
+        with:
+          aqua_version: v2.28.0
+      - run: aqua install
+
+      - run: just test
+        env:
+          API_SERVICE: ${{ vars.API_SERVICE }}
+          TECTON_API_KEY: ${{ secrets.TECTON_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
