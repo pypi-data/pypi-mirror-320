@@ -1,0 +1,15 @@
+flet_lottie/__init__.py,sha256=e8_VpT6mT4yC1IF-7NjQrGiW1TIBbesNnVvSSGxUNm8,38
+flet_lottie/lottie.py,sha256=6gy5rs32w6CKj0yWswbGOhWSlDKFahiYtTtNiCUHm7M,6036
+flutter/flet_lottie/CHANGELOG.md,sha256=66sWepPaeTc9_lzcYIGU55AlxSU5Z1XVtknXpzd_-p8,40
+flutter/flet_lottie/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+flutter/flet_lottie/README.md,sha256=OgI2ZU2SVP2IEyl49IASnC7Al17h1FQ035nKSP6UPaU,62
+flutter/flet_lottie/analysis_options.yaml,sha256=32kjGAc-zF87inWaH5M46yGZWQDTwrwfvNLHeAocfG4,154
+flutter/flet_lottie/pubspec.lock,sha256=19aBymIO3EKxEJ1rPnLkVe-KdWvysp84j-XywnHcefc,21719
+flutter/flet_lottie/pubspec.yaml,sha256=gy879DFyILNCCmi6urn-94hp3X8ZOT3--KDZo_JiVY4,400
+flutter/flet_lottie/lib/flet_lottie.dart,sha256=ltxM--uFYdcAz5UVJhghsti9jpez9luCKWQCXsYjV0Q,94
+flutter/flet_lottie/lib/src/create_control.dart,sha256=KdajvErun6n5cgXJax_nvH7RLcjxvEowfzrZVgb4LVs,430
+flutter/flet_lottie/lib/src/lottie.dart,sha256=V4chMQGXasZrtU5jgy_8ZlRkQsViZBZ-mqywnXxPXSY,3136
+flet_lottie-0.1.0.dev1.dist-info/METADATA,sha256=zh-rfTfyT_KEx9Z75fsoPJdhsn09S0FhdDHHLmgqdF4,1014
+flet_lottie-0.1.0.dev1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+flet_lottie-0.1.0.dev1.dist-info/top_level.txt,sha256=RFKJcUq-1rW9i9tkjYL1AzMuJFXiAqoWK0YIjIG3Gj8,20
+flet_lottie-0.1.0.dev1.dist-info/RECORD,,
