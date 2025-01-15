@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+funpaper.egg-info/PKG-INFO
+funpaper.egg-info/SOURCES.txt
+funpaper.egg-info/dependency_links.txt
+funpaper.egg-info/requires.txt
+funpaper.egg-info/top_level.txt
+notepaper/__init__.py
+notepaper/paper.py
