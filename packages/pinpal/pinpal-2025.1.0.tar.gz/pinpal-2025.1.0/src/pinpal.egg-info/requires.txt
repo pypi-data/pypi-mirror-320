@@ -1,0 +1,33 @@
+keyring
+horsephrase
+
+[dev]
+pip-tools
+mypy
+mypy-zope
+types-python-dateutil
+pygobject-stubs
+types-python-xlib
+setuptools<71.0.0
+
+[dev:sys_platform == "darwin"]
+encrust
+
+[gui]
+
+[gui:sys_platform == "darwin"]
+py2app
+pyobjc-core
+pyobjc-framework-Cocoa
+pyobjc-framework-ExceptionHandling
+pyobjc-framework-UserNotifications
+pyobjc-framework-CFNetwork
+quickmacapp
+quickmachotkey
+
+[gui:sys_platform == "linux"]
+ewmh
+pycairo
+PyGObject
+python-xlib
+pydbus
