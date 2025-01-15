@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+tempfox/__init__.py
+tempfox/__main__.py
+tempfox/core.py
+tempfox.egg-info/PKG-INFO
+tempfox.egg-info/SOURCES.txt
+tempfox.egg-info/dependency_links.txt
+tempfox.egg-info/entry_points.txt
+tempfox.egg-info/requires.txt
+tempfox.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+tempfox = tempfox.__main__:main
