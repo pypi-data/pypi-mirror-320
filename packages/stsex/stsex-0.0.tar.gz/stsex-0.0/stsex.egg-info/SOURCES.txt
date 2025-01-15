@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+stsex/stsex.py
+stsex.egg-info/PKG-INFO
+stsex.egg-info/SOURCES.txt
+stsex.egg-info/dependency_links.txt
+stsex.egg-info/not-zip-safe
+stsex.egg-info/top_level.txt
