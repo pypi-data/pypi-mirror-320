@@ -1,0 +1,41 @@
+[build-system]
+requires = ['setuptools>=42']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = "concat-ls"
+version = "1.2.0"
+description = "Repository for ConCat: a simple and intuitive method for English lexical substitution."
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {file = "LICENSE"}
+authors = [
+  {name = "Juraj Vladika", email = "juraj.vladika@tum.de"},
+  {name = "Stephen Meisenbacher", email = "stephen.meisenbacher@tum.de"},
+]
+maintainers = [
+  {name = "Juraj Vladika", email = "juraj.vladika@tum.de"},
+  {name = "Stephen Meisenbacher", email = "stephen.meisenbacher@tum.de"}
+]
+keywords = ["lexical substitution", "lexical semantics", "word representation", "natural language processing"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+requires-python = ">= 3.6"
+dependencies = [
+    "nltk",
+    "numpy",
+    "spacy",
+    "torch",
+    "transformers"
+]
+
+[project.urls]
+Homepage = "https://github.com/sebischair/ConCat"
+Documentation = "https://github.com/sebischair/ConCat"
+Repository = "https://github.com/sebischair/ConCat"
+Issues = "https://github.com/sebischair/ConCat/issues"
+
+[tool.setuptools.package-dir]
+concat = "concat"

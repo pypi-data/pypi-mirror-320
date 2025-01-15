@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+concat/__init__.py
+concat_ls.egg-info/PKG-INFO
+concat_ls.egg-info/SOURCES.txt
+concat_ls.egg-info/dependency_links.txt
+concat_ls.egg-info/requires.txt
+concat_ls.egg-info/top_level.txt
