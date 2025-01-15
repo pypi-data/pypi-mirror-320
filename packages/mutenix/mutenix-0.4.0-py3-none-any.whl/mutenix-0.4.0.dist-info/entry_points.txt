@@ -1,0 +1,2 @@
+[console_scripts]
+mutenix = mutenix:runmain
