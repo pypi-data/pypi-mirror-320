@@ -1,0 +1,5 @@
+[console_scripts]
+docs-build=mkdocs:build.build
+docs-deploy=mkdocs:gh_deploy.gh_deploy
+docs-serve=mkdocs:serve_command.serve
+
