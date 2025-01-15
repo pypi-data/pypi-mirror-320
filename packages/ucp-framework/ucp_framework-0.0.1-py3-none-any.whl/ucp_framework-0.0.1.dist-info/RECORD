@@ -1,0 +1,11 @@
+ucp/__init__.py,sha256=8tiYl6BH5Q8CsgDFMqQ2K68G6vwV_4sUjD2z0AEV7es,104
+ucp/ucp_client.py,sha256=URR8HJsLlACTs4Y3KEpVl_IXRSKpE5F0JCdFogq84v8,2237
+ucp/ucp_config.py,sha256=raqpghpiFhhrYfIkmIr-lPc5eiOuPAG-G10Z0QwyBxE,1136
+ucp/ucp_handler.py,sha256=yg-pqVsz9LcTqDCEzgEQY0dGa_Ccq3a3Eyr3a1anWNw,779
+ucp/ucp_server.py,sha256=7IR2km77b8UukMewesDGIZSyjuvFVTmkwW-M2bZ0oRk,1278
+ucp/ucp_session.py,sha256=SMRlAxFndTDoAsN1LnABxppOG1fMHgH-smLhGDFvNXg,759
+ucp/utils.py,sha256=1oRzBf4Kjfq8QlYnA1H5dL66BM5S9JNEjnGod3K3aI4,249
+ucp_framework-0.0.1.dist-info/METADATA,sha256=5SOrQxO-7WlzvwTqkR0pDjIVcjvONshezlQaFOpwlCg,2619
+ucp_framework-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+ucp_framework-0.0.1.dist-info/top_level.txt,sha256=27XYdlR3rAVSdVmjfTlXb2f1uUnTsGjUiW9N-pDBw-c,4
+ucp_framework-0.0.1.dist-info/RECORD,,
