@@ -1,0 +1,13 @@
+a3mtools/__init__.py,sha256=C7cEEqDA73F58YW5cM0SnEqAH6EWup38-Hbd_y4-3lc,172
+a3mtools/examples.py,sha256=V9YJCGhrO7JTzz2H2ymAJbf3snbQ7F7Rg_ZAUvk4-7Y,452
+a3mtools/backend/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+a3mtools/backend/a3m_tools.py,sha256=tjVo_Ae4wjbaTkG3OVO6sr7gXvkVnG4Xz0H1a6wLrGM,8159
+a3mtools/test_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+a3mtools/test_data/test_alignment_1.a3m,sha256=7H7QLQfbahIQHX_1hA1ZquBzj2sXZuvUpzy5xdM6DlE,86
+a3mtools/test_data/test_alignment_2.a3m,sha256=cPdFbSrDZrukhubj1YmCyl5ZeD8b1_XcTord2oavlRg,87
+a3mtools/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+a3mtools/tests/test_a3mtools.py,sha256=SuCUKDIo9k88KPC_4YMvPHN6QaShs0KV6EvpWOd2dGU,718
+a3mtools-0.1.0a1.dist-info/LICENSE,sha256=T6Y2LB45WV4p3dP8A0AUHCssv1-3EwehCADUyJrUqhU,1083
+a3mtools-0.1.0a1.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+a3mtools-0.1.0a1.dist-info/METADATA,sha256=eIQ9P_O75SFzPrOuj0Og0vaGtYbvlMx2w3CCkRfUxq8,3056
+a3mtools-0.1.0a1.dist-info/RECORD,,
