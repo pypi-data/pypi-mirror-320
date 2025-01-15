@@ -1,0 +1,3 @@
+[console_scripts]
+gs = gscli.main:main
+run_string = graph_sitter.core.main:main
