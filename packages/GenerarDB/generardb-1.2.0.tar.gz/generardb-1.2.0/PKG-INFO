@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: GenerarDB
+Version: 1.2.0
+Summary: Librería para manejar bases de datos SQLite con facilidad.
+Home-page: https://github.com/GhostmanBY/GenerarDB
+Author: Nahuel Romero
+Author-email: nahuelromero2709@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
