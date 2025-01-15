@@ -1,0 +1,17 @@
+numpy<2.0
+magicgui==0.6.1
+napari[all]
+tensorflow<=2.15.0
+napari-skimage-regionprops
+stardist-napari==2022.12.6
+scikit-learn
+scikit-image==0.20.0
+pandas
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+napari
+pyqt5
