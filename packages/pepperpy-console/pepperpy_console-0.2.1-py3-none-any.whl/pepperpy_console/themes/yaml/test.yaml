@@ -1,0 +1,13 @@
+name: test
+colors:
+  primary: "#000000"
+  secondary: "#ffffff"
+  accent: "#ff0000"
+styles:
+  button:
+    color: primary
+    background: secondary
+  text:
+    color: primary
+  heading:
+    color: accent
