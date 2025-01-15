@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"] 
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "helmsdeep_to_sentry"
+version = "0.1.0"
+authors = [
+    { name = "Lillian Tatka" }  
+]
+description = "A package to query helmsdeep for sentry metadata"
+readme = "README.md" 
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "sqlalchemy",
+    "pandas",
+    "python-dotenv",
+    "mysql-connector-python",
+]
+requires-python = ">=3.6"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["*"]
