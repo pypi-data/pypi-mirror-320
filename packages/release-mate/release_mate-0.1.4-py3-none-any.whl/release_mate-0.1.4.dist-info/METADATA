@@ -1,0 +1,31 @@
+Metadata-Version: 2.3
+Name: release-mate
+Version: 0.1.4
+Summary: Python-based tool designed to simplify release and changelog management for multi-project, multi-branch repositories. Powered by Python Semantic Release, it automates versioning, generates consistent changelogs, and streamlines the release process across multiple projects and branches within a single Git repository.
+License: MIT
+Keywords: release management,changelog generation,semantic versioning,multi-project support,git integration,python tool,automation,devops,continuous integration,version control,python semantic release,project management
+Author: Lenin Khaidem
+Author-email: leninkhaidem@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: cookiecutter (>=2.5.0,<3.0.0)
+Requires-Dist: gitpython (>=3.1.40,<4.0.0)
+Requires-Dist: python-semantic-release (>=9.16.1,<10.0.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Project-URL: Documentation, https://leninkhaidem.github.io/release-mate
+Project-URL: Repository, https://github.com/leninkhaidem/release-mate
+Description-Content-Type: text/markdown
+
+# release-mate
+
+Python-based tool designed to simplify release and changelog management for multi-project, multi-branch repositories. Powered by Python Semantic Release, it automates versioning, generates consistent changelogs, and streamlines the release process across multiple projects and branches within a single Git repository.
+
+[Documentation](https://leninkhaidem.github.io/release-mate)
+
