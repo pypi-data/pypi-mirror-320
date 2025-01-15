@@ -1,0 +1,10 @@
+potsim2-0.3.4.dist-info/RECORD,,
+potsim2-0.3.4.dist-info/LICENSE,sha256=2QIqa6coiXIkQqh88JvVfw77Qb3qa2qJW0pJBxnhANI,1079
+potsim2-0.3.4.dist-info/WHEEL,sha256=zEwrEM3mH_qOUQ9uk3aZI5DMOaUao9_e1G94mKtHrTY,109
+potsim2-0.3.4.dist-info/top_level.txt,sha256=aj4INptOAnfgCnI7iuGcRXbcD_invWSEPtPWRwcxlc4,8
+potsim2-0.3.4.dist-info/METADATA,sha256=89T42LM7HUZmDCxzGtNcpmUC0Rzs4ngdDaGhWDYf68I,1862
+potsim2/potsimlib.cpython-313-darwin.so,sha256=E_PCS3p7XfGRd-vAMeUJO9WySDWlzXFM_fO8yBc8Qh0,179840
+potsim2/PotGrid.py,sha256=m01CQbhNcaleiXnn34DWo23H_5wqh2z4miw_tVthtwY,5997
+potsim2/__init__.py,sha256=WlLHQCVTDWQPgjsAxxjGBPx6wHONUlpjvINM1GNg-Vs,163
+potsim2/vdw.py,sha256=3WqV6Gs7Qs-jUMuKr6vLPagIr-elL9nns5V3s6y8LDs,2472
+potsim2/src/potsimlib.cpp,sha256=M2LIIvzeXX7N8FxWYIza14_IiWv5qUBtDO8pLKM0Eus,4621
