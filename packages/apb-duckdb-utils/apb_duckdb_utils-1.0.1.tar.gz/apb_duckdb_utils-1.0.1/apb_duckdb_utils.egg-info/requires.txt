@@ -1,0 +1,5 @@
+duckdb>=1.1.1
+ibis-framework[duckdb,geospatial]
+duckdb-engine
+polars[pyarrow]
+apb_pandas_utils<1.1
