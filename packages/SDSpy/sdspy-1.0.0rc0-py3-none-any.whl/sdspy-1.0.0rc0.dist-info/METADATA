@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: SDSpy
+Version: 1.0.0rc0
+Summary: A Python package to interract with Siglent SDS Oscilloscpe series
+Home-page: https://github.com/lheywang/PySDG
+License: GPL-3.0-or-later
+Keywords: PyVISA,SCPI,Siglent,SDS,Oscilloscope,Python
+Author: lheywang
+Author-email: leonard.heywang@gmail.com
+Maintainer: lheywang
+Maintainer-email: leonard.heywang@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pyvisa (>=1.14.1,<2.0.0)
+Project-URL: Changelogs, https://github.com/lheywang/SDSpy/blob/Main/Changelog.md
+Project-URL: Compatibility list, https://github.com/lheywang/SDSpy/blob/Main/documentation/Compatibility.md
+Project-URL: Documentation, https://github.com/lheywang/SDSpy/tree/Main/documentation/markdown
+Project-URL: Examples, https://github.com/lheywang/SDSpy/tree/Main/examples
+Project-URL: Issues, https://github.com/lheywang/SDSpy/issues
+Project-URL: Repository, https://github.com/lheywang/PySDG
+Description-Content-Type: text/markdown
+
+# PySDS
+PySDS is a Python package to exploit functionnalities of the Siglent SDS Oscilloscopes.
+
+## Installation :
+You can simply do :
+> pip install SDSpy
+
+Or, you can download the .whl package and install it by hand 
+> pip install SDSpy[. . .].whl
+
+## Basic usage :
+Here an extract of the example 1. Openning, how to use the lib 
+
+> import SDSPy
+> 
+> Dev = SDSPy.PySDS("192.168.1.5")  
+> 
+> if Dev.DeviceOpenned != 1:
+>     print("Failed to open the device") 
+>     return -1
+> 
+> Dev.Channel[0].EnableTrace()            
+> Dev.Channel[0].SetCoupling("D")    
+
+More advanced documentation is available on : 
+
+## More advanced usages
+All of the documentation is available on GitHub, at this link : [Documentation.md](https://github.com/lheywang/SDSpy/blob/Main/documentation/Documentation.md)
+
+I'll describe everything you need to know !
+
