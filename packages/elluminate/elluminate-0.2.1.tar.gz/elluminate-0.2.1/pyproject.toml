@@ -1,0 +1,73 @@
+[project]
+name = "elluminate"
+# Let the hatch builder dynamically determine the version from `__version__` in `__init__.py`
+dynamic = ["version"]
+description = "The Official Elluminate SDK"
+authors = [
+    {name = "ellamind GmbH"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.32.3",
+    "loguru>=0.7.2",
+    "pydantic>=2.9.2",
+    "openai>=1.54.4",
+    "tenacity>=9.0.0",
+]
+
+[project.optional-dependencies]
+cookbooks = [
+    "polars>=1.12.0",
+    "xlsxwriter>=3.2.0",
+    "datasets>=3.1.0",
+    "langchain-text-splitters>=0.3.2",
+    "langchain-community>=0.3.11",
+    "beautifulsoup4>=4.12.3",
+    "langchain-core>=0.3.24",
+    "langchain-openai>=0.2.11",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.2",
+    "pytest-asyncio>=0.24.0",
+    "pytest-cov>=6.0.0",
+    "pre-commit>=4.0.1",
+    "nest-asyncio>=1.6.0",
+    "ipykernel>=6.29.5",
+    "python-dotenv>=1.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+# Look for the `__version__` in `__init__.py` for dynamic versioning
+path = "elluminate/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+exclude = [  # Exclude certain files from the build bundle
+    "/examples",
+    "/tests",
+    ".pre-commit-config.yaml",
+    "uv.lock",
+]
+
+# ==== pytest ====
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--import-mode=importlib --cov=elluminate"
+python_files = [
+    "tests.py",
+    "test_*.py",
+]
+
+# ==== Coverage ====
+[tool.coverage.run]
+include = ["elluminate/**"]
+omit = ["*/tests/*"]
+
+[tool.coverage.report]
+show_missing = true
