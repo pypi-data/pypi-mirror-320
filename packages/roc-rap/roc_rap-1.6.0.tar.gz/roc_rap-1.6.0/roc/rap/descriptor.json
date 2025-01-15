@@ -1,0 +1,18 @@
+{
+  "identification": {
+    "project": "RAP",
+    "identifier": "roc.rap",
+    "name": "Rpw dAta Processer (RAP)",
+    "description": "Module to process RPW L0, L1 and HK data"
+  },
+  "release": {
+    "version": "1.6.0",
+    "date": "2024-10-17",
+    "author": "Xavier Bonnin <xavier.bonnin@obspm.fr>, ROC Team <roc.support@sympa.obspm.fr>",
+    "contact": "roc.support@sympa.obspm.fr",
+    "institute": "LESIA",
+    "modification": "Update python dev deps and README",
+    "url": "https://gitlab.obspm.fr/ROC/Pipelines/Plugins/RAP"
+  },
+  "tasks": []
+}
