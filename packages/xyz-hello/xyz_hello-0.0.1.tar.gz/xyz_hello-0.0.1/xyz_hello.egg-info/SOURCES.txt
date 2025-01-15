@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+xyz_hello/__init__.py
+xyz_hello/main.py
+xyz_hello.egg-info/PKG-INFO
+xyz_hello.egg-info/SOURCES.txt
+xyz_hello.egg-info/dependency_links.txt
+xyz_hello.egg-info/top_level.txt
