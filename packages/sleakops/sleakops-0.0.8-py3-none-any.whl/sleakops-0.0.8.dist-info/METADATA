@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: sleakops
+Version: 0.0.8
+Summary: A CLI tool to build and deploy projects with Sleakops.
+Project-URL: Documentation, https://docs.sleakops.com
+Project-URL: App page, https://sleakops.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: click
+
+A CLI tool to build and deploy projects with Sleakops
+
+SleakOps relies on the best practices to automate all the repetitive tasks of your scalable applications. Run your apps on the Cloud without worrying about your DevOps support.
