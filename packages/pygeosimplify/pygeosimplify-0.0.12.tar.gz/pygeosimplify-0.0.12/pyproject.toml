@@ -1,0 +1,131 @@
+[project]
+name = "pygeosimplify"
+version = "v0.0.12"
+description = "Python package for automatic, cell-based inference of clash-free simplified detector geometry."
+authors = [
+  { name = "Joshua Falco Beirer", email = "jbeirer@cern.ch" }
+]
+repository = "https://github.com/jbeirer/pygeosimplify"
+documentation = "https://jbeirer.github.io/pygeosimplify/"
+readme = "README.md"
+packages = [
+  { include = "pygeosimplify" }
+]
+
+requires-python = ">=3.10,<3.13"
+dynamic = ["dependencies"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+uproot = "^5.5.1"
+pandas = "^2.2.3"
+numpy = "^2.2.1"
+matplotlib = "^3.10.0"
+scipy = "^1.15.1"
+tqdm = "^4.67.1"
+distinctipy = "^1.3.4"
+pyg4ometry = "^1.3.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-cov = "^6.0.0"
+deptry = "^0.22.0"
+mypy = "^1.14.1"
+pre-commit = "^4.0.1"
+tox = "^4.23.2"
+ipykernel = "^6.29.5"
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.6.1"
+mkdocs-material = "^9.5.49"
+mkdocstrings = {extras = ["python"], version = "^0.27.0"}
+
+[build-system]
+requires = ["poetry-core>=2.0.1"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ['py312']
+preview = true
+
+[tool.mypy]
+files = ["pygeosimplify"]
+disallow_untyped_defs = "True"
+no_implicit_optional = "True"
+check_untyped_defs = "True"
+warn_return_any = "True"
+warn_unused_ignores = "True"
+show_error_codes = "True"
+ignore_missing_imports= "True"
+disallow_any_unimported = "False"
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# filter deprecation warnings from external packages
+filterwarnings = [
+    "ignore::DeprecationWarning:(?!pygeosimplify).*",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+fix = true
+lint.select = [
+    # flake8-2020
+    "YTT",
+    # flake8-bandit
+    "S",
+    # flake8-bugbear
+    "B",
+    # flake8-builtins
+    "A",
+    # flake8-comprehensions
+    "C4",
+    # flake8-debugger
+    "T10",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+    # mccabe
+    "C90",
+    # pycodestyle
+    "E", "W",
+    # pyflakes
+    "F",
+    # pygrep-hooks
+    "PGH",
+    # pyupgrade
+    "UP",
+    # ruff
+    "RUF",
+    # tryceratops
+    "TRY",
+]
+lint.ignore = [
+    # LineTooLong
+    "E501",
+    # DoNotAssignLambda
+    "E731",
+    # Comparison to true should be 'if cond is true:'
+    "E712",
+    # Create your own exception
+    "TRY002",
+    # Avoid specifying long messages outside the exception class
+    "TRY003",
+    # B017 Do not assert blind exception: `Exception`
+    "B017"
+]
+
+[tool.coverage.report]
+skip_empty = true
+
+[tool.coverage.run]
+branch = true
+source = ["pygeosimplify"]
+
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101"]
