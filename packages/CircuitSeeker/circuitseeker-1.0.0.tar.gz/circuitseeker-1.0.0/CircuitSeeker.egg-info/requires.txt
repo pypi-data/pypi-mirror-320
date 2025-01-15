@@ -1,0 +1,17 @@
+numpy
+scipy
+h5py
+bokeh
+dask
+dask[array]
+dask[bag]
+dask[delayed]
+dask[distributed]
+dask-jobqueue
+SimpleITK
+zarr
+numcodecs
+morphsnakes
+ClusterWrap>=0.2.0
+pynrrd
+pytest

@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+CircuitSeeker/__init__.py
+CircuitSeeker/fileio.py
+CircuitSeeker/function.py
+CircuitSeeker/quality.py
+CircuitSeeker.egg-info/PKG-INFO
+CircuitSeeker.egg-info/SOURCES.txt
+CircuitSeeker.egg-info/dependency_links.txt
+CircuitSeeker.egg-info/requires.txt
+CircuitSeeker.egg-info/top_level.txt
+tests/test_align.py
+tests/test_utility.py
