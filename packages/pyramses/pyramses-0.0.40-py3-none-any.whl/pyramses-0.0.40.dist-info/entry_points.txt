@@ -1,0 +1,2 @@
+[console_scripts]
+dynsim = pyramses.scripts.exec:run
