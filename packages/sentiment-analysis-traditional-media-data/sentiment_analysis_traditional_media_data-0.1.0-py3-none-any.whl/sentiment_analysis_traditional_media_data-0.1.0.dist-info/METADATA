@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: sentiment-analysis-traditional-media-data
+Version: 0.1.0
+Summary: Sentiment Analysis for Traditional Media Data
+Author: Rashida Sailanawala
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Requires-Dist: transformers
+Requires-Dist: torch
+
