@@ -1,0 +1,7 @@
+pillow
+psutil
+requests
+plyer
+qrcode
+playsound
+pyttsx3
