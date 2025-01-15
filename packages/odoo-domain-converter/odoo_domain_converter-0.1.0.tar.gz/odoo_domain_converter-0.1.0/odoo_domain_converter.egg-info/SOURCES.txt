@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+odoo_domain_converter/__init__.py
+odoo_domain_converter/cli.py
+odoo_domain_converter/converter.py
+odoo_domain_converter/odoo.py
+odoo_domain_converter.egg-info/PKG-INFO
+odoo_domain_converter.egg-info/SOURCES.txt
+odoo_domain_converter.egg-info/dependency_links.txt
+odoo_domain_converter.egg-info/entry_points.txt
+odoo_domain_converter.egg-info/requires.txt
+odoo_domain_converter.egg-info/top_level.txt
