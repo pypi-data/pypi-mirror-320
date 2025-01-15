@@ -1,0 +1,152 @@
+Metadata-Version: 2.4
+Name: popari
+Version: 1.3.2
+Summary: Popari: a probabilistic graphical model for integrated spatial transcriptomics analysis
+Project-URL: Homepage, https://github.com/alam-shahul/popari
+Project-URL: Bug Tracker, https://github.com/alam-shahul/popari/issues
+Author-email: Shahul Alam <alam.shahul@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2020 Ma Lab at CMU
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: anndata>=0.11.0
+Requires-Dist: awkward>=2.6.8
+Requires-Dist: gseapy>=1.1.3
+Requires-Dist: kneed>=0.8.5
+Requires-Dist: leidenalg>=0.9.0
+Requires-Dist: louvain>=0.8.0
+Requires-Dist: matplotlib>=3.7.0
+Requires-Dist: numpy<2.0
+Requires-Dist: ortools<=9.4.1874
+Requires-Dist: pandas>=1.5.2
+Requires-Dist: pymetis>=2023.1.1
+Requires-Dist: scanorama>=1.7.4
+Requires-Dist: scanpy<=1.9.3
+Requires-Dist: scikit-learn>=0.24.1
+Requires-Dist: scipy>=1.10.1
+Requires-Dist: seaborn>=0.11.1
+Requires-Dist: squidpy>=1.6.2
+Requires-Dist: torch>=1.13.0
+Requires-Dist: tqdm>=4.60.0
+Requires-Dist: umap-learn>=0.5.1
+Provides-Extra: benchmark
+Requires-Dist: multiprocess>=0.70.15; extra == 'benchmark'
+Provides-Extra: jupyter
+Requires-Dist: jupyter-resource-usage; extra == 'jupyter'
+Requires-Dist: jupyterlab; extra == 'jupyter'
+Requires-Dist: jupyterlab-execute-time; extra == 'jupyter'
+Provides-Extra: mlflow
+Requires-Dist: mlflow>=2.5.0; extra == 'mlflow'
+Requires-Dist: pynvml; extra == 'mlflow'
+Requires-Dist: toml>=0.10.2; extra == 'mlflow'
+Provides-Extra: simulation
+Requires-Dist: ipycanvas; extra == 'simulation'
+Requires-Dist: jupyterlab; extra == 'simulation'
+Requires-Dist: jupyterlab-execute-time; extra == 'simulation'
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-xdist; extra == 'test'
+Description-Content-Type: text/markdown
+
+# Popari
+
+Popari is a versatile framework for joint analysis and investigation of complex spatial transcriptomics datasets. Read the documentation (including installation instructions) [here](https://popari.readthedocs.io/en/latest/).
+
+> :warning: **Popari is still under active development.** Check back in a bit for a more complete user experience!
+
+<p align="center">
+  <img src="./overview_figure.png" width="800">
+</p>
+
+## Dev instructions
+
+For development, create a fresh Python environment; this should not contain the PyPI-published
+version of the package.
+
+### PyPI publishing
+
+```
+pip install hatch
+pip install keyrings.alt
+
+hatch build
+hatch publish -r https://upload.pypi.org/legacy/
+```
+
+Username: `__token__`
+Password: `{API token for PyPI}`
+
+### Running `pytest` tests
+
+To run the provided tests and ensure that Popari can run on your platform, follow the instructions below:
+
+- Install `pytest` in your environment.
+
+```console
+pip install pytest
+```
+
+- Navigate to the root directory of this repo, and run all tests with
+
+```console
+python -m pytest -s
+```
+
+- Alternatively, run a single test suite as below:
+
+```console
+python -m pytest -s tests/test_popari_shared.py
+```
+
+- To run tests in parallel, try
+
+```console
+python -m pytest -n 4 --dist=loadfile
+```
+
+### Building Documentation
+
+Assuming you have CMake:
+
+1. Navigate to `docs/`.
+
+```console
+cd docs/
+```
+
+2. Install Sphinx requirements.
+
+```console
+pip install -r requirements.txt
+```
+
+3. Clean and build.
+
+```console
+make clean
+make html
+```
+
+4. Push to GitHub, and documentation will automatically build.
