@@ -1,0 +1,12 @@
+list/__init__.py,sha256=Il5Q9ATdX8yXqVxtP_nYqUhExzxPC_qk_WXQ_4h0exg,16
+list/count.py,sha256=NFGCfyrNA3xse93Xq8E86AcBKB6MiIHeG4G-uhMy26M,211
+list/for_each.py,sha256=1dSETZoUJMUbAZ5Hrr9z5WFhpBMyrf3vvOBXWOhh_tA,88
+list/read.py,sha256=uTiGz6booXfxVD4XUP8LbGgmoHz20fOu_WpJWtvZ-7c,408
+list/write.py,sha256=Rk86RwOkwgjcpD54Gzjb7d0PABvEnYVKguJvREiLSiQ,227
+list/strutils/__init__.py,sha256=4nOBVLNyIYohjXzZup9l2bSWdxEWZ1kckQ5ct7VKcJ4,17
+list/strutils/to_list.py,sha256=whx-NDvRJsAyKTyLdIxzM6ajkV5R7uzf77F3aXj_7bA,283
+devkit_list-1.1.1.dist-info/LICENSE,sha256=Czg9WmPaZE9ijZnDOXbqZIftiaqlnwsyV5kt6sEXHms,35821
+devkit_list-1.1.1.dist-info/METADATA,sha256=TT8axKvIh6jD1wMVpK9pHbBOOYZkWifDTUaSF7Rln9s,1128
+devkit_list-1.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+devkit_list-1.1.1.dist-info/top_level.txt,sha256=f9CTVfeQHA26Oq7HrglQ9x7TUGjRVOCo9c9OjLnee9Q,5
+devkit_list-1.1.1.dist-info/RECORD,,
