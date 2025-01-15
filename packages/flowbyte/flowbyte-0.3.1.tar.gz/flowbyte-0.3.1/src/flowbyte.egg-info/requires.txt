@@ -1,0 +1,9 @@
+pandas
+msal
+pydantic
+pyodbc
+sqlalchemy
+numpy
+pyarrow
+ipython
+adlfs
