@@ -1,0 +1,13 @@
+cc_clients/__init__.py,sha256=R7ouSCz8GSRO-RYdzifdz5eoeWYC-QrzZDJkl1o8ric,175
+cc_clients/client_utils/__init__.py,sha256=i5Mj0L40ngJgCitTlvn73ZlWub1BuG7xY74g7lnntJs,161
+cc_clients/client_utils/cache.py,sha256=hY5VoIcyNw7NtkXhTb3GxbMSWPyoUHmK5DDaO81FYMg,3678
+cc_clients/client_utils/progress.py,sha256=YiSagH0zHmLW4dtMAnKkyPnisxCe_fhK_ndLz-dExug,486
+cc_clients/clients/__init__.py,sha256=O6mNo_ORitE8XgiUDV4NfclKEh-Ise4BWN0_LSe8BWM,68
+cc_clients/clients/base.py,sha256=a80pZ8d1DGH2dQT-ZhPUiYb1pKLLOsv9gUL-O6fdZEk,5780
+cc_clients/clients/openai/openai.py,sha256=7cnADvLqo6wD2nS5yfmZgDfYOy0o3ey8Y_uEmDaMoNs,4688
+cc_clients/clients/openai/utils.py,sha256=vQR_UH-QkxCyquQzZXhHCr7SZCNnQDmK94vNjf3E134,951
+cc_clients-0.1.0.dist-info/LICENSE,sha256=Qq05FpLpWmNDeTiLLsqi1M1X9fLm9LvC6ufWKZ1G8Rw,1066
+cc_clients-0.1.0.dist-info/METADATA,sha256=LBpomz-L4V08TyTYoWUUUrdxupK9VKLx0vXPKLwDOyU,448
+cc_clients-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+cc_clients-0.1.0.dist-info/top_level.txt,sha256=4RPwFE9U7PJp1xxn9mqVro4exy_VhVtLiU3lRBz6FIE,11
+cc_clients-0.1.0.dist-info/RECORD,,
