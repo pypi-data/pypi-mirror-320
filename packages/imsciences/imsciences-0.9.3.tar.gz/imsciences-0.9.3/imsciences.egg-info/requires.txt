@@ -1,0 +1,9 @@
+pandas
+plotly
+numpy
+fredapi
+bs4
+yfinance
+holidays
+google-analytics-data
+geopandas
