@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: abraxos
+Version: 0.0.1
+Summary: Upgrade you Pandas ETL process.
+License: MIT License
+Keywords: etl,validation,sql,csv,pandas
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: pydantic
+Requires-Dist: sqlalchemy
+
+A Python package used to make Pandas ETL processes more robust.
