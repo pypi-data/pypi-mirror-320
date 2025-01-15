@@ -1,0 +1,9 @@
+LICENSE
+README.md
+README_pypi.md
+pyproject.toml
+elfen.egg-info/PKG-INFO
+elfen.egg-info/SOURCES.txt
+elfen.egg-info/dependency_links.txt
+elfen.egg-info/requires.txt
+elfen.egg-info/top_level.txt
