@@ -1,0 +1,7 @@
+README.md
+basic_colors.py
+setup.py
+basic_colors.egg-info/PKG-INFO
+basic_colors.egg-info/SOURCES.txt
+basic_colors.egg-info/dependency_links.txt
+basic_colors.egg-info/top_level.txt
