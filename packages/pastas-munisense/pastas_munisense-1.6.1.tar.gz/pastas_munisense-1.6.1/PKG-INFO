@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: pastas_munisense
+Version: 1.6.1
+Summary: This is a copy of the originial Pastas library that features certain code modifications that suit the needs of Munisense better.
+Author-email: Aviad Avraham <aviad.avraham@munisense.com>
+Project-URL: Homepage, https://gitlab.munisense.net/aviad.avraham/pastas-munisense
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pastas_munisense v1.6
+This is a copy of the originial Pastas library that features certain code modifications that suit the needs of Munisense better.
