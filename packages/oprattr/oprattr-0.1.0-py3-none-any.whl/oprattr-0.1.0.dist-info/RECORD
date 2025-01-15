@@ -1,0 +1,9 @@
+oprattr/__init__.py,sha256=_mEw0H7v3bpKXFPvM_koOVnvsUQLO3HK6zBmnKCOFQU,5553
+oprattr/_operations.py,sha256=e8kTjc183mKR51EX2Ds22kPx0dQc5uqct2btgHzCgoY,5829
+oprattr/_types.py,sha256=TzTt9GkQ5KZc5kqajdLnn8EcvxzMj3SALSI5iJrB6Vk,3182
+oprattr/mixins.py,sha256=G-4aVbQ1wLDz15KSFL9yWqlU5HXQFwp4g7VoFjl7_24,15471
+oprattr/operators.py,sha256=skqQpIezGSDbsmB2h-UNnxG_7aDGT6PsnvUkondpwOg,1154
+oprattr/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oprattr-0.1.0.dist-info/METADATA,sha256=nwgndllGe5R1KX3UGxZjzvVcpdPG7jg9NQJDO8LtQhI,328
+oprattr-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+oprattr-0.1.0.dist-info/RECORD,,
