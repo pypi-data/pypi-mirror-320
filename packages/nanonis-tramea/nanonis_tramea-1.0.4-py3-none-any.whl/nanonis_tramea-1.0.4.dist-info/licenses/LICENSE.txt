@@ -1,0 +1,6 @@
+ * Copyright (C) 2023 SPECS ZURICH - support@specs-zurich.com>
+ *
+ * This file is part of Nanonis Tramea software package.
+ *
+ * The nanonis_tramea_specs_zurich python package can not be copied and/or distributed without the express
+ * permission of Specs Zurich
