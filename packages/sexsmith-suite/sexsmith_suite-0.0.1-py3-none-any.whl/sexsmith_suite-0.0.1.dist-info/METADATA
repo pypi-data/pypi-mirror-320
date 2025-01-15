@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: sexsmith_suite
+Version: 0.0.1
+Summary: The core packages needed for various rocket engine analysis projects.
+Project-URL: Homepage, https://github.com/camsexsmith/sexsmith-core
+Author-email: Cameron Sexsmith <sexsmitc@my.erau.edu>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# sexsmith-suite
+
+This is the Sexsmith Suite
