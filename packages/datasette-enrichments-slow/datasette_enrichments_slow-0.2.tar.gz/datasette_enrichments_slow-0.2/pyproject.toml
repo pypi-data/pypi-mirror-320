@@ -1,0 +1,35 @@
+[project]
+name = "datasette-enrichments-slow"
+version = "0.2"
+description = "An enrichment on a slow loop to help debug progress bars"
+readme = "README.md"
+authors = [{name = "Simon Willison"}]
+license = {text = "Apache-2.0"}
+classifiers=[
+    "Framework :: Datasette",
+    "License :: OSI Approved :: Apache Software License"
+]
+requires-python = ">=3.9"
+dependencies = [
+    "datasette",
+    "datasette-enrichments",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/datasette/datasette-enrichments-slow"
+Changelog = "https://github.com/datasette/datasette-enrichments-slow/releases"
+Issues = "https://github.com/datasette/datasette-enrichments-slow/issues"
+CI = "https://github.com/datasette/datasette-enrichments-slow/actions"
+
+[project.entry-points.datasette]
+enrichments_slow = "datasette_enrichments_slow"
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-asyncio"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "strict"

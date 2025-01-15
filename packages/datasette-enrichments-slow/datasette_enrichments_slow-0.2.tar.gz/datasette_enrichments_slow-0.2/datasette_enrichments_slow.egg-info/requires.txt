@@ -1,0 +1,6 @@
+datasette
+datasette-enrichments
+
+[test]
+pytest
+pytest-asyncio
