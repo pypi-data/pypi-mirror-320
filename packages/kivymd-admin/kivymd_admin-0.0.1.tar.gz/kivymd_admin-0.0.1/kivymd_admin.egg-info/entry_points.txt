@@ -1,0 +1,2 @@
+[console_scripts]
+kivymd-admin = kivymd_admin.cli:main
