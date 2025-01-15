@@ -1,0 +1,12 @@
+LICENSE
+pyproject.toml
+quadraturerules/__init__.py
+quadraturerules/domain.py
+quadraturerules.egg-info/PKG-INFO
+quadraturerules.egg-info/SOURCES.txt
+quadraturerules.egg-info/dependency_links.txt
+quadraturerules.egg-info/requires.txt
+quadraturerules.egg-info/top_level.txt
+quadraturerules/rules/__init__.py
+quadraturerules/rules/gauss_legendre.py
+test/test_gauss_legendre.py
