@@ -1,0 +1,13 @@
+alloniarest/__init__.py,sha256=FnX9HH-2dXADluNfucg98JPMfruMoBpN9ER9lZkVQvQ,49
+alloniarest/auth.py,sha256=u4vDtJbxzx4ylV04dphooeUhtJeMmkxHV_EFbyT583c,4623
+alloniarest/base.py,sha256=t5cydFg_2R3fhyqiKAKiJvKA2-heYcfrRAeeHbGROCQ,2629
+alloniarest/client.py,sha256=oHNSzDxdYrmMSJZPfSqzl92loG8_ZF2Cyxe0mKhruVI,2998
+alloniarest/external_api_keys.py,sha256=ei9an2Qj9__Awm8GCWAWd44J2vXboYaY-HDTRmvQoKo,1356
+alloniarest/signatures/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alloniarest/signatures/sign_request.py,sha256=8GalDd1Y5JZaZt6MsLJ6D7qnJAD7aQJC6X9ELiIBRcw,1583
+alloniarest/signatures/signature_base.py,sha256=cqF8v3weO9m4X8RP__PB06cRTwpJTS0uWQNDSmjshB4,3160
+alloniarest/signatures/signature_builder.py,sha256=zbPe-8HUj9-Kh-X3AccbPfQTXL0d0d6Ta5yT5dlrR6g,1534
+alloniarest/signatures/signature_utils.py,sha256=wVayf1PTn0JzyofVZOEvojtVHA0eJv65Kjz_dnxcrNw,1300
+alloniarest-1.2.1.dist-info/METADATA,sha256=OBIYYZmxfK8fhRnYpPW-Ng5ooVchARa4sPoN05MRRqQ,1620
+alloniarest-1.2.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+alloniarest-1.2.1.dist-info/RECORD,,
