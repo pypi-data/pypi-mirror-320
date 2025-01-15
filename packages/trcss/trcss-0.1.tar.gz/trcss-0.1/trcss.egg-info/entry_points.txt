@@ -1,0 +1,2 @@
+[console_scripts]
+trcss = trcss.main:copy_css

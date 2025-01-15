@@ -1,0 +1,8 @@
+setup.py
+trcss/__init__.py
+trcss/main.py
+trcss.egg-info/PKG-INFO
+trcss.egg-info/SOURCES.txt
+trcss.egg-info/dependency_links.txt
+trcss.egg-info/entry_points.txt
+trcss.egg-info/top_level.txt
