@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: english_python
+Version: 0.1
+Summary: My Python Library is a collection of utility functions designed to simplify common programming tasks in Python. 
+Author: Hadi-aljad
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE.TXT
