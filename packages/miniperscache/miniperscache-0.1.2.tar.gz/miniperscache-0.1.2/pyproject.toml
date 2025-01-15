@@ -1,0 +1,26 @@
+[project]
+name = "miniperscache"
+version = "0.1.2"
+description = "miniperscache is a small Python library for persistent caching of function results."
+readme = "README.md"
+authors = [
+    { name = "Zygimantas Straznickas", email = "hi@zygi.me" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "stablehash>=0.2.1",
+    "typing-extensions>=4.12.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest-asyncio>=0.25.1",
+    "pytest>=8.3.4",
+]
+
+[tool.pytest.ini_options]
+addopts = ["--import-mode=importlib", ]
