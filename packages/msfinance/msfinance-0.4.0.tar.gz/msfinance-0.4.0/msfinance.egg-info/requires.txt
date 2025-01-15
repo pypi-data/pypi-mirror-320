@@ -1,0 +1,11 @@
+xlrd
+lxml
+requests
+pandas
+tenacity
+selenium
+sqlalchemy
+fake-useragent<2.0.0
+selenium-stealth
+undetected-chromedriver
+webdriver-manager
