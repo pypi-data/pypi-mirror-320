@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+examples/__init__.py
+examples/basic_usage.py
+quickly/__init__.py
+quickly/core.py
+quickly/version.py
+quickly_plot.egg-info/PKG-INFO
+quickly_plot.egg-info/SOURCES.txt
+quickly_plot.egg-info/dependency_links.txt
+quickly_plot.egg-info/requires.txt
+quickly_plot.egg-info/top_level.txt
+tests/__init__.py
+tests/test_quickly.py
