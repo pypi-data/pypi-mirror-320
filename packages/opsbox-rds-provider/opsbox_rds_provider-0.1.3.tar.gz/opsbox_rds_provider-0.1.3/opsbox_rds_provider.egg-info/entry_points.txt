@@ -1,0 +1,2 @@
+[opsbox.plugins]
+opsbox_rds_provider = rds_provider.rds_provider:RDSProvider

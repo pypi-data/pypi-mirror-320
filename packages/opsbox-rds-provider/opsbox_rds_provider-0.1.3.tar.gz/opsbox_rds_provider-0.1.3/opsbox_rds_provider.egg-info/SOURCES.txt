@@ -1,0 +1,12 @@
+LICENCE.txt
+README.md
+pyproject.toml
+opsbox_rds_provider.egg-info/PKG-INFO
+opsbox_rds_provider.egg-info/SOURCES.txt
+opsbox_rds_provider.egg-info/dependency_links.txt
+opsbox_rds_provider.egg-info/entry_points.txt
+opsbox_rds_provider.egg-info/requires.txt
+opsbox_rds_provider.egg-info/top_level.txt
+rds_provider/manifest.toml
+rds_provider/rds_provider.py
+rds_provider/test_rds_provider.py
