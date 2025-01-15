@@ -1,0 +1,6 @@
+fastapi
+python-multipart
+passlib
+bcrypt==4.0.1
+aiosqlite
+PyJWT
