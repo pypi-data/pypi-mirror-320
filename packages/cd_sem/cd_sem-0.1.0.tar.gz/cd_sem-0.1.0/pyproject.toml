@@ -1,0 +1,21 @@
+[project]
+authors = [
+  {name = "Devin Grabner", email = "devin.grabner@wsu.edu"},
+  {name = "Harlan Heilman", email = "harlan.heilman@wsu.edu"},
+  {name = "Emma Vargo", email = "evargo@lbl.gov"},
+]
+dependencies = [
+  "numpy",
+  "matplotlib",
+  "scipy",
+  "jupyter",
+  "tk",
+  "tifffile",
+  "scikit-image",
+  "opencv-python",
+]
+description = "SEM image analysis"
+name = "cd_sem"
+readme = "README.md"
+requires-python = ">=3.12"
+version = "0.1.0"
