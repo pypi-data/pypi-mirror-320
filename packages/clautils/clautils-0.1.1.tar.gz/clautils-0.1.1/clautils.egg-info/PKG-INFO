@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: clautils
+Version: 0.1.1
+Summary: Common functionality used in handling image datasets stored on disk.
+Author: claudiuh
+Author-email: claudiuh <cherghelegiu11@gmail.com>
+License: MIT
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+TODO

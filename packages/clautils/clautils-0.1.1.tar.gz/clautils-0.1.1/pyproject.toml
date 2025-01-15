@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clautils"
+version = "0.1.1"
+description = "Common functionality used in handling image datasets stored on disk."
+authors = [
+    { name = "claudiuh", email = "cherghelegiu11@gmail.com" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+dependencies = []
+requires-python = ">=3.11"

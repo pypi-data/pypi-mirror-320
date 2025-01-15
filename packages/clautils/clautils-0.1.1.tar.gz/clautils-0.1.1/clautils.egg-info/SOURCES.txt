@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+clautils/__init__.py
+clautils/all.py
+clautils.egg-info/PKG-INFO
+clautils.egg-info/SOURCES.txt
+clautils.egg-info/dependency_links.txt
+clautils.egg-info/top_level.txt
