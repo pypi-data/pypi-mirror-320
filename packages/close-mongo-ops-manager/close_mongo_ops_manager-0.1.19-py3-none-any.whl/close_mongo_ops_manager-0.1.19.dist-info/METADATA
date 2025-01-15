@@ -1,0 +1,74 @@
+Metadata-Version: 2.4
+Name: close-mongo-ops-manager
+Version: 0.1.19
+Summary: Monitor and kill MongoDB operations
+Project-URL: Documentation, https://github.com/closeio/close-mongo-ops-manager#readme
+Project-URL: Issues, https://github.com/closeio/close-mongo-ops-manager/issues
+Project-URL: Source, https://github.com/closeio/close-mongo-ops-manager
+Author-email: Vicenç Juan Tomàs Monserrat <vicenc.monserrat@close.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: manager,mongo,operations
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Database :: Front-Ends
+Requires-Python: >=3.12
+Requires-Dist: pymongo<5.0.0,>=4.10.1
+Requires-Dist: textual<2.0.0,>=1.0.0
+Description-Content-Type: text/markdown
+
+# close-mongo-ops-manager
+Monitor and kill MongoDB operations (Be advised that this is in a pre-alpha state. Use at your own risk.)
+
+# Requirements
+
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/#installing-uv)
+
+Once installed you should see something similar to this:
+```shell
+$ uv version
+uv 0.5.4 (c62c83c37 2024-11-20)
+```
+
+Use the right Python version
+```shell
+uv python install 3.13
+```
+
+List the Python versions
+```shell
+uv python list
+```
+
+Pin the Python 3.13 version
+```shell
+uv python pin cpython-3.13.0-macos-aarch64-none
+```
+
+# Dependencies
+
+Sync the project
+```shell
+uv sync
+```
+
+# Running the app
+
+Launch the application
+```shell
+uv run src/close_mongo_ops_manager/app.py --help
+```
+
+Or you can just use `uvx`
+```shell
+uvx -n close-mongo-ops-manager
+```
+
+![App screenshot](img/close-mongo-ops-manager.png "Close Mongo Ops Manager")
