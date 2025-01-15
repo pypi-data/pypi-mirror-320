@@ -1,0 +1,72 @@
+5.1.5
+2025-01-14 11:20:54,348 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+
+
+ ***************************************************************** 
+
+          Sunback SDO Image Manipulator 
+              Written by C.R. Gilly
+     Check out my website: http://gilly.space
+
+   Here's the Plan:
+      WebFitsFetcher  : 	Get Fits Files from http://jsoc1.stanford.edu/data/aia/synoptic/mostrecent/
+      Validator       : 	Verify Good Images  
+      RHEF Processor  : 	Apply Radial Histogram Equalization to images
+      NullPutter      : 	Print the Name of the Image Folder
+      CV Image Writer : 	Turn all the fits files into png files
+      RGB Image Writer : 	Generate RGB versions of the images
+      AWSputter       : 	Upload Images to AWS the-sun-now
+      DesktopPutter   : 	Use the local images to set the desktop background
+   And Stop After One Loop
+
+ Run Name: background_server_lingon
+ Run Type: Web Server Daemon
+
+
+ ***************************************************************** 
+
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+Starting Batch: background_server_lingon
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_ 
+
+Wavelength = rainbow
+
+>>>>>>>>>>>>>>>>>>*<<<<<<<<<<<<<<<<<<
+>>>>>>>>>> Fetching Images <<<<<<<<<<
+>>>>>>>>>>>>>>>>>>*<<<<<<<<<<<<<<<<<<
+
+ V  Downloading Fits Files from http://jsoc1.stanford.edu/data/aia/synoptic/mostrecent/...
+ ^  Successfully Downloaded 9 Files
+
+ ^ ^ ^Successfully Acquired 10 Files (0 skipped) in 5.27 seconds
+ ^ ---------------------------------------------------------------  ^
+
+
+
+>>>>>>>>>>>>>>>>>>>*<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>> Processing Images <<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>*<<<<<<<<<<<<<<<<<<<
+
+ v RHEF Processor...  ------------------------------------------------  v
+ +    Equalizing: rainbow, Redo = True
+ ^ ^ ^Successfully Radially Equalized 10 Files (0 skipped) in 7.188 seconds
+ ^ ---------------------------------------------------------------  ^
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>*<<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>> Outputting Images or Movies <<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>>*<<<<<<<<<<<<<<<<<<<<<<<<
+
+ /Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow
+
+ v CV Image Writer...  ------------------------------------------------  v
+ +    Writing: rainbow, Redo = True
+ v RGB Image Writer...  ------------------------------------------------  v
+ +    Creating: rainbow, Redo = None
+ V Uploading PNGs to s3.Bucket(name='the-sun-now')...
+	* Emptying Bucket...Done!
+	* Uploading Time File...Done! 
+ ^ Success! Uploaded 10 PNGs
+
+2025-01-14 11:21:22,065 - INFO - Starting to set desktop backgrounds...

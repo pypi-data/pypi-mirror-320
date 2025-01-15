@@ -1,0 +1,227 @@
+Tue Jan 14 11:21:22 2025
+
+__dict__ : <attribute '__dict__' of 'Parameters' objects>
+__doc__ : 
+    A container class for the run parameters of the program
+    
+__module__ : sunback.science.parameters
+__weakref__ : <attribute '__weakref__' of 'Parameters' objects>
+_batch_name : default
+hours : 3600
+minutes : 60
+n_pool : 10
+seconds : 1
+
+
+Force_init : False
+_allow_muxing : True
+_archive_url : None
+_base_directory : /Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow
+_batch_name : background_server_lingon
+_bpm : 70
+_cadence : 10.0 min
+_current_wave : rainbow
+_curve_path : /Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/analysis/rainbow_curves.txt
+_debug_delay : 60
+_delay_seconds : 60
+_delete : True
+_do_171 : False
+_do_304 : False
+_do_HMI : True
+_do_mirror : False
+_do_multishot : True
+_do_one : rainbow
+_do_recent : True
+_download_files : True
+_download_path : None
+_exposure_time : 60
+_fet_rp : [True]
+_fetchers : [<class 'sunback.fetcher.WebFitsFetcher.WebFitsFetcher'>, <class 'sunback.processor.ValidationProcessor.ValidationProcessor'>]
+_fits_directory : /Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits
+_fixed_cadence_keyframes : 2
+_fixed_number_keyframes : None
+_frames_per_second : 30
+_image : None
+_imgs_directory : /Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/mod
+_imgs_top_directory : /Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs
+_local_fits_paths : ['/Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits/AIAsynoptic0304.fits', '/Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits/AIAsynoptic0094.fits', '/Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits/AIAsynoptic1600.fits', '/Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits/AIAsynoptic0335.fits', '/Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits/AIAsynoptic0211.fits', '/Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits/AIAsynoptic0131.fits', '/Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits/AIAsynoptic0193.fits', '/Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits/AIAsynoptic1700.fits', '/Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits/AIAsynoptic0171.fits']
+_local_imgs_paths : ['/Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/mod/DrGilly_1600_rhef.png', '/Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/mod/DrGilly_0094_rhef.png', '/Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/mod/DrGilly_0131_rhef.png', '/Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/mod/BGR_0171_0193_0211_RHEF.png', '/Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/mod/DrGilly_0304_rhef.png', '/Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/mod/DrGilly_0211_rhef.png', '/Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/mod/DrGilly_0335_rhef.png', '/Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/mod/DrGilly_1700_rhef.png', '/Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/mod/DrGilly_0171_rhef.png', '/Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/mod/DrGilly_0193_rhef.png']
+_make_compressed : False
+_mode : all
+_movs_directory : /Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/video
+_msgn_targets : ['lev1p5']
+_overwrite_pngs : False
+_params_path : /Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/analysis/rainbow_params.txt
+_proc_rp : [True]
+_processors : [<class 'sunback.processor.SunPyProcessor.RHEFProcessor'>]
+_put_rp : [None, True, True, None, None]
+_putters : [<class 'sunback.putter.NullPutter.NullPutter'>, <class 'sunback.processor.ImageProcessorCV.ImageProcessorCV'>, <class 'sunback.processor.CompositeRainbowImageProcessor.RainbowRGBImageProcessor'>, <class 'sunback.putter.AwsPutter.AwsPutter'>, <class 'sunback.putter.DesktopPutter.DesktopPutter'>]
+_qrn_targets : []
+_range_in_days : 4
+_remake_norm_curves : False
+_remove_old_images : False
+_reprocess_mode : True
+_resolution : 4096
+_rhe_targets : ['lev1p5', 'msgn(lev1p5)']
+_run_type : Web Server Daemon
+_shortcut_directory : /Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/MOVS
+_something_changed : False
+_sonify_images : False
+_sonify_limit : False
+_stop_after_one : True
+_temp_directory : /Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits/temp
+_time_path : /Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/image_times.txt
+_time_period : None
+_use_default_directories : True
+_write_video : False
+aftereffects_in_name : rhe
+all_wavelengths : ['0171', '0193', '0211', '0304', '0131', '0335', '0094']
+analysis_directory : /Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/analysis
+cat_directory : /Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/cat
+cat_path : /Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/cat/AIAsynoptic0171.png
+center : [2055.65991 2045.06995]
+cmap : None
+confirm_save : False
+currently_local : True
+debug_mode : False
+did_print : False
+do_archive : False
+do_cat : False
+do_compare : True
+do_orig : True
+do_parallel : False
+do_prep : False
+do_single : False
+do_temp : False
+doing_jpeg : True
+double_rhe_flag : False
+durList : [5.270101070404053, 7.188189268112183]
+file_basename : None
+file_ending : None
+fits_path : /Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits/AIAsynoptic0171.fits
+fits_save_path : /Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits/AIAsynoptic0171.fits
+found_limb_radius : 800
+get_fits : True
+got_JPEG : False
+hdu_name : None
+header : XTENSION= 'IMAGE   '           / Image extension                                BITPIX  =                  -32 / array data type                                NAXIS   =                    2 / number of array dimensions                     NAXIS1  =                 1024                                                  NAXIS2  =                 1024                                                  PCOUNT  =                    0 / number of parameters                           GCOUNT  =                    1 / number of groups                               BLANK   =          -2147483648                                                  CHECKSUM= 'G3aSH3VPG3aPG3UP'   / HDU checksum updated 2025-01-14T11:21:09       DATASUM = '3724954263'         / data unit checksum updated 2025-01-14T11:21:09 ORIGIN  = 'SDO/JSOC-SDP'       / ORIGIN Location where file made                DATE    = '2025-01-14T18:18:14.000' / [ISO] Date_time of processing; ISO 8601   TELESCOP= 'SDO/AIA '           / For AIA: SDO/AIA                               INSTRUME= 'AIA_4   '           / For AIA: AIA_ATA1, AIA_ATA2, AIA_ATA3 or AIA_ATDATE-OBS= '2025-01-14T18:12:17.132' / [ISO] Date when observation started; ISO 8T_OBS   = '2025-01-14T18:12:18.582' / [ISO] Observation time                    TOBSSTEP=                  90. / [seconds] JPS: provide a comment {T_OBS_step}  TOBSEPOC= '1977.01.01_00:00:00.000_TAI' / [TAI] Reference epoch for T_OBS {T_OBSCAMERA  =                    4 / For AIA: 1, 2, 3  or 4                         IMG_TYPE= 'LIGHT   '           / Image type: LIGHT or DARK                      EXPTIME =   2.9008210000000001 / [sec] Exposure duration: mean shutter open timeEXPSDEV = 0.00017447922400000001 / [sec] Exposure standard deviation            INT_TIME=             3.140625 / [sec] CCD integration duration                 WAVELNTH=                  304 / [angstrom] Wavelength                          WAVEUNIT= 'angstrom'           / Wavelength unit: angstrom                      WAVE_STR= '304_THIN'           / Wavelength_FilterPosition                      FSN     =            311828708 / FSN Filtergram Sequence Number                 FID     =                    0 / FID Filtergram ID                              LVL_NUM =                  1.5 / Data level                                     QUALLEV0=                    0 / Level 0 Quality word                           QUALITY =           1073741824 / Level 1 Quality word                           TOTVALS =             16777216 / Expected number of data values (pixels)        DATAVALS=             16777216 / Actual number of data values in image          MISSVALS=                    0 / Missing values: TOTVALS                        PERCENTD=                 100. / Percent data; 100*DATAVALS/TOTVALS             DATAMIN =                   -8 / Minimum value of all pixels                    DATAMAX =                  766 / Maximum value of all pixels                    DATAMEDN=                    5 / Median value of all pixels                     DATAMEAN=   6.7612280800000004 / Mean value of all pixels                       DATARMS =   8.8418273900000006 / Rms deviation from the mean value of all pixelsDATASKEW=   5.0168118499999999 / Skewness from the mean value of all pixels     DATAKURT=   85.181976300000002 / Kurtosis of all pixels                         OSCNMEAN=                      / (MISSING) Mean value of oversan rows           OSCNRMS =                      / (MISSING) Rms deviation from the mean value of FLAT_REC= 'aia.flatfield[:#710]' / Flatfield series record pointer              CTYPE1  = 'HPLN-TAN'           / CTYPE1: HPLN                                   CUNIT1  = 'arcsec  '           / [arcsec] CUNIT1: arcsec                        CRVAL1  =                   0. / [arcsec] CRVAL1: x origin                      CDELT1  =   2.4000001000000002 / [arcsec/pixel] CDELT1: image scale in the x dirCRPIX1  =                512.5 / [pixel] CRPIX1: location of sun center in CCD xCTYPE2  = 'HPLT-TAN'           / CTYPE2: HPLT                                   CUNIT2  = 'arcsec  '           / [arcsec] CUNIT2: arcsec                        CRVAL2  =                   0. / [arcsec] CRVAL2: y origin                      CDELT2  =   2.4000001000000002 / [arcsec/pixel] CDELT2: image scale in the y dirCRPIX2  =                512.5 / [pixel] CRPIX2: location of sun center in CCD yCROTA2  =                   0. / [degree] CROTA2: INST_ROT + SAT_ROT            R_SUN   =   1626.0582300000001 / [pixel] Radius of the Sun in pixels on the CCD MPO_REC = 'sdo.master_pointing[:#1839]' / Master Pointing series record pointer INST_ROT=         -0.131639004 / [deg] Master pointing CCD rotation wrt SDO Z axIMSCL_MP=  0.60016500900000003 / [arcsec/pixel] Master pointing image scale     X0_MP   =   2067.6999500000002 / [pixel] Master pointing X0 sun center in CCD frY0_MP   =   2001.9599599999999 / [pixel] Master pointing Y0 sun center in CCD frRSUN_LF =                      / [pixel] (MISSING) Limb fit Solar radius        X0_LF   =                      / [pixel] (MISSING) Limb fit X0 sun center in CCDY0_LF   =                      / [pixel] (MISSING) Limb fit Y0 sun center in CCDASD_REC = 'sdo.lev0_asd_0004[:#117967293]' / Ancillary Science Data series recorSAT_Y0  =   2.6054146299999998 / [arcsec] Position of solar center wrt the SDO  SAT_Z0  =           4.36960411 / [arcsec] Position of solar center wrt the SDO ZSAT_ROT = 4.0753770000000001E-05 / [deg] Angle of solar pole wrt the SDO X axis ACS_MODE= 'SCIENCE '           / ACS pointing mode                              ACS_ECLP= 'NO      '           / ACS eclipse flag                               ACS_SUNP= 'YES     '           / ACS sun presense flag                          ACS_SAFE= 'NO      '           / ACS safe hold flag                             ACS_CGT = 'GT3     '           / ACS ID of Controlling Guide Telescope          ORB_REC = 'sdo.fds_orbit_vectors[2025.01.14_18:12:00_UTC]' / Orbit vector seriesDSUN_REF=        149597870691. / [m] Reference distance to Sun: 149,597,870,691.DSUN_OBS=   147105602262.07242 / [m] Distance from SDO to Sun center            RSUN_REF=           696000000. / [m] Reference radius of the Sun: 696,000,000.0 RSUN_OBS=   975.90328681591666 / [arcsec] Apparent radius of the Sun seen by SDOGCIEC_X =                      / [m] (MISSING) Geocentric Inertial X position   GCIEC_Y =                      / [m] (MISSING) Geocentric Inertial Y position   GCIEC_Z =                      / [m] (MISSING) Geocentric Inertial Z position   HCIEC_X =                      / [m] (MISSING) Heliocentric Inertial X position HCIEC_Y =                      / [m] (MISSING) Heliocentric Inertial Y position HCIEC_Z =                      / [m] (MISSING) Heliocentric Inertial Z position OBS_VR  =  -886.84375091831896 / [m/s] Speed of observer in radial direction    OBS_VW  =     27690.3846931882 / [m/s] Speed of observer in solar               OBS_VN  =  -4597.5480658471006 / [m/s] Speed of observer in solar               CRLN_OBS=   255.49082899999999 / [deg] Carrington longitude of the observer     CRLT_OBS=          -4.52709341 / [deg] Carrington latitude of the observer      CAR_ROT =                 2293 / Carrington rotation number of CRLN_OBS         ROI_NWIN=            268435456 / Number of Windows for Region of Interest (ROI) ROI_SUM =                      / (MISSING) Summing Mode: 1x1, 2x2, 4x4 (0,1,2)  ROI_NAX1=                      / (MISSING) Number of CCD columns for width of ROROI_NAY1=                      / (MISSING) Number of CCD rows for height of ROI1ROI_LLX1=                      / (MISSING) CCD X location of lower left corner oROI_LLY1=                      / (MISSING) CCD Y location of lower left corner oROI_NAX2=                      / (MISSING) Number of CCD columns for width of ROROI_NAY2=                      / (MISSING) Number of CCD rows for height of ROI2ROI_LLX2=                      / (MISSING) CCD X location of lower left corner oROI_LLY2=                      / (MISSING) CCD Y location of lower left corner oISPSNAME= 'aia.lev0_isp_0011'  / ISP SERIES NAME                                ISPPKTIM= '2025-01-14T18:12:15.499' / [ISO] PACKET_TIME, Prime key value for theISPPKTVN= '001.197 '           / PACKET_VERSION_NUMBER                          AIVNMST =                  453 / AIA_VER_NUM_IMAGE_STATUS                       AIMGOTS =           2115569575 / AIA_IMG_OBT_TIME_SH_SEC                        ASQHDR  =           3533054180 / AIA_SEQ_HEADER                                 ASQTNUM =                    3 / AIA_SEQ_TEL_NUM                                ASQFSN  =            311828708 / AIA_SEQ_FRAME_SN                               AIAHFSN =            311828700 / AIA_IMG_HIST_FSN                               AECDELAY=                 1534 / AIA_IMG_AEC_DELAY                              AIAECTI =                    0 / AIA_IMG_AEC_TABLE_ID                           AIASEN  =                    0 / AIA_IMG_AS_ENCODER                             AIFDBID =                  241 / AIA_IMG_FDB_ID                                 AIMGOTSS=                13637 / AIA_IMG_OBT_TIME_SH_SS                         AIFCPS  =                   -3 / AIA_IMG_FC_POSITION                            AIFTSWTH=                    0 / AIA_IMG_FLT_TYPE_SW_TH                         AIFRMLID=                 3377 / AIA_IMG_FRMLIST_ID                             AIFTSID =                40960 / AIA_IMG_FTS_ID                                 AIHISMXB=                    7 / AIA_IMG_HIST_MAX_BIN                           AIHIS192=                    0 / AIA_IMG_HISTC_BN_192                           AIHIS348=              7833016 / AIA_IMG_HISTC_BN_348                           AIHIS604=              8381431 / AIA_IMG_HISTC_BN_604                           AIHIS860=              8388608 / AIA_IMG_HISTC_BN_860                           AIFWEN  =                  204 / AIA_IMG_FW_ENCODER                             AIMGSHCE=                 2900 / AIA_IMG_SH_CMDED_EXPOSURE                      AECTYPE =                    0 / AIA_IMG_AEC_TYPE                               AECMODE = 'ON      '           / AIA_IMG_AEC_MODE                               AISTATE = 'CLOSED  '           / AIA_IMG_ISS_LOOP                               AIAECENF=                    1 / AIA_IMG_AEC_ENA_FLAG                           AIFILTYP=                    0 / AIA_IMG_FILTER_TYPE                            AIMSHOBC=   40.476001699999998 / AIA_IMG_SH_OPEN_BOT_CENTR                      AIMSHOBE=           25.3799992 / AIA_IMG_SH_OPEN_BOT_EDGE                       AIMSHOTC=   54.287998199999997 / AIA_IMG_SH_OPEN_TOP_CENTR                      AIMSHOTE=   67.800003099999998 / AIA_IMG_SH_OPEN_TOP_EDGE                       AIMSHCBC=   2941.0080600000001 / AIA_IMG_SH_CLOSE_BOT_CENTR                     AIMSHCBE=   2926.2280300000002 / AIA_IMG_SH_CLOSE_BOT_EDGE                      AIMSHCTC=   2955.1999500000002 / AIA_IMG_SH_CLOSE_TOP_CENTR                     AIMSHCTE=   2968.7919900000002 / AIA_IMG_SH_CLOSE_TOP_EDGE                      AICFGDL1=                    0 / AIA_IMG_CFG_DELAY_1                            AICFGDL2=                   26 / AIA_IMG_CFG_DELAY_2                            AICFGDL3=                   90 / AIA_IMG_CFG_DELAY_3                            AICFGDL4=                  236 / AIA_IMG_CFG_DELAY_4                            AIFOENFL=                    1 / AIA_IMG_FOCUS_ENA_FLAG                         AIMGFSN =                    3 / AIA_IMG_FRLIST_POS                             AIMGTYP =                    0 / AIA_IMG_IMAGE_TYPE                             AIAWVLEN=                    8 / AIA_IMG_WAVELENGTH                             AIAGP1  =                    0 / AIA_IMG_GP1                                    AIAGP2  =                    0 / AIA_IMG_GP2                                    AIAGP3  =                    0 / AIA_IMG_GP3                                    AIAGP4  =                    0 / AIA_IMG_GP4                                    AIAGP5  =                    0 / AIA_IMG_GP5                                    AIAGP6  =                    0 / AIA_IMG_GP6                                    AIAGP7  =                    0 / AIA_IMG_GP7                                    AIAGP8  =                  282 / AIA_IMG_GP8                                    AIAGP9  =                  346 / AIA_IMG_GP9                                    AIAGP10 =                  748 / AIA_IMG_GP10                                   AGT1SVY =                   -2 / AIA_GT1_SUNVECTOR_Y                            AGT1SVZ =                  -11 / AIA_GT1_SUNVECTOR_Z                            AGT2SVY =                   -9 / AIA_GT2_SUNVECTOR_Y                            AGT2SVZ =                  -14 / AIA_GT2_SUNVECTOR_Z                            AGT3SVY =                    1 / AIA_GT3_SUNVECTOR_Y                            AGT3SVZ =                    1 / AIA_GT3_SUNVECTOR_Z                            AGT4SVY =                   58 / AIA_GT4_SUNVECTOR_Y                            AGT4SVZ =                  125 / AIA_GT4_SUNVECTOR_Z                            AIMGSHEN=                    4 / AIA_IMG_SH_ENCODER                             RECNUM  =             23316442 / Recnum                                         DRMS_ID = 'aia.most_recent:23316442:image_lev1p5' / DRMS ID                     PRIMARYK= 'T_OBS, WAVELNTH'    / DRMS primary key                               LICENSE = 'LICENSE '           / CC0 1.0                                        HEADSUM = 'MaJZOSGXMYGXMYGX'   / Keyword checksum                               LONGSTRN= 'OGIP 1.0'           / The HEASARC Long String Convention may be used.EXTNAME = 'RHEF    '                                                            COMMENT   This FITS file may contain long string keyword values that are        COMMENT   continued over multiple keywords.  The HEASARC convention uses the &  COMMENT   character at the end of each substring which is then continued        COMMENT   on the next keyword which has the name CONTINUE.                      END                                                                                                                                                                                                                                             
+ii : 0
+image_data : ('171', '/Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/fits/AIAsynoptic0171.fits', '2025-01-14T18:12:10.350', (1024, 1024))
+index_file : None
+int_tm_tot : 0
+is_first_run : True
+last_wave : None
+limb_radius_from_header : 1626.05823
+list_of_default_hdus : ['t_int', 'lev1p0', 0, 1]
+local_directory : None
+master_frame_list_newest : ['rhef', 'msgn', 'rhe', 'lev1p5', 't_int', 'lev1p0', 'compressed_image', 'primary', '']
+master_frame_list_oldest : ['', 'primary', 'compressed_image', 'lev1p0', 't_int', 'lev1p5', 'rhe', 'msgn', 'rhef']
+mod_path : /Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/mod/AIAsynoptic0171.png
+modified_image : [[0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]
+multi_pool : None
+multiplot_all : False
+n_fits : 9
+n_imgs : 10
+norm_curves_name : None
+orig_directory : /Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/orig
+orig_path : /Users/cgilbert/vscode/sunback/sunback/sunback_data/renders/background_server_lingon/rainbow/imgs/mod/AIAsynoptic0171.png
+os_use : Darwin
+paper_out : []
+png_frame_name : ['RHEF']
+processors_ran : [<sunback.fetcher.WebFitsFetcher.WebFitsFetcher object at 0x32f5c3940>, <sunback.processor.SunPyProcessor.RHEFProcessor object at 0x32f5e56a0>]
+raw_image : [[0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]
+raw_image2 : [[0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]
+raw_name : lev1p5
+rbg_image : [array([[[  0,   0,   0],
+        [  0,  33,  47],
+        [  0,  50,  72],
+        ...,
+        [  0,  64,  92],
+        [  0, 106, 153],
+        [  0, 115, 166]],
+
+       [[255, 255, 255],
+        [  0,  60,  86],
+        [  0, 178, 255],
+        ...,
+        [  0, 153, 221],
+        [  0,  91, 131],
+        [  0,  87, 126]],
+
+       [[  0, 175, 253],
+        [ 82, 211, 255],
+        [  0,  53,  76],
+        ...,
+        [  0,  91, 131],
+        [  0,  98, 141],
+        [  0,  97, 140]],
+
+       ...,
+
+       [[ 51, 203, 255],
+        [  0, 186, 255],
+        [  0, 172, 249],
+        ...,
+        [ 47, 202, 255],
+        [  0, 127, 184],
+        [  0,  76, 110]],
+
+       [[  0, 123, 178],
+        [255, 255, 255],
+        [  0,  26,  37],
+        ...,
+        [  0,  68,  98],
+        [  0, 131, 189],
+        [  0, 165, 239]],
+
+       [[  0, 187, 255],
+        [  0, 156, 226],
+        [  0, 149, 215],
+        ...,
+        [  0, 142, 205],
+        [  0, 136, 197],
+        [  0, 130, 188]]], dtype=uint8)]
+rbg_labels : ['hq']
+rez : None
+rhe_image : None
+root_directory : sunback_data/renders
+rp : True
+run_time_offset : None
+selection : None
+short_circuit : False
+speak_save : False
+start_time : 1736878854.766997
+tend : 
+time_file : None
+time_multiplier_for_long_display : None
+tstart : 
+upsilon : None
+upsilon_high : 0.4
+upsilon_low : 0.8
+use_cdf : False
+use_drive : G
+use_wavelengths : ['0171', '0193', '0211', '0304', '0131', '0335', '0094']
+waves_to_do : ['rainbow']
+web_image_frame : None
+web_image_location : None
+web_paths : None
+
+
