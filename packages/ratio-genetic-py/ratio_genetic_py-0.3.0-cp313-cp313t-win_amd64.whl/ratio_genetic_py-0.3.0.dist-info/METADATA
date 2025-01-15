@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: ratio-genetic-py
+Version: 0.3.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Development Status :: 3 - Alpha
+Summary: Python bindings for the ratio-genetic Rust crate.
+Keywords: genetic,algorithms,rust,mathematics,sga,clustering,sequencing
+Author-email: "Ratio Innovations B.V." <info@ratio-case.nl>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Ratio Genetic Python Bindings
+
+The bindings crate is currently just in a _proof of concept_ state and will for the
+moment just follow the main crate's versioning.
+
+This package provides a thin wrapper around the Ratio Genetic crate written in Rust. It
+is built with Maturin utilizing PyO3 bindings for convenience.
+
+To get up and running quickly, a Poetry section has been added to the `pyproject.toml`.
+This installs a Poetry environment with Maturin and PyTest. After any changes to the
+Rust code you should probably run `poetry run maturin develop` and `poetry run pytest`
+using your preferred method.
+
