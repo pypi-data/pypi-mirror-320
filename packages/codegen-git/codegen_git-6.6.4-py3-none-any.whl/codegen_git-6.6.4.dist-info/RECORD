@@ -1,0 +1,9 @@
+codegen/git/__init__.py,sha256=4e_YVflMFyEvBY9hZ9QnTua3M6I-AHUnPjUVIaKFS4g,140
+codegen/git/local_repo_operator.py,sha256=NlwnNpDR7csntgybvgjO6XFqLRhJtjI8JBDAooqjAGQ,4776
+codegen/git/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codegen/git/repo_operator.py,sha256=pXotLyCoKqzfJKXXvEiiVmvHPPDKri29TkY9e_r0X84,22801
+codegen/git/schemas/config.py,sha256=gblHTYbko3AoLaYD_wzMdsUL7j4IKzvAuNlCdoD8xpw,280
+codegen/git/schemas/enums.py,sha256=oVYKoduIystAr4D4irqNkjxoFvHzFv1RJb0kIAO16nM,698
+codegen_git-6.6.4.dist-info/METADATA,sha256=B5FAjSsKIv8F9ms3jWmZ2UUrvju8jcV_VX5k0D3Zz44,13190
+codegen_git-6.6.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+codegen_git-6.6.4.dist-info/RECORD,,
