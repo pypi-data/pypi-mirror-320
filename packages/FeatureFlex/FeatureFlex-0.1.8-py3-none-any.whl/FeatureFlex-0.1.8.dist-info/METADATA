@@ -1,0 +1,286 @@
+Metadata-Version: 2.2
+Name: FeatureFlex
+Version: 0.1.8
+Summary: An AutoML project with various machine learning capabilities.
+Home-page: https://github.com/SaintAngeLs/CS-MINI-2024Z-AutoML_project_2
+Author: SaintAngeLs
+Author-email: info@itsharppro.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: alembic==1.14.0
+Requires-Dist: autofeat==2.1.3
+Requires-Dist: Boruta==0.4.3
+Requires-Dist: certifi==2024.12.14
+Requires-Dist: charset-normalizer==3.4.1
+Requires-Dist: cloudpickle==3.1.0
+Requires-Dist: colorlog==6.9.0
+Requires-Dist: contourpy==1.3.1
+Requires-Dist: cycler==0.12.1
+Requires-Dist: filelock==3.16.1
+Requires-Dist: flexcache==0.3
+Requires-Dist: flexparser==0.4
+Requires-Dist: fonttools==4.55.3
+Requires-Dist: fsspec==2024.12.0
+Requires-Dist: greenlet==3.1.1
+Requires-Dist: idna==3.10
+Requires-Dist: imbalanced-learn==0.13.0
+Requires-Dist: imblearn==0.0
+Requires-Dist: Jinja2==3.1.5
+Requires-Dist: joblib==1.4.2
+Requires-Dist: kagglehub==0.3.6
+Requires-Dist: kiwisolver==1.4.8
+Requires-Dist: lightgbm==4.5.0
+Requires-Dist: llvmlite==0.43.0
+Requires-Dist: Mako==1.3.8
+Requires-Dist: MarkupSafe==3.0.2
+Requires-Dist: matplotlib==3.10.0
+Requires-Dist: mpmath==1.3.0
+Requires-Dist: networkx==3.4.2
+Requires-Dist: numba==0.60.0
+Requires-Dist: numpy==1.26.4
+Requires-Dist: nvidia-cublas-cu12==12.4.5.8
+Requires-Dist: nvidia-cuda-cupti-cu12==12.4.127
+Requires-Dist: nvidia-cuda-nvrtc-cu12==12.4.127
+Requires-Dist: nvidia-cuda-runtime-cu12==12.4.127
+Requires-Dist: nvidia-cudnn-cu12==9.1.0.70
+Requires-Dist: nvidia-cufft-cu12==11.2.1.3
+Requires-Dist: nvidia-curand-cu12==10.3.5.147
+Requires-Dist: nvidia-cusolver-cu12==11.6.1.9
+Requires-Dist: nvidia-cusparse-cu12==12.3.1.170
+Requires-Dist: nvidia-nccl-cu12==2.21.5
+Requires-Dist: nvidia-nvjitlink-cu12==12.4.127
+Requires-Dist: nvidia-nvtx-cu12==12.4.127
+Requires-Dist: optuna==4.1.0
+Requires-Dist: packaging==24.2
+Requires-Dist: pandas==2.2.3
+Requires-Dist: pdfkit==1.0.0
+Requires-Dist: pillow==11.0.0
+Requires-Dist: Pint==0.24.4
+Requires-Dist: platformdirs==4.3.6
+Requires-Dist: pyparsing==3.2.1
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: pytz==2024.2
+Requires-Dist: PyYAML==6.0.2
+Requires-Dist: requests==2.32.3
+Requires-Dist: scikit-learn==1.5.0
+Requires-Dist: scipy==1.14.1
+Requires-Dist: setuptools==75.6.0
+Requires-Dist: shap==0.46.0
+Requires-Dist: six==1.17.0
+Requires-Dist: sklearn-compat==0.1.3
+Requires-Dist: slicer==0.0.8
+Requires-Dist: SQLAlchemy==2.0.36
+Requires-Dist: sympy==1.13.1
+Requires-Dist: threadpoolctl==3.5.0
+Requires-Dist: torch==2.5.1
+Requires-Dist: tqdm==4.67.1
+Requires-Dist: triton==3.1.0
+Requires-Dist: typing_extensions==4.12.2
+Requires-Dist: tzdata==2024.2
+Requires-Dist: urllib3==2.3.0
+Requires-Dist: xgboost==2.1.3
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# FeatureFlex: An AutoML Project with Advanced Feature Selection
+
+## Overview
+FeatureFlex is an AutoML project that provides a comprehensive suite of machine learning capabilities. It includes advanced preprocessing, feature selection, model optimization, and evaluation functionalities, making it a robust choice for tackling classification tasks with large and complex datasets.
+
+This package is particularly suited for tasks requiring feature selection and comparison across multiple methods, including SHAP, Boruta, SelectKBest, and more.
+
+---
+
+## Features
+
+- **Advanced Feature Selection**:
+  - Boruta
+  - SelectKBest
+  - SHAP-based feature selection
+  - ReliefF (via scikit-rebate)
+
+- **Dynamic Model Optimization**:
+  - Grid search
+  - Random search
+  - Bayesian optimization
+
+- **Evaluation Metrics**:
+  - AUC, Accuracy, Precision, Recall, F1-score
+  - Confusion Matrix
+  - ROC and Precision-Recall Curves
+
+- **Comparison Tool**:
+  - Compare feature selection methods based on model performance.
+
+---
+
+## Installation
+
+Install FeatureFlex via PyPI:
+
+```bash
+pip install FeatureFlex
+```
+
+---
+
+## Usage
+
+### Preprocessing Data
+
+FeatureFlex includes a `DataPreprocessor` for preprocessing data with missing values, scaling, and encoding.
+
+```python
+from preprocessing import DataPreprocessor
+
+data = ...  # Load your dataset
+preprocessor = DataPreprocessor()
+X, y, _ = preprocessor.preprocess(data, target_column="click")
+```
+
+### Feature Selection
+
+FeatureFlex allows you to use various feature selection techniques:
+
+```python
+from feature_selector import EnhancedFeatureSelector
+
+# Using SHAP-based feature selection
+selector = EnhancedFeatureSelector(input_dim=X.shape[1])
+top_features = selector.select_via_shap(X, y, n_features=10)
+```
+
+### Model Optimization
+
+Optimize models using dynamic, grid, random, or Bayesian search:
+
+```python
+from model_optimizer import ModelOptimizer
+
+optimizer = ModelOptimizer()
+best_model, best_score = optimizer.optimize_model(X, y, method="bayesian")
+```
+
+### Comparison of Feature Selection Methods
+
+Compare different feature selection methods using the provided comparison script:
+
+```python
+from comparison import compare_feature_selectors
+
+results = compare_feature_selectors(data, target_column="click", n_features=10)
+```
+
+### Evaluation
+
+Evaluate your model with various metrics and generate reports:
+
+```python
+from evaluation import ModelEvaluator
+
+metrics = ModelEvaluator.evaluate(model, X_test, y_test, output_format="html")
+```
+
+---
+
+## Example Dataset
+
+The package includes utilities tested with datasets such as:
+
+- [Avazu CTR Prediction Dataset (50k random rows)](https://www.kaggle.com/datasets/gauravduttakiit/avazu-ctr-prediction-with-random-50k-rows)
+
+For more information on the dataset's context and alternative inspiration package AutoFeat, see:
+- [AutoML Research](https://arxiv.org/pdf/2204.09078)
+
+---
+
+## Comparison with Existing Packages
+
+FeatureFlex distinguishes itself from existing feature selection packages:
+
+| **Method**       | **FeatureFlex** | **Boruta** | **SelectKBest** | **SHAP** | **ReliefF** |
+|------------------|-----------------|------------|-----------------|----------|-------------|
+| Multi-method support | ✔          | ✘        | ✘             | ✘      | ✘         |
+| Dynamic optimization | ✔      | ✘        | ✘             | ✘      | ✘         |
+| Scalable to large datasets | ✔  | ✔        | ✔             | ✔      | ✔         |
+| Integrated evaluation  | ✔    | ✘        | ✘             | ✘      | ✘         |
+
+---
+
+## Full Comparison Script
+
+Here is an example script to compare various feature selection techniques:
+
+```python
+from comparison import compare_feature_selectors, save_results_and_plots
+import pandas as pd
+
+# Load dataset
+data = pd.read_csv("path/to/dataset.csv")
+results = compare_feature_selectors(data, target_column="click", n_features=10)
+
+# Save results to CSV and generate plots
+save_results_and_plots(results)
+```
+
+---
+
+## Dependencies
+
+FeatureFlex depends on the following libraries:
+
+- **Core**:
+  - `numpy`, `pandas`, `scikit-learn`
+  - `matplotlib`, `shap`, `optuna`
+
+- **Feature Selection**:
+  - `BorutaPy`
+  - `scikit-rebate`
+
+- **Optimization**:
+  - `optuna`
+
+Refer to the `requirements.txt` file for the full list of dependencies.
+
+---
+
+## Project Links
+
+- **GitHub**: [FeatureFlex Repository](https://github.com/SaintAngeLs/CS-MINI-2024Z-AutoML_project_2)
+- **PyPI**: [FeatureFlex on PyPI](https://pypi.org/project/FeatureFlex/)
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Contact
+
+For queries or suggestions, contact the author at **info@itsharppro.com**.
+
+---
+
+## Changelog
+
+FeatureFlex uses a dynamic versioning system. The current version is updated automatically at build time.
+
+---
+
+## Contribution
+
+Contributions are welcome! Feel free to fork the repository and submit a pull request.
+
