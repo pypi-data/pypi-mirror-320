@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: Tan_Soon_Seng
+Version: 0.0.1
+Summary: C++ code packaged for use in Python for KIG2013 Assignment
+Author: Kwong Ye Kun
+Author-email: 23006148@siswa.um.edu.my
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example README
+
+This is a python package built using C++ code as the source to enable using C++ code in Python. 
+
+
+## Installation
+
+Install with pip. Run the following in cmd line:
+```
+  py -m pip install Tan_Soon_Seng
+```
+Alternatively on MacOS/Linux:
+```
+  python3 -m pip install Tan_Soon_Seng
+```
+
+## Acknowledgements
+
+ - [Pybind11 Library](https://github.com/pybind/pybind11)
+ - [Python Example by pybind11](https://github.com/pybind/python_example)
+
