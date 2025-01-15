@@ -1,0 +1,26 @@
+[project]
+name = "nonebot-plugin-apex-api-query"
+version = "25.1.15"
+description = ""
+authors = [
+    {name = "H-xiaoH",email = "a412454922@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9,<4.0"
+dependencies = [
+    "nonebot2 (>=2.4.1)",
+    "nonebot-adapter-onebot (>=2.4.6)",
+    "nonebot-plugin-alconna (>=0.54.2)",
+    "httpx (>=0.28.1)",
+]
+license = { text = "MIT" }
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+homepage = "https://github.com/H-xiaoH/nonebot-plugin-apex-api-query"
+repository = "https://github.com/H-xiaoH/nonebot-plugin-apex-api-query"
+documentation = "https://github.com/H-xiaoH/nonebot-plugin-apex-api-query/blob/main/README.md"
+"Bug Tracker" = "https://github.com/H-xiaoH/nonebot-plugin-apex-api-query/issues"
