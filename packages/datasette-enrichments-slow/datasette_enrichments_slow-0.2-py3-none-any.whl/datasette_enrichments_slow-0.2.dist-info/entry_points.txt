@@ -1,0 +1,2 @@
+[datasette]
+enrichments_slow = datasette_enrichments_slow
