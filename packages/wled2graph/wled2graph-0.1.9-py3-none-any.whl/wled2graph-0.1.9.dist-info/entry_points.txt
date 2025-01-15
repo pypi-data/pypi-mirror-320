@@ -1,0 +1,5 @@
+[console_scripts]
+wled2graph = wled2graph.main:main
+
+[gui_scripts]
+
