@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: peek-logic-service
+Version: 4.0.1
+Summary: Peek Logic Service - where Peek Logic App is served
+Author-email: Synerty <contact@synerty.com>
+Project-URL: Homepage, https://github.com/Synerty/peek-logic-service
+Keywords: Peek,Python,Platform,synerty
+License-File: LICENSE
+Requires-Dist: peek-plugin-base==4.0.1
+Requires-Dist: peek-platform==4.0.1
+Requires-Dist: peek-admin-app==4.0.1
+Requires-Dist: peek-admin-doc==4.0.1
