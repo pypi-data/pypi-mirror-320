@@ -1,0 +1,6 @@
+cbor2<6,>=5
+click<9.0,>=8.0
+prettytable<4,>=3
+pyelftools<0.32,>=0.31
+pyparsing<4,>=3.1.4
+typing_extensions<5,>=4.12.2

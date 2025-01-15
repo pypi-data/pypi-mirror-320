@@ -1,0 +1,36 @@
+[project]
+name = "mflt-compact-log"
+version = "0.1.1"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Memfault", email = "hello@memfault.com" }
+]
+dependencies = [
+  "cbor2 >=5,<6",
+  "click >=8.0,<9.0",
+  "prettytable >=3,<4",
+  "pyelftools >=0.31,<0.32",
+  "pyparsing >=3.1.4,<4",
+  "typing_extensions >=4.12.2,<5"
+]
+requires-python = ">=3.8,<4.0"
+
+[project.scripts]
+"mflt-compact-log.compact" = 'mflt_compact_log.compact:main'
+"mflt-compact-log.log_fmt" = 'mflt_compact_log.log_fmt:main'
+
+[tool.pytest.ini_options]
+# set an empty pytest config section, to prevent pytest from walking up the
+# directory tree trying to find a config file
+
+[tool.uv]
+dev-dependencies = [
+  "invoke ==1.4.1",
+  "pytest >=6",
+  "pytest-cov >=2,<3",
+  "snappy",
+]
+
+[tool.uv.sources]
+snappy = {path = "../snappy", editable = true}

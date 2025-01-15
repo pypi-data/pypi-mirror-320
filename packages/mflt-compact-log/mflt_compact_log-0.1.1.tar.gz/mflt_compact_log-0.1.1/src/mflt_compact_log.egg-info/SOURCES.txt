@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/mflt_compact_log/__init__.py
+src/mflt_compact_log/compact.py
+src/mflt_compact_log/log_fmt.py
+src/mflt_compact_log/printf.py
+src/mflt_compact_log/py.typed
+src/mflt_compact_log.egg-info/PKG-INFO
+src/mflt_compact_log.egg-info/SOURCES.txt
+src/mflt_compact_log.egg-info/dependency_links.txt
+src/mflt_compact_log.egg-info/entry_points.txt
+src/mflt_compact_log.egg-info/requires.txt
+src/mflt_compact_log.egg-info/top_level.txt
