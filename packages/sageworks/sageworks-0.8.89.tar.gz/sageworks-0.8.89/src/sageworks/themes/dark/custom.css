@@ -1,0 +1,70 @@
+h1, h2, h3, h4 {
+    color: rgb(220, 220, 220); /* We want the headers off white */
+}
+body {
+    color: rgb(180, 180, 180); /* We want the text dim white */
+}
+
+/* Custom CSS to style bold text */
+b, strong {
+    color: rgb(120, 120, 240); /* Replace with your desired RGB color */
+}
+
+/* Links in Quartz are pink and hard to see */
+/* Default link color */
+a {
+    color: rgb(120, 120, 240); /* Change to your preferred color */
+}
+
+/* Hover effect */
+a:hover {
+    color: rgb(160, 160, 255); /* Change hover color */
+}
+
+/* AgGrid custom CSS */
+
+/* There's a one pixel border around the grid that we want to remove */
+.ag-root-wrapper {
+    border: none !important; /* Force removal with !important */
+}
+
+
+/* Box shadow and rounded corners for all AgGrid themes */
+[class*="ag-theme-"] {
+    box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.3); /* Drop shadow */
+    border-radius: 12px; /* Rounded corners */
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styling to all Plotly figures */
+.plotly {
+    box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.3); /* Drop shadow */
+    border-radius: 12px; /* Rounded corners */
+    margin: 30px; /* Space around the figure */
+    padding: 30px; /* Inner padding */
+    overflow: hidden; /* Ensure contents fit inside the rounded corners */
+}
+
+
+/* Some of the HTML/Markdown will use color hints like 'green-text' or 'blue-text' */
+.green-text {
+    color: rgb(140, 255, 140);
+}
+
+.blue-text {
+    color: rgb(140, 140, 255);
+}
+
+.pink-text {
+    color: rgb(240, 140, 240);
+}
+
+.red-text {
+    color: rgb(255, 140, 140);
+}
+
+.orange-text {
+    color: rgb(255, 195, 140);
+}
