@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+ba63usb/__init__.py
+ba63usb.egg-info/PKG-INFO
+ba63usb.egg-info/SOURCES.txt
+ba63usb.egg-info/dependency_links.txt
+ba63usb.egg-info/requires.txt
+ba63usb.egg-info/top_level.txt
