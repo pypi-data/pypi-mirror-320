@@ -1,0 +1,8 @@
+sandlerprops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sandlerprops/properties.py,sha256=z0yxa-aT3VN3gtMjqFFASyi20Q52lIvIXNF2J7udGGI,1003
+sandlerprops/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sandlerprops/resources/data/properties_database.csv,sha256=hC8K_k71JuB3AiJbmXkOXztj576fHue92rg_b4vvxB8,92435
+sandlerprops-0.0.2.dist-info/METADATA,sha256=opsrdRIKL2mmHSCjfA2kS3vHp85_JFH0W5Yui-9vExo,1439
+sandlerprops-0.0.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+sandlerprops-0.0.2.dist-info/licenses/LICENSE,sha256=fVojcYCD8h1MXbe7D5HDIKcUq89VzQO3QNuy02ALAAQ,1092
+sandlerprops-0.0.2.dist-info/RECORD,,
