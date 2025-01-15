@@ -1,0 +1,2 @@
+[console_scripts]
+tty-html = tty_html:main
