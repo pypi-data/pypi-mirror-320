@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+PRODID:adamgibbons/ics
+METHOD:PUBLISH
+X-PUBLISHED-TTL:PT1H
+BEGIN:VEVENT
+UID:14@gancio.antroposofiachile.net
+SUMMARY:El Congreso de Navidad: Ciclo de Historia Universal
+DTSTAMP:20240601T195912Z
+DTSTART:20240824T133000Z
+DTEND:20240824T160000Z
+DESCRIPTION:Estudio\n\nPresentan: Tomás Lambertini y Pablo Porcel\n\nHabra
+	́ café y alimentos biodinámicos. Aporte económico voluntario.
+URL:https://gancio.antroposofiachile.net/event/el-congreso-de-navidad-ciclo
+	-de-historia-universal-1
+LOCATION:Colegio Micael - Simón González 8848\, La Reina\, Santiago de Chil
+	e
+STATUS:CONFIRMED
+CATEGORIES:
+X-ALT-DESC;FMTTYPE=text/html:<p>Estudio</p><p><em>Presentan: Tomás Lambert
+	ini </em>y <em>Pablo Porcel</em></p><p><em>Habrá café y alimentos biodin
+	ámicos. Aporte económico voluntario.</em></p>
+END:VEVENT
+END:VCALENDAR
