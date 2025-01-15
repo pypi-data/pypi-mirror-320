@@ -1,0 +1,176 @@
+Metadata-Version: 2.1
+Name: mindtouch2zim
+Version: 0.1.1
+Summary: Make ZIM file from Mindtouch / Nice CXone Expert libraries
+Project-URL: Donate, https://www.kiwix.org/en/support-us/
+Project-URL: Homepage, https://www.kiwix.org
+Author-email: openZIM <dev@openzim.org>
+License: GPL-3.0-or-later
+Keywords: cxone,expert,mindouch,nice,offline,openzim,zim
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: <3.13,>=3.12
+Requires-Dist: backoff==2.2.1
+Requires-Dist: beautifulsoup4==4.12.3
+Requires-Dist: jinja2==3.1.5
+Requires-Dist: joblib==1.4.2
+Requires-Dist: kiwixstorage==0.9.0
+Requires-Dist: lxml==5.3.0
+Requires-Dist: pif==0.8.2
+Requires-Dist: pydantic==2.10.5
+Requires-Dist: requests==2.32.3
+Requires-Dist: schedule==1.2.2
+Requires-Dist: tinycss2==1.4.0
+Requires-Dist: types-beautifulsoup4==4.12.0.20241020
+Requires-Dist: types-requests==2.32.0.20241016
+Requires-Dist: zimscraperlib==5.0.0
+Provides-Extra: check
+Requires-Dist: pyright==1.1.391; extra == 'check'
+Provides-Extra: dev
+Requires-Dist: debugpy==1.8.11; extra == 'dev'
+Requires-Dist: humanfriendly==10.0; extra == 'dev'
+Requires-Dist: mindtouch2zim[check]; extra == 'dev'
+Requires-Dist: mindtouch2zim[lint]; extra == 'dev'
+Requires-Dist: mindtouch2zim[scripts]; extra == 'dev'
+Requires-Dist: mindtouch2zim[test]; extra == 'dev'
+Requires-Dist: pre-commit==4.0.1; extra == 'dev'
+Provides-Extra: lint
+Requires-Dist: black==24.10.0; extra == 'lint'
+Requires-Dist: ruff==0.9.1; extra == 'lint'
+Provides-Extra: scripts
+Requires-Dist: invoke==2.2.0; extra == 'scripts'
+Provides-Extra: test
+Requires-Dist: coverage==7.6.10; extra == 'test'
+Requires-Dist: pytest==8.3.4; extra == 'test'
+Description-Content-Type: text/markdown
+
+# Mindtouch scraper
+
+This scraper transform content on a Mindtouch / Nice CXone Expert instance into a in ZIM file, a clean and user friendly format for storing content for offline usage.
+
+While meant to be generic for any Mindtouch instance, it has so far been tested only on libretexts.org instance, so it is highly expectable some rough edges might need to be polished until it works on all Mindtouch instance.
+
+[![CodeFactor](https://www.codefactor.io/repository/github/openzim/mindtouch/badge)](https://www.codefactor.io/repository/github/openzim/mindtouch)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![codecov](https://codecov.io/gh/openzim/mindtouch/branch/main/graph/badge.svg)](https://codecov.io/gh/openzim/mindtouch)
+[![PyPI version shields.io](https://img.shields.io/pypi/v/mindtouch2zim.svg)](https://pypi.org/project/mindtouch2zim/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mindtouch2zim.svg)](https://pypi.org/project/mindtouch2zim)
+[![Docker](https://ghcr-badge.egpl.dev/openzim/mindtouch/latest_tag?label=docker)](https://ghcr.io/openzim/mindtouch)
+
+## Installation
+
+There are three main ways to install and use `mindtouch2zim` from most recommended to least:
+
+<details>
+<summary>Install using a pre-built container</summary>
+
+1. Download the image using `docker`:
+
+   ```sh
+   docker pull ghcr.io/openzim/mindtouch
+   ```
+
+</details>
+<details>
+<summary>Build your own container</summary>
+
+1. Clone the repository locally:
+
+   ```sh
+   git clone https://github.com/openzim/mindtouch.git && cd mindtouch
+   ```
+
+1. Build the image:
+
+   ```sh
+   docker build -t ghcr.io/openzim/mindtouch .
+   ```
+
+</details>
+<details>
+<summary>Run the software locally using Hatch</summary>
+
+1. Clone the repository locally:
+
+   ```sh
+   git clone https://github.com/openzim/mindtouch.git && cd mindtouch
+   ```
+
+1. Install [Hatch](https://hatch.pypa.io/):
+
+   ```sh
+   pip3 install hatch
+   ```
+
+1. Start a hatch shell to install software and dependencies in an isolated virtual environment.
+
+   ```sh
+   hatch shell
+   ```
+
+1. Run the `mindtouch2zim` command:
+
+   ```sh
+   mindtouch2zim --help
+   ```
+
+</details>
+
+## Usage
+
+```sh
+# Get help
+docker run -v output:/output ghcr.io/openzim/mindtouch mindtouch2zim --help
+```
+
+```sh
+# Create a ZIM for https://geo.libretexts.org
+docker run -v output:/output ghcr.io/openzim/mindtouch mindtouch2zim --library-url https://geo.libretexts.org --name libretexts.org_en_geo --creator LibreTexts --title "LibreTexts Geosciences" --description "Geosciences courses from libretexts.org"
+```
+
+## Developing
+
+Use the commands below to set up the project once:
+
+```sh
+# Install hatch if it isn't installed already.
+❯ pip install hatch
+
+# Local install (in default env) / re-sync packages
+❯ hatch run pip list
+
+# Set-up pre-commit
+❯ pre-commit install
+```
+
+The following commands can be used to build and test the scraper:
+
+```sh
+# Show scripts
+❯ hatch env show
+
+# linting, testing, coverage, checking
+❯ hatch run lint:all
+❯ hatch run lint:fixall
+
+# run tests on all matrixed' envs
+❯ hatch run test:run
+
+# run tests in a single matrixed' env
+❯ hatch env run -e test -i py=3.12 coverage
+
+# run static type checks
+❯ hatch env run check:all
+
+# building packages
+❯ hatch build
+```
+
+### Contributing
+
+This project adheres to openZIM's [Contribution Guidelines](https://github.com/openzim/overview/wiki/Contributing).
+
+This project has implemented openZIM's [Python bootstrap, conventions and policies](https://github.com/openzim/_python-bootstrap/blob/main/docs/Policy.md) **v1.0.3**.
+
+See details for contributions in [CONTRIBUTING.md](CONTRIBUTING.md).
