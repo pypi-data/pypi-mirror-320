@@ -1,0 +1,127 @@
+Metadata-Version: 2.3
+Name: audiblez
+Version: 0.1.0
+Summary: 
+Home-page: https://claudio.uk/posts/epub-to-audiobook.html
+Author: Claudio Santini
+Author-email: hireclaudio@gmail.com
+Requires-Python: >=3.11,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: attrs (==24.3.0)
+Requires-Dist: audioread (==3.0.1)
+Requires-Dist: babel (==2.16.0)
+Requires-Dist: beautifulsoup4 (==4.12.3)
+Requires-Dist: bibtexparser (==2.0.0b8)
+Requires-Dist: bs4 (==0.0.2)
+Requires-Dist: certifi (==2024.12.14)
+Requires-Dist: cffi (==1.17.1)
+Requires-Dist: charset-normalizer (==3.4.1)
+Requires-Dist: clldutils (==3.24.0)
+Requires-Dist: colorama (==0.4.6)
+Requires-Dist: coloredlogs (==15.0.1)
+Requires-Dist: colorlog (==6.9.0)
+Requires-Dist: csvw (==3.5.1)
+Requires-Dist: decorator (==5.1.1)
+Requires-Dist: dlinfo (==1.2.1)
+Requires-Dist: ebooklib (==0.18)
+Requires-Dist: espeakng-loader (==0.2.1)
+Requires-Dist: flatbuffers (==24.12.23)
+Requires-Dist: humanfriendly (==10.0)
+Requires-Dist: idna (==3.10)
+Requires-Dist: isodate (==0.7.2)
+Requires-Dist: joblib (==1.4.2)
+Requires-Dist: jsonschema (==4.23.0)
+Requires-Dist: jsonschema-specifications (==2024.10.1)
+Requires-Dist: kokoro-onnx (==0.2.6)
+Requires-Dist: language-tags (==1.2.0)
+Requires-Dist: lazy-loader (==0.4)
+Requires-Dist: librosa (==0.10.2.post1)
+Requires-Dist: llvmlite (==0.43.0)
+Requires-Dist: lxml (==5.3.0)
+Requires-Dist: markdown (==3.7)
+Requires-Dist: markupsafe (==3.0.2)
+Requires-Dist: mpmath (==1.3.0)
+Requires-Dist: msgpack (==1.1.0)
+Requires-Dist: numba (==0.60.0)
+Requires-Dist: numpy (==2.0.2)
+Requires-Dist: onnxruntime (==1.20.1)
+Requires-Dist: packaging (==24.2)
+Requires-Dist: phonemizer-fork (==3.3.1)
+Requires-Dist: platformdirs (==4.3.6)
+Requires-Dist: pooch (==1.8.2)
+Requires-Dist: protobuf (==5.29.3)
+Requires-Dist: pycparser (==2.22)
+Requires-Dist: pydub (>=0.25.1,<0.26.0)
+Requires-Dist: pylatexenc (==2.10)
+Requires-Dist: pyparsing (==3.2.1)
+Requires-Dist: python-dateutil (==2.9.0.post0)
+Requires-Dist: rdflib (==7.1.2)
+Requires-Dist: referencing (==0.35.1)
+Requires-Dist: regex (==2024.11.6)
+Requires-Dist: requests (==2.32.3)
+Requires-Dist: rfc3986 (==1.5.0)
+Requires-Dist: rpds-py (==0.22.3)
+Requires-Dist: scikit-learn (==1.6.1)
+Requires-Dist: scipy (==1.15.1)
+Requires-Dist: segments (==2.2.1)
+Requires-Dist: six (==1.17.0)
+Requires-Dist: soundfile (==0.13.0)
+Requires-Dist: soupsieve (==2.6)
+Requires-Dist: soxr (==0.5.0.post1)
+Requires-Dist: sympy (==1.13.3)
+Requires-Dist: tabulate (==0.9.0)
+Requires-Dist: threadpoolctl (==3.5.0)
+Requires-Dist: typing-extensions (==4.12.2)
+Requires-Dist: uritemplate (==4.1.1)
+Requires-Dist: urllib3 (==2.3.0)
+Project-URL: Documentation, https://github.com/santinic/audiblez
+Project-URL: Repository, https://github.com/santinic/audiblez
+Description-Content-Type: text/markdown
+
+# Audiblez: Create audiobooks from e-books
+
+Audiblez converts .epub into .mp3 using high-quality and lightweight Kokoro-82M text-to-speech models.
+
+
+# How to install
+
+```
+pip install  audiblez  		# via Python PIP
+
+brew install audiblez 		# On MacOSX via homebrew
+
+apt get install audiblez  	# On Ubuntu/Debian
+```
+
+
+# From sources
+
+```
+# Get the model
+wget 
+```
+
+
+# How to run
+
+`audiblez book.epub book.mp3`
+
+# Change language
+
+use `-l` to specify language, eg:
+
+`audiblez -l en-gb book.epub book.mp3`
+
+Kokoro supports these languages:
+
+```
+en-us
+en-gb
+fr-fr
+```
+
+# Change voice
+
+
