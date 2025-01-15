@@ -1,0 +1,11 @@
+numpy<2
+faiss-cpu
+pytest
+pytest-cov
+scikit-learn
+thefuzz[speedup]
+onnx
+onnxruntime
+onnxruntime-extensions
+peft
+usearch
