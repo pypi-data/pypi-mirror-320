@@ -1,0 +1,8 @@
+httpx>=0.27.2
+pydantic>=2.9.2
+
+[dev]
+ruff>=0.3.7
+
+[modal]
+modal>=0.56.4
