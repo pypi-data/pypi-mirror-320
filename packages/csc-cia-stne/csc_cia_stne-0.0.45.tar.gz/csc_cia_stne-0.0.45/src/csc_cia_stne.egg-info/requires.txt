@@ -1,0 +1,16 @@
+python-json-logger
+rich
+requests
+pydantic
+pydantic_settings
+zeep
+google-cloud-bigquery
+google-cloud-storage
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+pyjwt
+PyYAML
+python-dotenv
+slack_sdk
+email-validator
