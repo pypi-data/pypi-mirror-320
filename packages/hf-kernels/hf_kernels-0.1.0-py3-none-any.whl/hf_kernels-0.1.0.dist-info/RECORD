@@ -1,0 +1,6 @@
+hf_kernels/__init__.py,sha256=695a4bc788a43bd1a922d93f75a8996bd8095f6e4ab00fc4cf26bb7c5e3d282c,99
+hf_kernels/utils.py,sha256=bca51c955575b745295577d135e8d5fb548ae943b455f28cccef52d6edd67feb,1983
+hf_kernels/build.py,sha256=3c4a666bad9adf417370927c59ae888e0caf782eba05df413fd7d724002e9c58,4853
+hf_kernels-0.1.0.dist-info/WHEEL,sha256=4e5918c46f66f9d1af964bb215c4c92fb586d1f50a8cc3999af24bf5ac283f87,79
+hf_kernels-0.1.0.dist-info/METADATA,sha256=976585b2988539a0a1a2df8ae6e220c7f072b019b6c6cf5ab5103f687a1b4c9d,753
+hf_kernels-0.1.0.dist-info/RECORD,,
