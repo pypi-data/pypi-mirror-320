@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: tetrimino
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/Danchev/tetrimino#readme
+Project-URL: Issues, https://github.com/Danchev/tetrimino/issues
+Project-URL: Source, https://github.com/Danchev/tetrimino
+Author-email: Danchev <12420863+danchev@users.noreply.github.com>
+License-Expression: GPL-3.0-or-later
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# tetrimino
+
+[![PyPI - Version](https://img.shields.io/pypi/v/tetrimino.svg)](https://pypi.org/project/tetrimino)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/tetrimino.svg)](https://pypi.org/project/tetrimino)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install tetrimino
+```
+
+## License
+
+`tetrimino` is distributed under the terms of the [GPL-3.0-or-later](https://spdx.org/licenses/GPL-3.0-or-later.html) license.
