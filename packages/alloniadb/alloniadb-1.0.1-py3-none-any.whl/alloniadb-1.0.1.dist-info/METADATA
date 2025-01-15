@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: alloniadb
+Version: 1.0.1
+Summary: Library to interact with AllOnIA's registered databases
+Author: ALLONIA
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: alloniaconfigs (>=1.1.2,<2.0.0)
+Requires-Dist: alloniarest (>=1.1.2,<2.0.0)
+Requires-Dist: oracledb (>=2.4.1,<3.0.0)
+Requires-Dist: psycopg (>=3.2.3,<4.0.0)
+Requires-Dist: pymongo (>=4.10.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+# AllOnIADB
+
+Connect to external database registered on the plateform.
+
+```python
+from alloniadb import connect
+
+# Assuming you registered a DB connection named 'MyDB' on the plateform 
+connection = connect("MyDB")
+# The following synthax will depend on your actual DB type (SQL, Mongo...)
+connection.request(...)
+```
