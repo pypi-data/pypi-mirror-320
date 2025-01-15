@@ -1,0 +1,31 @@
+[project]
+name = "codegen-utils"
+dynamic = ["version", "urls"]
+description = "Codegen utils"
+readme = "README.md"
+dependencies = ["sentry-sdk==2.20.0", "PyGithub==2.5.0", ]
+license = {file = "../LICENSE"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+]
+requires-python = ">=3.9"
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+raw-options = { root = ".." }
+[tool.hatch.metadata.hooks.vcs]
+Homepage = "https://github.com/codegen-sh/graph_sitter"
+source_archive = "https://github.com/codegen-sh/graph_sitter/archive/{commit_hash}.zip"
+[tool.hatch.envs.default]
+installer = "uv"
+[tool.hatch.envs.default.env-vars]
+UV_EXTRA_INDEX_URL = "https://aws@codegen-922078275900.d.codeartifact.us-east-1.amazonaws.com/pypi/codegen/simple/"
+[tool.hatch.build.targets.wheel]
+packages = ["src/codegen"]
+
+
+[tool.uv]
+cache-keys = [{ git = { commit = true, tags = true } }]
