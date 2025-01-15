@@ -1,0 +1,2 @@
+[console_scripts]
+funpaper = funpaper.podcast.command:funpaper
