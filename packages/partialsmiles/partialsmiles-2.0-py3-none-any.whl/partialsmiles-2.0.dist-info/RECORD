@@ -1,0 +1,12 @@
+partialsmiles/__init__.py,sha256=5KzHOww0N63soOwNekyUVewdk_lHGKlBoQO5sHRAUzM,1456
+partialsmiles/elements.py,sha256=moSlxpfntH_5mCHxST_zZVVMECLAZ0zIoO_btpCYK08,1317
+partialsmiles/exceptions.py,sha256=QN2MZ5ltsPLrSocOLPHgBeGYnvBy1s6OHJLfqLHqB5A,2322
+partialsmiles/kekulize.py,sha256=9Rwil-kJ7WXlhq865oTvCwiH96DdXJEGAS2Txxrc1ag,8179
+partialsmiles/smiparser.backup.py,sha256=Qa-M1PmxgTHVjOmFN7z8tWjH2zoW765QaD7i3Ufj_nU,23283
+partialsmiles/smiparser.py,sha256=egPORGlZNfsaEqFlmFBPvcqNvA3cT273sShekvrV-AE,22128
+partialsmiles/valence.py,sha256=2laZ1wvbOpCceN_KgmPwWrgA0j-ga_oM_-RmZe-PWXM,3828
+partialsmiles-2.0.dist-info/LICENSE,sha256=lDnBrVxeyk90u0m-ag5YaP1YVQpU2AZdex1TKtSzeFE,1069
+partialsmiles-2.0.dist-info/METADATA,sha256=TZr4HAnb2uKsIwaAD6-J3K2rGDJ3gzC-dxVp9GMAUEk,371
+partialsmiles-2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+partialsmiles-2.0.dist-info/top_level.txt,sha256=9ibuGiV0gptj38xlcbpAE9mQlzwsekwwINbzgEji4Yw,14
+partialsmiles-2.0.dist-info/RECORD,,
