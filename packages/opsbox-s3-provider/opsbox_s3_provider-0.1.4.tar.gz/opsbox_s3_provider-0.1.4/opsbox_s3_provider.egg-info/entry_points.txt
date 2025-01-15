@@ -1,0 +1,2 @@
+[opsbox.plugins]
+opsbox_s3_provider = s3_provider.s3_provider:S3Provider
