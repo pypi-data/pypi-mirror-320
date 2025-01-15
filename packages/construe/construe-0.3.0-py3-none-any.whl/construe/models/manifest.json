@@ -1,0 +1,6 @@
+{
+  "whisper": {
+    "url": "https://storage.googleapis.com/construe/v0.3.0/models/whisper.zip",
+    "signature": "e355a473fe0df0d289a6cb0fe8c3bde01f2f4e4f232532bd8cf76273e3198222"
+  }
+}
