@@ -1,0 +1,49 @@
+[project]
+name = "check_os_ver"
+version = "0.4.0"
+description = "Default template for PDM package"
+authors = [
+    { name = "vhzkclq0705", email = "vhzkclq0705@naver.com" },
+    { name = "vhzkclq0705", email = "dhwns1513@gmail.com" },
+]
+dependencies = [
+    "check_os_ver",
+    "cho-check-os-ver",
+    "hj-check-os-version",
+    "jacob-os-version-check",
+    "lucas-check-os-ver",
+    "nunininu-check-os-ver",
+    "ppabam-check-os-ver>=0.2.0",
+    "seo-check-os-version",
+    "stundrg-check-os-ver",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/vhzkclq0705/check_os_ver"
+Issues = "https://github.com/vhzkclq0705/check_os_ver/issues"
+
+[project.scripts]
+jerry-hi = "check_os_ver.hi:hi"
+jerry-random-pic = "check_os_ver.hi:random_pic"
+jerry-random-game = "check_os_ver.hi:random_game"
+jerry-random-match = "check_os_ver.hi:random_match"
+jerry-os-ver = "check_os_ver.osver:get_os_version_of_mac"
+
+[tool.pdm]
+distribution = true
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[dependency-groups]
+test = [
+    "pytest>=8.3.4",
+]
