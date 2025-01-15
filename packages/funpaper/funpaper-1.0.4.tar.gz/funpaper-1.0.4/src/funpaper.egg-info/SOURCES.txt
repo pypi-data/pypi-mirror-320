@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/funpaper/__init__.py
+src/funpaper.egg-info/PKG-INFO
+src/funpaper.egg-info/SOURCES.txt
+src/funpaper.egg-info/dependency_links.txt
+src/funpaper.egg-info/entry_points.txt
+src/funpaper.egg-info/requires.txt
+src/funpaper.egg-info/top_level.txt
+src/funpaper/podcast/__init__.py
+src/funpaper/podcast/script.py
+src/funpaper/podcast/templates.py
+src/funpaper/podcast/utils/audio_gen.py
+src/funpaper/podcast/utils/script.py
