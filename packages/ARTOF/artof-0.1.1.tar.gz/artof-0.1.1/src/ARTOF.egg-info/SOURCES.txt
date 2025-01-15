@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ARTOF/Loader.py
+src/ARTOF/Transformer.py
+src/ARTOF/__init__.py
+src/ARTOF/data_process.py
+src/ARTOF/data_read.py
+src/ARTOF/data_transform.py
+src/ARTOF.egg-info/PKG-INFO
+src/ARTOF.egg-info/SOURCES.txt
+src/ARTOF.egg-info/dependency_links.txt
+src/ARTOF.egg-info/requires.txt
+src/ARTOF.egg-info/top_level.txt
