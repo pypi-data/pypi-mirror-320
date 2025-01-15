@@ -1,0 +1,29 @@
+{
+  "descriptionHash": "693A42E562E2F404261DE79FEB56207179CB41C16572979DDF5CFCA35BE179161A4A24BDC3637E00ECD1B5E99F5B65F604E10E374C83C86A53D86E1AAF111D89",
+  "descriptionLocation": "../../../.build/volvo_connected_specs.json",
+  "lockFileVersion": "1.0.0",
+  "kiotaVersion": "1.22.0",
+  "clientClassName": "VolvoConnectedClient",
+  "typeAccessModifier": "Public",
+  "clientNamespaceName": "ApiSdk",
+  "language": "Python",
+  "usesBackingStore": false,
+  "excludeBackwardCompatible": true,
+  "includeAdditionalData": true,
+  "disableSSLValidation": false,
+  "serializers": [
+    "kiota_serialization_json.json_serialization_writer_factory.JsonSerializationWriterFactory"
+  ],
+  "deserializers": [
+    "kiota_serialization_json.json_parse_node_factory.JsonParseNodeFactory"
+  ],
+  "structuredMimeTypes": [
+    "application/json",
+    "text/plain;q=0.9",
+    "application/x-www-form-urlencoded;q=0.2",
+    "multipart/form-data;q=0.1"
+  ],
+  "includePatterns": [],
+  "excludePatterns": [],
+  "disabledValidationRules": []
+}
