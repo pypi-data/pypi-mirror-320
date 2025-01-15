@@ -1,0 +1,46 @@
+Metadata-Version: 2.2
+Name: streamlit-gettext
+Version: 0.0.3
+Summary: A Streamlit extension for easy localization of your apps
+Author-email: insolor <insolor@gmail.com>
+Project-URL: homepage, https://github.com/insolor/streamlit-gettext
+Project-URL: repository, https://github.com/insolor/streamlit-gettext
+Keywords: streamlit,gettext,i18n
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit<2.0.0,>=1.37.0
+
+# streamlit-gettext
+
+[![PyPI](https://img.shields.io/pypi/v/streamlit-gettext)](https://pypi.org/project/streamlit-gettext/)
+![Supported Python versions](https://img.shields.io/pypi/pyversions/streamlit-gettext)
+
+> 🚧 WORK IN PROGRESS 🚧
+
+A Streamlit extension for easy localization of your apps. Gets preferred languages from the browser, shows the the translated app to a user (it can be different translations for different users connected to the same app).
+
+See a working app with such functionality: <https://github.com/dfint/package-build>
+
+TODO:
+
+- [x] [example](https://github.com/insolor/streamlit-gettext/blob/main/example)
+- [ ] basic tests
+- [ ] documentation
+- [ ] support of manual switching with default language selected from the browser preferred languages
+- ...
+
+Feedback and suggestions are highliy appreciated.
