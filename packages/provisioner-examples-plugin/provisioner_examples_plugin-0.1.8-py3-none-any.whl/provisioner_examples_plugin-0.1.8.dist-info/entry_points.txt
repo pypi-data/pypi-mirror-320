@@ -1,0 +1,4 @@
+[console_scripts]
+example_plugin=main_dev:main
+test_runner=main_fake:fake_app
+
