@@ -1,0 +1,4 @@
+matplotlib
+scipy
+numpy
+mkl==2024.2.2
