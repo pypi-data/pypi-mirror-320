@@ -1,0 +1,7 @@
+check_os_ver-0.4.0.dist-info/METADATA,sha256=zf7xvYKovsFlx6AgJC5KOpCRGpzOdJBEQIhM2p9xNiM,3333
+check_os_ver-0.4.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+check_os_ver-0.4.0.dist-info/entry_points.txt,sha256=HVRGvwfAPwHRmb5q8uCI_GIdgDyWnjpBC6WuHaXDGHE,264
+check_os_ver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+check_os_ver/hi.py,sha256=ZnG8KfH8uZgcqkHJnm_ho-mdR6MYJy_f4j2CQ9F_L7g,3706
+check_os_ver/osver.py,sha256=0lYEFvRTZSJVpyHd6vImNjNTbxmbEOLg6DEa6-M8Qpw,1396
+check_os_ver-0.4.0.dist-info/RECORD,,
