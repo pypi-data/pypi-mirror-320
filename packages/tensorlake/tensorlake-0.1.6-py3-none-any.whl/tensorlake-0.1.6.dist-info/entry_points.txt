@@ -1,0 +1,3 @@
+[console_scripts]
+tensorlake=tensorlake.cli:tensorlake
+
