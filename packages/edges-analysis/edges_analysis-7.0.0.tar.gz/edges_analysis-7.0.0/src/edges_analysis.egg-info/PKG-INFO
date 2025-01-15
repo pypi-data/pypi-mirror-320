@@ -1,0 +1,115 @@
+Metadata-Version: 2.2
+Name: edges-analysis
+Version: 7.0.0
+Summary: Functionality for processing EDGES field data
+Author-email: Steven Murray <steven.murray@sns.it>
+License: MIT
+Project-URL: Documentation, https://edges-analysis.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/edges-collab/edges-analysis
+Project-URL: Issues, https://github.com/edges-collab/edges-analysis/issues
+Project-URL: Changelog, https://github.com/edges-collab/edges-analysis/releases
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+License-File: AUTHORS.rst
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: astropy
+Requires-Dist: pygsdata
+Requires-Dist: edges-io>=4.0.0
+Requires-Dist: edges-cal>=6.0.0
+Requires-Dist: healpy
+Requires-Dist: h5py
+Requires-Dist: tqdm
+Requires-Dist: rich>=9.0
+Requires-Dist: pathos
+Requires-Dist: methodtools
+Requires-Dist: attrs
+Requires-Dist: questionary
+Requires-Dist: psutil
+Requires-Dist: jinja2
+Requires-Dist: astropy-healpix
+Requires-Dist: typing_extensions
+Requires-Dist: frozendict
+Provides-Extra: testing
+Requires-Dist: pytest; extra == "testing"
+Requires-Dist: pytest-cov; extra == "testing"
+Requires-Dist: pytest_cases>=3.8.3; extra == "testing"
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: nbsphinx; extra == "docs"
+Requires-Dist: numpydoc; extra == "docs"
+Requires-Dist: sphinx_rtd_theme; extra == "docs"
+Requires-Dist: sphinx_click; extra == "docs"
+Requires-Dist: ipython; extra == "docs"
+Provides-Extra: dev
+Requires-Dist: edges-analysis[docs,testing]; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+
+==============
+edges-analysis
+==============
+
+.. image:: https://github.com/edges-collab/edges-analysis/actions/workflows/test_suite.yaml/badge.svg
+  :target: https://github.com/edges-collab/edges-analysis/actions/workflows/test_suite.yaml
+.. image:: https://readthedocs.org/projects/edges-analysis/badge/?version=stable
+  :target: https://edges-analysis.readthedocs.io/en/stable/?badge=stable
+.. image:: https://codecov.io/gh/edges-collab/edges-analysis/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/edges-collab/edges-analysis
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+  :target: https://github.com/psf/black
+
+**Code for analysing EDGES field data.**
+
+``edges-analysis`` has methods for averaging, filtering and calibrating EDGES data
+from the field. It also includes classes for describing the products of these analysis
+steps. The primary goal of the code is to allow the analysis to be fully reproducible,
+efficient, and clear.
+
+.. note:: This code originated from Raul Monsalve's private repo.
+          The original code before modification is tagged as ``original_version``.
+
+Features
+========
+
+``edges-analysis`` includes the following features:
+
+* A well-defined class-based interface to generic single-dish data for global-signal
+  measurements.
+* Full tracking of input metadata across all analysis steps.
+* Compact command-line interface for running each step.
+* Beam models
+* Loss models
+* Various filters that are able to flag out potentially bad data.
+* Sky Models
+
+
+
+Installation
+============
+
+This package can be installed with ``pip`` either by cloning the repo first, or directly
+from github::
+
+    git clone https://github.com/edges-collab/edges-analysis
+    cd edges-analysis
+    pip install [-e] .
+
+or::
+
+    pip install git+git://github.com/edges-collab/edges-analysis.git
+
+Documentation
+=============
+
+Documentation is hosted on `ReadTheDocs <https://edges-analysis.readthedocs.org>`_.
