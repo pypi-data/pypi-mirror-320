@@ -1,0 +1,10 @@
+commercecraft_utils/__init__.py,sha256=aXLlfsVkIhqO-7iFipluMBXy16AeNYfgDyYtn43SUAk,464
+commercecraft_utils/translation_engine.py,sha256=BjhCigRtLOtuOxWCsBwr0GUrcM6CXo6KzA7iTzE2b6w,18816
+commercecraft_utils/translation_processor.py,sha256=CeSyH5VuB7snftCTPY-QKcvRFMdrTLT1Vv7vBx5ON-0,9920
+commercecraft_utils/translation_service.py,sha256=UsKgMnbdNuYaQ4lOEYvbMhCNgd7rfO-0I2ysxe7-nQs,9111
+commercecraft_utils/utils.py,sha256=_xeEWYCmPzVST_4NR4wI_xLnb18ij1Z5tXHZ6c72wQA,3823
+commercecraft_utils-0.1.6.dist-info/LICENSE,sha256=UwYAJL8i4-8pRwiPo8k_1P_eN3BetB1xPHT5FmudalQ,1071
+commercecraft_utils-0.1.6.dist-info/METADATA,sha256=zDgpv7nc8FCNlLIbsM0zzolcmHWLcVLdimxqQLogVhE,10916
+commercecraft_utils-0.1.6.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+commercecraft_utils-0.1.6.dist-info/top_level.txt,sha256=ZS4TA-CFt6tHjBHhqqVkdLerictoK4SmedN3pG3kX4A,20
+commercecraft_utils-0.1.6.dist-info/RECORD,,
