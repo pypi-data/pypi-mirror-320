@@ -1,0 +1,2 @@
+[console_scripts]
+auto-download = autoDownload.__main__:main
