@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: xlsxlite
+Version: 1.0.0
+Summary: Lightweight XLSX writer with emphasis on minimizing memory usage.
+License: MIT
+Author: TextIt
+Author-email: code@textit.com
+Requires-Python: >=3.10
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Project-URL: repository, http://github.com/nyaruka/xlsxlite
