@@ -1,0 +1,29 @@
+2024-07-31 Version: 1.0.4
+- Update API GetSubscriptionAttributes: update response param.
+- Update API ListSubscriptionByTopic: update param TopicName.
+- Update API ListSubscriptionByTopic: update response param.
+
+
+2024-05-27 Version: 1.0.3
+- Update API CreateQueue: add param Tag.
+- Update API CreateTopic: add param Tag.
+- Update API GetQueueAttributes: add param Tag.
+- Update API GetQueueAttributes: update response param.
+- Update API GetTopicAttributes: add param Tag.
+- Update API GetTopicAttributes: update response param.
+- Update API ListQueue: add param Tag.
+- Update API ListQueue: update response param.
+- Update API ListTopic: add param Tag.
+- Update API ListTopic: update response param.
+
+
+2024-05-08 Version: 1.0.2
+- Update API ListTopic: update response param.
+
+
+2024-04-10 Version: 1.0.1
+- Generated python 2022-01-19 for Mns-open.
+
+2022-05-20 Version: 1.0.0
+- Initialize MNS Open API.
+
