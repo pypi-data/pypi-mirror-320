@@ -1,0 +1,103 @@
+Metadata-Version: 2.2
+Name: system-report
+Version: 1.0.0
+Summary: A Python package to generate and save system reports.
+Home-page: 
+Author: John Doe
+Author-email: john.doe@admsys.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: psutil
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# System Report
+
+System Report is a Python package designed to generate and save a detailed system report, including information about the operating system, CPU, memory, and disk usage.
+
+## Features
+- Collect system information, such as OS version, hostname, CPU, memory, and disk details.
+- Format values in a human-readable way (e.g., GB, MB).
+- Save the system report as a JSON file.
+- Easily extensible and includes unit tests.
+
+## Installation
+
+You can install the package locally:
+
+```bash
+pip install .
+```
+
+## Usage
+
+To generate and save a system report, run the following command:
+
+```bash
+python -m system_report
+```
+
+This will create a `system_report.json` file in the current working directory.
+
+## Running Tests
+
+The package includes unit tests written with `pytest`. To execute the tests and generate a report in JUnit XML format, follow these steps:
+
+1. Install the required dependencies:
+
+   ```bash
+   pip install pytest
+   ```
+
+2. Run the tests and generate the report:
+
+   ```bash
+   python -m pytest --junitxml=report.xml
+   ```
+
+This will run all tests and save the test results in a file named `report.xml`.
+
+## Publishing the Package to PyPI
+
+To publish the package to PyPI, follow these steps:
+
+1. Ensure you have the required tools installed:
+
+   ```bash
+   pip install twine setuptools wheel
+   ```
+
+2. Build the package:
+
+   ```bash
+   python setup.py sdist bdist_wheel
+   ```
+
+3. Upload the package to PyPI:
+
+   ```bash
+   twine upload dist/*
+   ```
+
+You will be prompted to enter your PyPI username and password.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Author
+
+[John Doe](mailto:john.doe@admsys.com)
