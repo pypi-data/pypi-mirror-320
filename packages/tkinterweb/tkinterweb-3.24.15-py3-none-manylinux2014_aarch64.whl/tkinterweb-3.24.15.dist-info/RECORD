@@ -1,0 +1,15 @@
+tkinterweb/__init__.py,sha256=nA2txFoFDkZ8G6zGsE-uT7ZnJFGHVhb6atP9pZuDftE,3139
+tkinterweb/bindings.py,sha256=EedAjMm7jtISOVP3HXeT0lOmfwRlT2DUyxNPZqGwtA0,65448
+tkinterweb/htmlwidgets.py,sha256=ExtWutlxUSllUvtItu7Mkmh56_TLGMdvaG66kNgELT0,23931
+tkinterweb/imageutils.py,sha256=s3bHm0RcVhPjLI5FoeoHh3exv8gUy37W7ZU32r9IUwg,5194
+tkinterweb/lrucache.py,sha256=123jQWH5VQw5zDaUCNxZiw-jVylkmqZxeOGRs_na-m4,3436
+tkinterweb/utilities.py,sha256=Ik396tFx6Nt5K-fE2M2Zb2CHFBv2nrSd0Ab7Q3i_mL4,33558
+tkinterweb/tkhtml/combobox-2.3.tm,sha256=9TWJ6uYC_pUjhNjzH43IHgoCjklYBDbuQaU6wvQ27jA,63606
+tkinterweb/tkhtml/opensans.ttf,sha256=q-mnPCUa0lN3baYJj0JdtOUL8JTcntut7hpuFWIsmyY,130836
+tkinterweb/tkhtml/pkgIndex.tcl,sha256=Zp99aTL170d0TbVrWS-6uzaIaykUQbRO0krvmJhcduA,77
+tkinterweb/tkhtml/binaries/libTkhtml3.0.so,sha256=YnH7Zm0iqMnRBLv7A4V60Cya-GB66EDuZSPEYhWDjyk,380360
+tkinterweb/tkhtml/binaries/pkgIndex.tcl,sha256=ZGYuko8Pg8QGA_FGjfMQZXnaLVEsFozGJk-75H3gWHQ,140
+tkinterweb-3.24.15.dist-info/METADATA,sha256=cpdXZi5CCaKPGrEMrYg1aqM4bLhWaSuVzx5DGx2Y_Z4,1657
+tkinterweb-3.24.15.dist-info/WHEEL,sha256=9CRMXDorwIsYQ7oMclfPm08dJYUjgkXikOwZLcFAjsA,110
+tkinterweb-3.24.15.dist-info/top_level.txt,sha256=QVZQjAzSgzBGwOl41qcOyvkYAwy1FXLlnvwtYvE9Ur4,11
+tkinterweb-3.24.15.dist-info/RECORD,,
