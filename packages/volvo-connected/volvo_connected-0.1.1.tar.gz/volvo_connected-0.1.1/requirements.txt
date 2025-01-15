@@ -1,0 +1,6 @@
+microsoft-kiota-abstractions==1.3.3
+microsoft-kiota-http==1.3.3
+microsoft-kiota-serialization-json==1.3.3
+
+# I would rather use this bundle, but it has a requirement upon httpx[http2]>=0.28 and urllib3==2.2.2 which is not available in home assistant
+# microsoft-kiota-bundle==1.6.8

@@ -1,0 +1,56 @@
+[build-system]
+# AVOID CHANGING REQUIRES: IT WILL BE UPDATED BY PYSCAFFOLD!
+requires = ["setuptools>=46.1.0", "setuptools_scm[toml]>=5"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+# For smarter version schemes and other configuration options,
+# check out https://github.com/pypa/setuptools_scm
+version_scheme = "no-guess-dev"
+
+[project]
+name = "volvo-connected"
+version = "0.1.1"
+description = "A Python package for interacting with Volvo Connect API."
+authors = [{name = "Stephan van Rooij", email="github@svrooij.io"}]
+dependencies = [
+  "microsoft-kiota-abstractions>=1.3.3",
+  "microsoft-kiota-http>=1.3.3",
+  "microsoft-kiota-serialization-json>=1.3.3"
+]
+license = {file = "LICENSE"}
+readme = "README.md"
+urls = { "Homepage" = "https://github.com/svrooij/py_volvo_connected/", "Documentation" = "https://github.com/svrooij/py_volvo_connected/", "Source" = "https://github.com/svrooij/py_volvo_connected/", "Tracker" = "https://github.com/svrooij/py_volvo_connected/issues" }
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Typing :: Typed",
+]
+
+[project.optional-dependencies]
+dev = [
+  "black",
+  "flake8",
+  "isort",
+  "mypy",
+  "pytest",
+  "pytest-cov",
+  "pytest-mock",
+  "pytest-asyncio",
+  "requests-mock",
+  "requests",
+  "setuptools",
+  "twine",
+  "wheel",
+]
