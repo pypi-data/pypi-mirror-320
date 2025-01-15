@@ -1,0 +1,134 @@
+stages:
+  - test_single
+  - test_matrix
+  - test_manual
+  - build
+  - deploy
+
+workflow:
+  auto_cancel:
+    on_new_commit: interruptible
+
+test_single:
+  stage: test_single
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+  image: "python:$PYTHON_VERSION"
+  services:
+    - name: postgis/postgis:16-3.4
+      alias: postgres
+      command: ["postgres", "-c", "fsync=off"]
+  before_script:
+    - python3 -m pip install --upgrade pip --root-user-action=ignore
+    - python3 -m pip install unittest-xml-reporting --root-user-action=ignore
+    - python3 -m pip install .[optionals] --root-user-action=ignore
+    - mkdir -p $WEATHERDB_DATA_BASE_DIR
+    - mkdir -p test-reports
+  script:
+    - python3 -m xmlrunner discover -s tests -p testSuite.py -o test-reports
+  cache:
+    - key: weatherdb-data-cache-$CI_COMMIT_REF_SLUG
+      paths:
+        - user/
+    - key: python-dep
+      paths:
+        - .cache/pip
+  artifacts:
+    when: always
+    reports:
+      junit: test-reports/*.xml
+    expire_in: 2 weeks
+    paths:
+      - $WEATHERDB_TEST_ARTIFACT_DIR/**/*
+      - $WEATHERDB_TEST_ARTIFACT_DIR/*
+  interruptible: true
+  variables:
+    PYTHON_VERSION: 3.8
+    PYTHON_VERSION_ESCAPED: $PY_VERSION | replace(".", "_")
+    PIP_CACHE_DIR: $CI_PROJECT_DIR/.cache/pip
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: postgres
+    POSTGRES_DB: test_db_$PYTHON_VERSION_ESCAPED
+    POSTGRES_HOST_AUTH_METHOD: trust
+    WEATHERDB_DB_HOST: postgres
+    WEATHERDB_DB_PORT: 5432
+    WEATHERDB_DB_DATABASE: $POSTGRES_DB
+    WEATHERDB_DB_USER: $POSTGRES_USER
+    WEATHERDB_DB_PASSWORD: $POSTGRES_PASSWORD
+    WEATHERDB_USER_CONFIG_FILE: $CI_PROJECT_DIR/user/config_user.ini
+    WEATHERDB_DATA_BASE_DIR: $CI_PROJECT_DIR/user/data
+    WEATHERDB_HANDLE_NON_EXISTING_CONFIG: create
+    WEATHERDB_LOGGING_HANDLER: console
+    WEATHERDB_LOGGING_LEVEL: DEBUG
+    WEATHERDB_HORIZON_RADIUS: 40000
+    WEATHERDB_OPENTOPO_API_KEY: $WEATHERDB_OPENTOPO_API_KEY
+    WEATHERDB_TEST_ARTIFACT_DIR: $CI_PROJECT_DIR/artifacts
+    WEATHERDB_TEST_ARTIFACT_DB_DUMP: ON_FAILURE
+    WEATHERDB_TEST_ARTIFACT_LIST_DATA_FILES: ON_FAILURE
+    WEATHERDB_TEST_ARTIFACT_COPY_USER_CONFIG: ON_FAILURE
+    WEATHERDB_TEST_DR_COPY_RASTERS: True
+    WEATHERDB_TEST_DR_UPDATE_USER_CONFIG: True
+    DOCKER_ENV: test
+  tags:
+    - docker
+
+test_matrix:
+  stage: test_matrix
+  extends: test_single
+  parallel:
+    matrix:
+      - PY_VERSION: ["3.9","3.10","3.11","3.12","3.13"]
+  variables:
+    PYTHON_VERSION: $PY_VERSION
+
+test_download_rasters:
+  extends: test_single
+  stage: test_manual
+  rules:
+    - when: manual
+      allow_failure: true
+  script:
+    - python3 -m xmlrunner discover -s tests -p test_downloadRasters.py --complete -o test-reports
+  variables:
+    PYTHON_VERSION: $PY_VERSION
+  parallel:
+    matrix:
+      - PY_VERSION: ["3.9","3.10","3.11","3.12","3.13"]
+
+build:
+  rules:
+    - if: $CI_COMMIT_TAG =~ /^[Vv]\d+\.\d+\.\d+$/
+  dependencies:
+    - test_matrix
+  stage: build
+  image: python:3.11
+  script:
+    - python -m pip install --upgrade pip --root-user-action=ignore
+    - python -m pip install setuptools wheel build setuptools-scm --root-user-action=ignore
+    - python -m build --no-isolation --outdir dist
+  artifacts:
+    paths:
+      - dist/
+  variables:
+    PYTHON_VERSION: $PYTHON_VERSION
+  tags:
+    - docker
+
+deploy:
+  rules:
+    - !reference [build, rules]
+  dependencies:
+    - build
+  stage: deploy
+  image: python:3.11
+  script:
+    - python -m pip install --upgrade pip --root-user-action=ignore
+    - python -m pip install twine --root-user-action=ignore
+    - twine upload dist/*
+  variables:
+    TWINE_USERNAME: $TWINE_USERNAME
+    TWINE_PASSWORD: $TWINE_PASSWORD
+  tags:
+    - docker
+  interruptible: false
