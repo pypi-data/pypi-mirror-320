@@ -1,0 +1,8 @@
+xync_schema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xync_schema/enums.py,sha256=la85coRbxXL0HiAgJYpOU4Yyf_atVp6DZSlAV3ICvEk,12207
+xync_schema/models.py,sha256=t8M9tMVPswTg3OwR23HivK1SJDd2FKPNwXmuNLavDrg,22169
+xync_schema/pydantic.py,sha256=-tOgIhjwGvp77c3Y5fRWrgt21LXwFUsPg1xE8ucb9G4,701
+xync_schema-0.6.56.dist-info/METADATA,sha256=fgI9kBKSAP2mfwr4sgRnBCrSMgEn4t3wekHmJGfnrtw,3985
+xync_schema-0.6.56.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+xync_schema-0.6.56.dist-info/top_level.txt,sha256=jN8IBDfVY8b85Byyk8v0Gyj_0yLB8FO56WV4EvcXWY4,12
+xync_schema-0.6.56.dist-info/RECORD,,
