@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template
+        id="account_invoice_report_hide_discounts_by_partner_report_invoice_document"
+        name="account.invoice.report.hide.discounts.by.partner.report.invoice.document"
+        inherit_id="account.report_invoice_document"
+        priority="999"
+    >
+        <xpath expr="//t[@t-set='display_discount']" position="after">
+            <t t-if="display_discount">
+                <t t-set="display_discount" t-value="o.show_discounts" />
+            </t>
+        </xpath>
+    </template>
+</odoo>

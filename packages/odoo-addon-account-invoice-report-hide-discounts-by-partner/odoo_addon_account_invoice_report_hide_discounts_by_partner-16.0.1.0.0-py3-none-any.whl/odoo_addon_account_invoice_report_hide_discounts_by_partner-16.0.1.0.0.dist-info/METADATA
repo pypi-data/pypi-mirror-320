@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: odoo-addon-account_invoice_report_hide_discounts_by_partner
+Version: 16.0.1.0.0
+Summary: Account Invoice Report Hide Discounts by Partner
+Home-page: https://github.com/sygel-technology/sy-account-invoice-reporting
+Author: Sygel, Odoo Community Association (OCA)
+Author-email: support@odoo-community.org
+License: AGPL-3
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 16.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.10
+Requires-Dist: odoo<16.1dev,>=16.0a
+
+.. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
+	:target: http://www.gnu.org/licenses/agpl
+	:alt: License: AGPL-3
+
+================================================
+Account Invoice Report Hide Discounts by Partner
+================================================
+
+This module allows you to show the discounts on invoices if based on the partner.
+
+
+Installation
+============
+
+To install this module, you need to:
+
+#. Only install
+
+
+Configuration
+=============
+
+To configure this module, you need to:
+
+#. Go to the contacts module 
+#. Create or Edit a parent contact
+#. Go to Invoicing tab
+#. Edit the 'Show discounts' field
+
+
+Usage
+=====
+
+To use this module, you need to:
+
+#. Go to the Invoices module
+#. Create a new invoice
+#. Select a partner. You will see that the Show discounts field defaults to the partner, but you can edit it.
+#. Add lines to the invoice with a discount.
+#. Print the invoice.
+
+
+ROADMAP
+=======
+
+Whether or not discounts are shown on the invoices is independent of the type of invoice.
+
+The Show discounts field of the partner is always taken from the value set in the parent contact.
+
+
+Bug Tracker
+===========
+
+Bugs and errors are managed in `issues of GitHub <https://github.com/sygel-technology/sy-account-invoice-reporting/issues>`_.
+In case of problems, please check if your problem has already been
+reported. If you are the first to discover it, help us solving it by indicating
+a detailed description `here <https://github.com/sygel-technology/sy-account-invoice-reporting/issues/new>`_.
+
+Do not contact contributors directly about support or help with technical issues.
+
+
+Credits
+=======
+
+Authors
+~~~~~~~
+
+* Sygel, Odoo Community Association (OCA)
+
+Contributors
+~~~~~~~~~~~~
+
+* Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+* Manuel Regidor <manuel.regidor@sygel.es>
+
+Maintainer
+~~~~~~~~~~
+
+This module is maintained by Sygel.
+
+.. image:: https://www.sygel.es/logo.png
+   :alt: Sygel
+   :target: https://www.sygel.es
+
+This module is part of the `Sygel/sy-account-invoice-reporting <https://github.com/sygel-technology/sy-account-invoice-reporting>`_.
+
+To contribute to this module, please visit https://github.com/sygel-technology.
