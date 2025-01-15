@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "docitup"
+version = "0.1.4"
+description = ""
+authors = ["Panindhra <phanitallapudi@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+docling = "^2.14.0"
+langchain-community = "^0.3.13"
+llama-parse = "^0.5.19"
+langchain = "^0.3.13"
+llama-index-readers-file = "^0.4.1"
+markitdown = "^0.0.1a3"
+pymupdf4llm = "^0.0.17"
+pymupdf = "^1.25.1"
+pypdf = "^5.1.0"
+pypdf2 = "^3.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
