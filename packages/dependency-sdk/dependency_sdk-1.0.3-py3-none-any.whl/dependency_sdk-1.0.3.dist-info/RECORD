@@ -1,0 +1,8 @@
+dependency_sdk/__init__.py,sha256=g04IMURXvTt1yRpbNFF4MXiJjBRn1zaVHci0OkUx5l0,49
+dependency_sdk/formula.py,sha256=lvE0OpdWria0WrqpAtpTGp5fRQC-CuYObJxT7Ci_nX4,207
+dependency_sdk/main.py,sha256=vsj3eQYtIepO1daQ8_GInK5cyAzjM7UGii1yayRNWQQ,6996
+dependency_sdk-1.0.3.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+dependency_sdk-1.0.3.dist-info/METADATA,sha256=MIHaUGuzkJJbE2Vgpb1f_ClXwiIOBTfHgTPE0mTS1j4,469
+dependency_sdk-1.0.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+dependency_sdk-1.0.3.dist-info/top_level.txt,sha256=cWsp6Jw3GZh2KYNkCE8KQz7W5lpjkuK-Etbqywox6Ak,15
+dependency_sdk-1.0.3.dist-info/RECORD,,
