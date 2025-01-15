@@ -1,0 +1,7 @@
+[console_scripts]
+cho_hi = cho_check_os_ver.hi:hi
+cho_os_ver = cho_check_os_ver.osver:get_os_pretty_name
+cho_rand = cho_check_os_ver.randomimport:pick
+
+[gui_scripts]
+
