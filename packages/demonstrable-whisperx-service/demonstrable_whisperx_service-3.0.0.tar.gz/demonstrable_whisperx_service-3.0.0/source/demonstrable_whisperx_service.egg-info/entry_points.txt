@@ -1,0 +1,2 @@
+[console_scripts]
+demonstrable-whisperx-service = demonstrable.whisperx_service.cli:main

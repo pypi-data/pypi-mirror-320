@@ -1,0 +1,13 @@
+README.rst
+pyproject.toml
+source/demonstrable/whisperx_service/__init__.py
+source/demonstrable/whisperx_service/cli.py
+source/demonstrable/whisperx_service/exceptions.py
+source/demonstrable/whisperx_service/transcription.py
+source/demonstrable_whisperx_service.egg-info/PKG-INFO
+source/demonstrable_whisperx_service.egg-info/SOURCES.txt
+source/demonstrable_whisperx_service.egg-info/dependency_links.txt
+source/demonstrable_whisperx_service.egg-info/entry_points.txt
+source/demonstrable_whisperx_service.egg-info/requires.txt
+source/demonstrable_whisperx_service.egg-info/top_level.txt
+tests/test_whisperx_transcription.py
