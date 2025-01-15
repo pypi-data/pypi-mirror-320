@@ -1,0 +1,2 @@
+[opsbox.plugins]
+opsbox_iam_provider = iam_provider.iam_provider:IAMProvider
