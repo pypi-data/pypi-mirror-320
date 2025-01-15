@@ -1,0 +1,15 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/examples.py,sha256=WCmIPy0W57DUi9LHzh0AwSLX5RYsr7vOQlR1jsEMMcg,2973
+pycuda_plus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycuda_plus/kernel.py,sha256=hOa0gIZ1pWycC4DwkXQQ_hWK5aIXbPKIJAcSEQ-8vRM,2331
+pycuda_plus/memory.py,sha256=bBgc7pP7KsvoilKX4j80jlg4xYhia7jH-REZZ7pNELk,2967
+pycuda_plus/profiler.py,sha256=on8QLhACDSzOTHtxbm50lfS_S4b13EHlWflgtRE4WMc,1544
+pycuda_plus/utils.py,sha256=JTHA0htvz25IJkZdJFkUb4okXTduc-JkU4ghW8mbPqM,2385
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_kernel.py,sha256=JVUAGEUj8ujVEPARcEun7AxS6ferBmfF9q-NYVa5neg,4671
+test/test_memory.py,sha256=UAk-QWgti_NqqldRutvMziWBvv4348yEC6acU-ujsXI,1100
+pycuda_plus-0.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycuda_plus-0.1.0.dist-info/METADATA,sha256=JLUulvYeDFAhLMs4njq5aXzgMRWbKQGt5TH8gG-HVLw,465
+pycuda_plus-0.1.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+pycuda_plus-0.1.0.dist-info/top_level.txt,sha256=qxO0jaSLxU9TIIkFj-JS1aAf0fESkWA-9j8GSMD6dDE,26
+pycuda_plus-0.1.0.dist-info/RECORD,,
