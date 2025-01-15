@@ -1,0 +1,7 @@
+description: Loads and profiles serialized Pickle files.
+
+args:
+  - name: pickle
+    description: Path to the python pickle file to deserialize.
+    required: true
+    volume: true
