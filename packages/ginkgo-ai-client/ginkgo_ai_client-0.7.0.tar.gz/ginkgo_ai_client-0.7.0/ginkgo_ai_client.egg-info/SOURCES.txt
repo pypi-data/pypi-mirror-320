@@ -1,0 +1,16 @@
+LICENCE
+README.md
+pyproject.toml
+ginkgo_ai_client/__init__.py
+ginkgo_ai_client/client.py
+ginkgo_ai_client/queries.py
+ginkgo_ai_client/utils.py
+ginkgo_ai_client.egg-info/PKG-INFO
+ginkgo_ai_client.egg-info/SOURCES.txt
+ginkgo_ai_client.egg-info/dependency_links.txt
+ginkgo_ai_client.egg-info/requires.txt
+ginkgo_ai_client.egg-info/top_level.txt
+test/test_batching.py
+test/test_models.py
+test/test_mrna_model.py
+test/test_query_creation.py

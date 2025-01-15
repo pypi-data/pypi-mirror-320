@@ -1,0 +1,17 @@
+biopython
+pydantic
+requests
+tqdm
+pyyaml
+pandas
+
+[docs]
+sphinx
+sphinx-rtd-theme
+docutils
+myst-parser
+shibuya
+
+[test]
+pytest
+pytest-xdist

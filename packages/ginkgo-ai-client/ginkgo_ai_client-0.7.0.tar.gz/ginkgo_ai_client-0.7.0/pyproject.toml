@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ginkgo_ai_client"
+version = "0.7.0"
+description = "Client for the public Ginkgo AI API"
+readme = "README.md"
+requires-python = ">=3.7"
+authors = [
+    {name = "Ginkgo Devs", email="devs@ginkgobioworks.com"}
+]
+
+dependencies = [
+    "biopython",
+    "pydantic",
+    "requests",
+    "tqdm",
+    "pyyaml",
+    "pandas",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-xdist"
+]
+docs = [
+    "sphinx",
+    "sphinx-rtd-theme",
+    "docutils",
+    "myst-parser",
+    "shibuya"
+]
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+]
