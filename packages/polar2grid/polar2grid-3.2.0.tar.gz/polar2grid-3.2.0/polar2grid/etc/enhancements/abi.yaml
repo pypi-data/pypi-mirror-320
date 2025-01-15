@@ -1,0 +1,132 @@
+enhancements:
+  true_color_crefl:
+    sensor: abi
+    standard_name: true_color
+    operations:
+      - name: reflectance_range
+        method: !!python/name:satpy.enhancements.stretch
+        kwargs: {stretch: 'crude', min_stretch: 0., max_stretch: 100.}
+      - name: Linear interpolation
+        method: !!python/name:satpy.enhancements.piecewise_linear_stretch
+        kwargs:
+         xp: [0., 25., 55., 100., 255.]
+         fp: [0., 90., 140., 175., 255.]
+         reference_scale_factor: 255
+  channel_7_default:
+    name: C07
+    operations:
+      - name: linear
+        method: !!python/name:satpy.enhancements.stretch
+        kwargs: {stretch: 'crude', min_stretch: 400.15, max_stretch: 164.15}
+  channel_8_default:
+    name: C08
+    operations:
+      - name: linear
+        method: !!python/name:satpy.enhancements.stretch
+        kwargs: {stretch: 'crude', min_stretch: 280., max_stretch: 180.}
+  channel_9_default:
+    name: C09
+    operations:
+      - name: linear
+        method: !!python/name:satpy.enhancements.stretch
+        kwargs: {stretch: 'crude', min_stretch: 280., max_stretch: 180.}
+  channel_10_default:
+    name: C10
+    operations:
+      - name: linear
+        method: !!python/name:satpy.enhancements.stretch
+        kwargs: {stretch: 'crude', min_stretch: 280., max_stretch: 180.}
+
+  # Level 2
+  cloud_top_height:
+    name: HT
+    operations:
+      - name: colorize
+        method: !!python/name:satpy.enhancements.colorize
+        kwargs:
+          palettes:
+            - filename: colormaps/abi_l2_modified_cloud_top.cmap
+              min_value: -300
+              max_value: 20000
+
+  cloud_top_temperature:
+    name: TEMP
+    operations:
+      - name: colorize
+        method: !!python/name:satpy.enhancements.colorize
+        kwargs:
+          palettes:
+            - filename: colormaps/abi_l2_modified_cloud_top.cmap
+              min_value: 300
+              max_value: 200
+  lst:
+    name: LST
+    sensor: abi
+    operations:
+      - name: colorize
+        method: !!python/name:polar2grid.enhancements.colorize
+        kwargs:
+          palettes:
+            - min_value: 223.15
+              max_value: 429.15
+              colors: "rainbow"
+
+  aod:
+    name: AOD
+    sensor: abi
+    operations:
+      - name: colorize
+        method: !!python/name:polar2grid.enhancements.colorize
+        kwargs:
+          palettes:
+            - min_value: 0.0
+              max_value: 1.0
+              colors: "rainbow"
+
+  fog_depth:
+    name: Fog_Depth
+    sensor: abi
+    operations:
+      - name: colorize
+        method: !!python/name:polar2grid.enhancements.colorize
+        kwargs:
+          palettes:
+            - min_value: 0.0
+              max_value: 1000.0
+              filename: colormaps/gridded_data.cmap
+
+  ifr_prob:
+    name: IFR_Fog_Prob
+    sensor: abi
+    operations:
+      - name: colorize
+        method: !!python/name:polar2grid.enhancements.colorize
+        kwargs:
+          palettes:
+            - min_value: 0.0
+              max_value: 100.0
+              filename: colormaps/IFR_PROB.cmap
+
+  lifr_prob:
+    name: LIFR_Fog_Prob
+    sensor: abi
+    operations:
+      - name: colorize
+        method: !!python/name:polar2grid.enhancements.colorize
+        kwargs:
+          palettes:
+            - min_value: 0.0
+              max_value: 100.0
+              filename: colormaps/LIFR_PROB.cmap
+
+  mvfr_prob:
+    name: MVFR_Fog_Prob
+    sensor: abi
+    operations:
+      - name: colorize
+        method: !!python/name:polar2grid.enhancements.colorize
+        kwargs:
+          palettes:
+            - min_value: 0.0
+              max_value: 100.0
+              filename: colormaps/MVFR_PROB.cmap
