@@ -1,0 +1,10 @@
+quadraturerules/__init__.py,sha256=uhdR1hj_0SXqfRTqsVlC4IXQGue7mM8IcqUKK_ZG6-o,849
+quadraturerules/domain.py,sha256=6w-v-MvO6_sviL5bj0DZZrksTMyXF-5IOJWMHOM-nyw,159
+quadraturerules/rules/__init__.py,sha256=UVvj2U5_MEyz37HpR4K010KY4IA1A3ne1cUoXsrDwy8,166
+quadraturerules/rules/gauss_legendre.py,sha256=97orWhVch3EzVoKWjYGD772AJFPpVvCc660I6fGL50k,1547
+quadraturerules/rules/xiao_gimbutas.py,sha256=OPU_T6w1tA-tkqAzC1Y5WeMt73hEk7xnBF7IlF2lUsA,607947
+quadraturerules-0.2.0.dist-info/LICENSE,sha256=ocK-q4BSzGumQ4RSPLR57rjV3E3dgs4g6Cl3G-rvuuQ,1116
+quadraturerules-0.2.0.dist-info/METADATA,sha256=G-5ZCLXehOV_uMRaCdmCjkoW0RNpcAYlFb5Y1fQCa18,2942
+quadraturerules-0.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+quadraturerules-0.2.0.dist-info/top_level.txt,sha256=TSMFzRXLjUrA8zQcH7f6XB1Dcn45udQNIXiNaCH2Qkw,16
+quadraturerules-0.2.0.dist-info/RECORD,,
