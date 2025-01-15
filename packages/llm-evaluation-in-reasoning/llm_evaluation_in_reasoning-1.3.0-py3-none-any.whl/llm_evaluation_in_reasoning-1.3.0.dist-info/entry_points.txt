@@ -1,0 +1,2 @@
+[console_scripts]
+llm_eval = llm_evaluation_in_reasoning.app:app
