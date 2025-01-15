@@ -1,0 +1,11 @@
+mflt_compact_log/__init__.py,sha256=-D3HPE5JIeTVWQP8kfBe5ELnm1y5JlMDVSVjMvlkC08,263
+mflt_compact_log/compact.py,sha256=iizPPbciIAv_VJjOtEnuu9SGlQMQM9228hgYVodaa24,5038
+mflt_compact_log/log_fmt.py,sha256=TEJkSw-sAHzJ8souLbDL6luQm9S4VLZizcY09OrB9RM,5959
+mflt_compact_log/printf.py,sha256=b3DwQuNUtCZ2IJ9uyKgmmG1OY2DReKO0_Tq0_6suSgk,15595
+mflt_compact_log/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mflt_compact_log-0.1.1.dist-info/LICENSE,sha256=_m-6Qv8Y5iq50nvx0mX5TJbj7jPEe0fJ50NMMX2fxjY,1642
+mflt_compact_log-0.1.1.dist-info/METADATA,sha256=tL9QW6SiBt_htl_Lau7FFkVaw5rIL3_aqJgJJgwJ3mI,4485
+mflt_compact_log-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+mflt_compact_log-0.1.1.dist-info/entry_points.txt,sha256=haM5sinsHh2oUSnRUTuEesp3DzfbMSmNWZR9VGUHOuQ,132
+mflt_compact_log-0.1.1.dist-info/top_level.txt,sha256=jgbBy7by3oofrnLO6E9iTPfxZ0E57KpDYkJxov5_pek,17
+mflt_compact_log-0.1.1.dist-info/RECORD,,
