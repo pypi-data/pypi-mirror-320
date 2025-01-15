@@ -1,0 +1,2 @@
+[console_scripts]
+matpylibrun = matpylib.core:main

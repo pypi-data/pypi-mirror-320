@@ -1,0 +1,4 @@
+selenium
+webdriver-manager
+pywin32
+keyboard
