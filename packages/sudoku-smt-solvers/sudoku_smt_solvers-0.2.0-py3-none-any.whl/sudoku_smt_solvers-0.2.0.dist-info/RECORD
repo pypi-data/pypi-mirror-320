@@ -1,0 +1,13 @@
+sudoku_smt_solvers/__init__.py,sha256=9LqjXOhMICYiSF1Ja22tDh3gopxsj2fg4yYXaENqu3M,763
+sudoku_smt_solvers/benchmarks/__init__.py,sha256=lMrK_yj_otywN4dMvvVFtTzyTdamS_4nUgjm-k07obU,271
+sudoku_smt_solvers/benchmarks/benchmark_runner.py,sha256=Mc87ul-6VkWMomtlmOMc9GXmC4AwfQUwIWKDjeFvSVA,7712
+sudoku_smt_solvers/solvers/__init__.py,sha256=5qFfWzKN2WPDoFLN5ye6Ly5BqEaUdk2ks_jPP3c53l8,142
+sudoku_smt_solvers/solvers/cvc5_solver.py,sha256=igN27LHxUADmYw3farmEeGtjJEsrdSQEk0X0X_EItyQ,6855
+sudoku_smt_solvers/solvers/dpll_solver.py,sha256=itLEx8QdomSS9nA7CrhSlU7wN-e8vDInAWiwhXX-7Ug,6144
+sudoku_smt_solvers/solvers/dpllt_solver.py,sha256=8HJWOGU6Oj4hNpgkK96sI51bdiTfRLSlf5yhic7WeF0,7992
+sudoku_smt_solvers/solvers/z3_solver.py,sha256=e6WPwPdN8uUipjxNm7KRYlbsNNwGyxH3s4wy5wC8PPc,4902
+sudoku_smt_solvers-0.2.0.dist-info/LICENSE,sha256=PbuZlvluV1l4HMMfPAVe5yjVvFGBK9DFp20JNhoJ8bI,1067
+sudoku_smt_solvers-0.2.0.dist-info/METADATA,sha256=fLlazpd0XnC3xb5Ix3ZF1nzcc8xI_pBDrk-dp0FmEZY,6680
+sudoku_smt_solvers-0.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+sudoku_smt_solvers-0.2.0.dist-info/top_level.txt,sha256=Ww9vs8KC4aujzfGfddMl_X8Qzh-Cywn9aBTLQgemi5A,19
+sudoku_smt_solvers-0.2.0.dist-info/RECORD,,
