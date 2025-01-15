@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+simple_ans_bind.cpp
+simple_ans/__init__.py
+simple_ans.egg-info/PKG-INFO
+simple_ans.egg-info/SOURCES.txt
+simple_ans.egg-info/dependency_links.txt
+simple_ans.egg-info/not-zip-safe
+simple_ans.egg-info/requires.txt
+simple_ans.egg-info/top_level.txt
+simple_ans/cpp/simple_ans.cpp
+simple_ans/cpp/simple_ans.hpp
