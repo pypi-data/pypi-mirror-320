@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: pgrace
+Version: 0.0.2
+Summary: Python library for Grace 2021.ai platform
+Author: 2021.ai
+Author-email: it@2021.ai
+Requires-Python: >=3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Project-URL: Homepage, https://2021.ai
+Description-Content-Type: text/markdown
+
+A Python Helper for the Grace API
+
