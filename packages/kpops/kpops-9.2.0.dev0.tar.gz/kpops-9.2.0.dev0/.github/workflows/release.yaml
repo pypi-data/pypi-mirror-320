@@ -1,0 +1,27 @@
+name: Release to GitHub and push tag
+
+on:
+  workflow_dispatch:
+    inputs:
+      release-type:
+        description: "SemVer scope of the release"
+        type: choice
+        required: true
+        default: patch
+        options:
+          - patch
+          - minor
+          - major
+
+jobs:
+  create-github-release-push-tag:
+    uses: bakdata/ci-templates/.github/workflows/bump-version-release.yaml@1.51.0
+    name: Release
+    with:
+      release-type: ${{ inputs.release-type }}
+      changelog: true
+      changelog-file: "./docs/docs/user/changelog.md"
+    secrets:
+      github-username: "${{ secrets.GH_USERNAME }}"
+      github-email: "${{ secrets.GH_EMAIL }}"
+      github-token: "${{ secrets.GH_TOKEN }}"
