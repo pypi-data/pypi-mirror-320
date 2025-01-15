@@ -1,0 +1,1 @@
+This python GUI-based tool allows to run neutron calculations.
