@@ -1,0 +1,21 @@
+[project]
+name = "fbrefstats"
+version = "0.1.1"
+authors = [
+  { name="Mohamed Brahimi"},
+]
+description = "A Python script to scrape football data from FBRef"
+readme = "README.md"
+requires-python = ">=3.5"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/mbrahimi25/fbrefstats"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
