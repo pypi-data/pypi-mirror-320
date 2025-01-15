@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+foo/__init__.py
+foodemo30.egg-info/PKG-INFO
+foodemo30.egg-info/SOURCES.txt
+foodemo30.egg-info/dependency_links.txt
+foodemo30.egg-info/top_level.txt
