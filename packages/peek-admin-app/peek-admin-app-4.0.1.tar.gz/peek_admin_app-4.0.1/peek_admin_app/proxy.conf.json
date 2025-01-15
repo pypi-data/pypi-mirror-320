@@ -1,0 +1,19 @@
+{
+    "/vortexws": {
+        "target": "ws://127.0.0.1:8010",
+        "secure": false,
+        "logLevel": "debug",
+        "ws": true,
+        "pathRewrite": {
+            "^/vortexws": "/vortexws"
+        }
+    },
+    "/peek_plugin_diagram_pdf_exporter": {
+        "target": "http://127.0.0.1:8010",
+        "secure": false,
+        "logLevel": "debug",
+        "pathRewrite": {
+            "^/peek_plugin_diagram_pdf_exporter": "/peek_plugin_diagram_pdf_exporter"
+        }
+    }
+}
