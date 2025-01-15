@@ -1,0 +1,4 @@
+peek-plugin-base==4.0.1
+peek-platform==4.0.1
+peek-office-app==4.0.1
+peek-office-doc==4.0.1

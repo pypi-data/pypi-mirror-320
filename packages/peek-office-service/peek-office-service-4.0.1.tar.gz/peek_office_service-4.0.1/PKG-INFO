@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: peek-office-service
+Version: 4.0.1
+Summary: Peek Office Service - where Peek Field Office is served
+Author-email: Synerty <contact@synerty.com>
+Project-URL: Homepage, https://github.com/Synerty/peek-office-service
+Keywords: Peek,Python,Platform,synerty
+License-File: LICENSE
+Requires-Dist: peek-plugin-base==4.0.1
+Requires-Dist: peek-platform==4.0.1
+Requires-Dist: peek-office-app==4.0.1
+Requires-Dist: peek-office-doc==4.0.1
