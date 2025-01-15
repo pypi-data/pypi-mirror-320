@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: LogFusion
+Version: 0.1.1
+Summary: A tool for running shell commands with animated output.
+Home-page: https://github.com/ILKAY-BRAHIM/LogFusion
+Author: ILKAY-BRAHIM
+Author-email: ibrahimchifour@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: colorama>=0.4.6
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
