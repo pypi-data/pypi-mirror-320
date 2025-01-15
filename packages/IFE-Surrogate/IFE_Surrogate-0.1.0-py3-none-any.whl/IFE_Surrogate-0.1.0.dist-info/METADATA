@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: IFE_Surrogate
+Version: 0.1.0
+Summary: A brief description of your library
+Home-page: https://github.com/your-repo
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: absl-py==2.1.0
+Requires-Dist: chex==0.1.88
+Requires-Dist: contourpy==1.3.1
+Requires-Dist: cycler==0.12.1
+Requires-Dist: etils==1.11.0
+Requires-Dist: fonttools==4.55.3
+Requires-Dist: jax==0.4.38
+Requires-Dist: jaxlib==0.4.38
+Requires-Dist: jaxtyping==0.2.36
+Requires-Dist: kiwisolver==1.4.8
+Requires-Dist: matplotlib==3.10.0
+Requires-Dist: ml-dtypes==0.5.1
+Requires-Dist: multipledispatch==1.0.0
+Requires-Dist: numpy==2.2.1
+Requires-Dist: numpyro==0.16.1
+Requires-Dist: opt-einsum==3.4.0
+Requires-Dist: optax==0.2.4
+Requires-Dist: pandas==2.2.3
+Requires-Dist: pillow==11.1.0
+Requires-Dist: pyparsing==3.2.1
+Requires-Dist: pytz==2024.2
+Requires-Dist: pywin32==307
+Requires-Dist: scipy==1.15.0
+Requires-Dist: seaborn==0.13.2
+Requires-Dist: setuptools==75.1.0
+Requires-Dist: toolz==1.0.0
+Requires-Dist: tqdm==4.67.1
+Requires-Dist: tzdata==2024.2
+Requires-Dist: wheel==0.44.0
+
+# Installation
+
+- conda create -n IFEsurrogate python   
+-pip install -U jax     
+-pip install numpyro    
+-pip install matplotlib     
+-pip install seaborn    
+-pip install jaxtyping
