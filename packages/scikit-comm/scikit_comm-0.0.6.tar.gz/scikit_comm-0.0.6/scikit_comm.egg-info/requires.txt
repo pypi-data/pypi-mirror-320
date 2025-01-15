@@ -1,0 +1,6 @@
+matplotlib
+numpy
+PyVISA
+PyVISA-py
+scipy
+screeninfo

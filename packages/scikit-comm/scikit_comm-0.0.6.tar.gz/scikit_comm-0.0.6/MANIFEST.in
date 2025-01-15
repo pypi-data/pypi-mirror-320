@@ -1,0 +1,10 @@
+include skcomm/cython_mods/rx_cython.pyx
+include docs/source/api_doc.rst
+include docs/source/conf.py
+include docs/source/gettingStarted.md
+include docs/source/index.rst
+include docs/source/*.nblink
+include docs/HOWTO.txt
+include docs/make.bat
+include docs/reqirements.txt
+include examples/*

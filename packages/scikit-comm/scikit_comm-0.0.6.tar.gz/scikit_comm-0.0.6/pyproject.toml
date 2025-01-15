@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "Cython"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scikit-comm"
+dynamic = ["version"]
+authors = [
+  { name="Markus Nölle", email="noelle@htw-berlin.de" },
+]
+description = "Routines to simulate communication systems"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+	"matplotlib",	
+	"numpy",
+	"PyVISA",
+	"PyVISA-py",
+	"scipy",	
+	"screeninfo"	
+]
+classifiers = [
+    "Programming Language :: Python :: 3",    
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/htw-ikt-noelle/scikit-comm"
+"Documentation" = "https://scikit-comm.readthedocs.io/en/latest/"
+"Bug Tracker" = "https://gitlab.com/htw-ikt-noelle/scikit-comm/-/issues"
+
+[tool.setuptools]
+packages=['skcomm', 'skcomm.cython_mods', 'skcomm.tests']
+
+[tool.setuptools.dynamic]
+version = {attr = "skcomm.__version__"} 
