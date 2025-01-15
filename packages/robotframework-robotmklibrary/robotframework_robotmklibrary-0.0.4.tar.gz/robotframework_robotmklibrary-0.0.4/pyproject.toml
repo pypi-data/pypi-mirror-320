@@ -1,0 +1,45 @@
+[project]
+name = "robotframework-robotmklibrary"
+version = "0.0.4"
+description = "A Robot Framework keyword library intended to be used with Robotmk."
+readme = "README.md"
+authors = [
+    { name = "Jörg Herbel", email = "joerg.herbel@checkmk.com" }
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.14.1",
+    "ruff>=0.9.1",
+]
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "COM812",
+    "D103",
+    "D104",
+    "D203",
+    "D213",
+    "E501",
+    "N999",
+]
+
+[tool.mypy]
+strict = true
+enable_error_code = [
+    "ignore-without-code",
+    "redundant-expr",
+    "possibly-undefined",
+]
+disallow_any_expr = true
+disallow_any_explicit = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/RobotmkLibrary"]
