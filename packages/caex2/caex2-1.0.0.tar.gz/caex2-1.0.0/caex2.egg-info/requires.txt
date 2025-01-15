@@ -1,0 +1,6 @@
+click
+gitpython
+
+[publishing]
+twine
+wheel

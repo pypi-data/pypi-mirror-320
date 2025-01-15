@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+caex2/__init__.py
+caex2/extractor.py
+caex2.egg-info/PKG-INFO
+caex2.egg-info/SOURCES.txt
+caex2.egg-info/dependency_links.txt
+caex2.egg-info/entry_points.txt
+caex2.egg-info/not-zip-safe
+caex2.egg-info/requires.txt
+caex2.egg-info/top_level.txt
+tests/test_extractor.py
