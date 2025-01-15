@@ -1,0 +1,14 @@
+omopmodel/OMOP_5_3_dataclasses.py,sha256=UECXuZtZ3L7GNaMEYmiUfEiejNHGeBvf5vqYXy-P3Rk,225768
+omopmodel/OMOP_5_3_declarative.py,sha256=jGMqvjwBL9nLw3FIVFW-zzn1UV0O9cURkWC9nZ1TRnk,225730
+omopmodel/OMOP_5_3_sqlmodels.py,sha256=WywwfvVubr_cNZ7n7dWEqNtTCj5G6AA8MQbmbo1Xm1A,240830
+omopmodel/OMOP_5_3_tables.py,sha256=esDQ3s_ZsB10KZV8--F5-fa06jkSrVBHYdHPX_aWRDQ,182299
+omopmodel/OMOP_5_4_dataclasses.py,sha256=rPhPNxafNL5OPQaLBsB6YA8VwV5aLxR7vSvMkNW2g2I,250836
+omopmodel/OMOP_5_4_declarative.py,sha256=B05cEbj4Rxy0Z9Cu1XJ36bwWLUUbsnFFB-9Fldp10KA,250798
+omopmodel/OMOP_5_4_sqlmodels.py,sha256=_q3AUDc0pBMpnR1QMAR4b5sV13dySQLwisWVa4sTb-s,267323
+omopmodel/OMOP_5_4_tables.py,sha256=BCfvYk9pyAH_DGvAe5LeDX7-8uu6hhcoRLCoJ2t-iAQ,203186
+omopmodel/__init__.py,sha256=yHD7mG6jG3CgG8VgnR-dv4yl_oKaUfZ8qK8XGX39_f8,61
+omopmodel/vocabularies_loader.py,sha256=3IJAvoLfp5oCLQlGC5ez6mcwPIvy0WyCLVlI4lNS9qY,29724
+dzdomop-0.3.1.dist-info/METADATA,sha256=ZbOstg_GR7XrK5ezdWAVIsDDrb9z7sWwJmBMc6Gsk78,2782
+dzdomop-0.3.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+dzdomop-0.3.1.dist-info/top_level.txt,sha256=_W_lRRqL36BpQuO_1Xj7rwULCT02E1DHbwgSeCnNb4U,10
+dzdomop-0.3.1.dist-info/RECORD,,
