@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: IngeoML
+Version: 0.0.28
+Project-URL: Homepage, https://ingeoml.readthedocs.io
+Project-URL: Repository, https://github.com/INGEOTEC/IngeoML
+Project-URL: Issues, https://github.com/INGEOTEC/IngeoML/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scikit-learn>=1.3.0
