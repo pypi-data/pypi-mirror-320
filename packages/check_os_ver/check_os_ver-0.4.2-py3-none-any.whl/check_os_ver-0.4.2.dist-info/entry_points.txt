@@ -1,0 +1,9 @@
+[console_scripts]
+jerry-hi = check_os_ver.hi:hi
+jerry-os-ver = check_os_ver.osver:get_os_version_of_mac
+jerry-random-game = check_os_ver.hi:random_game
+jerry-random-match = check_os_ver.hi:random_match
+jerry-random-pic = check_os_ver.hi:random_pic
+
+[gui_scripts]
+
