@@ -1,0 +1,2 @@
+[console_scripts]
+dnaviz = dnaviz.cli:main
