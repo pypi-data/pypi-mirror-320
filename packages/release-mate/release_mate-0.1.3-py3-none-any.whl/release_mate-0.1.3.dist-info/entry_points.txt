@@ -1,0 +1,3 @@
+[console_scripts]
+release-mate=release_mate.cli:cli
+
