@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: konvo
+Version: 0.0.1
+Summary: Konvotech Python Package
+Author-email: Berat Çimen <47108366+beratcmn@users.noreply.github.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# konvo
+Konvotech Python Package
