@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: cd_sem
+Version: 0.1.0
+Summary: SEM image analysis
+Author-email: Devin Grabner <devin.grabner@wsu.edu>, Harlan Heilman <harlan.heilman@wsu.edu>, Emma Vargo <evargo@lbl.gov>
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: jupyter
+Requires-Dist: tk
+Requires-Dist: tifffile
+Requires-Dist: scikit-image
+Requires-Dist: opencv-python
+
+# CD-SEM
+Line Roughness Calculation for DSA images. Version 1.0 is as close to a direct port over from Mathematica as possible. Version 2.0(beta) is a complete rework of program functions to include some enhanced Python functionality and improve computation times.
+
+This project is funded by the CHiPPS EFRC at Berkeley National Laboratory.
+
+The goal is to port Mathematica code originally written by Ricardo Ruiz into an open-source Python platform
+
+## Use
+Use the 'RunThis_CD_SEM_Analysis.ipynb' file to run the analysis of your SEM (*.tif) image.
