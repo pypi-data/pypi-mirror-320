@@ -1,0 +1,4 @@
+cx_oracle<9
+lxml
+apb_extra_osgeo_utils<1.1
+apb_spatial_utils<1.1
