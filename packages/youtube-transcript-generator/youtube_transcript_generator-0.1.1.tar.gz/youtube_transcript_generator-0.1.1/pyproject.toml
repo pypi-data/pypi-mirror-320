@@ -1,0 +1,106 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "youtube-transcript-generator"
+version = "0.1.1"
+description = "A Python package to generate AI-powered transcripts from YouTube videos"
+authors = [{name = "Manoj Tyagi", email = "tyagimanojtyagi.22@gmail.com"}]
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Multimedia :: Video",
+    "Topic :: Text Processing",
+]
+
+dependencies = [
+    "google-generativeai>=0.3.0",
+    "yt-dlp>=2024.1.1",
+    "pydantic>=2.6.0",
+    "pydantic-settings>=2.1.0",
+    "typer[all]>=0.9.0",
+    "rich>=13.7.0",
+    "loguru>=0.7.2",
+    "aiohttp>=3.9.1",
+    "python-dotenv>=1.0.0",
+    "asyncio>=3.4.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.5",
+    "pytest-cov>=4.1.0",
+    "black>=24.1.0",
+    "isort>=5.13.2",
+    "mypy>=1.8.0",
+    "pylint>=3.0.3",
+    "pre-commit>=3.6.0",
+]
+
+interactive = [
+    "ipython>=8.12.0",
+    "pytest-watch>=4.2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/thewolfcommander/pulse__youtube-transcript"
+Documentation = "https://github.com/thewolfcommander/pulse__youtube-transcript/docs"
+Repository = "https://github.com/thewolfcommander/pulse__youtube-transcript.git"
+Issues = "https://github.com/thewolfcommander/pulse__youtube-transcript/issues"
+
+[project.scripts]
+youtube-transcript = "youtube_transcript_generator.cli.main:main"
+
+[tool.black]
+line-length = 88
+target-version = ["py38"]
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 88
+
+[tool.mypy]
+python_version = "3.8"
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_return_any = true
+strict_optional = true
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-ra -q --cov=youtube_transcript_generator"
+testpaths = [
+    "tests",
+]
+asyncio_mode = "auto"
+
+[tool.pylint.messages_control]
+disable = [
+    "C0111",  # missing-docstring
+    "R0903",  # too-few-public-methods
+]
+
+[tool.coverage.run]
+source = ["youtube_transcript_generator"]
+omit = ["tests/*"]
