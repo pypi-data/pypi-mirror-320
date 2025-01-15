@@ -1,0 +1,16 @@
+dprojectstools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dprojectstools/backups/__init__.py,sha256=NV15vstbHrGns8LgKWYA3ssnjjjlluU-s29gI7APmlg,51
+dprojectstools/backups/restic.py,sha256=EELwB2B7LGLPnASJYCQrW9Be8kA7RjcAOcLN6QYnKHU,2023
+dprojectstools/commands/__init__.py,sha256=VZmFrfX6F6NleK3z4pIA6GmuM9pygQxUOEXleVqJB3E,80
+dprojectstools/commands/commands.py,sha256=UDU41t6oNRxFTrK9I8YqWI5UZD3_w1WKcDDjvaZWE18,12882
+dprojectstools/crypto/__init__.py,sha256=CAPzDNcUXRa9zBM5CKzcMjtkuOCQojhaKp4GJ0JtcqE,62
+dprojectstools/crypto/aes.py,sha256=qTJ-eHzRUB8UalnqJPkG62k3oxuy76QiEoZBFdSMpic,4186
+dprojectstools/git/__init__.py,sha256=bohP-Ekja3jbO3aAF3COGcUWp77D2e26cYZaBWYZqps,29
+dprojectstools/git/git.py,sha256=m_rnxEAOSz6AHOZp-C6ep9U_NDTlCxuIjxElFQI9RjY,780
+dprojectstools/secrets/__init__.py,sha256=1-v3UV1A-FP_o1vcccii1T1wSXsj6nGWxWvxWzFmdBE,37
+dprojectstools/secrets/secrets.py,sha256=xHzy5D5JqtPubFgktz_1bmQIluClxn9RT0r5e-ZeXr4,3175
+dprojectstools-0.0.9.dist-info/LICENSE,sha256=wog66J88bXIo-u2Axc3ia6UllVLpcW-TAsIoFX9DAr4,1094
+dprojectstools-0.0.9.dist-info/METADATA,sha256=bj_6MMpWNu48_-SPsiiZ9w8dAQJcEB2ymSGgfQaStcU,599
+dprojectstools-0.0.9.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+dprojectstools-0.0.9.dist-info/top_level.txt,sha256=Rfed2TC6kuHWz0giVwl_Sc-ffhFooCeD4rlP84wr0hw,15
+dprojectstools-0.0.9.dist-info/RECORD,,
