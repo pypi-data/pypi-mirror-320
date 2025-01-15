@@ -1,0 +1,17 @@
+pyproject.toml
+setup.py
+tarot/__init__.py
+tarot/tarot/__init__.py
+tarot/tarot/bots_pb2.py
+tarot/tarot/bots_pb2.pyi
+tarot/tarot/bots_pb2_grpc.py
+tarot/tarot/chats_pb2.py
+tarot/tarot/chats_pb2.pyi
+tarot/tarot/chats_pb2_grpc.py
+tarot/tarot/users_pb2.py
+tarot/tarot/users_pb2.pyi
+tarot/tarot/users_pb2_grpc.py
+tarot_contracts.egg-info/PKG-INFO
+tarot_contracts.egg-info/SOURCES.txt
+tarot_contracts.egg-info/dependency_links.txt
+tarot_contracts.egg-info/top_level.txt
