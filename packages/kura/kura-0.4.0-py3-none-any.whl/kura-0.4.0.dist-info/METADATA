@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: kura
+Version: 0.4.0
+Summary: Kura is a tool for analysing and visualising chat data
+Author-email: Ivan Leo <ivanleomk@gmail.com>
+Requires-Python: >=3.9
+Requires-Dist: eval-type-backport>=0.2.2
+Requires-Dist: fastapi[standard]>=0.115.6
+Requires-Dist: hdbscan>=0.8.40
+Requires-Dist: instructor[google-generativeai]>=1.7.2
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: rich>=13.9.4
+Requires-Dist: scikit-learn>=1.6.0
+Requires-Dist: umap-learn>=0.5.7
+Requires-Dist: uvicorn>=0.34.0
+Description-Content-Type: text/markdown
+
+# Introduction
+
+Kura is an open-source tool that helps you to understand your users. It's built using the same ideas as [CLIO](https://www.anthropic.com/research/clio) but open-sourced so that you can try it on your own data. I've written a [walkthrough of the code](https://ivanleo.com/blog/understanding-user-conversations) that you can read to understand the high level ideas behind CLIO.
+
+It's currently under active development and I'm working on adding more features to it but the eventual goal is to make it a very modular tool that you can use to understand general trends in your user base. If you face any issues or have any suggestions, please feel free to open an issue or a PR.
+
+At it's core, Kura exposes the following few features as shown in the diagram below
+
+- A Summarisation Model that takes user conversations and summarises them into a task description
+- Summary Hooks that take the same conversations and extract out valuable metadata from them ( that you specify)
+- A base clustering model that takes the summaries and clusters them into groups based off their embeddings
+- A clustering model that takes these clusters and further clusters them into more groups based off their embeddings
+
+This creates a list of hierachal clusters that are labelled with language models with the metadata that you specify and care about.
+
+![](./kura.png)
+
+Once you've installed the package with the command `pip install kura`, you can use the following initialisation code to get started
+
+```python
+from kura import Kura
+
+kura = Kura() # The default models and parameters are here
+kura.load_conversations(conversations) # Load your conversations
+kura.cluster_conversations() # This creates the hierachal clusters for your specific usage
+```
+
+We expose the following parameters that you can use
