@@ -1,0 +1,13 @@
+tgwrap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tgwrap/analyze.py,sha256=fuET7_L8b6rlv2qnKOYXSlIv5LArvZ39CPktCeQHo7A,10285
+tgwrap/cli.py,sha256=9zvBop3Gm5B2b8K-zXVHEvRUCC7t5ffZUJZEpj1Fxtw,32186
+tgwrap/deploy.py,sha256=-fSk-Ix_HqrXY7KQX_L27TnFzIuhBHYv4xYJW6zRDN4,10243
+tgwrap/inspector-resources-template.yml,sha256=Mos8NDzzZ3VxdXgeiVL9cmQfRcIXIHMLf79_KLwdXu8,3297
+tgwrap/inspector.py,sha256=5pW7Ex1lkKRoXY6hZGbCNmSD2iRzgMSfqi9w7gb-AcY,16990
+tgwrap/main.py,sha256=Vzmy9GEuBT-T6TB_ZzN_lET5ihY0P-9WcPZ_MPCus_k,94366
+tgwrap/printer.py,sha256=frn1PARd8A28mkRCYR6ybN2x0NBULhNOutn4l2U7REY,2754
+tgwrap-0.11.3.dist-info/LICENSE,sha256=VT-AVxIXt3EQTC-7Hy1uPGnrDNJLqfcgLgJD78fiyx4,1065
+tgwrap-0.11.3.dist-info/METADATA,sha256=Q2KwR6I-XkakoBPf2PCchgR5xlcOJJaG0In4V6DedJ8,17698
+tgwrap-0.11.3.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+tgwrap-0.11.3.dist-info/entry_points.txt,sha256=H8X0PMPmd4aW7Y9iyChZ0Ug6RWGXqhRUvHH-6f6Mxz0,42
+tgwrap-0.11.3.dist-info/RECORD,,
