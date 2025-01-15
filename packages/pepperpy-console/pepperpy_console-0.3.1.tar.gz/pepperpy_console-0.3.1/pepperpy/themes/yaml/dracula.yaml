@@ -1,0 +1,24 @@
+name: dracula
+colors:
+  primary: "#bd93f9"
+  secondary: "#44475a"
+  accent: "#ff79c6"
+  background: "#282a36"
+  text: "#f8f8f2"
+  error: "#ff5555"
+  warning: "#ffb86c"
+  success: "#50fa7b"
+styles:
+  button:
+    color: text
+    background: secondary
+    hover:
+      background: accent
+  text:
+    color: text
+  heading:
+    color: primary
+  link:
+    color: accent
+    hover:
+      color: primary

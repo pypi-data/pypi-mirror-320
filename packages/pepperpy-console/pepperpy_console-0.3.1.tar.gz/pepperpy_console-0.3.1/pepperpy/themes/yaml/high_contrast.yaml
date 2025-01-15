@@ -1,0 +1,60 @@
+name: High Contrast
+
+colors:
+  # Base colors
+  primary: "#ffffff" # White
+  secondary: "#c0c0c0" # Light Gray
+  accent: "#ffff00" # Yellow
+  background: "#000000" # Black
+  text: "#ffffff" # White
+  error: "#ff0000" # Red
+  warning: "#ffff00" # Yellow
+  success: "#00ff00" # Green
+  info: "#00ffff" # Cyan
+  selection: "#0000ff" # Blue
+
+  # UI variants
+  surface: "#000000" # Black
+  surface-darken-1: "#1a1a1a" # Dark Gray
+  surface-lighten-1: "#333333" # Light Gray
+  text-muted: "#ffffff" # White
+  text-disabled: "#c0c0c0" # Light Gray
+  primary-lighten-2: "#ffffff" # White
+  primary-darken-1: "#c0c0c0" # Light Gray
+  error-lighten-2: "#ff4040" # Light Red
+  success-lighten-2: "#40ff40" # Light Green
+
+metrics:
+  spacing:
+    xs: 1
+    sm: 2
+    md: 4
+    lg: 8
+    xl: 16
+
+  sizes:
+    icon: 1
+    input: 3
+    header: 3
+    footer: 3
+    sidebar: 30
+
+  breakpoints:
+    sm: 40
+    md: 80
+    lg: 120
+
+styles:
+  button:
+    color: text
+    background: secondary
+    hover:
+      background: accent
+  text:
+    color: text
+  heading:
+    color: primary
+  link:
+    color: accent
+    hover:
+      color: primary
