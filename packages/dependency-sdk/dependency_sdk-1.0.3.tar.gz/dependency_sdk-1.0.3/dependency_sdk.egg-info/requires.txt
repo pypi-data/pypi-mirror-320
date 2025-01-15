@@ -1,0 +1,2 @@
+requests>=2.30.0
+openfoodfacts>=2.4.0

@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+dependency_sdk/__init__.py
+dependency_sdk/formula.py
+dependency_sdk/main.py
+dependency_sdk.egg-info/PKG-INFO
+dependency_sdk.egg-info/SOURCES.txt
+dependency_sdk.egg-info/dependency_links.txt
+dependency_sdk.egg-info/requires.txt
+dependency_sdk.egg-info/top_level.txt

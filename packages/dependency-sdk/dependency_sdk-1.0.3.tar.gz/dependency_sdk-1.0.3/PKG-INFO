@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: dependency-sdk
+Version: 1.0.3
+Summary: Package for the adapter formation
+Author-email: Gregoire Pichereau <trashuseless@gmail.com>
+License: GPL-3.0-or-later
+Project-URL: Repository, https://github.com/gregpi4/dependency-sdk
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.30.0
+Requires-Dist: openfoodfacts>=2.4.0
+
+# dependency-sdk
+Code example for the formation

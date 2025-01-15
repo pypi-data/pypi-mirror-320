@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dependency-sdk"
+version = "1.0.3"
+dependencies = [
+  "requests>=2.30.0",
+  "openfoodfacts>=2.4.0"
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "Gregoire Pichereau", email = "trashuseless@gmail.com"}
+]
+description = "Package for the adapter formation"
+readme = "README.md"
+license = {text = "GPL-3.0-or-later"}
+
+[project.urls]
+Repository = "https://github.com/gregpi4/dependency-sdk"
