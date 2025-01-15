@@ -1,0 +1,10 @@
+Metadata-Version: 2.2
+Name: peek-storage-service
+Version: 4.0.1
+Summary: Peek Storage Service - where stroage of Peek is
+Author-email: Synerty <contact@synerty.com>
+Project-URL: Homepage, https://github.com/Synerty/peek-storage-service
+Keywords: Peek,Python,Platform,synerty
+License-File: LICENSE
+Requires-Dist: peek-plugin-base==4.0.1
+Requires-Dist: peek-platform==4.0.1
