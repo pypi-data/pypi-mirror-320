@@ -1,0 +1,125 @@
+[tool.poetry]
+name = "pepperpy-console"
+version = "0.2.1"
+description = "PepperPy console package"
+authors = ["Felipe Pimentel <fpimentel88@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "pepperpy_console" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+rich = "^13.9.4"
+pepperpy-core = { version = "*", extras = ["type-stubs"] }
+textual = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-asyncio = "^0.25.2"
+ruff = "^0.9.1"
+mypy = "^1.14.1"
+bandit = "^1.8.2"
+black = "^24.10.0"
+python-semantic-release = "^9.16.1"
+pre-commit = "^4.0.1"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.setuptools.package-data]
+"pepperpy_console" = ["py.typed"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "strict"
+asyncio_default_fixture_loop_scope = "function"
+markers = ["asyncio: mark test as requiring asyncio event loop"]
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "examples.*"
+ignore_errors = true
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+ignore_errors = true
+
+[[tool.mypy.overrides]]
+module = "textual.*"
+ignore_missing_imports = true
+ignore_errors = true
+
+[[tool.mypy.overrides]]
+module = "pepperpy_console.tui.*"
+disable_error_code = [
+    "abstract",
+    "attr-defined",
+    "misc",
+    "union-attr",
+    "unused-coroutine",
+    "no-any-return",
+    "override",
+    "return-value",
+    "call-arg",
+    "assignment",
+]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+line_length = 88
+known_first_party = ["pepperpy_console"]
+known_third_party = ["rich", "textual", "structlog"]
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
+default_section = "THIRDPARTY"
+
+[tool.semantic_release]
+version_variables = ["pyproject.toml:version"]
+commit_author = "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+commit_parser = "angular"
+branch = "main"
+upload_to_pypi = true
+build_command = "poetry build"
+repository = "pepperpy-console"
+repository_owner = "felipepimentel"
+
+[tool.semantic_release.remote]
+type = "github"
+token = "${GH_TOKEN}"
+
+[tool.semantic_release.publish]
+dist_glob_patterns = ["dist/*"]
+upload_to_vcs_release = true
+upload_to_repository = true
+
+[tool.semantic_release.branches.main]
+match = "main"
+prerelease_token = "rc"
+prerelease = false
+
+[tool.semantic_release.publish.pypi]
+build = true
+remove_dist = true
+token = "${POETRY_PYPI_TOKEN_PYPI}"
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "N", "W", "B", "A", "C4", "PT", "RET", "SIM"]
+ignore = ["A005"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["D", "S101"]
+"examples/**/*.py" = ["D"]
