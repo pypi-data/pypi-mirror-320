@@ -1,0 +1,79 @@
+from dataclasses import dataclass, field, asdict
+from typing import Dict, List, Optional, Text, Any
+
+
+@dataclass
+class LLMUsage:
+    prompt_tokens: int
+    """Number of prompt tokens used to generate completion."""
+
+    completion_tokens: int
+    """Number of generated tokens."""
+
+    total_tokens: int = field(init=False)
+    """Total number of used tokens."""
+
+    def __post_init__(self) -> None:
+        self.total_tokens = self.prompt_tokens + self.completion_tokens
+
+    @classmethod
+    def from_dict(cls, data: Dict[Text, Any]) -> "LLMUsage":
+        """
+        Creates an LLMUsage object from a dictionary.
+        If any keys are missing, they will default to zero
+        or whatever default you prefer.
+        """
+        return cls(
+            prompt_tokens=data.get("prompt_tokens"),
+            completion_tokens=data.get("completion_tokens"),
+        )
+
+    def to_dict(self) -> dict:
+        """Converts the LLMUsage dataclass instance into a dictionary."""
+        return asdict(self)
+
+
+@dataclass
+class LLMResponse:
+    id: str
+    """A unique identifier for the completion."""
+
+    choices: List[str]
+    """The list of completion choices the model generated for the input prompt."""
+
+    created: int
+    """The Unix timestamp (in seconds) of when the completion was created."""
+
+    model: Optional[str] = None
+    """The model used for completion."""
+
+    usage: Optional[LLMUsage] = None
+    """An optional details about the token usage for the API call."""
+
+    additional_info: Optional[Dict] = None
+    """Optional dictionary for storing additional information related to the
+    completion that may not be covered by other fields."""
+
+    @classmethod
+    def from_dict(cls, data: Dict[Text, Any]) -> "LLMResponse":
+        """
+        Creates an LLMResponse from a dictionary.
+        """
+        usage_data = data.get("usage")
+        usage_obj = LLMUsage.from_dict(usage_data) if usage_data else None
+
+        return cls(
+            id=data["id"],
+            choices=data["choices"],
+            created=data["created"],
+            model=data.get("model"),
+            usage=usage_obj,
+            additional_info=data.get("additional_info"),
+        )
+
+    def to_dict(self) -> dict:
+        """Converts the LLMResponse dataclass instance into a dictionary."""
+        result = asdict(self)
+        if self.usage:
+            result["usage"] = self.usage.to_dict()
+        return result
