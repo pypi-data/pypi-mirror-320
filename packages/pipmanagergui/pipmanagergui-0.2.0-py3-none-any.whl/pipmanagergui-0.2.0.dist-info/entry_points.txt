@@ -1,0 +1,2 @@
+[console_scripts]
+pipmanager = pipmanager.main:main
