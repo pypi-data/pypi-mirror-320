@@ -1,0 +1,175 @@
+Metadata-Version: 2.1
+Name: ki2-mqtty-cli
+Version: 1.2.0
+Summary: Command-line utility designed to facilitate the interconnection between serial devices and an MQTT server. This project is based on the `mqtty` library and allows simple configuration using a TOML file.
+License: MIT
+Author: Adrien KERFOURN
+Author-email: ak.sitecontact@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: aiomqtt (>=2.3.0,<3.0.0)
+Requires-Dist: ki2-mqtty (>=1.1.1,<2.0.0)
+Requires-Dist: ki2-python-utils (>=0.3.5,<0.4.0)
+Requires-Dist: pydantic (>=2.10.4,<3.0.0)
+Requires-Dist: pyserial (>=3.5,<4.0)
+Requires-Dist: tomli (>=2.2.1,<3.0.0)
+Requires-Dist: typing-extensions (>=4.12.2,<5.0.0)
+Description-Content-Type: text/markdown
+
+# mqtty-cli
+
+**mqtty-cli** is a command-line utility designed to facilitate the interconnection between serial devices and an MQTT server. This project is based on the `mqtty` library and allows simple configuration using a TOML file.
+
+## Installation
+
+You can install `mqtty-cli` directly from PyPI:
+
+```bash
+pip install ki2-mqtty-cli
+```
+
+## Usage
+
+### Basic Command
+
+Once installed, the `mqtty-cli` command will be available. You can use it to start the interconnection using a TOML configuration file.
+
+```bash
+mqtty-cli <path-to-settings.toml>
+```
+
+If no path is provided, the program will attempt to load a configuration file named `settings.toml` from the current directory. You can also specify the path using the `MQTTY_CONFIG` environment variable.
+
+## Configuration
+
+The configuration file must be written in TOML format. Here is an example `settings.toml` file:
+
+```toml
+# MQTT Configuration
+[mqtt]
+host = "localhost"
+port = 1883
+startup_wait_time = 5
+notification_topic = "mqtty/notifications"
+
+[[devices]]
+# Device 1 configuration
+topic = "device/1"
+port = "/dev/ttyACM0"
+baudrate = 9600
+
+[[devices]]
+# Device 2 configuration
+topic = "device/2"
+port = "/dev/ttyACM1"
+baudrate = 9600
+```
+
+### Field Details
+
+#### MQTT Section (`[mqtt]`)
+
+| Field                   | Type   | Default     | Description                                                                |
+| ----------------------- | ------ | ----------- | -------------------------------------------------------------------------- |
+| host                    | string | "localhost" | Address of the MQTT server                                                 |
+| port                    | int    | 1883        | Port of the MQTT server                                                    |
+| auth                    | table  | None        | Authentication configuration (optional)                                    |
+| startup_wait_time       | int    | 0           | Time to wait (in seconds) before connecting to the MQTT server             |
+| notification_topic      | string | None        | MQTT topic where `mqtty-cli` can send notifications (e.g., error messages) |
+| pending_calls_threshold | int    | None        | Maximum number of pending publications before logging a warning            |
+
+If authentication is required, add the following fields:
+
+```toml
+[mqtt.auth]
+username = "my-username"
+password = "my-password"
+```
+
+#### Devices Section (`[[devices]]`)
+
+Each serial device must be defined as a table in a `[[devices]]` list.
+
+| Field              | Type         | Default | Description                                                                  |
+| ------------------ | ------------ | ------- | ---------------------------------------------------------------------------- |
+| topic              | string       | -       | MQTT topic associated with the device                                        |
+| port               | string       | -       | Serial port of the device (e.g., `/dev/ttyACM0`)                             |
+| name               | string       | null    | Optional name for the device; defaults to its port if not provided           |
+| optional           | bool         | true    | If true, the program checks if the port exists before registering the device |
+| baudrate           | int          | 9600    | Serial communication speed                                                   |
+| bytesize           | int          | 8       | Size of serial data                                                          |
+| parity             | string       | "None"  | Parity (`None`, `Even`, `Odd`, `Mark`, `Space`, or `N`, `E`, `O`, `M`, `S`)  |
+| stopbits           | float        | 1       | Number of stop bits                                                          |
+| timeout            | int / null   | null    | Timeout in seconds (null to disable)                                         |
+| xonxoff            | bool         | False   | XON/XOFF flow control                                                        |
+| rtscts             | bool         | False   | RTS/CTS flow control                                                         |
+| write_timeout      | float / null | null    | Write timeout                                                                |
+| dsrdtr             | bool         | False   | DSR/DTR flow control                                                         |
+| inter_byte_timeout | float / null | null    | Timeout between bytes                                                        |
+| exclusive          | bool / null  | null    | Exclusive mode for the serial port                                           |
+| endline_char       | string (1)   | "\n"    | End-of-line character                                                        |
+| mqtt_start         | string (1)   | "@"     | Start character for MQTT messages                                            |
+| mqtt_separator     | string (1)   | ":"     | Separator in MQTT messages                                                   |
+
+## Example Execution
+
+1. Create a `settings.toml` configuration file with your parameters.
+2. Run the following command:
+
+```bash
+mqtty-cli settings.toml
+```
+
+You will see a message indicating that the devices have been configured and the interconnection has started:
+
+```plaintext
+Path = settings.toml
+New device '/dev/ttyACM0' on topic 'device/1'
+New device '/dev/ttyACM1' on topic 'device/2'
+```
+
+## Programming Example for Serial Devices
+
+For serial devices, all messages received on the associated topic are sent directly to the device without any specific start or end characters.
+
+To publish to a specific topic from the device, messages written to the serial port should follow the format:
+
+```
+@<topic>:<payload>\n
+```
+
+- `<topic>` is the target MQTT topic.
+- `<payload>` is the message to be published.
+
+### Arduino Example
+
+```cpp
+void setup() {
+  Serial.begin(9600);
+  Serial.println("Arduino is ready!");
+}
+
+void loop() {
+  // Send data to the MQTT broker
+  if (Serial.available()) {
+    String topic = "other-topic"; // Specify the target topic
+    String payload = Serial.readStringUntil('\n');
+    Serial.print("@");
+    Serial.print(topic);
+    Serial.print(":");
+    Serial.println(payload);
+  }
+}
+```
+
+In this example, the Arduino listens on its serial input and formats outgoing messages to publish to the topic `other-topic`.
+
+## License
+
+This project is distributed under the MIT License. See the `LICENSE` file for more details.
+
