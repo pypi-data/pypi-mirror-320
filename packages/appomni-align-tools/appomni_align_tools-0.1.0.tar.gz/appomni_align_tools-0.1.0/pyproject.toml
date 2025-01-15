@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "appomni-align-tools"
+version = "0.1.0"
+description = "Tooling for interacting with AppOmni's ALIGN Parsers"
+authors = ["AppOmni <aopython@appomni.com>"]
+readme = "README.md"
+packages = [{ include = "appomni", from = "src" }]
+
+classifiers = [
+    "Topic :: Software Development :: Libraries",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+]
+
+[tool.poetry.scripts]
+align-lint = "appomni.threat.align_tools.linter:main"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+antlr4-python3-runtime = "^4.13.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
