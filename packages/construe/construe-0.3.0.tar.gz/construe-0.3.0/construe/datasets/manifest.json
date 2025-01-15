@@ -1,0 +1,58 @@
+{
+  "dialects": {
+    "url": "https://storage.googleapis.com/construe/v0.3.0/datasets/dialects.zip",
+    "signature": "0e6767047e05f618560d097dfa0587530636c52fc19507c087bdff556b389489"
+  },
+  "lowlight": {
+    "url": "https://storage.googleapis.com/construe/v0.3.0/datasets/lowlight.zip",
+    "signature": "ddc36eb7f0443efa5e71939e503d0834fd48451281d9658d5cb7ead30143b98f"
+  },
+  "dialects-sample": {
+    "url": "https://storage.googleapis.com/construe/v0.3.0/datasets/dialects-sample.zip",
+    "signature": "9e9509f4d82468c896bede36b16c6de218a1dce28a56ae49d1fb75933bf770c5"
+  },
+  "reddit": {
+    "url": "https://storage.googleapis.com/construe/v0.3.0/datasets/reddit.zip",
+    "signature": "d97419403f0d940970b2542d5b188570dacedae3c2a68ada3520cfa95c52f75c"
+  },
+  "movies-sample": {
+    "url": "https://storage.googleapis.com/construe/v0.3.0/datasets/movies-sample.zip",
+    "signature": "2d3d9294ad875e7489db94fc2ab02c1ad6dfdc15a2bf1a5037be36a6defc8168"
+  },
+  "essays-sample": {
+    "url": "https://storage.googleapis.com/construe/v0.3.0/datasets/essays-sample.zip",
+    "signature": "a77fc1c2c2718d79132598e6c873fd5b08c40c2e4049d995317747fb76b96631"
+  },
+  "aegis-sample": {
+    "url": "https://storage.googleapis.com/construe/v0.3.0/datasets/aegis-sample.zip",
+    "signature": "a2b3ae9c5a19833cc594fc4c14a6bfce35ab9c6086f0c2836d2719ab788119bd"
+  },
+  "aegis": {
+    "url": "https://storage.googleapis.com/construe/v0.3.0/datasets/aegis.zip",
+    "signature": "c846f20d893461525839cd2f61f85faf0dcbff03e1998fd8f747506ff65bec69"
+  },
+  "nsfw-sample": {
+    "url": "https://storage.googleapis.com/construe/v0.3.0/datasets/nsfw-sample.zip",
+    "signature": "d5044f30769d3a6e9ba639312120dc955bdfcf4d8aa8a6f3ee493334644b9fcd"
+  },
+  "essays": {
+    "url": "https://storage.googleapis.com/construe/v0.3.0/datasets/essays.zip",
+    "signature": "3a7b260dd5baec9134c7398ac7b9b297d7b1a387bce1a9f99cd8d3e0a7ceb9cc"
+  },
+  "reddit-sample": {
+    "url": "https://storage.googleapis.com/construe/v0.3.0/datasets/reddit-sample.zip",
+    "signature": "24088c648b8c3497d0b682102c3fa965d46ca22abe8f94695287e09bf82db991"
+  },
+  "lowlight-sample": {
+    "url": "https://storage.googleapis.com/construe/v0.3.0/datasets/lowlight-sample.zip",
+    "signature": "f34bafa588441b8e240b0932e9ac446d9f805bdfdb22640c036c441258220eaf"
+  },
+  "movies": {
+    "url": "https://storage.googleapis.com/construe/v0.3.0/datasets/movies.zip",
+    "signature": "618f7aa8aa103192ee8b76fc701ff182b2a41e5e78675a4d6af707e490d36f45"
+  },
+  "nsfw": {
+    "url": "https://storage.googleapis.com/construe/v0.3.0/datasets/nsfw.zip",
+    "signature": "7ac498e8f17428c51a5c8c366aaf10b47663a9eb8a560fd8abe01366eaf60139"
+  }
+}
