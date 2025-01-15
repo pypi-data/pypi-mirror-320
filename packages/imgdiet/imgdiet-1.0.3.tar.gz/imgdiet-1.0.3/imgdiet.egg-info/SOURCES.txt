@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+imgdiet/__init__.py
+imgdiet/cli.py
+imgdiet/core.py
+imgdiet.egg-info/PKG-INFO
+imgdiet.egg-info/SOURCES.txt
+imgdiet.egg-info/dependency_links.txt
+imgdiet.egg-info/entry_points.txt
+imgdiet.egg-info/requires.txt
+imgdiet.egg-info/top_level.txt
