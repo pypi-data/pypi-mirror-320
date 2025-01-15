@@ -1,0 +1,6 @@
+pandas
+requests
+
+[dev]
+bs4
+tqdm
