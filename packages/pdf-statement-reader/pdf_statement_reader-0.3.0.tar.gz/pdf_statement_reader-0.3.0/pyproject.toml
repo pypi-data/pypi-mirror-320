@@ -1,0 +1,20 @@
+[project]
+name = "pdf-statement-reader"
+version = "0.3.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["click>=8.1.8", "pikepdf>=9.5.1", "tabula-py>=2.10.0"]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "pytest>=8.3.4",
+]
+
+[project.scripts]
+psr = "pdf_statement_reader:cli"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
