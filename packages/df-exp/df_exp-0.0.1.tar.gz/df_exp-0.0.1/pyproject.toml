@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "df_exp"
+version = "0.0.1"
+authors = [{name="Matthias Dold", email="matthias.dold@gmx.net"}]
+description = "Exploratory visualization tool for data frames"
+readme ="README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+  "numpy >= 1.26.4",
+  "pandas",
+  "polars",
+  "plotly",
+  "dash",
+  "dash-bootstrap-components",
+]
+
+[project.urls]
+"homepage" = "https://github.com/matthiasdold/dareplane-pyutils"
+
+[tool.pytest.ini_options]
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+    "./"
+]
+filterwarnings = ["ignore:::.*fire.core"]
