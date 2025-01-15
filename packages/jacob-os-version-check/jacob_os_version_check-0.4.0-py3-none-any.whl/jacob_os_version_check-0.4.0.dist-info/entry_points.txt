@@ -1,0 +1,8 @@
+[console_scripts]
+jacob-hi = jacob_os_version_check.hi:hi
+jacob-os-cver = jacob_os_version_check.osver:os_check_j
+jacob-os-ver = jacob_os_version_check.osver:get_os_pretty_name
+jacob-random = jacob_os_version_check.hi:random_pic
+
+[gui_scripts]
+
