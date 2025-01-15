@@ -1,0 +1,11 @@
+d4k_ms_base/__info__.py,sha256=u-dzU_Q7_HGR5o5yDVZtqDjQ7mAxtAv_9vKfFufAD3g,29
+d4k_ms_base/__init__.py,sha256=T13jtrCjWPGloe34iX6mPruBPYqiI3mrzfElXZ_K8ug,329
+d4k_ms_base/errors_and_logging.py,sha256=ym8NMS3iqUJNXO3WxwUNN26m4EfhPFFT-3c0vwRaEvM,1532
+d4k_ms_base/logger.py,sha256=Ra-igarP1VWLdLyrWPrBZmarxkrJkamvqbeUt_NNgpg,1411
+d4k_ms_base/service.py,sha256=oHl3dMd9aMDqSHE02_dIzopEVnBK4OzoMDR-hdMhmb0,2316
+d4k_ms_base/service_environment.py,sha256=hRwhbqOgd3mqvEk38tLQvEeVQe3wHfSZsd61u_hNIjs,730
+d4k_ms_base-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+d4k_ms_base-0.1.0.dist-info/METADATA,sha256=Z__zBHlQZBun6vwQ9OnlUnvswMNZjb4_KuXRYz0tz80,1058
+d4k_ms_base-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+d4k_ms_base-0.1.0.dist-info/top_level.txt,sha256=GyQNUXYc2PrgohW4ZZPFF9X288fncG1bauj9CT37Ab0,12
+d4k_ms_base-0.1.0.dist-info/RECORD,,
