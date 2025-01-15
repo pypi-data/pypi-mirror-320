@@ -1,0 +1,84 @@
+Metadata-Version: 2.2
+Name: genie_python
+Version: 25.2.0
+Summary: Instrument control & scripting for the ISIS Neutron & Muon source
+Author-email: ISIS Experiment Controls <ISISExperimentControls@stfc.ac.uk>
+Maintainer-email: ISIS Experiment Controls <ISISExperimentControls@stfc.ac.uk>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2024, ISIS Experiment Controls Computing
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Homepage, https://github.com/isiscomputinggroup/genie
+Project-URL: Bug Reports, https://github.com/isiscomputinggroup/genie/issues
+Project-URL: Source, https://github.com/isiscomputinggroup/genie
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: CaChannel
+Requires-Dist: graypy
+Requires-Dist: ipython
+Requires-Dist: mysql-connector-python
+Requires-Dist: numpy
+Requires-Dist: p4p
+Requires-Dist: psutil
+Requires-Dist: pylint
+Requires-Dist: pyright
+Requires-Dist: pywin32; platform_system == "Windows"
+Provides-Extra: plot
+Requires-Dist: matplotlib==3.9.2; extra == "plot"
+Requires-Dist: py4j; extra == "plot"
+Requires-Dist: tornado; extra == "plot"
+Provides-Extra: doc
+Requires-Dist: sphinx; extra == "doc"
+Requires-Dist: sphinx_rtd_theme; extra == "doc"
+Requires-Dist: myst_parser; extra == "doc"
+Requires-Dist: sphinx-autobuild; extra == "doc"
+Provides-Extra: dev
+Requires-Dist: genie_python[doc,plot]; extra == "dev"
+Requires-Dist: mock; extra == "dev"
+Requires-Dist: parameterized; extra == "dev"
+Requires-Dist: pyhamcrest; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: ruff>=0.6; extra == "dev"
+
+# genie_python
+
+Instrument control and scripting library at the ISIS Neutron & Muon source.
+
+---
+
+Documentation: https://isiscomputinggroup.github.io/genie/genie_python
+
+Source: https://github.com/ISISComputingGroup/genie
+
+PyPi: https://pypi.org/project/genie_python/
