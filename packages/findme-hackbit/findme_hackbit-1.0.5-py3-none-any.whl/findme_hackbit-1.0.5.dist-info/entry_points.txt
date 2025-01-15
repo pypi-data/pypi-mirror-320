@@ -1,0 +1,2 @@
+[console_scripts]
+findme-hackbit = findme_hackbit:main
