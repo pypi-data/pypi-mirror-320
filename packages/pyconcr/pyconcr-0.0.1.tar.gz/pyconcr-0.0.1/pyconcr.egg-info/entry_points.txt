@@ -1,0 +1,2 @@
+[console_scripts]
+pyconcr = pyconcr.cli.pyconcr:main
