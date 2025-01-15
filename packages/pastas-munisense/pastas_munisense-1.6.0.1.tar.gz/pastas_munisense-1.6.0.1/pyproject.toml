@@ -1,0 +1,16 @@
+[project]
+name = "pastas_munisense"
+version = "1.6.0.1"
+authors = [
+  { name="Aviad Avraham", email="aviad.avraham@munisense.com" },
+]
+description = "This is a copy of the originial Pastas library that features certain code modifications that suit the needs of Munisense better."
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://gitlab.munisense.net/aviad.avraham/pastas-munisense"
