@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "femtum-sdk"
+version = "0.9.0"
+description = "Femtum SDK"
+authors = ["Samuel <smagny@femtum.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+grpcio = "^1.68.1"
+pandas = "^2.2.3"
+scipy = "^1.14.1"
+numpy = "^2.2.0"
+protobuf = "^5.29.1"
+
+
+[tool.poetry.group.dev.dependencies]
+grpcio-tools = "^1.68.1"
+pytest = "^8.3.4"
+pytest-asyncio = "^0.24.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
