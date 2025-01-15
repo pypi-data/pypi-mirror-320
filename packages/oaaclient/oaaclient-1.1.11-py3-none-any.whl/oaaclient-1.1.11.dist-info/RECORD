@@ -1,0 +1,11 @@
+oaaclient/__init__.py,sha256=NsTeqztn9EzyHruIjvDIPpye7piHs_Ui1mZG-tof5kc,360
+oaaclient/client.py,sha256=Vn91CmjbIWtBo6ZCtXks4C1TbCX3fvSAtvKVet9cHI8,42946
+oaaclient/structures.py,sha256=8WegnFhJZDNlrU_wFBBe0Q6DghAk7V0vBVbo2mRhAtU,1973
+oaaclient/templates.py,sha256=swmcSUDCRPu7Xt_0J-lZ3vifmNOb_DBhFbrSlBV75BY,131891
+oaaclient/utils.py,sha256=9CLIDtWS_KvhPD0cVQcF4XsSN0Ef1aiJZ2gIio4bxF8,6717
+oaaclient-1.1.11.dist-info/LICENSE,sha256=mtKjweM2GarAWUryJjh6uT5O7WW1G3_iwgLfeGzqNw0,1062
+oaaclient-1.1.11.dist-info/METADATA,sha256=DicyClCE-ven6DMWcspPVLsSypfPkArpBNssWDSzxA0,6148
+oaaclient-1.1.11.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+oaaclient-1.1.11.dist-info/entry_points.txt,sha256=CwssgcC-B2k1UrYQVxFBitPDs0hQCD4ARrUzWl77l3g,122
+oaaclient-1.1.11.dist-info/top_level.txt,sha256=NjKqJuQf8iZMwbKLICOEEXwRH2gmY1xepcyDtzr0rpI,10
+oaaclient-1.1.11.dist-info/RECORD,,
