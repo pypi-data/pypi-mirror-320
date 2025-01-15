@@ -1,0 +1,3 @@
+[console_scripts]
+cli = track_bump.__main__:run
+track-bump = track_bump.__main__:run
