@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: pynereus
+Version: 0.0.1
+Summary: Package to calculate neutron reactions
+Home-page: https://github.com/tardini/nereus.git
+Author: Giovanni Tardini
+Author-email: giovannitardini@yahoo.de
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This python GUI-based tool allows to run neutron calculations.
