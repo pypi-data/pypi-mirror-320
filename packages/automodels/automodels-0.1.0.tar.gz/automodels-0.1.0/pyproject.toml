@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "automodels"
+version = "0.1.0"
+description = ""
+authors = [
+    "marcellodebernardi <marcello.debernardi@outlook.com>",
+    "vaibs-d <vaibhavatlamarts@gmail.com>"
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
