@@ -1,0 +1,16 @@
+pinpal/__init__.py,sha256=37pwZLG5UNcsdgEvoo9xjGAYhnx-W2PxDV0ixiBu6yY,53
+pinpal/app.py,sha256=WPAdAHNCRmdBAyKk-bqvz22hava3fAYW2TuWwtfrpPg,1364
+pinpal/cli.py,sha256=ylxlttkSm_AB3ZaiB77bl_5nz351038sqCCjciMujJ8,1772
+pinpal/difficulty.py,sha256=GP5lASIKBlYVgOoibQcZk-ad_TaHEBw7YuwLRmsdiHc,2596
+pinpal/macos.py,sha256=xXWdgeqCneSdsjzh48K8vb4e09OBSF_a38iXmf7DzKo,2273
+pinpal/mem1.py,sha256=BynUTYbec5YGkGoAEbFPUY9LcfaG9hKK4klfTkFRQDo,5166
+pinpal/mem2.py,sha256=eXVHs1vsQUIUqng2q5lpS6x5omGEp5AAcQVE9cD9mfU,9643
+pinpal/txtui.py,sha256=4W9Jkcq9omAMYAi9bzooUR3cSweQnkAizuVthjo1_Fc,2056
+pinpal/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pinpal/test/test_txtui.py,sha256=AUJLIhdZD8yH5dWnFs9PkoTgSD__9tcM4d0KxyDK3WA,614
+pinpal-2025.1.0.dist-info/LICENSE,sha256=lANpuGZc8egJ0Kaubl8OBmC66KNkvUv5qxOaqhqnOzk,1072
+pinpal-2025.1.0.dist-info/METADATA,sha256=frtpQKowzwykoEktF7q9fvd10E05vViErAmL-5JRNgQ,4587
+pinpal-2025.1.0.dist-info/WHEEL,sha256=Z4pYXqR_rTB7OWNDYFOm1qRk0RX6GFP2o8LgvP453Hk,91
+pinpal-2025.1.0.dist-info/entry_points.txt,sha256=1jOQphUhUMdEBt6lELUTEsnq3I1bMjTUAaVdhkCK2gU,43
+pinpal-2025.1.0.dist-info/top_level.txt,sha256=qq9obDATUndyOFvG2kniMwNqKvFUmq8typFBAIF3hZk,7
+pinpal-2025.1.0.dist-info/RECORD,,
