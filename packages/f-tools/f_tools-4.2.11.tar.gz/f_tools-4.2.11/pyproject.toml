@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "f-tools"
+version = "4.2.11"
+description = "AWS tools including ECS bash execution"
+readme = "README.md"
+authors = [
+    {name = "Filipe Ferreira", email = "code@filipeandre.com"}
+]
+dependencies = [
+    "boto3",
+    "inquirer",
+]
+urls = { "Homepage" = "https://github.com/filipeandre/f-tools" }
+
+[tool.setuptools.package-data]
+"aws.resources" = ["*.sh", "*.js"]
+
+[project.scripts]
+f-ecs-bash = "aws.ecs_bash:main"
