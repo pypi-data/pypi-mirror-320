@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ollamaocr_python/__init__.py
+ollamaocr_python/ollamaocr.py
+ollamaocr_python.egg-info/PKG-INFO
+ollamaocr_python.egg-info/SOURCES.txt
+ollamaocr_python.egg-info/dependency_links.txt
+ollamaocr_python.egg-info/requires.txt
+ollamaocr_python.egg-info/top_level.txt
+test/test.py
