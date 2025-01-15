@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+pdf2markdown4llm/__init__.py
+pdf2markdown4llm/pdf2markdown4llm.py
+pdf2markdown4llm.egg-info/PKG-INFO
+pdf2markdown4llm.egg-info/SOURCES.txt
+pdf2markdown4llm.egg-info/dependency_links.txt
+pdf2markdown4llm.egg-info/requires.txt
+pdf2markdown4llm.egg-info/top_level.txt
+pdf2markdown4llm/tests/test.py
