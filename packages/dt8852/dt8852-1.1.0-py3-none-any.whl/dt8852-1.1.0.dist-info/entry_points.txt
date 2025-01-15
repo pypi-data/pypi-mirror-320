@@ -1,0 +1,2 @@
+[console_scripts]
+dt8852 = dt8852.__main__:main
