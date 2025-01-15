@@ -1,0 +1,11 @@
+LICENCE.md
+README.md
+pyproject.toml
+swisshydrodata/__init__.py
+swisshydrodata.egg-info/PKG-INFO
+swisshydrodata.egg-info/SOURCES.txt
+swisshydrodata.egg-info/dependency_links.txt
+swisshydrodata.egg-info/not-zip-safe
+swisshydrodata.egg-info/requires.txt
+swisshydrodata.egg-info/top_level.txt
+tests/test_swisshydrodata.py

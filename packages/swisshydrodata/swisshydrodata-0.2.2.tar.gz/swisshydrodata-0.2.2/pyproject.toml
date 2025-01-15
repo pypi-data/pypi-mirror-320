@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swisshydrodata"
+version = "0.2.2"
+description = "A library to fetch data from the Swiss federal Office for Environment FEON"
+authors = [{ name = "bouni", email = "bouni-github@owee.de" }]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["requests>=2.32.3"]
+
+[project.urls]
+Repository = "https://github.com/Bouni/swisshydrodata"
+Documentation = "https://github.com/Bouni/swisshydrodata"
+Releases = "https://github.com/Bouni/swisshydrodata/releases"
+
+[tool.setuptools]
+platforms = ["any"]
+zip-safe  = false
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["swisshydrodata*"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+    "pytest-cov>=6.0.0",
+    "requests-mock>=1.12.1",
+    "yamllint>=1.35.1",
+]
