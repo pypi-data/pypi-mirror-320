@@ -1,0 +1,27 @@
+Metadata-Version: 2.2
+Name: funpaper
+Version: 1.0.7
+Summary: funpaper
+Author-email: niuliangtao <farfarfun@qq.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: langchain-community>=0.3.14
+Requires-Dist: langchain-core>=0.3.29
+Requires-Dist: langchain-openai>=0.3.0
+Requires-Dist: langchain-text-splitters>=0.3.5
+Requires-Dist: openai>=1.59.7
+Requires-Dist: pydub>=0.25.1
+Requires-Dist: pypdf2>=3.0.1
+Requires-Dist: python-dotenv>=1.0.1
+
+# notepaper
+
+
+<!--insert start-->
+
+[DeepFM: A Factorization-Machine based Neural Network for CTR Prediction](https://arxiv.org/pdf/1703.04247.pdf)
+
+<!--insert end-->
+
+
+
