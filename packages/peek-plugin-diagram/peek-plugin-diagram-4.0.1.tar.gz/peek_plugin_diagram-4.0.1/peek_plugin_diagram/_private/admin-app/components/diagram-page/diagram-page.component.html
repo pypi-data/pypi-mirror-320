@@ -1,0 +1,25 @@
+
+<nz-tabset>
+    <!-- Status Tab -->
+    <nz-tab nzTitle="Status">
+        <pl-diagram-status></pl-diagram-status>
+    </nz-tab>
+
+    <!-- About Tab -->
+    <nz-tab nzTitle="About">
+        <nz-card class="home-content">
+            <h1>Peek Diagram</h1>
+            <p>This plugin provides a diagram with the following support:</p>
+            <ul>
+                <li *ngFor="let feature of featuresList$ | async">
+                    {{ feature }}
+                </li>
+            </ul>
+        </nz-card>
+    </nz-tab>
+
+    <!-- Edit Settings Tab -->
+    <nz-tab nzTitle="Edit Settings">
+        <pl-diagram-edit-setting></pl-diagram-edit-setting>
+    </nz-tab>
+</nz-tabset>
