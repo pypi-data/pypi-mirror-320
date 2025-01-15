@@ -1,0 +1,13 @@
+admin_global_search/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+admin_global_search/admin.py,sha256=vY3PieaSN2jo723oLiV2g347QbPWMhzZSeh8XgIbLXc,83
+admin_global_search/apps.py,sha256=qpyuuENYQ8hhyQYn7CRye2PobHxDQ38QiV-8GoZZFS4,188
+admin_global_search/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+admin_global_search/models.py,sha256=hPPgT35-MbfM643ljBlT6j0wpUOJfmrKIcnu6rLURmE,77
+admin_global_search/templates/admin/base_site.html,sha256=M_DssUAd-8A9A2G2IiM7hfleMIG_TeIcZX10ErKeLhs,1605
+admin_global_search/templates/admin_global_search/results.html,sha256=-2LVxxA05Ylmf9GXaOQWRP0kM6UD_e7486bdGvoNnzw,1593
+admin_global_search/tests.py,sha256=KZ5MpMzyltKm3SPd05QbS2x2hLn-3tiIBu_3ED4AWMw,80
+admin_global_search/views.py,sha256=QdR-E4RQ432x4-IAsAy8S5imgwujz2BMC4-QAMfkRiw,4220
+django_admin_global_search-0.0.5.dist-info/LICENSE,sha256=YVhGB_Uev0b4654C8vcTIYYyoZUR9CVF4G7GCH6za_I,1502
+django_admin_global_search-0.0.5.dist-info/METADATA,sha256=Df0kqLQoHee31r9DAxiphZAx84yK04nHtQ99wsVvLQM,4053
+django_admin_global_search-0.0.5.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+django_admin_global_search-0.0.5.dist-info/RECORD,,
