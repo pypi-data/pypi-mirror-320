@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: incantor
+Version: 0.0.1
+Summary: Incantor
+Author: Lucas Nussbaum
+Author-email: lucas@debian.org
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+
