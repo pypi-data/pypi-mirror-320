@@ -1,0 +1,2 @@
+[opsbox.plugins]
+opsbox_ec2_provider = ec2_provider.ec2_provider:EC2Provider
