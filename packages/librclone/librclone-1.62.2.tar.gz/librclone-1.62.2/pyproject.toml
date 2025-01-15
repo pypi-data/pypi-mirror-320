@@ -1,0 +1,27 @@
+[project]
+name = "librclone"
+description = "Small wrapper around `librclone` to allow RPC calls to RClone from Python"
+version = "1.62.2"
+
+authors = [
+    { name = "Nick Craig-Wood", email = "nick@craig-wood.com" }
+]
+maintainers = [
+    { name = "Pratheek Rebala", email = "pratheekrebala@gmail.com" }
+]
+
+[tool.poetry]
+packages = [
+    { include = "librclone" }
+]
+
+include = [
+    { path = "librclone/lib/*", format = "wheel"}
+]
+
+[build-system]
+requires = ["poetry-core", "setuptools", "cython"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.build]
+script = "build/build.py"
