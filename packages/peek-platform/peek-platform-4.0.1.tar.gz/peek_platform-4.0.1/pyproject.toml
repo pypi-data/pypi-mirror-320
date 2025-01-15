@@ -1,0 +1,101 @@
+[build-system]
+requires = ["setuptools>=69.0.3", "setuptools-scm[toml]>=7.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "peek-platform"
+version = "4.0.1"
+authors = [{ name = "Synerty", email = "contact@synerty.com" }]
+description = "Peek Platform - Common code that runs for Peek services"
+keywords = ["Peek", "Python", "Platform", "synerty"]
+classifiers = []
+dependencies = [
+    # packages used for the platform to test and upgrade it's self
+    "pip >= 21.0",
+    "virtualenv >= 15.1.0",
+    "twine",
+    # networking and async framework. Peek is based on Twisted.
+    "Cython >= 0.21.1",
+    "Twisted[tls,conch]",
+    "pyOpenSSL", # PEEK-1136
+    "pyasn1 >= 0.1.9",
+    "pyasn1-modules >= 0.0.8",
+    # Database
+    "psycopg[binary]", # PostGreSQL for Linux
+    "SQLAlchemy", # Database abstraction layer
+    "alembic >= 0.8.7", # Database migration utility
+    # installed and configured first
+    # Utilities
+    "python-dateutil >= 2.6.0",
+    "Pygments >= 2.0.1", # Generate HTML for code that is syntax styled
+    "watchdog >= 0.8.3",
+    # Used to detect file changes and re-copy them for frontend builds
+    # Licensing
+    "pycryptodome",
+    "cryptography",
+    # Celery packages
+    "flower",
+    # "amqp >= 1.4.9",  # DEPENDENCY LINK BELOW
+    # Potentially useful packages
+    # "GitPython >= 2.0.8",
+    # "jira",
+    # "dxfgrabber >= 0.7.4",
+    # Peek platform dependencies, all must match
+    "peek-plugin-base==4.0.1", ##==%s" % py_package_name,
+    "peek-core-device==4.0.1", ##==%s" % py_package_name,
+    "peek-core-email==4.0.1", ##==%s" % py_package_name,
+    # Memory logging
+    "psutil",
+    # pty utility
+    "pexpect",
+    # ========= LINUX DEPs ===============
+    # We still require shapely on windows, but we need to manually download the win wheel
+    # Geospatial shape manipulation
+    "Shapely >= 1.5.16; platform_system=='Linux'",
+    # We still require pymssql on windows, but we need to manually download the win wheel
+    "pymssql; platform_system=='Linux'",
+    # Celery 4 is not supported on windows
+    "future; platform_system=='Linux'", # This is required by celery
+    "celery[redis,auth]; platform_system=='Linux'",
+    # ========= DEV DEPs ===============
+    "coverage >= 4.2",
+    "mock >= 2.0.0",
+    "selenium >= 2.53.6"
+]
+
+[project.urls]
+Homepage = "https://github.com/Synerty/peek-office-service"
+
+
+[project.scripts]
+run_peek_office_service = "peek_office_service.run_peek_office_service:main"
+run_peek_office_service_build_only = "peek_office_service.run_peek_office_service_build_only:main"
+winsvc_peek_office_service = "peek_office_service.winsvc_peek_office_service:main"
+
+#https://stackoverflow.com/a/75636144
+
+# exclude/include in python packages
+# use from ... import ... for package paths
+[tool.setuptools.packages.find]
+where = ["."]
+namespaces = false
+exclude = ["*.tests", "*.tests.*", "tests.*", "tests"]
+
+# includes for data files - files outside of python packages
+[tool.setuptools.package-data]
+
+# exludes for data files - files outside of python packages
+[tool.setuptools.exclude-package-data]
+
+
+[tool.pylsp-mypy]
+enabled = true
+live_mode = true
+strict = true
+
+[tool.pycodestyle]
+max-line-length = 80
+
+[tool.isort]
+profile = "black"
+
