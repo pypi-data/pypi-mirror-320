@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: BayesMonSTR
+Version: 0.0.1
+Summary: A small package
+Project-URL: Homepage, https://wenx00.github.io/BayesMonSTR
+Project-URL: Repository, https://github.com/wenx00/BayesMonSTR.git
+Author-email: Wenxuan Fan <fanwenxuan@westlake.edu.cn>
+Keywords: life-science
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.11
+Requires-Dist: numpy>=1.8
+Description-Content-Type: text/markdown
+
+# BayesMonSTR
