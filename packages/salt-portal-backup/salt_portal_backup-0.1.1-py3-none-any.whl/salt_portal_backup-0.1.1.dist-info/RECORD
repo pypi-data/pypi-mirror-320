@@ -1,0 +1,11 @@
+salt_portal_backup/__about__.py,sha256=PWw22bpwF-ornD1f98aFRl26grNg1m_HVo8HfD7c9os,150
+salt_portal_backup/__init__.py,sha256=9q6tni3BCr03W_JFLpM-QA8BvEkDdEfBisd4iD0Ymoc,164
+salt_portal_backup/backup.py,sha256=R2LwdZWryWUof62mpxJr5M1c4KgHABQvlKkVfMcCvvk,1510
+salt_portal_backup/database.py,sha256=QqqV5LgxT2xwl-AJXh_NDHfjqNn9q490kNe74zGEEyA,7524
+salt_portal_backup/salt_portal.py,sha256=CJkpPyfc1xUVLL0n5I5Udu2PmR0Tg7pvGht6ornJ0U4,10316
+salt_portal_backup/web_scraping.py,sha256=Yp8f8n0PPHbdE9U-7WPuOL-Rj_0gFRrlI1DraS8EGEU,8772
+salt_portal_backup-0.1.1.dist-info/METADATA,sha256=RFnLZikGetpnzUaX6m3u9lGBGEC4UMYCJ_q55qzM0KU,5702
+salt_portal_backup-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+salt_portal_backup-0.1.1.dist-info/entry_points.txt,sha256=0gdpWg0utKr9wquW3XwginXtLmfjngHOD-ulWd4Guok,70
+salt_portal_backup-0.1.1.dist-info/licenses/LICENSE.txt,sha256=uUN2oFSJOQVchZYR8Khr6nolFdE0fxfV4_inbBaNW_s,1536
+salt_portal_backup-0.1.1.dist-info/RECORD,,
