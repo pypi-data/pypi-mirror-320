@@ -1,0 +1,10 @@
+digital_ocean_cluster/__init__.py,sha256=QGGTgy_S9V7y1RpMtlEAxUF4rVUxKoQV3EU1KAI97tU,461
+digital_ocean_cluster/api.py,sha256=Svx0yketZDZc6we04prKoyb8sKauqZy27OZ0RYyvdGY,13158
+digital_ocean_cluster/cli.py,sha256=dibfAZIh0kXWsBbfp3onKLjyZXo54mTzDjUdzJlDlWo,231
+digital_ocean_cluster/cluster.py,sha256=E1zBgOxSop_pSzVS26as0dzCVy6-JF7c7hRbCLgUKaU,12046
+digital_ocean_cluster/assets/example.txt,sha256=lTBovRjiz0_TgtAtbA1C5hNi2ffbqnNPqkKg6UiKCT8,54
+digital_ocean_cluster-1.0.3.dist-info/LICENSE,sha256=b6pOoifSXiUaz_lDS84vWlG3fr4yUKwB8fzkrH9R8bQ,1064
+digital_ocean_cluster-1.0.3.dist-info/METADATA,sha256=iUsDAed2-nEGGinbwJsgyy_Gn-F0EuUpZxNUVaE2Kjs,4539
+digital_ocean_cluster-1.0.3.dist-info/WHEEL,sha256=9Hm2OB-j1QcCUq9Jguht7ayGIIZBRTdOXD1qg9cCgPM,109
+digital_ocean_cluster-1.0.3.dist-info/top_level.txt,sha256=aQsYPPKoNvj30C-n0vZkFEfchOJShKdP6cQhHEI9sR8,22
+digital_ocean_cluster-1.0.3.dist-info/RECORD,,
