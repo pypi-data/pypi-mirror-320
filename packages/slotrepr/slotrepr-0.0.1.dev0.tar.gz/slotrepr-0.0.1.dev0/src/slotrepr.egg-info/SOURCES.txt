@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+src/slotrepr/__init__.py
+src/slotrepr.egg-info/PKG-INFO
+src/slotrepr.egg-info/SOURCES.txt
+src/slotrepr.egg-info/dependency_links.txt
+src/slotrepr.egg-info/top_level.txt
+src/slotrepr/core/__init__.py
+src/slotrepr/tests/__init__.py
+src/slotrepr/tests/test_easy.py
