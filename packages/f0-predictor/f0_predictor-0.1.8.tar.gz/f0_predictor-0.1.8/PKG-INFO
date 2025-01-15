@@ -1,0 +1,31 @@
+Metadata-Version: 2.2
+Name: f0-predictor
+Version: 0.1.8
+Summary: A deep learning model for F0 contour prediction with Viterbi smoothing
+Home-page: https://github.com/chemvatho/f0-predictor
+Author: chemvatho
+Author-email: your.email@example.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: torch>=1.9.0
+Requires-Dist: numpy>=1.19.2
+Requires-Dist: praat-parselmouth>=0.4.0
+Requires-Dist: matplotlib>=3.3.4
+Requires-Dist: scikit-learn>=0.24.2
+Requires-Dist: scipy>=1.6.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# f0-predictor
