@@ -1,0 +1,2 @@
+brynq-sdk-brynq>=2
+mandrill-really-maintained<=2,>=1
