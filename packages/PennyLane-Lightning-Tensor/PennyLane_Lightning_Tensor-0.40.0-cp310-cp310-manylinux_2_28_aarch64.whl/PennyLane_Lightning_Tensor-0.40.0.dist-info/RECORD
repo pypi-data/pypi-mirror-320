@@ -1,0 +1,12 @@
+pennylane_lightning/lightning_tensor_ops.cpython-310-aarch64-linux-gnu.so,sha256=_MKrhAy0VOnx1XGHlUGlvsxYeiPLc9gkUSB-o44VCyM,1200097
+pennylane_lightning/lightning_tensor/__init__.py,sha256=y2DrEuU_gP2lV2jKVoR7qcpcGO_1LXTqYF6cIS7ULTU,737
+pennylane_lightning/lightning_tensor/lightning_tensor.py,sha256=4p6O_nhfTvzWtvQXqlgDTcr0EzBvOG7cT5q9S5kXY-A,21163
+pennylane_lightning/lightning_tensor/_tensornet.py,sha256=uMSlQ6C6IVbWXSctaYXTiDj-2qGKvXObMpUKOl9y_oc,19937
+pennylane_lightning/lightning_tensor/_measurements.py,sha256=hCv1M6--Zody4Tph8eWlD3K4-qqKApJLJGzEFNBHmh0,15135
+PennyLane_Lightning_Tensor.libs/libgomp-98df74fd.so.1.0.0,sha256=c92itWhSYBOIWRdkLAttSVj5yIr-O0pzI8LXUO4jbGo,343345
+PennyLane_Lightning_Tensor-0.40.0.dist-info/WHEEL,sha256=HycLtGDtRdQpdKNor4za_3AtmaZSLodNDvEi_WuwdaQ,114
+PennyLane_Lightning_Tensor-0.40.0.dist-info/entry_points.txt,sha256=2IpSy50QiwMzPv1qWJeCtp_oEEHsOvaQbRV8G5ExdrM,92
+PennyLane_Lightning_Tensor-0.40.0.dist-info/METADATA,sha256=0K3GC-1tm5n2ccS4OmFQV7k4_-aOM70rxdt-u2fHJKs,28180
+PennyLane_Lightning_Tensor-0.40.0.dist-info/RECORD,,
+PennyLane_Lightning_Tensor-0.40.0.dist-info/LICENSE,sha256=_zKpiTfJGLmlVz4pw88ztD4wTe2QkkUNBGSaac54sjM,11720
+PennyLane_Lightning_Tensor-0.40.0.dist-info/top_level.txt,sha256=G8tVqgen55ojHMLJr9_CDbxbX-_frQCZWMCqUvvGIZI,41
