@@ -1,0 +1,10 @@
+README.md
+setup.py
+MetaVisionary/__init__.py
+MetaVisionary/few_shot_meta.py
+MetaVisionary.egg-info/PKG-INFO
+MetaVisionary.egg-info/SOURCES.txt
+MetaVisionary.egg-info/dependency_links.txt
+MetaVisionary.egg-info/entry_points.txt
+MetaVisionary.egg-info/requires.txt
+MetaVisionary.egg-info/top_level.txt
