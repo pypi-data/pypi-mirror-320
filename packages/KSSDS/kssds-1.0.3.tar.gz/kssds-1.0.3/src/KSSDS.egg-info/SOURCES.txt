@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+README_PYPI.md
+setup.py
+src/KSSDS/T5_encoder.py
+src/KSSDS/__init__.py
+src/KSSDS/inference.py
+src/KSSDS.egg-info/PKG-INFO
+src/KSSDS.egg-info/SOURCES.txt
+src/KSSDS.egg-info/dependency_links.txt
+src/KSSDS.egg-info/requires.txt
+src/KSSDS.egg-info/top_level.txt
