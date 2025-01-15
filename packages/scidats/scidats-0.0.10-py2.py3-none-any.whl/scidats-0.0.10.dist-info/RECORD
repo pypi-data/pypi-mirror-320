@@ -1,0 +1,17 @@
+scidats/__init__.py,sha256=L55sbnwhCp3n9IzQB2HNeM4yO_0CFketx-R7nYRADjg,324
+scidats/__main__.py,sha256=SWu9Ty_xKevilNarfp3QT-_Tg-Y9ZIfAz4bkWmUGPZc,1891
+scidats/metadata_model_scidats_core.py,sha256=NXPFOwgVZVhjSzO0-vm3rbgq8VMkxNHcOWle_IYr_40,13888
+scidats/metadata_model_scidats_core_context.py,sha256=umK1sUfrEuHgaZPhiBd4Be1d4TxEdeZPfdbm-YYa5rU,3397
+scidats/metadata_model_scidats_dcat_ap.py,sha256=iT5BOqp32Kkuj7fTE6tjBEw8HDqhddYsk8qaSYoNbjg,53220
+scidats/metadata_model_scidats_dcat_ap_context.py,sha256=mB9L9mlLBv7ztek7nmuogfeg0CS4xj6QtLCFs_l5OjY,9153
+scidats/metadata_model_scidats_dcmi.py,sha256=C9Np87q-w27NF8FfhvXRzZ6ICmwgY2ZRlZ8hKWJQflA,20017
+scidats/metadata_model_scidats_dcmi_context.py,sha256=loBeL5_8OpsRzav3PyDU2f67ukx3LQIar6i6JXLawVc,3955
+scidats/metadata_old.py,sha256=pqsWZqK_GvO8M5VGBgDadeGKLQ88ZlM5q9SU5-dRQ-U,1253
+scidats/scidats_impl.py,sha256=DcuHEy3R_6wcQFqrHJCnF6TNIONZjT67k4xT_K1H5QE,9765
+scidats/scidats_interface.py,sha256=x1tUhL9_Ukj2SpNZe0HUlhc83sv3DIMTdfRO1P8Zxog,2784
+scidats-0.0.10.dist-info/METADATA,sha256=udw7XRVOqlPsC_YUhru2sN6ipSi1eXY7kKnO4ncmnBE,6116
+scidats-0.0.10.dist-info/WHEEL,sha256=tkmg4JIqwd9H8mL30xA7crRmoStyCtGp0VWshokd1Jc,105
+scidats-0.0.10.dist-info/entry_points.txt,sha256=eVzrirH8eArULaPQOP47rnJ-a7_k_VZV8J88EQR7H_4,50
+scidats-0.0.10.dist-info/licenses/AUTHORS.md,sha256=mrYIFL4yWorS583e1VQbfc3dJKsDuOF9B1L_gjUHiUg,264
+scidats-0.0.10.dist-info/licenses/LICENSE,sha256=_C2F3_1dm-waBP4JzGrKUnIYHEvfOpytqXvLnPRu7pg,1069
+scidats-0.0.10.dist-info/RECORD,,
