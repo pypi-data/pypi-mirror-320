@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.setuptools_scm]
+version_scheme = "guess-next-dev"
+local_scheme = "no-local-version"
+write_to = "rattr/_version.py"
+
+
+[tool.black]
+line-length = 88
+
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+
+force-exclude = true
+extend-exclude = [
+  'venv',
+  'rattr/_version.py',
+  'tests/snippets/*',
+  'tests/regression/code/**/*.py',
+]
+
+[tool.ruff.lint]
+select = [
+  'E',      # pycodestyle: E
+  'W',      # pycodestyle: W
+  'F',      # pyflakes: F
+  'B',      # flake8-bugbear: B
+  'N',      # pep8-naming: N
+  'I',      # isort: I
+]
+ignore = [
+  'ANN101', # Missing annotation for `self`:  https://docs.astral.sh/ruff/rules/missing-type-self/
+  'ANN102', # Missing annotation for `cls`:   https://docs.astral.sh/ruff/rules/missing-type-cls/
+  'ANN401', # Annotated with `Any`: https://beta.ruff.rs/docs/rules/any-type/
+  'E501',  # Line to long: https://beta.ruff.rs/docs/rules/line-too-long/
+  'E741',  # Ambiguous variable name: https://beta.ruff.rs/docs/rules/ambiguous-variable-name/
+  'B905',  # Zip without strict flag
+  'N801',  # Class names should use the CapWords convention (clashes with TestBlah_X and TestBlah_Y)
+  'N802',  # Function name should be lowercase
+  'N803',  # Argument name should be lowercase
+  'N805',  # First argument of a method should be named `self` (abstractstaticmethod clashes with this)
+  'N806',  # Variable in function should be lowercase (MyClass = type(...))
+  'N818',  # Error suffix in exception names
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.isort]
+required-imports = [
+  "from __future__ import annotations",
+]
+
+relative-imports-order = "closest-to-furthest"
+combine-as-imports = true
+
+section-order = [
+  "future",
+  "standard-library",
+  "third-party",
+  "first-party",
+  "local-folder",
+]
