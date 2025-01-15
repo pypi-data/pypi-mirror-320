@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+flexi_datareader.egg-info/PKG-INFO
+flexi_datareader.egg-info/SOURCES.txt
+flexi_datareader.egg-info/dependency_links.txt
+flexi_datareader.egg-info/requires.txt
+flexi_datareader.egg-info/top_level.txt
+model/__init__.py
+model/datareader.py
+tests/__init__.py
+tests/test_datareader.py
