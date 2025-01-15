@@ -1,0 +1,43 @@
+[build-system]
+requires = ["scikit-build-core>=0.10.0", "nanobind>=2.4.0", "numpy>=2.0.0", "setuptools_scm>=8"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "event_camera_drivers"
+dynamic = ["version"] # Read version from __init__.py
+description = "Python event camera drivers for Inivation and AEStream"
+readme = "README.md"
+authors = [
+    { name = "Jens Egholm Pedersen", email = "jens@jepedersen.dk" }
+]
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: C++"
+]
+license = { file = "LICENSE" }
+dependencies = [ "nanobind>=2.4", "numpy>=1.35" ]
+
+[tool.scikit-build]
+build-dir = "build/{wheel_tag}"
+metadata.version.provider = "scikit_build_core.metadata.setuptools_scm"
+
+[tool.cibuildwheel]
+build-verbosity = 1
+
+# Skip PyPy, 32-bit builds, and musllinux
+skip = ["pp*", "*-win32", "*-manylinux_i686", "*-musllinux*"]
+
+# Set platform-specific build configurations
+[tool.cibuildwheel.macos]
+archs = ["x86_64", "arm64"]
+
+[tool.cibuildwheel.linux]
+archs = ["x86_64"]
+
+[tool.cibuildwheel.windows]
+archs = ["AMD64"]
+
+[tool.setuptools_scm]
