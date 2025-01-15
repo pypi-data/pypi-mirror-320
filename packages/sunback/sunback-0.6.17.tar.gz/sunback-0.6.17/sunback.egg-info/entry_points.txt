@@ -1,0 +1,3 @@
+[console_scripts]
+sunback-run = sunback.run.run_client_background:run_client
+sunback-serve = sunback.run.run_server_lingon:run_server_lingon

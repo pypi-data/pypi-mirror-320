@@ -1,0 +1,28 @@
+name: test
+channels:
+  - conda-forge
+
+dependencies:
+    # Base depends
+  - python
+  - pip
+  - astropy
+  - pathlib
+  - numpy
+  - sunpy[net]
+  - pillow
+  - appscript
+
+    # Testing
+  - pytest
+  - pytest-cov
+  - codecov
+
+    # Pip-only installs
+  - pip:
+      - urllib
+      - time
+#      - mpi4py
+
+#    - codecov
+

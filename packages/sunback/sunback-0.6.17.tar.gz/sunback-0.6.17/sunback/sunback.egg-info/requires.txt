@@ -1,0 +1,23 @@
+boto3
+matplotlib
+twine
+pillow
+moviepy
+parfive
+opencv-python
+beautifulsoup4
+sunpy
+scipy
+astropy
+html5lib
+numpy
+sunkit-image
+aiapy
+xarray
+
+[:platform_system == "Darwin"]
+appscript
+
+[test]
+pytest
+pytest-runner

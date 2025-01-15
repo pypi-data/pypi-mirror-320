@@ -1,0 +1,26 @@
+boto3
+matplotlib
+sunpy
+astropy
+scipy
+opencv-python
+xarray
+requests
+
+[server]
+twine
+pillow
+moviepy
+parfive
+beautifulsoup4
+html5lib
+numpy
+sunkit-image
+aiapy
+
+[server:platform_system == "Darwin"]
+appscript
+
+[test]
+pytest
+pytest-runner
