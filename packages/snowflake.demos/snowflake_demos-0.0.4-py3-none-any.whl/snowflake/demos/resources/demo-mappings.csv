@@ -1,0 +1,11 @@
+demo_name,title,num_steps
+get-started-snowpark-ws-nb,Getting Started with Snowpark in Snowflake Notebooks and Python Worksheets,1
+get-started-snowflake-ml,Getting Started with Snowflake ML,4
+analysis-churn-notebooks,Data Analysis and Churn Prediction Using Snowflake Notebooks,2
+image-anomaly-notebooks,Defect detection using Distributed PyTorch with Snowflake Notebooks,1
+support-case-cortex,"Streamlining Support Case Analysis with Snowflake Cortex
+",1
+scale-embeddings-notebooks,Scale Embeddings with Snowflake Notebooks on Container Runtime,2
+get-started-container-runtime,Getting Started with Snowflake Container Runtime,1
+intro-to-feature-store-nb,Introduction to Feature Store using Snowflake Notebooks,1
+get-started-partitioned-models,Getting Started with Partitioned Models and Snowflake Model Registry,1
