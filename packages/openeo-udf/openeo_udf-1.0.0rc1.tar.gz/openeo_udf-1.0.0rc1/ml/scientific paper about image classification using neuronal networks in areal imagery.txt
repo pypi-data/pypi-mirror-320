@@ -1,0 +1,102 @@
+Here is a list of scientific paper that make use of neuronal networks to analyze satellite images:
+
+Some of them are using pre-trained CNN like the VGG19 and VGG 16 NN available in pytorch.
+
+There are training dataset available for land classification training:
+    http://weegee.vision.ucmerced.edu/datasets/landuse.html
+    https://captain-whu.github.io/DOTA/index.html
+
+Paper:
+
+1. Satellite Image Scene Classification via ConvNet with Context Aggregation
+   https://arxiv.org/abs/1802.00631
+
+2. Tile2Vec: Unsupervised representation learning for spatially distributed data
+   https://arxiv.org/abs/1805.02855
+   https://github.com/ermongroup/tile2vec
+
+3. Very Deep Convolutional Networks for Large-Scale Image Recognition
+   https://arxiv.org/abs/1409.1556
+
+3. Mask R-CNN from facebook research
+   https://arxiv.org/abs/1703.06870
+   https://github.com/facebookresearch/Detectron
+
+4. Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks
+   https://arxiv.org/abs/1511.06434
+
+5. Learning Transferable Deep Models for Land-Use Classification with High-Resolution Remote Sensing Images
+   https://arxiv.org/abs/1807.05713
+
+6. Machine learning based hyperspectral image analysis: A survey
+   https://arxiv.org/abs/1802.08701
+
+   Cite: "A bias-variance analysis in [201] found that random
+          forest with embedded feature selection and Markov random field (MRF)
+          based post-processing are best suited for hyperspectral data."
+
+   Cite: "Wu et al. [302] showed that a convolutional RNN [332] (a network that
+          has few convolutional layers followed by RNN) is better choice for spectra
+          classification than LSTM and baseline CNN."
+
+   Cite: "Generative adversarial networks (GANs) and variational autoencoders (VAs)
+          look very promising for modeling unlabeled hyperspectral data."
+
+          "Deep learning based spatial prior could turn out to be better than
+           Markov random fields based prior for land cover classification.
+           GANs and VAs models for hyperspectral images should also prove to be good
+           for image processing tasks, such as pansharpening, superresolution, denoising, and inpainting."
+
+   Cite: "Another kind of data fusion would be to incorporate
+          non-imaging data with imaging data. For instance, information from digital maps and geotagged user
+          data could be used alongside information from remotely observed hyperspectral images for land cover
+          mapping of urban areas. Due to their capabilities to model semantic relationships between different
+          variables, conditional random models (CRFs) could be the best for this kind of fusion of information.
+          In fact, recently a higher order CRF was used to model the dependencies between land use and land cover
+          of a remotely imaged area [6]."
+
+7. DeepGlobe 2018: A Challenge to Parse the Earth through Satellite Images
+   https://arxiv.org/abs/1805.06561
+
+8. Aerial Imagery for Roof Segmentation: A Large-Scale Dataset towards Automatic Mapping of Buildings
+   https://arxiv.org/abs/1807.09532
+
+9. Land cover mapping at very high resolution with rotation equivariant CNNs: towards small yet accurate models
+   https://arxiv.org/abs/1803.06253
+
+10. High-Resolution Semantic Labeling with Convolutional Neural Networks
+   https://arxiv.org/abs/1611.01962
+
+11. Deforestation Prediction Using Neural Networks and Satellite Imagery in a Spatial Information System
+   https://arxiv.org/abs/1803.02489
+
+12. Soft Computing Techniques for Change Detection in remotely sensed images : A Review
+   https://arxiv.org/abs/1506.00768
+
+13. DOTA: A Large-scale Dataset for Object Detection in Aerial Images
+    https://arxiv.org/abs/1711.10398
+
+14. Exploiting Deep Features for Remote Sensing Image Retrieval: A Systematic Investigation
+    https://arxiv.org/abs/1707.07321
+
+    Cite: "Even  though  some  literatures  have  made  advantages  of  deep  features  for
+           RS  retrieval  task,  there  still  no comprehensive research on how to optimize
+           the transferability of CNN models to RS retrieval.  With this in mind, we investigate
+           almost all variables concerned to the property of CNN representations on several public
+           HRRS datasets and analyze the effects of each factor."
+
+15. Large-scale Land Cover Classification in GaoFen-2 Satellite Imagery
+    https://arxiv.org/abs/1806.00901
+
+16. Visualizing and Understanding Convolutional Networks
+    https://arxiv.org/abs/1311.2901
+
+Git repos:
+    https://github.com/adnanardhian/CNN-Ensemble-Classifier-Land-Use-Classification
+    https://github.com/gregbehm/UC-Merced-Pretrained-CNN
+    https://github.com/chrieke/awesome-satellite-imagery-competitions
+
+
+PyTorch models:
+    https://pytorch.org/docs/stable/torchvision/models.html
+
