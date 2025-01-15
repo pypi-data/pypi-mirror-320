@@ -1,0 +1,2 @@
+[console_scripts]
+f-ecs-bash = aws.ecs_bash:main
