@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "projectm2_hermine_delamaire"
+version = "0.7.3"
+description = "Create, analyze, and compare backtesting strategies for financial portfolios. Stores backtest results securely on a blockchain."
+authors = ["Hermine Delamaire"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "projectm2_hermine_delamaire", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.2"
+numpy = "^2.0.1"
+yfinance = "^0.2.41"
+sec-cik-mapper = "^2.1.0"
+scipy = "<1.14.0"
+colorama = "^0.4.6"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+python-semantic-release = "^9.8.7"
+
+
+[tool.poetry.group.jupyter.dependencies]
+notebook = "^7.2.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+[tool.semantic_release] 
+version_variable = "pyproject.toml:version" 
+version_toml = [ 
+"pyproject.toml:tool.poetry.version", 
+] 
