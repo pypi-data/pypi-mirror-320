@@ -1,0 +1,58 @@
+Metadata-Version: 2.4
+Name: sandlerprops
+Version: 0.0.1
+Summary: A python interface to the pure-component properties database for Sandler 5e
+Author-email: Cameron F Abrams <cfa22@drexel.edu>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Description-Content-Type: text/markdown
+
+# sandlerprops
+> A Python interface to the pure-component properties database that originally accompanied the textbook _Chemical, Biochemical, and Engineering Thermodynamics_ (4th edition) by Stan Sandler (Wiley, USA).
+
+## Installation
+
+```sh
+pip install sandlerprops
+```
+
+## Usage example
+
+```python
+>>> from sandlerprops.properties import Properties as P
+>>> m=P.get_compound('methane')
+>>> m.Molwt
+16.043
+>>> p.U.Molwt
+'g/mol'
+>>> m.Tc
+190.4
+>>> p.U.Tc
+'K'
+```
+
+## Release History
+
+* 0.0.1
+    * Initial version
+
+## Meta
+
+Cameron F. Abrams – cfa22@drexel.edu
+
+Distributed under the MIT license. See ``LICENSE`` for more information.
+
+[https://github.com/cameronabrams](https://github.com/cameronabrams/)
+
+## Contributing
+
+1. Fork it (<https://github.com/cameronabrams/ThermoProblems/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
