@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+PersianNameGenerator.egg-info/PKG-INFO
+PersianNameGenerator.egg-info/SOURCES.txt
+PersianNameGenerator.egg-info/dependency_links.txt
+PersianNameGenerator.egg-info/top_level.txt
