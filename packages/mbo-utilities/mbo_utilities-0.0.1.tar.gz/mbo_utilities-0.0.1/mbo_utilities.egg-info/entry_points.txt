@@ -1,0 +1,2 @@
+[console_scripts]
+mbo = utilties.python.:main

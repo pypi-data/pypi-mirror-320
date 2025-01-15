@@ -1,0 +1,4 @@
+tifffile
+numpy<2.0,>=1.24.3
+skimage
+fastplotlib[notebook]
