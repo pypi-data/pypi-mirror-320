@@ -1,0 +1,65 @@
+Metadata-Version: 2.2
+Name: flexi_datareader
+Version: 1.0.2
+Summary: A versatile library for reading datasets from multiple formats and generating synthetic datasets.
+Home-page: https://github.com/YousofLHC/flexi_datareader
+Author: Yousof Ghalenoei
+Author-email: yousof.ghalenoei2017@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas>=1.0
+Requires-Dist: numpy>=1.18
+Requires-Dist: scipy>=1.4
+Requires-Dist: scikit-learn>=0.24
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Flexi DataReader
+
+**Flexi DataReader** is a powerful and versatile Python library for working with datasets in multiple formats. It simplifies the process of reading files, generating synthetic datasets, and loading predefined datasets from scikit-learn.
+
+---
+
+## ðŸŒŸ Features
+
+- Automatically detects and processes files in various formats:
+  - CSV
+  - JSON
+  - Excel (`.xlsx`)
+  - MATLAB (`.mat`)
+  - Parquet
+- Generates synthetic datasets for machine learning using scikit-learn:
+  - Classification
+  - Regression
+  - Clustering
+- Loads predefined datasets from scikit-learn:
+  - Iris, Digits, California Housing, and more.
+- Robust error handling for missing files, invalid data, and unsupported formats.
+
+---
+
+## ðŸš€ Installation
+
+Install the library directly from PyPI:
+
+```bash
+pip install flexi-datareader
+```
+To install the latest development version from GitHub
+
+```bash
+pip install git+https://github.com/YousofLHC/flexi-datareader.git
+```
