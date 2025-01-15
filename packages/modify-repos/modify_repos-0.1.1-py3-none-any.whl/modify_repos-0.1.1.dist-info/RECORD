@@ -1,0 +1,15 @@
+modify_repos-0.1.1.dist-info/METADATA,sha256=RFQPa0pSuwKQjq3dstnBIa_dAXgPhaef_samAtJ1sqQ,2285
+modify_repos-0.1.1.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+modify_repos-0.1.1.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+modify_repos-0.1.1.dist-info/licenses/LICENSE.txt,sha256=4y_l2cfaP-b0dBI7z2NoMOPmP1DuUmL-O1YmockwQTM,1058
+modify_repos/__init__.py,sha256=QKEUxwNEDtrLJr0TDe5YKJymvo9zK2bymkJBTDbjihI,215
+modify_repos/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modify_repos/repo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modify_repos/repo/base.py,sha256=JFyXf2-Lg8u4ukADVOcLqrs1xpyrSjCbJ4QddYDyqtI,4664
+modify_repos/repo/git.py,sha256=DSh_UXrdMXP0inX4_cakG7Du8uG1zG8SXHXMXBcszPk,2960
+modify_repos/repo/github.py,sha256=iCrrTxsXb9zGdhC9Rn_tGWXIz6Wpit6syBTUSgo-9S8,2331
+modify_repos/script/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modify_repos/script/base.py,sha256=A9jv6kXqeH9h-w7TqvPrC-uveVxRg6vwiS3-PAT3-aI,6367
+modify_repos/script/github.py,sha256=V5Uk3mY6zc4uOqVKH4z7DxxDsMkMoVminCdgRfn8tXI,1279
+modify_repos/utils.py,sha256=LjcnXf7I17Yxoyse2qYMwrfa1M4Jwqc2oUA3ll7l2ZM,2599
+modify_repos-0.1.1.dist-info/RECORD,,
