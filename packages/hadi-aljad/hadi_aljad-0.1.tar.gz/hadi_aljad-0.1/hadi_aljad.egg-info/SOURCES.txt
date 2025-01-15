@@ -1,0 +1,7 @@
+LICENSE.TXT
+setup.py
+code/__init__.py
+hadi_aljad.egg-info/PKG-INFO
+hadi_aljad.egg-info/SOURCES.txt
+hadi_aljad.egg-info/dependency_links.txt
+hadi_aljad.egg-info/top_level.txt
