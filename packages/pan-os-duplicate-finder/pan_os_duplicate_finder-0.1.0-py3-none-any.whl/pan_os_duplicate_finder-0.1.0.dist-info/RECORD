@@ -1,0 +1,15 @@
+pan_os_duplicate_finder/__init__.py,sha256=f1_HKRaEylPIi3MJvLqi2XuOalHMGX3jOYSf1m1c0So,349
+pan_os_duplicate_finder/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pan_os_duplicate_finder/commands/create_settings.py,sha256=7-N2Om4dpXRPD1ZXm_iXkJry5SOpnz0PYD0f2Rk_m_0,926
+pan_os_duplicate_finder/commands/find_duplicates.py,sha256=0oMTvYn5vqH727k5Mto38P-MrxsjvP29uGXgkJNFlh0,5144
+pan_os_duplicate_finder/commands/show_version.py,sha256=ISRUitkVquGIBwGrysOhA_NBcBilkxSr6agY2_ljcUc,314
+pan_os_duplicate_finder/main.py,sha256=M7V3EZXjynkYdYMjUZDjFpKPno4kU4930xQ_tZAJF4c,1531
+pan_os_duplicate_finder/utilities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pan_os_duplicate_finder/utilities/analysis.py,sha256=U_nIup2TDr9ZzLPcZ5ajUDcLXwp3e4NC6pLNkkWcgnk,836
+pan_os_duplicate_finder/utilities/settings.py,sha256=qYBdIhHOTQiNDo2yGG6S2Csh_x6sMskIHOA2MyPVTs8,1098
+pan_os_duplicate_finder/version.py,sha256=OFxdQCueStG96y6mnooeopsg7jBHUX6sjmKSB1U_yfk,87
+pan_os_duplicate_finder-0.1.0.dist-info/LICENSE,sha256=S8TA_4Vyl8KLHKp5ixf36yN5T_qCwYINMHLe8VsckkE,11348
+pan_os_duplicate_finder-0.1.0.dist-info/METADATA,sha256=vMQeS72oz5oDD4qfsRtBgYm_Vq7zDY1HnmCJu1Ua3MI,4414
+pan_os_duplicate_finder-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pan_os_duplicate_finder-0.1.0.dist-info/entry_points.txt,sha256=ZhfxLTvunKlMkFm9sHNrxZLbCbQr2-Pwudyz0d4HOYc,76
+pan_os_duplicate_finder-0.1.0.dist-info/RECORD,,

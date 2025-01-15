@@ -1,0 +1,3 @@
+[console_scripts]
+pan-os-duplicate-finder=pan_os_duplicate_finder.main:app
+
