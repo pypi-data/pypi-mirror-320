@@ -1,0 +1,8 @@
+numpy
+skretrieval
+
+[plotting]
+matplotlib
+
+[test]
+pytest
