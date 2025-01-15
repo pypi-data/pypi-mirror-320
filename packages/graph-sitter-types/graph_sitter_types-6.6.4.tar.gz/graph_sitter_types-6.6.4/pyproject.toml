@@ -1,0 +1,47 @@
+[project]
+name = "graph-sitter-types"
+dynamic = ["version", "urls"]
+description = "Types for the graph-sitter SDK"
+readme = "README.md"
+requires-python = ">=3.12, <3.14"
+dependencies = [
+    "rustworkx>=0.15.1",
+    "types-networkx",
+
+]
+[build-system]
+requires = ["hatchling", "hatch-vcs", "hatch-build-scripts"]
+build-backend = "hatchling.build"
+[tool.uv.sources]
+graph-sitter = { workspace = true }
+codegen-git = { workspace = true }
+codegen-utils = { workspace = true }
+[tool.hatch.version]
+source = "vcs"
+raw-options = { root = ".." }
+[tool.hatch.envs.default]
+installer = "uv"
+[tool.hatch.build]
+packages = ["out/typings/graph_sitter", "out/typings/codegen"]
+[tool.hatch.metadata.hooks.vcs]
+Homepage = "https://github.com/codegen-sh/graph_sitter"
+source_archive = "https://github.com/codegen-sh/graph_sitter/archive/{commit_hash}.zip"
+
+[tool.hatch.build.hooks.build-scripts]
+dependencies = ["graph-sitter", "codegen-git", "codegen-utils", "pyright"]
+[[tool.hatch.build.hooks.build-scripts.scripts]]
+commands = [
+    "rm -rf typings",
+    "rm -rf out",
+    "pyright --createstub graph_sitter",
+    "pyright --createstub codegen.utils",
+    "pyright --createstub codegen.git",
+    "touch typings/graph_sitter/py.typed",
+    "touch typings/codegen/py.typed",
+]
+artifacts = ["typings/**/*.pyi", "typings/**/py.typed"]
+out_dir = "out"
+clean_out_dir = true
+[tool.uv]
+cache-keys = [{ git = { commit = true, tags = true } }]
+

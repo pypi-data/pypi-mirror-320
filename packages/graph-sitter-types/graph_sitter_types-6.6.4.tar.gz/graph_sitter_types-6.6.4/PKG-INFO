@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: graph-sitter-types
+Version: 6.6.4
+Summary: Types for the graph-sitter SDK
+Requires-Python: <3.14,>=3.12
+Requires-Dist: rustworkx>=0.15.1
+Requires-Dist: types-networkx
