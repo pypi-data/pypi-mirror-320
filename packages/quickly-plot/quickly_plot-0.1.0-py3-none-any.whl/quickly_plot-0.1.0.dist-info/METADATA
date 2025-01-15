@@ -1,0 +1,102 @@
+Metadata-Version: 2.2
+Name: quickly-plot
+Version: 0.1.0
+Summary: A fluent interface for matplotlib plotting
+Home-page: https://github.com/alexthe2/quickly
+Author: Alexander Procelewski
+Author-email: alexprocelewski@gmail.com
+Project-URL: Bug Reports, https://github.com/alexthe2/quickly/issues
+Project-URL: Source, https://github.com/alexthe2/quickly
+Project-URL: Documentation, https://quickly.readthedocs.io/
+Keywords: matplotlib,plotting,data visualization,builder pattern,fluent interface
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib>=3.4.0
+Requires-Dist: seaborn>=0.11.0
+Requires-Dist: pandas>=1.2.0
+Requires-Dist: numpy>=1.19.0
+Requires-Dist: scipy>=1.6.0
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=2.12.0; extra == "dev"
+Requires-Dist: black>=21.0.0; extra == "dev"
+Requires-Dist: isort>=5.9.0; extra == "dev"
+Requires-Dist: flake8>=3.9.0; extra == "dev"
+Requires-Dist: mypy>=0.900; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: project-url
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Quickly 📊
+
+A fluent interface for matplotlib that makes plotting as simple as writing a sentence.
+
+## Installation
+
+```bash
+pip install quickly-plot
+```
+
+## Usage
+
+```python
+from quickly import Quickly
+import pandas as pd
+
+# Create sample data
+df = pd.DataFrame({
+    'age': range(20, 60),
+    'income': range(30000, 70000, 1000)
+})
+
+# Create different types of plots
+Quickly.using(df).x("age").y("income").line.plt()
+Quickly.using(df).x("age").y("income").scatter.plt()
+Quickly.using(df).x("age").y("income").bar.plt()
+
+# Add customization
+Quickly.using(df) \
+    .x("age") \
+    .y("income") \
+    .scatter \
+    .color("blue") \
+    .title("Age vs Income") \
+    .plt()
+
+# Plot with confidence intervals
+Quickly.using(df) \
+    .x("age", conf=0.95) \
+    .y("income") \
+    .line \
+    .plt()
+```
+
+## Features
+
+- Fluent interface with method chaining
+- Multiple plot types (line, scatter, bar, histogram, box, violin)
+- Built-in confidence intervals
+- Easy customization (colors, styles, titles)
+- Seaborn integration
+
+## License
+
+MIT License

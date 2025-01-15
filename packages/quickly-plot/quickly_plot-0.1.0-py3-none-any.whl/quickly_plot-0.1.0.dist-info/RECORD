@@ -1,0 +1,11 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/basic_usage.py,sha256=NCYRQOoyOZZqaSiawlTpYNyieFewp4cXZn-Q_ovxzeE,756
+quickly/__init__.py,sha256=KVa4LIFCSwVBi6Xqp-FVBwAyJjgCjVuOPM1jIaeACRs,762
+quickly/core.py,sha256=5xHyHZAcdAiRKRGL2Soqro2bod7DaHdyA0oZt12cAd8,25517
+quickly/version.py,sha256=HOmU5sgXU14tXjdvSe0iIIyluugGL0Y7R8eo1JaeyxE,50
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_quickly.py,sha256=jDsAKAFs9e07bGaRtJA42DHJJUoylSU4IWqba0p-k4k,915
+quickly_plot-0.1.0.dist-info/METADATA,sha256=qlJu9fzZVqg7xyzFEAd-uh1zJPChrSF3y3bGMNIfVQA,2765
+quickly_plot-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+quickly_plot-0.1.0.dist-info/top_level.txt,sha256=pje1dCUf6tGHz17WW9QahKV3TOQUEc9q2NnYh376XEs,23
+quickly_plot-0.1.0.dist-info/RECORD,,
