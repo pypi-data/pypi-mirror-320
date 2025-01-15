@@ -1,0 +1,4 @@
+polars
+huggingface-hub
+tld
+typing
