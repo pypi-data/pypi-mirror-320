@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: neutools
+Version: 0.0.1
+Summary: neutron panel debug tools
+Home-page: https://gitee.com/cxy_kevin/neutron
+Author: cxykevin
+Author-email: cxykevin@yeah.net
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: typer
+
+# neutron 工具包
+
+请参考 neutools --help
