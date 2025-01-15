@@ -1,0 +1,11 @@
+infini_gram/engine.py,sha256=fKI7xNyn3ABZPMcC5BRKsfIYstL7kk7Pm6s3z79UJFY,13249
+infini_gram/cpp_engine_u32.cpython-39-i386-linux-gnu.so,sha256=sPGNwR0pJts0HYWXPkA1l37vPzSNw066p2ntpK3x5_w,9491664
+infini_gram/rust_indexing,sha256=OIbN1HoKfE4QxCc43XSDlruL3DlQ1DpgLG2-lHcGOD8,1476040
+infini_gram/cpp_engine.cpython-39-i386-linux-gnu.so,sha256=T9gKYt0jWc7WDeUHmvRP9lG8Bk76ta6wXjh4TSq85qc,9515320
+infini_gram/indexing.py,sha256=ZIYOxvn4kNL-OYaZjdlQKs1JgHils4Pc4Pl3syPrNrs,11659
+infini_gram/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+infini_gram-2.2.0.dist-info/LICENSE,sha256=Ip_kCMHg2apUWB8kjxwGCtxJmFKhq9kWlKcSsk44Jm8,3035
+infini_gram-2.2.0.dist-info/top_level.txt,sha256=62zcl2-B1yCFLYpwqBHuw-xtRsbok9KowHofu4byBP0,12
+infini_gram-2.2.0.dist-info/METADATA,sha256=uZDfe1n1flq2YjANNRlKgyWFQWRpCzvIzUl6t7lU6Pg,1444
+infini_gram-2.2.0.dist-info/RECORD,,
+infini_gram-2.2.0.dist-info/WHEEL,sha256=NEIF2wUw0EUXY9EAyR3d0_GiUR-5hjwQwxqPA9wKFqQ,143
