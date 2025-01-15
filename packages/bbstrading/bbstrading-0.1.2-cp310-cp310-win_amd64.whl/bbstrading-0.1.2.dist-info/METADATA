@@ -1,0 +1,33 @@
+Metadata-Version: 2.2
+Name: bbstrading
+Version: 0.1.2
+Summary: Trading strategies development, backtesting and live Execution
+Author: Bertin Balouki SIMYELI
+Author-email: <bertin@bbstrader.com>
+Maintainer: Bertin Balouki SIMYELI
+License: Proprietary, All Rights Reserved
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+Requires-Dist: bbstrader
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: maintainer
+Dynamic: requires-dist
+Dynamic: summary
+
+# BBSTRADING
+
+`bbstrading` is a Python package that provides a wide range of trading strategies for backtesting and live trading. It is built on top of the `bbstrader` package, which provides a simple and flexible API for interacting with financial data and executing trades.
+
+## Installation
+
+You can see this [video](https://www.youtube.com/watch?v=GuynJhgYmCs) to help you install and use bbstrading
+
+
+```bash
+pip install bbstrading
+```
+You can then Run the Strategies using the scripts you received by email.

@@ -1,0 +1,15 @@
+bbstrading/__init__.cp310-win_amd64.pyd,sha256=D0t8xrlqteWW1DnyCp7NdhhqOtT64FBJrHQCPl8wFT8,20480
+bbstrading/__main__.cp310-win_amd64.pyd,sha256=PyVMwmaceb_4rW2wQ96GTU5E5cSHjJWPBo-aX7YZk9c,46592
+bbstrading/backtests.cp310-win_amd64.pyd,sha256=erkqJXyCkRXV1-nCWr9jy7jy9KvEbQmLpMHGzKew6dg,174080
+bbstrading/brokers.cp310-win_amd64.pyd,sha256=wOw8CQJdZHLADM11SoFfJDK8YFQpQzM_lHUz9syDG3A,80896
+bbstrading/config.cp310-win_amd64.pyd,sha256=fj9gn_JplJtwcHuJVa61XXidM_3uQ2AHmTnv1OyBDhA,132608
+bbstrading/execution.cp310-win_amd64.pyd,sha256=DWDpldFHYsyUNiWA2wHK_Xptqc18RmGrhFZDyY7Sg0M,224256
+bbstrading/scripts.cp310-win_amd64.pyd,sha256=Zos7xXvE6QzMtWpvnuQybLAuEedeZjpc0b0-GzDUk3g,175104
+bbstrading/strategies.cp310-win_amd64.pyd,sha256=agX4l_AetWExTe45bdc-bZSdQkq-ViTS5WA-uuQTcvY,742400
+bbstrading/utils.cp310-win_amd64.pyd,sha256=zaH3x9ShIha8HTYW8tDLGj86xKYbFxpIhZjaAWaXO8k,83456
+bbstrading-0.1.2.dist-info/LICENSE.rst,sha256=6cebLKV0qlcg3Xm9X47uD5JITTzup4kEfBkEFEqIfr8,2621
+bbstrading-0.1.2.dist-info/METADATA,sha256=MJ6134s5o1mDc3M886FZNzdt9QaKi9D-c1qEczgg3ws,1079
+bbstrading-0.1.2.dist-info/WHEEL,sha256=rzGfZgUcGeKSgIHGYMuqg4xE4VPHxnaldXH6BG0zjVk,101
+bbstrading-0.1.2.dist-info/entry_points.txt,sha256=XEOwSHTfGzyMgew4Wq4WQ4Gdp7spzOrmexFcGTqrsEk,56
+bbstrading-0.1.2.dist-info/top_level.txt,sha256=hHH0pgd7nI2xv_Q3qgdCjhceM3y9CXt-avAz2X_HsBM,11
+bbstrading-0.1.2.dist-info/RECORD,,
