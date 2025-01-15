@@ -1,0 +1,8 @@
+LICENSE.md
+README.md
+setup.py
+src/FeatureFlex.egg-info/PKG-INFO
+src/FeatureFlex.egg-info/SOURCES.txt
+src/FeatureFlex.egg-info/dependency_links.txt
+src/FeatureFlex.egg-info/requires.txt
+src/FeatureFlex.egg-info/top_level.txt
