@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pipmanager/__init__.py
+pipmanager/main.py
+pipmanagergui.egg-info/PKG-INFO
+pipmanagergui.egg-info/SOURCES.txt
+pipmanagergui.egg-info/dependency_links.txt
+pipmanagergui.egg-info/entry_points.txt
+pipmanagergui.egg-info/requires.txt
+pipmanagergui.egg-info/top_level.txt
