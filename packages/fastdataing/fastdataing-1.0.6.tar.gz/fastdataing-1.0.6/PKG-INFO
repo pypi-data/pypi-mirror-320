@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: fastdataing
+Version: 1.0.6
+Summary: Read themo info from lammps output file or log file
+Home-page: https://github.com/eastsheng/fastdataing
+Author: CHENDONGSHENG
+Author-email: eastsheng@hotmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.26.1
+Requires-Dist: matplotlib>=3.8.1
+Requires-Dist: scipy>=1.11.3
+Requires-Dist: Pillow>=10.2.0
+Requires-Dist: ezdxf==1.0.3
+Requires-Dist: tqdm>=4.66.1
+Requires-Dist: requests>=2.31.0
+Requires-Dist: PyPDF2>=2.1.0
+Requires-Dist: reportlab>=4.0.6
+
+### Common fast data processing methods
+
+> A collection of frequently employed functions!
+
+#### Smooth
+
+```
+import fastdataing.fastdataing as fd
+```
+
+- fd.smooth_MIS(x,y,factor=300): 
+  - smooth data
+- fd.smooth_SF(x,y,factors=[5,3]): 
+  - smooth data
+
+### files processing
+
+```
+import fastdataing.files as ff
+
+files = ff.get_files(directory="./",suffix="py")
+print(files)
+```
+
+- get_files(directory, suffix): 
+  - Read files with the same suffix in the folder and save them as a list
+
+### plot figs
+
+```
+import fastdataing.fastdataing as fd
+import matplotlib.pyplot as plt
+fig = fd.add_fig()
+ax = fd.add_ax(fig)
+plt.show()
+```
+
+- add_fig(figsize=(10,8)): 
+  - add a canvas, return ax
+
+### Figure Processing
+
+```
+import fastdataing.figure as ff
+```
+
+
+
+- fig2ico(png_file,ico_file=False):
+  - convert png to ico file
+- fig2binary(fig_file, binary_file=False, threshold=128):
+  - convert fig to binary image
+- binary2dxf(binary_image_file,dxf_file=False):
+  - convert binary to dxf format
+
+### ...
