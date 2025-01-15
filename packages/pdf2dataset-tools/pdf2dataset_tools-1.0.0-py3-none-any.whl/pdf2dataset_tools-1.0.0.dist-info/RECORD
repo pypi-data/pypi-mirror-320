@@ -1,0 +1,14 @@
+pdf2dataset/__init__.py,sha256=thLswRFFc0o9YymNxi1hS1pUNoOdWhTYJsG_pEHf9t4,91
+pdf2dataset/distributor.py,sha256=PaRQnkVO8AK_TjA2eD5NN8ysuuk0K4GBcCJ42Jya1c4,3955
+pdf2dataset/downloader.py,sha256=a0YisuTVhpeu8pohe_lsV9LlhcO_8lJkCzc2rOuHS14,9215
+pdf2dataset/logger.py,sha256=uLkhACbnZTqJMTdQXXG1eX7_mnHv3B-xTp-CCHbbnCo,10493
+pdf2dataset/main.py,sha256=RZMbPXcMmhk0E5BIGyD8HmCLPQ5QeEA3u3zufBRR0k4,7450
+pdf2dataset/reader.py,sha256=-eL8OtfFtqCa36a6jQGKHbdoh3whaCLb7Zgt1upbob0,8858
+pdf2dataset/writer.py,sha256=qX2lzor4ZqB4NCMSCTK0Yt2fGLfy22wPKohtGHj94SY,11323
+pdf2dataset_tools-1.0.0.data/data/README.md,sha256=gvZ1v5Eb8OTjV3zawiqGravCHzIcMhGxIGzVlKjTvTY,27278
+pdf2dataset_tools-1.0.0.dist-info/LICENSE,sha256=G0Jz8o66D1067ISCTWt3XAiHmMrkz-rODzNMlM1NVT0,1070
+pdf2dataset_tools-1.0.0.dist-info/METADATA,sha256=QdUbrxnfjNI5hmEDdOjQsbDAYMwT_GXk1qGjVsr3iqg,28263
+pdf2dataset_tools-1.0.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+pdf2dataset_tools-1.0.0.dist-info/entry_points.txt,sha256=f2MKwE3v8uD3jZMF_IOVex2QJdQF65bjXmK4JesQ_us,50
+pdf2dataset_tools-1.0.0.dist-info/top_level.txt,sha256=su0aScW6WijXAricPgZI7FQgRPx1eLut3DBnsr711pc,12
+pdf2dataset_tools-1.0.0.dist-info/RECORD,,
