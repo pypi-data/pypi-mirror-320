@@ -1,0 +1,3 @@
+[console_scripts]
+knit2pdf=knit2pdf.cli:cli
+

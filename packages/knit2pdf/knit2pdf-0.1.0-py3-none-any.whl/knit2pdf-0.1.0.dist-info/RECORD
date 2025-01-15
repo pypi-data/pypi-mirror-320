@@ -1,0 +1,9 @@
+knit2pdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+knit2pdf/cli.py,sha256=978PizZ-5xA8ZoZ7wQQV-yTYZN7vj2A0DcU_CnzlFik,615
+knit2pdf/config/knit2pdfoptions.py,sha256=svg4f257MZ0d3fZfosDfJyht_hKgpSiidzGxS81lrws,165
+knit2pdf/config/openai.py,sha256=VeY4GPY5i9M1xi7tnylpcTdPnOJ9wtYSdKksJTEpKT4,96
+knit2pdf/knit2pdf.py,sha256=R7nJZflcoGYvksFanNkiJArQSznoMfcxC2KaXAMv08M,4100
+knit2pdf-0.1.0.dist-info/METADATA,sha256=5tzqxu4YR4xSM7YZeMayGHcVDDs7CN3_zBST3dgW7WE,811
+knit2pdf-0.1.0.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+knit2pdf-0.1.0.dist-info/entry_points.txt,sha256=cIp3oYPMTYzeV7rhDUFynqx2jDOcP6YqrMRqUU-eqpI,45
+knit2pdf-0.1.0.dist-info/RECORD,,
