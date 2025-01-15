@@ -1,0 +1,9 @@
+tutor<19.0.0,>=18.2
+
+[dev]
+build
+black
+isort
+mypy
+pylint
+python-semantic-release
