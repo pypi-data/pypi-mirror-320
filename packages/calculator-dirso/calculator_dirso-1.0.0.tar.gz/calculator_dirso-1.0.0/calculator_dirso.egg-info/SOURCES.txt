@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.py
+calculator_dirso.egg-info/PKG-INFO
+calculator_dirso.egg-info/SOURCES.txt
+calculator_dirso.egg-info/dependency_links.txt
+calculator_dirso.egg-info/not-zip-safe
+calculator_dirso.egg-info/requires.txt
+calculator_dirso.egg-info/top_level.txt
+calcyoulater-complete-lab/__init__.py
+calcyoulater-complete-lab/unit_tests.py
+calcyoulater-complete-lab/static/img/calcyoulater.PNG
+calcyoulater-complete-lab/static/styles/style.css
