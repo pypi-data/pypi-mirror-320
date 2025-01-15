@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+src/dt8852/__init__.py
+src/dt8852/__main__.py
+src/dt8852/dt8852.py
+src/dt8852.egg-info/PKG-INFO
+src/dt8852.egg-info/SOURCES.txt
+src/dt8852.egg-info/dependency_links.txt
+src/dt8852.egg-info/entry_points.txt
+src/dt8852.egg-info/requires.txt
+src/dt8852.egg-info/top_level.txt
