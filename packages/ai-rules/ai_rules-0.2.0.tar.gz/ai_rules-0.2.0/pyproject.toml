@@ -1,0 +1,174 @@
+[build-system]
+requires = [
+    "hatchling>=1.24.2",
+    "hatch-vcs>=0.3.0",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "ai-rules"
+version = "0.2.0"
+description = "A powerful CLI toolkit for extending and enhancing AI capabilities through customizable rules and commands."
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = [
+    "ai",
+    "cli",
+    "rules",
+    "prompt-engineering",
+    "ai-assistant",
+    "uv",
+]
+authors = [
+    { name = "loonghao", email = "hal.long@outlook.com" },
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "click>=8.0.0",
+    "pyyaml>=6.0.0",
+    "requests>=2.25.0",
+    "httpx>=0.26.0",
+    "pydantic>=2.5.3",
+    "uv>=0.5.18",
+    "tomli>=2.0.1",
+    "tomli-w>=1.0.0",
+    "duckduckgo-search>=7.2.1",
+    "googletrans>=4.0.0",
+]
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Homepage = "https://github.com/loonghao/ai-rules-cli"
+Documentation = "https://github.com/loonghao/ai-rules-cli#readme"
+Repository = "https://github.com/loonghao/ai-rules-cli.git"
+Issues = "https://github.com/loonghao/ai-rules-cli/issues"
+
+[project.scripts]
+ai-rules = "ai_rules.cli:cli"
+
+[project.optional-dependencies]
+dev = [
+    "black>=23.0.0",
+    "isort>=5.0.0",
+    "ruff>=0.1.14",
+    "python-dotenv>=1.0.0",
+    "nox>=2023.0.0",
+    "pyright>=1.1.0",
+]
+test = [
+    "pytest>=8.0.0",
+    "pytest-cov>=6.0.0",
+    "pytest-mock>=3.14.0",
+    "pytest-asyncio>=0.25.0",
+]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.2.0"
+tag_format = "v$version"
+version_files = [
+    "pyproject.toml:version",
+]
+
+[tool.black]
+line-length = 120
+target-version = [
+    "py39",
+    "py310",
+    "py311",
+    "py312",
+]
+include = "\\.pyi?$"
+exclude = "(\n  /(\n      \\.eggs         # exclude a few common directories in the\n    | \\.git          # root of the project\n    | \\.hg\n    | \\.mypy_cache\n    | \\.tox\n    | \\.nox\n    | \\.venv\n    | _build\n    | buck-out\n    | build\n    | dist\n  )/\n)\n"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+lines_after_imports = 2
+use_parentheses = true
+src_paths = ["src"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py38"
+src = [
+    "src",
+]
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "W",
+    "F",
+    "I",
+    "C",
+    "B",
+]
+ignore = [
+    "E501",
+    "PLR0913",
+    "RUF001",
+    "RUF002",
+    "RUF003",
+    "B904",
+    "W293",
+    "C901",
+    "W291",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = [
+    "F401",
+]
+"noxfile.py" = [
+    "E402",
+    "I001",
+]
+"tests/*" = [
+    "S101",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+addopts = "-ra -q --cov=ai_rules --cov-report=term-missing"
+
+[tool.pyright]
+include = ["src"]
+exclude = [
+    "**/node_modules",
+    "**/__pycache__",
+    "**/.venv",
+    "**/.nox",
+    "**/build",
+    "**/dist",
+    "**/tests",
+    "setup.py",
+    "noxfile.py"
+]
+pythonVersion = "3.10"
+pythonPlatform = "All"
+typeCheckingMode = "basic"
+reportMissingImports = true
+reportMissingTypeStubs = false
+reportUnknownMemberType = false
+reportUnknownVariableType = false
+reportUnknownArgumentType = false

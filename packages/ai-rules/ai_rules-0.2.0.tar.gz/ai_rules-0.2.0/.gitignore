@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+
+# PyCharm project files
+.idea/
+
+# Vim / Notepad++ temp files
+*~
+
+# Coverage output
+.coverage
+
+# Documentation build folders.
+docs/_*
+docs/src/*
+target/*
+/venv/
+/run_pycharm.bat
+/.nox/
+/build/
+/coverage.xml
+/.zip/
+/src/ai_rules_cli.egg-info/
+/output/
+/run-ide.bat
+*.egg-info
+/.windsurfrules

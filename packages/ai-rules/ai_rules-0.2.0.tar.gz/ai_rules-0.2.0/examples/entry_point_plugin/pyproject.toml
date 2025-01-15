@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "example-plugin"
+version = "1.0.0"
+authors = [
+    { name = "Your Name", email = "your.email@example.com" },
+]
+description = "Example AI Rules plugin"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "ai-rules>=0.1.0",
+    "pydantic>=2.0.0",
+    "click>=8.0.0",
+]
+
+[project.entry-points."ai_rules.plugins"]
+weather = "example_plugin.plugin:WeatherPlugin"
+
+[tool.hatch.build]
+packages = ["src/example_plugin"]
+
+[tool.ai-rules.env]
+OPENWEATHER_API_KEY = ""  # Add your OpenWeather API key here

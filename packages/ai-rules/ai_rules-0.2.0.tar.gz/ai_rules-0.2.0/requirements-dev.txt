@@ -1,0 +1,6 @@
+poetry
+nox
+pytest
+pyright
+ruff
+black
