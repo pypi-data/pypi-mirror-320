@@ -1,0 +1,46 @@
+[project]
+name = "jacob-os-version-check"
+version = "0.4.0"
+description = "Detects and outputs the os vesion."
+authors = [
+    { name = "jacob53", email = "jacob8753@gmail.com" },
+]
+dependencies = [
+    "check-os-ver>=0.2.1",
+    "hj-check-os-version>=0.2.1",
+    "lucas-check-os-ver>=0.2.1",
+    "stundrg-check-os-ver>=0.2.3",
+    "cho-check-os-ver>=0.2.3",
+    "nunininu-check-os-ver>=0.3.0",
+    "seo-check-os-version>=0.2.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/Jacob-53/jacob-os-version-check"
+Issues = "https://github.com/Jacob-53/jacob-os-version-check/issues"
+
+[project.scripts]
+jacob-hi = "jacob_os_version_check.hi:hi"
+jacob-random = "jacob_os_version_check.hi:random_pic"
+jacob-os-ver = "jacob_os_version_check.osver:get_os_pretty_name"
+jacob-os-cver = "jacob_os_version_check.osver:os_check_j"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[dependency-groups]
+test = [
+    "pytest>=8.3.4",
+    "pytest-cov>=6.0.0",
+]
