@@ -1,0 +1,11 @@
+seqreg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seqreg/poolboiling.py,sha256=FW-VkJmzQjw6uriUk63GMSySwP1bOosNCwRtdr_E9Fo,7966
+seqreg/seqreg.py,sha256=UlSENuXRHiSc38Z-zvIwjhw5A1BTsYjp82Gr6LeoKyk,7419
+seqreg/Models/Hit2Flux.json,sha256=w2QhNqA7AM8fX4W3HmOFdGlvlMZSkWNJgKHB2NPp0Ns,6542
+seqreg/Models/imgreg.json,sha256=VrKANB1dUwpwu9MbxlhpeP3ir8L9g6Wk7DmCTzq8Lvs,5268
+seqreg/Models/models.json,sha256=B_gPgY3Oig_Of368voFBVR-umyIQcooWawPP5FN_Nmg,871
+seqreg-0.0.8.dist-info/LICENSE.txt,sha256=xrxwFr6V7TWF6_H1eqb3a7Ewf2wO76IY2rX8rJkb3sw,9185
+seqreg-0.0.8.dist-info/METADATA,sha256=vRrM1Pt1byp3a0_vhWA-Rc46P4Xqvzd6cb3qdRqATVw,4573
+seqreg-0.0.8.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+seqreg-0.0.8.dist-info/top_level.txt,sha256=zpo4dI7rMPCJaHOrkncmX7IkeGIGkFJtkwANuYOyvBg,7
+seqreg-0.0.8.dist-info/RECORD,,
