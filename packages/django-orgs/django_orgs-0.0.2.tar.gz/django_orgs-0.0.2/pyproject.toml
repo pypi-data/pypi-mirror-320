@@ -1,0 +1,109 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "django-orgs"
+version = "0.0.2"
+description = "A simple way to manage organizations in Django"
+readme = "README.md"
+authors = [
+  { name = "Justin Mitchel", email = "justin@codingforentrepreneurs.com" },
+]
+license = { text = "MIT" }
+keywords = ["Django"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Django :: 5.1",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "Django>=5.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/jmitchel3/django-teams"
+Repository = "https://github.com/jmitchel3/django-teams"
+
+
+[tool.isort]
+add_imports = [
+  "from __future__ import annotations",
+]
+force_single_line = true
+profile = "black"
+src_paths = [
+  ".",
+  "sample_project",
+  "src",
+]
+
+
+[tool.pyproject-fmt]
+max_supported_python = "3.13"
+
+[tool.pytest.ini_options]
+addopts = """\
+    --strict-config
+    --strict-markers
+    --ds=tests.settings
+    """
+django_find_project = false
+xfail_strict = true
+
+[tool.coverage.run]
+branch = true
+parallel = true
+source = [
+  "django_orgs",
+]
+omit = [
+  "*/migrations/*",
+  "*/admin.py",
+  "tests/*",
+]
+
+[tool.coverage.paths]
+source = [
+  "src/django_orgs",
+  ".tox/*/lib/python*/site-packages/django_orgs",
+]
+
+[tool.coverage.report]
+show_missing = true
+
+[tool.mypy]
+enable_error_code = [
+  "ignore-without-code",
+  "redundant-expr",
+  "truthy-bool",
+]
+mypy_path = "src/"
+namespace_packages = false
+strict = true
+warn_unreachable = true
+
+[[tool.mypy.overrides]]
+module = "django.*"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+disallow_untyped_defs = false
+
+[tool.rstcheck]
+ignore_directives = [
+  "autoclass",
+  "autofunction",
+]
+report_level = "ERROR"
