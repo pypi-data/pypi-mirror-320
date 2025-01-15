@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: dmPython
+Version: 2.5.0
+Summary: Python interface to Dameng
+Home-page: https://www.dameng.com/
+License: Python Software Foundation License
+Keywords: Dameng
+Classifier: Development Status :: 6 - Mature
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
+
+``dmPython`` README
+====================================
+
+dmPython 是 DM 提供的依据 `Python DB API version 2.0 <https://peps.python.org/pep-0249/>`_
+中 ``API`` 使用规定而开发的数据库访问接口。dmPython实现这些 ``API`` ，使 Python应用程序能够对DM数据库进行访问。 
+dmPython通过调用DM DPI接口完成python模块扩展。在其使用过程中，除Python标准库以外，还需要DPI的运行环境，使用源码安装时需注意配置 ``DPI``  环境，使用pip install时则无需额外配置 ``DPI`` 环境。
+在Python软件中使用dmPython接口时，用户既可以在交互界面逐行输入命令，也可以通过文件批量执行命令，具体使用方法可以通过 `dmPython技术文档  <https://eco.dameng.com/document/dm/zh-cn/start/python-development.html>`_
+查看相关使用方法。
+
+
+``dmPython`` CHANGELOG
+====================================
+
+2.5.8
+
+- 修改多线程下更新blob和clob数据会发生阻塞的问题
+
+- 增加对nls_numeric_characters参数的支持，以字符串格式返回非标准时间类型
+
+- 修改了超长数据插入时的字符串截断问题
+
+2.5.7
+
+- 修改了获取变长字符类型列时，相关描述信息不准确的问题
+
+- 因为dpi prepare本地化的修改，调整一些函数的使用
+
+- returning into输出参数支持返回多行结果
+
+2.5.5
+
+- 增加对python 3.12的支持
+
+2.5.4
+
+- 修改了数据库推荐类型为varchar，传入参数类型为int时，数据类型转换失败的错误。
