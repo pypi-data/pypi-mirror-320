@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "NiaAutoARM"
+version = "0.1.1"
+description = "Automated generation and evaluation of Association Rule Mining pipelines"
+authors = ["Uroš Mlakar <uros.mlakar@um.si>", "Iztok Fister Jr. <iztok@iztok-jr-fister.eu>"]
+keywords = ['association rule mining', 'computational intelligence', 'data mining', 'datasets', 'optimization']
+homepage = "https://github.com/firefly-cpp/NiaAutoARM"
+repository = "https://github.com/firefly-cpp/NiaAutoARM"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+niapy = "^2.0.5"
+pandas = "^2.1.1"
+niaarm = "^0.3.12"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
