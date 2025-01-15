@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: abdel_langchain
+Version: 0.1.2
+Summary: A New Perspective on LangChain Design
+Author-Email: Abdelrahman Abounida <abdelrahmanaboneda@gmail.com>
+License: MIT
+Requires-Python: >=3.11
+Requires-Dist: httpx>=0.28.1
+Description-Content-Type: text/markdown
+
+# Abdel Langchain
+
+A New Perspective on LangChain Design
