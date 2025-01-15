@@ -1,0 +1,3 @@
+[console_scripts]
+align-lint=appomni.threat.align_tools.linter:main
+
