@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: chrono-kit
+Version: 1.2.0
+Summary: An open source python library for time series analysis and forecasting.
+Author: Hasan Emir Akın
+Author-email: h.emirakn@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: matplotlib (>=3.2.1,<4.0.0)
+Requires-Dist: numpy (>=1.24.0,<2.0.0)
+Requires-Dist: pandas (>=1.4.0,<2.0.0)
+Requires-Dist: scipy (>=1.10.1,<2.0.0)
+Requires-Dist: torch (>=1.13.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+**chrono-kit** is an open source python library for time series analysis and forecasting.
+
+This project was started in 2023 by ODTU YZT.
+## Documentation
+See the [documentations](https://odtuyzt.github.io/chronokit/index.html) for information. (The site is still under construction)
+
+Or take a look at the [examples](https://github.com/odtuyzt/chrono-kit/tree/main/examples).
+
+## Installation
+
+### Dependencies
+
+chronokit requires:
+
+* python >= 3.8.17
+* torch >= 1.13.1
+* numpy >= 1.24.0
+* pandas >= 1.4.0
+* scipy >= 1.10.1
+* matplotlib >= 3.2.1
+
+### User Installation
+
+    pip install chrono-kit
+
+    import chronokit
+
