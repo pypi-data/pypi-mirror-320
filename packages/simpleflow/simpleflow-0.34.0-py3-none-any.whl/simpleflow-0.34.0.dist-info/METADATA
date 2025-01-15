@@ -1,0 +1,124 @@
+Metadata-Version: 2.4
+Name: simpleflow
+Version: 0.34.0
+Summary: Python library for dataflow programming with Amazon SWF
+Project-URL: documentation, https://botify-labs.github.io/simpleflow
+Project-URL: repository, https://github.com/botify-labs/simpleflow
+Project-URL: changelog, https://github.com/botify-labs/simpleflow/blob/main/CHANGELOG.md
+Author: Greg Leclercq
+Maintainer-email: tech@botify.com
+License: MIT License
+License-File: LICENSE
+Keywords: amazon swf,simple workflow,simpleflow
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.7
+Requires-Dist: attrs
+Requires-Dist: boto3>=1.28.20
+Requires-Dist: click
+Requires-Dist: dill>=0.3.6
+Requires-Dist: diskcache>=4.1.0
+Requires-Dist: jinja2
+Requires-Dist: lazy-object-proxy
+Requires-Dist: lockfile>=0.9.1
+Requires-Dist: markupsafe
+Requires-Dist: multiprocess>=0.70.14
+Requires-Dist: psutil
+Requires-Dist: pytz
+Requires-Dist: setproctitle
+Requires-Dist: tabulate<1.0.0,>=0.8.2
+Provides-Extra: dev
+Requires-Dist: boto3-stubs[s3,swf]; extra == 'dev'
+Requires-Dist: cffi==v1.17.0rc1; (python_full_version == '3.13.0b4') and extra == 'dev'
+Requires-Dist: flaky; extra == 'dev'
+Requires-Dist: hatch; extra == 'dev'
+Requires-Dist: invoke; extra == 'dev'
+Requires-Dist: moto<5.0.0,>=4.2.8; extra == 'dev'
+Requires-Dist: packaging; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-xdist>=3.2.0; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Requires-Dist: setuptools<72; extra == 'dev'
+Requires-Dist: sphinx; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme; extra == 'dev'
+Requires-Dist: sure; extra == 'dev'
+Requires-Dist: twine; extra == 'dev'
+Requires-Dist: typing-extensions; extra == 'dev'
+Requires-Dist: vcrpy; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: markdown-include; extra == 'doc'
+Requires-Dist: mkdocs; extra == 'doc'
+Requires-Dist: mkdocs-material; extra == 'doc'
+Requires-Dist: pygments; extra == 'doc'
+Requires-Dist: pymdown-extensions; extra == 'doc'
+Description-Content-Type: text/markdown
+
+Simpleflow
+==========
+
+![PyPI - Version](https://img.shields.io/pypi/v/simpleflow)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/botify-labs/simpleflow/ci.yml)
+
+
+Simpleflow is a Python library that provides abstractions to write programs in
+the [distributed dataflow paradigm](https://en.wikipedia.org/wiki/Distributed_data_flow).
+It coordinates the execution of distributed tasks with [Amazon SWF](https://aws.amazon.com/swf/).
+
+It relies on *futures* to describe the dependencies between tasks. A `Future` object
+models the asynchronous execution of a computation that may end.  It tries to mimic
+the interface of the Python [concurrent.futures](http://docs.python.org/3/library/concurrent.futures) library.
+
+
+Features
+--------
+
+- Provides a `Future` abstraction to define dependencies between tasks.
+- Define asynchronous tasks from callables.
+- Handle workflows with Amazon SWF.
+- Implement replay behavior like the Amazon Flow framework.
+- Handle retry of tasks that failed.
+- Automatically register decorated tasks.
+- Encodes/decodes large fields to S3 objects transparently (aka "jumbo fields").
+- Handle the completion of a decision with more than 100 tasks.
+- Provides a local executor to check a workflow without Amazon SWF (see
+  `simpleflow --local` command).
+- Provides decider and activity worker process for execution with Amazon SWF.
+- Ships with the `simpleflow` command. `simpleflow --help` for more information
+  about the commands it supports.
+
+You can read more in the **Features** section of the documentation.
+
+
+Overview
+--------
+
+Please read and even run the `demo` script to have a quick glance of
+`simpleflow` commands. To run the `demo`  you will need to start decider
+and activity worker processes.
+
+Start a decider with:
+
+    $ PYTHONPATH=$PWD simpleflow decider.start --domain TestDomain --task-list test examples.basic.BasicWorkflow
+
+Start an activity worker with:
+
+    $ simpleflow worker.start --domain TestDomain --task-list quickstart
+
+Then execute `./extras/demo`.
+
+
+More information
+----------------
+
+Read the main documentation at https://botify-labs.github.io/simpleflow/.
