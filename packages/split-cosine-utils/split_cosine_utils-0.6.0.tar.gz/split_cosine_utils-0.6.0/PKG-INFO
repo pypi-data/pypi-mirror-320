@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: split_cosine_utils
+Version: 0.6.0
+Summary: A utility package for data splitting and cosine similarity computations. With an emphasis on dataframe manipulation
+Author: Alfonso Esqueda
+Author-email: alfonso.esqueda.kc@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# split_cosine_utils
+
+A utility package for
+- Splitting text data with custom rules.
+- Computing cosine similarity between datasets.
+
+## Installation
+
+```bash
+pip install split_cosine_utils
