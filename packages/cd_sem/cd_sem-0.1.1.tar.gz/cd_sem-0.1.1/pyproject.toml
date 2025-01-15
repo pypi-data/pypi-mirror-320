@@ -1,0 +1,27 @@
+[project]
+authors = [
+  {name = "Devin Grabner", email = "devin.grabner@wsu.edu"},
+  {name = "Harlan Heilman", email = "harlan.heilman@wsu.edu"},
+  {name = "Emma Vargo", email = "evargo@lbl.gov"},
+  {name = "Thomas Ferron", email = "tjferron@lbl.gov"},
+  {name = "Ricardo Ruiz", email = "ricardo.ruiz@lbl.gov"},
+]
+dependencies = [
+  "numpy",
+  "matplotlib",
+  "scipy",
+  "jupyter",
+  "tk",
+  "tifffile",
+  "scikit-image",
+  "opencv-python",
+]
+description = "SEM image analysis"
+name = "cd_sem"
+readme = "README.md"
+requires-python = ">=3.12"
+version = "0.1.1"
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
