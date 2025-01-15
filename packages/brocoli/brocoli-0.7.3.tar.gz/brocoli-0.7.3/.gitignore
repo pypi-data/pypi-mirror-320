@@ -1,0 +1,9 @@
+*.pyc
+*~
+__pycache__
+*.geany
+build/
+*.egg-info/
+dist/
+
+.venv/
