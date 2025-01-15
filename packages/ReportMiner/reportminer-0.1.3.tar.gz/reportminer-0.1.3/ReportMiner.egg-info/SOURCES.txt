@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ReportMiner.egg-info/PKG-INFO
+ReportMiner.egg-info/SOURCES.txt
+ReportMiner.egg-info/dependency_links.txt
+ReportMiner.egg-info/requires.txt
+ReportMiner.egg-info/top_level.txt
+reportminer/__init__.py
+reportminer/rag.py
+reportminer/rag_folder.py
