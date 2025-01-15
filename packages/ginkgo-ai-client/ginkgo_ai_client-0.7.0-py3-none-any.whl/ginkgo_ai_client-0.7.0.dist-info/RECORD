@@ -1,0 +1,9 @@
+ginkgo_ai_client/__init__.py,sha256=V9--Vt_umghSKwEtIDhee4jl-ScvoYGK_ziIHZPF-t8,399
+ginkgo_ai_client/client.py,sha256=W9PORmrOrNnClzJ_QU_o3INknODbs-Za3vQ6P9uR_ko,18004
+ginkgo_ai_client/queries.py,sha256=MrBI_bX9YjJQgLhYo4Cd5J_qPD3VrGWPR5Cp0DBdGts,29372
+ginkgo_ai_client/utils.py,sha256=fMDuFn1kwZFPy8lrfXxvMcoEdrTProd4B2dPjCpgYPI,2066
+ginkgo_ai_client-0.7.0.dist-info/LICENCE,sha256=2RWxTbDVWzFd8XqOnsn2dEYD-Ik6oC1YNn59RGrJYmA,1063
+ginkgo_ai_client-0.7.0.dist-info/METADATA,sha256=u2o7sBoJirZK5Ni7RfJ2scCrSxEL77Qy15qGBG2b7vw,6321
+ginkgo_ai_client-0.7.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+ginkgo_ai_client-0.7.0.dist-info/top_level.txt,sha256=ZQ1zsflTyb3j29MTf15iTuQJbGno2AK9ntDsP6nxd-w,17
+ginkgo_ai_client-0.7.0.dist-info/RECORD,,
