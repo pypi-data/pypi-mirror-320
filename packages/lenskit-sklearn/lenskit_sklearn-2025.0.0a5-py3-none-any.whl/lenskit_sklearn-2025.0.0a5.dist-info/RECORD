@@ -1,0 +1,6 @@
+lenskit/sklearn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lenskit/sklearn/svd.py,sha256=cZoS4_J_gbC6DJP6GXlEzI03pO6SNXzWALVnq5xxgsE,4107
+lenskit_sklearn-2025.0.0a5.dist-info/METADATA,sha256=eGwZ8bPT-zkx1hgT6uVQjszJQsSWDdInkYixlctrzpU,2152
+lenskit_sklearn-2025.0.0a5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+lenskit_sklearn-2025.0.0a5.dist-info/licenses/LICENSE.md,sha256=LmGh7av77GK3IXG9vfaKGzSJsn0JDKPQMb70Q5D23aw,1136
+lenskit_sklearn-2025.0.0a5.dist-info/RECORD,,
