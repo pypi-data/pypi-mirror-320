@@ -1,0 +1,6 @@
+spectral
+matplotlib
+scipy
+scikit-image
+pysptools
+colour-science
