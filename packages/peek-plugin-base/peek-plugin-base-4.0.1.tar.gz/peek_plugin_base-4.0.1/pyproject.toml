@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=69.0.3", "setuptools-scm[toml]>=7.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "peek-plugin-base"
+version = "4.0.1"
+authors = [{name = "Synerty", email = "contact@synerty.com"}]
+description = "Peek Plugin Base - dependencies that an Peek plugin needs"
+keywords = ["Peek", "Python", "Platform", "synerty"]
+classifiers = []
+dependencies = [
+    "SQLAlchemy",
+    "alembic >= 0.8.7",
+    "GeoAlchemy2",
+    "Twisted[tls,conch]",
+    "txcelery-py3 >= 1.6.3",
+    "json-cfg-rw",
+    "vortexpy",
+    "pytmpdir",
+    "txhttputil",
+    "SOAPpy-py3 >= 0.52.30",
+    "wstools-py3 >= 0.54.2",
+    "txsuds-py3 >= 0.5.9",
+    "reactivex>=4.0.4",
+    "pytz",
+    "tzlocal",
+    "patch-ng >=1.17.4",
+    "setproctitle",
+]
+
+[project.urls]
+Homepage = "https://github.com/Synerty/peek-plugin-base"
+
+
+#https://stackoverflow.com/a/75636144
+
+# exclude/include in python packages
+# use from ... import ... for package paths
+[tool.setuptools.packages.find]
+where = ["."]
+namespaces = false
+exclude = ["*.tests", "*.tests.*", "tests.*", "tests"]
+
+# includes for data files - files outside of python packages
+[tool.setuptools.package-data]
+
+# exludes for data files - files outside of python packages
+[tool.setuptools.exclude-package-data]
+
+
+[tool.pylsp-mypy]
+enabled = true
+live_mode = true
+strict = true
+
+[tool.pycodestyle]
+max-line-length = 80
+
+[tool.isort]
+profile = "black"
+
