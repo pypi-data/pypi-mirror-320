@@ -1,0 +1,7 @@
+setup.py
+mmd_useful.egg-info/PKG-INFO
+mmd_useful.egg-info/SOURCES.txt
+mmd_useful.egg-info/dependency_links.txt
+mmd_useful.egg-info/top_level.txt
+useful/__init__.py
+useful/main.py
