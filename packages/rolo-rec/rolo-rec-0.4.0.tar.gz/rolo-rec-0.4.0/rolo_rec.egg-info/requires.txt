@@ -1,0 +1,14 @@
+requests
+numpy
+torch
+Pillow
+scikit-learn
+ultralytics
+facenet-pytorch
+torchvision<0.18.0,>=0.17.0
+tqdm<5.0.0,>=4.0.0
+
+[dev]
+pytest
+pluggy<2,>=1.5
+iniconfig
