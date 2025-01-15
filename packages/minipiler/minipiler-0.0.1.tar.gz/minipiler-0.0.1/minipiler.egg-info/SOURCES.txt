@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+minipiler/__init__.py
+minipiler.egg-info/PKG-INFO
+minipiler.egg-info/SOURCES.txt
+minipiler.egg-info/dependency_links.txt
+minipiler.egg-info/top_level.txt
