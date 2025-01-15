@@ -1,0 +1,10 @@
+flight_mech/__init__.py,sha256=h2evsL3B-jhblgdT7oxFoE_fs6muRw9CXPIF2HGbpCw,160
+flight_mech/atmosphere.py,sha256=WW4fSWp1pl-a38xOJl0VfL85LvbA_Yvmnqispw07jmM,1189
+flight_mech/plane.py,sha256=ZMhGoYDcP435mBPu8-ifd5GCDqVla5Al5lO-BgmYpkA,19651
+flight_mech/plane_database/cessna_172.json,sha256=jRjUe4hxq9I44WC2vBcQVpuLJSZ6ba9Pfdva6Vn69Ig,186
+flight_mech/plane_database/cessna_citation_III.json,sha256=s6WvQD6Ok4jXIN6rb_9sRGy1WnWAb2QlncuwkWWbXZk,278
+flight_mech/plane_database/cessna_citation_mustang.json,sha256=FLhGkWsZW8QfThvP25vkhLTyMKzB4XPJqzpNK9YmEqg,278
+flight_mech-1.0.4.dist-info/METADATA,sha256=0g5g95C0_YMv8RtlhGhnhk2ATBaPHD3nec4NKRn_Chk,3898
+flight_mech-1.0.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+flight_mech-1.0.4.dist-info/licenses/LICENSE,sha256=u8KVDNJQ6L53Jswuvu2Uh_602gDnp3dJaps4oZdq_n8,1089
+flight_mech-1.0.4.dist-info/RECORD,,
