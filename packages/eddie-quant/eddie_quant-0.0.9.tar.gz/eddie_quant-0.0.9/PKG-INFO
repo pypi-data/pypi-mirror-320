@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: eddie-quant
+Version: 0.0.9
+Summary: 
+Author: Eddie Zhu
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: apscheduler (>=3.11.0,<4.0.0)
+Requires-Dist: loguru (>=0.7.3,<0.8.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: psycopg2 (>=2.9.10,<3.0.0)
+Requires-Dist: pytest (>=8.3.4,<9.0.0)
+Requires-Dist: sql (>=2022.4.0,<2023.0.0)
+Requires-Dist: sqlalchemy (>=2.0.36,<3.0.0)
+Requires-Dist: yfinance (>=0.2.51,<0.3.0)
+Description-Content-Type: text/markdown
+
+
