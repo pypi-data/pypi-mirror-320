@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+bdi_viz.egg-info/PKG-INFO
+bdi_viz.egg-info/SOURCES.txt
+bdi_viz.egg-info/dependency_links.txt
+bdi_viz.egg-info/requires.txt
+bdi_viz.egg-info/top_level.txt
+bdiviz/__init__.py
+bdiviz/api.py
+bdiviz/utils.py
+bdiviz/resource/gdc_table.csv
+tests/__init__.py
