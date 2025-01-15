@@ -1,0 +1,17 @@
+Avalara/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Avalara/SDK/__init__.py,sha256=Y3nZYBvnU7USiJ-n82aIRewNlbZT6rfSu_x8SL-x8GE,1636
+Avalara/SDK/api_client.py,sha256=gf9SU_0msvFfwHayfgAM8xVcpsLVBjGw8OHt57UIxmw,38724
+Avalara/SDK/configuration.py,sha256=--5v0i2Nf1SJyWo7v4ldABBHS7CkPEdMKkgarGgKScI,19921
+Avalara/SDK/exceptions.py,sha256=tuAAf4w8a8rFk2XgK7T3zMQDdiEuU1v_GOLEtLrZhwQ,6111
+Avalara/SDK/model_utils.py,sha256=s1wSU3QOBd93YAZOsYh53wr_5IVncAQiNTN16Kb6LCg,84892
+Avalara/SDK/rest.py,sha256=Jh1TO1QwIKafszl05IoSsYjQXjuWGeUa3C3GPQj2mio,16006
+Avalara/SDK/oauth_helper/AvalaraCache.py,sha256=riE6c0EoNJANcbaFhpNRYNNGGY9j9-pPZKoIfRknAFU,2332
+Avalara/SDK/oauth_helper/AvalaraOauth2Client.py,sha256=ZHFI-p6hM5dCKKd2GS23GDEj8Ac96alYMrYsGM2wDM4,6101
+Avalara/SDK/oauth_helper/AvalaraOauth2Configuration.py,sha256=0XKE8-1bPpOtqLO59v8g4gz4E8rTp4qcZovznicrqpA,2930
+Avalara/SDK/oauth_helper/AvalaraOidcModel.py,sha256=L4ohruPXmdAVLjX9uRcBWzrF_KzZllV1Hlga_loDicY,3244
+Avalara/SDK/oauth_helper/AvalaraSdkOauthUtils.py,sha256=75hiY2Bc_824NvwLZb2K3du1cO9aOxnecITG6HAbHhw,2406
+Avalara/SDK/oauth_helper/__init__.py,sha256=S2Y5p2a6tRLA4oANoFfHVcqHLeSQbyJ9md0oV9N_gk0,465
+Avalara.SDK-24.12.0.dist-info/METADATA,sha256=qHJCbgKnUSK1SgNdnv7JqN6vbMqW1iz2Xw2JAgT6Oxc,571
+Avalara.SDK-24.12.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+Avalara.SDK-24.12.0.dist-info/top_level.txt,sha256=Xobcyg8NOtU2VuXUtSTZH7XhPHRgafzi2Q2EH7uymcw,8
+Avalara.SDK-24.12.0.dist-info/RECORD,,
