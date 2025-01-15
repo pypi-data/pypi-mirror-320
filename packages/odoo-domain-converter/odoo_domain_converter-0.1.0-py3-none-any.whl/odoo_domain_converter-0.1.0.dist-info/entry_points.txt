@@ -1,0 +1,2 @@
+[console_scripts]
+odoo-domain-converter = odoo_domain_converter.cli:main

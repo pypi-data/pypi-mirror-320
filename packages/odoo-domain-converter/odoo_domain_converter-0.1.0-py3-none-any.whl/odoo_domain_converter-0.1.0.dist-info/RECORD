@@ -1,0 +1,10 @@
+odoo_domain_converter/__init__.py,sha256=jCzwV4oKeHx2_jmLW8dDWW4QOccHO7vb76_uzPweDoM,153
+odoo_domain_converter/cli.py,sha256=cxFo_w4b39UEyKr3IfCO2GR-Ft_5_iVAvYgeWfZ5tD8,3478
+odoo_domain_converter/converter.py,sha256=aS3CSaaZ8gJ5gAwwDqdvLLuo7tz-oveSANAMrWKtMps,10786
+odoo_domain_converter/odoo.py,sha256=a7S3jagrn_aLX52ulkCeMsRGJNWgCW-8iY-V3L2XSvk,1556
+odoo_domain_converter-0.1.0.dist-info/LICENSE,sha256=tKOf05CZAu2Siaxx0wrG1ZE2ZGovpciMd7p_BtYPXSM,1075
+odoo_domain_converter-0.1.0.dist-info/METADATA,sha256=URfM2E951KOF8C5Xy54EIYPoHmlRULL7GRIcpCL9BO0,4039
+odoo_domain_converter-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+odoo_domain_converter-0.1.0.dist-info/entry_points.txt,sha256=zp1-19MkYYr_4jatLgMAjTbJsc2ekbQNc44SBFS-P_Q,73
+odoo_domain_converter-0.1.0.dist-info/top_level.txt,sha256=89zDerFj-sms6UFzcAMmsBroKgyzmiSc2kH29f9iQ-I,22
+odoo_domain_converter-0.1.0.dist-info/RECORD,,
