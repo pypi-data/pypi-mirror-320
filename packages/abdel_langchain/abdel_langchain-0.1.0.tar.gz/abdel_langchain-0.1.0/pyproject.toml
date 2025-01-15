@@ -1,0 +1,24 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "abdel-langchain"
+version = "0.1.0"
+description = "A New Perspective on LangChain Design"
+authors = [
+    { name = "Abdelrahman Abounida", email = "abdelrahmanaboneda@gmail.com" },
+]
+dependencies = [
+    "httpx>=0.28.1",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[tool.pdm]
+distribution = true
