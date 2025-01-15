@@ -1,0 +1,14 @@
+kivymd_admin/__init__.py,sha256=3qDizjfJjzjHQ3SrFtogx4dZaelSsiiCUNAMnBBZLE0,50
+kivymd_admin/cli.py,sha256=6KFO2NmBZ61bCKS0fzKn4DmkIsbZcmYp-Bj3KssnhGo,840
+kivymd_admin/utils.py,sha256=f9PcHSG3RBRI2L_a6guu-HTzOmRHn9kol9jvKUX53Lo,1440
+kivymd_admin/templates/main.py,sha256=-6yKrqCbOUaxXuz0jFsS2IlbqjdQTZeeN4wTXheyDq0,451
+kivymd_admin/templates/core/main_router.py,sha256=BFCN_Nvgp4ZxPvAHCt9SaMqqeaMtS7H3v_tZ8KeF6YE,638
+kivymd_admin/templates/screen_template/models.py,sha256=151oGtK_t-s9vJ6p375i8vgsClEdK2QwpszQTGNRFII,27
+kivymd_admin/templates/screen_template/screen.py,sha256=JIdmzDeZe9Lyyj3DQDW5QSsiURrXcq_95IiR-vERZcc,496
+kivymd_admin/templates/screen_template/views.py,sha256=DrbKTCOnLc2FfLJIL3MPprEK2_YjsULdyJmDZ23kGbU,50
+kivymd_admin-0.0.1.dist-info/LICENSE,sha256=KZwurMngdt1X0QQImIRPWsgnLRVJpsu1VVQ3mDfeV7U,1528
+kivymd_admin-0.0.1.dist-info/METADATA,sha256=sNjJefDe0LjHvcmLfpHw9j37Z41o4gTIMwtGWbd-YRk,3203
+kivymd_admin-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+kivymd_admin-0.0.1.dist-info/entry_points.txt,sha256=Ng2HIj_eKDCjEJmRyS10A4OAwR7UWCwRrrsZ48TIAAs,55
+kivymd_admin-0.0.1.dist-info/top_level.txt,sha256=vBvsBBrwZX3ewIyULXNcp-X7Qs8YBZeba86EqbhIOSU,13
+kivymd_admin-0.0.1.dist-info/RECORD,,
