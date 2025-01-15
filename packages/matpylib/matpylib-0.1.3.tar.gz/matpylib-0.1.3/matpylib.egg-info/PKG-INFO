@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: matpylib
+Version: 0.1.3
+Summary: darkball
+Author: darkball
+Requires-Dist: selenium
+Requires-Dist: webdriver-manager
+Requires-Dist: pywin32
+Requires-Dist: keyboard
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary
