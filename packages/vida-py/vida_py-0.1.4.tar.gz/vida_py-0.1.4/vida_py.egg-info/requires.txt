@@ -1,0 +1,7 @@
+click==8.1.8
+pyodbc==5.2.0
+SQLAlchemy==2.0.37
+
+[dev]
+pre-commit==4.0.1
+bump-my-version==0.29.0
