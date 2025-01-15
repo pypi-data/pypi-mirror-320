@@ -1,0 +1,2 @@
+[console_scripts]
+youtube-transcript = youtube_transcript_generator.cli.main:main
