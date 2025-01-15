@@ -1,0 +1,83 @@
+# SmoothText
+
+[![PyPI](https://img.shields.io/pypi/v/smoothtext.svg)](https://pypi.org/project/smoothtext/)
+
+SmoothText is a Python library that aims to provide an easy-to-use interface to calculate readability statistics of
+texts in multiple languages and multiple formulas.
+
+This library aims to ensure accuracy through a unified interface. Thus, further formula or feature implementations shall
+be available for all languages without breaking the existing use style.
+
+## External Dependencies
+
+|                     Library                      |  Version  |   License    | Notes                                                                  |
+|:------------------------------------------------:|:---------:|:------------:|------------------------------------------------------------------------|
+| [Unidecode](https://pypi.org/project/Unidecode/) | `>=1.3.8` | `GNU GPLv2`  | Required.                                                              |
+|          [NLTK](https://www.nltk.org/)           | `>=3.9.1` | `Apache 2.0` | Optional, but temporarily Required until other backends are supported. |
+
+## Supported Languages and Formulas
+
+| Formula/Language                                                                                                                                                                                                                             | English |                                                                                                                                Turkish                                                                                                                                |
+|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| [Flesch Reading Ease](https://scholar.google.com/scholar?as_sdt=0%2C5&q=A+New+Readability+Yardstick+R+Flesch&btnG=)                                                                                                                          |    ✔    |                                                          ✔ [Ateşman](https://scholar.google.com/scholar?as_sdt=0%2C5&q=T%C3%BCrk%C3%A7ede+Okunabilirli%C4%9Fin+%C3%96l%C3%A7%C3%BClmesi+Ate%C5%9Fman&btnG=)                                                           |
+| [Flesch-Kincaid Grade](https://scholar.google.com/scholar?as_sdt=0%2C5&q=Derivation+of+new+readability+formulas+%28automated+readability+index%2C+fog+count+and+flesch+reading+ease+formula%29+for+navy+enlisted+personnel&btnG=)            |    ✔    | ✔ [Bezirci-Yılmaz](https://scholar.google.com/scholar?as_sdt=0%2C5&q=Metinlerin+okunabilirli%C4%9Finin+%C3%B6l%C3%A7%C3%BClmesi+%C3%BCzerine+bir+yazilim+k%C3%BCt%C3%BCphanesi+ve+T%C3%BCrk%C3%A7e+i%C3%A7in+yeni+bir+okunabilirlik+%C3%B6l%C3%A7%C3%BCt%C3%BC&btnG=) |
+| [Flesch-Kincaid Grade Simplified](https://scholar.google.com/scholar?as_sdt=0%2C5&q=Derivation+of+new+readability+formulas+%28automated+readability+index%2C+fog+count+and+flesch+reading+ease+formula%29+for+navy+enlisted+personnel&btnG=) |    ✔    |                                                                                                                                   ❌                                                                                                                                   |
+
+Notes:
+
+- **Ateşman** is the Turkish adaptation of **Flesch Reading Ease**. The two can be used interchangeably in the module.
+- **Bezirci-Yılmaz** is the Turkish adaptation of **Flesch-Kincaid Grade**. The two can be used interchangeably in the
+  module.
+- **Flesch-Kincaid Grade Simplified** is essentially the same formula with as **Flesch-Kincaid Grade**, except that its
+  constants are different.
+
+### Documentation
+
+See [here](https://smoothtext.tugrulgungor.me/) for API documentation.
+
+## Usage
+
+### Initializing the Library
+
+The library must be initialized before creating any instances.
+
+```python
+from smoothtext import SmoothText
+
+SmoothText.setup(languages='en,tr', backend='nltk')
+```
+
+Now, we are ready to create an instance.
+
+```python
+smoothtext = SmoothText('en')
+```
+
+#### Switching Languages
+
+If multiple languages are listed when the library was set, the instances can switch between those languages.
+
+```python
+smoothtext.language = 'en'
+```
+
+### Computing the Readability Statistics
+
+```python
+from smoothtext import Language, ReadabilityFormula, SmoothText
+
+# https://en.wikipedia.org/wiki/Forrest_Gump
+text = "Forrest Gump is a 1994 American comedy-drama film directed by Robert Zemeckis."
+
+SmoothText.setup(backend='nltk', languages=Language.English, quiet=True)
+smoothtext = SmoothText(Language.English)
+
+# compute_readability is the function to be called when calculating the readability score of a text.
+s1 = smoothtext.compute_readability(text=text, formula=ReadabilityFormula.Flesch_Reading_Ease)
+
+# Alternatively, we can directly use the instance's __call__ operator.
+s2 = smoothtext(text=text, formula=ReadabilityFormula.Flesch_Kincaid_Grade)
+
+print(s1, s2)
+# Output is: 25.455000000000013 12.690000000000001
+```
