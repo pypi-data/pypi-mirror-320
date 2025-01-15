@@ -1,0 +1,2 @@
+[console_scripts]
+funbuild = funpaper.podcast.script:funpaper
