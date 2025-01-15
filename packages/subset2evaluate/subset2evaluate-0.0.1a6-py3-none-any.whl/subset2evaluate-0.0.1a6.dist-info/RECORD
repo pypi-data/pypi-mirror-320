@@ -1,0 +1,12 @@
+subset2evaluate/__init__.py,sha256=Fc_GgsgVGlRkjS09xCHa-IBH0R4_po1Mu8bIHCfEvRc,167
+subset2evaluate/evaluate.py,sha256=TRjdOk-2O8reWz7lEOjwW0xHe7VWvBCrN_c6PnalklU,8668
+subset2evaluate/methods.py,sha256=soqjR152eyzbY5E4D3tH64ta8lTHUBLCJZimdI6KQGg,11863
+subset2evaluate/methods_old.py,sha256=JPvWfowC7-XhVrDd4PcnBr_9hrLNOPqhVRLWVX6Fho0,15516
+subset2evaluate/select_subset.py,sha256=pg3sqwJEtdTwoovz27ffWN2TV7vDGpuUkKlPJ9MpmdY,2768
+subset2evaluate/test.py,sha256=Yhh3XrbaI-h5CszvWfgKUpZVulP3i8vLgkkmiGRbkvI,2983
+subset2evaluate/utils.py,sha256=wjPSlWm10RyCLmHY9Z59OrNw6jr2PoUe42WGYwP6a6I,14662
+subset2evaluate-0.0.1a6.dist-info/METADATA,sha256=YFL0QU7FsLoYvJvDkZz_QQ0VY2U3TGVjSC0inYUcGoY,10138
+subset2evaluate-0.0.1a6.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+subset2evaluate-0.0.1a6.dist-info/entry_points.txt,sha256=ngC9Lsyj8-paXkPTmJY75R-80KGjabh1NbEIfNIA3FY,132
+subset2evaluate-0.0.1a6.dist-info/top_level.txt,sha256=oL2spjiCRWbSfLKQqjrKFCbGOzUIUQHRcSq_LwwD-qQ,16
+subset2evaluate-0.0.1a6.dist-info/RECORD,,
