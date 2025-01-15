@@ -1,0 +1,13 @@
+docitup/__init__.py,sha256=IRQtERzFeLyMQBxTGOAznTZL4SNnvo3Au_CP2IEEsQs,587
+docitup/base_loaders.py,sha256=2hKruSCE4GG6Cio8_OOYDC7UXsknPw3G2yEuSB1cngY,1269
+docitup/docling_loaders.py,sha256=7Je0-xxJzTeL-sv0QEG5AdyxwihSTEuTWpf1qhdq5Co,2103
+docitup/fitz_loaders.py,sha256=ci5FmHpHIREFZhEnNfhp29xnjiJAk2s0B-viFy3hcAM,2212
+docitup/llamaparse_loaders.py,sha256=NgLCIONR7PBiMdoNn7BOB_BsDYl8ujtBSY7IqrEpiR8,2312
+docitup/markitdown_loaders.py,sha256=KjGSRa4UeCTsImqAtbPLewJOIKNkut9fbc68QiexL4s,2052
+docitup/pymupdf4llm_loaders.py,sha256=rnKg0W9k853-sDmV8T2kHPgIMF-aRwdrnbDJq9QzaO0,1997
+docitup/pypdf2_loaders.py,sha256=QIklALNyRrZQbWn99vEfDEf7nhOmRzBmlyV_b9vHXIs,2340
+docitup/pypdf_loaders.py,sha256=5h04RsufUCqFhU6dRsBf_uSmVCIhpXRL6WjThlwP4Zw,2338
+docitup-0.1.4.dist-info/LICENSE,sha256=IYdWIkCLyyB4Wvm_7_lvbt55OZNaKOSmFb4ZJ8wPug8,1087
+docitup-0.1.4.dist-info/METADATA,sha256=-IpG3mpcWHa67JikRnovIWFHkrPuTzC58-I23I5IeX4,4141
+docitup-0.1.4.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+docitup-0.1.4.dist-info/RECORD,,
