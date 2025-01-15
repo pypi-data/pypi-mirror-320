@@ -1,0 +1,2 @@
+pyobjc-core>=11.0
+pyobjc-framework-SharedWithYouCore>=11.0
