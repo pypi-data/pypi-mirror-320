@@ -1,0 +1,24 @@
+[project]
+name = "konvo"
+version = "0.0.2"
+description = "Konvotech Python Package"
+readme = "README.md"
+authors = [
+    { name = "Berat Çimen", email = "47108366+beratcmn@users.noreply.github.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.32.3",
+]
+
+[project.scripts]
+konvo = "konvo:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+]
