@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: mthd
+Version: 0.0.2
+Summary: Git-based experiment tracking with semantic metadata.
+Project-URL: Homepage, https://github.com/flywhl/mthd
+Project-URL: Repository, https://github.com/flywhl/mthd
+Project-URL: Documentation, https://github.com/flywhl/mthd#readme
+Project-URL: Bug Tracker, https://github.com/flywhl/mthd/issues
+Author-email: Rory Byrne <rory@rory.bio>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# mthd
+Automatically commit code experiments with hypothesis-driven git messages
