@@ -1,0 +1,10 @@
+release_mate/__init__.py,sha256=YXxIwbFbAduSorj10WTGgMKS4ayATkMCSY57EKI0wBw,59
+release_mate/api.py,sha256=uB2Ku0fHahYF1m1Vx3eLOesZUCiavzY89SadoE120Ec,20027
+release_mate/cli.py,sha256=Fz4jbKMDmh8oxssAqoy_LlXUhtMICQ6F72flnyUbBOY,4826
+release_mate/templates/project/cookiecutter.json,sha256=qtF0WadbRiv65eEdLd9KXEDml0glSTHJryK5dUPytbc,179
+release_mate/templates/project/{{cookiecutter.root_dir}}/{{cookiecutter.project_id}}.toml,sha256=3DgNRbiv7GprubNzxgKJ0KJfhXH7jxqE79Iw2fc4xdQ,2096
+release_mate-0.1.1.dist-info/LICENSE,sha256=5ePoQ7kc9DpvrMf3TkF7vWjz2v4lgJSahH3TTIY9Rgs,1069
+release_mate-0.1.1.dist-info/METADATA,sha256=jsIANmN2Qc0e-59CepLZ5oamZ4oltRa90rY3CjSLBRU,1859
+release_mate-0.1.1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+release_mate-0.1.1.dist-info/entry_points.txt,sha256=270YeCFBkqAoHI5_WwMKFoVn7OOz7IgFTG2dIkY6LSM,53
+release_mate-0.1.1.dist-info/RECORD,,
